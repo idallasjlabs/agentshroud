@@ -1,23 +1,32 @@
 ---
 type: community
-members: 10
+members: 19
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide (3)
 
-**Members:** 10 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - concept - CHANGELOG.md
-- [[AgentShroud Changelog]] - document - CHANGELOG.md
-- [[ESP-IDF v5.4 Toolchain Setup]] - concept - firmware/voice-terminal/SETUP.md
-- [[ESP32-S3-BOX-3 Voice Terminal]] - concept - CHANGELOG.md
-- [[Hermes Bot_1]] - concept - CHANGELOG.md
-- [[LVGL Animated Face State Machine]] - concept - firmware/voice-terminal/SETUP.md
-- [[OTA Wireless Firmware Updates]] - concept - firmware/voice-terminal/SETUP.md
-- [[OpenClaw Bot_1]] - concept - CHANGELOG.md
-- [[TrustManager Progressive-Trust Ladder]] - concept - CHANGELOG.md
-- [[Voice Gateway]] - concept - CHANGELOG.md
+- [[1. GitHub MCP Authentication Reset]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[1. GitHub MCP Authentication Reset_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[2. Atlassian MCP Authentication Reset]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Claude Code]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (11)]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (3)]]
 
 ## Top bridge nodes
-- [[ESP32-S3-BOX-3 Voice Terminal]] - degree 7, connects to 2 communities
-- [[AgentShroud Changelog]] - degree 9, connects to 1 community
-- [[Hermes Bot_1]] - degree 3, connects to 1 community
+- [[1. GitHub MCP Authentication Reset_1]] - degree 6, connects to 1 community
+- [[Authentication Reset Procedures]] - degree 4, connects to 1 community
+- [[Step 4 Restart Codex]] - degree 3, connects to 1 community

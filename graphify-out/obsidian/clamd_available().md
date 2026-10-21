@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "asyncio"
+community: "cli/main.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/cli/mainpy
 ---
 
 # clamd_available()
@@ -19,4 +19,4 @@ tags:
 - [[test_clamd_available_false_when_socket_missing()]] - `calls` [EXTRACTED]
 - [[test_clamd_available_true_when_daemon_listening()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

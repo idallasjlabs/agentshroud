@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "concept"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter convention)
@@ -25,4 +25,4 @@ tags:
 - [[weatherSKILL]] - `conceptually_related_to` [INFERRED]
 - [[xurlSKILL]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/concept #graphify/INFERRED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today

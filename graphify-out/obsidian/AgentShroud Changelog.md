@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (3)"
+community: "hermes/skills/i-icloud/scripts/calendar.js"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3
+  - community/hermes/skills/i-icloud/scripts/calendarjs
 ---
 
 # AgentShroud Changelog
@@ -21,4 +21,4 @@ tags:
 - [[Voice Gateway]] - `references` [EXTRACTED]
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs

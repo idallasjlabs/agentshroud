@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2) (2)"
 location: "L8724"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # .test_oversized_document_update_is_dropped()
@@ -19,4 +19,4 @@ tags:
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

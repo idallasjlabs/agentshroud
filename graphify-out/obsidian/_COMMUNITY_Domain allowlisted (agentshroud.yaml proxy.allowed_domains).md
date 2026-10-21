@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Domain allowlisted? (agentshroud.yaml proxy.allowed_domains)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[3.1 PII Sanitizer — confidence floor]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.2 Egress filter — enforce mode]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.3 form-urlencoded outbound bypass (PR158 regression check)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.4 KeyVault seeding includes Hermes secrets]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.5 Telegram proxy multi-bot token validation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.6 CONNECT proxy force-blocks api.telegram.org]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.7 agentshroud-isolated network isolation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§3 — Bot Pipeline Integrity Checks]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/Domain_allowlisted_agentshroudyaml_proxyallowed_domains
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Error Index.md (3)]]
+
+## Top bridge nodes
+- [[§3 — Bot Pipeline Integrity Checks]] - degree 8, connects to 1 community

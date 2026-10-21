@@ -12,17 +12,17 @@ tags:
 # PathIsolationConfig
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_22]] - `references` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_17]] - `references` [EXTRACTED]
 - [[dot-config()_4]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_6]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `calls` [EXTRACTED]
 - [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Configuration for path isolation system.]] - `rationale_for` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AgentShroud™ README"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentShroud_README
 ---
 
 # .register_screenshot_hook()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_README

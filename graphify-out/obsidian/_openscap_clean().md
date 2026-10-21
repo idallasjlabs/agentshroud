@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py (2)"
+community: "AgentShroud Security Assessment — v0.8.0"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # _openscap_clean()
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_defined_when_all_passing_no_report_on_disk()]] - `calls` [EXTRACTED]
 - [[dot-test_five_when_openscap_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

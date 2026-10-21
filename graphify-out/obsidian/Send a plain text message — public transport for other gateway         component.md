@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "EgressTelegramNotifier"
+community: "Critical Findings"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Critical_Findings
 ---
 
 # Send a plain text message — public transport for other gateway         component
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-send_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/rationale #graphify/EXTRACTED #community/Critical_Findings

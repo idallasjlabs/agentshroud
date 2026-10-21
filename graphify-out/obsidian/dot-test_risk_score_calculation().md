@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "test_soc_router_coverage.py"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_risk_score_calculation()
 
 ## Connections
 - [[Test risk score calculation for detected chains.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

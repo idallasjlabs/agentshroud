@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - code - firmware/voice-terminal/CMakeLists.txt
+- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

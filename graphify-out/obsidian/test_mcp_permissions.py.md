@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "CrossBotTrustLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/CrossBotTrustLedger
 ---
 
 # test_mcp_permissions.py
 
 ## Connections
-- [[MCPPermissionManager]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
-- [[PermissionLevel]] - `imports` [EXTRACTED]
+- [[PermissionLevel_1]] - `imports` [EXTRACTED]
 - [[TestCheckAll]] - `contains` [EXTRACTED]
 - [[TestInferPermission]] - `contains` [EXTRACTED]
 - [[TestPermissionLevel]] - `contains` [EXTRACTED]
@@ -26,8 +26,8 @@ tags:
 - [[TestTrustLevels]] - `contains` [EXTRACTED]
 - [[TestTrustMapping]] - `contains` [EXTRACTED]
 - [[config()]] - `contains` [EXTRACTED]
-- [[mgr()]] - `contains` [EXTRACTED]
+- [[mgr()_1]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

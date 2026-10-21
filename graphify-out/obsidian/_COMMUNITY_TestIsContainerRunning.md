@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[dot-__init__()_27]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-_patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-read()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_running_container_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_socket_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_stopped_container_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIsContainerRunning]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_FakeResp]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[R - Repudiation]] - document - docs/security/threat-model.md
+- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
+- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
+- [[T - Tampering with Data]] - document - docs/security/threat-model.md
+- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
+- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
+- [[Threat Audit Log Tampering]] - document - docs/security/threat-model.md
+- [[Threat Configuration Drift]] - document - docs/security/threat-model.md
+- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_TestCredentialInjection]]
+- 1 edge to [[_COMMUNITY_Resources]]
+- 1 edge to [[_COMMUNITY__llm_init_agent_reference_paths()]]
+- 1 edge to [[_COMMUNITY_graphify reference GitHub clone and cross-repo merge]]
 
 ## Top bridge nodes
-- [[TestIsContainerRunning]] - degree 6, connects to 1 community
-- [[_FakeResp]] - degree 4, connects to 1 community
+- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # TestStats
@@ -17,4 +17,4 @@ tags:
 - [[stats() — verify blockedallowlistdenylist counts.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

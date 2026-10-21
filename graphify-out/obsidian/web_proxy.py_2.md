@@ -1,25 +1,24 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
-type: "code"
-community: "ProxyAction"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+type: "document"
+community: "Use Cases"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/Use_Cases
 ---
 
 # web_proxy.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[ProxyAction]] - `contains` [EXTRACTED]
-- [[RateLimiter]] - `contains` [EXTRACTED]
-- [[WebContentScanner]] - `imports` [EXTRACTED]
-- [[WebProxy]] - `contains` [EXTRACTED]
-- [[WebProxyResult]] - `contains` [EXTRACTED]
-- [[http_proxy.py_2]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
+- [[Configuration  Environment Variables_25]] - `contains` [EXTRACTED]
+- [[Function Details_45]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_47]] - `contains` [EXTRACTED]
+- [[Purpose_151]] - `contains` [EXTRACTED]
+- [[Related_51]] - `contains` [EXTRACTED]
+- [[Responsibilities_48]] - `contains` [EXTRACTED]
+- [[Security Check Order (check_request)]] - `contains` [EXTRACTED]
+- [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

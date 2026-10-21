@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "KillSwitchMonitor"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/KillSwitchMonitor
 ---
 
 # Check if this is an immutable security file by name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_immutable_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

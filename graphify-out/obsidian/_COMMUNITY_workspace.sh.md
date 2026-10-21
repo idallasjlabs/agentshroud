@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[check_container()]] - code - docker/scripts/workspace.sh
-- [[cmd_cat()]] - code - docker/scripts/workspace.sh
-- [[cmd_cp_from()]] - code - docker/scripts/workspace.sh
-- [[cmd_cp_to()]] - code - docker/scripts/workspace.sh
-- [[cmd_ls()]] - code - docker/scripts/workspace.sh
-- [[cmd_mkdir()]] - code - docker/scripts/workspace.sh
-- [[cmd_rm()]] - code - docker/scripts/workspace.sh
-- [[cmd_shell()]] - code - docker/scripts/workspace.sh
-- [[cmd_tree()]] - code - docker/scripts/workspace.sh
-- [[main command dispatcher (case $COMMAND)]] - code - docker/scripts/workspace.sh
-- [[usage()_7]] - code - docker/scripts/workspace.sh
-- [[workspace.sh]] - code - docker/scripts/workspace.sh
-- [[workspace.sh script]] - code - docker/scripts/workspace.sh
+- [[Anti-Patterns to Flag_21]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Role_80]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Rules_22]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Test Structure_4]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[hermesskillsi-tddSKILL]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,9 @@ members: 13
 TABLE source_file, type FROM #community/workspacesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+
+## Top bridge nodes
+- [[Skill Test-Driven Development (TDD)_1]] - degree 8, connects to 1 community

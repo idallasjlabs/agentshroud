@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TestDomainValidationHelper (2)"
-location: "L162"
+community: "TelegramAPIProxy (2)"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper_2
+  - community/TelegramAPIProxy_2
 ---
 
 # .manager()
 
 ## Connections
-- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[TestKeyRotationManager]] - `method` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[TestInstructionNonce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

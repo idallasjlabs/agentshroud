@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Crash Recovery"
-location: "L130"
+community: "Mode A — Single task (3)"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Mode_A__Single_task_3
 ---
 
 # Ledger Database
 
 ## Connections
-- [[Data Recovery]] - `contains` [EXTRACTED]
+- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

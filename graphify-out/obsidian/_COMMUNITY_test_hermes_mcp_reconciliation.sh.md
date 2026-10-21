@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[check()_2]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
-- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
-- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
+- [[buildSummary()]] - code - gateway/web/templates/installer.html
+- [[startInstall()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

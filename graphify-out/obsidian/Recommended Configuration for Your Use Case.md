@@ -1,19 +1,19 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "AgentShroud Brand Guidelines"
 location: "L485"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Recommended Configuration for Your Use Case
 
 ## Connections
-- [[Configuration_3]] - `contains` [EXTRACTED]
+- [[Configuration_2]] - `contains` [EXTRACTED]
 - [[Goals]] - `contains` [EXTRACTED]
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

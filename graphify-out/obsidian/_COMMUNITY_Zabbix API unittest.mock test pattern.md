@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Zabbix API unittest.mock test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[asb rollback]] - code - scripts/asb
 
 ## Live Query (requires Dataview plugin)
 

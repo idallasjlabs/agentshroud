@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/SKILL.md"
+source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L8"
+community: "ModeRequest (2)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/ModeRequest_2
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/ModeRequest_2

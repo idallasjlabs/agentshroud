@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py (2)"
 location: "L169"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy_2
 ---
 
 # plan_remediation()
@@ -23,13 +23,13 @@ tags:
 - [[dot-test_real_registry_plan_is_internally_consistent()]] - `calls` [INFERRED]
 - [[dot-test_separates_advisories_already_fixed_at_the_current_pin()]] - `calls` [INFERRED]
 - [[dot-test_unparseable_fixed_in_is_treated_as_not_remediable()]] - `calls` [INFERRED]
-- [[Any_78]] - `references` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
 - [[RemediationPlan dataclass]] - `references` [EXTRACTED]
 - [[Work out the minimum version bump that remediates the most advisories.      Only]] - `rationale_for` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 - [[parse_version()_1]] - `calls` [EXTRACTED]
 - [[test_auto_remediate_cves.py (CVE remediation planner tests)]] - `calls` [EXTRACTED]
 - [[test_real_registry_plan_is_internally_consistent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/plan_remediation
+#graphify/code #graphify/INFERRED #community/test_daily_cve_reportpy_2

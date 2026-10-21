@@ -1,17 +1,17 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Docker Commands Reference"
-location: "L134"
+community: "Mode A — Single task (4)"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/Mode_A__Single_task_4
 ---
 
 # Logs
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4

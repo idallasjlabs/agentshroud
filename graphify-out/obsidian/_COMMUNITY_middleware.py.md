@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Purpose_123]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[process_request Flow]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[1. URL Forwarder]] - document - browser-extension/README.md
+- [[2. Page Clipper]] - document - browser-extension/README.md
+- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
+- [[4. Tab Session Exporter]] - document - browser-extension/README.md
+- [[5. Reading List Queue]] - document - browser-extension/README.md
+- [[Browser Extension]] - document - browser-extension/README.md
+- [[Browser Support]] - document - browser-extension/README.md
+- [[Features_3]] - document - browser-extension/README.md
+- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
+- [[Gateway wiring]] - document - browser-extension/README.md
+- [[Privacy Features]] - document - browser-extension/README.md
+- [[Safari_6]] - document - browser-extension/README.md
+- [[Structure_1]] - document - browser-extension/README.md
+- [[Tests_3]] - document - browser-extension/README.md
+- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
+- [[browser-extensionREADME]] - document - browser-extension/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_dot-githubmcp.json]]
+- 1 edge to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Chart]]
 
 ## Top bridge nodes
-- [[middleware.py_2]] - degree 12, connects to 1 community
+- [[Browser Extension]] - degree 6, connects to 1 community
+- [[browser-extensionREADME]] - degree 4, connects to 1 community

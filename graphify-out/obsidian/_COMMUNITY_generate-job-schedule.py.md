@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
-- [[describe_cron()]] - code - scripts/generate-job-schedule.py
-- [[docker_exec()]] - code - scripts/generate-job-schedule.py
-- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
-- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
-- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
-- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
-- [[main()_3]] - code - scripts/generate-job-schedule.py
-- [[render_html()]] - code - scripts/generate-job-schedule.py
+- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
+- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
+- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
+- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
+- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
+- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
+- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
+- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
+- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 9
 TABLE source_file, type FROM #community/generate-job-schedulepy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Apple Services Setup Guide]]
+
+## Top bridge nodes
+- [[📱 Required Accounts & Services]] - degree 7, connects to 1 community

@@ -15,7 +15,7 @@ members: 22
 - [[dot-test_allows_safe_command()]] - code - gateway/tests/test_env_guard.py
 - [[dot-test_blocks_dollar_env()]] - code - gateway/tests/test_env_guard.py
 - [[dot-test_blocks_env_pipe()]] - code - gateway/tests/test_env_guard.py
-- [[dot-test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_blocks_printenv()]] - code - gateway/tests/test_env_guard.py
 - [[dot-test_blocks_proc_environ()]] - code - gateway/tests/test_env_guard.py
 - [[dot-test_blocks_proc_star_environ()]] - code - gateway/tests/test_env_guard.py
 - [[dot-test_clean_text_unchanged()]] - code - gateway/tests/test_env_guard.py
@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 4 edges to [[_COMMUNITY_test_playback_state.c]]
 
 ## Top bridge nodes
 - [[check_command()]] - degree 15, connects to 1 community

@@ -1,20 +1,79 @@
 ---
 type: community
-members: 7
+members: 66
 ---
 
 # AlertDispatcher (4)
 
-**Members:** 7 nodes
+**Members:** 66 nodes
 
 ## Members
-- [[dot-export_leakage_report()]] - code - gateway/security/env_guard.py
-- [[dot-get_leakage_summary()]] - code - gateway/security/env_guard.py
-- [[dot-monitor_environment_access()]] - code - gateway/security/env_guard.py
-- [[Any_8]] - code - gateway/security/env_guard.py
-- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
-- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
-- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
+- [[dot-test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_is_tty_and_default_format_for_tty()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_json()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_table_caps_columns_at_eight()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_table_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_table_empty_list()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_table_list_of_dicts()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_table_list_of_scalars()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_table_scalar()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_yaml()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_output_yaml_falls_back_to_json_without_pyyaml()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_print_table_empty_rows_is_noop()]] - code - gateway/tests/test_cli_coverage.py
+- [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
+- [[Add a user to a group.]] - rationale - gateway/cli/main.py
+- [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
+- [[Aggregate health report.]] - rationale - gateway/cli/main.py
+- [[Any_82]] - code - gateway/cli/main.py
+- [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
+- [[Get container logs for a service.]] - rationale - gateway/cli/main.py
+- [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
+- [[List all service containers with status.]] - rationale - gateway/cli/main.py
+- [[Print data in the requested format.]] - rationale - gateway/cli/main.py
+- [[Query recent security events.]] - rationale - gateway/cli/main.py
+- [[Restart a service container.]] - rationale - gateway/cli/main.py
+- [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
+- [[Set configuration values.]] - rationale - gateway/cli/main.py
+- [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
+- [[Show current risk score and level.]] - rationale - gateway/cli/main.py
+- [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
+- [[Stop a service container.]] - rationale - gateway/cli/main.py
+- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
+- [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
+- [[Trigger a security scan.]] - rationale - gateway/cli/main.py
+- [[_default_format()]] - code - gateway/cli/main.py
+- [[_is_tty()]] - code - gateway/cli/main.py
+- [[_output()]] - code - gateway/cli/main.py
+- [[_print_table()]] - code - gateway/cli/main.py
+- [[add()_1]] - code - gateway/cli/main.py
+- [[add_collaborator()_1]] - code - gateway/cli/main.py
+- [[add_group_member()_1]] - code - gateway/cli/main.py
+- [[approve()_3]] - code - gateway/cli/main.py
+- [[cli()]] - code - gateway/cli/main.py
+- [[climain.py]] - code - gateway/cli/main.py
+- [[deny()_3]] - code - gateway/cli/main.py
+- [[freeze()]] - code - gateway/cli/main.py
+- [[get()]] - code - gateway/cli/main.py
+- [[get_correlation()]] - code - gateway/cli/main.py
+- [[get_egress_pending()_1]] - code - gateway/cli/main.py
+- [[get_events()]] - code - gateway/cli/main.py
+- [[get_groups()]] - code - gateway/cli/main.py
+- [[get_health()_1]] - code - gateway/cli/main.py
+- [[get_logs()_1]] - code - gateway/cli/main.py
+- [[get_risk()]] - code - gateway/cli/main.py
+- [[get_services()]] - code - gateway/cli/main.py
+- [[get_users()]] - code - gateway/cli/main.py
+- [[main()_33]] - code - gateway/cli/main.py
+- [[restart()_1]] - code - gateway/cli/main.py
+- [[restart_service()_2]] - code - gateway/cli/main.py
+- [[scan()]] - code - gateway/cli/main.py
+- [[set()]] - code - gateway/cli/main.py
+- [[set_mode()_1]] - code - gateway/cli/main.py
+- [[stop()]] - code - gateway/cli/main.py
+- [[stop_service()_2]] - code - gateway/cli/main.py
+- [[tail()_1]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +83,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 9 edges to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
+- 5 edges to [[_COMMUNITY_OpenClaw and Hermes are processed on fully separate paths; one failing never…]]
+- 1 edge to [[_COMMUNITY_→ {site site1, test_mode True, output_prefix _testsite1}]]
 
 ## Top bridge nodes
-- [[dot-get_leakage_summary()]] - degree 4, connects to 1 community
-- [[dot-export_leakage_report()]] - degree 3, connects to 1 community
-- [[dot-monitor_environment_access()]] - degree 3, connects to 1 community
+- [[climain.py]] - degree 33, connects to 3 communities
+- [[TestOutputHelpers]] - degree 14, connects to 2 communities
+- [[cli()]] - degree 7, connects to 2 communities
+- [[tail()_1]] - degree 5, connects to 2 communities
+- [[_output()]] - degree 31, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ProxyDashboard"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ProxyDashboard
 ---
 
 # ._take_screenshot()
@@ -15,6 +15,6 @@ tags:
 - [[dot-navigate()_2]] - `calls` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 - [[Take screenshot and save to audit directory_2]] - `rationale_for` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

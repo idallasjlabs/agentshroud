@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Configured Hosts_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Key Class `SSHProxy`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Purpose_195]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Related Notes_74]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Responsibilities_58]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Security Notes_8]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[`execute(host str, command str, session_id str) → SSHExecResult`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[ssh_proxy.py_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[ssh_proxy.py]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Kawaii Face Basic Cycle Example Root CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt
+- [[Kawaii Face Basic Cycle Main Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/CMakeLists.txt
+- [[LVGL 9.x Graphics Library Dependency]] - concept - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
+- [[LVGL Kawaii Face Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/CMakeLists.txt
+- [[LVGL Kawaii Face IDF Component Manifest (v1.0.0)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
+- [[Voice Terminal Main Component CMakeLists (app_main, audio, ota, ui_face)]] - code - firmware/voice-terminal/main/CMakeLists.txt
+- [[Voice Terminal Main IDF Component Manifest]] - code - firmware/voice-terminal/main/idf_component.yml
+- [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - concept - firmware/voice-terminal/main/idf_component.yml
+- [[esp-sr Speech Recognition Library (WakeNet WN9)]] - concept - firmware/voice-terminal/main/idf_component.yml
 
 ## Live Query (requires Dataview plugin)
 

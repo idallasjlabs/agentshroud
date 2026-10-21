@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PipelineAction"
+community: "ApprovalQueueConfig"
 location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # .test_audit_chain_hash_chained()
@@ -16,4 +16,4 @@ tags:
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestE2E08AuditChainIntegrity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

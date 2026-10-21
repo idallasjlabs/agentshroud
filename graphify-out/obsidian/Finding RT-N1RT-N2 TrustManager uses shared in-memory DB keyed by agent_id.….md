@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (3)"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_3
 ---
 
 # Finding RT-N1/RT-N2: TrustManager uses shared in-memory DB keyed by agent_id.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCrossBotTrustPivot]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_3

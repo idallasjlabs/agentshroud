@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Daily Competitive Analysis Email]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[v1.0.0 Fortress]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "concept"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # ADR-005: SHA-256 Hash Chain Audit Integrity
@@ -22,4 +22,4 @@ tags:
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]
 - [[ledger.py (audit trail, SHA-256 hashing)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

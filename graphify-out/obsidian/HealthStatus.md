@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_soc_router_coverage.py"
 location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # HealthStatus
@@ -17,4 +17,4 @@ tags:
 - [[ServiceStatus_1]] - `uses` [INFERRED]
 - [[_engine_health_to_health()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/test_soc_router_coveragepy

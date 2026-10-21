@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "installer.py (2)"
-location: "L19"
+community: "lifespan() (3)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy_2
+  - community/lifespan_3
 ---
 
 # Key Features
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy_2
+#graphify/document #graphify/EXTRACTED #community/lifespan_3

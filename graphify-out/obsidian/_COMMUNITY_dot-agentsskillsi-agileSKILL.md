@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # .agents/skills/i-agile/SKILL.md
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-agentsskillsi-agileSKILL]] - document - .agents/skills/i-agile/SKILL.md
-- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
+- [[dot-test_handle_callback_approve_1h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_approve_4h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling 1-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,3 +18,10 @@ members: 2
 TABLE source_file, type FROM #community/agents/skills/i-agile/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_apply-patches.js]]
+
+## Top bridge nodes
+- [[dot-test_handle_callback_approve_1h()]] - degree 2, connects to 1 community
+- [[dot-test_handle_callback_approve_4h()]] - degree 2, connects to 1 community

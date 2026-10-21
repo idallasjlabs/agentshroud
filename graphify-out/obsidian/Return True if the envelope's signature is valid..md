@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (2)"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_2
 ---
 
 # Return True if the envelope's signature is valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-verify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

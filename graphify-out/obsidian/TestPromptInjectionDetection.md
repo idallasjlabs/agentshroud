@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestPromptInjectionDetection
@@ -24,7 +24,7 @@ tags:
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

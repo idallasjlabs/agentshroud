@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # .allowed()
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyDecision]] - `method` [EXTRACTED]
 - [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L837-L859"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # _run_stream (StreamHead test harness)
@@ -23,4 +23,4 @@ tags:
 - [[test_streaming_with_head_reports_200_then_chunks]] - `calls` [EXTRACTED]
 - [[test_streaming_with_head_reports_upstream_400_and_body]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

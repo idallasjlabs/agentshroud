@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-test_compact_timestamp_normalised_to_iso()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_critical_and_warning_statuses()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_garbage_timestamp_falls_back_to_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Container Won't Start]] - document - docs/operations/deployment-procedure.md
+- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
+- [[Port Already in Use_1]] - document - docs/operations/deployment-procedure.md
+- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
+- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
 
 ## Top bridge nodes
-- [[TestOpenscapSummary]] - degree 5, connects to 1 community
-- [[dot-test_compact_timestamp_normalised_to_iso()]] - degree 2, connects to 1 community
-- [[dot-test_critical_and_warning_statuses()]] - degree 2, connects to 1 community
-- [[dot-test_garbage_timestamp_falls_back_to_mtime()]] - degree 2, connects to 1 community
+- [[Troubleshooting Common Issues]] - degree 5, connects to 1 community

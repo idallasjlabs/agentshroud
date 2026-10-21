@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "test_agent_cve_registry.py"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/test_agent_cve_registrypy
 ---
 
 # test_admin_action_requires_approval()
@@ -15,4 +15,4 @@ tags:
 - [[Probe 1.1c admin_action must require approval or be trust-blocked.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

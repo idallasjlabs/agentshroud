@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Obsidian Vault Export (opt-in --obsidian)"
+community: "Diagram 22: Dependency Graph"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Obsidian_Vault_Export_opt-in_--obsidian
+  - community/Diagram_22_Dependency_Graph
 ---
 
 # Obsidian Vault Export (opt-in --obsidian)
 
-#graphify/concept #graphify/EXTRACTED #community/Obsidian_Vault_Export_opt-in_--obsidian
+#graphify/concept #graphify/EXTRACTED #community/Diagram_22_Dependency_Graph

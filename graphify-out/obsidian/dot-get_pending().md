@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[Get all pending (not expired, not decided) items          First expires any stal]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

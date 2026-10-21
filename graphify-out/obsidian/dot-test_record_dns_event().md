@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "_wrap_response() (3)"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/_wrap_response_3
 ---
 
 # .test_record_dns_event()
@@ -15,4 +15,4 @@ tags:
 - [[EgressEvent]] - `calls` [EXTRACTED]
 - [[TestEventRecording]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_3

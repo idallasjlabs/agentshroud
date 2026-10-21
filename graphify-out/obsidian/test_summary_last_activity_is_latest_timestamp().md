@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
+community: "DELIVERABLE 1 — Domain-by-Domain Assessment"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/DELIVERABLE_1__Domain-by-Domain_Assessment
 ---
 
 # test_summary_last_activity_is_latest_timestamp()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/DELIVERABLE_1__Domain-by-Domain_Assessment

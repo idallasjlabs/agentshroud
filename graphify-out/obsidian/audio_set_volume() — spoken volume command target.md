@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "audio_set_volume() — spoken volume command target"
+community: "test_wakeword_state/stubs/audio.h"
 location: "line 168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/audio_set_volume__spoken_volume_command_target
+  - community/test_wakeword_state/stubs/audioh
 ---
 
 # audio_set_volume() — spoken volume command target
 
-#graphify/code #graphify/EXTRACTED #community/audio_set_volume__spoken_volume_command_target
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/audioh

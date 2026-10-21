@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
+community: "TestMultilingualInjection"
 location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/TestMultilingualInjection
 ---
 
 # Usage
@@ -21,4 +21,4 @@ tags:
 - [[Test Chat]] - `contains` [EXTRACTED]
 - [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection

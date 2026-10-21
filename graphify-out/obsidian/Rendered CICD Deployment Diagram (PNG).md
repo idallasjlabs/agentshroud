@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.png"
 type: "image"
-community: "02-infrastructure.md"
+community: "AgentShroud™ — Project Knowledge Base"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # Rendered CI/CD Deployment Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Deployment Diagram — What Runs Where]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/image #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

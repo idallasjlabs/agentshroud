@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[dot-__aenter__()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__aenter__()_3]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__aexit__()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__aexit__()_3]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__init__()_11]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__init__()_12]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-stream()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Stands in for httpx.AsyncClient inside LLMProxy._stream().]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_FakeStreamClient]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_FakeStreamResponse]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 3 edges to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_SecureBrowser (4)]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 
 ## Top bridge nodes
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community
+- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - degree 8, connects to 5 communities
+- [[_FakeStreamClient]] - degree 7, connects to 1 community
+- [[_FakeStreamResponse]] - degree 7, connects to 1 community

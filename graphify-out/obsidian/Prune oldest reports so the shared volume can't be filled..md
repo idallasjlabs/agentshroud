@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "rationale"
-community: "ReportStore"
+community: "test_dashboard.py"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/test_dashboardpy
 ---
 
 # Prune oldest reports so the shared volume can't be filled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_enforce_count_cap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

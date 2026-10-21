@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "TrustConfig (2)"
-location: "L159"
+community: "browser/scripts/browse.py (2)"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/browser/scripts/browsepy_2
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[SubagentEvent]] - `references` [EXTRACTED]
-- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[Return complete audit log]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2

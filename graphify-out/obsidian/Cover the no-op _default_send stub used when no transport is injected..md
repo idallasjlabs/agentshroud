@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "test_a2a_proxy.py"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_a2a_proxypy
 ---
 
 # Cover the no-op _default_send stub used when no transport is injected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupApprovalRouterDefaultSend]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

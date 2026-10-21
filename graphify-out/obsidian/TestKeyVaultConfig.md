@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (3)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_3
 ---
 
 # TestKeyVaultConfig
 
 ## Connections
-- [[dot-test_default_config()_5]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_8]] - `method` [EXTRACTED]
 - [[KeyInjector]] - `uses` [INFERRED]
 - [[KeyLeakDetector]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

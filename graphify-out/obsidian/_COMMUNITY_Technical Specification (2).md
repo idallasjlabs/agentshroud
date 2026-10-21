@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[API Call Structure_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Apollo — Audio Systems Producer_4]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Audio Quality Settings_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Error Handling_8]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Input Requirements_15]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Output_8]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Primary API Text-to-Dialogue_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Quality Checklist_12]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Quick Mode Create Podcast API_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Role_75]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Script Parsing_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Technical Specification_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Voice Configuration_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[openclawskillsi-apolloSKILL]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[auditLogging]] - code - skills/custom/browser-fetch/skill.json
+- [[author]] - code - skills/custom/browser-fetch/skill.json
+- [[dependencies_20]] - code - skills/custom/browser-fetch/skill.json
+- [[description_11]] - code - skills/custom/browser-fetch/skill.json
+- [[filesystemAccess]] - code - skills/custom/browser-fetch/skill.json
+- [[keywords]] - code - skills/custom/browser-fetch/skill.json
+- [[name_2]] - code - skills/custom/browser-fetch/skill.json
+- [[networkAccess]] - code - skills/custom/browser-fetch/skill.json
+- [[playwright_2]] - code - skills/custom/browser-fetch/skill.json
+- [[requiresApproval]] - code - skills/custom/browser-fetch/skill.json
+- [[security_11]] - code - skills/custom/browser-fetch/skill.json
+- [[skill.json]] - code - skills/custom/browser-fetch/skill.json
+- [[tools]] - code - skills/custom/browser-fetch/skill.json
+- [[version_4]] - code - skills/custom/browser-fetch/skill.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,3 @@ members: 14
 TABLE source_file, type FROM #community/Technical_Specification_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Apollo — Audio Systems Producer_4]] - degree 7, connects to 1 community

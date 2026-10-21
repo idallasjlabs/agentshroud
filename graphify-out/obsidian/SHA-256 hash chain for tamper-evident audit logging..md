@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig"
 location: "L132"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig
 ---
 
 # SHA-256 hash chain for tamper-evident audit logging.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditChain]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

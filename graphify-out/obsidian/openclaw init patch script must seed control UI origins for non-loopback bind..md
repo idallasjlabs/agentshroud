@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # openclaw init patch script must seed control UI origins for non-loopback bind.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_openclaw_patch_script_sets_control_ui_allowed_origins()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig

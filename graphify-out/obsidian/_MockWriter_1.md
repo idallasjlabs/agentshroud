@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "_pcm_bytes"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/_pcm_bytes
 ---
 
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_202]] - `method` [EXTRACTED]
-- [[dot-close()_20]] - `method` [EXTRACTED]
-- [[dot-drain()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_176]] - `method` [EXTRACTED]
+- [[dot-close()_15]] - `method` [EXTRACTED]
+- [[dot-drain()_2]] - `method` [EXTRACTED]
 - [[dot-get_extra_info()_1]] - `method` [EXTRACTED]
-- [[dot-write()_3]] - `method` [EXTRACTED]
+- [[dot-write()_2]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
 - [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

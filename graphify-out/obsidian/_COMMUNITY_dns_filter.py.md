@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Allowlist Behavior]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Audit Log]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Configuration (DNSFilterConfig)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[DNSFilter._detect_tunneling(domain)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[DNSFilter.check(domain, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[EntropyCalculator.shannon_entropy(s)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Environment Variables_10]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Function Details_18]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Mode Enforce vs Monitor_6]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Purpose_128]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Related_24]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Threat Model_14]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[dns_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[dns_filter.py]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Constraints_3]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Evidence_3]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Problem_5]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Severity_6]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Verification_9]] - document - docs/planning/redteam/05-credential-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

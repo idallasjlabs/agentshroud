@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "hermes/SOUL.md"
+community: "test_ptt_state.c"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/test_ptt_statec
 ---
 
 # OpenClaw/AgentShroud Bot Identity
@@ -19,4 +19,4 @@ tags:
 - [[raspberrypi (per openclaw-identity.md)]] - `references` [EXTRACTED]
 - [[trillian (per openclaw-identity.md)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/test_ptt_statec

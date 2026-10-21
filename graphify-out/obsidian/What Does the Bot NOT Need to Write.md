@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "AgentShroud Brand Guidelines"
 location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # What Does the Bot NOT Need to Write?
@@ -15,4 +15,4 @@ tags:
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 - [[❌ System Directories (Read-Only in Production)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

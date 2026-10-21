@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server atlassian-idallasj]] - code - .mcp.json
+- [[DevSecOps Skill]] - document - .agents/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

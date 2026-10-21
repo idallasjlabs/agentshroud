@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Local-Model Job Quality Matrix"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # graphify reference: add a URL and watch a folder
@@ -17,4 +17,4 @@ tags:
 - [[openclawskillsgraphifyreferencesadd-watch]] - `contains` [EXTRACTED]
 - [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[LLM writes its own Whisper domain-hint prompt]] - rationale - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[patch_edge_tts_proxy.py]] - code - docker/bots/hermes/patch_edge_tts_proxy.py
 
 ## Live Query (requires Dataview plugin)
 

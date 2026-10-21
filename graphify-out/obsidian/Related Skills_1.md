@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect (5)"
+community: "AgentTarget (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_5
+  - community/AgentTarget_2
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_5
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L167"
+community: "KillSwitchMonitor"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

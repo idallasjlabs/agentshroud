@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "OpenClaw Bot SSH Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Production Safety Checklist (PROD-SAFETY)
 
 ## Connections
-- [[Purpose_71]] - `contains` [EXTRACTED]
-- [[Related Skills_55]] - `contains` [EXTRACTED]
-- [[Usage_59]] - `contains` [EXTRACTED]
+- [[Purpose_69]] - `contains` [EXTRACTED]
+- [[Related Skills_54]] - `contains` [EXTRACTED]
+- [[Usage_56]] - `contains` [EXTRACTED]
 - [[hermesskillsi-psREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

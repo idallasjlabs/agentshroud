@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "i-incident-response SKILL (stub)"
+community: "graphify clone command"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/i-incident-response_SKILL_stub
+  - community/graphify_clone_command
 ---
 
 # i-incident-response SKILL (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-kaizen SKILL (stub)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/i-incident-response_SKILL_stub
+#graphify/document #graphify/INFERRED #community/graphify_clone_command

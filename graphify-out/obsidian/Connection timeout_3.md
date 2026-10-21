@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "iCloud Services (4)"
-location: "L147"
+community: "TestOutboundClassifierHelpers"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_4
+  - community/TestOutboundClassifierHelpers
 ---
 
 # "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_23]] - `contains` [EXTRACTED]
+- [[🔍 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_4
+#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

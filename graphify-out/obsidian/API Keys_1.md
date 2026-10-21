@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Quick Reference Commands"
+community: "test_llm_proxy_thinking_suppression.py"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/test_llm_proxy_thinking_suppressionpy
 ---
 
 # API Keys
@@ -15,4 +15,4 @@ tags:
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/test_llm_proxy_thinking_suppressionpy

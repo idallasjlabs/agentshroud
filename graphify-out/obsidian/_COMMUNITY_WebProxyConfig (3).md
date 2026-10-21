@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[dot-_s()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_empty_after_normalise_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_empty_string_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_long_sentence_wrapped_at_max_chars()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_multi_sentence_returns_ordered_chunks()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_per_chunk_normalisation()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_short_fragment_merged_forward()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_single_sentence_returns_one_chunk()]] - code - gateway/tests/test_voice_gateway.py
+- [[A fragment under 12 chars is merged into the following chunk.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[TestSplitForSpeech]] - code - gateway/tests/test_voice_gateway.py
+- [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[split_for_speech normalises the full text so no markdown or tokens survive.]] - rationale - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_WebProxyConfig]]
-- 2 edges to [[_COMMUNITY_ProxyAction]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Verification (13-check driver)]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 3 communities
+- [[TestSplitForSpeech]] - degree 10, connects to 1 community
+- [[dot-_s()]] - degree 9, connects to 1 community

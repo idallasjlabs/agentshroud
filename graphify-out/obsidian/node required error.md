@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Canvas Skill"
+community: "test_security_toolchain.py"
 location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/test_security_toolchainpy
 ---
 
 # "node required" error
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Debugging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy

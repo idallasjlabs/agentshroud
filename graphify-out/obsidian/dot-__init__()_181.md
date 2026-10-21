@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "AsyncMock"
-location: "L96"
+community: "KillSwitchMonitor (3)"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/KillSwitchMonitor_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[FakeProcess]] - `method` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

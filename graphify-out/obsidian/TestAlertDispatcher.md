@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestAlertDispatcher"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
 location: "L878"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
 ---
 
 # TestAlertDispatcher
@@ -27,4 +27,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List

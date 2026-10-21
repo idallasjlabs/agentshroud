@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
-location: "L73"
+community: "AgentShroud -- USPTO Provisional Patent Application"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # System Prompt
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

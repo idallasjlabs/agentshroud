@@ -8,25 +8,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[Assigning Work_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[CHANGELOG.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Continuity Files_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Definition of Done (from CLAUDE.md)]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Escalation_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Known Risks_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Project Roadmap_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Quick Status (for chatTelegram)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[README.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Risk Management_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Role_54]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Skill Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Status Reporting_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Task Coordination_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Tracking Format_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE.md` (always current)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[hermesskillsi-pmSKILL]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Assigning Work_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Continuity Files_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Definition of Done (from CLAUDE.md)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Escalation_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Known Risks_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Project Roadmap_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[README.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Risk Management_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Role_56]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Status Reporting_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Task Coordination_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Tracking Format_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[openclawskillsi-pmSKILL]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Skill Project Management (PM)_1]] - degree 8, connects to 1 community
+- [[Skill Project Management (PM)_2]] - degree 8, connects to 1 community

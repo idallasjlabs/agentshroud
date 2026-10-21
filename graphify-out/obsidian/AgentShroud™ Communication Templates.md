@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "AgentShroud™ Communication Templates"
+community: "voice_task"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/voice_task
 ---
 
 # AgentShroud™ Communication Templates
@@ -20,4 +20,4 @@ tags:
 - [[Option 4 — Documentation Footer]] - `contains` [EXTRACTED]
 - [[Usage Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/document #graphify/EXTRACTED #community/voice_task

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestStreamingProxyStatusPropagation"
+community: "TestLoadAllSecretFileValues"
 location: "L816"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStreamingProxyStatusPropagation
+  - community/TestLoadAllSecretFileValues
 ---
 
 # _g()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_gen()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation
+#graphify/code #graphify/EXTRACTED #community/TestLoadAllSecretFileValues

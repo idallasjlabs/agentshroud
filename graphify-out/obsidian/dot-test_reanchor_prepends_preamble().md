@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig (2)"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig_2
 ---
 
 # .test_reanchor_prepends_preamble()
@@ -15,4 +15,4 @@ tags:
 - [[Re-anchoring prepends a security notice to the system prompt.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPromptReanchoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
+community: "RateLimitGuard"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/RateLimitGuard
 ---
 
 # Level 2 → Level 3
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Automatic Progression Criteria]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/RateLimitGuard

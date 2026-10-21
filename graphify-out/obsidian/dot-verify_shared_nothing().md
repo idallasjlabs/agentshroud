@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry (2)"
+community: "KeyRotationManager (2)"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/KeyRotationManager_2
 ---
 
 # .verify_shared_nothing()
@@ -20,4 +20,4 @@ tags:
 - [[IsolationCheck]] - `references` [EXTRACTED]
 - [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

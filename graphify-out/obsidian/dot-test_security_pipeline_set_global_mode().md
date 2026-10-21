@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor (4)"
+community: "EgressFilterConfig (4)"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_4
+  - community/EgressFilterConfig_4
 ---
 
 # .test_security_pipeline_set_global_mode()
@@ -16,4 +16,4 @@ tags:
 - [[Test SecurityPipeline.set_global_mode method.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_4
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

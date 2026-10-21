@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # Append to a group's shared memory, gated by member access (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-append_group_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

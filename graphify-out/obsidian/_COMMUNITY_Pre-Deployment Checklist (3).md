@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[1. Change Documentation_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[2. Testing Evidence_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[4. Blast Radius_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[5. Observability_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[6. Security_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[7. Communication_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[8. Service Control Commands_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Invoke Before_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Role_45]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Sign-Off_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[openclawskillsi-psSKILL]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[25-Domain Prompt Injection Defense Framework_1]] - concept - docs/agentshroud-knowledge.md
+- [[34 Security Modules Pipeline (P0-P3)]] - concept - docs/claude-security-audit-prompt.md
+- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
+- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
+- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
+- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
+- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
+- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[PII Sanitizer (user-facing description)]] - concept - docs/user-guide.md
+- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
+- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
+- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
+- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
+- [[Steve Hay's External Reviewer Findings]] - concept - docs/claude-security-audit-prompt.md
+- [[egress_filter module]] - concept - docs/claude-security-audit-prompt.md
+- [[pii_sanitizer module (disabled — false positives)]] - concept - docs/claude-security-audit-prompt.md
+- [[prompt_guard module (observatory mode — too aggressive for enforce)]] - concept - docs/claude-security-audit-prompt.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task (3)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
 
 ## Top bridge nodes
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - degree 7, connects to 1 community
+- [[34 Security Modules Pipeline (P0-P3)]] - degree 6, connects to 1 community
+- [[Collaborator Session Isolation (blocked functionsskills)]] - degree 2, connects to 1 community
+- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - degree 2, connects to 1 community

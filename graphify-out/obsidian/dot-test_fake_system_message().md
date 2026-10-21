@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response()"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response
 ---
 
 # .test_fake_system_message()
 
 ## Connections
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestContextGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

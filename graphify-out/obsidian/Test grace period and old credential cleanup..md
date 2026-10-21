@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "env_guard.py"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/env_guardpy
 ---
 
 # Test grace period and old credential cleanup.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_grace_period_cleanup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/rationale #graphify/EXTRACTED #community/env_guardpy

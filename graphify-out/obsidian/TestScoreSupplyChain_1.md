@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "_mock_dir_with_files"
+community: "OpenSCAP"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_mock_dir_with_files
+  - community/OpenSCAP
 ---
 
 # TestScoreSupplyChain
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_zero_without_sbom()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_files
+#graphify/code #graphify/EXTRACTED #community/OpenSCAP

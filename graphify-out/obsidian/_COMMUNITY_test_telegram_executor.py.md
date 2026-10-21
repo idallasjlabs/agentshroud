@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Accessibility_1]] - document - branding/guidelines/brand-guidelines.md
+- [[Animation Guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[CSS Reference]] - document - branding/guidelines/brand-guidelines.md
+- [[Color Usage]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Animation Constraints]] - document - branding/guidelines/brand-guidelines.md
+- [[Motion Principles]] - document - branding/guidelines/brand-guidelines.md
+- [[Primary Color Application]] - document - branding/guidelines/brand-guidelines.md
+- [[Status & Feedback Animations]] - document - branding/guidelines/brand-guidelines.md
+- [[Timing & Easing]] - document - branding/guidelines/brand-guidelines.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 2 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 2 edges to [[_COMMUNITY_AgentShroud Agentic OS]]
 
 ## Top bridge nodes
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community
+- [[Animation Guidelines]] - degree 8, connects to 2 communities
+- [[Color Usage]] - degree 4, connects to 2 communities

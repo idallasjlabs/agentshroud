@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "CrossBotTrustLedger"
+community: "A2AGovernanceProxy"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/A2AGovernanceProxy
 ---
 
 # Default propagation policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L3094"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # Use Claude. What's on my calendar?' must switch the model AND route     the rema
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_use_model_command_with_chained_question()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

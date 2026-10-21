@@ -12,13 +12,13 @@ tags:
 # AlertLevel
 
 ## Connections
-- [[dot-_trigger_alert()_1]] - `references` [EXTRACTED]
+- [[dot-_trigger_alert()]] - `references` [EXTRACTED]
 - [[Alert severity levels.]] - `rationale_for` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `uses` [INFERRED]
 - [[TestResponseConsistency]] - `uses` [INFERRED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

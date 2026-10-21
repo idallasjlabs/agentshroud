@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "CompetitiveIntelReport"
+community: "KillSwitchMonitor (3)"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/KillSwitchMonitor_3
 ---
 
 # A single competitor record in a competitive intel report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitorEntry_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_soc_router_coverage.py"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # ResourceUsage
 
 ## Connections
 - [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

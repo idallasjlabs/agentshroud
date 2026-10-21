@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "asyncio"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/asyncio
 ---
 
 # SubagentEventType
 
 ## Connections
 - [[dot-_log_event()]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -25,14 +25,14 @@ tags:
 - [[TestKillSwitch]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestPermissionMonitoring]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
 - [[TestSubagentMonitorConfig]] - `uses` [INFERRED]
 - [[TestSubagentTracking]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/asyncio

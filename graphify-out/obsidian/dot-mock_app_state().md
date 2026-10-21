@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (3)"
+community: "SkillGuard"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_3
+  - community/SkillGuard
 ---
 
 # .mock_app_state()
@@ -16,4 +16,4 @@ tags:
 - [[Mock app_state with egress approval queue.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_3
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

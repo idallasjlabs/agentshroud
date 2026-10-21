@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPT Codex — QA  Support Engineer  Tertiary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPTCodex — TertiaryQA Support Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Gemini CLI — Test Engineer  Secondary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[TeamAgent Role Structure Diagram]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[Constraints_8]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Content Requirements_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Header_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Objective_4]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Role_98]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Safety_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Skill Pull Request (PR) Generator_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Technical Detail_1]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[hermesskillsi-prSKILL]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 9
 TABLE source_file, type FROM #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+
+## Top bridge nodes
+- [[Skill Pull Request (PR) Generator_1]] - degree 6, connects to 1 community

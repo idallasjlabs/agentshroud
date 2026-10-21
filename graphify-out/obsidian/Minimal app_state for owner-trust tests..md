@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "AgentTarget (3)"
+community: "TestEmailSend"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/TestEmailSend
 ---
 
 # Minimal app_state for owner-trust tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_trust_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend

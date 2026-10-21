@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_agent_cve_registry.py (integrity guard suite)]] - code - gateway/tests/test_agent_cve_registry.py
+- [[Any_21]] - code
 
 ## Live Query (requires Dataview plugin)
 

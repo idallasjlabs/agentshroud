@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L8605"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # _quarantine_blocked_message must NOT increment lockdown count for immune users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_immune_user_lockdown_not_incremented()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

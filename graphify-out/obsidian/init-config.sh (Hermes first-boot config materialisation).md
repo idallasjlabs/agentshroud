@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "test_hermes_cron_seed.py (2)"
+community: "TestFabricatedSecurityNotice (2)"
 location: "L1-L767"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy_2
+  - community/TestFabricatedSecurityNotice_2
 ---
 
 # init-config.sh (Hermes first-boot config materialisation)
@@ -24,4 +24,4 @@ tags:
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy_2
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2

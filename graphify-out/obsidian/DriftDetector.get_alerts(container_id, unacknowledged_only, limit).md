@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "drift_detector.py"
+community: "Known Log Messages"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Known_Log_Messages
 ---
 
 # DriftDetector.get_alerts(container_id, unacknowledged_only, limit)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

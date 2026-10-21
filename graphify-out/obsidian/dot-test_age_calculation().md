@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "TestDomainValidationHelper"
+community: "AgentShroud Documentation"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/AgentShroud_Documentation
 ---
 
 # .test_age_calculation()
@@ -16,4 +16,4 @@ tags:
 - [[Test credential age calculation.]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialInfo]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation

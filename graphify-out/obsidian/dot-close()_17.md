@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L102"
+community: "ContextSegment"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/ContextSegment
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesTargetWriter]] - `method` [EXTRACTED]
-- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

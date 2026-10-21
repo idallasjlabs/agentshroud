@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "hermes/skills/i-chaos-engineering/SKILL.md"
+community: "hermes/skills/i-scrum/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-chaos-engineering/SKILLmd
+  - community/hermes/skills/i-scrum/SKILLmd
 ---
 
 # Skill: chaos-engineering
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermesskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-chaos-engineering/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-scrum/SKILLmd

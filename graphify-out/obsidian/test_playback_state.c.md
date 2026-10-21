@@ -1,19 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "test_playback_state.c"
+community: "AgentShroud Device Pairing Management"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # test_playback_state.c
 
 ## Connections
 - [[face_set_state()]] - `contains` [EXTRACTED]
-- [[main()_12]] - `contains` [EXTRACTED]
+- [[main()_13]] - `contains` [EXTRACTED]
 - [[playback_step()]] - `contains` [EXTRACTED]
 - [[reset_all()]] - `contains` [EXTRACTED]
 - [[test_drain_clears_playing_and_returns_idle()]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[vt_agent_count()]] - `contains` [EXTRACTED]
 - [[vt_remote_log()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

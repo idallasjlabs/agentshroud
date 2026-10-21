@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "GovernanceAction"
+community: "TestCanvasAuthHelpers"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/TestCanvasAuthHelpers
 ---
 
 # Authorize a subagent spawn. Returns (allowed, reason).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-authorize_spawn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction
+#graphify/rationale #graphify/EXTRACTED #community/TestCanvasAuthHelpers

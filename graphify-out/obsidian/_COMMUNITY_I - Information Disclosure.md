@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[I - Information Disclosure]] - document - docs/security/threat-model.md
-- [[Threat DNS Data Exfiltration]] - document - docs/security/threat-model.md
-- [[Threat Environment Variable Leakage]] - document - docs/security/threat-model.md
-- [[Threat PII Leakage in Logs]] - document - docs/security/threat-model.md
-- [[Threat SSRF (Server-Side Request Forgery)]] - document - docs/security/threat-model.md
+- [[Collaborator System (multi-user agentic workspace)]] - concept - docs/agentshroud-knowledge.md
+- [[Dashboard Overview (request volume, security events, audit trail)]] - concept - docs/user-guide.md
+- [[Kill Switch (freezeshutdowndisconnect)]] - concept - docs/user-guide.md
+- [[OpenClaw — primary integration target agent]] - concept - docs/agentshroud-knowledge.md
+- [[SOC Command Center — Five Pillars]] - concept - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/I_-_Information_Disclosure
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
-
-## Top bridge nodes
-- [[I - Information Disclosure]] - degree 5, connects to 1 community

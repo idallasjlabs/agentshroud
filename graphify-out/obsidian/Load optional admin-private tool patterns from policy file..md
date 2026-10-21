@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "CrossBotTrustLedger"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/CrossBotTrustLedger
 ---
 
 # Load optional admin-private tool patterns from policy file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_privacy_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

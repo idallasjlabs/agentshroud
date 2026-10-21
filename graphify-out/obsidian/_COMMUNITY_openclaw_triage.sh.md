@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[log()_3]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
-- [[save_cmd()]] - code - scripts/openclaw_triage.sh
-- [[save_shell()]] - code - scripts/openclaw_triage.sh
+- [[Purpose_56]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Related Skills_42]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Usage_45]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[openclawskillsi-secREADME]] - document - docker/config/openclaw/skills/i-sec/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,9 @@ members: 5
 TABLE source_file, type FROM #community/openclaw_triagesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_soc.js]]
+
+## Top bridge nodes
+- [[Security Review (SEC)_2]] - degree 5, connects to 1 community

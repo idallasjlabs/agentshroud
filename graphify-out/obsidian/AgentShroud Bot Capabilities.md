@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Trademark Statements"
+community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trademark_Statements
+  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
 ---
 
 # AgentShroud Bot Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trademark_Statements
+#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE

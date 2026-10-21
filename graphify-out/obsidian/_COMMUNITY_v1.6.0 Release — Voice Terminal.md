@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+members: 6
 ---
 
 # v1.6.0 Release — Voice Terminal
 
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Audio clicking fix — TTS resume dedup + dither + voice-gateway cpuset widen]] - rationale - CHANGELOG.md
-- [[ESP32 live model label fix — server-authoritative label push]] - rationale - CHANGELOG.md
-- [[Firmware TLS connect reliability — timeout 5s to 10s (DERP handshake race)]] - rationale - CHANGELOG.md
-- [[Streaming direct voice path (_call_llm_stream) — avoids blocking full-reply wait]] - rationale - CHANGELOG.md
-- [[v1.6.0 Release — Voice Terminal]] - rationale - CHANGELOG.md
+- [[check()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
+- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
 
 ## Live Query (requires Dataview plugin)
 

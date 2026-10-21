@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # lifespan()
@@ -19,4 +19,4 @@ tags:
 - [[chatbotmain.py]] - `contains` [EXTRACTED]
 - [[load_persona_files()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

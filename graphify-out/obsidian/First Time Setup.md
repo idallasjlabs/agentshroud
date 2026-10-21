@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "First Time Setup"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Error_Indexmd
 ---
 
 # First Time Setup.md
@@ -16,4 +16,4 @@ tags:
 - [[Restart Procedure_1]] - `references` [EXTRACTED]
 - [[Startup Errors]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

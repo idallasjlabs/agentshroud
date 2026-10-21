@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
+community: "model_usage.py"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements_2
+  - community/model_usagepy
 ---
 
 # Skill: Branding Specialist (BS)
@@ -16,9 +16,9 @@ tags:
 - [[Brand System Components_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce_1]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type_1]] - `contains` [EXTRACTED]
-- [[Role_52]] - `contains` [EXTRACTED]
-- [[Rules_18]] - `contains` [EXTRACTED]
+- [[Role_51]] - `contains` [EXTRACTED]
+- [[Rules_17]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2
+#graphify/document #graphify/EXTRACTED #community/model_usagepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # .can_use_tool()
@@ -19,4 +19,4 @@ tags:
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

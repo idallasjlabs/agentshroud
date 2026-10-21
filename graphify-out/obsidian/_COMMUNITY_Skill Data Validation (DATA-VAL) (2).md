@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[1. Schema Validation_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[2. Partition Coverage_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[3. Data Quality Checks_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[4. Cross-Site Comparison_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Critical Cost Control_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Role_99]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Skill Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Test Data Validation Pattern_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Validation Layers_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[hermesskillsi-dataSKILL]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[author_2]] - code - skills/custom/browser-fetch/package.json
+- [[browser-fetchpackage.json]] - code - skills/custom/browser-fetch/package.json
+- [[description_14]] - code - skills/custom/browser-fetch/package.json
+- [[keywords_2]] - code - skills/custom/browser-fetch/package.json
+- [[license_6]] - code - skills/custom/browser-fetch/package.json
+- [[main_1]] - code - skills/custom/browser-fetch/package.json
+- [[name_4]] - code - skills/custom/browser-fetch/package.json
+- [[scripts_2]] - code - skills/custom/browser-fetch/package.json
+- [[test_2]] - code - skills/custom/browser-fetch/package.json
+- [[version_6]] - code - skills/custom/browser-fetch/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/Skill_Data_Validation_DATA-VAL_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Data Validation (DATA-VAL)_1]] - degree 6, connects to 1 community

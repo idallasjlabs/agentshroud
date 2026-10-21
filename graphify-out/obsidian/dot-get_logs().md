@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "ServiceManager"
-location: "L444"
+community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
 ---
 
 # .get_logs()
 
 ## Connections
-- [[dot-_get_engine()]] - `calls` [EXTRACTED]
-- [[dot-_logs_via_socket()]] - `calls` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
-- [[TestGetLogs]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never

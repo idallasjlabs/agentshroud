@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_message_processing_probe_gets_no_banner_natural_response()"
+community: "sunday-upgrade-report.sh"
 location: "L7553"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_message_processing_probe_gets_no_banner_natural_response
+  - community/sunday-upgrade-reportsh
 ---
 
 # .test_message_processing_probe_gets_no_banner_natural_response()
@@ -15,4 +15,4 @@ tags:
 - [[B1.2b pipelineprocessing questions should get a natural answer without…]] - `rationale_for` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_message_processing_probe_gets_no_banner_natural_response
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-reportsh

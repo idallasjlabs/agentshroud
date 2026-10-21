@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_upstream_cve_alert"
-location: "L414"
+community: "format_upstream_cve_alert() (2)"
+location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/format_upstream_cve_alert_2
 ---
 
 # .test_handles_missing_optional_fields()
@@ -15,4 +15,4 @@ tags:
 - [[TestFormatUpstreamCveAlert]] - `method` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert_2

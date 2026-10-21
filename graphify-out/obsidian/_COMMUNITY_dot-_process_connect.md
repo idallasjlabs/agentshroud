@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-_agent_id_for_peer()]] - code - gateway/proxy/http_proxy.py
-- [[dot-_clamav_scan_bytes()]] - code - gateway/proxy/http_proxy.py
-- [[dot-_handle_client()]] - code - gateway/proxy/http_proxy.py
-- [[dot-_process_connect()]] - code - gateway/proxy/http_proxy.py
-- [[dot-_relay()]] - code - gateway/proxy/http_proxy.py
-- [[dot-_relay_and_scan()]] - code - gateway/proxy/http_proxy.py
-- [[Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1]] - rationale - gateway/proxy/http_proxy.py
-- [[Copy bytes from reader to writer, sampling the first scan_limit bytes         fo]] - rationale - gateway/proxy/http_proxy.py
-- [[Handle a single incoming client connection.]] - rationale - gateway/proxy/http_proxy.py
-- [[Parse CONNECT request, check allowlist, relay or block.]] - rationale - gateway/proxy/http_proxy.py
-- [[Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader_3]] - code - gateway/proxy/http_proxy.py
-- [[StreamWriter_2]] - code - gateway/proxy/http_proxy.py
-- [[Write data to a temp file and scan with ClamAV.          Runs in a thread execut]] - rationale - gateway/proxy/http_proxy.py
+- [[Config Keys Read_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Environment Variables Used_7]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Function Details_34]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Imports From  Exports To_5]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Key Classes  Functions_36]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Known Issues  Notes_6]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Purpose_137]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Related_40]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[Responsibilities_38]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[health_check(target)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[resolve_target(request)]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py_1]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
+- [[router.py]] - document - docs/vault/02 - Modules/Gateway Core/router.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,16 +29,3 @@ members: 14
 TABLE source_file, type FROM #community/_process_connect
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 2 edges to [[_COMMUNITY_ProxyAction]]
-- 2 edges to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-
-## Top bridge nodes
-- [[StreamReader_3]] - degree 6, connects to 2 communities
-- [[StreamWriter_2]] - degree 6, connects to 2 communities
-- [[dot-_clamav_scan_bytes()]] - degree 4, connects to 2 communities
-- [[dot-_process_connect()]] - degree 8, connects to 1 community
-- [[dot-_relay_and_scan()]] - degree 7, connects to 1 community

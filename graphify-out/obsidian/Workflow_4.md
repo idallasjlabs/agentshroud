@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skills by Category"
-location: "L183"
+community: "Skill: Technical Illustrator (TI) (3)"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/Skill_Technical_Illustrator_TI_3
 ---
 
 # Workflow
 
 ## Connections
-- [[Skills by Category]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_3

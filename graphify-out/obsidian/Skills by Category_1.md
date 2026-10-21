@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skills by Category (2)"
+community: "models.py"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category_2
+  - community/modelspy
 ---
 
 # Skills by Category
@@ -23,6 +23,6 @@ tags:
 - [[Reference_2]] - `contains` [EXTRACTED]
 - [[SecureClaw (Project-Specific)_1]] - `contains` [EXTRACTED]
 - [[System Utilities_1]] - `contains` [EXTRACTED]
-- [[Workflow_5]] - `contains` [EXTRACTED]
+- [[Workflow_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category_2
+#graphify/document #graphify/EXTRACTED #community/modelspy

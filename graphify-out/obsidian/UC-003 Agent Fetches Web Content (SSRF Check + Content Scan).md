@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Use Cases"
+community: "compose_generator.py"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/compose_generatorpy
 ---
 
 # UC-003: Agent Fetches Web Content (SSRF Check + Content Scan)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

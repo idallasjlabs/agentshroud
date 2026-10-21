@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[mainaudio.h]] - code - firmware/voice-terminal/main/audio.h
+- [[AI Agent]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

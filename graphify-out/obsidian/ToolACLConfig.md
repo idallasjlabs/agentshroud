@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L170"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # ToolACLConfig
 
 ## Connections
-- [[dot-__init__()_90]] - `references` [EXTRACTED]
+- [[dot-__init__()_81]] - `references` [EXTRACTED]
 - [[dot-effective_admin()]] - `method` [EXTRACTED]
 - [[dot-effective_collaborator_allowed()]] - `method` [EXTRACTED]
 - [[dot-effective_private()]] - `method` [EXTRACTED]
@@ -26,8 +26,8 @@ tags:
 - [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `uses` [INFERRED]
 - [[TestClassificationSets]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "AgentShroud Data Flow Diagrams (doc)"
+community: "Animation Guidelines"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Flow_Diagrams_doc
+  - community/Animation_Guidelines
 ---
 
 # Audit Ledger (blockchain-style chain)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer (Level 1 security component)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/Animation_Guidelines

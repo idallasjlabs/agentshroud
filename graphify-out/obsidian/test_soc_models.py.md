@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_soc_router_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # test_soc_models.py
@@ -21,10 +21,10 @@ tags:
 - [[RiskLevel_6]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
-- [[SecurityEvent]] - `imports` [EXTRACTED]
+- [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
 - [[ServiceStatus_1]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestContributorRecord]] - `contains` [EXTRACTED]
 - [[TestEgressRequest]] - `contains` [EXTRACTED]
 - [[TestSCLError]] - `contains` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

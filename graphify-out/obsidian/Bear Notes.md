@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Bear Notes"
+community: "Daedalus — Concept Illustrator (2)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Daedalus__Concept_Illustrator_2
 ---
 
 # Bear Notes
@@ -15,8 +15,8 @@ tags:
 - [[Common Commands_3]] - `contains` [EXTRACTED]
 - [[Configuration_21]] - `contains` [EXTRACTED]
 - [[Getting a Bear Token]] - `contains` [EXTRACTED]
-- [[Notes_10]] - `contains` [EXTRACTED]
+- [[Notes_11]] - `contains` [EXTRACTED]
 - [[Options]] - `contains` [EXTRACTED]
 - [[bear-notesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2

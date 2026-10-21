@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
+community: "postmortem.md (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/postmortemmd_2
 ---
 
 # Skill: Technical Writer (TW)
@@ -16,9 +16,9 @@ tags:
 - [[Core Discipline Understand → Structure → Write → Validate]] - `contains` [EXTRACTED]
 - [[Document Structure]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns]] - `contains` [EXTRACTED]
-- [[Role_11]] - `contains` [EXTRACTED]
+- [[Role_8]] - `contains` [EXTRACTED]
 - [[Rules]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/postmortemmd_2

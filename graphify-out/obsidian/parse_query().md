@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "parse_query"
+community: "web_proxy.py"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/web_proxypy
 ---
 
 # parse_query()
@@ -24,4 +24,4 @@ tags:
 - [[parse_domain_name()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_query
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

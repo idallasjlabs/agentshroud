@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "test_a2a_proxy.py"
 location: "L296"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_a2a_proxypy
 ---
 
 # .test_router_works_without_send_fn()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[GroupApprovalRouter]] - `calls` [EXTRACTED]
 - [[Router with no send_message_fn uses the default stub (no network calls).]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalRouterDefaultSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "AgentTarget"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/AgentTarget
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[dot-__init__()_147]] - `method` [EXTRACTED]
+- [[dot-__init__()_143]] - `method` [EXTRACTED]
 - [[dot-_can_create_directory()]] - `method` [EXTRACTED]
 - [[dot-_extract_message()]] - `method` [EXTRACTED]
 - [[dot-_extract_user_id()_1]] - `method` [EXTRACTED]
 - [[dot-_extract_username()]] - `method` [EXTRACTED]
 - [[dot-_prepare_session_payload()]] - `method` [EXTRACTED]
 - [[dot-_replace_message()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_15]] - `method` [EXTRACTED]
+- [[dot-get_stats()_12]] - `method` [EXTRACTED]
 - [[dot-process_webhook()]] - `method` [EXTRACTED]
 - [[dot-test_webhook_conversation_logging()]] - `calls` [EXTRACTED]
 - [[dot-test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Receives webhooks and routes them through the security pipeline.      In product]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[TestHandleEvent]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `uses` [INFERRED]
@@ -57,4 +57,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

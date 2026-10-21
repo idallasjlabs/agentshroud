@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/KillSwitchMonitor
 ---
 
 # file_sandbox.py
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[FileOperation]] - `contains` [EXTRACTED]
 - [[FileSandbox]] - `contains` [EXTRACTED]
 - [[FileSandboxConfig]] - `contains` [EXTRACTED]
@@ -24,4 +23,4 @@ tags:
 - [[StagingPattern]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

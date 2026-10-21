@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[hermesskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[dot-agentsskillsgraphifyreferencesgithub-and-merge]] - document - .agents/skills/graphify/references/github-and-merge.md
+- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)]] - document - .agents/skills/graphify/references/github-and-merge.md
+- [[graphify reference GitHub clone and cross-repo merge]] - document - .agents/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

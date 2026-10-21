@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # test_progressive_trust_integration.py
@@ -25,13 +25,13 @@ tags:
 - [[TestTypedViolations]] - `contains` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
+- [[TrustLevel]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustLevel_2]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]
 - [[_fast_ladder()]] - `contains` [EXTRACTED]
 - [[_make_tm()]] - `contains` [EXTRACTED]
 - [[_set_state()]] - `contains` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

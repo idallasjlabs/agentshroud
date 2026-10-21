@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # Test risk assessment for known-safe domains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_risk_assessment_green()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

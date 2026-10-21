@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # Agent cannot write to /var/log/ system logs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_var_log_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

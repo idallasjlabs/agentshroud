@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # Online notice must appear after readiness probes to avoid premature status signa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_startup_online_notice_sent_only_after_readiness_gate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig

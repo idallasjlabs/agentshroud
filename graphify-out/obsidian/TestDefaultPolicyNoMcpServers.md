@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # TestDefaultPolicyNoMcpServers
@@ -18,4 +18,4 @@ tags:
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

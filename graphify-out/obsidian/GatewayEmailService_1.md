@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "GatewayEmailService"
+community: "AgentShroud Access Control Matrix"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # GatewayEmailService
 
 ## Connections
-- [[dot-__init__()_93]] - `method` [EXTRACTED]
+- [[dot-__init__()_70]] - `method` [EXTRACTED]
 - [[dot-build_message()]] - `method` [EXTRACTED]
 - [[dot-send()]] - `method` [EXTRACTED]
 - [[dot-sender()]] - `method` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_gateway_email_service.py]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Implementation Status"
+community: ".github/mcp.json"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/github/mcpjson
 ---
 
 # Credential Security Policy
@@ -22,6 +22,6 @@ tags:
 - [[Implementation Strategy]] - `contains` [EXTRACTED]
 - [[Recommended Configuration (All 4 Options Combined)]] - `contains` [EXTRACTED]
 - [[Security Requirement]] - `contains` [EXTRACTED]
-- [[Summary_15]] - `contains` [EXTRACTED]
+- [[Summary_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/github/mcpjson

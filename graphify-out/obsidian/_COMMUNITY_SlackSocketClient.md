@@ -1,54 +1,55 @@
 ---
 type: community
-members: 41
+members: 42
 ---
 
 # SlackSocketClient
 
-**Members:** 41 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_84]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-run()_1]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-stop()_7]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_first_attempt_uses_base()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_get_wss_url_raises_on_api_error()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_get_wss_url_returns_url_on_success()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_grows_exponentially_with_attempt()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_hello_message_not_dispatched()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_jitter_stays_within_half_to_full_ceiling()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_run_resets_backoff_after_successful_connect()]] - code - gateway/tests/test_slack_socket_client.py
-- [[dot-test_stop_sets_running_false()]] - code - gateway/tests/test_slack_socket_client.py
-- [[A successful WSS connection resets the attempt counter to 0.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Attempt 0 waits at most the base interval (1s default).]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Backoff never exceeds the cap, even for huge attempt counts.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Call apps.connections.open to get a fresh WSS URL.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Capped exponential backoff with jitter for reconnect attempts.      Returns a wa]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Jitter scales the wait between 50% and 100% of the ceiling.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Main reconnect loop. Runs until stop() is called.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Open the WebSocket and process events until Slack requests disconnect.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Signal the run loop to exit.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[SlackSocketClient]] - code - gateway/proxy/slack_socket_client.py
-- [[SlackSocketClient_1]] - code - gateway/tests/test_slack_socket_client.py
-- [[TestComputeBackoff]] - code - gateway/tests/test_slack_socket_client.py
-- [[TestSlackSocketClient]] - code - gateway/tests/test_slack_socket_client.py
-- [[Unit tests for SlackSocketClient.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Unit tests for the reconnect backoff calculation.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[With jitter pinned to max, backoff doubles per attempt until the cap.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[_get_wss_url raises RuntimeError when apps.connections.open fails.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[_get_wss_url returns the WSS URL from apps.connections.open.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[_make_client()]] - code - gateway/tests/test_slack_socket_client.py
-- [[compute_backoff()]] - code - gateway/proxy/slack_socket_client.py
-- [[events_api envelopes call proxy.handle_event with the payload.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[hello messages are silently consumed without calling handle_event.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[slack_socket_client.py]] - code - gateway/proxy/slack_socket_client.py
-- [[stop() signals the run loop to exit.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[test_slack_socket_client.py]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_collaborator_file_query_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_request_returns_pending_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_web_access_request_without_url_is_restricted_without_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Bare-domain policy questions should be informational, not treated as web…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator URL web-access prompts should queue owner approval and return…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator web requests should return deterministic pending-approval wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Conceptual egress-policy questions should get safe info, not hard block.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Conceptual policy questions that mention a URL should not be treated as fetch…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Domain-only web intent should queue owner approval and pending notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Imperative URL requests should queue owner approval and not expose command…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Internal file probes must not be misclassified as egress approval requests.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[URL policy questions without collaborator keyword should still remain…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Web access intent without explicit URL should remain restricted and not queue…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_approval()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_notify()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_notify()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_notify()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_notify()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_send()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_send()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_send()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_68]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_69]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_70]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_71]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_72]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,12 +59,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_AsyncMock (2)]]
+- 55 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 10 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
 
 ## Top bridge nodes
-- [[SlackSocketClient]] - degree 13, connects to 1 community
-- [[_make_client()]] - degree 10, connects to 1 community
-- [[dot-test_events_api_envelope_dispatches_handle_event()]] - degree 4, connects to 1 community
-- [[dot-test_hello_message_not_dispatched()]] - degree 4, connects to 1 community
-- [[slack_socket_client.py]] - degree 3, connects to 1 community
+- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - degree 13, connects to 2 communities
+- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - degree 13, connects to 2 communities
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - degree 11, connects to 2 communities
+- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - degree 11, connects to 2 communities
+- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - degree 11, connects to 2 communities

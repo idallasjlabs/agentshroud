@@ -1,35 +1,36 @@
 ---
 type: community
-members: 22
+members: 23
 ---
 
 # Mac App Discovery Skill
 
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[dot-agentsskillsi-macSKILL]] - document - .agents/skills/i-mac/SKILL.md
-- [[Error Handling_3]] - document - .agents/skills/i-mac/SKILL.md
-- [[Error Handling_4]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Error Handling_5]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Future Extensions (for collaborative sharing)]] - document - .agents/skills/i-mac/SKILL.md
-- [[Future Extensions (for collaborative sharing)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Future Extensions (for collaborative sharing)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Mac App Discovery Skill]] - document - .agents/skills/i-mac/SKILL.md
-- [[Mac App Discovery Skill_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Mac App Discovery Skill_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Performance Notes]] - document - .agents/skills/i-mac/SKILL.md
-- [[Performance Notes_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Performance Notes_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[When to Use This Skill]] - document - .agents/skills/i-mac/SKILL.md
-- [[When to Use This Skill_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[When to Use This Skill_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[hermesskillsi-macSKILL]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[i-mac README (macOS System Administrator)]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[macOS System Administrator (MAC) README]] - document - .agents/skills/i-mac/README.md
-- [[mac_app_catalog.json output artifact]] - concept - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[mac_app_catalog.md output artifact]] - concept - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[openclawskillsi-macSKILL]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[dot-llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversdevonthinkmcp-devonthink.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_2]] - code - .mcp.json
+- [[dot-mcp.json]] - code - .mcp.json
+- [[opthomebrewbinnpx_2]] - code - .mcp.json
+- [[PATH_40]] - code - .mcp.json
+- [[atlassian-agentshroud_3]] - code - .mcp.json
+- [[atlassian-idallasj_3]] - code - .mcp.json
+- [[autoOpenFile_3]] - code - .mcp.json
+- [[devonthink_3]] - code - .mcp.json
+- [[github_3]] - code - .mcp.json
+- [[github-agentshroud_3]] - code - .mcp.json
+- [[github-idallasj_3]] - code - .mcp.json
+- [[home-assistant_3]] - code - .mcp.json
+- [[outputPath_3]] - code - .mcp.json
+- [[safari_3]] - code - .mcp.json
+- [[safari-mcp_2]] - code - .mcp.json
+- [[xmind_3]] - code - .mcp.json
+- [[xmind-generator-mcp_2]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,16 +38,3 @@ members: 22
 TABLE source_file, type FROM #community/Mac_App_Discovery_Skill
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill (4)]]
-- 2 edges to [[_COMMUNITY_Phase 1 — Raw Collection (5)]]
-- 2 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
-- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection (4)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Mac App Discovery Skill_1]] - degree 23, connects to 6 communities
-- [[Mac App Discovery Skill]] - degree 7, connects to 2 communities
-- [[Mac App Discovery Skill_2]] - degree 7, connects to 2 communities

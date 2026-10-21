@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soak_status.py"
 type: "code"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # .test_empty_heartbeat_file_skip_is_benign_not_blocking()
@@ -16,4 +16,4 @@ tags:
 - [[TestClassify_2]] - `method` [EXTRACTED]
 - [[_job()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

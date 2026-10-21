@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Remediation (2)"
+community: "dns_filter.py"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation_2
+  - community/dns_filterpy
 ---
 
 # Step 7: Add credential leak detection to egress filtering
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation_2
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

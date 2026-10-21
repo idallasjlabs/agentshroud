@@ -1,18 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "SecureBrowser (2)"
-location: "L421"
+community: "KillSwitchMonitor"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/KillSwitchMonitor
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[Return complete audit log_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
+- [[FileOperation]] - `references` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

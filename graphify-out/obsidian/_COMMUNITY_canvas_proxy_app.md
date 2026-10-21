@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Any_69]] - code - gateway/proxy/canvas_proxy.py
-- [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Return gateway password from secret file or env var.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Validate HTTP Basic Auth credentials against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Validate token query parameter against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[_build_proxy_headers()]] - code - gateway/proxy/canvas_proxy.py
-- [[_check_basic_auth()]] - code - gateway/proxy/canvas_proxy.py
-- [[_check_token_auth()]] - code - gateway/proxy/canvas_proxy.py
-- [[_handle_http()]] - code - gateway/proxy/canvas_proxy.py
-- [[_handle_websocket()]] - code - gateway/proxy/canvas_proxy.py
-- [[_read_gateway_password()]] - code - gateway/proxy/canvas_proxy.py
-- [[canvas_proxy.py]] - code - gateway/proxy/canvas_proxy.py
-- [[canvas_proxy_app()]] - code - gateway/proxy/canvas_proxy.py
+- [[03-data]] - document - docs/diagrams/03-data.md
+- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
+- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
+- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
+- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
+- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
+- [[Current Status_10]] - document - docs/data/README.md
+- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
+- [[Data Documentation]] - document - docs/data/README.md
+- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
+- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
+- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
+- [[Planned Documents_6]] - document - docs/data/README.md
+- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
+- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
+- [[dataREADME]] - document - docs/data/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,8 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-browserpackage.json]]
 
 ## Top bridge nodes
-- [[canvas_proxy_app()]] - degree 7, connects to 2 communities
+- [[03-data]] - degree 6, connects to 1 community
+- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community

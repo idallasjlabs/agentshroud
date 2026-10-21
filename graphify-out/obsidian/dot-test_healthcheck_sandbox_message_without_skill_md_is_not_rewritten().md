@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (11)"
+community: "TelegramAPIProxy (20)"
 location: "L1584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_11
+  - community/TelegramAPIProxy_20
 ---
 
 # .test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()
 
 ## Connections
 - [[Healthcheck sandbox messages without SKILL.md marker should not trigger rewrite.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_11
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_20

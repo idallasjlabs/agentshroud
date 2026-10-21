@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "main (2)"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/main_2
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # Render an aligned PASS/FAIL table plus a totals line.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-render_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/main_2
+#graphify/rationale #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

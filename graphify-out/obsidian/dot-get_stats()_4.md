@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L160"
+community: "ApprovalQueueConfig"
+location: "L1658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_18]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-verify_chain()]] - `calls` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

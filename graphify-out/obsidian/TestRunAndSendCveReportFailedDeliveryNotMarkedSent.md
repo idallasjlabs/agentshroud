@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L1592"
+community: "sync-cve-registry.py"
+location: "L1741"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/sync-cve-registrypy
 ---
 
 # TestRunAndSendCveReportFailedDeliveryNotMarkedSent
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

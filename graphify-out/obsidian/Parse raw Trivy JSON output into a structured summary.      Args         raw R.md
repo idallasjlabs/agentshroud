@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "parse_trivy_output"
+community: "TestClassify"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/TestClassify
 ---
 
 # Parse raw Trivy JSON output into a structured summary.      Args:         raw: R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_trivy_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/rationale #graphify/EXTRACTED #community/TestClassify

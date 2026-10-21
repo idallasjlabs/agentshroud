@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (5)"
+community: "TestOutboundPipelineIntegration"
 location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_5
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_domains_in_default_allowlist()
@@ -16,4 +16,4 @@ tags:
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

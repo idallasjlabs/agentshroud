@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "EgressFilterConfig"
 location: "L5379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/EgressFilterConfig
 ---
 
 # TestDefaultBotId
@@ -16,10 +16,10 @@ tags:
 - [[dot-test_default_is_openclaw_when_not_injected()]] - `method` [EXTRACTED]
 - [[dot-test_injected_default_overrides_openclaw()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[_active_bot_id returns the constructor-injected default when no contextvar is se]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # soc/router.py
@@ -35,7 +35,7 @@ tags:
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[RenameGroupRequest]] - `contains` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_23]] - `imports` [EXTRACTED]
+- [[Role_19]] - `imports` [EXTRACTED]
 - [[SCLCaller_2]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLInterface_1]] - `imports` [EXTRACTED]
@@ -123,7 +123,7 @@ tags:
 - [[list_bots()]] - `contains` [EXTRACTED]
 - [[list_delegations()]] - `contains` [EXTRACTED]
 - [[list_groups()]] - `contains` [EXTRACTED]
-- [[list_pending_approvals()]] - `contains` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `contains` [EXTRACTED]
 - [[list_services()]] - `contains` [EXTRACTED]
 - [[list_users()]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
@@ -174,4 +174,4 @@ tags:
 - [[verify_audit_chain()]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

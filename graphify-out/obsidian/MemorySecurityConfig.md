@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[dot-from_env()_2]] - `method` [EXTRACTED]
-- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Combined memory security configuration.]] - `rationale_for` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]

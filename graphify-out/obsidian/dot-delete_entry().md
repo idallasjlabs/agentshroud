@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # .delete_entry()
@@ -15,4 +15,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[Forget this' - permanently delete a ledger entry          Implements right to er]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

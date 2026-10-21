@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Purpose_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Related Notes_10]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Where Used_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,12 @@ members: 7
 TABLE source_file, type FROM #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (5)]]
+
+## Top bridge nodes
+- [[aiosqlite]] - degree 5, connects to 4 communities

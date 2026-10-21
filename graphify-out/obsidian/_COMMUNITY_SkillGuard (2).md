@@ -8,40 +8,40 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_111]] - code - gateway/security/skill_guard.py
-- [[dot-_line_at()]] - code - gateway/security/skill_guard.py
-- [[dot-_scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
-- [[dot-blocked()]] - code - gateway/security/skill_guard.py
-- [[dot-extend()]] - code - gateway/security/skill_guard.py
-- [[dot-recommendation()]] - code - gateway/security/skill_guard.py
-- [[dot-scan_file()]] - code - gateway/security/skill_guard.py
-- [[dot-scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[dot-severity()]] - code - gateway/security/skill_guard.py
-- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
-- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
-- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
-- [[CompletedProcess_4]] - code - gateway/tests/test_skill_guard.py
-- [[Finding]] - code - gateway/security/skill_guard.py
-- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[Path_28]] - code - gateway/skills/scan.py
-- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
-- [[Recommendation]] - code - gateway/security/skill_guard.py
-- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
-- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
-- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_1]] - code - gateway/skills/scan.py
-- [[ScanResult_2]] - code - gateway/tests/test_skill_guard.py
-- [[ScanResult_3]] - code - gateway/security/skill_guard.py
-- [[SkillGuard_1]] - code - gateway/security/skill_guard.py
-- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
-- [[_Rule]] - code - gateway/security/skill_guard.py
-- [[_build_tree()]] - code - gateway/skills/scan.py
-- [[_c()]] - code - gateway/security/skill_guard.py
-- [[_print_findings()]] - code - gateway/skills/scan.py
-- [[main()_13]] - code - gateway/skills/scan.py
-- [[scan.py]] - code - gateway/skills/scan.py
-- [[skill_guard.py]] - code - gateway/security/skill_guard.py
+- [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Architecture Overview_2]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Data Locations]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Gateway Can't Reach OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Initial Configuration]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Inside Container]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Next Steps_2]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[On Host (Docker Volumes)]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[OpenClaw Features Now Available]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[OpenClaw Won't Start]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Quick Start_4]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Recommendations]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[SSH Not Working]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Security Notes_1]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Step 1 Add Your OpenAI API Key]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Step 2 Configure Bot Identity]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Step 3 Load Persona (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Step 4 Set Up Channels (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Through AgentShroud Gateway (Port 8080)]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Through Control UI (Port 18789)]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Troubleshooting_11]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Using OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Via CLI]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[What Changed]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[✅ Agents]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[✅ MCP Servers]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[✅ Multi-LLM Support]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[✅ Skills]] - document - docs/setup/OPENCLAW_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,15 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_SkillGuard]]
-- 23 edges to [[_COMMUNITY_Path (2)]]
-- 4 edges to [[_COMMUNITY_Path]]
-- 2 edges to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
 
 ## Top bridge nodes
-- [[SkillGuard_1]] - degree 34, connects to 4 communities
-- [[skill_guard.py]] - degree 9, connects to 3 communities
-- [[ScanResult_3]] - degree 32, connects to 2 communities
-- [[Recommendation]] - degree 27, connects to 2 communities
-- [[scan.py]] - degree 8, connects to 2 communities
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - degree 12, connects to 1 community

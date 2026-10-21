@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
+- [[Security Scanner Aggregation and Scorecard Tests]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 

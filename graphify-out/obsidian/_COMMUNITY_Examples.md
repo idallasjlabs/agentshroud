@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[App + window management]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Capture screenshots + analyze]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common capture parameters]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common motiontyping parameters]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common targeting parameters (most interaction commands)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Examples]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Features (all CLI capabilities, excluding agentMCP)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Keyboard input]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Live capture (motion-aware)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Menus, menubar, dock]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Mouse + gesture input]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Peekaboo]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Quickstart (happy path)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[See - click - type (most reliable flow)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Target by window id]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[peekabooSKILL]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Any_67]] - code - gateway/proxy/canvas_proxy.py
+- [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Return gateway password from secret file or env var.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Validate HTTP Basic Auth credentials against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[Validate token query parameter against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
+- [[_build_proxy_headers()]] - code - gateway/proxy/canvas_proxy.py
+- [[_check_basic_auth()]] - code - gateway/proxy/canvas_proxy.py
+- [[_check_token_auth()]] - code - gateway/proxy/canvas_proxy.py
+- [[_handle_http()]] - code - gateway/proxy/canvas_proxy.py
+- [[_handle_websocket()]] - code - gateway/proxy/canvas_proxy.py
+- [[_read_gateway_password()]] - code - gateway/proxy/canvas_proxy.py
+- [[canvas_proxy.py]] - code - gateway/proxy/canvas_proxy.py
+- [[canvas_proxy_app()]] - code - gateway/proxy/canvas_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,10 @@ members: 16
 TABLE source_file, type FROM #community/Examples
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+
+## Top bridge nodes
+- [[canvas_proxy_app()]] - degree 7, connects to 2 communities

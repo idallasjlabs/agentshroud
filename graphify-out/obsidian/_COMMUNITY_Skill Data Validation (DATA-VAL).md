@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-agentsskillsi-dataSKILL]] - document - .agents/skills/i-data/SKILL.md
-- [[1. Schema Validation]] - document - .agents/skills/i-data/SKILL.md
-- [[2. Partition Coverage]] - document - .agents/skills/i-data/SKILL.md
-- [[3. Data Quality Checks]] - document - .agents/skills/i-data/SKILL.md
-- [[4. Cross-Site Comparison]] - document - .agents/skills/i-data/SKILL.md
-- [[Critical Cost Control]] - document - .agents/skills/i-data/SKILL.md
-- [[Role_97]] - document - .agents/skills/i-data/SKILL.md
-- [[Skill Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/SKILL.md
-- [[Test Data Validation Pattern]] - document - .agents/skills/i-data/SKILL.md
-- [[Validation Layers]] - document - .agents/skills/i-data/SKILL.md
+- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Related Notes_71]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
-- [[Skill Data Validation (DATA-VAL)]] - degree 6, connects to 1 community
+- [[Restart Procedure_2]] - degree 10, connects to 1 community

@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+members: 12
 ---
 
 # ADR-002: Default-Allow Security Philosophy
 
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[ADR-002-default-allow-security-philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[ADR-002 Default-Allow Security Philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Consequences_4]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Context_7]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Decision_7]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Evaluation Criteria]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Implementation Approach]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Mitigation Strategies_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Negative Consequences_3]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Positive Consequences_3]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Status_7]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Competitive Intelligence Protocol_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[IDENTITY.md - Who I Am_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[My Owner_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Responsibilities_1]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Role_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[Purpose_161]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Related Notes_68]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[proxy_status.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[workspaceIDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # SCLCaller
 
 ## Connections
-- [[dot-__init__()_65]] - `method` [EXTRACTED]
+- [[dot-__init__()_96]] - `method` [EXTRACTED]
 - [[dot-is_group_admin()_2]] - `method` [EXTRACTED]
-- [[dot-is_owner()_5]] - `method` [EXTRACTED]
+- [[dot-is_owner()_4]] - `method` [EXTRACTED]
 - [[dot-require()]] - `method` [EXTRACTED]
 - [[dot-test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[dot-test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_75]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -38,7 +38,7 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[Resolved identity of the SCL caller, including role and user_id.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

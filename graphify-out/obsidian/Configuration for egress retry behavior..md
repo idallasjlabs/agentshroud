@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "rationale"
-community: "egress_retry.py"
+community: "KillSwitchMonitor (2) (2)"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/KillSwitchMonitor_2_2
 ---
 
 # Configuration for egress retry behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RetryConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_retrypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_2_2

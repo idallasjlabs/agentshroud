@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Security Scanner Aggregation and Scorecard Tests"
+community: "GitHub FUNDING Configuration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Scanner_Aggregation_and_Scorecard_Tests
+  - community/GitHub_FUNDING_Configuration
 ---
 
 # Security Scanner Aggregation and Scorecard Tests
 
-#graphify/code #graphify/EXTRACTED #community/Security_Scanner_Aggregation_and_Scorecard_Tests
+#graphify/code #graphify/EXTRACTED #community/GitHub_FUNDING_Configuration

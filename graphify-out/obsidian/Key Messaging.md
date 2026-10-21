@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines (2)"
+community: "AgentShroud Config with Tool Risk Tiers (example)"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines_2
+  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
 ---
 
 # Key Messaging
@@ -17,4 +17,4 @@ tags:
 - [[One-liner]] - `contains` [EXTRACTED]
 - [[What it is NOT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example

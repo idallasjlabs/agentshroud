@@ -1,36 +1,53 @@
 ---
 type: community
-members: 23
+members: 40
 ---
 
 # test_hermes_cron_seed.py
 
-**Members:** 23 nodes
+**Members:** 40 nodes
 
 ## Members
-- [[Map job name - the full '_seed_cron Name ...' call text (all lines,     since]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[SCRUM-81 weekly Jira review cron must exist in both sh and yaml, Sun 0900.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[Stamp-file gating (v1v2v3) caused job triplication on every version bump.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[These jobs must target an upstream the gateway can inject credentials for.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_cron_names_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_job_names_from_yaml()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_seed_cron_calls_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_seed_cron must accept optional $5 (model)  $6 (provider) and forward     them]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[jira-weekly-review is pure script execution (near-zero free-form     generation)]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[test_competitive_email_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_competitive_landscape_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_content_generating_jobs_pinned_to_injectable_upstream()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_cron_seed_is_stampless_and_idempotent()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_hermes_cron_seed.py]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_init_config_has_expected_cron_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_not_pinned_to_a_model()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_schedule_is_sunday_9am()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jobs_yaml_has_expected_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_seed_cron_supports_optional_model_and_provider_args()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_stability_report_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[Add a comment to an existing Jira issue.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[ArgumentParser_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Build the ADF (Atlassian Document Format) body for POST ...comment.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Build the REST v3 create-issue request body.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Match a transition by its own name or its destination status name.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Move an issue to the named status (matched against available transitions).]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[REST v3 URL for creating an issue.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[REST v3 add-comment URL for an arbitrary issue key.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[REST v3 transitions URL (GET to list, POST to apply) for an issue.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Return the HTTP Basic auth header value base64(emailtoken).]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Unauthenticated site-to-cloud-ID discovery URL.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_adf_doc()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_auth_headers()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_build_arg_parser()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_cloud_base_url()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_http_request()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[add_comment()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_basic_auth_header()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_comment_payload()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_comment_url()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_create_issue_payload()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_issue_url()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_op_proxy_request()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_tenant_info_url()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_transitions_url()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[create_issue()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[fetch_credentials()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[fetch_op_secret()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[find_transition_id()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[openclawworkspacejira_dev_ticket.py]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[resolve_cloud_id()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[run()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[transition_issue()]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,7 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_hermes_cron_seed.py (2)]]
+- 1 edge to [[_COMMUNITY_TestEgressTelegramNotify]]
 
 ## Top bridge nodes
-- [[test_hermes_cron_seed.py]] - degree 18, connects to 1 community
+- [[build_comment_payload()]] - degree 5, connects to 1 community

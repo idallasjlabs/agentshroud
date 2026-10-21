@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L7"
+community: "LOW — Informational"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/LOW__Informational
 ---
 
 # System Requirements
 
 ## Connections
-- [[Prerequisites_12]] - `contains` [EXTRACTED]
+- [[Prerequisites_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

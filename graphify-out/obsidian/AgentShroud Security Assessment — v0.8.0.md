@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # AgentShroud Security Assessment — v0.8.0
 
 ## Connections
 - [[Critical Findings_2]] - `contains` [EXTRACTED]
-- [[Executive Summary_12]] - `contains` [EXTRACTED]
+- [[Executive Summary_13]] - `contains` [EXTRACTED]
 - [[High-Priority Gaps]] - `contains` [EXTRACTED]
 - [[Low-Priority  Informational]] - `contains` [EXTRACTED]
 - [[Medium-Priority Gaps]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[What's Working Well_1]] - `contains` [EXTRACTED]
 - [[security-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

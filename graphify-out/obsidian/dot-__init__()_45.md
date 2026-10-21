@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "TestEmailSend"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/TestEmailSend
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

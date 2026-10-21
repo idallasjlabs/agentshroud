@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Application"
+community: "test_telegram_proxy_inbound.py (3)"
 location: "L847"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
+  - community/test_telegram_proxy_inboundpy_3
 ---
 
 # SECTION 6: ESTIMATED COSTS
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
 - [[Combined Filing Costs (Patent + Trademark)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application
+#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_3

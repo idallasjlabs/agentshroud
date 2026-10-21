@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # PromptProtection
 
 ## Connections
-- [[dot-__init__()_187]] - `method` [EXTRACTED]
+- [[dot-__init__()_155]] - `method` [EXTRACTED]
 - [[dot-_calculate_similarity()]] - `method` [EXTRACTED]
 - [[dot-_compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_load_protected_content()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[run()]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

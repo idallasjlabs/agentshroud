@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_20]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Core Principle_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Layer 1 Application Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Layer 2 Container Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Layer 3 Network Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Layer 4 Data Flow Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Output Format_33]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Review Layers_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Role_84]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[SecureClaw-Specific Threat Model_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Skill Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Verification Commands_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[hermesskillsi-secSKILL]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Architecture_13]] - document - docs/architecture/per-agent-isolation.md
+- [[Container Configuration]] - document - docs/architecture/per-agent-isolation.md
+- [[Design Principles]] - document - docs/architecture/per-agent-isolation.md
+- [[Docker Compose Template]] - document - docs/architecture/per-agent-isolation.md
+- [[Future Enhancements_2]] - document - docs/architecture/per-agent-isolation.md
+- [[IsolationVerifier Class]] - concept - docs/architecture/per-agent-isolation.md
+- [[Overview_19]] - document - docs/architecture/per-agent-isolation.md
+- [[Per-Agent Audit Trails]] - document - docs/architecture/per-agent-isolation.md
+- [[Per-Agent Container Isolation Architecture]] - document - docs/architecture/per-agent-isolation.md
+- [[Request Routing]] - document - docs/architecture/per-agent-isolation.md
+- [[Security Verification_1]] - document - docs/architecture/per-agent-isolation.md
+- [[Shared-Nothing Isolation Design Principle]] - rationale - docs/architecture/per-agent-isolation.md
+- [[per-agent-isolation]] - document - docs/architecture/per-agent-isolation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_sanitizer.py]]
 
 ## Top bridge nodes
-- [[Skill Security Review (SEC)_1]] - degree 9, connects to 1 community
+- [[Shared-Nothing Isolation Design Principle]] - degree 3, connects to 2 communities

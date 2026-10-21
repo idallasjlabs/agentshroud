@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # MCPPolicyEngine
 
 ## Connections
-- [[dot-__init__()_128]] - `method` [EXTRACTED]
-- [[dot-_decide()]] - `method` [EXTRACTED]
-- [[dot-_tier_for()]] - `method` [EXTRACTED]
+- [[dot-__init__()_125]] - `method` [EXTRACTED]
+- [[dot-_decide()_1]] - `method` [EXTRACTED]
+- [[dot-_tier_for()_1]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `method` [EXTRACTED]
 - [[dot-evaluate()_1]] - `method` [EXTRACTED]
 - [[dot-test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_33]] - `uses` [INFERRED]
+- [[Path_31]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
@@ -57,4 +57,4 @@ tags:
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

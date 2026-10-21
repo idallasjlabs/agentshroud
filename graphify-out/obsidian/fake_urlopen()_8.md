@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L416"
+community: "ApprovalQueueConfig (2)"
+location: "L2794"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_llm_proxypy
+  - graphify/EXTRACTED
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_env_secret_probe_returns_protect_secret_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

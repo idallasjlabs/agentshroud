@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L314"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # hub()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_hung_hub_fetch_is_cut_by_deadline_and_retried()]] - `indirect_call` [INFERRED]
 - [[dot-test_retry_attempt_runs_with_ipv4_forced()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy
+#graphify/code #graphify/INFERRED #community/Sunday_Upgrade_prompt

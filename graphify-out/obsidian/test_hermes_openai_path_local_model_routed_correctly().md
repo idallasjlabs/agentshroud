@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "_make_proxy()"
+community: "TestCollaboratorPromptClassifiers"
 location: "L664"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # test_hermes_openai_path_local_model_routed_correctly()
@@ -19,4 +19,4 @@ tags:
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

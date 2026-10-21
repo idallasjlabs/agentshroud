@@ -1,19 +1,17 @@
 ---
 type: community
-members: 6
+members: 4
 ---
 
 # Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)
 
-**Members:** 6 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
-- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
-- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
-- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
-- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
-- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
+- [[dot-test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]]
+- 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
 
 ## Top bridge nodes
-- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - degree 6, connects to 1 community
+- [[TestScoreNetworkSegmentation]] - degree 4, connects to 1 community

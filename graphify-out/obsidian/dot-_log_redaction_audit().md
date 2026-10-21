@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer (2)"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # ._log_redaction_audit()
@@ -16,4 +16,4 @@ tags:
 - [[Log PII redaction for audit trail without logging actual PII]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

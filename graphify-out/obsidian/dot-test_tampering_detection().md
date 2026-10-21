@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (6)"
+community: "test_llm_proxy_failover.py"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/test_llm_proxy_failoverpy
 ---
 
 # .test_tampering_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of unauthorized modifications.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

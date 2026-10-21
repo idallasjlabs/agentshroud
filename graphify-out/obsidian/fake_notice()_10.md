@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L8067"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # fake_notice()
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_unlock_persists_unpause_to_disk()]] - `indirect_call` [INFERRED]
 - [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

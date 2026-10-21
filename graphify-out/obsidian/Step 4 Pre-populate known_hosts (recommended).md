@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "SSH Configuration Guide"
+community: ".omp/mcp.json"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/omp/mcpjson
 ---
 
 # Step 4: Pre-populate known_hosts (recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/omp/mcpjson

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # _set_state()
@@ -27,8 +27,8 @@ tags:
 - [[dot-test_unknown_tool_returns_none()]] - `calls` [EXTRACTED]
 - [[dot-test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_3]] - `references` [EXTRACTED]
-- [[TrustManager_2]] - `references` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "PodmanEngine"
+community: "setup-secrets.sh"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/setup-secretssh
 ---
 
 # .generate_systemd()
@@ -16,4 +16,4 @@ tags:
 - [[Generate a systemd unit file for a container.]] - `rationale_for` [EXTRACTED]
 - [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestOutboundPipelineIntegration"
+community: "_req"
 location: "L3628"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/_req
 ---
 
 # User-facing block reasons should not expose modules or file paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_sanitize_reason_hides_internal_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/rationale #graphify/EXTRACTED #community/_req

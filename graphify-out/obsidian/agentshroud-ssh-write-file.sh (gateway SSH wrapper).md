@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "code"
-community: "Hermes Dev Workflow (HDEV) Skill"
+community: "agentshroud-ssh-exec.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/agentshroud-ssh-execsh
 ---
 
 # agentshroud-ssh-write-file.sh (gateway SSH wrapper)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh

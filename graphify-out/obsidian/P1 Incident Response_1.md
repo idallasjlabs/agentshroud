@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "GSDE&G Skills Reference (2)"
+community: "models.py"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/modelspy
 ---
 
 # P1 Incident Response
 
 ## Connections
-- [[Emergency Procedures_3]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/document #graphify/EXTRACTED #community/modelspy

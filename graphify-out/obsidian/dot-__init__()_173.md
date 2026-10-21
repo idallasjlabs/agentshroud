@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "MCPPolicyEngine (2)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/MCPPolicyEngine_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

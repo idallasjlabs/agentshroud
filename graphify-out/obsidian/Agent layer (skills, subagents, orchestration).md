@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Claude Code skill catalog (59 skills)"
+community: "Skill: Test-Driven Development (TDD)"
 location: "Agent Layer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Agent layer (skills, subagents, orchestration)
@@ -15,4 +15,4 @@ tags:
 - [[Claude Code skill catalog (59 skills)]] - `references` [INFERRED]
 - [[Nine-stage AI-augmented lifecycle]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

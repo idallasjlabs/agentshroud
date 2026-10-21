@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "ForwardRequest (2)"
-location: "L16"
+community: "MCPPolicyEngine (2)"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest_2
+  - community/MCPPolicyEngine_2
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

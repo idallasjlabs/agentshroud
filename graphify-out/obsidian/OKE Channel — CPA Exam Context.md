@@ -1,23 +1,23 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "OKE Channel — CPA Exam Context (2)"
+community: "WebProxyConfig (2)"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OKE_Channel__CPA_Exam_Context_2
+  - community/WebProxyConfig_2
 ---
 
 # OKE Channel — CPA Exam Context
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
-- [[CPA Curriculum Frontmatter Addition]] - `contains` [EXTRACTED]
-- [[Coverage Types]] - `contains` [EXTRACTED]
-- [[Episode Closing]] - `contains` [EXTRACTED]
-- [[Exam Weight Integration]] - `contains` [EXTRACTED]
-- [[Gleim Unit Mapping]] - `contains` [EXTRACTED]
-- [[Mandatory Acronym Expansion]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[CPA Curriculum Frontmatter Addition_1]] - `contains` [EXTRACTED]
+- [[Coverage Types_1]] - `contains` [EXTRACTED]
+- [[Episode Closing_1]] - `contains` [EXTRACTED]
+- [[Exam Weight Integration_1]] - `contains` [EXTRACTED]
+- [[Gleim Unit Mapping_1]] - `contains` [EXTRACTED]
+- [[Mandatory Acronym Expansion_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context_2
+#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2

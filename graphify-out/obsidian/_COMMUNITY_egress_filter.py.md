@@ -8,69 +8,69 @@ members: 63
 **Members:** 63 nodes
 
 ## Members
-- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - rationale - gateway/proxy/http_proxy.py
-- [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[AGENTSHROUD_MODE]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
-- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Current Status_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Debug Mode]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_9]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_10]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Description_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_12]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[LOG_LEVEL_1]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[LOG_LEVEL]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Related Notes_65]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_66]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Related Notes_67]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_68]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
-- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
-- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
-- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
-- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-httpx]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
-- [[Set In_5]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Summary_25]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Usage_129]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Usage_130]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Value_5]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Values_2]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Values_3]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[assert-security-check rule (CWE-617)]] - rationale - .semgrep.yml
-- [[egress_filter.py_1]] - code - gateway/security/egress_filter.py
-- [[hardcoded-password rule (CWE-798)]] - rationale - .semgrep.yml
-- [[http_proxy.py_2]] - code - gateway/proxy/http_proxy.py
-- [[log-sensitive-key rule (CWE-532)]] - rationale - .semgrep.yml
-- [[path-traversal-open rule (CWE-22)]] - rationale - .semgrep.yml
-- [[pickle-load rule (CWE-502)]] - rationale - .semgrep.yml
-- [[sql-injection rule (CWE-89)]] - rationale - .semgrep.yml
-- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[ssrf-httpx rule (CWE-918)]] - rationale - .semgrep.yml
-- [[ssrf-requests rule (CWE-918)]] - rationale - .semgrep.yml
-- [[subprocess-shell-true rule (CWE-78)]] - rationale - .semgrep.yml
-- [[subprocess-unvalidated-input rule (CWE-78)]] - rationale - .semgrep.yml
+- [[dot-test_chat_allows_valid_token()]] - code - chatbot/test_main.py
+- [[dot-test_chat_allows_when_no_token_configured()]] - code - chatbot/test_main.py
+- [[dot-test_chat_requires_auth_when_token_set()]] - code - chatbot/test_main.py
+- [[dot-test_chat_success_returns_parsed_response()]] - code - chatbot/test_main.py
+- [[dot-test_get_auth_token_falls_back_to_env_when_no_secret_file()]] - code - chatbot/test_main.py
+- [[dot-test_get_auth_token_reads_secret_file_over_env()]] - code - chatbot/test_main.py
+- [[dot-test_health_degraded_without_client()]] - code - chatbot/test_main.py
+- [[dot-test_health_healthy_with_client()]] - code - chatbot/test_main.py
+- [[dot-test_internal_error_not_leaked()]] - code - chatbot/test_main.py
+- [[dot-test_lifespan_logs_when_auth_token_configured()]] - code - chatbot/test_main.py
+- [[dot-test_lifespan_reads_api_key_from_secret_file()]] - code - chatbot/test_main.py
+- [[dot-test_lifespan_with_api_key_initializes_async_client()]] - code - chatbot/test_main.py
+- [[dot-test_lifespan_without_api_key_leaves_client_none()]] - code - chatbot/test_main.py
+- [[dot-test_openai_auth_error_returns_503()]] - code - chatbot/test_main.py
+- [[dot-test_openai_rate_limit_error_returns_429()]] - code - chatbot/test_main.py
+- [[dot-test_rate_limit_enforced()_2]] - code - chatbot/test_main.py
+- [[dot-test_uses_async_openai_client()]] - code - chatbot/test_main.py
+- [[A successful OpenAI completion returns 200 with the parsed fields         via th]] - rationale - chatbot/test_main.py
+- [[ChatRequest]] - code - chatbot/main.py
+- [[ChatResponse]] - code - chatbot/main.py
+- [[Exceeding the rate limit returns 429.]] - rationale - chatbot/test_main.py
+- [[FastAPI_5]] - code - chatbot/main.py
+- [[FastAPI lifespan - initialize OpenAI client and persona once.]] - rationale - chatbot/main.py
+- [[HTTPAuthorizationCredentials_1]] - code - chatbot/main.py
+- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - rationale - chatbot/main.py
+- [[Health endpoint reports degraded when OpenAI client is not available.]] - rationale - chatbot/test_main.py
+- [[Health endpoint reports healthy when OpenAI client is available.]] - rationale - chatbot/test_main.py
+- [[Import chatbot.main with a fresh module state (no real OpenAI).]] - rationale - chatbot/test_main.py
+- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - rationale - chatbot/main.py
+- [[Load Isaiah's persona from IDENTITY, SOUL, and USER files.]] - rationale - chatbot/main.py
+- [[OpenAI AuthenticationError returns 503 without leaking the key.]] - rationale - chatbot/test_main.py
+- [[OpenAI exceptions should not leak internal details to the client.]] - rationale - chatbot/test_main.py
+- [[OpenAI's own RateLimitError is translated to a 429 for the caller.]] - rationale - chatbot/test_main.py
+- [[Process chat message with Isaiah's personality.]] - rationale - chatbot/main.py
+- [[Raise 429 if the client has exceeded the rate limit.]] - rationale - chatbot/main.py
+- [[Read the expected auth token from env or secrets.]] - rationale - chatbot/main.py
+- [[Request_9]] - code - chatbot/main.py
+- [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - rationale - chatbot/main.py
+- [[TestAsyncClient]] - code - chatbot/test_main.py
+- [[TestAuth_1]] - code - chatbot/test_main.py
+- [[TestAuthTokenSource]] - code - chatbot/test_main.py
+- [[TestErrorSanitization]] - code - chatbot/test_main.py
+- [[TestHealthCheck]] - code - chatbot/test_main.py
+- [[TestLifespan]] - code - chatbot/test_main.py
+- [[TestRateLimit]] - code - chatbot/test_main.py
+- [[Tests for chatbotmain.py.  Covers the four SCRUM-109 fixes 1. Auth enforcement]] - rationale - chatbot/test_main.py
+- [[Verify the module uses AsyncOpenAI, not sync OpenAI.]] - rationale - chatbot/test_main.py
+- [[When CHATBOT_AUTH_TOKEN is not set, chat is open (backward compat).]] - rationale - chatbot/test_main.py
+- [[When CHATBOT_AUTH_TOKEN is set and correct token given, request proceeds.]] - rationale - chatbot/test_main.py
+- [[When CHATBOT_AUTH_TOKEN is set, chat without a token returns 401.]] - rationale - chatbot/test_main.py
+- [[When the Docker secret file exists, it wins over the env var.]] - rationale - chatbot/test_main.py
+- [[When the Docker secret file for the OpenAI key exists, it wins         over the]] - rationale - chatbot/test_main.py
+- [[_check_rate_limit()]] - code - chatbot/main.py
+- [[_get_auth_token()]] - code - chatbot/main.py
+- [[app()_1]] - code - chatbot/test_main.py
+- [[chat()]] - code - chatbot/main.py
+- [[chatbotmain.py]] - code - chatbot/main.py
+- [[client()_20]] - code - chatbot/test_main.py
+- [[health_check()_1]] - code - chatbot/main.py
+- [[lifespan()_1]] - code - chatbot/main.py
+- [[load_persona_files()]] - code - chatbot/main.py
+- [[require_auth()_1]] - code - chatbot/main.py
+- [[test_main.py]] - code - chatbot/test_main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,37 +80,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 2 edges to [[_COMMUNITY_ProxyAction]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 2 edges to [[_COMMUNITY_egress_filter.py (3)]]
-- 2 edges to [[_COMMUNITY_egress_filter.py (2)]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (5)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_DataExfilVolumeGuard]]
-- 1 edge to [[_COMMUNITY_iCloud Services]]
-- 1 edge to [[_COMMUNITY_ModuleStatsCollector]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_AgentRegistry (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (4)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 4 edges to [[_COMMUNITY_api.py (2)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[egress_filter.py_1]] - degree 26, connects to 14 communities
-- [[http_proxy.py_2]] - degree 15, connects to 9 communities
-- [[AgentShroud Semgrep SAST Configuration]] - degree 23, connects to 3 communities
-- [[AGENTSHROUD_MODE]] - degree 6, connects to 3 communities
-- [[agentshroud.yaml_1]] - degree 8, connects to 2 communities
+- [[ChatRequest]] - degree 3, connects to 1 community
+- [[ChatResponse]] - degree 3, connects to 1 community
+- [[dot-test_chat_success_returns_parsed_response()]] - degree 3, connects to 1 community
+- [[dot-test_openai_rate_limit_error_returns_429()]] - degree 3, connects to 1 community
+- [[dot-test_internal_error_not_leaked()]] - degree 3, connects to 1 community

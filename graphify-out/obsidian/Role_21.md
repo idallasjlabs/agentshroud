@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
-type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L7"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "TestEgressApprovalQueue"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/TestEgressApprovalQueue
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[dot-__init__()_96]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

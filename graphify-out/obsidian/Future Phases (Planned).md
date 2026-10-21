@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+community: "MiddlewareManager (9)"
 location: "L1213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/MiddlewareManager_9
 ---
 
 # Future Phases (Planned)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_9

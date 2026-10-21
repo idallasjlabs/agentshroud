@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_collaborator_safe_notice_uses_canonical_header_with_blank_line()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator-safe notices must use the canonical protected header format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/test_collaborator_safe_notice_uses_canonical_header_with_blank_line
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-
-## Top bridge nodes
-- [[dot-test_collaborator_safe_notice_uses_canonical_header_with_blank_line()]] - degree 2, connects to 1 community

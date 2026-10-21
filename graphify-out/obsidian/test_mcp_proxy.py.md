@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "CrossBotTrustLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # test_mcp_proxy.py
@@ -15,15 +15,15 @@ tags:
 - [[FindingType]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
 - [[MCPInspector_1]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
 - [[MCPTransport]] - `imports` [EXTRACTED]
-- [[PermissionLevel]] - `imports` [EXTRACTED]
+- [[PermissionLevel_1]] - `imports` [EXTRACTED]
 - [[TestAllowDenyList]] - `contains` [EXTRACTED]
 - [[TestAuditQueries]] - `contains` [EXTRACTED]
 - [[TestAuditTrail_2]] - `contains` [EXTRACTED]
@@ -34,8 +34,8 @@ tags:
 - [[TestHashChainIntegration]] - `contains` [EXTRACTED]
 - [[TestInjectionDetection]] - `contains` [EXTRACTED]
 - [[TestInspectorEdgeCases]] - `contains` [EXTRACTED]
-- [[TestPIIDetection_1]] - `contains` [EXTRACTED]
-- [[TestPassthroughMode_1]] - `contains` [EXTRACTED]
+- [[TestPIIDetection]] - `contains` [EXTRACTED]
+- [[TestPassthroughMode]] - `contains` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `contains` [EXTRACTED]
 - [[TestProcessingTime]] - `contains` [EXTRACTED]
 - [[TestProxyInterception]] - `contains` [EXTRACTED]
@@ -46,8 +46,8 @@ tags:
 - [[TestSensitiveOps]] - `contains` [EXTRACTED]
 - [[TestSuspiciousEncoding]] - `contains` [EXTRACTED]
 - [[TestThreatLevelCalc]] - `contains` [EXTRACTED]
-- [[ThreatLevel_2]] - `imports` [EXTRACTED]
-- [[audit()_1]] - `contains` [EXTRACTED]
+- [[ThreatLevel_1]] - `imports` [EXTRACTED]
+- [[audit()]] - `contains` [EXTRACTED]
 - [[config()_1]] - `contains` [EXTRACTED]
 - [[inspector()]] - `contains` [EXTRACTED]
 - [[mcp_audit.py]] - `references` [EXTRACTED]
@@ -55,8 +55,8 @@ tags:
 - [[mcp_inspector.py]] - `references` [EXTRACTED]
 - [[mcp_permissions.py]] - `references` [EXTRACTED]
 - [[mcp_proxy.py]] - `references` [EXTRACTED]
-- [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
-- [[proxy()_4]] - `contains` [EXTRACTED]
+- [[passthrough_proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_1]] - `contains` [EXTRACTED]
 - [[strict_inspector()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

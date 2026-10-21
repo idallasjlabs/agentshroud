@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsesp_log.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[mainaudio.h]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

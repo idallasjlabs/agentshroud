@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "A2APolicyEngine (3)"
-location: "L393"
+community: "ToolResultSanitizer"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyConfig]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

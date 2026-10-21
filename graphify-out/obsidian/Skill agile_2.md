@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-agile/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "OpenClaw Workspace Usage Guide"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Skill: agile
@@ -15,4 +15,4 @@ tags:
 - [[hermesskillsi-agileSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

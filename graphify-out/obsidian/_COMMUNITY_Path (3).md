@@ -1,35 +1,23 @@
 ---
 type: community
-members: 22
+members: 10
 ---
 
 # Path (3)
 
-**Members:** 22 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[dot-test_bot_id_filter_matches_bot_image()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_bot_id_filter_unknown_bot_returns_all()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_corrupt_report_file_is_skipped()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_critical_report_status_is_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_each_entry_has_image_key()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_ignores_non_image_prefixed_files()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_empty_list_when_dir_missing()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_empty_when_no_image_reports()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_one_entry_per_report_file()]] - code - gateway/tests/test_scanner_integration.py
-- [[A JSON-corrupt file is silently skipped, others are still returned.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Directory exists but contains only fs scan files — returns .]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Files named trivy-.json (fs scans) are not included.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Path_41]] - code - gateway/tests/test_scanner_integration.py
-- [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration.py
-- [[Unknown bot_id with no config match falls through and returns all entries.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Write a fake image report file in the expected filename format.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_clean_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[_critical_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[_write_image_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[bot_id + config param restricts results to that bot's image.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[get_trivy_image_summaries()]] - code - gateway/security/scanner_integration.py
+- [[dot-test_all_mapped_layers_exist_in_registry()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_proactive_only_layers_have_real_gateway_implementation()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Every layer the engine can emit must already be used by a mitigated entry in…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[Every name in _PROACTIVE_ONLY_LAYERS must be independently proven wired into…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[TestDefenseLayerVocabulary]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[_AGENT_CVE_REGISTRIES]] - code - gateway/security/agent_cve_registry.py
+- [[_HERMES_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
+- [[_OPENCLAW_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
+- [[test_no_entry_id_looks_like_a_cve]] - code - gateway/tests/test_agent_cve_registry.py
+- [[test_real_registry_plan_is_internally_consistent]] - code - gateway/tests/test_auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,17 +27,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 3 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 3 edges to [[_COMMUNITY_get_trivy_summary]]
-- 2 edges to [[_COMMUNITY__load_latest_json]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_Path]]
+- 2 edges to [[_COMMUNITY_test_daily_cve_report.py (2)]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_dot-_run_and_read]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_check_upstream_cves() (2)]]
+- 1 edge to [[_COMMUNITY_api.py]]
 
 ## Top bridge nodes
-- [[Path_41]] - degree 18, connects to 4 communities
-- [[get_trivy_image_summaries()]] - degree 14, connects to 4 communities
-- [[_write_image_report()]] - degree 11, connects to 1 community
-- [[_clean_trivy_report()]] - degree 10, connects to 1 community
-- [[TestGetTrivyImageSummaries]] - degree 10, connects to 1 community
+- [[_AGENT_CVE_REGISTRIES]] - degree 8, connects to 5 communities
+- [[TestDefenseLayerVocabulary]] - degree 5, connects to 2 communities
+- [[_OPENCLAW_CVE_REGISTRY]] - degree 5, connects to 1 community
+- [[dot-test_all_mapped_layers_exist_in_registry()]] - degree 3, connects to 1 community
+- [[test_real_registry_plan_is_internally_consistent]] - degree 2, connects to 1 community

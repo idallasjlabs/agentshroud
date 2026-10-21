@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_websocket.py"
+source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "test_soc_realtime_coverage.py (2)"
-location: "L13"
+community: "test_soc_router_coverage.py"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy_2
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_import()
 
 ## Connections
-- [[TestSOCWebSocketHandlerImport]] - `method` [EXTRACTED]
+- [[TestServiceManagerImport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

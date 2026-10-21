@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .is_tool_allowed()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_trust()]] - `calls` [EXTRACTED]
 - [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper"
+community: "AgentShroud Documentation"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/AgentShroud_Documentation
 ---
 
 # Whether credential is currently in grace period.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_in_grace_period()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Documentation

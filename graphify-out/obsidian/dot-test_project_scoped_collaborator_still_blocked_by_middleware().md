@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestFullAccessMiddlewareBypass"
+community: "iCloud Services (4)"
 location: "L9505"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/iCloud_Services_4
 ---
 
 # .test_project_scoped_collaborator_still_blocked_by_middleware()
@@ -22,4 +22,4 @@ tags:
 - [[process_request()_2]] - `contains` [EXTRACTED]
 - [[project_scoped collaborators are still blocked when middleware blocks (non-…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services_4

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "DockerEngine"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/DockerEngine
 ---
 
 # MoE Expert SSD Offload / Streaming Technique
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Newsletter — MoE Streaming & SSD Offload]] - `references` [EXTRACTED]
 - [[Streaming Probe Metrics (time-to-first-token, stall detection, total latency)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/concept #graphify/EXTRACTED #community/DockerEngine

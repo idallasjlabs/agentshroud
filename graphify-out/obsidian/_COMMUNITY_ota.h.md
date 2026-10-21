@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ota.h]] - code - firmware/voice-terminal/main/ota.h
+- [[Threat Intelligence]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

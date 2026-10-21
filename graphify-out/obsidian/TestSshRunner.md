@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "ssh_runner"
+community: "Red Team Assessment v1.2.0 (2)"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh_runner
+  - community/Red_Team_Assessment_v120_2
 ---
 
 # TestSshRunner
@@ -19,4 +19,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh_runner
+#graphify/code #graphify/EXTRACTED #community/Red_Team_Assessment_v120_2

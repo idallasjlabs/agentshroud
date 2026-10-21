@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "First iteration ingests + records; second sees dedup and skips. (2)"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_3
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
 ---
 
 # EgressAttempt
@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `references` [EXTRACTED]
 - [[dot-_record()_1]] - `references` [EXTRACTED]
-- [[dot-check()_6]] - `references` [EXTRACTED]
+- [[dot-check()_5]] - `references` [EXTRACTED]
 - [[dot-check_async()]] - `references` [EXTRACTED]
 - [[dot-get_log()]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[FakeAuditStore]] - `uses` [INFERRED]
+- [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]
 - [[TestEgressPolicy]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_3
+#graphify/code #graphify/INFERRED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2

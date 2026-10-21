@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect (2)"
-location: "L34"
+community: "SSH Capability Architecture Document"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

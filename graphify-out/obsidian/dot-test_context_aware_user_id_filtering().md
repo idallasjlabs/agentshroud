@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (31)"
+community: "FetchOutcome"
 location: "L361"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_31
+  - community/FetchOutcome
 ---
 
 # .test_context_aware_user_id_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test context-aware user ID filtering.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_31
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

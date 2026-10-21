@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "trivy_report.py"
-location: "L12"
+community: "TestOutboundInfoFilter"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/TestOutboundInfoFilter
 ---
 
 # Purpose
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

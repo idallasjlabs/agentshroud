@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "colima-health-check.sh"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/colima-health-checksh
 ---
 
 # Return the first project accessible to a user (primary project).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_active_project_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

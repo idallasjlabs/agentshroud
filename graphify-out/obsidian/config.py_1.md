@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "config.py"
+community: "GovernanceAction"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/GovernanceAction
 ---
 
 # config.py
@@ -16,10 +16,10 @@ tags:
 - [[Environment Variables_18]] - `contains` [EXTRACTED]
 - [[Function Details_47]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_49]] - `contains` [EXTRACTED]
-- [[Purpose_177]] - `contains` [EXTRACTED]
+- [[Purpose_153]] - `contains` [EXTRACTED]
 - [[Related_53]] - `contains` [EXTRACTED]
-- [[Responsibilities_51]] - `contains` [EXTRACTED]
+- [[Responsibilities_50]] - `contains` [EXTRACTED]
 - [[Rootless Resolution Table]] - `contains` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/GovernanceAction

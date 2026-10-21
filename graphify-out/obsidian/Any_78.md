@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "_wrap_response() (4)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/_wrap_response_4
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_15]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

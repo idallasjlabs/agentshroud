@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "SkillGuard (2)"
+community: "ConfigIntegrityMonitor"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/ConfigIntegrityMonitor
 ---
 
 # ._line_at()
@@ -15,4 +15,4 @@ tags:
 - [[dot-scan_file()]] - `calls` [EXTRACTED]
 - [[SkillGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

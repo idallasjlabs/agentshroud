@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Git Workflow Guardian (GIT-GUARD)"
-location: "L41"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_4
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_4

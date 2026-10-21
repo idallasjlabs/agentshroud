@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
+community: "Technical Illustrator (i-ti)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/Technical_Illustrator_i-ti
 ---
 
 # GSDE&G Development Master Checklist
@@ -25,4 +25,4 @@ tags:
 - [[Quick Commands]] - `contains` [EXTRACTED]
 - [[Skill Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

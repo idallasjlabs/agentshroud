@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "TestMCPProxyEndpoint"
-location: "L188"
+community: "MCPPermissionManager"
+location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/MCPPermissionManager
 ---
 
 # .test_invalid_header_identity_rejected()
 
 ## Connections
-- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+- [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

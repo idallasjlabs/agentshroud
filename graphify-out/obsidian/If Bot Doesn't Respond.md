@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # If Bot Doesn't Respond
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Test Telegram Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

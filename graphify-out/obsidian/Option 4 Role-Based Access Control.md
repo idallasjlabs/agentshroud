@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Implementation Status"
+community: ".github/mcp.json"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/github/mcpjson
 ---
 
 # Option 4: Role-Based Access Control
@@ -16,4 +16,4 @@ tags:
 - [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Implementation Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/github/mcpjson

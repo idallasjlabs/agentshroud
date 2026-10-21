@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "main (2)"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main_2
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # .render_summary()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[MultiHostResult]] - `method` [EXTRACTED]
 - [[Render an aligned PASSFAIL table plus a totals line.]] - `rationale_for` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[main()_31]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/main_2
+#graphify/code #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

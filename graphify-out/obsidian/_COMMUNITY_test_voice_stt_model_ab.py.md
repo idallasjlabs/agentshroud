@@ -1,42 +1,64 @@
 ---
 type: community
-members: 29
+members: 51
 ---
 
 # test_voice_stt_model_ab.py
 
-**Members:** 29 nodes
+**Members:** 51 nodes
 
 ## Members
-- [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[A valid requested value overrides the default (the AB knob).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[An unknown model size does NOT crash — it falls back to the default.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Duration is rounded for stable, log-friendly records.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[No requested value → the default is used (behaviour unchanged).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Operator-friendly trims + lowercases before matching.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The documented AB knob values are all accepted.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The fallback is visible to operators (WARNING, not silent).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The helper returns a record tagged with model size + duration.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The record is emitted through the module logger for AB comparison.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Zero  unknown audio length → rtf is None (no divide-by-zero).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_defaults_to_small_en()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_env_override()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_invalid_env_falls_back()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_handles_zero_audio()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_logs_info()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_returns_structured_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_rounds_duration()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_default_when_unset()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_env_override_selects_configured_model()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_invalid_falls_back_to_default()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_invalid_logs_warning()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_is_case_and_whitespace_insensitive()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_transcribe_emits_latency_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_valid_model_sizes_contains_documented_ab_set()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_voice_stt_model_ab.py]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[Alias for Hermes Anthropic SDK's apiv1 preflight path. Some Anthropic SDK…]] - rationale - gateway/ingest_api/main.py
+- [[Alias for hermes v0.16.0+'s OpenAI client. Hermes upgraded to v0.16.0 on…]] - rationale - gateway/ingest_api/main.py
+- [[LLMProxy._apply_filters]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._build_timeout_fallback_response]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._emit_failover_notice]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._enforce_tool_acl]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._failover_request]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._filter_outbound]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._filter_outbound_streaming]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._filter_streaming_event]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._forward_request]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._get_local_model]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._get_local_secondary_model]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._is_connect_error]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._is_local_oom]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._local_backend_headers]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._local_backend_unavailable_response]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._local_failover_base]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._local_secondary_failover_request]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._normalize_local_model]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._record_failover_event]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._scan_inbound]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._scan_request_data]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._strip_fieldflare_unsupported_fields]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._suppress_qwen3_thinking]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy._widen_optional_tool_param_types]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy.proxy_messages (non-streaming)]] - code - gateway/proxy/llm_proxy.py
+- [[LLMProxy.proxy_messages_streaming]] - code - gateway/proxy/llm_proxy.py
+- [[LOCAL_MODEL_ROUTES]] - code - gateway/proxy/llm_proxy.py
+- [[Proxy Anthropic API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Proxy Google Gemini API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…]] - rationale - gateway/ingest_api/main.py
+- [[Proxy native Ollama API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - rationale - gateway/ingest_api/main.py
+- [[Request_4]] - code
+- [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
+- [[Set a user's role (owner only).]] - rationale - gateway/ingest_api/main.py
+- [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - rationale - gateway/ingest_api/main.py
+- [[_LOCAL_BACKEND_HINTS]] - code - gateway/proxy/llm_proxy.py
+- [[api_route]] - code
+- [[create_report()]] - code - gateway/ingest_api/main.py
+- [[google_api_proxy]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_proxy()]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_root]] - code - gateway/ingest_api/main.py
+- [[llm_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[llm_api_v1_prefix_alias]] - code - gateway/ingest_api/main.py
+- [[llm_openai_chat_alias]] - code - gateway/ingest_api/main.py
+- [[ollama_api_proxy]] - code - gateway/ingest_api/main.py
+- [[put]] - code
+- [[set_user_role()]] - code - gateway/ingest_api/main.py
+- [[slack_api_proxy()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,7 +68,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_stt.py]]
+- 16 edges to [[_COMMUNITY_TrustConfig]]
+- 6 edges to [[_COMMUNITY_ModeRequest]]
+- 5 edges to [[_COMMUNITY__make_cve]]
+- 5 edges to [[_COMMUNITY_pick_latest_stable]]
+- 4 edges to [[_COMMUNITY__is_op_reference_allowed]]
+- 4 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 3 edges to [[_COMMUNITY_WebContentScanner]]
+- 3 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 2 edges to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0 (2)]]
+- 2 edges to [[_COMMUNITY_sync-llm-settings.sh]]
+- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice (2)]]
+- 1 edge to [[_COMMUNITY_TestLoadAllSecretFileValues]]
+- 1 edge to [[_COMMUNITY_sidecar.py]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan (2)]]
+- 1 edge to [[_COMMUNITY_Steps]]
 
 ## Top bridge nodes
-- [[test_voice_stt_model_ab.py]] - degree 15, connects to 1 community
+- [[Request_4]] - degree 22, connects to 5 communities
+- [[llm_api_proxy()]] - degree 13, connects to 5 communities
+- [[hermes_dashboard_proxy()]] - degree 12, connects to 5 communities
+- [[LLMProxy.proxy_messages_streaming]] - degree 20, connects to 3 communities
+- [[LLMProxy.proxy_messages (non-streaming)]] - degree 27, connects to 2 communities

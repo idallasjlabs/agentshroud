@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Request"
+community: "pick_latest_stable"
 location: "L346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request
+  - community/pick_latest_stable
 ---
 
 # Log all incoming requests Never logs request bodies (may contain PII).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[log_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

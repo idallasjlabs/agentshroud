@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestDNSForwarderProtocol"
+community: "test_scorecard_scoring.py"
 location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSForwarderProtocol
+  - community/test_scorecard_scoringpy
 ---
 
 # .test_short_upstream_response_still_relayed()
@@ -17,4 +17,4 @@ tags:
 - [[TestDNSForwarderProtocol]] - `method` [EXTRACTED]
 - [[build_dns_query()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "test_voice_stt_model_ab.py"
 location: "L592-L645"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/test_voice_stt_model_abpy
 ---
 
 # LLMProxy._emit_failover_notice
@@ -18,4 +18,4 @@ tags:
 - [[_telegram_send]] - `semantically_similar_to` [INFERRED]
 - [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

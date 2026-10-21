@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Technical Specification (3)"
+community: "SSH Capability Architecture Document"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_3
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Primary API: Text-to-Dialogue
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification_3
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

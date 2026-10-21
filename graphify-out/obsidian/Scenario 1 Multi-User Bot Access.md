@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "AgentShroud Security Value Proposition - Revised"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # Scenario 1: Multi-User Bot Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Revised Threat Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Himalaya Configuration Reference"
+community: "prompt_guard.py.md"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Configuration_Reference
+  - community/prompt_guardpymd
 ---
 
 # Downloads directory
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Additional Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

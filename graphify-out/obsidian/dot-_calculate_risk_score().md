@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "test_soc_router_coverage.py"
 location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/test_soc_router_coveragepy
 ---
 
 # ._calculate_risk_score()
@@ -18,4 +18,4 @@ tags:
 - [[ToolCall]] - `references` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

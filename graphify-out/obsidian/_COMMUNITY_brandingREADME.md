@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[AgentShroud Blue — 1583f0]] - concept - branding/QUICK-REFERENCE.md
-- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
-- [[AgentShroud Logo — Dark Background Variant]] - image - branding/agentshroud-logo-dark-bg.png
-- [[AgentShroud MerchandiseStationery Mockup]] - image - branding/agentshroud-mockup.png
-- [[AgentShroud Primary Logo]] - image - branding/logo.png
-- [[INDEX_1]] - document - branding/INDEX.md
-- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
-- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
-- [[QUICK-REFERENCE]] - document - branding/QUICK-REFERENCE.md
-- [[brandingREADME]] - document - branding/README.md
-- [[typography_2]] - document - branding/typography/typography.md
+- [[ADR-008-progressive-trust-levels]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Consequences_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Context_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Decision_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Mitigation_3]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Negative Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Positive Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Progressive Controls]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Status_10]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Trust Calculation]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[Trust Levels (0-4)]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,16 +26,3 @@ members: 11
 TABLE source_file, type FROM #community/branding/READMEmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Typography Guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Branding Assets Index]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
-
-## Top bridge nodes
-- [[INDEX_1]] - degree 5, connects to 2 communities
-- [[brandingREADME]] - degree 6, connects to 1 community
-- [[QUICK-REFERENCE]] - degree 4, connects to 1 community
-- [[typography_2]] - degree 4, connects to 1 community

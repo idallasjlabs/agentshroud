@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
-location: "L2196"
+community: "ApprovalQueueConfig (2)"
+location: "L3272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

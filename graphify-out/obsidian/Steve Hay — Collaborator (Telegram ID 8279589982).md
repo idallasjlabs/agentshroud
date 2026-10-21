@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Pre-Deployment Checklist (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Pre-Deployment_Checklist_3
 ---
 
 # Steve Hay — Collaborator (Telegram ID 8279589982)
@@ -14,4 +14,4 @@ tags:
 - [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - `conceptually_related_to` [EXTRACTED]
 - [[Steve Hay's External Reviewer Findings]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist_3

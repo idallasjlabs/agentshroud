@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2)"
 location: "L4556"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_owner_healthcheck_is_handled_locally()
@@ -19,7 +19,7 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_17]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_40]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_43]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

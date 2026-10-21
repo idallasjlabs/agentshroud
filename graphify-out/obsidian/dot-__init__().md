@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_HeadFakeResponse"
-location: "L797"
+community: "ApprovalQueueConfig (2)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_HeadFakeResponse
+  - community/ApprovalQueueConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeResponse]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_HeadFakeResponse
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "apply-patches.js (2)"
-location: "L78"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs_2
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs_2
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

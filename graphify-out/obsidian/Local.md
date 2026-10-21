@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "AgentShroud System Status Report"
+community: "apple_engine.py"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Status_Report
+  - community/apple_enginepy
 ---
 
 # Local
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔧 System Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

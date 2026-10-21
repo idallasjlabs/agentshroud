@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "The 8D Investigation Process (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/The_8D_Investigation_Process_2
 ---
 
 # AWS Cloud Management & FinOps Agent
@@ -19,11 +19,11 @@ tags:
 - [[FY26 Cost Reduction Context_1]] - `contains` [EXTRACTED]
 - [[Guardrails_4]] - `contains` [EXTRACTED]
 - [[Identity]] - `contains` [EXTRACTED]
-- [[Operating Rules (Non-Negotiable)_2]] - `contains` [EXTRACTED]
+- [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
 - [[Resource Inventory CSV Schema]] - `contains` [EXTRACTED]
 - [[Tagging Standard]] - `contains` [EXTRACTED]
 - [[Workflow]] - `contains` [EXTRACTED]
 - [[openclawskillsi-awsSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2

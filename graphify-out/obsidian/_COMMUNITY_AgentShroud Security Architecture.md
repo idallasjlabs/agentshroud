@@ -1,56 +1,57 @@
 ---
 type: community
-members: 43
+members: 44
 ---
 
 # AgentShroud Security Architecture
 
-**Members:** 43 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[API Key Security]] - document - docs/security/security-architecture.md
-- [[AgentShroud Security Architecture]] - document - docs/security/security-architecture.md
-- [[Approval Queue Workflow]] - document - docs/security/security-architecture.md
-- [[Architecture Diagram]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Audit Ledger (SQLite)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
-- [[Audit Log Encryption]] - document - docs/security/security-architecture.md
-- [[Authentication and Authorization Framework]] - document - docs/security/security-architecture.md
-- [[CVE Mitigation Details]] - document - docs/security/security-architecture.md
-- [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - document - docs/security/security-architecture.md
-- [[CVE-2026-25253 PII Exfiltration via DNS Tunneling]] - document - docs/security/security-architecture.md
-- [[Contributing_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[DNS Filtering]] - concept - docs/project/glossary.md
-- [[Data Entry Points (All User-Controlled)]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Data Flow Control]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Defense-in-Depth]] - concept - docs/project/glossary.md
-- [[Defense-in-Depth Architecture]] - document - docs/security/security-architecture.md
-- [[Deployment Security]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Detection Locations]] - document - docs/security/security-architecture.md
-- [[Detection Patterns]] - document - docs/security/security-architecture.md
-- [[Docker Network Isolation (agentshroud-isolated)]] - concept - docs/security/SECURITY_ARCHITECTURE.md
-- [[Effectiveness Metrics]] - document - docs/security/security-architecture.md
-- [[Emergency Procedures]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Encryption and Cryptographic Controls]] - document - docs/security/security-architecture.md
-- [[Executive Summary_1]] - document - docs/security/security-architecture.md
-- [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Memory Encryption]] - document - docs/security/security-architecture.md
-- [[PII Detection System]] - document - docs/security/security-architecture.md
-- [[PII Sanitization at Gateway Boundary]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
-- [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
-- [[Quick Reference_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Transport Encryption]] - document - docs/security/security-architecture.md
-- [[Trust Level Progression]] - document - docs/security/security-architecture.md
-- [[What AgentShroud DOES NOT Protect Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[What AgentShroud Does]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[What We're Protecting Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[security-architecture]] - document - docs/security/security-architecture.md
+- [[dot-is_blocked()]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-setup_method()_9]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-stats()]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-stop()_3]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_download_failure_falls_back_to_cache()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_download_failure_no_cache_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_download_success_caches_to_disk()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_exact_match()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_hosts_line_without_domain_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_not_blocked()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_parent_allowlist_overrides_grandparent_block()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_parent_domain_wildcard()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_periodic_loop_survives_errors_until_cancelled()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_start_creates_task()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_stats_attributes()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_stats_returns_counts()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_stop_cancels_task()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_system_allowlist()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_trailing_dot_normalization()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_update_rebuilds_blocked_domains()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_wildcard_denylist_blocks_subdomains()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Blocklist stub that blocks nothing.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Check if a domain should be blocked.          Checks the domain and all parent d]] - rationale - gateway/proxy/dns_blocklist.py
+- [[DNSBlocklist]] - code - gateway/proxy/dns_blocklist.py
+- [[Domain blocklist with Pi-hole-compatible list parsing.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Lifecycle start_periodic_updates()stop() task management.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[Return blocklist statistics.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Stop periodic updates.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Test DNS Blocklist Suite]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestBlocklistDownload]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestBlocklistUpdate]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestBlocklistWildcardsAndAllowlist]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestIsBlocked]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestLifecycle]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestStats]] - code - gateway/tests/test_dns_blocklist.py
+- [[_BlockNone]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[stats() returns the expected keys.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[stats() — verify blockedallowlistdenylist counts.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[test_dns_blocklist.py]] - code - gateway/tests/test_dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,14 +61,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
-- 1 edge to [[_COMMUNITY_Security Module Inventory]]
-- 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 9 edges to [[_COMMUNITY_TestOAuthInjection]]
+- 9 edges to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 7 edges to [[_COMMUNITY__t (2)]]
+- 5 edges to [[_COMMUNITY_wakeword.c]]
+- 4 edges to [[_COMMUNITY_api.py (2)]]
+- 3 edges to [[_COMMUNITY_Pydantic]]
+- 3 edges to [[_COMMUNITY_Kill Switch Procedure]]
+- 3 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 1 edge to [[_COMMUNITY_TestLeakDetection]]
+- 1 edge to [[_COMMUNITY_InjectionAction (2)]]
+- 1 edge to [[_COMMUNITY_web_proxy.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 32, connects to 7 communities
-- [[DNS Filtering]] - degree 2, connects to 1 community
+- [[DNSBlocklist]] - degree 58, connects to 10 communities
+- [[_BlockNone]] - degree 6, connects to 3 communities
+- [[test_dns_blocklist.py]] - degree 6, connects to 2 communities
+- [[TestBlocklistDownload]] - degree 6, connects to 2 communities
+- [[TestBlocklistWildcardsAndAllowlist]] - degree 6, connects to 2 communities

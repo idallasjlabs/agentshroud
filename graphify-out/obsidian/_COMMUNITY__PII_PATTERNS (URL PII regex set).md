@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[_PII_PATTERNS (URL PII regex set)]] - code - gateway/proxy/url_analyzer.py
-- [[_RESPONSE_PII_PATTERNS (content PII regex set)]] - code - gateway/proxy/web_content_scanner.py
+- [[Skill incident-response_2]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
+- [[openclawskillsi-incident-responseSKILL]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: "Request (2)"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/Request_2
 ---
 
 # .test_run_resets_backoff_after_successful_connect()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeBackoff]] - `method` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/Request_2

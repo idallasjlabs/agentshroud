@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud TwitterX Profile Image]] - image - branding/social/twitter-profile-400x400.png
+- [[Favicon 32x32 (AgentShroud logo mark)]] - image - branding/favicons/favicon-32x32.png
 
 ## Live Query (requires Dataview plugin)
 

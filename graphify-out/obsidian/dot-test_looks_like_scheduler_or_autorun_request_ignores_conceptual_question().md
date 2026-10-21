@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
+community: "ServiceManager"
 location: "L7390"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/ServiceManager
 ---
 
 # .test_looks_like_scheduler_or_autorun_request_ignores_conceptual_question()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

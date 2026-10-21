@@ -1,27 +1,18 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "browser-extension/options.js"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L60"
+community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
 ---
 
 # save()
 
 ## Connections
-- [[Image]] - `references` [EXTRACTED]
-- [[Path_42]] - `references` [EXTRACTED]
-- [[ensure()]] - `calls` [EXTRACTED]
-- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[generate_email()]] - `calls` [EXTRACTED]
-- [[generate_favicons()]] - `calls` [EXTRACTED]
-- [[generate_feature_icons()]] - `calls` [EXTRACTED]
-- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
-- [[generate_presentation()]] - `calls` [EXTRACTED]
-- [[generate_social()]] - `calls` [EXTRACTED]
-- [[generate_variants()]] - `calls` [EXTRACTED]
+- [[loadConfig()]] - `semantically_similar_to` [INFERRED]
+- [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart

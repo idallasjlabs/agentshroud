@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L200"
+community: "CrossBotTrustLedger (3)"
+location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/CrossBotTrustLedger_3
 ---
 
 # .set_event_bus()
 
 ## Connections
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Set optional event bus for approval telemetry.]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Wire optional event bus for privacysecurity telemetry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "TestSecurityFeatures"
+community: "_get_gmail_app_password"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/_get_gmail_app_password
 ---
 
 # get_security_options()
@@ -22,4 +22,4 @@ tags:
 - [[security.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password

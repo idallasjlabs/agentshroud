@@ -1,50 +1,43 @@
 ---
 type: community
-members: 37
+members: 30
 ---
 
 # Development Workflow: Read-Only Filesystem Strategy
 
-**Members:** 37 nodes
+**Members:** 30 nodes
 
 ## Members
-- [[1. What Needs to WRITE]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[2. What Needs to PERSIST]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[3. What's System-Level]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Current Configuration Status]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Current Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Current Recommendation]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Currently Documented]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Development Mode Script]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Development Workflow]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Development Workflow Read-Only Filesystem Strategy]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Emergency Rollback]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature 1Password Integration]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature Gateway (FastAPI)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature Kill Switch (Phase 3B)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature OpenSCAP Scanning (Phase 3A)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature SSH Proxy (Phase 4)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature SecureBrowser (Playwright)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Feature iCloudGmail Services]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[For Each New Feature, Document]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Functional Testing (Read-Only Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[If Any Test Fails]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Lockdown Procedure]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Planned Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Potentially Needed (Discovered During Testing)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Pre-Lockdown Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Read-Only Compatibility Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Summary_10]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Write Paths Inventory]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Alternative Google People API]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[CLI Tool gcalcli]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[For Immediate Use CalDAVCardDAV]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[For Production OAuth2 + Google APIs]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Google Services Setup - Calendar, Contacts, Keep]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Option A Quick CalDAV Setup (Recommended)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Option B Full OAuth Setup]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Option C Alternative Notes Solution]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Problem No Public API]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Python Integration]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Server Settings]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 1 Create Google Cloud Project]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 1 Enable App Password (Gmail)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 2 Create OAuth Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 2 Enable CalDAVCardDAV Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 3 Test Calendar Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Step 4 Test Contacts Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Workarounds]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[✅ Quick Start Command]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🎯 Next Steps]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[📅 Google Calendar (CalDAV)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[📊 Comparison CalDAV vs OAuth2]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[📝 Google Keep (Notes)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[📞 Google Contacts (CardDAV)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[📧 Gmail Already Working]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🔐 Setup Steps]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🚀 Recommended Approach]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,7 +47,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_BotConfig (3)]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes
-- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community
+- [[Google Services Setup - Calendar, Contacts, Keep]] - degree 11, connects to 1 community

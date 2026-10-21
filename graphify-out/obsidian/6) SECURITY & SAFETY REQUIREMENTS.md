@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "CLAUDE.md"
 type: "document"
-community: "Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass."
-location: "L125"
+community: "graphify Skill"
+location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass
+  - community/graphify_Skill
 ---
 
 # 6) SECURITY & SAFETY REQUIREMENTS
 
 ## Connections
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill

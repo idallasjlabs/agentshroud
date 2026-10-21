@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Deployment Matrix  (Direct to Prod)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[GitHub Actions Best Practices]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Quality Gates  (execution order)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Review Flags  (block the merge)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Role_10]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[openclawskillsi-cicdSKILL]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community
+- [[Skill CICD Pipeline Advisor (CICD)]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "A2AMethod"
+community: "Security Module Inventory"
 location: "line 44"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Security_Module_Inventory
 ---
 
 # UK AISI Rogue Agent Actions Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/A2AMethod
+#graphify/concept #graphify/EXTRACTED #community/Security_Module_Inventory

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "AgentShroud Color Palette"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/AgentShroud_Color_Palette
 ---
 
 # SecurityPipeline (75 modules, 7 layers)
@@ -16,4 +16,4 @@ tags:
 - [[Compliance Alignment (9 standards)]] - `rationale_for` [EXTRACTED]
 - [[Security Modules (30+, gateway diagram)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Color_Palette

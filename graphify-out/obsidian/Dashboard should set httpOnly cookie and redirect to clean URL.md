@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # Dashboard should set httpOnly cookie and redirect to clean URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDashboardCookieAuth]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

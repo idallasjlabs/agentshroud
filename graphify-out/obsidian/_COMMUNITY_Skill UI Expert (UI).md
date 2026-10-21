@@ -1,40 +1,50 @@
 ---
 type: community
-members: 27
+members: 37
 ---
 
 # Skill: UI Expert (UI)
 
-**Members:** 27 nodes
+**Members:** 37 nodes
 
 ## Members
-- [[dot-agentsskillsi-uiSKILL]] - document - .agents/skills/i-ui/SKILL.md
-- [[Accessibility Requirements]] - document - .agents/skills/i-ui/SKILL.md
-- [[Anti-Patterns to Flag_6]] - document - .agents/skills/i-ui/SKILL.md
-- [[BEM (Block Element Modifier)]] - document - .agents/skills/i-ui/SKILL.md
-- [[Breakpoints (mobile-first)]] - document - .agents/skills/i-ui/SKILL.md
-- [[Button]] - document - .agents/skills/i-ui/SKILL.md
-- [[CSS Architecture Recommendations]] - document - .agents/skills/i-ui/SKILL.md
-- [[CSS Modules (React  Next.js)]] - document - .agents/skills/i-ui/SKILL.md
-- [[Component Patterns]] - document - .agents/skills/i-ui/SKILL.md
-- [[Component contract rules]] - document - .agents/skills/i-ui/SKILL.md
-- [[Component file structure]] - document - .agents/skills/i-ui/SKILL.md
-- [[Container Query Pattern (preferred over breakpoints for components)]] - document - .agents/skills/i-ui/SKILL.md
-- [[Core Discipline Structure → Component → Layout → Validate]] - document - .agents/skills/i-ui/SKILL.md
-- [[Dark  Light Theme Implementation]] - document - .agents/skills/i-ui/SKILL.md
-- [[Dashboard Grid]] - document - .agents/skills/i-ui/SKILL.md
-- [[Data Table]] - document - .agents/skills/i-ui/SKILL.md
-- [[Dependencies_6]] - document - .agents/skills/i-ui/SKILL.md
-- [[Form Field]] - document - .agents/skills/i-ui/SKILL.md
-- [[Modal  Dialog]] - document - .agents/skills/i-ui/SKILL.md
-- [[Navigation]] - document - .agents/skills/i-ui/SKILL.md
-- [[React  Next.js Component Architecture]] - document - .agents/skills/i-ui/SKILL.md
-- [[Responsive Layout System]] - document - .agents/skills/i-ui/SKILL.md
-- [[Role_31]] - document - .agents/skills/i-ui/SKILL.md
-- [[Rules_7]] - document - .agents/skills/i-ui/SKILL.md
-- [[Skill UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
-- [[UI Validation Checklist]] - document - .agents/skills/i-ui/SKILL.md
-- [[Utility-First (Tailwind  custom utilities)]] - document - .agents/skills/i-ui/SKILL.md
+- [[dot-scripts Numbered Script Library Convention]] - concept - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[dot-agentsskillsi-cicdREADME]] - document - .agents/skills/i-cicd/README.md
+- [[AWS Cloud Management & FinOps (README)]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[AWS Cloud Management & FinOps Agent (SKILL)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Brand System Components (IdentityColorTypographyVoiceLayoutComponents)]] - concept - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Branding Specialist (BS) (README)]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Branding Specialist (BS) (SKILL)]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[CD Skill (Continuous Delivery pipeline design)]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[CI Skill (Continuous Integration pipeline)]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[CICD Pipeline Advisor (README)]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[CICD Pipeline Advisor (SKILL)]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[CICD Quality Gates (execution order)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Code Review (CR) (README)]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Code Review (CR) (SKILL)]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Data Validation (DATA-VAL) Skill]] - document - .agents/skills/i-data/SKILL.md
+- [[Data Validation README]] - document - .agents/skills/i-data/README.md
+- [[Deployment Matrix (Direct to Prod)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[EBS Performance Analysis Pattern]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[GitHub Actions Best Practices_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Purpose_71]] - document - .agents/skills/i-cicd/README.md
+- [[Purpose_72]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Quality Gates  (execution order)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Related Skills_56]] - document - .agents/skills/i-cicd/README.md
+- [[Related Skills_57]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Review Flags  (block the merge)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Role_20]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Usage_59]] - document - .agents/skills/i-cicd/README.md
+- [[Usage_60]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[WCAG AA Contrast Standard]] - concept - docker/config/hermes/skills/i-bs/SKILL.md
+- [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - concept - .agents/skills/i-data/SKILL.md
+- [[hermesskillsi-cicdREADME]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[hermesskillsi-cicdSKILL]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,7 +54,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_agentshroud-gateway service (proxy mode)]]
 
 ## Top bridge nodes
-- [[Skill UI Expert (UI)]] - degree 14, connects to 1 community
+- [[CICD Pipeline Advisor (README)]] - degree 10, connects to 2 communities
+- [[Skill CICD Pipeline Advisor (CICD)_1]] - degree 7, connects to 1 community
+- [[AWS Cloud Management & FinOps Agent (SKILL)]] - degree 5, connects to 1 community

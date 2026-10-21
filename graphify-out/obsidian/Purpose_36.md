@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (5)"
+community: "TestOutboundInfoFilter (8)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_5
+  - community/TestOutboundInfoFilter_8
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_8

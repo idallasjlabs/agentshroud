@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist (2)"
+community: "GSDE&G Skills Reference Guide"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_2
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # Post-Deployment Verification
@@ -17,4 +17,4 @@ tags:
 - [[Sign-Off_1]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[7. Recommendations by Severity]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.1 Pre-Red Team (Critical)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.2 Short-term (High Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.3 Medium-term (Medium Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.4 Long-term (Low Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[Pull Request Generator (PR)_1]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_51]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Related Skills_37]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Usage_40]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[openclawskillsi-prREADME]] - document - docker/config/openclaw/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[7. Recommendations by Severity]] - degree 5, connects to 1 community
+- [[Pull Request Generator (PR)_1]] - degree 5, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload"
+community: "UserSessionManager (2)"
 location: "L1744"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload
+  - community/UserSessionManager_2
 ---
 
 # Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2

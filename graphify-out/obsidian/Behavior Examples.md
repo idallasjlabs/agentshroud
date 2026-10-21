@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Implementation Status"
+community: ".github/mcp.json"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/github/mcpjson
 ---
 
 # Behavior Examples
@@ -16,4 +16,4 @@ tags:
 - [[✅ What SHOULD Happen]] - `contains` [EXTRACTED]
 - [[❌ What Should NOT Happen (Blocked)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/github/mcpjson

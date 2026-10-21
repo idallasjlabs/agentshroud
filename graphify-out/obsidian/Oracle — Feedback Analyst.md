@@ -1,23 +1,23 @@
 ---
 source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst (3)"
+community: "TestAggregateResults"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst_3
+  - community/TestAggregateResults
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_3]] - `contains` [EXTRACTED]
-- [[Output Format_2]] - `contains` [EXTRACTED]
-- [[Persona_2]] - `contains` [EXTRACTED]
-- [[Quality Checklist_3]] - `contains` [EXTRACTED]
-- [[Role_6]] - `contains` [EXTRACTED]
-- [[System Prompt_2]] - `contains` [EXTRACTED]
+- [[Input Requirements_1]] - `contains` [EXTRACTED]
+- [[Output Format_1]] - `contains` [EXTRACTED]
+- [[Persona_1]] - `contains` [EXTRACTED]
+- [[Quality Checklist_1]] - `contains` [EXTRACTED]
+- [[Role_3]] - `contains` [EXTRACTED]
+- [[System Prompt_1]] - `contains` [EXTRACTED]
 - [[hermesskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_3
+#graphify/document #graphify/EXTRACTED #community/TestAggregateResults

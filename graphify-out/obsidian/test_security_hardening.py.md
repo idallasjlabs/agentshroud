@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TrustConfig"
+community: "TelegramAPIProxy (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TelegramAPIProxy_2
 ---
 
 # test_security_hardening.py
@@ -24,23 +24,23 @@ tags:
 - [[IsolationStatus]] - `imports` [EXTRACTED]
 - [[IsolationVerifier]] - `imports` [EXTRACTED]
 - [[PatternRule]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestAgentIsolation]] - `contains` [EXTRACTED]
 - [[TestDriftDetector]] - `contains` [EXTRACTED]
 - [[TestDriftDetectorHardened]] - `contains` [EXTRACTED]
 - [[TestEgressFilter]] - `contains` [EXTRACTED]
 - [[TestEgressSSRF]] - `contains` [EXTRACTED]
 - [[TestEncryptedStore]] - `contains` [EXTRACTED]
-- [[TestPromptGuard_1]] - `contains` [EXTRACTED]
+- [[TestPromptGuard]] - `contains` [EXTRACTED]
 - [[TestPromptGuardEvasion]] - `contains` [EXTRACTED]
 - [[TestSecureZero]] - `contains` [EXTRACTED]
 - [[TestTrustManager]] - `contains` [EXTRACTED]
 - [[TestTrustManagerHardened]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustLevel_2]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[TrustLevel_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "TestOutputCanary"
+community: "check-vendor-compat.sh"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/check-vendor-compatsh
 ---
 
 # .test_canary_cleanup()
@@ -15,4 +15,4 @@ tags:
 - [[Test cleanup of expired canaries.]] - `rationale_for` [EXTRACTED]
 - [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

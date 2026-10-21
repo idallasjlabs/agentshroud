@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "ConfigIntegrityMonitor"
+community: "test_runtime_engines.py"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/test_runtime_enginespy
 ---
 
 # Accept current file hashes as the new baseline (owner-acknowledged rebuild).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-reset_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy

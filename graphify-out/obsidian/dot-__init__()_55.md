@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L37"
+community: "scanner_integration.py"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/scanner_integrationpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_13]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

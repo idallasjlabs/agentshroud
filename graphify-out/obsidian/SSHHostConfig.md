@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # SSHHostConfig
@@ -17,9 +17,9 @@ tags:
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Configuration for a single SSH host]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_1]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHProxy]] - `shares_data_with` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
@@ -49,12 +49,12 @@ tags:
 - [[TestVersionConsistency]] - `uses` [INFERRED]
 - [[TestWebSocketHandshakeAuth]] - `uses` [INFERRED]
 - [[ssh_config()]] - `calls` [EXTRACTED]
-- [[ssh_config()_1]] - `calls` [EXTRACTED]
 - [[ssh_config()_2]] - `calls` [EXTRACTED]
+- [[ssh_config()_1]] - `calls` [EXTRACTED]
 - [[ssh_config.py]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager_2

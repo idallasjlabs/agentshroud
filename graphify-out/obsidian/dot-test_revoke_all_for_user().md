@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # .test_revoke_all_for_user()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRevoke]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

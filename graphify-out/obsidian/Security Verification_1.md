@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
+community: "Skill: Security Review (SEC) (2)"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Skill_Security_Review_SEC_2
 ---
 
 # Security Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2

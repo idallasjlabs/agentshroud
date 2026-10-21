@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L218"
+community: "CrossBotTrustLedger"
+location: "L840"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CrossBotTrustLedger
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
+- [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

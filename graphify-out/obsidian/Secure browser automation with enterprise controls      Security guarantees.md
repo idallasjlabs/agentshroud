@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: ".proxy_messages()"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/proxy_messages
 ---
 
 # Secure browser automation with enterprise controls      Security guarantees:
 
 ## Connections
-- [[SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

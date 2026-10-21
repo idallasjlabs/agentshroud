@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L183"
+community: "setup-secrets.sh"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/setup-secretssh
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
-- [[Any_31]] - `references` [EXTRACTED]
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

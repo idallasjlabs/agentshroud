@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "agentshroud-ssh-exec.sh"
+community: "test_security_regressions_v1_2.py (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-ssh-execsh
+  - community/test_security_regressions_v1_2py_4
 ---
 
 # agentshroud-ssh-exec.sh
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-ssh-exec.sh script]] - `contains` [EXTRACTED]
 - [[daily-checkin.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py_4

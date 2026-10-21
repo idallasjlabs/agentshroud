@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[tools__init__.py]] - code - gateway/tools/__init__.py
+- [[browser-fetch package.json_2]] - code - skills/custom/browser-fetch/package.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter (14)"
+community: "SECTION 7: FILING CHECKLIST"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_14
+  - community/SECTION_7_FILING_CHECKLIST
 ---
 
 # TestIsFresh
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_stat_error_returns_false()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_14
+#graphify/code #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST

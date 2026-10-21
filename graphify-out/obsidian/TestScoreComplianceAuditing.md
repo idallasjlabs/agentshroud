@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "_mock_dir_with_fresh_files"
+community: "Command Details"
 location: "L473"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_mock_dir_with_fresh_files
+  - community/Command_Details
 ---
 
 # TestScoreComplianceAuditing
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_zero_when_not_run()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_fresh_files
+#graphify/code #graphify/EXTRACTED #community/Command_Details

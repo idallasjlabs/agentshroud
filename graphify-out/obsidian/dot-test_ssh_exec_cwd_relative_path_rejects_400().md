@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_ssh_exec_cwd_relative_path_rejects_400()
@@ -15,4 +15,4 @@ tags:
 - [[TestSSHExec]] - `method` [EXTRACTED]
 - [[cwd must be an absolute path.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

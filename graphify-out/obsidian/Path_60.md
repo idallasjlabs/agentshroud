@@ -1,18 +1,27 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "plan_remediation"
-location: "L89"
+community: "KillSwitchMonitor (3)"
+location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/KillSwitchMonitor_3
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[dot-store()_1]] - `references` [EXTRACTED]
+- [[dot-store_dir()]] - `references` [EXTRACTED]
+- [[dot-test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
+- [[dot-test_load_all_skips_malformed_files()]] - `references` [EXTRACTED]
+- [[dot-test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `references` [EXTRACTED]
+- [[dot-test_store_creates_directory()]] - `references` [EXTRACTED]
+- [[dot-test_verify_chain_fails_for_tampered_entry()]] - `references` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[ReportIntegrityError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Re-injection Command (for reference)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Role_85]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Rules_22]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 1 — Survey the Repo_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 2 — Answer Six Questions_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 3 — Write SESSION_PROMPT_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 4 — Write the File_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 5 — Inject into All Three LLMs_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Step 6 — Confirm_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Trigger_2]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Workflow Survey → Draft → Inject → Confirm_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[hermesskillsi-session-promptSKILL]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[1. Gateway (FastAPI)]] - document - docs/architecture/system-architecture.md
+- [[10. Dashboard (WebSocket)]] - document - docs/architecture/system-architecture.md
+- [[11. Trust Manager]] - document - docs/architecture/system-architecture.md
+- [[12. Egress Monitor]] - document - docs/architecture/system-architecture.md
+- [[2. PII Sanitizer (Presidio + Regex)]] - document - docs/architecture/system-architecture.md
+- [[3. Audit Ledger (SHA-256 Hash Chain)]] - document - docs/architecture/system-architecture.md
+- [[4. Approval Queue (SQLite)]] - document - docs/architecture/system-architecture.md
+- [[5. Kill Switch (3 Modes)]] - document - docs/architecture/system-architecture.md
+- [[6. SSH Proxy]] - document - docs/architecture/system-architecture.md
+- [[7. MCP Proxy (Model Context Protocol)]] - document - docs/architecture/system-architecture.md
+- [[8. Web Proxy]] - document - docs/architecture/system-architecture.md
+- [[9. DNS Filter]] - document - docs/architecture/system-architecture.md
+- [[Core Components]] - document - docs/architecture/system-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,9 @@ members: 13
 TABLE source_file, type FROM #community/Workflow_Survey__Draft__Inject__Confirm_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer (2)]]
+
+## Top bridge nodes
+- [[Core Components]] - degree 13, connects to 1 community

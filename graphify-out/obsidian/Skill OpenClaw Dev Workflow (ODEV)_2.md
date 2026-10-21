@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode A — Single task (2)"
+community: "iCloud Services (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_2
+  - community/iCloud_Services_3
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
@@ -18,8 +18,8 @@ tags:
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_5]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_5]] - `contains` [EXTRACTED]
-- [[Role_34]] - `contains` [EXTRACTED]
+- [[Role_32]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_5]] - `contains` [EXTRACTED]
 - [[hermesskillsi-odevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3

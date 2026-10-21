@@ -1,27 +1,27 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "OpenClaw Workspace Usage Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # hermes/skills/i-cr/SKILL.md
 
 ## Connections
 - [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 - [[Expected output]] - `contains` [EXTRACTED]
 - [[Expected ok]] - `contains` [EXTRACTED]
 - [[Expected INFO Re-queued 3 jobs]] - `contains` [EXTRACTED]
 - [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 - [[If not → escalate to field team via ops-alerts]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 - [[Query the control DB]] - `contains` [EXTRACTED]
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
 - [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
@@ -46,18 +46,18 @@ tags:
 - [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 - [[Skill agile_2]] - `contains` [EXTRACTED]
-- [[Skill bdd]] - `contains` [EXTRACTED]
+- [[Skill bdd_1]] - `contains` [EXTRACTED]
 - [[Skill cd]] - `contains` [EXTRACTED]
-- [[Skill ci]] - `contains` [EXTRACTED]
-- [[Skill gitops]] - `contains` [EXTRACTED]
-- [[Skill sdlc]] - `contains` [EXTRACTED]
-- [[Skill sre]] - `contains` [EXTRACTED]
-- [[System Audit & Documentation_1]] - `contains` [EXTRACTED]
-- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
+- [[Skill ci_1]] - `contains` [EXTRACTED]
+- [[Skill gitops_1]] - `contains` [EXTRACTED]
+- [[Skill sdlc_1]] - `contains` [EXTRACTED]
+- [[Skill sre_1]] - `contains` [EXTRACTED]
+- [[System Audit & Documentation]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
 - [[Validate contrast ratio_1]] - `contains` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 - [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - `contains` [EXTRACTED]
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

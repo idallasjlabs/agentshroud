@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
+community: "AgentShroud Agentic OS"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Agentic_OS
 ---
 
 # brand-guidelines.md
@@ -20,4 +20,4 @@ tags:
 - [[INDEX_1]] - `references` [EXTRACTED]
 - [[Typography in Practice]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

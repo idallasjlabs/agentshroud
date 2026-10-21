@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "chatbot/main.py"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/chatbot/mainpy
 ---
 
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[dot-__init__()_198]] - `method` [EXTRACTED]
+- [[dot-__init__()_200]] - `method` [EXTRACTED]
 - [[dot-_get_role_value()]] - `method` [EXTRACTED]
 - [[dot-_user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[dot-contains_private_data()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[dot-test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
 - [[Evaluates access control and filters responses per privacy policy.]] - `rationale_for` [EXTRACTED]
 - [[Privacy Policy Enforcement Tests]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

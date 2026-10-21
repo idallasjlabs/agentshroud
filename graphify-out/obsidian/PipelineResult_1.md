@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "Phase Review: P0 — Core Pipeline Wiring"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PipelineAction_2
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # PipelineResult
@@ -15,16 +15,16 @@ tags:
 - [[dot-_maybe_record_trust_violation()]] - `references` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_8]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_6]] - `references` [EXTRACTED]
-- [[dot-to_dict()_9]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `references` [EXTRACTED]
+- [[dot-process_outbound()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_1]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult_1]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Result of running a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundFallbackToDirectSanitizer]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedNonOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedOwner]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[pipeline.py]] - `contains` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PipelineAction_2
+#graphify/code #graphify/INFERRED #community/Phase_Review_P0__Core_Pipeline_Wiring

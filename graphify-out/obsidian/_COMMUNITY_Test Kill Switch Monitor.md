@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[Test Kill Switch Monitor]] - code - gateway/tests/test_killswitch_monitor.py
-- [[Test Kill Switch Script Modes]] - code - gateway/tests/test_killswitch_modes.py
-- [[Test Observatory Mode API and Kill Switch Verification]] - code - gateway/tests/test_observatory_mode.py
+- [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - concept - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh]] - code - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh script]] - code - scripts/gen-code-graph.sh
 
 ## Live Query (requires Dataview plugin)
 

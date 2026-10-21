@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "All Dependencies.md"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/EgressFilter
 ---
 
 # openscap.md
@@ -16,4 +16,4 @@ tags:
 - [[clamav_1]] - `conceptually_related_to` [EXTRACTED]
 - [[trivy_1]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

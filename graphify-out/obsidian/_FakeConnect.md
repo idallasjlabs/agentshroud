@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "test_cli_coverage.py"
+community: "1. GitHub MCP Authentication Reset (2)"
 location: "L629"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # _FakeConnect
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-__aenter__()_6]] - `method` [EXTRACTED]
 - [[dot-__aexit__()_6]] - `method` [EXTRACTED]
-- [[dot-__call__()_10]] - `method` [EXTRACTED]
-- [[dot-__init__()_161]] - `method` [EXTRACTED]
+- [[dot-__call__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_146]] - `method` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]
 - [[_install_fake_websockets()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

@@ -1,29 +1,24 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "TrustConfig"
-location: "L30"
+community: "MCPPermissionManager"
+location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/MCPPermissionManager
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
-- [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[sanitizer()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

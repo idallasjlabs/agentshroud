@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Bot Container (agent decides: reply + tool call)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Bot Container (agent decides reply + tool call)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Gateway (HMAC auth check, PII redaction via Presidio, route to agent)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Isaiah (Telegram)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[MCP inspection (injection scan NONE, PII scan NONE, sensitive op NONE)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[OpenAI API (POST v1chatcompletions)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Telegram API]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[ledger.db (INSERT INTO ledger)]] - concept - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Scenario 00 — Information Disclosure (Phase 0 finding)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 01 — Enforce-by-Default]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 02 — Human-in-the-Loop Bypass]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 03 — Session Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 04 — Separation of Privilege]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 05 — Credential Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 06 — Outbound Information Filter]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§1 — Re-run of Prior Scenarios]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/Bot_Container_agent_decides_reply__tool_call
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
+
+## Top bridge nodes
+- [[§1 — Re-run of Prior Scenarios]] - degree 8, connects to 1 community

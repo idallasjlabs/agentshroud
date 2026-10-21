@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py (2)"
+community: "Function Details (8)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_2
+  - community/Function_Details_8
 ---
 
 # anthropic_openai_translator.py
@@ -20,4 +20,4 @@ tags:
 - [[openai_to_anthropic_request()]] - `contains` [EXTRACTED]
 - [[openai_to_anthropic_response()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_2
+#graphify/code #graphify/EXTRACTED #community/Function_Details_8

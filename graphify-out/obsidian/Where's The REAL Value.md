@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "🎯 High-Value Features (Justify the Effort)"
+community: "ContextSegment (3)"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_High-Value_Features_Justify_the_Effort
+  - community/ContextSegment_3
 ---
 
 # Where's The REAL Value?
@@ -17,4 +17,4 @@ tags:
 - [[❓ Low-Value Features (Questionable ROI)]] - `contains` [EXTRACTED]
 - [[🎯 High-Value Features (Justify the Effort)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort
+#graphify/document #graphify/EXTRACTED #community/ContextSegment_3

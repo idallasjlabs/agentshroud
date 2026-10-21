@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "chatbot/main.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/chatbot/mainpy
 ---
 
 # ServicePolicy
@@ -18,4 +18,4 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

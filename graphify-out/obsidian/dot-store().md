@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
-location: "L693"
+community: "AlertDispatcher (5)"
+location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/AlertDispatcher_5
 ---
 
 # .store()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestCryptography]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

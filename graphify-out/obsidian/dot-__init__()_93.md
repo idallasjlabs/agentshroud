@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L51"
+community: "AgentTarget"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

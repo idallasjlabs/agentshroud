@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Step Functions MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
 
 ## Live Query (requires Dataview plugin)
 

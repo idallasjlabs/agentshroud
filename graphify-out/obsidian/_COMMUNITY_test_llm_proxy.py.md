@@ -8,93 +8,93 @@ members: 87
 **Members:** 87 nodes
 
 ## Members
-- [[dot-__init__()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_5]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-block_credentials()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-can_use_tool()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-filter_xml_blocks()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-inject_headers()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-sanitize()]] - code - gateway/tests/test_llm_proxy.py
-- [[A cloud 400 that is NOT a quota wall must surface as a 400, not a 200.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[A known secret value echoed in a streaming delta must be scrubbed.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Allowed tool blocks must pass through unchanged.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Backend-down stays an in-stream SSE error frame under a 200 head (unchanged…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Connect failures to cloud providers keep the existing 502 behavior.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Connect timeout must exceed this host's measured DNS-resolution latency…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Existing callers (with_head=False) keep getting bytes only — no StreamHead.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - rationale - gateway/proxy/llm_proxy.py
-- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - rationale - gateway/proxy/llm_proxy.py
-- [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[No streaming call site may hardcode its own connect timeout literal. Guards…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Ollama down → 503 backend_unavailable with ollama serve hint.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[OpenClaw already sends Authorization Bearer — injector must leave it untouched.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Regression 2026-08-07 a plain (non-Claude, non-Gemini, non-local) OpenAI-model…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Regression 2026-09-16 openai-local is AgentShroud's own local-model…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Repeated connect failures log one WARNING per window, not per request.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Return a monkeypatched urlopen that captures the Request headers.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Same regression as…]] - rationale - gateway/tests/test_llm_proxy.py
-- [[StreamHead]] - code - gateway/proxy/llm_proxy.py
-- [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
-- [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
-- [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_2]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_3]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_4]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_5]] - code - gateway/tests/test_llm_proxy.py
-- [[_fake_forward()_6]] - code - gateway/tests/test_llm_proxy.py
-- [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
-- [[_proxy_with_connect_refused()]] - code - gateway/tests/test_llm_proxy.py
-- [[_run_stream (StreamHead test harness)]] - code - gateway/tests/test_llm_proxy.py
-- [[asyncio_2]] - code
-- [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
-- [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[fake_open()]] - code - gateway/tests/test_llm_proxy.py
-- [[fake_urlopen()_8]] - code - gateway/tests/test_llm_proxy.py
-- [[llm_proxy.py_2]] - code - gateway/proxy/llm_proxy.py
-- [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[mock_forward()]] - code - gateway/tests/test_llm_proxy.py
-- [[mock_forward()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[mock_forward()_2]] - code - gateway/tests/test_llm_proxy.py
-- [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_backend_unavailable_warning_rate_limited()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_cloud_backend_connect_failure_still_returns_502()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_called_in_streaming_path()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_does_not_overwrite_existing_bearer()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_filter_outbound_streaming_filters_anthropic_content_text()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_filter_outbound_streaming_filters_openai_delta_content()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_llm_connect_timeout_clears_observed_dns_latency()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_llm_proxy.py]] - code - gateway/tests/test_llm_proxy.py
-- [[test_lmstudio_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_mlxlm_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_ollama_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_streaming_strips_openai_local_prefix_and_routes_to_backend()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_scan_request_data_scans_messages_without_name_error()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_cloud_non_quota_400_also_propagates]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_default_contract_yields_only_bytes]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_secret_value_redacted()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_tool_acl_allows_permitted_tool()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_tool_acl_blocks_terminal_tool()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_tool_acl_skips_unknown_user()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_with_head_reports_200_then_chunks]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_with_head_reports_upstream_400_and_body]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_139]] - code - gateway/security/differential_pii_detector.py
+- [[dot-__init__()_140]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-__post_init__()_8]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_deduplicate()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_detect_pii()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_detect_presidio()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_detect_regex()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_detector_with_fake()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-_init_presidio()_1]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_redact()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-_scan()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-from_confidence()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_prompt()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_tool_result()_1]] - code - gateway/security/differential_pii_detector.py
+- [[dot-test_bare_city_name_not_flagged_but_street_address_is()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_cannot_set_tool_floor_above_prompt_floor()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_cannot_set_tool_floor_below_minimum()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_clean_content_no_hits()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_core_ssn_unioned_when_presidio_misses_it()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_default_config_has_correct_floors()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_dotted_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_email_redacted_in_output()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_init_does_not_construct_bare_analyzer_engine()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_init_wires_explicit_nlp_engine_when_model_present()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_pii_hit_fields()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_plain_email_caught_in_prompt()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_plain_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_presidio_analyze_restricted_to_pii_entities()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_presidio_exception_falls_back_to_regex()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_presidio_result_becomes_pii_hit()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_redact_on_hit_false_preserves_original()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_redacted_content_is_original_when_no_pii()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_regex_fallback_when_model_absent()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_report_has_required_fields()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_scan_produces_report_with_correct_floor_used()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_spaced_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_tool_specific_floor_override()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_unknown_tool_uses_default_floor()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_us_ssn_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_weak_hit_present_in_tool_result_only()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[dot-test_zero_width_space_injection_caught()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[A single PII detection result.]] - rationale - gateway/security/differential_pii_detector.py
+- [[A weak-confidence hit (0.75) must appear in tool results but not prompts.]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - rationale - gateway/security/differential_pii_detector.py
+- [[Attempt to initialise Presidio deterministically; else regex.          SECURITY]] - rationale - gateway/security/differential_pii_detector.py
+- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
+- [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
+- [[DifferentialPIIConfig]] - code - gateway/tests/test_differential_pii_detector.py
+- [[DifferentialPIIConfig_1]] - code - gateway/security/differential_pii_detector.py
+- [[DifferentialPIIDetector]] - code - gateway/tests/test_differential_pii_detector.py
+- [[DifferentialPIIDetector_1]] - code - gateway/security/differential_pii_detector.py
+- [[Email with Unicode dot separators.]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[Email with spaces added to defeat naive regex a l i c e @ e x a m p l e . c o m]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[Exercise the Presidio detection path with an injected fake analyzer.      The re]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[Full scan result for a tool result or prompt.]] - rationale - gateway/security/differential_pii_detector.py
+- [[PII Sanitizer Mitigation (Presidio + custom regex)]] - rationale - docs/security/threat-model.md
+- [[PII split with zero-width space.]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[PIIHit]] - code - gateway/security/differential_pii_detector.py
+- [[PIIHitSeverity]] - code - gateway/security/differential_pii_detector.py
+- [[Presidio init must be deterministic and must NEVER trigger a runtime     model a]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[Regex-based PII detection (Presidio fallback).]] - rationale - gateway/security/differential_pii_detector.py
+- [[Relative risk of a detected PII entity.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Remove overlapping hits, preferring higher confidence.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Replace detected PII tokens with ENTITY_TYPE placeholders.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Run PII detection, returning hits at or above floor.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Scan a prompt with the standard (higher) confidence floor.          Args]] - rationale - gateway/security/differential_pii_detector.py
+- [[Scan a tool result with the lower confidence floor.          Args             t]] - rationale - gateway/security/differential_pii_detector.py
+- [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - rationale - gateway/security/differential_pii_detector.py
+- [[TestAdversarialFormattingCaught]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestAsymmetricFloor]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestDeterministicPresidioInit]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestDifferentialPIIDetectorConstruction]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestPerToolConfiguration]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestPresidioPathContract]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestRedaction]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestStandardPIIAlwaysCaught]] - code - gateway/tests/test_differential_pii_detector.py
+- [[TestToolResultPIIReport]] - code - gateway/tests/test_differential_pii_detector.py
+- [[The default-model auto-download path must never be taken.          If Presidio i]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[ToolResultPIIReport]] - code - gateway/security/differential_pii_detector.py
+- [[Use Presidio (entity-restricted) unioned with the core regex.          Two guara]] - rationale - gateway/security/differential_pii_detector.py
+- [[When the pinned model loads, Presidio is built with an explicit         ``nlp_en]] - rationale - gateway/tests/test_differential_pii_detector.py
+- [[_FakeRecognizerResult]] - code - gateway/tests/test_differential_pii_detector.py
+- [[_normalize_adversarial()]] - code - gateway/security/differential_pii_detector.py
+- [[default_config()_2]] - code - gateway/tests/test_differential_pii_detector.py
+- [[detector()]] - code - gateway/tests/test_differential_pii_detector.py
+- [[differential_pii_detector.py]] - code - gateway/security/differential_pii_detector.py
+- [[test_differential_pii_detector.py]] - code - gateway/tests/test_differential_pii_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -104,20 +104,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_LLMProxy]]
-- 3 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
-- 3 edges to [[_COMMUNITY_dot-proxy_messages()]]
-- 3 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 2 edges to [[_COMMUNITY__HeadFakeResponse]]
-- 1 edge to [[_COMMUNITY__HeadFakeClient]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
-- 1 edge to [[_COMMUNITY_Request]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy_thinking_suppression.py]]
+- 14 edges to [[_COMMUNITY_ReportStore]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_Security Module Inventory]]
 
 ## Top bridge nodes
-- [[StreamHead]] - degree 16, connects to 5 communities
-- [[test_llm_proxy.py]] - degree 43, connects to 4 communities
-- [[_run_stream (StreamHead test harness)]] - degree 10, connects to 3 communities
-- [[llm_proxy.py_2]] - degree 7, connects to 3 communities
-- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - degree 7, connects to 2 communities
+- [[DifferentialPIIDetector_1]] - degree 36, connects to 4 communities
+- [[differential_pii_detector.py]] - degree 9, connects to 3 communities
+- [[DifferentialPIIConfig_1]] - degree 25, connects to 2 communities
+- [[PIIHitSeverity]] - degree 17, connects to 1 community

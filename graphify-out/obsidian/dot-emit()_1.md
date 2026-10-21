@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "dashboard_endpoints.py (2)"
-location: "L175"
+community: "Production Safety Checklist (SKILL)"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # .emit()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
-- [[BufferHandler]] - `method` [EXTRACTED]
-- [[LogRecord_2]] - `references` [EXTRACTED]
+- [[Emit an event to all subscribers]] - `rationale_for` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
+- [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # flow.mmd (Mermaid)
 
 ## Connections
-- [[Output Format_38]] - `contains` [EXTRACTED]
+- [[Output Format_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

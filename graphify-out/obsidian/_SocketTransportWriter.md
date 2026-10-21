@@ -12,10 +12,10 @@ tags:
 # _SocketTransportWriter
 
 ## Connections
-- [[dot-__init__()_170]] - `method` [EXTRACTED]
+- [[dot-__init__()_157]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[Writer exposing a .transport whose socket records setsockopt calls.]] - `rationale_for` [EXTRACTED]
 - [[_MockWriter]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "create_auth_dependency (4)"
-location: "L137"
+community: "BROWSER_FETCH_SKILL.md"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_4
+  - community/BROWSER_FETCH_SKILLmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_4
+#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd

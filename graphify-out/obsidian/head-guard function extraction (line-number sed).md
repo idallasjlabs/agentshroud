@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L20-L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # head-guard function extraction (line-number sed)
@@ -16,6 +16,6 @@ tags:
 - [[_assert_head_unchanged()]] - `references` [EXTRACTED]
 - [[_record_head()]] - `references` [EXTRACTED]
 - [[err()]] - `references` [EXTRACTED]
-- [[log()_2]] - `references` [EXTRACTED]
+- [[log()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

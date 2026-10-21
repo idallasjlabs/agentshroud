@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "SkillGuard (2)"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/SkillGuard_2
 ---
 
 # Gateway Can't Reach OpenClaw
 
 ## Connections
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/SkillGuard_2

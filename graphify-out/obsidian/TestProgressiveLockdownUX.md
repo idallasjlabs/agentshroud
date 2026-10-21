@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L8021"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # TestProgressiveLockdownUX
@@ -38,4 +38,4 @@ tags:
 - [[Tests for lockdown UX unlock fix, collaborator notifications, locked,…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # FastAPI
@@ -15,4 +15,4 @@ tags:
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

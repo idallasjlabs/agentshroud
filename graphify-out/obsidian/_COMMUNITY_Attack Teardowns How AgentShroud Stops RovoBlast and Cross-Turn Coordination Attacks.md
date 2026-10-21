@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Drawing Preparation Checklist]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 1 — System Context Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 2 — Security Pipeline Flow Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 3 — Approval Queue Flow Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 4 — Trust-Differentiated Processing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 5 — Multi-Agent Governance with Isolation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 6 — Delegated Authority Model]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 3 DRAWINGS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +23,9 @@ members: 8
 TABLE source_file, type FROM #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlast_and_Cross-Turn_Coordination_Attacks
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py (3)]]
+
+## Top bridge nodes
+- [[SECTION 3 DRAWINGS]] - degree 8, connects to 1 community

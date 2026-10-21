@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "UserSessionManager (3)"
+community: "TELEGRAM_ISSUES.md"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # .test_plain_message_mentioning_etc_passwd_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestFileSandboxSkippedForPlainMessages]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/socjs
 ---
 
 # openclaw/skills/i-sad/README.md
 
 ## Connections
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/socjs

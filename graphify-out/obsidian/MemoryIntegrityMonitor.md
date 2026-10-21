@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (7)"
+community: "test_llm_proxy_failover.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/test_llm_proxy_failoverpy
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_131]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_89]] - `method` [EXTRACTED]
 - [[dot-_compute_file_hash()]] - `method` [EXTRACTED]
 - [[dot-_detect_modification_source()]] - `method` [EXTRACTED]
 - [[dot-_is_in_write_window()]] - `method` [EXTRACTED]
@@ -27,15 +27,15 @@ tags:
 - [[dot-register_expected_write()]] - `method` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `method` [EXTRACTED]
 - [[dot-scan_file()_1]] - `method` [EXTRACTED]
-- [[dot-setup_method()_24]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_16]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
 - [[dot-test_integrity_database_persistence()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `semantically_similar_to` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -52,4 +52,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

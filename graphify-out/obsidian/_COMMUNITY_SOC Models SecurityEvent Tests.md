@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
-- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
+- [[Obsidian workspace.json (open-tab layout)]] - document - docs/vault/.obsidian/workspace.json
+- [[Startup Flow Diagram (vault note)]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Resources
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Community]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Documentation]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Related AgentShroud Docs]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Resources]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[I - Information Disclosure]] - document - docs/security/threat-model.md
+- [[Threat DNS Data Exfiltration]] - document - docs/security/threat-model.md
+- [[Threat Environment Variable Leakage]] - document - docs/security/threat-model.md
+- [[Threat PII Leakage in Logs]] - document - docs/security/threat-model.md
+- [[Threat SSRF (Server-Side Request Forgery)]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
 
 ## Top bridge nodes
-- [[Resources]] - degree 4, connects to 1 community
+- [[I - Information Disclosure]] - degree 5, connects to 1 community

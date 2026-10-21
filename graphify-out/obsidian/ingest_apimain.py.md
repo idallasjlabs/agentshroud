@@ -1,19 +1,17 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "TrustConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TrustConfig
 ---
 
 # ingest_api/main.py
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 - [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - `references` [EXTRACTED]
@@ -129,6 +127,6 @@ tags:
 - [[verify.sh]] - `references` [EXTRACTED]
 - [[verify_killswitch()]] - `contains` [EXTRACTED]
 - [[wazuh_alerts()]] - `contains` [EXTRACTED]
-- [[websockets=17.1,18.0 pin]] - `references` [EXTRACTED]
+- [[websockets 17.1 bump rationale]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

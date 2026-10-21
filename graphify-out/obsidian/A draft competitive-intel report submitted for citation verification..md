@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "MCPPolicyEngine"
 location: "L1119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine
 ---
 
 # A draft competitive-intel report submitted for citation verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelDraftRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "agentshroud-gateway service (proxy mode)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/agentshroud-gateway_service_proxy_mode
 ---
 
 # FY26 Cost Reduction Plan (40% target)
@@ -15,4 +15,4 @@ tags:
 - [[CDAS — Central Data Acquisition Systems]] - `references` [EXTRACTED]
 - [[FODL — Fluence Operational Data Lakehouse]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode

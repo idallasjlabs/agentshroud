@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L831"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # HEAD_AT_START
@@ -18,4 +18,4 @@ tags:
 - [[no-baseline case returns success]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

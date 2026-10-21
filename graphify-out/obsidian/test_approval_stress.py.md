@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
+community: "MCPPermissionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/MCPPermissionManager
 ---
 
 # test_approval_stress.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `contains` [EXTRACTED]
 - [[TestApprovalTimeout]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[queue()]] - `contains` [EXTRACTED]
 - [[store()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

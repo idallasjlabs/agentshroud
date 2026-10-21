@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L36"
+community: "§1 — Re-run of Prior Scenarios"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/1__Re-run_of_Prior_Scenarios
 ---
 
 # dispatcher()
 
 ## Connections
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[AlertDispatcher]] - `calls` [EXTRACTED]
+- [[Path_67]] - `references` [EXTRACTED]
+- [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios

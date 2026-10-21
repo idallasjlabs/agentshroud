@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # .validate()
 
 ## Connections
 - [[dot-_validate_credential()]] - `calls` [EXTRACTED]
-- [[Any_21]] - `references` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
 - [[CredentialValidator]] - `method` [EXTRACTED]
 - [[Validate a credential.          Returns             tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

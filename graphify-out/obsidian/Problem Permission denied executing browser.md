@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Troubleshooting"
+community: "TestOutboundInfoFilter (17)"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting
+  - community/TestOutboundInfoFilter_17
 ---
 
 # Problem: Permission denied executing browser
 
 ## Connections
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_17

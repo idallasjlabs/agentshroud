@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L154"
+community: "Message Composition with MML (MIME Meta Language)"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyInjector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[GovernanceConfig]] - `references` [EXTRACTED]
+- [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

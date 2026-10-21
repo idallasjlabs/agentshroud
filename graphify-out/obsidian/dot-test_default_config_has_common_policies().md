@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # .test_default_config_has_common_policies()
 
 ## Connections
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
+- [[KeyRotationConfig]] - `calls` [EXTRACTED]
 - [[Test default config includes policies for common credential types.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

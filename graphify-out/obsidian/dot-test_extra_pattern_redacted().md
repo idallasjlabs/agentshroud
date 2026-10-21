@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "chatbot/main.py"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/chatbot/mainpy
 ---
 
 # .test_extra_pattern_redacted()
@@ -15,4 +15,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestResponseFiltering]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

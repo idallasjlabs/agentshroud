@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "PipelineAction"
-location: "L49"
+community: "MCPPermissionManager"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/MCPPermissionManager
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[PIISanitizer_3]] - `references` [EXTRACTED]
+- [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

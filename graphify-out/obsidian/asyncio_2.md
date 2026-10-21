@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # asyncio
@@ -41,4 +41,4 @@ tags:
 - [[test_streaming_with_head_reports_200_then_chunks]] - `references` [EXTRACTED]
 - [[test_streaming_with_head_reports_upstream_400_and_body]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

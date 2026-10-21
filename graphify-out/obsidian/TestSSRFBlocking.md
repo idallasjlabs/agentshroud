@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig (3)"
+community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig_3
+  - community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap
 ---
 
 # TestSSRFBlocking
@@ -22,13 +22,13 @@ tags:
 - [[dot-test_ipv4_mapped_ipv6_blocked()_2]] - `method` [EXTRACTED]
 - [[dot-test_ipv6_loopback_blocked()_1]] - `method` [EXTRACTED]
 - [[dot-test_localhost_blocked()_1]] - `method` [EXTRACTED]
-- [[dot-test_public_ip_allowed()_1]] - `method` [EXTRACTED]
+- [[dot-test_public_ip_allowed()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_3
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_Defense_Assessment__Roadmap

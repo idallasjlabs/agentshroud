@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "rationale"
-community: "package_skill"
+community: "Function Details (4)"
 location: "L16"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Function_Details_4
 ---
 
 # Basic validation of a skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate_skill()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/package_skill
+#graphify/rationale #graphify/EXTRACTED #community/Function_Details_4

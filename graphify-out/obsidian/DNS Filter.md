@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "Pre-Deployment Checklist"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Pre-Deployment_Checklist
 ---
 
 # DNS Filter
@@ -14,4 +14,4 @@ tags:
 - [[Egress Monitor]] - `conceptually_related_to` [INFERRED]
 - [[egress-config.yml]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist

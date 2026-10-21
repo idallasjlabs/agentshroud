@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "concept"
-community: "check-vendor-compat.sh"
+community: "One Shroud Over Every Wire (founding mantra)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # OpenClaw 2026.10.2 agents.list -> agents.entries migration
@@ -15,4 +15,4 @@ tags:
 - [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - `references` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/concept #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

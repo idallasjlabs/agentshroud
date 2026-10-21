@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # test_mcp_policy_default_failclosed.py
@@ -17,9 +17,9 @@ tags:
 - [[MCPPolicyEngine_1]] - `imports` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `contains` [EXTRACTED]
 - [[TestDefaultPolicyNoMcpServers]] - `contains` [EXTRACTED]
-- [[_write()_1]] - `contains` [EXTRACTED]
+- [[_write()]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `references` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[mcp_policy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

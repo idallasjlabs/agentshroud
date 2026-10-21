@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Prime Directive — no new files, minimal diffs]] - rationale - CLAUDE.md
+- [[Chaos Engineering Skill]] - document - .agents/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

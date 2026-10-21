@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "rationale"
-community: "AgentTarget (5)"
+community: "_w"
 location: "docker/scripts/colima-health-check.sh:239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/_w
 ---
 
 # Dead docker.sock forward repair (step 1a-bis)
@@ -19,4 +19,4 @@ tags:
 - [[_upgrade_in_progress()]] - `references` [EXTRACTED]
 - [[resolve_docker_host()]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/rationale #graphify/EXTRACTED #community/_w

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "test_a2a_proxy.py"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_a2a_proxypy
 ---
 
 # .test_is_group_context_true_for_group_agent_id()
@@ -16,4 +16,4 @@ tags:
 - [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
 - [[agent_id starting with 'group-' is recognized as group context.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "concept"
-community: "gh-issues/SKILL.md"
+community: "TestDockerSecretIsolation"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gh-issues/SKILLmd
+  - community/TestDockerSecretIsolation
 ---
 
 # gh-issues Sub-agent Spawn (Phase 5)
@@ -15,4 +15,4 @@ tags:
 - [[gh-issues Cursor File (cron sequential tracking)]] - `conceptually_related_to` [EXTRACTED]
 - [[gh-issuesSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/TestDockerSecretIsolation

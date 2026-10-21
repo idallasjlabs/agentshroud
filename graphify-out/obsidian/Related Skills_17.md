@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD) (2)"
+community: "Technical Writer (TW)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD_2
+  - community/Technical_Writer_TW
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD_2
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

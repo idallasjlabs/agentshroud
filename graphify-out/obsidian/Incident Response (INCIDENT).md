@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Incident Response (INCIDENT)"
+community: "Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_INCIDENT
+  - community/Technical_Writer_TW
 ---
 
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_35]] - `contains` [EXTRACTED]
-- [[Related Skills_20]] - `contains` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
+- [[Purpose_31]] - `contains` [EXTRACTED]
+- [[Related Skills_17]] - `contains` [EXTRACTED]
+- [[Usage_20]] - `contains` [EXTRACTED]
 - [[hermesskillsi-productionREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

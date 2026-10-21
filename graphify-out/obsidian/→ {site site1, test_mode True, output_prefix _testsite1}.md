@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_prefix\": \"_test/site1/\"}"
+community: "P2 High Priority Incidents"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_prefix__test/site1/
+  - community/P2_High_Priority_Incidents
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
@@ -19,4 +19,4 @@ tags:
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_prefix__test/site1/
+#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents

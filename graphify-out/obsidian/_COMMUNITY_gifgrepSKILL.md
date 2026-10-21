@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrepSKILL]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[OpenClaw cron Collaborator Daily Digest]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Collaborator Report - Evening]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Collaborator Report - Morning (Telegram HTML, PII filter rules)]] - code - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

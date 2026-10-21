@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "TestMetadataGuard"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
 ---
 
 # TestMetadataGuard
 
 ## Connections
-- [[dot-setup_method()_28]] - `method` [EXTRACTED]
+- [[dot-setup_method()_26]] - `method` [EXTRACTED]
 - [[dot-test_all_unicode_control_chars_stripped()]] - `method` [EXTRACTED]
 - [[dot-test_check_for_exif_detects_magic_bytes()]] - `method` [EXTRACTED]
 - [[dot-test_check_oversized_headers_flags_large_headers()]] - `method` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft

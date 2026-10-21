@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[graphify path command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

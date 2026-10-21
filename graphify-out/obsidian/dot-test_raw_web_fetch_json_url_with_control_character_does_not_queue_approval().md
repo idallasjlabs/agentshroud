@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (26)"
+community: "TelegramAPIProxy (2) (8)"
 location: "L3136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_26
+  - community/TelegramAPIProxy_2_8
 ---
 
 # .test_raw_web_fetch_json_url_with_control_character_does_not_queue_approval()
 
 ## Connections
 - [[Control characters in leaked URL should be rejected before queueing approval.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_26
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2_8

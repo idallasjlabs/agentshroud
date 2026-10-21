@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L2321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Determine the highest achieved IEC 62443 Security Level.      SL 1: All IEC-mapp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_determine_iec_sl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

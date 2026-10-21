@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "test_main_endpoints.py (3)"
+community: "WebContentScanner"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_3
+  - community/WebContentScanner
 ---
 
 # .test_forward_middleware_blocking()
@@ -15,4 +15,4 @@ tags:
 - [[Test that middleware can block requests with HTTP 403.]] - `rationale_for` [EXTRACTED]
 - [[TestForwardEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_3
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

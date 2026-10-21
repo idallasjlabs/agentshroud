@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "test_credential_injector.py"
+community: "test_voice_latency_guard.py (2)"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_credential_injectorpy
+  - community/test_voice_latency_guardpy_2
 ---
 
 # .test_credential_never_in_logs()
@@ -15,4 +15,4 @@ tags:
 - [[TestStatus]] - `method` [EXTRACTED]
 - [[Verify that raw credential values never appear in log output.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy_2

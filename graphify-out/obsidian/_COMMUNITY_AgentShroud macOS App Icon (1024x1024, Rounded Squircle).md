@@ -1,25 +1,30 @@
 ---
 type: community
-members: 12
+members: 17
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle)
 
-**Members:** 12 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[dot-test_group_a_write_invisible_from_group_b()_1]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
-- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
-- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
+- [[auth_headers()_4]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
+- [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_logs_recent_tail_param()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_proxy_status_includes_pipeline_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_proxy_status_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_proxy_status_returns_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_ssh_hosts_online()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_ssh_hosts_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_ssh_hosts_returns_hosts()]] - code - gateway/tests/test_dashboard_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TeamsConfig]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 3 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)]]
+- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
 
 ## Top bridge nodes
-- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 4 communities
+- [[test_dashboard_endpoints.py]] - degree 20, connects to 3 communities

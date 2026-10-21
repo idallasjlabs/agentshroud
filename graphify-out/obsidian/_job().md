@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soak_status.py"
 type: "code"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # _job()
@@ -23,4 +23,4 @@ tags:
 - [[dot-test_runs_before_boot_are_ignored()]] - `calls` [EXTRACTED]
 - [[test_soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

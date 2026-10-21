@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection"
+community: "CrossBotTrustLedger"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/CrossBotTrustLedger
 ---
 
 # .get_or_create()
@@ -16,7 +16,7 @@ tags:
 - [[ConnectionPool]] - `method` [EXTRACTED]
 - [[Get existing connection or create a new one.]] - `rationale_for` [EXTRACTED]
 - [[HttpSseConnection]] - `references` [EXTRACTED]
-- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
 - [[StdioConnection]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

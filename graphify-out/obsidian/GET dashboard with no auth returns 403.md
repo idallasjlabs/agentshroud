@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # GET /dashboard with no auth returns 403
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dashboard_no_auth_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

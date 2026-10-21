@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "auth.py"
+community: "llm_proxy.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/llm_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[http_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

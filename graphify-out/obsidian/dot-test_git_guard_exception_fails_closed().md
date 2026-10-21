@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "TestProductionCompose"
 location: "L581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/TestProductionCompose
 ---
 
 # .test_git_guard_exception_fails_closed()
 
 ## Connections
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

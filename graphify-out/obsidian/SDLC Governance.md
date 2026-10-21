@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Scrum Ceremony Facilitation"
+community: "Gateway-Enforced Intel Verification (SCRUM-75)"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Scrum_Ceremony_Facilitation
+  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
 ---
 
 # SDLC Governance
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Scrum Ceremony Facilitation]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Scrum_Ceremony_Facilitation
+#graphify/document #graphify/AMBIGUOUS #community/Gateway-Enforced_Intel_Verification_SCRUM-75

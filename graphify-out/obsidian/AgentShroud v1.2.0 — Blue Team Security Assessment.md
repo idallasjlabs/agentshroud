@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "AgentShroud v1.2.0 — Blue Team Security Assessment"
+community: "Error Index.md (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v120__Blue_Team_Security_Assessment
+  - community/Error_Indexmd_3
 ---
 
 # AgentShroud v1.2.0 — Blue Team Security Assessment
@@ -23,4 +23,4 @@ tags:
 - [[§7 — Summary Table]] - `contains` [EXTRACTED]
 - [[§8 — Regression Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessment
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3

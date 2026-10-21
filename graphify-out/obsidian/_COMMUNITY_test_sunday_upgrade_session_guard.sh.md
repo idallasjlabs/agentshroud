@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[extract_fn()]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
-- [[test_sunday_upgrade_session_guard.sh]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
-- [[test_sunday_upgrade_session_guard.sh script]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
+- [[gifgrepSKILL]] - document - skills/openclaw/gifgrep/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

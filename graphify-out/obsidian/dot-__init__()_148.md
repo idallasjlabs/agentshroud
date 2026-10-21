@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "MiddlewareManager (3)"
-location: "L69"
+community: "MCPPermissionManager (2)"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/MCPPermissionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[SSHConfig_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

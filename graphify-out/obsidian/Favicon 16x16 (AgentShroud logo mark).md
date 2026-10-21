@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-16x16.png"
 type: "image"
-community: "Favicon 16x16 (AgentShroud logo mark)"
+community: "AgentShroud Telegram Avatar"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Favicon_16x16_AgentShroud_logo_mark
+  - community/AgentShroud_Telegram_Avatar
 ---
 
 # Favicon 16x16 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Favicon_16x16_AgentShroud_logo_mark
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Telegram_Avatar

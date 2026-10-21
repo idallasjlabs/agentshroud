@@ -8,29 +8,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Security Hardening Plan]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Architecture_7]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Endpoints_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Execution Order]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[FINAL Network Lockdown Activation ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[GitHub Workflow]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Injection vectors explicitly covered]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Key points the Cisco finding implies]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Module Status Summary]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P0 Fix Pre-Existing Test Failures ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P2 Credential Isolation via op-proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P3 Channel Ownership — Telegram + Email ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P4 Wire MCP Proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P5 Wire SecurityPipeline to forward ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[PII Detection]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Roadmap_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[SECURITY_PLAN]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Threat Coverage Matrix]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[What Security Experts Will See]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Why This Matters_3]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Check your activity]] - document - skills/openclaw/xurl/SKILL.md
+- [[Common Workflows_1]] - document - skills/openclaw/xurl/SKILL.md
+- [[Error Handling_2]] - document - skills/openclaw/xurl/SKILL.md
+- [[Global Flags]] - document - skills/openclaw/xurl/SKILL.md
+- [[Go]] - document - skills/openclaw/xurl/SKILL.md
+- [[Homebrew (macOS)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Installation_1]] - document - skills/openclaw/xurl/SKILL.md
+- [[Notes_4]] - document - skills/openclaw/xurl/SKILL.md
+- [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
+- [[Output Format_10]] - document - skills/openclaw/xurl/SKILL.md
+- [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
+- [[Prerequisites_7]] - document - skills/openclaw/xurl/SKILL.md
+- [[Quick Reference_8]] - document - skills/openclaw/xurl/SKILL.md
+- [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
+- [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md
+- [[Search and engage]] - document - skills/openclaw/xurl/SKILL.md
+- [[Secret Safety (Mandatory)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Set up multiple apps]] - document - skills/openclaw/xurl/SKILL.md
+- [[Shell script]] - document - skills/openclaw/xurl/SKILL.md
+- [[Streaming_1]] - document - skills/openclaw/xurl/SKILL.md
+- [[npm]] - document - skills/openclaw/xurl/SKILL.md
+- [[xurl — Agent Skill Reference]] - document - skills/openclaw/xurl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +38,10 @@ members: 23
 TABLE source_file, type FROM #community/AgentShroud_Security_Hardening_Plan
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV)]]
+- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
+
+## Top bridge nodes
+- [[xurl — Agent Skill Reference]] - degree 12, connects to 2 communities

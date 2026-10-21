@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "EgressTelegramNotifier"
-location: "L76"
+community: "A2AGovernanceProxy"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/A2AGovernanceProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

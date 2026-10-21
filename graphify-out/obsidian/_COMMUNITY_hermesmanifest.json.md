@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[entries]] - code - docker/config/hermes/manifest.json
-- [[entries_1]] - code - docker/config/openclaw/manifest.json
-- [[generated_at]] - code - docker/config/hermes/manifest.json
-- [[generated_at_1]] - code - docker/config/openclaw/manifest.json
-- [[hermesmanifest.json]] - code - docker/config/hermes/manifest.json
-- [[openclawmanifest.json]] - code - docker/config/openclaw/manifest.json
-- [[version]] - code - docker/config/hermes/manifest.json
-- [[version_1]] - code - docker/config/openclaw/manifest.json
+- [[Input Requirements_3]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Mnemosyne — Retention Engineer]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Output Format_3]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Persona_3]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Quality Checklist_3]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[Role_6]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[System Prompt_3]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[openclawskillsi-mnemosyneSKILL]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +23,9 @@ members: 8
 TABLE source_file, type FROM #community/hermes/manifestjson
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_soc.js]]
+
+## Top bridge nodes
+- [[Mnemosyne — Retention Engineer]] - degree 8, connects to 1 community

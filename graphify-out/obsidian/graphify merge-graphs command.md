@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/github-and-merge.md"
 type: "concept"
-community: "graphify clone command"
+community: "Alert Thresholds (approval queue 1h timeout, context 200K hard limit, op-proxy 6 retries)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphify_clone_command
+  - community/Alert_Thresholds_approval_queue_1h_timeout_context_200K_hard_limit_op-proxy_6_retries
 ---
 
 # graphify merge-graphs command
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify clone command]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphify_clone_command
+#graphify/concept #graphify/EXTRACTED #community/Alert_Thresholds_approval_queue_1h_timeout_context_200K_hard_limit_op-proxy_6_retries

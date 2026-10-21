@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PipelineAction"
+community: "ApprovalQueueConfig"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # .test_pipeline_raises_without_pii_sanitizer()
@@ -16,4 +16,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestE2E10FailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

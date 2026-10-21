@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "TestOutputCanary"
+community: "check-vendor-compat.sh"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/check-vendor-compatsh
 ---
 
 # CanaryConfig
 
 ## Connections
-- [[dot-__init__()_107]] - `references` [EXTRACTED]
-- [[dot-setup_method()_18]] - `calls` [EXTRACTED]
+- [[dot-__init__()_50]] - `references` [EXTRACTED]
+- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
 - [[dot-test_incident_logging()]] - `calls` [EXTRACTED]
 - [[dot-test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
 - [[Configuration for the Output Canary System.]] - `rationale_for` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[output_canary.py]] - `contains` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

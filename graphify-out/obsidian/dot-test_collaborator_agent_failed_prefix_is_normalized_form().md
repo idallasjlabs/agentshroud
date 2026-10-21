@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ApprovalQueueConfig (13)"
+community: "CronStateMonitor"
 location: "L603"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_13
+  - community/CronStateMonitor
 ---
 
 # .test_collaborator_agent_failed_prefix_is_normalized_form()
 
 ## Connections
 - [[Form payload agent-failed prefix should normalize to protected unavailable notic]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_13
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

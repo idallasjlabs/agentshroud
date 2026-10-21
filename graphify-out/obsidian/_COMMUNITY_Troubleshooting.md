@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Troubleshooting_1]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Mnemosyne — Retention Engineer_1]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Purpose_50]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Related Skills_36]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Usage_39]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[openclawskillsi-mnemosyneREADME]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Troubleshooting_1]] - degree 5, connects to 1 community
+- [[Mnemosyne — Retention Engineer_1]] - degree 5, connects to 1 community

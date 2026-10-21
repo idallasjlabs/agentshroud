@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "SecureBrowser (2)"
-location: "L65"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

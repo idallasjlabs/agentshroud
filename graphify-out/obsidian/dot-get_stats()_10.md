@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "MCPInspector"
-location: "L840"
+community: "AgentTarget"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/AgentTarget
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_35]] - `references` [EXTRACTED]
-- [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

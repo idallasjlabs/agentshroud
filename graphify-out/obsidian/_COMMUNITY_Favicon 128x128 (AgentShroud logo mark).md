@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 128x128 (AgentShroud logo mark)]] - image - branding/favicons/favicon-128x128.png
+- [[MCP Server github-idallasj]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

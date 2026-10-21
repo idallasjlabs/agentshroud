@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Newsletter Chat Front-ends & Search Infra_1]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
 
 ## Live Query (requires Dataview plugin)
 

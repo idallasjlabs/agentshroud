@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L104"
+community: "ApprovalQueueConfig"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

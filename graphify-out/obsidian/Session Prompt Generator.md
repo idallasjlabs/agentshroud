@@ -1,16 +1,13 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "System Audit Documentation (SAD)"
+community: "1. Starting and Stopping AgentShroud"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/System_Audit_Documentation_SAD
+  - graphify/EXTRACTED
+  - community/1_Starting_and_Stopping_AgentShroud
 ---
 
 # Session Prompt Generator
 
-## Connections
-- [[System Audit Documentation (SAD)]] - `semantically_similar_to` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/System_Audit_Documentation_SAD
+#graphify/document #graphify/EXTRACTED #community/1_Starting_and_Stopping_AgentShroud

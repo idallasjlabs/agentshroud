@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "purge_low_value_events"
+community: "🟢 INFO (nice to have) (2)"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/_INFO_nice_to_have_2
 ---
 
 # purge_low_value_events()
@@ -18,9 +18,9 @@ tags:
 - [[dot-test_processes_in_multiple_batches()]] - `calls` [EXTRACTED]
 - [[dot-test_purges_only_matching_event_type_and_severity()]] - `calls` [EXTRACTED]
 - [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - `rationale_for` [EXTRACTED]
-- [[Path_37]] - `references` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
 - [[_cli()]] - `calls` [EXTRACTED]
 - [[audit_archive.py]] - `contains` [EXTRACTED]
 - [[test_audit_archive.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have_2

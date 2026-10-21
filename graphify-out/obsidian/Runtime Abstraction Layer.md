@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "AlertTelegramRelay"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/AlertTelegramRelay
 ---
 
 # Runtime Abstraction Layer
@@ -15,4 +15,4 @@ tags:
 - [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
 - [[Decision_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

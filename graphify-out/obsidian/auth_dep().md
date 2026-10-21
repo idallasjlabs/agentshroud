@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "WebContentScanner"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/WebContentScanner
 ---
 
 # auth_dep()
@@ -27,4 +27,4 @@ tags:
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_op_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

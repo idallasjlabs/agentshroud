@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill devsecops_1]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
-- [[hermesskillsi-devsecopsSKILL]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[Competitive Intelligence Report Standard Prompt (Hermes)]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[Gateway-Enforced Intel Verification (SCRUM-75)]] - concept - docker/config/hermes/workspace/competitive-analysis.md
 
 ## Live Query (requires Dataview plugin)
 

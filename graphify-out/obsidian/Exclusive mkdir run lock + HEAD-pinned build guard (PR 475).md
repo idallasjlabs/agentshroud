@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Exclusive mkdir run lock + HEAD-pinned build guard (PR #475)
@@ -17,4 +17,4 @@ tags:
 - [[colima-health-check.sh]] - `conceptually_related_to` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

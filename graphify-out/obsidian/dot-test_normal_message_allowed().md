@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "_t"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/_t
 ---
 
 # .test_normal_message_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckMessage]] - `method` [EXTRACTED]
 - [[check_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_t

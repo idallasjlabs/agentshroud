@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "NetworkSecurityFinding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/NetworkSecurityFinding
 ---
 
 # dns_filter.py
@@ -22,4 +22,4 @@ tags:
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

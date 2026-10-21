@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[AGENTSHROUD_ENV auto-detected from invoking account]] - rationale - docker/bots/hermes/run-standalone.sh
-- [[Hermes resource caps by environment]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[Prove the Outcome, Never the Steps — assert on state deltas not exit codes]] - rationale - CLAUDE.md
+- [[Weekly Sunday Upgrade directive — every versioned component to latest]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

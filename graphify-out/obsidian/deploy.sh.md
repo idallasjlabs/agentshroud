@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/deploy.sh"
 type: "code"
-community: "deploy.sh"
+community: "TestScoreSecretsManagement"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deploysh
+  - community/TestScoreSecretsManagement
 ---
 
 # deploy.sh
 
 ## Connections
-- [[PATH_15]] - `defines` [EXTRACTED]
+- [[PATH_10]] - `defines` [EXTRACTED]
 - [[deploy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deploysh
+#graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement

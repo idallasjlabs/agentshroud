@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI) (2)"
+community: "Skill: Mindmap Architect (MM) (3)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI_2
+  - community/Skill_Mindmap_Architect_MM_3
 ---
 
 # Skill: UI Expert (UI)
@@ -21,10 +21,10 @@ tags:
 - [[Dependencies_8]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture_1]] - `contains` [EXTRACTED]
 - [[Responsive Layout System_1]] - `contains` [EXTRACTED]
-- [[Role_35]] - `contains` [EXTRACTED]
+- [[Role_33]] - `contains` [EXTRACTED]
 - [[Rules_9]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist_1]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-uiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_3

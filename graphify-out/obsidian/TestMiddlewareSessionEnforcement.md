@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "ApprovalQueueConfig (2) (4)"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/ApprovalQueueConfig_2_4
 ---
 
 # TestMiddlewareSessionEnforcement
 
 ## Connections
 - [[dot-middleware_manager()]] - `method` [EXTRACTED]
-- [[dot-temp_workspace()]] - `method` [EXTRACTED]
+- [[dot-temp_workspace()_2]] - `method` [EXTRACTED]
 - [[dot-test_middleware_cross_session_blocking()]] - `method` [EXTRACTED]
 - [[dot-test_middleware_file_path_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_middleware_normalizes_invisible_unicode()]] - `method` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[dot-test_middleware_user_identification()]] - `method` [EXTRACTED]
 - [[dot-test_multi_turn_block_reason_hides_score()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[Test middleware enforcement of session boundaries.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4

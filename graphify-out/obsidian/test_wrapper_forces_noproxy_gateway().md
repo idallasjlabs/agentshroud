@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "AgentShroud v0.9.0"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/AgentShroud_v090
 ---
 
 # test_wrapper_forces_noproxy_gateway()
@@ -15,4 +15,4 @@ tags:
 - [[--noproxy gateway is required so the call reaches the control-plane directly.]] - `rationale_for` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090

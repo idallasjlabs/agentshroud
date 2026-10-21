@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "WebContentScanner"
+community: "test_main_endpoints.py"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/test_main_endpointspy
 ---
 
 # TestDangerousXMLIsBlockedNotFlagged
@@ -19,4 +19,4 @@ tags:
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[test_xml_dtd_control.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

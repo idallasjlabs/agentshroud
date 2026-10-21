@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "I - Information Disclosure"
+community: "Resources"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/I_-_Information_Disclosure
+  - community/Resources
 ---
 
 # Threat: SSRF (Server-Side Request Forgery)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[I - Information Disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/I_-_Information_Disclosure
+#graphify/document #graphify/EXTRACTED #community/Resources

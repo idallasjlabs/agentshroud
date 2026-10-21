@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[PATH_15]] - code - scripts/deploy.sh
-- [[deploy.sh]] - code - scripts/deploy.sh
-- [[deploy.sh script]] - code - scripts/deploy.sh
+- [[TrustManager._promotion_allowed]] - code - gateway/security/trust_manager.py
+- [[TrustManager._update_score]] - code - gateway/security/trust_manager.py
+- [[TrustManager.record_violation]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 

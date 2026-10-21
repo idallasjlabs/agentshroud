@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # Ensure normal browsing URLs pass through.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLegitimateURLsAllowed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

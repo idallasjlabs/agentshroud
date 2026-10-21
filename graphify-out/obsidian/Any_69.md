@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "canvas_proxy_app"
-location: "L119"
+community: "RBACConfig"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/RBACConfig
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_6]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

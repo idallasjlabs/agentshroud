@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L194"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path_9]] - `references` [EXTRACTED]
+- [[Exception_3]] - `references` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

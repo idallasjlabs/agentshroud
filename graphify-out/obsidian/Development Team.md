@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
 ---
 
 # Development Team
@@ -19,4 +19,4 @@ tags:
 - [[QA  Test Engineers — Embedded, Not a Separate Gate]] - `contains` [EXTRACTED]
 - [[UX  Design — One Sprint Ahead]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3

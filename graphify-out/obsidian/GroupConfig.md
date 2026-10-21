@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "colima-health-check.sh"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # GroupConfig
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_group_config_safe_response_prefix_set()]] - `calls` [EXTRACTED]
 - [[dot-validate_mode()]] - `method` [EXTRACTED]
 - [[A team group with members, admin, projects, and collab mode.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[TestAdminChecks]] - `uses` [INFERRED]
 - [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
@@ -41,8 +41,8 @@ tags:
 - [[create_group()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[teams()_1]] - `calls` [EXTRACTED]
+- [[teams()]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

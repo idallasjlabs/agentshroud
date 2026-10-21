@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "GSDE&G Skills Reference (2)"
-location: "L252"
+community: "graphify reference: extra exports and benchmark"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Emergency Contacts_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
-- [[P1 Incident Response_1]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

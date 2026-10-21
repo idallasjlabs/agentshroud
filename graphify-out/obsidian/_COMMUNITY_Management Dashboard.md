@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[apiconfig]] - concept - gateway/web/templates/management.html
-- [[apikillswitch{mode}]] - concept - gateway/web/templates/management.html
-- [[apilogs]] - concept - gateway/web/templates/management.html
-- [[apirebuild]] - concept - gateway/web/templates/management.html
-- [[apisecurityreport]] - concept - gateway/web/templates/management.html
-- [[apiservices{name}{action}]] - concept - gateway/web/templates/management.html
-- [[apistatus]] - concept - gateway/web/templates/management.html
-- [[apiupdatesbotopenclaw]] - concept - gateway/web/templates/management.html
-- [[Management Dashboard]] - code - gateway/web/templates/management.html
+- [[dot-agentsskillsi-cdSKILL]] - document - .agents/skills/i-cd/SKILL.md
+- [[dot-agentsskillsi-cicdSKILL]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Deployment Matrix  (Direct to Prod)_1]] - document - .agents/skills/i-cicd/SKILL.md
+- [[GitHub Actions Best Practices_2]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Quality Gates  (execution order)_2]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Review Flags  (block the merge)_2]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Role_94]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Skill cd_2]] - document - .agents/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

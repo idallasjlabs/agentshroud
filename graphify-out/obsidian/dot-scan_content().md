@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # .scan_content()
@@ -17,4 +17,4 @@ tags:
 - [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - `rationale_for` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

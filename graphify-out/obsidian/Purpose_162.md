@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "security.py"
-location: "L12"
+community: "TestOutboundInfoFilter"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/TestOutboundInfoFilter
 ---
 
 # Purpose
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

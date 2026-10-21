@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+community: "Pre-Deployment Checklist (2)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Pre-Deployment_Checklist_2
 ---
 
 # mcp-config.yml
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/code #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2

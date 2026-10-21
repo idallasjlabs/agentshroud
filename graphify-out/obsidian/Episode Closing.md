@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "OKE Channel — CPA Exam Context (2)"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OKE_Channel__CPA_Exam_Context_2
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Episode Closing
 
 ## Connections
-- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

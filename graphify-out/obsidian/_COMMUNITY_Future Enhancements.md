@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Future Enhancements]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 1 Auto-Discovery]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 2 Enhanced Extraction]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 3 Screenshot Capture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 4 Multi-Page Support]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 5 Direct Gmail Configuration]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[AGENTSHROUD standard character mark]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 42 — Software as a Service (SaaS)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Computer Software]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Downloadable Computer Software]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Basis (Section 1(a) Use in Commerce  1(b) Intent to Use)]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 3 GOODS AND SERVICES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_dot-update]]
 
 ## Top bridge nodes
-- [[Future Enhancements]] - degree 6, connects to 1 community
+- [[SECTION 3 GOODS AND SERVICES]] - degree 3, connects to 1 community

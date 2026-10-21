@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "ModeRequest"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ModeRequest
 ---
 
 # ._strip_fieldflare_unsupported_fields()
@@ -33,4 +33,4 @@ tags:
 - [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto]] - `calls` [EXTRACTED]
 - [[test_fieldflare_shim_tolerates_malformed_tool_entries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

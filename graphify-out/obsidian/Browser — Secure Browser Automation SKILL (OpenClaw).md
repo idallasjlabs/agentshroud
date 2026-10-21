@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "telegram_proxy.py (3) (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/telegram_proxypy_3_2
 ---
 
 # Browser — Secure Browser Automation SKILL (OpenClaw)
@@ -13,7 +13,6 @@ tags:
 ## Connections
 - [[Browser Skill README (OpenClaw)]] - `references` [EXTRACTED]
 - [[SecureBrowser Security Configuration (config.yaml, OpenClaw)]] - `references` [EXTRACTED]
-- [[SecureBrowser class]] - `conceptually_related_to` [INFERRED]
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3_2

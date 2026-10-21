@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (2) (2)"
 location: "L933"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_2_2
 ---
 
 # EgressAllowlistResponse
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[Response model for egress allowlist.]] - `rationale_for` [EXTRACTED]
 - [[get_egress_allowlist()]] - `calls` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

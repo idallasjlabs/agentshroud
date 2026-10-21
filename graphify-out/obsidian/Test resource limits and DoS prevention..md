@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "._make_proxy()"
 location: "L1031"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_make_proxy
 ---
 
 # Test resource limits and DoS prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

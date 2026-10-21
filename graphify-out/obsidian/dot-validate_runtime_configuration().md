@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # .validate_runtime_configuration()
@@ -19,4 +19,4 @@ tags:
 - [[Validate runtime network configuration using Docker API.]] - `rationale_for` [EXTRACTED]
 - [[validate_network_security()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

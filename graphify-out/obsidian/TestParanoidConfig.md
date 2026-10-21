@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (4)"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # TestParanoidConfig
@@ -31,9 +31,9 @@ tags:
 - [[dot-test_ssh_requires_approval()]] - `method` [EXTRACTED]
 - [[dot-test_telemetry_disabled()]] - `method` [EXTRACTED]
 - [[dot-test_trust_manager_enabled()]] - `method` [EXTRACTED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

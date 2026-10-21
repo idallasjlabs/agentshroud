@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Technical Writer (TW)"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/AgentTarget_2
 ---
 
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_64]] - `contains` [EXTRACTED]
-- [[Related Skills_49]] - `contains` [EXTRACTED]
-- [[Usage_53]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-twREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-twREADME]] - `contains` [EXTRACTED]
+- [[Purpose_19]] - `contains` [EXTRACTED]
+- [[Related Skills_7]] - `contains` [EXTRACTED]
+- [[Usage_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

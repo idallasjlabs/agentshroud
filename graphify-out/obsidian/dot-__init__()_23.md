@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L64"
+community: "asyncio"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/asyncio
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
-- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

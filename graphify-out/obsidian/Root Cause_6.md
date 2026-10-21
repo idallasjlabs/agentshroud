@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "ModeRequest (2)"
+community: "event_bus.py"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest_2
+  - community/event_buspy
 ---
 
 # Root Cause
@@ -17,4 +17,4 @@ tags:
 - [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
 - [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest_2
+#graphify/document #graphify/EXTRACTED #community/event_buspy

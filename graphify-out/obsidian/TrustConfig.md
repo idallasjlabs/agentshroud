@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # TrustConfig
 
 ## Connections
-- [[dot-__init__()_172]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_43]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_shared_tm()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_points()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_8]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `calls` [EXTRACTED]
 - [[dot-test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[dot-test_trust_escalation_attack()]] - `calls` [EXTRACTED]
 - [[dot-test_trust_level_progression()]] - `calls` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
@@ -70,9 +70,9 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPersistence_2]] - `uses` [INFERRED]
+- [[TestPersistence_1]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
@@ -86,10 +86,10 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustLevel_3]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
@@ -112,6 +112,6 @@ tags:
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager()_2]] - `calls` [EXTRACTED]
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
-- [[trust_manager.py_1]] - `contains` [EXTRACTED]
+- [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/soc/routerpy

@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Pydantic
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Purpose_7]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Related Notes_11]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Where Used_2]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[dot-setup_method()_3]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
+- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 3 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
 
 ## Top bridge nodes
-- [[Pydantic]] - degree 7, connects to 1 community
+- [[TestLoadFromText]] - degree 9, connects to 1 community
+- [[dot-setup_method()_3]] - degree 2, connects to 1 community

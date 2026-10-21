@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "SecurityPipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/SecurityPipeline
 ---
 
 # test_telegram_proxy_inbound.py
@@ -40,4 +40,4 @@ tags:
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[asyncio_3]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

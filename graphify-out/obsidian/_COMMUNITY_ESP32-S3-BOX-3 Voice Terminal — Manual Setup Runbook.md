@@ -1,32 +1,38 @@
 ---
 type: community
-members: 19
+members: 25
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
 
-**Members:** 19 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[11. Current status (v1.2.0)]] - document - firmware/voice-terminal/SETUP.md
-- [[12. OTA Wireless Firmware Updates]] - document - firmware/voice-terminal/SETUP.md
-- [[2. Toolchain — install ESP-IDF v5.4]] - document - firmware/voice-terminal/SETUP.md
-- [[3. Get the firmware]] - document - firmware/voice-terminal/SETUP.md
-- [[4. Configure WiFi credentials]] - document - firmware/voice-terminal/SETUP.md
-- [[5. Build · flash · monitor]] - document - firmware/voice-terminal/SETUP.md
-- [[5a. IDF v5.4 auto-patches (applied automatically — for reference)]] - document - firmware/voice-terminal/SETUP.md
-- [[7. Voice Gateway — server-side ✅ LIVE (installconfigOTA docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
-- [[8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent]] - document - firmware/voice-terminal/SETUP.md
-- [[Adding a future agent_1]] - document - firmware/voice-terminal/SETUP.md
-- [[Agent toggle — runtime button]] - document - firmware/voice-terminal/SETUP.md
-- [[Credentials file]] - document - firmware/voice-terminal/SETUP.md
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - document - firmware/voice-terminal/SETUP.md
-- [[How it works_2]] - document - firmware/voice-terminal/SETUP.md
-- [[One-time bootstrap (USB flash — do this when back at marvin)]] - document - firmware/voice-terminal/SETUP.md
-- [[Ongoing update workflow (no USB ever again)]] - document - firmware/voice-terminal/SETUP.md
-- [[SETUP_4]] - document - firmware/voice-terminal/SETUP.md
-- [[Troubleshooting OTA]] - document - firmware/voice-terminal/SETUP.md
-- [[What you're building]] - document - firmware/voice-terminal/SETUP.md
+- [[1) v0.8.0 Baseline Delivery (Documented)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[2) Additional v0.8.0 Stabilization Work (Current Execution Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[3) Verification Evidence (Current Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[4) v0.8.0 Done Gate — 2026-03-14 Status]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Items Still Remaining (Tracked Separately)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Notes]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[6) Owner Readout — Daily Telegram Validation Checklist]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[A. Startup + baseline]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Assessmentquality loop support delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[B. Collaborator onboarding]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Bot container verification (2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[C. Command contract (role split)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[D. Egress behavior]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Delivered capability groups (baseline)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[E. Leak-safety checks]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Executive Summary_9]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[F. Rate-limit UX]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[G. Daily evidence capture]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Gateway regression suites]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[P0P1 Fixes Applied (2026-03-14 cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Security assessment (V8-7 quality loop pass — 2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Targeted stabilization tests addedexercised]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Telegram securityUX hardening delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[v0.8.0-execution-summary-draft]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,10 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook (2)]]
-- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
-- 1 edge to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
+- 7 edges to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
 
 ## Top bridge nodes
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - degree 16, connects to 4 communities
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - degree 22, connects to 2 communities

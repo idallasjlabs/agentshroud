@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "ControlCenter"
+community: "Path (2)"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/Path_2
 ---
 
 # Draw a box with title
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-draw_box()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ControlCenter
+#graphify/rationale #graphify/EXTRACTED #community/Path_2

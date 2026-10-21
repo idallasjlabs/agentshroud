@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L35"
+community: "ApprovalQueueConfig"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-set_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

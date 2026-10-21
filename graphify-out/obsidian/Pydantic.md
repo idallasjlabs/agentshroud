@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Pydantic"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Pydantic
@@ -20,4 +20,4 @@ tags:
 - [[pydantic_1]] - `contains` [EXTRACTED]
 - [[v2 vs v1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (6)"
+community: "TestOutboundInfoFilter (5)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/TestOutboundInfoFilter_5
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

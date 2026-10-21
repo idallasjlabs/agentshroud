@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "AgentTarget (3)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AgentTarget_3
 ---
 
 # _fake_stats()
@@ -23,4 +23,4 @@ tags:
 - [[dot-test_system_resource_memory_anomaly()]] - `calls` [EXTRACTED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

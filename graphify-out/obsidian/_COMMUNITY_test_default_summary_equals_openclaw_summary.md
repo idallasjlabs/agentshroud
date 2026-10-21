@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_default_summary_equals_openclaw_summary]] - code - gateway/tests/test_agent_cve_registry.py
+- [[gateway__init__.py]] - code - gateway/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

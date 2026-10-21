@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mac/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill (3)"
+community: "How to Fix (5 Minutes)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill_3
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Phase 1 — Raw Collection
@@ -24,4 +24,4 @@ tags:
 - [[9. Browser Extensions (optional but useful)]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_3
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

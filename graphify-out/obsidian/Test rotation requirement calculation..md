@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper"
+community: "A2AMethod"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/A2AMethod
 ---
 
 # Test rotation requirement calculation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_should_rotate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

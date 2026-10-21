@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (3)"
+community: "Phase 1 — Raw Collection"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_3
+  - community/Phase_1__Raw_Collection
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Adversary Model_2]] - `contains` [EXTRACTED]
 - [[Attack Phases_2]] - `contains` [EXTRACTED]
-- [[Critical Rules_6]] - `contains` [EXTRACTED]
-- [[Infrastructure_2]] - `contains` [EXTRACTED]
-- [[Output_5]] - `contains` [EXTRACTED]
+- [[Critical Rules_4]] - `contains` [EXTRACTED]
+- [[Infrastructure_3]] - `contains` [EXTRACTED]
+- [[Output_4]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sec-offenseSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-sec-offenseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_3
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

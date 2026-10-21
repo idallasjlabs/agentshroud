@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "PermissionLevel"
+community: "CrossBotTrustLedger"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PermissionLevel
+  - community/CrossBotTrustLedger
 ---
 
 # MCPToolConfig
 
 ## Connections
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
 - [[Configuration for a specific MCP tool.]] - `rationale_for` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -41,9 +41,9 @@ tags:
 - [[TestInferPermission]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPermissionLevel]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
@@ -72,4 +72,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PermissionLevel
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[dot-__init__()_106]] - `method` [EXTRACTED]
+- [[dot-__init__()_115]] - `method` [EXTRACTED]
 - [[dot-_append_contributor_log()]] - `method` [EXTRACTED]
 - [[dot-_coerce_timestamp()]] - `method` [EXTRACTED]
 - [[dot-_normalize_preview()]] - `method` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[dot-test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[Path_48]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[Path_49]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestDefaultBotId]] - `uses` [INFERRED]
 - [[TestDomainValidationHelper]] - `uses` [INFERRED]
@@ -63,4 +63,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

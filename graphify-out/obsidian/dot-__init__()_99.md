@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L82"
+community: "ConfigIntegrityMonitor"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/ConfigIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[_Rule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

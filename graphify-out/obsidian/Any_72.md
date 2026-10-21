@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L124"
+community: "AgentShroud Security Verification (13-check driver)"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # Any
 
 ## Connections
-- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
-- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
-- [[dot-get_security_report()]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

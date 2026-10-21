@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (8)"
+community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
 ---
 
 # memory_lifecycle.py
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[ContentThreat]] - `contains` [EXTRACTED]
 - [[ContentThreatType]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `imports` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[RetentionAction]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

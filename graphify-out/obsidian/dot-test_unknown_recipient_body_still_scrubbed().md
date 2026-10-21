@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "AsyncMock"
+community: "TestPatternDetection"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/TestPatternDetection
 ---
 
 # .test_unknown_recipient_body_still_scrubbed()
@@ -16,4 +16,4 @@ tags:
 - [[TestOwnerEmailBypassesPii]] - `method` [EXTRACTED]
 - [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "CrossBotTrustLedger"
 location: "L571"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # .test_read_only_agent_can_read()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestProxyPermissions]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

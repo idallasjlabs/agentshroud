@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "_t"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/_t
 ---
 
 # Analyze a message for context poisoning attempts.          Args:             ses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-analyze_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/_t

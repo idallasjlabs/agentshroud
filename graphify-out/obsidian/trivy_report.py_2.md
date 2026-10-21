@@ -1,25 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "trivy_report.py"
+community: "TestDomainValidationHelper (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/TestDomainValidationHelper_2
 ---
 
 # trivy_report.py
 
 ## Connections
 - [[Configuration  Environment Variables_23]] - `contains` [EXTRACTED]
-- [[Function Details_42]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
-- [[Purpose_166]] - `contains` [EXTRACTED]
-- [[Related_48]] - `contains` [EXTRACTED]
-- [[Responsibilities_46]] - `contains` [EXTRACTED]
+- [[Function Details_41]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_43]] - `contains` [EXTRACTED]
+- [[Purpose_145]] - `contains` [EXTRACTED]
+- [[Related_47]] - `contains` [EXTRACTED]
+- [[Responsibilities_45]] - `contains` [EXTRACTED]
 - [[Severity Order (for ranking)]] - `contains` [EXTRACTED]
 - [[Threat Model_27]] - `contains` [EXTRACTED]
 - [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/TestDomainValidationHelper_2

@@ -8,36 +8,36 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[Action requires approval but none granted_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Browser timeout_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[CAPTCHA detected_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Rate limit exceeded_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[URL not in allowlist_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[1. Always Specify Risk Level_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[2. Use Allowlisting Liberally_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[3. Take Screenshots for Audit Trail_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Best Practices_4]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Browser — Secure Browser Automation_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Click Element_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Extract Data_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Fill Form_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Limitations_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Navigate to URL_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Risk Levels_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Architecture_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Security Guarantees_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Take Screenshot_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Troubleshooting_14]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_62]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[AgentShroud Daily Check-in]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[AgentShroud Weekly Summary]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Daily Component Health Digest]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Daily Memory Journal]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Coding-Agent CLIs]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Local Inference Engines]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Mac Clustering]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Model Version Tracker]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Personal AI Assistants]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Email Today in AI]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Job details]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Coding-Agent CLIs]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Local Inference Engines]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Mac Clustering]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Model Version Tracker]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Newsletter Personal AI Assistants]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[OMLX MoE Streaming Health Check]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Today in AI]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Turbo Fieldfare Fix Watch]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Weekly Kaizen Review]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[Weekly job-log cleanup]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[jira-weekly-review]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,3 +45,9 @@ members: 30
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+
+## Top bridge nodes
+- [[Job details]] - degree 30, connects to 1 community

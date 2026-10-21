@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L85"
+community: "cmd_start"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/cmd_start
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
-- [[dot-_save_rules()]] - `calls` [EXTRACTED]
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/cmd_start

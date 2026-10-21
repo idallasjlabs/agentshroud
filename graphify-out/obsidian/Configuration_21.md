@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Bear Notes"
+community: "Daedalus — Concept Illustrator (2)"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Daedalus__Concept_Illustrator_2
 ---
 
 # Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2

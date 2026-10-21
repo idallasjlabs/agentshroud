@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Common Queries"
+community: "EgressFilterConfig (2) (3)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/EgressFilterConfig_2_3
 ---
 
 # session-logs
@@ -20,4 +20,4 @@ tags:
 - [[Trigger]] - `contains` [EXTRACTED]
 - [[session-logsSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3

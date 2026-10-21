@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # Check if the OpenClaw backend is healthy.
 
 ## Connections
-- [[dot-health_check()]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

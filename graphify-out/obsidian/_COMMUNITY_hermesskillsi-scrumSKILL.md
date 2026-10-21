@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill scrum_1]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
-- [[hermesskillsi-scrumSKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
+- [[Skill chaos-engineering_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[hermesskillsi-chaos-engineeringSKILL]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

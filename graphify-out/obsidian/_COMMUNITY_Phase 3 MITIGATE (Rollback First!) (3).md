@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Follow-up (within 48 hours)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Glue Job Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Immediate (within 2 hours)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Incident Response Workflow_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Phase 1 ASSESS (Max 5 minutes)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Phase 2 COMMUNICATE (Concurrent with assess)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Phase 3 MITIGATE (Rollback First!)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Post-Incident_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Post-Mortem Template_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Role_63]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[S3 Data Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Severity Matrix_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Step Function Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Zabbix Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[hermesskillsi-productionSKILL]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[AWS Credentials]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Token expired (SSO)_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub PAT]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Bad credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Related Skills_79]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Role_60]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Security Best Practices_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting_29]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_85]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verification Checklist_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[When to Invoke_6]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[hermesskillsi-mcpm-auth-resetSKILL]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 17
 TABLE source_file, type FROM #community/Phase_3_MITIGATE_Rollback_First_3
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (3)]]
+
+## Top bridge nodes
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - degree 9, connects to 1 community

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "EgressFilterConfig (2)"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/EgressFilterConfig_2
 ---
 
 # TestEgressWiringEndToEnd
 
 ## Connections
-- [[dot-setup_method()_19]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `method` [EXTRACTED]
 - [[dot-test_allowed_egress_counts_as_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_denied_egress_counts_as_blocked()]] - `method` [EXTRACTED]
 - [[Decision_2]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

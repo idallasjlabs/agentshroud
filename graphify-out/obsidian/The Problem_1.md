@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "AgentShroud™ — Project Knowledge Base"
-location: "L16"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Project_Knowledge_Base
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
 ---
 
 # The Problem
 
 ## Connections
-- [[Why AgentShroud Exists]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3

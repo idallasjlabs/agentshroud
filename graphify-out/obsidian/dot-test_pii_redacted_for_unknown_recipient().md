@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestEmailSend"
+community: "TestPatternDetection"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/TestPatternDetection
 ---
 
 # .test_pii_redacted_for_unknown_recipient()
@@ -16,4 +16,4 @@ tags:
 - [[PII in email body IS redacted before queuing for unknown recipients.]] - `rationale_for` [EXTRACTED]
 - [[TestEmailSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

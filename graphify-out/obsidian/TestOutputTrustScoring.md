@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestOutputTrustScoring"
+community: "openclaw/skills/i-browser/browse.js"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputTrustScoring
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
 # TestOutputTrustScoring
@@ -25,4 +25,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputTrustScoring
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

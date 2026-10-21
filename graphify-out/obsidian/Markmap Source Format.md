@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "OpenClaw Management Scripts"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Markmap Source Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Markmap Generation via MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

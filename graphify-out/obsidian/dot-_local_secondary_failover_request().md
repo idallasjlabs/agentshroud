@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "SecureBrowser (4)"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/SecureBrowser_4
 ---
 
 # ._local_secondary_failover_request()
@@ -22,4 +22,4 @@ tags:
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[test_local_oom_triggers_secondary_failover]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

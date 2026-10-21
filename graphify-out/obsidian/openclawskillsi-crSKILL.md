@@ -1,33 +1,33 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/socjs
 ---
 
 # openclaw/skills/i-cr/SKILL.md
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 - [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 - [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 - [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 - [[Code Review (CR)]] - `contains` [EXTRACTED]
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
-- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 - [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 - [[Expected output_2]] - `contains` [EXTRACTED]
 - [[Expected ok_2]] - `contains` [EXTRACTED]
@@ -35,23 +35,23 @@ tags:
 - [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 - [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 - [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
-- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 - [[If not → escalate to field team via ops-alerts_2]] - `contains` [EXTRACTED]
 - [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
 - [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 - [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 - [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 - [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 - [[Query the control DB_2]] - `contains` [EXTRACTED]
 - [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - `contains` [EXTRACTED]
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
 - [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 - [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
@@ -83,22 +83,22 @@ tags:
 - [[Skill scrum_2]] - `contains` [EXTRACTED]
 - [[Skill sdlc_2]] - `contains` [EXTRACTED]
 - [[Skill sre_2]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
-- [[System Audit & Documentation_2]] - `contains` [EXTRACTED]
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
-- [[System Audit Vault_2]] - `contains` [EXTRACTED]
-- [[System Audit Vault (Obsidian)_2]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[System Audit & Documentation_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 - [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 - [[Validate contrast ratio_2]] - `contains` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 - [[INFO Extracted 1,204 records → s3my-bucketlanding..._2]] - `contains` [EXTRACTED]
-- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 - [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/socjs

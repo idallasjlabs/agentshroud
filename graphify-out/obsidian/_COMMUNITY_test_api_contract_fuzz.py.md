@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
-- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[Current Status]] - document - docs/project/README.md
+- [[Current Status_1]] - document - docs/requirements/README.md
+- [[Planned Documents]] - document - docs/project/README.md
+- [[Planned Documents_1]] - document - docs/requirements/README.md
+- [[Project Documentation]] - document - docs/project/README.md
+- [[Requirements Documentation]] - document - docs/requirements/README.md
+- [[projectREADME]] - document - docs/project/README.md
+- [[requirementsREADME]] - document - docs/requirements/README.md
 
 ## Live Query (requires Dataview plugin)
 

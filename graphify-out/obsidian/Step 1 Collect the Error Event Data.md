@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-eightd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
 ---
 
 # Step 1: Collect the Error Event Data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D2 — Problem Description (Data Collection & Characterization)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3

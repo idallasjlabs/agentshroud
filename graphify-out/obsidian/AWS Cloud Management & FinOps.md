@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (3)"
+community: "SECTION 9: IMPORTANT NOTES"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_3
+  - community/SECTION_9_IMPORTANT_NOTES
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_28]] - `contains` [EXTRACTED]
-- [[Related Skills_13]] - `contains` [EXTRACTED]
-- [[Usage_17]] - `contains` [EXTRACTED]
-- [[hermesskillsi-awsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_40]] - `contains` [EXTRACTED]
+- [[Related Skills_26]] - `contains` [EXTRACTED]
+- [[Usage_29]] - `contains` [EXTRACTED]
+- [[openclawskillsi-awsREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_3
+#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES

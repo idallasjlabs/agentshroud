@@ -18,7 +18,7 @@ tags:
 - [[dot-_check_thresholds()]] - `references` [EXTRACTED]
 - [[dot-_score_message_patterns()]] - `references` [EXTRACTED]
 - [[dot-_score_response_patterns()]] - `references` [EXTRACTED]
-- [[dot-_trigger_alert()_1]] - `references` [EXTRACTED]
+- [[dot-_trigger_alert()]] - `references` [EXTRACTED]
 - [[dot-track_message()]] - `references` [EXTRACTED]
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]

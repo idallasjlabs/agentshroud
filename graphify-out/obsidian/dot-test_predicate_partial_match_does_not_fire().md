@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L9203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # .test_predicate_partial_match_does_not_fire()
@@ -16,4 +16,4 @@ tags:
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[hello, can you help' must NOT match — exact-match guard.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher (3)"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher_3
 ---
 
 # Return True if the user's session is currently suspended.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_suspended()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

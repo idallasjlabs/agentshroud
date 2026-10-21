@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "CredentialInjector"
+community: "setup-https-proxy.js"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/setup-https-proxyjs
 ---
 
 # CredentialInjector
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [INFERRED]
+- [[dot-__init__()_13]] - `calls` [INFERRED]
 - [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 - [[dot-injector()]] - `calls` [INFERRED]
 - [[dot-injector()_1]] - `calls` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[dot-test_strip_headers_removes_conflicting_header()]] - `calls` [EXTRACTED]
 - [[injector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs

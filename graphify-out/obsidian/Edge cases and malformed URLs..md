@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # Edge cases and malformed URLs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMalformedURLs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

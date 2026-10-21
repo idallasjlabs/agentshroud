@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "TestDomainValidationHelper"
+community: "AgentShroud Documentation"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/AgentShroud_Documentation
 ---
 
 # Information about a managed credential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CredentialInfo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Documentation

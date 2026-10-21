@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # Different agent_ids for the same domain each produce their own log entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_log_external_decision_different_agent_same_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

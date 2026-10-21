@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestTrivySkipDirs"
-location: "L1082"
+community: "First iteration ingests + records; second sees dedup and skips."
+location: "L1231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrivySkipDirs
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
 ---
 
 # TestTrivySkipDirs
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_skip_dirs_added_to_command()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrivySkipDirs
+#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

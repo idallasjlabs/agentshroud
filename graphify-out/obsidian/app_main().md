@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c"
 type: "code"
-community: "lvgl_kawaii_face.c"
+community: "GSDE&G Skills Reference"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lvgl_kawaii_facec
+  - community/GSDEG_Skills_Reference
 ---
 
 # app_main()
@@ -16,4 +16,4 @@ tags:
 - [[face_set_emotion()]] - `calls` [INFERRED]
 - [[main.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lvgl_kawaii_facec
+#graphify/code #graphify/INFERRED #community/GSDEG_Skills_Reference

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # test_lifespan_prune.py
@@ -23,4 +23,4 @@ tags:
 - [[test_prune_keeps_real_uid_markdown()]] - `contains` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

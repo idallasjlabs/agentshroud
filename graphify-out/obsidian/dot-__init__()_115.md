@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "PipelineAction"
-location: "L45"
+community: "EgressFilterConfig"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[Path_29]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

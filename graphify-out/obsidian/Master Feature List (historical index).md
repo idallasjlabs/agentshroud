@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud Color Palette"
+community: "SSH Configuration Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/SSH_Configuration_Guide
 ---
 
 # Master Feature List (historical index)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue 1583f0]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

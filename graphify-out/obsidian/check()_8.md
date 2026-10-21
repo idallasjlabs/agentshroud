@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
 type: "code"
-community: "test-sunday-upgrade-scan.sh"
-location: "L56"
+community: "Recommendation"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/Recommendation
 ---
 
 # check()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/code #graphify/EXTRACTED #community/Recommendation

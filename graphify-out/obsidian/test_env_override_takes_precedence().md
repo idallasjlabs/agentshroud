@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canvas_proxy.py"
 type: "code"
-community: "test_canvas_proxy.py"
+community: "MCPPermissionManager (2) (3)"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_canvas_proxypy
+  - community/MCPPermissionManager_2_3
 ---
 
 # test_env_override_takes_precedence()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canvas_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_canvas_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2_3

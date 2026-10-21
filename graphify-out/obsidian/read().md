@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
-location: "L7836"
+community: ".test_fetch_paginates_via_link_cursor() (2)"
+location: "L522"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/test_fetch_paginates_via_link_cursor_2
 ---
 
 # read()
 
 ## Connections
-- [[fake_urlopen()_7]] - `contains` [EXTRACTED]
+- [[dot-test_fetch_paginates_via_link_cursor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor_2

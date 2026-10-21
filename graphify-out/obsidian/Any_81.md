@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: ""
 type: "code"
-community: "TestSSRFDetection (3)"
-location: "L231"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_3
+  - community/sync-cve-registrypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()_2]] - `references` [EXTRACTED]
+- [[check_upstream_cves()]] - `references` [EXTRACTED]
+- [[format_cve_report()]] - `references` [EXTRACTED]
+- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_3
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

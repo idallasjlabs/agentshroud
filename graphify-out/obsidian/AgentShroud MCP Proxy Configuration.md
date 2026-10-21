@@ -1,11 +1,11 @@
 ---
 source_file: "examples/mcp-config.yml"
 type: "document"
-community: "Default Monitor-Mode Egress Rationale"
+community: "dashboard_endpoints.py (4)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Default_Monitor-Mode_Egress_Rationale
+  - community/dashboard_endpointspy_4
 ---
 
 # AgentShroud MCP Proxy Configuration
@@ -14,4 +14,4 @@ tags:
 - [[Default-Allow Web Proxy Design Rationale]] - `rationale_for` [EXTRACTED]
 - [[MCP Proxy Default-Allow Philosophy]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Default_Monitor-Mode_Egress_Rationale
+#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_4

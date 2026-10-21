@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # test_query_with_time_filters()
@@ -15,4 +15,4 @@ tags:
 - [[Test querying ledger with time range filters]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services (2)"
+community: "Skill: UI Expert (UI) (3)"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Skill_UI_Expert_UI_3
 ---
 
 # "401 Unauthorized"
 
 ## Connections
-- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_3

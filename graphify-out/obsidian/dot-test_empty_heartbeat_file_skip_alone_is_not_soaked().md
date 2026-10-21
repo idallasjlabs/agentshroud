@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soak_status.py"
 type: "code"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # .test_empty_heartbeat_file_skip_alone_is_not_soaked()
@@ -16,4 +16,4 @@ tags:
 - [[The benign skip alone proves nothing — still need a real success.]] - `rationale_for` [EXTRACTED]
 - [[_job()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

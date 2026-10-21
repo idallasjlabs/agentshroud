@@ -1,68 +1,58 @@
 ---
 type: community
-members: 55
+members: 45
 ---
 
 # ApprovalQueueConfig (5)
 
-**Members:** 55 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[dot-send_json()]] - code - gateway/tests/test_approval_queue.py
-- [[A WebSocket stand-in whose send_json never returns — models a dead     client (c]] - rationale - gateway/tests/test_approval_queue.py
-- [[Create approval queue configuration for testing]] - rationale - gateway/tests/test_approval_queue.py
-- [[Create approval queue instance for testing]] - rationale - gateway/tests/test_approval_queue.py
-- [[Queue should restore persisted items from store file on startup.]] - rationale - gateway/tests/test_approval_queue.py
-- [[Queue store file should persist items and status transitions.]] - rationale - gateway/tests/test_approval_queue.py
-- [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - rationale - gateway/tests/test_approval_queue.py
-- [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - rationale - gateway/tests/test_approval_queue.py
-- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test WebSocket client connection]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test approving a pending request]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test broadcast handles failed client sends]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test deciding on already-decided request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test deciding on an expired request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test deciding on nonexistent request raises KeyError]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test getting a specific item by ID]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test getting all pending requests]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test getting nonexistent item returns None]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test rejecting a pending request]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test submitting an approval request]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test that concurrent decision attempts are handled correctly]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test that get_pending excludes decided requests]] - rationale - gateway/tests/test_approval_queue.py
-- [[Test that requests expire after timeout]] - rationale - gateway/tests/test_approval_queue.py
-- [[_HangingWebSocket]] - code - gateway/tests/test_approval_queue.py
-- [[approval_queue()]] - code - gateway/tests/test_approval_queue.py
-- [[broadcast() bounds each client's send with a timeout — defense in     depth so a]] - rationale - gateway/tests/test_approval_queue.py
-- [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
-- [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
-- [[cleanup_decided() should remove approvedrejected items older than threshold.]] - rationale - gateway/tests/test_approval_queue.py
-- [[queue_config()]] - code - gateway/tests/test_approval_queue.py
-- [[test_approval_queue.py]] - code - gateway/tests/test_approval_queue.py
-- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - code - gateway/tests/test_approval_queue.py
-- [[test_broadcast_with_failed_client()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_keeps_pending_items()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_keeps_recent_decided_items()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_persists_removal_to_disk()]] - code - gateway/tests/test_approval_queue.py
-- [[test_cleanup_decided_removes_old_decided_items()]] - code - gateway/tests/test_approval_queue.py
-- [[test_concurrent_decisions()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_already_decided()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_approval_approve()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_approval_reject()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_expired_request()]] - code - gateway/tests/test_approval_queue.py
-- [[test_decide_nonexistent_request()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_item()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_item_nonexistent()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_pending()]] - code - gateway/tests/test_approval_queue.py
-- [[test_get_pending_excludes_decided()]] - code - gateway/tests/test_approval_queue.py
-- [[test_persist_pending_store_writes_atomically()]] - code - gateway/tests/test_approval_queue.py
-- [[test_request_expiration()]] - code - gateway/tests/test_approval_queue.py
-- [[test_store_persists_submit_and_decision()]] - code - gateway/tests/test_approval_queue.py
-- [[test_store_restores_items_on_init()]] - code - gateway/tests/test_approval_queue.py
-- [[test_submit_approval_request()]] - code - gateway/tests/test_approval_queue.py
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - code - gateway/tests/test_approval_queue.py
-- [[test_websocket_connect()]] - code - gateway/tests/test_approval_queue.py
-- [[test_websocket_disconnect()]] - code - gateway/tests/test_approval_queue.py
+- [[GO — Continue Development]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[High Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[High Value (Critical Security Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Lower Value (Nice-to-Have)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Medium Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Medium Value (Enhancement & Hardening)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Monitoring Blindspots]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[⚠️ Moderate Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[💡 Design Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🔴 Priority 1 Critical Security Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🚨 Critical Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🟡 Priority 2 Operational Security Maturity]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🟢 Priority 3 Security Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[1. Changes in This Diff]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[1. Changes in This Diff (Summary)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[1. Prior Review Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[2. New Blue Team Changes Since Round 1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[4. Risks & Gaps_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[4. Risks & Gaps_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[4. Test Coverage Assessment]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[4. Test Results Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[5. Errors & Warnings Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[5. Errors & Warnings Summary_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[5. Summary]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[6. Go  No-Go Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[6. Verdict]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[6. Verdict_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[6. Verdict_2]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[7. Fix Log]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[7. Post-Fix Verification]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Action Items Before Merge]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[AgentShroud Phase Review — 2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Conditions for Continued Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Summary_5]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[What This Means]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[What Would Change This to NO-GO]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -72,15 +62,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 7 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
+- 2 edges to [[_COMMUNITY_InjectionAction]]
+- 2 edges to [[_COMMUNITY_main (2)]]
+- 2 edges to [[_COMMUNITY_TeamsConfig (3)]]
+- 1 edge to [[_COMMUNITY_HostStatus]]
+- 1 edge to [[_COMMUNITY_§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]]
+- 1 edge to [[_COMMUNITY_installer.py (2)]]
+- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (3)]]
+- 1 edge to [[_COMMUNITY_security__init__.py]]
+- 1 edge to [[_COMMUNITY_TestScoreRuntimeProtection]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5) (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5) (3)]]
+- 1 edge to [[_COMMUNITY_TestResourceAvailability]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5) (4)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5) (5)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5) (6)]]
+- 1 edge to [[_COMMUNITY_TestScoreContainerHardening]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5) (7)]]
+- 1 edge to [[_COMMUNITY_config.py]]
+- 1 edge to [[_COMMUNITY_switch_model.sh]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2) (2)]]
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_AgentShroud Deployment & Troubleshooting Runbook]]
 
 ## Top bridge nodes
-- [[test_approval_queue.py]] - degree 30, connects to 3 communities
-- [[_HangingWebSocket]] - degree 8, connects to 3 communities
-- [[test_broadcast_with_failed_client()]] - degree 4, connects to 2 communities
-- [[test_cleanup_decided_persists_removal_to_disk()]] - degree 4, connects to 2 communities
-- [[test_persist_pending_store_writes_atomically()]] - degree 4, connects to 2 communities
+- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 22 communities

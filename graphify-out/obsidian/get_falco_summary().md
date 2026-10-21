@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_collaborator_greeter.py (2)"
+community: "PipelineAction (2)"
 location: "L696"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/PipelineAction_2
 ---
 
 # get_falco_summary()
@@ -15,15 +15,15 @@ tags:
 - [[dot-test_clean_when_installed_not_running()_2]] - `calls` [EXTRACTED]
 - [[dot-test_not_run_when_no_alert_dir()_1]] - `calls` [EXTRACTED]
 - [[dot-test_returns_summary_for_empty_dir()_1]] - `calls` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
-- [[Path_61]] - `calls` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
+- [[Path_66]] - `calls` [EXTRACTED]
 - [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - `rationale_for` [EXTRACTED]
 - [[_is_falco_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
-- [[generate_summary()_2]] - `calls` [EXTRACTED]
+- [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[read_alerts()_1]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

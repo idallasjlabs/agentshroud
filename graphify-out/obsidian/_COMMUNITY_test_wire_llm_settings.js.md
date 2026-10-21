@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[HERMES_INIT]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[OC_INIT]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[REPO]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[assert()_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[fs_6]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[os_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[path_54]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[read()_2]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[readHermesMcpServers()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[runHermesInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[runOpenClawInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[stageDefaults()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[test_wire_llm_settings.js]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[writeStub()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[{ spawnSync }_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[Environment Variables_14]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Function Details_33]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Key Classes  Functions_35]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Purpose_135]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Related_39]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Responsibilities_37]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[input_normalizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[input_normalizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[normalize_input(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[strip_markdown_exfil(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 
 ## Live Query (requires Dataview plugin)
 

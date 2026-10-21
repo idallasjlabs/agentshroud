@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L8552"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # /ri for a user not in immune set must say so.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_revoke_immunity_unknown_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

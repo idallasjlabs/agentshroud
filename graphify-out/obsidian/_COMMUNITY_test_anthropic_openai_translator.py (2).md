@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Convert an Anthropic message content field to OpenAI format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Flatten Anthropic system prompt (string or content-block list) to plain text.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
-- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[_anthropic_content_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[_anthropic_system_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[_random_msg_id()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[anthropic_openai_translator.py]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[dot-test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy.py
+- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
+- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +32,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 2 edges to [[_COMMUNITY_LLMProxy]]
-- 2 edges to [[_COMMUNITY_test_claude_via_openai_path.py]]
-- 1 edge to [[_COMMUNITY_LLMProxy (2)]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_api.py (2)]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
 
 ## Top bridge nodes
-- [[test_claude_via_openai_path.py]] - degree 9, connects to 3 communities
-- [[anthropic_openai_translator.py]] - degree 7, connects to 1 community
-- [[_random_msg_id()]] - degree 4, connects to 1 community
-- [[_anthropic_content_to_openai()]] - degree 3, connects to 1 community
-- [[_anthropic_system_to_openai()]] - degree 3, connects to 1 community
+- [[TestHandleEvent]] - degree 10, connects to 3 communities
+- [[SlackAPIProxy_2]] - degree 9, connects to 3 communities

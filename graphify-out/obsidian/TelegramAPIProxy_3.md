@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher (3)"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher_3
 ---
 
 # TelegramAPIProxy
@@ -16,7 +16,7 @@ tags:
 - [[dot-_run_owner_cmd()_1]] - `references` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
-- [[_make_proxy()_2]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[_make_proxy()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

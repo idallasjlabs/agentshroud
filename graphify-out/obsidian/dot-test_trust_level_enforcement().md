@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .test_trust_level_enforcement()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Low-trust agents should be blocked from high-risk actions.]] - `rationale_for` [EXTRACTED]
 - [[TestAuth]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

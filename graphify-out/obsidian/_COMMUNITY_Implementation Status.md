@@ -8,29 +8,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[Access Control (7)]] - document - docs/security/security-inventory.md
-- [[Audit Logging_3]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Behavior Examples]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[CREDENTIAL-SECURITY-POLICY]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Emergency Override]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[FAQ_1]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Implementation Status]] - document - browser-extension/README.md
-- [[Implementation Strategy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 1 Gateway-Level Filtering]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 1 Gateway-Level Filtering (Recommended)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 2 Approval Queue for Credential Ops]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 3 Disable Credential Commands via Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 4 Role-Based Access Control]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Recommended Configuration (All 4 Options Combined)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Security Requirement]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 1 Update Gateway to Block Credentials in Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Summary_15]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[dot-agentsskillsi-mcREADME]] - document - .agents/skills/i-mc/README.md
+- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[GIT-GUARD Skill]] - document - .agents/skills/i-gg/SKILL.md
+- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[GSDE&G Development Master Checklist (MC)_1]] - document - .agents/skills/i-mc/README.md
+- [[GSDE&G Development Master Checklist Skill]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - concept - .agents/skills/i-mc/SKILL.md
+- [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
+- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Purpose_79]] - document - .agents/skills/i-mc/README.md
+- [[Related Skills_60]] - document - .agents/skills/i-mc/README.md
+- [[Usage_68]] - document - .agents/skills/i-mc/README.md
+- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
+- [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
+- [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[pr Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,14 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
-- 1 edge to [[_COMMUNITY_Browser Extension]]
-- 1 edge to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_Security Modules (58)]]
+- 2 edges to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_patch-anthropic-sdk.sh]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 3 communities
-- [[Implementation Status]] - degree 11, connects to 2 communities
-- [[Access Control (7)]] - degree 2, connects to 1 community
+- [[GSDE&G Development Master Checklist Skill]] - degree 12, connects to 2 communities
+- [[Code Review (CR) SKILL (OpenClaw)]] - degree 6, connects to 1 community
+- [[GIT-GUARD Skill]] - degree 5, connects to 1 community

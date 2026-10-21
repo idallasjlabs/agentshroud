@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "voice_task"
+community: "TestMetadataGuard"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/TestMetadataGuard
 ---
 
 # ws_client_create()
@@ -20,4 +20,4 @@ tags:
 - [[ws_pcm_cb_t]] - `references` [EXTRACTED]
 - [[ws_state_cb_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # KeyRotationManager
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_127]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_49]] - `method` [EXTRACTED]
 - [[dot-_generate_new_credential()]] - `method` [EXTRACTED]
 - [[dot-_read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[dot-_retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[dot-get_all_credentials_status()]] - `method` [EXTRACTED]
 - [[dot-get_credential_status()]] - `method` [EXTRACTED]
 - [[dot-get_health_score()]] - `method` [EXTRACTED]
-- [[dot-manager()_1]] - `calls` [EXTRACTED]
+- [[dot-manager()_2]] - `calls` [EXTRACTED]
 - [[dot-register_credential()]] - `method` [EXTRACTED]
 - [[dot-register_validator()]] - `method` [EXTRACTED]
 - [[dot-rotate_credential()]] - `method` [EXTRACTED]
@@ -33,12 +33,12 @@ tags:
 - [[dot-test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[EgressAllowlistResponse]] - `uses` [INFERRED]
 - [[EgressAllowlistUpdate]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages automated rotation of credentials with zero downtime.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -62,10 +62,10 @@ tags:
 - [[credentials_status()]] - `calls` [EXTRACTED]
 - [[key_rotation.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
-- [[manager()]] - `calls` [EXTRACTED]
+- [[manager()_1]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `calls` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

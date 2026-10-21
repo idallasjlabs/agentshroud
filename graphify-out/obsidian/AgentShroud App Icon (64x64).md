@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-64x64.png"
 type: "image"
-community: "egress_filter.py (2)"
+community: "DelegationManager"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/egress_filterpy_2
+  - community/DelegationManager
 ---
 
 # AgentShroud App Icon (64x64)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/egress_filterpy_2
+#graphify/image #graphify/INFERRED #community/DelegationManager

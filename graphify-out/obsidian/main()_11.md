@@ -1,17 +1,20 @@
 ---
-source_file: "scripts/check_benchmark_regression.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
-location: "L24"
+community: "1. Accomplishments This Phase"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/1_Accomplishments_This_Phase
 ---
 
 # main()
 
 ## Connections
-- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
+- [[Path_15]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

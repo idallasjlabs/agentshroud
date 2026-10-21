@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TrustConfig (2)"
+community: "asyncio"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/asyncio
 ---
 
 # test_subagent_monitor.py
@@ -15,7 +15,7 @@ tags:
 - [[SubagentEventType]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
-- [[TestAuditTrail_1]] - `contains` [EXTRACTED]
+- [[TestAuditTrail]] - `contains` [EXTRACTED]
 - [[TestConcurrentLimits]] - `contains` [EXTRACTED]
 - [[TestKillSwitch]] - `contains` [EXTRACTED]
 - [[TestPermissionMonitoring]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[strict_config()]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

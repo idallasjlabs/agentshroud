@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2AMethod"
+community: "Security Module Inventory"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Security_Module_Inventory
 ---
 
 # _BaseAddress
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_canonicalize_ip_literal()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Inventory

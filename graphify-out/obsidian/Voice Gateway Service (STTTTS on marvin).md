@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "ESP32-S3-BOX-3 Voice Terminal (2)"
+community: "format_upstream_cve_alert()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_2
+  - community/format_upstream_cve_alert
 ---
 
 # Voice Gateway Service (STT/TTS on marvin)
@@ -15,4 +15,4 @@ tags:
 - [[Reachability Context (cap_drop ALL, isolated network)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Funnel Exposure (supersedes on-device client)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2
+#graphify/concept #graphify/EXTRACTED #community/format_upstream_cve_alert

@@ -1,18 +1,20 @@
 ---
-source_file: ".mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: ".mcp.json"
-location: "L1"
+community: "opencode.json"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/opencodejson
 ---
 
 # github
 
 ## Connections
-- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
-- [[dot-mcp.json]] - `contains` [EXTRACTED]
+- [[command_4]] - `contains` [EXTRACTED]
+- [[enabled_4]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcpjson
+#graphify/code #graphify/EXTRACTED #community/opencodejson

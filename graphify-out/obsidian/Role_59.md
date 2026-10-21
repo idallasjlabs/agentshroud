@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect (2)"
-location: "L8"
+community: "test_openclaw_photo.sh"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/test_openclaw_photosh
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/document #graphify/EXTRACTED #community/test_openclaw_photosh

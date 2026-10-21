@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L222"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # AuditLogEntry
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_75]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
 - [[DisconnectRequest]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

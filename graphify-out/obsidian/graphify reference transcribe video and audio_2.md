@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/transcribe.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Local-Model Job Quality Matrix"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # graphify reference: transcribe video and audio
@@ -16,4 +16,4 @@ tags:
 - [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 - [[openclawskillsgraphifyreferencestranscribe]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

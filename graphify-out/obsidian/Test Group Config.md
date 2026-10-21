@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "TeamsConfig"
+community: "KillSwitchMonitor (5)"
 location: "1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor_5
 ---
 
 # Test Group Config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_5

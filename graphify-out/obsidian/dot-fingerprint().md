@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # .fingerprint()
@@ -15,4 +15,4 @@ tags:
 - [[A2AMessage]] - `method` [EXTRACTED]
 - [[Content hash for deduplication and audit.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/apipy

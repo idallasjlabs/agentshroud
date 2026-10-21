@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
-type: "code"
-community: "MiddlewareManager"
-location: "L76"
+source_file: ".agents/skills/i-hdev/SKILL.md"
+type: "document"
+community: "Skill: Hermes Dev Workflow (HDEV) (2)"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Skill_Hermes_Dev_Workflow_HDEV_2
 ---
 
 # Role
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
-- [[dot-get_user_role()]] - `references` [EXTRACTED]
-- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV_2

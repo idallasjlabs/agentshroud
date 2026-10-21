@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD) (2)"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD_2
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # hermes/skills/i-icloud/README.md
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD_2
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

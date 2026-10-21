@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Technical Writer (TW)"
+community: "OpenClaw Bot SSH Configuration"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

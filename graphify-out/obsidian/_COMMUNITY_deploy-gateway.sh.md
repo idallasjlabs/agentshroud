@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
-- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
+- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
+- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "KillSwitchMonitor (3)"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/KillSwitchMonitor_3
 ---
 
 # TestCompetitiveIntelReportSchema
@@ -23,9 +23,9 @@ tags:
 - [[dot-test_security_score_above_max_rejected()]] - `method` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 - [[Tests for Pydantic model validation.]] - `rationale_for` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
+community: "PortManager"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_2
+  - community/PortManager
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
+- [[dot-__init__()_178]] - `method` [EXTRACTED]
 - [[dot-_derive_key()]] - `method` [EXTRACTED]
 - [[dot-_resolve_secret()]] - `method` [EXTRACTED]
 - [[dot-decrypt()]] - `method` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[dot-encrypt_b64()]] - `method` [EXTRACTED]
 - [[dot-get_blob_key_id()]] - `method` [EXTRACTED]
 - [[dot-rotate()]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_7]] - `calls` [EXTRACTED]
-- [[dot-store()]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_33]] - `calls` [EXTRACTED]
+- [[dot-store()_2]] - `calls` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `calls` [EXTRACTED]
 - [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
 - [[dot-test_encrypted_store_constant_time()]] - `calls` [INFERRED]
@@ -34,15 +34,15 @@ tags:
 - [[dot-test_key_rotation_auto_increment()]] - `calls` [EXTRACTED]
 - [[dot-test_key_rotation_with_zeroing()]] - `calls` [EXTRACTED]
 - [[dot-test_no_secret_raises()]] - `calls` [EXTRACTED]
-- [[dot-test_wrong_key_fails()]] - `calls` [EXTRACTED]
 - [[dot-test_wrong_key_fails()_1]] - `calls` [EXTRACTED]
+- [[dot-test_wrong_key_fails()]] - `calls` [EXTRACTED]
 - [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -58,14 +58,14 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
@@ -76,4 +76,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_2
+#graphify/code #graphify/INFERRED #community/PortManager

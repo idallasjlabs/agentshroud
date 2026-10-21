@@ -1,17 +1,17 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 location: "L326-L356"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Multi-Agent Orchestration (specialized agents, per-agent isolation)
 
 ## Connections
-- [[hermes bot service (profile hermesfull)]] - `semantically_similar_to` [INFERRED]
+- [[hermes service (agentshroud-hermes-v2)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Sunday_Upgrade_prompt
+#graphify/concept #graphify/INFERRED #community/_wrap_response_2

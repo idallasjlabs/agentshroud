@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsesp_err.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
+- [[audio_volume_tick() — zipper-free ramp + NVS persist]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

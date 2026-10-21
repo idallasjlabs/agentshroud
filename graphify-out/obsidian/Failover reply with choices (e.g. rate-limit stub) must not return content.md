@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "rationale"
-community: "test_anthropic_openai_translator.py"
+community: "TestFabricatedSecurityNotice"
 location: "L311"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Failover reply with choices:[] (e.g. rate-limit stub) must not return content:[]
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_translator_empty_choices_yields_nonempty_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

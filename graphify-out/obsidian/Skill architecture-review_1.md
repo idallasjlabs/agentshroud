@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "hermes/skills/i-architecture-review/SKILL.md"
+community: "hermes/skills/i-observability/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-architecture-review/SKILLmd
+  - community/hermes/skills/i-observability/SKILLmd
 ---
 
 # Skill: architecture-review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermesskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-architecture-review/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-observability/SKILLmd

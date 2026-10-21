@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "pick_latest_stable"
+community: "TestFullAccessMiddlewareBypass"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # Newest stable release from an npm version list, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pick_latest_stable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/rationale #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

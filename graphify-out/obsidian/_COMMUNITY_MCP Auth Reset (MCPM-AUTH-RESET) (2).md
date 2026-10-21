@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_52]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_37]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Usage_41]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[openclawskillsi-mcpm-auth-resetREADME]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[ClamAV (malware detection)]] - concept - gateway/security/__init__.py
+- [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
+- [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
+- [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
+- [[security__init__.py]] - code - gateway/security/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

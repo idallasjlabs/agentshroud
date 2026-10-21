@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Agentic AI Threat Intelligence]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[AgentShroud trademark notice (USPTO 99728633)]] - concept - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

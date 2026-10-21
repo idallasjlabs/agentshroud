@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "falco_monitor.py"
+community: "Telegram Bot Setup for OpenClaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # falco_monitor.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

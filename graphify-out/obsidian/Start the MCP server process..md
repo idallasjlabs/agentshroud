@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "CrossBotTrustLedger"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/CrossBotTrustLedger
 ---
 
 # Start the MCP server process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-start()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

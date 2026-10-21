@@ -1,44 +1,25 @@
 ---
 type: community
-members: 31
+members: 12
 ---
 
 # AgentShroud Security Value Proposition - Revised
 
-**Members:** 31 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[1. Re-enable Seccomp Profiles]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[2. Enable Read-Only Filesystem]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[3. Remove NET_RAW Capability]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[4. Disable mDNSBonjour Broadcasting]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[5. Set DM Policy to Allowlist]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[AgentShroud Security Value Proposition - Revised]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Create scan.sh Script]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Immediate Action Plan (Phase 3A - Completion)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 1 Fix Broken Security (CRITICAL)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 4 Create Security Verification Script (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Read-only filesystem (immutable infrastructure)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 3 Prompt Injection → System Compromise]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Seccomp Profiles - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Seccomp profiles (critical, re-enable)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Ultra-conservative credential policy (multi-user threat model)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[7-Layer Defense Architecture]] - document - docs/architecture/agentic-os.md
+- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Layer Reference]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Module Count by Layer]] - document - docs/architecture/agentic-os.md
+- [[Monitor Mode]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Overview_23]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Proxy Layer]] - document - docs/architecture/agentic-os.md
+- [[Related Notes_66]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[`AuditChain`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`PipelineAction` (Enum)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`PipelineResult` (Dataclass)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`SecurityPipeline`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,8 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Development Team — Agile Structure]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2) (2)]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition - Revised]] - degree 13, connects to 2 communities
+- [[`SecurityPipeline`]] - degree 11, connects to 3 communities
+- [[Key Classes_1]] - degree 5, connects to 1 community

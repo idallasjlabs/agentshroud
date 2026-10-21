@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # key_rotation_config.py
 
 ## Connections
-- [[CredentialRotationPolicy_1]] - `contains` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `contains` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `contains` [EXTRACTED]
+- [[KeyRotationConfig]] - `contains` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

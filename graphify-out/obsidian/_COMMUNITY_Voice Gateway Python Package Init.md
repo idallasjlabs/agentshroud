@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice Gateway Python Package Init]] - code - voice_gateway/__init__.py
+- [[Apache License 2.0 (skill-creator)]] - document - skills/openclaw/skill-creator/license.txt
 
 ## Live Query (requires Dataview plugin)
 

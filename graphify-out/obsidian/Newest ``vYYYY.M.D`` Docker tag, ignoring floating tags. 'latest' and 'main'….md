@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Newest ``vYYYY.M.D`` Docker tag, ignoring floating tags. 'latest' and 'main'…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pick_latest_hermes_tag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

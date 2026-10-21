@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "browser/scripts/browse.py (2)"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/browser/scripts/browsepy_2
 ---
 
 # ._take_screenshot()
@@ -15,6 +15,5 @@ tags:
 - [[dot-navigate()]] - `calls` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 - [[Take screenshot and save to audit directory]] - `rationale_for` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2

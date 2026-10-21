@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "OpenClaw research/web_search domains pre-approved after 210-denial SOC saturation incident"
+community: "feed_hosts.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_research/web_search_domains_pre-approved_after_210-denial_SOC_saturation_incident
+  - community/feed_hostspy
 ---
 
 # OpenClaw research/web_search domains pre-approved after 210-denial SOC saturation incident
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_research/web_search_domains_pre-approved_after_210-denial_SOC_saturation_incident
+#graphify/rationale #graphify/EXTRACTED #community/feed_hostspy

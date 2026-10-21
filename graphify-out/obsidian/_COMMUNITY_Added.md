@@ -37,8 +37,8 @@ members: 59
 - [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
 - [[Recommended Steps]] - document - CHANGELOG.md
 - [[Removed]] - document - CHANGELOG.md
-- [[Security]] - document - CHANGELOG.md
-- [[Summary_1]] - document - CHANGELOG.md
+- [[Security_1]] - document - CHANGELOG.md
+- [[Summary]] - document - CHANGELOG.md
 - [[Testing]] - document - CHANGELOG.md
 - [[Tests]] - document - CHANGELOG.md
 - [[Tranche Status]] - document - CHANGELOG.md

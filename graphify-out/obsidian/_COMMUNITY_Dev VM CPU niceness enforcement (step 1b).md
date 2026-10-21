@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Dev VM CPU niceness enforcement (step 1b)]] - rationale - docker/scripts/colima-health-check.sh
+- [[Token Reduction Benchmark]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

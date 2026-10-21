@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_9]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Brainstorming Session Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Core Discipline Frame → Structure → Generate → Validate_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Curriculum Design (with `i-atlas`)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Decision Tree Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Dependencies_9]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Example FODL Pipeline Overview_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Export and Sharing Conventions_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Hierarchy Design — Outline First_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Knowledge Map (PKE  OKE integration)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[MCP Tool markmap-mcp-server_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[MCP Tool xmind-generator-mcp_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markdown-to-Mindmap Conversion_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Invocation Pattern_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Role_36]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Rules_10]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Validation Checklist_4]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[When to Use Mindmaps vs Other Formats_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[XMind Generation via MCP_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[openclawskillsi-mmSKILL]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Accessibility Requirements_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Anti-Patterns to Flag_8]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[BEM (Block Element Modifier)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Breakpoints (mobile-first)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Button_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[CSS Architecture Recommendations_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[CSS Modules (React  Next.js)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Component Patterns_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Component contract rules_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Component file structure_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Container Query Pattern (preferred over breakpoints for components)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Core Discipline Structure → Component → Layout → Validate_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dark  Light Theme Implementation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dashboard Grid_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Data Table_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dependencies_8]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Form Field_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Modal  Dialog_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Navigation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[React  Next.js Component Architecture_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Responsive Layout System_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Role_33]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Rules_9]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Skill UI Expert (UI)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[UI Validation Checklist_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Utility-First (Tailwind  custom utilities)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[hermesskillsi-uiSKILL]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,7 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[Skill Mindmap Architect (MM)_2]] - degree 15, connects to 1 community
+- [[Skill UI Expert (UI)_1]] - degree 14, connects to 1 community

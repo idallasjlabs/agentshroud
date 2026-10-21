@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "SCLClient"
-location: "L80"
+community: "MiddlewareManager (2)"
+location: "L444"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/MiddlewareManager_2
 ---
 
 # .get_logs()
 
 ## Connections
-- [[dot-get()_1]] - `calls` [EXTRACTED]
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[dot-_get_engine()]] - `calls` [EXTRACTED]
+- [[dot-_logs_via_socket()]] - `calls` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
+- [[TestGetLogs]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

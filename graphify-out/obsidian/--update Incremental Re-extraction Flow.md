@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "concept"
-community: "graphify Skill"
+community: "Seccomp Profiles"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/Seccomp_Profiles
 ---
 
 # --update Incremental Re-extraction Flow
@@ -15,4 +15,4 @@ tags:
 - [[Extraction Cache Check — Step B0]] - `shares_data_with` [EXTRACTED]
 - [[build_merge() rationale (801 edge direction, 1178 stale-node collapse)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphify_Skill
+#graphify/concept #graphify/EXTRACTED #community/Seccomp_Profiles

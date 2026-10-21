@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "_wrap_response() (2)"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_wrap_response_2
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
-- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[dot-set_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

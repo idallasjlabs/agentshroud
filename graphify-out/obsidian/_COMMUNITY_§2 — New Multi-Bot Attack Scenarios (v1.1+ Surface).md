@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[RT-MB1 — Cross-Bot Trust Pivot]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB2 — Shared-Memory Leak Between Bots]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB3 — Group-Context Escalation (Anticipating Workstream A)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB4 — Hermes Cron Job Injection (NEW — Hermes-specific)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB6 — Cross-Bot Telegram Token Confusion]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 
 ## Top bridge nodes
-- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - degree 7, connects to 1 community
+- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community

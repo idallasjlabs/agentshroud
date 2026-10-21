@@ -1,13 +1,13 @@
 ---
 source_file: "branding/presentation/title-slide-1920x1080.png"
 type: "image"
-community: "AgentShroud Presentation Title Slide"
+community: "dashboard/__init__.py"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Presentation_Title_Slide
+  - community/dashboard/__init__py
 ---
 
 # AgentShroud Presentation Title Slide
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Presentation_Title_Slide
+#graphify/image #graphify/EXTRACTED #community/dashboard/__init__py

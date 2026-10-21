@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+community: "KillSwitchMonitor (5)"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+  - community/KillSwitchMonitor_5
 ---
 
 # TestGroupMemoryNamespaceIsolation
 
 ## Connections
-- [[dot-test_group_a_write_invisible_from_group_b()_1]] - `method` [EXTRACTED]
+- [[dot-test_group_a_write_invisible_from_group_b()]] - `method` [EXTRACTED]
 - [[dot-test_group_b_write_invisible_from_group_a()]] - `method` [EXTRACTED]
 - [[dot-test_group_id_uses_group_prefix_namespace()]] - `method` [EXTRACTED]
 - [[dot-test_group_memory_physically_isolated()]] - `method` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[Writes in group-A must not be readable from group-B.]] - `rationale_for` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5

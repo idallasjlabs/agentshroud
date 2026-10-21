@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "test_hermes_cron_seed.py"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/test_hermes_cron_seedpy
 ---
 
 # Build the REST v3 create-issue request body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_create_issue_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy

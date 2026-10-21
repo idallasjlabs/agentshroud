@@ -1,36 +1,33 @@
 ---
 type: community
-members: 23
+members: 20
 ---
 
 # AgentShroud Security Value Proposition
 
-**Members:** 23 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[dot-test_body_agent_id_used_when_header_missing()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_clean_tool_call_allowed()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_empty_parameters_allowed()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_injection_in_parameters_blocked()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_missing_required_fields_returns_422()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_requires_auth()_3]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_response_includes_processing_time()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[A clean tool call with no threats should be allowed (200).]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Body agent_id is used only when trusted header is absent.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Missing server_name or tool_name should return 422.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[POST mcpproxy without auth should return 401.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Response should include processing_time_ms.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[TestMCPProxyEndpoint_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Tool call with injection pattern in parameters should return 403.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[Tool call with no parameters should be accepted.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
+- [[x-agentshroud-user-id header must override spoofable body agent_id.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
+- 2 edges to [[_COMMUNITY_CrossBotTrustLedger]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities
+- [[TestMCPProxyEndpoint_1]] - degree 12, connects to 1 community

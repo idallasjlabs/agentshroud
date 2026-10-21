@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect (SKILL)"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_SKILL
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Athena — Knowledge Distiller (SKILL)
@@ -15,4 +15,4 @@ tags:
 - [[cheatsheet.md Output Template]] - `references` [EXTRACTED]
 - [[show_notes.md Output Template]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_SKILL
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

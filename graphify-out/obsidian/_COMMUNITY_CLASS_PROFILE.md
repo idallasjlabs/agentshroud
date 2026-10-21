@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CLASS_PROFILE]] - code - scripts/triage-cve-mitigations.py
+- [[pre-commit gitleaks hook (v8.18.1)]] - code - .pre-commit-config.yaml
 
 ## Live Query (requires Dataview plugin)
 

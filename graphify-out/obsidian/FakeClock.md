@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "RateLimitGuard"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # FakeClock
 
 ## Connections
-- [[dot-__call__()_5]] - `method` [EXTRACTED]
-- [[dot-__init__()_100]] - `method` [EXTRACTED]
+- [[dot-__call__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_74]] - `method` [EXTRACTED]
 - [[dot-advance()]] - `method` [EXTRACTED]
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[clock()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

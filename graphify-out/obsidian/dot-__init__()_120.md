@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L142"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

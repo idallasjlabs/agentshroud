@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestAlertDispatcher"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
 location: "L894"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
 ---
 
 # .test_low_alert_buffered()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_dispatcher()]] - `calls` [EXTRACTED]
 - [[TestAlertDispatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List

@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[Allowed Syscall Categories]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Alternate Compose Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Applied By_1]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Architecture Support]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Blocked Syscalls (Notable)]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Default Action]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Gateway vs Bot Profile Differences]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Networks]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Purpose_104]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Related Notes_39]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Related Notes_40]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Seccomp Profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Secrets Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Services]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Volumes]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[agentshroud (agentshroud-bot)]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[docker-compose.yml_1]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[docker-compose.yml]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[gateway (agentshroud-gateway)]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[seccomp-profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[--update Incremental Re-extraction Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
+- [[--watch Background Watcher]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[Extraction Cache Check — Step B0]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Neo4j Export]] - concept - .agents/skills/graphify/SKILL.md
+- [[Post-commit Auto-rebuild Hook]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[Release Workflow (i-release)]] - document - .agents/skills/i-release/SKILL.md
+- [[Semantic Extraction — Part B (parallel subagents)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Structural (AST) Extraction — Part A]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Whisper Transcription]] - concept - .agents/skills/graphify/references/transcribe.md
+- [[build_merge() rationale (801 edge direction, 1178 stale-node collapse)]] - rationale - docker/config/openclaw/skills/graphify/references/update.md
+- [[graphify Add & Watch Reference]] - document - .agents/skills/graphify/references/add-watch.md
+- [[graphify Commit Hook & CLAUDE.md Integration Reference]] - document - .agents/skills/graphify/references/hooks.md
+- [[graphify Exports & Benchmark Reference]] - document - .agents/skills/graphify/references/exports.md
+- [[graphify Extraction Subagent Prompt Spec]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[graphify GitHub Clone & Cross-Repo Merge Reference]] - document - .agents/skills/graphify/references/github-and-merge.md
+- [[graphify MCP Stdio Server]] - concept - .agents/skills/graphify/SKILL.md
+- [[graphify QueryPathExplain Reference]] - document - .agents/skills/graphify/references/query.md
+- [[graphify Skill]] - document - .agents/skills/graphify/SKILL.md
+- [[graphify Transcribe Reference]] - document - .agents/skills/graphify/references/transcribe.md
+- [[graphify Update & Cluster-Only Reference]] - document - .agents/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +35,9 @@ members: 20
 TABLE source_file, type FROM #community/Seccomp_Profiles
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (AMPM)]]
+
+## Top bridge nodes
+- [[graphify Skill]] - degree 15, connects to 1 community

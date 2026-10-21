@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (3)"
+community: "ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_3
+  - community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at
 ---
 
 # Quick Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_3
+#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at

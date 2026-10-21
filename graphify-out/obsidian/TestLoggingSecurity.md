@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "test_playback_state.c"
 location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/test_playback_statec
 ---
 
 # TestLoggingSecurity
 
 ## Connections
 - [[dot-_make_record()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()]] - `method` [EXTRACTED]
+- [[dot-sanitizer()_3]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redaction()]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redaction_via_pattern()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_in_logs()]] - `method` [EXTRACTED]
@@ -42,13 +42,13 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -57,7 +57,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test log sanitization and information leakage prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/test_playback_statec

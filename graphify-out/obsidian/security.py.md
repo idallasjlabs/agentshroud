@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "RuntimeConfig"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # security.py
@@ -25,4 +25,4 @@ tags:
 - [[podman_engine.py]] - `references` [EXTRACTED]
 - [[warn_missing_features()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

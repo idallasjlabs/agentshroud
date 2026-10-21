@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
 community: "WebProxyConfig"
-location: "L598"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .test_case_insensitive()
 
 ## Connections
-- [[TestIsDomainAllowed]] - `method` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

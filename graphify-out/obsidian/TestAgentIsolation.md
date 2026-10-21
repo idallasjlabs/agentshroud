@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_a2a_policy.py"
 location: "L646"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/test_a2a_policypy
 ---
 
 # TestAgentIsolation
 
 ## Connections
-- [[dot-setup_method()_36]] - `method` [EXTRACTED]
+- [[dot-setup_method()_35]] - `method` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `method` [EXTRACTED]
 - [[dot-test_generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_list_agents()_1]] - `method` [EXTRACTED]
@@ -37,11 +37,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/test_a2a_policypy

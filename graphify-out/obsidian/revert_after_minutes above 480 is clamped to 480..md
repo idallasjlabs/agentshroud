@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "KillSwitchMonitor (5)"
+community: "TestWebSearchLog"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/TestWebSearchLog
 ---
 
 # revert_after_minutes above 480 is clamped to 480.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_revert_minutes_clamped_max()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSearchLog

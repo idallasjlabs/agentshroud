@@ -17,7 +17,7 @@ tags:
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
 - [[Add an action to the approval queue          Args             request Approval]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
-- [[ApprovalRequest_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
+- [[ApprovalRequest_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

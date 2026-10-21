@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "CronStateMonitor"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .test_repeated_failure_escalates_to_critical()
@@ -18,4 +18,4 @@ tags:
 - [[_oc_job()]] - `calls` [EXTRACTED]
 - [[_openclaw_store()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[GSDE&G Skills Reference Guide_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[STPA-Sec Methodology_2]] - concept - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Steve Hay's Phase 1 Probes (RedBlue Team Assessment)]] - concept - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[i-production README (Incident Response)]] - document - docker/config/hermes/skills/i-production/README.md
-- [[i-production SKILL (Incident Response  INCIDENT)]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[i-ps README (Production Safety Checklist)]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[i-ps SKILL (Production Safety Checklist  PROD-SAFETY)]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[i-qa README (Quality Assurance)]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[i-qa SKILL (Quality Assurance  QA)]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[i-sad README (System Audit Documentation)]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[i-sav README (System Audit Vault)]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[i-sav SKILL (System Audit Vault, Obsidian)]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[i-sec README (Security Review, SecureClaw)]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[i-sec SKILL (Security Review  SEC, SecureClaw)]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[i-sec-defense README (Blue Team Security Auditor)]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[i-sec-offense README (Red Team Adversarial Tester)]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[i-session-prompt SKILL (Session Prompt Generator)]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[i-socrates README (Dialogue Architect)]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[i-socrates SKILL (Dialogue Architect, podcast pipeline)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[1. Change Documentation_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[2. Testing Evidence_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[4. Blast Radius_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[5. Observability_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[6. Security_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[7. Communication_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[8. Service Control Commands_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Invoke Before_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Role_43]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Sign-Off_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[hermesskillsi-psSKILL]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +36,9 @@ members: 21
 TABLE source_file, type FROM #community/GSDEG_Skills_Reference_Guide
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+
+## Top bridge nodes
+- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - degree 7, connects to 1 community

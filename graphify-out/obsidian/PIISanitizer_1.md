@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L173"
+community: "EgressFilterConfig"
+location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[dot-_get_sanitizer_for_tool()]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[sanitizer()]] - `references` [EXTRACTED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

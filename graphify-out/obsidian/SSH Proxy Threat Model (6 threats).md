@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Pre-Deployment Checklist (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Pre-Deployment_Checklist_3
 ---
 
 # SSH Proxy Threat Model (6 threats)
@@ -17,4 +17,4 @@ tags:
 - [[Option 1 Direct SSH (current approach)]] - `semantically_similar_to` [INFERRED]
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist_3

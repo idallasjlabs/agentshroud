@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "`SecurityPipeline`"
+community: "MiddlewareManager (2) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/MiddlewareManager_2_2
 ---
 
 # Full System Flowchart.md
 
 ## Connections
 - [[Full System Flowchart_1]] - `contains` [EXTRACTED]
-- [[Network Topology_1]] - `references` [EXTRACTED]
+- [[Network Topology_2]] - `references` [EXTRACTED]
 - [[Security Pipeline Flow]] - `references` [EXTRACTED]
 - [[gatewayREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2

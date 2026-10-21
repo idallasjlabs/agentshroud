@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "router.py"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/routerpy
 ---
 
 # Output Sections (ALL required)
@@ -22,4 +22,4 @@ tags:
 - [[8. Verification Plan]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/routerpy

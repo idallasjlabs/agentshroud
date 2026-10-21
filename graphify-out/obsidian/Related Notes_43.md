@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Crash Recovery"
-location: "L197"
+community: "test_collaborator_tracker.py (3)"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/test_collaborator_trackerpy_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

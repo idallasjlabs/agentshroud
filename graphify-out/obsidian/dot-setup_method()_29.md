@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "TestDockerEngine"
-location: "L126"
+community: "test_soc_egress_endpoints.py"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/test_soc_egress_endpointspy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DockerEngine]] - `calls` [EXTRACTED]
-- [[TestDockerEngine]] - `method` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
+- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

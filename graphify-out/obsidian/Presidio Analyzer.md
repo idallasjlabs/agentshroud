@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Error Index.md (2)"
+community: "client_from_env"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_2
+  - community/client_from_env
 ---
 
 # Presidio Analyzer
@@ -21,4 +21,4 @@ tags:
 - [[Where Used]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2
+#graphify/document #graphify/EXTRACTED #community/client_from_env

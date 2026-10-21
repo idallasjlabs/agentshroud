@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # Test get_module_mode returns enforce when no override set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_module_mode_no_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

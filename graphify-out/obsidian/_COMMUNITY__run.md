@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-test_dry_run_allowed_for_any_user()]] - code - gateway/tests/test_canary_deploy.py
-- [[dot-test_dry_run_changes_nothing_and_previews_actions()]] - code - gateway/tests/test_canary_deploy.py
-- [[dot-test_dry_run_targets_green_ports_not_blue()]] - code - gateway/tests/test_canary_deploy.py
-- [[dot-test_refuses_when_not_green_user()]] - code - gateway/tests/test_canary_deploy.py
-- [[dot-test_tag_fetch_uses_force()]] - code - gateway/tests/test_canary_deploy.py
-- [[dot-test_unknown_arg_rejected()]] - code - gateway/tests/test_canary_deploy.py
-- [[TestDryRun]] - code - gateway/tests/test_canary_deploy.py
-- [[TestGuard]] - code - gateway/tests/test_canary_deploy.py
-- [[_run()_1]] - code - gateway/tests/test_canary_deploy.py
-- [[canary-deploy.sh (bluegreen canary deploy)]] - code - scripts/canary-deploy.sh
-- [[test_canary_deploy.py]] - code - gateway/tests/test_canary_deploy.py
-- [[test_help_prints_usage()]] - code - gateway/tests/test_canary_deploy.py
-- [[test_script_exists_and_is_executable()]] - code - gateway/tests/test_canary_deploy.py
-- [[test_syntax_is_valid()]] - code - gateway/tests/test_canary_deploy.py
+- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
+- [[2. Run Tests]] - document - docs/runbooks/deployment.md
+- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
+- [[4. Build Containers]] - document - docs/runbooks/deployment.md
+- [[5. Deploy]] - document - docs/runbooks/deployment.md
+- [[6. Verify_3]] - document - docs/runbooks/deployment.md
+- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
+- [[Environment Variables_16]] - document - docs/runbooks/deployment.md
+- [[First-Time Setup]] - document - docs/runbooks/deployment.md
+- [[Prerequisites_14]] - document - docs/runbooks/deployment.md
+- [[Quick Summary]] - document - docs/runbooks/deployment.md
+- [[Rolling Back]] - document - docs/runbooks/deployment.md
+- [[Standard Deployment]] - document - docs/runbooks/deployment.md
+- [[Version Tagging]] - document - docs/runbooks/deployment.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +29,13 @@ members: 14
 TABLE source_file, type FROM #community/_run
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_troubleshooting_1]]
+- 1 edge to [[_COMMUNITY_Implement gateway-level outbound information filtering module]]
+- 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
+
+## Top bridge nodes
+- [[Environment Variables_16]] - degree 4, connects to 3 communities
+- [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community

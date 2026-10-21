@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SlackAPIProxy Socket Mode Relay (apps.connections.open) Tests]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackSocketClient events_api Envelope Processing Tests]] - code - gateway/tests/test_slack_socket_client.py
+- [[Alert Thresholds (approval queue 1h timeout, context 200K hard limit, op-proxy 6 retries)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Bot observability (docker logs, GET apihealth, context tokens 200K limit)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 

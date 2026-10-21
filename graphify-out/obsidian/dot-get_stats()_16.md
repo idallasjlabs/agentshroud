@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L165"
+community: "FetchOutcome"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/FetchOutcome
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

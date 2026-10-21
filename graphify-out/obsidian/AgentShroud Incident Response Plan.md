@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "KillSwitchMonitor (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/KillSwitchMonitor_2
 ---
 
 # AgentShroud Incident Response Plan
@@ -27,4 +27,4 @@ tags:
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2

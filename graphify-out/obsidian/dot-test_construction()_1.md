@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L62"
+community: "test_soc_router_coverage.py"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_construction()
 
 ## Connections
-- [[EgressRequest_1]] - `calls` [EXTRACTED]
-- [[TestEgressRequest]] - `method` [EXTRACTED]
+- [[ContributorRecord_1]] - `calls` [EXTRACTED]
+- [[TestContributorRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

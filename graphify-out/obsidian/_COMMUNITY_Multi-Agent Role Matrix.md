@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[AGENT_ROLES]] - document - docs/governance/AGENT_ROLES.md
-- [[Authorization Matrix_1]] - document - docs/governance/AGENT_ROLES.md
-- [[Decision Tree for New Tasks]] - document - docs/governance/AGENT_ROLES.md
-- [[Diagram 21 Team Structure]] - image - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Diagram 23 Roadmap Gantt (2026)]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Escalation Path]] - document - docs/governance/AGENT_ROLES.md
-- [[GSD Cadence — Get Shit Done Governance]] - document - docs/governance/GSD_CADENCE.md
-- [[GSD Cadence — Get Shit Done Governance (doc)]] - document - docs/governance/GSD_CADENCE.md
-- [[GSD_CADENCE]] - document - docs/governance/GSD_CADENCE.md
-- [[Monthly (1st of month)]] - document - docs/governance/GSD_CADENCE.md
-- [[Multi-Agent Role Matrix]] - document - docs/governance/AGENT_ROLES.md
-- [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - document - docs/governance/AGENT_ROLES.md
-- [[Out of Scope_1]] - document - docs/governance/GSD_CADENCE.md
-- [[References_3]] - document - docs/governance/AGENT_ROLES.md
-- [[Rule 1 — GSD Issue Before the Branch]] - document - docs/governance/GSD_CADENCE.md
-- [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - concept - docs/governance/GSD_CADENCE.md
-- [[Rule 2 — Approval Tag for High-Severity Changes]] - document - docs/governance/GSD_CADENCE.md
-- [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - document - docs/governance/GSD_CADENCE.md
-- [[Security-Sensitive Paths]] - document - docs/governance/AGENT_ROLES.md
-- [[Weekly (every Friday)]] - document - docs/governance/GSD_CADENCE.md
+- [[Address Formats]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Attachments]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Basic Message Structure]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Composing from CLI]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Forward]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Headers]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Inline Images]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Interactive compose]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[MML Tag Reference]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[MML for Rich Emails]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Message Composition with MML (MIME Meta Language)]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Mixed Content (Text + Attachments)]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Multipart Messages]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Plain Text Body]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Prefill headers from CLI]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Reply (opens editor with quoted message)]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Send from stdin]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[Tips_3]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[`multipart`]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[`part`]] - document - skills/openclaw/himalaya/references/message-composition.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +35,9 @@ members: 20
 TABLE source_file, type FROM #community/Multi-Agent_Role_Matrix
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-ompmcp.json]]
+
+## Top bridge nodes
+- [[Message Composition with MML (MIME Meta Language)]] - degree 8, connects to 1 community

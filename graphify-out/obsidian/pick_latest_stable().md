@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_stable"
+community: "TestFullAccessMiddlewareBypass"
 location: "L124"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/pick_latest_stable
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # pick_latest_stable()
@@ -26,4 +26,4 @@ tags:
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 - [[is_stable()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/pick_latest_stable
+#graphify/code #graphify/INFERRED #community/TestFullAccessMiddlewareBypass

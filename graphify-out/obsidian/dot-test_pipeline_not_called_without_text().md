@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "GroupApprovalRouter"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/GroupApprovalRouter
 ---
 
 # .test_pipeline_not_called_without_text()
@@ -17,6 +17,6 @@ tags:
 - [[Updates without text (e.g. photos) should skip the pipeline.]] - `rationale_for` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[process_inbound()]] - `contains` [EXTRACTED]
+- [[process_inbound()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

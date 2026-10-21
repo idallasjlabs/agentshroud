@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L306"
+community: "CrossBotTrustLedger"
+location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/CrossBotTrustLedger
 ---
 
 # .last_hash()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

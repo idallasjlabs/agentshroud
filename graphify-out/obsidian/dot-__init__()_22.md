@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L65"
+community: "TrustConfig (2)"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TrustConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[PortManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

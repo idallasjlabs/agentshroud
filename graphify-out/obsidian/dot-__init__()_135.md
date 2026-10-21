@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "api.py"
+location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/apipy

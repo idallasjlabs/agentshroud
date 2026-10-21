@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Voice robustness — volume-command STT tolerance + stream timeoutrepr logging]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

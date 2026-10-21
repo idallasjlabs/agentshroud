@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (7)"
+community: "UserSessionManager (3) (2)"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/UserSessionManager_3_2
 ---
 
 # TestAppStateHas
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_true_and_false_against_real_app_state()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2

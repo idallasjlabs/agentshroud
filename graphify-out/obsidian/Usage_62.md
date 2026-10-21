@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L55"
+community: "DelegationManager (2)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/DelegationManager_2
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
-- [[Click Element_2]] - `contains` [EXTRACTED]
-- [[Extract Data_2]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
-- [[Fill Form_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_2]] - `contains` [EXTRACTED]
-- [[Take Screenshot_2]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/DelegationManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget (2)"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget_2
 ---
 
 # test_canary_with_unhealthy_forwarder()
@@ -16,4 +16,4 @@ tags:
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

@@ -1,19 +1,18 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L781"
+community: "browser/scripts/browse.py"
+location: "L877"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # _read_pinned_version()
 
 ## Connections
-- [[Read a vendor version from dockerversions.env — the single source of     truth]] - `rationale_for` [EXTRACTED]
-- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[Read a vendor version from dockerversions.env — the single source of truth…]] - `rationale_for` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

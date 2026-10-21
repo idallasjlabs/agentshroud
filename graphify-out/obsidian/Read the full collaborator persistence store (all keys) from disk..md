@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager (2)"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager_2
 ---
 
 # Read the full collaborator persistence store (all keys) from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_collab_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

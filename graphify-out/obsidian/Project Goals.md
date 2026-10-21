@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "MiddlewareManager (5)"
 location: "L508"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/MiddlewareManager_5
 ---
 
 # Project Goals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[For Open-Source Contributors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5

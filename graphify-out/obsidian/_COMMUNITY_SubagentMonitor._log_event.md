@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[SubagentMonitor._log_event]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor.check_tool_usage]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor.deregister]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor.kill_agent]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor.kill_all]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor.register_spawn]] - code - gateway/security/subagent_monitor.py
+- [[Browser Fetch Skill]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Features]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Security_3]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Usage_10]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Use Cases]] - document - skills/custom/browser-fetch/SKILL.md
+- [[browser-fetchSKILL]] - document - skills/custom/browser-fetch/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

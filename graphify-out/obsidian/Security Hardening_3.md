@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "v1.3.0 — Platform Expansion (53 items)"
-location: "L417"
+community: "Mode A — Single task (4)"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v130__Platform_Expansion_53_items
+  - community/Mode_A__Single_task_4
 ---
 
 # Security Hardening
 
 ## Connections
-- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4

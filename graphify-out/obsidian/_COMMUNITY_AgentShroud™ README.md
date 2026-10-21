@@ -1,52 +1,57 @@
 ---
 type: community
-members: 39
+members: 44
 ---
 
 # AgentShroud™ README
 
-**Members:** 39 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[75 Security Modules]] - document - README.md
-- [[Acknowledgments_1]] - document - README.md
-- [[Agent Containment]] - document - README.md
-- [[AgentShroud vs Unprotected Agent]] - document - README.md
-- [[AgentShroud™ README]] - document - README.md
-- [[Architecture_3]] - document - README.md
-- [[Content & Context Guards]] - document - README.md
-- [[Control Centers]] - document - README.md
-- [[Core Objectives]] - document - README.md
-- [[Core Security Pipeline]] - document - README.md
-- [[Development]] - document - README.md
-- [[Development Resources]] - document - README.md
-- [[Documentation_1]] - document - README.md
-- [[Example Configurations]] - document - README.md
-- [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
-- [[Infrastructure & Monitoring]] - document - README.md
-- [[Media]] - document - README.md
-- [[OpenClaw Bot]] - concept - README.md
-- [[Proxy & Network Layer]] - document - README.md
-- [[Quick Start_3]] - document - README.md
-- [[Supporting Infrastructure]] - document - README.md
-- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Technical Documentation]] - document - README.md
-- [[Terminal Control Center]] - document - README.md
-- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Web Control Center]] - document - README.md
-- [[What's New — v1.2.2 (June 2026)]] - document - README.md
-- [[What's New — v1.3.0 Reliability (July 2026)]] - document - README.md
-- [[Who It's For]] - document - README.md
-- [[Why AgentShroud]] - document - README.md
-- [[v1.0.0 Fortress foundations (March 2026)]] - document - README.md
-- [[v1.1.x Hermes (May–June 2026)]] - document - README.md
-- [[v1.2.0 Voice (June 2026)]] - document - README.md
-- [[v1.2.1 (2026-06-27) — Quality sweep]] - document - README.md
+- [[dot-__init__()_53]] - code - gateway/security/browser_security.py
+- [[dot-analyze_content()]] - code - gateway/security/browser_security.py
+- [[dot-analyze_screenshot()]] - code - gateway/security/browser_security.py
+- [[dot-can_enter_credentials()]] - code - gateway/security/browser_security.py
+- [[dot-check_url_reputation()]] - code - gateway/security/browser_security.py
+- [[dot-register_screenshot_hook()]] - code - gateway/security/browser_security.py
+- [[dot-test_data_uri_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_excessive_subdomains()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_fake_captcha()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_fake_dialog_detected()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_fake_windows_alert()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_homograph_attack()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_hook_can_flag_threat()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_http_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_https_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_ip_address_url()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_ip_blocked_for_credentials()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_known_phishing_pattern()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_legitimate_url()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_localhost_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_multiple_threats_aggregated()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_no_hook_returns_none_threat()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_safe_content_passes()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_screenshot_hook_registered()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_suspicious_domain_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_suspicious_subdomain()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_tech_support_scam()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_urgent_action_required()]] - code - gateway/tests/test_browser_security.py
+- [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
+- [[CredentialEntryBlocked]] - code - gateway/security/browser_security.py
+- [[Exception_1]] - code
+- [[PhishingURLDetected]] - code - gateway/security/browser_security.py
+- [[SocialEngineeringDetected]] - code - gateway/security/browser_security.py
+- [[TestCredentialProtection]] - code - gateway/tests/test_browser_security.py
+- [[TestScreenshotAnalysis]] - code - gateway/tests/test_browser_security.py
+- [[TestSocialEngineeringDetection]] - code - gateway/tests/test_browser_security.py
+- [[TestURLReputation]] - code - gateway/tests/test_browser_security.py
+- [[ThreatAssessment]] - code - gateway/security/browser_security.py
+- [[ThreatLevel]] - code - gateway/security/browser_security.py
+- [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - paper - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
+- [[browser_security.py]] - code - gateway/security/browser_security.py
+- [[guard()_1]] - code - gateway/tests/test_browser_security.py
+- [[test_browser_security.py]] - code - gateway/tests/test_browser_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,12 +61,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AgentShroud™ Security Policy]]
-- 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_Quickstart]]
-- 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
+- 17 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY__wrap_response()]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
+- 2 edges to [[_COMMUNITY_SecureBrowser (3)]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_dot-_make_proxy()]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_browserscriptsbrowse.py (2)]]
+- 1 edge to [[_COMMUNITY_pick_latest_stable]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (3)]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_dot-proxy_messages()]]
+- 1 edge to [[_COMMUNITY_ProxyDashboard]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
+- 1 edge to [[_COMMUNITY_format_cve_report()]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)_1]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
+- 1 edge to [[_COMMUNITY__wrap_response() (4)]]
+- 1 edge to [[_COMMUNITY_test_playback_state.c]]
+- 1 edge to [[_COMMUNITY__wrap_response() (5)]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
 
 ## Top bridge nodes
-- [[AgentShroud™ README]] - degree 19, connects to 4 communities
-- [[75 Security Modules]] - degree 17, connects to 2 communities
+- [[Exception_1]] - degree 17, connects to 13 communities
+- [[ThreatAssessment]] - degree 22, connects to 8 communities
+- [[browser_security.py]] - degree 11, connects to 3 communities
+- [[ThreatLevel]] - degree 9, connects to 3 communities
+- [[BrowserSecurityGuard]] - degree 31, connects to 1 community

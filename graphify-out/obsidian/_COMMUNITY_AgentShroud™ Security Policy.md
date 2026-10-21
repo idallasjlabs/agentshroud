@@ -1,36 +1,37 @@
 ---
 type: community
-members: 23
+members: 24
 ---
 
 # AgentShroud™ Security Policy
 
-**Members:** 23 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[7-Layer Security Architecture]] - concept - SECURITY.md
-- [[AgentShroud™ Security Policy]] - document - SECURITY.md
-- [[CI Security Scanning Toolchain]] - concept - SECURITY.md
-- [[Compliance Alignment]] - document - SECURITY.md
-- [[Daily CVE Sync + Page Update Workflow]] - document - .github/workflows/update-cve-page.yml
-- [[Emergency Response]] - document - SECURITY.md
-- [[Kill Switch Operations]] - concept - CHEATSHEET.md
-- [[Layer 1 — Core Pipeline (P0)]] - document - SECURITY.md
-- [[Layer 2 — Middleware (P1)]] - document - SECURITY.md
-- [[Layer 3 — Output Protection]] - document - SECURITY.md
-- [[Layer 4 — Tool & Agent Control]] - document - SECURITY.md
-- [[Layer 5 — Network & Egress]] - document - SECURITY.md
-- [[Layer 6 — File & Memory Integrity]] - document - SECURITY.md
-- [[Layer 7 — Infrastructure & Supply Chain]] - document - SECURITY.md
-- [[Monitor Mode Warning]] - document - SECURITY.md
-- [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - rationale - .github/workflows/update-cve-page.yml
-- [[Reporting a Vulnerability]] - document - SECURITY.md
-- [[Response Timeline]] - document - SECURITY.md
-- [[Security Architecture_3]] - document - SECURITY.md
-- [[Security Scanning]] - document - SECURITY.md
-- [[Supported Versions]] - document - SECURITY.md
-- [[Trademark_2]] - document - BRAND.md
-- [[Upstream Agent CVE Tracking]] - document - SECURITY.md
+- [[1. Hardware prep]] - document - firmware/voice-terminal/SETUP.md
+- [[1. Why this differs from a generic ESP32+Hermes build]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[10. Alternatives (only if needed)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[11. Open decisions (confirm before server-side coding)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2. Server-side work this branch must implement]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.1 New `voice_gateway` service]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.2 Close the governed-path schema gap for Hermes  ⚠️ required]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.3 Compose + tailnet exposure]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.4 Egress & governance — what does NOT change]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[2.5 Tests (CLAUDE.md §4, coverage gate `fail_under=84`)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[3. Tailscale changes]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[4. iPhone & iPad (just hotspots — they do NOT tunnel the box)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6. Firmware]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.1 Toolchain + board support]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.2 Roaming WiFi (join first reachable, skip captive portals)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.3 Join the tailnet (MicroLink)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.4 Connect to the Voice Gateway]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[6.5 Audio + display state machine]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[8. Gotchas (incl. AgentShroud-specific)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[9. hey buddy wake word — honest status]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[9. Bring-up order — one cause per failure]] - document - firmware/voice-terminal/SETUP.md
+- [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[Sources]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[esp32-s3-hermes-voice-terminal]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,13 +41,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
+- 2 edges to [[_COMMUNITY_API Keys Setup Guide]]
 
 ## Top bridge nodes
-- [[AgentShroud™ Security Policy]] - degree 14, connects to 2 communities
-- [[Trademark_2]] - degree 4, connects to 2 communities
-- [[Kill Switch Operations]] - degree 2, connects to 1 community
-- [[7-Layer Security Architecture]] - degree 2, connects to 1 community
+- [[1. Hardware prep]] - degree 2, connects to 1 community
+- [[9. Bring-up order — one cause per failure]] - degree 2, connects to 1 community

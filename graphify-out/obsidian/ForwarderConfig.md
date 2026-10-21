@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # ForwarderConfig
 
 ## Connections
-- [[dot-__init__()_69]] - `references` [EXTRACTED]
+- [[dot-__init__()_90]] - `references` [EXTRACTED]
 - [[Configuration for the HTTP forwarder.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

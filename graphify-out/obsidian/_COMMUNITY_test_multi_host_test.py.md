@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[dot-test_wrapper_all_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_wrapper_dry_run_never_calls_ssh()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_wrapper_env_host_override()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_wrapper_mixed_exit_codes_fail()]] - code - gateway/tests/test_multi_host_test.py
-- [[Path_63]] - code - gateway/tests/test_multi_host_test.py
-- [[TestWrapperSubprocess]] - code - gateway/tests/test_multi_host_test.py
-- [[_run_wrapper()]] - code - gateway/tests/test_multi_host_test.py
-- [[_write_exec()]] - code - gateway/tests/test_multi_host_test.py
-- [[test_multi_host_test.py]] - code - gateway/tests/test_multi_host_test.py
+- [[Constraints_9]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Content Requirements_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Header_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Objective_5]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Role_101]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Safety_3]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Skill Pull Request (PR) Generator_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Technical Detail_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[openclawskillsi-prSKILL]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,17 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_MultiHostResult]]
-- 5 edges to [[_COMMUNITY_HostStatus]]
-- 3 edges to [[_COMMUNITY_run_multi_host]]
-- 3 edges to [[_COMMUNITY_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_TestTail]]
-- 2 edges to [[_COMMUNITY_ssh_runner]]
-- 2 edges to [[_COMMUNITY_TestParserAndCommandResolution]]
-- 2 edges to [[_COMMUNITY_main (2)]]
-- 2 edges to [[_COMMUNITY_TestParseHosts]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[test_multi_host_test.py]] - degree 26, connects to 9 communities
-- [[TestWrapperSubprocess]] - degree 8, connects to 2 communities
-- [[Path_63]] - degree 5, connects to 2 communities
+- [[Skill Pull Request (PR) Generator_2]] - degree 6, connects to 1 community

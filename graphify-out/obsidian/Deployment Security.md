@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "MiddlewareManager (5)"
 location: "L424"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/MiddlewareManager_5
 ---
 
 # Deployment Security
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[Recommended Production Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5

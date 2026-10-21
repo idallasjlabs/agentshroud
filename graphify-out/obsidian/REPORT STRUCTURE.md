@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "REPORT STRUCTURE"
+community: "docker/scripts/security-scan.sh"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REPORT_STRUCTURE
+  - community/docker/scripts/security-scansh
 ---
 
 # REPORT STRUCTURE
@@ -18,4 +18,4 @@ tags:
 - [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - `contains` [EXTRACTED]
 - [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE
+#graphify/document #graphify/EXTRACTED #community/docker/scripts/security-scansh

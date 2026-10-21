@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[AgentShroud Logo on Dark Background]] - image - branding/logos/variants/logo-on-dark-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

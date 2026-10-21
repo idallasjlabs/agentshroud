@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "AuditStore"
-location: "L163"
+community: "MCPPermissionManager"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/MCPPermissionManager
 ---
 
 # .close()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
+- [[Close database connection]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

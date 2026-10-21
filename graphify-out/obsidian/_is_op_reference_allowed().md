@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "_is_op_reference_allowed"
+community: "export-bot-conversations.py"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/export-bot-conversationspy
 ---
 
 # _is_op_reference_allowed()
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_empty_reference_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_every_dedicated_op_ref_is_allowlisted()]] - `calls` [EXTRACTED]
 - [[dot-test_missing_op_prefix_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()]] - `calls` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()_1]] - `calls` [EXTRACTED]
 - [[Return True if the op reference matches an allowed path pattern.]] - `rationale_for` [EXTRACTED]
 - [[TestIsOpReferenceAllowed]] - `calls` [EXTRACTED]
 - [[TestOpRefAllowlistCoverage]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[op_proxy()]] - `calls` [EXTRACTED]
 - [[test_op_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

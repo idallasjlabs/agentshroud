@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "ApprovalQueueConfig (4)"
+community: "ContextSegment"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ContextSegment
 ---
 
 # Deciding on already-decided request raises ValueError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_double_decide_raises()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

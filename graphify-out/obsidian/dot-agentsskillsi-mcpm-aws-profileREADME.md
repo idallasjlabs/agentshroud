@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "Browser Extension"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Browser_Extension
 ---
 
 # .agents/skills/i-mcpm-aws-profile/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

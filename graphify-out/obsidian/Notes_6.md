@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Usage"
-location: "L78"
+community: "AgentShroud™ Telegram-Reported Issues"
+location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/AgentShroud_Telegram-Reported_Issues
 ---
 
 # Notes
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues

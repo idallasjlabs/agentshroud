@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "openclaw/skills/graphify/references/extraction-spec.md"
+community: "Diagram 18: Runbook"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/graphify/references/extraction-specmd
+  - community/Diagram_18_Runbook
 ---
 
 # graphify reference: extraction subagent prompt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openclawskillsgraphifyreferencesextraction-spec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/graphify/references/extraction-specmd
+#graphify/document #graphify/EXTRACTED #community/Diagram_18_Runbook

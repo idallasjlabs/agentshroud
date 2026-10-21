@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Mac App Discovery Skill (2)"
+community: "ContextSegment"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill_2
+  - community/ContextSegment
 ---
 
 # store()
 
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[Path_63]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_2
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "10. Troubleshooting"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/10_Troubleshooting
 ---
 
 # graphify reference: transcribe video and audio
@@ -16,4 +16,4 @@ tags:
 - [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 - [[hermesskillsgraphifyreferencestranscribe]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

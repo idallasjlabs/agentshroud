@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_performance.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L52"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

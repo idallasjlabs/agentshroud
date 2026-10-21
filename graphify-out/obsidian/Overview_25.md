@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/healthcheck/SKILL.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L8"
+community: "Daedalus — Concept Illustrator (3)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/Daedalus__Concept_Illustrator_3
 ---
 
 # Overview
 
 ## Connections
-- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_3

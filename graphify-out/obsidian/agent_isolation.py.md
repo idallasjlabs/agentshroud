@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry (2)"
+community: "KeyRotationManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/KeyRotationManager_2
 ---
 
 # agent_isolation.py
@@ -15,7 +15,7 @@ tags:
 - [[Agent Isolation Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[AgentRegistry]] - `contains` [EXTRACTED]
 - [[ContainerConfig_1]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[IsolationCheck]] - `contains` [EXTRACTED]
 - [[IsolationStatus]] - `contains` [EXTRACTED]
 - [[IsolationVerifier]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[drift_detector.py]] - `references` [EXTRACTED]
 - [[env_guard.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

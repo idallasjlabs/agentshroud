@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (2)"
+community: "AgentShroud Gateway (holds 1Password service account)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_2
+  - community/AgentShroud_Gateway_holds_1Password_service_account
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -18,8 +18,8 @@ tags:
 - [[Mandatory Workflow  (10 steps)_1]] - `contains` [EXTRACTED]
 - [[Protected Branch_1]] - `contains` [EXTRACTED]
 - [[REFUSE These_1]] - `contains` [EXTRACTED]
-- [[Role_106]] - `contains` [EXTRACTED]
+- [[Role_97]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-ggSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_account

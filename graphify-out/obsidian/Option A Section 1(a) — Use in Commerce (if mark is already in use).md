@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Trademark Application"
+community: ".update"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Trademark_Application
+  - community/update
 ---
 
 # Option A: Section 1(a) — Use in Commerce (if mark is already in use)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 4 FILING BASIS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application
+#graphify/document #graphify/EXTRACTED #community/update

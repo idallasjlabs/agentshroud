@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (2)"
-location: "L7"
+community: "GSDE&G Development Master Checklist (2)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_2
+  - community/GSDEG_Development_Master_Checklist_2
 ---
 
 # Role
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_2
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2

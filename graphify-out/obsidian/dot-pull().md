@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "ContainerEngine"
+community: "MiddlewareManager (6)"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/MiddlewareManager_6
 ---
 
 # .pull()
@@ -15,4 +15,4 @@ tags:
 - [[ContainerEngine]] - `method` [EXTRACTED]
 - [[Pull an image from a registry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

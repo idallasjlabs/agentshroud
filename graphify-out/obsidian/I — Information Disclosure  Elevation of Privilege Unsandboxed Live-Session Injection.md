@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "A2A (Agent-to-Agent) Protocol Threat Analysis"
+community: "§3 — Bot Pipeline Integrity Checks"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
+  - community/3__Bot_Pipeline_Integrity_Checks
 ---
 
 # I — Information Disclosure / Elevation of Privilege: Unsandboxed Live-Session Injection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/3__Bot_Pipeline_Integrity_Checks

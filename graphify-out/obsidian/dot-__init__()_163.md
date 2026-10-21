@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L37"
+community: "TestOAuthInjection"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TestOAuthInjection
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

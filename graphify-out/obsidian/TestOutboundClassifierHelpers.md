@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundClassifierHelpers"
+community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
 location: "L4034"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
 ---
 
 # TestOutboundClassifierHelpers
@@ -34,10 +34,10 @@ tags:
 - [[dot-test_looks_like_filename_reference_catches_common_extensions()]] - `method` [EXTRACTED]
 - [[dot-test_looks_like_filename_reference_rejects_real_domains()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/code #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2

@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[CONFIG_4]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[args_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[createEvent()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[getCredentials()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[https_4]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[listEvents()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[makeRequest()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[openclawskillsi-icloudscriptscalendar.js]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[parseCalendarData()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
-- [[{ execSync }_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[author_3]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[description_15]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[hermesskillsi-browserpackage.json]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[keywords_3]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[license_7]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[main_2]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[name_5]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[scripts_3]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[test_3]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[version_7]] - code - docker/config/hermes/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 

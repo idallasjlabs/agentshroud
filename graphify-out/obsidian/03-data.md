@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "03-data.md"
+community: "canvas_proxy_app"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/canvas_proxy_app
 ---
 
 # 03-data.md
@@ -19,4 +19,4 @@ tags:
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `conceptually_related_to` [EXTRACTED]
 - [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/canvas_proxy_app

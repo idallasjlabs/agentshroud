@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (5)"
+community: "TestOutboundPipelineIntegration"
 location: "L446"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_5
+  - community/TestOutboundPipelineIntegration
 ---
 
 # EgressFilter must call notifier when blocking an unknown domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_filter_notifies_on_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_5
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

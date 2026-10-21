@@ -1,48 +1,47 @@
 ---
 type: community
-members: 35
+members: 34
 ---
 
 # TestEgressTelegramNotify
 
-**Members:** 35 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[dot-notifier()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_deny_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[dot-test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Denial result also includes agent_id so collaborator can be notified.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Permanent approval also includes agent_id in result.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test answer_callback handles errors.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Build the REST v3 add-comment URL against the cloud-id gateway.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Compose the human-readable weekly summary posted as the comment.      - commits]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Extract SCRUM-n keys mentioned in commit subjects.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Jira Dev-Ticket Helper Module]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Jira Weekly Review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[POST and return (status_code, response_text). Raises urllib errors up.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[SCRUM-81 (Jira weekly review ticket)]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Unauthenticated site-to-cloud-ID discovery URL._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_adf_paragraph()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_git_commits_last_week()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_http_post_json()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_basic_auth_header()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_comment_payload()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_comment_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_op_proxy_request()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_tenant_info_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[datetime_5]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[fetch_op_secret()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[resolve_cloud_id()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[run()_4]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,10 +51,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_EgressTelegramNotifier]]
-- 2 edges to [[_COMMUNITY_Test handling 1-hour time-limited approval callback.]]
+- 4 edges to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_test_hermes_cron_seed.py]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_test_wazuh_watchdog.py (2)]]
 
 ## Top bridge nodes
-- [[TestEgressTelegramNotify]] - degree 22, connects to 2 communities
-- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community
-- [[dot-notifier()]] - degree 2, connects to 1 community
+- [[run()_4]] - degree 11, connects to 2 communities
+- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - degree 3, connects to 2 communities
+- [[resolve_cloud_id()_2]] - degree 5, connects to 1 community
+- [[build_basic_auth_header()_2]] - degree 4, connects to 1 community
+- [[build_op_proxy_request()_2]] - degree 4, connects to 1 community

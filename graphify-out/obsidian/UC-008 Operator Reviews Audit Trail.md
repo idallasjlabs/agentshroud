@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Use Cases"
+community: "compose_generator.py"
 location: "L250"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/compose_generatorpy
 ---
 
 # UC-008: Operator Reviews Audit Trail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

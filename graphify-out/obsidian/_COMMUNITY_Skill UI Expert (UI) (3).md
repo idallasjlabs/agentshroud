@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Accessibility Requirements_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Anti-Patterns to Flag_10]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[BEM (Block Element Modifier)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Breakpoints (mobile-first)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Button_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[CSS Architecture Recommendations_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[CSS Modules (React  Next.js)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component Patterns_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component contract rules_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component file structure_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Container Query Pattern (preferred over breakpoints for components)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Core Discipline Structure → Component → Layout → Validate_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dark  Light Theme Implementation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dashboard Grid_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Data Table_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dependencies_10]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Form Field_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Modal  Dialog_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Navigation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[React  Next.js Component Architecture_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Responsive Layout System_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Role_37]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Rules_11]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Skill UI Expert (UI)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[UI Validation Checklist_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Utility-First (Tailwind  custom utilities)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[openclawskillsi-uiSKILL]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[401 Unauthorized_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Connection timeout_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Add Contact_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Calendar Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Configuration_5]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Contact Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Create Event_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Create Note_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Delete Event_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Contacts_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Events_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Messages_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Notes_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Mail Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Notes Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Contacts_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Mail_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Notes_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Security_9]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Send Email_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Setup_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Troubleshooting_19]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Update Contact_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Update Event_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[iCloud Services_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[openclawskillsi-icloudSKILL]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,7 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Skill UI Expert (UI)_2]] - degree 14, connects to 1 community
+- [[iCloud Services_1]] - degree 10, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[A2AGovernanceProxy.update_peer_trust]] - code - gateway/security/a2a_governance.py
+- [[test_playback_statestubsesp_err.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L50"
+community: "Credential Management - 1Password Integration"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Problem
 
 ## Connections
-- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
+- [[gsd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

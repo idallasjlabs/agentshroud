@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server safari]] - code - .mcp.json
+- [[deepseek-r1-0528-qwen3-8b 404 — alias mismatched oMLX real catalog ID]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

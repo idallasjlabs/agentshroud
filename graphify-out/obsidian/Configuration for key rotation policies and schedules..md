@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # Configuration for key rotation policies and schedules.
 
 ## Connections
-- [[KeyRotationConfig_1]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

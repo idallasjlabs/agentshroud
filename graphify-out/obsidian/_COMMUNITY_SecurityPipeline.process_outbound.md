@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecurityPipeline.process_outbound]] - code - gateway/proxy/pipeline.py
+- [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
 
 ## Live Query (requires Dataview plugin)
 

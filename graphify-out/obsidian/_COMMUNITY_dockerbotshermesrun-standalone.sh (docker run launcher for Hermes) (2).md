@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[agentshroud-secrets.sh script]] - code - docker/bots/hermes/agentshroud-secrets.sh
-- [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - code - docker/bots/hermes/agentshroud-secrets.sh
-- [[inject()]] - code - docker/bots/hermes/agentshroud-secrets.sh
+- [[Related Notes_25]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 

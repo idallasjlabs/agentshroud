@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # .revoke()
@@ -18,4 +18,4 @@ tags:
 - [[DelegationPrivilege]] - `references` [EXTRACTED]
 - [[Revoke an active delegation.          Returns True if a matching active delegati]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

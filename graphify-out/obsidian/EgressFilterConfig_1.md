@@ -12,7 +12,7 @@ tags:
 # EgressFilterConfig
 
 ## Connections
-- [[dot-__init__()_38]] - `references` [EXTRACTED]
+- [[dot-__init__()_124]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]

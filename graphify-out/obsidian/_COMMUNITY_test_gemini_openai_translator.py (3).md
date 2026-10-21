@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[openai_to_gemini_response (existing failover direction) and     gemini_to_openai]] - rationale - gateway/tests/test_gemini_openai_translator.py
-- [[openai_to_gemini_response()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_empty_choices_yields_empty_text()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_length_maps_to_max_tokens()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_to_gemini_candidates()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[1Password credential store]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[calendar.js — iCloud Calendar Management]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[i-icloud README — iCloud Data Manager (ICLOUD)]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[i-icloud SKILL — iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptscontacts.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptsmail.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptsnotes.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,15 +22,3 @@ members: 7
 TABLE source_file, type FROM #community/test_gemini_openai_translatorpy_3
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
-- 2 edges to [[_COMMUNITY_test_gemini_openai_translator.py (2)]]
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-
-## Top bridge nodes
-- [[openai_to_gemini_response()]] - degree 8, connects to 3 communities
-- [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - degree 4, connects to 2 communities
-- [[test_openai_response_empty_choices_yields_empty_text()]] - degree 2, connects to 1 community
-- [[test_openai_response_length_maps_to_max_tokens()]] - degree 2, connects to 1 community
-- [[test_openai_response_to_gemini_candidates()]] - degree 2, connects to 1 community

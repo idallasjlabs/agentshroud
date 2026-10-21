@@ -1,22 +1,22 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L49"
+community: "AgentShroud Security Hardening Plan"
+location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Common Workflows
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Workflow 1 Give Bot a File to Process]] - `contains` [EXTRACTED]
-- [[Workflow 2 Bot Creates Files for You]] - `contains` [EXTRACTED]
-- [[Workflow 3 Bot Takes Screenshots]] - `contains` [EXTRACTED]
-- [[Workflow 4 Bulk File Operations]] - `contains` [EXTRACTED]
-- [[Workflow 5 Interactive Editing]] - `contains` [EXTRACTED]
+- [[Check your activity]] - `contains` [EXTRACTED]
+- [[Post with an image]] - `contains` [EXTRACTED]
+- [[Reply to a conversation]] - `contains` [EXTRACTED]
+- [[Search and engage]] - `contains` [EXTRACTED]
+- [[Set up multiple apps]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

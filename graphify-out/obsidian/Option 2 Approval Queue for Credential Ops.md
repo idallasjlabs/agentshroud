@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "rationale"
-community: "Implementation Status"
+community: ".github/mcp.json"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/github/mcpjson
 ---
 
 # Option 2: Approval Queue for Credential Ops
@@ -15,4 +15,4 @@ tags:
 - [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Implementation Strategy]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Implementation_Status
+#graphify/rationale #graphify/EXTRACTED #community/github/mcpjson

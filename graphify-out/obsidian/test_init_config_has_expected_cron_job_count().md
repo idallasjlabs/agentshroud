@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "TestFabricatedSecurityNotice (2)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/TestFabricatedSecurityNotice_2
 ---
 
 # test_init_config_has_expected_cron_job_count()
@@ -15,4 +15,4 @@ tags:
 - [[_parse_cron_names_from_sh()]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2

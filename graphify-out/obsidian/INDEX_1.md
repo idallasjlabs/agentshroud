@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "branding/README.md"
+community: "run-standalone.sh (Hermes docker run launcher) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/run-standalonesh_Hermes_docker_run_launcher_2
 ---
 
 # INDEX.md
@@ -18,4 +18,4 @@ tags:
 - [[brand-guidelines]] - `references` [EXTRACTED]
 - [[typography_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_2

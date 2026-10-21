@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestEmailSend"
+community: "TestPatternDetection"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/TestPatternDetection
 ---
 
 # Unknown recipient triggers approval queue and returns 202.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unknown_recipient_queued_for_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend
+#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection

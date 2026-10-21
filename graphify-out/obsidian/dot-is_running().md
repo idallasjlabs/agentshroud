@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection"
+community: "CrossBotTrustLedger"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/CrossBotTrustLedger
 ---
 
 # .is_running()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

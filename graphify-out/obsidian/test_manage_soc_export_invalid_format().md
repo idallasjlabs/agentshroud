@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "TestOutboundInfoFilter (2)"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/TestOutboundInfoFilter_2
 ---
 
 # test_manage_soc_export_invalid_format()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

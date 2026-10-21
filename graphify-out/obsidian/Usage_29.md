@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect (4)"
+community: "SECTION 9: IMPORTANT NOTES"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_4
+  - community/SECTION_9_IMPORTANT_NOTES
 ---
 
 # Usage
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_4
+#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES

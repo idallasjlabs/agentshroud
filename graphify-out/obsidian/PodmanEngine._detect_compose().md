@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "Function Details (7)"
+community: "Security Implementation Verification"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_7
+  - community/Security_Implementation_Verification
 ---
 
 # PodmanEngine._detect_compose()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_7
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification

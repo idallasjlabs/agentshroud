@@ -1,34 +1,21 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "GitHub Copilot CLI Setup Guide (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/GitHub_Copilot_CLI_Setup_Guide_2
 ---
 
 # GitHub Copilot CLI Setup Guide
 
 ## Connections
-- [[Agent Files Location]] - `contains` [EXTRACTED]
-- [[Authentication_1]] - `contains` [EXTRACTED]
-- [[Basic Usage]] - `contains` [EXTRACTED]
-- [[Built-in Default Agents]] - `contains` [EXTRACTED]
-- [[COPILOT_CLI_SETUP]] - `contains` [EXTRACTED]
-- [[Common Workflows]] - `contains` [EXTRACTED]
-- [[Configuration Files_2]] - `contains` [EXTRACTED]
-- [[Context Management]] - `contains` [EXTRACTED]
-- [[Custom Agents]] - `contains` [EXTRACTED]
-- [[Installation_1]] - `contains` [EXTRACTED]
-- [[MCP Server Integration]] - `contains` [EXTRACTED]
-- [[Overview_18]] - `contains` [EXTRACTED]
-- [[Questions]] - `contains` [EXTRACTED]
-- [[References_5]] - `contains` [EXTRACTED]
-- [[Repository Context]] - `contains` [EXTRACTED]
-- [[Role & Restrictions]] - `contains` [EXTRACTED]
-- [[Security & Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[Copilot Trusted Folders  URL  Path Permissions]] - `references` [EXTRACTED]
+- [[llm-init.sh]] - `references` [INFERRED]
+- [[safe-refactor agent]] - `references` [EXTRACTED]
+- [[test-augmenter agent]] - `references` [EXTRACTED]
+- [[validation-runner agent]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_2

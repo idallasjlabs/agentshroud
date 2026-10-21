@@ -1,12 +1,12 @@
 ---
 source_file: "docker/setup-secrets.sh"
 type: "code"
-community: "setup-secrets.sh"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 location: "L394-L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # cmd_store
@@ -21,4 +21,4 @@ tags:
 - [[setup-secrets.sh script]] - `calls` [EXTRACTED]
 - [[store_secret]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

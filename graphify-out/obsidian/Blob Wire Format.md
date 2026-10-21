@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "encrypted_store.py"
+community: "alert_dispatcher.py"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/alert_dispatcherpy
 ---
 
 # Blob Wire Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

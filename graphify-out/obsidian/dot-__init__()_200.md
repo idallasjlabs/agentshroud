@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "AsyncMock (2)"
-location: "L69"
+community: "chatbot/main.py"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/chatbot/mainpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy_2]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L341"
+community: "hermes/workspace/jira_dev_ticket.py"
+location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # Limitations
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

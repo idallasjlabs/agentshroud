@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # HIGH-1: ML injection classifier is entirely a stub
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[High-Priority Gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "Mode A — Single task (3)"
 location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Mode_A__Single_task_3
 ---
 
 # State After Recovery
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

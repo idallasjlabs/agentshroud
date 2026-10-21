@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_dns_ping_probe_gets_network_probe_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[B3.2d DNSping probes should return network probe notice with banner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Scorecard Data Integrity Tests (no stub inflation)]] - code - gateway/tests/test_scorecard_integrity.py
+- [[Scorecard Domain Scorer 0-5 Scale Tests]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/test_dns_ping_probe_gets_network_probe_policy_notice
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-
-## Top bridge nodes
-- [[dot-test_dns_ping_probe_gets_network_probe_policy_notice()]] - degree 2, connects to 1 community

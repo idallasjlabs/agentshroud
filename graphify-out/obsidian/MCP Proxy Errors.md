@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "Error Index.md (3)"
+community: "AgentShroud Hermes — System Identity"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_3
+  - community/AgentShroud_Hermes__System_Identity
 ---
 
 # MCP Proxy Errors.md
@@ -15,4 +15,4 @@ tags:
 - [[Error Index]] - `references` [EXTRACTED]
 - [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity

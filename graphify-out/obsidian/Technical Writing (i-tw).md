@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
+community: "AgentShroud System Architecture Document (SAD)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Technical Writing (i-tw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

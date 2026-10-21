@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Chat Front-ends & Search Infra_1]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
+- [[cli__init__.py]] - code - gateway/cli/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

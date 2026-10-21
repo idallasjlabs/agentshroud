@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PipelineAction"
+community: "ApprovalQueueConfig"
 location: "L365"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # Even with PromptGuard, pipeline refuses to start without PII sanitizer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pipeline_raises_with_only_prompt_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

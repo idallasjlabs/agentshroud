@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "system-requirements.md"
 location: "L771"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/system-requirementsmd
 ---
 
 # .test_all_clean()
@@ -15,4 +15,4 @@ tags:
 - [[TestHealthOverallScore]] - `method` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

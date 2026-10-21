@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "test_dashboard.py"
+community: "CompetitiveIntelReport"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/CompetitiveIntelReport
 ---
 
 # test_dashboard_has_csp_header()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard includes Content-Security-Policy header]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

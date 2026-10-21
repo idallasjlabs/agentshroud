@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (27)"
+community: ".test_collaborator_legacy_block_notice_is_normalized_json"
 location: "L3202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_27
+  - community/test_collaborator_legacy_block_notice_is_normalized_json
 ---
 
 # .test_raw_web_fetch_json_url_with_percent_encoded_control_does_not_queue_approval()
 
 ## Connections
 - [[Percent-encoded control bytes should be rejected before queueing approval.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_27
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_legacy_block_notice_is_normalized_json

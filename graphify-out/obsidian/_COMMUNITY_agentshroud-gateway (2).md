@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-gateway]] - code - gateway/pyproject.toml
+- [[ingest_api__init__.py]] - code - gateway/ingest_api/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # falco_monitor.py
@@ -16,7 +16,7 @@ tags:
 - [[api.py_2]] - `conceptually_related_to` [INFERRED]
 - [[categorize_alerts()]] - `contains` [EXTRACTED]
 - [[configure_rules()]] - `contains` [EXTRACTED]
-- [[datetime_1]] - `imports_from` [EXTRACTED]
+- [[datetime]] - `imports_from` [EXTRACTED]
 - [[falco-rules]] - `references` [INFERRED]
 - [[generate_summary()_1]] - `contains` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[wazuh-ossec]] - `conceptually_related_to` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

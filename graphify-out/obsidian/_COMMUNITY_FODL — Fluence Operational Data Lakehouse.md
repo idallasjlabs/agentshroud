@@ -1,28 +1,27 @@
 ---
 type: community
-members: 15
+members: 14
 ---
 
 # FODL — Fluence Operational Data Lakehouse
 
-**Members:** 15 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[2026-05-05 agent stub cleanup (160 files removed)]] - document - .llm_settings/UPGRADE_LOG.md
-- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS tagging standard (CostCenter, FOD, DataRetentionTier…)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
-- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[FY26 40% Cost Reduction Target]] - rationale - .agents/skills/i-aws/SKILL.md
-- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Gemini standalone-mode recursion fix]] - rationale - .llm_settings/UPGRADE_LOG.md
-- [[Governance & risk doctrine (ITIL v4, ISO 200009001, NIST CSF)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[LLM Operating Context — Isaiah Jefferson]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[MCP server expansion (3 → 11) and --mcp flag]] - document - .llm_settings/UPGRADE_LOG.md
-- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[Zabbix MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[llm-init.sh — project-level multi-tool config deployment]] - concept - .llm_settings/scripts/README.md
+- [[dot-manager()_2]] - code - gateway/tests/test_key_rotation.py
+- [[dot-sample_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,15 +31,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (2)]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (3)]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
-- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
-- 1 edge to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--readonly)]]
+- 6 edges to [[_COMMUNITY_A2AMethod]]
+- 4 edges to [[_COMMUNITY_AgentShroud Documentation]]
+- 2 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 1 edge to [[_COMMUNITY_env_guard.py]]
 
 ## Top bridge nodes
-- [[FODL — Fluence Operational Data Lakehouse]] - degree 8, connects to 2 communities
-- [[CDAS — Central Data Acquisition Systems]] - degree 4, connects to 1 community
-- [[LLM Operating Context — Isaiah Jefferson]] - degree 4, connects to 1 community
-- [[FY26 40% Cost Reduction Target]] - degree 4, connects to 1 community
-- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community
+- [[TestKeyRotationManager]] - degree 15, connects to 4 communities
+- [[dot-manager()_2]] - degree 4, connects to 2 communities
+- [[dot-sample_credential()]] - degree 3, connects to 1 community
+- [[dot-test_get_health_score_all_healthy()]] - degree 3, connects to 1 community
+- [[dot-test_get_health_score_mixed_states()]] - degree 3, connects to 1 community

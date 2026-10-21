@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "concept"
-community: "Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred"
+community: "AgentShroud User Guide"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
+  - community/AgentShroud_User_Guide
 ---
 
 # Required status checks: test, lint, smoke-static
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Branch Protection — main (docsgovernanceBRANCH_PROTECTION.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
+#graphify/concept #graphify/INFERRED #community/AgentShroud_User_Guide

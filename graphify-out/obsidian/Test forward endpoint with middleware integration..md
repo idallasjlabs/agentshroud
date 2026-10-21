@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "test_main_endpoints.py (3)"
+community: "WebContentScanner"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_3
+  - community/WebContentScanner
 ---
 
 # Test /forward endpoint with middleware integration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestForwardEndpoint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy_3
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "prompt_guard.py.md"
+community: "TrustConfig (2) (2)"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/TrustConfig_2_2
 ---
 
 # PromptGuard.scan(text)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2

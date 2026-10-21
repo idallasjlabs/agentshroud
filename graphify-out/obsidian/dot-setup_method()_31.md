@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "MiddlewareManager (9)"
-location: "L192"
+community: "soc/router.py (2)"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9
+  - community/soc/routerpy_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy_2

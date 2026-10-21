@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "EgressFilterConfig (2)"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/EgressFilterConfig_2
 ---
 
 # TestEgressFilter
 
 ## Connections
-- [[dot-setup_method()_38]] - `method` [EXTRACTED]
+- [[dot-setup_method()_25]] - `method` [EXTRACTED]
 - [[dot-test_allowed_domain()]] - `method` [EXTRACTED]
 - [[dot-test_allowed_ip()_1]] - `method` [EXTRACTED]
 - [[dot-test_allowed_specific_ip()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_empty_ports_allows_all()]] - `method` [EXTRACTED]
 - [[dot-test_log()]] - `method` [EXTRACTED]
 - [[dot-test_per_agent_policy()]] - `method` [EXTRACTED]
-- [[dot-test_stats()_2]] - `method` [EXTRACTED]
+- [[dot-test_stats()_1]] - `method` [EXTRACTED]
 - [[dot-test_url_parsing()_1]] - `method` [EXTRACTED]
 - [[dot-test_url_port_extraction()]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_base_domain()]] - `method` [EXTRACTED]
@@ -40,11 +40,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

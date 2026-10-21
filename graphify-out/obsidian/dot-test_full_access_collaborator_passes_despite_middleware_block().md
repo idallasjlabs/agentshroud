@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestFullAccessMiddlewareBypass"
+community: "iCloud Services (4)"
 location: "L9410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/iCloud_Services_4
 ---
 
 # .test_full_access_collaborator_passes_despite_middleware_block()
@@ -21,4 +21,4 @@ tags:
 - [[fake_notify_blocked()]] - `indirect_call` [INFERRED]
 - [[process_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/code #graphify/EXTRACTED #community/iCloud_Services_4

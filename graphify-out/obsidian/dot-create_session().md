@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "SessionManager"
+community: "TelegramAPIProxy (2)"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TelegramAPIProxy_2
 ---
 
 # .create_session()
 
 ## Connections
 - [[dot-_fingerprint()]] - `calls` [EXTRACTED]
-- [[dot-cleanup_expired()_3]] - `calls` [EXTRACTED]
+- [[dot-cleanup_expired()_2]] - `calls` [EXTRACTED]
 - [[RateLimitExceeded]] - `calls` [EXTRACTED]
 - [[Session]] - `references` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

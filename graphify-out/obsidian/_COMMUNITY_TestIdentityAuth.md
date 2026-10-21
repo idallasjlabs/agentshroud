@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[dot-test_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_missing_auth_module_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIdentityAuth]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Hermes — Reference Verifier Skill]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[Podcast Production Pipeline (multi-agent)]] - concept - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[i-hermes README (Podcast Production Orchestrator)]] - document - docker/config/openclaw/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,11 +18,3 @@ members: 3
 TABLE source_file, type FROM #community/TestIdentityAuth
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY__w]]
-
-## Top bridge nodes
-- [[TestIdentityAuth]] - degree 3, connects to 1 community
-- [[dot-test_full_stack()]] - degree 2, connects to 1 community

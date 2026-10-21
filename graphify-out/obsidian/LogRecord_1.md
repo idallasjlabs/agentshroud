@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # LogRecord
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

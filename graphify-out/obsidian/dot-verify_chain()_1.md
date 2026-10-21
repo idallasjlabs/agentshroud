@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L271"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # .verify_chain()
 
 ## Connections
-- [[dot-get_stats()_13]] - `calls` [EXTRACTED]
-- [[dot-verify_audit_chain()]] - `calls` [EXTRACTED]
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_report()]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "test_runtime_engines.py (2)"
+community: "egress_retry.py"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_runtime_enginespy_2
+  - community/egress_retrypy
 ---
 
 # ContainerInfo
@@ -15,9 +15,9 @@ tags:
 - [[dot-ps()_2]] - `references` [EXTRACTED]
 - [[dot-test_defaults()_2]] - `calls` [EXTRACTED]
 - [[dot-test_with_data()]] - `calls` [EXTRACTED]
-- [[Any_50]] - `uses` [INFERRED]
-- [[Any_48]] - `uses` [INFERRED]
-- [[Any_37]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
+- [[Any_33]] - `uses` [INFERRED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo]] - `uses` [INFERRED]
 - [[ContainerInfo_1]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[podman_engine.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_runtime_enginespy_2
+#graphify/code #graphify/INFERRED #community/egress_retrypy

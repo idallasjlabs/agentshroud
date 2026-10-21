@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "FetchOutcome"
+community: "TelegramAPIProxy (3)"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/TelegramAPIProxy_3
 ---
 
 # _FakeStreamResponse
 
 ## Connections
-- [[dot-__enter__()_1]] - `method` [EXTRACTED]
-- [[dot-__exit__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_48]] - `method` [EXTRACTED]
+- [[dot-__enter__()_2]] - `method` [EXTRACTED]
+- [[dot-__exit__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_112]] - `method` [EXTRACTED]
 - [[dot-iter_bytes()]] - `method` [EXTRACTED]
 - [[dot-test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
 - [[dot-test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]
@@ -24,9 +24,9 @@ tags:
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[Stand-in for the object httpx.stream() yields as a context manager.]] - `rationale_for` [EXTRACTED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

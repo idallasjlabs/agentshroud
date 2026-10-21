@@ -1,27 +1,26 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "Mode A — Single task (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Mode_A__Single_task_2
 ---
 
 # iCloud Services
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 - [[Calendar Operations]] - `contains` [EXTRACTED]
-- [[Configuration_2]] - `contains` [EXTRACTED]
+- [[Configuration_4]] - `contains` [EXTRACTED]
 - [[Contact Operations]] - `contains` [EXTRACTED]
-- [[Key Configuration]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
 - [[Notes Operations]] - `contains` [EXTRACTED]
-- [[Security_6]] - `contains` [EXTRACTED]
+- [[Security_8]] - `contains` [EXTRACTED]
 - [[Setup]] - `contains` [EXTRACTED]
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2

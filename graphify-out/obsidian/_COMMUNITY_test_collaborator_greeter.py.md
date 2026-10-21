@@ -1,52 +1,28 @@
 ---
 type: community
-members: 39
+members: 15
 ---
 
 # test_collaborator_greeter.py
 
-**Members:** 39 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[dot-__init__()_91]] - code - gateway/proxy/collaborator_greeter.py
-- [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
-- [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
-- [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
-- [[dot-_persist_state()]] - code - gateway/proxy/collaborator_greeter.py
-- [[dot-maybe_greet()]] - code - gateway/proxy/collaborator_greeter.py
-- [[CollaboratorGreeter]] - code - gateway/proxy/collaborator_greeter.py
-- [[CollaboratorGreeter creates its own httpx client lazily.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[Greet user if cooldown has expired. Returns True when greeting was sent.]] - rationale - gateway/proxy/collaborator_greeter.py
-- [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - rationale - gateway/proxy/collaborator_greeter.py
-- [[Unexpected exception in maybe_greet must be caught and return False.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[When state JSON is corrupt AND writing the empty recovery file fails, no excepti]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_err_response()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[_load_state reads and returns a pre-existing valid JSON dict.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_load_state returns {} when state file is a JSON list (not a dict).]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_load_taglines falls back to default when JSON is valid but not a list.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[_make_greeter()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[_ok_response()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[_persist_state failure must not raise.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[collaborator_greeter.py]] - code - gateway/proxy/collaborator_greeter.py
-- [[test_bot_isolation()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_caption_length_clamped()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_collaborator_greeter.py]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_exception_in_maybe_greet_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_first_call_sends_greeting_and_persists_state()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_first_name_none_uses_there_fallback()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_get_client_creates_own_when_not_injected()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_state_loads_existing_valid_dict()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_state_non_dict_json_returns_empty()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_state_write_empty_fails_silently()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_load_taglines_with_non_list_json_falls_back()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_missing_logo_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_missing_taglines_falls_back_to_default()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_persist_state_exception_is_swallowed()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_random_tagline_pulled_from_file()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_repeat_after_24h_greets_again()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_repeat_within_24h_is_suppressed()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_send_failure_does_not_persist_state()]] - code - gateway/tests/test_collaborator_greeter.py
-- [[test_state_file_corruption_recovers()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[dot-_record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-check_all()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-check_tool_permission()_1]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
+- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,10 +32,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ForwardRequest (2)]]
-- 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
+- 15 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[CollaboratorGreeter]] - degree 21, connects to 1 community
-- [[dot-__init__()_91]] - degree 4, connects to 1 community
-- [[dot-_get_client()]] - degree 3, connects to 1 community
+- [[PermissionCheck]] - degree 12, connects to 3 communities
+- [[dot-check_all()]] - degree 7, connects to 1 community
+- [[dot-check_tool_permission()_1]] - degree 7, connects to 1 community
+- [[dot-check_tool_parameters()]] - degree 6, connects to 1 community
+- [[dot-check_agent_server_access()]] - degree 5, connects to 1 community

@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # .agents/skills/i-scrum/SKILL.md
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-agentsskillsi-scrumSKILL]] - document - .agents/skills/i-scrum/SKILL.md
-- [[Skill scrum]] - document - .agents/skills/i-scrum/SKILL.md
+- [[Accepted-Risk Register for Sunday Upgrade CVE Gate]] - document - .trivyignore.yaml
+- [[CVE-2026-60002 openssh-client no fix (accepted risk)]] - rationale - .trivyignore.yaml
+- [[CVE-2026-6653 libxml2 use-after-free (accepted risk)]] - rationale - .trivyignore.yaml
 
 ## Live Query (requires Dataview plugin)
 

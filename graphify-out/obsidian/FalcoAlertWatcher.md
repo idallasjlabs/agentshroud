@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "LLMProxy.proxy_messages (non-streaming) (2)"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/LLMProxyproxy_messages_non-streaming_2
 ---
 
 # FalcoAlertWatcher
 
 ## Connections
-- [[dot-__init__()_47]] - `method` [EXTRACTED]
+- [[dot-__init__()_144]] - `method` [EXTRACTED]
 - [[dot-_handle_critical()]] - `method` [EXTRACTED]
 - [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
-- [[dot-run()]] - `method` [EXTRACTED]
-- [[dot-stop()_1]] - `method` [EXTRACTED]
+- [[dot-run()_6]] - `method` [EXTRACTED]
+- [[dot-stop()_11]] - `method` [EXTRACTED]
 - [[SecurityPipeline_1]] - `conceptually_related_to` [INFERRED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
 - [[Test Falco Watcher Module]] - `references` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # persist_approved_collaborator()
@@ -23,4 +23,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

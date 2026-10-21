@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎛️ Production-Ready Control Centers]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎯 Complete Security Module Pipeline — 3333 Modules Active]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🏗️ Robust Infrastructure & Architecture]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔍 Enhanced PII Detection & Compliance]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🧪 Enhanced Testing Infrastructure — 1547 Tests + 125 Security Audits]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[button_cb_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[button_event_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button_delete()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button_register_cb()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[test_wakeword_statestubsiot_button.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/1_Accomplishments_This_Phase__Delivered_Security_Infrastructure
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[1. Accomplishments This Phase — Delivered Security Infrastructure]] - degree 6, connects to 1 community

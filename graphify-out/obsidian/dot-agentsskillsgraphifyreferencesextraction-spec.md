@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: ".agents/skills/graphify/references/extraction-spec.md"
+community: ".agents/skills/i-value-stream-mapping/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/graphify/references/extraction-specmd
+  - community/agents/skills/i-value-stream-mapping/SKILLmd
 ---
 
 # .agents/skills/graphify/references/extraction-spec.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extraction subagent prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/graphify/references/extraction-specmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-value-stream-mapping/SKILLmd

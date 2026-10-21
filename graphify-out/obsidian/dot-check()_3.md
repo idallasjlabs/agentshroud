@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "RateLimitGuard"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .check()
@@ -18,4 +18,4 @@ tags:
 - [[RateLimitGuard]] - `method` [EXTRACTED]
 - [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

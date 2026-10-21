@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "branding/README.md"
+community: "run-standalone.sh (Hermes docker run launcher) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/run-standalonesh_Hermes_docker_run_launcher_2
 ---
 
 # QUICK-REFERENCE.md
@@ -17,4 +17,4 @@ tags:
 - [[INDEX_1]] - `references` [EXTRACTED]
 - [[brandingREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_2

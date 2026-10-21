@@ -1,159 +1,67 @@
 ---
 type: community
-members: 146
+members: 54
 ---
 
 # PIIConfig
 
-**Members:** 146 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[dot-_hash_content()]] - code - gateway/ingest_api/ledger.py
-- [[dot-close()_2]] - code - gateway/ingest_api/ledger.py
-- [[dot-delete_entry()]] - code - gateway/ingest_api/ledger.py
-- [[dot-enforce_retention()]] - code - gateway/ingest_api/ledger.py
-- [[dot-initialize()]] - code - gateway/ingest_api/ledger.py
-- [[dot-ledger()]] - code - gateway/tests/test_performance.py
-- [[dot-ledger()_1]] - code - gateway/tests/test_performance.py
-- [[dot-record()_1]] - code - gateway/ingest_api/ledger.py
-- [[dot-test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_1000_messages_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_100_inbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_100_outbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
-- [[dot-test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
-- [[dot-test_pii_inbound_latency()]] - code - gateway/tests/test_performance.py
-- [[dot-test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
-- [[dot-test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
-- [[dot-test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
-- [[dot-test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_trust_update_performance()]] - code - gateway/tests/test_performance.py
-- [[100 messages through process_inbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
-- [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
-- [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
-- [[AgentShroud — Vault Home]] - document - docs/vault/00 - START HERE/Home.md
-- [[Architecture Overview]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
-- [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
-- [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
-- [[Collect and write benchmark baselines to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
-- [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Configuration & Infrastructure]] - document - docs/vault/00 - START HERE/Home.md
-- [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
-- [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
-- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
-- [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
-- [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
-- [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
-- [[Data Flow]] - document - docs/vault/01 - Architecture/Data Flow.md
-- [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
-- [[DataLedger]] - code - gateway/ingest_api/ledger.py
-- [[Delete entries older than retention_days          Returns             Number of]] - rationale - gateway/ingest_api/ledger.py
-- [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
-- [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Diagrams]] - document - docs/vault/00 - START HERE/Home.md
-- [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
-- [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
-- [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
-- [[GatewayConfig]] - code - gateway/tests/conftest.py
-- [[Home]] - document - docs/vault/00 - START HERE/Home.md
-- [[Injection attempts should be detected even under load.]] - rationale - gateway/tests/test_performance.py
-- [[LedgerConfig]] - code - gateway/ingest_api/config.py
-- [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Module Index]] - document - docs/vault/00 - START HERE/Home.md
-- [[Navigate This Vault]] - document - docs/vault/00 - START HERE/Home.md
-- [[Operations]] - document - docs/vault/00 - START HERE/Home.md
-- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
-- [[PII-laden messages through inbound pipeline — verify redaction + timing.]] - rationale - gateway/tests/test_performance.py
-- [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[Prompt guard 1000 messages in  5s.]] - rationale - gateway/tests/test_performance.py
-- [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
-- [[Quick Reference]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_ledger.py
-- [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
-- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
-- [[Scan 1000 messages in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - rationale - gateway/tests/test_performance.py
-- [[Shutdown & Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
-- [[Startup Sequence]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
-- [[System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
-- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
-- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
-- [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
-- [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
-- [[TestBenchmarkBaseline]] - code - gateway/tests/test_performance.py
-- [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
-- [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
-- [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
-- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
-- [[TestPromptGuardPerformance]] - code - gateway/tests/test_performance.py
-- [[TestRetention]] - code - gateway/tests/test_audit_chain.py
-- [[TestSecurityPipelineChainLatency]] - code - gateway/tests/test_performance.py
-- [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
-- [[TestTrustManagerPerformance]] - code - gateway/tests/test_performance.py
-- [[Trust check 10000 lookups in  1s.]] - rationale - gateway/tests/test_performance.py
-- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
-- [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
-- [[auth_headers()]] - code - gateway/tests/conftest.py
-- [[conftest.py]] - code - gateway/tests/conftest.py
-- [[ledger()]] - code - gateway/tests/test_audit_chain.py
-- [[ledger()_1]] - code - gateway/tests/test_security_integration.py
-- [[ledger.py]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[sanitizer()]] - code - gateway/tests/conftest.py
-- [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
-- [[test_client()]] - code - gateway/tests/conftest.py
-- [[test_config()]] - code - gateway/tests/conftest.py
-- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
-- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_get_stats()]] - code - gateway/tests/test_ledger.py
-- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_ledger.py
-- [[test_ledger()]] - code - gateway/tests/conftest.py
-- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
-- [[test_performance.py]] - code - gateway/tests/test_performance.py
-- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
-- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[Baseline phase logs PASS with 0 images captured]] - concept - reports/upgrade-2026-09-22.md
+- [[Build one service at a time]] - rationale - scripts/sunday-upgrade-apply.sh
+- [[COMPOSE_CMD]] - code - scripts/sunday-upgrade-apply.sh
+- [[HEAD_AT_START]] - code - scripts/sunday-upgrade-apply.sh
+- [[No-op gate false negative baseline captured after pin commits]] - concept - reports/upgrade-2026-09-25.md
+- [[PATH_7]] - code - scripts/sunday-upgrade-apply.sh
+- [[Prove the outcome, never the steps (CLAUDE.md 0.0)]] - rationale - scripts/sunday-upgrade-apply.sh
+- [[Shared working-tree stability guard]] - rationale - scripts/sunday-upgrade-apply.sh
+- [[Sunday apply exit-code contract]] - rationale - scripts/sunday-upgrade-apply.sh
+- [[UPGRADE_LOCK]] - code - scripts/sunday-upgrade-apply.sh
+- [[_SPACE()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_assert_head_unchanged()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_attempt_rollback()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_build_context_paths()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_build_one_service()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_buildable_services()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_capture_pins()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_container_is_up()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_dirty_build_files()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_docker_free_gb()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_ensure_build_space()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_head_check()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_hermes_container()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_mutating()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_prune_build_cache()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_record_head captures real HEAD]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[_record_head()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_release_apply_lock()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_rollback_target_predates_config()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_scan_json_field()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_should_run()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_start_lock_heartbeat()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_take_apply_lock()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_ts()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_wait_for_docker()]] - code - scripts/sunday-upgrade-apply.sh
+- [[check_noop_gate()]] - code - scripts/sunday-upgrade-apply.sh
+- [[detects HEAD moving mid-run]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[die()_1]] - code - scripts/sunday-upgrade-apply.sh
+- [[err()]] - code - scripts/sunday-upgrade-apply.sh
+- [[head-guard function extraction (line-number sed)]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[log()_1]] - code - scripts/sunday-upgrade-apply.sh
+- [[no-baseline case returns success]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[phase_apply build loop calls the guard every iteration]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[phase_apply()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_baseline()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_discover()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_preflight()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_scan()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_verify()]] - code - scripts/sunday-upgrade-apply.sh
+- [[sunday-upgrade-apply main sequence]] - code - scripts/sunday-upgrade-apply.sh
+- [[sunday-upgrade-apply.sh]] - code - scripts/sunday-upgrade-apply.sh
+- [[sunday-upgrade-apply.sh script]] - code - scripts/sunday-upgrade-apply.sh
+- [[warn()_2]] - code - scripts/sunday-upgrade-apply.sh
+- [[write_handoff()]] - code - scripts/sunday-upgrade-apply.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -163,36 +71,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 78 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 18 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 14 edges to [[_COMMUNITY_ContextSegment]]
-- 10 edges to [[_COMMUNITY_TrustConfig]]
-- 10 edges to [[_COMMUNITY_SecurityPipeline]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 2 edges to [[_COMMUNITY_lifespan()]]
-- 2 edges to [[_COMMUNITY_main.py.md (2)]]
-- 1 edge to [[_COMMUNITY_main.py]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
-- 1 edge to [[_COMMUNITY_TestMCPResultEndpoint]]
-- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection (2)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (4)]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
-- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice (2)]]
-- 1 edge to [[_COMMUNITY_ledger.py]]
-- 1 edge to [[_COMMUNITY_Docker Volumes]]
-- 1 edge to [[_COMMUNITY_main.py_1]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 18 edges to [[_COMMUNITY__make_sanitizer()]]
+- 13 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 9 edges to [[_COMMUNITY__w]]
+- 5 edges to [[_COMMUNITY_run_multi_host]]
+- 5 edges to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
+- 3 edges to [[_COMMUNITY__wrap_response() (2)]]
+- 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 2 edges to [[_COMMUNITY_Function Details (5)]]
+- 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)_1]]
 
 ## Top bridge nodes
-- [[main.py]] - degree 17, connects to 11 communities
-- [[LedgerConfig]] - degree 62, connects to 5 communities
-- [[test_performance.py]] - degree 16, connects to 5 communities
-- [[Data Flow]] - degree 11, connects to 5 communities
-- [[Startup Sequence]] - degree 10, connects to 5 communities
+- [[sunday-upgrade-apply.sh]] - degree 58, connects to 9 communities
+- [[phase_apply()]] - degree 27, connects to 2 communities
+- [[sunday-upgrade-apply main sequence]] - degree 19, connects to 2 communities
+- [[_build_one_service()]] - degree 8, connects to 2 communities
+- [[No-op gate false negative baseline captured after pin commits]] - degree 8, connects to 2 communities

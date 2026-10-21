@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L251"
+community: "ApprovalQueueConfig"
+location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/ApprovalQueueConfig
 ---
 
 # .__len__()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "LLMProxy"
+community: "ModeRequest"
 location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ModeRequest
 ---
 
 # test_resource_guard_vram_headroom_check_allows_small_context()
@@ -15,4 +15,4 @@ tags:
 - [[Small context request passes VRAM headroom check.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

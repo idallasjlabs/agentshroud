@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "DataExfilVolumeGuard"
 location: "L82"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - graphify/EXTRACTED
+  - community/DataExfilVolumeGuard
 ---
 
 # CI security-scan job (pip-audit)
@@ -15,4 +15,4 @@ tags:
 - [[CI Workflow]] - `references` [EXTRACTED]
 - [[Python dependency audit job]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

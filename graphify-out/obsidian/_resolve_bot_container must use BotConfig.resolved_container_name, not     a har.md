@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "api.py (2)"
+community: "MCPPolicyEngine"
 location: "L536"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/MCPPolicyEngine
 ---
 
 # _resolve_bot_container must use BotConfig.resolved_container_name, not     a har
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResolveBotContainer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

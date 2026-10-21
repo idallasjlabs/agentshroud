@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "opencode.json"
 type: "code"
-community: "launch-instance.sh"
-location: "L14"
+community: "opencode.json"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/opencodejson
 ---
 
 # PATH
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[environment]] - `contains` [EXTRACTED]
+- [[environment_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/opencodejson

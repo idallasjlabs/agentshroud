@@ -1,79 +1,69 @@
 ---
 type: community
-members: 66
+members: 56
 ---
 
 # cli/main.py
 
-**Members:** 66 nodes
+**Members:** 56 nodes
 
 ## Members
-- [[dot-test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_is_tty_and_default_format_for_tty()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_json()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_table_caps_columns_at_eight()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_table_dict()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_table_empty_list()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_table_list_of_dicts()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_table_list_of_scalars()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_table_scalar()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_yaml()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_output_yaml_falls_back_to_json_without_pyyaml()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-test_print_table_empty_rows_is_noop()]] - code - gateway/tests/test_cli_coverage.py
-- [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
-- [[Add a user to a group.]] - rationale - gateway/cli/main.py
-- [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
-- [[Aggregate health report.]] - rationale - gateway/cli/main.py
-- [[Any_76]] - code - gateway/cli/main.py
-- [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
-- [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
-- [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
-- [[Get container logs for a service.]] - rationale - gateway/cli/main.py
-- [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
-- [[List all service containers with status.]] - rationale - gateway/cli/main.py
-- [[Print data in the requested format.]] - rationale - gateway/cli/main.py
-- [[Query recent security events.]] - rationale - gateway/cli/main.py
-- [[Restart a service container.]] - rationale - gateway/cli/main.py
-- [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
-- [[Set configuration values.]] - rationale - gateway/cli/main.py
-- [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
-- [[Show current risk score and level.]] - rationale - gateway/cli/main.py
-- [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
-- [[Stop a service container.]] - rationale - gateway/cli/main.py
-- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
-- [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
-- [[Trigger a security scan.]] - rationale - gateway/cli/main.py
-- [[_default_format()]] - code - gateway/cli/main.py
-- [[_is_tty()]] - code - gateway/cli/main.py
-- [[_output()]] - code - gateway/cli/main.py
-- [[_print_table()]] - code - gateway/cli/main.py
-- [[add()_1]] - code - gateway/cli/main.py
-- [[add_collaborator()_1]] - code - gateway/cli/main.py
-- [[add_group_member()_1]] - code - gateway/cli/main.py
-- [[approve()_3]] - code - gateway/cli/main.py
-- [[cli()]] - code - gateway/cli/main.py
-- [[climain.py]] - code - gateway/cli/main.py
-- [[deny()_3]] - code - gateway/cli/main.py
-- [[freeze()]] - code - gateway/cli/main.py
-- [[get()]] - code - gateway/cli/main.py
-- [[get_correlation()]] - code - gateway/cli/main.py
-- [[get_egress_pending()_1]] - code - gateway/cli/main.py
-- [[get_events()]] - code - gateway/cli/main.py
-- [[get_groups()]] - code - gateway/cli/main.py
-- [[get_health()_1]] - code - gateway/cli/main.py
-- [[get_logs()_1]] - code - gateway/cli/main.py
-- [[get_risk()]] - code - gateway/cli/main.py
-- [[get_services()]] - code - gateway/cli/main.py
-- [[get_users()]] - code - gateway/cli/main.py
-- [[main()_31]] - code - gateway/cli/main.py
-- [[restart()]] - code - gateway/cli/main.py
-- [[restart_service()_2]] - code - gateway/cli/main.py
-- [[scan()]] - code - gateway/cli/main.py
-- [[set()]] - code - gateway/cli/main.py
-- [[set_mode()_1]] - code - gateway/cli/main.py
-- [[stop()]] - code - gateway/cli/main.py
-- [[stop_service()_2]] - code - gateway/cli/main.py
-- [[tail()_1]] - code - gateway/cli/main.py
+- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[ClamAV scan_bytes returns error → fail-open CRITICAL log, FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Cosign signature verification of container images (fail-closed on missing binarytimeoutbad signature)]] - rationale - gateway/tests/test_image_verifier.py
+- [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Stream bytes to clamdscan for inline malware scanning. Uses ``clamdscan…]] - rationale - gateway/security/clamav_scanner.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_image_verifier.py
+- [[Tests for ClamAV inline pipeline integration. Covers - scan_bytes() happy…]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[True if clamd accepts connections on its socket. Connects rather than testing…]] - rationale - gateway/security/clamav_scanner.py
+- [[Verify an image signature using cosign keyless OIDC verification.      Args]] - rationale - gateway/security/image_verifier.py
+- [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - rationale - gateway/security/image_verifier.py
+- [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of…]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_instant_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[_make_pipeline()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_passthrough()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_run_capture()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_timeout_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[clamd_available()]] - code - gateway/security/clamav_scanner.py
+- [[clamdscan' when the resident clamd can take the scan, else 'clamscan'.]] - rationale - gateway/security/clamav_scanner.py
+- [[fake_run()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[image_verifier.py]] - code - gateway/security/image_verifier.py
+- [[preferred_scan_binary()]] - code - gateway/security/clamav_scanner.py
+- [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
+- [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_clamd_available_false_for_stale_socket_left_by_killed_daemon()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_clamd_available_false_when_socket_missing()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_clamd_available_true_when_daemon_listening()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_clamd_socket_constant_matches_both_images_clamd_conf()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_cosign_fails_bad_signature()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_not_found()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_success()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_timeout()]] - code - gateway/tests/test_image_verifier.py
+- [[test_image_verifier.py]] - code - gateway/tests/test_image_verifier.py
+- [[test_pipeline_clamav_clean_payload()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_error_fail_open()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_malware_blocked()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_not_configured()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_short_base64_not_scanned()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_preferred_scan_binary_falls_back_when_daemon_dead()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_preferred_scan_binary_uses_daemon_when_listening()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_run_clamscan_clamdscan_command_has_no_clamscan_only_flags()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_run_clamscan_clamscan_command_unchanged()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_binary_not_found()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_empty_input()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_timeout()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_verify_images_exception_handled()]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_mixed()]] - code - gateway/tests/test_image_verifier.py
+- [[verify_image()]] - code - gateway/security/image_verifier.py
+- [[verify_images()]] - code - gateway/security/image_verifier.py
+- [[verify_images exception from one task is caught, others continue.]] - rationale - gateway/tests/test_image_verifier.py
+- [[verify_images one succeeds, one fails → results keyed by ref.]] - rationale - gateway/tests/test_image_verifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -83,13 +73,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_test_cli_coverage.py]]
-- 5 edges to [[_COMMUNITY_SCLClient]]
-- 1 edge to [[_COMMUNITY_client_from_env]]
+- 15 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 7 edges to [[_COMMUNITY_Common Queries]]
+- 2 edges to [[_COMMUNITY_api.py (2)]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
-- [[climain.py]] - degree 33, connects to 3 communities
-- [[TestOutputHelpers]] - degree 14, connects to 2 communities
-- [[cli()]] - degree 7, connects to 2 communities
-- [[tail()_1]] - degree 5, connects to 2 communities
-- [[_output()]] - degree 31, connects to 1 community
+- [[test_clamav_pipeline.py]] - degree 29, connects to 4 communities
+- [[scan_bytes()]] - degree 11, connects to 3 communities
+- [[preferred_scan_binary()]] - degree 7, connects to 3 communities
+- [[clamd_available()]] - degree 6, connects to 1 community
+- [[_run_capture()]] - degree 5, connects to 1 community

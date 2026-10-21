@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L164"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

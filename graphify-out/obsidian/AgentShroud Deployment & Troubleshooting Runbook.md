@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "AgentShroud Deployment & Troubleshooting Runbook"
+community: "canary.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment__Troubleshooting_Runbook
+  - community/canarypy
 ---
 
 # AgentShroud Deployment & Troubleshooting Runbook
@@ -18,8 +18,8 @@ tags:
 - [[Deploy to Production]] - `contains` [EXTRACTED]
 - [[Infrastructure_9]] - `contains` [EXTRACTED]
 - [[Quick Restart (No Rebuild)]] - `contains` [EXTRACTED]
-- [[RUNBOOK]] - `contains` [EXTRACTED]
+- [[RUNBOOK_1]] - `contains` [EXTRACTED]
 - [[Run Tests on Any Host]] - `contains` [EXTRACTED]
-- [[Troubleshooting_35]] - `contains` [EXTRACTED]
+- [[Troubleshooting_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook
+#graphify/document #graphify/EXTRACTED #community/canarypy

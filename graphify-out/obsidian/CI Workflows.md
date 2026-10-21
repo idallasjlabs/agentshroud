@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "All Dependencies.md"
+community: "EgressFilter"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/EgressFilter
 ---
 
 # CI Workflows
@@ -15,8 +15,8 @@ tags:
 - [[Coverage Threshold]] - `contains` [EXTRACTED]
 - [[Expected Pipeline (Inferred)]] - `contains` [EXTRACTED]
 - [[Key Test Command]] - `contains` [EXTRACTED]
-- [[Purpose_73]] - `contains` [EXTRACTED]
-- [[Related Notes_26]] - `contains` [EXTRACTED]
+- [[Purpose_75]] - `contains` [EXTRACTED]
+- [[Related Notes_33]] - `contains` [EXTRACTED]
 - [[ci-workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

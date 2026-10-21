@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Trademark Statements"
+community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trademark_Statements
+  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
 ---
 
 # Option 2 — Compact (Telegram, Slack — default)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trademark_Statements
+#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE

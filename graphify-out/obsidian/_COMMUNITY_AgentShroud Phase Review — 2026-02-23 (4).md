@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[⚠️ Moderate Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[💡 Design Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🚨 Critical Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[4. Risks & Gaps_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[MCP Tool Risk Tier Classification (criticalhighmediumlow) with Approval Policy]] - concept - docs/planning/redteam/02-human-in-the-loop.md
+- [[Red Team Finding 02 No Human Approval for High-Risk Tool Calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Red Team Finding 03 All Users Share Agent Context and File System]] - document - docs/planning/redteam/03-session-isolation.md
+- [[SessionManager — Telegram User ID as Partition Key for Workspaces and Memory]] - concept - docs/planning/redteam/03-session-isolation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/AgentShroud_Phase_Review__2026-02-23_4
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[4. Risks & Gaps_2]] - degree 4, connects to 1 community

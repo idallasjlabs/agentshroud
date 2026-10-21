@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_1000_entries_all_recorded()
@@ -15,4 +15,4 @@ tags:
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
 - [[Write 1000 entries and verify they're all there.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

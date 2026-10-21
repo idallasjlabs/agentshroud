@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "Canvas Skill"
 location: "L646"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/Canvas_Skill
 ---
 
 # .test_pause_does_not_remove_from_collaborator_role()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/Canvas_Skill

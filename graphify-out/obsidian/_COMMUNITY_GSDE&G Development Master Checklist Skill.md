@@ -1,36 +1,26 @@
 ---
 type: community
-members: 23
+members: 13
 ---
 
 # GSDE&G Development Master Checklist Skill
 
-**Members:** 23 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcREADME]] - document - .agents/skills/i-mc/README.md
-- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
-- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[GIT-GUARD Skill]] - document - .agents/skills/i-gg/SKILL.md
-- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[GSDE&G Development Master Checklist (MC)_1]] - document - .agents/skills/i-mc/README.md
-- [[GSDE&G Development Master Checklist Skill]] - document - .agents/skills/i-mc/SKILL.md
-- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - concept - .agents/skills/i-mc/SKILL.md
-- [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
-- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
-- [[Purpose_82]] - document - .agents/skills/i-mc/README.md
-- [[Related Skills_63]] - document - .agents/skills/i-mc/README.md
-- [[Usage_72]] - document - .agents/skills/i-mc/README.md
-- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
-- [[gitops Skill (stub)]] - document - .agents/skills/i-gitops/SKILL.md
-- [[gitops Skill (stub)_1]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
-- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[pr Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[A. Steve Hay Requirements — ALL Tiers (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[B. Wire ALL Modules Into Request Path (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[C. Bug Fixes (9 items)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[D. Interactive Egress Firewall (7 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[E. Observatory Mode (6 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[G. Pi-hole DNS Stack (9 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[H. Enhanced Audit & Compliance (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[J. Code Cleanup (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[K. Misc Quick Wins (11 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Moved to v0.9.0 Sentinel]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Summary_24]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[v0.8.0-feature-list-final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,11 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Hermes Dev Workflow (HDEV) Skill]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_8D Root Cause Analysis SKILL (OpenClaw)]]
+- 2 edges to [[_COMMUNITY_GSDE&G Development Master Checklist Skill (2)]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist Skill]] - degree 12, connects to 2 communities
-- [[Code Review (CR) SKILL (OpenClaw)]] - degree 6, connects to 1 community
-- [[GIT-GUARD Skill]] - degree 5, connects to 1 community
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - degree 14, connects to 1 community

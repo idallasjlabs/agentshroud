@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI) (2)"
+community: "start-agentshroud.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_2
+  - community/start-agentshroudsh
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -19,10 +19,10 @@ tags:
 - [[Diagram Types and Data Lakehouse Examples_1]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions_1]] - `contains` [EXTRACTED]
 - [[Rendering and Export_1]] - `contains` [EXTRACTED]
-- [[Role_40]] - `contains` [EXTRACTED]
-- [[Rules_15]] - `contains` [EXTRACTED]
+- [[Role_39]] - `contains` [EXTRACTED]
+- [[Rules_14]] - `contains` [EXTRACTED]
 - [[Validation Checklist_7]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2
+#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh

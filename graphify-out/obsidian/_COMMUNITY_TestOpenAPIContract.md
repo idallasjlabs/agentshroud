@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[dot-client()_5]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_openapi_snapshot_matches_live_schema()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_protected_endpoints_reject_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_version_consistency()]] - code - gateway/tests/test_api_contract.py
-- [[API endpoints should not return 500 on malformedempty requests.]] - rationale - gateway/tests/test_api_contract.py
-- [[API version in OpenAPI schema matches gateway package version.]] - rationale - gateway/tests/test_api_contract.py
-- [[Create a FastAPI test client.]] - rationale - gateway/tests/test_api_contract.py
-- [[Healthstatus endpoint must be accessible without authentication.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema and version consistency tests.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema endpoint returns valid JSON schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
-- [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
-- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
+- [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Function Details_13]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Purpose_110]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Related_18]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Responsibilities_16]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.deregister(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.get_active(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.get_flagged_events(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.kill_all(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Threat Model_14]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[subagent_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[subagent_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 

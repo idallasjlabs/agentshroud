@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
+community: "PortManager"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/PortManager
 ---
 
 # .decrypt()
@@ -21,4 +21,4 @@ tags:
 - [[EncryptedStore]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/code #graphify/EXTRACTED #community/PortManager

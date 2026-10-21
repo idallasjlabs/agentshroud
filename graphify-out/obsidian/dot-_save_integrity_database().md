@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (7)"
+community: "create_auth_dependency (2)"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/create_auth_dependency_2
 ---
 
 # ._save_integrity_database()
@@ -15,8 +15,8 @@ tags:
 - [[dot-clear_old_alerts()]] - `calls` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
 - [[dot-scan_file()_1]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_16]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_2]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Save integrity database to disk.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

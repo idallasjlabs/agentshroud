@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "rationale"
-community: "test_hermes_cron_seed.py"
+community: "TestFabricatedSecurityNotice (2)"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/TestFabricatedSecurityNotice_2
 ---
 
 # jira-weekly-review is pure script execution (near-zero free-form     generation)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review_not_pinned_to_a_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2

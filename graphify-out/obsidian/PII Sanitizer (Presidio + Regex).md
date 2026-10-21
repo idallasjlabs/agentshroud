@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "AgentShroud (system, C4 context) (3)"
+community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_3
+  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
 ---
 
 # PII Sanitizer (Presidio + Regex)
@@ -15,4 +15,4 @@ tags:
 - [[Gateway (FastAPI)]] - `calls` [EXTRACTED]
 - [[sanitizer.py (PII redaction, Presidioregex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_system_C4_context_3
+#graphify/concept #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured

@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection"
+community: "CrossBotTrustLedger"
 location: "L198"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/CrossBotTrustLedger
 ---
 
 # ConnectionPool
 
 ## Connections
-- [[dot-__init__()_105]] - `calls` [EXTRACTED]
-- [[dot-__init__()_56]] - `method` [EXTRACTED]
+- [[dot-__init__()_79]] - `calls` [EXTRACTED]
+- [[dot-__init__()_77]] - `method` [EXTRACTED]
 - [[dot-get_or_create()]] - `method` [EXTRACTED]
 - [[dot-remove()]] - `method` [EXTRACTED]
 - [[dot-stop_all()]] - `method` [EXTRACTED]
 - [[dot-test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
 - [[dot-test_stop_all_clears_pool()]] - `calls` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

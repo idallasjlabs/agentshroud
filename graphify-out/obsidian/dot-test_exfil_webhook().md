@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestPatternDetection"
+community: "AgentShroud v0.9.0 (2)"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/AgentShroud_v090_2
 ---
 
 # .test_exfil_webhook()
@@ -15,4 +15,4 @@ tags:
 - [[TestPatternDetection]] - `method` [EXTRACTED]
 - [[_check_exfil_patterns()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090_2

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "MCPInspector"
-location: "L140"
+community: "Skill: Project Management (PM) (3)"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/Skill_Project_Management_PM_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

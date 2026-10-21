@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "TestMCPResultEndpoint"
+community: "MCPPermissionManager"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPResultEndpoint
+  - community/MCPPermissionManager
 ---
 
 # .test_result_with_pii_is_audited_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[A result containing PII is audited and redacted — never blocked (results are nev]] - `rationale_for` [EXTRACTED]
 - [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

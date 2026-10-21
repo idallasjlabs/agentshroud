@@ -1,79 +1,55 @@
 ---
 type: community
-members: 66
+members: 42
 ---
 
 # _t
 
-**Members:** 66 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[dot-_results()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_all_mapped_layers_exist_in_registry()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_apply_writes_registry_and_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_classification_is_deterministic()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_confidence_is_bounded()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_dry_run_writes_nothing()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_gap_report_reflects_full_registry_not_just_this_runs_delta()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_gap_report_renders_and_lists_gaps()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_gaps_are_honest_not_mitigated_or_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_gaps_include_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_low_confidence_partial_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_mitigation_narrative_nonempty_when_applied()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_multiline_parenthesised_value_consumed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_not_source_fixed_newer()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_not_source_fixed_partial_class_is_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_parse_non_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_parse_none_and_empty()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_parse_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_priority_rce_before_generic_injection()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_proactive_only_layers_have_real_gateway_implementation()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_representative_titles()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_rewrite_is_idempotent()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_rewrite_never_touches_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_rewrite_sets_status_and_layers()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_rewrite_untargeted_id_unchanged()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_running_version_matches_pinned_openclaw_version()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_source_fixed_equal()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_source_fixed_full_class_is_fully_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_source_fixed_older()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_source_fixed_partial_class_upgrades_to_fully()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_summary_counts_sum_to_total()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_triage_agent_does_not_read_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_triage_agent_full_covers_every_entry_regardless_of_status()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_triage_agent_full_is_a_pure_report_view_not_a_mutation()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_triage_agent_openclaw_all_under_review_processed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_uncovered_class_not_source_fixed_is_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_uncovered_class_source_fixed_uses_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_unknown_agent_errors()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_unknown_class_not_source_fixed_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_unmatched_is_unknown()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_unparseable_is_not_source_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_unterminated_field_returns_end()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[A version guaranteed newer than the real pinned RUNNING_VERSION, for tests that…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[Every layer the engine can emit must already be used by a mitigated entry in…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[Every name in _PROACTIVE_ONLY_LAYERS must be independently proven wired into…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[Regression guard for the 2026-07-29 staleness incident. RUNNING_VERSION was…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[TestClassify]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestConsumeFieldEdge]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestDefenseLayerVocabulary]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestDriverIsolation]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestMain]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestRewrite]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestTriageEntry]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[TestVersion]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[Tests for scriptstriage-cve-mitigations.py — Phase 2 mitigation-triage engine.…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[_AGENT_CVE_REGISTRIES]] - code - gateway/security/agent_cve_registry.py
-- [[_HERMES_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
-- [[_consume_field]] - code - scripts/triage-cve-mitigations.py
-- [[_entry()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[_not_yet_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[_t()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[rewrite_registry_text]] - code - scripts/triage-cve-mitigations.py
-- [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[triage_agent]] - code - scripts/triage-cve-mitigations.py
-- [[triage_entry]] - code - scripts/triage-cve-mitigations.py
+- [[dot-_detect_hidden_instructions()]] - code - gateway/security/context_guard.py
+- [[dot-_detect_instruction_injection()]] - code - gateway/security/context_guard.py
+- [[dot-_detect_rapid_context_growth()]] - code - gateway/security/context_guard.py
+- [[dot-_detect_repetition_attacks()]] - code - gateway/security/context_guard.py
+- [[dot-analyze_message()]] - code - gateway/security/context_guard.py
+- [[dot-guard()]] - code - gateway/tests/test_context_guard.py
+- [[dot-should_block_message()]] - code - gateway/security/context_guard.py
+- [[dot-test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
+- [[Analyze a message for context poisoning attempts.          Args             ses]] - rationale - gateway/security/context_guard.py
+- [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-22708 — AI Agent Container Escape via Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-30741 — RCE via Request-Side Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-3690 — Canvas Authentication Bypass]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
+- [[Context tracking for a session.]] - rationale - gateway/security/context_guard.py
+- [[ContextAttack]] - code - gateway/security/context_guard.py
+- [[Detect hidden instructions buried in large text blocks.]] - rationale - gateway/security/context_guard.py
+- [[Detect instruction injection attempts.]] - rationale - gateway/security/context_guard.py
+- [[Detect rapid context window filling.]] - rationale - gateway/security/context_guard.py
+- [[Detect repetition-based context stuffing attacks.]] - rationale - gateway/security/context_guard.py
+- [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
+- [[Determine if a message should be blocked.          Returns             Tuple of]] - rationale - gateway/security/context_guard.py
+- [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
+- [[SessionContext]] - code - gateway/security/context_guard.py
+- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
+- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
+- [[check_message()]] - code - gateway/security/context_guard.py
+- [[context_guard.py]] - code - gateway/security/context_guard.py
+- [[cve-mitigation-matrix]] - document - docs/security/cve-mitigation-matrix.md
+- [[get_context_guard()]] - code - gateway/security/context_guard.py
+- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -83,18 +59,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_triage-cve-mitigations.py]]
-- 2 edges to [[_COMMUNITY_WebContentScanner]]
-- 2 edges to [[_COMMUNITY_plan_remediation]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 12 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY_TestCheckCommandExecution]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
+- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
+- 1 edge to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
 
 ## Top bridge nodes
-- [[_AGENT_CVE_REGISTRIES]] - degree 8, connects to 5 communities
-- [[test_triage_cve_mitigations.py]] - degree 18, connects to 2 communities
-- [[TestVersion]] - degree 12, connects to 2 communities
-- [[TestDefenseLayerVocabulary]] - degree 5, connects to 2 communities
-- [[TestDriverIsolation]] - degree 12, connects to 1 community
+- [[cve-mitigation-matrix]] - degree 14, connects to 9 communities
+- [[dot-analyze_message()]] - degree 12, connects to 3 communities
+- [[context_guard.py]] - degree 9, connects to 3 communities
+- [[TestCheckMessage]] - degree 9, connects to 2 communities
+- [[TestSourceTagging]] - degree 9, connects to 2 communities

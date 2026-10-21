@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (4)"
+community: "TestOutboundInfoFilter (5)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_4
+  - community/TestOutboundInfoFilter_5
 ---
 
 # Related Skills
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_4
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5

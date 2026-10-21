@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter (16)"
+community: "bsp_iot_button_create (2)"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_16
+  - community/bsp_iot_button_create_2
 ---
 
 # .test_security_scan_sh_read()
@@ -15,4 +15,4 @@ tags:
 - [[TestTextReaders]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_16
+#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create_2

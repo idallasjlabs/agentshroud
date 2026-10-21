@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "colima-health-check.sh"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/colima-health-checksh
 ---
 
 # ProjectConfig
@@ -17,7 +17,7 @@ tags:
 - [[dot-matches_topic()]] - `method` [EXTRACTED]
 - [[dot-normalise_topics()]] - `method` [EXTRACTED]
 - [[A project defines a scoped focus area for a team.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
 - [[TestConstantMessages]] - `uses` [INFERRED]
 - [[TestErrorFormatters]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[project()]] - `calls` [EXTRACTED]
-- [[teams()_1]] - `calls` [EXTRACTED]
+- [[teams()]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

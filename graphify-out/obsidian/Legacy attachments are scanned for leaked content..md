@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L602"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # Legacy attachments are scanned for leaked content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_attachments_scanned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

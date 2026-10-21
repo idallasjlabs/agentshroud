@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "How to Fix (5 Minutes)"
+community: "Skill: Technical Illustrator (TI) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/How_to_Fix_5_Minutes
+  - community/Skill_Technical_Illustrator_TI_2
 ---
 
 # IMESSAGE_PERMISSION_FIX.md
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Bot Container]] - `references` [EXTRACTED]
 - [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2

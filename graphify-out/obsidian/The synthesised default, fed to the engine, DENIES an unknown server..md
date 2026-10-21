@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # The synthesised default, fed to the engine, DENIES an unknown server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_engine_denies_unknown_server_under_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

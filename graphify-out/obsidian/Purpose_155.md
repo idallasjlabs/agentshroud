@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "falco_monitor.py"
-location: "L12"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Purpose
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

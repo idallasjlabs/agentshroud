@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
-location: "L43"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

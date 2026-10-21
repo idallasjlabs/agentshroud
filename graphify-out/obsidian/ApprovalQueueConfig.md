@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Git Workflow Guardian (GIT-GUARD)"
+community: "iot_button_register_cb (2)"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/iot_button_register_cb_2
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[dot-__init__()_40]] - `references` [EXTRACTED]
+- [[dot-__init__()_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/code #graphify/EXTRACTED #community/iot_button_register_cb_2

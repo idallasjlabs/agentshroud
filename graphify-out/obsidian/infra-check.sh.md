@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "egress_filter.py (5)"
+community: "ResourceUsage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/egress_filterpy_5
+  - community/ResourceUsage
 ---
 
 # infra-check.sh
@@ -16,4 +16,4 @@ tags:
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[tailscale-check.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/egress_filterpy_5
+#graphify/code #graphify/INFERRED #community/ResourceUsage

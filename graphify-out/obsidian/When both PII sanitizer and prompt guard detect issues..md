@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # When both PII sanitizer and prompt guard detect issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pii_and_prompt_guard_both_trigger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

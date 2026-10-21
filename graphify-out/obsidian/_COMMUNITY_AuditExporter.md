@@ -1,45 +1,52 @@
 ---
 type: community
-members: 32
+members: 39
 ---
 
 # AuditExporter
 
-**Members:** 32 nodes
+**Members:** 39 nodes
 
 ## Members
-- [[dot-_export_cef()]] - code - gateway/security/audit_export.py
-- [[dot-_export_json()]] - code - gateway/security/audit_export.py
-- [[dot-_export_jsonld()]] - code - gateway/security/audit_export.py
-- [[dot-_parse_cef_for_verification()]] - code - gateway/security/audit_export.py
-- [[dot-audit_store()]] - code - gateway/tests/test_audit_export.py
-- [[dot-export_events()]] - code - gateway/security/audit_export.py
-- [[dot-test_export_cef()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_export_filtering()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_export_json()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[dot-verify_export_integrity()]] - code - gateway/security/audit_export.py
-- [[AuditEvent]] - code - gateway/security/audit_export.py
-- [[AuditExporter]] - code - gateway/security/audit_export.py
-- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
-- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
-- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
-- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
-- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
-- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
-- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
-- [[TextIO]] - code - gateway/security/audit_export.py
-- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
+- [[75 Security Modules]] - document - README.md
+- [[Acknowledgments_1]] - document - README.md
+- [[Agent Containment]] - document - README.md
+- [[AgentShroud vs Unprotected Agent]] - document - README.md
+- [[AgentShroud™ README]] - document - README.md
+- [[Architecture_3]] - document - README.md
+- [[Content & Context Guards]] - document - README.md
+- [[Control Centers]] - document - README.md
+- [[Core Objectives]] - document - README.md
+- [[Core Security Pipeline]] - document - README.md
+- [[Development]] - document - README.md
+- [[Development Resources]] - document - README.md
+- [[Documentation_1]] - document - README.md
+- [[Example Configurations]] - document - README.md
+- [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
+- [[Infrastructure & Monitoring]] - document - README.md
+- [[Media]] - document - README.md
+- [[OpenClaw Bot]] - concept - README.md
+- [[Proxy & Network Layer]] - document - README.md
+- [[Quick Start_2]] - document - README.md
+- [[Supporting Infrastructure]] - document - README.md
+- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Technical Documentation]] - document - README.md
+- [[Terminal Control Center]] - document - README.md
+- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Web Control Center]] - document - README.md
+- [[What's New — v1.2.2 (June 2026)]] - document - README.md
+- [[What's New — v1.3.0 Reliability (July 2026)]] - document - README.md
+- [[Who It's For]] - document - README.md
+- [[Why AgentShroud]] - document - README.md
+- [[v1.0.0 Fortress foundations (March 2026)]] - document - README.md
+- [[v1.1.x Hermes (May–June 2026)]] - document - README.md
+- [[v1.2.0 Voice (June 2026)]] - document - README.md
+- [[v1.2.1 (2026-06-27) — Quality sweep]] - document - README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,14 +56,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AuditStore]]
-- 6 edges to [[_COMMUNITY_AuditEvent]]
-- 3 edges to [[_COMMUNITY_AuditExporter (3)]]
-- 2 edges to [[_COMMUNITY_AuditExporter (2)]]
+- 3 edges to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (2)]]
+- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
 
 ## Top bridge nodes
-- [[AuditExporter]] - degree 22, connects to 4 communities
-- [[TestAuditExporter]] - degree 15, connects to 4 communities
-- [[AuditEvent]] - degree 6, connects to 2 communities
-- [[TextIO]] - degree 3, connects to 2 communities
-- [[dot-audit_store()]] - degree 3, connects to 1 community
+- [[AgentShroud™ README]] - degree 19, connects to 4 communities
+- [[75 Security Modules]] - degree 17, connects to 2 communities

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L252"
+community: "TestToolChainAnalyzer"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/TestToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

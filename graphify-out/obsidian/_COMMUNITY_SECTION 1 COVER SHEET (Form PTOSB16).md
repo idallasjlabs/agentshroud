@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1. EU AI Act — high-risk operational requirements]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[2. NIST AI RMF 1.0 mapping]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[4. Honest gap list (with tracking)]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[5. Evidence trail — where an auditor looks]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[Positioning]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[eu-ai-act-nist-matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Provisional Patent Application]]
-
-## Top bridge nodes
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community

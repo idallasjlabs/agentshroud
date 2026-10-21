@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Skill Creation Process"
+community: "Layer-by-Layer Breakdown (3)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Layer-by-Layer_Breakdown_3
 ---
 
 # About Skills
@@ -15,4 +15,4 @@ tags:
 - [[Skill Creator]] - `contains` [EXTRACTED]
 - [[What Skills Provide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_3

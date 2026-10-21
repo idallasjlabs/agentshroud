@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/live-dashboard-256x256.png"
 type: "image"
-community: "dashboard_endpoints.py (2)"
+community: "main.py"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/dashboard_endpointspy_2
+  - community/mainpy
 ---
 
 # Live Dashboard Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[dashboard_endpoints.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/dashboard_endpointspy_2
+#graphify/image #graphify/AMBIGUOUS #community/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "PortManager"
+community: "TrustConfig (2)"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TrustConfig_2
 ---
 
 # .find_available_port()
@@ -18,4 +18,4 @@ tags:
 - [[Find next available port starting from base.          Args             base St]] - `rationale_for` [EXTRACTED]
 - [[PortManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

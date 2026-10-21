@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcpm-auth-resetREADME]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Credentials_2]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_2]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_2]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_122]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_91]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_92]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_66]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_3]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_98]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Usage_99]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_3]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_8]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Authentication]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Configuration_17]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Installed from External Sources]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[PII Detection_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Related Notes_52]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Testing_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,8 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_10. Troubleshooting]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (3)]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - degree 10, connects to 2 communities
+- [[All Dependencies_1]] - degree 5, connects to 1 community

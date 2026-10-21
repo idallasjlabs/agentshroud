@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # Non-owner channel: pipeline passes but info_filter_redaction_count > 0 → blocked
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_owner_info_filter_redaction_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

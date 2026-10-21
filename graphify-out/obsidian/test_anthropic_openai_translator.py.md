@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py"
+community: "TestFabricatedSecurityNotice"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # test_anthropic_openai_translator.py
@@ -38,4 +38,4 @@ tags:
 - [[test_translator_tool_use_blocks()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

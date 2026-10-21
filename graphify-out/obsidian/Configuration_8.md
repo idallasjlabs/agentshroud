@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Canvas Skill"
+community: "test_security_toolchain.py"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/test_security_toolchainpy
 ---
 
 # Configuration
@@ -15,4 +15,4 @@ tags:
 - [[Canvas Skill]] - `contains` [EXTRACTED]
 - [[Live Reload]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy

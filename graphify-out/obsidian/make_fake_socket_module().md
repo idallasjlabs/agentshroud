@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "forward_query"
+community: "TestLeakDetection"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forward_query
+  - community/TestLeakDetection
 ---
 
 # make_fake_socket_module()
@@ -18,4 +18,4 @@ tags:
 - [[Build a fake `socket` module namespace driving forward_query without IO.      E]] - `rationale_for` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forward_query
+#graphify/code #graphify/EXTRACTED #community/TestLeakDetection

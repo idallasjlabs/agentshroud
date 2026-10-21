@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Pre-Deployment Checklist (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Pre-Deployment_Checklist_3
 ---
 
 # SSH Proxy Config Schema (agentshroud.yaml ssh: section)
@@ -16,4 +16,4 @@ tags:
 - [[SSH Auto-Approve Commands]] - `conceptually_related_to` [EXTRACTED]
 - [[SSH Proxy Threat Model (6 threats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist_3

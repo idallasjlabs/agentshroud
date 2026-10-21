@@ -8,30 +8,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[graphify_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For --update and --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For graphify add and --watch_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For graphify query_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For the commit hook and native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Honesty Rules_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Interpreter guard for subcommands_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part A - Structural extraction for code files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part B - Semantic extraction (parallel subagents)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part C - Merge AST + semantic into final extraction_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 1 - Ensure graphify is installed_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 2 - Detect files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 2.5 - Video and audio (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 3 - Extract entities and relationships_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 4 - Build graph, cluster, analyze, generate outputs_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 5 - Label communities_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Usage_71]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[What You Must Do When Invoked_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[What graphify is for_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[openclawskillsgraphifySKILL]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Example 1 User Asks for Password (Chat)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 2 User Asks for Password (Console)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 3 User Wants Service Configured]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 4 User Insists on Seeing Password]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
+- [[Rule 1 Never Display in Chat (ANY CHAT)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Rule 2 Always Display in Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Rule 3 Always Use Internally]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[System Instructions Credential Security (Ultra-Conservative)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[The Problems with Trusted Chat]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Control UI]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Telegram_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Why This Rule]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[✅ Summary]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🎓 Why No Exceptions]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🎯 The Ultra-Conservative Approach]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[💬 Example Conversations]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[📊 Security Rules]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[📝 Implementation Checklist]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🔄 What Changed from Previous Version]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🔐 Core Security Principle]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🛡️ Security Benefits]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🧪 Decision Examples]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +39,13 @@ members: 24
 TABLE source_file, type FROM #community/What_You_Must_Do_When_Invoked_3
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_Credential Isolation — Gateway op-proxy (ACTIVE)]]
+- 1 edge to [[_COMMUNITY_auth.py (2)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_thinking_suppression.py]]
+
+## Top bridge nodes
+- [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 3 communities
+- [[Quick-reference commands]] - degree 2, connects to 1 community

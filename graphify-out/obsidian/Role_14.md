@@ -1,17 +1,25 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
-type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD) (2)"
-location: "L7"
+source_file: "gateway/security/rbac.py"
+type: "code"
+community: "MiddlewareManager (2)"
+location: "L76"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+  - community/MiddlewareManager_2
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
+- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
+- [[dot-get_user_role()]] - `references` [EXTRACTED]
+- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
+- [[dot-set_user_role()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

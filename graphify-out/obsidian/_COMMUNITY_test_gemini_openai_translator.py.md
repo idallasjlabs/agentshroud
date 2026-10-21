@@ -1,38 +1,26 @@
 ---
 type: community
-members: 25
+members: 13
 ---
 
 # test_gemini_openai_translator.py
 
-**Members:** 25 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Return a reason string if this Gemini request cannot be failed over.      Return]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate an OpenAI chatcompletions request body to Gemini's     generateConten]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[gemini_failover_unsupported_reason()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[gemini_to_openai_request()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[openai_to_gemini_request()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[test_gemini_basic_text_request()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_generation_config_top_p_and_stop_sequences()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_missing_role_defaults_to_user()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_missing_system_instruction_omits_system_message()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_multi_part_contents_joined()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_non_text_parts_skipped()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_openai_translator.py]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_role_mapping_model_to_assistant()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_system_instruction_snake_case_and_string()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_assistant_role_becomes_model()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_basic_request()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_content_block_list_flattened()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_no_generation_config_keys_omits_block()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_no_system_message_omits_system_instruction()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_stop_sequences_normalized_to_list()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_function_call_parts()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_none_for_plain_text()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_streaming_path()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_tools_in_body()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[Config Keys Read_6]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Function Details_42]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[HTTP Responses]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Imports From  Exports To_6]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Known Issues  Notes_7]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Purpose_148]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[RateLimiter.check(client_id)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Related_48]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[auth.py_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[create_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[get_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[verify_token(token, expected_token)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,13 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_gemini_openai_translator.py (2)]]
-- 5 edges to [[_COMMUNITY_test_gemini_openai_translator.py (3)]]
-- 1 edge to [[_COMMUNITY_LLMProxy (2)]]
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY__run]]
+- 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py (2)]]
 
 ## Top bridge nodes
-- [[test_gemini_openai_translator.py]] - degree 30, connects to 2 communities
-- [[gemini_to_openai_request()]] - degree 14, connects to 2 communities
-- [[openai_to_gemini_request()]] - degree 11, connects to 2 communities
-- [[gemini_failover_unsupported_reason()]] - degree 7, connects to 1 community
+- [[auth.py_1]] - degree 11, connects to 3 communities

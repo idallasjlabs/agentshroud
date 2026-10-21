@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L1080"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # Large inputs shouldn't crash prompt guard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_prompt_guard_large_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

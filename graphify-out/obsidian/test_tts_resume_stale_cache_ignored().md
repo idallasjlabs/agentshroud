@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L3509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # test_tts_resume_stale_cache_ignored()
@@ -16,4 +16,4 @@ tags:
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

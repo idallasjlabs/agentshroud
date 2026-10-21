@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # render_output_lines()
@@ -15,7 +15,7 @@ tags:
 - [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[OutputFormat_1]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_2]] - `references` [EXTRACTED]
+- [[Value_4]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[print_output()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[render_output_table_empty_array_produces_no_lines()]] - `calls` [EXTRACTED]
 - [[render_output_yaml_produces_real_yaml_not_json()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

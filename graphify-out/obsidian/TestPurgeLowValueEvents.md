@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "purge_low_value_events"
+community: "🟢 INFO (nice to have) (2)"
 location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/_INFO_nice_to_have_2
 ---
 
 # TestPurgeLowValueEvents
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_purges_only_matching_event_type_and_severity()]] - `method` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have_2

@@ -1,17 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (3)"
-location: "L364"
+community: "test_security_toolchain.py"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_3
+  - community/test_security_toolchainpy
 ---
 
 # Workflow
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
+- [[1. Create HTML content]] - `contains` [EXTRACTED]
+- [[2. Find your canvas host URL]] - `contains` [EXTRACTED]
+- [[3. Find connected nodes]] - `contains` [EXTRACTED]
+- [[4. Present content]] - `contains` [EXTRACTED]
+- [[5. Navigate, snapshot, or hide]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_3
+#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy

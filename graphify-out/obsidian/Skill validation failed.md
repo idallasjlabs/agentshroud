@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "🆘 Troubleshooting"
+community: "TestPathIsolationManager"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Troubleshooting
+  - community/TestPathIsolationManager
 ---
 
 # "Skill validation failed"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/TestPathIsolationManager

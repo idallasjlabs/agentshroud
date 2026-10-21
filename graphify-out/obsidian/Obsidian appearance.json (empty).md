@@ -1,13 +1,13 @@
 ---
 source_file: "docs/vault/.obsidian/appearance.json"
 type: "document"
-community: "Obsidian appearance.json (empty)"
+community: "wakeword.h (PTT/WakeNet public API)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Obsidian_appearancejson_empty
+  - community/wakewordh_PTT/WakeNet_public_API
 ---
 
 # Obsidian appearance.json (empty)
 
-#graphify/document #graphify/EXTRACTED #community/Obsidian_appearancejson_empty
+#graphify/document #graphify/EXTRACTED #community/wakewordh_PTT/WakeNet_public_API

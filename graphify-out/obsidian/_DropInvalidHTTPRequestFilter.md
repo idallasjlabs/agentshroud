@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # _DropInvalidHTTPRequestFilter
@@ -19,4 +19,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

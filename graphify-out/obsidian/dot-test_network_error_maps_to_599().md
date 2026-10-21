@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "FetchOutcome"
+community: "TelegramAPIProxy (3)"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/TelegramAPIProxy_3
 ---
 
 # .test_network_error_maps_to_599()
@@ -16,4 +16,4 @@ tags:
 - [[TestMakeHttpxFetcher]] - `method` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

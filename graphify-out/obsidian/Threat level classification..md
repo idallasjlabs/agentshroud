@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "CrossBotTrustLedger"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # Threat level classification.
 
 ## Connections
-- [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

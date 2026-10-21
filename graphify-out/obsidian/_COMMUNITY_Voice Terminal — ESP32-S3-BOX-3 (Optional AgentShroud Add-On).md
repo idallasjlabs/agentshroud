@@ -8,28 +8,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[1. Generate the voice gateway token]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[2. Create `wifi_credentials.h`]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[3. Start the voice gateway]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[4. Enable Tailscale Funnel]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Adding a future agent]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Architecture_8]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Installation_3]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Prerequisites_7]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Security notes_6]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Troubleshooting_28]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Usage_74]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Wake word]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[voice-terminal-esp32-s3]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Env-split cron enabledisable pass (dev enables, prod disables)]] - code - docker/scripts/start-agentshroud.sh
+- [[Pending OpenClaw migration repair (openclaw doctor --fix) before gateway start]] - code - docker/scripts/start-agentshroud.sh
+- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
+- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
+- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
+- [[_model_runtime_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_poll_openclaw_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_secret_file()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
+- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_bot_token()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_get_me_ready()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send_photo()]] - code - docker/scripts/start-agentshroud.sh
+- [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +37,13 @@ members: 22
 TABLE source_file, type FROM #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (4)]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_TestSendTelegramTruncation]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)]]
+
+## Top bridge nodes
+- [[start-agentshroud.sh]] - degree 28, connects to 5 communities

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_injection.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "InjectionAction"
-location: "L101"
+community: "ProxyAction (2)"
+location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction_2
 ---
 
 # .test_base64_encoded_injection()
 
 ## Connections
-- [[TestEncodedInjection]] - `method` [EXTRACTED]
+- [[Test detection of base64 encoded injections.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/ProxyAction_2

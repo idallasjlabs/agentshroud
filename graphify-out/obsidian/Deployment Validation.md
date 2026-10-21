@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
+community: "xurl — Agent Skill Reference"
 location: "L425"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Deployment Validation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Zero-Configuration Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

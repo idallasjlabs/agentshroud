@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "diagrams/README.md"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # AgentShroud — Operations & Reliability Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[19. Incident Response Flow — Severity & Escalation]] - `contains` [EXTRACTED]
 - [[20. Monitoring & Observability Map]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

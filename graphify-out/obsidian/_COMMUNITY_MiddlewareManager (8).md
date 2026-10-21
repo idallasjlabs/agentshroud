@@ -1,34 +1,35 @@
 ---
 type: community
-members: 21
+members: 22
 ---
 
 # MiddlewareManager (8)
 
-**Members:** 21 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[dot-__init__()_151]] - code - gateway/security/memory_lifecycle.py
-- [[dot-__post_init__()_5]] - code - gateway/security/memory_lifecycle.py
-- [[dot-archive_file()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Any_55]] - code - gateway/security/memory_lifecycle.py
-- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
-- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
-- [[MemoryLifecycleConfig]] - code - gateway/security/memory_lifecycle.py
-- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_config.py
-- [[Path_43]] - code - gateway/security/memory_lifecycle.py
-- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
-- [[memory_config.py]] - code - gateway/security/memory_config.py
-- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
+- [[Follow-up (within 48 hours)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Glue Job Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Incident Response (INCIDENT)_1]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Incident Response Workflow]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Post-Incident]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Post-Mortem Template]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Purpose_82]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[RDS Rollback (Point-in-Time or Snapshot)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Related Skills_61]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Role_40]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[S3 Data Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Severity Matrix]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Step Function Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Usage_69]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Zabbix Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[openclawskillsi-productionREADME]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[openclawskillsi-productionSKILL]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,17 +37,3 @@ members: 21
 TABLE source_file, type FROM #community/MiddlewareManager_8
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 14 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY_MiddlewareManager (6)]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager (11)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (9)]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-
-## Top bridge nodes
-- [[MemoryLifecycleConfig_1]] - degree 16, connects to 4 communities
-- [[memory_lifecycle.py]] - degree 7, connects to 4 communities
-- [[Path_43]] - degree 5, connects to 2 communities
-- [[dot-get_recent_threats()]] - degree 4, connects to 2 communities
-- [[memory_config.py]] - degree 3, connects to 2 communities

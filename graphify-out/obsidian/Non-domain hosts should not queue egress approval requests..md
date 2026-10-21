@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (23)"
+community: "_req"
 location: "L2840"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_23
+  - community/_req
 ---
 
 # Non-domain hosts should not queue egress approval requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_web_fetch_json_invalid_host_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_23
+#graphify/rationale #graphify/EXTRACTED #community/_req

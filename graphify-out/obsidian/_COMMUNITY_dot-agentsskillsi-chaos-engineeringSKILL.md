@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # .agents/skills/i-chaos-engineering/SKILL.md
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-agentsskillsi-chaos-engineeringSKILL]] - document - .agents/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[dot-test_invalid_json_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_reads_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDaemonConfigReader]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,3 +18,12 @@ members: 2
 TABLE source_file, type FROM #community/agents/skills/i-chaos-engineering/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
+
+## Top bridge nodes
+- [[TestDaemonConfigReader]] - degree 3, connects to 1 community
+- [[dot-test_invalid_json_returns_empty()]] - degree 2, connects to 1 community
+- [[dot-test_reads_daemon_json()]] - degree 2, connects to 1 community

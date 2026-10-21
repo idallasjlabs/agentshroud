@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # Path traversal attempts should be blocked.
 
 ## Connections
-- [[dot-test_path_traversal_blocked()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

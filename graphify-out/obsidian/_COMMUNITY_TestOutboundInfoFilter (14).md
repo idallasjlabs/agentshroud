@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIsFresh_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Built-in pre-commit hooks (private key, AWS creds, large files)]] - code - .llm_settings/templates/.pre-commit-config.yaml
+- [[Fleet-wide pre-commit secret-blocking hook]] - concept - .llm_settings/git-hooks/README.md
+- [[Pre-commit hook strategy (framework vs manual)]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[detect-secrets pre-commit hook (baseline-driven)]] - code - .llm_settings/templates/.pre-commit-config.yaml
+- [[gitleaks pre-commit hook (template)]] - code - .llm_settings/templates/.pre-commit-config.yaml
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,13 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/TestOutboundInfoFilter_14
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (2)]]
-
-## Top bridge nodes
-- [[dot-test_old_file_returns_false()]] - degree 3, connects to 2 communities
-- [[TestIsFresh_1]] - degree 5, connects to 1 community
-- [[dot-test_fresh_file_returns_true()]] - degree 2, connects to 1 community

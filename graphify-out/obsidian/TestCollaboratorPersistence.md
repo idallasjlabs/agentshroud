@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "Canvas Skill"
 location: "L572"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/Canvas_Skill
 ---
 
 # TestCollaboratorPersistence
@@ -38,9 +38,9 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - `rationale_for` [EXTRACTED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/Canvas_Skill

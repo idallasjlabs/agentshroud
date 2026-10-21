@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # TestSkillsManifest
@@ -25,4 +25,4 @@ tags:
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

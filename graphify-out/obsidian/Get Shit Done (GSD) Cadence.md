@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "main"
+community: "AgentShroud Blue Team Security Auditor (2)"
 location: "L584"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/AgentShroud_Blue_Team_Security_Auditor_2
 ---
 
 # "Get Shit Done" (GSD) Cadence
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Governance Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2

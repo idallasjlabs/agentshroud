@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L289"
+community: "MiddlewareManager (2)"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - graphify/INFERRED
+  - community/MiddlewareManager_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
-- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-check_permission()]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_2

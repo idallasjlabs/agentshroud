@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[1.1 The Problem]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.2 Root Cause Analysis]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.3 Solution Options]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.4 Implementation Plan]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.5 Testing Strategy]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[1.6 Success Criteria]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[Phase 1 Pi Preparation (Prerequisites)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 2 Node Pairing]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 3 Security Configuration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 4 Skill Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 5 Distributed Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 1 Automated Testing on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 2 Continuous Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 3 IoT + AI Integration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[dot-agentsskillsi-crprSKILL]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Guardrails_9]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Invocation_6]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Role_66]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
-- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[1.4 Implementation Plan]] - degree 7, connects to 1 community
-- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - degree 7, connects to 1 community
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - degree 15, connects to 1 community

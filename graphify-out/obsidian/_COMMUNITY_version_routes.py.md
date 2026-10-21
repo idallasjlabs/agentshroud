@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Environment Variables Used_5]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Function Details_15]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Purpose_125]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Related_21]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Responsibilities_19]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[VersionRequest Fields]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[downgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[get_version_history()_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[rollback_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[upgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_2]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Code Style]] - document - CONTRIBUTING.md
+- [[Code of Conduct]] - document - CONTRIBUTING.md
+- [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
+- [[Development Setup]] - document - CONTRIBUTING.md
+- [[Implementation Status_2]] - document - scripts/README.md
+- [[Maintenance Scripts]] - document - scripts/README.md
+- [[Pull Request Process]] - document - CONTRIBUTING.md
+- [[Questions]] - document - CONTRIBUTING.md
+- [[Requirements]] - document - CONTRIBUTING.md
+- [[Response SLA]] - document - CONTRIBUTING.md
+- [[Scripts (to be implemented throughout development)]] - document - scripts/README.md
+- [[Security Scripts]] - document - scripts/README.md
+- [[Test Guidelines]] - document - CONTRIBUTING.md
+- [[Utility Scripts]] - document - scripts/README.md
+- [[What to Contribute]] - document - CONTRIBUTING.md
+- [[scriptsREADME]] - document - scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 16
 TABLE source_file, type FROM #community/version_routespy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+
+## Top bridge nodes
+- [[Contributing to AgentShroud™]] - degree 9, connects to 1 community

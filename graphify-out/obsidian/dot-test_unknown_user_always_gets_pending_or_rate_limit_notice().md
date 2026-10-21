@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
+community: "test_telegram_proxy_inbound.py (2)"
 location: "L7992"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+  - community/test_telegram_proxy_inboundpy_2
 ---
 
 # .test_unknown_user_always_gets_pending_or_rate_limit_notice()
@@ -24,4 +24,4 @@ tags:
 - [[fake_send()_24]] - `contains` [EXTRACTED]
 - [[fake_send()_11]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
+community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
 location: "L7759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
 ---
 
 # .test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()
@@ -23,4 +23,4 @@ tags:
 - [[fake_owner_notice()_4]] - `indirect_call` [INFERRED]
 - [[fake_rl_notice()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand

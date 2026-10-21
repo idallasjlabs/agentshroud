@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "_req"
 location: "L465"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/_req
 ---
 
 # Collaborator plain NO_REPLY should become protected unavailable notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_plain_no_reply_token_for_collaborator_gets_protected_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/_req

@@ -1,18 +1,18 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Apple Services Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Apple_Services_Setup_Guide
 ---
 
 # AgentShroud Prerequisites
 
 ## Connections
-- [[Overview_10]] - `contains` [EXTRACTED]
+- [[Overview_7]] - `contains` [EXTRACTED]
 - [[PREREQUISITES_16]] - `contains` [EXTRACTED]
 - [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 - [[✅ Your Current Setup Status]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[🗂️ File Structure]] - `contains` [EXTRACTED]
 - [[🚀 Quick Start Command]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

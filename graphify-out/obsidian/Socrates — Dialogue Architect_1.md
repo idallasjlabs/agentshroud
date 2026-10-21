@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-socrates/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect (6)"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_6
+  - community/socjs
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_37]] - `contains` [EXTRACTED]
-- [[Related Skills_22]] - `contains` [EXTRACTED]
-- [[Usage_26]] - `contains` [EXTRACTED]
-- [[hermesskillsi-socratesREADME]] - `contains` [EXTRACTED]
+- [[Purpose_97]] - `contains` [EXTRACTED]
+- [[Related Skills_76]] - `contains` [EXTRACTED]
+- [[Usage_82]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-socratesREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_6
+#graphify/document #graphify/EXTRACTED #community/socjs

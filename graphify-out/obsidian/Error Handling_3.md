@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/SKILL.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Mac App Discovery Skill"
-location: "L344"
+community: "Detailed Profiles"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/Detailed_Profiles
 ---
 
 # Error Handling
 
 ## Connections
-- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

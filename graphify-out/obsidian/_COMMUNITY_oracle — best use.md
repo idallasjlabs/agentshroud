@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Attaching files (`--file`)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Commands (preferred)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Engines (API vs browser)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Golden path]] - document - skills/openclaw/oracle/SKILL.md
-- [[Main use case (browser, GPT‑5.2 Pro)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Prompt template (high signal)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Safety]] - document - skills/openclaw/oracle/SKILL.md
-- [[Sessions + slugs]] - document - skills/openclaw/oracle/SKILL.md
-- [[mcporter]] - document - skills/openclaw/mcporter/SKILL.md
-- [[mcporterSKILL]] - document - skills/openclaw/mcporter/SKILL.md
-- [[oracle — best use]] - document - skills/openclaw/oracle/SKILL.md
-- [[oracleSKILL]] - document - skills/openclaw/oracle/SKILL.md
-- [[“Exhaustive prompt” restoration pattern]] - document - skills/openclaw/oracle/SKILL.md
+- [[Conditional memory writes (memoryYYYY-MM-DD.md, MEMORY.md)]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[Core rules]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Logging and audit trail]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Overview_20]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Stable-named cron scheduling for periodic audits]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[healthcheckSKILL]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[openclaw security audit command family]] - concept - skills/openclaw/healthcheck/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,11 @@ members: 13
 TABLE source_file, type FROM #community/oracle__best_use
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY__llm_init_emit_merge_json()]]
+- 1 edge to [[_COMMUNITY_TestDockerSecretIsolation]]
+
+## Top bridge nodes
+- [[OpenClaw Host Hardening]] - degree 9, connects to 1 community
+- [[Stable-named cron scheduling for periodic audits]] - degree 3, connects to 1 community

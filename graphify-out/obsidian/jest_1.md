@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "browser-extension/package.json"
+community: "Technical Specification"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/Technical_Specification
 ---
 
 # jest
@@ -16,4 +16,4 @@ tags:
 - [[collectCoverageFrom]] - `contains` [EXTRACTED]
 - [[testEnvironment]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/Technical_Specification

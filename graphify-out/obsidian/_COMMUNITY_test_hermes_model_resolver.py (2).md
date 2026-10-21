@@ -1,28 +1,23 @@
 ---
 type: community
-members: 15
+members: 10
 ---
 
 # test_hermes_model_resolver.py (2)
 
-**Members:** 15 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[dot-test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
+- [[A2AGovernanceProxy._check_peer]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy._process]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy._sanitize_message]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy.process_inbound]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy.process_outbound]] - code - gateway/security/a2a_governance.py
+- [[ToolACLEnforcer._can_use_tool_impl]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer.can_use_tool]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer.can_use_tool_in_group_context]] - code - gateway/security/tool_acl.py
+- [[TrustManager.get_trust]] - code - gateway/security/trust_manager.py
+- [[TrustManager.is_tool_allowed]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,16 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_MiddlewareManager]]
-- 4 edges to [[_COMMUNITY__req (2)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 3 edges to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY__req]]
-- 1 edge to [[_COMMUNITY__req (3)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[TestFileSandboxStep]] - degree 9, connects to 4 communities
-- [[TestToolChainAnalyzer_1]] - degree 9, connects to 4 communities
-- [[TestPathIsolationStep]] - degree 8, connects to 4 communities
-- [[_tool_req()]] - degree 13, connects to 2 communities
-- [[dot-test_owner_bypasses_sandbox()]] - degree 3, connects to 1 community
+- [[ToolACLEnforcer.can_use_tool]] - degree 4, connects to 2 communities

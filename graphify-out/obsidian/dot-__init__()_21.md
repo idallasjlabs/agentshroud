@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L86"
+community: "api.py (3)"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/apipy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[_FakeResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/apipy_3

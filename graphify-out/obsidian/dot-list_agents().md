@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry (2)"
+community: "KeyRotationManager (2)"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/KeyRotationManager_2
 ---
 
 # .list_agents()
@@ -19,4 +19,4 @@ tags:
 - [[AgentRegistry]] - `method` [EXTRACTED]
 - [[List all registered agent IDs.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

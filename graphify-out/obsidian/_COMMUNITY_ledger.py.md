@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Config Keys Read_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Database Schema_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Environment Variables Used_6]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Function Details_22]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Imports From  Exports To_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Key Classes  Functions_24]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Known Issues  Notes_6]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_132]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Related_28]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[query(page, page_size, source, since, until, forwarded_to)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[dot-constructor()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[dot-createConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[ConnectProxyAgent]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[NO_PROXY_HOSTS]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[PatchedWebSocket]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[http]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[https]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[net]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy patchWsForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[setup-https-proxy.js]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[tls]] - code - docker/config/openclaw/setup-https-proxy.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (4)]]
 
 ## Top bridge nodes
-- [[ledger.py_2]] - degree 11, connects to 1 community
+- [[setup-https-proxy.js]] - degree 10, connects to 1 community

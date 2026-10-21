@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "SecureBrowser Security Policies"
+community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
 ---
 
 # SecureBrowser Security Policies
@@ -20,7 +20,7 @@ tags:
 - [[Incident Response]] - `contains` [EXTRACTED]
 - [[Risk Classification Matrix]] - `contains` [EXTRACTED]
 - [[Security Testing_1]] - `contains` [EXTRACTED]
-- [[Threat Model_2]] - `contains` [EXTRACTED]
+- [[Threat Model_3]] - `contains` [EXTRACTED]
 - [[security-policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents

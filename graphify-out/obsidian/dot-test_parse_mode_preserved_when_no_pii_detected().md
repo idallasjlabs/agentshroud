@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "All Dependencies.md (2)"
 location: "L4410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/All_Dependenciesmd_2
 ---
 
 # .test_parse_mode_preserved_when_no_pii_detected()
@@ -17,4 +17,4 @@ tags:
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[parse_mode=HTML must be preserved for owner when text contains no PII.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_2

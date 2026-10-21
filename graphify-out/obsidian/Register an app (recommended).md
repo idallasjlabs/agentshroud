@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
+community: "AgentShroud Security Hardening Plan"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Register an app (recommended)
 
 ## Connections
-- [[Prerequisites_6]] - `contains` [EXTRACTED]
+- [[Prerequisites_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

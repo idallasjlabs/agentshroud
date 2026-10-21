@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Kill Switch"
+community: "test_anthropic_openai_translator.py"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Mode 1: freeze
 
 ## Connections
-- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Kill Switch_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

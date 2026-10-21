@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "MCPPolicyEngine (2)"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/MCPPolicyEngine_2
 ---
 
 # Return True if *domain* matches any pattern (exact or ``*.`` wildcard). Single…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[domain_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2

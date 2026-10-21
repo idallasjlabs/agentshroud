@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
-location: "L20"
+community: "FetchOutcome"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/FetchOutcome
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_27]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_28]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

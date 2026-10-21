@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L27"
+community: "Daedalus — Concept Illustrator (2)"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/Daedalus__Concept_Illustrator_2
 ---
 
 # Notes
 
 ## Connections
-- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_2

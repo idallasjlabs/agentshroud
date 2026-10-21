@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "setup-https-proxy.js"
+community: "ledger.py"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-https-proxyjs
+  - community/ledgerpy
 ---
 
 # shouldBypass()
@@ -16,4 +16,4 @@ tags:
 - [[proxyCreateConnection()]] - `calls` [EXTRACTED]
 - [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs
+#graphify/code #graphify/EXTRACTED #community/ledgerpy

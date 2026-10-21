@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "AgentShroud Documentation"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/AgentShroud_Documentation
 ---
 
 # .test_get_credential_status_none_for_unknown()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStatusHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation

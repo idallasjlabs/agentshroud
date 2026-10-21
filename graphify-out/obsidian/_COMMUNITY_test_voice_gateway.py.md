@@ -1,106 +1,100 @@
 ---
 type: community
-members: 93
+members: 87
 ---
 
 # test_voice_gateway.py
 
-**Members:** 93 nodes
+**Members:** 87 nodes
 
 ## Members
-- [[usetellasktalk toswitch to... modelagent - ('model', gateway     mo]] - rationale - gateway/tests/test_voice_gateway.py
-- [[voice is the one endpoint reachable over the public internet (Tailscale     Fun]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A connection-level error (not a statustimeout) also falls back to the     troub]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A modelpipeline warm-up failure at startup must NOT down the gateway.      Regr]] - rationale - gateway/tests/test_voice_gateway.py
-- [[After a set, the read query reports the tracked level in percent.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Before any set, the read query reports an unknown-state calibration hint.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Build a mock httpx.Response usable as the yield value of a mocked     AsyncClien]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Connection with correct token= query param is accepted and gets idle state.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Connection with no token is rejected when auth is configured.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Connection with wrong token= is closed (server returns no state frame).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device]] - rationale - gateway/tests/test_voice_gateway.py
-- [[ConnectionClosedOK (WS code 10001001 — clean websockets-library close path)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Digit, percent, word-number and compound forms; clamping; non-commands.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Directly invoke ``voice_endpoint`` with a mocked WebSocket whose second     ``re]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Each synthesized sentence must ramp inout over ~5 ms so per-sentence     Kokoro]] - rationale - gateway/tests/test_voice_gateway.py
-- [[External uptime monitors (e.g. UptimeRobot) probe with HEAD; a 405     makes a h]] - rationale - gateway/tests/test_voice_gateway.py
-- [[GATEWAY_OWNER_USER_ID is sent as X-AgentShroud-User-Id header (not a body field)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[If a device sends LISTEN but never sends END (crash  stuck firmware), the     s]] - rationale - gateway/tests/test_voice_gateway.py
-- [[If the Kokoro pipeline can't be constructed, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[If the pipeline raises mid-synthesis, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[No agent= param → _DEFAULT_AGENT is used for routing.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[No fabricated version when the env var is genuinely unset — say     'unknown' ra]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Read phrasings match; set commands and unrelated speech do not.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Regression 2026-08-08 the voice assistant answered what version is     AgentSh]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Text that normalises to emptywhitespace returns b'' without invoking Kokoro.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[The very first frame after WS accept must be idle, not listening.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[WHISPER_MODEL_DIR (baked path) beats WHISPER_MODEL_SIZE — preserves offline guar]] - rationale - gateway/tests/test_voice_gateway.py
-- [[WHISPER_MODEL_DIR env var is honoured _MODEL_PATH resolves to the directory]] - rationale - gateway/tests/test_voice_gateway.py
-- [[WHISPER_MODEL_SIZE overrides the default when WHISPER_MODEL_DIR is unset.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When agent= is absent the default agent must be 'direct' (fast local     model)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When _VG_AUTH_TOKEN is empty, any connection is accepted (dev  backward compat)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When secret file is absent, _GATEWAY_TOKEN falls back to GATEWAY_AUTH_TOKEN env]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When the LLM raises in the 'direct' agent path       - the user message appende]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When the STT→LLM→TTS pipeline raises, the inner exception handler must       1.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When the WS dirty-closes (code 1006) before the initial _send_state(IDLE) frame]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_GATEWAY_TOKEN is read from the secret file when it exists.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream must POST to forwardstream with streamtrue, not     the ol]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream must yield a spoken fallback string and log a WARNING     whe]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_load_ota_tokens merges env + secret file and falls back to the WS token.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_mock_llm_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
-- [[_mock_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
-- [[_reset_reply_resume()]] - code - gateway/tests/test_voice_gateway.py
-- [[_run_disconnect_test()]] - code - gateway/tests/test_voice_gateway.py
-- [[pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.      A device that]] - rationale - gateway/tests/test_voice_gateway.py
-- [[test_answer_volume_query_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_answer_volume_query_unknown_before_any_set()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_read_timeout_returns_fallback()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_generic_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_posts_to_forward_stream_endpoint()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_uses_structured_timeout()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_health_returns_ok()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_health_supports_head()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_is_volume_query_forms()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_lifespan_tolerates_warmup_failure()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_listen_without_end_times_out()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_load_ota_tokens_sources()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_owner_user_id_propagated_as_header()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_parse_model_switch_command_forms()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_parse_volume_command_forms()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_pcm_buffer_bounded()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_stt_default_model_size_is_small_en()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_stt_model_dir_wins_over_model_size()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_stt_model_size_env_override()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_stt_transcribe_empty_bytes_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_stt_transcribe_mocked_model()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_stt_uses_local_model_dir_when_env_set()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_token_falls_back_to_env_when_no_file()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_token_loaded_from_secret_file()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_empty_text_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_kokoro_pipeline_load_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_kokoro_synthesis_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_fades_sentence_edges()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_voice_gateway.py]] - code - gateway/tests/test_voice_gateway.py
-- [[test_voice_system_message_includes_agentshroud_version()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_voice_system_message_version_unknown_when_env_unset()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_accepts_correct_token()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_accepts_when_auth_not_configured()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_agent_query_param_absent_uses_default()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_connect_sends_idle_first()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_connectionclosed_error_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_connectionclosed_ok_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_default_agent_is_direct()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_rejects_missing_token()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_rejects_wrong_token()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_token_check_uses_constant_time_comparison()]] - code - gateway/tests/test_voice_gateway.py
-- [[transcribe() calls the model and returns joined segment text.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[voice_gateway app (FastAPI)]] - code - voice_gateway/server.py
+- [[dot-__init__()_9]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_10]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-block_credentials()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-can_use_tool()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-filter_xml_blocks()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-inject_headers()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-sanitize()]] - code - gateway/tests/test_llm_proxy.py
+- [[A cloud 400 that is NOT a quota wall must surface as a 400, not a 200.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[A known secret value echoed in a streaming delta must be scrubbed.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Allowed tool blocks must pass through unchanged.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Backend-down stays an in-stream SSE error frame under a 200 head (unchanged…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Connect failures to cloud providers keep the existing 502 behavior.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Connect timeout must exceed this host's measured DNS-resolution latency…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Existing callers (with_head=False) keep getting bytes only — no StreamHead.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - rationale - gateway/proxy/llm_proxy.py
+- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - rationale - gateway/proxy/llm_proxy.py
+- [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[No streaming call site may hardcode its own connect timeout literal. Guards…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Ollama down → 503 backend_unavailable with ollama serve hint.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[OpenClaw already sends Authorization Bearer — injector must leave it untouched.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Regression 2026-08-07 a plain (non-Claude, non-Gemini, non-local) OpenAI-model…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Regression 2026-09-16 openai-local is AgentShroud's own local-model…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Repeated connect failures log one WARNING per window, not per request.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Return a monkeypatched urlopen that captures the Request headers.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Same regression as…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[StreamHead]] - code - gateway/proxy/llm_proxy.py
+- [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
+- [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
+- [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_2]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_5]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_6]] - code - gateway/tests/test_llm_proxy.py
+- [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
+- [[_proxy_with_connect_refused()]] - code - gateway/tests/test_llm_proxy.py
+- [[_run_stream (StreamHead test harness)]] - code - gateway/tests/test_llm_proxy.py
+- [[asyncio_2]] - code
+- [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
+- [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[fake_open()]] - code - gateway/tests/test_llm_proxy.py
+- [[fake_urlopen()_74]] - code - gateway/tests/test_llm_proxy.py
+- [[llm_proxy.py_2]] - code - gateway/proxy/llm_proxy.py
+- [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[mock_forward()]] - code - gateway/tests/test_llm_proxy.py
+- [[mock_forward()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[mock_forward()_2]] - code - gateway/tests/test_llm_proxy.py
+- [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_backend_unavailable_warning_rate_limited()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_cloud_backend_connect_failure_still_returns_502()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_called_in_streaming_path()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_does_not_overwrite_existing_bearer()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_filter_outbound_streaming_filters_anthropic_content_text()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_filter_outbound_streaming_filters_openai_delta_content()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_llm_connect_timeout_clears_observed_dns_latency()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_llm_proxy.py]] - code - gateway/tests/test_llm_proxy.py
+- [[test_lmstudio_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_mlxlm_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_ollama_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_streaming_strips_openai_local_prefix_and_routes_to_backend()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_scan_request_data_scans_messages_without_name_error()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_cloud_non_quota_400_also_propagates]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_default_contract_yields_only_bytes]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_secret_value_redacted()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_tool_acl_allows_permitted_tool()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_tool_acl_blocks_terminal_tool()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_tool_acl_skips_unknown_user()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_with_head_reports_200_then_chunks]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_with_head_reports_upstream_400_and_body]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -110,21 +104,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY__pcm_bytes]]
-- 8 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 6 edges to [[_COMMUNITY_AsyncMock]]
-- 6 edges to [[_COMMUNITY_tts.py]]
-- 6 edges to [[_COMMUNITY__fw_client]]
-- 5 edges to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
-- 4 edges to [[_COMMUNITY_test_voice_gateway.py (2)]]
-- 4 edges to [[_COMMUNITY_server.py (2)]]
-- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 1 edge to [[_COMMUNITY_stt.py]]
-- 1 edge to [[_COMMUNITY_TestSplitForSpeech]]
+- 27 edges to [[_COMMUNITY_ModeRequest]]
+- 4 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 3 edges to [[_COMMUNITY_TestLoadAllSecretFileValues]]
+- 3 edges to [[_COMMUNITY_SecureBrowser (4)]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager (3)]]
+- 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_Steps]]
 
 ## Top bridge nodes
-- [[test_voice_gateway.py]] - degree 115, connects to 10 communities
-- [[_run_disconnect_test()]] - degree 5, connects to 1 community
-- [[test_call_agent_stream_generic_http_error_falls_back()]] - degree 3, connects to 1 community
-- [[test_listen_without_end_times_out()]] - degree 3, connects to 1 community
-- [[test_pcm_buffer_bounded()]] - degree 3, connects to 1 community
+- [[test_llm_proxy.py]] - degree 43, connects to 4 communities
+- [[StreamHead]] - degree 16, connects to 4 communities
+- [[_run_stream (StreamHead test harness)]] - degree 10, connects to 3 communities
+- [[llm_proxy.py_2]] - degree 7, connects to 3 communities
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - degree 7, connects to 2 communities

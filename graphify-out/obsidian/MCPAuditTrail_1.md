@@ -1,60 +1,60 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "MCPAuditTrail"
+community: "CrossBotTrustLedger"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPAuditTrail
+  - community/CrossBotTrustLedger
 ---
 
 # MCPAuditTrail
 
 ## Connections
-- [[dot-__init__()_52]] - `method` [EXTRACTED]
-- [[dot-__len__()]] - `method` [EXTRACTED]
+- [[dot-__init__()_158]] - `method` [EXTRACTED]
+- [[dot-__len__()_1]] - `method` [EXTRACTED]
 - [[dot-_compute_chain_hash()]] - `method` [EXTRACTED]
-- [[dot-entries()]] - `method` [EXTRACTED]
+- [[dot-entries()_1]] - `method` [EXTRACTED]
 - [[dot-generate_report()]] - `method` [EXTRACTED]
 - [[dot-get_blocked_entries()]] - `method` [EXTRACTED]
 - [[dot-get_entries_for_agent()]] - `method` [EXTRACTED]
 - [[dot-get_entries_for_server()]] - `method` [EXTRACTED]
 - [[dot-get_entries_for_tool()]] - `method` [EXTRACTED]
 - [[dot-get_failed_entries()]] - `method` [EXTRACTED]
-- [[dot-last_hash()]] - `method` [EXTRACTED]
+- [[dot-last_hash()_1]] - `method` [EXTRACTED]
 - [[dot-log_tool_call()]] - `method` [EXTRACTED]
 - [[dot-log_tool_result()]] - `method` [EXTRACTED]
 - [[dot-start_call()]] - `method` [EXTRACTED]
-- [[dot-test_default_window_is_10k()]] - `calls` [EXTRACTED]
+- [[dot-test_default_window_is_10k()_1]] - `calls` [EXTRACTED]
 - [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-test_report_total_reflects_all_appended()]] - `calls` [EXTRACTED]
-- [[dot-test_tamper_in_retained_window_detected()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_chain_valid_after_wrap()]] - `calls` [EXTRACTED]
-- [[dot-test_window_capped_at_max_entries()]] - `calls` [EXTRACTED]
-- [[dot-total_appended()]] - `method` [EXTRACTED]
-- [[dot-verify_chain()]] - `method` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[dot-test_tamper_in_retained_window_detected()_1]] - `calls` [EXTRACTED]
+- [[dot-test_verify_chain_valid_after_wrap()_1]] - `calls` [EXTRACTED]
+- [[dot-test_window_capped_at_max_entries()_1]] - `calls` [EXTRACTED]
+- [[dot-total_appended()_1]] - `method` [EXTRACTED]
+- [[dot-verify_chain()_1]] - `method` [EXTRACTED]
+- [[Any_25]] - `uses` [INFERRED]
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `semantically_similar_to` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `shares_data_with` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `shares_data_with` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
@@ -78,9 +78,9 @@ tags:
 - [[TestHttpSseConnection]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
@@ -94,13 +94,13 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[audit()_1]] - `calls` [EXTRACTED]
+- [[audit()]] - `calls` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()_4]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPAuditTrail
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

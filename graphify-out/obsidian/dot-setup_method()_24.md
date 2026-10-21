@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L70"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[TestEnforcementWiring]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

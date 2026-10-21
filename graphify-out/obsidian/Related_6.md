@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "env_guard.py"
-location: "L106"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Related
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

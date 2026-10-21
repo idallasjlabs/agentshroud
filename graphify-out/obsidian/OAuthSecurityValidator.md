@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "_wrap_response()"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/_wrap_response
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_92]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_198]] - `method` [EXTRACTED]
 - [[dot-check_state_reuse()]] - `method` [EXTRACTED]
 - [[dot-create_consent_cookie()]] - `method` [EXTRACTED]
 - [[dot-record_state_used()]] - `method` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `semantically_similar_to` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -40,7 +40,7 @@ tags:
 - [[TestStateValidation]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[oauth_security.py]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 - [[validator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

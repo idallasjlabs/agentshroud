@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (3)"
 location: "L573"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_3
 ---
 
 # TestKeyLeakDetection
 
 ## Connections
 - [[dot-_make_vault_pipeline()]] - `method` [EXTRACTED]
-- [[dot-_passthrough_pii()_1]] - `method` [EXTRACTED]
+- [[dot-_passthrough_pii()]] - `method` [EXTRACTED]
 - [[dot-test_clean_response_passes_unchanged()_1]] - `method` [EXTRACTED]
 - [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `method` [EXTRACTED]
 - [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - `method` [EXTRACTED]
@@ -34,7 +34,7 @@ tags:
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

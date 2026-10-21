@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "A2AGovernanceProxy"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/A2AGovernanceProxy
 ---
 
 # hermes_tm()
 
 ## Connections
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `references` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

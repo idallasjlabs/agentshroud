@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[4.1 Remove Obsolete CodeDocs]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.2 Update README]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.3 Create CHANGELOG]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.4 Tag v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[4.5 Deploy to Production]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.1 Mark Type]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.2 The Mark]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.3 Mark Literal Element]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.4 Translation  Transliteration]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.5 Mark Description (for standard character mark)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 2 MARK INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
+- 1 edge to [[_COMMUNITY_dot-update]]
 
 ## Top bridge nodes
-- [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - degree 6, connects to 1 community
+- [[SECTION 2 MARK INFORMATION]] - degree 6, connects to 1 community

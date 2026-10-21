@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # Sandbox with separation of privilege enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strict_sandbox()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "rationale"
-community: "Report Delivery Format Instructions"
+community: "AgentTarget (5)"
 location: "L3-L10, L71-L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/AgentTarget_5
 ---
 
 # Dual-Surface Report Delivery (Email HTML / Telegram Markdown)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Report Delivery Format Instructions]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5

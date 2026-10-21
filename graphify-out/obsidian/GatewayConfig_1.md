@@ -1,19 +1,27 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L92"
+community: "MCPPermissionManager"
+location: "L91"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - graphify/INFERRED
+  - community/MCPPermissionManager
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[create_auth_dependency()]] - `references` [EXTRACTED]
-- [[get_auth_dependency()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[sanitizer()_4]] - `references` [EXTRACTED]
+- [[test_client()]] - `references` [EXTRACTED]
+- [[test_config()]] - `references` [EXTRACTED]
+- [[test_ledger()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

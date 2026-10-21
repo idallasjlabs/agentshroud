@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_raw_web_search_json_owner_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_web_search_log_called_with_correct_params()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_web_search_no_egress_filter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_web_search_query_truncation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborator chat raw web_search JSON produces a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner chat raw web_search JSON produces 'Switch to tool-capable model' message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Queries longer than 200 chars are truncated in the SOC log reason.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestWebSearchLog]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_trigger_web_search_log returns silently when egress_filter is None.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,15 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY__make_sanitizer()]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
 
 ## Top bridge nodes
-- [[TestWebSearchLog]] - degree 11, connects to 3 communities
-- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 2 communities
-- [[dot-test_raw_web_search_json_owner_message()]] - degree 4, connects to 2 communities
-- [[dot-test_web_search_log_called_with_correct_params()]] - degree 4, connects to 2 communities
-- [[dot-test_web_search_no_egress_filter()]] - degree 4, connects to 2 communities
+- [[TestSetMode]] - degree 14, connects to 4 communities

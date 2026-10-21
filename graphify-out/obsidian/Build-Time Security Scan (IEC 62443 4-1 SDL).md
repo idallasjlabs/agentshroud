@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "PipelineAction"
 location: "L840"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/PipelineAction
 ---
 
 # Build-Time Security Scan (IEC 62443 4-1 SDL)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[13. Compliance Alignment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

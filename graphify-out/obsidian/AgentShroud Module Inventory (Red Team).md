@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/module-inventory.md"
 type: "document"
-community: "MiddlewareManager (2)"
+community: "TeamsConfig"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/TeamsConfig
 ---
 
 # AgentShroud Module Inventory (Red Team)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory (Blue Team)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig

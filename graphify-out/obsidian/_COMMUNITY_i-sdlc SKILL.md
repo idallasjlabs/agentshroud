@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-sdlc SKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[Per-subfolder graphify-out avoids output clobbering]] - rationale - docker/config/hermes/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

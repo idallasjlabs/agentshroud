@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget (2)"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget_2
 ---
 
 # run_full()
 
 ## Connections
-- [[fail()_3]] - `calls` [EXTRACTED]
+- [[fail()_4]] - `calls` [EXTRACTED]
 - [[info()_1]] - `calls` [EXTRACTED]
-- [[pass()_2]] - `calls` [EXTRACTED]
+- [[pass()_3]] - `calls` [EXTRACTED]
 - [[run_bypass()]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 - [[run_chain()]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

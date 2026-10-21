@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Install warning filter once for uvicorn logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_install_uvicorn_warning_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

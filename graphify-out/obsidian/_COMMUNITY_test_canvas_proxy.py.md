@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # test_canvas_proxy.py
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Canvas Upstream Hostname Regression (v1.1.0 container rename)]] - rationale - gateway/tests/test_canvas_proxy.py
-- [[test_canvas_proxy.py]] - code - gateway/tests/test_canvas_proxy.py
-- [[test_default_upstream_is_current_container_name()]] - code - gateway/tests/test_canvas_proxy.py
-- [[test_env_override_takes_precedence()]] - code - gateway/tests/test_canvas_proxy.py
+- [[cleanup()]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[err()_1]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[log()_4]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[test_sunday_upgrade_head_guard.sh]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[test_sunday_upgrade_head_guard.sh script]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
 
 ## Live Query (requires Dataview plugin)
 

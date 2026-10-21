@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice"
+community: "AgentTarget"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/AgentTarget
 ---
 
 # Receives webhooks and routes them through the security pipeline.      In product
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebhookReceiver]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

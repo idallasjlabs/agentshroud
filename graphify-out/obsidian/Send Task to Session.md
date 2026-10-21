@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "tmux Session Control"
+community: "agentshroud-gateway"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/agentshroud-gateway
 ---
 
 # Send Task to Session
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Claude Code Session Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

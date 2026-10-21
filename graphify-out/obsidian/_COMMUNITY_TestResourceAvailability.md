@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[dot-test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Container Health]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Live System Status]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Unit Test Suite]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[5. Test Results]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 
 ## Top bridge nodes
-- [[TestResourceAvailability]] - degree 4, connects to 1 community
-- [[dot-test_full_compose()]] - degree 2, connects to 1 community
-- [[dot-test_unreadable_first_path_falls_through()]] - degree 2, connects to 1 community
+- [[5. Test Results]] - degree 4, connects to 1 community

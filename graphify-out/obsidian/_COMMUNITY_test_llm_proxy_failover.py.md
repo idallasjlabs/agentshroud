@@ -1,46 +1,49 @@
 ---
 type: community
-members: 33
+members: 36
 ---
 
 # test_llm_proxy_failover.py
 
-**Members:** 33 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[A healthy 200 message body must NOT be failed over.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[A real production incident a stalled chunked response from a local     model ba]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,     which]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[HTTP 200 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[LLMProxy_1]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_default_still_retries_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_interactive_header_skips_retries()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_slow_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_llm_proxy_failover.py]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_per_request_opt_out_header_skips_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_overloaded_529()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_overloaded_http200()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_flag_off_returns_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_ollama_down_no_false_notice()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_streaming_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_tools_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_ollama_unreachable_returns_original_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_openai_quota_dropin()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_normal_200_passthrough_untouched()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_post_retry_429_now_failovers()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[x-agentshroud-interactive 1 → the first 429 returns immediately (no     2s4s8]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[dot-__init__()_89]] - code - gateway/security/memory_integrity.py
+- [[dot-_load_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[dot-_load_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[dot-_save_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[dot-from_dict()_1]] - code - gateway/security/memory_integrity.py
+- [[dot-register_expected_write()]] - code - gateway/security/memory_integrity.py
+- [[dot-setup_method()_16]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_integrity_database_persistence()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
+- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
+- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
+- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[MemoryIntegrityConfig]] - code - gateway/security/memory_integrity.py
+- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_config.py
+- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
+- [[ModificationSource]] - code - gateway/security/memory_integrity.py
+- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
+- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
+- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
+- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Set up test environment._1]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
+- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test integrity database saves and loads correctly.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
+- [[memory_config.py]] - code - gateway/security/memory_config.py
+- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,10 +53,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 21 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 13 edges to [[_COMMUNITY_MiddlewareManager]]
+- 12 edges to [[_COMMUNITY_create_auth_dependency (2)_1]]
+- 5 edges to [[_COMMUNITY_cmd_start]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases) (2)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py (2)]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes
-- [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
-- [[make_proxy()_1]] - degree 24, connects to 1 community
-- [[LLMProxy_1]] - degree 2, connects to 1 community
+- [[MemoryIntegrityMonitor]] - degree 39, connects to 4 communities
+- [[MemoryIntegrityConfig_1]] - degree 16, connects to 4 communities
+- [[TestMemoryIntegrityMonitor]] - degree 17, connects to 3 communities
+- [[ModificationSource]] - degree 13, connects to 3 communities
+- [[FileIntegrityRecord]] - degree 7, connects to 2 communities

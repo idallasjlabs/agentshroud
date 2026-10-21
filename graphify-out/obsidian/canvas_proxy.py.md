@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "canvas_proxy_app"
+community: "Examples"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/Examples
 ---
 
 # canvas_proxy.py
@@ -20,4 +20,4 @@ tags:
 - [[_read_gateway_password()]] - `contains` [EXTRACTED]
 - [[canvas_proxy_app()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/code #graphify/EXTRACTED #community/Examples

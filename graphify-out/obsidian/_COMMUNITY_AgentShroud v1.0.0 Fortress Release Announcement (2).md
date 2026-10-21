@@ -1,22 +1,15 @@
 ---
 type: community
-members: 9
+members: 2
 ---
 
 # AgentShroud v1.0.0 Fortress Release Announcement (2)
 
-**Members:** 9 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[AgentShroud Security Overview v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Before & After Security Finding Remediation]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Memory Refresh Context]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Security Assessment v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Test Coverage Summary (Post-Remediation)]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[agentshroud-security-overview-v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v0.9.0  v1.0.0 Roadmap]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v0.9.0 — Production Hardening]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v1.0.0 — Zero-Trust Compute]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[dot-test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,4 +22,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
 
 ## Top bridge nodes
-- [[Security Assessment v0.8.0]] - degree 2, connects to 1 community
+- [[dot-test_fuzzy_matching()]] - degree 2, connects to 1 community

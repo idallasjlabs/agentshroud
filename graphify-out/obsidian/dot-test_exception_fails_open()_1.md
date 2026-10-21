@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (2)"
-location: "L890"
+community: "export_bot"
+location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_2
+  - community/export_bot
 ---
 
 # .test_exception_fails_open()
 
 ## Connections
-- [[TestFilterOutboundResponse]] - `method` [EXTRACTED]
+- [[TestScanToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_2
+#graphify/code #graphify/EXTRACTED #community/export_bot

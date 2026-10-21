@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "rationale"
-community: "ContextSegment"
+community: "ApprovalQueueConfig (4)"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig_4
 ---
 
 # Detect potential base64-encoded payloads in text.     Returns list of decoded st
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[detect_base64_payloads()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4

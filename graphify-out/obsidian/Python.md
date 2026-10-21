@@ -1,17 +1,14 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "DEVELOPER.md — Development Context for AgentShroud"
+community: "TestBenchmarkRegression (4)"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShroud
+  - community/TestBenchmarkRegression_4
 ---
 
 # Python
 
-## Connections
-- [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression_4

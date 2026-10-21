@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "test_soc_bots.py"
 location: "L416"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_soc_botspy
 ---
 
 # .test_get_role_invalid_string_defaults_to_readonly()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRoleResolver]] - `calls` [EXTRACTED]
 - [[TestGroupRoleProperties]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

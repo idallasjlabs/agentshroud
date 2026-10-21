@@ -8,36 +8,36 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[dot-generate_compose()]] - code - gateway/security/agent_isolation.py
-- [[dot-get()_2]] - code - gateway/security/agent_isolation.py
-- [[dot-list_agents()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_network_isolation()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
-- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
-- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Description_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Description_2]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Effect]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
-- [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
-- [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
-- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
-- [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Related Notes_24]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Related Notes_25]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Set In_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Set In_2]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Value_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Values_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
-- [[agent_isolation.py]] - code - gateway/security/agent_isolation.py
+- [[Apple Shortcuts Integration (iOSmacOS forwarding)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Archive Documentation Index]] - document - docs/archive/README.md
+- [[Attack Surface Analysis & Scenario Mitigations]] - rationale - docs/archive/SECURITY-AUDIT.md
+- [[Blast Radius Limitation (burner account + $40)]] - concept - docs/archive/ANNOUNCEMENT.md
+- [[CVE-2026-25253 (WebSocket origin hijacking → RCE, CVSS 9.8)]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[ClawHub Malicious Skills Supply Chain Attack (900 skills, ~20%)]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[Compliance Alignment (NIST CSF, CIS Docker Benchmark L2, OWASP)]] - concept - docs/archive/SECURITY-AUDIT.md
+- [[Control UI → Gateway WebSocket Connection Procedure]] - document - docs/archive/CONNECTION-GUIDE.md
+- [[Disconnected (1006) WebSocket Failure Mode]] - concept - docs/archive/CONNECTION-GUIDE.md
+- [[February 14, 2026 Documentation Session Log]] - document - docs/archive/SESSION-SUMMARY.md
+- [[Five Isolation Layers (network, identity, staging, hardening, depth)]] - rationale - docs/archive/README.md
+- [[Gmail Smart Filtering (ASKREMEMBERTASK labels)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Hardware Security Key Support (WebAuthn  YubiKey)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Information Valve (user-controlled manual forwarding)]] - concept - docs/archive/ANNOUNCEMENT.md
+- [[Internet-Only Isolation (no LAN, no VPN)]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[Mass Exposure of 42,900+ OpenClaw Instances]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[Network Isolation Architecture (internet-only, RFC1918 blocked)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[One Shroud Over Every Wire (founding mantra)]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[PayPal Integration with Per-Transaction Approval]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Residual Risks We Accept (API key exposure, host compromise)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[Self-Assessed 1010 Maximum Security Score]] - concept - docs/archive/SECURITY-AUDIT.md
+- [[Separate Digital Environment Philosophy]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[Technical Decisions & Trade-offs (why separate identity, internet-only, localhost bind, manual skill approval)]] - rationale - docs/archive/SESSION-SUMMARY.md
+- [[Telegram Quick Forwarding Commands]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[The Lethal Trifecta (private data + untrusted content + egress with memory)]] - concept - docs/archive/SECURITY-ANALYSIS.md
+- [[Threat Model & Attack Surface (post-RCE blast radius)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[Trust Through Isolation (assume breach, limit the take)]] - rationale - docs/archive/ANNOUNCEMENT.md
+- [[Unresolved Control UI Connection Issue]] - concept - docs/archive/SESSION-SUMMARY.md
+- [[What We Don't Protect Against (keys, social engineering, zero-days)]] - rationale - docs/archive/SECURITY.md
+- [[setup-wizard.html One-Click Deploy Wizard]] - concept - docs/archive/ANNOUNCEMENT.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,18 +45,3 @@ members: 30
 TABLE source_file, type FROM #community/AgentRegistry_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (2)]]
-
-## Top bridge nodes
-- [[agent_isolation.py]] - degree 11, connects to 4 communities
-- [[dot-get()_2]] - degree 7, connects to 1 community
-- [[dot-verify_shared_nothing()]] - degree 7, connects to 1 community
-- [[dot-list_agents()]] - degree 6, connects to 1 community
-- [[dot-verify_network_isolation()]] - degree 6, connects to 1 community

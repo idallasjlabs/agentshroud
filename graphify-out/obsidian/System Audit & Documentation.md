@@ -1,19 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit & Documentation"
+community: "Mode A — Single task (6)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation
+  - community/Mode_A__Single_task_6
 ---
 
 # System Audit & Documentation
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sadSKILL]] - `contains` [EXTRACTED]
 - [[SECTION 1 — SYSTEM OVERVIEW (Plain English)]] - `contains` [EXTRACTED]
 - [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE]] - `contains` [EXTRACTED]
 - [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX]] - `contains` [EXTRACTED]
@@ -27,5 +25,7 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sadSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_6

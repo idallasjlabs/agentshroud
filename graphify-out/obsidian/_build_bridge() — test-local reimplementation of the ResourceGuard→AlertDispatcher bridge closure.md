@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # _build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

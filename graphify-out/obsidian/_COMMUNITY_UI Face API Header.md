@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[UI Face API Header]] - code - firmware/voice-terminal/main/ui_face.h
+- [[docsREADME.md — documentation structure index and project phase status]] - document - docs/README.md
 
 ## Live Query (requires Dataview plugin)
 

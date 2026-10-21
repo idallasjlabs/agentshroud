@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "MCPInspector"
-location: "L133"
+community: "Job details"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/Job_details
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/Job_details

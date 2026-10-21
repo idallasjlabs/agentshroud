@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
-- [[buildSummary()]] - code - gateway/web/templates/installer.html
-- [[startInstall()]] - code - gateway/web/templates/installer.html
+- [[agentshroud-secrets.sh script]] - code - docker/bots/hermes/agentshroud-secrets.sh
+- [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - code - docker/bots/hermes/agentshroud-secrets.sh
+- [[inject()]] - code - docker/bots/hermes/agentshroud-secrets.sh
 
 ## Live Query (requires Dataview plugin)
 

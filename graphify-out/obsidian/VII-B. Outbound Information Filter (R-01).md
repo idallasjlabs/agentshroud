@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "MCP Doctor (MCPM-DOCTOR)"
+community: "TestSpawnAuthorization"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Doctor_MCPM-DOCTOR
+  - community/TestSpawnAuthorization
 ---
 
 # VII-B. Outbound Information Filter (R-01)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VII. v0.8.0 Remediation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/TestSpawnAuthorization

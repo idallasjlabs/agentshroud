@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "MCPPermissionManager (6)"
-location: "L195"
+community: "KillSwitchMonitor"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_6
+  - community/KillSwitchMonitor
 ---
 
 # .test_credit_card_detected()
 
 ## Connections
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[TestPIIScanning]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_6
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

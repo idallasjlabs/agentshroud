@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "GroupConfig"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/GroupConfig
 ---
 
 # _bot_service_names() must use each bot's real container name, not a     hardcode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bot_service_names_uses_resolved_container_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/GroupConfig

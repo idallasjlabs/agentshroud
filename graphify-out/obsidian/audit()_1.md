@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/web/management.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L109"
+community: "EgressFilterConfig (2) (2)"
+location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/EgressFilterConfig_2_2
 ---
 
 # audit()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[Serve the audit log page.]] - `rationale_for` [EXTRACTED]
+- [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

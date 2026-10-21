@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "test_dns_canvas_coverage.py"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
 location: "L592"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # Stands in for httpx.AsyncClient; records request kwargs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeAsyncClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

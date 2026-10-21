@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[codex-review.sh]] - code - scripts/codex-review.sh
-- [[codex-review.sh script]] - code - scripts/codex-review.sh
+- [[plan_1]] - document - docs/planning/redteam/plan.md
+- [[plan]] - document - docs/planning/redteam/plan.md
 
 ## Live Query (requires Dataview plugin)
 

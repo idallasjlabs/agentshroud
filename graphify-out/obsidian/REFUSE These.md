@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
 ---
 
 # REFUSE These
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2

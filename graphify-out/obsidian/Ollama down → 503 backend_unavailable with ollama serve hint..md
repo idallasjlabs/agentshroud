@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L663"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # Ollama down → 503 backend_unavailable with ollama serve hint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ollama_connect_failure_returns_structured_503()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

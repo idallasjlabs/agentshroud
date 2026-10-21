@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2AMethod"
+community: "Security Module Inventory"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Security_Module_Inventory
 ---
 
 # _canonicalize_ip_literal()
@@ -19,4 +19,4 @@ tags:
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Inventory

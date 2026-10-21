@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "rationale"
-community: "AgentTarget (5)"
+community: "_w"
 location: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh:719"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/_w
 ---
 
 # Strip comments before grepping for regressions
@@ -15,4 +15,4 @@ tags:
 - [[_bounce()]] - `rationale_for` [EXTRACTED]
 - [[_render_build()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/rationale #graphify/EXTRACTED #community/_w

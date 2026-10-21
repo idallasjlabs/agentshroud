@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "lifespan()"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/lifespan
 ---
 
 # health_check()
@@ -15,4 +15,4 @@ tags:
 - [[Minimal health check endpoint — no authentication required.      Returns only ba]] - `rationale_for` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/lifespan

@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-setup_method()_37]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_adblock_format()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_adblock_format_invalid_chars()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_blank_whitespace()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_comment_line()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_domain_only()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_empty_line()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_hosts_format_localhost()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_hosts_format_localhost_skip()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_hosts_format_zero()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_inline_comment_stripped()]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-test_invalid_no_dot()]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestParseHostsLine]] - code - gateway/tests/test_dns_blocklist.py
-- [[parse_hosts_line() — hosts format, adblock format, comments, empty, localhost.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[Configuration  Environment Variables_22]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Function Details_40]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Key Classes  Functions_42]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[LogSanitizer._sanitize_text(text)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[LogSanitizer.filter(record)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Pattern Taxonomy]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Purpose_144]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Responsibilities_44]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[get_sanitizer_stats()]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[install_log_sanitizer()]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[log_sanitizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[log_sanitizer.py]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +29,3 @@ members: 14
 TABLE source_file, type FROM #community/TestParseHostsLine
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_DNSBlocklist]]
-
-## Top bridge nodes
-- [[TestParseHostsLine]] - degree 15, connects to 1 community
-- [[dot-setup_method()_37]] - degree 2, connects to 1 community

@@ -1,23 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Architecture"
-location: "L28"
+community: "Skill: Security Review (SEC) (2)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Skill_Security_Review_SEC_2
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Design Philosophy_1]] - `contains` [EXTRACTED]
-- [[F. Infrastructure]] - `contains` [EXTRACTED]
-- [[Infrastructure_10]] - `contains` [EXTRACTED]
-- [[Multi-Platform Support]] - `contains` [EXTRACTED]
-- [[Security Modules]] - `contains` [EXTRACTED]
-- [[The Security Pipeline]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2

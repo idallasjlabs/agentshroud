@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "SlackSocketClient"
 location: "L2080"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/SlackSocketClient
 ---
 
 # .test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()
@@ -21,7 +21,7 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_4]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_40]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_70]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

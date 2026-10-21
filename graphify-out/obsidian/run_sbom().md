@@ -1,19 +1,19 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "docker/scripts/security-scan.sh"
+community: "Regression guard (2026-08-30): the report scanned :latest tags while deploys…"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/scripts/security-scansh
+  - community/Regression_guard_2026-08-30_the_report_scanned_latest_tags_while_deploys
 ---
 
 # run_sbom()
 
 ## Connections
 - [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[log()_10]] - `calls` [EXTRACTED]
+- [[log()_11]] - `calls` [EXTRACTED]
 - [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/Regression_guard_2026-08-30_the_report_scanned_latest_tags_while_deploys

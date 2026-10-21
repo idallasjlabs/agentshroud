@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[patch-anthropic-sdk.sh]] - code - docker/scripts/patch-anthropic-sdk.sh
-- [[patch-anthropic-sdk.sh script]] - code - docker/scripts/patch-anthropic-sdk.sh
-- [[patch-telegram-sdk.sh]] - code - docker/scripts/patch-telegram-sdk.sh
-- [[patch-telegram-sdk.sh script]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[8D Root Cause Analysis README (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[8D Root Cause Analysis SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Data Validation (DATA-VAL) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,9 @@ members: 4
 TABLE source_file, type FROM #community/patch-anthropic-sdksh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+
+## Top bridge nodes
+- [[8D Root Cause Analysis SKILL (OpenClaw)]] - degree 3, connects to 1 community

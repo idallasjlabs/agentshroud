@@ -1,40 +1,42 @@
 ---
 type: community
-members: 27
+members: 29
 ---
 
 # First Time Setup
 
-**Members:** 27 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Prerequisites_3]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Related Notes_32]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Related Notes_33]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Startup Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[1. GitHub MCP_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[10. Troubleshooting]] - document - firmware/voice-terminal/SETUP.md
+- [[2. Atlassian MCP (Jira + Confluence)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[3. AWS API MCP_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[AWS Token expired (SSO)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Issues]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Authentication Issues_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Available MCP Servers_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Boot loop — abort() in i2c.c before app_main]] - document - firmware/voice-terminal/SETUP.md
+- [[Button component v4.x API error at build time]] - document - firmware/voice-terminal/SETUP.md
+- [[Common Errors]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Common Errors_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[First reply is slow (~5-7 s extra thinking)]] - document - firmware/voice-terminal/SETUP.md
+- [[GitHub Bad credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[LVGL compile error — undefined symbol `lv_screen_active` or `.rotate` field]] - document - firmware/voice-terminal/SETUP.md
+- [[MCP Troubleshooting]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
+- [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
+- [[Role_27]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Troubleshooting_17]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
+- [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
+- [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
+- [[hermesskillsi-mcpmSKILL]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[sdkconfig.defaults SSID change doesn't take]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,11 +46,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Error Index]]
-- 1 edge to [[_COMMUNITY_Slack Channel Setup]]
-- 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
+- 2 edges to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
+- 1 edge to [[_COMMUNITY_Sprint Cadence Decision]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
 
 ## Top bridge nodes
-- [[Restart Procedure_1]] - degree 3, connects to 2 communities
-- [[First Time Setup_1]] - degree 12, connects to 1 community
-- [[Startup Errors]] - degree 4, connects to 1 community
+- [[10. Troubleshooting]] - degree 23, connects to 3 communities
+- [[Troubleshooting_17]] - degree 6, connects to 1 community
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - degree 6, connects to 1 community

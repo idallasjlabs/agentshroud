@@ -1,0 +1,47 @@
+---
+type: community
+members: 30
+---
+
+# Path (2)
+
+**Members:** 30 nodes
+
+## Members
+- [[dot-__init__()_110]] - code - src/interfaces/text_control_center.py
+- [[dot-clear_screen()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_approvals()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_box()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_dashboard()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_kill_switch()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_log()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_modules()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
+- [[dot-get_auth()]] - code - src/interfaces/text_control_center.py
+- [[dot-get_key()]] - code - src/interfaces/text_control_center.py
+- [[dot-make_api_request()]] - code - src/interfaces/text_control_center.py
+- [[dot-run()_3]] - code - src/interfaces/text_control_center.py
+- [[ANSI]] - code - src/interfaces/text_control_center.py
+- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
+- [[ControlCenter]] - code - src/interfaces/text_control_center.py
+- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
+- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
+- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
+- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
+- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
+- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
+- [[main()_17]] - code - src/interfaces/text_control_center.py
+- [[start-control-center]] - code - scripts/start-control-center
+- [[text_control_center.py_1]] - code - src/interfaces/text_control_center.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Path_2
+SORT file.name ASC
+```

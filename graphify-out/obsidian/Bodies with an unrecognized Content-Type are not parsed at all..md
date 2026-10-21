@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "AsyncMock (2)"
+community: "api.py (2)"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/apipy_2
 ---
 
 # Bodies with an unrecognized Content-Type are not parsed at all.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unknown_content_type_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

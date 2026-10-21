@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Collaborator workspace SOUL.md (Isaiah persona)
@@ -16,4 +16,4 @@ tags:
 - [[Goal any agent wrappable with gateway protection]] - `references` [EXTRACTED]
 - [[Proxy-layer inversion pattern]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/document #graphify/EXTRACTED #community/_wrap_response_2

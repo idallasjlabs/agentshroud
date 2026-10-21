@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Identity Reference - AgentShroud System"
+community: "05-behavior.md"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_Reference_-_AgentShroud_System
+  - community/05-behaviormd
 ---
 
 # 💬 Communication Flow
@@ -16,4 +16,4 @@ tags:
 - [[Via Control UI_1]] - `contains` [EXTRACTED]
 - [[Via Telegram_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System
+#graphify/document #graphify/EXTRACTED #community/05-behaviormd

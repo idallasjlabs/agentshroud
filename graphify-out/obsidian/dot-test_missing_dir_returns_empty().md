@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter (17)"
+community: "All Dependencies.md (3)"
 location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_17
+  - community/All_Dependenciesmd_3
 ---
 
 # .test_missing_dir_returns_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrivyImageSummaries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_17
+#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_3

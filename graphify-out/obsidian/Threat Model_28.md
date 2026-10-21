@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Threat Model"
+community: "_llm_init_agent_reference_paths()"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model
+  - community/_llm_init_agent_reference_paths
 ---
 
 # Threat Model
@@ -20,4 +20,4 @@ tags:
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model
+#graphify/document #graphify/EXTRACTED #community/_llm_init_agent_reference_paths

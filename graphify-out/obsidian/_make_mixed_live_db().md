@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "purge_low_value_events"
+community: "🟢 INFO (nice to have) (2)"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/_INFO_nice_to_have_2
 ---
 
 # _make_mixed_live_db()
@@ -19,4 +19,4 @@ tags:
 - [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - `rationale_for` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have_2

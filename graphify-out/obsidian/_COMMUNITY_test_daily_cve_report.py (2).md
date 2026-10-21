@@ -1,34 +1,43 @@
 ---
 type: community
-members: 21
+members: 30
 ---
 
 # test_daily_cve_report.py (2)
 
-**Members:** 21 nodes
+**Members:** 30 nodes
 
 ## Members
-- [[dot-test_affected_packages_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_contains_cve_ids()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_contains_header()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_contains_package_names()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_contains_severity_counts()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_error_report_shows_error_message()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_fixed_version_shown()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_returns_summary_without_token()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_sends_telegram_on_success()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_status_clean_when_no_critical_high()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_status_critical_when_critical_present()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_total_vulnerability_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_trivy_error_still_sends_error_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_zero_count_severity_omitted()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Build a minimal parsed Trivy report.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - rationale - gateway/security/daily_cve_report.py
-- [[TestFormatCveReport]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReport]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_error_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[format_cve_report()]] - code - gateway/security/daily_cve_report.py
+- [[dot-test_advisory_without_a_fixed_in_is_not_claimed_remediable()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_downstream_build_suffix_on_the_pin_is_ignored()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_empty_registry_is_a_no_op_plan()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_max_target_caps_the_bump()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_no_upgrade_needed_yields_no_target()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_only_under_review_entries_are_considered()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_picks_minimum_version_clearing_every_remediable_advisory()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_plan_is_serialisable_for_the_unattended_audit_trail()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_real_registry_plan_is_internally_consistent()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_separates_advisories_already_fixed_at_the_current_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_unparseable_fixed_in_is_treated_as_not_remediable()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[2026.7.1-2' is AgentShroud's own rebuild counter, not upstream semver.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[Already-triaged entries are somebody's assessed verdict — a version         bump]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[An operator may cap how far forward an unattended job may jump.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[Minimal registry entry shaped like agent_cve_registry.py's dicts.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[No upstream fix means no version bump can honestly clear it.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[Sanity-check the planner against the real committed registry.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[TestPlanAgainstRealRegistry]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[TestPlanRemediation]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[Tests for scriptsauto_remediate_cves.py — automated CVE remediation planning.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[The planner decides WHAT bump remediates WHICH advisories.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[Work out the minimum version bump that remediates the most advisories.      Only]] - rationale - scripts/auto_remediate_cves.py
+- [[_entry()_1]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[fixed_in = pin means the vulnerable code is not present at all.          These]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[plan_remediation]] - code - scripts/auto_remediate_cves.py
+- [[plan_remediation()]] - code - scripts/auto_remediate_cves.py
+- [[read_pin]] - code - scripts/auto_remediate_cves.py
+- [[test_auto_remediate_cves.py]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[test_auto_remediate_cves.py (CVE remediation planner tests)]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[write_pin]] - code - scripts/auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,12 +47,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
+- 9 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 2 edges to [[_COMMUNITY_Path (3)]]
 
 ## Top bridge nodes
-- [[format_cve_report()]] - degree 17, connects to 2 communities
-- [[_make_report()]] - degree 15, connects to 1 community
-- [[TestFormatCveReport]] - degree 12, connects to 1 community
-- [[TestRunAndSendCveReport]] - degree 4, connects to 1 community
-- [[_make_error_report()]] - degree 3, connects to 1 community
+- [[plan_remediation()]] - degree 19, connects to 2 communities
+- [[test_auto_remediate_cves.py]] - degree 9, connects to 2 communities
+- [[TestPlanRemediation]] - degree 13, connects to 1 community
+- [[TestPlanAgainstRealRegistry]] - degree 4, connects to 1 community
+- [[dot-test_real_registry_plan_is_internally_consistent()]] - degree 3, connects to 1 community

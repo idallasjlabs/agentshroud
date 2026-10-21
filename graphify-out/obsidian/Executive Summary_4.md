@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
-location: "L10"
+community: "test_collaborator_tracker.py (2) (2)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/test_collaborator_trackerpy_2_2
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_2

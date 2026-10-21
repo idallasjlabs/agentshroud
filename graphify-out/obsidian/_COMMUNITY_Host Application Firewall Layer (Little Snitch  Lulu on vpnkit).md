@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Host Application Firewall Layer (Little Snitch  Lulu on vpnkit)]] - rationale - docs/archive/SECURITY.md
-- [[In-Container iptables Firewall (container-firewall.sh, needs privileges)]] - rationale - docs/archive/SECURITY.md
+- [[dot-agentsskillsi-devsecopsSKILL]] - document - .agents/skills/i-devsecops/SKILL.md
+- [[Skill devsecops]] - document - .agents/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

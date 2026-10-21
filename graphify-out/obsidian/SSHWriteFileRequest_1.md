@@ -1,21 +1,16 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: ""
 type: "code"
-community: "All Dependencies.md (4)"
-location: "L261"
+community: "TrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_4
+  - community/TrustConfig
 ---
 
 # SSHWriteFileRequest
 
 ## Connections
-- [[dot-path_not_empty()]] - `method` [EXTRACTED]
-- [[dot-validate_base64()]] - `method` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
-- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[ssh_write_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_4
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

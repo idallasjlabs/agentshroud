@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # .test_tree_flags_on_medium()
@@ -15,4 +15,4 @@ tags:
 - [[SkillGuard]] - `references` [EXTRACTED]
 - [[TestAggregation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "SessionManager"
-location: "L181"
+community: "_make_proxy"
+location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/_make_proxy
 ---
 
 # .cleanup_expired()
 
 ## Connections
-- [[dot-create_session()]] - `calls` [EXTRACTED]
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[dot-_save()]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[Remove expired delegations, persist result. Returns count removed.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

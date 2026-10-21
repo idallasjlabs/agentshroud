@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "AgentShroud Gateway (holds 1Password service account)"
+community: ".test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_holds_1Password_service_account
+  - community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
 ---
 
 # Trust Zone 1 — Gateway (Trusted Enforcer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Gateway (holds 1Password service account)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_account
+#graphify/concept #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message

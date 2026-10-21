@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.h"
 type: "code"
-community: "main/audio.h"
+community: "test_wakeword_state/stubs/esp_log.h"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main/audioh
+  - community/test_wakeword_state/stubs/esp_logh
 ---
 
 # main/audio.h
 
-#graphify/code #graphify/EXTRACTED #community/main/audioh
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/esp_logh

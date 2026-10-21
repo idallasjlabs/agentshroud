@@ -1,30 +1,42 @@
 ---
 type: community
-members: 17
+members: 29
 ---
 
 # GSDE&G Skills Reference (2)
 
-**Members:** 17 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[1. Branch Creation_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[2. Development (TDD)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[3. Production Testing (if needed)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[4. Pull Request_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[5. Pre-Merge_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Common Commands Quick Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Contacts_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Procedures_3]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[GSDE&G Skills Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[GitHub Workflow Integration_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[P1 Incident Response_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Production Testing Guidelines_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Quick Reference When to Use Each Skill_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Related Documentation]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Skill Directory Structure_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Skill Invocation Examples_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[openclawskillsi-referenceSKILLS_GUIDE]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Dead-code  unwired security modules surfaced (No-Security-Theater flags)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Executive Summary_5]] - document - docs/security/ws-e-audit-v1.2.md
+- [[IEC 62443 risk justification for ACCEPTED items]] - document - docs/security/ws-e-audit-v1.2.md
+- [[MFA note]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-1 · Prompt injection — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-10 · Subagent  delegation privilege escalation — BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-11 · MCP-server compromise — BLOCKED-if-configured  dormant-by-default]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-12 · Skill supply-chain — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-2 · Inbound encoding bypass — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-3 · Cross-collaborator data access — BLOCKED (isolation)  gated by RT-6]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-4 · Cross-group access — data BLOCKED  group tool-ACL UNWIRED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-5 · Shared-memory write poisoning — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-5 — Shared-Memory Write Poisoning (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-6 · Owner-identity spoofing via `forward` body — EXPLOITABLE → FIXED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-7 · Egress exfiltration — BLOCKED in practice  pipeline hook is dead code + residual bypass]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-8 · Multi-bot lateral movement (trust ledger) — EXPLOITABLE (inert)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-9 · Approval-queue bypass — PARTIALLY EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Risk Callouts]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Verification Steps]] - document - docs/security/ws-e-audit-v1.2.md
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - code - gateway/proxy/pipeline.py
+- [[rbac.py (5-level RBAC hierarchy)]] - code - gateway/security/rbac.py
+- [[ws-e-audit-v1.2]] - document - docs/security/ws-e-audit-v1.2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,8 +46,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference]]
-- 1 edge to [[_COMMUNITY_Skills by Category (2)]]
+- 5 edges to [[_COMMUNITY_ApprovalHardening]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[GSDE&G Skills Reference_1]] - degree 11, connects to 2 communities
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 2 communities
+- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "api.py (2)"
+community: "MCPPolicyEngine"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/MCPPolicyEngine
 ---
 
 # Return warning messages for missing security features.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[warn_missing_features()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

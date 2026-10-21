@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "AgentShroud Operations Cheat Sheet"
+community: "browser-extension/manifest.json"
 location: "L355-371"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/browser-extension/manifestjson
 ---
 
 # Kill Switch (Emergency) commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/concept #graphify/EXTRACTED #community/browser-extension/manifestjson

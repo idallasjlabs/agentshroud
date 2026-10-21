@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "KillSwitchMonitor (3)"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/KillSwitchMonitor_3
 ---
 
 # ._compute_content_hash()
@@ -16,4 +16,4 @@ tags:
 - [[Derive content_hash from the canonical content fields.          Only computed wh]] - `rationale_for` [EXTRACTED]
 - [[_compute_hash()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

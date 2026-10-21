@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "dashboard_bridge.py"
+community: "test_cron_jobs_prompts.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/test_cron_jobs_promptspy
 ---
 
 # docker_proxy_relay.py
@@ -15,6 +15,6 @@ tags:
 - [[_handle()_3]] - `contains` [EXTRACTED]
 - [[_pump()]] - `contains` [EXTRACTED]
 - [[dashboard_bridge.py]] - `semantically_similar_to` [EXTRACTED]
-- [[main()_27]] - `contains` [EXTRACTED]
+- [[main()_29]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

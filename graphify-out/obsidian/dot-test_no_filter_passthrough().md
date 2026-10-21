@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (2)"
+community: "export_bot"
 location: "L873"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_2
+  - community/export_bot
 ---
 
 # .test_no_filter_passthrough()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFilterOutboundResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_2
+#graphify/code #graphify/EXTRACTED #community/export_bot

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # Detect and block prompt injection attempts.
 
 ## Connections
-- [[PromptGuard_1]] - `rationale_for` [EXTRACTED]
+- [[PromptGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

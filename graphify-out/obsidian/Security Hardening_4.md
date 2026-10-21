@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L475"
+community: "mcp_audit.py"
+location: "L417"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/mcp_auditpy
 ---
 
 # Security Hardening
 
 ## Connections
-- [[Production Hardening]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

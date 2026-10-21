@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Implement gateway-level outbound information filtering module"
 location: "L724"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Updating
@@ -18,4 +18,4 @@ tags:
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
 - [[Update OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

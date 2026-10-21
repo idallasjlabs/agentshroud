@@ -1,39 +1,41 @@
 ---
 type: community
-members: 26
+members: 28
 ---
 
 # AgentShroud Setup Guide
 
-**Members:** 26 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[1Password Authentication Failed]] - document - docs/setup/setup-guide.md
-- [[1Password Integration_1]] - document - docs/setup/setup-guide.md
-- [[AgentShroud Setup Guide]] - document - docs/setup/setup-guide.md
-- [[Audit Trail Verification]] - document - docs/setup/setup-guide.md
-- [[Configure AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Container Unhealthy_1]] - document - docs/setup/setup-guide.md
-- [[Create a Service Account]] - document - docs/setup/setup-guide.md
-- [[Dashboard Security Events]] - document - docs/setup/setup-guide.md
-- [[Gmail Connection Issues]] - document - docs/setup/setup-guide.md
-- [[Health Check Verification]] - document - docs/setup/setup-guide.md
-- [[Important Notes_1]] - document - docs/setup/setup-guide.md
-- [[Optional Requirements]] - document - docs/setup/setup-guide.md
-- [[Performance Issues]] - document - docs/setup/setup-guide.md
-- [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_5]] - document - docs/setup/setup-guide.md
-- [[Production Checklist]] - document - docs/setup/setup-guide.md
-- [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
-- [[Security Testing]] - document - docs/setup/setup-guide.md
-- [[Security Verification]] - document - docs/setup/setup-guide.md
-- [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
-- [[Supported Platforms]] - document - docs/setup/setup-guide.md
-- [[System Requirements]] - document - docs/setup/setup-guide.md
-- [[Tests Failing_1]] - document - docs/setup/setup-guide.md
-- [[Troubleshooting_26]] - document - docs/setup/setup-guide.md
-- [[What is AgentShroud_1]] - document - docs/setup/setup-guide.md
-- [[What's Next]] - document - docs/setup/setup-guide.md
+- [[dot-filter_response()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-scan_command_injection()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-setup_method()_21]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_clean_response_passes_through()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_clean_text_passes()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_empty_text_returns_clean()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_file_path_removal()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_function_calls_xml_removal()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_python_eval_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_quick_function_calls_filter()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_shell_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[CVE-2026-34425 — Preflight Validation Bypass (Shell-Bleed)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Filter outbound response content to remove sensitive information.          Args]] - rationale - gateway/security/xml_leak_filter.py
+- [[FilterResult_1]] - code - gateway/security/xml_leak_filter.py
+- [[Result from XML leak filtering.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Scan outbound text for command  code injection patterns.          Does NOT modi]] - rationale - gateway/security/xml_leak_filter.py
+- [[Set up test fixtures._3]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test cases for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test removal of file paths from responses.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test removal of function call XML blocks.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test that clean responses pass through unchanged.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test the performance-optimized function calls only filter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[TestCommandInjectionScan]] - code - gateway/tests/test_xml_leak_filter.py
+- [[TestXMLLeakFilter]] - code - gateway/tests/test_xml_leak_filter.py
+- [[test_xml_leak_filter.py]] - code - gateway/tests/test_xml_leak_filter.py
+- [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,10 +45,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Step-by-Step Installation]]
-- 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_Update AgentShroud]]
+- 9 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 
 ## Top bridge nodes
-- [[AgentShroud Setup Guide]] - degree 12, connects to 4 communities
+- [[xml_leak_filter.py]] - degree 4, connects to 2 communities
+- [[TestCommandInjectionScan]] - degree 9, connects to 1 community
+- [[TestXMLLeakFilter]] - degree 9, connects to 1 community
+- [[FilterResult_1]] - degree 8, connects to 1 community
+- [[test_xml_leak_filter.py]] - degree 4, connects to 1 community

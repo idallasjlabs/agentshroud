@@ -1,24 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "web_proxy.py"
-location: "L10"
+community: "Use Cases"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/Use_Cases
 ---
 
-# web_proxy.py
+# web_proxy.py.md
 
 ## Connections
-- [[Configuration  Environment Variables_25]] - `contains` [EXTRACTED]
-- [[Function Details_45]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_47]] - `contains` [EXTRACTED]
-- [[Purpose_175]] - `contains` [EXTRACTED]
-- [[Related_51]] - `contains` [EXTRACTED]
-- [[Responsibilities_49]] - `contains` [EXTRACTED]
-- [[Security Check Order (check_request)]] - `contains` [EXTRACTED]
-- [[web_proxy.py]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_proxypy
+#graphify/document #graphify/EXTRACTED #community/Use_Cases

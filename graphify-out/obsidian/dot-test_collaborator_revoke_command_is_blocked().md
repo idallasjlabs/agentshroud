@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "ApprovalQueueConfig (2)"
 location: "L1275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_collaborator_revoke_command_is_blocked()
@@ -21,4 +21,4 @@ tags:
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[fake_notify()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

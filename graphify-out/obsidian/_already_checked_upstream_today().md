@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L498"
+community: "sync-cve-registry.py"
+location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/sync-cve-registrypy
 ---
 
 # _already_checked_upstream_today()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Check if the upstream CVE watch already ran today (disk-based).]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[datetime_6]] - `references` [EXTRACTED]
+- [[datetime_8]] - `references` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

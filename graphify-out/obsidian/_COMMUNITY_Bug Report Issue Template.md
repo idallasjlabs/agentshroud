@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Bug Report Issue Template]] - document - .github/ISSUE_TEMPLATE/bug_report.yml
+- [[Drift Detection in Pipeline]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 

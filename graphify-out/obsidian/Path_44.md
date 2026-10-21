@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L66"
+community: "ESP32-S3-BOX-3 Voice Terminal"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

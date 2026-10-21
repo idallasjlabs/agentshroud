@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-gitops/SKILL.md"
 type: "document"
-community: "i-gitops SKILL (stub)"
+community: "Gemini Semantic Extraction Backend"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-gitops_SKILL_stub
+  - community/Gemini_Semantic_Extraction_Backend
 ---
 
 # i-gitops SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/i-gitops_SKILL_stub
+#graphify/document #graphify/EXTRACTED #community/Gemini_Semantic_Extraction_Backend

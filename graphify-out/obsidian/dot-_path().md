@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ReportStore"
+community: "test_dashboard.py"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/test_dashboardpy
 ---
 
 # ._path()
@@ -18,4 +18,4 @@ tags:
 - [[ReportStore]] - `method` [EXTRACTED]
 - [[_intel_store()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

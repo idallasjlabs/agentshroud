@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Gemini Semantic Extraction Backend]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

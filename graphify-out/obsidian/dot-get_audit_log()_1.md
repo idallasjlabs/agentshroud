@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SecureBrowser"
-location: "L421"
+community: "asyncio"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/asyncio
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[Return complete audit log]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/asyncio

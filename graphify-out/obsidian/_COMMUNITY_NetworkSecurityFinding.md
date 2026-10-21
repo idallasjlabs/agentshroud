@@ -1,84 +1,89 @@
 ---
 type: community
-members: 71
+members: 76
 ---
 
 # NetworkSecurityFinding
 
-**Members:** 71 nodes
+**Members:** 76 nodes
 
 ## Members
-- [[dot-_parse_service_network_config()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_container_runtime_config()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_dns_configuration()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_network_definitions()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_network_modes()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_port_exposure()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_privileged_containers()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_service_network_isolation()]] - code - gateway/security/network_validator.py
-- [[dot-detect_configuration_drift()]] - code - gateway/security/network_validator.py
-- [[dot-export_report()]] - code - gateway/security/network_validator.py
-- [[dot-get_security_report()]] - code - gateway/security/network_validator.py
-- [[dot-setup_method()_35]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_clean_compose_yields_zero_critical()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_get_security_report_shape()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-test_network_security_finding_structure()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_privileged_service_is_critical()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_invalid_file()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_missing_internal_network()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_multiple_violations()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validator_knows_the_two_real_networks()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-validate_docker_compose_config()]] - code - gateway/security/network_validator.py
-- [[dot-validate_runtime_configuration()]] - code - gateway/security/network_validator.py
-- [[A network security finding.]] - rationale - gateway/security/network_validator.py
-- [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[Any_72]] - code - gateway/security/network_validator.py
-- [[Container network configuration.]] - rationale - gateway/security/network_validator.py
-- [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
-- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
-- [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
-- [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
-- [[NetworkConfiguration]] - code - gateway/security/network_validator.py
-- [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
-- [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
-- [[Path_55]] - code - gateway/tests/test_network_validator_gate.py
-- [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test handling of invalidnon-existent files.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that OpenClaw container isolation is validated.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that a valid docker-compose configuration passes.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that gateway service network bridging is validated.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that host network mode is flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[TestExpectedNetworksAllowlist]] - code - gateway/tests/test_network_validator_gate.py
-- [[TestGateScope]] - code - gateway/tests/test_network_validator_gate.py
-- [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
-- [[TestValidatorAPI]] - code - gateway/tests/test_network_validator_gate.py
-- [[Validate DNS configuration for security.]] - rationale - gateway/security/network_validator.py
-- [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
-- [[Validate docker-compose network configuration.          Args             compos]] - rationale - gateway/security/network_validator.py
-- [[Validate network definitions in compose file.]] - rationale - gateway/security/network_validator.py
-- [[Validate network mode configurations.]] - rationale - gateway/security/network_validator.py
-- [[Validate port exposure configuration.]] - rationale - gateway/security/network_validator.py
-- [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
-- [[Validate service network isolation.]] - rationale - gateway/security/network_validator.py
-- [[Validate that no containers are running in privileged mode.]] - rationale - gateway/security/network_validator.py
-- [[network_validator.py]] - code - gateway/security/network_validator.py
-- [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
-- [[test_network_validator_gate.py]] - code - gateway/tests/test_network_validator_gate.py
-- [[tmp_compose()]] - code - gateway/tests/test_network_validator_gate.py
-- [[validate_network_security()]] - code - gateway/security/network_validator.py
+- [[dot-__init__()_167]] - code - gateway/security/dns_filter.py
+- [[dot-_cleanup_rate_window()]] - code - gateway/security/dns_filter.py
+- [[dot-_detect_tunneling()]] - code - gateway/security/dns_filter.py
+- [[dot-_domain_in_allowlist()]] - code - gateway/security/dns_filter.py
+- [[dot-_is_private_ip()_1]] - code - gateway/security/dns_filter.py
+- [[dot-check()_6]] - code - gateway/security/dns_filter.py
+- [[dot-check_rebinding()]] - code - gateway/security/dns_filter.py
+- [[dot-dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-get_audit_log()_6]] - code - gateway/security/dns_filter.py
+- [[dot-get_flagged_queries()]] - code - gateway/security/dns_filter.py
+- [[dot-resolve_and_cache()]] - code - gateway/security/dns_filter.py
+- [[dot-shannon_entropy()]] - code - gateway/security/dns_filter.py
+- [[dot-test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_default_mode_is_enforce()_5]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_empty_string()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_long_but_legitimate_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_monitor_mode_never_blocks()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_normal_domain_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[DNSFilter]] - code - gateway/security/dns_filter.py
+- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
+- [[DNSQuery_1]] - code - gateway/security/dns_filter.py
+- [[DNSVerdict]] - code - gateway/security/dns_filter.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_dns_filter.py
+- [[EntropyCalculator]] - code - gateway/security/dns_filter.py
+- [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
+- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
+- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
+- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
+- [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
+- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
+- [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
+- [[TestRateLimiting_4]] - code - gateway/tests/test_dns_filter.py
+- [[TunnelingPattern]] - code - gateway/security/dns_filter.py
+- [[default_config()_3]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter.py_2]] - code - gateway/security/dns_filter.py
+- [[monitor_config()_1]] - code - gateway/tests/test_dns_filter.py
+- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_config()_3]] - code - gateway/tests/test_dns_filter.py
+- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -88,12 +93,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
+- 28 edges to [[_COMMUNITY_MiddlewareManager]]
+- 13 edges to [[_COMMUNITY__wrap_response()]]
+- 7 edges to [[_COMMUNITY__wrap_response() (2)_1]]
+- 3 edges to [[_COMMUNITY_test_playback_state.c]]
+- 2 edges to [[_COMMUNITY_dot-_make_proxy()]]
+- 2 edges to [[_COMMUNITY_Common Queries]]
+- 2 edges to [[_COMMUNITY__wrap_response() (5)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
+- 2 edges to [[_COMMUNITY__wrap_response() (4)]]
+- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
+- 2 edges to [[_COMMUNITY_PortManager]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[validate_network_security()]] - degree 10, connects to 2 communities
-- [[TestNetworkValidator]] - degree 15, connects to 1 community
-- [[dot-validate_docker_compose_config()]] - degree 12, connects to 1 community
-- [[test_network_validator_gate.py]] - degree 7, connects to 1 community
-- [[dot-validate_runtime_configuration()]] - degree 6, connects to 1 community
+- [[EntropyCalculator]] - degree 34, connects to 11 communities
+- [[DNSFilterConfig]] - degree 46, connects to 9 communities
+- [[dns_filter.py_2]] - degree 9, connects to 3 communities
+- [[DNSFilter]] - degree 36, connects to 2 communities
+- [[test_dns_filter.py]] - degree 18, connects to 1 community

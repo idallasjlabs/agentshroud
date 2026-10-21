@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "AgentTarget (3)"
+community: "TestEmailSend"
 location: "L512"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/TestEmailSend
 ---
 
 # .test_owner_user_id_elevates_trust_to_full()
@@ -17,4 +17,4 @@ tags:
 - [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - `rationale_for` [EXTRACTED]
 - [[_TrustCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

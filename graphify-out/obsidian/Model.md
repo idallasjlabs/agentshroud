@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "UserSessionManager (6)"
+community: "BROWSER_FETCH_SKILL.md"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager_6
+  - community/BROWSER_FETCH_SKILLmd
 ---
 
 # Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6
+#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd

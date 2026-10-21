@@ -1,107 +1,182 @@
 ---
 type: community
-members: 94
+members: 169
 ---
 
 # MiddlewareManager (2)
 
-**Members:** 94 nodes
+**Members:** 169 nodes
 
 ## Members
-- [[dot-_check()]] - code - gateway/security/file_sandbox.py
-- [[dot-_detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
-- [[dot-_is_immutable_file()]] - code - gateway/security/file_sandbox.py
-- [[dot-_match_pattern()]] - code - gateway/security/file_sandbox.py
-- [[dot-_matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
-- [[dot-_matches_blocked()]] - code - gateway/security/file_sandbox.py
-- [[dot-check_read()]] - code - gateway/security/file_sandbox.py
-- [[dot-check_write()]] - code - gateway/security/file_sandbox.py
-- [[dot-detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
-- [[dot-get_audit_log()_5]] - code - gateway/security/file_sandbox.py
-- [[dot-get_security_violations()]] - code - gateway/security/file_sandbox.py
-- [[dot-scan()_4]] - code - gateway/security/file_sandbox.py
-- [[dot-test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_credit_card_detected()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_mode_is_enforce()_2]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_read_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/SKILL.md
-- [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[AgentShroud Skills Library]] - document - skills/README.md
-- [[Blue Team Security Auditor README]] - document - .agents/skills/i-sec-defense/README.md
-- [[CVE-2026-34425 — Preflight Validation Bypass (Shell-Bleed)]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
-- [[Custom Skills]] - document - skills/README.md
-- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
-- [[Directory Structure_2]] - document - skills/README.md
-- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
-- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[FileOperation]] - code - gateway/security/file_sandbox.py
-- [[FileVerdict]] - code - gateway/security/file_sandbox.py
-- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
-- [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
-- [[OpenClaw Built-in Skills]] - document - skills/README.md
-- [[PIIFinding]] - code - gateway/security/file_sandbox.py
-- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
-- [[PIIScanner]] - code - gateway/security/file_sandbox.py
-- [[Red Team Adversarial Tester README]] - document - .agents/skills/i-sec-offense/README.md
-- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
-- [[RedactionResult_1]] - code - gateway/security/prompt_protection.py
-- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
-- [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
-- [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[STPA-Sec Methodology]] - concept - .agents/skills/i-sec-defense/SKILL.md
-- [[STPA-Sec Methodology_1]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[StagingPattern]] - code - gateway/security/file_sandbox.py
-- [[Steve Hay Adversary Model]] - concept - .agents/skills/i-sec-offense/SKILL.md
-- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
-- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
-- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
-- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
-- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
-- [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[Usage_68]] - document - skills/README.md
-- [[agentshroud-blueteamSKILL]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[default_config()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[docsreviewsblue-team-audit-v0.7.0]] - concept - docs/reviews/blue-team-audit-v0.7.0.md
-- [[docsreviewsred-team-report-v0.7.0]] - concept - docs/reviews/red-team-report-v0.7.0.md
-- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
-- [[path_isolation.py]] - code - gateway/security/path_isolation.py
-- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
-- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[skillsREADME]] - document - skills/README.md
-- [[strict_config()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
-- [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
+- [[dot-__init__()_32]] - code - gateway/security/rbac.py
+- [[dot-__init__()_33]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-__init__()_34]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-__post_init__()]] - code - gateway/security/rbac_config.py
+- [[dot-_build_permission_matrix()]] - code - gateway/security/rbac.py
+- [[dot-_build_tool_permissions()]] - code - gateway/security/rbac.py
+- [[dot-_handler()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-audit_privilege_change()]] - code - gateway/security/rbac.py
+- [[dot-can_user_manage_user()]] - code - gateway/security/rbac.py
+- [[dot-check_group_permission()]] - code - gateway/security/rbac.py
+- [[dot-check_permission()]] - code - gateway/security/rbac.py
+- [[dot-check_permission()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-check_tool_permission()]] - code - gateway/security/rbac.py
+- [[dot-get_role_hierarchy()]] - code - gateway/security/rbac.py
+- [[dot-get_user_permissions_summary()]] - code - gateway/security/rbac.py
+- [[dot-get_user_role()]] - code - gateway/security/rbac.py
+- [[dot-is_privilege_escalation()]] - code - gateway/security/rbac.py
+- [[dot-list_users_and_roles()]] - code - gateway/security/rbac.py
+- [[dot-set_user_role()]] - code - gateway/security/rbac.py
+- [[dot-setup_method()_4]] - code - gateway/tests/test_rbac.py
+- [[dot-setup_method()_5]] - code - gateway/tests/test_rbac.py
+- [[dot-subscribe()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-teardown_method()_1]] - code - gateway/tests/test_rbac.py
+- [[dot-test_allowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_command_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_command_message_updates_subscription()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_3]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_dict_allowed_without_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_dict_blocked_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_dict_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_fan_out_filters_and_forwards()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_fan_out_survives_coerce_exception()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_full_dict()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_initial_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_initial_subscribe_message_sets_filter()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_initial_timeout_subscribes_to_all()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_inner_timeout_continues_loop()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_action_resource_combinations()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_invalid_user_id()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_is_group_admin_with_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_is_group_admin_without_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_is_owner_delegates_to_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_keepalive_breaks_on_construction_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_keepalive_sends_pings()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_list_users_and_roles()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_minimal_dict_uses_fallbacks()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_none_bus_returns_immediately()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_object_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_object_form_with_defaults()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_permission_check_with_context()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_admin()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_collaborator()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_owner()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_viewer()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_allows_authorized_access()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_blocks_unauthorized_access()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_handles_missing_user_id()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_initialization_in_middleware()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_manager_without_config()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_require_allowed_does_not_raise()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_require_denied_raises_403_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_require_denied_without_reason_uses_forbidden()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_role_hierarchy_levels()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_sanitized()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_send_event_serializes()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_send_event_swallows_transport_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_set_user_role()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_severity_enum_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_string_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_tool_tier_permissions()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_user_management_hierarchy()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_user_permissions_summary()]] - code - gateway/tests/test_rbac.py
+- [[dot-unsubscribe()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Action_1]] - code - gateway/security/rbac.py
+- [[Actions that can be performed in the system.]] - rationale - gateway/security/rbac.py
+- [[Any_8]] - code - gateway/security/rbac.py
+- [[Any_9]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Build the permission matrix for all roles.]] - rationale - gateway/security/rbac.py
+- [[Build tool tier permissions for each role.]] - rationale - gateway/security/rbac.py
+- [[Check if a user can perform an action on a group.          Permission matrix]] - rationale - gateway/security/rbac.py
+- [[Check if a user can use tools of a specific tier.]] - rationale - gateway/security/rbac.py
+- [[Check if a user has permission to perform an action on a resource.]] - rationale - gateway/security/rbac.py
+- [[Check if one user can manage another user.]] - rationale - gateway/security/rbac.py
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - rationale - gateway/tests/test_rbac.py
+- [[Ensure the persistence store's parent directory exists. Returns False on failure]] - rationale - gateway/security/rbac_config.py
+- [[Get a summary of permissions for a user.]] - rationale - gateway/security/rbac.py
+- [[Get role hierarchy levels (higher number = more privileges).]] - rationale - gateway/security/rbac.py
+- [[Get the role for a user.]] - rationale - gateway/security/rbac.py
+- [[Initialize RBAC manager with configuration.]] - rationale - gateway/security/rbac.py
+- [[Initialize user roles based on configuration.]] - rationale - gateway/security/rbac_config.py
+- [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - rationale - gateway/security/rbac.py
+- [[Minimal RBAC stand-in with controllable check_permission results.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Pause a collaborator's bot access without removing their record (file-locked).]] - rationale - gateway/security/rbac_config.py
+- [[PermissionResult]] - code - gateway/security/rbac.py
+- [[RBACManager_1]] - code - gateway/security/rbac.py
+- [[Read dynamically approved collaborator IDs from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Read persisted collaborator-removal exclusions from disk (Bug 1 fix).      Appli]] - rationale - gateway/security/rbac_config.py
+- [[Read the full collaborator persistence store (all keys) from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Remove a collaborator from effective access (file-locked).      Strips the UID f]] - rationale - gateway/security/rbac_config.py
+- [[Resource_1]] - code - gateway/security/rbac.py
+- [[Resources that can be accessed in the system.]] - rationale - gateway/security/rbac.py
+- [[Result of permission check.]] - rationale - gateway/security/rbac.py
+- [[Resume a paused collaborator's bot access (file-locked).      Removes the UID fr]] - rationale - gateway/security/rbac_config.py
+- [[Return True if changing from_role → to_role represents an escalation.]] - rationale - gateway/security/rbac.py
+- [[Role_14]] - code - gateway/security/rbac.py
+- [[Role-Based Access Control Manager.]] - rationale - gateway/security/rbac.py
+- [[SOCWebSocketHandler]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Set a user's role (owner-only operation).]] - rationale - gateway/security/rbac.py
+- [[Set up test environment.]] - rationale - gateway/tests/test_rbac.py
+- [[SimpleNamespace]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Test RBAC configuration.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC error handling and edge cases.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC handling when user ID is missing.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC integration with middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC manager functionality.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC manager initialization without explicit config.]] - rationale - gateway/tests/test_rbac.py
+- [[Test admin role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test collaborator role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test getting user permissions summary.]] - rationale - gateway/tests/test_rbac.py
+- [[Test handling of invalid actionresource combinations.]] - rationale - gateway/tests/test_rbac.py
+- [[Test handling of invalid user IDs.]] - rationale - gateway/tests/test_rbac.py
+- [[Test listing users and roles.]] - rationale - gateway/tests/test_rbac.py
+- [[Test owner role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test permission checks with additional context.]] - rationale - gateway/tests/test_rbac.py
+- [[Test role hierarchy levels.]] - rationale - gateway/tests/test_rbac.py
+- [[Test setting user roles.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC allows authorized access.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC blocks unauthorized access attempts.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC is properly initialized in middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test tool tier access permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test user management hierarchy.]] - rationale - gateway/tests/test_rbac.py
+- [[Test viewer role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromAnomalyAlert]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromDict]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromEgressAttempt]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromPipelineResult]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestHandlerRun]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestMapSeverity]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestRBACConfig]] - code - gateway/tests/test_rbac.py
+- [[TestRBACErrorHandling]] - code - gateway/tests/test_rbac.py
+- [[TestRBACIntegration]] - code - gateway/tests/test_rbac.py
+- [[TestRBACManager]] - code - gateway/tests/test_rbac.py
+- [[TestSCLCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSendEventAndKeepalive]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Tool security tiers for RBAC permissions.]] - rationale - gateway/security/rbac_config.py
+- [[ToolTier_1]] - code - gateway/security/rbac.py
+- [[ToolTier_2]] - code - gateway/security/rbac_config.py
+- [[Write the full collaborator persistence store (all keys) to disk.]] - rationale - gateway/security/rbac_config.py
+- [[_FakeBus]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_FakeRBAC]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_ensure_collab_dir()]] - code - gateway/security/rbac_config.py
+- [[_load_collab_store()]] - code - gateway/security/rbac_config.py
+- [[_spin()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_write_collab_store()]] - code - gateway/security/rbac_config.py
+- [[load_persisted_collaborators()]] - code - gateway/security/rbac_config.py
+- [[load_removed_collaborator_ids()]] - code - gateway/security/rbac_config.py
+- [[pause_collaborator()]] - code - gateway/security/rbac_config.py
+- [[rbac.py]] - code - gateway/security/rbac.py
+- [[rbac_config.py]] - code - gateway/security/rbac_config.py
+- [[revoke_approved_collaborator()]] - code - gateway/security/rbac_config.py
+- [[socauth.py]] - code - gateway/soc/auth.py
+- [[test_rbac.py]] - code - gateway/tests/test_rbac.py
+- [[unpause_collaborator()]] - code - gateway/security/rbac_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -111,34 +186,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_AlertDispatcher]]
-- 9 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager (3)]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_PipelineAction]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 2 edges to [[_COMMUNITY_UserSessionManager (2)]]
-- 2 edges to [[_COMMUNITY_MultiTurnTracker]]
-- 2 edges to [[_COMMUNITY_AuditEvent]]
-- 2 edges to [[_COMMUNITY_Phase 1 — Raw Collection (3)]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (6)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (5)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (4)]]
-- 1 edge to [[_COMMUNITY_dockerscriptssecurity-scan.sh]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Verification (13-check driver)]]
+- 62 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 61 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 49 edges to [[_COMMUNITY_MiddlewareManager]]
+- 24 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 15 edges to [[_COMMUNITY_Canvas Skill]]
+- 14 edges to [[_COMMUNITY_Function Details]]
+- 10 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 7 edges to [[_COMMUNITY_api.py (2)]]
+- 7 edges to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection]]
+- 5 edges to [[_COMMUNITY_colima-health-check.sh]]
+- 2 edges to [[_COMMUNITY__t]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - degree 27, connects to 16 communities
-- [[agentshroud-blueteamSKILL]] - degree 28, connects to 15 communities
-- [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - degree 7, connects to 2 communities
-- [[path_isolation.py]] - degree 6, connects to 2 communities
-- [[prompt_protection.py]] - degree 5, connects to 2 communities
+- [[Action_1]] - degree 54, connects to 8 communities
+- [[Resource_1]] - degree 53, connects to 8 communities
+- [[rbac_config.py]] - degree 24, connects to 7 communities
+- [[RBACManager_1]] - degree 48, connects to 6 communities
+- [[rbac.py]] - degree 15, connects to 6 communities

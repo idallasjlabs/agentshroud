@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "TestLogSanitizer"
+community: "_wrap_response() (4)"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/_wrap_response_4
 ---
 
 # .test_credit_card_redacted()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_filter_msg()]] - `calls` [EXTRACTED]
 - [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

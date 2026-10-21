@@ -1,43 +1,52 @@
 ---
 type: community
-members: 30
+members: 39
 ---
 
 # parse_clamscan_output
 
-**Members:** 30 nodes
+**Members:** 39 nodes
 
 ## Members
-- [[dot-test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clamav_parse_clean()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clamav_parse_infected()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_parse_clean_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_empty_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_has_timestamp()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_infected_files_details()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_infected_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_scanner_name()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_signatures()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_clean()_2]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_infected()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_38]] - code
-- [[Generate a summary dict suitable for the health report. Args report Parsed…]] - rationale - gateway/security/clamav_scanner.py
-- [[Parse clamscan output into structured results. Args output Raw stdout from…]] - rationale - gateway/security/clamav_scanner.py
-- [[Run ClamAV scan and return parsed results. Args target Directory or file to…]] - rationale - gateway/security/clamav_scanner.py
-- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
-- [[TestClamAVParser]] - code - gateway/tests/test_security_toolchain.py
-- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
-- [[TestClamAVSummary_1]] - code - gateway/tests/test_security_toolchain.py
-- [[Update ClamAV virus database using freshclam. Args freshclam_bin Path to…]] - rationale - gateway/security/clamav_scanner.py
-- [[clamav_scanner.py]] - code - gateway/security/clamav_scanner.py
-- [[generate_summary()]] - code - gateway/security/clamav_scanner.py
-- [[parse_clamscan_output()]] - code - gateway/security/clamav_scanner.py
-- [[run_clamscan()]] - code - gateway/security/clamav_scanner.py
-- [[save_report()]] - code - gateway/security/clamav_scanner.py
-- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
+- [[dot-test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_four_when_sbom_and_clean_trivy()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_not_run()_2]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_managed_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_one_when_no_tools()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_one_when_no_wazuh_no_fluent()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_one_when_sbom_exists()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_optimizing_when_clean_zero_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_three_when_both_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_two_when_falco_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_two_when_wazuh_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_zero_when_no_sbom_no_trivy()]] - code - gateway/tests/test_scanner_integration.py
+- [[Any_20]] - code - gateway/tests/test_scanner_integration.py
+- [[Score domain 12 Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 5 Runtime Protection (0-5).      1=module exists, 2=running with c]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 9 Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,]] - rationale - gateway/security/scanner_integration.py
+- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreIncidentResponse_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreLoggingMonitoring_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreRuntimeProtection_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreSecretsManagement_1]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[_falco_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_falco_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[_falco_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_incident_response()]] - code - gateway/security/scanner_integration.py
+- [[_score_logging_monitoring()]] - code - gateway/security/scanner_integration.py
+- [[_score_runtime_protection()]] - code - gateway/security/scanner_integration.py
+- [[_trivy_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_trivy_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[_wazuh_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_wazuh_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,24 +56,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_AlertDispatcher]]
-- 7 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 7 edges to [[_COMMUNITY_asyncio]]
-- 2 edges to [[_COMMUNITY_dot-proxy_messages()]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_dot-_process_connect]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-- 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 17 edges to [[_COMMUNITY_PipelineAction (2)_1]]
+- 14 edges to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 12 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 11 edges to [[_COMMUNITY_Incident ConduitHermes instability 2026-10-16]]
+- 10 edges to [[_COMMUNITY_AgentShroud Security Assessment — v0.8.0]]
+- 8 edges to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
+- 6 edges to [[_COMMUNITY_FalcoAlertWatcher (2)]]
+- 4 edges to [[_COMMUNITY__load_latest_json]]
+- 2 edges to [[_COMMUNITY_server.py (2)]]
+- 2 edges to [[_COMMUNITY_API Documentation]]
 
 ## Top bridge nodes
-- [[clamav_scanner.py]] - degree 17, connects to 8 communities
-- [[run_clamscan()]] - degree 11, connects to 5 communities
-- [[parse_clamscan_output()]] - degree 18, connects to 3 communities
-- [[TestClamAVParser]] - degree 9, connects to 2 communities
-- [[Any_38]] - degree 8, connects to 2 communities
+- [[test_scanner_integration.py]] - degree 61, connects to 10 communities
+- [[_score_image_integrity()]] - degree 10, connects to 4 communities
+- [[Any_20]] - degree 16, connects to 3 communities
+- [[_score_incident_response()]] - degree 10, connects to 3 communities
+- [[_score_logging_monitoring()]] - degree 9, connects to 3 communities

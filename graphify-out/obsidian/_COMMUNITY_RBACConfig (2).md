@@ -1,76 +1,68 @@
 ---
 type: community
-members: 63
+members: 55
 ---
 
 # RBACConfig (2)
 
-**Members:** 63 nodes
+**Members:** 55 nodes
 
 ## Members
-- [[dot-__init__()_198]] - code - gateway/security/privacy_policy.py
-- [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
-- [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
-- [[dot-contains_private_data()]] - code - gateway/security/privacy_policy.py
-- [[dot-default()]] - code - gateway/security/privacy_policy.py
-- [[dot-filter_response()_2]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_10]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_11]] - code - gateway/security/privacy_policy.py
-- [[dot-is_service_allowed()]] - code - gateway/security/privacy_policy.py
-- [[dot-should_alert()]] - code - gateway/security/privacy_policy.py
-- [[dot-should_audit()]] - code - gateway/security/privacy_policy.py
-- [[dot-test_admin_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_audit_disabled_globally()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_clean_response_not_modified()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_allowed_shared_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_api_key_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_email_content_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_contains_private_data_clean_text()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_contains_private_data_detects_email()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_default_policy_marks_gmail_private()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_extra_pattern_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_extra_redact_patterns_loaded()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_adds_new_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_overrides_existing()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_unknown_privacy_defaults_to_private()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_group_member_allowed_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_invalid_extra_pattern_does_not_crash()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_non_group_member_blocked_from_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_owner_can_access_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_owner_response_not_filtered()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_alert_non_owner()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_audit_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_not_alert_owner()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_not_audit_unknown_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_unknown_service_allowed_by_default()]] - code - gateway/tests/test_privacy_policy.py
-- [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
-- [[Parse from a YAMLdict representation.          Example YAML             privac]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy Policy Enforcement Tests]] - code - gateway/tests/test_privacy_policy.py
-- [[Privacy classification for a service.]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
-- [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
-- [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
-- [[RBACConfig_4]] - code - gateway/tests/test_privacy_policy.py
-- [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if user_id may access the named service.]] - rationale - gateway/security/privacy_policy.py
-- [[Return a default policy with all known private services locked down.]] - rationale - gateway/security/privacy_policy.py
-- [[ServicePolicy]] - code - gateway/security/privacy_policy.py
-- [[ServicePrivacy]] - code - gateway/security/privacy_policy.py
-- [[Strip admin-private content from a response before delivering to user.]] - rationale - gateway/security/privacy_policy.py
-- [[TestAuditAndAlert]] - code - gateway/tests/test_privacy_policy.py
-- [[TestPrivacyPolicyParsing]] - code - gateway/tests/test_privacy_policy.py
-- [[TestResponseFiltering]] - code - gateway/tests/test_privacy_policy.py
-- [[TestServiceAccessControl]] - code - gateway/tests/test_privacy_policy.py
-- [[_make_rbac()_1]] - code - gateway/tests/test_privacy_policy.py
-- [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
-- [[enforcer()_3]] - code - gateway/tests/test_privacy_policy.py
-- [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
-- [[rbac()_6]] - code - gateway/tests/test_privacy_policy.py
-- [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
+- [[dot-test_add_message()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_atomic_save_never_leaves_partial_registry_on_crash()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_concurrent_saves_do_not_lose_entries()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_conversation_history_limit()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_default_trust_level_is_untrusted()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_empty_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_get_or_create_returns_same_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_get_session_context_contains_user_id()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_load_tolerates_corrupt_registry()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_load_tolerates_empty_registry()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_long_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_memory_file_created()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_no_temp_files_left_behind()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_non_owner_cannot_view_other_sessions()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_non_owner_empty_when_no_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_owner_can_access_any_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_owner_can_view_all_sessions()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_path_traversal_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_prompt_addition_mentions_isolation()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_reanchor_contains_security_notice()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_reanchor_prepends_preamble()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_reanchor_preserves_original_content()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_save_uses_atomic_replace()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_session_to_dict_and_back()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_sessions_are_isolated()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_special_chars_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_update_trust_level()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_user_can_access_own_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_user_cannot_access_other_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_workspace_directory_created()]] - code - gateway/tests/test_session_manager.py
+- [[A corruptpartial registry file must not crash construction.]] - rationale - gateway/tests/test_session_manager.py
+- [[A successful save leaves only the final registry file, no .tmp.]] - rationale - gateway/tests/test_session_manager.py
+- [[An empty registry file must not crash construction.]] - rationale - gateway/tests/test_session_manager.py
+- [[Concurrent add_conversation_message calls (each of which saves) must         not]] - rationale - gateway/tests/test_session_manager.py
+- [[Create a UserSessionManager with a temp base workspace and an owner.]] - rationale - gateway/tests/test_session_manager.py
+- [[History should be capped at 1000 messages.]] - rationale - gateway/tests/test_session_manager.py
+- [[If the write to the temp file fails mid-flight, the existing         registry on]] - rationale - gateway/tests/test_session_manager.py
+- [[Original system prompt content is always preserved in the output.]] - rationale - gateway/tests/test_session_manager.py
+- [[Preamble contains a security notice keyword.]] - rationale - gateway/tests/test_session_manager.py
+- [[Re-anchoring prepends a security notice to the system prompt.]] - rationale - gateway/tests/test_session_manager.py
+- [[Registry writes must be atomic (os.replace) and serialized (lock).      The sess]] - rationale - gateway/tests/test_session_manager.py
+- [[Represents an isolated session for a user within a specific bot workspace.]] - rationale - gateway/security/session_manager.py
+- [[TestAccessControl]] - code - gateway/tests/test_session_manager.py
+- [[TestAtomicRegistryWrites]] - code - gateway/tests/test_session_manager.py
+- [[TestConversationHistory]] - code - gateway/tests/test_session_manager.py
+- [[TestInputValidation]] - code - gateway/tests/test_session_manager.py
+- [[TestSerialization_1]] - code - gateway/tests/test_session_manager.py
+- [[TestSessionContext]] - code - gateway/tests/test_session_manager.py
+- [[TestSessionIsolation]] - code - gateway/tests/test_session_manager.py
+- [[TestSystemPromptReanchoring]] - code - gateway/tests/test_session_manager.py
+- [[TestTrustLevel]] - code - gateway/tests/test_session_manager.py
+- [[UserSession]] - code - gateway/security/session_manager.py
+- [[_save_sessions must go through os.replace(tmp, final), never a         partial i]] - rationale - gateway/tests/test_session_manager.py
+- [[mgr()]] - code - gateway/tests/test_session_manager.py
+- [[test_session_manager.py]] - code - gateway/tests/test_session_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,15 +72,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_RBACConfig]]
-- 7 edges to [[_COMMUNITY_TeamsConfig]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 17 edges to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_RBACConfig (3)]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
 
 ## Top bridge nodes
-- [[ServicePrivacy]] - degree 12, connects to 3 communities
-- [[TestResponseFiltering]] - degree 15, connects to 2 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
-- [[TestAuditAndAlert]] - degree 12, connects to 2 communities
+- [[test_session_manager.py]] - degree 14, connects to 3 communities
+- [[UserSession]] - degree 17, connects to 2 communities
+- [[TestAtomicRegistryWrites]] - degree 10, connects to 1 community
+- [[TestAccessControl]] - degree 9, connects to 1 community
+- [[TestSessionIsolation]] - degree 8, connects to 1 community

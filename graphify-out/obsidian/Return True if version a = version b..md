@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "sync-cve-registry.py"
-location: "L101"
+community: "browser/scripts/browse.py"
+location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # Return True if version a >= version b.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ver_gte()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy

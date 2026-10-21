@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Common Queries"
+community: "EgressFilterConfig (2) (3)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/EgressFilterConfig_2_3
 ---
 
 # Model usage
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Current model logic]] - `contains` [EXTRACTED]
 - [[Inputs]] - `contains` [EXTRACTED]
-- [[Output_1]] - `contains` [EXTRACTED]
-- [[Overview_6]] - `contains` [EXTRACTED]
-- [[Quick start_6]] - `contains` [EXTRACTED]
+- [[Output]] - `contains` [EXTRACTED]
+- [[Overview_5]] - `contains` [EXTRACTED]
+- [[Quick start_5]] - `contains` [EXTRACTED]
 - [[References]] - `contains` [EXTRACTED]
 - [[model-usageSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3

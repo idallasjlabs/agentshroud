@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
+community: "TestKillSwitchScript"
 location: "L3903"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/TestKillSwitchScript
 ---
 
 # .test_extract_first_egress_target_supports_protocol_relative_with_query()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressTargetExtraction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/TestKillSwitchScript

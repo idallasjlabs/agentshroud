@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "paper"
-community: "ConsentFramework"
+community: "SecureBrowser (3)"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/SecureBrowser_3
 ---
 
 # Maloyan & Namiot 2026 — MCP security analysis (arXiv:2601.17548)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ConsentFramework]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/ConsentFramework
+#graphify/paper #graphify/EXTRACTED #community/SecureBrowser_3

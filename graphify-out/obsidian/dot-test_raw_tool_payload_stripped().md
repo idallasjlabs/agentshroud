@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "plan_remediation"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/plan_remediation
 ---
 
 # .test_raw_tool_payload_stripped()
@@ -15,4 +15,4 @@ tags:
 - [[JSON tool call payloads should be flagged and redacted.]] - `rationale_for` [EXTRACTED]
 - [[TestOutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

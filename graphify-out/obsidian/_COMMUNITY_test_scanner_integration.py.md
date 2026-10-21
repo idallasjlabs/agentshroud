@@ -8,45 +8,45 @@ members: 39
 **Members:** 39 nodes
 
 ## Members
-- [[dot-test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_four_when_sbom_and_clean_trivy()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_initial_when_not_run()_2]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_managed_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_one_when_no_tools()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_one_when_no_wazuh_no_fluent()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_one_when_sbom_exists()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_optimizing_when_clean_zero_findings()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_three_when_both_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_two_when_falco_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_two_when_wazuh_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_zero_when_no_sbom_no_trivy()]] - code - gateway/tests/test_scanner_integration.py
-- [[Any_28]] - code - gateway/tests/test_scanner_integration.py
-- [[Score domain 12 Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 5 Runtime Protection (0-5).      1=module exists, 2=running with c]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 9 Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,]] - rationale - gateway/security/scanner_integration.py
-- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreIncidentResponse_1]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreLoggingMonitoring_1]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreRuntimeProtection_1]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecretsManagement_1]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
-- [[_falco_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_falco_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[_falco_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_incident_response()]] - code - gateway/security/scanner_integration.py
-- [[_score_logging_monitoring()]] - code - gateway/security/scanner_integration.py
-- [[_score_runtime_protection()]] - code - gateway/security/scanner_integration.py
-- [[_trivy_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_trivy_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[_wazuh_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_wazuh_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
+- [[Add a comment to an existing Jira issue._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[ArgumentParser_2]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build the REST v3 create-issue request body._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124')._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i_1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Match a transition by its own name or its destination status name._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Move an issue to the named status (matched against available transitions)._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 URL for creating an issue._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 add-comment URL for an arbitrary issue key._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 transitions URL (GET to list, POST to apply) for an issue._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena_1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Return the HTTP Basic auth header value base64(emailtoken)._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Unauthenticated site-to-cloud-ID discovery URL._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_adf_doc()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_auth_headers()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_build_arg_parser()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_cloud_base_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_http_request()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[add_comment()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_basic_auth_header()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_payload()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_create_issue_payload()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_issue_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_op_proxy_request()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_tenant_info_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_transitions_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[create_issue()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_credentials()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_op_secret()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[find_transition_id()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[hermesworkspacejira_dev_ticket.py]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[resolve_cloud_id()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[run()_3]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[transition_issue()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,20 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 14 edges to [[_COMMUNITY_AgentTarget (6)]]
-- 12 edges to [[_COMMUNITY_scanner_integration.py]]
-- 11 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 10 edges to [[_COMMUNITY_test_scanner_integration.py (2)]]
-- 8 edges to [[_COMMUNITY_Path (3)]]
-- 6 edges to [[_COMMUNITY_get_trivy_summary]]
-- 4 edges to [[_COMMUNITY__load_latest_json]]
-- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
-- 2 edges to [[_COMMUNITY_AgentTarget (8)]]
+- 1 edge to [[_COMMUNITY_TestEgressTelegramNotify]]
 
 ## Top bridge nodes
-- [[test_scanner_integration.py]] - degree 61, connects to 10 communities
-- [[_score_image_integrity()]] - degree 10, connects to 4 communities
-- [[Any_28]] - degree 16, connects to 3 communities
-- [[_score_incident_response()]] - degree 10, connects to 3 communities
-- [[_score_logging_monitoring()]] - degree 9, connects to 3 communities
+- [[build_comment_payload()_1]] - degree 4, connects to 1 community

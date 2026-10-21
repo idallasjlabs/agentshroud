@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "PipelineAction"
 location: "L315"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/PipelineAction
 ---
 
 # Development Workflow — End to End
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Orchestration Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

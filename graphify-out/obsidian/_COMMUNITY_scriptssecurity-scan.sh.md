@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[error()]] - code - scripts/security-scan.sh
-- [[info()]] - code - scripts/security-scan.sh
-- [[require_tool()]] - code - scripts/security-scan.sh
-- [[scriptssecurity-scan.sh]] - code - scripts/security-scan.sh
-- [[security-scan.sh script]] - code - scripts/security-scan.sh
-- [[success()]] - code - scripts/security-scan.sh
-- [[warn()_1]] - code - scripts/security-scan.sh
+- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
+- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,11 @@ members: 7
 TABLE source_file, type FROM #community/scripts/security-scansh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
+- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+
+## Top bridge nodes
+- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
+- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community

@@ -1,21 +1,23 @@
 ---
 type: community
-members: 8
+members: 10
 ---
 
 # test_alert_dispatcher_retry.py
 
-**Members:** 8 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
-- [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_dispatch_persists_alert_even_if_notification_fails()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_succeeds_after_one_transient_failure()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_succeeds_on_first_attempt()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[ANTI-HALLUCINATION CHECKLIST_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[CRITICAL RULES — READ BEFORE DOING ANYTHING_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[Competitive Intelligence Report — Standard Prompt]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[OUTPUT REQUIREMENTS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[REPORT STRUCTURE_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[SECTION 1 MARKET ANALYSIS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[SECTION 4 NEXT STEPS TO STAY AHEAD_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[openclawworkspacecompetitive-analysis]] - document - docker/config/openclaw/workspace/competitive-analysis.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/test_alert_dispatcher_retrypy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-
-## Top bridge nodes
-- [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community

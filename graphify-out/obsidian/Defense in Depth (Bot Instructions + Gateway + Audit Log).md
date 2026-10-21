@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "rationale"
-community: "Kill Switch"
+community: "test_anthropic_openai_translator.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Defense in Depth (Bot Instructions + Gateway + Audit Log)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch
+#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # .test_reload_requires_auth()
@@ -15,4 +15,4 @@ tags:
 - [[TestClient_1]] - `calls` [EXTRACTED]
 - [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

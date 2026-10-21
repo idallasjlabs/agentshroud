@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "gen.py"
-location: "L85"
+community: "Test-Driven Development README"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/Test-Driven_Development_README
 ---
 
 # Output
 
 ## Connections
-- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

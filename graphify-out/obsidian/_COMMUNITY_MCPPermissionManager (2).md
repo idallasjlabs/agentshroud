@@ -1,58 +1,35 @@
 ---
 type: community
-members: 45
+members: 22
 ---
 
 # MCPPermissionManager (2)
 
-**Members:** 45 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[dot-__init__()_68]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-_load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-_recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_agentshroud_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_gateway_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_nested_private_reference()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[dot-test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[MCPPermissionManager]] - code - gateway/proxy/mcp_permissions.py
-- [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
+- [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - rationale - gateway/tests/test_sanitizer.py
+- [[Phone number with separator must still be redacted.]] - rationale - gateway/tests/test_sanitizer.py
+- [[Regex-only path must not match bare 10-digit digit string as phone number.]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test content with multiple PII types]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test content with no PII]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test credit card redaction]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test email address redaction]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test empty content handling]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test phone number redaction]] - rationale - gateway/tests/test_sanitizer.py
+- [[UID in parens — as written in contributor logs — must not be redacted.]] - rationale - gateway/tests/test_sanitizer.py
+- [[test_credit_card_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_email_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_empty_content()]] - code - gateway/tests/test_sanitizer.py
+- [[test_mixed_pii()]] - code - gateway/tests/test_sanitizer.py
+- [[test_no_pii()]] - code - gateway/tests/test_sanitizer.py
+- [[test_phone_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_real_phone_still_redacted()]] - code - gateway/tests/test_sanitizer.py
+- [[test_regex_fallback_requires_separator()]] - code - gateway/tests/test_sanitizer.py
+- [[test_sanitizer.py]] - code - gateway/tests/test_sanitizer.py
+- [[test_ssn_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_telegram_uid_not_redacted_as_phone()]] - code - gateway/tests/test_sanitizer.py
+- [[test_uid_inside_parens_preserved()]] - code - gateway/tests/test_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,25 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 17 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 13 edges to [[_COMMUNITY_PermissionLevel]]
-- 12 edges to [[_COMMUNITY_StdioConnection]]
-- 10 edges to [[_COMMUNITY_StdioConnection (2)]]
-- 7 edges to [[_COMMUNITY_MCPInspector]]
-- 5 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_MCPToolResult]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (5)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (6)]]
-- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (4)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (7)]]
-- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
-- 1 edge to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 101, connects to 16 communities
-- [[TestToolPermission]] - degree 27, connects to 2 communities
-- [[dot-__init__()_68]] - degree 5, connects to 2 communities
-- [[dot-record_private_data_redaction()]] - degree 3, connects to 1 community
+- [[test_sanitizer.py]] - degree 12, connects to 1 community

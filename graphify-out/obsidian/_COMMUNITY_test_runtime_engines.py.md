@@ -8,40 +8,40 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[dot-client()_2]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_compose_healthcheck()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_dashboard_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_generate_apple_script()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_generate_custom_services()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_generate_docker_compose()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_generate_podman_compose()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_put_then_get()]] - code - gateway/tests/test_runtime_engines.py
-- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
-- [[Definition of a single service for compose generation.]] - rationale - gateway/runtime/compose_generator.py
-- [[Generate a compose YAML file for Docker or Podman.      Args         services]] - rationale - gateway/runtime/compose_generator.py
-- [[Generate a shell script to start services with Apple Containers.      Apple Cont]] - rationale - gateway/runtime/compose_generator.py
-- [[ServiceDef]] - code - gateway/runtime/compose_generator.py
-- [[TestComposeGenerator]] - code - gateway/tests/test_runtime_engines.py
-- [[TestConfigRoundTrip]] - code - gateway/tests/test_runtime_engines.py
-- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
-- [[TestManagementPage]] - code - gateway/tests/test_runtime_engines.py
-- [[detect_runtime()]] - code - gateway/runtime/__init__.py
-- [[gatewayruntimeconfig.py (RuntimeConfig)]] - code - gateway/runtime/config.py
-- [[gatewayruntimedocker_engine.py (DockerEngine)]] - code - gateway/runtime/docker_engine.py
-- [[gatewayruntimepodman_engine.py (PodmanEngine)]] - code - gateway/runtime/podman_engine.py
-- [[gatewayruntimesecurity.py (get_features_for_runtime)]] - code - gateway/runtime/security.py
-- [[generate_apple_script()]] - code - gateway/runtime/compose_generator.py
-- [[generate_compose()]] - code - gateway/runtime/compose_generator.py
-- [[test_runtime_engines.py]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-__init__()_98]] - code - gateway/security/config_integrity.py
+- [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
+- [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
+- [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
+- [[dot-check()_4]] - code - gateway/security/config_integrity.py
+- [[dot-format_alert_text()]] - code - gateway/security/config_integrity.py
+- [[dot-reset_baseline()]] - code - gateway/security/config_integrity.py
+- [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
+- [[Compare current file hashes against baseline.          Returns a list of change]] - rationale - gateway/security/config_integrity.py
+- [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - rationale - gateway/security/config_integrity.py
+- [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
+- [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
+- [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
+- [[Path_21]] - code - gateway/security/config_integrity.py
+- [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
+- [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
+- [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
+- [[_write_openclaw()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[dirs()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_added_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_baseline_advances_only_when_clean()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_config_integrity_monitor.py]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_first_boot_establishes_baseline_without_alerts()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_format_alert_text_handles_missing_hashes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_format_alert_text_includes_event_and_hash_prefixes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_hash_file_is_stable_and_content_sensitive()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_hash_file_returns_none_for_missing()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_load_baseline_missing_file_returns_empty()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_load_baseline_tolerates_corrupt_json()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_modified_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_removed_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_reset_baseline_accepts_current_state()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_unchanged_second_run_reports_no_changes()]] - code - gateway/tests/test_config_integrity_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,24 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_RuntimeConfig]]
-- 7 edges to [[_COMMUNITY_test_runtime_engines.py (2)]]
-- 7 edges to [[_COMMUNITY_PodmanEngine]]
-- 6 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 6 edges to [[_COMMUNITY_TestSecurityFeatures]]
-- 5 edges to [[_COMMUNITY_DockerEngine]]
-- 4 edges to [[_COMMUNITY_get_engine]]
-- 3 edges to [[_COMMUNITY_api.py (2)]]
-- 2 edges to [[_COMMUNITY_TestAppleContainerEngine]]
-- 2 edges to [[_COMMUNITY_TestInstallerAPI]]
-- 2 edges to [[_COMMUNITY_TestDockerEngine]]
-- 2 edges to [[_COMMUNITY_TestWebAPI]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[test_runtime_engines.py]] - degree 33, connects to 13 communities
-- [[ServiceDef]] - degree 20, connects to 9 communities
-- [[TestComposeGenerator]] - degree 14, connects to 4 communities
-- [[detect_runtime()]] - degree 11, connects to 4 communities
-- [[TestDetectRuntime]] - degree 11, connects to 4 communities
+- [[ConfigIntegrityMonitor]] - degree 24, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "Implementation Status"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Implementation_Status
 ---
 
 # GSDE&G Development Master Checklist Skill
@@ -18,10 +18,10 @@ tags:
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 - [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - `conceptually_related_to` [EXTRACTED]
 - [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
-- [[Purpose_82]] - `contains` [EXTRACTED]
-- [[Related Skills_63]] - `contains` [EXTRACTED]
-- [[Usage_72]] - `contains` [EXTRACTED]
+- [[Purpose_79]] - `contains` [EXTRACTED]
+- [[Related Skills_60]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
 - [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
 - [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

@@ -1,21 +1,21 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L232"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[API Key Error]] - `contains` [EXTRACTED]
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Container Won't Start_1]] - `contains` [EXTRACTED]
-- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
-- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
+- [[Access Denied_2]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # .delegate()
@@ -21,4 +21,4 @@ tags:
 - [[DelegationManager_1]] - `method` [EXTRACTED]
 - [[DelegationPrivilege]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "egress_filter.py (3)"
+community: "DelegationManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/egress_filterpy_3
+  - community/DelegationManager
 ---
 
 # FR3: System Integrity
@@ -19,6 +19,6 @@ tags:
 - [[encoding_detector.py]] - `references` [EXTRACTED]
 - [[heuristic_classifier.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[prompt_guard.py]] - `references` [EXTRACTED]
+- [[prompt_guard.py_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/egress_filterpy_3
+#graphify/concept #graphify/EXTRACTED #community/DelegationManager

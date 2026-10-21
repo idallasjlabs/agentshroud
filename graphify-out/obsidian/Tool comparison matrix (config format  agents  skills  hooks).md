@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Claude Code skill catalog (59 skills)"
+community: "Skill: Test-Driven Development (TDD)"
 location: "Tool Comparison Matrix"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Tool comparison matrix (config format / agents / skills / hooks)
@@ -16,4 +16,4 @@ tags:
 - [[Configure each tool natively (no config copying)]] - `rationale_for` [EXTRACTED]
 - [[Four-tool role hierarchy summary]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

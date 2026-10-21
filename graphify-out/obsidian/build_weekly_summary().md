@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "TestEgressTelegramNotify"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/TestEgressTelegramNotify
 ---
 
 # build_weekly_summary()
 
 ## Connections
 - [[Compose the human-readable weekly summary posted as the comment.      - commits]] - `rationale_for` [EXTRACTED]
-- [[datetime_2]] - `references` [EXTRACTED]
+- [[datetime_5]] - `references` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

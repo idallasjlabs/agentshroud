@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response() (3)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/_wrap_response_3
 ---
 
 # EgressEvent
 
 ## Connections
-- [[dot-get_events()]] - `references` [EXTRACTED]
-- [[dot-record()]] - `references` [EXTRACTED]
+- [[dot-get_events()_2]] - `references` [EXTRACTED]
+- [[dot-record()_2]] - `references` [EXTRACTED]
 - [[dot-test_alert_has_description()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_has_severity()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_monitor_mode_no_block()]] - `calls` [EXTRACTED]
@@ -30,11 +30,11 @@ tags:
 - [[MockEgressEvent]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection_1]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -48,16 +48,16 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/_wrap_response_3

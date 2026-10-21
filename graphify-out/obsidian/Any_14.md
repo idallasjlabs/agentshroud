@@ -1,17 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "_make_proxy()"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - graphify/INFERRED
+  - community/_make_proxy
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_6]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/INFERRED #community/_make_proxy

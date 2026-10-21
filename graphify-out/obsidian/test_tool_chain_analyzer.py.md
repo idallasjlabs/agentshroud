@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "test_soc_router_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/test_soc_router_coveragepy
 ---
 
 # test_tool_chain_analyzer.py
@@ -20,9 +20,9 @@ tags:
 - [[TestParamSanitization]] - `contains` [EXTRACTED]
 - [[TestReversibilityScoring]] - `contains` [EXTRACTED]
 - [[TestShellBleedPatterns]] - `contains` [EXTRACTED]
-- [[TestToolChainAnalyzer]] - `contains` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `contains` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
-- [[mock_alert_callback()]] - `contains` [EXTRACTED]
+- [[mock_alert_callback()_1]] - `contains` [EXTRACTED]
 - [[tool_chain_analyzer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

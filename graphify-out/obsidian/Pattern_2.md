@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "_wrap_response() (4)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/_wrap_response_4
 ---
 
 # Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

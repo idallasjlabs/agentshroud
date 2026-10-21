@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "MCPPermissionManager (2)"
-location: "L183"
+community: "The 8D Investigation Process"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/The_8D_Investigation_Process
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

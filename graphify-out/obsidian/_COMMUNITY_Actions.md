@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Action groups]] - document - skills/openclaw/slack/SKILL.md
-- [[Actions_1]] - document - skills/openclaw/slack/SKILL.md
-- [[Delete a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Edit a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Emoji list]] - document - skills/openclaw/slack/SKILL.md
-- [[Ideas to try]] - document - skills/openclaw/slack/SKILL.md
-- [[Inputs to collect]] - document - skills/openclaw/slack/SKILL.md
-- [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
-- [[List reactions]] - document - skills/openclaw/slack/SKILL.md
-- [[Member info]] - document - skills/openclaw/slack/SKILL.md
-- [[Overview_22]] - document - skills/openclaw/slack/SKILL.md
-- [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
-- [[React to a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md
-- [[Send a message]] - document - skills/openclaw/slack/SKILL.md
-- [[Slack Actions]] - document - skills/openclaw/slack/SKILL.md
-- [[slackSKILL]] - document - skills/openclaw/slack/SKILL.md
+- [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Function Details_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_109]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Related_17]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Responsibilities_15]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.destroy_session(session_id)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.register_event_source(session_id, source)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Threat Model_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,3 @@ members: 17
 TABLE source_file, type FROM #community/Actions
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
-
-## Top bridge nodes
-- [[slackSKILL]] - degree 2, connects to 1 community

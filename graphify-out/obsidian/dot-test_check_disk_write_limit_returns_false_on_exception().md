@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # .test_check_disk_write_limit_returns_false_on_exception()
@@ -15,4 +15,4 @@ tags:
 - [[ResourceGuard]] - `calls` [EXTRACTED]
 - [[TestResourceGuardFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

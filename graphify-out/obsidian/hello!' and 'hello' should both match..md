@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L9217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # hello!' and 'hello?' should both match.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_predicate_trailing_punctuation_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "port_manager.py"
+community: "find-sessions.sh"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/find-sessionssh
 ---
 
 # port_manager.py
@@ -19,4 +19,4 @@ tags:
 - [[Related Notes_8]] - `contains` [EXTRACTED]
 - [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/find-sessionssh

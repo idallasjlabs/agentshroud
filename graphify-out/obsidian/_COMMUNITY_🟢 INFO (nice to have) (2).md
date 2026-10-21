@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[2. Findings]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[E1 YAML indentation error in `docker-compose.pi.yml`]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I1 Pipeline encoding detector API change]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I2 f-string in logger call]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I3 Owner ID still hardcoded (improved)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[I4 Copyright headers added consistently]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[W1 `if True  keep indentation` anti-pattern in tests]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[W2 Stale compose snapshot committed to tree]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[W3 Empty test file placeholder]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🔴 ERRORS (must fix)_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🟡 WARNINGS (should fix)_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🟢 INFO (nice to have)_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[dot-test_idempotent_rerun_finds_nothing_left()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_missing_db_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_no_matching_rows_is_a_clean_noop()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_processes_in_multiple_batches()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_purges_only_matching_event_type_and_severity()]] - code - gateway/tests/test_audit_archive.py
+- [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
+- [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
+- [[_make_mixed_live_db()]] - code - gateway/tests/test_audit_archive.py
+- [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
+- [[now()_10]] - code - gateway/tests/test_audit_archive.py
+- [[purge_low_value_events()]] - code - gateway/security/audit_archive.py
+- [[test_audit_archive.py]] - code - gateway/tests/test_audit_archive.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 7 edges to [[_COMMUNITY_archive_old_events]]
 
 ## Top bridge nodes
-- [[2. Findings]] - degree 4, connects to 1 community
+- [[purge_low_value_events()]] - degree 10, connects to 1 community
+- [[test_audit_archive.py]] - degree 8, connects to 1 community

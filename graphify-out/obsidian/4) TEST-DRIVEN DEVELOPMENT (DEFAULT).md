@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
+community: "graphify Skill (3)"
 location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+  - community/graphify_Skill_3
 ---
 
 # 4) TEST-DRIVEN DEVELOPMENT (DEFAULT)
@@ -16,4 +16,4 @@ tags:
 - [[Red → Green → Refactor]] - `contains` [EXTRACTED]
 - [[Test quality rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill_3

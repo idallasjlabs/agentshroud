@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "egress_filter.py"
+community: "DelegationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/DelegationManager
 ---
 
 # egress_filter.py
@@ -19,12 +19,12 @@ tags:
 - [[EgressFilter_2]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FR5 Restricted Data Flow]] - `references` [EXTRACTED]
 - [[HTTP_PROXY]] - `references` [INFERRED]
 - [[Rule agentshroud-ssrf-httpx]] - `references` [EXTRACTED]
 - [[Rule agentshroud-ssrf-requests]] - `references` [EXTRACTED]
-- [[agentshroud.yaml_1]] - `references` [INFERRED]
+- [[agentshroud.yaml]] - `references` [INFERRED]
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `conceptually_related_to` [EXTRACTED]
@@ -35,8 +35,8 @@ tags:
 - [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[input_normalizer.py]] - `references` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
-- [[prompt_guard.py]] - `references` [EXTRACTED]
+- [[prompt_guard.py_1]] - `references` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # .get_entry()
@@ -16,4 +16,4 @@ tags:
 - [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - `rationale_for` [EXTRACTED]
 - [[LedgerEntry_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

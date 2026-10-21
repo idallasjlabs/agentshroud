@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Technical Writer (TW)"
+community: "postmortem.md (2)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Writer_TW
+  - community/postmortemmd_2
 ---
 
 # Core Discipline: Understand → Structure → Write → Validate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/postmortemmd_2

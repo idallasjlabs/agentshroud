@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Additional Patches]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Behavior]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patch 1 Main Agent as Default]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patch 2 Telegram Binding]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patches Applied]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Purpose_187]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Related Notes_62]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Usage_127]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Why Required]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[apply-patches.js_2]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[apply-patches.js_1]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Notes_8]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +27,9 @@ members: 12
 TABLE source_file, type FROM #community/apply-patchesjs_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
+
+## Top bridge nodes
+- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 1 community

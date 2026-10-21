@@ -1,31 +1,25 @@
 ---
 type: community
-members: 18
+members: 12
 ---
 
 # Socrates — Dialogue Architect (2)
 
-**Members:** 18 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[Dialogue Adaptations_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Dialogue Techniques_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[EXPERT_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[ElevenLabs v3 Audio Tags_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Expert Persona_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[HOST_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Input Requirements_10]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Output Format_20]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Persona_6]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Quality Checklist_7]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Role_59]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_3]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Speaker Definitions_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[System Prompt_6]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[User Prompt Template_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[hermesskillsi-socratesSKILL]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[AgentShroud Security Inventory v0.8.0 (58 Modules)]] - document - docs/security/security-inventory.md
+- [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - document - docs/security/competitive-security-matrix.md
+- [[KeyVault Zero-Exposure In-Memory Secret Storage]] - concept - docs/security/security-inventory.md
+- [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - concept - docs/security/security-inventory.md
+- [[RT-MB2 Cross-Bot Shared Memory Leak (Fixed in PR)]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 Hermes Cron Job Injection via jobs.yaml (Accepted Risk)]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Red Team Assessment v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Security Module 27 Cross-Bot Trust Ledger (v1.2.0)]] - concept - docs/security/competitive-security-matrix.md
+- [[Security Module 28 Differential PII Detector on Tool Results 0.7-floor (v1.2.0)]] - concept - docs/security/competitive-security-matrix.md
+- [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - concept - docs/security/security-inventory.md
+- [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[TrustManager Progressive Trust Scoring (5 Levels)]] - concept - docs/security/security-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +27,16 @@ members: 18
 TABLE source_file, type FROM #community/Socrates__Dialogue_Architect_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements (3)]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect (2) (2)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency (2) (2)]]
+
+## Top bridge nodes
+- [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - degree 5, connects to 2 communities
+- [[Red Team Assessment v1.2.0]] - degree 7, connects to 1 community
+- [[AgentShroud Security Inventory v0.8.0 (58 Modules)]] - degree 6, connects to 1 community
+- [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - degree 4, connects to 1 community
+- [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - degree 4, connects to 1 community

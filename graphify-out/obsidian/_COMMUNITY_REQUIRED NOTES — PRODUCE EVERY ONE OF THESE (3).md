@@ -8,37 +8,37 @@ members: 31
 **Members:** 31 nodes
 
 ## Members
-- [[Folder Structure_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[Linking_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[OUTPUT FORMAT_10]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[System Audit Vault (Obsidian)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[Tags_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[YAML Frontmatter_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HEREHome.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HEREQuick Reference.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HERESystem Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureArchitecture Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureData Flow.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureShutdown & Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureStartup Sequence.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`05 - DependenciesAll Dependencies.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingError Index.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksCrash Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksFirst Time Setup.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksRestart Procedure.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`09 - DiagramsFull System Flowchart.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`09 - DiagramsStartup Flow Diagram.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[openclawskillsi-savSKILL]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[Alert Prioritization Display_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Anti-Patterns to Flag_4]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[CLI  TUI UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[CLI UX Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Confirmation Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Content Organization Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Contextual Actions_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Core Discipline Discover → Define → Design → Validate_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Dashboard UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Data Density Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Dependencies_4]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Drill-Down Pattern_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Error Message Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Feedback Loops (response time standards)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Field Design Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Form UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Generic Task Flow Template_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Information Architecture_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Interaction Design Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Navigation Hierarchy Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Role_26]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Rules_5]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Usability Audit Checklist_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[User Flow Diagrams_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Wayfinding_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[openclawskillsi-uxSKILL]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,7 +48,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[System Audit Vault (Obsidian)_2]] - degree 6, connects to 1 community
+- [[Skill UX Expert (UX)_2]] - degree 15, connects to 1 community

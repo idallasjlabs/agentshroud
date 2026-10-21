@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py (2)"
+community: "MCPPolicyEngine"
 location: "L606"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/MCPPolicyEngine
 ---
 
 # Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

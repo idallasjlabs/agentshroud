@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Get the log sanitizer for integration with logging system.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer_1]] - `references` [EXTRACTED]
+- [[LogSanitizer]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

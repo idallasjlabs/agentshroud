@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "models.py"
+community: "Update AgentShroud"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Update_AgentShroud
 ---
 
 # Environment Variables Used
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

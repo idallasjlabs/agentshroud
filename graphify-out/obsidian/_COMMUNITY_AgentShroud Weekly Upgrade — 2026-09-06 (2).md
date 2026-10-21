@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[1. Environment mapping]] - document - reports/upgrade-2026-09-06-dev.md
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Breaking changes  manual follow-ups]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Preflight  Baseline]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Rollback Instructions]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Summary]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Time spent]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Upgrade Table]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[upgrade-2026-09-06-20260906-0808]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
-- 1 edge to [[_COMMUNITY_SecurityFinding]]
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - degree 9, connects to 1 community
-- [[1. Environment mapping]] - degree 3, connects to 1 community
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community

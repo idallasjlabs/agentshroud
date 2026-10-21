@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
+- [[Chatbot Service Dependencies (requirements.txt)]] - code - chatbot/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 

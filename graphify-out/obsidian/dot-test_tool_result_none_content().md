@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (5)"
+community: "CrossBotTrustLedger"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_5
+  - community/CrossBotTrustLedger
 ---
 
 # .test_tool_result_none_content()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInspectorEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_5
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L136"
+community: "AgentShroud™ README"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/AgentShroud_README
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_README

@@ -1,30 +1,35 @@
 ---
 type: community
-members: 17
+members: 22
 ---
 
 # Function Details (5)
 
-**Members:** 17 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Function Details_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Purpose_117]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Related_17]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Responsibilities_15]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.destroy_session(session_id)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.register_event_source(session_id, source)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[session_security.py]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[check()_6]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[check()_7]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[deadline()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[dev_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[handoff_status()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[hermes_name()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[notify()_1]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[restore()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[smoke.sh Startup Smoke Runner]] - code - scripts/smoke.sh
+- [[summary()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test_openclaw_model_provider_consistency.sh]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[test_openclaw_model_provider_consistency.sh script]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
+- [[test_openclaw_readiness_retry.sh]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[test_openclaw_readiness_retry.sh script]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[write_fake()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +37,11 @@ members: 17
 TABLE source_file, type FROM #community/Function_Details_5
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY__w]]
+
+## Top bridge nodes
+- [[test-sunday-upgrade-scan.sh]] - degree 17, connects to 1 community
+- [[smoke.sh Startup Smoke Runner]] - degree 4, connects to 1 community

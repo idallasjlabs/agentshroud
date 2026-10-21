@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "TestEgressTelegramNotify"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/TestEgressTelegramNotify
 ---
 
 # _adf_paragraph()
@@ -15,4 +15,4 @@ tags:
 - [[build_comment_payload()_2]] - `calls` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

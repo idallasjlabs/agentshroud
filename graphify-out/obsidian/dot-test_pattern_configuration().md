@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "test_soc_router_coverage.py"
 location: "L418"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_pattern_configuration()
 
 ## Connections
 - [[Test that patterns are properly configured.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

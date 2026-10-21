@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: ".test_stranger_within_limit_triggers_approval_workflow()"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # Understanding Approval Requests
@@ -16,4 +16,4 @@ tags:
 - [[What Requires Approval]] - `contains` [EXTRACTED]
 - [[Why Approvals Exist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

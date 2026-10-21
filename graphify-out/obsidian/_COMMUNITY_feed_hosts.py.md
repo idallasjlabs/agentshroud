@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[feed_hosts.py]] - code - gateway/security/feed_hosts.py
+- [[OpenClaw researchweb_search domains pre-approved after 210-denial SOC saturation incident]] - rationale - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 

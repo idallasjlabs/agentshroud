@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "format_cve_report()"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/format_cve_report
 ---
 
 # .click()
@@ -16,9 +16,9 @@ tags:
 - [[dot-_log_action()_3]] - `calls` [EXTRACTED]
 - [[dot-_log_security_event()_3]] - `calls` [EXTRACTED]
 - [[dot-_requires_approval()_3]] - `calls` [EXTRACTED]
-- [[Click an element          Security Risk classification for destructive actions_3]] - `rationale_for` [EXTRACTED]
+- [[Click an element          Security Risk classification for destructive actions_2]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[SecurityError_3]] - `calls` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[main()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

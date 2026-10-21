@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py (2)"
+community: "AgentShroud Security Assessment — v0.8.0"
 location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # .test_five_when_openscap_clean()
@@ -16,4 +16,4 @@ tags:
 - [[_openscap_clean()]] - `calls` [EXTRACTED]
 - [[_score_container_hardening()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

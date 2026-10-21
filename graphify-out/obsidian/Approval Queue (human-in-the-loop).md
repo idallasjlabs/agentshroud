@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "Pre-Deployment Checklist"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/Pre-Deployment_Checklist
 ---
 
 # Approval Queue (human-in-the-loop)
@@ -14,4 +14,4 @@ tags:
 - [[SOC Dashboard]] - `shares_data_with` [EXTRACTED]
 - [[SecurityPipeline (75 modules, 7 layers)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist

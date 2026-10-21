@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "test_forward_stream.py (2)"
+community: "_make_proxy()"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/_make_proxy
 ---
 
 # .body_not_empty()
 
 ## Connections
-- [[EmailSendRequest_1]] - `method` [EXTRACTED]
+- [[EmailSendRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

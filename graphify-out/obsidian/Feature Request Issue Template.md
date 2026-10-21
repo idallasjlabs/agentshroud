@@ -1,13 +1,13 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/feature_request.yml"
 type: "document"
-community: "Feature Request Issue Template"
+community: "pre-commit (gitleaks + git-secrets gate)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Feature_Request_Issue_Template
+  - community/pre-commit_gitleaks__git-secrets_gate
 ---
 
 # Feature Request Issue Template
 
-#graphify/document #graphify/EXTRACTED #community/Feature_Request_Issue_Template
+#graphify/document #graphify/EXTRACTED #community/pre-commit_gitleaks__git-secrets_gate

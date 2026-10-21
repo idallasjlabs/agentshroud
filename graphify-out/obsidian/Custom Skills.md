@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "MiddlewareManager (2)"
+community: "TeamsConfig"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/TeamsConfig
 ---
 
 # Custom Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig

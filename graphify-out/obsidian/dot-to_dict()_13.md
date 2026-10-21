@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Path"
-location: "L125"
+community: "ResourceGuard (2)"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/ResourceGuard_2
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-to_json()]] - `calls` [EXTRACTED]
-- [[SkillsManifest]] - `method` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

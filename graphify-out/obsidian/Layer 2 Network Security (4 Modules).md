@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Layer-by-Layer Breakdown (3)"
+community: "Enterprise Governance Proxy System (invention)"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown_3
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Layer 2: Network Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[8. Network Rate Limiter]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_3
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

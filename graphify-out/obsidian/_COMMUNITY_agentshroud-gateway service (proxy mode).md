@@ -1,32 +1,26 @@
 ---
 type: community
-members: 19
+members: 13
 ---
 
 # agentshroud-gateway service (proxy mode)
 
-**Members:** 19 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Autonomous remote dev workflows (hdev, odev)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[Credential isolation — keys live only in the gateway]] - rationale - docker-compose.secure.yml
-- [[Gateway DNS filter endpoint (port 53)]] - concept - docker-compose.secure.yml
-- [[MCP servers confined to the internal network]] - rationale - docker-compose.secure.yml
-- [[PostgreSQL ~.pgpass password management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[Proxy mode — full network isolation + egress control]] - concept - docker-compose.secure.yml
-- [[Sidecar mode — optional security scanning]] - concept - docker-compose.sidecar.yml
-- [[agentshroud-external network]] - code - docker-compose.secure.yml
-- [[agentshroud-gateway service (proxy mode)]] - code - docker-compose.secure.yml
-- [[agentshroud-gateway service (sidecar mode)]] - code - docker-compose.sidecar.yml
-- [[agentshroud-internal network (no external access)]] - code - docker-compose.secure.yml
-- [[direnv-based environment variable management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[external network (gateway host-facing bridge)]] - code - docker-compose.secure.yml
-- [[internal network (isolated, internaltrue)]] - code - docker-compose.secure.yml
-- [[openclaw service (exposed, sidecar mode)]] - code - docker-compose.sidecar.yml
-- [[openclaw service (internal network only)]] - code - docker-compose.secure.yml
-- [[openclaw service (proxy mode, internal-only network)]] - code - docker-compose.secure.yml
-- [[wazuh service (proxy-mode HIDS sidecar)]] - code - docker-compose.secure.yml
-- [[wazuh-agent sidecar (pinned 4.14.7)]] - code - docker-compose.secure.yml
+- [[2026-05-05 agent stub cleanup (160 files removed)]] - document - .llm_settings/UPGRADE_LOG.md
+- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Gemini standalone-mode recursion fix]] - rationale - .llm_settings/UPGRADE_LOG.md
+- [[Governance & risk doctrine (ITIL v4, ISO 200009001, NIST CSF)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[LLM Operating Context — Isaiah Jefferson]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[MCP server expansion (3 → 11) and --mcp flag]] - document - .llm_settings/UPGRADE_LOG.md
+- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[Zabbix MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[llm-init.sh — project-level multi-tool config deployment]] - concept - .llm_settings/scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +30,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents (2) (2)]]
 
 ## Top bridge nodes
-- [[Autonomous remote dev workflows (hdev, odev)]] - degree 2, connects to 1 community
+- [[FODL — Fluence Operational Data Lakehouse]] - degree 6, connects to 1 community
+- [[LLM Operating Context — Isaiah Jefferson]] - degree 4, connects to 1 community
+- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community

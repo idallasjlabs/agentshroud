@@ -1,143 +1,88 @@
 ---
 type: community
-members: 130
+members: 75
 ---
 
 # RBACConfig
 
-**Members:** 130 nodes
+**Members:** 75 nodes
 
 ## Members
-- [[dot-__init__()_90]] - code - gateway/security/tool_acl.py
-- [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
-- [[dot-_get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
-- [[dot-_get_role()]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_tool()_1]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
-- [[dot-check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
-- [[dot-effective_admin()]] - code - gateway/security/tool_acl.py
-- [[dot-effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
-- [[dot-effective_private()]] - code - gateway/security/tool_acl.py
-- [[dot-enforcer()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-get_allowed_tools()]] - code - gateway/security/tool_acl.py
-- [[dot-get_denial_counts()]] - code - gateway/security/tool_acl.py
-- [[dot-get_denied_tools()]] - code - gateway/security/tool_acl.py
-- [[dot-get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
-- [[dot-get_user_role()_1]] - code - gateway/security/rbac_config.py
-- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
-- [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_operator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_owner()_2]] - code - gateway/security/rbac_config.py
-- [[dot-set_user_role()_1]] - code - gateway/security/rbac_config.py
-- [[dot-test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_can_use_allowed_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_can_use_unknown_tool_when_not_denied()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_can_use_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
-- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
-- [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
-- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
-- [[Authorize a tool call, refusing owner elevation over an unverified origin.]] - rationale - gateway/security/tool_acl.py
-- [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
-- [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
-- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
-- [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
-- [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
-- [[Check whether user_id may invoke the named tool.          Returns             (]] - rationale - gateway/security/tool_acl.py
-- [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - rationale - gateway/security/tool_acl.py
-- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
-- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
-- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
-- [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
-- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
-- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
-- [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
-- [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
-- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
-- [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - rationale - gateway/security/tool_acl.py
-- [[RBACConfig_2]] - code - gateway/tests/test_tool_acl.py
-- [[RBACConfig_3]] - code - gateway/security/rbac_config.py
-- [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
-- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
-- [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
-- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
-- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
-- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
-- [[Role_23]] - code - gateway/security/rbac_config.py
-- [[SCLCaller]] - code - gateway/tests/test_soc_bots.py
-- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_tool_acl.py
-- [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
-- [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
-- [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
-- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
-- [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
-- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
-- [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
-- [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
-- [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
-- [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
-- [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
-- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
-- [[ToolACLConfig]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
-- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
-- [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
-- [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - rationale - gateway/security/rbac_config.py
-- [[_make_rbac()]] - code - gateway/tests/test_tool_acl.py
-- [[can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
-- [[enforcer()]] - code - gateway/tests/test_tool_acl.py
-- [[rbac()]] - code - gateway/tests/test_tool_acl.py
-- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
-- [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
-- [[tool_acl.py]] - code - gateway/security/tool_acl.py
+- [[dot-__init__()_170]] - code - gateway/security/session_manager.py
+- [[dot-_load_sessions()]] - code - gateway/security/session_manager.py
+- [[dot-_save_sessions()]] - code - gateway/security/session_manager.py
+- [[dot-_session_key()]] - code - gateway/security/session_manager.py
+- [[dot-_validate_bot_id()]] - code - gateway/security/session_manager.py
+- [[dot-_validate_user_id()]] - code - gateway/security/session_manager.py
+- [[dot-add_conversation_message()]] - code - gateway/security/session_manager.py
+- [[dot-can_user_access_group()]] - code - gateway/security/session_manager.py
+- [[dot-can_user_access_session()]] - code - gateway/security/session_manager.py
+- [[dot-cleanup_old_sessions()_1]] - code - gateway/security/session_manager.py
+- [[dot-from_dict()_6]] - code - gateway/security/session_manager.py
+- [[dot-get_merged_context()]] - code - gateway/security/session_manager.py
+- [[dot-get_or_create_group_session()]] - code - gateway/security/session_manager.py
+- [[dot-get_or_create_session()]] - code - gateway/security/session_manager.py
+- [[dot-get_session_context()]] - code - gateway/security/session_manager.py
+- [[dot-get_session_prompt_addition()]] - code - gateway/security/session_manager.py
+- [[dot-get_user_workspace_path()]] - code - gateway/security/session_manager.py
+- [[dot-list_sessions_for_user()]] - code - gateway/security/session_manager.py
+- [[dot-mock_forwarder()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-mock_pipeline()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-reanchor_system_prompt()]] - code - gateway/security/session_manager.py
+- [[dot-session_manager()_1]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_complete_user_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_owner_admin_access()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_session_persistence()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_webhook_conversation_logging()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_webhook_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_webhook_user_id_extraction()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-to_dict()_11]] - code - gateway/security/session_manager.py
+- [[dot-update_user_trust_level()]] - code - gateway/security/session_manager.py
+- [[A single message in a conversation.]] - rationale - gateway/security/session_manager.py
+- [[Add a message to the user's conversation history for a specific bot.]] - rationale - gateway/security/session_manager.py
+- [[Any_69]] - code - gateway/security/session_manager.py
+- [[Atomically persist current sessions to the metadata file.          Writes are se]] - rationale - gateway/security/session_manager.py
+- [[Check if a user can access another user's session.]] - rationale - gateway/security/session_manager.py
+- [[Clean up sessions that haven't been active for the specified number of days.]] - rationale - gateway/security/session_manager.py
+- [[ConversationMessage]] - code - gateway/security/session_manager.py
+- [[Convert session to dictionary for serialization.]] - rationale - gateway/security/session_manager.py
+- [[Create a mock forwarder.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a mock security pipeline.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a session manager.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create session from dictionary.]] - rationale - gateway/security/session_manager.py
+- [[End-to-end integration tests for session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Get existing session or create a new one for the (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
+- [[Get or create a shared workspace + MEMORY.md for a group.]] - rationale - gateway/security/session_manager.py
+- [[Get session context for injection into agent request.]] - rationale - gateway/security/session_manager.py
+- [[Get session-specific prompt addition for the agent.]] - rationale - gateway/security/session_manager.py
+- [[Get the workspace path for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
+- [[GroupSession]] - code - gateway/security/session_manager.py
+- [[Initialize session manager.          Args             base_workspace Base dire]] - rationale - gateway/security/session_manager.py
+- [[List session keys that the requesting user is allowed to see.          Returns t]] - rationale - gateway/security/session_manager.py
+- [[Load existing sessions from metadata file.          Handles both the new ``{use]] - rationale - gateway/security/session_manager.py
+- [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - rationale - gateway/security/session_manager.py
+- [[Path_54]] - code - gateway/security/session_manager.py
+- [[Represents a shared workspace + memory for a group.]] - rationale - gateway/security/session_manager.py
+- [[Return True if user_id is a member of group_id.          Checks rbac_config.get_]] - rationale - gateway/security/session_manager.py
+- [[Return the cache key string for a (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
+- [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - rationale - gateway/security/session_manager.py
+- [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - rationale - gateway/security/session_manager.py
+- [[Test File Sandbox Message Gate Suite]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[Test WebhookReceiver integration with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test complete isolation between two users.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that conversations are logged per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owneradmin can access all user sessions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session context is injected into forwarded requests.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that sessions persist across manager restarts.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that user IDs are properly extracted from webhook payloads.]] - rationale - gateway/tests/test_session_isolation.py
+- [[TestSessionIsolationEndToEnd]] - code - gateway/tests/test_session_isolation.py
+- [[TestWebhookReceiverIntegration]] - code - gateway/tests/test_session_isolation.py
+- [[Update the trust level for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
+- [[UserSessionManager]] - code - gateway/security/session_manager.py
+- [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - rationale - gateway/security/session_manager.py
+- [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - rationale - gateway/security/session_manager.py
+- [[session_manager.py]] - code - gateway/security/session_manager.py
+- [[test_session_isolation.py]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -147,48 +92,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 61 edges to [[_COMMUNITY_MiddlewareManager]]
-- 45 edges to [[_COMMUNITY_TeamsConfig]]
-- 30 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 29 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 26 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 19 edges to [[_COMMUNITY_RBACConfig (2)]]
-- 19 edges to [[_COMMUNITY_TrustConfig]]
-- 12 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 10 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 9 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
-- 8 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 8 edges to [[_COMMUNITY_SecurityPipeline]]
-- 8 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 6 edges to [[_COMMUNITY_socrouter.py]]
-- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 4 edges to [[_COMMUNITY__FakeRBAC]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager (12)]]
-- 4 edges to [[_COMMUNITY_export_bot]]
-- 4 edges to [[_COMMUNITY__FakeRBAC (2)]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py (2)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 2 edges to [[_COMMUNITY_Action]]
-- 2 edges to [[_COMMUNITY_Action (2)]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py (2)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 1 edge to [[_COMMUNITY_PipelineAction (2)]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only) (2)]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
-- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide (3)]]
-- 1 edge to [[_COMMUNITY_ModuleStatsCollector (2)]]
+- 19 edges to [[_COMMUNITY_MiddlewareManager]]
+- 17 edges to [[_COMMUNITY_RBACConfig (2)]]
+- 13 edges to [[_COMMUNITY_TestProductionCompose]]
+- 11 edges to [[_COMMUNITY_export_bot]]
+- 11 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 8 edges to [[_COMMUNITY_AgentTarget]]
+- 7 edges to [[_COMMUNITY_TestToolChainAnalyzer (2)]]
+- 5 edges to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 5 edges to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
+- 4 edges to [[_COMMUNITY_KillSwitchMonitor (5)]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (3)]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (4)]]
+- 3 edges to [[_COMMUNITY_api.py (2)]]
+- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_RBACConfig (3)]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_Remediation]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
+- 1 edge to [[_COMMUNITY_CICD Quality Gates (14 jobs, 6 workflows)]]
+- 1 edge to [[_COMMUNITY_api.py (2) (2)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
+- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
 
 ## Top bridge nodes
-- [[RBACConfig_3]] - degree 217, connects to 28 communities
-- [[Role_23]] - degree 107, connects to 19 communities
-- [[ToolACLEnforcer]] - degree 75, connects to 4 communities
-- [[tool_acl.py]] - degree 9, connects to 3 communities
-- [[can_use_tool_from_origin]] - degree 5, connects to 3 communities
+- [[UserSessionManager]] - degree 132, connects to 22 communities
+- [[test_session_isolation.py]] - degree 8, connects to 5 communities
+- [[TestWebhookReceiverIntegration]] - degree 13, connects to 4 communities
+- [[TestSessionIsolationEndToEnd]] - degree 10, connects to 4 communities
+- [[dot-from_dict()_6]] - degree 7, connects to 2 communities

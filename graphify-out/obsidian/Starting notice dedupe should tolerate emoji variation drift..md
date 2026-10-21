@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer()"
+community: "CronStateMonitor (2)"
 location: "L2325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/CronStateMonitor_2
 ---
 
 # Starting notice dedupe should tolerate emoji variation drift.
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_proxy_request_suppresses_starting_notice_emoji_variants()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_proxy_request_suppresses_startup_notice_emoji_variants()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor_2

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # ContextGuard
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_12]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_15]] - `method` [EXTRACTED]
 - [[dot-_detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[dot-_detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[dot-_detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[dot-get_attack_summary()]] - `method` [EXTRACTED]
 - [[dot-get_segment_provenance()]] - `method` [EXTRACTED]
 - [[dot-get_session_risk_level()]] - `method` [EXTRACTED]
-- [[dot-guard()_5]] - `calls` [EXTRACTED]
 - [[dot-guard()]] - `calls` [EXTRACTED]
+- [[dot-guard()_6]] - `calls` [EXTRACTED]
 - [[dot-record_segment()]] - `method` [EXTRACTED]
 - [[dot-should_block_message()]] - `method` [EXTRACTED]
 - [[dot-tag_segment()]] - `method` [EXTRACTED]
@@ -41,19 +41,19 @@ tags:
 - [[ApprovalHardening]] - `semantically_similar_to` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestCheckMessage]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -77,13 +77,13 @@ tags:
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSourceTagging]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
@@ -94,7 +94,7 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[get_context_guard()]] - `references` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[pipeline()_1]] - `calls` [EXTRACTED]
+- [[pipeline()]] - `calls` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
@@ -102,4 +102,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

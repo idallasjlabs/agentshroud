@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "concept"
-community: "BotConfig (3)"
+community: "installer.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/installerpy
 ---
 
 # Read-Only Filesystem (Planned)
@@ -15,4 +15,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/BotConfig_3
+#graphify/concept #graphify/EXTRACTED #community/installerpy

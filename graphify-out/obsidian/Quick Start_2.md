@@ -1,20 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "README.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L38"
+community: "AuditExporter"
+location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/AuditExporter
 ---
 
 # Quick Start
 
 ## Connections
-- [[1. Verify Installation]] - `contains` [EXTRACTED]
-- [[2. Configure Allowlist]] - `contains` [EXTRACTED]
-- [[3. Test Navigation]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

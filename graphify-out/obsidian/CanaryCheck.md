@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget (2)"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget_2
 ---
 
 # CanaryCheck
@@ -16,4 +16,4 @@ tags:
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

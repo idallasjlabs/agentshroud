@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "rationale"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
+community: "GSDE&G Skills Reference (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+  - community/GSDEG_Skills_Reference_2
 ---
 
 # RT-6 — Owner-Identity Spoofing via /forward body (FIXED)
@@ -14,4 +14,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[forward.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2

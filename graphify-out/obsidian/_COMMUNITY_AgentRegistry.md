@@ -1,82 +1,81 @@
 ---
 type: community
-members: 69
+members: 68
 ---
 
 # AgentRegistry
 
-**Members:** 69 nodes
+**Members:** 68 nodes
 
 ## Members
-- [[dot-__init__()_188]] - code - gateway/security/agent_isolation.py
-- [[dot-__init__()_189]] - code - gateway/security/agent_isolation.py
-- [[dot-from_dict()_7]] - code - gateway/security/agent_isolation.py
-- [[dot-register()]] - code - gateway/security/agent_isolation.py
-- [[dot-setup_method()_36]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_compose_security_opts()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_container_config_defaults()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_fully_isolated_agents_pass()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_generate_compose()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_get_missing_returns_none()_1]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_group_agents_are_isolatable()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_and_collab_identities_coexist()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_list_agents()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_list_agents()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_network_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_network_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_new_privileges_allowed_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_register_and_get()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_register_and_get()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_group_agent_identity()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_register_group_agent_with_chat_type_supergroup()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_separate_networks_pass()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_separate_volumes_pass()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_serialization()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_serialization_roundtrip()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_shared_network_detected()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_shared_network_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_shared_nothing_ok()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_shared_nothing_security_issue()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_shared_volume_detected()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_shared_volume_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_single_agent_fully_secure()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_unregister()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_unregister_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_unregister_removes_agent()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-to_dict()_10]] - code - gateway/security/agent_isolation.py
-- [[dot-unregister()]] - code - gateway/security/agent_isolation.py
-- [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[AgentRegistry]] - code - gateway/security/agent_isolation.py
-- [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - rationale - gateway/tests/test_group_isolation.py
-- [[ContainerConfig]] - code - gateway/tests/test_agent_isolation.py
-- [[ContainerConfig_1]] - code - gateway/security/agent_isolation.py
-- [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
-- [[Helper to create a ContainerConfig with sensible defaults.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[IsolationVerifier]] - code - gateway/security/agent_isolation.py
-- [[Register a group-{chat_id} identity in AgentRegistry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Register a supergroup-type agent identity.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Register an agent with its container configuration.]] - rationale - gateway/security/agent_isolation.py
-- [[Registry mapping agent IDs to container configurations.]] - rationale - gateway/security/agent_isolation.py
-- [[Remove an agent from the registry.]] - rationale - gateway/security/agent_isolation.py
-- [[Serialize registry to dict.]] - rationale - gateway/security/agent_isolation.py
-- [[TestAgentIsolation]] - code - gateway/tests/test_security_hardening.py
-- [[TestAgentRegistry]] - code - gateway/tests/test_agent_isolation.py
-- [[TestAgentRegistryGroupIdentity]] - code - gateway/tests/test_group_isolation.py
-- [[TestGenerateCompose]] - code - gateway/tests/test_agent_isolation.py
-- [[TestNetworkIsolation]] - code - gateway/tests/test_agent_isolation.py
-- [[TestSharedNothing]] - code - gateway/tests/test_agent_isolation.py
-- [[TestVolumeIsolation]] - code - gateway/tests/test_agent_isolation.py
-- [[Two group identities should each have distinct volumes.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Verify container isolation properties.]] - rationale - gateway/security/agent_isolation.py
-- [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
-- [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_blocks_scanned_even_when_text_present()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_chat_postmessage_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_chat_update_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_missing_url_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_rewrites_url()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_skips_content_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_slack_error_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_is_owner_channel_matches_owner_uid()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_is_owner_channel_no_match_for_other()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_no_bot_token_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_message_method_not_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_clean_message_passes()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_info_filter_redaction_blocks()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_pipeline_exception_fail_closed()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_tailscale_hostname_blocked()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_outbound_blocked_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_owner_channel_uses_full_trust()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_owner_pipeline_exception_fail_open()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_post_ephemeral_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_sanitized_text_replaces_original()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_structured_field_sanitization_blocks_delivery()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_system_notification_skips_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_text_sanitization_still_applied()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_urlencoded_body_parsed()]] - code - gateway/tests/test_slack_proxy.py
+- [[A secret hidden in blocks must be caught even if `text` is benign.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Create a SlackAPIProxy with test credentials and no real IO.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Each call to apps.connections.open issues a distinct relay token.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[If the pipeline wants to redact inside blocks JSON, delivery is blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Legacy attachments are scanned for leaked content.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel Tailscale hostname triggers leakage pre-check → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel clean message with no leakage passes through.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel high-risk leakage detected before pipeline → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 → blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline exception → logged but message still forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Plain-text sanitization keeps working (redacted text forwarded).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[TestMultiFieldOutboundScanning]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
+- [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
+- [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
+- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[_make_proxy()_4]] - code - gateway/tests/test_slack_proxy.py
+- [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - rationale - gateway/tests/test_slack_proxy.py
+- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns the URL once then None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[files.upload initial_commenttitle text is scanned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -86,26 +85,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_TrustConfig]]
-- 14 edges to [[_COMMUNITY_AlertDispatcher]]
-- 11 edges to [[_COMMUNITY_MiddlewareManager]]
-- 10 edges to [[_COMMUNITY_AgentRegistry (2)]]
-- 7 edges to [[_COMMUNITY_ContextSegment]]
-- 5 edges to [[_COMMUNITY_TeamsConfig]]
-- 4 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)]]
-- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (5)]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
+- 33 edges to [[_COMMUNITY_api.py (2)]]
+- 6 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py (2)]]
 
 ## Top bridge nodes
-- [[AgentRegistry]] - degree 69, connects to 10 communities
-- [[ContainerConfig_1]] - degree 38, connects to 9 communities
-- [[TestAgentIsolation]] - degree 31, connects to 8 communities
-- [[IsolationVerifier]] - degree 48, connects to 6 communities
-- [[TestAgentRegistryGroupIdentity]] - degree 12, connects to 3 communities
+- [[test_slack_proxy.py]] - degree 10, connects to 3 communities
+- [[_make_proxy()_4]] - degree 36, connects to 2 communities
+- [[TestOwnerChannelFiltering]] - degree 14, connects to 2 communities
+- [[TestProxyOutbound]] - degree 12, connects to 2 communities
+- [[TestMultiFieldOutboundScanning]] - degree 10, connects to 2 communities

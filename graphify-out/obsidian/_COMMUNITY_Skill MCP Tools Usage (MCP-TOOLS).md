@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[1. GitHub MCP_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[2. Atlassian MCP (Jira + Confluence)_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[3. AWS API MCP_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[Authentication Issues_3]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[Available MCP Servers_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[Common Errors_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[MCP Troubleshooting_1]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[Role_101]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[openclawskillsi-mcpmSKILL]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[1. Schema Validation_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[2. Partition Coverage_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[3. Data Quality Checks_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[4. Cross-Site Comparison_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[Critical Cost Control_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[Role_91]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[Skill Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[Test Data Validation Pattern_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[Validation Layers_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[hermesskillsi-dataSKILL]] - document - docker/config/hermes/skills/i-data/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - degree 5, connects to 1 community
+- [[Skill Data Validation (DATA-VAL)_1]] - degree 6, connects to 1 community

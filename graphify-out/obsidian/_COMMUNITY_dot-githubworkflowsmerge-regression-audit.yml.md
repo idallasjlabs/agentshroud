@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dot-githubworkflowsmerge-regression-audit.yml]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[OpenClaw cron Agentic AI Threat Intelligence]] - code - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

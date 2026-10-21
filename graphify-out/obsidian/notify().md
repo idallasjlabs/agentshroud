@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "AgentTarget (5)"
-location: "L161"
+community: "_w"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/_w
 ---
 
 # notify()
@@ -17,4 +17,4 @@ tags:
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
 - [[log()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/code #graphify/EXTRACTED #community/_w

@@ -1,18 +1,30 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "ReportStore"
-location: "L182"
+community: "ApprovalQueueConfig"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/ApprovalQueueConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-list()]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_4]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `references` [EXTRACTED]
+- [[dot-process_outbound()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_1]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

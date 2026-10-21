@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[Suspected prompt-injection  phishing message (fake tailscale.tm credential request)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
 
 ## Live Query (requires Dataview plugin)
 

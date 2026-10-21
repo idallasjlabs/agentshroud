@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # SHA-256 hash of content string          Args:             content: Text to hash
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_hash_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

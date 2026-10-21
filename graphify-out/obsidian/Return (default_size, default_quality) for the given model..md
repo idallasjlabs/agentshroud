@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "rationale"
-community: "gen.py"
+community: "EgressTelegramNotifier"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/genpy
+  - community/EgressTelegramNotifier
 ---
 
 # Return (default_size, default_quality) for the given model.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_model_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/genpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier

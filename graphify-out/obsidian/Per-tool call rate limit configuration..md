@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # Per-tool call rate limit configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolRateLimit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "AuditStore"
+community: "AlertDispatcher (5)"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AlertDispatcher_5
 ---
 
 # Query audit events with optional filters.          Args:             bot_id: Whe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-query_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditStore
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_5

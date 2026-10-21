@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Tailscale mesh VPN (tail240ea8.ts.net)"
+community: "ssh_runner"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Tailscale_mesh_VPN_tail240ea8tsnet
+  - community/ssh_runner
 ---
 
 # Trillian (Mac Mini) — Secondary build/CI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Tailscale mesh VPN (tail240ea8.ts.net)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Tailscale_mesh_VPN_tail240ea8tsnet
+#graphify/concept #graphify/EXTRACTED #community/ssh_runner

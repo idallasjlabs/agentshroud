@@ -1,19 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L35"
+community: "🛡️ AgentShroud Release Plan"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Authentication
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Option 1 GitHub Login]] - `contains` [EXTRACTED]
-- [[Option 2 Personal Access Token]] - `contains` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

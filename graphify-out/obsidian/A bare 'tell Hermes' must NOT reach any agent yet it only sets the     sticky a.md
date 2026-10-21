@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L3152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # A bare 'tell Hermes' must NOT reach any agent yet: it only sets the     sticky a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_tell_agent_command_intercepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

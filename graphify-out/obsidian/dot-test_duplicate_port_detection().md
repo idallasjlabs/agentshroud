@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "PortManager"
+community: "TrustConfig (2)"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TrustConfig_2
 ---
 
 # .test_duplicate_port_detection()
@@ -16,4 +16,4 @@ tags:
 - [[TestResolveports]] - `method` [EXTRACTED]
 - [[Two services requesting same port — second gets reassigned.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

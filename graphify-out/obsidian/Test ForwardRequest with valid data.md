@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "test_security.py"
+community: "_make_proxy()"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/_make_proxy
 ---
 
 # Test ForwardRequest with valid data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_securitypy
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

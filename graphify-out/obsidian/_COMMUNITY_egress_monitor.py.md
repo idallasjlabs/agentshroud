@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Alert Actions]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Configuration  Environment Variables_17]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Default Thresholds]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.check_anomalies(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.daily_summary(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.get_events(agent_id, channel)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Function Details_32]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Key Classes  Functions_34]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Purpose_154]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Related_38]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Responsibilities_36]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[BrowserSecurityGuard.analyze_content(content)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.can_enter_credentials(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.check_url_reputation(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Purpose_131]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Threat Model_19]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[URL Reputation Signals]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[browser_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[browser_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 
 ## Live Query (requires Dataview plugin)
 

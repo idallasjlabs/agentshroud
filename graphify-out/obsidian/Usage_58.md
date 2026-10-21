@@ -1,17 +1,21 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
-location: "L10"
+community: "hermes/workspace/jira_dev_ticket.py"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Click Element]] - `contains` [EXTRACTED]
+- [[Extract Data]] - `contains` [EXTRACTED]
+- [[Navigate to URL]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Take Screenshot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[ToolChainAnalyzer._calculate_risk_score]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._cleanup_old_sessions]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._detect_chain_patterns]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._matches_source_pattern]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer._trigger_alert]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer.analyze_tool_call]] - code - gateway/security/tool_chain_analyzer.py
+- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
+- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
+- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
+- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
+- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,9 @@ members: 6
 TABLE source_file, type FROM #community/ToolChainAnalyzeranalyze_tool_call
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_graphify Skill]]
+
+## Top bridge nodes
+- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - degree 6, connects to 1 community

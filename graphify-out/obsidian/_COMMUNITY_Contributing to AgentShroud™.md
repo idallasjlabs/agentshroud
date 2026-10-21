@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Code Style]] - document - CONTRIBUTING.md
-- [[Code of Conduct]] - document - CONTRIBUTING.md
-- [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
-- [[Development Setup]] - document - CONTRIBUTING.md
-- [[Implementation Status_2]] - document - scripts/README.md
-- [[Maintenance Scripts]] - document - scripts/README.md
-- [[Pull Request Process]] - document - CONTRIBUTING.md
-- [[Questions_1]] - document - CONTRIBUTING.md
-- [[Requirements]] - document - CONTRIBUTING.md
-- [[Response SLA]] - document - CONTRIBUTING.md
-- [[Scripts (to be implemented throughout development)]] - document - scripts/README.md
-- [[Security Scripts]] - document - scripts/README.md
-- [[Test Guidelines]] - document - CONTRIBUTING.md
-- [[Utility Scripts]] - document - scripts/README.md
-- [[What to Contribute]] - document - CONTRIBUTING.md
-- [[scriptsREADME]] - document - scripts/README.md
+- [[Cron Telegram delivery bypassed v1.5.2 base_url patch — fixed via third patch anchor on _send_to_platform]] - rationale - CHANGELOG.md
+- [[Daily Check-in dumped raw ssh-exec JSON verbatim — rewritten to parse stdoutstderr]] - rationale - CHANGELOG.md
+- [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[Patch 1 — _send_telegram signature + Bot() construction (version-tolerant anchors)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Patch 1b — _send_to_platform Telegram call site (fixes cron Delivertelegram bypass)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Patch 2 — adapter.py _standalone_send passthrough]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Vendor target _send_telegram (toolssend_message_tool.py or send_message_senders.py)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Vendor target _send_to_platform (toolssend_message_tool.py, cron delivery call site)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[Vendor target _standalone_send (pluginsplatformstelegramadapter.py)]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[_read()]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[daily-checkin.sh (marvinpi status check)]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[dash echo XSI backslash-escape bug — fixed with printf '%sn']] - rationale - CHANGELOG.md
+- [[patch_telegram_send_base_url.py]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[patch_telegram_send_base_url.py patch driver]] - code - docker/bots/hermes/patch_telegram_send_base_url.py
+- [[ssh-exec.sh  ssh-write-file.sh fixed-filename race — moved to PID-suffixed files]] - rationale - CHANGELOG.md
+- [[v1.5.3 Release — Telegramcron delivery fixes]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,3 @@ members: 16
 TABLE source_file, type FROM #community/Contributing_to_AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
-
-## Top bridge nodes
-- [[Contributing to AgentShroud™]] - degree 9, connects to 1 community

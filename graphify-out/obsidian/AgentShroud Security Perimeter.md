@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "concept"
-community: "main.py.md (2)"
+community: "MiddlewareManager (4)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/mainpymd_2
+  - community/MiddlewareManager_4
 ---
 
 # AgentShroud Security Perimeter
@@ -20,4 +20,4 @@ tags:
 - [[PII redacted before forwarding]] - `rationale_for` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/mainpymd_2
+#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_4

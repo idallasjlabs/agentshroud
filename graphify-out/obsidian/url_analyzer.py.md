@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
-type: "code"
-community: "TestSSRFDetection"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+type: "document"
+community: "2. Security Analysis"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/2_Security_Analysis
 ---
 
-# url_analyzer.py
+# url_analyzer.py.md
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
-- [[URLAnalyzer]] - `contains` [EXTRACTED]
-- [[URLFinding]] - `contains` [EXTRACTED]
-- [[URLVerdict]] - `contains` [EXTRACTED]
-- [[_looks_like_base64()]] - `contains` [EXTRACTED]
-- [[web_config.py]] - `references` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `references` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis

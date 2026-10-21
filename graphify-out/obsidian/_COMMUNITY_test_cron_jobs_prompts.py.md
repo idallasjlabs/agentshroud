@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Bootstrap cron copy must also have denial-token avoidance — except the     Daily]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct the LLM to avoid 'denied' —     e]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Path_53]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[Read up to the end of the request's header block (rnrn).      Returns (h]] - rationale - docker/bots/hermes/dashboard_bridge.py
+- [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - rationale - docker/bots/hermes/dashboard_bridge.py
+- [[StreamReader_1]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamReader_2]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_handle()_2]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[_handle()_3]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_pipe()_2]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[_pump()]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[main()_28]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[main()_29]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,3 @@ members: 16
 TABLE source_file, type FROM #community/test_cron_jobs_promptspy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (4)]]
-
-## Top bridge nodes
-- [[test_cron_jobs_prompts.py]] - degree 9, connects to 1 community

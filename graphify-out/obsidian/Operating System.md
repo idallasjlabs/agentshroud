@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Required Software"
+community: "colima-health-check.sh (2)"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required_Software
+  - community/colima-health-checksh_2
 ---
 
 # Operating System
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💻 System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required_Software
+#graphify/document #graphify/EXTRACTED #community/colima-health-checksh_2

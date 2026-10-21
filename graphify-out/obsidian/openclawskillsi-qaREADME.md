@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "Quality Assurance (QA)"
+community: "agentshroud-manage.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quality_Assurance_QA
+  - community/agentshroud-managesh
 ---
 
 # openclaw/skills/i-qa/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA
+#graphify/document #graphify/EXTRACTED #community/agentshroud-managesh

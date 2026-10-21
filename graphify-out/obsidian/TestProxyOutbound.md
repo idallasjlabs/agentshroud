@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # TestProxyOutbound
@@ -21,8 +21,8 @@ tags:
 - [[dot-test_sanitized_text_replaces_original()]] - `method` [EXTRACTED]
 - [[dot-test_system_notification_skips_pipeline()]] - `method` [EXTRACTED]
 - [[dot-test_urlencoded_body_parsed()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `uses` [INFERRED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

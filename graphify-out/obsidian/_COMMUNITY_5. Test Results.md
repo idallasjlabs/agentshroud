@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Container Health]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Live System Status]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Unit Test Suite]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[5. Test Results]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Monitor-First Design Rationale Observe → Tune → Enforce (operator must flip before production)]] - rationale - docs/planning/redteam/01-enforce-by-default.md
+- [[Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)]] - concept - docs/planning/redteam/00-information-disclosure.md
+- [[Red Team Finding 00 Agent Self-Disclosure of Internal Architecture]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Red Team Finding 01 Security Modules Default to Monitor Mode — Zero Active Defense]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/5_Test_Results
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[5. Test Results]] - degree 4, connects to 1 community

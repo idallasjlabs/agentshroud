@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
+- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

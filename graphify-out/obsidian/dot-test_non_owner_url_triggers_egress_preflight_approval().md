@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2)"
 location: "L5806"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_non_owner_url_triggers_egress_preflight_approval()
@@ -19,6 +19,6 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[check_async()_24]] - `contains` [EXTRACTED]
+- [[check_async()_20]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

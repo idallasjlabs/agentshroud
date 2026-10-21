@@ -1,52 +1,88 @@
 ---
 type: community
-members: 39
+members: 75
 ---
 
 # AlertDispatcher (3)
 
-**Members:** 39 nodes
+**Members:** 75 nodes
 
 ## Members
-- [[dot-__init__()_92]] - code - gateway/security/oauth_security.py
-- [[dot-check_state_reuse()]] - code - gateway/security/oauth_security.py
-- [[dot-create_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[dot-record_state_used()]] - code - gateway/security/oauth_security.py
-- [[dot-register_known_shared_ids()]] - code - gateway/security/oauth_security.py
-- [[dot-test_cookie_custom_max_age_expires_sooner()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_cookie_expired_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_cookie_tamper_detected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_cookie_within_max_age_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_cookie_wrong_client_fails()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_cookie_wrong_scope_fails()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_create_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_different_uri_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_empty_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_empty_state_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_exact_match_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_http_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_path_traversal_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_pkce_plain_rejected_when_s256_required()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_pkce_required_missing_challenge()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_pkce_s256_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_pkce_verifier_validation()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_short_state_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_state_replay_detected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_static_shared_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_unique_client_id_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_valid_state_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_validate_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-validate_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[dot-verify_pkce()]] - code - gateway/security/oauth_security.py
-- [[OAuthRequest]] - code - gateway/security/oauth_security.py
-- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
-- [[TestClientValidation]] - code - gateway/tests/test_oauth_security.py
-- [[TestConsentCookieBinding]] - code - gateway/tests/test_oauth_security.py
-- [[TestPKCE]] - code - gateway/tests/test_oauth_security.py
-- [[TestRedirectURI]] - code - gateway/tests/test_oauth_security.py
-- [[TestStateValidation]] - code - gateway/tests/test_oauth_security.py
-- [[test_oauth_security.py]] - code - gateway/tests/test_oauth_security.py
-- [[validator()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-__init__()_168]] - code - gateway/security/progressive_lockdown.py
+- [[dot-__init__()_169]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-_get_state()]] - code - gateway/security/progressive_lockdown.py
+- [[dot-_run_owner_cmd()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-_run_owner_cmd()_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-_setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-all_statuses()]] - code - gateway/security/progressive_lockdown.py
+- [[dot-get_status()_2]] - code - gateway/security/progressive_lockdown.py
+- [[dot-is_owner()_5]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-is_suspended()]] - code - gateway/security/progressive_lockdown.py
+- [[dot-process_inbound()_10]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-record_block()]] - code - gateway/security/progressive_lockdown.py
+- [[dot-reset()_2]] - code - gateway/security/progressive_lockdown.py
+- [[dot-test_alert_level_at_3_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_all_statuses_empty_initially()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_all_statuses_excludes_reset_users()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_all_statuses_tracks_all_users()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_escalated_level_at_5_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_locked_includes_unlock_hint()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_locked_lists_suspended_user()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_locked_no_active_lockdowns()_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_locked_shows_all_non_normal_users()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_no_notify_below_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_notify_owner_fires_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_owner_messages_pass_despite_collab_suspension()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_reset_false_for_unknown_user()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_reset_removes_suspended_state()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_reset_true_for_known_user()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_suspended_drop_notice_respects_cooldown()_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_suspended_level_at_10_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_suspended_user_gets_drop_notice()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_unlock_clears_suspended_drop_cooldown()_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_unlock_known_user_succeeds()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_unlock_unknown_user_reports_no_state()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-test_unlock_without_user_id_shows_usage()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[Drive a single owner command through the proxy and capture admin notices.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FakePipelineResult_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[FakeRBAC_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[LockdownAction]] - code - gateway/security/progressive_lockdown.py
+- [[LockdownLevel]] - code - gateway/security/progressive_lockdown.py
+- [[Owner command reset lockdown state for a user. Returns True if existed.]] - rationale - gateway/security/progressive_lockdown.py
+- [[Owner messages must never be blocked by the suspension logic.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[PassthroughPipeline_1]] - code - gateway/tests/test_progressive_lockdown.py
+- [[Progressive Lockdown UX Tests]] - code - gateway/tests/test_progressive_lockdown.py
+- [[ProgressiveLockdown]] - code - gateway/security/progressive_lockdown.py
+- [[Record one blocked request for user_id and return the resulting action.]] - rationale - gateway/security/progressive_lockdown.py
+- [[Return True if the user's session is currently suspended.]] - rationale - gateway/security/progressive_lockdown.py
+- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Return current lockdown state for a user (for collabs or owner inspection).]] - rationale - gateway/security/progressive_lockdown.py
+- [[Return lockdown status for all tracked users.]] - rationale - gateway/security/progressive_lockdown.py
+- [[TelegramAPIProxy_3]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestLockedCommand]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestProgressiveLockdownUnit]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestSuspendedDropNotice]] - code - gateway/tests/test_progressive_lockdown.py
+- [[TestUnlockCommand]] - code - gateway/tests/test_progressive_lockdown.py
+- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Tracks per-user block counts and returns escalation actions.      Thread-safe fo]] - rationale - gateway/security/progressive_lockdown.py
+- [[UserLockdownState]] - code - gateway/security/progressive_lockdown.py
+- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[Verify suspended users get a drop notice (rate-limited to avoid spam).]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[What the caller should do in response to this block.]] - rationale - gateway/security/progressive_lockdown.py
+- [[_make_proxy()_3]] - code - gateway/tests/test_progressive_lockdown.py
+- [[_make_update()_2]] - code - gateway/tests/test_progressive_lockdown.py
+- [[_wrap()]] - code - gateway/tests/test_progressive_lockdown.py
+- [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
+- [[test_progressive_lockdown.py]] - code - gateway/tests/test_progressive_lockdown.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,13 +92,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_AlertDispatcher]]
-- 11 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 12 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 8 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
+- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY__make_proxy]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-browserpackage.json]]
 
 ## Top bridge nodes
-- [[OAuthSecurityValidator]] - degree 30, connects to 3 communities
-- [[OAuthRequest]] - degree 17, connects to 1 community
-- [[TestConsentCookieBinding]] - degree 15, connects to 1 community
-- [[TestPKCE]] - degree 11, connects to 1 community
-- [[TestRedirectURI]] - degree 11, connects to 1 community
+- [[ProgressiveLockdown]] - degree 47, connects to 6 communities
+- [[FR2 Use Control]] - degree 7, connects to 6 communities
+- [[_make_proxy()_3]] - degree 18, connects to 1 community
+- [[TestProgressiveLockdownUnit]] - degree 15, connects to 1 community
+- [[LockdownLevel]] - degree 14, connects to 1 community

@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
-- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
-- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
-- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
-- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
-- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
-- [[PII Leak Incident]] - document - docs/operations/incident-response.md
-- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
+- [[Changelog Entry]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Dependencies]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Formatting]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Validation Checklist]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Voice & Tone]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[What Belongs Where]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Writing Style Rules]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
+- 2 edges to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
-- [[Prompt Injection Detected]] - degree 3, connects to 1 community
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - degree 6, connects to 1 community

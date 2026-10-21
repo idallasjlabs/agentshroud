@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[DNSQuery (data entity)]] - concept - docs/data/data-dictionary.md
+- [[AgentShroud LinkedIn Banner]] - image - branding/social/linkedin-banner-1584x396.png
 
 ## Live Query (requires Dataview plugin)
 

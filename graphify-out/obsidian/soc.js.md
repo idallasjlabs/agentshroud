@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "soc.js"
+community: "ResourceGuard (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/ResourceGuard_2
 ---
 
 # soc.js
@@ -78,4 +78,4 @@ tags:
 - [[_uptime()]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2

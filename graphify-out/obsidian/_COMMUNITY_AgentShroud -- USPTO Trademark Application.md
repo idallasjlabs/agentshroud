@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Filing Reference]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[API Call Structure_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Apollo — Audio Systems Producer_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Audio Quality Settings_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Error Handling_5]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Input Requirements_11]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Output_6]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Primary API Text-to-Dialogue_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Quality Checklist_9]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Quick Mode Create Podcast API_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Role_72]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Script Parsing_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Technical Specification_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Voice Configuration_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[openclawskillsi-apolloSKILL]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SECTION 2 MARK INFORMATION]]
-- 1 edge to [[_COMMUNITY_AGENTSHROUD standard character mark]]
-- 1 edge to [[_COMMUNITY_SECTION 9 IMPORTANT NOTES]]
-- 1 edge to [[_COMMUNITY_SECTION 7 FILING CHECKLIST]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities
+- [[Apollo — Audio Systems Producer_2]] - degree 7, connects to 1 community

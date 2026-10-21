@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "asyncio"
+community: "cli/main.py"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/cli/mainpy
 ---
 
 # No clamav_scanner configured → step skipped, no error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_clamav_not_configured()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

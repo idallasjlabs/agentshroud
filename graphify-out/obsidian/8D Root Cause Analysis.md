@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "TestOutboundInfoFilter (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/TestOutboundInfoFilter_2
 ---
 
 # 8D Root Cause Analysis
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-eightdREADME]] - `contains` [EXTRACTED]
-- [[Purpose_21]] - `contains` [EXTRACTED]
-- [[Related Skills_6]] - `contains` [EXTRACTED]
-- [[Usage_10]] - `contains` [EXTRACTED]
+- [[Purpose_24]] - `contains` [EXTRACTED]
+- [[Related Skills_10]] - `contains` [EXTRACTED]
+- [[Usage_13]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-eightdREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

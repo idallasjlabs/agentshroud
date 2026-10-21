@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23 (3)"
+community: "ApprovalQueueConfig (5)"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_3
+  - community/ApprovalQueueConfig_5
 ---
 
 # **🟡 Priority 2: Operational Security Maturity**
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_2]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_3
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill incident-response_2]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
-- [[openclawskillsi-incident-responseSKILL]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
+- [[Skill observability_1]] - document - docker/config/hermes/skills/i-observability/SKILL.md
+- [[hermesskillsi-observabilitySKILL]] - document - docker/config/hermes/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

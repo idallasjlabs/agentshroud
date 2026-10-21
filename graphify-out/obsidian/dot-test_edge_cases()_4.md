@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_prompt_protection.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestPromptProtection"
-location: "L274"
+community: "test_soc_router_coverage.py"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_edge_cases()
 
 ## Connections
 - [[Test edge cases and error conditions._2]] - `rationale_for` [EXTRACTED]
-- [[TestPromptProtection]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

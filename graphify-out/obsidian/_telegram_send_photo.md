@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L117-L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # _telegram_send_photo
@@ -17,4 +17,4 @@ tags:
 - [[start.sh script]] - `calls` [EXTRACTED]
 - [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/_make_cve

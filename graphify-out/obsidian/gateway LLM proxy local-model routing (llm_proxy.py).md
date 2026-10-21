@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "concept"
-community: "test_hermes_model_resolver.py"
+community: "is_overloaded"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/is_overloaded
 ---
 
 # gateway LLM proxy local-model routing (llm_proxy.py)
@@ -14,4 +14,4 @@ tags:
 - [[apply-patches.js patch driver (openclaw.json)]] - `semantically_similar_to` [INFERRED]
 - [[resolve_model()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/concept #graphify/EXTRACTED #community/is_overloaded

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "ESP32-S3-BOX-3 Voice Terminal (2)"
+community: "format_upstream_cve_alert()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_2
+  - community/format_upstream_cve_alert
 ---
 
 # Governed Voice Path (device to gateway to Hermes)
@@ -16,4 +16,4 @@ tags:
 - [[Spoken High-Risk Command Approval Pause]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2
+#graphify/concept #graphify/EXTRACTED #community/format_upstream_cve_alert

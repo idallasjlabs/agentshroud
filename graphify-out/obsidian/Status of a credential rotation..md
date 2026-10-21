@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager (2)"
+community: "A2AMethod"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/A2AMethod
 ---
 
 # Status of a credential rotation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RotationStatus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "GatewayEmailService"
+community: "AgentShroud Access Control Matrix"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # email_service.py
@@ -16,4 +16,4 @@ tags:
 - [[SmtpLike]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

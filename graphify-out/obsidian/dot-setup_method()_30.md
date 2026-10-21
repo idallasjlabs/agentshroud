@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "MiddlewareManager (3)"
-location: "L10"
+community: "RuntimeConfig"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/RuntimeConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
+- [[load_baseline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Error Index.md"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/ApprovalQueueConfig_7
 ---
 
 # Egress Filter Errors.md
@@ -16,4 +16,4 @@ tags:
 - [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
 - [[Error Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "competitive-report-*.md dated reports"
+community: "Architecture"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Architecture
 ---
 
 # render_md_email.py
@@ -16,7 +16,7 @@ tags:
 - [[_esc()]] - `contains` [EXTRACTED]
 - [[_inline()]] - `contains` [EXTRACTED]
 - [[_render_table()]] - `contains` [EXTRACTED]
-- [[main()_23]] - `contains` [EXTRACTED]
-- [[render()]] - `references` [EXTRACTED]
+- [[main()_25]] - `contains` [EXTRACTED]
+- [[render()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/code #graphify/EXTRACTED #community/Architecture

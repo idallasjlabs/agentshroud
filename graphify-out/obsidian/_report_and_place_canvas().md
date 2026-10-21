@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "wakeword.c"
+community: "graphify reference: extra exports and benchmark (2)"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/graphify_reference_extra_exports_and_benchmark_2
 ---
 
 # _report_and_place_canvas()
@@ -17,4 +17,4 @@ tags:
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[ui_face_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2

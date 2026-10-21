@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "A2APolicyEngine"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/A2APolicyEngine
 ---
 
 # test_openclaw_first_entry_is_feishu_media_download()
@@ -16,4 +16,4 @@ tags:
 - [[get_agent_cve_summary()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

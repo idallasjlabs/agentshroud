@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "mcp_config.py"
+community: "v0.6.0 Baseline Results"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/v060_Baseline_Results
 ---
 
 # mcp_config.py.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/v060_Baseline_Results

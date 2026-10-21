@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Discord (Via `message`)"
+community: "Skill: Pull Request (PR) Generator (3)"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Discord_Via_message
+  - community/Skill_Pull_Request_PR_Generator_3
 ---
 
 # Common Actions (Examples)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discord (Via `message`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Discord_Via_message
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator_3

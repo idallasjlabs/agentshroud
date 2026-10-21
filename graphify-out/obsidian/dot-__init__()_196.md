@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "ProxyAction"
-location: "L47"
+community: "_make_proxy"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/_make_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockEgressEvent]] - `method` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

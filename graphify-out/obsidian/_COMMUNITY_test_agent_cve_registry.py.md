@@ -1,73 +1,67 @@
 ---
 type: community
-members: 60
+members: 54
 ---
 
 # test_agent_cve_registry.py
 
-**Members:** 60 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a     re]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Any_82]] - code - gateway/security/agent_cve_registry.py
-- [[Freshly-synced advisories must never arrive pre-marked as mitigated —     that r]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Return a summary of the advisory registry for the specified agent.      Counts a]] - rationale - gateway/security/agent_cve_registry.py
-- [[Same integrity guard as test_no_entry_id_looks_like_a_cve, extended to     the s]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Synthetic ids are unique and numbered 1..N in list order for each agent.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[The first curated OpenClaw entry (Feishu media download) survives migration.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[The migration produced a real (non-zero) verified GHSA match set.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_hermes_by_title()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[get_agent_cve_summary()]] - code - gateway/security/agent_cve_registry.py
-- [[ghsacvepending counts must be internally consistent and honest.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registries_contains_both()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registries_objects_match_lists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry.py]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry_alias_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry_alias_nonempty()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ash_ids_are_unique_and_stable_order()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_equals_openclaw_summary()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_wrapped_agent_openclaw()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_empty_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_security_tool_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_cvss_are_numeric()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_defense_layers_are_lists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_required_titles_present()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_auth_entries_use_gateway_auth_gate()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_command_injection_high_severity()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_cve_registry_public_alias()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_count_is_fourteen()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_cves_is_hermes_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_wrapped_agent_is_hermes()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_symlink_entry_upstream_fix()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_verified_ids_are_never_fabricated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_wechat_adapter_fully_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_security_tool_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_first_entry_is_feishu_media_download()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_has_some_confident_ghsa_matches()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_match_counts_are_consistent()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_cves_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_ghsa_and_cve_ids_well_formed()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_have_valid_status_and_severity()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_registries_present_in_registries_dict()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_unknown_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_wrapped_agent_constant_unchanged()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[Audit chain must detect tampering.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Build a SecurityPipeline with all guards wired up.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Combined prompt injection + role override must be caught.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[ContextGuard must detect context window poisoning (massive payload).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Create a real PII sanitizer in regex mode (no spaCy).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[EncodingDetector must detect base64 in outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[EncodingDetector must detect base64-encoded payloads on inbound.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Every pipeline operation must produce an audit chain entry.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Minimal approval queue mock that accepts items.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Non-owner collaborators must be blocked by prompt guard.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[One agent's session data must not leak to another.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Pipeline must refuse to start without PII sanitizer (fail-closed).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1 Agent exec must go through approval queue or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1b delete_file action must go through approval or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1c admin_action must require approval or be trust-blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6 EgressFilter must block non-allowlisted domains.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6b EgressFilter must block direct IP exfiltration.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6c EgressFilter must block internalprivate IP ranges.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9 PII sanitizer must redact SSN on inbound messages.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9b PII sanitizer must redact SSN on outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9c PII sanitizer must redact credit card numbers.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9d PII sanitizer must redact email addresses on outbound.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must block classic 'ignore instructions' injection.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must block role-override injection.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must detect system prompt extraction attempts.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Trust level must not allow exec from conversation alone.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
+- [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
+- [[_make_pii_sanitizer()]] - code - gateway/tests/test_redteam_probes.py
+- [[pipeline()_1]] - code - gateway/tests/test_redteam_probes.py
+- [[test_admin_action_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_audit_chain_records_all_events()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_audit_chain_tamper_detection()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_combined_injection_techniques()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_context_poisoning_blocked()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_credit_card_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_internal_ip()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_ip_exfil()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_unknown_domain()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_email_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_encoding_detector_base64_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_encoding_detector_catches_base64_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_exec_delete_file_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_exec_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_non_owner_blocked_by_prompt_guard()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_pipeline_fails_closed_without_pii()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_extraction_attempt()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_injection_ignore_instructions()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_injection_role_override()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_redteam_probes.py]] - code - gateway/tests/test_redteam_probes.py
+- [[test_session_isolation()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_ssn_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_ssn_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_trust_escalation_blocked()]] - code - gateway/tests/test_redteam_probes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,15 +71,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_sync-cve-registry.py (2)]]
-- 6 edges to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
-- 4 edges to [[_COMMUNITY_test_agent_cve_registry.py (3)]]
-- 3 edges to [[_COMMUNITY_test_agent_cve_registry.py (4)]]
-- 2 edges to [[_COMMUNITY_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY__t]]
+- 8 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 2 edges to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_api.py (2)]]
 
 ## Top bridge nodes
-- [[get_agent_cve_summary()]] - degree 30, connects to 5 communities
-- [[test_agent_cve_registry.py]] - degree 68, connects to 4 communities
+- [[test_redteam_probes.py]] - degree 39, connects to 8 communities
+- [[_make_full_pipeline()]] - degree 20, connects to 7 communities
+- [[_make_pii_sanitizer()]] - degree 6, connects to 2 communities
+- [[test_pipeline_fails_closed_without_pii()]] - degree 4, connects to 2 communities
+- [[_make_approval_queue()]] - degree 4, connects to 1 community

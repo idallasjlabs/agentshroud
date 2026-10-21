@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "_make_proxy()"
+community: "TestCollaboratorPromptClassifiers"
 location: "L596"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # test_get_local_model_reads_fieldflare_ref()
@@ -16,4 +16,4 @@ tags:
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

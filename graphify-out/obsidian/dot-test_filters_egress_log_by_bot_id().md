@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "AlertDispatcher (2)"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/AlertDispatcher_2
 ---
 
 # .test_filters_egress_log_by_bot_id()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityEvent]] - `calls` [EXTRACTED]
+- [[SecurityEvent_1]] - `calls` [EXTRACTED]
 - [[TestEgressLogBotFilter]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
 - [[get_egress_log()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

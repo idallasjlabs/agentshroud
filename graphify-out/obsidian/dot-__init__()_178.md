@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L437"
+community: "PortManager"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/PortManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `method` [EXTRACTED]
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/PortManager

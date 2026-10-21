@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # _is_fixture_uid()
@@ -21,4 +21,4 @@ tags:
 - [[test_is_fixture_uid_passes_real_uids()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

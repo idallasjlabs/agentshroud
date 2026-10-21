@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "TestVersionRoutes"
 location: "L674"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/TestVersionRoutes
 ---
 
 # .test_parse_fim_event()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWazuhParser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

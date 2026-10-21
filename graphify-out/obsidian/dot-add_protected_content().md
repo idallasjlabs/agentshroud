@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Phase 1 — Raw Collection (3)"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection_3
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # .add_protected_content()
@@ -17,4 +17,4 @@ tags:
 - [[PromptProtection]] - `method` [EXTRACTED]
 - [[ProtectedContent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

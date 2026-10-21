@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "OpenClaw Bot SSH Configuration"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Production_Safety_Checklist_SKILL
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Incident Response (SKILL)
@@ -14,4 +14,4 @@ tags:
 - [[Production Safety Checklist (SKILL)]] - `semantically_similar_to` [INFERRED]
 - [[operationsincident-response]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/INFERRED #community/OpenClaw_Bot_SSH_Configuration

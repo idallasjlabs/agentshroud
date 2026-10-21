@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Threat Intelligence"
+community: "ota.h"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Threat_Intelligence
+  - community/otah
 ---
 
 # Threat Intelligence
 
-#graphify/concept #graphify/EXTRACTED #community/Threat_Intelligence
+#graphify/concept #graphify/EXTRACTED #community/otah

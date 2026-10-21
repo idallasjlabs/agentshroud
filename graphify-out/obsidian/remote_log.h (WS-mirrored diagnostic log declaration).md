@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "remote_log.h (WS-mirrored diagnostic log declaration)"
+community: "Request (3)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/remote_logh_WS-mirrored_diagnostic_log_declaration
+  - community/Request_3
 ---
 
 # remote_log.h (WS-mirrored diagnostic log declaration)
 
-#graphify/code #graphify/EXTRACTED #community/remote_logh_WS-mirrored_diagnostic_log_declaration
+#graphify/code #graphify/EXTRACTED #community/Request_3

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "security.py"
+community: "consent_framework.py"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/consent_frameworkpy
 ---
 
 # Configuration / Environment Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

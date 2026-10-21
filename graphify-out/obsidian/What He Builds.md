@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "AgentShroud™ — Project Knowledge Base"
+community: "Skill: Project Management (PM)"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Project_Knowledge_Base
+  - community/Skill_Project_Management_PM
 ---
 
 # What He Builds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[About the Creator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Guardrails_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Invocation_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Jira ticket — every development batch gets one_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Reviewers and fixer available to you_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Role_7]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Tools you have for this workflow_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[openclawskillsi-hdevSKILL]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[dot-agentsskillsi-hdevSKILL]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Guardrails]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Invocation]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Jira ticket — every development batch gets one]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Reviewers and fixer available to you]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Role]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Skill Hermes Dev Workflow (HDEV)]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Tools you have for this workflow]] - document - .agents/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV) (2)]]
-- 1 edge to [[_COMMUNITY_Mode A — Single task (5)]]
-- 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep (3)]]
+- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer (3)]]
+- 1 edge to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_iCloud Services Skill]]
 
 ## Top bridge nodes
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - degree 9, connects to 2 communities
-- [[openclawskillsi-hdevSKILL]] - degree 2, connects to 1 community
+- [[Skill Hermes Dev Workflow (HDEV)]] - degree 9, connects to 2 communities
+- [[dot-agentsskillsi-hdevSKILL]] - degree 2, connects to 1 community

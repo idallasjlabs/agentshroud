@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Common Queries"
-location: "L62"
+community: "EgressTelegramNotifier"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/EgressTelegramNotifier
 ---
 
 # Output
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (7)"
+community: "_make_proxy()"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_7
+  - community/_make_proxy
 ---
 
 # .forward_to_agent()
@@ -15,10 +15,10 @@ tags:
 - [[dot-_build_forward_payload()]] - `calls` [EXTRACTED]
 - [[dot-resolve_target()]] - `conceptually_related_to` [INFERRED]
 - [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
+- [[Any_15]] - `references` [EXTRACTED]
 - [[Forward sanitized content to agent via HTTP POST          Args             targ]] - `rationale_for` [EXTRACTED]
 - [[ForwardError]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[sendMessage() JS — POST forward from browser chat UI]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_7
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

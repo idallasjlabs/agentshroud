@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[Fetch a single queue item by ID          Args             request_id Request U]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "rationale"
-community: "test_image_verifier.py"
+community: "cli/main.py"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/cli/mainpy
 ---
 
 # Test replacement for asyncio.wait_for — awaits coroutine directly.
@@ -15,4 +15,4 @@ tags:
 - [[_instant_wait_for()]] - `rationale_for` [EXTRACTED]
 - [[_instant_wait_for()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

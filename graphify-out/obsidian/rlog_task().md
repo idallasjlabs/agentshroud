@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "voice_task"
+community: "TestMetadataGuard"
 location: "L566"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/voice_task
+  - community/TestMetadataGuard
 ---
 
 # rlog_task()
@@ -17,4 +17,4 @@ tags:
 - [[ws_client_connected()]] - `calls` [INFERRED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/voice_task
+#graphify/code #graphify/INFERRED #community/TestMetadataGuard

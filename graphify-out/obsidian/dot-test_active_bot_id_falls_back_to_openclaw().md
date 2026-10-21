@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig (2)"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # .test_active_bot_id_falls_back_to_openclaw()
@@ -16,4 +16,4 @@ tags:
 - [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

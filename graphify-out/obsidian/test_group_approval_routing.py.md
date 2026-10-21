@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "test_a2a_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_a2a_proxypy
 ---
 
 # test_group_approval_routing.py
 
 ## Connections
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `imports` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[router()]] - `contains` [EXTRACTED]
 - [[router_with_sent()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

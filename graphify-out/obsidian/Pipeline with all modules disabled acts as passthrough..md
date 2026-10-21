@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "EgressFilterConfig"
 location: "L258"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # Pipeline with all modules disabled acts as passthrough.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_all_modules_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

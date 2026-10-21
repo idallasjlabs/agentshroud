@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (12)"
+community: "MiddlewareManager (2)"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_12
+  - community/MiddlewareManager_2
 ---
 
 # .test_is_group_admin_without_teams_config()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[SCLCaller_2]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_12
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

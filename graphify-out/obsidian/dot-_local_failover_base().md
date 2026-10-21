@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "ModeRequest"
 location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ModeRequest
 ---
 
 # ._local_failover_base()
@@ -26,4 +26,4 @@ tags:
 - [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - `calls` [EXTRACTED]
 - [[test_local_secondary_failover_base_routes_correctly()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

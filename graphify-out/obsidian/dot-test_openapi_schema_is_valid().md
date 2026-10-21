@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "TestOpenAPIContract"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # .test_openapi_schema_is_valid()
@@ -15,4 +15,4 @@ tags:
 - [[OpenAPI schema endpoint returns valid JSON schema.]] - `rationale_for` [EXTRACTED]
 - [[TestOpenAPIContract]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/code #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

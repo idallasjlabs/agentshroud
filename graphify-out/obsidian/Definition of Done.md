@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
-type: "document"
-community: "Validation Runner Specialist"
-location: "L191"
+source_file: ".github/copilot-instructions.md"
+type: "concept"
+community: "GitHub Copilot CLI Setup Guide (2)"
+location: "L398"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/GitHub_Copilot_CLI_Setup_Guide_2
 ---
 
 # Definition of Done
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
+- [[Copilot Instructions (mirrored CLAUDE.md + llm-init context)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/concept #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_2

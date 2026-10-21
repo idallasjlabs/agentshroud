@@ -8,35 +8,35 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[animation_timer_cb()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[app_main()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[draw_eye()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[draw_mouth()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[emotion_cycle_task()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[esp_err_t_3]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_deinit()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_init()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_update()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_config_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_emotion_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_get_container()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_get_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_lock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_malloc_canvas()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_auto_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_eye_openness()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_lvgl_lock_fns()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_mouth_shape()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_position()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_trigger_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_unlock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_obj_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_timer_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
-- [[main.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[update_emotion_parameters()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[1. Ingress Controller]] - document - docs/security/security-architecture.md
+- [[10. AppArmorSELinux Policies]] - document - docs/security/security-architecture.md
+- [[11. Linux Capability Dropping]] - document - docs/security/security-architecture.md
+- [[12. User Namespace Isolation]] - document - docs/security/security-architecture.md
+- [[13. Container Runtime Security]] - document - docs/security/security-architecture.md
+- [[14. Process Monitor]] - document - docs/security/security-architecture.md
+- [[15. File System Guard]] - document - docs/security/security-architecture.md
+- [[16. Resource Guard]] - document - docs/security/security-architecture.md
+- [[17. API Key Manager]] - document - docs/security/security-architecture.md
+- [[18. Certificate Authority]] - document - docs/security/security-architecture.md
+- [[19. Session Manager]] - document - docs/security/security-architecture.md
+- [[2. DDoS Protection]] - document - docs/security/security-architecture.md
+- [[20. Role-Based Access Control (RBAC)]] - document - docs/security/security-architecture.md
+- [[21. Encryption Manager]] - document - docs/security/security-architecture.md
+- [[22. Data Loss Prevention (DLP)]] - document - docs/security/security-architecture.md
+- [[23. Backup Integrity]] - document - docs/security/security-architecture.md
+- [[24. Audit Trail Manager]] - document - docs/security/security-architecture.md
+- [[25. Prompt Guard System]] - document - docs/security/security-architecture.md
+- [[26. MCP Inspector]] - document - docs/security/security-architecture.md
+- [[3. Web Application Firewall (WAF)]] - document - docs/security/security-architecture.md
+- [[4. Geo-Blocking]] - document - docs/security/security-architecture.md
+- [[9. seccomp Profiles]] - document - docs/security/security-architecture.md
+- [[Layer 1 Perimeter Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 3 Operating System Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 4 Platform Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 5 Identity & Access Management (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 6 Data Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Layer 7 Application Security (2 Modules)]] - document - docs/security/security-architecture.md
+- [[Security Module Inventory]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,9 +46,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_wakeword.c]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (5)]]
+- 1 edge to [[_COMMUNITY_Enterprise Governance Proxy System (invention)]]
 
 ## Top bridge nodes
-- [[lvgl_kawaii_face.c]] - degree 20, connects to 1 community
-- [[face_set_emotion()]] - degree 12, connects to 1 community
-- [[face_animation_init()]] - degree 10, connects to 1 community
+- [[Security Module Inventory]] - degree 8, connects to 2 communities

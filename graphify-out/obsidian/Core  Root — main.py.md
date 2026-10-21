@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py"
+community: ".pi/mcp.json"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/pi/mcpjson
 ---
 
 # Core / Root — main.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/pi/mcpjson

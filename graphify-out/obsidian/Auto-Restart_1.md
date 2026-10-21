@@ -1,12 +1,12 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L102"
+community: "test_collaborator_tracker.py (2) (3)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/test_collaborator_trackerpy_2_3
 ---
 
 # Auto-Restart
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Crash Recovery_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_3

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "RBACConfig"
-location: "L214"
+community: "AgentTarget"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `references` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

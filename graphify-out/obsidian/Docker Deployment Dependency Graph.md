@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "text_control_center.py / agentshroud_manager.py"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/text_control_centerpy_/_agentshroud_managerpy
 ---
 
 # Docker Deployment Dependency Graph
@@ -17,4 +17,4 @@ tags:
 - [[Docker Volumes (auto-created) agentshroud-config, agentshroud-workspace, agentshroud-ssh, gateway-data]] - `conceptually_related_to` [EXTRACTED]
 - [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/image #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy

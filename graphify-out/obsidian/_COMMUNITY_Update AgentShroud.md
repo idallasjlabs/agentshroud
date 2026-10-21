@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Check Current Version]] - document - docs/operations/updating.md
-- [[Checking the Changelog]] - document - docs/operations/updating.md
-- [[Database Migrations]] - document - docs/operations/updating.md
-- [[Manual Update Process]] - document - docs/setup/setup-guide.md
-- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
-- [[Rollback Procedure]] - document - docs/operations/updating.md
-- [[Tracking Main Branch]] - document - docs/operations/updating.md
-- [[Tracking a Tagged Release]] - document - docs/operations/updating.md
-- [[Update AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
-- [[Update from Git]] - document - docs/operations/updating.md
-- [[Update from Release Tarball]] - document - docs/operations/updating.md
-- [[Updating_1]] - document - docs/setup/setup-guide.md
-- [[With Git]] - document - docs/operations/updating.md
-- [[Without Git]] - document - docs/operations/updating.md
-- [[deployment]] - document - docs/runbooks/deployment.md
-- [[updating]] - document - docs/operations/updating.md
+- [[AgentTarget_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Config Keys Read]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[EmailSendRequest_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Environment Variables Used_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[ForwardRequest_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[ForwardResponse_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Imports From  Exports To]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Key Classes  Functions_9]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Known Issues  Notes_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Model Details]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Purpose_105]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[RedactionDetail_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Related_13]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Responsibilities_11]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[SSHExecRequest  SSHExecResponse]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[models.py_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[models.py]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,12 +32,3 @@ members: 17
 TABLE source_file, type FROM #community/Update_AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
-- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
-
-## Top bridge nodes
-- [[deployment]] - degree 4, connects to 2 communities
-- [[Updating_1]] - degree 5, connects to 1 community

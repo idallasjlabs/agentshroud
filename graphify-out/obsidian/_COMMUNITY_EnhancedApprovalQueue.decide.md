@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.decide]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Approval queue — emailfile-deletionexternal-APIskill-install must route through it]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

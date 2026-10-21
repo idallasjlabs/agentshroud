@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestEmailSend (2)"
+community: "TestPatternDetection"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend_2
+  - community/TestPatternDetection
 ---
 
 # .test_empty_payload_returns_200()
@@ -15,4 +15,4 @@ tags:
 - [[Empty payload is handled gracefully (skipped, not error).]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramWebhook]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend_2
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

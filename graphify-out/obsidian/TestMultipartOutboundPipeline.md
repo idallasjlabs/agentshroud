@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
+community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)"
 location: "L5019"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind_AgentShroud
 ---
 
 # TestMultipartOutboundPipeline
@@ -23,9 +23,9 @@ tags:
 - [[dot-test_multipart_without_text_part_passes_through()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
 - [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind_AgentShroud

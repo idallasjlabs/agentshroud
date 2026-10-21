@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "AgentShroud Documentation (3)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyRotationManager_2
+  - community/AgentShroud_Documentation_3
 ---
 
 # TestGenerateAndValidate
@@ -17,9 +17,9 @@ tags:
 - [[dot-test_validate_without_registered_validator_passes()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationManager_2
+#graphify/code #graphify/INFERRED #community/AgentShroud_Documentation_3

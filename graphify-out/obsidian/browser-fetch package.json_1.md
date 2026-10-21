@@ -1,13 +1,13 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
-type: "code"
-community: "browser-fetch package.json (2)"
+source_file: "docker/config/hermes/skills/i-browser/package.json"
+type: "document"
+community: "/graphify explain command"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetch_packagejson_2
+  - community//graphify_explain_command
 ---
 
 # browser-fetch package.json
 
-#graphify/code #graphify/EXTRACTED #community/browser-fetch_packagejson_2
+#graphify/document #graphify/EXTRACTED #community//graphify_explain_command

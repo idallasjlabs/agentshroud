@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "test_playback_state.c"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/test_playback_statec
 ---
 
 # .test_natural_language_question_is_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [EXTRACTED]
 - [[TestEnvGuardFailOpen]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig
 ---
 
 # PipelineAction
 
 ## Connections
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[FilterResult_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
@@ -55,11 +55,11 @@ tags:
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

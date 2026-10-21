@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[v0.9.0 Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[CodexBar Model Cost Usage CLI Summarizer]] - code - skills/openclaw/model-usage/scripts/model_usage.py
 
 ## Live Query (requires Dataview plugin)
 

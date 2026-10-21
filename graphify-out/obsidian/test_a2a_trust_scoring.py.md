@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "UserSessionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/UserSessionManager
 ---
 
 # test_a2a_trust_scoring.py
 
 ## Connections
-- [[A2APolicyConfig]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
 - [[A2AProxy_1]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `contains` [EXTRACTED]
 - [[trust_manager()_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

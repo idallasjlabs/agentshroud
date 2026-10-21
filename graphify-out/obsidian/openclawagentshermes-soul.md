@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity (2)"
+community: "test_security_regressions_v1_2.py (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity_2
+  - community/test_security_regressions_v1_2py_3
 ---
 
 # openclaw/agents/hermes-soul.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity_2
+#graphify/document #graphify/EXTRACTED #community/test_security_regressions_v1_2py_3

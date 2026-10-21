@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "telegram_proxy.py (5)"
+community: "colima-health-check.sh"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy_5
+  - community/colima-health-checksh
 ---
 
 # Persist a runtime group membership addition.
@@ -15,4 +15,4 @@ tags:
 - [[persist_group_member_add()]] - `rationale_for` [EXTRACTED]
 - [[persist_group_member_remove()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy_5
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

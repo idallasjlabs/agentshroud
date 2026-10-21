@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "rationale"
-community: "WebContentScanner"
+community: "test_main_endpoints.py"
 location: "L97"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/test_main_endpointspy
 ---
 
 # The distinction this whole control rests on.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner
+#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy

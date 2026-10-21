@@ -1,30 +1,27 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # sunday-upgrade-apply.sh
 
 ## Connections
 - [[Base docker-compose stack]] - `references` [EXTRACTED]
-- [[Dev handoff JSON (dev-result-YYYY-MM-DD.json)]] - `shares_data_with` [EXTRACTED]
 - [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - `references` [EXTRACTED]
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `rationale_for` [EXTRACTED]
 - [[Exit 50 build failed and rollback failed (stack may be degraded)]] - `references` [EXTRACTED]
 - [[Hermes pin silent no-op (0.21.5 while upstream 0.22.2)]] - `references` [EXTRACTED]
-- [[NOTHING_UPGRADED status]] - `implements` [EXTRACTED]
-- [[PATH_8]] - `defines` [EXTRACTED]
+- [[PATH_7]] - `defines` [EXTRACTED]
 - [[Refuse to build with uncommitted changes in build context]] - `rationale_for` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-10-18 (dev)]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 - [[TestKnownServices]] - `shares_data_with` [INFERRED]
 - [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - `references` [EXTRACTED]
 - [[_assert_head_unchanged()]] - `defines` [EXTRACTED]
@@ -56,9 +53,8 @@ tags:
 - [[colima-health-check.sh]] - `shares_data_with` [EXTRACTED]
 - [[dev-result-date.json dev-prod handoff contract]] - `shares_data_with` [EXTRACTED]
 - [[die()_1]] - `defines` [EXTRACTED]
-- [[dockerversions.env version pins]] - `references` [EXTRACTED]
 - [[err()]] - `defines` [EXTRACTED]
-- [[log()_2]] - `defines` [EXTRACTED]
+- [[log()_1]] - `defines` [EXTRACTED]
 - [[phase_apply()]] - `defines` [EXTRACTED]
 - [[phase_baseline()]] - `defines` [EXTRACTED]
 - [[phase_discover()]] - `defines` [EXTRACTED]
@@ -75,4 +71,4 @@ tags:
 - [[warn()_2]] - `defines` [EXTRACTED]
 - [[write_handoff()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/idf_component.yml"
 type: "code"
-community: "LVGL Kawaii Face Component CMakeLists"
+community: "ssh_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LVGL_Kawaii_Face_Component_CMakeLists
+  - community/ssh_proxypy
 ---
 
 # Voice Terminal Main IDF Component Manifest
@@ -14,4 +14,4 @@ tags:
 - [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - `references` [EXTRACTED]
 - [[esp-sr Speech Recognition Library (WakeNet WN9)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists
+#graphify/code #graphify/EXTRACTED #community/ssh_proxypy

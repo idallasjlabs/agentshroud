@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "test_agent_cve_registry.py (2)"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/test_agent_cve_registrypy_2
 ---
 
 # test_encoding_detector_rot13_ignores_benign_prose()
@@ -16,4 +16,4 @@ tags:
 - [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

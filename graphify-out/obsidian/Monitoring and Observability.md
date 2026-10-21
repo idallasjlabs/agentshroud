@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Mnemosyne — Retention Engineer (2)"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Mnemosyne__Retention_Engineer_2
 ---
 
 # Monitoring and Observability
@@ -16,4 +16,4 @@ tags:
 - [[Metrics to Track]] - `contains` [EXTRACTED]
 - [[Technology Stack_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2

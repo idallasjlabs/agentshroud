@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[05-behavior]] - document - docs/diagrams/05-behavior.md
-- [[14. Logic Flow  Flowchart — Request Execution]] - document - docs/diagrams/05-behavior.md
-- [[15. Sequence Diagram — Telegram Message to Response]] - document - docs/diagrams/05-behavior.md
-- [[16. State Machine Diagram — Approval Queue Item Lifecycle]] - document - docs/diagrams/05-behavior.md
-- [[17. State Machine — Bot Session  Context Lifecycle]] - document - docs/diagrams/05-behavior.md
-- [[AgentShroud — System Behavior Diagrams]] - document - docs/diagrams/05-behavior.md
-- [[Logic Flow — Request Execution]] - concept - docs/diagrams/05-behavior.md
-- [[Sequence Diagram — Telegram Message to Response]] - concept - docs/diagrams/05-behavior.md
-- [[State Machine — Approval Queue Item Lifecycle]] - concept - docs/diagrams/05-behavior.md
-- [[State Machine — Bot Session  Context Lifecycle]] - concept - docs/diagrams/05-behavior.md
+- [[Identity Reference - AgentShroud System]] - document - docs/architecture/IDENTITY.md
+- [[Via Control UI_1]] - document - docs/architecture/IDENTITY.md
+- [[Via Telegram_2]] - document - docs/architecture/IDENTITY.md
+- [[architectureIDENTITY]] - document - docs/architecture/IDENTITY.md
+- [[🎯 Bot Identity Configuration]] - document - docs/architecture/IDENTITY.md
+- [[👤 You (The Real Person)]] - document - docs/architecture/IDENTITY.md
+- [[💬 Communication Flow]] - document - docs/architecture/IDENTITY.md
+- [[📱 How It Works]] - document - docs/architecture/IDENTITY.md
+- [[🔐 Security]] - document - docs/architecture/IDENTITY.md
+- [[🤖 Your AI Bot]] - document - docs/architecture/IDENTITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/05-behaviormd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_03-data]]
-
-## Top bridge nodes
-- [[State Machine — Approval Queue Item Lifecycle]] - degree 4, connects to 2 communities
-- [[05-behavior]] - degree 6, connects to 1 community

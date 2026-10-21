@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "postmortem.md (2)"
+community: "4. Risks & Gaps"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd_2
+  - community/4_Risks__Gaps
 ---
 
 # postmortem.md
@@ -21,4 +21,4 @@ tags:
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - `contains` [EXTRACTED]
 - [[Timeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd_2
+#graphify/document #graphify/EXTRACTED #community/4_Risks__Gaps

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/run-as-root.sh"
 type: "code"
-community: "run-as-root.sh"
+community: "agentshroud-gateway pyproject config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-as-rootsh
+  - community/agentshroud-gateway_pyproject_config
 ---
 
 # run-as-root.sh
@@ -15,4 +15,4 @@ tags:
 - [[browser-fetch skill.json (tool manifest)]] - `shares_data_with` [INFERRED]
 - [[run-as-root.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-as-rootsh
+#graphify/code #graphify/EXTRACTED #community/agentshroud-gateway_pyproject_config

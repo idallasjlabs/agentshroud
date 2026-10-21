@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[01-enforce-by-default]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Constraints_5]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Evidence_5]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Problem_6]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Remediation_6]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Root Cause_5]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Severity_8]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 1 Change default mode in gateway configuration]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 2 Add a permissive mode flag for development]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Verification_11]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +29,9 @@ members: 14
 TABLE source_file, type FROM #community/Flip_core_security_modules_from_monitor_to_enforce_mode
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
+
+## Top bridge nodes
+- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # .get_op_reference()
 
 ## Connections
 - [[Build a complete op reference for a credential.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `method` [EXTRACTED]
+- [[KeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

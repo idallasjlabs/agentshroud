@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Security Modules (58)"
+community: "SecurityPipeline (4)"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/SecurityPipeline_4
 ---
 
 # Supply Chain & Browser (2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline_4

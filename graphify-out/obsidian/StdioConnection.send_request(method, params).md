@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Function Details (8)"
+community: "MCPPermissionManager (3)"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_8
+  - community/MCPPermissionManager_3
 ---
 
 # StdioConnection.send_request(method, params)
 
 ## Connections
-- [[Function Details_25]] - `contains` [EXTRACTED]
+- [[Function Details_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_8
+#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_3

@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[CPA Curriculum Frontmatter Addition_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Coverage Types_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Episode Closing_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Input Requirements_12]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Output Format_22]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Persona_8]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Quality Checklist_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Role_64]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[System Prompt_8]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[User Prompt Template_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[User Prompt Template — OKE Channel]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[openclawskillsi-atlasSKILL]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Follow-up (within 48 hours)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Glue Job Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Incident Response Workflow_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Post-Incident_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Post-Mortem Template_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Role_61]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[S3 Data Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Severity Matrix_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Step Function Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Zabbix Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[hermesskillsi-productionSKILL]] - document - docker/config/hermes/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,3 @@ members: 17
 TABLE source_file, type FROM #community/Atlas__Curriculum_Architect
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Atlas — Curriculum Architect_3]] - degree 11, connects to 1 community

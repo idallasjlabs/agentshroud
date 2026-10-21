@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: "Request (2)"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/Request_2
 ---
 
 # ._get_wss_url()
 
 ## Connections
-- [[dot-run()_1]] - `calls` [EXTRACTED]
+- [[dot-run()]] - `calls` [EXTRACTED]
 - [[Call apps.connections.open to get a fresh WSS URL.]] - `rationale_for` [EXTRACTED]
 - [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/Request_2

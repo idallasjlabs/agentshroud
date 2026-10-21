@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L32"
+community: "EgressFilterConfig (2) (2)"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig_2_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
-- [[Initialize sanitizer          Args             config PII configuration from a]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

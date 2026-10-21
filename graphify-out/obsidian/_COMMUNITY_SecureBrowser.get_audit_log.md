@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Newsletter Mac Clustering_1]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
 
 ## Live Query (requires Dataview plugin)
 

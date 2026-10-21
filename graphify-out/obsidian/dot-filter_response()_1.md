@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "SecurityPipeline"
+community: "FetchOutcome"
 location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/FetchOutcome
 ---
 
 # .filter_response()
@@ -16,7 +16,7 @@ tags:
 - [[dot-_is_allowed_for_trust()]] - `calls` [EXTRACTED]
 - [[Filter agent response for sensitive information disclosure.          Args]] - `rationale_for` [EXTRACTED]
 - [[FilterMatch]] - `calls` [EXTRACTED]
-- [[FilterResult_1]] - `references` [EXTRACTED]
+- [[FilterResult]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

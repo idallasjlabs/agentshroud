@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "test_main_endpoints.py"
+community: "WebContentScanner"
 location: "L1702"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/WebContentScanner
 ---
 
 # Receive structured security alerts from gateway-internal scripts. Called by…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[receive_security_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

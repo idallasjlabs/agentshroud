@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "Project Management (README)"
+community: "OpenClaw Bot SSH Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Project Management (README)
@@ -14,13 +14,13 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-pmREADME]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Purpose_78]] - `contains` [EXTRACTED]
-- [[Purpose_80]] - `contains` [EXTRACTED]
-- [[Related Skills_60]] - `contains` [EXTRACTED]
-- [[Related Skills_62]] - `contains` [EXTRACTED]
+- [[Purpose_64]] - `contains` [EXTRACTED]
+- [[Purpose_68]] - `contains` [EXTRACTED]
+- [[Related Skills_49]] - `contains` [EXTRACTED]
+- [[Related Skills_53]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_65]] - `contains` [EXTRACTED]
-- [[Usage_67]] - `contains` [EXTRACTED]
+- [[Usage_51]] - `contains` [EXTRACTED]
+- [[Usage_55]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

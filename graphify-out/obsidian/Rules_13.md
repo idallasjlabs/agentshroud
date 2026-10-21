@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass."
-location: "L19"
+community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass
+  - community/AgentShroud_v070__Red_Team_Remediation_Plan
 ---
 
 # Rules
 
 ## Connections
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-23-20260923-1400.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Upgrade Report 2026-09-23 14:00 (dev, PARTIAL, disk full)
@@ -19,7 +19,7 @@ tags:
 - [[SUNDAY_BUILD_VIA_VM=1 detached in-VM build]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-23 0300 (dev, ABORTED)]] - `cites` [EXTRACTED]
 - [[_build_one_service()]] - `references` [EXTRACTED]
-- [[docker-socket-proxy service (tecnativa, digest-pinned)]] - `references` [EXTRACTED]
+- [[docker-socket-proxy (digest pinned)]] - `references` [EXTRACTED]
 - [[dockerd self-DoS on unpruned dangling image backlog (782-1240 images)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/_make_sanitizer

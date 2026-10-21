@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "UserSessionManager (2) (2)"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/UserSessionManager_2_2
 ---
 
 # test_filtered_stream_blocked_window_releases_nothing_for_that_window()
@@ -17,4 +17,4 @@ tags:
 - [[_filtered_sentence_stream()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

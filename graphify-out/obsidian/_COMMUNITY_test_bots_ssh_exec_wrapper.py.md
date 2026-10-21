@@ -1,56 +1,60 @@
 ---
 type: community
-members: 43
+members: 47
 ---
 
 # test_bots_ssh_exec_wrapper.py
 
-**Members:** 43 nodes
+**Members:** 47 nodes
 
 ## Members
-- [[--noproxy gateway is required so the call reaches the control-plane directly.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[A command with quotesmetacharacters cannot inject extra JSON fields.      This]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[An explicitly set GATEWAY_AUTH_TOKEN takes priority over the _FILE (back-compat]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Belt-and-suspenders the wrapper must not contain a literal empty Bearer.      T]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[CompletedProcess_2]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Extract the 'Bearer token' value from the captured curl argv.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[GATEWAY_AUTH_TOKEN_FILE contents become the Bearer token (Hermes path).]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Hermes' belt-and-suspenders tirith trust must be scoped, never blanket.      It]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Literal newlinestabsbackslashesquotes round-trip through JSON safely.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[OPENCLAW_GATEWAY_PASSWORD_FILE contents become the Bearer token.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Proof the exemption is NARROW an EXTERNAL http curl is still flaggable.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Pull the _json_escape helper + payload-build block out of the wrapper.      We r]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Return the contents of ``` fenced code blocks (the runnable recipes).]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Run the real wrapper with a fake `curl` that records its argv.      The stub cur]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Run the wrapper's shell payload builder and return the emitted JSON text.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[The documented agent-facing RECIPE (fenced code) must be scanner-clean.      Thi]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[The interpreter-free builder produces valid JSON for a normal command.      PATH]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[The wrapper hard-codes the internal control-plane endpoint and nothing else.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[The wrapper must NOT shell out to python3python for JSON building.      Regress]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[With NO token source the wrapper must fail loudly and NOT call curl.      Guards]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[Wrapper is COPY'd into and chmod'd in BOTH bot Dockerfiles.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[_bearer_from_argv()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[_build_payload_via_shell()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[_extract_payload_builder()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[_fenced_code_blocks()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[_run_wrapper_capture_bearer()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_both_bot_images_bake_in_the_wrapper()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_bots_ssh_exec_wrapper.py]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_external_http_curl_still_matches_the_flagged_pattern()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_hermes_tirith_trust_is_scoped_not_blanket()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_no_token_source_exits_nonzero_and_sends_no_request()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_shell_payload_builder_emits_valid_json_without_python()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_shell_payload_builder_encodes_newlines_and_tabs()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_shell_payload_builder_escapes_shell_metacharacters_injection_safe()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_token_env_var_wins_over_file()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_token_resolved_from_hermes_auth_token_file()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_token_resolved_from_openclaw_password_file()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_wrapper_agent_facing_invocation_has_no_plain_http_url()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_wrapper_exists_and_is_executable()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_wrapper_forces_noproxy_gateway()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_wrapper_has_no_python_dependency()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_wrapper_never_sends_empty_bearer()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[test_wrapper_targets_only_internal_gateway_endpoint()]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[dot-__init__()_46]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_47]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-_fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-get_item()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-send_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-stop()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-submit_tool_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_denied_decision_blocks_with_item_status()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_denied_decision_with_missing_item_defaults_denied()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_egress_filter_allow_passes_through()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_emit_swallows_bus_errors()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_emits_event_to_bus()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_execution_redacts_admin_private_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_execution_with_none_content_skips_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_generic_exception()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_get_stats_after_allowed_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_get_stats_zero_and_after_calls()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_no_patterns_returns_unchanged()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_no_queue_allows_by_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_owner_bypasses_redaction()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_passthrough_with_execute()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_process_tool_call_blocks_on_denial()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_process_tool_result_handles_none_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_process_tool_result_redacts_private_data()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_redacts_nested_dict_list_tuple()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_sanitized_params_preferred_over_originals()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_server_error_response()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_server_error_response_without_message()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_shutdown_stops_all_connections()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_successful_execution_with_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_sync_egress_filter_deny_blocks()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_timeout_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-wait_for_decision()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_proxy()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,3 +62,15 @@ members: 43
 TABLE source_file, type FROM #community/test_bots_ssh_exec_wrapperpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 110 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 3 edges to [[_COMMUNITY_api.py (2)]]
+- 3 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+
+## Top bridge nodes
+- [[FakeApprovalQueue]] - degree 27, connects to 2 communities
+- [[dot-test_emit_swallows_bus_errors()]] - degree 3, connects to 2 communities
+- [[dot-test_emits_event_to_bus()]] - degree 3, connects to 2 communities
+- [[make_proxy()]] - degree 35, connects to 1 community
+- [[FakeConn]] - degree 30, connects to 1 community

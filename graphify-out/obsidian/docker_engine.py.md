@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "RuntimeConfig"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # docker_engine.py
@@ -22,4 +22,4 @@ tags:
 - [[runtime__init__.py]] - `re_exports` [EXTRACTED]
 - [[security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

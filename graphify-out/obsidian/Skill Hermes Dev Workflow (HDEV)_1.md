@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV) (2)"
+community: "fixture"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV_2
+  - community/fixture
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
@@ -18,8 +18,8 @@ tags:
 - [[Mode A — Single task_4]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_2]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_2]] - `contains` [EXTRACTED]
-- [[Role_7]] - `contains` [EXTRACTED]
+- [[Role_4]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-hdevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV_2
+#graphify/document #graphify/EXTRACTED #community/fixture

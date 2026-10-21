@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Error Index.md"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/ApprovalQueueConfig_7
 ---
 
 # Error Index.md
@@ -22,4 +22,4 @@ tags:
 - [[SSH Proxy Errors]] - `references` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

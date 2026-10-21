@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 location: "L642"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # A dead/unreachable bridge must not raise out of the route -- it closes the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_upstream_connect_failure_closes_gracefully()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/rationale #graphify/EXTRACTED #community/_is_op_reference_allowed

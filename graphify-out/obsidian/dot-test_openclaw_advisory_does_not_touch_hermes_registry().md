@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
-location: "L250"
+community: "ControlCenter"
+location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/ControlCenter
 ---
 
 # .test_openclaw_advisory_does_not_touch_hermes_registry()
 
 ## Connections
-- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - `rationale_for` [EXTRACTED]
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'. Proves…]] - `rationale_for` [EXTRACTED]
 - [[TestPerAgentIsolation]] - `method` [EXTRACTED]
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

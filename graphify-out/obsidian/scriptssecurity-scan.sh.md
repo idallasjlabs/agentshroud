@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/security-scan.sh"
 type: "code"
-community: "scripts/security-scan.sh"
+community: "browser/browse.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/security-scansh
+  - community/browser/browsejs
 ---
 
 # scripts/security-scan.sh
@@ -19,4 +19,4 @@ tags:
 - [[success()]] - `defines` [EXTRACTED]
 - [[warn()_1]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/browser/browsejs

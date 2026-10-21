@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "RateLimitGuard"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .advance()
@@ -16,4 +16,4 @@ tags:
 - [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

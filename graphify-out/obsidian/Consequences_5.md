@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
+community: "Route map (by router)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/Route_map_by_router
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative Consequences_4]] - `contains` [EXTRACTED]
 - [[Positive Consequences_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_summary"
+community: "FalcoAlertWatcher (2)"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/FalcoAlertWatcher_2
 ---
 
 # .test_clean_when_installed_but_no_report()
 
 ## Connections
-- [[Path_41]] - `calls` [EXTRACTED]
+- [[Path_43]] - `calls` [EXTRACTED]
 - [[TestGetTrivySummary]] - `method` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

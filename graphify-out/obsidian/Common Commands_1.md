@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
+community: "System Audit & Documentation (2)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/System_Audit__Documentation_2
 ---
 
 # Common Commands
@@ -19,4 +19,4 @@ tags:
 - [[Output Formats_1]] - `contains` [EXTRACTED]
 - [[View Reminders]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_2

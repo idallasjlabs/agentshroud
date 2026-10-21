@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/hooks.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (3)"
+community: "Coding Agent (bash-first)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Coding_Agent_bash-first
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -17,4 +17,4 @@ tags:
 - [[For git commit hook_2]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

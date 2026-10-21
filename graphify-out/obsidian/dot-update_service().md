@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ServiceManager"
+community: "test_soc_router_coverage.py"
 location: "L376"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_router_coveragepy
 ---
 
 # .update_service()
@@ -16,4 +16,4 @@ tags:
 - [[Pull the latest image then restart the container.]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

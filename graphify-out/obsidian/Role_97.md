@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "AgentShroud Gateway (holds 1Password service account)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/AgentShroud_Gateway_holds_1Password_service_account
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_account

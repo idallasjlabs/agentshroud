@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "TestMultipartOutboundPipeline"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/TestMultipartOutboundPipeline
 ---
 
 # Clear cumulative + baseline state for a session (e.g. on new session).
 
 ## Connections
-- [[dot-reset_session()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-reset_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

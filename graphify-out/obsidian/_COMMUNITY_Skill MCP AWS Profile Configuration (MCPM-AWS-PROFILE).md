@@ -1,54 +1,56 @@
 ---
 type: community
-members: 41
+members: 43
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
-**Members:** 41 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[Access Denied]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configuration Files]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[MCP Not Using Profile]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Purpose_66]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Quick Reference_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_50]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_51]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_22]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_5]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_3]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Usage_54]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Use SSO Profile with MCP]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[View Configured Profiles]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[openclawskillsi-mcpm-aws-profileREADME]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[openclawskillsi-mcpm-aws-profileSKILL]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[1. Environment Overview]] - document - docs/runbooks/colima-docker-guide.md
+- [[10. Port Forwarding — Dual-Stack Bind Race (silently unreachable host port)]] - document - docs/runbooks/colima-docker-guide.md
+- [[11. Common Errors — Quick Reference]] - document - docs/runbooks/colima-docker-guide.md
+- [[12. Dev Account (agentshroud-bot) Operations]] - document - docs/runbooks/colima-docker-guide.md
+- [[2. `asb` Helper — Primary Interface]] - document - docs/runbooks/colima-docker-guide.md
+- [[3. Colima VM Lifecycle]] - document - docs/runbooks/colima-docker-guide.md
+- [[4. Disk & Resource Monitoring]] - document - docs/runbooks/colima-docker-guide.md
+- [[5. Container Management]] - document - docs/runbooks/colima-docker-guide.md
+- [[6. Volume Management]] - document - docs/runbooks/colima-docker-guide.md
+- [[7. Build Troubleshooting]] - document - docs/runbooks/colima-docker-guide.md
+- [[8. Docker System Pruning]] - document - docs/runbooks/colima-docker-guide.md
+- [[9. VPN Networking Fix (Cisco AnyConnect)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Accounts on Marvin]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check Docker disk usage from host]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check VM disk usage]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check container resource usage (live)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check what would be removed (dry run)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Clean rebuild (safe — preserves workspace, config, SSH)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Colima & Docker Operations Guide — AgentShroud]] - document - docs/runbooks/colima-docker-guide.md
+- [[Compose Files]] - document - docs/runbooks/colima-docker-guide.md
+- [[Container Names]] - document - docs/runbooks/colima-docker-guide.md
+- [[Diagnose first real disk full vs. phantom no space]] - document - docs/runbooks/colima-docker-guide.md
+- [[Exec into a container]] - document - docs/runbooks/colima-docker-guide.md
+- [[Full wipe (destructive — removes all state)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Health status]] - document - docs/runbooks/colima-docker-guide.md
+- [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
+- [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
+- [[Logs_1]] - document - docs/runbooks/colima-docker-guide.md
+- [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
+- [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md
+- [[Prune from inside Colima VM (use when host-side prune hangs)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Reclaim space from dangling layers in overlay2]] - document - docs/runbooks/colima-docker-guide.md
+- [[Remove specific volumes]] - document - docs/runbooks/colima-docker-guide.md
+- [[Restart a single container]] - document - docs/runbooks/colima-docker-guide.md
+- [[SSH into the VM]] - document - docs/runbooks/colima-docker-guide.md
+- [[Safe prune (removes only stopped containers + unused images + build cache)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Start (required flags)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Status & Info]] - document - docs/runbooks/colima-docker-guide.md
+- [[Stop  Restart]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,3 +58,9 @@ members: 41
 TABLE source_file, type FROM #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
+
+## Top bridge nodes
+- [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

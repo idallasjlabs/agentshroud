@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Findings"
-location: "L74"
+community: "GSDE&G Development Master Checklist Skill"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "iCloud Services"
+community: "Report Delivery Format Instructions"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Relationship to agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

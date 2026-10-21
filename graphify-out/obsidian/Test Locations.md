@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "All Dependencies.md (2)"
+community: "Security Review (SEC)"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/Security_Review_SEC
 ---
 
 # Test Locations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

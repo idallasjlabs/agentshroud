@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L466"
+community: "ContextSegment"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/ContextSegment
 ---
 
 # .close()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.wait_for_decision]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Multi-Agent Hierarchy — Claude primary, GeminiCodex secondarytertiary]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

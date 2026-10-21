@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L63"
+community: "MCPPermissionManager"
+location: "L31"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - graphify/INFERRED
+  - community/MCPPermissionManager
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[ProxyResult]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[test_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

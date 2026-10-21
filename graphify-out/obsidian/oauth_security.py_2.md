@@ -1,24 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
-type: "document"
-community: "Function Details (4)"
-location: "L10"
+source_file: "gateway/security/oauth_security.py"
+type: "code"
+community: "_wrap_response()"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_4
+  - community/_wrap_response
 ---
 
 # oauth_security.py
 
 ## Connections
-- [[Configuration  Environment Variables_4]] - `contains` [EXTRACTED]
-- [[Function Details_11]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_12]] - `contains` [EXTRACTED]
-- [[Purpose_116]] - `contains` [EXTRACTED]
-- [[Related_16]] - `contains` [EXTRACTED]
-- [[Responsibilities_14]] - `contains` [EXTRACTED]
-- [[Threat Model_11]] - `contains` [EXTRACTED]
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[ConfusedDeputyError]] - `contains` [EXTRACTED]
+- [[OAuthError]] - `contains` [EXTRACTED]
+- [[OAuthRequest]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `contains` [EXTRACTED]
+- [[PKCEViolation]] - `contains` [EXTRACTED]
+- [[RedirectMismatch]] - `contains` [EXTRACTED]
+- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
+- [[consent_framework.py]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
+- [[test_oauth_security.py]] - `references` [EXTRACTED]
+- [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_4
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

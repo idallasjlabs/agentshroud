@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Tailscale Remote Access Setup"
+community: "test_security_regressions_v1_2.py"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tailscale_Remote_Access_Setup
+  - community/test_security_regressions_v1_2py
 ---
 
 # Security: Tailscale ACLs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup
+#graphify/document #graphify/EXTRACTED #community/test_security_regressions_v1_2py

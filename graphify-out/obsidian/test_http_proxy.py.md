@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "_pcm_bytes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/_pcm_bytes
 ---
 
 # test_http_proxy.py
@@ -15,8 +15,8 @@ tags:
 - [[EgressAction]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `imports` [EXTRACTED]
 - [[WebProxy]] - `imports` [EXTRACTED]
-- [[WebProxyConfig]] - `imports` [EXTRACTED]
-- [[_DummyTargetWriter_1]] - `contains` [EXTRACTED]
+- [[WebProxyConfig_1]] - `imports` [EXTRACTED]
+- [[_DummyTargetWriter]] - `contains` [EXTRACTED]
 - [[_MockWriter_1]] - `contains` [EXTRACTED]
 - [[_make_stream()_1]] - `contains` [EXTRACTED]
 - [[http_proxy.py (HTTPConnectProxy)]] - `implements` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[web_config.py (WebProxyConfig)]] - `references` [EXTRACTED]
 - [[web_proxy.py (WebProxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

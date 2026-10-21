@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "PipelineAction"
+community: "WebProxyConfig"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/WebProxyConfig
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[dot-__init__()_115]] - `method` [EXTRACTED]
+- [[dot-__init__()_64]] - `method` [EXTRACTED]
 - [[dot-_check_encoded()]] - `method` [EXTRACTED]
 - [[dot-_check_plain()]] - `method` [EXTRACTED]
 - [[dot-_normalize()]] - `method` [EXTRACTED]
 - [[dot-_record()]] - `method` [EXTRACTED]
 - [[dot-detection_count()]] - `method` [EXTRACTED]
 - [[dot-register_canary()]] - `method` [EXTRACTED]
-- [[dot-scan()_3]] - `method` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
 - [[dot-scan_response()_1]] - `method` [EXTRACTED]
-- [[dot-setup_method()_25]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()_2]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
 - [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
@@ -40,9 +40,9 @@ tags:
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[pipeline()_1]] - `calls` [EXTRACTED]
+- [[pipeline()]] - `calls` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

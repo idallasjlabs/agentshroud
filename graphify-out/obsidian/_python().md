@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-llm-settings.sh"
 type: "code"
-community: "sync-llm-settings.sh"
+community: "4. Compliance & Standards Alignment"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/4_Compliance__Standards_Alignment
 ---
 
 # _python()
@@ -15,4 +15,4 @@ tags:
 - [[sync-llm-settings.sh]] - `defines` [EXTRACTED]
 - [[sync-llm-settings.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/4_Compliance__Standards_Alignment

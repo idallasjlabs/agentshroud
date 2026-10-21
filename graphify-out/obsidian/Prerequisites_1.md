@@ -1,17 +1,21 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L43"
+community: "KillSwitchMonitor (2) (4)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/KillSwitchMonitor_2_4
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
+- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[Network Requirements]] - `contains` [EXTRACTED]
+- [[Software Dependencies]] - `contains` [EXTRACTED]
+- [[System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4

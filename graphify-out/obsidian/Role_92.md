@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller (2)"
-location: "L8"
+community: "get_engine"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/get_engine
 ---
 
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/document #graphify/EXTRACTED #community/get_engine

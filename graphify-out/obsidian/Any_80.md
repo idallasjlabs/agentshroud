@@ -1,18 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "ProxyAction"
+community: "KillSwitchMonitor (2) (2)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/KillSwitchMonitor_2_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-_audit()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_1]] - `references` [EXTRACTED]
-- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2_2

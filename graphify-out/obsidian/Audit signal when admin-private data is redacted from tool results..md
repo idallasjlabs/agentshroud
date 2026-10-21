@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (3)"
+community: "CrossBotTrustLedger"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/CrossBotTrustLedger
 ---
 
 # Audit signal when admin-private data is redacted from tool results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivateRedactionEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

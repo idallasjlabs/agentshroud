@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Session Isolation End-to-End Tests]] - code - gateway/tests/test_session_isolation.py
+- [[ToolACLEnforcer.get_allowed_tools]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

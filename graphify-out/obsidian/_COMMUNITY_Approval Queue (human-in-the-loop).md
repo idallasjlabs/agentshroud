@@ -8,30 +8,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[Agent Decision Logic Flowchart]] - image - docs/diagrams/images/diagram-14-logic-flow.png
-- [[Agent routing (bindings config; e.g. Telegram ID 8096968754 → main agent)]] - image - docs/diagrams/images/diagram-14-logic-flow.png
-- [[AgentShroud Data Assets Mind Map (data dictionary; mostly illegible black-on-black render)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Approval Queue (human-in-the-loop)_1]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Approval Queue State Diagram (pending → approvedrejectedexpired)]] - image - docs/diagrams/images/diagram-16-state-approval-queue.png
-- [[Approval queue data (in-memory, backed by SQLite)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Bot Session State Diagram (fresh → active → idlecompacting → reset)]] - image - docs/diagrams/images/diagram-17-state-bot-session.png
-- [[Current Status_4]] - document - docs/flows/README.md
-- [[Data Lineage Diagram (5-Layer Pipeline)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[EphemeralTransient data (never persisted raw)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[Flows Documentation]] - document - docs/flows/README.md
-- [[Layer 1 — Source (TelegramiMessageCron)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Layer 4 — Processing (Bot LLM API call, MCP-inspected tool call)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Layer 5 — Consumption (auto-delete at expires_at, audit query, user response)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.png
-- [[MCP inspection result (in-memory only, logged to gateway stdout)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
-- [[PII redaction result (hash only in ledger, never persisted raw)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
-- [[Peer binding Telegram 8096968754 → agentmain]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[Planned Documents_4]] - document - docs/flows/README.md
-- [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
-- [[Telegram Message Sequence Diagram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[flowsREADME]] - document - docs/flows/README.md
-- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
+- [[dot-__init__()_130]] - code - gateway/runtime/docker_engine.py
+- [[dot-_cmd()_1]] - code - gateway/runtime/docker_engine.py
+- [[dot-build()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-compose_down()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-compose_up()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-exec()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-health_check()_4]] - code - gateway/runtime/docker_engine.py
+- [[dot-inspect()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-logs()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-network_create()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-network_rm()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-pause()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-pull()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-push()_3]] - code - gateway/runtime/docker_engine.py
+- [[dot-rm()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-run()_4]] - code - gateway/runtime/docker_engine.py
+- [[dot-stop()_9]] - code - gateway/runtime/docker_engine.py
+- [[dot-unpause()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-volume_create()_2]] - code - gateway/runtime/docker_engine.py
+- [[dot-volume_rm()_2]] - code - gateway/runtime/docker_engine.py
+- [[Any_46]] - code - gateway/runtime/docker_engine.py
+- [[Container engine backed by the Docker CLI.]] - rationale - gateway/runtime/docker_engine.py
+- [[ContainerEngine_1]] - code
+- [[DockerEngine]] - code - gateway/runtime/docker_engine.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,15 +41,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Chart]]
-- 3 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy; validates GATEWAY_AUTH_TOKEN + allowed_op_paths; cascading retry 5s,10s,15s,30s,60s)]]
-- 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
-- 1 edge to [[_COMMUNITY_System Audit Vault]]
-- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
+- 5 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 4 edges to [[_COMMUNITY_egress_retry.py]]
+- 3 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (6)]]
+- 2 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 2 edges to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
+- 2 edges to [[_COMMUNITY_Workflow (follow in order)]]
+- 1 edge to [[_COMMUNITY_server.py]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
+- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
+- 1 edge to [[_COMMUNITY_tts.py]]
 
 ## Top bridge nodes
-- [[Approval Queue (human-in-the-loop)_1]] - degree 10, connects to 3 communities
-- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - degree 8, connects to 2 communities
-- [[Telegram Message Sequence Diagram]] - degree 7, connects to 2 communities
-- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - degree 8, connects to 1 community
-- [[EphemeralTransient data (never persisted raw)]] - degree 5, connects to 1 community
+- [[DockerEngine]] - degree 43, connects to 11 communities
+- [[ContainerEngine_1]] - degree 3, connects to 2 communities
+- [[Any_46]] - degree 3, connects to 2 communities

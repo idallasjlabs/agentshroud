@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "ApprovalQueueConfig (2) (4)"
 location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/ApprovalQueueConfig_2_4
 ---
 
 # .test_middleware_file_path_isolation()
@@ -15,4 +15,4 @@ tags:
 - [[Test that middleware blocks access to sensitive system files.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4

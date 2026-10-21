@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "egress_retry.py"
+community: "KillSwitchMonitor (2) (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/KillSwitchMonitor_2_2
 ---
 
 # egress_retry.py
@@ -19,4 +19,4 @@ tags:
 - [[retry_request_sync()]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2_2

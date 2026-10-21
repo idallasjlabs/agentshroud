@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "ProxyAction"
+community: "scanner_integration.py"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/scanner_integrationpy
 ---
 
 # .test_graceful_degradation_dns_error()
@@ -16,4 +16,4 @@ tags:
 - [[Test that DNS filter errors cause fail-closed behavior.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

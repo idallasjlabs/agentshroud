@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "concept"
-community: "egress_filter.py (3)"
+community: "1. Accomplishments This Phase"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/egress_filterpy_3
+  - community/1_Accomplishments_This_Phase
 ---
 
 # agentshroud-openclaw bot container
@@ -15,4 +15,4 @@ tags:
 - [[disaster-recovery-backup.sh]] - `references` [EXTRACTED]
 - [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/egress_filterpy_3
+#graphify/concept #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

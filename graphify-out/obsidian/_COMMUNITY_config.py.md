@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_27]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Function Details_47]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Purpose_177]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Related_53]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[RuntimeConfig.effective_rootless (property)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[RuntimeConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[RuntimeConfig.from_env()]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[config.py_1]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[config.py]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[1. Accomplishments This Phase_3]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🌐 NetworkValidator Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[💾 Resource Management]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📁 AlertDispatcher Storage Fix]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📊 Management API Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📡 Reliable Shutdown Notifications]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔄 Op-proxy Communication Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔐 EncryptedStore Security Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔒 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔧 Auto-Configuration Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🖥️ Control Interface Authentication]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🚀 Async Startup Optimization]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🧠 Enhanced PII Detection Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,9 @@ members: 13
 TABLE source_file, type FROM #community/configpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+
+## Top bridge nodes
+- [[1. Accomplishments This Phase_3]] - degree 13, connects to 1 community

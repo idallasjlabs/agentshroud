@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.png"
 type: "image"
-community: "03-data.md"
+community: "canvas_proxy_app"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/canvas_proxy_app
 ---
 
 # Rendered Data Flow Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Data Flow Diagram]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/03-datamd
+#graphify/image #graphify/EXTRACTED #community/canvas_proxy_app

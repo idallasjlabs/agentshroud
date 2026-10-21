@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Examples"
+community: "AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Examples
+  - community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin
 ---
 
 # Peekaboo
@@ -20,4 +20,4 @@ tags:
 - [[Quickstart (happy path)]] - `contains` [EXTRACTED]
 - [[peekabooSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Examples
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin

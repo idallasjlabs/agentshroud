@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_soc_router_coverage.py"
 location: "L14"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # UserRole
@@ -17,4 +17,4 @@ tags:
 - [[UserRole]] - `uses` [INFERRED]
 - [[_role_enum()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/test_soc_router_coveragepy

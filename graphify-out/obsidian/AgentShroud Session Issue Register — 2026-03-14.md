@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
+community: "test_collaborator_tracker.py (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results_2
+  - community/test_collaborator_trackerpy_2
 ---
 
 # AgentShroud Session Issue Register — 2026-03-14
@@ -17,8 +17,8 @@ tags:
 - [[Issue Register]] - `contains` [EXTRACTED]
 - [[Linked Artifacts]] - `contains` [EXTRACTED]
 - [[Recommended Next Closure Sequence]] - `contains` [EXTRACTED]
-- [[Summary_2]] - `contains` [EXTRACTED]
+- [[Summary_9]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[session-issue-register-2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

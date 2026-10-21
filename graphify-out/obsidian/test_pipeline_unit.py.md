@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig
 ---
 
 # test_pipeline_unit.py
@@ -36,12 +36,12 @@ tags:
 - [[TestTrustViolationRecording]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager_3]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_FakeAttack]] - `contains` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `contains` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()_3]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_4]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

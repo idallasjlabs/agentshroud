@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestLeakDetection"
+community: "Restart Procedure (3)"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLeakDetection
+  - community/Restart_Procedure_3
 ---
 
 # TestLeakDetection
@@ -21,4 +21,4 @@ tags:
 - [[dot-test_slack_token_detected()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLeakDetection
+#graphify/code #graphify/EXTRACTED #community/Restart_Procedure_3

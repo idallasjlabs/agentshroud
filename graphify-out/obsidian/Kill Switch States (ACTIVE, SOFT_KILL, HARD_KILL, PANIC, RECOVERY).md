@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "AgentShroud State Diagrams (doc)"
+community: "AgentShroud™ — Trademark Prior Use Record (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams_doc
+  - community/AgentShroud__Trademark_Prior_Use_Record_3
 ---
 
 # Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_3

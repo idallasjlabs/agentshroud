@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # gateway/security/skill_guard.py (SkillGuard)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_skill_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

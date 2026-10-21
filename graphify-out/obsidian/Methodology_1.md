@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor (2)"
+community: "TestHandleEvent"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_2
+  - community/TestHandleEvent
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories_2]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2
+#graphify/document #graphify/EXTRACTED #community/TestHandleEvent

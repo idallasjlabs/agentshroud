@@ -1,24 +1,21 @@
 ---
 source_file: ".agents/skills/reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "OpenClaw Bot SSH Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Skills Guide (catalog)
 
 ## Connections
 - [[MCP Tools Usage (README)]] - `references` [EXTRACTED]
-- [[Mnemosyne Retention Engineer (README)]] - `references` [EXTRACTED]
-- [[Oracle Feedback Analyst (README)]] - `references` [EXTRACTED]
 - [[Production Safety Checklist (SKILL)]] - `references` [EXTRACTED]
 - [[Project Management (README)]] - `references` [EXTRACTED]
 - [[Pull Request Generator (README)]] - `references` [EXTRACTED]
 - [[Quality Assurance (README)]] - `references` [EXTRACTED]
-- [[System Audit Documentation (README)]] - `references` [EXTRACTED]
 - [[operationsincident-response]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

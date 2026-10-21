@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "AgentTarget"
+community: "_make_proxy()"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/_make_proxy
 ---
 
 # test_openai_payload_includes_model()
 
 ## Connections
-- [[AgentTarget_3]] - `calls` [EXTRACTED]
+- [[AgentTarget_2]] - `calls` [EXTRACTED]
 - [[The OpenAI payload must include a non-empty model field.]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-test_no_alert_when_registry_current()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_no_telegram_send_when_no_token()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_returns_error_on_github_api_failure()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_sends_alert_when_new_cves_found()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunUpstreamCveCheck]] - code - gateway/tests/test_daily_cve_report.py
+- [[Purpose_36]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Related Skills_22]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Usage_25]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[hermesskillsi-vulcanREADME]] - document - docker/config/hermes/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[TestRunUpstreamCveCheck]] - degree 5, connects to 1 community
+- [[Vulcan — Subject Matter Auditor]] - degree 5, connects to 1 community

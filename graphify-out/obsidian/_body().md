@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "._run_proxy()"
+community: "sidecar.py"
 location: "L489"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_run_proxy
+  - community/sidecarpy
 ---
 
 # _body()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_run_proxy()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_run_proxy
+#graphify/code #graphify/INFERRED #community/sidecarpy

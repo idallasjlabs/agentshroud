@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestAggregateResults"
+community: "is_rate_limited_post_retry"
 location: "L547"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/is_rate_limited_post_retry
 ---
 
 # .test_high_means_warning()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_patch_all()]] - `calls` [EXTRACTED]
 - [[TestAggregateResults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/is_rate_limited_post_retry

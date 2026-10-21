@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_hash_matches_content()
@@ -15,4 +15,4 @@ tags:
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
 - [[Verify hash matches SHA-256 of the content.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

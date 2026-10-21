@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "rationale"
-community: "LLM writes its own Whisper domain-hint prompt"
+community: "Stale Cron Session Claim Cleanup"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_writes_its_own_Whisper_domain-hint_prompt
+  - community/Stale_Cron_Session_Claim_Cleanup
 ---
 
 # LLM writes its own Whisper domain-hint prompt
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_writes_its_own_Whisper_domain-hint_prompt
+#graphify/rationale #graphify/EXTRACTED #community/Stale_Cron_Session_Claim_Cleanup

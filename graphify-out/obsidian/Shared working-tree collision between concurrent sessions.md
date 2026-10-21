@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-21.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Shared working-tree collision between concurrent sessions
@@ -15,4 +15,4 @@ tags:
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

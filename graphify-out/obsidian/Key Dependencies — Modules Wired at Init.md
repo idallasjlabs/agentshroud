@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py"
+community: ".pi/mcp.json"
 location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/pi/mcpjson
 ---
 
 # Key Dependencies — Modules Wired at Init
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/pi/mcpjson

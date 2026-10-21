@@ -8,44 +8,44 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__call__()_5]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-__init__()_99]] - code - gateway/security/rate_limit_guard.py
-- [[dot-__init__()_100]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[dot-advance()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-check()_3]] - code - gateway/security/rate_limit_guard.py
-- [[dot-get_stats()_9]] - code - gateway/security/rate_limit_guard.py
-- [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
-- [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
-- [[FakeClock]] - code - gateway/tests/test_rate_limit_guard.py
-- [[No injected clock the guard falls back to time.monotonic and still works.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[RateLimitConfig]] - code - gateway/security/rate_limit_guard.py
-- [[RateLimitDecision]] - code - gateway/security/rate_limit_guard.py
-- [[RateLimitGuard]] - code - gateway/security/rate_limit_guard.py
-- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - rationale - gateway/security/rate_limit_guard.py
-- [[Structured verdict returned by meth`RateLimitGuard.check`.]] - rationale - gateway/security/rate_limit_guard.py
-- [[_make_pipeline()_2]] - code - gateway/tests/test_rate_limit_guard.py
-- [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
-- [[test_burst_clears_after_burst_window()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_burst_detection_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_default_clock_is_monotonic()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_disabled_never_blocks()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_fail_closed_on_internal_error()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_limits_are_per_agent()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_limits_are_per_tool()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_per_tool_override()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_disabled_guard_passthrough()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_no_guard_is_unchanged()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_rate_limit_guard.py]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_stats_counts_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_sustained_limit_blocks_on_overflow()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_under_limit_allows()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_window_slides_and_allows_again()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
+- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
+- [[Agent Management]] - document - docs/security/access-control-matrix.md
+- [[Agent Operational Permissions]] - document - docs/security/access-control-matrix.md
+- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
+- [[AgentShroud Access Control Matrix]] - document - docs/security/access-control-matrix.md
+- [[Approval Queue Management]] - document - docs/security/access-control-matrix.md
+- [[Automatic Progression Criteria]] - document - docs/security/access-control-matrix.md
+- [[Category A Safe Operations (All Levels)]] - document - docs/security/access-control-matrix.md
+- [[Category B Standard Operations (L1+)]] - document - docs/security/access-control-matrix.md
+- [[Category C Privileged Operations (L2+)]] - document - docs/security/access-control-matrix.md
+- [[Category D Administrative Operations (L3+)]] - document - docs/security/access-control-matrix.md
+- [[Category E Critical Operations (L4 + Manual Approval)]] - document - docs/security/access-control-matrix.md
+- [[Data Handling Permissions]] - document - docs/security/access-control-matrix.md
+- [[Dynamic Permission Adjustment]] - document - docs/security/access-control-matrix.md
+- [[External Service Access]] - document - docs/security/access-control-matrix.md
+- [[Level 0 → Level 1]] - document - docs/security/access-control-matrix.md
+- [[Level 1 → Level 2]] - document - docs/security/access-control-matrix.md
+- [[Level 2 → Level 3]] - document - docs/security/access-control-matrix.md
+- [[Level 3 → Level 4]] - document - docs/security/access-control-matrix.md
+- [[MCP Proxy Tool Authorization]] - document - docs/security/access-control-matrix.md
+- [[Monitoring and Audit]] - document - docs/security/access-control-matrix.md
+- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
+- [[Overview]] - document - docs/security/access-control-matrix.md
+- [[Permission Matrix]] - document - docs/security/access-control-matrix.md
+- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
+- [[Recovery Timeframes]] - document - docs/security/access-control-matrix.md
+- [[Security Violation Penalties]] - document - docs/security/access-control-matrix.md
+- [[System Administration]] - document - docs/security/access-control-matrix.md
+- [[Tool Categories and Trust Requirements]] - document - docs/security/access-control-matrix.md
+- [[Tool and Capability Access]] - document - docs/security/access-control-matrix.md
+- [[Trust Degradation Rules]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level Progression Rules]] - document - docs/security/access-control-matrix.md
+- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,11 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
 
 ## Top bridge nodes
-- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()_1]] - degree 4, connects to 2 communities
-- [[test_rate_limit_guard.py]] - degree 22, connects to 1 community
-- [[FakeClock]] - degree 8, connects to 1 community
+- [[AgentShroud Access Control Matrix]] - degree 7, connects to 1 community

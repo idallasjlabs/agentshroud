@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "test_soc_bots.py"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_soc_botspy
 ---
 
 # .is_owner()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRoleResolver]] - `method` [EXTRACTED]
 - [[Return True if user_id is the owner in group_chat_id.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

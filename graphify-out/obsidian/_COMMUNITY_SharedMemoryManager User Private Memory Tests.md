@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SharedMemoryManager User Private Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "iCloud Services"
-location: "L51"
+community: "LLMProxy.proxy_messages (non-streaming)"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

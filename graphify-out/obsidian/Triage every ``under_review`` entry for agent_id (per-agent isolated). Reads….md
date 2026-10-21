@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "triage-cve-mitigations.py"
+community: "._run_and_read"
 location: "L1084"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/_run_and_read
 ---
 
 # Triage every ``under_review`` entry for *agent_id* (per-agent isolated). Reads…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[triage_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/_run_and_read

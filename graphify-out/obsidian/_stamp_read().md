@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "FR3: System Integrity"
+community: "Red Team Assessment v1.2.0"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Red_Team_Assessment_v120
 ---
 
 # _stamp_read()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security-scheduler.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/Red_Team_Assessment_v120

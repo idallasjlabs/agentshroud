@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "ConfigIntegrityMonitor"
 location: "L1032"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/ConfigIntegrityMonitor
 ---
 
 # Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[skills_reload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

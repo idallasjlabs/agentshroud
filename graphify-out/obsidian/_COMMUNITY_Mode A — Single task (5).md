@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Mode A — Single task_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 10 — Notify the owner_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 12 — Clean up_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2 — Create a branch + worktree_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2b — Create the Jira ticket_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 3 — Write and edit code_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 4 — Test and lint_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 5 — Multi-LLM review_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 6 — Build and validate containers_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 7 — Update documentation and website_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 8 — Update the knowledge graph_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 9 — Push and open the PR_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[BOT_CONTAINER]] - code - scripts/update-bot-agents.sh
+- [[BOT_DEFAULTS_DIR]] - code - scripts/update-bot-agents.sh
+- [[BOT_LIVE_SKILLS_DIR]] - code - scripts/update-bot-agents.sh
+- [[How to start a task]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Monitoring progress]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)]] - concept - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Source of truth_1]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Starting a Development Task via Hermes  OpenClaw]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Status ready to use, with 4 known gaps (see below)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Things that will make a task halt and ask you, not fail silently]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[What happens automatically (confirmed real, in]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[What is not currently automated (the 4 gaps)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[hermes-openclaw-dev-workflow]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[update-bot-agents.sh]] - code - scripts/update-bot-agents.sh
+- [[update-bot-agents.sh script]] - code - scripts/update-bot-agents.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 15
 TABLE source_file, type FROM #community/Mode_A__Single_task_5
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV) (2)]]
-
-## Top bridge nodes
-- [[Mode A — Single task_4]] - degree 15, connects to 1 community

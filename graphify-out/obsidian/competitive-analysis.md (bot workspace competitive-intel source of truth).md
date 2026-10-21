@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "openclaw-identity.md (OpenClaw bot identity)"
+community: "UserSessionManager (2) (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw-identitymd_OpenClaw_bot_identity
+  - community/UserSessionManager_2_2
 ---
 
 # competitive-analysis.md (bot workspace competitive-intel source of truth)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw-identitymd_OpenClaw_bot_identity
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager_2_2

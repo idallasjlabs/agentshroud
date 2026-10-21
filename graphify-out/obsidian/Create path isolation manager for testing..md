@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager (5)"
+community: "SecurityPipeline (2)"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/SecurityPipeline_2
 ---
 
 # Create path isolation manager for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2

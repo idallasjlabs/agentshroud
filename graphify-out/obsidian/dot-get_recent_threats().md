@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MiddlewareManager (8)"
+community: "generate_branding_assets.py"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/generate_branding_assetspy
 ---
 
 # .get_recent_threats()
@@ -17,4 +17,4 @@ tags:
 - [[Get threats detected in the last N hours.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

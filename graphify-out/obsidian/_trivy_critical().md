@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scorecard_integrity.py"
+community: "Incident: Conduit/Hermes instability 2026-10-16"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/Incident_Conduit/Hermes_instability_2026-10-16
 ---
 
 # _trivy_critical()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_initial_when_has_criticals()]] - `calls` [EXTRACTED]
 - [[dot-test_overall_critical_when_any_critical()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16

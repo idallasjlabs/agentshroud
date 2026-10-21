@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "PortManager"
+community: "TrustConfig (2)"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TrustConfig_2
 ---
 
 # .ports()
@@ -15,4 +15,4 @@ tags:
 - [[Get the final port mapping.]] - `rationale_for` [EXTRACTED]
 - [[PortResolution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

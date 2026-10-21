@@ -1,19 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "canary.py"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # Function Details
 
 ## Connections
-- [[CanaryResult.to_dict()]] - `contains` [EXTRACTED]
-- [[canary.py_2]] - `contains` [EXTRACTED]
-- [[run_canary(pipeline, forwarder)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

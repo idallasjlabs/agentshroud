@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "plan_remediation"
-location: "L220"
+community: "Job details"
+location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/Job_details
 ---
 
 # load_registry()
 
 ## Connections
-- [[Any_78]] - `references` [EXTRACTED]
-- [[Import the committed OpenClaw registry.]] - `rationale_for` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - `rationale_for` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/Job_details

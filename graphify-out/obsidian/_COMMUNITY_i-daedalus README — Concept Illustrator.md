@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-daedalus README — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[i-daedalus SKILL — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Control-Plane  Data-Plane Separation]] - rationale - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[HexStrike MCP Proxy Plan]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 

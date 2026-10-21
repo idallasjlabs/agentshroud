@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "TrustConfig (2)"
+community: "asyncio"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/asyncio
 ---
 
 # .check_tool_usage()
@@ -16,4 +16,4 @@ tags:
 - [[SubagentMonitor]] - `method` [EXTRACTED]
 - [[ToolCheckResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "UserSessionManager (2)"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/UserSessionManager_2
 ---
 
 # test_proxy_result_defaults_are_safe()
@@ -16,4 +16,4 @@ tags:
 - [[A2AProxyResult]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

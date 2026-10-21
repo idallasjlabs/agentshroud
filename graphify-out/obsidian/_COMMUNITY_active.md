@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[active_1]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[fresh (container starts, new session created)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[idle (health monitor 300s interval)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[reset (new session UUID created, previous archived)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[Athena — Knowledge Distiller]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Purpose_38]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Related Skills_24]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Usage_27]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[openclawskillsi-athenaREADME]] - document - docker/config/openclaw/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

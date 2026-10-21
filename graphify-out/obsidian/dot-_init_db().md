@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L69"
+community: "soc/router.py"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/soc/routerpy
 ---
 
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_13]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[dot-__init__()_43]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

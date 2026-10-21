@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "DNSBlocklist"
+community: "AgentShroud Security Architecture"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentShroud_Security_Architecture
 ---
 
 # TestIsBlocked
 
 ## Connections
-- [[dot-setup_method()_13]] - `method` [EXTRACTED]
+- [[dot-setup_method()_9]] - `method` [EXTRACTED]
 - [[dot-test_allowlist_overrides_blocklist()]] - `method` [EXTRACTED]
 - [[dot-test_case_normalization()]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()]] - `method` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

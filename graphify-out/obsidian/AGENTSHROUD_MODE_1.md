@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "egress_filter.py"
+community: "DelegationManager"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/DelegationManager
 ---
 
 # AGENTSHROUD_MODE
@@ -15,10 +15,10 @@ tags:
 - [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
 - [[Affected Modules]] - `contains` [EXTRACTED]
 - [[Behavior_1]] - `contains` [EXTRACTED]
-- [[Description_10]] - `contains` [EXTRACTED]
-- [[Related Notes_66]] - `contains` [EXTRACTED]
+- [[Description_12]] - `contains` [EXTRACTED]
+- [[Related Notes_69]] - `contains` [EXTRACTED]
 - [[Startup Warnings]] - `contains` [EXTRACTED]
-- [[Usage_130]] - `contains` [EXTRACTED]
-- [[Values_2]] - `contains` [EXTRACTED]
+- [[Usage_113]] - `contains` [EXTRACTED]
+- [[Values_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/DelegationManager

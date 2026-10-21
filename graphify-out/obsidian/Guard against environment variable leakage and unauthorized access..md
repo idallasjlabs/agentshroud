@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "test_playback_state.c"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_playback_statec
 ---
 
 # Guard against environment variable leakage and unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvironmentGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/test_playback_statec

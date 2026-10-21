@@ -1,28 +1,19 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
-location: "L215"
+community: "ContextSegment"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig_4
+  - graphify/EXTRACTED
+  - community/ContextSegment
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[dot-_notify_telegram()]] - `references` [EXTRACTED]
-- [[dot-decide()_1]] - `references` [EXTRACTED]
-- [[dot-get_item()_2]] - `references` [EXTRACTED]
-- [[dot-get_pending()_1]] - `references` [EXTRACTED]
-- [[dot-submit()_1]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[dot-load_all()_1]] - `references` [EXTRACTED]
+- [[dot-load_pending()]] - `references` [EXTRACTED]
+- [[dot-save()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

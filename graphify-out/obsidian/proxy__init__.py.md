@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "CrossBotTrustLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/CrossBotTrustLedger
 ---
 
 # proxy/__init__.py
@@ -18,22 +18,22 @@ tags:
 - [[MCPAuditEntry]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
 - [[MCPInspector_1]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
 - [[MCPTransport]] - `imports` [EXTRACTED]
 - [[PermissionCheck]] - `imports` [EXTRACTED]
-- [[PermissionLevel]] - `imports` [EXTRACTED]
+- [[PermissionLevel_1]] - `imports` [EXTRACTED]
 - [[ProxyResult]] - `imports` [EXTRACTED]
-- [[ThreatLevel_2]] - `imports` [EXTRACTED]
+- [[ThreatLevel_1]] - `imports` [EXTRACTED]
 - [[mcp_audit.py]] - `re_exports` [EXTRACTED]
 - [[mcp_config.py]] - `re_exports` [EXTRACTED]
 - [[mcp_inspector.py]] - `re_exports` [EXTRACTED]
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

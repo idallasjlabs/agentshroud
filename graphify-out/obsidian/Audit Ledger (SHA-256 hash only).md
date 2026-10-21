@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "AgentShroud (system, C4 context) (3)"
+community: "test_jira_weekly_review.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_3
+  - community/test_jira_weekly_reviewpy
 ---
 
 # Audit Ledger (SHA-256 hash only)
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_5]] - `calls` [EXTRACTED]
 - [[ledger.db (90-day retention)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_system_C4_context_3
+#graphify/concept #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

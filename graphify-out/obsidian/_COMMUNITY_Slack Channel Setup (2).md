@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[25-Domain Prompt Injection Defense Framework_1]] - concept - docs/agentshroud-knowledge.md
-- [[34 Security Modules Pipeline (P0-P3)]] - concept - docs/claude-security-audit-prompt.md
-- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
-- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
-- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
-- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
-- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
-- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
-- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[PII Sanitizer (user-facing description)]] - concept - docs/user-guide.md
-- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
-- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
-- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
-- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
-- [[Steve Hay's External Reviewer Findings]] - concept - docs/claude-security-audit-prompt.md
-- [[egress_filter module]] - concept - docs/claude-security-audit-prompt.md
-- [[pii_sanitizer module (disabled — false positives)]] - concept - docs/claude-security-audit-prompt.md
-- [[prompt_guard module (observatory mode — too aggressive for enforce)]] - concept - docs/claude-security-audit-prompt.md
+- [[1Password CLI Skill]] - document - skills/openclaw/1password/SKILL.md
+- [[1Password Desktop App Integration Flow]] - document - skills/openclaw/1password/references/get-started.md
+- [[1Password Item ID Vault-Structure Disclosure]] - rationale - docs/security/secret-scan-results.md
+- [[Archive Directory Exposure Risk]] - concept - docs/security/secret-scan-results.md
+- [[Credential Rotation Checklist]] - concept - docs/security/secrets-inventory.md
+- [[Deploy-Time dockersecrets Provisioning]] - concept - docs/security/secrets-inventory.md
+- [[Gateway Auth Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[Git History Expungement via filter-repo]] - rationale - docs/security/secrets-inventory.md
+- [[GitHub 90-Day Unreferenced-Commit Cache Warning]] - rationale - docs/security/secrets-inventory.md
+- [[Gitignored wifi_credentials.h Pattern]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Post-Purge Gitleaks Verification]] - concept - docs/security/secret-scan-results.md
+- [[Pre-Purge Secret Rotation Checklist]] - document - docs/security/secret-scan-results.md
+- [[Pre-Release Secrets Inventory]] - document - docs/security/secrets-inventory.md
+- [[Real Credentials Present in Git History]] - concept - docs/security/secrets-inventory.md
+- [[Required Dedicated tmux Session For op]] - rationale - skills/openclaw/1password/SKILL.md
+- [[Secret-Adjacent Template Files (.example)]] - concept - docs/security/secrets-inventory.md
+- [[Telegram Bot Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[Telegram Chat History Artifact Risk]] - concept - docs/security/secret-scan-results.md
+- [[iCloud App-Specific Password Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[op Secret-Handling Guardrails]] - rationale - skills/openclaw/1password/SKILL.md
+- [[op read  run  inject Command Examples]] - document - skills/openclaw/1password/references/cli-examples.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,11 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 1 edge to [[_COMMUNITY_Slack Channel Setup]]
-- 1 edge to [[_COMMUNITY_Enterprise Governance Proxy System (invention)]]
+- 1 edge to [[_COMMUNITY_format_upstream_cve_alert()]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-icloudscriptscalendar.js]]
 
 ## Top bridge nodes
-- [[34 Security Modules Pipeline (P0-P3)]] - degree 6, connects to 1 community
-- [[Collaborator Session Isolation (blocked functionsskills)]] - degree 2, connects to 1 community
-- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - degree 2, connects to 1 community
+- [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community
+- [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community

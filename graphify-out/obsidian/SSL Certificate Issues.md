@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Troubleshooting Common Issues"
+community: "TestOutboundInfoFilter (15)"
 location: "L583"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_Common_Issues
+  - community/TestOutboundInfoFilter_15
 ---
 
 # SSL Certificate Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_15

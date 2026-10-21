@@ -8,105 +8,105 @@ members: 99
 **Members:** 99 nodes
 
 ## Members
-- [[dot-__init__()_128]] - code - gateway/security/mcp_policy.py
-- [[dot-__init__()_129]] - code - gateway/tests/test_mcp_policy.py
-- [[dot-__post_init__()_2]] - code - gateway/security/mcp_policy.py
-- [[dot-_decide()]] - code - gateway/security/mcp_policy.py
-- [[dot-_tier_for()]] - code - gateway/security/mcp_policy.py
-- [[dot-allowed()]] - code - gateway/security/mcp_policy.py
-- [[dot-enforce()_1]] - code - gateway/security/mcp_policy.py
-- [[dot-evaluate()_1]] - code - gateway/security/mcp_policy.py
-- [[dot-from_dict()_5]] - code - gateway/security/mcp_policy.py
-- [[dot-submit_tool_request()_2]] - code - gateway/tests/test_mcp_policy.py
-- [[dot-test_configured_servers_are_allowlisted_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-test_engine_allows_known_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-test_engine_denies_unknown_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-test_engine_requires_approval_for_destructive_tool_on_known_server()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-test_explicit_policy_section_is_not_overridden()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-test_missing_section_yields_deny_by_default_policy()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-test_no_mcp_section_still_deny_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[dot-wait_for_decision()_2]] - code - gateway/tests/test_mcp_policy.py
-- [[A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the     engin]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[A destructive tool the operator forgot to classify is still caught as     high-r]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A fullwidthhomoglyph tool name must not evade the denylistkeyword     heuristi]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A knownallowlisted server's non-high-risk tool is still ALLOWED — no breakage.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[A malformed default_action in YAML must not fail open — it becomes deny.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A policy-permitted call passes the policy gate (inspectionpermission     layers]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A representative policy two allowlisted servers, one denylisted server,     a p]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A risk tier declared with a bare tool name applies on any allowlisted     server]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A server both allowed and denied is denied (deny wins).]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[An empty config denies everything — never a blanket allow.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[An operator-authored mcp_policy section must be honoured verbatim.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Any_45]] - code - gateway/security/mcp_policy.py
-- [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - rationale - gateway/security/mcp_policy.py
-- [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - rationale - gateway/security/mcp_policy.py
-- [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Evaluate a single MCP tool call. Pure — no IO, no side effects         beyond b]] - rationale - gateway/security/mcp_policy.py
-- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          For REQUIRE]] - rationale - gateway/security/mcp_policy.py
-- [[Fail-closed intent even on a known server, an obviously destructive         too]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Fail-closed a high-risk tool with no approval queue wired is denied,     never]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Fail-closed if the queue returns requires_wait=False for a call the     engine]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Knownconfigured MCP servers must be carried into the default allowlist]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[LOW finding when owner_bypass is enabled but owner_user_id is left     blank, t]] - rationale - gateway/tests/test_mcp_policy.py
-- [[MCPPolicyAction]] - code - gateway/security/mcp_policy.py
-- [[MCPPolicyConfig]] - code - gateway/tests/test_mcp_policy.py
-- [[MCPPolicyConfig_1]] - code - gateway/security/mcp_policy.py
-- [[MCPPolicyDecision]] - code - gateway/security/mcp_policy.py
-- [[MCPPolicyEngine]] - code - gateway/tests/test_mcp_policy.py
-- [[MCPPolicyEngine_1]] - code - gateway/security/mcp_policy.py
-- [[Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Normalize a servertool reference for robust, evasion-resistant matching.      A]] - rationale - gateway/security/mcp_policy.py
-- [[Owner skips the approval gate for high-risk tools, but a denylisted     tool is]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - rationale - gateway/security/mcp_policy.py
-- [[Path_33]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Resolve the risk tier for a tool.          Explicit classification (qualified be]] - rationale - gateway/security/mcp_policy.py
-- [[TestDefaultMcpPolicyIsFailClosed]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[TestDefaultPolicyNoMcpServers]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - rationale - gateway/tests/test_mcp_policy.py
-- [[The result of evaluating a single MCP tool call against the policy.]] - rationale - gateway/security/mcp_policy.py
-- [[The synthesised default, fed to the engine, DENIES an unknown server.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - rationale - gateway/security/mcp_policy.py
-- [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - rationale - gateway/tests/test_mcp_policy.py
-- [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
-- [[_base_config()]] - code - gateway/tests/test_mcp_policy.py
-- [[_norm()_1]] - code - gateway/security/mcp_policy.py
-- [[_write()_1]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[engine()]] - code - gateway/tests/test_mcp_policy.py
-- [[evaluate() records the decision for the SOC module heat-map.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[mcp_policy.py]] - code - gateway/security/mcp_policy.py
-- [[test_allowlisted_server_safe_tool_is_allowed()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_bare_tool_name_risk_tier_applies_across_servers()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_critical_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_decision_records_soc_heatmap()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_default_allow_opt_in_permits_non_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_default_deny_posture_when_no_config()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denied_tool_can_be_specified_bare_or_qualified()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denylist_wins_over_allowlist()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denylisted_server_is_denied_even_if_tool_safe()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denylisted_tool_is_denied()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_allows_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_blocks_unknown_server()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_denied_on_rejection()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_without_queue_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow (regression guard)]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_unicode_evasion_still_denied()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_high_risk_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_invalid_default_action_falls_back_to_deny()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_policy.py]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_policy_default_failclosed.py]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[test_mcp_proxy_allows_policy_permitted_call()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_proxy_blocks_policy_denied_call()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_owner_bypasses_approval_but_not_hard_deny()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_server_and_tool_matching_is_case_insensitive()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_unknown_server_is_denied_by_default()]] - code - gateway/tests/test_mcp_policy.py
+- [[dot-__init__()_129]] - code - gateway/web/api.py
+- [[dot-test_resolves_hermes_to_the_real_renamed_container()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_resolves_openclaw_to_the_convention_default()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_unknown_bot_id_falls_back_to_the_naive_guess()]] - code - gateway/tests/test_web_api_coverage.py
+- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
+- [[Aggregate security report.]] - rationale - gateway/web/api.py
+- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
+- [[Check for AgentShroud updates from GitHub.]] - rationale - gateway/web/api.py
+- [[Check for OpenClaw updates (backward-compat alias for updatesbotopenclaw).]] - rationale - gateway/web/api.py
+- [[Check for updates for the named bot container.]] - rationale - gateway/web/api.py
+- [[Compute valid service names from config + sidecars at call-time. Uses     each b]] - rationale - gateway/web/api.py
+- [[ConfigUpdate]] - code - gateway/web/api.py
+- [[Create a short-lived WebSocket-only token for management endpoints.]] - rationale - gateway/web/api.py
+- [[Emergency kill switch freeze, shutdown, or disconnect.]] - rationale - gateway/web/api.py
+- [[Export current configuration.]] - rationale - gateway/web/api.py
+- [[Full system status including all services and runtime info.]] - rationale - gateway/web/api.py
+- [[Get current configuration.]] - rationale - gateway/web/api.py
+- [[Get the active container engine.]] - rationale - gateway/web/api.py
+- [[Import configuration from uploaded data.]] - rationale - gateway/web/api.py
+- [[IntelDraftEntry]] - code - gateway/web/api.py
+- [[IntelDraftRequest]] - code - gateway/web/api.py
+- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
+- [[Path_33]] - code - gateway/web/api.py
+- [[Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure.]] - rationale - gateway/web/api.py
+- [[Raised when SkillGuard blocks a dangerous skill tree before deploy.]] - rationale - gateway/web/api.py
+- [[Rebuild containers with latest images.]] - rationale - gateway/web/api.py
+- [[Resolve the Dockerfile for the default bot from gateway config.]] - rationale - gateway/web/api.py
+- [[Resolve the real Docker container name for a given bot_id — from     BotConfig.r]] - rationale - gateway/web/api.py
+- [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - rationale - gateway/web/api.py
+- [[Restart a specific service container.]] - rationale - gateway/web/api.py
+- [[Retrieve container logs with optional filtering.]] - rationale - gateway/web/api.py
+- [[Return a comparison dict {feature_name {runtime supported}}.]] - rationale - gateway/runtime/security.py
+- [[Return an IntelReportStore pointed at the configured data directory.]] - rationale - gateway/web/api.py
+- [[Return real container names for all configured bots (e.g.     'agentshroud-open]] - rationale - gateway/web/api.py
+- [[Return recent competitive-intelligence reports in reverse-chronological order.]] - rationale - gateway/web/api.py
+- [[Return the current AGENTSHROUD_MODE.]] - rationale - gateway/web/api.py
+- [[Return the latest validated competitive-intelligence report.      Auth-gated (ow]] - rationale - gateway/web/api.py
+- [[Return update history from audit log.]] - rationale - gateway/web/api.py
+- [[Return warning messages for missing security features.]] - rationale - gateway/runtime/security.py
+- [[Revert to previous git commit and rebuild.]] - rationale - gateway/web/api.py
+- [[Rollback OpenClaw (backward-compat alias for updatesbotopenclawrollback).]] - rationale - gateway/web/api.py
+- [[Rollback a named bot container to the previous image tag.]] - rationale - gateway/web/api.py
+- [[ServiceAction]] - code - gateway/web/api.py
+- [[SkillGuardBlocked]] - code - gateway/web/api.py
+- [[Start a specific service container.]] - rationale - gateway/web/api.py
+- [[Stop a specific service container.]] - rationale - gateway/web/api.py
+- [[TestResolveBotContainer]] - code - gateway/tests/test_web_api_coverage.py
+- [[Update configuration (writes YAML and optionally restarts).]] - rationale - gateway/web/api.py
+- [[Upgrade OpenClaw (backward-compat alias for updatesbotopenclawupgrade).]] - rationale - gateway/web/api.py
+- [[Upgrade a named bot container.]] - rationale - gateway/web/api.py
+- [[Validate a management WebSocket token (single-use, time-limited).]] - rationale - gateway/web/api.py
+- [[Validate service name against allowlist to prevent injection.]] - rationale - gateway/web/api.py
+- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
+- [[WebSocket_4]] - code - gateway/web/api.py
+- [[WebSocket endpoint for real-time log streaming. Requires scoped WS token.]] - rationale - gateway/web/api.py
+- [[WebSocket for real-time update progress. Requires scoped WS token.]] - rationale - gateway/web/api.py
+- [[_bot_service_names()]] - code - gateway/web/api.py
+- [[_create_mgmt_ws_token()]] - code - gateway/web/api.py
+- [[_get_default_bot_dockerfile()]] - code - gateway/web/api.py
+- [[_get_engine()]] - code - gateway/web/api.py
+- [[_intel_store()]] - code - gateway/web/api.py
+- [[_intel_verifier()]] - code - gateway/web/api.py
+- [[_resolve_bot_container must use BotConfig.resolved_container_name, not     a har]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[_resolve_bot_container()]] - code - gateway/web/api.py
+- [[_skills_reload_paths()]] - code - gateway/web/api.py
+- [[_valid_services()]] - code - gateway/web/api.py
+- [[_validate_mgmt_ws_token()]] - code - gateway/web/api.py
+- [[_validate_service_name()]] - code - gateway/web/api.py
+- [[api.py_2]] - code - gateway/web/api.py
+- [[check_agentshroud_updates()]] - code - gateway/web/api.py
+- [[check_bot_updates()]] - code - gateway/web/api.py
+- [[check_openclaw_updates()]] - code - gateway/web/api.py
+- [[export_config()]] - code - gateway/web/api.py
+- [[get_competitive_intel()]] - code - gateway/web/api.py
+- [[get_competitive_intel_history()]] - code - gateway/web/api.py
+- [[get_config()_1]] - code - gateway/web/api.py
+- [[get_logs()]] - code - gateway/web/api.py
+- [[get_mode()]] - code - gateway/web/api.py
+- [[get_security_comparison()]] - code - gateway/runtime/security.py
+- [[get_status()]] - code - gateway/web/api.py
+- [[import_config()]] - code - gateway/web/api.py
+- [[killswitch()_1]] - code - gateway/web/api.py
+- [[rebuild()]] - code - gateway/web/api.py
+- [[restart_service()]] - code - gateway/web/api.py
+- [[rollback_agentshroud()]] - code - gateway/web/api.py
+- [[rollback_bot()]] - code - gateway/web/api.py
+- [[rollback_openclaw()]] - code - gateway/web/api.py
+- [[security_report()]] - code - gateway/web/api.py
+- [[start_service()]] - code - gateway/web/api.py
+- [[stop_service()]] - code - gateway/web/api.py
+- [[submit_competitive_intel()]] - code - gateway/web/api.py
+- [[update_config()]] - code - gateway/web/api.py
+- [[update_history()]] - code - gateway/web/api.py
+- [[upgrade_agentshroud()]] - code - gateway/web/api.py
+- [[upgrade_bot()]] - code - gateway/web/api.py
+- [[upgrade_openclaw()]] - code - gateway/web/api.py
+- [[warn_missing_features()]] - code - gateway/runtime/security.py
+- [[ws_logs()]] - code - gateway/web/api.py
+- [[ws_updates()]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -116,23 +116,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 14 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 12 edges to [[_COMMUNITY_RBACConfig]]
-- 9 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 5 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
-- 2 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine (3)]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (2)]]
+- 19 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 13 edges to [[_COMMUNITY_AsyncMock]]
+- 10 edges to [[_COMMUNITY_KillSwitchMonitor (3)]]
+- 10 edges to [[_COMMUNITY_GroupConfig]]
+- 5 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 5 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 4 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 4 edges to [[_COMMUNITY__get_gmail_app_password]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (2) (2)]]
+- 3 edges to [[_COMMUNITY_Workflow (follow in order)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline (3)]]
+- 2 edges to [[_COMMUNITY_upgrade]]
+- 1 edge to [[_COMMUNITY_test_dashboard.py]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
+- 1 edge to [[_COMMUNITY_lifespan() (2)]]
+- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
+- 1 edge to [[_COMMUNITY_main.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_Implement per-user session isolation using Telegram user ID]]
 
 ## Top bridge nodes
-- [[MCPPolicyAction]] - degree 15, connects to 5 communities
-- [[test_mcp_policy.py]] - degree 46, connects to 4 communities
-- [[MCPPolicyEngine_1]] - degree 44, connects to 4 communities
-- [[MCPPolicyEngine]] - degree 39, connects to 4 communities
-- [[_FakeApprovalQueue]] - degree 20, connects to 4 communities
+- [[api.py_2]] - degree 75, connects to 19 communities
+- [[SkillGuardBlocked]] - degree 8, connects to 4 communities
+- [[warn_missing_features()]] - degree 9, connects to 3 communities
+- [[Path_33]] - degree 8, connects to 3 communities
+- [[get_security_comparison()]] - degree 7, connects to 3 communities

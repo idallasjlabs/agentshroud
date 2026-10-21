@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L394"
+community: "server.py"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/serverpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
-- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `calls` [EXTRACTED]
+- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/serverpy

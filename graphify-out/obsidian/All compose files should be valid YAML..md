@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "rationale"
-community: "TestProductionCompose"
+community: "Telegram & Gmail Integration Guide"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # All compose files should be valid YAML.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllComposeFilesValid]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/rationale #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

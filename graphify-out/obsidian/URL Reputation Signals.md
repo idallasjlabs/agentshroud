@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "browser_security.py"
+community: "egress_monitor.py"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser_securitypy
+  - community/egress_monitorpy
 ---
 
 # URL Reputation Signals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser_securitypy
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

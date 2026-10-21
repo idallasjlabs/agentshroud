@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "document"
-community: "Newsletter: Coding Agent CLIs"
+community: "SecureBrowser.detect_captcha"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Newsletter_Coding_Agent_CLIs
+  - community/SecureBrowserdetect_captcha
 ---
 
 # Newsletter: Coding Agent CLIs
 
-#graphify/document #graphify/EXTRACTED #community/Newsletter_Coding_Agent_CLIs
+#graphify/document #graphify/EXTRACTED #community/SecureBrowserdetect_captcha

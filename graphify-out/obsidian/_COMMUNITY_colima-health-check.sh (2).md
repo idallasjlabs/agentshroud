@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[container-net-diag.sh]] - code - docker/scripts/container-net-diag.sh
-- [[container-net-diag.sh script]] - code - docker/scripts/container-net-diag.sh
-- [[fail()_5]] - code - docker/scripts/container-net-diag.sh
-- [[has()]] - code - docker/scripts/container-net-diag.sh
-- [[header()]] - code - docker/scripts/container-net-diag.sh
-- [[http_test()]] - code - docker/scripts/container-net-diag.sh
-- [[info()_2]] - code - docker/scripts/container-net-diag.sh
-- [[pass()_4]] - code - docker/scripts/container-net-diag.sh
-- [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
-- [[warn()_5]] - code - docker/scripts/container-net-diag.sh
+- [[1. Docker Desktop]] - document - docs/reference/PREREQUISITES.md
+- [[2. Python 3.11+]] - document - docs/reference/PREREQUISITES.md
+- [[3. Python Packages]] - document - docs/reference/PREREQUISITES.md
+- [[4. Node.js 22+ (for OpenClaw)]] - document - docs/reference/PREREQUISITES.md
+- [[5. Git]] - document - docs/reference/PREREQUISITES.md
+- [[6. Tailscale (Optional but Recommended)]] - document - docs/reference/PREREQUISITES.md
+- [[Hardware_1]] - document - docs/reference/PREREQUISITES.md
+- [[Operating System]] - document - docs/reference/PREREQUISITES.md
+- [[Required Software]] - document - docs/reference/PREREQUISITES.md
+- [[💻 System Requirements]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +25,9 @@ members: 10
 TABLE source_file, type FROM #community/colima-health-checksh_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Apple Services Setup Guide]]
+
+## Top bridge nodes
+- [[💻 System Requirements]] - degree 4, connects to 1 community

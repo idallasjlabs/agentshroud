@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/transcribe.md"
 type: "concept"
-community: "Self-Written Whisper Domain-Hint Prompt"
+community: "Diagram 07: Data Flow"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Self-Written_Whisper_Domain-Hint_Prompt
+  - community/Diagram_07_Data_Flow
 ---
 
 # Self-Written Whisper Domain-Hint Prompt
 
-#graphify/concept #graphify/EXTRACTED #community/Self-Written_Whisper_Domain-Hint_Prompt
+#graphify/concept #graphify/EXTRACTED #community/Diagram_07_Data_Flow

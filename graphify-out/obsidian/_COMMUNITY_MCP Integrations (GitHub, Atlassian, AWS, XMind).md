@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
+- [[PII redaction — presidio engine 0.9 confidence minimum]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

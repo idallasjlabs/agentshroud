@@ -1,53 +1,48 @@
 ---
 type: community
-members: 40
+members: 35
 ---
 
 # AgentShroud Agentic OS
 
-**Members:** 40 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[1. System Overview]] - document - docs/architecture/agentic-os.md
-- [[10. Infrastructure & Runtime]] - document - docs/architecture/agentic-os.md
-- [[12. MCP Integrations]] - document - docs/architecture/agentic-os.md
-- [[13. Compliance Alignment]] - document - docs/architecture/agentic-os.md
-- [[14. Gap Analysis & Recommendations]] - document - docs/architecture/agentic-os.md
-- [[2. Multi-Agent Hierarchy]] - document - docs/architecture/agentic-os.md
-- [[3. Agent Inventory]] - document - docs/architecture/agentic-os.md
-- [[5. Orchestration Flow]] - document - docs/architecture/agentic-os.md
-- [[6 CI Workflows, 14 Jobs]] - document - docs/architecture/agentic-os.md
-- [[7. CICD Quality Gates]] - document - docs/architecture/agentic-os.md
-- [[9. Human-in-the-Loop Controls]] - document - docs/architecture/agentic-os.md
-- [[AI-Native Development Framework]] - document - docs/architecture/agentic-os.md
-- [[Actions Requiring Approval]] - document - docs/architecture/agentic-os.md
-- [[AgentShroud Agentic OS]] - document - docs/architecture/agentic-os.md
-- [[Agents by Domain]] - document - docs/architecture/agentic-os.md
-- [[Appendix A File Structure Reference]] - document - docs/architecture/agentic-os.md
-- [[Approval Queue Architecture]] - document - docs/architecture/agentic-os.md
-- [[Authorization Matrix]] - document - docs/architecture/agentic-os.md
-- [[Build-Time Security Scan (IEC 62443 4-1 SDL)]] - document - docs/architecture/agentic-os.md
-- [[Configuration Locations]] - document - docs/architecture/agentic-os.md
-- [[Container Architecture]] - document - docs/architecture/agentic-os.md
-- [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
-- [[Development Workflow — End to End]] - document - docs/architecture/agentic-os.md
-- [[Distribution by Platform]] - document - docs/architecture/agentic-os.md
-- [[Egress Approval (Domain-Level)]] - document - docs/architecture/agentic-os.md
-- [[Hook Enforcement Layer]] - document - docs/architecture/agentic-os.md
-- [[Identified Gaps]] - document - docs/architecture/agentic-os.md
-- [[Key Numbers]] - document - docs/architecture/agentic-os.md
-- [[Multi-Runtime Support]] - document - docs/architecture/agentic-os.md
-- [[Pipeline Overview]] - document - docs/architecture/agentic-os.md
-- [[Podcast Pipeline — Greek Mythology Agents]] - document - docs/architecture/agentic-os.md
-- [[Pre-commit Hook Chain]] - document - docs/architecture/agentic-os.md
-- [[Productivity Recommendations]] - document - docs/architecture/agentic-os.md
-- [[Security-Sensitive Paths (Claude-Only)]] - document - docs/architecture/agentic-os.md
-- [[Semgrep SAST Rules]] - document - docs/architecture/agentic-os.md
-- [[Standards Referenced]] - document - docs/architecture/agentic-os.md
-- [[Table of Contents]] - document - docs/architecture/agentic-os.md
-- [[What's Working Well]] - document - docs/architecture/agentic-os.md
-- [[`asb` CLI — Deployment Tool]] - document - docs/architecture/agentic-os.md
-- [[agentic-os]] - document - docs/architecture/agentic-os.md
+- [[AgentShroud Brand Guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[Approval Process]] - document - branding/guidelines/brand-guidelines.md
+- [[Backgrounds]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Applications]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Approval Process]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Identity_2]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Personality]] - document - branding/guidelines/brand-guidelines.md
+- [[Clear Space]] - document - branding/guidelines/brand-guidelines.md
+- [[Co-Branding Guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[Color Constraints]] - document - branding/guidelines/brand-guidelines.md
+- [[Color Profiles]] - document - branding/guidelines/brand-guidelines.md
+- [[Contact_1]] - document - branding/guidelines/brand-guidelines.md
+- [[Documentation_3]] - document - branding/guidelines/brand-guidelines.md
+- [[ExternalPartnership Use]] - document - branding/guidelines/brand-guidelines.md
+- [[File Formats & Deliverables]] - document - branding/guidelines/brand-guidelines.md
+- [[Hierarchy]] - document - branding/guidelines/brand-guidelines.md
+- [[Internal Use]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Files]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Usage_3]] - document - branding/guidelines/brand-guidelines.md
+- [[Minimum Size]] - document - branding/guidelines/brand-guidelines.md
+- [[Mission]] - document - branding/guidelines/brand-guidelines.md
+- [[Placement Rules]] - document - branding/guidelines/brand-guidelines.md
+- [[Presentations]] - document - branding/guidelines/brand-guidelines.md
+- [[Principles]] - document - branding/guidelines/brand-guidelines.md
+- [[Print Materials]] - document - branding/guidelines/brand-guidelines.md
+- [[Prohibited Uses]] - document - branding/guidelines/brand-guidelines.md
+- [[Readability]] - document - branding/guidelines/brand-guidelines.md
+- [[Social Media]] - document - branding/guidelines/brand-guidelines.md
+- [[Typography in Practice]] - document - branding/guidelines/brand-guidelines.md
+- [[Values_1]] - document - branding/guidelines/brand-guidelines.md
+- [[Vision]] - document - branding/guidelines/brand-guidelines.md
+- [[Voice & Tone_4]] - document - branding/guidelines/brand-guidelines.md
+- [[Website]] - document - branding/guidelines/brand-guidelines.md
+- [[Writing Style]] - document - branding/guidelines/brand-guidelines.md
+- [[brand-guidelines]] - document - branding/guidelines/brand-guidelines.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,10 +52,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Key Skills in Detail]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
-- 1 edge to [[_COMMUNITY_main]]
-- 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 10 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 2 edges to [[_COMMUNITY_test_telegram_executor.py]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (13)]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
 
 ## Top bridge nodes
-- [[AgentShroud Agentic OS]] - degree 18, connects to 4 communities
+- [[AgentShroud Brand Guidelines]] - degree 13, connects to 2 communities
+- [[brand-guidelines]] - degree 7, connects to 2 communities
+- [[Co-Branding Guidelines]] - degree 8, connects to 1 community
+- [[Brand Applications]] - degree 7, connects to 1 community
+- [[Brand Approval Process]] - degree 6, connects to 1 community

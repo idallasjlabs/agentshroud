@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[S2 apply-patches.js sets channels.telegram.apiRoot]] - concept - tests/startup_smoke/test_bot_boot_static.sh
+- [[SecureClaw Project (concept)]] - concept - docker/config/hermes/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

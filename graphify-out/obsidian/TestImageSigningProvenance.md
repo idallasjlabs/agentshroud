@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "_w"
+community: "MiddlewareManager (3) (2)"
 location: "L766"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/MiddlewareManager_3_2
 ---
 
 # TestImageSigningProvenance
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_no_cosign_outside_container_zero()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2

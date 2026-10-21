@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Flip core security modules from monitor to enforce mode"
+community: "Morning Checklist (5 minutes)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
+  - community/Morning_Checklist_5_minutes
 ---
 
 # Remediation
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Document the risk of monitor mode]] - `contains` [EXTRACTED]
 - [[Step 5 Update docker-compose.yml defaults]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode
+#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes

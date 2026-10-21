@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req (4)"
+community: "TestProductionCompose"
 location: "L1088"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_4
+  - community/TestProductionCompose
 ---
 
 # .test_non_critical_guard_failure_not_recorded()
@@ -15,4 +15,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[TestCriticalGuardInitFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_4
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

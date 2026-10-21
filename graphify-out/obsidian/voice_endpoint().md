@@ -1,18 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L921"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # voice_endpoint()
 
 ## Connections
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[_answer_volume_query()]] - `calls` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[_call_llm_stream()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[_voice_system_message()]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

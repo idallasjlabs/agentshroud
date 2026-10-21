@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "rationale"
-community: "test_claude_via_openai_path.py"
+community: "7. Security findings"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/7_Security_findings
 ---
 
 # Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)
@@ -14,4 +14,4 @@ tags:
 - [[test_chat_completions_alias.py]] - `references` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/rationale #graphify/EXTRACTED #community/7_Security_findings

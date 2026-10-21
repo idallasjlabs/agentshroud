@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian core-plugins.json]] - document - docs/vault/.obsidian/core-plugins.json
+- [[API Documentation (planned, under development)]] - document - docs/api/README.md
 
 ## Live Query (requires Dataview plugin)
 

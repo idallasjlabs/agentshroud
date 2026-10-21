@@ -1,18 +1,17 @@
 ---
-source_file: "docs/security/cve-mitigation-matrix.md"
+source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
-location: "L13"
+community: "GSDE&G Skills Reference (2)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/GSDEG_Skills_Reference_2
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
-- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2

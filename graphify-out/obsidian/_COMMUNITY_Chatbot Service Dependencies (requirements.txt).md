@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Chatbot Service Dependencies (requirements.txt)]] - code - chatbot/requirements.txt
+- [[App Icon 16x16 (AgentShroud logo mark)]] - image - branding/icons/app/icon-16x16.png
 
 ## Live Query (requires Dataview plugin)
 

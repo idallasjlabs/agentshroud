@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (4)"
+community: "Phase 1 — Raw Collection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_4
+  - community/Phase_1__Raw_Collection
 ---
 
 # openclaw/skills/i-sec-offense/SKILL.md
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_4
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient Reconnect Backoff Tests"
+community: "calendar.js (iCloud CalDAV skill)"
 location: "line 26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient_Reconnect_Backoff_Tests
+  - community/calendarjs_iCloud_CalDAV_skill
 ---
 
 # SlackSocketClient Reconnect Backoff Tests
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient_Reconnect_Backoff_Tests
+#graphify/code #graphify/EXTRACTED #community/calendarjs_iCloud_CalDAV_skill

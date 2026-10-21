@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage-exporter"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
 ---
 
 # Option 1: Grant Automation Permission (REQUIRED)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3

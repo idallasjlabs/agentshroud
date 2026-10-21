@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L143"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # TestApprovalWorkflow
@@ -17,8 +17,8 @@ tags:
 - [[dot-test_low_risk_tool_no_approval()]] - `method` [EXTRACTED]
 - [[dot-test_timeout_auto_deny()]] - `method` [EXTRACTED]
 - [[dot-test_wait_for_decision()]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/INFERRED #community/ContextSegment

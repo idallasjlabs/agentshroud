@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "system-requirements.md"
+community: "ApprovalHardening"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/ApprovalHardening
 ---
 
 # AgentShroud (security proxy)
@@ -16,4 +16,4 @@ tags:
 - [[competitive-analysis-reports-archive]] - `references` [EXTRACTED]
 - [[setup-guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,31 +1,24 @@
 ---
 type: community
-members: 18
+members: 11
 ---
 
 # AgentShroud Red Team Adversarial Tester (2)
 
-**Members:** 18 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[Adversary Model_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Attack Phases_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Attack Techniques Reference_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Coverage Requirements_2]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Critical Rules_5]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Infrastructure_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Key Principle_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Output_4]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 2 Prompt Injection_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 3 Indirect Injection_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 4 Data Exfiltration_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 5 Exploitation Chains_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Phase 6 Detection Validation_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Test Structure_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Writing Exploit Tests_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[agentshroud-redteamSKILL]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
+- [[Audit  ledger]] - document - docs/api/api-reference.md
+- [[DNS]] - document - docs/api/api-reference.md
+- [[Egress control]] - document - docs/api/api-reference.md
+- [[Health & status]] - document - docs/api/api-reference.md
+- [[Quarantine]] - document - docs/api/api-reference.md
+- [[RBAC]] - document - docs/api/api-reference.md
+- [[Route map (by router)]] - document - docs/api/api-reference.md
+- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
+- [[Scanning]] - document - docs/api/api-reference.md
+- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +26,9 @@ members: 18
 TABLE source_file, type FROM #community/AgentShroud_Red_Team_Adversarial_Tester_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester (2) (2)]]
+
+## Top bridge nodes
+- [[Route map (by router)]] - degree 11, connects to 1 community

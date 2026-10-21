@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "rationale"
-community: "Hermes Cannot Force-Switch to Custom-Named Local Model (Gap #8)"
+community: "SOC Auth WS Token Issuance/Redemption Tests"
 location: "section 10, item 8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cannot_Force-Switch_to_Custom-Named_Local_Model_Gap_8
+  - community/SOC_Auth_WS_Token_Issuance/Redemption_Tests
 ---
 
 # Hermes Cannot Force-Switch to Custom-Named Local Model (Gap #8)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Turbo Fieldflare Local Backend]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cannot_Force-Switch_to_Custom-Named_Local_Model_Gap_8
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Auth_WS_Token_Issuance/Redemption_Tests

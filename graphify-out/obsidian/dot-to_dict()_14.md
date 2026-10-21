@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "DelegationManager"
-location: "L73"
+community: "SecurityPipeline (3)"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/SecurityPipeline_3
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[ManifestEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-256x256.png"
 type: "image"
-community: "App Icon 256x256 (AgentShroud logo mark)"
+community: "DEVELOPER.md — Development Context for AgentShroud (2)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/App_Icon_256x256_AgentShroud_logo_mark
+  - community/DEVELOPERmd__Development_Context_for_AgentShroud_2
 ---
 
 # App Icon 256x256 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/App_Icon_256x256_AgentShroud_logo_mark
+#graphify/image #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud_2

@@ -1,16 +1,16 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Mac App Discovery Skill"
+community: "How to Fix (5 Minutes)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/How_to_Fix_5_Minutes
 ---
 
 # i-mac README (macOS System Administrator)
 
 ## Connections
-- [[Mac App Discovery Skill_1]] - `references` [EXTRACTED]
+- [[Mac App Discovery Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

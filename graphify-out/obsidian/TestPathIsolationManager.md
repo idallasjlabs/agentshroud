@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "MiddlewareManager (5)"
+community: "SecurityPipeline (2)"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/SecurityPipeline_2
 ---
 
 # TestPathIsolationManager
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_get_active_users()]] - `method` [EXTRACTED]
 - [[dot-test_get_stats()_1]] - `method` [EXTRACTED]
 - [[dot-test_get_user_temp_path()]] - `method` [EXTRACTED]
-- [[dot-test_initialization()_4]] - `method` [EXTRACTED]
+- [[dot-test_initialization()_1]] - `method` [EXTRACTED]
 - [[dot-test_path_rewriting_nested_paths()]] - `method` [EXTRACTED]
 - [[dot-test_path_rewriting_no_rewrite_needed()]] - `method` [EXTRACTED]
 - [[dot-test_path_rewriting_temp_files()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[Test path isolation manager.]] - `rationale_for` [EXTRACTED]
 - [[test_path_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

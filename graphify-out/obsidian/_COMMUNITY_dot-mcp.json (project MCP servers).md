@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dot-mcp.json (project MCP servers)]] - document - .mcp.json
+- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
 
 ## Live Query (requires Dataview plugin)
 

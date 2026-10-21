@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "multi_host_test.py"
+community: "AgentShroud (system, C4 context) (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/AgentShroud_system_C4_context_3
 ---
 
 # multi_host_test.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[HostResult]] - `contains` [EXTRACTED]
 - [[HostStatus]] - `contains` [EXTRACTED]
 - [[MultiHostResult]] - `contains` [EXTRACTED]
@@ -21,11 +21,11 @@ tags:
 - [[build_parser()]] - `contains` [EXTRACTED]
 - [[build_ssh_argv()]] - `contains` [EXTRACTED]
 - [[classify()_1]] - `contains` [EXTRACTED]
-- [[main()_30]] - `contains` [EXTRACTED]
+- [[main()_31]] - `contains` [EXTRACTED]
 - [[parse_hosts()]] - `contains` [EXTRACTED]
 - [[run_multi_host()]] - `contains` [EXTRACTED]
 - [[ssh_runner()]] - `contains` [EXTRACTED]
 - [[tail()]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_system_C4_context_3

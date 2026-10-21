@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSH Exec Endpoint Tests (allowlist, deny, injection)]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AgentShroud™ README"
+community: "AuditExporter"
 location: "L362"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AuditExporter
 ---
 
 # Why AgentShroud
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 - [[Core Objectives]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

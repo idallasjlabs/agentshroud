@@ -1,24 +1,34 @@
 ---
 type: community
-members: 11
+members: 21
 ---
 
 # sunday-scan.sh
 
-**Members:** 11 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[_sunday_warn_expiring_acceptances()]] - code - scripts/lib/sunday-scan.sh
-- [[die()_2]] - code - scripts/lib/sunday-scan.sh
-- [[log()_9]] - code - scripts/lib/sunday-scan.sh
-- [[sunday-scan.sh]] - code - scripts/lib/sunday-scan.sh
-- [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_dev_handoff_gate()]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_ensure_trivy()]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_handoff_status()]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_resolve_scan_image()]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_run_scan_gate()]] - code - scripts/lib/sunday-scan.sh
-- [[warn()_4]] - code - scripts/lib/sunday-scan.sh
+- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Function Details_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Mode Enforce vs Monitor_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Purpose_83]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Related_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Threat Model_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,13 +36,3 @@ members: 11
 TABLE source_file, type FROM #community/sunday-scansh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
-
-## Top bridge nodes
-- [[sunday-scan.sh]] - degree 15, connects to 3 communities
-- [[sunday_run_scan_gate()]] - degree 9, connects to 2 communities
-- [[_sunday_warn_expiring_acceptances()]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L175"
+community: "sync-cve-registry.py"
+location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/sync-cve-registrypy
 ---
 
 # _build_image_targets()
@@ -14,16 +14,14 @@ tags:
 ## Connections
 - [[dot-test_always_includes_every_configured_bot_image()]] - `calls` [EXTRACTED]
 - [[dot-test_always_includes_gateway_image()]] - `calls` [EXTRACTED]
-- [[dot-test_deduplication()_1]] - `calls` [EXTRACTED]
+- [[dot-test_deduplication()]] - `calls` [EXTRACTED]
 - [[dot-test_env_var_adds_extra_targets()]] - `calls` [EXTRACTED]
 - [[dot-test_env_var_empty_string_ignored()]] - `calls` [EXTRACTED]
 - [[dot-test_whitespace_stripped_from_env_var()]] - `calls` [EXTRACTED]
-- [[Build the list of container image targets for Trivy image scanning.      Prefers]] - `rationale_for` [EXTRACTED]
-- [[Path_49]] - `calls` [EXTRACTED]
+- [[Build the list of container image targets for Trivy image scanning. Prefers…]] - `rationale_for` [EXTRACTED]
 - [[_running_image()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[load_config()]] - `calls` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
-- [[test_daily_cve_report.py]] - `references` [EXTRACTED]
+- [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

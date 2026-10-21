@@ -1,22 +1,37 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L85"
+community: "AgentTarget (3)"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/AgentTarget_3
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[dot-__init__()_161]] - `references` [EXTRACTED]
+- [[dot-_check_request_rate()]] - `references` [EXTRACTED]
+- [[dot-_check_system_resources()_1]] - `references` [EXTRACTED]
+- [[dot-_check_token_usage()]] - `references` [EXTRACTED]
+- [[dot-_check_tool_call_rate()]] - `references` [EXTRACTED]
+- [[dot-_get_system_stats()]] - `references` [EXTRACTED]
+- [[dot-_log_heartbeat_result()]] - `references` [EXTRACTED]
+- [[dot-_log_verification_result()]] - `references` [EXTRACTED]
+- [[dot-_send_anomaly_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_heartbeat_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_verification_alert()]] - `references` [EXTRACTED]
+- [[dot-_test_docker_available()]] - `references` [EXTRACTED]
+- [[dot-_test_killswitch_mode()]] - `references` [EXTRACTED]
+- [[dot-_test_script_exists()]] - `references` [EXTRACTED]
+- [[dot-_test_script_permissions()]] - `references` [EXTRACTED]
+- [[dot-_test_script_syntax()]] - `references` [EXTRACTED]
+- [[dot-anomaly_detection()]] - `references` [EXTRACTED]
+- [[dot-get_status()_1]] - `references` [EXTRACTED]
+- [[dot-heartbeat_check()]] - `references` [EXTRACTED]
+- [[dot-verify_killswitch()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

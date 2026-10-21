@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestEgressApprovalQueue"
 location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestEgressApprovalQueue
 ---
 
 # .test_get_caller_passthrough()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SCLCaller_2]] - `calls` [EXTRACTED]
 - [[TestResolveCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `calls` [EXTRACTED]
 - [[get_caller()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

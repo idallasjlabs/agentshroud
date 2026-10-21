@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "loadRuntimes"
+community: "ordercli/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/loadRuntimes
+  - community/ordercli/SKILLmd
 ---
 
 # loadRuntimes()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[installapiruntimes endpoint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/loadRuntimes
+#graphify/code #graphify/EXTRACTED #community/ordercli/SKILLmd

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "concept"
-community: "curriculum.md (input requirement)"
+community: "lvgl_kawaii_face.h (face animation public API)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/curriculummd_input_requirement
+  - community/lvgl_kawaii_faceh_face_animation_public_API
 ---
 
 # curriculum.md (input requirement)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[curriculum.md output]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/curriculummd_input_requirement
+#graphify/concept #graphify/EXTRACTED #community/lvgl_kawaii_faceh_face_animation_public_API

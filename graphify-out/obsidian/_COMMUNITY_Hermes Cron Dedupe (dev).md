@@ -1,27 +1,36 @@
 ---
 type: community
-members: 14
+members: 23
 ---
 
 # Hermes Cron Dedupe (dev)
 
-**Members:** 14 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Job Schedule Dashboard]] - document - docs/job-schedule.html
-- [[Canonical Kept Job Set (model-pin tiebreak)]] - concept - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
-- [[Dedupe Deletion ID List (2026-08-31)]] - document - docs/dev-notes/cron-backup-20260831-161542/delete-ids.txt
-- [[Hermes BLOCKED — A2A Config Key Stripped On Boot]] - rationale - reports/upgrade-2026-09-14.md
-- [[Hermes Cron Dedupe (dev)]] - rationale - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
-- [[Per-Bot Status Badge Vocabulary]] - concept - docs/job-schedule.html
-- [[Pre-Dedupe Scheduled Jobs Listing]] - document - docs/dev-notes/cron-backup-20260831-161542/hermes-cron-full.txt
-- [[Pre-Dedupe Store Recovery Procedure]] - concept - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
-- [[Prefers-Color-Scheme Token Palette]] - concept - docs/job-schedule.html
-- [[ProdDev Env-Split Keep-List Defect]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Responsive Table-to-Card Collapse Pattern]] - concept - docs/job-schedule.html
-- [[Sunday Upgrade 2026-09-14 (dev)]] - document - reports/upgrade-2026-09-14.md
-- [[Telegram Send-Base-URL Patch Re-Anchoring]] - rationale - reports/upgrade-2026-09-14.md
-- [[_seed_cron Missing --all Defect]] - rationale - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
+- [[1. Provision Your Secrets (API Keys & Tokens)]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[2. Apply Configuration & Restart]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[3. Switching Models in OpenClaw]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[4. Local Ollama Integration]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[5. Verification & Troubleshooting]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[AgentShroud™ LLM Provider Setup & Switching Guide]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[Current Status_6]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[How to Switch via Telegram]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[LLM_PROVIDER_SETUP]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[OpenClaw Bot Container]] - concept - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Option 1 Tailscale Serve (Recommended - Most Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[Option 2 Bind to All Interfaces (Less Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[Option 3 Bind to Tailscale IP Only (Best Balance)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[PAIRING_INSTRUCTIONS]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Provider Model Strings]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[SETUP_API_KEYS]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Setup Commands]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[TAILSCALE_SETUP]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[TELEGRAM_SETUP]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Tailscale ACLs (Recommended)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[Tailscale Access to OpenClaw Control UI]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[VAULT-SHARING-INSTRUCTIONS]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
+- [[Verification_3]] - document - docs/setup/TAILSCALE_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +40,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Local-Model Job Quality Matrix]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (4) (2)]]
+- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide]]
+- 1 edge to [[_COMMUNITY_TestDNSForwarderProtocol]]
+- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (2)]]
 
 ## Top bridge nodes
-- [[Sunday Upgrade 2026-09-14 (dev)]] - degree 4, connects to 2 communities
-- [[Per-Bot Status Badge Vocabulary]] - degree 2, connects to 1 community
+- [[OpenClaw Bot Container]] - degree 7, connects to 2 communities
+- [[SETUP_API_KEYS]] - degree 5, connects to 1 community
+- [[PAIRING_INSTRUCTIONS]] - degree 4, connects to 1 community
+- [[TELEGRAM_SETUP]] - degree 4, connects to 1 community
+- [[VAULT-SHARING-INSTRUCTIONS]] - degree 3, connects to 1 community

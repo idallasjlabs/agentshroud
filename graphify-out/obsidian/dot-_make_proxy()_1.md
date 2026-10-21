@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L9167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # ._make_proxy()
@@ -60,7 +60,7 @@ tags:
 - [[dot-test_username_for_bot_falls_back_to_default()]] - `calls` [EXTRACTED]
 - [[dot-test_username_for_bot_returns_per_bot_username()]] - `calls` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `references` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

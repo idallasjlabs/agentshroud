@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L2541"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # In-place openclaw upgrade: runs npm install -g inside the bot container.      No
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_bot()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

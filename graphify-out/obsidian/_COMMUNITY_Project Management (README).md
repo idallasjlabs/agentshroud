@@ -1,40 +1,31 @@
 ---
 type: community
-members: 27
+members: 18
 ---
 
 # Project Management (README)
 
-**Members:** 27 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[dot-agentsskillsi-crREADME]] - document - .agents/skills/i-cr/README.md
-- [[dot-agentsskillsi-pmREADME]] - document - .agents/skills/i-pm/README.md
-- [[Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
-- [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
-- [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
-- [[Production-Ready PR (i-crpr)]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
-- [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
-- [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
-- [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
-- [[Purpose_77]] - document - .agents/skills/i-cr/README.md
-- [[Purpose_78]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_79]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Purpose_80]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Related Skills_59]] - document - .agents/skills/i-cr/README.md
-- [[Related Skills_60]] - document - .agents/skills/i-pm/README.md
-- [[Related Skills_61]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Related Skills_62]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_64]] - document - .agents/skills/i-cr/README.md
-- [[Usage_65]] - document - .agents/skills/i-pm/README.md
-- [[Usage_66]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Usage_67]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Architecture_11]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,13 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 2 edges to [[_COMMUNITY_hermesskillsi-bsREADME]]
-- 2 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Test-Driven Development README]]
+- 1 edge to [[_COMMUNITY_TeamsConfig (3)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 
 ## Top bridge nodes
-- [[Project Management (README)]] - degree 11, connects to 3 communities
-- [[Code Review (i-cr)]] - degree 10, connects to 2 communities
-- [[Project Management (SKILL)]] - degree 8, connects to 2 communities
-- [[Pull Request Generator (README)]] - degree 2, connects to 1 community
+- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities

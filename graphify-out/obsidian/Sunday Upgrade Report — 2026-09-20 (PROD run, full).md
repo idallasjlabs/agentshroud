@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-20.md"
 type: "document"
-community: "Sunday Upgrade Report — 2026-09-20 (PROD run, full)"
+community: "PermissionLevel"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-20_PROD_run_full
+  - community/PermissionLevel
 ---
 
 # Sunday Upgrade Report — 2026-09-20 (PROD run, full)
@@ -18,4 +18,4 @@ tags:
 - [[Sunday Upgrade — 2026-09-20 PROD run header (dev handoff check)]] - `semantically_similar_to` [INFERRED]
 - [[Trivy scan delta vs 2026-09-17 (1.7.0 images)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-20_PROD_run_full
+#graphify/document #graphify/EXTRACTED #community/PermissionLevel

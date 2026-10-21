@@ -1,21 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
-type: "document"
-community: "Oracle — Feedback Analyst (2)"
-location: "L1"
+source_file: "docs/architecture/agentic-os.md"
+type: "concept"
+community: "Output Sections (ALL required) (3)"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst_2
+  - community/Output_Sections_ALL_required_3
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_172]] - `contains` [EXTRACTED]
-- [[Related Skills_110]] - `contains` [EXTRACTED]
-- [[Usage_118]] - `contains` [EXTRACTED]
-- [[openclawskillsi-oracleREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `shares_data_with` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_2
+#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3

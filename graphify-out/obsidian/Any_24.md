@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L82"
+community: "CrossBotTrustLedger"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/CrossBotTrustLedger
 ---
 
 # Any
 
 ## Connections
-- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
-- [[dot-record_inbound()]] - `references` [EXTRACTED]
+- [[dot-from_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

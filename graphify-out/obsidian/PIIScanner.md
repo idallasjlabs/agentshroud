@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "KillSwitchMonitor"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/KillSwitchMonitor
 ---
 
 # PIIScanner
 
 ## Connections
-- [[dot-__init__()_15]] - `calls` [EXTRACTED]
-- [[dot-scan()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_26]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `method` [EXTRACTED]
 - [[dot-test_api_key_pattern_detected()]] - `calls` [EXTRACTED]
-- [[dot-test_credit_card_detected()_1]] - `calls` [EXTRACTED]
+- [[dot-test_credit_card_detected()]] - `calls` [EXTRACTED]
 - [[dot-test_email_detected()]] - `calls` [EXTRACTED]
 - [[dot-test_no_pii_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_ssn_detected()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestForwardToTelegramTimeouts"
+community: "hermes/skills/i-bs/README.md (5)"
 location: "L4479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestForwardToTelegramTimeouts
+  - community/hermes/skills/i-bs/READMEmd_5
 ---
 
 # ._fake_urlopen_factory()
@@ -17,4 +17,4 @@ tags:
 - [[Return a urlopen mock that records the timeout kwarg and succeeds.]] - `rationale_for` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Core Components"
+community: "Workflow: Survey → Draft → Inject → Confirm (2)"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Components
+  - community/Workflow_Survey__Draft__Inject__Confirm_2
 ---
 
 # Core Components
@@ -26,4 +26,4 @@ tags:
 - [[9. DNS Filter]] - `contains` [EXTRACTED]
 - [[Component Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Components
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_2

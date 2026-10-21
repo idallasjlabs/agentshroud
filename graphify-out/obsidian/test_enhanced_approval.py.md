@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # test_enhanced_approval.py
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
 - [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `contains` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `contains` [EXTRACTED]
-- [[TestPersistence_1]] - `contains` [EXTRACTED]
+- [[TestPersistence_2]] - `contains` [EXTRACTED]
 - [[TestToolRiskClassification]] - `contains` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[ToolRiskPolicy]] - `imports` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[test_websocket_notifications()]] - `contains` [EXTRACTED]
 - [[tool_risk_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

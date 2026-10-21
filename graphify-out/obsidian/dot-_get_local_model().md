@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages()"
+community: "SecureBrowser (4)"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SecureBrowser_4
 ---
 
 # ._get_local_model()
@@ -18,4 +18,4 @@ tags:
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[_stream()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

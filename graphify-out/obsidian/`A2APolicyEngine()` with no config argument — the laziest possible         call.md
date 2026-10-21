@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "A2APolicyEngine (3)"
+community: "UserSessionManager"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/UserSessionManager
 ---
 
 # `A2APolicyEngine()` with no config argument — the laziest possible         call
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

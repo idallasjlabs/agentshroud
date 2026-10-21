@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "SkillGuard"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/SkillGuard
 ---
 
 # EgressApprovalQueue
 
 ## Connections
-- [[dot-__init__()_37]] - `method` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
 - [[dot-_append_decision()]] - `method` [EXTRACTED]
 - [[dot-_assess_risk()]] - `method` [EXTRACTED]
 - [[dot-_check_existing_rule()]] - `method` [EXTRACTED]
@@ -36,14 +36,14 @@ tags:
 - [[dot-request_approval()]] - `method` [EXTRACTED]
 - [[dot-revoke_decision()]] - `method` [EXTRACTED]
 - [[dot-set_emergency_block_all()]] - `method` [EXTRACTED]
-- [[dot-set_event_bus()]] - `method` [EXTRACTED]
+- [[dot-set_event_bus()_1]] - `method` [EXTRACTED]
 - [[DelegationManager_1]] - `semantically_similar_to` [INFERRED]
 - [[EgressRule]] - `shares_data_with` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `shares_data_with` [INFERRED]
+- [[TelegramAPIProxy_1]] - `shares_data_with` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
 - [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

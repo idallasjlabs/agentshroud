@@ -1,21 +1,27 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect (4)"
-location: "L1"
+community: "Skill: Data Validation (DATA-VAL) (3)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_4
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_40]] - `contains` [EXTRACTED]
-- [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_29]] - `contains` [EXTRACTED]
-- [[openclawskillsi-atlasREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_6]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[Output Format_9]] - `contains` [EXTRACTED]
+- [[Persona_4]] - `contains` [EXTRACTED]
+- [[Quality Checklist_4]] - `contains` [EXTRACTED]
+- [[Role_37]] - `contains` [EXTRACTED]
+- [[System Prompt_4]] - `contains` [EXTRACTED]
+- [[User Prompt Template]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
+- [[hermesskillsi-atlasSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_4
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

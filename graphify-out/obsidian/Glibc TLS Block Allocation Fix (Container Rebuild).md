@@ -1,17 +1,17 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "rationale"
-community: "TELEGRAM_ISSUES.md"
+community: "TestNewPatternsV080"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/TestNewPatternsV080
 ---
 
 # Glibc TLS Block Allocation Fix (Container Rebuild)
 
 ## Connections
 - [[Glibc TLS Incompatibility (Trillian)]] - `conceptually_related_to` [INFERRED]
-- [[RUNBOOK]] - `references` [EXTRACTED]
+- [[RUNBOOK_1]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/rationale #graphify/EXTRACTED #community/TestNewPatternsV080

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "_FakeRBAC (3)"
-location: "L141"
+source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
+type: "document"
+community: "Skill: UI Expert (UI)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC_3
+  - community/Skill_UI_Expert_UI
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_65]] - `references` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_3
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

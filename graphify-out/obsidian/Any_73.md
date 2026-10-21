@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: ""
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L56"
+community: "_pcm_bytes"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/_pcm_bytes
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_187]] - `references` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

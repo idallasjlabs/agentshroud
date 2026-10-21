@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action (2)"
+community: "Function Details"
 location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action_2
+  - community/Function_Details
 ---
 
 # TestGroupRegistry
@@ -29,9 +29,9 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[Tests for GroupRegistry auto-groups and custom group management.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action_2
+#graphify/code #graphify/EXTRACTED #community/Function_Details

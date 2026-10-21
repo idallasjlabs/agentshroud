@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "test_cli_coverage.py"
+community: "1. GitHub MCP Authentication Reset (2)"
 location: "L686"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # .test_tail_ws_missing_websockets_package()
@@ -15,4 +15,4 @@ tags:
 - [[TestTailWS]] - `method` [EXTRACTED]
 - [[_tail_ws()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

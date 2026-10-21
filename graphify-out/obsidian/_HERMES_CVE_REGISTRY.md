@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "_t"
+community: "Path (3)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/Path_3
 ---
 
 # _HERMES_CVE_REGISTRY
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_AGENT_CVE_REGISTRIES]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/Path_3

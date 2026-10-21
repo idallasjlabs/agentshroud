@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Quick Reference Commands"
+community: "test_llm_proxy_thinking_suppression.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/test_llm_proxy_thinking_suppressionpy
 ---
 
 # Quick Reference Card
@@ -20,6 +20,6 @@ tags:
 - [[Most Common Commands]] - `contains` [EXTRACTED]
 - [[QUICK_REFERENCE]] - `contains` [EXTRACTED]
 - [[Telegram Bot]] - `contains` [EXTRACTED]
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/test_llm_proxy_thinking_suppressionpy

@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[2. Multi-Host Deployment Orchestration]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[3. ARM32  Low-Resource Support]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4. Compliance & Standards Alignment]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4.1 IEC 62443 (Industrial Automation Security)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 EU AI Act]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 NIST AI Risk Management Framework (AI RMF)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4a. OT  Industrial Security (P1 — Critical)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4b. Enterprise IT (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4c. Container & Cloud Security (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4d. Regulatory Compliance (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4e. Tooling Integration (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4f. Documentation Deliverables]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[Features_5]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[_python()]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_1]] - code - scripts/validate-skills-manifest.sh
+- [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
+- [[check()_11]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
+- [[sync-llm-settings.sh]] - code - scripts/sync-llm-settings.sh
+- [[sync-llm-settings.sh script]] - code - scripts/sync-llm-settings.sh
+- [[test-skills-sync.sh]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[test-skills-sync.sh script]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[validate-skills-manifest.sh]] - code - scripts/validate-skills-manifest.sh
+- [[validate-skills-manifest.sh script]] - code - scripts/validate-skills-manifest.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 
 ## Top bridge nodes
-- [[4. Compliance & Standards Alignment]] - degree 11, connects to 1 community
-- [[Features_5]] - degree 5, connects to 1 community
+- [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community

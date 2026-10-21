@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent (2)"
-location: "L364"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (2)"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
 ---
 
 # Workflow
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
+- [[Skills by Category]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2

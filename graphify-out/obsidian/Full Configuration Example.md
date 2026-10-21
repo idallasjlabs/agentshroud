@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "iCloud Services"
+community: "Report Delivery Format Instructions"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Full Configuration Example
 
 ## Connections
-- [[Configuration_2]] - `contains` [EXTRACTED]
+- [[Configuration_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

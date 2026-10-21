@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "_wrap_response()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/_wrap_response
 ---
 
 # test_oauth_security.py
@@ -17,7 +17,7 @@ tags:
 - [[TestPKCE]] - `contains` [EXTRACTED]
 - [[TestRedirectURI]] - `contains` [EXTRACTED]
 - [[TestStateValidation]] - `contains` [EXTRACTED]
-- [[oauth_security.py]] - `references` [EXTRACTED]
+- [[oauth_security.py_2]] - `references` [EXTRACTED]
 - [[validator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

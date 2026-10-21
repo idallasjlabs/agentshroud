@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "TestOutputCanary"
-location: "L21"
+community: "AgentShroud Setup Guide"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_18]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_21]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

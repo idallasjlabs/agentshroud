@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py (2)"
+community: "Operating Rules (Non-Negotiable) (2)"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy_2
+  - community/Operating_Rules_Non-Negotiable_2
 ---
 
 # Stand-in for kokoro.KPipeline: a callable yielding (graphemes, phonemes,     aud
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fake_kokoro_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy_2
+#graphify/rationale #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable_2

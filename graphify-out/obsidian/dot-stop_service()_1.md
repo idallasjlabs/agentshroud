@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "SCLClient"
-location: "L77"
+community: "test_soc_router_coverage.py"
+location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/test_soc_router_coveragepy
 ---
 
 # .stop_service()
 
 ## Connections
-- [[dot-post()]] - `calls` [EXTRACTED]
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[dot-_get_engine()]] - `calls` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: ""
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L347"
+community: "._run_and_read"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - graphify/EXTRACTED
+  - community/_run_and_read
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_6]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

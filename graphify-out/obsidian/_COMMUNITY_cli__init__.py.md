@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[cli__init__.py]] - code - gateway/cli/__init__.py
+- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
 
 ## Live Query (requires Dataview plugin)
 

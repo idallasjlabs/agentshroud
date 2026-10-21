@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
+community: "GSDE&G Development Master Checklist (2)"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/GSDEG_Development_Master_Checklist_2
 ---
 
 # cheatsheet.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2

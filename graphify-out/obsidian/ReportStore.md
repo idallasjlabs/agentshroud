@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ReportStore"
+community: "test_dashboard.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/test_dashboardpy
 ---
 
 # ReportStore
 
 ## Connections
-- [[dot-__init__()_32]] - `method` [EXTRACTED]
+- [[dot-__init__()_24]] - `method` [EXTRACTED]
 - [[dot-_check_size()]] - `method` [EXTRACTED]
 - [[dot-_enforce_count_cap()]] - `method` [EXTRACTED]
 - [[dot-_path()]] - `method` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[store()]] - `calls` [EXTRACTED]
 - [[test_report_store.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

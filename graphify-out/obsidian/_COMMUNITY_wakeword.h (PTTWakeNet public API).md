@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
+- [[Obsidian appearance.json (empty)]] - document - docs/vault/.obsidian/appearance.json
 
 ## Live Query (requires Dataview plugin)
 

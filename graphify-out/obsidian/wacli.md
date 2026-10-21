@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
 ---
 
 # wacli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wacliSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response() (2)"
 location: "L508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_2
 ---
 
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_1]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_20]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `method` [EXTRACTED]
@@ -41,11 +41,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

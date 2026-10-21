@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestEmailSend"
+community: "TestPatternDetection"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/TestPatternDetection
 ---
 
 # .test_missing_to_returns_422()
@@ -15,4 +15,4 @@ tags:
 - [[Missing 'to' field returns 422.]] - `rationale_for` [EXTRACTED]
 - [[TestEmailSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

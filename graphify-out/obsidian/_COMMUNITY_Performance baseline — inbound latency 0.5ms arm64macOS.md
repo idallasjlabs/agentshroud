@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Performance baseline — inbound latency 0.5ms arm64macOS]] - rationale - CLAUDE.md
+- [[BDD Skill (stub)]] - document - .agents/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

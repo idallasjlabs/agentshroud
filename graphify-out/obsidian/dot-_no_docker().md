@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L922"
+community: "format_cve_report() (2)"
+location: "L1301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/format_cve_report_2
 ---
 
 # ._no_docker()
 
 ## Connections
-- [[Pin _running_image to the docker-unavailable fallback path so these         test]] - `rationale_for` [EXTRACTED]
-- [[TestBuildImageTargets]] - `method` [EXTRACTED]
+- [[Pin _running_image to the docker-unavailable fallback (same as…]] - `rationale_for` [EXTRACTED]
+- [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
+- [[fixture_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/format_cve_report_2

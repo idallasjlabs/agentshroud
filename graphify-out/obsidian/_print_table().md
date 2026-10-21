@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "cli/main.py"
+community: "AlertDispatcher (4)"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/AlertDispatcher_4
 ---
 
 # _print_table()
@@ -18,4 +18,4 @@ tags:
 - [[get()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4

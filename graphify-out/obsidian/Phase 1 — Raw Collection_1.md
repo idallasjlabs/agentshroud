@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
+community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FOR_POLICY-ENFORCED_INTERCEPTION_INSPECTION_AND_MEDIATION_OF_AUTONOMOUS_AI_AGENT_COMMUNICATIONS_WITH_EXTERNAL_SYSTEMS
 ---
 
 # Phase 1 — Raw Collection
@@ -24,4 +24,4 @@ tags:
 - [[9. Browser Extensions (optional but useful)_1]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FOR_POLICY-ENFORCED_INTERCEPTION_INSPECTION_AND_MEDIATION_OF_AUTONOMOUS_AI_AGENT_COMMUNICATIONS_WITH_EXTERNAL_SYSTEMS

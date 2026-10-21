@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-11.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)
@@ -20,4 +20,4 @@ tags:
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `cites` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/_make_sanitizer

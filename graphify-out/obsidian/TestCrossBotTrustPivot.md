@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (3)"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_3
 ---
 
 # TestCrossBotTrustPivot
@@ -18,4 +18,4 @@ tags:
 - [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.…]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3

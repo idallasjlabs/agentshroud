@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "test_mfa_guard.py"
 location: "L417"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_mfa_guardpy
 ---
 
 # Return docker-compose.yml text for containerized-deployment evidence checks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_compose_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

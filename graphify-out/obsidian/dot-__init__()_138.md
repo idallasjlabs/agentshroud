@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "AgentTarget (7)"
-location: "L52"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_7
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentTarget_1]] - `calls` [EXTRACTED]
-- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[RouterConfig_1]] - `references` [EXTRACTED]
+- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_7
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

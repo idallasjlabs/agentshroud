@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "rationale"
-community: "test_us_ssn_regex_tightened.py"
+community: "web_config.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_us_ssn_regex_tightenedpy
+  - community/web_configpy
 ---
 
 # US_SSN regex tightened to exclude CVE IDs
@@ -15,4 +15,4 @@ tags:
 - [[test_cve_pattern_not_flagged_as_ssn()]] - `rationale_for` [EXTRACTED]
 - [[test_real_ssn_still_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy
+#graphify/rationale #graphify/EXTRACTED #community/web_configpy

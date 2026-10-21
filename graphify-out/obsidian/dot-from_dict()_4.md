@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "A2APolicyEngine (3)"
-location: "L210"
+community: "ToolResultSanitizer"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/ToolResultSanitizer
 ---
 
 # .from_dict()
 
 ## Connections
-- [[A2APolicyAction]] - `calls` [EXTRACTED]
-- [[A2APolicyConfig]] - `method` [EXTRACTED]
 - [[Any_44]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `calls` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
 - [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

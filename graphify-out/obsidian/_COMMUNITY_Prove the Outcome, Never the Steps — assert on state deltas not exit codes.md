@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Prove the Outcome, Never the Steps — assert on state deltas not exit codes]] - rationale - CLAUDE.md
-- [[Weekly Sunday Upgrade directive — every versioned component to latest]] - rationale - CLAUDE.md
+- [[dot-agentsskillsi-agileSKILL]] - document - .agents/skills/i-agile/SKILL.md
+- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

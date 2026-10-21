@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # _warm()
@@ -16,4 +16,4 @@ tags:
 - [[_lifespan()]] - `indirect_call` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[4. Skill System]] - document - docs/architecture/agentic-os.md
-- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
-- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
-- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
-- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
-- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
-- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
-- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
+- [[Description]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Related Notes_2]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Security_2]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Set In]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/Key_Skills_in_Detail
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
-
-## Top bridge nodes
-- [[4. Skill System]] - degree 3, connects to 1 community

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_a2a_policy.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_a2a_policypy
 ---
 
 # AgentRegistry
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_189]] - `references` [EXTRACTED]
-- [[dot-__init__()_188]] - `method` [EXTRACTED]
-- [[dot-from_dict()_7]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_188]] - `references` [EXTRACTED]
+- [[dot-__init__()_187]] - `method` [EXTRACTED]
+- [[dot-from_dict()_8]] - `method` [EXTRACTED]
 - [[dot-get()_2]] - `method` [EXTRACTED]
 - [[dot-list_agents()]] - `method` [EXTRACTED]
 - [[dot-register()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_36]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_35]] - `calls` [EXTRACTED]
 - [[dot-test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
 - [[dot-test_compose_networks_are_internal()]] - `calls` [EXTRACTED]
@@ -44,13 +44,13 @@ tags:
 - [[dot-test_unregister_missing_returns_none()]] - `calls` [EXTRACTED]
 - [[dot-test_unregister_removes_agent()]] - `calls` [EXTRACTED]
 - [[dot-test_writable_root_flagged()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_10]] - `method` [EXTRACTED]
+- [[dot-to_dict()_12]] - `method` [EXTRACTED]
 - [[dot-unregister()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[ContainerConfig]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
@@ -68,7 +68,7 @@ tags:
 - [[TestGroupMemoryInvisibleFromDM]] - `uses` [INFERRED]
 - [[TestGroupMemoryNamespaceIsolation]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]
@@ -82,4 +82,4 @@ tags:
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

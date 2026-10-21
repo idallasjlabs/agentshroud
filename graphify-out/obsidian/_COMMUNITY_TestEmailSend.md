@@ -1,32 +1,62 @@
 ---
 type: community
-members: 19
+members: 49
 ---
 
 # TestEmailSend
 
-**Members:** 19 nodes
+**Members:** 49 nodes
 
 ## Members
-- [[dot-test_allowed_recipient_response_has_sanitized_body()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_allowed_recipient_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_missing_required_fields_returns_422()_1]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_missing_to_returns_422()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_owner_body_not_redacted()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_pii_redacted_for_unknown_recipient()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_response_has_timestamp()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_unknown_recipient_no_queue_returns_403()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_unknown_recipient_queued_for_approval()]] - code - gateway/tests/test_channel_ownership.py
-- [[All responses include an ISO 8601 timestamp.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Allowed (owner) recipient receives the body verbatim — PII scan is skipped.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Approved response includes sanitized_body field.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Email to an allowed recipient returns 200 with status=approved.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Missing 'subject' or 'body' returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Missing 'to' field returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[PII in email body IS redacted before queuing for unknown recipients.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[TestEmailSend]] - code - gateway/tests/test_channel_ownership.py
-- [[Unknown recipient triggers approval queue and returns 202.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Unknown recipient with no approval queue configured returns 403.]] - rationale - gateway/tests/test_channel_ownership.py
+- [[dot-__init__()_44]] - code - gateway/tests/test_forward_routing.py
+- [[dot-__init__()_45]] - code - gateway/tests/test_forward_routing.py
+- [[dot-_post()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-_post_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-_run_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_inbound()_6]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_empty_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_no_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_non_owner_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_owner_id_without_trusted_header_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_owner_user_id_elevates_trust_to_full()]] - code - gateway/tests/test_forward_routing.py
+- [[A collaborator's user_id must NOT trigger the owner elevation.]] - rationale - gateway/tests/test_forward_routing.py
+- [[A non-owner user_id is not a spoof risk and must pass through unchanged]] - rationale - gateway/tests/test_forward_routing.py
+- [[An empty string user_id must not match the owner.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Legitimate voice-gateway path owner ID in body + matching trusted         heade]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Owner ID claimed in the body with NO trusted header must not reach the         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline mock that records the user_trust_level passed to process_outbound.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Regression 'default' must never appear in agent_id when a named target is resol]] - rationale - gateway/tests/test_forward_routing.py
+- [[Requests with no user_id must not be elevated to FULL.]] - rationale - gateway/tests/test_forward_routing.py
+- [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - rationale - gateway/tests/test_forward_routing.py
+- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerTrustElevation]] - code - gateway/tests/test_forward_routing.py
+- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a spoofed owner user_id in the body WITHOUT the         truste]] - rationale - gateway/tests/test_forward_routing.py
+- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_TrustCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[forward-routing agent_id propagation into security pipeline]] - code - gateway/ingest_api/routes/forward.py
+- [[process_inbound must receive metadata={'user_id' ...} from forward so that]] - rationale - gateway/tests/test_forward_routing.py
+- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,12 +66,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_test_forward_stream.py (2)]]
-- 1 edge to [[_COMMUNITY_TestEmailSend (2)]]
+- 21 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_api.py (2)]]
 
 ## Top bridge nodes
-- [[TestEmailSend]] - degree 11, connects to 2 communities
-- [[dot-test_owner_body_not_redacted()]] - degree 3, connects to 1 community
-- [[dot-test_pii_redacted_for_unknown_recipient()]] - degree 3, connects to 1 community
-- [[dot-test_unknown_recipient_queued_for_approval()]] - degree 3, connects to 1 community
+- [[_make_mock_app_state()]] - degree 9, connects to 2 communities
+- [[_make_trust_app_state()]] - degree 6, connects to 2 communities
+- [[_PipelineCaptor]] - degree 16, connects to 1 community
+- [[test_forward_routing.py]] - degree 13, connects to 1 community
+- [[_TrustCaptor]] - degree 13, connects to 1 community

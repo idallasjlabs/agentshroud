@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "OpenClaw Management Scripts"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/OpenClaw_Management_Scripts
 ---
 
 # XMind Generation via MCP
@@ -16,4 +16,4 @@ tags:
 - [[MCP Tool xmind-generator-mcp]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

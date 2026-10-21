@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer_2
 ---
 
 # test_shared_memory.py
@@ -14,16 +14,16 @@ tags:
 ## Connections
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig_1]] - `imports` [EXTRACTED]
 - [[TestGroupMemoryReadWrite]] - `contains` [EXTRACTED]
 - [[TestMergedMemory]] - `contains` [EXTRACTED]
 - [[TestPrivateContentDetection]] - `contains` [EXTRACTED]
 - [[TestTopicScopedMemory]] - `contains` [EXTRACTED]
 - [[TestUserPrivateMemory]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[rbac()_4]] - `contains` [EXTRACTED]
+- [[rbac()_1]] - `contains` [EXTRACTED]
 - [[session_mgr()]] - `contains` [EXTRACTED]
 - [[smm()_1]] - `contains` [EXTRACTED]
-- [[tmp_workspace()_2]] - `contains` [EXTRACTED]
+- [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

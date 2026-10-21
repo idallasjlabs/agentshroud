@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "concept"
-community: "OpenClaw Bot Container"
+community: "Hermes Cron Dedupe (dev)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # OpenClaw Bot Container
@@ -19,4 +19,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 - [[VAULT-SHARING-INSTRUCTIONS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "RateLimitGuard"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # RateLimitGuard
 
 ## Connections
-- [[dot-__init__()_99]] - `method` [EXTRACTED]
+- [[dot-__init__()_73]] - `method` [EXTRACTED]
 - [[dot-_burst_limit()]] - `method` [EXTRACTED]
 - [[dot-_sustained_limit()]] - `method` [EXTRACTED]
 - [[dot-check()_3]] - `method` [EXTRACTED]
-- [[dot-get_stats()_9]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[test_under_limit_allows()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

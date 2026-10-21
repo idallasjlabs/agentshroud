@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "concept"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "Slack Channel Setup (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Slack_Channel_Setup_2
 ---
 
 # Credential Rotation Checklist
@@ -14,4 +14,4 @@ tags:
 - [[Pre-Purge Secret Rotation Checklist]] - `shares_data_with` [INFERRED]
 - [[Real Credentials Present in Git History]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2

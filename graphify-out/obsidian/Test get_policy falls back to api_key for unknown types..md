@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # Test get_policy falls back to api_key for unknown types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_policy_returns_default_for_unknown_type()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

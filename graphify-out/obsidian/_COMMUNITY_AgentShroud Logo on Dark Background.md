@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo on Dark Background]] - image - branding/logos/variants/logo-on-dark-1024x1024.png
+- [[AWS API MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L169"
+community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[_norm()_1]] - `calls` [EXTRACTED]
+- [[ContentThreat]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

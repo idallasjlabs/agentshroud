@@ -1,51 +1,53 @@
 ---
 type: community
-members: 38
+members: 40
 ---
 
 # DataExfilVolumeGuard
 
-**Members:** 38 nodes
+**Members:** 40 nodes
 
 ## Members
-- [[dot-__init__()_98]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_8]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-reset_session()_1]] - code - gateway/security/data_exfil_volume_guard.py
-- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
-- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_make_pipeline()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
-- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_get_stats()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[2026-03 TeamPCP supply-chain attack on trivy tags]] - concept - .github/workflows/security-scan.yml
+- [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM flag for dev Hermes]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[CI DAST scan job (Nuclei)]] - code - .github/workflows/ci.yml
+- [[CI SOUL.md freshness check (90 days)]] - code - .github/workflows/ci.yml
+- [[CI Workflow]] - code - .github/workflows/ci.yml
+- [[CI benchmark regression job]] - code - .github/workflows/ci.yml
+- [[CI docs drift  version consistency check]] - code - .github/workflows/ci.yml
+- [[CI gitleaks secret scanning job]] - code - .github/workflows/ci.yml
+- [[CI lint job (pinned blackisortflake8)]] - code - .github/workflows/ci.yml
+- [[CI security-scan job (pip-audit)]] - code - .github/workflows/ci.yml
+- [[CI startup smoke tests (static)]] - code - .github/workflows/ci.yml
+- [[CI test job (pytest matrix, coverage gate 84%)]] - code - .github/workflows/ci.yml
+- [[Colima sizing (prod 8 CPU12 GiB, dev 4 CPU9 GiB, from colima.yaml)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Compose version label mismatch forces network recreate + stale endpoints]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Conduit root-relative ws-ticket fetch vs hermes Funnel path]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Decision no blanket revert to 2026-10-10 commit]] - rationale - INCIDENT_2026-10-16_conduit-outage.md
+- [[Dev 2026-10-11 handoff false green (PASS with 0 images scanned)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Duplicate Telegram bot polling (dev vs prod getUpdates 409)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Fieldflare shim (strip parallel_tool_callstool_choice, flatten schema unions)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Hermes pin silent no-op (0.21.5 while upstream 0.22.2)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Image signing & provenance (cosign keyless + syft SBOM attest)]] - code - .github/workflows/security-scan.yml
+- [[Incident ConduitHermes instability 2026-10-16]] - document - INCIDENT_2026-10-16_conduit-outage.md
+- [[Leak gate fatal only on ubuntu+py3.11]] - rationale - .github/workflows/ci.yml
+- [[Nemotron in-band reasoning + Qwen-only no_think suffix bug]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[OpenClaw per-container memcg OOM kills]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[OpenClaw sandbox mode all-off stopgap (named volume vs bind-mount)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Per-bot Telegram token fallback to OpenClaw bot (egress notify  lifespan)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Prod Colima VM egress loss (root cause of 7.5h Hermes outage)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Python dependency audit job]] - code - .github/workflows/security-scan.yml
+- [[Security Scan workflow (security-scan.yml)]] - code - .github/workflows/security-scan.yml
+- [[Semgrep --baseline-commit fail only on new findings]] - rationale - .github/workflows/security-scan.yml
+- [[Semgrep SAST baselined gate]] - code - .github/workflows/security-scan.yml
+- [[StreamHead status propagation for streaming LLM proxy]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[Trivy filesystem scan (SHA-pinned action)]] - code - .github/workflows/security-scan.yml
+- [[asb setup_ephemeral_secrets clobber on killed extract (preserve-nonempty fix)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
+- [[lazydocker docker.sock connection leak via Colima ssh forward]] - concept - INCIDENT_2026-10-16_conduit-outage.md
+- [[main()_9]] - code - scripts/check_benchmark_regression.py
+- [[patch_telegram_edit_message_date.py (KeyError 'date' on editMessageText)]] - code - INCIDENT_2026-10-16_conduit-outage.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,14 +57,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 3 edges to [[_COMMUNITY__wrap_response() (2)]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
-- [[_make_pipeline()_1]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
-- [[DataExfilVolumeGuard]] - degree 24, connects to 1 community
-- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community
-- [[data_exfil_volume_guard.py]] - degree 5, connects to 1 community
+- [[Incident ConduitHermes instability 2026-10-16]] - degree 23, connects to 2 communities
+- [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - degree 4, connects to 2 communities
+- [[CI DAST scan job (Nuclei)]] - degree 2, connects to 1 community
+- [[CI startup smoke tests (static)]] - degree 2, connects to 1 community
+- [[Hermes pin silent no-op (0.21.5 while upstream 0.22.2)]] - degree 2, connects to 1 community

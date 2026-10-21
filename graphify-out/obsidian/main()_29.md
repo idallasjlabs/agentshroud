@@ -1,21 +1,17 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "export-bot-conversations.py (2)"
-location: "L232"
+community: "test_cron_jobs_prompts.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_2
+  - community/test_cron_jobs_promptspy
 ---
 
 # main()
 
 ## Connections
-- [[Path_59]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

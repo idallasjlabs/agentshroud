@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Function Details"
+community: "drift_detector.py"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/drift_detectorpy
 ---
 
 # Function Details
@@ -20,6 +20,6 @@ tags:
 - [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
 - [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
 - [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

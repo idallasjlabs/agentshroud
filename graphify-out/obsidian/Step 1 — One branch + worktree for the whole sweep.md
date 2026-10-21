@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Mode B — Comprehensive review sweep"
+community: "iCloud Services Skill"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep
+  - community/iCloud_Services_Skill
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Skill

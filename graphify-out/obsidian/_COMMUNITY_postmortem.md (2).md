@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Contributing Factors]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Timeline]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Anti-Patterns to Flag]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document Structure]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document-Type Patterns]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Role_8]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Rules]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_postmortem]]
+- 2 edges to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[postmortem]] - degree 8, connects to 1 community
+- [[Skill Technical Writer (TW)]] - degree 8, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md"
 type: "concept"
-community: "Hermes Cron Dedupe (dev)"
+community: "test_prompt_guard.py (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/test_prompt_guardpy_2
 ---
 
 # Pre-Dedupe Store Recovery Procedure
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Cron Dedupe (dev)]] - `references` [EXTRACTED]
 - [[Pre-Dedupe Scheduled Jobs Listing]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/concept #graphify/EXTRACTED #community/test_prompt_guardpy_2

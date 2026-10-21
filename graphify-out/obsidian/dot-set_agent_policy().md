@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TestOutboundPipelineIntegration"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .set_agent_policy()
@@ -16,4 +16,4 @@ tags:
 - [[EgressPolicy]] - `references` [EXTRACTED]
 - [[Set a per-agent egress policy.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

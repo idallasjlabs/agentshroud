@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "openclaw_triage.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/openclaw_triagesh
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_100]] - `contains` [EXTRACTED]
-- [[Related Skills_79]] - `contains` [EXTRACTED]
-- [[Usage_89]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-secREADME]] - `contains` [EXTRACTED]
+- [[Purpose_56]] - `contains` [EXTRACTED]
+- [[Related Skills_42]] - `contains` [EXTRACTED]
+- [[Usage_45]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-secREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/openclaw_triagesh

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (2)"
+community: ".proxy_messages()"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/proxy_messages
 ---
 
 # SecurityConfig
@@ -16,4 +16,4 @@ tags:
 - [[Security configuration for browser automation_1]] - `rationale_for` [EXTRACTED]
 - [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

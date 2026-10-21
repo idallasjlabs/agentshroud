@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2)"
+community: "export_bot"
 location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2
+  - community/export_bot
 ---
 
 # .test_sandbox_exception_fails_closed()
@@ -15,4 +15,4 @@ tags:
 - [[TestFileSandboxStep]] - `method` [EXTRACTED]
 - [[_tool_req()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2
+#graphify/code #graphify/EXTRACTED #community/export_bot

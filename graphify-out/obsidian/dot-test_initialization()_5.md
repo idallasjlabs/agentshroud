@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L92"
+community: "test_soc_router_coverage.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[Test proper initialization of ToolChainAnalyzer.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

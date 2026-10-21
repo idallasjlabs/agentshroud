@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L5372"
+community: "SlackSocketClient"
+location: "L2382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/SlackSocketClient
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_self_diagnostic_local_notice_is_deduped_per_update()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_web_access_request_returns_pending_egress_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

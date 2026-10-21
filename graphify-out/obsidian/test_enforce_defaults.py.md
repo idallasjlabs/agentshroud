@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # test_enforce_defaults.py
 
 ## Connections
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[SecurityConfig_4]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ReportStore"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ReportStore
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_31]] - `method` [EXTRACTED]
+- [[dot-__init__()_36]] - `method` [EXTRACTED]
 - [[dot-forward()]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[Records what it was asked to forward; returns a canned response.]] - `rationale_for` [EXTRACTED]
 - [[forwarder()]] - `references` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

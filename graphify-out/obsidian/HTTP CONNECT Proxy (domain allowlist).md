@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "test_jira_weekly_review.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/test_jira_weekly_reviewpy
 ---
 
 # HTTP CONNECT Proxy (domain allowlist)
@@ -19,4 +19,4 @@ tags:
 - [[OpenAI API]] - `calls` [EXTRACTED]
 - [[Telegram API_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

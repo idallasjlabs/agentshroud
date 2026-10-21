@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "SecureBrowser Skill (2)"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/SecureBrowser_Skill_2
 ---
 
 # Next Steps: Federal Registration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ — Trademark Prior Use Record]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_2

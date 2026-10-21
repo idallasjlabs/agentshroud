@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "format_cve_report()"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/format_cve_report
 ---
 
 # SecurityConfig
@@ -16,4 +16,4 @@ tags:
 - [[Security configuration for browser automation_3]] - `rationale_for` [EXTRACTED]
 - [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

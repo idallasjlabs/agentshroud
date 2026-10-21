@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
+community: "AgentShroud Security Hardening Plan"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Quick Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

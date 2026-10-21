@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "switch_model.sh"
+community: "test_egress_callback_stale.py"
 location: "L481"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/switch_modelsh
+  - community/test_egress_callback_stalepy
 ---
 
 # verify_both_bots_healthy()
@@ -15,4 +15,4 @@ tags:
 - [[switch_model.sh]] - `defines` [EXTRACTED]
 - [[switch_model.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy

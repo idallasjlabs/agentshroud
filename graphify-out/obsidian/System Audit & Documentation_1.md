@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit & Documentation (2)"
+community: "MiddlewareManager (7)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_2
+  - community/MiddlewareManager_7
 ---
 
 # System Audit & Documentation
@@ -25,7 +25,7 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW_1]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sadSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-sadSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_2
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_7

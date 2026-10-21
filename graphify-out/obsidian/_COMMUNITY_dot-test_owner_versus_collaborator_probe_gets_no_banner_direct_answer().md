@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_owner_versus_collaborator_probe_gets_no_banner_direct_answer()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[B5.3c identity discrimination question should get a natural answer without…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[MiddlewareManager Session Enforcement Tests]] - code - gateway/tests/test_session_isolation.py
+- [[SSHProxy.validate_cwd() Unit Tests]] - code - gateway/tests/test_ssh_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/test_owner_versus_collaborator_probe_gets_no_banner_direct_answer
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-
-## Top bridge nodes
-- [[dot-test_owner_versus_collaborator_probe_gets_no_banner_direct_answer()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestDNSForwarderProtocol"
+community: "test_scorecard_scoring.py"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSForwarderProtocol
+  - community/test_scorecard_scoringpy
 ---
 
 # build_dns_query()
@@ -24,4 +24,4 @@ tags:
 - [[Build a minimal DNS query packet in wire format.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

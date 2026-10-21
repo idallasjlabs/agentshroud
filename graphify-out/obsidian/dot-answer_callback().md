@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "EgressTelegramNotifier"
+community: "Critical Findings"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Critical_Findings
 ---
 
 # .answer_callback()
@@ -17,4 +17,4 @@ tags:
 - [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - `rationale_for` [EXTRACTED]
 - [[_is_stale_callback_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/Critical_Findings

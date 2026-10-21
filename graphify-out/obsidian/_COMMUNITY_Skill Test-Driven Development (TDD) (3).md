@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_23]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Core Discipline Red → Green → Refactor_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Glue Job Logic  →  test transformations outside Spark_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Python  Boto3  AWS  →  `moto`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Role_90]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Rules_25]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Skill Test-Driven Development (TDD)_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Stack-Specific Testing Patterns_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Step Function Input Validation_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Test Structure_6]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Zabbix API  →  `unittest.mock`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[openclawskillsi-tddSKILL]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Anti-Patterns to Flag_20]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Core Principle_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Layer 1 Application Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Layer 2 Container Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Layer 3 Network Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Layer 4 Data Flow Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Output Format_26]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Review Layers_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Role_78]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[SecureClaw-Specific Threat Model_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Skill Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Verification Commands_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[hermesskillsi-secSKILL]] - document - docker/config/hermes/skills/i-sec/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[Skill Test-Driven Development (TDD)_2]] - degree 8, connects to 1 community
+- [[Skill Security Review (SEC)_1]] - degree 9, connects to 1 community

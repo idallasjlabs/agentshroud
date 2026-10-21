@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "soc/router.py"
-location: "L159"
+community: "AlertDispatcher (3)"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/AlertDispatcher_3
 ---
 
 # .is_owner()
 
 ## Connections
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

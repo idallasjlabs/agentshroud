@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[S1 start-agentshroud.sh launches openclaw with --stack-size=65536]] - concept - tests/startup_smoke/test_bot_boot_static.sh
+- [[SCRUM-154 — blocking response.read() froze the gateway event loop]] - concept - gateway/tests/test_llm_proxy_failover.py
 
 ## Live Query (requires Dataview plugin)
 

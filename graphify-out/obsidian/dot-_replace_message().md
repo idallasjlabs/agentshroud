@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "AgentTarget"
 location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/AgentTarget
 ---
 
 # ._replace_message()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_prepare_session_payload()]] - `calls` [EXTRACTED]
 - [[dot-process_webhook()]] - `calls` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[Replace message text in payload with sanitized version.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,282 +1,172 @@
 ---
 type: community
-members: 269
+members: 159
 ---
 
 # SecurityPipeline
 
-**Members:** 269 nodes
+**Members:** 159 nodes
 
 ## Members
-- [[dot-__init__()_143]] - code - gateway/proxy/pipeline.py
-- [[dot-__init__()_144]] - code - gateway/security/instruction_envelope.py
-- [[dot-__init__()_145]] - code - gateway/security/key_vault.py
-- [[dot-__init__()_146]] - code - gateway/security/outbound_filter.py
-- [[dot-__len__()_1]] - code - gateway/proxy/pipeline.py
-- [[dot-_blocking_prompt_guard()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-_classify_response_risk()]] - code - gateway/security/outbound_filter.py
-- [[dot-_compile_patterns()]] - code - gateway/security/outbound_filter.py
-- [[dot-_compute_signature()]] - code - gateway/security/instruction_envelope.py
-- [[dot-_is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
-- [[dot-_make_vault_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-_maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
-- [[dot-_passthrough_pii()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-_pipeline_with_trust()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-_process_inbound_core()]] - code - gateway/proxy/pipeline.py
-- [[dot-_process_outbound_core()]] - code - gateway/proxy/pipeline.py
-- [[dot-_redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-append()]] - code - gateway/proxy/pipeline.py
-- [[dot-append_block()]] - code - gateway/proxy/pipeline.py
-- [[dot-append_owner_bypass()]] - code - gateway/proxy/pipeline.py
-- [[dot-entries()_1]] - code - gateway/proxy/pipeline.py
-- [[dot-filter_response()_1]] - code - gateway/security/outbound_filter.py
-- [[dot-get_stats()_13]] - code - gateway/proxy/pipeline.py
-- [[dot-get_stats()_14]] - code - gateway/security/outbound_filter.py
-- [[dot-last_hash()_1]] - code - gateway/proxy/pipeline.py
-- [[dot-process_inbound()_8]] - code - gateway/proxy/pipeline.py
-- [[dot-process_outbound()_6]] - code - gateway/proxy/pipeline.py
-- [[dot-set_global_mode()]] - code - gateway/proxy/pipeline.py
-- [[dot-sign()]] - code - gateway/security/instruction_envelope.py
-- [[dot-test_append_chain()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_append_owner_bypass_persists_high_severity()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_append_single()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_blocked_request_decays_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_blocked_request_propagates_to_cross_bot_peer()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_chain_continuity_preserved_across_wrap()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_clean_message_passes()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_clean_request_does_not_touch_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_clean_response_passes_unchanged()_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_content_hash_deterministic()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_context_guard_error_fails_closed()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_critical_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_default_config()_5]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_default_window_is_10k()_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_delete_key()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_detect_api_key_patterns()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_detect_key_in_outbound()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_detector_failure_fails_closed_for_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_different_content_different_hash()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_entries_returns_copy()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_envelope_metadata_in_audit_entry()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_genesis()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_high_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_high_score_forwards_and_records()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_inject_auth_header()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_inject_fails_for_unscoped()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_inject_preserves_existing_headers()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_key_leak_increments_sanitized_stat_and_audits()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_key_not_found()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_key_redacted_from_string()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_leak_detection_logged()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_list_keys_no_values()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_lockdown_block_is_audited()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_lockdown_score_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_lockdown_score_blocks_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_metadata()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_missing_trust_manager_does_not_raise()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_multiple_keys_redacted()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_no_context_guard_passes_through()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_no_keys_unchanged()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_no_leak_clean_message()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_no_outbound_filter_does_not_unbind()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_no_scorer_leaves_result_unscored()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_no_signer_leaves_envelope_empty()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_non_owner_block_does_not_emit_owner_bypass()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_non_owner_inbound_query_still_redacted()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_old_key_in_redaction_after_rotation()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_outbound_response_is_signed_and_verifiable()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_owner_bypass_audited_at_every_guard()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_owner_bypass_is_recorded_in_audit_chain()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_owner_exempted_block_does_not_decay_trust()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_owner_inbound_query_not_pii_redacted()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_partial_key_redacted()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_persisted_event_records_true_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_repetition_attack_does_not_block()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_rotate_key()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_rotate_nonexistent_raises()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_rotation_logged()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_scope_enforcement_logged()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_scoped_agent_can_access()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_scorer_error_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_scorer_error_fails_closed_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_scorer_invoked_with_session_segments()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_signer_failure_never_blocks()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_skip_context_guard_bypasses_step0()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_standard_trust_tool_result_injection_is_blocked()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_store_and_retrieve()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_stored_key_value_redacted_from_outbound()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_tamper_in_retained_window_detected()_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
-- [[dot-test_tool_result_uses_wrap_tool_result()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_unscoped_agent_denied()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_untrusted_tool_result_injection_is_blocked()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_unwrapped_chain_must_anchor_at_genesis()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_verify_chain_valid_after_wrap()_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_verify_tampered_chain_hash()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_verify_tampered_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_verify_valid()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_warn_zone_forwards()]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-test_wildcard_scope_allows_all()]] - code - gateway/tests/test_key_vault.py
-- [[dot-test_window_capped_at_max_entries()_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[dot-to_dict()_9]] - code - gateway/proxy/pipeline.py
-- [[dot-total_appended()_1]] - code - gateway/proxy/pipeline.py
-- [[dot-verify()]] - code - gateway/security/instruction_envelope.py
-- [[dot-verify_audit_chain()]] - code - gateway/proxy/pipeline.py
-- [[dot-verify_chain()_1]] - code - gateway/proxy/pipeline.py
-- [[dot-wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
-- [[dot-wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
-- [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[A self-consistent window on a forged anchor must fail when the         chain nev]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
-- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
-- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
-- [[Any_51]] - code - gateway/proxy/pipeline.py
-- [[Any_52]] - code - gateway/security/outbound_filter.py
-- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
-- [[AuditChain]] - code - gateway/proxy/pipeline.py
-- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
-- [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - concept - gateway/tests/test_instruction_envelope.py
-- [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
-- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
-- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
-- [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
-- [[Convenience sign a tool result as issuer='tooltool_name'.]] - rationale - gateway/security/instruction_envelope.py
-- [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Enum_1]] - code
-- [[EnvelopeSigner]] - code - gateway/security/instruction_envelope.py
-- [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
-- [[FilterMatch]] - code - gateway/security/outbound_filter.py
-- [[FilterResult_1]] - code - gateway/security/outbound_filter.py
-- [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
-- [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
-- [[InjectionAction]] - code - gateway/security/tool_result_injection.py
-- [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
-- [[KeyInjector]] - code - gateway/security/key_vault.py
-- [[KeyLeakDetector]] - code - gateway/security/key_vault.py
-- [[KeyLeakDetector wiring — stored credential values must never leave the gateway.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[KeyVaultConfig]] - code - gateway/security/key_vault.py
-- [[Main outbound information filtering engine.      Uses compiled regex patterns to]] - rationale - gateway/security/outbound_filter.py
-- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
-- [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[No trust_manager configured — the hook must no-op, not crash the         request]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Non-owner query must still be PII-scrubbed (detector + threshold unchanged).]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Outbound Information Filter Tests]] - code - gateway/tests/test_outbound_filter.py
-- [[OutboundInfoFilter]] - code - gateway/security/outbound_filter.py
-- [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Owner messages that would trip a guard are logged but never         blocked — re]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Owner query must pass through PII sanitisation unchanged; sanitiser not called.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[PII sanitiser mock that simulates two entity redactions.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[PipelineAction]] - code - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
-- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
-- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
-- [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
-- [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
-- [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
-- [[SHA-256 hash chain for tamper-evident audit logging.]] - rationale - gateway/proxy/pipeline.py
-- [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[ScanResult_4]] - code - gateway/security/prompt_guard.py
-- [[SecurityPipeline]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[SecurityPipeline_1]] - code - gateway/proxy/pipeline.py
-- [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
-- [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
-- [[Step 1.76 PromptGuard tool-result scan must respect user_trust_level.      CVE-2]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[TestAuditChain]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestAuditChainBounded]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestContextGuardInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestContextIntegrityInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
-- [[TestEnvelopeSignerInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyLeakDetection]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyLeakDetection_1]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestKeyRedaction]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyRotation]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyScoping]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyStorage]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyVaultConfig]] - code - gateway/tests/test_key_vault.py
-- [[TestOutboundFilterResultBinding]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestPromptGuardToolResultTrustGate]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestTrustViolationRecording]] - code - gateway/tests/test_pipeline_unit.py
-- [[Tests for the SHA-256 hash chain.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[The in-memory window must be bounded; full history lives in SQLite.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[ThreatAction]] - code - gateway/security/prompt_guard.py
-- [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
-- [[_FakeAttack]] - code - gateway/tests/test_pipeline_unit.py
-- [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_pipeline()_3]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_pipeline()_4]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[_make_signer_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
-- [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[config()_4]] - code - gateway/tests/test_key_vault.py
-- [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
-- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
-- [[pipeline.py]] - code - gateway/proxy/pipeline.py
-- [[prompt_guard.py]] - code - gateway/security/prompt_guard.py
-- [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[signer()]] - code - gateway/tests/test_instruction_envelope.py
-- [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_encoding_detector_error_fails_closed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_hex_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_nested_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_owner_encoded_injection_allowed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_plain_benign_message_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
-- [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
-- [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
-- [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_ws_e_rt2_inbound_encoding.py]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[dot-_make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_make_proxy()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_make_proxy()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collab_threshold_notices_fire_only_once_per_level()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_cooldown_suppresses_second_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_dm_hello_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_filter_disabled_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_grant_immunity_bypasses_suspension()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_group_command_with_bot_suffix_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_group_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_group_message_with_mention_forwarded_and_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_group_message_without_mention_forwarded_but_flagged()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_hello_in_group_sends_hermes_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_hello_in_group_sends_openclaw_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_hermes_mention_ignored_when_processed_as_openclaw()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_hermes_mention_sets_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_immune_command_lists_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_immune_command_no_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_immune_user_lockdown_not_incremented()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_immune_user_message_passes_through_when_suspended()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_locked_no_active_lockdowns()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_locked_shows_suspended_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_missing_chat_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_no_bot_username_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_notify_user_blocked_uses_collaborator_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_openclaw_mention_does_not_affect_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_partial_phrase_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_hello_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_hi_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_partial_match_does_not_fire()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_status_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_strips_leading_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_trailing_punctuation_stripped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_predicate_whos_there_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_private_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_private_message_does_not_set_eligibility_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_revoke_immunity_restores_enforcement()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_revoke_immunity_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_status_in_group_sends_short_ack_not_full_status()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_hello_in_group_receives_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_supergroup_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_two_bots_same_group_independent_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_unlock_calls_reset_on_lockdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_unlock_clears_suspended_drop_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_unlock_persists_unpause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_username_for_bot_falls_back_to_default()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_username_for_bot_returns_per_bot_username()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[command@botname marks chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[gi uid must grant immunity so the user bypasses lockdown suspension check.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[immune must list all immune user IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[immune with no immune users must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[locked must list users with non-normal lockdown state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[locked with no active lockdowns must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[ri uid must remove immunity and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[ri for a user not in immune set must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[status in a group sends only the short liveness ack (no operational details).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock uid must call reset() on the lockdown module and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock for a user with no lockdown state must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock must clear the suspended-drop notice cooldown so user gets fresh notice…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[unlock must persist through unpause_collaborator() so resume survives a…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_bot mention sets only openclaw eligible; hermes entry is absent.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[@agentshroud_hermes_bot message processed as openclaw yields ineligible for…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A dropped message past the cooldown window must produce a new notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A user manually revoke'd (paused) with no ProgressiveLockdown block history…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Build a Telegram group message update.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator block notice should retry with deterministic unavailable fallback…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator must receive escalation notice at block 5.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator must receive suspension notice at block 10.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator must receive warning text when they reach 3 security blocks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[DMs don't interact with the group eligibility map.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Group messages without @mention are forwarded (for context) but mark chat as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Group presence probe bare trigger phrases make each bot reply with a short…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Immune user must not be dropped by the suspension path (stub must not appear).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Integration tests for group at-mention filtering. The bot reads ALL group…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[On construction, _runtime_revoked_collaborators must be backed by the persisted…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner block notice should retry with owner-specific fallback when first send…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Per-bot eligibility — each bot in a shared group tracks mention state…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[TelegramAPIProxy_2]] - code
+- [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Tests for TelegramAPIProxy inbound security pipeline integration. Proves that…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Tests for lockdown UX unlock fix, collaborator notifications, locked,…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_make_group_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_username_for_bot returns the correct @username for each bot_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_notice()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_12]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_13]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_14]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_15]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_16]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_17]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_18]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello, can you help' must NOT match — exact-match guard.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[noop()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[noop_owner_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[test_telegram_proxy_inbound.py]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -286,104 +176,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 47 edges to [[_COMMUNITY_TrustConfig]]
-- 46 edges to [[_COMMUNITY_PipelineAction]]
-- 34 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 20 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 20 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 19 edges to [[_COMMUNITY_PipelineAction (2)]]
-- 17 edges to [[_COMMUNITY_AlertDispatcher]]
-- 17 edges to [[_COMMUNITY_ContextSegment]]
-- 17 edges to [[_COMMUNITY_WebProxyConfig]]
-- 15 edges to [[_COMMUNITY_MiddlewareManager (3)]]
-- 13 edges to [[_COMMUNITY_AsyncMock]]
-- 13 edges to [[_COMMUNITY_MiddlewareManager]]
-- 11 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 10 edges to [[_COMMUNITY_PIIConfig]]
-- 10 edges to [[_COMMUNITY_InjectionAction]]
-- 10 edges to [[_COMMUNITY__FakeRBAC]]
-- 9 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 8 edges to [[_COMMUNITY_TestOutboundInfoFilter (3)]]
-- 8 edges to [[_COMMUNITY_test_docs_accuracy.py]]
-- 8 edges to [[_COMMUNITY_RBACConfig]]
-- 6 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 4 edges to [[_COMMUNITY_RateLimitGuard]]
-- 4 edges to [[_COMMUNITY_MultiTurnTracker]]
-- 4 edges to [[_COMMUNITY_ProxyAction]]
-- 3 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 3 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 3 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager (6)]]
-- 3 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 3 edges to [[_COMMUNITY_egress_filter.py]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_KillSwitchMonitor (4)]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 2 edges to [[_COMMUNITY_SecureBrowser]]
-- 2 edges to [[_COMMUNITY_SecureBrowser (2)]]
-- 2 edges to [[_COMMUNITY_SecureBrowser (3)]]
-- 2 edges to [[_COMMUNITY_SecureBrowser (4)]]
-- 2 edges to [[_COMMUNITY_ConsentFramework (2)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 2 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 2 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
-- 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection]]
-- 2 edges to [[_COMMUNITY_DelegationManager]]
-- 2 edges to [[_COMMUNITY_RBACConfig (2)]]
-- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 2 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 2 edges to [[_COMMUNITY_GovernanceAction]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 1 edge to [[_COMMUNITY_GovernanceAction (2)]]
-- 1 edge to [[_COMMUNITY_TrustConfig (2)]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (24)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (29)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (30)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (32)]]
-- 1 edge to [[_COMMUNITY_MCPInspector]]
-- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_SkillGuard (2)]]
-- 1 edge to [[_COMMUNITY_KeyRotationManager (2)]]
-- 1 edge to [[_COMMUNITY_AgentRegistry (2)]]
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_A2AMethod]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine (3)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
-- 1 edge to [[_COMMUNITY_Error Index]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_ResourceGuard (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (8)]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py (2)]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig (3)]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (5)]]
-- 1 edge to [[_COMMUNITY_AsyncMock (2)]]
-- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (2)]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
+- 69 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 47 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 5 edges to [[_COMMUNITY_ServiceManager]]
+- 4 edges to [[_COMMUNITY_api.py (2)]]
+- 4 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py (2)]]
+- 3 edges to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
+- 3 edges to [[_COMMUNITY_GroupApprovalRouter]]
+- 1 edge to [[_COMMUNITY_iCloud Services (4)]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter (2)]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter (3)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency (8)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 
 ## Top bridge nodes
-- [[Enum_1]] - degree 105, connects to 53 communities
-- [[SecurityPipeline_1]] - degree 138, connects to 23 communities
-- [[AuditChain]] - degree 89, connects to 10 communities
-- [[prompt_guard.py]] - degree 16, connects to 9 communities
-- [[OutboundInfoFilter]] - degree 36, connects to 8 communities
+- [[test_telegram_proxy_inbound.py]] - degree 27, connects to 12 communities
+- [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - degree 9, connects to 3 communities
+- [[dot-test_suspended_drop_notice_respects_cooldown()]] - degree 9, connects to 3 communities
+- [[dot-test_suspended_user_receives_drop_notice()]] - degree 9, connects to 3 communities
+- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 5, connects to 3 communities

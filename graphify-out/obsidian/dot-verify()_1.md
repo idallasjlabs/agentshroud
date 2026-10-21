@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "test_voice_latency_guard.py"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_voice_latency_guardpy
 ---
 
 # .verify()
@@ -19,4 +19,4 @@ tags:
 - [[MFAResult]] - `references` [EXTRACTED]
 - [[Verify the second factor for a high-risk action.          Args             acti]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

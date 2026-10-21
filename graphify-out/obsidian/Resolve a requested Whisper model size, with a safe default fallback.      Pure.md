@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "stt.py"
+community: "proxy_status.py"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sttpy
+  - community/proxy_statuspy
 ---
 
 # Resolve a requested Whisper model size, with a safe default fallback.      Pure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[select_model_size()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sttpy
+#graphify/rationale #graphify/EXTRACTED #community/proxy_statuspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2) (2)"
 location: "L1525"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # Uppercase collaborator blocked commands should still be quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_blocked_command_uppercase_is_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

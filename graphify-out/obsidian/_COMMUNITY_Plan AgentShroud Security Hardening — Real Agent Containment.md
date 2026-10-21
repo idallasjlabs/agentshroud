@@ -1,33 +1,32 @@
 ---
 type: community
-members: 20
+members: 19
 ---
 
 # Plan: AgentShroud Security Hardening — Real Agent Containment
 
-**Members:** 20 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Changes]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Context_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Execution Order & Parallelism]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[FINAL Network Lockdown Activation]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Files to Modify]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[GitHub Workflow Rules]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P2 Credential Isolation (op-proxy)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P3 Channel Ownership — Telegram + Email]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P4 Wire MCP Proxy]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[P5 Wire SecurityPipeline to forward]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Pre-Flight Checklist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Root Causes (5 distinct bugs)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Tests_2]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Tests (TDD)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Verification_4]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[What Exists]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[dot-agentsskillsi-mcpm-doctorSKILL]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[1. Check MCP Configuration]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_15]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_62]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Role_49]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_3]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "TestOutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/TestOutboundInfoFilter
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[dot-agentsskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_135]] - `contains` [EXTRACTED]
-- [[Related Skills_95]] - `contains` [EXTRACTED]
-- [[Usage_102]] - `contains` [EXTRACTED]
+- [[Purpose_166]] - `contains` [EXTRACTED]
+- [[Related Skills_93]] - `contains` [EXTRACTED]
+- [[Usage_104]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L465"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # Export findings to a detailed report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-export_findings_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/rationale #graphify/EXTRACTED #community/SessionManager

@@ -1,57 +1,62 @@
 ---
 type: community
-members: 44
+members: 49
 ---
 
 # StdioConnection (2)
 
-**Members:** 44 nodes
+**Members:** 49 nodes
 
 ## Members
-- [[dot-__init__()_77]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-get_item()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-submit_tool_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_denied_decision_blocks_with_item_status()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_denied_decision_with_missing_item_defaults_denied()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_egress_filter_allow_passes_through()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_emit_swallows_bus_errors()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_emits_event_to_bus()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_execution_redacts_admin_private_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_execution_with_none_content_skips_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_generic_exception()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_get_stats_after_allowed_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_get_stats_zero_and_after_calls()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_no_patterns_returns_unchanged()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_no_queue_allows_by_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_owner_bypasses_redaction()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_process_tool_call_blocks_on_denial()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_process_tool_result_handles_none_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_process_tool_result_redacts_private_data()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_redacts_nested_dict_list_tuple()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_sanitized_params_preferred_over_originals()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_server_error_response()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_server_error_response_without_message()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_shutdown_stops_all_connections()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_successful_execution_with_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_sync_egress_filter_deny_blocks()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_timeout_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-wait_for_decision()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FakeApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[make_proxy()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-config()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-hardening()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_basic()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_with_normalization()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_get_stats()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_initialization()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_fingerprinting_different_params()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_base64()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_hex()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
+- [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Create test configuration.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test approval hardening functionality.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of authoritylegitimacy claims.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of base64-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of destructive commands not indicated in description.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of downplaying language.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of misleading descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test detection of repeat request patterns.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test getting hardening statistics.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardened message formatting when description is normalized.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardened message formatting with security concerns.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that different requests are not affected by cooldown.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[TestApprovalHardening]] - code - gateway/tests/test_approval_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,22 +66,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_StdioConnection]]
-- 20 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 19 edges to [[_COMMUNITY_PermissionLevel]]
-- 19 edges to [[_COMMUNITY_MCPInspector]]
-- 18 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 13 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
-- 10 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 10 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (4)]]
-- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 12 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[test_mcp_proxy_coverage.py]] - degree 34, connects to 10 communities
-- [[FakeApprovalQueue]] - degree 27, connects to 9 communities
-- [[FakeConn]] - degree 30, connects to 8 communities
-- [[TestExecuteToolCall]] - degree 24, connects to 8 communities
-- [[TestApprovalQueue]] - degree 21, connects to 8 communities
+- [[TestApprovalHardening]] - degree 32, connects to 1 community
+- [[dot-config()]] - degree 3, connects to 1 community
+- [[dot-hardening()]] - degree 3, connects to 1 community
+- [[dot-test_format_hardened_message_basic()]] - degree 3, connects to 1 community
+- [[dot-test_format_hardened_message_with_normalization()]] - degree 3, connects to 1 community

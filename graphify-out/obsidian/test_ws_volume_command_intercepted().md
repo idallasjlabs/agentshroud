@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L2547"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # test_ws_volume_command_intercepted()
@@ -17,4 +17,4 @@ tags:
 - [[set volume X%' must NOT reach the agent the server sends a     {cmdset_volu]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

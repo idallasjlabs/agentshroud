@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "installer.py (2)"
-location: "L15"
+community: "BROWSER_FETCH_SKILL.md"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy_2
+  - community/BROWSER_FETCH_SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy_2
+#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd

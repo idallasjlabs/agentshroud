@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "WebProxy"
-location: "L117"
+community: "Usage"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Usage
 ---
 
 # .close()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/Usage

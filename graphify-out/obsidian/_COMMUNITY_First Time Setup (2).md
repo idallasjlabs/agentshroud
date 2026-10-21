@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[dot-_format_alert_message()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_is_duplicate()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_log_alert()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-get_stats()_17]] - code - gateway/security/alert_dispatcher.py
-- [[Any_65]] - code - gateway/security/alert_dispatcher.py
-- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
-- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
-- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
-- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
+- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
+- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
+- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +34,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 3 edges to [[_COMMUNITY_dot-mcp.json]]
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_thinking_suppression.py]]
 
 ## Top bridge nodes
-- [[dot-dispatch()]] - degree 7, connects to 1 community
-- [[dot-_send_notification()]] - degree 5, connects to 1 community
-- [[dot-_format_alert_message()]] - degree 4, connects to 1 community
-- [[dot-_log_alert()]] - degree 4, connects to 1 community
-- [[dot-get_digest()]] - degree 3, connects to 1 community
+- [[STPA-Sec Analysis of AgentShroud]] - degree 9, connects to 1 community
+- [[RELEASE-PLAN]] - degree 7, connects to 1 community
+- [[Credential Isolation Architecture]] - degree 4, connects to 1 community
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - degree 3, connects to 1 community
+- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community

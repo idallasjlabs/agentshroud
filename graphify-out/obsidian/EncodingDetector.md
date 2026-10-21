@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "test_agent_cve_registry.py (2)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/test_agent_cve_registrypy_2
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[dot-__init__()_148]] - `method` [EXTRACTED]
+- [[dot-__init__()_82]] - `method` [EXTRACTED]
 - [[dot-analyze()]] - `method` [EXTRACTED]
 - [[dot-decode_base64_segments()]] - `method` [EXTRACTED]
 - [[dot-decode_hex()]] - `method` [EXTRACTED]
 - [[dot-decode_rot13()]] - `method` [EXTRACTED]
 - [[dot-decode_url()]] - `method` [EXTRACTED]
 - [[dot-replace_homoglyphs()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
 - [[dot-strip_zero_width()]] - `method` [EXTRACTED]
 - [[dot-test_config_disable_base64()]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
@@ -41,10 +41,10 @@ tags:
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[pipeline()_1]] - `calls` [EXTRACTED]
+- [[pipeline()]] - `calls` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector.py]] - `imports` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

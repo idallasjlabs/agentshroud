@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # lifespan.py
@@ -31,6 +31,6 @@ tags:
 - [[test_lifespan_prune.py]] - `references` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `references` [EXTRACTED]
 - [[test_telegram_executor.py]] - `imports_from` [EXTRACTED]
-- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

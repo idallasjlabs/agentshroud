@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
+community: "PortManager"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/PortManager
 ---
 
 # TestEncryptedStore
 
 ## Connections
-- [[dot-setup_method()_7]] - `method` [EXTRACTED]
+- [[dot-setup_method()_33]] - `method` [EXTRACTED]
 - [[dot-test_b64_roundtrip()]] - `method` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `method` [EXTRACTED]
 - [[dot-test_different_encryptions_differ()]] - `method` [EXTRACTED]
@@ -24,11 +24,11 @@ tags:
 - [[dot-test_get_blob_key_id()]] - `method` [EXTRACTED]
 - [[dot-test_invalid_blob_too_short()]] - `method` [EXTRACTED]
 - [[dot-test_invalid_blob_version()]] - `method` [EXTRACTED]
-- [[dot-test_key_rotation()_1]] - `method` [EXTRACTED]
+- [[dot-test_key_rotation()]] - `method` [EXTRACTED]
 - [[dot-test_key_rotation_auto_increment()]] - `method` [EXTRACTED]
 - [[dot-test_large_data()]] - `method` [EXTRACTED]
 - [[dot-test_no_secret_raises()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_key_fails()_1]] - `method` [EXTRACTED]
+- [[dot-test_wrong_key_fails()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -41,11 +41,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/code #graphify/EXTRACTED #community/PortManager

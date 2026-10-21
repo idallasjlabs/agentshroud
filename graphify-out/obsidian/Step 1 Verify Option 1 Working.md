@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Migration Path (SSH → Distributed Node)"
+community: "AgentShroud™ — Trademark Prior Use Record (2)"
 location: "L465"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Migration_Path_SSH__Distributed_Node
+  - community/AgentShroud__Trademark_Prior_Use_Record_2
 ---
 
 # Step 1: Verify Option 1 Working
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_2

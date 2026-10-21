@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # ApprovalMode
@@ -16,13 +16,13 @@ tags:
 - [[dot-add_rule()]] - `references` [EXTRACTED]
 - [[dot-approve()]] - `references` [EXTRACTED]
 - [[dot-deny()]] - `references` [EXTRACTED]
-- [[Any_42]] - `uses` [INFERRED]
+- [[Any_83]] - `uses` [INFERRED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[FakeAuditStore_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[FakeGroup]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

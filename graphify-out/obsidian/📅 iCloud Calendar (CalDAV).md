@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "iCloud Services Setup - Complete Guide"
+community: "TestOutboundClassifierHelpers"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Setup_-_Complete_Guide
+  - community/TestOutboundClassifierHelpers
 ---
 
 # 📅 iCloud Calendar (CalDAV)
@@ -17,4 +17,4 @@ tags:
 - [[Test CalDAV Connection]] - `contains` [EXTRACTED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide
+#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "tts.py"
+community: "AgentShroud Security Verification (13-check driver)"
 location: "L2030"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # test_resample_passband_preserved()
@@ -16,4 +16,4 @@ tags:
 - [[_resample_s16le_mono()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ttspy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

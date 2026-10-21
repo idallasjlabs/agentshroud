@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "UserSessionManager"
-location: "L62"
+community: "AgentTarget"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_3]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_5]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_12]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

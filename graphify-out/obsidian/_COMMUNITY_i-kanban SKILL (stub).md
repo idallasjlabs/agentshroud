@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-kanban SKILL (stub)]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[Token-reduction benchmark gated at 5,000 words]] - rationale - docker/config/hermes/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L73"
+community: "1. GitHub MCP Authentication Reset (2)"
+location: "L630"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[Any_52]] - `references` [EXTRACTED]
-- [[InfoCategory]] - `calls` [EXTRACTED]
-- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

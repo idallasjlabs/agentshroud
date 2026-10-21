@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "ContextSegment"
+community: "TelegramAPIProxy (3)"
 location: "L804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy_3
 ---
 
 # Zero-width chars between letters should not bypass detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_zero_width_evasion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

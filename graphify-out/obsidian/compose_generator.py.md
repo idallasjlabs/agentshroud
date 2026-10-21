@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "RuntimeConfig"
+community: "pipeline.py — Security Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # compose_generator.py
@@ -20,4 +20,4 @@ tags:
 - [[podman_engine.py]] - `references` [EXTRACTED]
 - [[security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

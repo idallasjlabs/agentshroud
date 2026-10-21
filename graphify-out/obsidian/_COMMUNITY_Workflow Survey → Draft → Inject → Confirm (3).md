@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Re-injection Command (for reference)_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Role_89]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Rules_24]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 1 — Survey the Repo_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 2 — Answer Six Questions_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 3 — Write SESSION_PROMPT_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 4 — Write the File_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 5 — Inject into All Three LLMs_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 6 — Confirm_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Trigger_3]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Workflow Survey → Draft → Inject → Confirm_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[openclawskillsi-session-promptSKILL]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
+- [[Input Requirements_12]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[Mnemosyne — Retention Engineer_2]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Mnemosyne — Retention Engineer_3]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[Output Format_25]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[Persona_8]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[Purpose_146]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Quality Checklist_10]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[Related Skills_85]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Role_77]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[System Prompt_8]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[Usage_93]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[hermesskillsi-mnemosyneREADME]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[hermesskillsi-mnemosyneSKILL]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

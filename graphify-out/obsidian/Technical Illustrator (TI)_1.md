@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_184]] - `contains` [EXTRACTED]
-- [[Related Skills_116]] - `contains` [EXTRACTED]
-- [[Usage_125]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tiREADME]] - `contains` [EXTRACTED]
+- [[Purpose_156]] - `contains` [EXTRACTED]
+- [[Related Skills_88]] - `contains` [EXTRACTED]
+- [[Usage_97]] - `contains` [EXTRACTED]
+- [[hermesskillsi-tiREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

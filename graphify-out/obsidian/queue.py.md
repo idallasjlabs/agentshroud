@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "_make_proxy()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/_make_proxy
 ---
 
 # queue.py
@@ -16,9 +16,9 @@ tags:
 - [[AgentShroud Security Dashboard (index.html)]] - `conceptually_related_to` [INFERRED]
 - [[Approval Queue Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[ApprovalQueue]] - `contains` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAGuard.verify()]] - `calls` [EXTRACTED]
 - [[gatewayREADME]] - `references` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[mfa_guard.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

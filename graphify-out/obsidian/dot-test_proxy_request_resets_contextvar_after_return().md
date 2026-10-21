@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig (2)"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # .test_proxy_request_resets_contextvar_after_return()
@@ -16,4 +16,4 @@ tags:
 - [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

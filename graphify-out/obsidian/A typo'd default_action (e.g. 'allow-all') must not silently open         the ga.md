@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "A2APolicyEngine (3)"
+community: "UserSessionManager"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_3
+  - community/UserSessionManager
 ---
 
 # A typo'd default_action (e.g. 'allow-all') must not silently open         the ga
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_invalid_default_action_string_falls_back_to_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_3
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

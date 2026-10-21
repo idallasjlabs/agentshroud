@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "drift_detector.py"
+community: "Known Log Messages"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Known_Log_Messages
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
 - [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

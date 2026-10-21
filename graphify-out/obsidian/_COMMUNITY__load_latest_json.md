@@ -35,13 +35,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 2 edges to [[_COMMUNITY_Path (3)]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_AgentTarget (6)]]
-- 1 edge to [[_COMMUNITY_get_trivy_summary]]
+- 5 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 4 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 4 edges to [[_COMMUNITY_PipelineAction (2)_1]]
+- 2 edges to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher (2)]]
 
 ## Top bridge nodes
 - [[get_clamav_summary()]] - degree 13, connects to 5 communities

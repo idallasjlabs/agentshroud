@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (2)"
+community: ".proxy_messages()"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/proxy_messages
 ---
 
 # ._take_screenshot()
@@ -15,6 +15,6 @@ tags:
 - [[dot-navigate()_1]] - `calls` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 - [[Take screenshot and save to audit directory_1]] - `rationale_for` [EXTRACTED]
-- [[main()_8]] - `calls` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

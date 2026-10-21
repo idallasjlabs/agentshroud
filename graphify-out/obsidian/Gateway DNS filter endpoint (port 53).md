@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "concept"
-community: "agentshroud-gateway service (proxy mode)"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L29-31, L69-71"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_service_proxy_mode
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Gateway DNS filter endpoint (port 53)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openclaw service (internal network only)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode
+#graphify/concept #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L598"
+community: "ApprovalQueueConfig (2)"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/ApprovalQueueConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

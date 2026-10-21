@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py (3)"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy_3
 ---
 
 # .test_promotion_on_threshold()
@@ -15,4 +15,4 @@ tags:
 - [[Agent should be promoted when score crosses threshold.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy_3

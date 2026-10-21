@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L437"
+community: "TestEmailSend"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestEmailSend
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
-- [[test_egress_allowed_domain()]] - `calls` [EXTRACTED]
-- [[test_egress_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
-- [[test_outbound_pii_stripped()]] - `calls` [EXTRACTED]
-- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
+- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

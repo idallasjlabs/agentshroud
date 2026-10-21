@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "AgentShroud™ Communication Templates"
+community: "voice_task (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/voice_task_2
 ---
 
 # AGENTS.md — Codex CLI Guidance
@@ -17,7 +17,5 @@ tags:
 - [[Codex Test Augmenter Role]] - `references` [EXTRACTED]
 - [[Codex Validation Runner Role]] - `references` [EXTRACTED]
 - [[Data Lakehouse Platform (GSDL)]] - `references` [EXTRACTED]
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
-- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/document #graphify/EXTRACTED #community/voice_task_2

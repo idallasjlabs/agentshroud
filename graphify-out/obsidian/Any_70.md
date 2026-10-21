@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L148"
+community: "test_soc_router_coverage.py"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_soc_router_coveragepy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_177]] - `references` [EXTRACTED]
-- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[dot-__init__()_174]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

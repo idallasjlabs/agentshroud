@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "TestBenchmarkRegression"
+community: "RuntimeConfig"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/RuntimeConfig
 ---
 
 # .test_100_inbound_requests()
@@ -16,4 +16,4 @@ tags:
 - [[TestBenchmarkRegression]] - `method` [EXTRACTED]
 - [[assert_within_threshold()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

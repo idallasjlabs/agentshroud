@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "AgentShroud Consolidated Issues Report"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (3)"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/Required__45_for_text__30_for_UI_elements_3
 ---
 
 # 📝 General TODOs & Wishlist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_3

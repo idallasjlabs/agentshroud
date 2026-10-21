@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "EgressFilterConfig (2)"
 location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/EgressFilterConfig_2
 ---
 
 # .test_denied_domain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

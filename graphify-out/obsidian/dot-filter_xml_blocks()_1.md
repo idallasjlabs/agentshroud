@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "_make_proxy()"
+community: "TestCollaboratorPromptClassifiers"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .filter_xml_blocks()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

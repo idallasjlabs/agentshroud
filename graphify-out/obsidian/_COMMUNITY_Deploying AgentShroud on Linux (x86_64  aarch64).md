@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[1. Clone the Repository_1]] - document - docs/operations/linux.md
-- [[2. Install Docker_1]] - document - docs/operations/linux.md
-- [[3. Set Up Secrets_1]] - document - docs/operations/linux.md
-- [[4. Configure AgentShroud_1]] - document - docs/operations/linux.md
-- [[5. Build and Start_1]] - document - docs/operations/linux.md
-- [[6. Verify_1]] - document - docs/operations/linux.md
-- [[Architecture Notes]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
-- [[Firewall]] - document - docs/operations/linux.md
-- [[Fresh Install_1]] - document - docs/operations/linux.md
-- [[Non-Root User]] - document - docs/operations/linux.md
-- [[Prerequisites_11]] - document - docs/operations/linux.md
-- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
-- [[Updating to Latest Release_1]] - document - docs/operations/linux.md
-- [[VPS Deployment Notes]] - document - docs/operations/linux.md
-- [[linux]] - document - docs/operations/linux.md
+- [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Function Details_14]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Purpose_116]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Related_20]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[_sanitize_presidio(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[_sanitize_regex(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[block_credentials(content, source)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[filter_xml_blocks(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[sanitize(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[sanitizer.py_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[sanitizer.py_1]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "sunday-scan.sh"
+community: "run_multi_host"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/run_multi_host
 ---
 
 # sunday-scan.sh
@@ -18,14 +18,24 @@ tags:
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - `references` [EXTRACTED]
 - [[_sunday_warn_expiring_acceptances()]] - `defines` [EXTRACTED]
 - [[die()_2]] - `defines` [EXTRACTED]
-- [[log()_9]] - `defines` [EXTRACTED]
+- [[log()_7]] - `defines` [EXTRACTED]
 - [[sunday-scan.sh script]] - `contains` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]
+- [[sunday_deadline_epoch()]] - `defines` [EXTRACTED]
 - [[sunday_dev_handoff_gate()]] - `defines` [EXTRACTED]
 - [[sunday_ensure_trivy()]] - `defines` [EXTRACTED]
 - [[sunday_handoff_status()]] - `defines` [EXTRACTED]
+- [[sunday_hermes_container()]] - `defines` [EXTRACTED]
+- [[sunday_notify_direct()]] - `defines` [EXTRACTED]
 - [[sunday_resolve_scan_image()]] - `defines` [EXTRACTED]
+- [[sunday_restore_stack()]] - `defines` [EXTRACTED]
 - [[sunday_run_scan_gate()]] - `defines` [EXTRACTED]
+- [[sunday_run_summary()]] - `defines` [EXTRACTED]
+- [[sunday_stack_check()]] - `defines` [EXTRACTED]
+- [[sunday_stack_rollback()]] - `defines` [EXTRACTED]
+- [[sunday_stack_start()]] - `defines` [EXTRACTED]
+- [[sunday_stop_apply()]] - `defines` [EXTRACTED]
+- [[sunday_telegram_post()]] - `defines` [EXTRACTED]
 - [[warn()_4]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-scansh
+#graphify/code #graphify/EXTRACTED #community/run_multi_host

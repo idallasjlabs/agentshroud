@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # .get_user_role()
@@ -20,6 +20,6 @@ tags:
 - [[dot-set_user_role()]] - `calls` [EXTRACTED]
 - [[Get the role for a user.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
-- [[Role]] - `references` [EXTRACTED]
+- [[Role_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

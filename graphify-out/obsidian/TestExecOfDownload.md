@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 location: "L162"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # TestExecOfDownload
@@ -21,4 +21,4 @@ tags:
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher

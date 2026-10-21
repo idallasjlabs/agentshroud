@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "test_agent_cve_registry.py"
+community: "A2APolicyEngine"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/A2APolicyEngine
 ---
 
 # The first curated OpenClaw entry (Feishu media download) survives migration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openclaw_first_entry_is_feishu_media_download()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

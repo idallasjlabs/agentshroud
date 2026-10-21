@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_docs_accuracy.py"
+community: "test_forward_stream.py"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/test_forward_streampy
 ---
 
 # .test_manage_modules_endpoint_uses_the_same_registry()
@@ -15,4 +15,4 @@ tags:
 - [[TestManageModulesEndpointAccuracy]] - `method` [EXTRACTED]
 - [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

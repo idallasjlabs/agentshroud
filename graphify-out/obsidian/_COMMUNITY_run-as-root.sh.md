@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # run-as-root.sh
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[browser-fetch skill.json (tool manifest)]] - code - skills/custom/browser-fetch/skill.json
-- [[run-as-root.sh]] - code - skills/custom/browser-fetch/run-as-root.sh
-- [[run-as-root.sh script]] - code - skills/custom/browser-fetch/run-as-root.sh
+- [[dot-test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreContainerHardening]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,9 @@ members: 3
 TABLE source_file, type FROM #community/run-as-rootsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
+
+## Top bridge nodes
+- [[TestScoreContainerHardening]] - degree 4, connects to 1 community

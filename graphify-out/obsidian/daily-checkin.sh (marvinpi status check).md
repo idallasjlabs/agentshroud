@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
+community: "Contributing to AgentShroud™"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Contributing_to_AgentShroud
 ---
 
 # daily-checkin.sh (marvin/pi status check)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/code #graphify/INFERRED #community/Contributing_to_AgentShroud

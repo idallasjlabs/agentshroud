@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "run_multi_host"
+community: "LOW Findings"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/LOW_Findings
 ---
 
 # _fake_runner()
@@ -23,4 +23,4 @@ tags:
 - [[Return a runner that looks up (exit_code, output) by host name.]] - `rationale_for` [EXTRACTED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_multi_host
+#graphify/code #graphify/EXTRACTED #community/LOW_Findings

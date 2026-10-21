@@ -1,48 +1,50 @@
 ---
 type: community
-members: 35
+members: 37
 ---
 
 # A2APolicyEngine (2)
 
-**Members:** 35 nodes
+**Members:** 37 nodes
 
 ## Members
-- [[dot-_classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-_classify_ml()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-_compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-_score_signal()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-classify()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-is_injection()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-is_uncertain()]] - code - gateway/security/heuristic_classifier.py
-- [[dot-setup_method()_17]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[dot-test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
-- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
-- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
-- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[Pattern_1]] - code - gateway/security/heuristic_classifier.py
-- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
-- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
-- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
-- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-setup_method()_15]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_obfuscation_resistance()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_pattern_priority()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_dutch_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_hindi_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_italian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_japanese_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_korean_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_portuguese_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_bengali_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_persian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_tagalog_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_tamil_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_ukrainian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[Set up PromptGuard with standard thresholds.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Bengali injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Dutch injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Hindi injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Italian injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Japanese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Korean injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test PersianFarsi injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Portuguese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Tagalog injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Tamil injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Ukrainian injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test injection attempts mixing languages.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test resistance to basic obfuscation attempts.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that benign multilingual text is not blocked.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
+- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,12 +54,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
-- [[ClassificationResult]] - degree 10, connects to 1 community
-- [[dot-_classify_heuristic()]] - degree 7, connects to 1 community
-- [[dot-classify()]] - degree 5, connects to 1 community
-- [[dot-_classify_ml()]] - degree 5, connects to 1 community
+- [[test_multilingual_injection.py]] - degree 3, connects to 2 communities
+- [[TestMultilingualInjection]] - degree 20, connects to 1 community
+- [[dot-setup_method()_15]] - degree 3, connects to 1 community

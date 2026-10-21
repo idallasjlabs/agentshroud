@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L524"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # ._has_fabricated_match()
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_progressive_tense()]] - `calls` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

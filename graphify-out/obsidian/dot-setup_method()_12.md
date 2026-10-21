@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "InjectionAction"
-location: "L23"
+community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

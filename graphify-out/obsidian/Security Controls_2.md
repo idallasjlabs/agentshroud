@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Layer-by-Layer Breakdown (3)"
+community: "Enterprise Governance Proxy System (invention)"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown_3
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Security Controls
@@ -23,4 +23,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_3
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

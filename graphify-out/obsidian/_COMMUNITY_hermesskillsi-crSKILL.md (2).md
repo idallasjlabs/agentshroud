@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # hermes/skills/i-cr/SKILL.md (2)
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Feedback Guidelines_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Output Format_6]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Review Principles_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Role_16]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[dot-test_returns_false_for_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_for_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_false_for_stale_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_returns_true_for_fresh_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_zero_failures_no_report_on_disk()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestIsFresh]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_Command Details]]
+- 2 edges to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
+- 2 edges to [[_COMMUNITY_OpenSCAP]]
 
 ## Top bridge nodes
-- [[Skill Code Review (CR)_1]] - degree 6, connects to 1 community
+- [[TestIsFresh]] - degree 5, connects to 1 community
+- [[_mock_empty_dir()]] - degree 3, connects to 1 community
+- [[dot-test_returns_false_for_missing_dir()]] - degree 2, connects to 1 community
+- [[dot-test_returns_false_for_stale_file()]] - degree 2, connects to 1 community
+- [[dot-test_returns_true_for_fresh_file()]] - degree 2, connects to 1 community

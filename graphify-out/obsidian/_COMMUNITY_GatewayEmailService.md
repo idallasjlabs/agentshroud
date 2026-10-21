@@ -8,44 +8,44 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__enter__()_3]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-__exit__()_3]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-__init__()_93]] - code - gateway/ingest_api/email_service.py
-- [[dot-__init__()_94]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-build_message()]] - code - gateway/ingest_api/email_service.py
-- [[dot-login()]] - code - gateway/ingest_api/email_service.py
-- [[dot-login()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-send()]] - code - gateway/ingest_api/email_service.py
-- [[dot-sender()]] - code - gateway/ingest_api/email_service.py
-- [[dot-sendmail()]] - code - gateway/ingest_api/email_service.py
-- [[dot-sendmail()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_email_send_routes_through_injectable_service()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_html_message_has_plain_fallback_then_html()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_plain_message_has_single_plain_part()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_send_html_uses_html_payload()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_send_logs_in_and_sendmails_over_injected_transport()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_send_propagates_auth_error()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-test_send_propagates_generic_smtp_error()]] - code - gateway/tests/test_gateway_email_service.py
-- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - rationale - gateway/ingest_api/email_service.py
-- [[GatewayEmailService]] - code - gateway/tests/test_gateway_email_service.py
-- [[GatewayEmailService_1]] - code - gateway/ingest_api/email_service.py
-- [[POST emailsend to the owner sends via forward._email_service — proving]] - rationale - gateway/tests/test_gateway_email_service.py
-- [[Protocol]] - code
-- [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - rationale - gateway/tests/test_gateway_email_service.py
-- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - rationale - gateway/ingest_api/email_service.py
-- [[Sends owner-comms email over an injectable SMTP transport.]] - rationale - gateway/ingest_api/email_service.py
-- [[SmtpLike]] - code - gateway/ingest_api/email_service.py
-- [[TestBuildMessage]] - code - gateway/tests/test_gateway_email_service.py
-- [[TestEndpointUsesService]] - code - gateway/tests/test_gateway_email_service.py
-- [[TestSend]] - code - gateway/tests/test_gateway_email_service.py
-- [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
-- [[TransportFactory]] - code - gateway/ingest_api/email_service.py
-- [[_FakeSmtp]] - code - gateway/tests/test_gateway_email_service.py
-- [[_service()]] - code - gateway/tests/test_gateway_email_service.py
-- [[email_service.py]] - code - gateway/ingest_api/email_service.py
-- [[test_gateway_email_service.py]] - code - gateway/tests/test_gateway_email_service.py
-- [[test_sender_property()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-_call()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-_call()_1]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-_run_generate()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_all_four_sentinel_pairs_present()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_all_mitigated_only_when_no_under_review()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_cve_row_contains_id_and_title()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_generate_returns_false_when_no_change()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_generate_returns_true_when_changed()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_hermes_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_hermes_h2_correct()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_hermes_markers_and_tbody_id()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_legacy_fallback_openclaw_only()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_no_stale_hermes_markers()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_no_stale_openclaw_markers()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_open_status_phrase()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_openclaw_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_openclaw_h2_correct()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_openclaw_markers_and_tbody_id()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_pagination_js_uses_unique_prefix()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_partial_status_phrase()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_under_review_badge_rendered()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_under_review_in_heading_not_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_under_review_none_cvss_renders_dash()]] - code - gateway/tests/test_generate_cve_page.py
+- [[dot-test_zero_cves()]] - code - gateway/tests/test_generate_cve_page.py
+- [[Path_17]] - code - gateway/tests/test_generate_cve_page.py
+- [[Return the generate-cve-page module (already loaded above).]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[TestBuildHeading]] - code - gateway/tests/test_generate_cve_page.py
+- [[TestBuildTable]] - code - gateway/tests/test_generate_cve_page.py
+- [[TestGenerate]] - code - gateway/tests/test_generate_cve_page.py
+- [[When list_cve_agents is not available, OpenClaw section is still generated.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[When some advisories are under_review the heading is honest, NOT 'all mitigated']] - rationale - gateway/tests/test_generate_cve_page.py
+- [[Write a fake index.html, invoke generate(), return updated HTML.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[_build_heading returns correct H2 text and sentinel markers.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[_build_table returns correct sentinel markers and unique element ids.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[_get_mod()]] - code - gateway/tests/test_generate_cve_page.py
+- [[_make_cve()]] - code - gateway/tests/test_generate_cve_page.py
+- [[generate() rewrites index.html with correct sections for both agents.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[test_generate_cve_page.py]] - code - gateway/tests/test_generate_cve_page.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,10 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
 
 ## Top bridge nodes
-- [[GatewayEmailService_1]] - degree 16, connects to 1 community
-- [[test_gateway_email_service.py]] - degree 8, connects to 1 community
-- [[email_service.py]] - degree 3, connects to 1 community
+- [[test_generate_cve_page.py]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "test_hermes_model_resolver.py"
+community: "is_overloaded"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/is_overloaded
 ---
 
 # local mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_LOCAL_MODEL_REF.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_falls_back_to_local_ref_when_main_unset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/rationale #graphify/EXTRACTED #community/is_overloaded

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "Recommendation"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # What SOC 2 Type II actually requires
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L559"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_ssrf_blocked_before_allowlist_check()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllowlistMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

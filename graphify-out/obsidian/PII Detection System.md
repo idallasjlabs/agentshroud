@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "MiddlewareManager (5)"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/MiddlewareManager_5
 ---
 
 # PII Detection System
@@ -17,4 +17,4 @@ tags:
 - [[Detection Patterns]] - `contains` [EXTRACTED]
 - [[Effectiveness Metrics]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5

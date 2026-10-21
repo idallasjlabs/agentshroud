@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Config Keys Read_3]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Function Details_14]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Purpose_124]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Related_20]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[_sanitize_presidio(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[_sanitize_regex(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[block_credentials(content, source)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[filter_xml_blocks(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[sanitize(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[sanitizer.py_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[sanitizer.py_1]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - concept - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, googleapis.com, .github.com, .githubusercontent.com, imapsmtp.mail.me.com)]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[BlockedUntrusted (LAN RFC1918, unlisted domains)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Deploying AgentShroud on Linux (docsoperationslinux.md)]] - document - docs/operations/linux.md
+- [[Deploying AgentShroud on macOS (docsoperationsmacos.md)]] - document - docs/operations/macos.md
+- [[Docker Buildx multi-arch build (linuxamd64, linuxarm64)]] - concept - docs/operations/linux.md
+- [[Docker Desktop (Apple Silicon  Intel transparent arch handling; resource allocation guidance)]] - concept - docs/operations/macos.md
+- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[Native Python gateway dev run uvicorn gateway.ingest_api.mainapp --host 127.0.0.1 --port 8080]] - concept - docs/operations/macos.md
+- [[Trust Boundary Diagram]] - concept - docs/diagrams/04-security.md
+- [[Trust Zone 0 — Owner (Isaiah Jefferson approvereject, gateway admin, container restart, secret rotation)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - concept - docs/operations/linux.md
+- [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - concept - docs/operations/linux.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,18 @@ members: 16
 TABLE source_file, type FROM #community/sanitizerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_competitive-report-.md dated reports]]
+- 2 edges to [[_COMMUNITY_text_control_center.py  agentshroud_manager.py]]
+- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh (2)]]
+- 1 edge to [[_COMMUNITY_Output Sections (ALL required)]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (2)]]
+
+## Top bridge nodes
+- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - degree 7, connects to 3 communities
+- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - degree 10, connects to 2 communities
+- [[Trust Boundary Diagram]] - degree 8, connects to 2 communities
+- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - degree 5, connects to 1 community
+- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - degree 4, connects to 1 community

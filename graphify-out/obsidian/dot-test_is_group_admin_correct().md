@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "colima-health-check.sh"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # .test_is_group_admin_correct()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAdminChecks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

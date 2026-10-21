@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L1002"
+community: "AgentTarget"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/AgentTarget
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event"
+community: "Production Safety Checklist (SKILL)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # EventBus
 
 ## Connections
-- [[dot-__init__()_83]] - `method` [EXTRACTED]
-- [[dot-emit()]] - `method` [EXTRACTED]
+- [[dot-__init__()_150]] - `method` [EXTRACTED]
+- [[dot-emit()_1]] - `method` [EXTRACTED]
 - [[dot-get_recent()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_7]] - `method` [EXTRACTED]
-- [[dot-subscribe()]] - `method` [EXTRACTED]
-- [[dot-unsubscribe()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_17]] - `method` [EXTRACTED]
+- [[dot-subscribe()_1]] - `method` [EXTRACTED]
+- [[dot-unsubscribe()_1]] - `method` [EXTRACTED]
 - [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

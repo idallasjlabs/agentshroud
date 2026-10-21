@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "InjectionAction"
+community: "ProxyAction (2)"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction_2
 ---
 
 # Test that clean content passes through unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_clean_content_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction_2

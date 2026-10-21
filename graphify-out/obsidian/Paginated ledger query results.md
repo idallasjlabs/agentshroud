@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # Paginated ledger query results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LedgerQueryResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

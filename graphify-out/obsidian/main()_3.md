@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "generate-job-schedule.py"
-location: "L259"
+community: "Sunday Upgrade prompt"
+location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[discover()]] - `calls` [EXTRACTED]
+- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

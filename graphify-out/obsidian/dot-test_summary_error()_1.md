@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output"
+community: "TestClassify"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/TestClassify
 ---
 
 # .test_summary_error()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrivySummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/TestClassify

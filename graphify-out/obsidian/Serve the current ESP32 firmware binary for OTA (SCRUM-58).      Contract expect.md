@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "server.py"
+community: "AgentShroud (system, C4 context) (2) (2)"
 location: "L378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/AgentShroud_system_C4_context_2_2
 ---
 
 # Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[firmware_bin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2_2

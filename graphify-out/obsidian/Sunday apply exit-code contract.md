@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "rationale"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L47-L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # Sunday apply exit-code contract
@@ -17,4 +17,4 @@ tags:
 - [[phase_apply()]] - `implements` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

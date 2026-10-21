@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "ServiceManager"
-location: "L34"
+community: "soc/router.py"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResponse]] - `method` [EXTRACTED]
+- [[dot-_init_db()]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

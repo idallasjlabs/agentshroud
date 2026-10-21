@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "AlertTelegramRelay"
+community: "EgressFilterConfig (2) (2)"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/EgressFilterConfig_2_2
 ---
 
 # test_subscribed_relay_receives_bus_emissions()
@@ -18,4 +18,4 @@ tags:
 - [[_alert_event()]] - `calls` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

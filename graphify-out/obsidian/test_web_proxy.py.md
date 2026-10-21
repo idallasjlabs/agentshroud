@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # test_web_proxy.py
@@ -24,8 +24,8 @@ tags:
 - [[TestEncodedPayloads]] - `contains` [EXTRACTED]
 - [[TestHiddenContent]] - `contains` [EXTRACTED]
 - [[TestIsDomainAllowed]] - `contains` [EXTRACTED]
-- [[TestPIIDetection_2]] - `contains` [EXTRACTED]
-- [[TestPassthroughMode]] - `contains` [EXTRACTED]
+- [[TestPIIDetection_1]] - `contains` [EXTRACTED]
+- [[TestPassthroughMode_1]] - `contains` [EXTRACTED]
 - [[TestPromptInjectionDetection]] - `contains` [EXTRACTED]
 - [[TestRateLimiting_1]] - `contains` [EXTRACTED]
 - [[TestResponseSizeLimits]] - `contains` [EXTRACTED]
@@ -34,10 +34,10 @@ tags:
 - [[TestWebProxyConfig]] - `contains` [EXTRACTED]
 - [[TestZeroWidthAttacks]] - `contains` [EXTRACTED]
 - [[WebProxy]] - `imports` [EXTRACTED]
-- [[WebProxyConfig]] - `imports` [EXTRACTED]
+- [[WebProxyConfig_1]] - `imports` [EXTRACTED]
 - [[audit_chain()]] - `contains` [EXTRACTED]
 - [[config()_2]] - `contains` [EXTRACTED]
-- [[passthrough_proxy()]] - `contains` [EXTRACTED]
+- [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
 - [[proxy()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

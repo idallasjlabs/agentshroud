@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "InjectionAction"
+community: "TestCheckCommandExecution"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/TestCheckCommandExecution
 ---
 
 # ._detect_unicode_obfuscation()
@@ -17,4 +17,4 @@ tags:
 - [[InjectionSeverity]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

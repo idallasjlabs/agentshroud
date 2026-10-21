@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
+community: "RateLimitGuard"
 location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/RateLimitGuard
 ---
 
 # MCP Proxy Tool Authorization
@@ -16,4 +16,4 @@ tags:
 - [[Dynamic Permission Adjustment]] - `contains` [EXTRACTED]
 - [[Tool Categories and Trust Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/RateLimitGuard

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentRegistry (2)"
-location: "L15"
+community: "AgentShroud Agentic OS"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/AgentShroud_Agentic_OS
 ---
 
 # Values
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[Brand Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

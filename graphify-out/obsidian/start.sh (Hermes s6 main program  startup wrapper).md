@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L1-L463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # start.sh (Hermes s6 main program / startup wrapper)
@@ -30,4 +30,4 @@ tags:
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `calls` [EXTRACTED]
 - [[start.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/_make_cve

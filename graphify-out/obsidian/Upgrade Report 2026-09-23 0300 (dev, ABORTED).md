@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-23.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Upgrade Report 2026-09-23 03:00 (dev, ABORTED)
@@ -21,4 +21,4 @@ tags:
 - [[colima-health-check.sh]] - `references` [EXTRACTED]
 - [[dev-result-date.json dev-prod handoff contract]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/_make_sanitizer

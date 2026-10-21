@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[dot-test_returns_false_for_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_returns_false_for_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_returns_false_for_stale_file()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_returns_true_for_fresh_file()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_three_zero_failures_no_report_on_disk()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestIsFresh]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[AgentShroud Text Interfaces]] - document - src/interfaces/README.md
+- [[Control Center]] - document - src/interfaces/README.md
+- [[Controls]] - document - src/interfaces/README.md
+- [[Future Interfaces]] - document - src/interfaces/README.md
+- [[Usage_2]] - document - src/interfaces/README.md
+- [[What it Shows]] - document - src/interfaces/README.md
+- [[interfacesREADME]] - document - src/interfaces/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,15 +22,3 @@ members: 7
 TABLE source_file, type FROM #community/TestIsFresh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
-- 2 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
-- 2 edges to [[_COMMUNITY__mock_dir_with_files]]
-
-## Top bridge nodes
-- [[TestIsFresh]] - degree 5, connects to 1 community
-- [[_mock_empty_dir()]] - degree 3, connects to 1 community
-- [[dot-test_returns_false_for_missing_dir()]] - degree 2, connects to 1 community
-- [[dot-test_returns_false_for_stale_file()]] - degree 2, connects to 1 community
-- [[dot-test_returns_true_for_fresh_file()]] - degree 2, connects to 1 community

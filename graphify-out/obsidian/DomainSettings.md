@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # DomainSettings
@@ -25,8 +25,8 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
 - [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
@@ -35,6 +35,6 @@ tags:
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
-- [[web_config.py]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxyConfig
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

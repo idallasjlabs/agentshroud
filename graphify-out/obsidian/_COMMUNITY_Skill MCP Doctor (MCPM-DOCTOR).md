@@ -1,32 +1,30 @@
 ---
 type: community
-members: 19
+members: 17
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
-**Members:** 19 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcpm-doctorSKILL]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[1. Check MCP Configuration]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_16]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_82]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Role_50]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_3]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[dot-do_request()]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[dot-from_dict()_5]] - code - gateway/runtime/config.py
+- [[dot-from_env()_1]] - code - gateway/runtime/config.py
+- [[dot-from_env()_2]] - code - gateway/security/memory_config.py
+- [[dot-from_file()]] - code - gateway/skills/manifest.py
+- [[dot-from_source()]] - code - gateway/skills/manifest.py
+- [[Build a ManifestEntry by reading path from disk.]] - rationale - gateway/skills/manifest.py
+- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - rationale - gateway/skills/manifest.py
+- [[Create configuration from environment variables.]] - rationale - gateway/security/memory_config.py
+- [[Load configuration from environment variables._1]] - rationale - gateway/runtime/config.py
+- [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
+- [[PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale]] - rationale - docker/bots/hermes/patch_telegram_do_request.py
+- [[Path_48]] - code - gateway/skills/manifest.py
+- [[_Instr]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[_wrapped()]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[cls]] - code
+- [[patch_telegram_do_request.py]] - code - docker/bots/hermes/patch_telegram_do_request.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +32,28 @@ members: 19
 TABLE source_file, type FROM #community/Skill_MCP_Doctor_MCPM-DOCTOR
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_SecurityPipeline (3)]]
+- 2 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)_1]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
+- 1 edge to [[_COMMUNITY__make_proxy]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+
+## Top bridge nodes
+- [[cls]] - degree 20, connects to 13 communities
+- [[Path_48]] - degree 5, connects to 1 community
+- [[dot-from_file()]] - degree 5, connects to 1 community
+- [[dot-from_source()]] - degree 5, connects to 1 community
+- [[dot-from_dict()_5]] - degree 3, connects to 1 community

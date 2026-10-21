@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # In-memory representation of the skills/agents/MCP manifest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillsManifest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_3

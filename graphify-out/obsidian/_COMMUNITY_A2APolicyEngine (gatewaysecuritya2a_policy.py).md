@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # A2APolicyEngine (gateway/security/a2a_policy.py)
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[A2APolicyEngine (gatewaysecuritya2a_policy.py)]] - concept - CHANGELOG.md
-- [[A2AProxy (gatewayproxya2a_proxy.py)]] - concept - CHANGELOG.md
-- [[v1.5.0 A2A Governance]] - document - CHANGELOG.md
+- [[dot-test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreLoggingMonitoring]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,9 @@ members: 3
 TABLE source_file, type FROM #community/A2APolicyEngine_gateway/security/a2a_policypy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
+
+## Top bridge nodes
+- [[TestScoreLoggingMonitoring]] - degree 4, connects to 1 community

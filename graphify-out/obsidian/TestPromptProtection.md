@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestPromptProtection"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # TestPromptProtection
@@ -16,12 +16,12 @@ tags:
 - [[dot-test_credential_redaction()]] - `method` [EXTRACTED]
 - [[dot-test_disabled_protection()]] - `method` [EXTRACTED]
 - [[dot-test_dynamic_bot_hostname_redaction()]] - `method` [EXTRACTED]
-- [[dot-test_edge_cases()_4]] - `method` [EXTRACTED]
+- [[dot-test_edge_cases()_2]] - `method` [EXTRACTED]
 - [[dot-test_file_reference_redaction()]] - `method` [EXTRACTED]
 - [[dot-test_fuzzy_matching()]] - `method` [EXTRACTED]
 - [[dot-test_hash_fingerprinting()]] - `method` [EXTRACTED]
 - [[dot-test_infrastructure_redaction()]] - `method` [EXTRACTED]
-- [[dot-test_initialization()_3]] - `method` [EXTRACTED]
+- [[dot-test_initialization()_4]] - `method` [EXTRACTED]
 - [[dot-test_multiple_redactions()]] - `method` [EXTRACTED]
 - [[dot-test_normal_content_passes()_1]] - `method` [EXTRACTED]
 - [[dot-test_product_name_not_redacted()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[Test cases for PromptProtection class.]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

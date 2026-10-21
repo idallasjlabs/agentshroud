@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[_make_stream()]] - `references` [EXTRACTED]
 - [[test_empty_request_line_returns_nothing()]] - `calls` [EXTRACTED]
 - [[test_handle_client_swallows_generic_exception()]] - `calls` [EXTRACTED]

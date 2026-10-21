@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "LOW — Informational (3)"
+community: "Error Index.md (2)"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational_3
+  - community/Error_Indexmd_2
 ---
 
 # LOW — Informational
@@ -19,4 +19,4 @@ tags:
 - [[L8 `python-jose` Dependency Has Known CVEs]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational_3
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2

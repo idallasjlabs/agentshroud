@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-manager()_1]] - code - gateway/tests/test_key_rotation.py
-- [[dot-sample_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_register_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
+- [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Key Classes  Functions_43]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Purpose_145]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Related_47]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Severity Order (for ranking)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[generate_summary(report)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[parse_trivy_output(raw)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[save_report(report, log_dir)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[trivy_report.py_2]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[trivy_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,18 +29,3 @@ members: 14
 TABLE source_file, type FROM #community/TestDomainValidationHelper_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestDomainValidationHelper]]
-- 3 edges to [[_COMMUNITY_UserSessionManager (2)]]
-- 2 edges to [[_COMMUNITY_KeyRotationManager]]
-- 2 edges to [[_COMMUNITY_KeyRotationManager (2)]]
-- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-
-## Top bridge nodes
-- [[TestKeyRotationManager]] - degree 15, connects to 6 communities
-- [[dot-manager()_1]] - degree 4, connects to 2 communities
-- [[dot-sample_credential()]] - degree 3, connects to 1 community
-- [[dot-test_get_health_score_all_healthy()]] - degree 3, connects to 1 community
-- [[dot-test_get_health_score_mixed_states()]] - degree 3, connects to 1 community

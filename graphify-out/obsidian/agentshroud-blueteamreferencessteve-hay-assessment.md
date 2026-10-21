@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md"
 type: "document"
-community: "agentshroud-blueteam/references/steve-hay-assessment.md"
+community: "sql-fixtures.sh (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/references/steve-hay-assessmentmd
+  - community/sql-fixturessh_2
 ---
 
 # agentshroud-blueteam/references/steve-hay-assessment.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-assessmentmd
+#graphify/document #graphify/EXTRACTED #community/sql-fixturessh_2

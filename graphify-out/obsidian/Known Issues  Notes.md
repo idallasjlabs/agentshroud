@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "auth.py"
-location: "L73"
+community: ".pi/mcp.json"
+location: "L456"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/pi/mcpjson
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/pi/mcpjson

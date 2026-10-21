@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.h"
 type: "code"
-community: "ui_face.h"
+community: "gateway/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ui_faceh
+  - community/gateway/__init__py
 ---
 
 # ui_face.h
 
-#graphify/code #graphify/EXTRACTED #community/ui_faceh
+#graphify/code #graphify/EXTRACTED #community/gateway/__init__py

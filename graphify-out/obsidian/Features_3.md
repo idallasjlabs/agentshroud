@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Browser Extension"
+community: "middleware.py"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/middlewarepy
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[5. Reading List Queue]] - `contains` [EXTRACTED]
 - [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

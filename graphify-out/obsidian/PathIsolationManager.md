@@ -12,8 +12,8 @@ tags:
 # PathIsolationManager
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_22]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_17]] - `method` [EXTRACTED]
 - [[dot-_apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[dot-_check_cross_user_access()]] - `method` [EXTRACTED]
 - [[dot-_cleanup_user_directory()]] - `method` [EXTRACTED]
@@ -34,7 +34,7 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages per-user path isolation for temporary files and directories.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]

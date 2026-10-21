@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[dot-test_basic_spawn()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_depth_exceeded_allowed_in_monitor()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_depth_exceeded_denied()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_depth_penalty_reduces_trust()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_disabled_always_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_strict_inheritance_caps_trust()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestSpawnAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SubagentGovernance]]
-- 2 edges to [[_COMMUNITY_GovernanceAction]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
 
 ## Top bridge nodes
-- [[TestSpawnAuthorization]] - degree 12, connects to 2 communities
+- [[VII. v0.8.0 Remediation]] - degree 7, connects to 1 community

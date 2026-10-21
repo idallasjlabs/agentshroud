@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (4)"
+community: "Quality Assurance (QA)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_4
+  - community/Quality_Assurance_QA
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_30]] - `contains` [EXTRACTED]
-- [[Related Skills_15]] - `contains` [EXTRACTED]
-- [[Usage_19]] - `contains` [EXTRACTED]
+- [[Purpose_23]] - `contains` [EXTRACTED]
+- [[Related Skills_9]] - `contains` [EXTRACTED]
+- [[Usage_12]] - `contains` [EXTRACTED]
 - [[hermesskillsi-daedalusREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_4
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

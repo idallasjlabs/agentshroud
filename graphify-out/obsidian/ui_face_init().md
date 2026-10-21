@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "wakeword.c"
+community: "graphify reference: extra exports and benchmark (2)"
 location: "L246"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/wakewordc
+  - community/graphify_reference_extra_exports_and_benchmark_2
 ---
 
 # ui_face_init()
@@ -18,4 +18,4 @@ tags:
 - [[face_set_emotion()]] - `calls` [INFERRED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/wakewordc
+#graphify/code #graphify/INFERRED #community/graphify_reference_extra_exports_and_benchmark_2

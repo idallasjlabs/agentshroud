@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+members: 10
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[dot-agentsskillsi-cdSKILL]] - document - .agents/skills/i-cd/SKILL.md
-- [[dot-agentsskillsi-cicdSKILL]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Deployment Matrix  (Direct to Prod)_1]] - document - .agents/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices_2]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)_2]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)_2]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Role_102]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - document - .agents/skills/i-cicd/SKILL.md
-- [[Skill cd_2]] - document - .agents/skills/i-cd/SKILL.md
+- [[dot-test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
+- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,9 @@ members: 9
 TABLE source_file, type FROM #community/Skill_CI/CD_Pipeline_Advisor_CICD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_AsyncMock]]
+
+## Top bridge nodes
+- [[TestConfig_1]] - degree 12, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "ProxyDashboard"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # .to_display()
@@ -16,4 +16,4 @@ tags:
 - [[ProxyStatusReport]] - `method` [EXTRACTED]
 - [[Return human-readable dashboard strings.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

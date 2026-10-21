@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ServiceManager"
+community: "test_soc_router_coverage.py"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_router_coveragepy
 ---
 
 # .list_services()
@@ -20,4 +20,4 @@ tags:
 - [[TestListServices]] - `calls` [EXTRACTED]
 - [[_known_services()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

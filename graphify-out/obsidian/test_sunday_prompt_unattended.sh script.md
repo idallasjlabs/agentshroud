@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
 type: "code"
-community: "test_sunday_prompt_unattended.sh"
+community: "AWS Cloud Management & FinOps Agent (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_sunday_prompt_unattendedsh
+  - community/AWS_Cloud_Management__FinOps_Agent_2
 ---
 
 # test_sunday_prompt_unattended.sh script
@@ -16,4 +16,4 @@ tags:
 - [[pass()_1]] - `calls` [EXTRACTED]
 - [[test_sunday_prompt_unattended.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_sunday_prompt_unattendedsh
+#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2

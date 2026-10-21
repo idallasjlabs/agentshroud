@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[browser-fetch package.json_1]] - code - skills/custom/browser-fetch/package.json
+- [[SCRUM-154 hung WebSocket client must not wedge the approval lock]] - rationale - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

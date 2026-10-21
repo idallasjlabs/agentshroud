@@ -1,13 +1,13 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Generic AI Agent Integration (HTTP Proxy Mode)"
+community: "Favicon 512x512 (AgentShroud logo mark)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Generic_AI_Agent_Integration_HTTP_Proxy_Mode
+  - community/Favicon_512x512_AgentShroud_logo_mark
 ---
 
 # Generic AI Agent Integration (HTTP Proxy Mode)
 
-#graphify/document #graphify/EXTRACTED #community/Generic_AI_Agent_Integration_HTTP_Proxy_Mode
+#graphify/document #graphify/EXTRACTED #community/Favicon_512x512_AgentShroud_logo_mark

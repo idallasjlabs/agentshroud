@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_round2_hardening.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "ResourceGuard (2)"
-location: "L51"
+community: "EgressFilterConfig (4)"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/EgressFilterConfig_4
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
+- [[TestGetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

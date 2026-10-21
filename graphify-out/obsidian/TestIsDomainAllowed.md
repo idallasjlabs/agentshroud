@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestIsDomainAllowed
 
 ## Connections
-- [[dot-test_case_insensitive()_1]] - `method` [EXTRACTED]
+- [[dot-test_case_insensitive()_2]] - `method` [EXTRACTED]
 - [[dot-test_empty_allowlist_blocks_everything()]] - `method` [EXTRACTED]
 - [[dot-test_exact_match()_1]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_does_not_match_other_root()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[Unit tests for WebProxyConfig.is_domain_allowed().]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

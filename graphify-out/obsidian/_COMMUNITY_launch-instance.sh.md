@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[DOCKER_HOST]] - code - scripts/launch-instance.sh
-- [[PATH_11]] - code - scripts/launch-instance.sh
-- [[find_port()]] - code - scripts/launch-instance.sh
-- [[launch-instance.sh]] - code - scripts/launch-instance.sh
-- [[launch-instance.sh script]] - code - scripts/launch-instance.sh
+- [[Purpose_55]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Related Skills_41]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Usage_44]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[openclawskillsi-sec-offenseREADME]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,9 @@ members: 5
 TABLE source_file, type FROM #community/launch-instancesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_soc.js]]
+
+## Top bridge nodes
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - degree 5, connects to 1 community

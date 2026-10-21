@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "1. GitHub MCP Authentication Reset"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

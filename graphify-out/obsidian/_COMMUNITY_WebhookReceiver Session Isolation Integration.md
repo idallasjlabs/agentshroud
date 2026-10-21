@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[WebhookReceiver Session Isolation Integration]] - code - gateway/tests/test_session_isolation.py
+- [[ToolChainAnalyzer.sanitize_tool_params (C34)]] - code - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

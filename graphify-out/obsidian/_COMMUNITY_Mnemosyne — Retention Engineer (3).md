@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Input Requirements_5]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Mnemosyne — Retention Engineer]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Output Format_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Persona_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Quality Checklist_5]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[Role_9]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[System Prompt_4]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
-- [[openclawskillsi-mnemosyneSKILL]] - document - docker/config/openclaw/skills/i-mnemosyne/SKILL.md
+- [[dot-agentsskillsi-odevSKILL]] - document - .agents/skills/i-odev/SKILL.md
+- [[Guardrails_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Invocation_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Role_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
+- [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV) (2)]]
+- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan (4)]]
 
 ## Top bridge nodes
-- [[Mnemosyne — Retention Engineer]] - degree 8, connects to 1 community
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - degree 10, connects to 3 communities

@@ -1,13 +1,13 @@
 ---
 source_file: ""
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "ToolResultInjectionScanner Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/ToolResultInjectionScanner_Test_Suite
 ---
 
 # asyncio
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner_Test_Suite

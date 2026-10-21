@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # ToolResultPIIConfig
 
 ## Connections
-- [[dot-__init__()_166]] - `references` [EXTRACTED]
-- [[dot-__init__()_167]] - `method` [EXTRACTED]
+- [[dot-__init__()_121]] - `references` [EXTRACTED]
+- [[dot-__init__()_120]] - `method` [EXTRACTED]
 - [[dot-get_config_for_tool()]] - `method` [EXTRACTED]
 - [[dot-set_config()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_7]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_5]] - `calls` [EXTRACTED]
 - [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
 - [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_disabled()]] - `calls` [EXTRACTED]
@@ -26,14 +26,14 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[PII configuration with per-tool overrides]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/openclaw/skills/i-cr/SKILLmd

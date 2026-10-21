@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/runtime/config.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L200"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_45]] - `references` [EXTRACTED]
-- [[MCPPolicyAction]] - `calls` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
+- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

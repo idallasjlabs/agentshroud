@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "concept"
-community: "security/__init__.py"
+community: "MCP Auth Reset (MCPM-AUTH-RESET) (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/security/__init__py
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET_2
 ---
 
 # Wazuh (file integrity monitoring)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[security__init__.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/security/__init__py
+#graphify/concept #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET_2

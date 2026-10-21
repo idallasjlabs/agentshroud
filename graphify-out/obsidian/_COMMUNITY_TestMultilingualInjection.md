@@ -8,42 +8,42 @@ members: 36
 **Members:** 36 nodes
 
 ## Members
-- [[dot-setup_method()_16]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_obfuscation_resistance()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_pattern_priority()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier1_dutch_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier1_hindi_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier1_italian_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier1_japanese_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier1_korean_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier1_portuguese_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier2_bengali_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier2_persian_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier2_tagalog_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier2_tamil_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[dot-test_tier2_ukrainian_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[Set up PromptGuard with standard thresholds.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Bengali injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Dutch injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Hindi injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Italian injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Japanese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Korean injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test PersianFarsi injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Portuguese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Tagalog injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Tamil injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Ukrainian injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test injection attempts mixing languages.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test resistance to basic obfuscation attempts.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test that benign multilingual text is not blocked.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
+- [[AgentShroud Docker Configuration]] - document - docker/README.md
+- [[Architecture_4]] - document - docker/README.md
+- [[Check Status]] - document - docker/README.md
+- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
+- [[Container Stack]] - document - docker/README.md
+- [[Core Configuration]] - document - docker/README.md
+- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
+- [[Detection contract]] - document - docker/README.md
+- [[Development_1]] - document - docker/README.md
+- [[Documentation_2]] - document - docker/README.md
+- [[Exec into Container]] - document - docker/README.md
+- [[Files_1]] - document - docker/README.md
+- [[Hermes  HCI]] - document - docker/README.md
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
+- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
+- [[Next Steps (Phase 4+)]] - document - docker/README.md
+- [[Port Reference]] - document - docker/README.md
+- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
+- [[Quick Start_3]] - document - docker/README.md
+- [[Rebuild Containers]] - document - docker/README.md
+- [[Reference]] - document - docker/README.md
+- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
+- [[Secrets]] - document - docker/README.md
+- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
+- [[Security Features (Implemented)]] - document - docker/README.md
+- [[Start the Stack]] - document - docker/README.md
+- [[Startup Warnings Reference]] - document - docker/README.md
+- [[Stop the Stack]] - document - docker/README.md
+- [[Test Chat]] - document - docker/README.md
+- [[Troubleshooting_9]] - document - docker/README.md
+- [[Usage_61]] - document - docker/README.md
+- [[Verify Security]] - document - docker/README.md
+- [[View Logs]] - document - docker/README.md
+- [[dockerREADME]] - document - docker/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,8 +53,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
 
 ## Top bridge nodes
-- [[TestMultilingualInjection]] - degree 20, connects to 1 community
-- [[dot-setup_method()_16]] - degree 3, connects to 1 community
+- [[AgentShroud Docker Configuration]] - degree 18, connects to 1 community
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community

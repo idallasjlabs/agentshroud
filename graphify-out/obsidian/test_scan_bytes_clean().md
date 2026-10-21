@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "asyncio"
+community: "ApprovalQueueConfig (2) (2)"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # test_scan_bytes_clean()
@@ -17,4 +17,4 @@ tags:
 - [[scan_bytes()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

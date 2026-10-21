@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "AI Agent"
+community: "main/audio.h"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AI_Agent
+  - community/main/audioh
 ---
 
 # AI Agent
 
-#graphify/concept #graphify/EXTRACTED #community/AI_Agent
+#graphify/concept #graphify/EXTRACTED #community/main/audioh

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Restart Procedure"
+community: "A2AMethod"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/A2AMethod
 ---
 
 # test_key_rotation.py
 
 ## Connections
 - [[CredentialInfo]] - `imports` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `imports` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `imports` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
+- [[KeyRotationConfig]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[MockValidator]] - `contains` [EXTRACTED]
 - [[RotationStatus]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

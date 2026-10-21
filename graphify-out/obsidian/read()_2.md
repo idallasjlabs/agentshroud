@@ -1,18 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_wire_llm_settings.js"
-location: "L57"
+community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
+location: "L7836"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
 ---
 
 # read()
 
 ## Connections
-- [[readHermesMcpServers()]] - `calls` [EXTRACTED]
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_73]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand

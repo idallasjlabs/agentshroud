@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Module Inventory"
+community: "lvgl_kawaii_face.c"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/lvgl_kawaii_facec
 ---
 
 # Layer 1: Perimeter Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[4. Geo-Blocking]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

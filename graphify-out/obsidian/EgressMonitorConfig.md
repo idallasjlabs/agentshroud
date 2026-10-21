@@ -12,13 +12,13 @@ tags:
 # EgressMonitorConfig
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_21]] - `references` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_16]] - `references` [EXTRACTED]
 - [[dot-test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
@@ -34,10 +34,10 @@ tags:
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_2]] - `calls` [EXTRACTED]
+- [[default_config()_4]] - `calls` [EXTRACTED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor_config()_1]] - `calls` [EXTRACTED]
+- [[monitor_config()_2]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 

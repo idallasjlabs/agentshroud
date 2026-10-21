@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[check-status.sh]] - code - docker/scripts/check-status.sh
-- [[check-status.sh script]] - code - docker/scripts/check-status.sh
+- [[feature-priorities_1]] - document - docs/planning/redteam/feature-priorities.md
+- [[feature-priorities]] - document - docs/planning/redteam/feature-priorities.md
 
 ## Live Query (requires Dataview plugin)
 

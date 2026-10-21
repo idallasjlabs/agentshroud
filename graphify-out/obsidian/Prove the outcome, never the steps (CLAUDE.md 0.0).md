@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "rationale"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L704-L750"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # Prove the outcome, never the steps (CLAUDE.md 0.0)
@@ -17,4 +17,4 @@ tags:
 - [[phase_apply()]] - `references` [EXTRACTED]
 - [[phase_baseline()]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

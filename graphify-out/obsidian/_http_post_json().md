@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "TestEgressTelegramNotify"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/TestEgressTelegramNotify
 ---
 
 # _http_post_json()
@@ -15,4 +15,4 @@ tags:
 - [[POST and return (status_code, response_text). Raises urllib errors up.]] - `rationale_for` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

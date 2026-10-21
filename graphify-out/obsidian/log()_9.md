@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "sunday-scan.sh"
-location: "L56"
+community: "Red Team Assessment v1.2.0"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/Red_Team_Assessment_v120
 ---
 
 # log()
 
 ## Connections
-- [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[security-report-retention.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-scansh
+#graphify/code #graphify/EXTRACTED #community/Red_Team_Assessment_v120

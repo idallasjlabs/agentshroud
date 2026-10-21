@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "CrossBotTrustLedger"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/CrossBotTrustLedger
 ---
 
 # Manages permissions for MCP tool calls.      Default-allow philosophy: tools wor
 
 ## Connections
-- [[MCPPermissionManager]] - `rationale_for` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

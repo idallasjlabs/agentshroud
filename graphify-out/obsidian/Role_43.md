@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "GSDE&G Skills Reference Guide"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

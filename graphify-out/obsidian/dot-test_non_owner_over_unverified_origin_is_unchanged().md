@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # .test_non_owner_over_unverified_origin_is_unchanged()
@@ -15,4 +15,4 @@ tags:
 - [[A non-owner gains nothing and loses nothing from origin checking.]] - `rationale_for` [EXTRACTED]
 - [[TestOriginAwareAuthorization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

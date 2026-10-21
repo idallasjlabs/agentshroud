@@ -1,21 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
-type: "document"
-community: "Mnemosyne — Retention Engineer (2)"
-location: "L1"
+source_file: "docs/architecture/agentic-os.md"
+type: "concept"
+community: "Output Sections (ALL required) (3)"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_2
+  - community/Output_Sections_ALL_required_3
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Purpose_171]] - `contains` [EXTRACTED]
-- [[Related Skills_109]] - `contains` [EXTRACTED]
-- [[Usage_117]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `shares_data_with` [EXTRACTED]
+- [[Oracle — Feedback Analyst_4]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2
+#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3

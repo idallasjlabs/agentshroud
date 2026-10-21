@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L29"
+community: "MCPPolicyEngine"
+location: "L882"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeRBAC
+  - community/MCPPolicyEngine
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-__init__()_112]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[ws_logs()]] - `references` [EXTRACTED]
+- [[ws_updates()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

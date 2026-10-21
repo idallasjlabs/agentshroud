@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy (2)"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy_2
 ---
 
 # .test_169_254_link_local_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSRFDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy_2

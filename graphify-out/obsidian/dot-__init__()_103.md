@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L13"
+community: "plan_remediation"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/plan_remediation
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

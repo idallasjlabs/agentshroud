@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "AuditEvent"
-location: "L169"
+community: "TestOutboundPipelineIntegration"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .log_event()
 
 ## Connections
-- [[dot-_get_latest_hash()]] - `calls` [EXTRACTED]
-- [[dot-compute_entry_hash()]] - `calls` [EXTRACTED]
-- [[AuditEvent_1]] - `references` [EXTRACTED]
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Log a new audit event with hash chain integrity.          Args             bot_]] - `rationale_for` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

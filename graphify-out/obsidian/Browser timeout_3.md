@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (2)"
+community: "setup-secrets.sh (2)"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_2
+  - community/setup-secretssh_2
 ---
 
 # "Browser timeout"
 
 ## Connections
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2
+#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

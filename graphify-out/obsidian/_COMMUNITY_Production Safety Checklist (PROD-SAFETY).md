@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Production Safety Checklist (PROD-SAFETY)]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Purpose_58]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Related Skills_43]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Usage_47]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[openclawskillsi-psREADME]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Browser — Secure Browser Automation]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Purpose_22]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Related Skills_8]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Usage_11]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[hermesskillsi-browserREADME]] - document - docker/config/hermes/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/Production_Safety_Checklist_PROD-SAFETY
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Production Safety Checklist (PROD-SAFETY)]] - degree 5, connects to 1 community

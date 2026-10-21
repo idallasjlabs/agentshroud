@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "FetchOutcome"
-location: "L32"
+community: "AgentShroud™ Brand Guidelines"
+location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `calls` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

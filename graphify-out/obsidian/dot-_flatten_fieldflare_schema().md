@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "ModeRequest"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ModeRequest
 ---
 
 # ._flatten_fieldflare_schema()
@@ -20,4 +20,4 @@ tags:
 - [[Rewrite a tool-parameter JSON schema into the subset Fieldflare's Gemma…]] - `rationale_for` [EXTRACTED]
 - [[test_fieldflare_shim_degenerate_unions()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

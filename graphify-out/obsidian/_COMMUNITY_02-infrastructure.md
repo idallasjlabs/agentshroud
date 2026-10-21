@@ -8,25 +8,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
-- [[07-team-planning]] - document - docs/diagrams/07-team-planning.md
-- [[21. Agile Team Diagram — Structure & Roles]] - document - docs/diagrams/07-team-planning.md
-- [[22. Dependency Graph — Component Dependencies]] - document - docs/diagrams/07-team-planning.md
-- [[23. Roadmap  Timeline — Development Phases]] - document - docs/diagrams/07-team-planning.md
-- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
-- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
-- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Team, Planning & Dependency Diagrams]] - document - docs/diagrams/07-team-planning.md
-- [[Agile Team Diagram — Structure & Roles]] - concept - docs/diagrams/07-team-planning.md
-- [[Dependency Graph — Component Deployment Order]] - concept - docs/diagrams/07-team-planning.md
-- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
-- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
-- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
-- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
-- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
-- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
-- [[Roadmap  Timeline — Development Phases]] - concept - docs/diagrams/07-team-planning.md
+- [[1. Check MCP Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_16]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_63]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Role_52]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_4]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[hermesskillsi-mcpm-doctorSKILL]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,10 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[02-infrastructure]] - degree 5, connects to 1 community
-- [[07-team-planning]] - degree 5, connects to 1 community
-- [[Roadmap  Timeline — Development Phases]] - degree 2, connects to 1 community
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - degree 9, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "MCPPolicyEngine (2)"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CompetitiveIntelReport
+  - community/MCPPolicyEngine_2
 ---
 
 # Fetcher
@@ -18,4 +18,4 @@ tags:
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[make_httpx_fetcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CompetitiveIntelReport
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2

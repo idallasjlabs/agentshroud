@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[🔴 Priority 1 Critical Security Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🟡 Priority 2 Operational Security Maturity]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🟢 Priority 3 Security Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[approved (action executed, ledger entry written)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[expired (1-hour TTL exceeded, auto-transition on load)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[pending (bot submits action requiring approval)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[rejected (action blocked, bot notified)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/AgentShroud_Phase_Review__2026-02-23_3
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-
-## Top bridge nodes
-- [[3. Remaining Work — Prioritized by Value_2]] - degree 4, connects to 1 community

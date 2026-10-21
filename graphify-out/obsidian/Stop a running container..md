@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "MiddlewareManager (6)"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/MiddlewareManager_6
 ---
 
 # Stop a running container.
 
 ## Connections
-- [[dot-stop()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6

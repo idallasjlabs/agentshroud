@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "§1 — Re-run of Prior Scenarios"
+community: "Bot Container (agent decides: reply + tool call)"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1__Re-run_of_Prior_Scenarios
+  - community/Bot_Container_agent_decides_reply__tool_call
 ---
 
 # Scenario 03 — Session Isolation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§1 — Re-run of Prior Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call

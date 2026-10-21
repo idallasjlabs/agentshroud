@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[Weekly Hermes Stability Report_1]] - document - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
 
 ## Live Query (requires Dataview plugin)
 

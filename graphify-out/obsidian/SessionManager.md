@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "SessionManager"
+community: "TelegramAPIProxy (2)"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TelegramAPIProxy_2
 ---
 
 # SessionManager
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_205]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_154]] - `method` [EXTRACTED]
 - [[dot-_fingerprint()]] - `method` [EXTRACTED]
-- [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()_2]] - `method` [EXTRACTED]
 - [[dot-create_session()]] - `method` [EXTRACTED]
 - [[dot-destroy_session()]] - `method` [EXTRACTED]
 - [[dot-generate_instruction_nonce()]] - `method` [EXTRACTED]
-- [[dot-manager()_2]] - `calls` [EXTRACTED]
+- [[dot-manager()_1]] - `calls` [EXTRACTED]
 - [[dot-register_event_source()]] - `method` [EXTRACTED]
 - [[dot-rotate_session()]] - `method` [EXTRACTED]
 - [[dot-test_cleanup_expired()]] - `calls` [EXTRACTED]
@@ -35,14 +35,14 @@ tags:
 - [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionCreation]] - `uses` [INFERRED]
 - [[TestSessionRotation]] - `uses` [INFERRED]
@@ -51,6 +51,6 @@ tags:
 - [[Wang et al. 2026 — Event injection attacks (arXiv2602.08412)]] - `cites` [EXTRACTED]
 - [[manager()_4]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

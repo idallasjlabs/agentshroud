@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+type: "code"
+community: "ControlCenter"
+location: "L292"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/ControlCenter
+---
+
+# .test_every_agent_list_accepts_an_append()
+
+## Connections
+- [[TestLiveRegistryLayout]] - `method` [EXTRACTED]
+- [[_adv()]] - `calls` [EXTRACTED]
+- [[_sync()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

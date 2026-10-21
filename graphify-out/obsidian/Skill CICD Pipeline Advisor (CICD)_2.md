@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "Management Dashboard"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/Management_Dashboard
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
@@ -18,6 +18,6 @@ tags:
 - [[GitHub Actions Best Practices_2]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)_2]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)_2]] - `contains` [EXTRACTED]
-- [[Role_102]] - `contains` [EXTRACTED]
+- [[Role_94]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Management_Dashboard

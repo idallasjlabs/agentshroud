@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # ._save_sessions()
@@ -15,9 +15,9 @@ tags:
 - [[dot-add_conversation_message()]] - `calls` [EXTRACTED]
 - [[dot-cleanup_old_sessions()_1]] - `calls` [EXTRACTED]
 - [[dot-get_or_create_session()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_11]] - `calls` [EXTRACTED]
 - [[dot-update_user_trust_level()]] - `calls` [EXTRACTED]
 - [[Atomically persist current sessions to the metadata file.          Writes are se]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

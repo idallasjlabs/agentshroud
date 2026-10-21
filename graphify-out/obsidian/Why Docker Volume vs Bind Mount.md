@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
+community: "test_jira_dev_ticket.py"
 location: "L347"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/test_jira_dev_ticketpy
 ---
 
 # Why Docker Volume vs Bind Mount?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy

@@ -1,23 +1,32 @@
 ---
 type: community
-members: 10
+members: 19
 ---
 
 # 1. GitHub MCP Authentication Reset (2)
 
-**Members:** 10 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[1. GitHub MCP Authentication Reset_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[1. GitHub MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 1 Generate New Personal Access Token_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 1 Generate New Personal Access Token_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 2 Update .env File_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 2 Update .env File_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 3 Verify Authentication_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 3 Verify Authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 4 Restart Claude Code]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[dot-__aenter__()_6]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__aexit__()_6]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__aiter__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__anext__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__call__()_8]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_146]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_147]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-send()_2]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_tail_ws_missing_websockets_package()]] - code - gateway/tests/test_cli_coverage.py
+- [[Async-iterable WebSocket double.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[TestTailWS]] - code - gateway/tests/test_cli_coverage.py
+- [[_FakeConnect]] - code - gateway/tests/test_cli_coverage.py
+- [[_FakeWS]] - code - gateway/tests/test_cli_coverage.py
+- [[_install_fake_websockets()]] - code - gateway/tests/test_cli_coverage.py
+- [[_tail_ws()]] - code - gateway/cli/main.py
+- [[test_cli_coverage.py]] - code - gateway/tests/test_cli_coverage.py
+- [[test_main_entrypoint_runs_cli_group()]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +36,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (3)]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (4)]]
+- 9 edges to [[_COMMUNITY_AlertDispatcher (4)]]
+- 7 edges to [[_COMMUNITY_OpenClaw and Hermes are processed on fully separate paths; one failing never…]]
+- 7 edges to [[_COMMUNITY__stub_client]]
+- 2 edges to [[_COMMUNITY_→ {site site1, test_mode True, output_prefix _testsite1}]]
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (6)]]
 
 ## Top bridge nodes
-- [[1. GitHub MCP Authentication Reset_2]] - degree 6, connects to 1 community
-- [[1. GitHub MCP Authentication Reset_1]] - degree 5, connects to 1 community
-- [[Step 4 Restart Codex]] - degree 3, connects to 1 community
+- [[test_cli_coverage.py]] - degree 26, connects to 5 communities
+- [[_FakeWS]] - degree 8, connects to 1 community
+- [[_tail_ws()]] - degree 7, connects to 1 community
+- [[_FakeConnect]] - degree 7, connects to 1 community
+- [[TestTailWS]] - degree 5, connects to 1 community

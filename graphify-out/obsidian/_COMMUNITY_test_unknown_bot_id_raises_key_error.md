@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_unknown_bot_id_raises_key_error]] - code - gateway/tests/test_agent_cve_registry.py
+- [[SecurityPipeline.process_outbound]] - code - gateway/proxy/pipeline.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "soc.js (5)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/socjs_5
 ---
 
 # openclaw/skills/i-ti/README.md
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/socjs_5

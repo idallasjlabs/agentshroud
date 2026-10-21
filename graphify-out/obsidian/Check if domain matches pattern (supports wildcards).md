@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: "browser/scripts/browse.py (2)"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/browser/scripts/browsepy_2
 ---
 
 # Check if domain matches pattern (supports wildcards)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_domain_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy_2

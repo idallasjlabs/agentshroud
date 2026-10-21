@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-25.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Upgrade Report 2026-09-25 (dev, PASS gate / PARTIAL)
@@ -19,8 +19,8 @@ tags:
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[dev-result-date.json dev-prod handoff contract]] - `references` [EXTRACTED]
-- [[docker-socket-proxy service (tecnativa, digest-pinned)]] - `references` [EXTRACTED]
+- [[docker-socket-proxy (digest pinned)]] - `references` [EXTRACTED]
 - [[falcoctl 0.14.2 requires Go = 1.27 (GOTOOLCHAIN=local)]] - `references` [EXTRACTED]
 - [[sunday-scan.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/_make_sanitizer

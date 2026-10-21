@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "soc.js (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/socjs_3
 ---
 
 # Hermes — Podcast Production Orchestrator
 
 ## Connections
-- [[Purpose_91]] - `contains` [EXTRACTED]
-- [[Related Skills_70]] - `contains` [EXTRACTED]
-- [[Usage_80]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-hermesREADME]] - `contains` [EXTRACTED]
+- [[Purpose_45]] - `contains` [EXTRACTED]
+- [[Related Skills_31]] - `contains` [EXTRACTED]
+- [[Usage_34]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-hermesREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/socjs_3

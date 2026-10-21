@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Monthly Chaos Engineering Drill]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[chatbot__init__.py]] - code - chatbot/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "TestTail"
+community: "Migration Path (SSH → Distributed Node)"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTail
+  - community/Migration_Path_SSH__Distributed_Node
 ---
 
 # TestTail
@@ -22,4 +22,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTail
+#graphify/code #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node

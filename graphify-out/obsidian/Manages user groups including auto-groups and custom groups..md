@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Action (2)"
+community: "Function Details"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Action_2
+  - community/Function_Details
 ---
 
 # Manages user groups including auto-groups and custom groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Action_2
+#graphify/rationale #graphify/EXTRACTED #community/Function_Details

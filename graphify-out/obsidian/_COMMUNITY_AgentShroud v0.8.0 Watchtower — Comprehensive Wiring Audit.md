@@ -1,28 +1,33 @@
 ---
 type: community
-members: 15
+members: 20
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Comprehensive Wiring Audit
 
-**Members:** 15 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Executive Summary_13]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Purpose_85]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_47]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_48]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Security Controls_1]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[playwright]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[volumes_1]] - document - docs/vault/06 - Containers & Services/volumes.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,8 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 2 communities
+- [[volumes_1]] - degree 4, connects to 2 communities
+- [[playwright]] - degree 3, connects to 1 community

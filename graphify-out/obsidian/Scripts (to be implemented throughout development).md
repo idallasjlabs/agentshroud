@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "Contributing to AgentShroud™"
+community: "version_routes.py"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/version_routespy
 ---
 
 # Scripts (to be implemented throughout development)
@@ -17,4 +17,4 @@ tags:
 - [[Security Scripts]] - `contains` [EXTRACTED]
 - [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/version_routespy

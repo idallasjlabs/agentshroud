@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
+community: "mcp_inspector.py"
 location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/mcp_inspectorpy
 ---
 
 # Summary
@@ -16,4 +16,4 @@ tags:
 - [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

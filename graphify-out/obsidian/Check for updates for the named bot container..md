@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py (2)"
+community: "MCPPolicyEngine"
 location: "L522"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/MCPPolicyEngine
 ---
 
 # Check for updates for the named bot container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_bot_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

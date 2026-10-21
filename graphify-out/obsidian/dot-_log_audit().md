@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # ._log_audit()
@@ -19,4 +19,4 @@ tags:
 - [[KeyAuditEvent]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

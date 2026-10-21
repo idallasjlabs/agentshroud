@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+members: 13
 ---
 
 # agent_cve_registry.py
 
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Build the H2 heading block for one agent's CVE section.]] - rationale - scripts/generate-cve-page.py
-- [[Build the full paginated CVE table block for one agent's section.      Args]] - rationale - scripts/generate-cve-page.py
-- [[Regenerate all CVE sections in docsindex.html.  Returns True if changed.]] - rationale - scripts/generate-cve-page.py
-- [[Return a mapping of bot_id → CVE list, using the new API when available.      Fa]] - rationale - scripts/generate-cve-page.py
-- [[Return the human-readable display name for a bot_id.]] - rationale - scripts/generate-cve-page.py
-- [[_agent_display_name()]] - code - scripts/generate-cve-page.py
-- [[_build_heading()]] - code - scripts/generate-cve-page.py
-- [[_build_table()]] - code - scripts/generate-cve-page.py
-- [[_replace_between()]] - code - scripts/generate-cve-page.py
-- [[_resolve_registries()]] - code - scripts/generate-cve-page.py
-- [[generate()]] - code - scripts/generate-cve-page.py
-- [[generate-cve-page.py]] - code - scripts/generate-cve-page.py
+- [[Collaborator Setup Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Executive Summary_14]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Files intentionally not for collaborators]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Optional local tooling]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required for local model-profile persistence]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required for standard Docker runtime]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required if using 1Password-backed secret retrieval]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Required if using external LLM providers]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Restore Priority After Clean Build]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Root `.env`]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - rationale - docs/security/container-policy.md
+- [[Secrets Usage and Collaborator Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +30,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_sync-cve-registry.py (2)]]
-- 2 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY__make_cve]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_GroupConfig]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes
-- [[generate-cve-page.py]] - degree 9, connects to 3 communities
-- [[_resolve_registries()]] - degree 5, connects to 2 communities
+- [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - degree 5, connects to 3 communities
+- [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - degree 2, connects to 1 community

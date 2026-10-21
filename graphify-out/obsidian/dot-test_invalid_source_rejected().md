@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "test_security.py"
+community: "DNSFilterConfig"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/DNSFilterConfig
 ---
 
 # .test_invalid_source_rejected()
 
 ## Connections
-- [[ForwardRequest]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_securitypy
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

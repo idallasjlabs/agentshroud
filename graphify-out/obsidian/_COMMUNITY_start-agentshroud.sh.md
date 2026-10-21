@@ -8,28 +8,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[Env-split cron enabledisable pass (dev enables, prod disables)]] - code - docker/scripts/start-agentshroud.sh
-- [[Pending OpenClaw migration repair (openclaw doctor --fix) before gateway start]] - code - docker/scripts/start-agentshroud.sh
-- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
-- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
-- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
-- [[_model_runtime_ready()]] - code - docker/scripts/start-agentshroud.sh
-- [[_poll_openclaw_ready()]] - code - docker/scripts/start-agentshroud.sh
-- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
-- [[_read_secret_file()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
-- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_bot_token()]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_get_me_ready()]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_send()]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_send_photo()]] - code - docker/scripts/start-agentshroud.sh
-- [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
-- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
-- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
+- [[ASCII Art (fallback — no renderer available)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_13]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Dependencies_13]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[File and Directory Conventions_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Online renderer_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Render locally with mmdc_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Rendering and Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Role_39]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Rules_14]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Validation Checklist_7]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[hermesskillsi-tiSKILL]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,12 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh (2)]]
-- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
-- 1 edge to [[_COMMUNITY_security-entrypoint.sh]]
-- 1 edge to [[_COMMUNITY__is_op_reference_allowed]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[start-agentshroud.sh]] - degree 28, connects to 6 communities
+- [[Skill Technical Illustrator (TI)_1]] - degree 12, connects to 1 community

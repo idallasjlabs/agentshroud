@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logo.png"
 type: "image"
-community: "branding/README.md"
+community: "run-standalone.sh (Hermes docker run launcher) (2)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/READMEmd
+  - community/run-standalonesh_Hermes_docker_run_launcher_2
 ---
 
 # AgentShroud Primary Logo
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud MerchandiseStationery Mockup]] - `conceptually_related_to` [INFERRED]
 - [[brandingREADME]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/branding/READMEmd
+#graphify/image #graphify/INFERRED #community/run-standalonesh_Hermes_docker_run_launcher_2

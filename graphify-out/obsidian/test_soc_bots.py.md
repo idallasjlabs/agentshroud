@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "AlertDispatcher (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/AlertDispatcher_2
 ---
 
 # test_soc_bots.py
 
 ## Connections
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[Role_23]] - `imports` [EXTRACTED]
+- [[Role_19]] - `imports` [EXTRACTED]
 - [[SCLCaller_2]] - `imports` [EXTRACTED]
-- [[SecurityEvent]] - `imports` [EXTRACTED]
+- [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
 - [[ServiceStatus_1]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestAgentCvesBotId]] - `contains` [EXTRACTED]
 - [[TestBotSelectorFrontend]] - `contains` [EXTRACTED]
 - [[TestCollaboratorActivityBotFilter]] - `contains` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[list_bots()]] - `imports` [EXTRACTED]
 - [[list_services()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

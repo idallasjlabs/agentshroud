@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Changelog Entry]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Dependencies]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Formatting]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Validation Checklist]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Voice & Tone]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[What Belongs Where]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Writing Style Rules]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[dot-test_env_token_and_url_used()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_explicit_args_win()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_gateway_password_fallback()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-test_missing_token_raises_value_error()]] - code - gateway/tests/test_cli_coverage.py
+- [[Build SCLClient from args or environment variables.]] - rationale - gateway/cli/client.py
+- [[TestClientFromEnv]] - code - gateway/tests/test_cli_coverage.py
+- [[client.py]] - code - gateway/cli/client.py
+- [[client_from_env()]] - code - gateway/cli/client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 4 edges to [[_COMMUNITY_OpenClaw and Hermes are processed on fully separate paths; one failing never…]]
+- 2 edges to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (4)]]
 
 ## Top bridge nodes
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - degree 6, connects to 1 community
+- [[client_from_env()]] - degree 9, connects to 2 communities
+- [[TestClientFromEnv]] - degree 6, connects to 2 communities
+- [[client.py]] - degree 3, connects to 2 communities

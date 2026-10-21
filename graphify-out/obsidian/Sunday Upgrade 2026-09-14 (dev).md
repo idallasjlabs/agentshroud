@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "test_prompt_guard.py (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/test_prompt_guardpy_2
 ---
 
 # Sunday Upgrade 2026-09-14 (dev)
@@ -16,4 +16,4 @@ tags:
 - [[Hermes Cron Dedupe (dev)]] - `references` [AMBIGUOUS]
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/test_prompt_guardpy_2

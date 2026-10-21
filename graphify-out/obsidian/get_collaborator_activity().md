@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "ApprovalQueueConfig (3)"
 location: "L969"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ApprovalQueueConfig_3
 ---
 
 # get_collaborator_activity()
@@ -20,4 +20,4 @@ tags:
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -1,14 +1,14 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "CLASS_PROFILE"
+community: "tests/__init__.py"
 location: "242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLASS_PROFILE
+  - community/tests/__init__py
 ---
 
 # CLASS_PROFILE
 
-#graphify/code #graphify/EXTRACTED #community/CLASS_PROFILE
+#graphify/code #graphify/EXTRACTED #community/tests/__init__py

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "Canvas Skill"
 location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/Canvas_Skill
 ---
 
 # .test_load_collab_store_returns_empty_on_corrupt_json()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/Canvas_Skill

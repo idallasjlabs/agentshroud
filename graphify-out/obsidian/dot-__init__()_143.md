@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L348"
+community: "Remediation"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Remediation
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `calls` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[Path_45]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/Remediation

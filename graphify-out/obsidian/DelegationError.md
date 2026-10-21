@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # DelegationError
@@ -27,4 +27,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DelegationManager
+#graphify/code #graphify/INFERRED #community/_make_proxy

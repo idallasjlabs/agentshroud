@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "PortManager"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PortManager
 ---
 
 # Internal infrastructure headers should be stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_metadata_guard_strips_internal_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

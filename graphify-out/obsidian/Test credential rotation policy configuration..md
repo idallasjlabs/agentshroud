@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Restart Procedure"
+community: "A2AMethod"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/A2AMethod
 ---
 
 # Test credential rotation policy configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialRotationPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "test_mfa_guard.py"
 location: "L400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_mfa_guardpy
 ---
 
 # Return True if fluent-bit pidfile /tmp/fluent-bit.pid exists with a live PID.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_fluent_bit_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

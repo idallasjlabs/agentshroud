@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (2)"
+community: "MiddlewareManager (2)"
 location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_2
+  - community/MiddlewareManager_2
 ---
 
 # _load_collab_store()
@@ -22,4 +22,4 @@ tags:
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 - [[unpause_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

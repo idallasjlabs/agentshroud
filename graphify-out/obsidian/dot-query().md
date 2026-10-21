@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # .query()
@@ -17,4 +17,4 @@ tags:
 - [[LedgerQueryResponse_1]] - `references` [EXTRACTED]
 - [[Query ledger entries with pagination and filters          Args             page]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_llm_proxy.py"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DifferentialPIIDetector
+  - community/test_llm_proxypy
 ---
 
 # PIIHit
@@ -18,7 +18,7 @@ tags:
 - [[dot-_detect_regex()]] - `references` [EXTRACTED]
 - [[dot-_redact()]] - `references` [EXTRACTED]
 - [[A single PII detection result.]] - `rationale_for` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
 - [[TestAsymmetricFloor]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector
+#graphify/code #graphify/INFERRED #community/test_llm_proxypy

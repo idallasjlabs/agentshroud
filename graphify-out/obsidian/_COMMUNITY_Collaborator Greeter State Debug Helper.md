@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
+- [[WhitespaceEOF fixers exclude vendored SCAP datastream]] - rationale - .pre-commit-config.yaml
 
 ## Live Query (requires Dataview plugin)
 

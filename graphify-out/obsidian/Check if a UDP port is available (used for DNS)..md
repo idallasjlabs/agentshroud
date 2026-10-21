@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "PortManager"
+community: "TrustConfig (2)"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TrustConfig_2
 ---
 
 # Check if a UDP port is available (used for DNS).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_port_available_udp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PortManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_2

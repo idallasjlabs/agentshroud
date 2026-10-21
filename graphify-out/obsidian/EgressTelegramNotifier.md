@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "EgressTelegramNotifier"
+community: "Critical Findings"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Critical_Findings
 ---
 
 # EgressTelegramNotifier
 
 ## Connections
-- [[dot-__init__()_142]] - `method` [EXTRACTED]
+- [[dot-__init__()_132]] - `method` [EXTRACTED]
 - [[dot-_api_url()]] - `method` [EXTRACTED]
 - [[dot-_async_send()]] - `method` [EXTRACTED]
 - [[dot-_send_request()]] - `method` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/Critical_Findings

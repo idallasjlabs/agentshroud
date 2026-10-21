@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L314"
+community: "AgentTarget (3)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/AgentTarget_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

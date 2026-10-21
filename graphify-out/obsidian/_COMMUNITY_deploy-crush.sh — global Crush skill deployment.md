@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # deploy-crush.sh — global Crush skill deployment
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
-- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
-- [[i- prefix rename of all 58 skills]] - rationale - .llm_settings/UPGRADE_LOG.md
+- [[patch-anthropic-sdk.sh]] - code - docker/scripts/patch-anthropic-sdk.sh
+- [[patch-anthropic-sdk.sh script]] - code - docker/scripts/patch-anthropic-sdk.sh
+- [[patch-telegram-sdk.sh]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[patch-telegram-sdk.sh script]] - code - docker/scripts/patch-telegram-sdk.sh
 
 ## Live Query (requires Dataview plugin)
 

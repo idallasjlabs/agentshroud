@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestEgressApprovalQueue"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestEgressApprovalQueue
 ---
 
 # test_soc_realtime_coverage.py
@@ -16,11 +16,11 @@ tags:
 - [[PermissionResult]] - `imports` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_23]] - `imports` [EXTRACTED]
+- [[Role_19]] - `imports` [EXTRACTED]
 - [[SCLCaller_2]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `imports` [EXTRACTED]
-- [[SecurityEvent]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `imports` [EXTRACTED]
+- [[SecurityEvent_1]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `contains` [EXTRACTED]
 - [[TestEventFanOut]] - `contains` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_FakeBus]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_audit_entry()]] - `contains` [EXTRACTED]
 - [[_block_run_secrets()]] - `contains` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

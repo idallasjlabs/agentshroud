@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "ContextSegment"
+community: "TelegramAPIProxy (3)"
 location: "L819"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy_3
 ---
 
 # Double-encoded base64 injection should be caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_double_base64_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

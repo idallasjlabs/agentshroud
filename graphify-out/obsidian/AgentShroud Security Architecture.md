@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "MiddlewareManager (5)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/MiddlewareManager_5
 ---
 
 # AgentShroud Security Architecture
@@ -27,9 +27,9 @@ tags:
 - [[Deployment Security]] - `contains` [EXTRACTED]
 - [[Docker Network Isolation (agentshroud-isolated)]] - `references` [EXTRACTED]
 - [[Encryption and Cryptographic Controls]] - `contains` [EXTRACTED]
-- [[Executive Summary_1]] - `contains` [EXTRACTED]
+- [[Executive Summary]] - `contains` [EXTRACTED]
 - [[For Open-Source Contributors]] - `contains` [EXTRACTED]
-- [[Kill Switch]] - `references` [EXTRACTED]
+- [[Kill Switch_1]] - `references` [EXTRACTED]
 - [[Limitations & Residual Risks]] - `contains` [EXTRACTED]
 - [[NFKC Normalization]] - `conceptually_related_to` [AMBIGUOUS]
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[security-architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5

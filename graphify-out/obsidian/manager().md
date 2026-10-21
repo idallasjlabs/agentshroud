@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_rotation_internals.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "KeyRotationManager (2)"
-location: "L31"
+community: "soc/router.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/soc/routerpy
 ---
 
 # manager()
 
 ## Connections
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
+- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

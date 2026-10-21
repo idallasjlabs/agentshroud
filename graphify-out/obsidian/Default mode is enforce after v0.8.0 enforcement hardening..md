@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "TrustConfig (2)"
+community: "asyncio"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/asyncio
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

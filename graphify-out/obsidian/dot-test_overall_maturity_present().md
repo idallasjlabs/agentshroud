@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L976"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # .test_overall_maturity_present()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

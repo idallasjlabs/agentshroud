@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "chat_console.py"
+community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
 ---
 
 # main()
@@ -18,4 +18,4 @@ tags:
 - [[print_help()]] - `calls` [EXTRACTED]
 - [[send_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chat_consolepy
+#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice

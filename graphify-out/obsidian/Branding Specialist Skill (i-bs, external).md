@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "concept"
-community: "Test-Driven Development README"
+community: "MultiHostResult"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/MultiHostResult
 ---
 
 # Branding Specialist Skill (i-bs, external)
@@ -15,4 +15,4 @@ tags:
 - [[UI Expert (UI)]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/concept #graphify/EXTRACTED #community/MultiHostResult

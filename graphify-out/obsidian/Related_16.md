@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Function Details (4)"
+community: "Skill Creation Process"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_4
+  - community/Skill_Creation_Process
 ---
 
 # Related
 
 ## Connections
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_4
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

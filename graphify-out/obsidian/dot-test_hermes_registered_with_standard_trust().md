@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (6)"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_6
 ---
 
 # .test_hermes_registered_with_standard_trust()
@@ -15,4 +15,4 @@ tags:
 - [[RT-N3 After seeding, hermes trust level is STANDARD (matching lifespan.py).]] - `rationale_for` [EXTRACTED]
 - [[TestHermesTrustSeeding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_6

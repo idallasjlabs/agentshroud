@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py (2)"
+community: "AgentShroud Security Assessment — v0.8.0"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # _openscap_warn()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_four_when_openscap_running_with_failures()]] - `calls` [EXTRACTED]
 - [[dot-test_managed_when_has_failures()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[1. Accomplishments This Phase_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Basic Test Infrastructure (⚠️ PARTIAL)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Conclusion_1]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Core Security Pipeline Integration (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Executive Summary_7]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P1 - High-Value Security Enhancements (NEXT PHASE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P2 - Feature Completeness (FUTURE PHASES)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Phase Review P0 — Core Pipeline Wiring]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Security Configuration Hardening (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[phase-review-p0-2026-02-23]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[❌ NOT READY FOR MERGE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🔴 HIGH RISK — Immediate Attention Required]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔴 POTENTIAL SECURITY THEATER]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🟡 AREAS REQUIRING VALIDATION]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🟢 LOW RISK — Future Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🟢 GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[dot-test_blocked_non_owner_drops_update_and_increments_stats()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_blocked_owner_message_allowed_through_with_sanitized_text()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_no_pipeline_falls_back_to_direct_sanitizer()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_outbound_blocked_replaces_text()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_pipeline_exception_allows_owner_through()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_pipeline_exception_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_pipeline_process_inbound_called_with_skip_context_guard()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_pipeline_process_outbound_called_for_send_message()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - rationale - gateway/tests/test_telegram_pipeline.py
+- [[PipelineResult]] - code - gateway/tests/test_telegram_pipeline.py
+- [[PipelineResult_1]] - code - gateway/proxy/pipeline.py
+- [[Result of running a message through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[TestInboundFallbackToDirectSanitizer]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineBlockedNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineBlockedOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineExceptionNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineExceptionOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestOutboundPipelineBlocked]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestOutboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_getUpdates_response()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_proxy()_2]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_update()_1]] - code - gateway/tests/test_telegram_pipeline.py
+- [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
+- [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,9 +44,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-- 1 edge to [[_COMMUNITY_Recommendation]]
+- 19 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 12 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 9 edges to [[_COMMUNITY_api.py (2)]]
+- 1 edge to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
 
 ## Top bridge nodes
-- [[Phase Review P0 — Core Pipeline Wiring]] - degree 10, connects to 2 communities
-- [[4. Risks & Gaps — Critical Security Concerns]] - degree 4, connects to 1 community
+- [[PipelineResult_1]] - degree 26, connects to 6 communities
+- [[test_telegram_pipeline.py]] - degree 15, connects to 2 communities
+- [[TestOutboundPipelineWired]] - degree 6, connects to 2 communities
+- [[TestInboundFallbackToDirectSanitizer]] - degree 5, connects to 2 communities
+- [[TestInboundPipelineBlockedNonOwner]] - degree 5, connects to 2 communities

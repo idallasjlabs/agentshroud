@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "tts.py"
+community: "AgentShroud Security Verification (13-check driver)"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # Synthesize *text* to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[synthesize()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ttspy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

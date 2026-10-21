@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 location: "L596"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # _empty_aiter()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_main_endpointspy_2
+#graphify/code #graphify/INFERRED #community/_is_op_reference_allowed

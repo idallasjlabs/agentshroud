@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues"
+community: "http_proxy.py"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - community/http_proxypy
 ---
 
 # 🔴 CRITICAL: System Blockers
@@ -18,4 +18,4 @@ tags:
 - [[4. SSH Key Regeneration on Restart]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

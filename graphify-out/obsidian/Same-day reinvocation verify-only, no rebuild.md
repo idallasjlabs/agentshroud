@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-27-20260927-0800.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Same-day reinvocation: verify-only, no rebuild
@@ -16,4 +16,4 @@ tags:
 - [[Wrapper 180-min timeout vs session cannot self-terminate]] - `semantically_similar_to` [INFERRED]
 - [[sunday-upgrade.sh]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

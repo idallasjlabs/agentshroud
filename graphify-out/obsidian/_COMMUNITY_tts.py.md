@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Any_71]] - code - voice_gateway/tts.py
-- [[Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal     a]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Kaiser-windowed sinc anti-aliasing filter suppresses content above the output]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz.      For downsa]] - rationale - voice_gateway/tts.py
-- [[Return text suitable for TTS synthesis on the ESP32 voice interface.      Two]] - rationale - voice_gateway/tts.py
-- [[Split an agent reply into ordered sentence-sized TTS chunks.      Applies normal]] - rationale - voice_gateway/tts.py
-- [[Synthesize text to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.]] - rationale - voice_gateway/tts.py
-- [[_get_pipeline()]] - code - voice_gateway/tts.py
-- [[_resample_s16le_mono()]] - code - voice_gateway/tts.py
-- [[normalize_for_speech()]] - code - voice_gateway/tts.py
-- [[split_for_speech()]] - code - voice_gateway/tts.py
-- [[synthesize()]] - code - voice_gateway/tts.py
-- [[test_resample_antialias_attenuates_above_nyquist()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_resample_passband_preserved()]] - code - gateway/tests/test_voice_gateway.py
-- [[tts.py]] - code - voice_gateway/tts.py
+- [[dot-client()_6]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_export_config()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_config()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_security_report()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_status()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_update_history()]] - code - gateway/tests/test_runtime_engines.py
+- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 1 edge to [[_COMMUNITY_TestSplitForSpeech]]
+- 2 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
+- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_egress_retry.py]]
 
 ## Top bridge nodes
-- [[tts.py]] - degree 7, connects to 2 communities
-- [[normalize_for_speech()]] - degree 6, connects to 2 communities
-- [[split_for_speech()]] - degree 5, connects to 2 communities
-- [[_resample_s16le_mono()]] - degree 6, connects to 1 community
-- [[test_resample_antialias_attenuates_above_nyquist()]] - degree 3, connects to 1 community
+- [[TestWebAPI]] - degree 20, connects to 5 communities

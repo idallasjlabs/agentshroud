@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Build the per-device OTA token allowlist (SCRUM-58).      Owner-gated rollout o]] - rationale - voice_gateway/server.py
-- [[Constant-time allowlist check for an OTA ``token=`` value.      Returns True wh]] - rationale - voice_gateway/server.py
-- [[Request]] - code - voice_gateway/server.py
-- [[Response]] - code - voice_gateway/server.py
-- [[Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect]] - rationale - voice_gateway/server.py
-- [[_get_firmware_etag()]] - code - voice_gateway/server.py
-- [[_load_ota_tokens()]] - code - voice_gateway/server.py
-- [[_ota_token_ok()]] - code - voice_gateway/server.py
-- [[firmware_bin()]] - code - voice_gateway/server.py
+- [[dot-setup_method()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_health_check()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
+- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 2 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
+- 1 edge to [[_COMMUNITY_egress_retry.py]]
 
 ## Top bridge nodes
-- [[firmware_bin()]] - degree 6, connects to 1 community
-- [[_ota_token_ok()]] - degree 4, connects to 1 community
-- [[_load_ota_tokens()]] - degree 3, connects to 1 community
-- [[_get_firmware_etag()]] - degree 2, connects to 1 community
+- [[TestAppleContainerEngine]] - degree 14, connects to 5 communities
+- [[dot-setup_method()_2]] - degree 2, connects to 1 community

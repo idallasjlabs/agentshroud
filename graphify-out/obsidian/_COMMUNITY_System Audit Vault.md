@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # System Audit Vault
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 1 Streaming Response Outbound Filtering — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 2 Wire MemoryIntegrityLifecycle at Startup — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 3 LLM Proxy User Identity Propagation — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 4 Adversarial Prompt Injection Test Suite — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 1 edge to [[_COMMUNITY_Weather Skill]]
 
 ## Top bridge nodes
-- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - degree 7, connects to 1 community

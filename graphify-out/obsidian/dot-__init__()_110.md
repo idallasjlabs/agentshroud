@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L49"
+community: "Path (2)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Path_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_27]] - `references` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Path_2

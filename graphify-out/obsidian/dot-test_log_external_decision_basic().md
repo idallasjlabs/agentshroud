@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # .test_log_external_decision_basic()
@@ -15,4 +15,4 @@ tags:
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
 - [[log_external_decision appends an entry to the decision log.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

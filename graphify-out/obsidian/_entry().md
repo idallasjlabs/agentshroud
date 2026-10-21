@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t"
+community: "Path"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/Path
 ---
 
 # _entry()
@@ -28,4 +28,4 @@ tags:
 - [[dot-test_unknown_class_not_source_fixed_stays_under_review()]] - `calls` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/Path

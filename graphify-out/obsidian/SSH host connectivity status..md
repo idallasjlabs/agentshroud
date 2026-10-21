@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "dashboard_endpoints.py (2)"
+community: "main.py"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/mainpy
 ---
 
 # SSH host connectivity status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_hosts()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/rationale #graphify/EXTRACTED #community/mainpy

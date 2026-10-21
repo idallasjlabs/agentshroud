@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-soak-status.sh"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "_make_sanitizer()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_make_sanitizer
 ---
 
 # check-soak-status.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check-soak-status.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

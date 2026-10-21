@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestComputeBotScorecard"
+community: "hermes/skills/i-bs/README.md (3)"
 location: "L1222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestComputeBotScorecard
+  - community/hermes/skills/i-bs/READMEmd_3
 ---
 
 # ._state()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_stats_exception_defaults_to_zero_denials()]] - `calls` [EXTRACTED]
 - [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestComputeBotScorecard
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_3

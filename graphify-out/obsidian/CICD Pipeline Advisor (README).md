@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "Skill: UI Expert (UI)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/Skill_UI_Expert_UI
 ---
 
 # CI/CD Pipeline Advisor (README)
@@ -14,12 +14,12 @@ tags:
 - [[dot-agentsskillsi-cicdREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [INFERRED]
-- [[Purpose_192]] - `contains` [EXTRACTED]
-- [[Purpose_193]] - `contains` [EXTRACTED]
-- [[Related Skills_118]] - `contains` [EXTRACTED]
-- [[Related Skills_119]] - `contains` [EXTRACTED]
-- [[Usage_131]] - `contains` [EXTRACTED]
-- [[Usage_132]] - `contains` [EXTRACTED]
+- [[Purpose_71]] - `contains` [EXTRACTED]
+- [[Purpose_72]] - `contains` [EXTRACTED]
+- [[Related Skills_56]] - `contains` [EXTRACTED]
+- [[Related Skills_57]] - `contains` [EXTRACTED]
+- [[Usage_59]] - `contains` [EXTRACTED]
+- [[Usage_60]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
+community: "test_soc_router_coverage.py"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/test_soc_router_coveragepy
 ---
 
 # Test that chain length limits are respected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_chain_length_limits()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
+community: "PortManager"
 location: "L776"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/PortManager
 ---
 
 # .test_secure_zero_empty()
@@ -15,4 +15,4 @@ tags:
 - [[TestSecureZero]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/code #graphify/EXTRACTED #community/PortManager

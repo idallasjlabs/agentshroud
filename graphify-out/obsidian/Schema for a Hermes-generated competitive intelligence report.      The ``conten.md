@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "CompetitiveIntelReport"
+community: "KillSwitchMonitor (3)"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/KillSwitchMonitor_3
 ---
 
 # Schema for a Hermes-generated competitive intelligence report.      The ``conten
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitiveIntelReport_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3

@@ -1,105 +1,99 @@
 ---
 type: community
-members: 92
+members: 86
 ---
 
 # A2AGovernanceProxy
 
-**Members:** 92 nodes
+**Members:** 86 nodes
 
 ## Members
-- [[dot-__init__()_137]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_message_size()]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_rate_limit()]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_task_concurrency()]] - code - gateway/security/a2a_governance.py
-- [[dot-_finalize()]] - code - gateway/security/a2a_governance.py
-- [[dot-_process()]] - code - gateway/security/a2a_governance.py
-- [[dot-_sanitize_message()]] - code - gateway/security/a2a_governance.py
-- [[dot-complete_task()]] - code - gateway/security/a2a_governance.py
-- [[dot-fingerprint()]] - code - gateway/security/a2a_governance.py
-- [[dot-get_events()_2]] - code - gateway/security/a2a_governance.py
-- [[dot-get_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-get_summary()]] - code - gateway/security/a2a_governance.py
-- [[dot-is_trusted()]] - code - gateway/security/a2a_governance.py
-- [[dot-process_inbound()_7]] - code - gateway/security/a2a_governance.py
-- [[dot-process_outbound()_5]] - code - gateway/security/a2a_governance.py
-- [[dot-register_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_complete_task_frees_slot()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_disabled_allows_all()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_get_events_filtered()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_normal_size_allowed()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_outbound_to_trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_outbound_to_unknown_quarantined()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_oversized_denied()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_peer_stats_updated()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_rate_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_register_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_ssn_sanitized()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_summary()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_task_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_task_within_limit()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_trust_clamped()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_trusted_peer_allowed()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_unknown_peer_quarantined()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_unregister_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_untrusted_peer_allowed_in_monitor()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-to_dict()_8]] - code - gateway/security/a2a_governance.py
-- [[dot-unregister_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-update_peer_trust()]] - code - gateway/security/a2a_governance.py
-- [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
-- [[A2ADecision]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceConfig]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
-- [[A2AMessage]] - code - gateway/security/a2a_governance.py
-- [[A2AMessageType]] - code - gateway/security/a2a_governance.py
-- [[A2APeer]] - code - gateway/security/a2a_governance.py
-- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
-- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
-- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
-- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
-- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
-- [[Configuration for the A2A governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
-- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
-- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
-- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
-- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
-- [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
-- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
-- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
-- [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
-- [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
-- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
-- [[TestMessageSize]] - code - gateway/tests/test_a2a_governance.py
-- [[TestOutboundProcessing]] - code - gateway/tests/test_a2a_governance.py
-- [[TestPIISanitization]] - code - gateway/tests/test_a2a_governance.py
-- [[TestPeerManagement]] - code - gateway/tests/test_a2a_governance.py
-- [[TestRateLimiting_2]] - code - gateway/tests/test_a2a_governance.py
-- [[TestReporting]] - code - gateway/tests/test_a2a_governance.py
-- [[TestTaskConcurrency]] - code - gateway/tests/test_a2a_governance.py
-- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
-- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
-- [[_msg()]] - code - gateway/tests/test_a2a_governance.py
-- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
-- [[monitor_proxy()]] - code - gateway/tests/test_a2a_governance.py
-- [[proxy()_3]] - code - gateway/tests/test_a2a_governance.py
-- [[test_a2a_governance.py]] - code - gateway/tests/test_a2a_governance.py
-- [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-__init__()_142]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-__post_init__()_9]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-_missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-_propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-_shared_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-get_incidents()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-peers_of()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-register_peer()_1]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_bot_without_registered_trust_manager_is_skipped()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_critical_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_default_policy_is_sane()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_empty_bot_list_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_empty_ledger_has_no_incidents()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_every_bot_shares_the_same_trust_manager()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_fraction_above_one_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_from_string()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_get_incidents_by_source()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_get_incidents_with_limit()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_high_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_incident_limit_retained()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_incident_on_one_bot_propagates_to_all_mesh_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_incident_record_fields()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_incidents_are_recorded()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_invalid_string_returns_none()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_low_severity_not_propagated()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_medium_severity_propagates_to_peer()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_no_self_propagation()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_non_string_returns_none()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_ordering()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_propagated_to_is_empty_for_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_propagation_limited_to_max_depth()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_propagation_registers_unregistered_peer_agent()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_register_peer()_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_register_peer_is_bidirectional_by_default()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_single_bot_has_no_peers_and_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_three_bots_form_a_full_mesh()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_two_bots_are_mutual_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_unregistered_bot_has_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_zero_decay_fraction_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_zero_max_depth_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[A single cross-bot incident recorded in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[An incident on openclaw should not re-apply to openclaw via the ledger.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[BotIncidentSeverity]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Configuration for how incidents decay peer trust scores.      Attributes]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[CrossBotTrustLedger]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[CrossBotTrustLedger_1]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[Default propagation policy.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[Depth-2 propagation A → B → C but NOT C → D when max_depth=2.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[End-to-end a real incident on bot A decays trust on bots B and C         in a 3]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[IncidentRecord]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[Log an incident and propagate trust decay to registered peers.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Peer agent not registered in TrustManager should be auto-registered.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[Propagation to a peer with no registered TrustManager must not raise.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Return incidents, optionally filtered by source bot.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Return the number of incidents currently in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Return the registered peers for bot_name (empty list if none).]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[TestBotIncidentSeverity]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TestBuildFullMesh]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TestCrossBotTrustLedgerConstruction]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TestGetIncidentsLimit]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TestIncidentAudit]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TestIncidentPropagation]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TestTrustDecayPolicyValidation]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[The exact scenario the user asked for add a 4th bot and it just works.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TrustDecayPolicy]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[TrustDecayPolicy_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TrustManager_2]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[TrustManager_3]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[build_full_mesh N-agent-scalable topology construction.      Adding a 3rd4thN]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
+- [[cross_bot_trust_ledger.py]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[hermes_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[ledger()_2]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[openclaw_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[policy()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[test_cross_bot_trust_ledger.py]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -109,15 +103,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY__t]]
-- 1 edge to [[_COMMUNITY_GovernanceAction]]
+- 35 edges to [[_COMMUNITY_socrouter.py]]
+- 12 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig (2)_1]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
 
 ## Top bridge nodes
-- [[A2ADecision]] - degree 26, connects to 3 communities
-- [[A2AMessageType]] - degree 15, connects to 2 communities
-- [[A2AGovernanceProxy]] - degree 43, connects to 1 community
-- [[a2a_governance.py]] - degree 8, connects to 1 community
-- [[dot-get_events()_2]] - degree 4, connects to 1 community
+- [[CrossBotTrustLedger_1]] - degree 36, connects to 5 communities
+- [[BotIncidentSeverity]] - degree 25, connects to 4 communities
+- [[cross_bot_trust_ledger.py]] - degree 6, connects to 2 communities
+- [[CrossBotTrustLedger]] - degree 26, connects to 1 community
+- [[TrustManager_3]] - degree 25, connects to 1 community

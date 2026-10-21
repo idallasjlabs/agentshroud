@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L612"
+community: "Production Safety Checklist (SKILL)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # .unsubscribe()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
+- [[Unsubscribe from events]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

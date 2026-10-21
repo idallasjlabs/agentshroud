@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "Common Queries"
+community: "EgressFilterConfig (2) (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/EgressFilterConfig_2_3
 ---
 
 # CodexBar CLI quick ref (usage + cost)
@@ -18,4 +18,4 @@ tags:
 - [[Notes_1]] - `contains` [EXTRACTED]
 - [[codexbar-cli]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3

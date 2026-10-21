@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "AgentShroud Color Palette"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/AgentShroud_Color_Palette
 ---
 
 # trust_manager (trust levels)
@@ -14,4 +14,4 @@ tags:
 - [[Security Modules (30+, gateway diagram)]] - `shares_data_with` [EXTRACTED]
 - [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Color_Palette

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Operating Rules (Non-Negotiable) (2)"
+community: "The 8D Investigation Process (2)"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Operating_Rules_Non-Negotiable_2
+  - community/The_8D_Investigation_Process_2
 ---
 
 # Rule 4: Evidence-First Recommendations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable_2
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2

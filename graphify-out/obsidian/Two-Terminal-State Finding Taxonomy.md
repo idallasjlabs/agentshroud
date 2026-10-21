@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "ESP32-S3-BOX-3 Voice Terminal (2)"
+community: "format_upstream_cve_alert()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_2
+  - community/format_upstream_cve_alert
 ---
 
 # Two-Terminal-State Finding Taxonomy
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `rationale_for` [EXTRACTED]
 - [[Zeroed .trivyignore (no suppressions)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2
+#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert

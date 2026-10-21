@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (2)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_2
 ---
 
 # .test_get_user_memory_openclaw_and_hermes_are_separate_paths()
@@ -15,4 +15,4 @@ tags:
 - [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.…]] - `rationale_for` [EXTRACTED]
 - [[TestBotIdIsolationInSharedMemory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

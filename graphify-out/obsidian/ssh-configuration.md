@@ -1,18 +1,17 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "SSH Configuration Guide"
+community: ".omp/mcp.json"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/omp/mcpjson
 ---
 
 # ssh-configuration.md
 
 ## Connections
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
 - [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 - [[P4 Low Priority Incidents]] - `contains` [EXTRACTED]
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
@@ -20,4 +19,4 @@ tags:
 - [[himalayaSKILL]] - `references` [EXTRACTED]
 - [[icloudSKILL]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/omp/mcpjson

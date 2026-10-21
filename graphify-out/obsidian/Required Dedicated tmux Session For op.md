@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/1password/SKILL.md"
 type: "rationale"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "Slack Channel Setup (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Slack_Channel_Setup_2
 ---
 
 # Required Dedicated tmux Session For op
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[1Password CLI Skill]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Channel_Setup_2

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[routes__init__.py]] - code - gateway/ingest_api/routes/__init__.py
+- [[esp_log.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

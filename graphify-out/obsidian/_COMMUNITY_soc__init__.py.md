@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[soc__init__.py]] - code - gateway/soc/__init__.py
+- [[detect_runtime]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

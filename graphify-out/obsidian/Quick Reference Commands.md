@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Quick Reference Commands"
+community: "test_llm_proxy_thinking_suppression.py"
 location: "L405"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/test_llm_proxy_thinking_suppressionpy
 ---
 
 # Quick Reference Commands
@@ -22,6 +22,6 @@ tags:
 - [[QUICK_REFERENCE]] - `contains` [EXTRACTED]
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[Telegram Bot]] - `contains` [EXTRACTED]
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/test_llm_proxy_thinking_suppressionpy

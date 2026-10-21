@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # .test_internal_error_not_leaked()
@@ -16,4 +16,4 @@ tags:
 - [[OpenAI exceptions should not leak internal details to the client.]] - `rationale_for` [EXTRACTED]
 - [[TestErrorSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Docker Volumes"
 location: "L512"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Docker_Volumes
 ---
 
 # Benefits Gained
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cost-Benefit Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

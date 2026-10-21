@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Production testing guidelines (test isolation patterns)]] - rationale - .llm_settings/docs/SKILLS_REFERENCE.md
+- [[Bug Report Issue Template]] - document - .github/ISSUE_TEMPLATE/bug_report.yml
 
 ## Live Query (requires Dataview plugin)
 

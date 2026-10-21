@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_global_monitor_override_downgrades_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[patch-ws-proxy.sh]] - code - docker/scripts/patch-ws-proxy.sh
-- [[patch-ws-proxy.sh script]] - code - docker/scripts/patch-ws-proxy.sh
+- [[emergency-rollback.sh]] - code - scripts/emergency-rollback.sh
+- [[emergency-rollback.sh script]] - code - scripts/emergency-rollback.sh
 
 ## Live Query (requires Dataview plugin)
 

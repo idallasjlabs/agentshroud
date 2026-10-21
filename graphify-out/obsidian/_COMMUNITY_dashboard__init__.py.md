@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dashboard__init__.py]] - code - gateway/dashboard/__init__.py
+- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
 
 ## Live Query (requires Dataview plugin)
 

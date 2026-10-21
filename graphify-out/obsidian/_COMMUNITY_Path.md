@@ -1,81 +1,58 @@
 ---
 type: community
-members: 68
+members: 45
 ---
 
 # Path
 
-**Members:** 68 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[dot-by_name()]] - code - gateway/skills/manifest.py
-- [[dot-client()_7]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_build_excludes_manifest_json_itself()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_build_includes_all_files()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_build_is_sorted_deterministically()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_by_name_lookup()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_deploy_copies_files_to_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_deploy_is_idempotent()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_deploy_overwrites_changed_content()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_deploy_to_multiple_destinations()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_deploy_writes_manifest_json()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_drift_detected_on_hash_mismatch()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_drift_detected_on_missing_file()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_dry_run_does_not_mutate_existing_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_dry_run_writes_nothing_to_empty_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_from_empty_source_raises()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_hash_changes_when_content_changes()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_hash_is_sha256_of_content()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_manifest_json_in_source_is_excluded()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_missing_source_raises()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_no_drift_returns_empty_list()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_plan_classifies_create_when_dest_absent()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_plan_classifies_skip_when_hash_matches()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_plan_classifies_update_when_content_differs()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_plan_is_deterministic()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_plan_is_pure_writes_nothing()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_plan_maps_canonical_to_each_bot_destination()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_planned_action_is_immutable()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_real_deploy_returns_actions_too()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_reload_requires_auth()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_reload_returns_200_with_skills_list()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_reload_returns_500_on_source_missing()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_returns_all_drifted_items()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_serialise_contains_version_and_timestamp()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-test_serialise_roundtrip()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-to_dict()_12]] - code - gateway/skills/manifest.py
-- [[dot-to_dict()_13]] - code - gateway/skills/manifest.py
-- [[dot-to_json()]] - code - gateway/skills/manifest.py
-- [[A single item in the skills manifest.]] - rationale - gateway/skills/manifest.py
-- [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - rationale - gateway/skills/manifest.py
-- [[Copy all files in manifest from source to each per-bot destination.      Beh]] - rationale - gateway/skills/manifest.py
-- [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
-- [[ManifestEntry]] - code - gateway/skills/manifest.py
-- [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
-- [[Path_58]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[PlannedAction]] - code - gateway/skills/manifest.py
-- [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
-- [[SkillsManifest]] - code - gateway/skills/manifest.py
-- [[TestClient_1]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestDeployDryRun]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestDeployManifest]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestManifestEntry]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestPlanDeploy]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestSkillsManifest]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestSkillsReloadEndpoint]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[TestValidateManifest]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[_sha256()_2]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[_write_tree()_1]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[deploy_manifest()]] - code - gateway/skills/manifest.py
-- [[gatewayskillsmanifest.py (SkillsManifest)]] - code - gateway/skills/manifest.py
-- [[manifest.json must never appear as an entry even when present in source.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[manifest.py]] - code - gateway/skills/manifest.py
-- [[plan_deploy()]] - code - gateway/skills/manifest.py
-- [[test_skills_manifest_sync.py]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[validate_manifest()]] - code - gateway/skills/manifest.py
+- [[dot-_results()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_apply_writes_registry_and_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_classification_is_deterministic()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_confidence_is_bounded()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_dry_run_writes_nothing()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gap_report_reflects_full_registry_not_just_this_runs_delta()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gap_report_renders_and_lists_gaps()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gaps_are_honest_not_mitigated_or_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gaps_include_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_low_confidence_partial_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_mitigation_narrative_nonempty_when_applied()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_not_source_fixed_partial_class_is_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_priority_rce_before_generic_injection()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_representative_titles()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_rewrite_is_idempotent()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_rewrite_never_touches_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_rewrite_sets_status_and_layers()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_rewrite_untargeted_id_unchanged()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_source_fixed_full_class_is_fully_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_source_fixed_partial_class_upgrades_to_fully()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_summary_counts_sum_to_total()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_does_not_read_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_full_covers_every_entry_regardless_of_status()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_full_is_a_pure_report_view_not_a_mutation()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_openclaw_all_under_review_processed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_uncovered_class_not_source_fixed_is_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_uncovered_class_source_fixed_uses_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unknown_agent_errors()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unknown_class_not_source_fixed_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unmatched_is_unknown()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[A version guaranteed newer than the real pinned RUNNING_VERSION, for tests that…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[TestClassify]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestDriverIsolation]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestMain]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestRewrite]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestTriageEntry]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Tests for scriptstriage-cve-mitigations.py — Phase 2 mitigation-triage engine.…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[_entry()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[_not_yet_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[_t()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[rewrite_registry_text]] - code - scripts/triage-cve-mitigations.py
+- [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[triage_agent]] - code - scripts/triage-cve-mitigations.py
+- [[triage_entry]] - code - scripts/triage-cve-mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -85,15 +62,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Path (4)]]
-- 4 edges to [[_COMMUNITY_SkillGuard (2)]]
-- 4 edges to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_FetchOutcome]]
+- 9 edges to [[_COMMUNITY_Path (2)]]
+- 6 edges to [[_COMMUNITY_dot-_run_and_read]]
+- 4 edges to [[_COMMUNITY_Path (3)]]
+- 4 edges to [[_COMMUNITY_dot-_run_and_read (2)]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
 
 ## Top bridge nodes
-- [[SkillsManifest]] - degree 25, connects to 3 communities
-- [[deploy_manifest()]] - degree 25, connects to 2 communities
-- [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
-- [[ManifestEntry]] - degree 15, connects to 1 community
-- [[plan_deploy()]] - degree 13, connects to 1 community
+- [[test_triage_cve_mitigations.py]] - degree 18, connects to 5 communities
+- [[_t()]] - degree 44, connects to 3 communities
+- [[TestDriverIsolation]] - degree 12, connects to 2 communities
+- [[TestTriageEntry]] - degree 12, connects to 1 community
+- [[TestRewrite]] - degree 7, connects to 1 community

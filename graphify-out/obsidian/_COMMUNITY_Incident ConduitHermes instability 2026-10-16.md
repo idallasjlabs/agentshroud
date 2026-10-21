@@ -1,51 +1,54 @@
 ---
 type: community
-members: 38
+members: 41
 ---
 
 # Incident: Conduit/Hermes instability 2026-10-16
 
-**Members:** 38 nodes
+**Members:** 41 nodes
 
 ## Members
-- [[2026-03 TeamPCP supply-chain attack on trivy tags]] - concept - .github/workflows/security-scan.yml
-- [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM flag for dev Hermes]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[CI DAST scan job (Nuclei)]] - code - .github/workflows/ci.yml
-- [[CI SOUL.md freshness check (90 days)]] - code - .github/workflows/ci.yml
-- [[CI Workflow]] - code - .github/workflows/ci.yml
-- [[CI benchmark regression job]] - code - .github/workflows/ci.yml
-- [[CI docs drift  version consistency check]] - code - .github/workflows/ci.yml
-- [[CI gitleaks secret scanning job]] - code - .github/workflows/ci.yml
-- [[CI security-scan job (pip-audit)]] - code - .github/workflows/ci.yml
-- [[CI startup smoke tests (static)]] - code - .github/workflows/ci.yml
-- [[CI test job (pytest matrix, coverage gate 84%)]] - code - .github/workflows/ci.yml
-- [[Colima sizing (prod 8 CPU12 GiB, dev 4 CPU9 GiB, from colima.yaml)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Compose version label mismatch forces network recreate + stale endpoints]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Conduit root-relative ws-ticket fetch vs hermes Funnel path]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Decision no blanket revert to 2026-10-10 commit]] - rationale - INCIDENT_2026-10-16_conduit-outage.md
-- [[Dev 2026-10-11 handoff false green (PASS with 0 images scanned)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Duplicate Telegram bot polling (dev vs prod getUpdates 409)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Fieldflare shim (strip parallel_tool_callstool_choice, flatten schema unions)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Image signing & provenance (cosign keyless + syft SBOM attest)]] - code - .github/workflows/security-scan.yml
-- [[Incident ConduitHermes instability 2026-10-16]] - document - INCIDENT_2026-10-16_conduit-outage.md
-- [[Leak gate fatal only on ubuntu+py3.11]] - rationale - .github/workflows/ci.yml
-- [[Nemotron in-band reasoning + Qwen-only no_think suffix bug]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[OpenClaw per-container memcg OOM kills]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[OpenClaw sandbox mode all-off stopgap (named volume vs bind-mount)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Per-bot Telegram token fallback to OpenClaw bot (egress notify  lifespan)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Prod Colima VM egress loss (root cause of 7.5h Hermes outage)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Python dependency audit job]] - code - .github/workflows/security-scan.yml
-- [[Security Scan workflow (security-scan.yml)]] - code - .github/workflows/security-scan.yml
-- [[Semgrep --baseline-commit fail only on new findings]] - rationale - .github/workflows/security-scan.yml
-- [[Semgrep SAST baselined gate]] - code - .github/workflows/security-scan.yml
-- [[StreamHead status propagation for streaming LLM proxy]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[Trivy filesystem scan (SHA-pinned action)]] - code - .github/workflows/security-scan.yml
-- [[asb setup_ephemeral_secrets clobber on killed extract (preserve-nonempty fix)]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
-- [[lazydocker docker.sock connection leak via Colima ssh forward]] - concept - INCIDENT_2026-10-16_conduit-outage.md
-- [[main()_11]] - code - scripts/check_benchmark_regression.py
-- [[patch_telegram_edit_message_date.py (KeyError 'date' on editMessageText)]] - code - INCIDENT_2026-10-16_conduit-outage.md
+- [[dot-test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_initial_when_not_run()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_optimizing_when_installed_clean_no_timestamp()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
+- [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[TestScoreMalwareDefense_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scanner_integration.py
+- [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
+- [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
+- [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
+- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_nonempty_audit_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_fresh_clean_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_malware_defense_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_vuln_management_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_collaborator_activity_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_key_rotation_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_scorecard_integrity.py]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_fresh_clean_report_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_no_report_dir_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,14 +58,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Sunday Upgrade prompt]]
-- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_discover_upstream_versions.py]]
+- 11 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 4 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 3 edges to [[_COMMUNITY_PipelineAction (2)_1]]
+- 2 edges to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Assessment — v0.8.0]]
 
 ## Top bridge nodes
-- [[Incident ConduitHermes instability 2026-10-16]] - degree 23, connects to 2 communities
-- [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - degree 4, connects to 2 communities
-- [[CI Workflow]] - degree 10, connects to 1 community
-- [[CI DAST scan job (Nuclei)]] - degree 2, connects to 1 community
-- [[CI startup smoke tests (static)]] - degree 2, connects to 1 community
+- [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
+- [[_score_malware_defense()]] - degree 15, connects to 4 communities
+- [[_is_fresh()]] - degree 8, connects to 4 communities
+- [[_trivy_critical()]] - degree 4, connects to 2 communities
+- [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community

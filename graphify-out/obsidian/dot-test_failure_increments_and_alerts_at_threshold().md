@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "AgentTarget (3)"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AgentTarget_3
 ---
 
 # .test_failure_increments_and_alerts_at_threshold()
@@ -15,4 +15,4 @@ tags:
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[TestHeartbeat]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

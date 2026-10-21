@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[1. GitHub MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[2. Atlassian MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[3. AWS API MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Authentication Reset Procedures]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[If Using SSO]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Manual Re-authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option A Default AWS Profile]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option B Named Profile]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 1 Generate New Personal Access Token]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 2 Update .env File]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 3 Verify Authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verify Authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[When Authentication Expires]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[dot-agentsskillsi-tddSKILL]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Anti-Patterns to Flag_19]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark]] - document - .agents/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Role_76]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Rules_20]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test Structure_3]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`]] - document - .agents/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[1. GitHub MCP Authentication Reset]] - degree 5, connects to 1 community
-- [[Authentication Reset Procedures]] - degree 4, connects to 1 community
+- [[Skill Test-Driven Development (TDD)]] - degree 8, connects to 1 community

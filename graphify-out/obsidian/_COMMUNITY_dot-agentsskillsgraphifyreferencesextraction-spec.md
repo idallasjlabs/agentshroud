@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # .agents/skills/graphify/references/extraction-spec.md
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-agentsskillsgraphifyreferencesextraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[extract_fn()]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+- [[test_sunday_upgrade_session_guard.sh]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+- [[test_sunday_upgrade_session_guard.sh script]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
 
 ## Live Query (requires Dataview plugin)
 

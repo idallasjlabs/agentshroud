@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "iCloud Services (3)"
+community: "AgentShroud Project Terminology"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/AgentShroud_Project_Terminology
 ---
 
 # Update Contact
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Operations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

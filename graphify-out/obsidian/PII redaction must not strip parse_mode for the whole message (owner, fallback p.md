@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "All Dependencies.md (2)"
 location: "L4359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/All_Dependenciesmd_2
 ---
 
 # PII redaction must not strip parse_mode for the whole message (owner, fallback p
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd_2

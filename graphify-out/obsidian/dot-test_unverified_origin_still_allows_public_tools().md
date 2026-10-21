@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # .test_unverified_origin_still_allows_public_tools()
@@ -15,4 +15,4 @@ tags:
 - [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - `rationale_for` [EXTRACTED]
 - [[TestOriginAwareAuthorization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

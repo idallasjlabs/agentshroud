@@ -1,49 +1,50 @@
 ---
 type: community
-members: 36
+members: 37
 ---
 
 # AgentTarget (5)
 
-**Members:** 36 nodes
+**Members:** 37 nodes
 
 ## Members
-- [[Auto-start a stopped Colima VM (step 1a)]] - rationale - docker/scripts/colima-health-check.sh
-- [[Colima VM default-route auto-heal (step 2)]] - rationale - docker/scripts/colima-health-check.sh
-- [[Container net-diag expected-failure baseline (step 5)]] - rationale - docker/scripts/colima-health-check.sh
-- [[DOCKER-USER iptables reapply + verify (step 3)]] - rationale - docker/scripts/colima-health-check.sh
-- [[Daily summary state tracking]] - rationale - docker/scripts/colima-health-check.sh
-- [[Dead docker.sock forward repair (step 1a-bis)]] - rationale - docker/scripts/colima-health-check.sh
-- [[PATH_24]] - code - docker/scripts/colima-health-check.sh
-- [[Strip comments before grepping for regressions]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_RETRY_TEST()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_bounce()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_colima_vm_flags()]] - code - docker/scripts/colima-health-check.sh
-- [[_enforce_for()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_guard_says()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_hc()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_lock_try()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_mk()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_render_build()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_up_says()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_upgrade_in_progress()]] - code - docker/scripts/colima-health-check.sh
-- [[_ver_verdict()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[_wait_result()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[check()_3]] - code - tests/startup_smoke/test_bot_boot_static.sh
-- [[check()_4]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[colima-health-check.sh]] - code - docker/scripts/colima-health-check.sh
-- [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
-- [[colima-vm-flags behavioral check (2026-10-16)]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[hc_run()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[log()_5]] - code - docker/scripts/colima-health-check.sh
-- [[notify()]] - code - docker/scripts/colima-health-check.sh
-- [[read_state()]] - code - docker/scripts/colima-health-check.sh
-- [[resolve_docker_host()]] - code - docker/scripts/colima-health-check.sh
-- [[test_bot_boot_static.sh]] - code - tests/startup_smoke/test_bot_boot_static.sh
-- [[test_bot_boot_static.sh script]] - code - tests/startup_smoke/test_bot_boot_static.sh
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[write_state()]] - code - docker/scripts/colima-health-check.sh
+- [[AI Security Standards Watch Cron Prompt]] - document - docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt
+- [[AI Security Standards Watch Job (OWASP  NIST AI RMF  MITRE ATLAS)]] - document - docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt
+- [[AgentShroud Brand Color Palette]] - concept - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[AgentShroud Branded HTML Report Template]] - document - docker/config/openclaw/cron/templates/report-template.html
+- [[AgentShroud Weekly Summary (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/agentshroud-weekly-summary.txt
+- [[Agentic AI Threat Intelligence Cron Prompt]] - document - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[Brand colors reference]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Canonical storage]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Collaborator Daily Digest Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-daily-digest.txt
+- [[Collaborator Report (Evening) Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
+- [[Collaborator Report (Morning) Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
+- [[Collaborator Report - Evening Job]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
+- [[Collaborator Report Timeout Bump to 1800s]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Contributor Log Read Path (gateway-data primary, memory fallback)]] - concept - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
+- [[CronSessionLifecycleClaimError (stale isolated-session claim leases)]] - concept - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Dual-Surface Report Delivery (Email HTML  Telegram Markdown)]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[HTML version (for email)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[How to build it]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Markdown version (for Telegram + archival)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Multi-User Support with Role-Based Permissions]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[OpenClaw Live Cron Job Index (11 jobs)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[OpenClaw Live Cron Store (SQLite on agentshroud-config volume)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - concept - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[Quick checklist]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Report Delivery Format Instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Report Template Placeholder Contract ({{REPORT_TITLE}}{{REPORT_TYPE}}{{REPORT_DATE}}{{REPORT_CONTENT}})]] - concept - docker/config/openclaw/cron/templates/report-template.html
+- [[Rules_2]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Scheduled Actions & Automation (in-container cron)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Seed Job AgentShroud Weekly Summary]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Sending via email]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Session Cleanup Reaper (30-min openclaw sessions cleanup --fix-missing)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Source Verification Policy]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Source Verification Policy (MANDATORY)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Stdin-Pipe File Deployment Pattern (never docker cp)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Telegram delivery rules (from AGENTS.md)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Verification checklist (run before saving any report)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[html-report-instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,13 +54,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 5 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_test-sunday-upgrade-scan.sh]]
+- 5 edges to [[_COMMUNITY_Report Delivery Format Instructions (2)]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
 
 ## Top bridge nodes
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - degree 17, connects to 2 communities
-- [[colima-health-check.sh]] - degree 15, connects to 2 communities
-- [[_upgrade_in_progress()]] - degree 5, connects to 1 community
-- [[_render_build()]] - degree 4, connects to 1 community
-- [[_wait_result()]] - degree 3, connects to 1 community
+- [[Report Delivery Format Instructions]] - degree 16, connects to 1 community
+- [[OpenClaw Live Cron Job Index (11 jobs)]] - degree 10, connects to 1 community
+- [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - degree 2, connects to 1 community
+- [[Seed Job AgentShroud Weekly Summary]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scorecard_integrity.py"
+community: "Incident: Conduit/Hermes instability 2026-10-16"
 location: "L732"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/Incident_Conduit/Hermes_instability_2026-10-16
 ---
 
 # .test_measured_when_clean_not_fresh()
@@ -16,4 +16,4 @@ tags:
 - [[_clamav_clean()]] - `calls` [EXTRACTED]
 - [[_score_malware_defense()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16

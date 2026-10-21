@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Seccomp Profiles"
+community: "test_collaborator_tracker.py (3)"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/test_collaborator_trackerpy_3
 ---
 
 # Alternate Compose Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

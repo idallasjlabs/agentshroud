@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "agentshroud-gateway"
-location: "L11"
+community: "graphify reference: extra exports and benchmark"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

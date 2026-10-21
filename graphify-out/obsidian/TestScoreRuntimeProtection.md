@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "TestScoreRuntimeProtection"
+community: "test_security_regressions_v1_2.py (7)"
 location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreRuntimeProtection
+  - community/test_security_regressions_v1_2py_7
 ---
 
 # TestScoreRuntimeProtection
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_two_with_criticals()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreRuntimeProtection
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py_7

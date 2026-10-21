@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Future Enhancements"
+community: "postmortem.md (2) (2)"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/postmortemmd_2_2
 ---
 
 # Future Enhancements
@@ -19,4 +19,4 @@ tags:
 - [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
 - [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/document #graphify/EXTRACTED #community/postmortemmd_2_2

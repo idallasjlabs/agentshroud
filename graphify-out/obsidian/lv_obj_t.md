@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "lvgl_kawaii_face.c"
+community: "GSDE&G Skills Reference"
 location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/GSDEG_Skills_Reference
 ---
 
 # lv_obj_t
@@ -16,4 +16,4 @@ tags:
 - [[draw_mouth()]] - `references` [EXTRACTED]
 - [[face_get_container()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/code #graphify/EXTRACTED #community/GSDEG_Skills_Reference

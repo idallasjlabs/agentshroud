@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "First Time Setup (2)"
-location: "L220"
+community: "Production Safety Checklist (SKILL)"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_Time_Setup_2
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
-- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_Time_Setup_2
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

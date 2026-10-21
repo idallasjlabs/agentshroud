@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "TestMCPProxyEndpoint"
+community: "AgentShroud Security Value Proposition"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # .test_clean_tool_call_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[A clean tool call with no threats should be allowed (200).]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

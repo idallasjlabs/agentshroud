@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L24"
+community: "Security Modules (58)"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Security_Modules_58
 ---
 
 # TestKillSwitchConfig
 
 ## Connections
-- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[Test kill switch configuration.]] - `rationale_for` [EXTRACTED]
-- [[test_killswitch_monitor.py]] - `contains` [EXTRACTED]
+- [[dot-test_paranoid_env_has_kill_switch()]] - `method` [EXTRACTED]
+- [[dot-test_paranoid_env_kill_switch_action()]] - `method` [EXTRACTED]
+- [[dot-test_recommended_env_has_kill_switch()]] - `method` [EXTRACTED]
+- [[Kill switch configuration in example configs.]] - `rationale_for` [EXTRACTED]
+- [[test_killswitch_modes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/Security_Modules_58

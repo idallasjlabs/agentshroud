@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L2308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Return weighted sub-score as 0.0–100.0 percentage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_compute_weighted_subscore()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

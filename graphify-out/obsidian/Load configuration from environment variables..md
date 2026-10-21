@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/runtime/config.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "Path (4)"
-location: "L37"
+community: "EgressFilterConfig (4)"
+location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path_4
+  - community/EgressFilterConfig_4
 ---
 
 # Load configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path_4
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "Implementation Status"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Implementation_Status
 ---
 
 # .agents/skills/i-mc/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

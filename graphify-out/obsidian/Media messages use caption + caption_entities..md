@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "GroupApprovalRouter (3)"
 location: "L8905"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/GroupApprovalRouter_3
 ---
 
 # Media messages use caption + caption_entities.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_caption_entities_supported()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter_3

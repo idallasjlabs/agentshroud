@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "ApprovalQueueConfig (2) (3)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/ApprovalQueueConfig_2_3
 ---
 
 # .session_manager()
@@ -16,4 +16,4 @@ tags:
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_3

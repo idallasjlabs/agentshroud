@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "AgentShroud Web Control Center - Implementation Summary"
+community: "clamav_scanner.py"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Web_Control_Center_-_Implementation_Summary
+  - community/clamav_scannerpy
 ---
 
 # 🎯 Key Features Implemented
@@ -17,4 +17,4 @@ tags:
 - [[✅ Design Principles Met]] - `contains` [EXTRACTED]
 - [[✅ Technical Implementation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Web_Control_Center_-_Implementation_Summary
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

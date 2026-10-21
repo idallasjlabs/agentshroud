@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "SkillGuard"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/SkillGuard
 ---
 
 # Thread-safe asyncio queue for managing egress approval requests.      Features:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

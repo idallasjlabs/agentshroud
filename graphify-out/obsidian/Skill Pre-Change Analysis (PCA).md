@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
+community: "openclaw/skills/i-cr/SKILL.md (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/openclaw/skills/i-cr/SKILLmd_2
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -17,6 +17,6 @@ tags:
 - [[Closing Gate]] - `contains` [EXTRACTED]
 - [[Output Format Rules]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)_1]] - `contains` [EXTRACTED]
-- [[Role_18]] - `contains` [EXTRACTED]
+- [[Role_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_2

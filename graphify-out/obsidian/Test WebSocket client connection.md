@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ApprovalQueueConfig (5)"
+community: "MiddlewareManager (3)"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/MiddlewareManager_3
 ---
 
 # Test WebSocket client connection
@@ -15,4 +15,4 @@ tags:
 - [[test_websocket_connect()]] - `rationale_for` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

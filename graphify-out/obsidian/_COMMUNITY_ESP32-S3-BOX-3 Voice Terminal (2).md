@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Base-Image Change Flagged For Decision, Not Attempted]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Currently Unmitigable Residual Class]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Dev-Side Copy of the 2026-09-06 Report]] - document - reports/upgrade-2026-09-06-dev.md
-- [[DevProd Mapping Keyed Off $USER via scriptsasb]] - rationale - reports/upgrade-2026-09-06.md
-- [[Governed Voice Path (device to gateway to Hermes)]] - concept - firmware/voice-terminal/SETUP.md
-- [[Hermes Vendored-Base Residual (upstream-owned)]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[One-Cause-Per-Failure Bring-Up Order]] - rationale - firmware/voice-terminal/SETUP.md
-- [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - rationale - reports/upgrade-2026-09-14.md
-- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - concept - reports/upgrade-2026-09-14.md
-- [[Reachability Context (cap_drop ALL, isolated network)]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Spoken High-Risk Command Approval Pause]] - rationale - firmware/voice-terminal/SETUP.md
-- [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - document - reports/upgrade-2026-09-06.md
-- [[Tailscale Funnel Exposure (supersedes on-device client)]] - rationale - firmware/voice-terminal/SETUP.md
-- [[Two-Terminal-State Finding Taxonomy]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Voice Gateway Service (STTTTS on marvin)]] - concept - firmware/voice-terminal/SETUP.md
-- [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - rationale - reports/upgrade-2026-09-06.md
-- [[Zeroed .trivyignore (no suppressions)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[AWS Credentials_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub PAT_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Related Skills_80]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Role_63]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting_30]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_86]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[When to Invoke_7]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[openclawskillsi-mcpm-auth-resetSKILL]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,13 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal]]
-- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
-- 1 edge to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (11)]]
 
 ## Top bridge nodes
-- [[Currently Unmitigable Residual Class]] - degree 6, connects to 1 community
-- [[Governed Voice Path (device to gateway to Hermes)]] - degree 4, connects to 1 community
-- [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - degree 3, connects to 1 community
-- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - degree 2, connects to 1 community
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - degree 9, connects to 1 community

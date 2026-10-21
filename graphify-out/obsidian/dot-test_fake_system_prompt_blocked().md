@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "CrossBotTrustLedger"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolResult
+  - community/CrossBotTrustLedger
 ---
 
 # .test_fake_system_prompt_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInjectionDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolResult
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

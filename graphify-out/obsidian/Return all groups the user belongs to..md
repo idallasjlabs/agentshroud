@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "GroupConfig"
+community: "colima-health-check.sh"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/colima-health-checksh
 ---
 
 # Return all groups the user belongs to.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_user_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupConfig
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

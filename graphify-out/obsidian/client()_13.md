@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "ForwardRequest (2)"
-location: "L32"
+community: "UserSessionManager (3)"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest_2
+  - community/UserSessionManager_3
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

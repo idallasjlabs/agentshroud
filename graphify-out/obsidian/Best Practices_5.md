@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (2)"
+community: "setup-secrets.sh (2)"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_2
+  - community/setup-secretssh_2
 ---
 
 # Best Practices
@@ -17,6 +17,6 @@ tags:
 - [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
 - [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
 - [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2
+#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

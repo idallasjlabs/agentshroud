@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
+community: "apply-patches.js"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/apply-patchesjs
 ---
 
 # Test risk level emoji display.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_risk_emoji_mapping()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Atlas — Curriculum Architect (3)"
 location: "L159-L175"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Atlas__Curriculum_Architect_3
 ---
 
 # Seed Job: jira-weekly-review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt jira-weekly-review]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/document #graphify/INFERRED #community/Atlas__Curriculum_Architect_3

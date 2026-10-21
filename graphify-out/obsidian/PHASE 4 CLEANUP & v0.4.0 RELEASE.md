@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "PHASE 4: CLEANUP & v0.4.0 RELEASE"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
 location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_4_CLEANUP__v040_RELEASE
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # PHASE 4: CLEANUP & v0.4.0 RELEASE
@@ -19,4 +19,4 @@ tags:
 - [[4.5 Deploy to Production]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_4_CLEANUP__v040_RELEASE
+#graphify/document #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

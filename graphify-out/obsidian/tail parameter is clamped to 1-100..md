@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "rationale"
-community: "dashboard_endpoints.py"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # tail parameter is clamped to 1-100.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_logs_recent_tail_clamped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

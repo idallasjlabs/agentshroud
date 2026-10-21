@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server github-idallasj]] - code - .mcp.json
+- [[Build-config pinning — sdkconfig.defaults pins TCP_MSSstackWDTTCP buffers]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

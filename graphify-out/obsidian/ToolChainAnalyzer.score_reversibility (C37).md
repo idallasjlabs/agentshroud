@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer.score_reversibility (C37)"
+community: "SharedMemoryManager Group Memory Read/Write Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzerscore_reversibility_C37
+  - community/SharedMemoryManager_Group_Memory_Read/Write_Tests
 ---
 
 # ToolChainAnalyzer.score_reversibility (C37)
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzerscore_reversibility_C37
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager_Group_Memory_Read/Write_Tests

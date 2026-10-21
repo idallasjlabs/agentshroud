@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L6907"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # fake_send()
@@ -38,4 +38,4 @@ tags:
 - [[dot-test_suspended_user_receives_drop_notice()]] - `indirect_call` [INFERRED]
 - [[dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/SecurityPipeline

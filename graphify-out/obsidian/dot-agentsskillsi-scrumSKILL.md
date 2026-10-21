@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-scrum/SKILL.md"
 type: "document"
-community: ".agents/skills/i-scrum/SKILL.md"
+community: "GitGuardian ignored-paths + ignored-matches for synthetic test fixtures"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-scrum/SKILLmd
+  - community/GitGuardian_ignored-paths__ignored-matches_for_synthetic_test_fixtures
 ---
 
 # .agents/skills/i-scrum/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill scrum]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-scrum/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/GitGuardian_ignored-paths__ignored-matches_for_synthetic_test_fixtures

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "ToolResultSanitizer (2)"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Extract text content from various tool result formats for PII scanning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_scannable_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

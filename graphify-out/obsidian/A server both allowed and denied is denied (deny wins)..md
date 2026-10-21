@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # A server both allowed and denied is denied (deny wins).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_denylist_wins_over_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

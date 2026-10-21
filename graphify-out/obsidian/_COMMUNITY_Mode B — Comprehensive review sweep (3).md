@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Mode B — Comprehensive review sweep (3)
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Mode B — Comprehensive review sweep_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2 — Work through directories one at a time_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV) (2)]]
+- 2 edges to [[_COMMUNITY_Deploying AgentShroud on macOS (Apple Silicon  Intel)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
 
 ## Top bridge nodes
-- [[Mode B — Comprehensive review sweep_2]] - degree 4, connects to 1 community
+- [[test_prompt_protection.py]] - degree 4, connects to 2 communities
+- [[prompt_protection()]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "TestProductionCompose"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/TestProductionCompose
 ---
 
 # .test_isolation_fail_closed_without_session_manager()
@@ -15,4 +15,4 @@ tags:
 - [[TestProcessRequestIdentity]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

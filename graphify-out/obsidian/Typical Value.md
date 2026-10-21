@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
+community: "MCP AWS Profile Configuration README"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Typical Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

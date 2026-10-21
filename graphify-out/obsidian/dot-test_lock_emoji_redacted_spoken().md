@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TestNormalizeForSpeech"
+community: "AgentTarget (4)"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/AgentTarget_4
 ---
 
 # .test_lock_emoji_redacted_spoken()
@@ -16,4 +16,4 @@ tags:
 - [[TestNormalizeForSpeech]] - `method` [EXTRACTED]
 - [[🔒 REDACTED Credentials cannot be displayed via Telegram]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestAiModelSupplyChain"
+community: ".agents/skills/i-architecture-review/SKILL.md"
 location: "L1021"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAiModelSupplyChain
+  - community/agents/skills/i-architecture-review/SKILLmd
 ---
 
 # .test_full_attestation_chain()
@@ -15,4 +15,4 @@ tags:
 - [[TestAiModelSupplyChain]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAiModelSupplyChain
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-architecture-review/SKILLmd

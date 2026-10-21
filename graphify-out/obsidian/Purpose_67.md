@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "iCloud Services"
-location: "L16"
+community: "OpenClaw Bot SSH Configuration"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Purpose
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

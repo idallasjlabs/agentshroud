@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Architecture_10]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[AgentShroud Typography Guidelines]] - document - branding/typography/typography.md
+- [[Body Text]] - document - branding/typography/typography.md
+- [[CodeMonospace]] - document - branding/typography/typography.md
+- [[Do's_1]] - document - branding/typography/typography.md
+- [[Don'ts_1]] - document - branding/typography/typography.md
+- [[Font Families]] - document - branding/typography/typography.md
+- [[Font Weights]] - document - branding/typography/typography.md
+- [[Headings]] - document - branding/typography/typography.md
+- [[Letter Spacing]] - document - branding/typography/typography.md
+- [[Line Heights]] - document - branding/typography/typography.md
+- [[Mobile]] - document - branding/typography/typography.md
+- [[Monospace (CodeTechnical)]] - document - branding/typography/typography.md
+- [[Platform-Specific]] - document - branding/typography/typography.md
+- [[Primary Typeface]] - document - branding/typography/typography.md
+- [[Print]] - document - branding/typography/typography.md
+- [[Type Scale]] - document - branding/typography/typography.md
+- [[Usage Guidelines_3]] - document - branding/typography/typography.md
+- [[Web]] - document - branding/typography/typography.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
 
 ## Top bridge nodes
-- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities
+- [[AgentShroud Typography Guidelines]] - degree 8, connects to 1 community

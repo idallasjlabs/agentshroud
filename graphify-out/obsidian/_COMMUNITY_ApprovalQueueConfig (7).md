@@ -1,41 +1,40 @@
 ---
 type: community
-members: 28
+members: 27
 ---
 
 # ApprovalQueueConfig (7)
 
-**Members:** 28 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[dot-_build_modules()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_all_pillars_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_all_scorers_optimizing_with_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_all_scorers_zero_without_modules_or_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_bare_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_baseline_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_baseline_only()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_full_stack()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_full_stack()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_full_stack_with_review_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_import_failure_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_missing_rbac_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_rich_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_true_and_false_against_real_app_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[test_scanner_integration_coverage.py]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
+- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
+- [[Auth Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Crash Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Egress Filter Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[Error Index]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Prompt Injection Blocks_1]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection Blocks]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Related Notes_36]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Related Notes_37]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[docker-commands]] - document - examples/docker-commands.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,38 +44,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY__w]]
-- 4 edges to [[_COMMUNITY_Layer-by-Layer Breakdown (2)]]
-- 2 edges to [[_COMMUNITY_TestIsContainerRunning]]
-- 2 edges to [[_COMMUNITY_TestAggregateResults]]
-- 1 edge to [[_COMMUNITY_TestComputeBotScorecard]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (10)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (11)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (12)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (13)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (14)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (15)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (16)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (17)]]
-- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
-- 1 edge to [[_COMMUNITY_TestFluentBitSummary]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (4)]]
-- 1 edge to [[_COMMUNITY_TestResourceAvailability]]
-- 1 edge to [[_COMMUNITY_TestSocketAndPidProbes]]
-- 1 edge to [[_COMMUNITY_TestTrivySummary]]
-- 1 edge to [[_COMMUNITY_TestAiModelSupplyChain]]
-- 1 edge to [[_COMMUNITY_TestDaemonConfigReader]]
-- 1 edge to [[_COMMUNITY_TestIdentityAuth]]
-- 1 edge to [[_COMMUNITY_TestMandatoryGates]]
-- 1 edge to [[_COMMUNITY_TestSecretsManagement]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 3 edges to [[_COMMUNITY_Error Index]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_EU AI Act & NIST Alignment Matrix — AgentShroud™]]
+- 1 edge to [[_COMMUNITY_AgentShroud Hermes — System Identity]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_Output Sections (ALL required) (2)]]
+- 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator]]
+- 1 edge to [[_COMMUNITY_browserpackage.json]]
+- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark (3)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2) (3)]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist]]
+- 1 edge to [[_COMMUNITY_Workflow Survey → Draft → Inject → Confirm]]
+- 1 edge to [[_COMMUNITY_ssh_config.py]]
 
 ## Top bridge nodes
-- [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities
-- [[dot-_build_modules()]] - degree 3, connects to 1 community
-- [[dot-test_full_stack_with_review_evidence()]] - degree 2, connects to 1 community
-- [[dot-test_rich_environment()]] - degree 2, connects to 1 community
-- [[dot-test_full_stack()_1]] - degree 2, connects to 1 community
+- [[Troubleshooting Matrix]] - degree 8, connects to 4 communities
+- [[Error Index]] - degree 9, connects to 3 communities
+- [[Crash Recovery]] - degree 6, connects to 3 communities
+- [[Auth Errors]] - degree 4, connects to 2 communities
+- [[Container Errors_1]] - degree 4, connects to 2 communities

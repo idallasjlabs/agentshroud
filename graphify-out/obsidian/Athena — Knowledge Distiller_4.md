@@ -1,21 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
-type: "document"
-community: "Athena — Knowledge Distiller (3)"
-location: "L6"
+source_file: "docs/architecture/agentic-os.md"
+type: "concept"
+community: "Output Sections (ALL required) (3)"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_3
+  - community/Output_Sections_ALL_required_3
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_22]] - `contains` [EXTRACTED]
-- [[Output Format_37]] - `contains` [EXTRACTED]
-- [[Persona_16]] - `contains` [EXTRACTED]
-- [[Role_93]] - `contains` [EXTRACTED]
-- [[openclawskillsi-athenaSKILL]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `shares_data_with` [EXTRACTED]
+- [[Oracle — Feedback Analyst_4]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_3
+#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3

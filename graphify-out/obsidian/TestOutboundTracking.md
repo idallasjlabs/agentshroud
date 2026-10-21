@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "api.py (2)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/apipy_2
 ---
 
 # TestOutboundTracking
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_system_message_not_tracked()]] - `method` [EXTRACTED]
 - [[dot-test_thread_reply_recovers_inbound_via_conversations_replies()]] - `method` [EXTRACTED]
 - [[dot-test_tracker_exception_does_not_break_response()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_2]] - `uses` [INFERRED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/apipy_2

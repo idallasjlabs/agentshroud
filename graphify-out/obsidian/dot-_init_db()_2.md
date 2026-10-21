@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "TrustConfig"
-location: "L117"
+community: "_wrap_response() (2)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/_wrap_response_2
 ---
 
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_172]] - `calls` [EXTRACTED]
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_111]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

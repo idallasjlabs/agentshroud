@@ -8,34 +8,34 @@ members: 28
 **Members:** 28 nodes
 
 ## Members
-- [[1Password Session Expiry (op-proxy)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[ARM64 Seccomp Profile Requirement]] - rationale - docs/operations/raspberry-pi.md
-- [[Anthropic API Credits & Rate Limits Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Anthropic API Credits Exhausted Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[Bot Token Migration Confusion]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Colima Troubleshooting Procedures]] - concept - docs/runbooks/RUNBOOK.md
-- [[ColimaDocker Stability Issue (Marvin)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Configuration Reference]] - document - docs/setup/setup-guide.md
-- [[Example Configurations_1]] - document - docs/setup/setup-guide.md
-- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - rationale - docs/runbooks/RUNBOOK.md
-- [[Glibc TLS Incompatibility (Trillian)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Multi-Host Infrastructure (MarvinTrillianPi)]] - concept - docs/runbooks/RUNBOOK.md
-- [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[RUNBOOK]] - document - docs/runbooks/RUNBOOK.md
-- [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
-- [[Seccomp Profile Conflict (x86_64)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - concept - docs/operations/raspberry-pi.md
-- [[TELEGRAM_ISSUES]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[agentshroud.yaml Configuration File]] - concept - docs/operations/raspberry-pi.md
-- [[apply-patches.js Invalid Config Injection Bug]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[egress-config.yml - Egress Filtering]] - document - docs/setup/setup-guide.md
-- [[iMessage Automation Permission Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[iMessage Integration Permissions Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[mcp-config.yml - MCP Server Registry]] - document - docs/setup/setup-guide.md
-- [[raspberry-pi]] - document - docs/operations/raspberry-pi.md
+- [[dot-test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[manager()_2]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[session_manager()_2]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[temp_workspace()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,20 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Update AgentShroud]]
-- 2 edges to [[_COMMUNITY_troubleshooting_1]]
-- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
-- 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Tailscale Remote Access Setup]]
-- 1 edge to [[_COMMUNITY_AgentShroud System Status Report]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Telegram-Reported Issues]]
-- 1 edge to [[_COMMUNITY_AgentShroud Deployment & Troubleshooting Runbook]]
-- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
+- 8 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
-- [[raspberry-pi]] - degree 8, connects to 4 communities
-- [[RUNBOOK]] - degree 7, connects to 4 communities
-- [[TELEGRAM_ISSUES]] - degree 14, connects to 2 communities
-- [[Configuration Reference]] - degree 5, connects to 1 community
-- [[SYSTEM_STATUS]] - degree 3, connects to 1 community
+- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 2 communities
+- [[TestIsToolCallRequest]] - degree 12, connects to 2 communities
+- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 2 communities
+- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 2 communities
+- [[session_manager()_2]] - degree 2, connects to 1 community

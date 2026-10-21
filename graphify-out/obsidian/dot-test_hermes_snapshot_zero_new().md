@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
-location: "L326"
+community: "ControlCenter"
+location: "L681"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/ControlCenter
 ---
 
 # .test_hermes_snapshot_zero_new()
@@ -15,4 +15,4 @@ tags:
 - [[TestSnapshotSmoke]] - `method` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

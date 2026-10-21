@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L45"
+community: "First iteration ingests + records; second sees dedup and skips."
+location: "L1826"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
 ---
 
 # now()
 
 ## Connections
-- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

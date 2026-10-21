@@ -8,35 +8,35 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[Compose Overlay Discrepancy Flagged For Review]] - rationale - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Docker Storage Exhaustion (silent Hermes failure)]] - rationale - reports/upgrade-2026-09-06-prod.md
-- [[Env-split note (prod FYI, for init-config.sh work)]] - document - docs/dev-notes/job-quality-matrix.md
-- [[Exit-50 Rollback Failure Incident]] - rationale - reports/upgrade-2026-09-14.md
-- [[Failure Class Local Model Call Hangs]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Failure Class Memory-Pressure Garbling]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Failure Class Search Backend Unreachable]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Failure classes (prod investigation handover, 2026-08-31)]] - document - docs/dev-notes/job-quality-matrix.md
-- [[First-Pass Abort on Dirty Tree  Branch Churn]] - rationale - reports/upgrade-2026-08-30.md
-- [[Five Previously-Unexercised Apply-Script Bugs]] - rationale - reports/upgrade-2026-09-14.md
-- [[Hard-Fail Rather Than Deliver an Empty Shell]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Healthcheck Blind Spot (no disk-write probe)]] - rationale - reports/upgrade-2026-09-06-prod.md
-- [[Hermes Is Not Compose-Managed (asb owns it)]] - rationale - reports/upgrade-2026-09-14.md
-- [[Hermes Standalone Lifecycle (outside compose)]] - rationale - reports/upgrade-2026-08-30.md
-- [[Job Quality Matrix — local-model reportnewsletter jobs (Mission 1)]] - document - docs/dev-notes/job-quality-matrix.md
-- [[LibreChatsearxng Sibling-Repo Boundary]] - rationale - reports/upgrade-2026-08-30.md
-- [[Local-Model Job Quality Matrix]] - document - docs/dev-notes/job-quality-matrix.md
-- [[OWASP Agentic AI (ASI) Coverage Map]] - concept - docs/security/cve-mitigation-matrix.md
-- [[Owner Policy — Fix Prompts, Never Switch to Cloud Models]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Per-job verdicts]] - document - docs/dev-notes/job-quality-matrix.md
-- [[Phantom latest Scan Tag (false 0-CRITICAL pass)]] - rationale - reports/upgrade-2026-09-14.md
-- [[Prod BLOCKED Snapshot 20260906-0808]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Prod-Side 2026-09-06 Upgrade Report]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Related delivery-layer defects (separate from model quality)]] - document - docs/dev-notes/job-quality-matrix.md
-- [[Sidecar Gap Finding (declared vs running)]] - rationale - reports/upgrade-2026-08-30.md
-- [[ToolResultSanitizer Link Stripping (delivery defect)]] - rationale - docs/dev-notes/job-quality-matrix.md
-- [[Upgrade Report Snapshot 20260830-2009]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Weekly Upgrade Report 2026-08-30]] - document - reports/upgrade-2026-08-30.md
-- [[job-quality-matrix]] - document - docs/dev-notes/job-quality-matrix.md
+- [[For --cluster-only_1]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)_1]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[For --watch_1]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[For graphify add_1]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[For graphify explain_1]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[For graphify path_1]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[For git commit hook_1]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_1]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 1 — Traversal_1]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[Step 6b - Wiki (only if --wiki flag)_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[graphify reference add a URL and watch a folder_1]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[graphify reference commit hook and native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[graphify reference extra exports and benchmark_1]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[graphify reference incremental update and cluster-only_1]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[graphify reference query, path, explain_1]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[graphify reference transcribe video and audio_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[openclawskillsgraphifyreferencesadd-watch]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[openclawskillsgraphifyreferencesexports]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[openclawskillsgraphifyreferenceshooks]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[openclawskillsgraphifyreferencesquery]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[openclawskillsgraphifyreferencestranscribe]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[openclawskillsgraphifyreferencesupdate]] - document - docker/config/openclaw/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,14 +44,3 @@ members: 29
 TABLE source_file, type FROM #community/Local-Model_Job_Quality_Matrix
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-
-## Top bridge nodes
-- [[Local-Model Job Quality Matrix]] - degree 6, connects to 1 community
-- [[job-quality-matrix]] - degree 5, connects to 1 community
-- [[Five Previously-Unexercised Apply-Script Bugs]] - degree 4, connects to 1 community
-- [[OWASP Agentic AI (ASI) Coverage Map]] - degree 2, connects to 1 community

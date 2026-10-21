@@ -1,17 +1,19 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L449"
+community: "test_main_endpoints.py (2)"
+location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/test_main_endpointspy_2
 ---
 
 # Security Validation
 
 ## Connections
-- [[Post-Deployment Validation]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Check File Permissions]] - `contains` [EXTRACTED]
+- [[Verify Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2

@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Configuration  Environment Variables_30]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Function Details_50]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Purpose_191]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Related_57]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Responsibilities_56]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[sidecar.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[sidecar.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[dot-_run_proxy()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_decoded_body_drops_upstream_encoding_and_recomputes_length()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_multiple_set_cookie_headers_are_not_folded()]] - code - gateway/tests/test_main_endpoints.py
+- [[TestHermesDashboardProxyHeaders]] - code - gateway/tests/test_main_endpoints.py
+- [[__aenter__()]] - code - gateway/tests/test_main_endpoints.py
+- [[__aexit__()]] - code - gateway/tests/test_main_endpoints.py
+- [[__init__()_3]] - code - gateway/tests/test_main_endpoints.py
+- [[_body()]] - code - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_proxy must relay upstream headers header-by-header. Found on…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[multi_items()]] - code - gateway/tests/test_main_endpoints.py
+- [[request()]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,10 @@ members: 11
 TABLE source_file, type FROM #community/sidecarpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+
+## Top bridge nodes
+- [[TestHermesDashboardProxyHeaders]] - degree 6, connects to 2 communities

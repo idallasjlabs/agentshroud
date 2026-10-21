@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "colima-health-check.sh"
-location: "L123"
+community: "_make_sanitizer()"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # _session_guard()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

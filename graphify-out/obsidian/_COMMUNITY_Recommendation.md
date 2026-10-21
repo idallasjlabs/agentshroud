@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[10. Security Supply Chain Analysis]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.1 Core Runtime Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.2 Security-Specific Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.3 Container Security Tools]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.4 High-Risk Dependency Wazuh]] - document - docs/papers/agentshroud-whitepaper.md
-- [[10.5 Supply Chain Security Practices]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Cost & timeline (indicative)]] - document - docs/compliance/soc2-attestation-path.md
-- [[Immediate Actions (Pre-Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Long-Term Strategic Items]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Next Phase Priorities]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Readiness assessment — existing controls vs SOC 2 Common Criteria]] - document - docs/compliance/soc2-attestation-path.md
-- [[Recommendation_1]] - document - docs/compliance/soc2-attestation-path.md
-- [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - document - docs/compliance/soc2-attestation-path.md
-- [[Tracking]] - document - docs/compliance/soc2-attestation-path.md
-- [[What SOC 2 Type II actually requires]] - document - docs/compliance/soc2-attestation-path.md
-- [[Why this is on the board]] - document - docs/compliance/soc2-attestation-path.md
-- [[soc2-attestation-path]] - document - docs/compliance/soc2-attestation-path.md
+- [[AgentShroud Tagline]] - concept - BRAND.md
+- [[AgentShroud Taglines List]] - document - branding/taglines.json
+- [[check()_8]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[check()_9]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[check()_10]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
+- [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
+- [[jobs.yaml (Hermes cron)]] - document - docker/config/hermes/cron/jobs.yaml
+- [[run_test()]] - code - scripts/smoke.sh
+- [[scriptssmoke.sh]] - code - scripts/smoke.sh
+- [[smoke.sh script_1]] - code - scripts/smoke.sh
+- [[test_hermes_chown_coverage.sh]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[test_hermes_chown_coverage.sh script]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,10 +34,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
-- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 1 edge to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
+- 1 edge to [[_COMMUNITY_troubleshooting_1]]
 
 ## Top bridge nodes
-- [[Recommendation_1]] - degree 7, connects to 2 communities
-- [[10. Security Supply Chain Analysis]] - degree 7, connects to 1 community
+- [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities
+- [[run_test()]] - degree 3, connects to 1 community
+- [[AgentShroud Tagline]] - degree 2, connects to 1 community

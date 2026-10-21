@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-__aenter__()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__aexit__()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-stream()]] - code - gateway/tests/test_llm_proxy.py
+- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_KeyRotationManager (2)]]
-- 1 edge to [[_COMMUNITY_TestDomainValidationHelper]]
-- 1 edge to [[_COMMUNITY_KeyRotationManager]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
+- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
 
 ## Top bridge nodes
-- [[TestStoreIn1Password]] - degree 10, connects to 4 communities
+- [[_HeadFakeClient]] - degree 5, connects to 1 community

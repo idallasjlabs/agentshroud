@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "_make_proxy"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/_make_proxy
 ---
 
 # ._save()
 
 ## Connections
 - [[dot-_revoke_by_user_privilege()]] - `calls` [EXTRACTED]
-- [[dot-cleanup_expired()_2]] - `calls` [EXTRACTED]
+- [[dot-cleanup_expired()_3]] - `calls` [EXTRACTED]
 - [[dot-delegate()]] - `calls` [EXTRACTED]
 - [[dot-revoke_all_for_user()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_14]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_16]] - `calls` [EXTRACTED]
 - [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

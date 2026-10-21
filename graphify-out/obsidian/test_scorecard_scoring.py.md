@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scorecard_scoring.py"
+community: "Feature: Global Monitor-Only Mode (\"Observatory Mode\")"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_Mode
 ---
 
 # test_scorecard_scoring.py
@@ -40,4 +40,4 @@ tags:
 - [[not_run_trivy()]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/code #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_Mode

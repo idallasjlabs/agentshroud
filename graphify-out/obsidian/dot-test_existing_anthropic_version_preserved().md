@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # .test_existing_anthropic_version_preserved()
@@ -16,4 +16,4 @@ tags:
 - [[Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered]] - `rationale_for` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "DockerEngine"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/DockerEngine
 ---
 
 # Apple Silicon Local-LLM Stack (oMLX, MLX-LM, MLX-VLM, vLLM-MLX, Ollama, Turbo Fieldfare)
@@ -16,4 +16,4 @@ tags:
 - [[Prompt Today in AI (12-Query Sweep)]] - `references` [EXTRACTED]
 - [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/concept #graphify/EXTRACTED #community/DockerEngine

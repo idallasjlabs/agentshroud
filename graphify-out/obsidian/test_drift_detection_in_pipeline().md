@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response() (2)"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_2
 ---
 
 # test_drift_detection_in_pipeline()
@@ -17,4 +17,4 @@ tags:
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

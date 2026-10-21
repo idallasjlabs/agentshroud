@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[esp_log.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
+- [[Gemini CLI (SECONDARY agent configuration)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

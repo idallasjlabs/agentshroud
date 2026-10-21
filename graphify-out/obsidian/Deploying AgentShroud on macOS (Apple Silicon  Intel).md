@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
+community: "url_analyzer.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+  - community/url_analyzerpy
 ---
 
 # Deploying AgentShroud on macOS (Apple Silicon / Intel)
@@ -20,4 +20,4 @@ tags:
 - [[Updating to Latest Release_2]] - `contains` [EXTRACTED]
 - [[macos]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

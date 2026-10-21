@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L341"
+community: "hermes/skills/i-bs/README.md"
+location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Wait for an approval decision.          Returns             True if approved, F]] - `rationale_for` [EXTRACTED]
+- [[_StubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

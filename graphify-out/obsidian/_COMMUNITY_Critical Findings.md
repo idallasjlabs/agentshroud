@@ -8,30 +8,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[1. ContextGuard NEVER BLOCKS (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[1. Least Privilege]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Defense in Depth]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Explicit Over Implicit]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[3. No Cross-Turn Analysis (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[4. Fail Secure]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[4. No Semantic Understanding (Severity MEDIUM)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Core Security Principles_3]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Critical Findings_1]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Current Defenses (3 Layers)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 1 PromptGuard (11 regex patterns) — P0, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 2 ContextGuard (23 patterns + session tracking) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 3 ToolResultInjectionScanner (12 patterns) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 4 PromptProtection (outbound) — P2, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P0 — Ship Blockers]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P1 — High Value]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Prompt Injection Assessment — AgentShroud v0.7.0]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Threat Matrix What Gets Through]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[prompt-injection-assessment-2026-02-25]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[v0.8.0 Recommendations (Priority Order)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[dot-__init__()_132]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_api_url()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_async_send()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_send_request()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_token_for()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-cleanup_expired()_1]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-send_text()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[EgressTelegramNotifier]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Process inline button callback. Returns action result.          Actions allow_1]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Replace the inline keyboard approval message with a decision record.          Re]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Return the Telegram bot token to use for a given agent_id.          If the agent]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a plain text message — public transport for other gateway         component]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a request to Telegram Bot API (sync, run in executor).]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - rationale - gateway/tests/test_egress_callback_stale.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,9 +41,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Security Policies]]
-- 1 edge to [[_COMMUNITY_Security Implementation Verification]]
+- 5 edges to [[_COMMUNITY_7. Pi-hole DNS Security Layer (Built-In)]]
+- 3 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist (3)]]
+- 3 edges to [[_COMMUNITY_apply-patches.js]]
 
 ## Top bridge nodes
-- [[Core Security Principles_3]] - degree 5, connects to 1 community
-- [[🎓 Key Principles]] - degree 4, connects to 1 community
+- [[EgressTelegramNotifier]] - degree 23, connects to 3 communities
+- [[dot-answer_callback()]] - degree 4, connects to 1 community
+- [[dot-edit_decision_message()]] - degree 4, connects to 1 community

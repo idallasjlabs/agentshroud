@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "CrossBotTrustLedger"
 location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # .test_egress_allows_non_url_tool_call()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
 - [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

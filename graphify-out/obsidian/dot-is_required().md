@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "test_voice_latency_guard.py"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_voice_latency_guardpy
 ---
 
 # .is_required()
@@ -16,4 +16,4 @@ tags:
 - [[MFAGuard_2]] - `method` [EXTRACTED]
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

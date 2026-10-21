@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.png"
 type: "image"
-community: "01-architecture.md"
+community: "REPORT STRUCTURE"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/01-architecturemd
+  - community/REPORT_STRUCTURE
 ---
 
 # Rendered Gateway Components Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway Internals Component Diagram]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/01-architecturemd
+#graphify/image #graphify/EXTRACTED #community/REPORT_STRUCTURE

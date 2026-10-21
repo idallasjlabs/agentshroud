@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "_w"
+community: "MiddlewareManager (3) (2)"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/MiddlewareManager_3_2
 ---
 
 # _w()
@@ -82,8 +82,8 @@ tags:
 - [[dot-test_valid()]] - `calls` [EXTRACTED]
 - [[dot-test_wazuh_agent_absent()]] - `calls` [EXTRACTED]
 - [[dot-test_wazuh_agent_detected()]] - `calls` [EXTRACTED]
-- [[Path_46]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[Write a file under the sandbox root, creating parents.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2

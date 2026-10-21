@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[About AgentShroud™]] - document - branding/guidelines/brand-guidelines.md
-- [[Approved Logo Assets for Media]] - document - branding/guidelines/brand-guidelines.md
-- [[Key Facts]] - document - branding/guidelines/brand-guidelines.md
-- [[Media Contact]] - document - branding/guidelines/brand-guidelines.md
-- [[Press Kit]] - document - branding/guidelines/brand-guidelines.md
+- [[Purpose_46]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Related Skills_32]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Usage_35]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[iCloud Data Manager (ICLOUD)_1]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[openclawskillsi-icloudREADME]] - document - docker/config/openclaw/skills/i-icloud/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Press Kit]] - degree 6, connects to 2 communities
+- [[iCloud Data Manager (ICLOUD)_1]] - degree 5, connects to 1 community

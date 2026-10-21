@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Contributing Factors]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Timeline]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY_Credential Management - 1Password Integration (2)]]
 
 ## Top bridge nodes
-- [[4. Risks & Gaps]] - degree 8, connects to 1 community
+- [[postmortem]] - degree 8, connects to 1 community

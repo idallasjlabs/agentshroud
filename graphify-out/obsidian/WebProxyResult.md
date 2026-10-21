@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "scanner_integration.py"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/scanner_integrationpy
 ---
 
 # WebProxyResult
@@ -24,6 +24,6 @@ tags:
 - [[Result of proxying a web request.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "test_a2a_proxy.py"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_a2a_proxypy
 ---
 
 # .test_extract_chat_id_from_group_agent_id()
@@ -16,4 +16,4 @@ tags:
 - [[GroupApprovalRouter]] - `calls` [EXTRACTED]
 - [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

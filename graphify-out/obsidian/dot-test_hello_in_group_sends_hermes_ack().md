@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L9244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # .test_hello_in_group_sends_hermes_ack()
@@ -21,4 +21,4 @@ tags:
 - [[fake_send()_11]] - `indirect_call` [INFERRED]
 - [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
+community: "parse_query"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/parse_query
 ---
 
 # sag
@@ -15,4 +15,4 @@ tags:
 - [[Chat voice responses]] - `contains` [EXTRACTED]
 - [[sagSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/parse_query

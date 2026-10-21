@@ -1,31 +1,19 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L31"
+community: "AlertDispatcher (2)"
+location: "L23"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - graphify/INFERRED
+  - community/AlertDispatcher_2
 ---
 
 # Severity
 
 ## Connections
-- [[Any_60]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[SecurityEvent_1]] - `uses` [INFERRED]
 - [[Severity_1]] - `uses` [INFERRED]
-- [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_4]] - `uses` [INFERRED]
-- [[event_adapter.py]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
-- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
-- [[websocket.py]] - `imports` [EXTRACTED]
+- [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/INFERRED #community/AlertDispatcher_2

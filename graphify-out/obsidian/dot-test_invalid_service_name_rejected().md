@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "AsyncMock"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/AsyncMock
 ---
 
 # .test_invalid_service_name_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceControl]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

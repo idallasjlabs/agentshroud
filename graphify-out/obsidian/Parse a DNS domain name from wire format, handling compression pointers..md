@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "test_dns_canvas_coverage.py"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # Parse a DNS domain name from wire format, handling compression pointers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_domain_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

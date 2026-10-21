@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Current Status_3]] - document - docs/testing/README.md
-- [[Planned Documents_3]] - document - docs/testing/README.md
-- [[Testing Documentation]] - document - docs/testing/README.md
-- [[testingREADME]] - document - docs/testing/README.md
+- [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
+- [[Restart Procedure]] - document - docs/operations/runbook.md
+- [[Starting the System]] - document - docs/operations/runbook.md
+- [[Stopping the System]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,9 @@ members: 4
 TABLE source_file, type FROM #community/Testing_Documentation
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+
+## Top bridge nodes
+- [[1. Starting and Stopping AgentShroud]] - degree 4, connects to 1 community

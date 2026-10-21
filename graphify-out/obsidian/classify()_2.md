@@ -1,23 +1,23 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "code"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # classify()
 
 ## Connections
-- [[Any_43]] - `references` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
 - [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - `rationale_for` [EXTRACTED]
 - [[TestClassify_2]] - `calls` [EXTRACTED]
 - [[_is_benign_skip]] - `calls` [EXTRACTED]
 - [[_is_benign_skip()]] - `calls` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 - [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

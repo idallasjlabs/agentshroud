@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "UserSessionManager (6)"
-location: "L16"
+community: "lifespan() (3)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSessionManager_6
+  - community/lifespan_3
 ---
 
 # Purpose
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSessionManager_6
+#graphify/document #graphify/EXTRACTED #community/lifespan_3

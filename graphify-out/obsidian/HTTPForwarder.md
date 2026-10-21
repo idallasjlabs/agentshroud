@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # HTTPForwarder
 
 ## Connections
-- [[dot-__init__()_69]] - `method` [EXTRACTED]
-- [[dot-forward()_1]] - `method` [EXTRACTED]
-- [[dot-get_stats()_4]] - `method` [EXTRACTED]
-- [[dot-health_check()]] - `method` [EXTRACTED]
+- [[dot-__init__()_90]] - `method` [EXTRACTED]
+- [[dot-forward()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_10]] - `method` [EXTRACTED]
+- [[dot-health_check()_1]] - `method` [EXTRACTED]
 - [[dot-is_healthy()]] - `method` [EXTRACTED]
 - [[dot-last_forward_time()]] - `method` [EXTRACTED]
 - [[dot-set_response_handler()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

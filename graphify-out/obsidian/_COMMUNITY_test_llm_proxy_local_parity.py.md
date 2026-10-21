@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[asyncio]] - code
+- [[A2AGovernanceProxy.update_peer_trust]] - code - gateway/security/a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 

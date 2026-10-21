@@ -1,74 +1,87 @@
 ---
 type: community
-members: 61
+members: 74
 ---
 
 # WebProxy
 
-**Members:** 61 nodes
+**Members:** 74 nodes
 
 ## Members
-- [[dot-__init__()_202]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_19]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_20]] - code - gateway/tests/test_http_proxy.py
-- [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
-- [[dot-drain()_3]] - code - gateway/tests/test_http_proxy.py
-- [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
-- [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
-- [[dot-write()_3]] - code - gateway/tests/test_http_proxy.py
-- [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
-- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
-- [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
-- [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
-- [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
-- [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
-- [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
-- [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
-- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - rationale - gateway/tests/test_http_proxy.py
-- [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
-- [[_DummyTargetWriter_1]] - code - gateway/tests/test_http_proxy.py
-- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
-- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
-- [[api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels]] - rationale - gateway/tests/test_http_proxy.py
-- [[http_proxy.py (HTTPConnectProxy)]] - code - gateway/proxy/http_proxy.py
-- [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach]] - rationale - gateway/tests/test_http_proxy.py
-- [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
-- [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
-- [[rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached.]] - rationale - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_cached_after_first_lookup()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_known_ip()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_lazy_rdns_error()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_lazy_rdns_hit()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_lazy_rdns_miss()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_none_peer()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
-- [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
-- [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_system_bypass_domain_skips_policy_checks()]] - code - gateway/tests/test_http_proxy.py
-- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - code - gateway/tests/test_http_proxy.py
-- [[test_default_allowed_domains_non_empty()]] - code - gateway/tests/test_http_proxy.py
-- [[test_http_proxy.py]] - code - gateway/tests/test_http_proxy.py
-- [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
-- [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
-- [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
-- [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
-- [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
-- [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
-- [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
-- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
-- [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
-- [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
-- [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_175]] - code - gateway/security/network_validator.py
+- [[dot-_parse_service_network_config()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_container_runtime_config()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_dns_configuration()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_network_definitions()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_network_modes()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_port_exposure()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_privileged_containers()]] - code - gateway/security/network_validator.py
+- [[dot-_validate_service_network_isolation()]] - code - gateway/security/network_validator.py
+- [[dot-detect_configuration_drift()]] - code - gateway/security/network_validator.py
+- [[dot-export_report()]] - code - gateway/security/network_validator.py
+- [[dot-get_security_report()]] - code - gateway/security/network_validator.py
+- [[dot-setup_method()_32]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_clean_compose_yields_zero_critical()]] - code - gateway/tests/test_network_validator_gate.py
+- [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_get_security_report_shape()]] - code - gateway/tests/test_network_validator_gate.py
+- [[dot-test_network_security_finding_structure()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_privileged_service_is_critical()]] - code - gateway/tests/test_network_validator_gate.py
+- [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_invalid_file()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_missing_internal_network()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_multiple_violations()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validator_knows_the_two_real_networks()]] - code - gateway/tests/test_network_validator_gate.py
+- [[dot-validate_docker_compose_config()]] - code - gateway/security/network_validator.py
+- [[dot-validate_runtime_configuration()]] - code - gateway/security/network_validator.py
+- [[A network security finding.]] - rationale - gateway/security/network_validator.py
+- [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
+- [[Any_71]] - code - gateway/security/network_validator.py
+- [[Container network configuration.]] - rationale - gateway/security/network_validator.py
+- [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
+- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
+- [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
+- [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
+- [[NetworkConfiguration]] - code - gateway/security/network_validator.py
+- [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
+- [[NetworkValidator]] - code - gateway/security/network_validator.py
+- [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
+- [[Path_57]] - code - gateway/tests/test_network_validator_gate.py
+- [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test handling of invalidnon-existent files.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that OpenClaw container isolation is validated.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that a valid docker-compose configuration passes.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that gateway service network bridging is validated.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that host network mode is flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[TestExpectedNetworksAllowlist]] - code - gateway/tests/test_network_validator_gate.py
+- [[TestGateScope]] - code - gateway/tests/test_network_validator_gate.py
+- [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
+- [[TestValidatorAPI]] - code - gateway/tests/test_network_validator_gate.py
+- [[Validate DNS configuration for security.]] - rationale - gateway/security/network_validator.py
+- [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
+- [[Validate container network isolation and security.]] - rationale - gateway/security/network_validator.py
+- [[Validate docker-compose network configuration.          Args             compos]] - rationale - gateway/security/network_validator.py
+- [[Validate network definitions in compose file.]] - rationale - gateway/security/network_validator.py
+- [[Validate network mode configurations.]] - rationale - gateway/security/network_validator.py
+- [[Validate port exposure configuration.]] - rationale - gateway/security/network_validator.py
+- [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
+- [[Validate service network isolation.]] - rationale - gateway/security/network_validator.py
+- [[Validate that no containers are running in privileged mode.]] - rationale - gateway/security/network_validator.py
+- [[network_validator.py]] - code - gateway/security/network_validator.py
+- [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - rationale - gateway/tests/test_network_validator_gate.py
+- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
+- [[test_network_validator_gate.py]] - code - gateway/tests/test_network_validator_gate.py
+- [[tmp_compose()]] - code - gateway/tests/test_network_validator_gate.py
+- [[validate_network_security()]] - code - gateway/security/network_validator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -78,14 +91,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 10 edges to [[_COMMUNITY_ProxyAction]]
-- 10 edges to [[_COMMUNITY_WebProxyConfig]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
+- 6 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_Common Queries]]
+- 2 edges to [[_COMMUNITY__wrap_response() (2)_1]]
+- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
+- 1 edge to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
+- 1 edge to [[_COMMUNITY__wrap_response() (5)]]
+- 1 edge to [[_COMMUNITY_test_playback_state.c]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
+- 1 edge to [[_COMMUNITY__wrap_response() (4)]]
 
 ## Top bridge nodes
-- [[test_http_proxy.py]] - degree 39, connects to 4 communities
-- [[_MockWriter_1]] - degree 21, connects to 4 communities
-- [[_DummyTargetWriter_1]] - degree 8, connects to 4 communities
-- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 3 communities
-- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 3 communities
+- [[NetworkValidator]] - degree 52, connects to 9 communities
+- [[validate_network_security()]] - degree 10, connects to 1 community

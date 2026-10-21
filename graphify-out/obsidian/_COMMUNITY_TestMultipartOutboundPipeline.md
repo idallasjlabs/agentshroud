@@ -1,37 +1,51 @@
 ---
 type: community
-members: 24
+members: 38
 ---
 
 # TestMultipartOutboundPipeline
 
-**Members:** 24 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[dot-test_multipart_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_markdown_exfil_link_scrubbed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_outbound_pipeline_called()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_overlength_caption_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_sanitized_caption_applied_binary_intact()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_sanitizer_fallback_redacts_pii()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_text_field_scanned_when_no_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_multipart_without_text_part_passes_through()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Build a multipartform-data body with text fields and an optional binary part.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Markdown exfil links are stripped from multipart captions (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart bodies with no captiontext part are forwarded unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Over-length multipart captions to non-owners are blocked like JSONform.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner multipart messages still pass through on pipeline crash (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Redacted caption replaces the original; binary part stays byte-identical.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_make_multipart_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[process_outbound must run on multipart caption text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-__init__()_72]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_7]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
+- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
+- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
+- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
+- [[_make_pipeline()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
+- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_get_stats()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,17 +55,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY__make_sanitizer()]]
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline (2)]]
+- 3 edges to [[_COMMUNITY_api.py (2)]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
 
 ## Top bridge nodes
-- [[TestMultipartOutboundPipeline]] - degree 15, connects to 3 communities
-- [[dot-test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 3 communities
-- [[dot-test_multipart_markdown_exfil_link_scrubbed()]] - degree 5, connects to 3 communities
-- [[dot-test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 2 communities
-- [[dot-test_multipart_outbound_pipeline_called()]] - degree 5, connects to 2 communities
+- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
+- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
+- [[DataExfilVolumeGuard]] - degree 24, connects to 1 community
+- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community
+- [[data_exfil_volume_guard.py]] - degree 5, connects to 1 community

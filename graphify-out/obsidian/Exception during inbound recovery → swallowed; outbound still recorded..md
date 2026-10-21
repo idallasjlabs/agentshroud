@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "AsyncMock"
+community: "api.py (2)"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/apipy_2
 ---
 
 # Exception during inbound recovery → swallowed; outbound still recorded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_recovery_exception_is_non_fatal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

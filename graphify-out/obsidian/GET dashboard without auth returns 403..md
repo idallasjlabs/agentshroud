@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "UserSessionManager (3)"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/UserSessionManager_3
 ---
 
 # GET /dashboard without auth returns 403.
 
 ## Connections
-- [[test_dashboard_requires_auth()]] - `rationale_for` [EXTRACTED]
+- [[test_dashboard_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_3

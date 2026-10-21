@@ -1,19 +1,18 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L425"
+community: "MCPPermissionManager"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/MCPPermissionManager
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[dot-connect()]] - `references` [EXTRACTED]
+- [[dot-disconnect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

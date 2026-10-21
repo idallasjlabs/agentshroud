@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-devsecops SKILL (stub)]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[Newsletter Personal AI Assistants_1]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
 
 ## Live Query (requires Dataview plugin)
 

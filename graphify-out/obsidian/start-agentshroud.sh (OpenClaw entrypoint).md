@@ -1,16 +1,16 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # start-agentshroud.sh (OpenClaw entrypoint)
 
 ## Connections
-- [[openclaw bot service]] - `shares_data_with` [EXTRACTED]
+- [[openclaw service_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_FakeUpstreamWS"
+community: "wakeword.c"
 location: "L858"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/wakewordc
 ---
 
 # .test_generic_exception_and_failing_close_swallowed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCanvasWebSocket]] - `method` [EXTRACTED]
 - [[_ws_scope()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/wakewordc

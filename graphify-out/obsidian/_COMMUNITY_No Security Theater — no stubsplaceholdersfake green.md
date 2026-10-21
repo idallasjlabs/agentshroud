@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[No Security Theater — no stubsplaceholdersfake green]] - rationale - CLAUDE.md
+- [[Architecture Review Skill (stub)]] - document - .agents/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

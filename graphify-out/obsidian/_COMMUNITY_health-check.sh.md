@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[check_fail()]] - code - docker/scripts/health-check.sh
-- [[check_pass()]] - code - docker/scripts/health-check.sh
-- [[health-check.sh]] - code - docker/scripts/health-check.sh
-- [[health-check.sh script]] - code - docker/scripts/health-check.sh
+- [[Atlassian OAuth 2.0 (3LO) config]] - concept - .llm_settings/docs/MCP_README.md
+- [[GitHub OAuth device authorization flow config]] - concept - .llm_settings/docs/MCP_README.md
+- [[MCP OAuth preflight checker (mcp_oauth_preflight.py)]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Secrets stay in .env, never in the repo]] - rationale - .llm_settings/docs/MCP_README.md
 
 ## Live Query (requires Dataview plugin)
 

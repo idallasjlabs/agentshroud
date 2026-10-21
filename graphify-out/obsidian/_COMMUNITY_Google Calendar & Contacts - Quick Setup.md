@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Configuration  Environment Variables_3]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Function Details_10]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Key Classes  Functions_11]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Purpose_107]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Related_15]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Responsibilities_13]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[calculate_overall_score(summaries)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[calculate_tool_score(summary)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[format_report(report)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[generate_report(summaries, db_path, save_history)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[get_trend(days, db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[health_report.py_2]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[health_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[init_db(db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[save_to_history(score, grade, details, db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[score_to_grade(score)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,3 @@ members: 17
 TABLE source_file, type FROM #community/Google_Calendar__Contacts_-_Quick_Setup
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-
-## Top bridge nodes
-- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community

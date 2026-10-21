@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (7)"
+community: "test_llm_proxy_failover.py"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/test_llm_proxy_failoverpy
 ---
 
 # ._save_write_windows()
@@ -17,4 +17,4 @@ tags:
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Save active write windows to disk.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

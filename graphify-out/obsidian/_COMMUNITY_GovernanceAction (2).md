@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-acceptable()]] - code - gateway/security/subagent_governance.py
-- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
-- [[OutputScore]] - code - gateway/security/subagent_governance.py
-- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
-- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
-- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
-- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
-- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
+- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,15 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/GovernanceAction_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestPatternDetection]]
-- 3 edges to [[_COMMUNITY_GovernanceAction]]
-- 3 edges to [[_COMMUNITY_SubagentGovernance]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_ResourceUsage]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-
-## Top bridge nodes
-- [[subagent_governance.py]] - degree 15, connects to 6 communities
-- [[OutputScore]] - degree 4, connects to 1 community

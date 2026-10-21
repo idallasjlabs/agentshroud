@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Starting a Development Task via Hermes / OpenClaw"
+community: "Mode A — Single task (5)"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Starting_a_Development_Task_via_Hermes_/_OpenClaw
+  - community/Mode_A__Single_task_5
 ---
 
 # What happens automatically (confirmed real, in
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_5

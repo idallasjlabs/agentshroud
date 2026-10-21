@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "System Audit Vault"
+community: "postmortem.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/postmortemmd
 ---
 
 # AgentShroud Data Assets (root)
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - `conceptually_related_to` [EXTRACTED]
 - [[SQLite DBs (Backed by SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/concept #graphify/EXTRACTED #community/postmortemmd

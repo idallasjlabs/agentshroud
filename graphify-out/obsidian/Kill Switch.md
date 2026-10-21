@@ -1,25 +1,17 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Kill Switch"
-location: "L43"
+community: "MiddlewareManager (4)"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/MiddlewareManager_4
 ---
 
 # Kill Switch
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[Features_2]] - `contains` [EXTRACTED]
-- [[Mode 1 freeze]] - `contains` [EXTRACTED]
-- [[Mode 2 shutdown]] - `contains` [EXTRACTED]
-- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]
-- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
-- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
-- [[container-policy]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

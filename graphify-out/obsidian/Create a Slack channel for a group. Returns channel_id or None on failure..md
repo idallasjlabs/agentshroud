@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "AsyncMock (2)"
+community: "RBACConfig (2)"
 location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/RBACConfig_2
 ---
 
 # Create a Slack channel for a group. Returns channel_id or None on failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-provision_group_channel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "wakeword.c"
+community: "graphify reference: extra exports and benchmark (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/graphify_reference_extra_exports_and_benchmark_2
 ---
 
 # wakeword.c
@@ -39,4 +39,4 @@ tags:
 - [[wakeword_tts_stop_request()]] - `contains` [EXTRACTED]
 - [[wakeword_tts_stop_requested()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2

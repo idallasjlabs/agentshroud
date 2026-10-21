@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "EgressFilter"
-location: "L70"
+community: "AuditExporter (2)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/AuditExporter_2
 ---
 
 # Configuration
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/AuditExporter_2

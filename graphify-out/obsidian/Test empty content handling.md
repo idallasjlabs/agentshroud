@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "test_sanitizer.py"
+community: "MCPPermissionManager (2)"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/MCPPermissionManager_2
 ---
 
 # Test empty content handling
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_empty_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

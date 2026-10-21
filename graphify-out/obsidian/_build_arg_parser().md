@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "test_hermes_cron_seed.py"
 location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/test_hermes_cron_seedpy
 ---
 
 # _build_arg_parser()
@@ -16,4 +16,4 @@ tags:
 - [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 - [[run()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "document"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)
@@ -22,4 +22,4 @@ tags:
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-approve.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/document #graphify/EXTRACTED #community/_wrap_response_2

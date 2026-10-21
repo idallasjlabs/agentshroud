@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "test_jira_weekly_review.py"
-location: "L203"
+community: "1. GitHub MCP Authentication Reset (2)"
+location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

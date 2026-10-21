@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Anti-security-theater value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2

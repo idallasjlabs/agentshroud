@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L63"
+community: "UserSessionManager (3)"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/UserSessionManager_3
 ---
 
 # test_dashboard_requires_auth()
 
 ## Connections
-- [[GET dashboard without auth returns 403]] - `rationale_for` [EXTRACTED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[GET dashboard without auth returns 403.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

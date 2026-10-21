@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "03-data.md"
+community: "canvas_proxy_app"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/canvas_proxy_app
 ---
 
 # AgentShroud — Data Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[8. Entity Relationship Diagram (ERD)]] - `contains` [EXTRACTED]
 - [[9. Data Lineage Diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/canvas_proxy_app

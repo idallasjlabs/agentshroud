@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
-location: "L7"
+community: "aquasecurity/trivy 403s the Actions token but serves the public feed."
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed

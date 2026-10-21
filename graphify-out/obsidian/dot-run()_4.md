@@ -1,27 +1,17 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "ControlCenter"
-location: "L358"
+community: "Approval Queue (human-in-the-loop)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # .run()
 
 ## Connections
-- [[dot-draw_approvals()]] - `calls` [EXTRACTED]
-- [[dot-draw_dashboard()]] - `calls` [EXTRACTED]
-- [[dot-draw_kill_switch()]] - `calls` [EXTRACTED]
-- [[dot-draw_log()]] - `calls` [EXTRACTED]
-- [[dot-draw_modules()]] - `calls` [EXTRACTED]
-- [[dot-draw_ssh_hosts()]] - `calls` [EXTRACTED]
-- [[dot-get_key()]] - `calls` [EXTRACTED]
-- [[dot-make_api_request()]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `method` [EXTRACTED]
-- [[Main control center loop]] - `rationale_for` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

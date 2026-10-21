@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L1658"
+community: "AlertDispatcher (5)"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/AlertDispatcher_5
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
-- [[Any_51]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

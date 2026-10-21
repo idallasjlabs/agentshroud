@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-__aenter__()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__aexit__()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-stream()]] - code - gateway/tests/test_llm_proxy.py
-- [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
+- [[CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Purpose_41]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Related Skills_27]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Usage_30]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[openclawskillsi-cicdREADME]] - document - docker/config/openclaw/skills/i-cicd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[_HeadFakeClient]] - degree 5, connects to 1 community
+- [[CICD Pipeline Advisor (CICD)]] - degree 5, connects to 1 community

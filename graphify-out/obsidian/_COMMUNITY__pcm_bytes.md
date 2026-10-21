@@ -1,75 +1,86 @@
 ---
 type: community
-members: 62
+members: 73
 ---
 
 # _pcm_bytes
 
-**Members:** 62 nodes
+**Members:** 73 nodes
 
 ## Members
-- [[agent=direct must route to _call_llm (fast path), not forward.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[agent=hermes must route to _call_agent (gateway forward), not _call_llm.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A 'set volume' updates the tracked level so a later query reports it —     prove]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A 'use Claude' override must survive a reconnect a later connection     with no]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)     mus]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A bare 'tell Hermes' must NOT reach any agent yet it only sets the     sticky a]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A bare 'use Claude' must NOT reach any agent the server updates the     sticky]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A bare LISTEN after a stale partial upload must NOT prepend old audio.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A device 'STOP' text frame during the TTS send phase must abort the     remainin]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A drop mid-upload must not force a full resend the next connection     sends 'L]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A resume cache older than the freshness window must not replay.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A wedged TTS synthesis (e.g. blocked voice-pack download — live incident     202]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Before any set, 'what is the volume' speaks the unknown-state reply and     stil]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Build a MagicMock WebSocket for direct voice_endpoint() tests.      Frames are d]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Direct-path replies must start TTS synthesis on the first sentence     while the]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Empty STT result no LLM call, state goes directly to idle.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[If the socket dies during the TTS downlink, the NEXT connection must     receive]] - rationale - gateway/tests/test_voice_gateway.py
-- [[LISTEN offset with an expired cache must behave like a fresh LISTEN     (the d]] - rationale - gateway/tests/test_voice_gateway.py
-- [[LISTEN → binary PCM → END → STT → forwardstream → TTS → PCM + END → idle.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Minimal S16LE silence.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Regression a single-sentence reply still produces exactly one synthesize call.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Remote-diag {log...} frames arriving DURING the TTS send phase must be     lo]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Sentence-chunked TTS synthesize() is called once per sentence; all PCM arrives]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Set volume 80. What time is it' must apply the volume AND route the     remaini]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Tell Hermes to check my email.' must switch the agent AND route the     remainin]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Use Claude. What's on my calendar' must switch the model AND route     the rema]] - rationale - gateway/tests/test_voice_gateway.py
-- [[What's the volume' must NOT reach the agent after a prior set the     server s]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When split_for_speech returns multiple sentences, the pipelined TTS loop must]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_mock_ws()]] - code - gateway/tests/test_voice_gateway.py
-- [[_pcm_bytes()]] - code - gateway/tests/test_voice_gateway.py
-- [[set volume X%' must NOT reach the agent the server sends a     {cmdset_volu]] - rationale - gateway/tests/test_voice_gateway.py
-- [[test_bare_listen_starts_fresh()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_listen_offset_resumes_partial_upload()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_listen_offset_with_stale_cache_degrades_to_fresh()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_switch_overrides_persist_across_reconnect()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_resume_after_mid_stream_disconnect()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_resume_stale_cache_ignored()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_device_log_during_speaking_still_recorded()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_direct_agent_calls_call_llm()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_direct_agent_streams_tts_before_full_reply()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_empty_transcript_goes_idle()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_full_utterance_state_sequence()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_hermes_agent_calls_call_agent()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_hung_tts_synthesis_still_returns_idle()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_one_sentence_reply_unchanged()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_set_then_query_reports_the_set_level()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_stale_stop_when_idle_is_ignored()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_stop_during_speaking_aborts_tts()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_tell_agent_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_tell_agent_command_with_chained_instruction()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_tts_pipeline_sends_all_sentences()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_local_command_confirms_with_model_name()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_local_command_reflects_live_voice_model()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_model_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_model_command_with_chained_question()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_command_with_chained_question()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_query_intercepted_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_query_unknown_state_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[use local' must confirm with and display whatever _VOICE_MODEL     currently is,]] - rationale - gateway/tests/test_voice_gateway.py
-- [[use qwen' sets agent='direct', model='qwen3-14b', and confirms with     the actu]] - rationale - gateway/tests/test_voice_gateway.py
+- [[dot-__init__()_176]] - code - gateway/tests/test_http_proxy.py
+- [[dot-_audit()]] - code - gateway/proxy/web_proxy.py
+- [[dot-check_request()]] - code - gateway/proxy/web_proxy.py
+- [[dot-close()_14]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_15]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
+- [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-get_stats()_1]] - code - gateway/proxy/web_proxy.py
+- [[dot-scan_response()]] - code - gateway/proxy/web_proxy.py
+- [[dot-to_dict()]] - code - gateway/proxy/web_proxy.py
+- [[dot-write()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
+- [[Any_73]] - code
+- [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
+- [[Check an outbound HTTP request before it's sent. This is the pre-flight check.…]] - rationale - gateway/proxy/web_proxy.py
+- [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Get proxy statistics._1]] - rationale - gateway/proxy/web_proxy.py
+- [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
+- [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
+- [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
+- [[Scan a response body for prompt injection, PII, and hidden content. This is…]] - rationale - gateway/proxy/web_proxy.py
+- [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
+- [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
+- [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - rationale - gateway/tests/test_http_proxy.py
+- [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[WebProxy]] - code - gateway/proxy/web_proxy.py
+- [[_DummyTargetWriter]] - code - gateway/tests/test_http_proxy.py
+- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
+- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
+- [[api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels]] - rationale - gateway/tests/test_http_proxy.py
+- [[http_proxy.py (HTTPConnectProxy)]] - code - gateway/proxy/http_proxy.py
+- [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
+- [[rDNS returns non-matching hostname; forward DNS matches → correct bot_id cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_cached_after_first_lookup()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_known_ip()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_error()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_lazy_rdns_miss()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_none_peer()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
+- [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
+- [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_system_bypass_domain_skips_policy_checks()]] - code - gateway/tests/test_http_proxy.py
+- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - code - gateway/tests/test_http_proxy.py
+- [[test_default_allowed_domains_non_empty()]] - code - gateway/tests/test_http_proxy.py
+- [[test_http_proxy.py]] - code - gateway/tests/test_http_proxy.py
+- [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
+- [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
+- [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
+- [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
+- [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
+- [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
+- [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -79,12 +90,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 39 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 38 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 12 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_Usage]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
+- 2 edges to [[_COMMUNITY_GitHub Skill]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
 
 ## Top bridge nodes
-- [[_mock_ws()]] - degree 25, connects to 2 communities
-- [[test_ws_stop_during_speaking_aborts_tts()]] - degree 5, connects to 2 communities
-- [[test_ws_empty_transcript_goes_idle()]] - degree 4, connects to 2 communities
-- [[_pcm_bytes()]] - degree 26, connects to 1 community
-- [[test_switch_overrides_persist_across_reconnect()]] - degree 4, connects to 1 community
+- [[WebProxy]] - degree 70, connects to 8 communities
+- [[test_http_proxy.py]] - degree 39, connects to 3 communities
+- [[_MockWriter_1]] - degree 21, connects to 3 communities
+- [[_DummyTargetWriter]] - degree 8, connects to 3 communities
+- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 2 communities

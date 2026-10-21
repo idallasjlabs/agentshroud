@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "main (2)"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main_2
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # TestMain
@@ -23,4 +23,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/main_2
+#graphify/code #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

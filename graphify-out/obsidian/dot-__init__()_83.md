@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "make_event"
-location: "L42"
+community: "ResourceGuard"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

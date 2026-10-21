@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide (5)"
-location: "L229"
+community: "test_security.py (3)"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_5
+  - community/test_securitypy_3
 ---
 
 # URL Access Control
 
 ## Connections
-- [[Security & Permissions]] - `contains` [EXTRACTED]
+- [[Security Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_5
+#graphify/document #graphify/EXTRACTED #community/test_securitypy_3

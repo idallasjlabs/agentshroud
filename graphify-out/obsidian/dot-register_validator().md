@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # .register_validator()
@@ -16,4 +16,4 @@ tags:
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Register a validator for a credential type.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

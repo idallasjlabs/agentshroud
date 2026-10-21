@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[128]] - code - browser-extension/manifest.json
-- [[48]] - code - browser-extension/manifest.json
-- [[action_3]] - code - browser-extension/manifest.json
-- [[background]] - code - browser-extension/manifest.json
-- [[browser-extensionmanifest.json]] - code - browser-extension/manifest.json
-- [[browser_specific_settings]] - code - browser-extension/manifest.json
-- [[default_popup]] - code - browser-extension/manifest.json
-- [[default_title]] - code - browser-extension/manifest.json
-- [[description_3]] - code - browser-extension/manifest.json
-- [[gecko]] - code - browser-extension/manifest.json
-- [[host_permissions]] - code - browser-extension/manifest.json
-- [[icons]] - code - browser-extension/manifest.json
-- [[id]] - code - browser-extension/manifest.json
-- [[manifest_version]] - code - browser-extension/manifest.json
-- [[name]] - code - browser-extension/manifest.json
-- [[open_in_tab]] - code - browser-extension/manifest.json
-- [[options_ui]] - code - browser-extension/manifest.json
-- [[page]] - code - browser-extension/manifest.json
-- [[permissions]] - code - browser-extension/manifest.json
-- [[service_worker]] - code - browser-extension/manifest.json
-- [[version_2]] - code - browser-extension/manifest.json
+- [[AgentShroud Operations Cheat Sheet]] - document - CHEATSHEET.md
+- [[CHEATSHEET]] - document - CHEATSHEET.md
+- [[Colima VM]] - document - CHEATSHEET.md
+- [[Container Basics]] - document - CHEATSHEET.md
+- [[Hermes Agent Management]] - document - CHEATSHEET.md
+- [[Hermes Bot]] - concept - README.md
+- [[Hermes Control Interface (HCI)]] - concept - CHEATSHEET.md
+- [[Host IPs (extra_hosts)]] - document - CHEATSHEET.md
+- [[Key Paths]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency)]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency) commands]] - concept - CHEATSHEET.md
+- [[Network Diagnostics]] - document - CHEATSHEET.md
+- [[OpenClaw (Bot) Management]] - document - CHEATSHEET.md
+- [[SOC API]] - concept - CHEATSHEET.md
+- [[SOC API — Common Queries]] - document - CHEATSHEET.md
+- [[Secrets_1]] - document - CHEATSHEET.md
+- [[Security Scanners]] - document - CHEATSHEET.md
+- [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
+- [[Tests_1]] - document - CHEATSHEET.md
+- [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
+- [[Web Management UI]] - document - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_background.js]]
+- 1 edge to [[_COMMUNITY_AuditExporter]]
+- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (2)]]
 
 ## Top bridge nodes
-- [[browser-extensionmanifest.json]] - degree 12, connects to 1 community
+- [[AgentShroud Operations Cheat Sheet]] - degree 21, connects to 2 communities
+- [[Hermes Bot]] - degree 2, connects to 1 community

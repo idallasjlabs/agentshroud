@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # test_ssh_write_file_endpoint.py
@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_4]] - `imports` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
-- [[SSHConfig_2]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[SSHConfig]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SSHWriteResult]] - `imports` [EXTRACTED]
@@ -33,11 +33,11 @@ tags:
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `contains` [EXTRACTED]
 - [[_b64()]] - `contains` [EXTRACTED]
 - [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
+- [[client()_16]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiledger.py (DataLedger)]] - `references` [EXTRACTED]
 - [[gatewayingest_apissh_config.py (SSHConfig)]] - `references` [EXTRACTED]
 - [[proxy.py]] - `references` [EXTRACTED]
-- [[ssh_config()_2]] - `contains` [EXTRACTED]
+- [[ssh_config()_1]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

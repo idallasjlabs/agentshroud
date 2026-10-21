@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ApprovalQueueConfig (5)"
+community: "MiddlewareManager (3)"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/MiddlewareManager_3
 ---
 
 # Test that get_pending excludes decided requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_pending_excludes_decided()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

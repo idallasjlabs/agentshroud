@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "asyncio"
+community: "cli/main.py"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/cli/mainpy
 ---
 
 # scan_bytes()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
 - [[Stream bytes to clamdscan for inline malware scanning. Uses ``clamdscan…]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `calls` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

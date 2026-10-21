@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # soc/auth.py
@@ -16,7 +16,7 @@ tags:
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_23]] - `imports` [EXTRACTED]
+- [[Role_19]] - `imports` [EXTRACTED]
 - [[SCLCaller_2]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `contains` [EXTRACTED]
 - [[_get_rbac_manager()]] - `contains` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

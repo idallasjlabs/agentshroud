@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[cleanup()]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
-- [[err()_1]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
-- [[log()_4]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
-- [[test_sunday_upgrade_head_guard.sh]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
-- [[test_sunday_upgrade_head_guard.sh script]] - code - tests/startup_smoke/test_sunday_upgrade_head_guard.sh
+- [[SECTION 9 IMPORTANT NOTES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[TEAS Plus vs. TEAS Standard]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[The TM Symbol]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Trademark vs. Patent]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Why Standard Character Mark First]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,9 @@ members: 5
 TABLE source_file, type FROM #community/Sunday_Upgrade_HEAD_Guard_Test
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-update]]
+
+## Top bridge nodes
+- [[SECTION 9 IMPORTANT NOTES]] - degree 5, connects to 1 community

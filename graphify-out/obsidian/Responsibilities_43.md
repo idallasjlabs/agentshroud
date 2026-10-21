@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "canary.py"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # Responsibilities
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

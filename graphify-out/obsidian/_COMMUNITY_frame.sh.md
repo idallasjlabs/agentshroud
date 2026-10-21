@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Notes]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Quick start]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
-- [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[usage()_5]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[video-framesSKILL]] - document - skills/openclaw/video-frames/SKILL.md
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 7
 TABLE source_file, type FROM #community/framesh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
-
-## Top bridge nodes
-- [[video-framesSKILL]] - degree 3, connects to 1 community

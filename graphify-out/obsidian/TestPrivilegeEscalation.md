@@ -1,46 +1,25 @@
 ---
-source_file: "gateway/tests/test_security_audit_advanced.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L511"
+community: "FalcoAlertWatcher"
+location: "L245"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/FalcoAlertWatcher
 ---
 
 # TestPrivilegeEscalation
 
 ## Connections
-- [[dot-test_consent_required_for_sensitive_ops()]] - `method` [EXTRACTED]
-- [[dot-test_session_cannot_impersonate()]] - `method` [EXTRACTED]
-- [[dot-test_subagent_monitor_tracks_events()]] - `method` [EXTRACTED]
-- [[dot-test_trust_cannot_exceed_max()]] - `method` [EXTRACTED]
-- [[dot-test_unregistered_agent_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_violation_drops_trust_significantly()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ConsentDecision]] - `uses` [INFERRED]
-- [[ContainerSnapshot]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressChannel]] - `uses` [INFERRED]
-- [[EgressEvent]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncryptedStore]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[Session]] - `uses` [INFERRED]
-- [[SubagentEventType]] - `uses` [INFERRED]
-- [[Test trust boundaries and privilege escalation prevention.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_3]] - `uses` [INFERRED]
-- [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
+- [[dot-test_manifest_all_tools_wildcard_flags()]] - `method` [EXTRACTED]
+- [[dot-test_manifest_disable_approval_flags()]] - `method` [EXTRACTED]
+- [[dot-test_manifest_sudo_command_flags()]] - `method` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[BaseModel]] - code
+- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
 
 ## Live Query (requires Dataview plugin)
 

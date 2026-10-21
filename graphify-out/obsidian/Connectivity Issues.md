@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "troubleshooting.md"
+community: "graphify reference: extra exports and benchmark (3)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/graphify_reference_extra_exports_and_benchmark_3
 ---
 
 # Connectivity Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[troubleshooting_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3

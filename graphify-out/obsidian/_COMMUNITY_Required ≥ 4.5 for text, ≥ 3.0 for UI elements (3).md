@@ -8,25 +8,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Dependencies_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Role_55]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[openclawskillsi-bsSKILL]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[1. Anthropic API Credits Exhausted]] - document - docs/project/REPORTED_ISSUES.md
+- [[10. Colima VM Internet Connectivity Loss]] - document - docs/project/REPORTED_ISSUES.md
+- [[11. Missing Test Coverage for Core Modules]] - document - docs/project/REPORTED_ISSUES.md
+- [[12. PII Redaction Issues]] - document - docs/project/REPORTED_ISSUES.md
+- [[13. Duplicate Imports & Verbose Pydantic Init]] - document - docs/project/REPORTED_ISSUES.md
+- [[14. Hardcoded Database Paths]] - document - docs/project/REPORTED_ISSUES.md
+- [[15. Debug Artifacts in Production Code]] - document - docs/project/REPORTED_ISSUES.md
+- [[16. Missing Newlines]] - document - docs/project/REPORTED_ISSUES.md
+- [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
+- [[2. iMessage Integration Permission Denied]] - document - docs/project/REPORTED_ISSUES.md
+- [[3. Unpinned Base Image in Dockerfile]] - document - docs/project/REPORTED_ISSUES.md
+- [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
+- [[AgentShroud Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
+- [[REPORTED_ISSUES]] - document - docs/project/REPORTED_ISSUES.md
+- [[📁 Infrastructure Limitations]] - document - docs/project/REPORTED_ISSUES.md
+- [[📝 General TODOs & Wishlist]] - document - docs/project/REPORTED_ISSUES.md
+- [[🔴 CRITICAL Operational Blockers]] - document - docs/project/REPORTED_ISSUES.md
+- [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +36,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_http_proxy.py (2)]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect (2)]]
 
 ## Top bridge nodes
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - degree 10, connects to 1 community
-- [[Skill Branding Specialist (BS)_2]] - degree 8, connects to 1 community
-- [[Validate contrast ratio_2]] - degree 2, connects to 1 community
+- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 2 communities

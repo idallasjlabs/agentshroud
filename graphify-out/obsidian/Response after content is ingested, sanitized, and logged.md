@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "test_forward_stream.py (2)"
+community: "_make_proxy()"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/_make_proxy
 ---
 
 # Response after content is ingested, sanitized, and logged
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

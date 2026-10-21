@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[dot-agentsskillsi-abSKILL]] - document - .agents/skills/i-ab/SKILL.md
-- [[Check A — Substantive change on the losing side]] - document - .agents/skills/i-ab/SKILL.md
-- [[Check B — Tied to a real ticket]] - document - .agents/skills/i-ab/SKILL.md
-- [[Check C — Still broken at HEAD (not self-healed)]] - document - .agents/skills/i-ab/SKILL.md
-- [[Guardrails_9]] - document - .agents/skills/i-ab/SKILL.md
-- [[Invocation Forms]] - document - .agents/skills/i-ab/SKILL.md
-- [[Jira  PR Comment Format]] - document - .agents/skills/i-ab/SKILL.md
-- [[Role_67]] - document - .agents/skills/i-ab/SKILL.md
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - document - .agents/skills/i-ab/SKILL.md
-- [[Step 1 — Verify the script exists]] - document - .agents/skills/i-ab/SKILL.md
-- [[Step 2 — Determine the target]] - document - .agents/skills/i-ab/SKILL.md
-- [[Step 3 — Run the audit script]] - document - .agents/skills/i-ab/SKILL.md
-- [[Step 4 — Triage each finding]] - document - .agents/skills/i-ab/SKILL.md
-- [[Step 5 — Classify findings]] - document - .agents/skills/i-ab/SKILL.md
-- [[Step 6 — Output the report]] - document - .agents/skills/i-ab/SKILL.md
+- [[dot-test_collects_and_converts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_conversion_error_path()_4]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_full_context_summary_from_details()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_missing_timestamp_uses_now()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_none_store_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_severity_filter_drops_lower()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_falls_back_to_block_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_falls_back_to_event_type()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_falls_back_to_message()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_from_agent_id()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_summary_from_non_allowed_action()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_user_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestCollectRecentEvents]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestFromAuditChainEntry]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_audit_entry()]] - code - gateway/tests/test_soc_realtime_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 7 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 5 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_api.py (2)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
 
 ## Top bridge nodes
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - degree 12, connects to 1 community
+- [[TestCollectRecentEvents]] - degree 12, connects to 5 communities
+- [[TestFromAuditChainEntry]] - degree 16, connects to 3 communities
+- [[_audit_entry()]] - degree 12, connects to 2 communities
+- [[dot-test_collects_and_converts()]] - degree 3, connects to 1 community
+- [[dot-test_severity_filter_drops_lower()]] - degree 3, connects to 1 community

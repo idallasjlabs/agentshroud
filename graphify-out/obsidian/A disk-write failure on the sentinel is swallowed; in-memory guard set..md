@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "test_daily_cve_report.py (3)"
-location: "L1542"
+community: "First iteration ingests + records; second sees dedup and skips."
+location: "L1691"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy_3
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
 ---
 
 # A disk-write failure on the sentinel is swallowed; in-memory guard set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_ingest_records_even_when_disk_write_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy_3
+#graphify/rationale #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

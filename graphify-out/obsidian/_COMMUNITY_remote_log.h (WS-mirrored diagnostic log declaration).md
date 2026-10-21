@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[remote_log.h (WS-mirrored diagnostic log declaration)]] - code - firmware/voice-terminal/main/remote_log.h
+- [[Unicode Bypass]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

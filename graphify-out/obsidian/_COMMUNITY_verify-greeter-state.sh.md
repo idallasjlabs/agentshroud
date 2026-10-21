@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
-- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
+- [[agentshroud-redteamreferencessteve-hay-plan]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 

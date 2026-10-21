@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill kanban_1]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
-- [[hermesskillsi-kanbanSKILL]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[Constrained query-vocabulary expansion]] - rationale - docker/config/hermes/skills/graphify/references/query.md
+- [[save-result Feedback Loop]] - concept - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

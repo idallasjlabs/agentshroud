@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect (7)"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_7
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_7
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

@@ -1,17 +1,19 @@
 ---
 type: community
-members: 4
+members: 6
 ---
 
 # AgentShroud Incident Response Plan (2)
 
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
-- [[Container Escape Attempt]] - document - docs/operations/incident-response.md
-- [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
-- [[P1 Critical Incidents]] - document - docs/operations/incident-response.md
+- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/AgentShroud_Incident_Response_Plan_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-
-## Top bridge nodes
-- [[P1 Critical Incidents]] - degree 4, connects to 1 community

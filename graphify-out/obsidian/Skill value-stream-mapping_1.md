@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "hermes/skills/i-value-stream-mapping/SKILL.md"
+community: "openclaw/skills/i-value-stream-mapping/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-value-stream-mapping/SKILLmd
+  - community/openclaw/skills/i-value-stream-mapping/SKILLmd
 ---
 
 # Skill: value-stream-mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermesskillsi-value-stream-mappingSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-value-stream-mapping/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-value-stream-mapping/SKILLmd

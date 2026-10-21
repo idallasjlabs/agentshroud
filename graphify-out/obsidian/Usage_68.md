@@ -1,17 +1,18 @@
 ---
-source_file: "skills/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "MiddlewareManager (2)"
-location: "L24"
+community: "Implementation Status"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Implementation_Status
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()]] - `calls` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[RateLimitConfig]] - `references` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

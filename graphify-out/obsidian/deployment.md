@@ -1,20 +1,20 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Implement gateway-level outbound information filtering module"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Update_AgentShroud
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # deployment.md
 
 ## Connections
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
-- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
+- [[RUNBOOK_1]] - `conceptually_related_to` [INFERRED]
 - [[Rollback Procedure]] - `semantically_similar_to` [INFERRED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/INFERRED #community/Update_AgentShroud
+#graphify/document #graphify/INFERRED #community/Implement_gateway-level_outbound_information_filtering_module

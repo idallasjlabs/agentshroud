@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # test_egress_approval.py
@@ -16,8 +16,8 @@ tags:
 - [[ApprovalResult]] - `imports` [EXTRACTED]
 - [[EgressApprovalQueue]] - `imports` [EXTRACTED]
 - [[EgressRequest]] - `imports` [EXTRACTED]
-- [[RiskLevel]] - `imports` [EXTRACTED]
+- [[RiskLevel_4]] - `imports` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `contains` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "AWS API MCP Server (concept)"
+community: "AgentShroud Logo on Dark Background"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AWS_API_MCP_Server_concept
+  - community/AgentShroud_Logo_on_Dark_Background
 ---
 
 # AWS API MCP Server (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/AWS_API_MCP_Server_concept
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Logo_on_Dark_Background

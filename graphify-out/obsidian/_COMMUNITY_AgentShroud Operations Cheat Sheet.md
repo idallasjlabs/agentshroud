@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[AgentShroud Operations Cheat Sheet]] - document - CHEATSHEET.md
-- [[CHEATSHEET]] - document - CHEATSHEET.md
-- [[Colima VM]] - document - CHEATSHEET.md
-- [[Container Basics]] - document - CHEATSHEET.md
-- [[Hermes Agent Management]] - document - CHEATSHEET.md
-- [[Hermes Bot]] - concept - README.md
-- [[Hermes Control Interface (HCI)]] - concept - CHEATSHEET.md
-- [[Host IPs (extra_hosts)]] - document - CHEATSHEET.md
-- [[Key Paths]] - document - CHEATSHEET.md
-- [[Kill Switch (Emergency)]] - document - CHEATSHEET.md
-- [[Kill Switch (Emergency) commands]] - concept - CHEATSHEET.md
-- [[Network Diagnostics]] - document - CHEATSHEET.md
-- [[OpenClaw (Bot) Management]] - document - CHEATSHEET.md
-- [[SOC API]] - concept - CHEATSHEET.md
-- [[SOC API — Common Queries]] - document - CHEATSHEET.md
-- [[Secrets_1]] - document - CHEATSHEET.md
-- [[Security Scanners]] - document - CHEATSHEET.md
-- [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
-- [[Tests_1]] - document - CHEATSHEET.md
-- [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
-- [[Web Management UI]] - document - CHEATSHEET.md
+- [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
+- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[ApprovalRequest_3]] - document - docs/data/data-dictionary.md
+- [[AuditEntry]] - document - docs/data/data-dictionary.md
+- [[Configuration Entities]] - document - docs/data/data-dictionary.md
+- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Core Audit Entities]] - document - docs/data/data-dictionary.md
+- [[DNSQuery]] - document - docs/data/data-dictionary.md
+- [[Data Classification]] - document - docs/data/data-dictionary.md
+- [[Data Retention Policies]] - document - docs/data/data-dictionary.md
+- [[InspectionResult_1]] - document - docs/data/data-dictionary.md
+- [[Network Security Entities]] - document - docs/data/data-dictionary.md
+- [[RateLimitBucket]] - document - docs/data/data-dictionary.md
+- [[Relationship Diagram]] - document - docs/data/data-dictionary.md
+- [[Runtime State Entities]] - document - docs/data/data-dictionary.md
+- [[Security Management Entities]] - document - docs/data/data-dictionary.md
+- [[SessionState]] - document - docs/data/data-dictionary.md
+- [[TrustLevel_3]] - document - docs/data/data-dictionary.md
+- [[URLAnalysisResult]] - document - docs/data/data-dictionary.md
+- [[data-dictionary]] - document - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,10 +38,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]
-- 1 edge to [[_COMMUNITY_Quickstart]]
+- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
 
 ## Top bridge nodes
-- [[AgentShroud Operations Cheat Sheet]] - degree 21, connects to 2 communities
-- [[Hermes Bot]] - degree 2, connects to 1 community
+- [[Network Security Entities]] - degree 5, connects to 1 community
+- [[Approval Workflows]] - degree 3, connects to 1 community
+- [[Configuration Setup]] - degree 2, connects to 1 community

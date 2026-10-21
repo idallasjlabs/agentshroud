@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries"
+community: "UserSessionManager (2)"
 location: "L2732"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries
+  - community/UserSessionManager_2
 ---
 
 # .test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries()
 
 ## Connections
 - [[Cooldown cache should prune expired entries when size exceeds threshold.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

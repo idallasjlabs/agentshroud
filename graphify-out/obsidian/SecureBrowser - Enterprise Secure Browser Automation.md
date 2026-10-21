@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
+community: "hermes/workspace/jira_dev_ticket.py"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # SecureBrowser - Enterprise Secure Browser Automation
@@ -18,14 +18,14 @@ tags:
 - [[Core Security Principles]] - `contains` [EXTRACTED]
 - [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
 - [[Integration with AgentShroud]] - `contains` [EXTRACTED]
-- [[Limitations_1]] - `contains` [EXTRACTED]
+- [[Limitations]] - `contains` [EXTRACTED]
 - [[Risk Levels]] - `contains` [EXTRACTED]
 - [[Security Architecture]] - `contains` [EXTRACTED]
 - [[Security Configuration]] - `contains` [EXTRACTED]
-- [[Security Guarantees_1]] - `contains` [EXTRACTED]
+- [[Security Guarantees]] - `contains` [EXTRACTED]
 - [[See Also]] - `contains` [EXTRACTED]
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
-- [[Usage_55]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Usage_58]] - `contains` [EXTRACTED]
 - [[securebrowserSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

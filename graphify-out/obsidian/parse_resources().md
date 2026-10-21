@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "init_skill.py"
+community: "test_integration.py"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/test_integrationpy
 ---
 
 # parse_resources()
@@ -15,4 +15,4 @@ tags:
 - [[init_skill.py]] - `contains` [EXTRACTED]
 - [[main()_34]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/init_skillpy
+#graphify/code #graphify/EXTRACTED #community/test_integrationpy

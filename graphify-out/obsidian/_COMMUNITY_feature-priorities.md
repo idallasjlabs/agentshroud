@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_1]] - document - docs/planning/redteam/feature-priorities.md
-- [[feature-priorities]] - document - docs/planning/redteam/feature-priorities.md
+- [[Daedalus Concept Illustrator README (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Daedalus Concept Illustrator SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

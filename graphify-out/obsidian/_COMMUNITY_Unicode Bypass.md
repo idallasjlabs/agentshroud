@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Unicode Bypass]] - concept - docs/project/glossary.md
+- [[GSDE&G Skills Reference Guide]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

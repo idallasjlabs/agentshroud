@@ -12,7 +12,7 @@ tags:
 # get_version_history()
 
 ## Connections
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Get version change history.]] - `rationale_for` [EXTRACTED]
 - [[agentshroud_manager (version manager)]] - `calls` [EXTRACTED]
 - [[list_versions()]] - `calls` [EXTRACTED]

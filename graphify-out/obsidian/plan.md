@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/plan.md"
 type: "document"
-community: "plan.md"
+community: "codex-review.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/planmd
+  - community/codex-reviewsh
 ---
 
 # plan.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/planmd
+#graphify/document #graphify/EXTRACTED #community/codex-reviewsh

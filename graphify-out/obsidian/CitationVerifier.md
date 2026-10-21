@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "api.py"
+community: "MCPPolicyEngine (2)"
 location: "L123"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/MCPPolicyEngine_2
 ---
 
 # CitationVerifier
@@ -24,13 +24,13 @@ tags:
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[ConfigUpdate]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
 - [[HTTPAuthorizationCredentials]] - `uses` [INFERRED]
 - [[IntelDraftEntry]] - `uses` [INFERRED]
 - [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
 - [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
@@ -42,9 +42,9 @@ tags:
 - [[TestVerifyReport]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_2]] - `uses` [INFERRED]
-- [[_FakeFetcher_1]] - `uses` [INFERRED]
+- [[WebSocket_4]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
+- [[_FakeFetcher_1]] - `uses` [INFERRED]
 - [[_FakeStreamResponse_1]] - `uses` [INFERRED]
 - [[_StreamResp]] - `uses` [INFERRED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2

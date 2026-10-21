@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "ConsentFramework"
-location: "L71"
+community: "export-bot-conversations.py (2)"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/export-bot-conversationspy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2

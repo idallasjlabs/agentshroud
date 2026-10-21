@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect (3)"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_3
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # hermes/skills/i-atlas/SKILL.md
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

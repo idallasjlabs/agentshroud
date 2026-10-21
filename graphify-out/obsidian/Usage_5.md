@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Browser Fetch Skill"
-location: "L27"
+community: "AgentTarget (2)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/AgentTarget_2
 ---
 
 # Usage
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

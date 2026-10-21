@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-21.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # dev-result-<date>.json dev->prod handoff contract
@@ -22,4 +22,4 @@ tags:
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer

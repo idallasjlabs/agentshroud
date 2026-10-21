@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "Path (4)"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path_4
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Create configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-from_env()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path_4
+#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

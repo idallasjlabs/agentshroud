@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "SOC Models SecurityEvent Tests"
+community: "Dependabot Configuration"
 location: "line 60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Models_SecurityEvent_Tests
+  - community/Dependabot_Configuration
 ---
 
 # SOC ServiceManager Tests (get_logs, module_filter)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOC Models SecurityEvent Tests]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Models_SecurityEvent_Tests
+#graphify/code #graphify/INFERRED #community/Dependabot_Configuration

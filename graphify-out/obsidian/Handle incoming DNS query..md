@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "parse_query"
+community: "web_proxy.py"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/web_proxypy
 ---
 
 # Handle incoming DNS query.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-datagram_received()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_query
+#graphify/rationale #graphify/EXTRACTED #community/web_proxypy

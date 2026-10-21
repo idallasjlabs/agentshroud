@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst (2)"
+community: "aquasecurity/trivy 403s the Actions token but serves the public feed."
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst_2
+  - community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
 ---
 
 # Output Format
 
 ## Connections
-- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_2
+#graphify/document #graphify/EXTRACTED #community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed

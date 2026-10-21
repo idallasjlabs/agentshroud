@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher (3)"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher_3
 ---
 
 # Owner command: reset lockdown state for a user. Returns True if existed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-reset()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

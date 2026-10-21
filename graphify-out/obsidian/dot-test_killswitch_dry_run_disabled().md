@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "EgressFilterConfig (4)"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressFilterConfig_4
 ---
 
 # .test_killswitch_dry_run_disabled()
 
 ## Connections
 - [[Kill switch dry_run must be False — real termination on anomaly.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
 - [[TestModuleConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

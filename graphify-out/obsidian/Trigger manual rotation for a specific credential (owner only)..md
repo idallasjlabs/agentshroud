@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "EgressFilterConfig (2) (2)"
 location: "L1002"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/EgressFilterConfig_2_2
 ---
 
 # Trigger manual rotation for a specific credential (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rotate_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2_2

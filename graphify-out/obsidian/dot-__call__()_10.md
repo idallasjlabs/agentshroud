@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L634"
+community: "MCPPolicyEngine (2)"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/MCPPolicyEngine_2
 ---
 
 # .__call__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[FetchOutcome_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

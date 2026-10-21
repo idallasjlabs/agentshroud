@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[dot-render_summary()]] - code - gateway/tools/multi_host_test.py
+- [[dot-test_dry_run_default_command()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_dry_run_touches_nothing()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_all_pass_with_injected_runner()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_default_hosts()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_failure_nonzero_exit()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_main_unreachable_nonzero_exit()]] - code - gateway/tests/test_multi_host_test.py
+- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - rationale - gateway/tools/multi_host_test.py
+- [[Render an aligned PASSFAIL table plus a totals line.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestMain_1]] - code - gateway/tests/test_multi_host_test.py
+- [[main()_31]] - code - gateway/tools/multi_host_test.py
+- [[multi-host-test.sh]] - code - scripts/multi-host-test.sh
+- [[multi-host-test.sh script]] - code - scripts/multi-host-test.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +30,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
+- 4 edges to [[_COMMUNITY_LOW Findings]]
+- 3 edges to [[_COMMUNITY_parse_trivy_output]]
+- 3 edges to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
+- 2 edges to [[_COMMUNITY_Red Team Assessment v1.2.0 (2)]]
+- 2 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 1 edge to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 1 edge to [[_COMMUNITY_PermissionLevel (6)]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List (2)]]
 
 ## Top bridge nodes
-- [[Where's The REAL Value]] - degree 4, connects to 1 community
+- [[main()_31]] - degree 18, connects to 6 communities
+- [[TestMain_1]] - degree 10, connects to 3 communities
+- [[dot-test_main_all_pass_with_injected_runner()]] - degree 3, connects to 1 community
+- [[dot-test_main_failure_nonzero_exit()]] - degree 3, connects to 1 community
+- [[dot-test_main_unreachable_nonzero_exit()]] - degree 3, connects to 1 community

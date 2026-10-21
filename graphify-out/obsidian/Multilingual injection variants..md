@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "HeuristicClassifier"
+community: "test_soc_egress_endpoints.py"
 location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/test_soc_egress_endpointspy
 ---
 
 # Multilingual injection variants.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultilingual]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "TestOutputTrustScoring"
+community: "openclaw/skills/i-browser/browse.js"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputTrustScoring
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
 # .test_clean_output_high_score()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutputTrustScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputTrustScoring
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

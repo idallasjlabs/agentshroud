@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "SecureBrowser (3)"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConsentFramework
+  - community/SecureBrowser_3
 ---
 
 # ShellInjectionDetected
@@ -20,4 +20,4 @@ tags:
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework
+#graphify/code #graphify/INFERRED #community/SecureBrowser_3

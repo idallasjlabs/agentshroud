@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L38"
+community: "scanner_integration.py"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/scanner_integrationpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_12]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

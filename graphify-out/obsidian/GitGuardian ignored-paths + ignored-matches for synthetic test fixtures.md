@@ -1,12 +1,12 @@
 ---
 source_file: ".gitguardian.yaml"
 type: "concept"
-community: "GitGuardian ignored-paths + ignored-matches for synthetic test fixtures"
+community: "i-hermes README — Podcast Production Orchestrator"
 location: "line 13"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GitGuardian_ignored-paths__ignored-matches_for_synthetic_test_fixtures
+  - community/i-hermes_README__Podcast_Production_Orchestrator
 ---
 
 # GitGuardian ignored-paths + ignored-matches for synthetic test fixtures
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GitGuardian_ignored-paths__ignored-matches_for_synthetic_test_fixtures
+#graphify/concept #graphify/EXTRACTED #community/i-hermes_README__Podcast_Production_Orchestrator

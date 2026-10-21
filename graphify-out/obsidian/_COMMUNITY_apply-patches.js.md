@@ -1,53 +1,48 @@
 ---
 type: community
-members: 40
+members: 35
 ---
 
 # apply-patches.js
 
-**Members:** 40 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
-- [[COLLAB_LOCAL_INFO_ONLY]] - code - docker/config/openclaw/apply-patches.js
-- [[GROUP_CHAT_IDS]] - code - docker/config/openclaw/apply-patches.js
-- [[LOCAL_PROVIDER_KEY derivation (mode-derived, not ref-derived)]] - code - docker/config/openclaw/apply-patches.js
-- [[LOCAL_PROVIDER_KEY mode-derivation design]] - rationale - docker/config/openclaw/apply-patches.js
-- [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
-- [[Per-chat group agent + binding reconciliation (Patch 1e)]] - code - docker/config/openclaw/apply-patches.js
-- [[RBAC collaborator_user_ids list (gatewaysecurityrbac_config.py)]] - concept - docker/config/openclaw/apply-patches.js
-- [[Telegram channel tokendmPolicyallowlist patch (Patch 3)]] - code - docker/config/openclaw/apply-patches.js
-- [[Telegram channel-wide fallback binding design]] - rationale - docker/config/openclaw/apply-patches.js
-- [[Telegram dmPolicy=open security tradeoff]] - rationale - docker/config/openclaw/apply-patches.js
-- [[_COLLAB_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
-- [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - code - docker/config/openclaw/apply-patches.js
-- [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
-- [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
-- [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
-- [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
-- [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[apply-patches.js]] - code - docker/config/openclaw/apply-patches.js
-- [[apply-patches.js patch driver (openclaw.json)]] - code - docker/config/openclaw/apply-patches.js
-- [[cIdx]] - code - docker/config/openclaw/apply-patches.js
-- [[config]] - code - docker/config/openclaw/apply-patches.js
-- [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
-- [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
-- [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[fs_3]] - code - docker/config/openclaw/apply-patches.js
-- [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
-- [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
-- [[hasMain]] - code - docker/config/openclaw/apply-patches.js
-- [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
-- [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
-- [[path_20]] - code - docker/config/openclaw/apply-patches.js
-- [[providerModels]] - code - docker/config/openclaw/apply-patches.js
-- [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
-- [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
-- [[{ profile _genericProfile, deny _genericCollabDeny }]] - code - docker/config/openclaw/apply-patches.js
+- [[dot-notifier()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_cleanup_expired_requests()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_deny_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[dot-test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Denial result also includes agent_id so collaborator can be notified.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Permanent approval also includes agent_id in result.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answer_callback handles errors.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,9 +52,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
-- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 3 edges to [[_COMMUNITY_Critical Findings]]
+- 2 edges to [[_COMMUNITY_dot-agentsskillsi-agileSKILL]]
 
 ## Top bridge nodes
-- [[apply-patches.js]] - degree 38, connects to 1 community
-- [[apply-patches.js patch driver (openclaw.json)]] - degree 3, connects to 1 community
+- [[TestEgressTelegramNotify]] - degree 22, connects to 2 communities
+- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community
+- [[dot-notifier()]] - degree 2, connects to 1 community

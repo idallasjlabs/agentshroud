@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[dot-_make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_all_upstreams_fail_sends_servfail()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_blocked_a_query_returns_zero_ip()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_blocked_aaaa_query_returns_null_ipv6()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_blocked_other_qtype_returns_nxdomain()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_datagram_received_schedules_handler()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_forwarded_query_relays_upstream_response()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_short_upstream_response_still_relayed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_unparseable_short_query_no_servfail_sent()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks every domain.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Build a minimal DNS query packet in wire format.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestDNSForwarderProtocol]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_BlockAll]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[build_dns_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Important Notes_2]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Next Steps_10]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Troubleshooting_32]] - document - docs/setup/TELEGRAM_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,15 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 3 edges to [[_COMMUNITY_DNSBlocklist]]
-- 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 2 edges to [[_COMMUNITY_parse_query]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
 
 ## Top bridge nodes
-- [[TestDNSForwarderProtocol]] - degree 13, connects to 3 communities
-- [[_BlockAll]] - degree 9, connects to 3 communities
-- [[build_dns_query()]] - degree 11, connects to 2 communities
-- [[dot-test_forwarded_query_relays_upstream_response()]] - degree 5, connects to 2 communities
-- [[dot-_make_protocol()]] - degree 10, connects to 1 community
+- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode A — Single task (6)"
+community: "check_upstream_cves()"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_6
+  - community/check_upstream_cves
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_5]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_6
+#graphify/document #graphify/EXTRACTED #community/check_upstream_cves

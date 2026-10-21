@@ -1,148 +1,207 @@
 ---
 type: community
-members: 135
+members: 194
 ---
 
 # test_soc_router_coverage.py
 
-**Members:** 135 nodes
+**Members:** 194 nodes
 
 ## Members
-- [[dot-__init__()_85]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_86]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_87]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_88]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-is_group_admin()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-is_owner()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-require()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[FakeAuditStore_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
-- [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
-- [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[_Svc]] - code - gateway/tests/test_soc_router_coverage.py
-- [[_fake_contributor_manager()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[_make_service_manager()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[gatewaysocauth.py (get_caller)]] - code - gateway/soc/auth.py
-- [[holder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[state()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_add_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_add_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_agent_cves_known_and_unknown()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_agent_cves_registry_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_agent_cves_reports_under_review()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_approvals_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_approvals_pending()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_export_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_verify_chain_raises()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_verify_chain_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_verify_chain_valid()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_dev_mode_omits_secure_flag()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_no_configured_token()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_success_sets_secure_cookie()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_wrong_token()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_ws_token()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_collaborator_activity_filters()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_collaborator_activity_no_tracker()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_collaborator_activity_pairing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_config_integrity_acknowledge()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_correlation_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_correlation_unavailable_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_correlation_via_engine()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_create_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_create_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_cve_report_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_fallback_when_template_missing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_serves_template_with_cache_busting()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_delete_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_docker_exec_bot_create_failures()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_docker_exec_bot_socket_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_docker_exec_bot_success_and_frame_parsing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_deny()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_deny_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_history_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_history_revoke_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_log_filters_egress_events()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_rule_override_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_rule_remove_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_emergency_block_confirmed()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_emergency_block_filter_raises_still_ok()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_emergency_block_requires_confirmation()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_fetch_latest_release_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_fetch_latest_release_success()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_file_hash_existing_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_config_variants()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_group()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_modules_modes()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_modules_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_updates_variants()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_user_found_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_group_memory_clear()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_group_memory_clear_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_group_memory_read()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_health_healthy_and_degraded()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_disconnect_owner_gate()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_freeze()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_shutdown()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_bots_default_and_configured()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_delegations()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_groups_empty_and_populated()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_services_and_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_users()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_llm_failover_stats()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_log_audit_survives_app_state_failure()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_minimal_dashboard_html_contents()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_pause_collaborator_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_privacy_policies()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_remove_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_rename_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_revoke_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_revoke_collaborator_ok_reflects_actual_result()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_revoke_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_defaults_low_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_level_label_boundaries()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_summary()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_summary_fallback_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_via_engine_critical()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_sbom_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scan_results()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scanners_aggregate()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scanners_aggregate_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scanners_recent()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scorecard_global_bot_and_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_alerts_dispatcher_raises()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_alerts_no_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_alerts_with_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_events_no_store()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_events_with_filters()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_logs()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_restart()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_start()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_stop_confirmation_then_stop()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_update()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_services_rebuild()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_group_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_log_level()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_module_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_collab_mode()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_role_invalid()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_role_non_owner_denied()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_role_owner_success()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_soc_router_coverage.py]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_ssh_compose_no_host()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_tool_acl()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_trivy_summary()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_unpause_collaborator_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_update_display_name()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_upgrade_hermes_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_upgrade_hermes_restarts_the_real_container_name()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_websocket_route_dispatch()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[update_service() must be called with the real container name     (agentshroud-he]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_174]] - code - gateway/soc/services.py
+- [[dot-_build_record()]] - code - gateway/soc/contributors.py
+- [[dot-_calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_describe_service()]] - code - gateway/soc/services.py
+- [[dot-_detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_ensure_rbac()]] - code - gateway/soc/contributors.py
+- [[dot-_ensure_teams()]] - code - gateway/soc/contributors.py
+- [[dot-_get_engine()]] - code - gateway/soc/services.py
+- [[dot-_load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_load_paused_ids()]] - code - gateway/soc/contributors.py
+- [[dot-_matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-get_contributor()]] - code - gateway/soc/contributors.py
+- [[dot-get_service()]] - code - gateway/soc/services.py
+- [[dot-list_contributors()]] - code - gateway/soc/contributors.py
+- [[dot-list_services()]] - code - gateway/soc/services.py
+- [[dot-restart_service()_1]] - code - gateway/soc/services.py
+- [[dot-start_service()]] - code - gateway/soc/services.py
+- [[dot-stop_service()_1]] - code - gateway/soc/services.py
+- [[dot-test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_approved_status()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_construction()_1]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_construction()_2]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_defaults()_1]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_destructive_requires_confirmation()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_edge_cases()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_error_model()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_import()_1]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_initialization()_5]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_instantiate_without_engine()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_pending_status_default()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_permission_denied_error()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_red_risk_high_threat()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_running_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_standby_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_stopped_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_unhealthy_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_with_resource_usage()]] - code - gateway/tests/test_soc_models.py
+- [[dot-update_service()]] - code - gateway/soc/services.py
+- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Alarm]] - code - gateway/soc/models.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_70]] - code - gateway/soc/services.py
+- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
+- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ContributorRecord]] - code - gateway/soc/contributors.py
+- [[ContributorRecord_1]] - code - gateway/soc/models.py
+- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[EgressRequest_1]] - code - gateway/soc/models.py
+- [[EgressStatus]] - code - gateway/soc/models.py
+- [[Enum_3]] - code
+- [[HealthStatus]] - code - gateway/soc/services.py
+- [[HealthStatus_1]] - code - gateway/soc/models.py
+- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[InjectionSeverity]] - code - gateway/security/tool_result_injection.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
+- [[Platform]] - code - gateway/soc/models.py
+- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
+- [[Query Docker daemon directly via Unix socket — no CLI needed.]] - rationale - gateway/soc/services.py
+- [[Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa]] - rationale - gateway/security/rbac_config.py
+- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ResourceUsage_1]] - code - gateway/soc/models.py
+- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return ServiceDescriptor for each known container plus internal gateway services]] - rationale - gateway/soc/services.py
+- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
+- [[Return the gateway's own container plus each configured bot's real     container]] - rationale - gateway/soc/services.py
+- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
+- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_5]] - code - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_6]] - code - gateway/soc/models.py
+- [[SCLError]] - code - gateway/soc/models.py
+- [[STANDBY = binary installed but cannot run in this environment; should be healthy]] - rationale - gateway/tests/test_soc_services.py
+- [[ServiceDescriptor]] - code - gateway/soc/services.py
+- [[ServiceDescriptor_1]] - code - gateway/soc/models.py
+- [[ServiceStatus]] - code - gateway/soc/services.py
+- [[ServiceStatus_1]] - code - gateway/soc/models.py
+- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestConfirmationModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestContributorRecord]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequest]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequestModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestSCLError]] - code - gateway/tests/test_soc_models.py
+- [[TestServiceDescriptor]] - code - gateway/tests/test_soc_models.py
+- [[TestServiceDescriptorDefaults]] - code - gateway/tests/test_soc_services.py
+- [[TestServiceManagerImport]] - code - gateway/tests/test_soc_services.py
+- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel_2]] - code - gateway/security/git_guard.py
+- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
+- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[UserRole]] - code - gateway/soc/models.py
+- [[UserRole_1]] - code - gateway/soc/contributors.py
+- [[Validate ServiceDescriptor model defaults — no real container calls.]] - rationale - gateway/tests/test_soc_services.py
+- [[Verify ServiceManager can be imported without a running container engine.]] - rationale - gateway/tests/test_soc_services.py
+- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - code - gateway/soc/services.py
+- [[_check_clamd()]] - code - gateway/soc/services.py
+- [[_check_fluent_bit()]] - code - gateway/soc/services.py
+- [[_check_openscap()]] - code - gateway/soc/services.py
+- [[_check_wazuh_agent()]] - code - gateway/soc/services.py
+- [[_engine_health_to_health()]] - code - gateway/soc/services.py
+- [[_engine_status_to_service_status()]] - code - gateway/soc/services.py
+- [[_inspect_via_socket()]] - code - gateway/soc/services.py
+- [[_known_services()]] - code - gateway/soc/services.py
+- [[_new_uuid()]] - code - gateway/soc/models.py
+- [[_now_iso()]] - code - gateway/soc/models.py
+- [[_role_enum()]] - code - gateway/soc/contributors.py
+- [[contributors.py]] - code - gateway/soc/contributors.py
+- [[load_paused_collaborator_ids()]] - code - gateway/security/rbac_config.py
+- [[mock_alert_callback()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[services.py]] - code - gateway/soc/services.py
+- [[socmodels.py]] - code - gateway/soc/models.py
+- [[str_3]] - code
+- [[test_soc_egress.py]] - code - gateway/tests/test_soc_egress.py
+- [[test_soc_models.py]] - code - gateway/tests/test_soc_models.py
+- [[test_soc_services.py]] - code - gateway/tests/test_soc_services.py
+- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -152,16 +211,75 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 5 edges to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 1 edge to [[_COMMUNITY_ForwardRequest (2)]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 50 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 20 edges to [[_COMMUNITY_MiddlewareManager]]
+- 12 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 10 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 8 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 8 edges to [[_COMMUNITY_LLMProxy]]
+- 7 edges to [[_COMMUNITY_ProxyAction]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 5 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 5 edges to [[_COMMUNITY_api.py]]
+- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py (2)]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager (2)_1]]
+- 4 edges to [[_COMMUNITY_TestCheckCommandExecution]]
+- 4 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 3 edges to [[_COMMUNITY_asyncio]]
+- 3 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_SkillGuard]]
+- 3 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 3 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
+- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY__wrap_response() (3)_1]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 3 edges to [[_COMMUNITY__make_proxy]]
+- 3 edges to [[_COMMUNITY_chatbotmain.py]]
+- 3 edges to [[_COMMUNITY_ResourceGuard (2)]]
+- 2 edges to [[_COMMUNITY_browserscriptsbrowse.py (2)]]
+- 2 edges to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 2 edges to [[_COMMUNITY_A2AMethod]]
+- 2 edges to [[_COMMUNITY_dot-proxy_messages()]]
+- 2 edges to [[_COMMUNITY_ProxyDashboard]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
+- 2 edges to [[_COMMUNITY_format_cve_report()]]
+- 2 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 2 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_GroupConfig]]
+- 2 edges to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]]
+- 2 edges to [[_COMMUNITY_FetchOutcome]]
+- 2 edges to [[_COMMUNITY_DelegationManager]]
+- 2 edges to [[_COMMUNITY_SessionManager]]
+- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 2 edges to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 2 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 2 edges to [[_COMMUNITY_ProxyAction (2)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2) (3)]]
+- 1 edge to [[_COMMUNITY_v0.9.0 — Apple Messages Integration]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager (2)]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY_Security Module Inventory]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_LLMProxy (2)_1]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
+- 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 151, connects to 6 communities
-- [[FakeGroup]] - degree 13, connects to 2 communities
-- [[FakeCaller]] - degree 12, connects to 2 communities
-- [[FakeAuditStore_1]] - degree 7, connects to 2 communities
-- [[_Svc]] - degree 7, connects to 2 communities
+- [[Enum_3]] - degree 105, connects to 48 communities
+- [[str_3]] - degree 44, connects to 23 communities
+- [[load_paused_collaborator_ids()]] - degree 8, connects to 4 communities
+- [[socmodels.py]] - degree 29, connects to 3 communities
+- [[test_soc_models.py]] - degree 22, connects to 3 communities

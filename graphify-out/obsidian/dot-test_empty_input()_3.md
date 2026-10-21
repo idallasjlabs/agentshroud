@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "MiddlewareManager (3)"
-location: "L56"
+community: "_wrap_response() (5)"
+location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/_wrap_response_5
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_5

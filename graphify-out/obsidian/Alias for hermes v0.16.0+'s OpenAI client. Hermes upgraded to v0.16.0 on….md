@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Request"
+community: "test_voice_stt_model_ab.py"
 location: "L4279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request
+  - community/test_voice_stt_model_abpy
 ---
 
 # Alias for hermes v0.16.0+'s OpenAI client. Hermes upgraded to v0.16.0 on…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_openai_chat_alias]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy

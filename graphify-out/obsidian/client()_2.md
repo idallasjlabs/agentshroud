@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "test_v1_models_synthetic.py"
+community: "Apple Platform Integration"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/Apple_Platform_Integration
 ---
 
 # client()
@@ -16,4 +16,4 @@ tags:
 - [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
 - [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/Apple_Platform_Integration

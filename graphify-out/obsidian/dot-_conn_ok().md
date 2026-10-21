@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "test_telegram_replay.py"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # ._conn_ok()
@@ -18,4 +18,4 @@ tags:
 - [[dot-record_inbound()]] - `calls` [EXTRACTED]
 - [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

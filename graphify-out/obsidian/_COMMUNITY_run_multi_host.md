@@ -1,24 +1,34 @@
 ---
 type: community
-members: 11
+members: 21
 ---
 
 # run_multi_host
 
-**Members:** 11 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[dot-test_all_pass()_1]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_empty_host_list_is_not_ok()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_mixed_pass_fail_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_on_host_callback_invoked_per_host()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_output_tail_is_truncated()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_runner_exception_marks_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[Return a runner that looks up (exit_code, output) by host name.]] - rationale - gateway/tests/test_multi_host_test.py
-- [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - rationale - gateway/tools/multi_host_test.py
-- [[TestRunMultiHost]] - code - gateway/tests/test_multi_host_test.py
-- [[_fake_runner()]] - code - gateway/tests/test_multi_host_test.py
-- [[run_multi_host()]] - code - gateway/tools/multi_host_test.py
+- [[_sunday_warn_expiring_acceptances()]] - code - scripts/lib/sunday-scan.sh
+- [[die()_2]] - code - scripts/lib/sunday-scan.sh
+- [[log()_7]] - code - scripts/lib/sunday-scan.sh
+- [[sunday-scan.sh]] - code - scripts/lib/sunday-scan.sh
+- [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_deadline_epoch()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_dev_handoff_gate()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_ensure_trivy()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_handoff_status()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_hermes_container()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_notify_direct()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_resolve_scan_image()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_restore_stack()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_run_scan_gate()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_run_summary()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_stack_check()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_stack_rollback()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_stack_start()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_stop_apply()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_telegram_post()]] - code - scripts/lib/sunday-scan.sh
+- [[warn()_4]] - code - scripts/lib/sunday-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,15 +38,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MultiHostResult]]
-- 4 edges to [[_COMMUNITY_main (2)]]
-- 3 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_TestTail]]
-- 1 edge to [[_COMMUNITY_ssh_runner]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
+- 5 edges to [[_COMMUNITY_PIIConfig]]
+- 5 edges to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)]]
 
 ## Top bridge nodes
-- [[run_multi_host()]] - degree 15, connects to 7 communities
-- [[TestRunMultiHost]] - degree 10, connects to 3 communities
-- [[_fake_runner()]] - degree 10, connects to 2 communities
+- [[sunday-scan.sh]] - degree 25, connects to 3 communities
+- [[sunday_run_scan_gate()]] - degree 10, connects to 2 communities
+- [[_sunday_warn_expiring_acceptances()]] - degree 4, connects to 1 community
+- [[sunday_dev_handoff_gate()]] - degree 2, connects to 1 community
+- [[sunday_handoff_status()]] - degree 2, connects to 1 community

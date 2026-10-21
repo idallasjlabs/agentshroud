@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Mac App Discovery Skill (2)"
+community: "ContextSegment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill_2
+  - community/ContextSegment
 ---
 
 # test_approval_store.py
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[AuditStore]] - `imports` [EXTRACTED]
+- [[AuditStore_1]] - `imports` [EXTRACTED]
 - [[_make_item()]] - `contains` [EXTRACTED]
 - [[store()_2]] - `contains` [EXTRACTED]
 - [[test_audit_store_initialize_is_idempotent()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_persist_and_reload()]] - `contains` [EXTRACTED]
 - [[test_store_survives_restart()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill_2
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

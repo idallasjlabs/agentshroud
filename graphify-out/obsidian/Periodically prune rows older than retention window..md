@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "test_telegram_replay.py"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # Periodically prune rows older than retention window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-cleanup_if_due()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

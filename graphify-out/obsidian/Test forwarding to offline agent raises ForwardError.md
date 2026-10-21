@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "AgentTarget"
+community: "_make_proxy()"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/_make_proxy
 ---
 
 # Test forwarding to offline agent raises ForwardError
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_to_agent_offline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

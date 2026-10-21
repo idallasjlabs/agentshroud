@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: ".update"
-location: "L64"
+community: "test_soc_router_coverage.py (2)"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update
+  - community/test_soc_router_coveragepy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-update()]] - `calls` [EXTRACTED]
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Path_56]] - `references` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy_2

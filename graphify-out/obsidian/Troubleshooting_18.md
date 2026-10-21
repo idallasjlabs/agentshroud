@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services (2)"
+community: "Mode A — Single task (2)"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Mode_A__Single_task_2
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_1]] - `contains` [EXTRACTED]
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[401 Unauthorized]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found]] - `contains` [EXTRACTED]
+- [[Connection timeout]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2

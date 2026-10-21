@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+community: "diagrams/README.md"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionality_Audit
+  - community/diagrams/READMEmd
 ---
 
 # Steve Hay's Specific Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

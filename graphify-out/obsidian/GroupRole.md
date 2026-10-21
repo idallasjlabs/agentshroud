@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "test_soc_bots.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_soc_botspy
 ---
 
 # GroupRole
@@ -17,7 +17,7 @@ tags:
 - [[dot-get_role()]] - `references` [EXTRACTED]
 - [[dot-rank()]] - `method` [EXTRACTED]
 - [[dot-set_role()]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Per-group roles for Telegram group workspace members.      Hierarchy (highest to]] - `rationale_for` [EXTRACTED]
 - [[TestGroupRoleProperties]] - `uses` [INFERRED]
 - [[TestGroupRoleResolver]] - `uses` [INFERRED]
@@ -28,8 +28,8 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[ToolRateLimit]] - `uses` [INFERRED]
 - [[group_rbac.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L102"
+community: "Production Safety Checklist (SKILL)"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

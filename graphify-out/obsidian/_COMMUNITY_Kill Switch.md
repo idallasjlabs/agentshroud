@@ -1,38 +1,39 @@
 ---
 type: community
-members: 25
+members: 26
 ---
 
 # Kill Switch
 
-**Members:** 25 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Defense in Depth (Bot Instructions + Gateway + Audit Log)]] - rationale - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Kill Switch]] - document - dashboard/README.md
-- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Troubleshooting_27]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 1 — Threat Modeling and Security Boundaries]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 10 — Human Approval Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 11 — Prompt and Policy Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 12 — Output Validation and Secondary Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 13 — Sandboxing and Execution Isolation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 14 — Browser and Document Ingestion Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 15 — Secret Management and Anti-Exfiltration Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 16 — Detection Engineering and Monitoring]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 17 — Canary and Tripwire Strategies]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 18 — Policy-as-Code and Formal Guardrails]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 19 — Resilience Against Long-Horizon Attacks]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 2 — Instruction  Data Separation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 20 — Training, Tuning, and Specialized Models]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 21 — Secure UX and Operator Ergonomics]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 22 — Incident Response and Recovery]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 23 — Red Teaming and Continuous Evaluation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 24 — Supply Chain and Ecosystem Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 25 — Governance and Change Control]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 3 — Taint Tracking and Data Lineage]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 4 — Capability Security and Least Privilege]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 5 — Tool-Call Governance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 6 — Egress Control and Exfiltration Resistance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 7 — Retrieval and RAG Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 8 — Memory Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Domain 9 — Multi-Agent Trust Architecture]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,16 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_Security Verification Report]]
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_Security Implementation Verification]]
-- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
+- 1 edge to [[_COMMUNITY_Weather Skill]]
 
 ## Top bridge nodes
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - degree 6, connects to 4 communities
-- [[Kill Switch]] - degree 9, connects to 3 communities
-- [[VERIFICATION_RESULTS]] - degree 5, connects to 2 communities
+- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - degree 26, connects to 1 community

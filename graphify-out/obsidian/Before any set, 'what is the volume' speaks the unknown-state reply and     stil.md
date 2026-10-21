@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L2761"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # Before any set, 'what is the volume' speaks the unknown-state reply and     stil
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

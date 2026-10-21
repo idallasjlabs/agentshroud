@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "LOW — Informational (2)"
+community: "Error Index.md (2)"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational_2
+  - community/Error_Indexmd_2
 ---
 
 # Test Results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fixes Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational_2
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2

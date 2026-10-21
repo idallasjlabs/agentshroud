@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AgentShroud™ README"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AgentShroud_README
 ---
 
 # BrowserSecurityGuard
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_53]] - `method` [EXTRACTED]
 - [[dot-analyze_content()]] - `method` [EXTRACTED]
 - [[dot-analyze_screenshot()]] - `method` [EXTRACTED]
 - [[dot-can_enter_credentials()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
@@ -39,9 +39,9 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - `cites` [EXTRACTED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
-- [[guard()_3]] - `calls` [EXTRACTED]
+- [[guard()_1]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_browser_security.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AgentShroud_README

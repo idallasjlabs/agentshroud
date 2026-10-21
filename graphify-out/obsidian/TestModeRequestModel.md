@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "EgressFilterConfig (4)"
 location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressFilterConfig_4
 ---
 
 # TestModeRequestModel
@@ -15,10 +15,10 @@ tags:
 - [[dot-test_custom_revert_minutes()]] - `method` [EXTRACTED]
 - [[dot-test_default_revert_minutes()]] - `method` [EXTRACTED]
 - [[dot-test_valid_modes_constant()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

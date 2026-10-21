@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Use Cases"
+community: "compose_generator.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/compose_generatorpy
 ---
 
 # Use Cases
@@ -25,4 +25,4 @@ tags:
 - [[UC-010 Multi-Instance Deployment with Port Auto-Detection]] - `contains` [EXTRACTED]
 - [[use-cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

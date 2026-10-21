@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "archive_old_events"
-location: "L46"
+community: "GroupConfig"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/GroupConfig
 ---
 
 # Path
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[purge_low_value_events()]] - `references` [EXTRACTED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

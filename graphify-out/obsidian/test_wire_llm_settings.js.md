@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "test_wire_llm_settings.js"
+community: "TestWebAPI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/TestWebAPI
 ---
 
 # test_wire_llm_settings.js
@@ -18,8 +18,8 @@ tags:
 - [[assert()_1]] - `contains` [EXTRACTED]
 - [[fs_6]] - `contains` [EXTRACTED]
 - [[os_1]] - `contains` [EXTRACTED]
-- [[path_54]] - `contains` [EXTRACTED]
-- [[read()_2]] - `contains` [EXTRACTED]
+- [[path_56]] - `contains` [EXTRACTED]
+- [[read()_6]] - `contains` [EXTRACTED]
 - [[readHermesMcpServers()]] - `contains` [EXTRACTED]
 - [[runHermesInit()]] - `contains` [EXTRACTED]
 - [[runOpenClawInit()]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[writeStub()]] - `contains` [EXTRACTED]
 - [[{ spawnSync }_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/code #graphify/EXTRACTED #community/TestWebAPI

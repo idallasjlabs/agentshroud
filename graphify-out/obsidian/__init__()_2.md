@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._run_proxy()"
-location: "L458"
+community: "ApprovalQueueConfig (2) (2)"
+location: "L5606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-_run_proxy()]] - `contains` [EXTRACTED]
+- [[dot-test_non_owner_activity_is_tracked_for_unknown_user()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_proxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

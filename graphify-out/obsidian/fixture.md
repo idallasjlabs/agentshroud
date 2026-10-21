@@ -1,22 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "fixture (2)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/fixture_2
 ---
 
 # fixture
 
 ## Connections
-- [[_no_owner_mirror()]] - `references` [EXTRACTED]
-- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
-- [[clamd_sock_path()]] - `references` [EXTRACTED]
-- [[session_manager()]] - `references` [EXTRACTED]
-- [[smm()]] - `references` [EXTRACTED]
-- [[tmp_workspace()]] - `references` [EXTRACTED]
-- [[trust_manager()]] - `references` [EXTRACTED]
+- [[dot-registry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/fixture_2

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "create_auth_dependency"
+community: "lifespan()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/lifespan
 ---
 
 # rate_limiter (module-level instance)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[auth.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/lifespan

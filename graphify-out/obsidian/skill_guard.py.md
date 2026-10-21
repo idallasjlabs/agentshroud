@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "SkillGuard (2)"
+community: "ConfigIntegrityMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/ConfigIntegrityMonitor
 ---
 
 # skill_guard.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[Finding]] - `contains` [EXTRACTED]
 - [[Recommendation]] - `contains` [EXTRACTED]
 - [[ScanResult_3]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[_Rule]] - `contains` [EXTRACTED]
 - [[_c()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

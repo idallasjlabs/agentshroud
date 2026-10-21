@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "05-behavior.md"
+community: "openclaw/skills/i-browser/package.json"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/05-behaviormd
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
 # State Machine — Approval Queue Item Lifecycle
@@ -16,4 +16,4 @@ tags:
 - [[FR2 Use Control]] - `conceptually_related_to` [INFERRED]
 - [[Logic Flow — Request Execution]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/05-behaviormd
+#graphify/concept #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

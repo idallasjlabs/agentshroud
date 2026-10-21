@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # agentshroud-gateway container (starts first)
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[Endpoints (Inferred)]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[Key Features_1]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[Purpose_10]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[Related Notes_15]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[When Used]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[installer.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[installer.py]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
 
 ## Live Query (requires Dataview plugin)
 

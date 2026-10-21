@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "rationale"
-community: "BotConfig (3)"
+community: "installer.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/installerpy
 ---
 
 # Approval Queue — Core Security Value
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue Control]] - `semantically_similar_to` [INFERRED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/installerpy

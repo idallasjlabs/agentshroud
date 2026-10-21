@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "_w"
+community: "MiddlewareManager (3) (2)"
 location: "L772"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/MiddlewareManager_3_2
 ---
 
 # .test_containerized_pipeline_evidence_full()
@@ -15,4 +15,4 @@ tags:
 - [[TestImageSigningProvenance]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2

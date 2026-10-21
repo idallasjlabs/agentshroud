@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/references/update.md"
 type: "document"
-community: "graphify Skill"
+community: "Seccomp Profiles"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/Seccomp_Profiles
 ---
 
 # graphify Update & Cluster-Only Reference
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Skill
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

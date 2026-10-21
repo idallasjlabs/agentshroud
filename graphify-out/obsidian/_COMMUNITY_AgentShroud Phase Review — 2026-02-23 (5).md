@@ -1,0 +1,28 @@
+---
+type: community
+members: 4
+---
+
+# AgentShroud Phase Review — 2026-02-23 (5)
+
+**Members:** 4 nodes
+
+## Members
+- [[Patent Center Filing Steps]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Post-Filing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Pre-Filing Preparation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 7 FILING CHECKLIST]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/AgentShroud_Phase_Review__2026-02-23_5
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py (3)]]
+- 1 edge to [[_COMMUNITY_dot-update]]
+
+## Top bridge nodes
+- [[SECTION 7 FILING CHECKLIST]] - degree 5, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "SubagentGovernance"
+community: "Message Composition with MML (MIME Meta Language)"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # gov()
@@ -17,4 +17,4 @@ tags:
 - [[SubagentGovernance]] - `calls` [EXTRACTED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

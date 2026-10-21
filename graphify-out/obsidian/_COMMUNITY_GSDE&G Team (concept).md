@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[GSDE&G Team (concept)]] - concept - docker/config/hermes/skills/i-mc/SKILL.md
+- [[WebhookReceiver Session Isolation Integration]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
-location: "L54"
+community: "OpenClaw Bot SSH Configuration"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Usage
 
 ## Connections
-- [[Click Element_1]] - `contains` [EXTRACTED]
-- [[Extract Data_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_1]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
-- [[Take Screenshot_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "EgressFilterConfig"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[dot-__init__()_95]] - `method` [EXTRACTED]
+- [[dot-__init__()_114]] - `method` [EXTRACTED]
 - [[dot-_init_presidio()]] - `method` [EXTRACTED]
 - [[dot-_sanitize_presidio()]] - `method` [EXTRACTED]
 - [[dot-_sanitize_regex()]] - `method` [EXTRACTED]
@@ -25,35 +25,35 @@ tags:
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
 - [[dot-sanitize()_4]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_2]] - `calls` [EXTRACTED]
+- [[dot-sanitizer()]] - `calls` [EXTRACTED]
 - [[dot-sanitizer()_1]] - `calls` [EXTRACTED]
 - [[dot-test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
 - [[dot-test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
 - [[dot-test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[Any_61]] - `uses` [INFERRED]
+- [[Any_40]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[GatewayConfig]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
 - [[PIISanitizer_1]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `conceptually_related_to` [AMBIGUOUS]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDefaultBotId]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -91,12 +91,12 @@ tags:
 - [[TestOutboundTextFieldResolution]] - `uses` [INFERRED]
 - [[TestOwnerActivityNotice]] - `uses` [INFERRED]
 - [[TestOwnerMirrorCoalescing]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPIISanitizerPerformance]] - `uses` [INFERRED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `uses` [INFERRED]
 - [[TestPendingNoticeIncludesEgressSection]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardPerformance]] - `uses` [INFERRED]
 - [[TestReplayBufferOffsetParsing]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
@@ -113,7 +113,7 @@ tags:
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestSecurityPipelineChainLatency]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTelegram400Retry]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrackerGetHealth]] - `uses` [INFERRED]
@@ -130,18 +130,18 @@ tags:
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
-- [[client()_6]] - `calls` [EXTRACTED]
-- [[client()_7]] - `calls` [EXTRACTED]
+- [[client()_15]] - `calls` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `references` [EXTRACTED]
 - [[sanitizer()_1]] - `calls` [EXTRACTED]
-- [[sanitizer()_4]] - `calls` [EXTRACTED]
+- [[sanitizer()]] - `calls` [EXTRACTED]
 - [[sanitizer()_2]] - `calls` [EXTRACTED]
 - [[sanitizer()_3]] - `calls` [EXTRACTED]
 - [[sanitizer.py]] - `contains` [EXTRACTED]
@@ -164,4 +164,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt"
 type: "concept"
-community: "competitive-report-*.md dated reports"
+community: "Architecture"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Architecture
 ---
 
 # competitive-analysis.md artifact
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw cron Daily Competitive Analysis Email (AM)]] - `references` [EXTRACTED]
 - [[OpenClaw cron Daily Competitive Landscape Update (zero-hallucination sourcing rules)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/concept #graphify/EXTRACTED #community/Architecture

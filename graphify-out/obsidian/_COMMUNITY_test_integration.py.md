@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Test forward endpoint rejects requests without auth]] - rationale - gateway/tests/test_integration.py
-- [[Test forward endpoint with proper authentication]] - rationale - gateway/tests/test_integration.py
-- [[Test WebSocket authentication flow]] - rationale - gateway/tests/test_integration.py
-- [[Test ledger query endpoint]] - rationale - gateway/tests/test_integration.py
-- [[Test that status endpoint works without authentication]] - rationale - gateway/tests/test_integration.py
-- [[test_forward_with_auth()]] - code - gateway/tests/test_integration.py
-- [[test_forward_without_auth()]] - code - gateway/tests/test_integration.py
-- [[test_health_check_no_auth()]] - code - gateway/tests/test_integration.py
-- [[test_integration.py]] - code - gateway/tests/test_integration.py
-- [[test_ledger_query()]] - code - gateway/tests/test_integration.py
-- [[test_websocket_auth()]] - code - gateway/tests/test_integration.py
+- [[TODO Add actual script logic here]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Convert hyphenated skill name to Title Case for display.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Initialize a new skill directory with template SKILL.md.      Args         skil]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Normalize a skill name to lowercase hyphen-case.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[create_resource_dirs()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill.py]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[main()_34]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[normalize_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[parse_resources()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[title_case_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,10 @@ members: 11
 TABLE source_file, type FROM #community/test_integrationpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Function Details (4)]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
+
+## Top bridge nodes
+- [[init_skill.py]] - degree 9, connects to 2 communities

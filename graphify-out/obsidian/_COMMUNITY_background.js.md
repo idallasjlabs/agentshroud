@@ -1,27 +1,33 @@
 ---
 type: community
-members: 14
+members: 20
 ---
 
 # background.js
 
-**Members:** 14 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[background.js]] - code - browser-extension/background.js
-- [[clipPage()]] - code - browser-extension/background.js
-- [[extractPageContent()]] - code - browser-extension/background.js
-- [[forwardUrl()]] - code - browser-extension/background.js
-- [[getActiveTab()]] - code - browser-extension/background.js
-- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
-- [[loadConfig()]] - code - browser-extension/background.js
-- [[notify()_1]] - code - browser-extension/background.js
-- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
-- [[popup.js]] - code - browser-extension/popup.js
-- [[reportResult()]] - code - browser-extension/background.js
-- [[send()]] - code - browser-extension/popup.js
-- [[setStatus()]] - code - browser-extension/popup.js
-- [[statusEl]] - code - browser-extension/popup.js
+- [[A. AWS Glue Jobs_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[C. AWS Athena_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[F. IAM Policies_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[General Rules_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Objective_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Output Format_12]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Role_46]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Testing Hierarchy_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[hermesskillsi-qaSKILL]] - document - docker/config/hermes/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_options.js]]
-- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
-- 1 edge to [[_COMMUNITY_Browser Extension]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[background.js]] - degree 11, connects to 2 communities
-- [[loadConfig()]] - degree 4, connects to 1 community
+- [[Skill Quality Assurance (QA)_1]] - degree 7, connects to 1 community

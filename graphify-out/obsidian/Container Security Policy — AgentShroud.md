@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "document"
-community: "Container Security Policy — AgentShroud"
+community: "test_dns_canvas_coverage.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_Security_Policy__AgentShroud
+  - community/test_dns_canvas_coveragepy
 ---
 
 # Container Security Policy — AgentShroud
@@ -20,4 +20,4 @@ tags:
 - [[6. Incident Response (Container-Specific)]] - `contains` [EXTRACTED]
 - [[container-policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_Security_Policy__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

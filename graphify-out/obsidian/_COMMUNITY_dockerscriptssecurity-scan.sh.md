@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[alert_if_critical()]] - code - docker/scripts/security-scan.sh
-- [[dockerscriptssecurity-scan.sh]] - code - docker/scripts/security-scan.sh
-- [[log()_10]] - code - docker/scripts/security-scan.sh
-- [[run_clamav()]] - code - docker/scripts/security-scan.sh
-- [[run_oscap()]] - code - docker/scripts/security-scan.sh
-- [[run_sbom()]] - code - docker/scripts/security-scan.sh
-- [[run_trivy()]] - code - docker/scripts/security-scan.sh
-- [[scan.sh_1]] - code - docker/scripts/scan.sh
-- [[scan.sh script]] - code - docker/scripts/scan.sh
-- [[security-scan.sh script_1]] - code - docker/scripts/security-scan.sh
+- [[ANTI-HALLUCINATION CHECKLIST]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[CRITICAL RULES — READ BEFORE DOING ANYTHING]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[OUTPUT REQUIREMENTS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[REPORT STRUCTURE]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 1 MARKET ANALYSIS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[hermesworkspacecompetitive-analysis]] - document - docker/config/hermes/workspace/competitive-analysis.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/docker/scripts/security-scansh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_FR3 System Integrity]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-
-## Top bridge nodes
-- [[dockerscriptssecurity-scan.sh]] - degree 12, connects to 3 communities

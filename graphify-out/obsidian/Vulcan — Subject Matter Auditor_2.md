@@ -1,21 +1,25 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L1"
+community: "Threat Model"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Threat_Model
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Purpose_185]] - `contains` [EXTRACTED]
-- [[Related Skills_117]] - `contains` [EXTRACTED]
-- [[Usage_126]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-vulcanREADME]] - `contains` [EXTRACTED]
+- [[Input Requirements_18]] - `contains` [EXTRACTED]
+- [[Output Format_33]] - `contains` [EXTRACTED]
+- [[Persona_14]] - `contains` [EXTRACTED]
+- [[Quality Checklist_16]] - `contains` [EXTRACTED]
+- [[Role_99]] - `contains` [EXTRACTED]
+- [[System Prompt_14]] - `contains` [EXTRACTED]
+- [[User Prompt Template_6]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-vulcanSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

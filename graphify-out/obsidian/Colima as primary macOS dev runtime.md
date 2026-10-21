@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "concept"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "AlertTelegramRelay"
 location: "L25-46"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/AlertTelegramRelay
 ---
 
 # Colima as primary macOS dev runtime
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/concept #graphify/EXTRACTED #community/AlertTelegramRelay

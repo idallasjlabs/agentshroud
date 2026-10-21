@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage-exporter"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
 ---
 
 # BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[IMESSAGE_FIX]] - `conceptually_related_to` [INFERRED]
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+#graphify/document #graphify/INFERRED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3

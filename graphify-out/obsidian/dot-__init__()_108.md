@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L41"
+community: "api.py (2)"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/apipy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[FakeProcess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/apipy_2

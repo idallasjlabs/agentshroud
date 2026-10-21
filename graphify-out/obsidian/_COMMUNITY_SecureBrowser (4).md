@@ -1,57 +1,56 @@
 ---
 type: community
-members: 44
+members: 43
 ---
 
 # SecureBrowser (4)
 
-**Members:** 44 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_76]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_classify_risk()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_domain_matches()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_init_browser()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_load_config()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_log_action()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_log_security_event()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_requires_approval()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_take_screenshot()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-_validate_url()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-click()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-close()_7]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-detect_captcha()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-extract()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-fill_field()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-get_audit_log()_4]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-navigate()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[CLI interface for SecureBrowser_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Check if action requires approval          Security Approval queue integration_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Check if domain matches pattern (supports wildcards)_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Classify action risk level          Security Determines if approval is needed_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Clean up browser resources_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Click an element          Security Risk classification for destructive actions_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Extract data from page          Security No credential extraction allowed_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Fill a single form field          Security Risk classification, approval for se_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Initialize browser with security settings_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Load security configuration_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Log browser action to audit trail_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Log security-related events_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Navigate to URL          Security URL validation, audit logging_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Raised when security policy is violated_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Return complete audit log_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Risk classification for browser actions_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[RiskLevel_4]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[Secure browser automation with enterprise controls      Security guarantees_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[SecureBrowser_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[Security configuration for browser automation_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[SecurityConfig_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[SecurityError_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[Take screenshot and save to audit directory_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[Validate URL against allowlistblocklist          Security This is the primary_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[main()_10]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[securebrowserscriptsbrowse.py]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-_build_timeout_fallback_response()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_emit_failover_notice()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_enforce_tool_acl()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_forward_request()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_get_local_model()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_get_local_secondary_model()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_is_connect_error()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_local_backend_headers()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_local_backend_unavailable_response()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_local_secondary_failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_normalize_local_model()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_record_failover_event()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_scan_inbound()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_scan_request_data()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_suppress_qwen3_thinking()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_widen_optional_tool_param_types()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-proxy_messages()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
+- [[Add 'null' as an accepted type for every non-required tool parameter, in place.…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Append 'no_think' to the last user message, in place, if not already present.…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Attempt a cloud→local failover dispatch. Returns (status, headers, body) from…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Attempt a local→local-secondary failover when the primary local model hits OOM.…]] - rationale - gateway/proxy/llm_proxy.py
+- [[BaseException_1]] - code
+- [[Build a structured 503 for an unreachable local backend. Logs one WARNING per…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Build provider-compatible timeout fallback message to avoid silent Telegram…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Forward request to the real LLM API provider. Retries up to 3 times on…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Inject per-backend auth for local backends that require it. Unlike LM Studio …]] - rationale - gateway/proxy/llm_proxy.py
+- [[Persist a failover event to the audit chain if wired.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Proxy a streaming LLM API request, yielding SSE chunks as they arrive. Used…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Proxy an LLM API request. Returns (status_code, response_headers,…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Return the bare secondary local model name, or None if not configured. Reads…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan Anthropic tool_use blocks; replace denied tools with a text error block.…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan inbound user message text for PII and injection.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan request data for PII and injection across different provider formats.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Send a single Telegram notice per cooldown window when failover activates.]] - rationale - gateway/proxy/llm_proxy.py
+- [[True for connection-level failures (refused  unreachable  reset). Unwraps…]] - rationale - gateway/proxy/llm_proxy.py
+- [[_bytes_only()]] - code - gateway/proxy/llm_proxy.py
+- [[_is_connect_error matches connection-level failures only.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[_read_error_body()]] - code - gateway/proxy/llm_proxy.py
+- [[_stream()]] - code - gateway/proxy/llm_proxy.py
+- [[_urlopen_and_read()]] - code - gateway/proxy/llm_proxy.py
+- [[test_is_connect_error_classification()]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,10 +60,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
+- 38 edges to [[_COMMUNITY_ModeRequest]]
+- 3 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 3 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 2 edges to [[_COMMUNITY_SecureBrowser (4) (2)]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan (2)]]
 
 ## Top bridge nodes
-- [[SecurityError_3]] - degree 7, connects to 1 community
-- [[securebrowserscriptsbrowse.py]] - degree 6, connects to 1 community
-- [[RiskLevel_4]] - degree 6, connects to 1 community
+- [[dot-proxy_messages_streaming()]] - degree 14, connects to 4 communities
+- [[dot-proxy_messages()]] - degree 23, connects to 3 communities
+- [[_stream()]] - degree 10, connects to 2 communities
+- [[dot-_local_secondary_failover_request()]] - degree 9, connects to 2 communities
+- [[test_is_connect_error_classification()]] - degree 4, connects to 2 communities

@@ -1,56 +1,57 @@
 ---
 type: community
-members: 43
+members: 44
 ---
 
 # AgentTarget (4)
 
-**Members:** 43 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[dot-config()_1]] - code - gateway/tests/test_config_validation.py
-- [[dot-config()_2]] - code - gateway/tests/test_config_validation.py
-- [[dot-config()_3]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_approval_queue_enabled()_1]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_container_hardening()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_file_exists()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_gateway_port()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_log_level()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_kill_switch_enabled()_1]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_long_retention()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_enabled()_1]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_rootless()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_ssh_requires_approval()_1]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_tailscale_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
-- [[Path_17]] - code - gateway/tests/test_config_validation.py
-- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
-- [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
-- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
-- [[TestRecommendedConfig]] - code - gateway/tests/test_config_validation.py
-- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
-- [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
-- [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
-- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
-- [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
-- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
+- [[dot-_n()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_agent_reply_from_log()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_angle_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_blockquote_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_bold_double_star_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_bold_double_underscore_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_bullet_list_marker_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_code_fence_delimiter_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_credential_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_credential_var_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_email_address_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_heading_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_horizontal_rule_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_image_link_reduced_to_alt()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_inline_code_backtick_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_internal_host_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_internal_url_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_italic_star_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_lock_emoji_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_lowercase_bracket_not_matched()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_markdown_link_reduced_to_text()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_model_info_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_numbered_list_marker_stripped()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_person_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_phone_number_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_plain_prose_unchanged()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_port_inline_colon()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_port_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_raw_secret_value_not_present_after_normalise()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_secret_path_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_security_module_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_tool_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_unknown_angle_token_fallback()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_unknown_bracket_token_fallback()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_us_ssn_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_user_id_redacted_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_user_id_spoken()]] - code - gateway/tests/test_voice_gateway.py
+- [[If a secret somehow reaches normalise (shouldn't — pipeline redacted it),]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Reproduces the 2026-06-27 1238 agent reply that triggered SCRUM-46.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Reproduces the exact log pattern httpgatewayPORT]] - rationale - gateway/tests/test_voice_gateway.py
+- [[TestNormalizeForSpeech]] - code - gateway/tests/test_voice_gateway.py
+- [[Unit tests for voice_gateway.tts.normalize_for_speech.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[1, possible, note — not uppercase-only, must not be touched.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[🔒 REDACTED Credentials cannot be displayed via Telegram]] - rationale - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,16 +61,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_security.py]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_test_cron_jobs_prompts.py]]
+- 1 edge to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Verification (13-check driver)]]
 
 ## Top bridge nodes
-- [[test_config_validation.py]] - degree 11, connects to 6 communities
-- [[TestParanoidConfig]] - degree 23, connects to 2 communities
-- [[TestRecommendedConfig]] - degree 10, connects to 2 communities
-- [[TestMinimalConfig]] - degree 9, connects to 2 communities
-- [[TestAllExampleConfigsExist]] - degree 5, connects to 2 communities
+- [[TestNormalizeForSpeech]] - degree 39, connects to 1 community
+- [[dot-_n()]] - degree 38, connects to 1 community

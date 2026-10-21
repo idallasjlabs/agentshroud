@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "make_event"
 location: "lines 262-273"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/make_event
 ---
 
 # S17 Hermes run-standalone.sh resource caps: prod 3g/1.5, dev 2g/1.0, env override honoured
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cmd_up()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/concept #graphify/EXTRACTED #community/make_event

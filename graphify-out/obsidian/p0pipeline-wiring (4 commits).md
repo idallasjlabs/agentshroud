@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "1. Accomplishments This Phase (2)"
+community: "§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase_2
+  - community/2__New_Multi-Bot_Attack_Scenarios_v11_Surface
 ---
 
 # p0/pipeline-wiring (4 commits)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase_2
+#graphify/document #graphify/EXTRACTED #community/2__New_Multi-Bot_Attack_Scenarios_v11_Surface

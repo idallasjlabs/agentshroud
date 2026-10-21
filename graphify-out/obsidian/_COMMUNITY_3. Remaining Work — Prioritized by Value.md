@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
+- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
+- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
 
 ## Top bridge nodes
-- [[3. Remaining Work — Prioritized by Value]] - degree 9, connects to 1 community
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community

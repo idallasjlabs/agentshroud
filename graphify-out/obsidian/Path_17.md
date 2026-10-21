@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "AgentTarget (4)"
-location: "L17"
+community: "GatewayEmailService"
+location: "L249"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentTarget_4
+  - graphify/EXTRACTED
+  - community/GatewayEmailService
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[dot-_run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget_4
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

@@ -1,22 +1,23 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SecureBrowser (4)"
-location: "L34"
+community: "SkillGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/SkillGuard
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_classify_risk()_3]] - `references` [EXTRACTED]
-- [[dot-_log_action()_3]] - `references` [EXTRACTED]
-- [[dot-_requires_approval()_3]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_3]] - `rationale_for` [EXTRACTED]
-- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-_assess_risk()]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

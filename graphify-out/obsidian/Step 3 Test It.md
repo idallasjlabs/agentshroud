@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "How to Fix (5 Minutes)"
+community: "Skill: Technical Illustrator (TI) (2)"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/How_to_Fix_5_Minutes
+  - community/Skill_Technical_Illustrator_TI_2
 ---
 
 # Step 3: Test It
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Fix (5 Minutes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2

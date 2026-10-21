@@ -1,39 +1,41 @@
 ---
 type: community
-members: 26
+members: 28
 ---
 
 # agentshroud-blueteam/SKILL.md (2)
 
-**Members:** 26 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[dot-filter_response()]] - code - gateway/security/xml_leak_filter.py
-- [[dot-scan_command_injection()]] - code - gateway/security/xml_leak_filter.py
-- [[dot-setup_method()_27]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_clean_response_passes_through()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_clean_text_passes()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_empty_text_returns_clean()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_file_path_removal()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_function_calls_xml_removal()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_python_eval_detected()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_quick_function_calls_filter()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_shell_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[dot-xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[Filter outbound response content to remove sensitive information.          Args]] - rationale - gateway/security/xml_leak_filter.py
-- [[FilterResult]] - code - gateway/security/xml_leak_filter.py
-- [[Result from XML leak filtering.]] - rationale - gateway/security/xml_leak_filter.py
-- [[Scan outbound text for command  code injection patterns.          Does NOT modi]] - rationale - gateway/security/xml_leak_filter.py
-- [[Set up test fixtures._4]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test cases for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test removal of file paths from responses.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test removal of function call XML blocks.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test that clean responses pass through unchanged.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test the performance-optimized function calls only filter.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[TestCommandInjectionScan]] - code - gateway/tests/test_xml_leak_filter.py
-- [[TestXMLLeakFilter]] - code - gateway/tests/test_xml_leak_filter.py
-- [[test_xml_leak_filter.py]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-_has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-setup_method()_22]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_case_insensitive()_3]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_flagging_form()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_legitimate_responses_not_matched()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_possessive_flagging()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_present_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_prevents_form()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_progressive_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_redaction_applied()]] - code - gateway/tests/test_outbound_filter.py
+- [[Matched text is replaced with RESPONSE_FILTERED.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Normal helpful responses must NOT trigger the pattern.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Original pattern exact past-tense form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Pattern is case-insensitive.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Pattern is in the OPERATIONAL category.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test cases for the widened fabricated_security_notice pattern.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestFabricatedSecurityNotice]] - code - gateway/tests/test_outbound_filter.py
+- [[blocking suspicious code execution' variant.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[blocking' continuous form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[continues blocking' — adverb + gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[flagging' gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +45,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 4 edges to [[_COMMUNITY_FetchOutcome]]
 
 ## Top bridge nodes
-- [[FilterResult]] - degree 8, connects to 2 communities
-- [[TestCommandInjectionScan]] - degree 9, connects to 1 community
-- [[TestXMLLeakFilter]] - degree 9, connects to 1 community
-- [[test_xml_leak_filter.py]] - degree 4, connects to 1 community
-- [[dot-filter_response()]] - degree 3, connects to 1 community
+- [[TestFabricatedSecurityNotice]] - degree 19, connects to 1 community
+- [[dot-setup_method()_22]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: ".agents/skills/i-architecture-review/SKILL.md"
+community: "asb CLI — Deployment Tool"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-architecture-review/SKILLmd
+  - community/asb_CLI__Deployment_Tool
 ---
 
 # Skill: architecture-review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-architecture-review/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/asb_CLI__Deployment_Tool

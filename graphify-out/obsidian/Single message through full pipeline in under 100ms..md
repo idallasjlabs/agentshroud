@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "EgressFilterConfig"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # Single message through full pipeline in under 100ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_single_message_pipeline_under_100ms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

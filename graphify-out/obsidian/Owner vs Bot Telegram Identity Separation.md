@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "concept"
-community: "Enterprise Governance Proxy System (invention)"
+community: "AgentShroud Brand Quick Reference"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Enterprise_Governance_Proxy_System_invention
+  - community/AgentShroud_Brand_Quick_Reference
 ---
 
 # Owner vs Bot Telegram Identity Separation
@@ -15,4 +15,4 @@ tags:
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `conceptually_related_to` [INFERRED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Enterprise_Governance_Proxy_System_invention
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Brand_Quick_Reference

@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[Action Feed]] - document - dashboard/README.md
-- [[ActionFeed Component (Live Action Stream)]] - concept - dashboard/README.md
-- [[AgentShroud Dashboard]] - document - dashboard/README.md
-- [[Components (to be implemented in Week 2)]] - document - dashboard/README.md
-- [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Data Ledger Viewer]] - document - dashboard/README.md
-- [[DataLedger Component (Forwarded Content Viewer)]] - concept - dashboard/README.md
-- [[Features_2]] - document - dashboard/README.md
-- [[Implementation Status_1]] - document - dashboard/README.md
-- [[KillSwitch Component (Emergency Halt)]] - concept - dashboard/README.md
-- [[Memory Browser]] - document - dashboard/README.md
-- [[MemoryViewer Component (MEMORY.md Browser)]] - concept - dashboard/README.md
-- [[Network Inspector]] - document - dashboard/README.md
-- [[NetworkInspector Component (Outbound Request Monitor)]] - concept - dashboard/README.md
-- [[Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[Tech Stack]] - document - dashboard/README.md
-- [[VPNKit Userspace Networking Mode (fix)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[VpnKitTransparentProxy Setting]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[dashboardREADME]] - document - dashboard/README.md
-- [[gVisor Networking Mode (Docker Desktop, problematic)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[A. AWS Glue Jobs_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[C. AWS Athena_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[F. IAM Policies_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[General Rules_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Objective_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Output Format_13]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Role_47]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[openclawskillsi-qaSKILL]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,10 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_ModeRequest (2)]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities
-- [[Features_2]] - degree 6, connects to 1 community
+- [[Skill Quality Assurance (QA)_2]] - degree 7, connects to 1 community

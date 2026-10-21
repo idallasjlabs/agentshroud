@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "Action"
 location: "L308"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/Action
 ---
 
 # Query Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Query Response Format]] - `contains` [EXTRACTED]
 - [[Real-Time Event Streaming]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/Action

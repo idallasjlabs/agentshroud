@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (CICD)"
+community: "_HeadFakeClient"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_CICD
+  - community/_HeadFakeClient
 ---
 
 # openclaw/skills/i-cicd/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/_HeadFakeClient

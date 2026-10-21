@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCPInspector"
+community: "CrossBotTrustLedger"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/CrossBotTrustLedger
 ---
 
 # Inspects MCP tool calls and responses for security threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPInspector_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPInspector
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .test_flagging_form()
@@ -16,4 +16,4 @@ tags:
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 - [[flagging' gerund form.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

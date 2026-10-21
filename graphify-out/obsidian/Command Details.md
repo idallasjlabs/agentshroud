@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Command Details"
+community: "Skill: Hermes Dev Workflow (HDEV)"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Command_Details
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Command Details
@@ -22,4 +22,4 @@ tags:
 - [[User Info]] - `contains` [EXTRACTED]
 - [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Command_Details
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

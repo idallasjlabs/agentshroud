@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "test_gemini_openai_translator.py (2)"
+community: "Post-v1.0.0 — Deferred"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy_2
+  - community/Post-v100__Deferred
 ---
 
 # _system_instruction_text()
@@ -17,4 +17,4 @@ tags:
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[gemini_to_openai_request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy_2
+#graphify/code #graphify/EXTRACTED #community/Post-v100__Deferred

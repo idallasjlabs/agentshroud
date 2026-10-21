@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Current Execution Tracker (2026-03-14)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current hard gate]] - document - docs/planning/RELEASE-PLAN.md
-- [[Current status snapshot]] - document - docs/planning/RELEASE-PLAN.md
-- [[Dependencies_19]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Key Changes (2026-03-04 1216 UTC)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Key Changes (2026-04-08)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
-- [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Success Criteria_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Summary_21]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🛡️ AgentShroud Release Plan]] - document - docs/planning/RELEASE-PLAN.md
+- [[1. Install Dependencies]] - document - gateway/README.md
+- [[2. Configure]] - document - gateway/README.md
+- [[3. Run]] - document - gateway/README.md
+- [[4. Test]] - document - gateway/README.md
+- [[Approval Queue_1]] - document - gateway/README.md
+- [[Authentication_1]] - document - gateway/README.md
+- [[Data Ledger]] - document - gateway/README.md
+- [[Features_4]] - document - gateway/README.md
+- [[Gateway Layer]] - document - gateway/README.md
+- [[Implementation Status_3]] - document - gateway/README.md
+- [[Ingest API]] - document - gateway/README.md
+- [[PII Sanitizer]] - document - gateway/README.md
+- [[Setup_5]] - document - gateway/README.md
+- [[Structure_2]] - document - gateway/README.md
+- [[Tech Stack_1]] - document - gateway/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,15 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_7. Pi-hole DNS Security Layer (Built-In)]]
-- 1 edge to [[_COMMUNITY_v0.9.0 — Apple Messages Integration]]
-- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig (2)]]
-- 1 edge to [[_COMMUNITY_v1.3.0 — Platform Expansion (53 items)]]
-- 1 edge to [[_COMMUNITY_test_telegram_executor.py]]
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan (2)]]
-- 1 edge to [[_COMMUNITY_v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]]
-- 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[🛡️ AgentShroud Release Plan]] - degree 18, connects to 9 communities
+- [[Gateway Layer]] - degree 6, connects to 1 community

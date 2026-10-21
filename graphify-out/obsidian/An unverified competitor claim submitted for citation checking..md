@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "api.py"
+community: "MCPPolicyEngine (2)"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine_2
 ---
 
 # An unverified competitor claim submitted for citation checking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DraftEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine_2

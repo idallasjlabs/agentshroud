@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "test_collaborator_tracker.py (2)"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/test_collaborator_trackerpy_2
 ---
 
 # ⚠️ Warnings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P2 — Infrastructure (1010 ✅)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

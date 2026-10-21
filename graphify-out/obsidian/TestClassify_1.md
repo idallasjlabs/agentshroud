@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "HostStatus"
+community: "Docker Compose (infra diagram)"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HostStatus
+  - community/Docker_Compose_infra_diagram
 ---
 
 # TestClassify
@@ -20,4 +20,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HostStatus
+#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "main.rs"
 location: "L1656"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mainrs
 ---
 
 # Directly invoke ``voice_endpoint`` with a mocked WebSocket whose second     ``re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_disconnect_test()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/mainrs

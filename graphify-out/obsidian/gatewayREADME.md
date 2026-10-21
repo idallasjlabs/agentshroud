@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # gateway/README.md
@@ -24,4 +24,4 @@ tags:
 - [[queue.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/document #graphify/EXTRACTED #community/_make_proxy

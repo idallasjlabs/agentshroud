@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "AgentTarget (3)"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AgentTarget_3
 ---
 
 # TestVerifyKillswitch
@@ -16,8 +16,8 @@ tags:
 - [[dot-test_docker_unavailable_is_fail()]] - `method` [EXTRACTED]
 - [[dot-test_dry_run_exercises_enabled_modes()]] - `method` [EXTRACTED]
 - [[dot-test_fail_when_script_missing_triggers_alert()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

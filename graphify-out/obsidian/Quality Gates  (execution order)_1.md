@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (SKILL)"
+community: "Skill: UI Expert (UI)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/Skill_UI_Expert_UI
 ---
 
 # Quality Gates  (execution order)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

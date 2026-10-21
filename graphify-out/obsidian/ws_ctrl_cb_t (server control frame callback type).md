@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.h"
 type: "code"
-community: "ws_ctrl_cb_t (server control frame callback type)"
+community: "_INJECTION_PATTERNS (prompt injection regex set)"
 location: "43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_ctrl_cb_t_server_control_frame_callback_type
+  - community/_INJECTION_PATTERNS_prompt_injection_regex_set
 ---
 
 # ws_ctrl_cb_t (server control frame callback type)
 
-#graphify/code #graphify/EXTRACTED #community/ws_ctrl_cb_t_server_control_frame_callback_type
+#graphify/code #graphify/EXTRACTED #community/_INJECTION_PATTERNS_prompt_injection_regex_set

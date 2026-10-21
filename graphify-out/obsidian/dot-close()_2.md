@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "PIIConfig"
-location: "L401"
+community: "soc/router.py"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/soc/routerpy
 ---
 
 # .close()
 
 ## Connections
-- [[Close database connection]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

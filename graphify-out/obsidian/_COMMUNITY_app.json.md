@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[app.json]] - code - docs/vault/.obsidian/app.json
+- [[i-sre SKILL.md (SRE practices skill, minimal stub)]] - document - docker/config/hermes/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

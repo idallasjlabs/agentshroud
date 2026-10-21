@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Health Checks.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Error Index.md"
-location: "L1"
+community: "MiddlewareManager (4)"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/MiddlewareManager_4
 ---
 
-# Health Checks.md
+# Health Checks
 
 ## Connections
-- [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
-- [[Crash Recovery]] - `references` [EXTRACTED]
-- [[Health Checks_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

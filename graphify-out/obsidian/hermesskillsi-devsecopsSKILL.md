@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "hermes/skills/i-devsecops/SKILL.md"
+community: "graphify.serve MCP stdio Server"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-devsecops/SKILLmd
+  - community/graphifyserve_MCP_stdio_Server
 ---
 
 # hermes/skills/i-devsecops/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill devsecops_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-devsecops/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/graphifyserve_MCP_stdio_Server

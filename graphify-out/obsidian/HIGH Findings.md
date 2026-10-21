@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
+community: "TeamsConfig (3)"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+  - community/TeamsConfig_3
 ---
 
 # HIGH Findings
@@ -16,4 +16,4 @@ tags:
 - [[R2-H1 1Password CLI Download Without Checksum Verification (Bot Dockerfile)]] - `contains` [EXTRACTED]
 - [[R2-H2 Bot Dockerfile Missing setuidsetgid Bit Stripping (CIS 4.8)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3

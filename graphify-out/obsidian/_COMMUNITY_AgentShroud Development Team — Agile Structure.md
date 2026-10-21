@@ -8,25 +8,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[AgentShroud Development Team — Agile Structure]] - document - docs/TEAM.md
-- [[Collaborators (Advisory — Read-Only)]] - document - docs/TEAM.md
-- [[Communication & Tooling]] - document - docs/TEAM.md
-- [[Container Architecture_1]] - document - docs/TEAM.md
-- [[Data Engineers  Analysts]] - document - docs/TEAM.md
-- [[DevOps  Platform Engineer — CICD, Infrastructure, Reliability]] - document - docs/TEAM.md
-- [[Development Environment_1]] - document - docs/TEAM.md
-- [[Development Team]] - document - docs/TEAM.md
-- [[Development Workflow_1]] - document - docs/TEAM.md
-- [[Engineers (Backend, Frontend, Full-Stack)]] - document - docs/TEAM.md
-- [[Hardware]] - document - docs/TEAM.md
-- [[How It Works_1]] - document - docs/TEAM.md
-- [[Key Principles]] - document - docs/TEAM.md
-- [[Product Owner]] - document - docs/TEAM.md
-- [[QA  Test Engineers — Embedded, Not a Separate Gate]] - document - docs/TEAM.md
-- [[Scrum Master  Agile Coach]] - document - docs/TEAM.md
-- [[Sprint Cadence]] - document - docs/TEAM.md
-- [[TEAM]] - document - docs/TEAM.md
-- [[UX  Design — One Sprint Ahead]] - document - docs/TEAM.md
+- [[CVE Mitigations]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Configuration_10]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Early Return on Block]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Fail-Open ClamAV]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Guard Presence and Startup Behavior]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Important Behaviors]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Inbound (`process_inbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Monitor vs. Enforce Mode]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Overview_14]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Related_6]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py — Security Pipeline]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +34,9 @@ members: 19
 TABLE source_file, type FROM #community/AgentShroud_Development_Team__Agile_Structure
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
+
+## Top bridge nodes
+- [[pipeline.py — Security Pipeline]] - degree 8, connects to 1 community

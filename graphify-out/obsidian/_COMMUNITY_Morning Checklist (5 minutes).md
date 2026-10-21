@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[1. Dependency Updates]] - document - docs/runbooks/daily-operations.md
-- [[1. Service Health]] - document - docs/runbooks/daily-operations.md
-- [[2. Backup Verification]] - document - docs/runbooks/daily-operations.md
-- [[2. Tailscale Connectivity]] - document - docs/runbooks/daily-operations.md
-- [[3. Audit Ledger Review]] - document - docs/runbooks/daily-operations.md
-- [[3. Tailscale ACL Review]] - document - docs/runbooks/daily-operations.md
-- [[4. Log Review]] - document - docs/runbooks/daily-operations.md
-- [[4. Test Suite]] - document - docs/runbooks/daily-operations.md
-- [[5. Resource Usage]] - document - docs/runbooks/daily-operations.md
-- [[Daily Operations Runbook — AgentShroud]] - document - docs/runbooks/daily-operations.md
-- [[Dashboard Monitoring]] - document - docs/runbooks/daily-operations.md
-- [[Monthly Checklist (30 minutes)]] - document - docs/runbooks/daily-operations.md
-- [[Morning Checklist (5 minutes)]] - document - docs/runbooks/daily-operations.md
-- [[Weekly Checklist (15 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[01-enforce-by-default]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Constraints_5]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Evidence_5]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Problem_7]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Remediation_6]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Root Cause_5]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Severity_8]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 1 Change default mode in gateway configuration]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 2 Add a permissive mode flag for development]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Verification_11]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,3 @@ members: 14
 TABLE source_file, type FROM #community/Morning_Checklist_5_minutes
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
-
-## Top bridge nodes
-- [[Daily Operations Runbook — AgentShroud]] - degree 5, connects to 1 community

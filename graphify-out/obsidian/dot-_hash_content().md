@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # ._hash_content()
@@ -16,4 +16,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[SHA-256 hash of content string          Args             content Text to hash]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

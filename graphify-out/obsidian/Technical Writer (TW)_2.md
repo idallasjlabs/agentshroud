@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "TestOutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/TestOutboundInfoFilter
 ---
 
 # Technical Writer (TW)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-twREADME]] - `contains` [EXTRACTED]
-- [[Purpose_143]] - `contains` [EXTRACTED]
-- [[Related Skills_103]] - `contains` [EXTRACTED]
-- [[Usage_110]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
+- [[Related Skills_101]] - `contains` [EXTRACTED]
+- [[Usage_112]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-twREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

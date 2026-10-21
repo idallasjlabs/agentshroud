@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "TestBenchmarkRegression"
+community: "RuntimeConfig"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/RuntimeConfig
 ---
 
 # Single outbound request processing should stay within baseline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_single_outbound_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/rationale #graphify/EXTRACTED #community/RuntimeConfig

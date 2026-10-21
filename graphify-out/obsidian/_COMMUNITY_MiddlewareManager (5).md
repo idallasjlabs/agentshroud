@@ -1,95 +1,56 @@
 ---
 type: community
-members: 82
+members: 43
 ---
 
 # MiddlewareManager (5)
 
-**Members:** 82 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[dot-_apply_path_rewriting()]] - code - gateway/security/path_isolation.py
-- [[dot-_check_cross_user_access()]] - code - gateway/security/path_isolation.py
-- [[dot-_cleanup_user_directory()]] - code - gateway/security/path_isolation.py
-- [[dot-_ensure_user_directory()]] - code - gateway/security/path_isolation.py
-- [[dot-_get_user_temp_dir()]] - code - gateway/security/path_isolation.py
-- [[dot-_is_base_directory_access()]] - code - gateway/security/path_isolation.py
-- [[dot-_sanitize_user_id()]] - code - gateway/security/path_isolation.py
-- [[dot-cleanup_abandoned_directories()]] - code - gateway/security/path_isolation.py
-- [[dot-config()_4]] - code - gateway/tests/test_path_isolation.py
-- [[dot-end_user_session()]] - code - gateway/security/path_isolation.py
-- [[dot-get_user_temp_path()]] - code - gateway/security/path_isolation.py
-- [[dot-manager()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-register_user_session()]] - code - gateway/security/path_isolation.py
-- [[dot-rewrite_path()]] - code - gateway/security/path_isolation.py
-- [[dot-temp_dir()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_allow_own_namespace_access()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_already_isolated_paths_not_rewritten()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_basic_result()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_block_base_directory_access()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_blocked_result()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_custom_config()_3]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_default_config()_6]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_stats()_1]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_initialization()_4]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
-- [[Apply path rewriting rules to isolate paths per user.]] - rationale - gateway/security/path_isolation.py
-- [[Check if path is trying to access another user's isolated namespace.          Re]] - rationale - gateway/security/path_isolation.py
-- [[Check if path is trying to access the base AgentShroud directory.]] - rationale - gateway/security/path_isolation.py
-- [[Clean up a user's isolated directory.]] - rationale - gateway/security/path_isolation.py
-- [[Clean up abandoned user directories based on max age.]] - rationale - gateway/security/path_isolation.py
-- [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Create temporary directory for testing.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Create test configuration._1]] - rationale - gateway/tests/test_path_isolation.py
-- [[End a user session and optionally clean up their isolated directory.]] - rationale - gateway/security/path_isolation.py
-- [[Ensure user's isolated directory exists.]] - rationale - gateway/security/path_isolation.py
-- [[Get a path within the user's isolated temp directory.]] - rationale - gateway/security/path_isolation.py
-- [[Get the isolated temp directory path for a user.]] - rationale - gateway/security/path_isolation.py
-- [[PathRewriteResult]] - code - gateway/security/path_isolation.py
-- [[Register a new user session and create their isolated directory.]] - rationale - gateway/security/path_isolation.py
-- [[Result of path rewriting operation.]] - rationale - gateway/security/path_isolation.py
-- [[Rewrite a path to isolate it to the user's namespace.          Args]] - rationale - gateway/security/path_isolation.py
-- [[Sanitize user ID to prevent path traversal attacks.]] - rationale - gateway/security/path_isolation.py
-- [[Test PathRewriteResult dataclass.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test basic result creation.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocked result creation.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocking cross-user namespace access.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocking direct access to base agentshroud directory.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test custom configuration values._1]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test default configuration values._5]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test ending user session.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting active users.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting statistics.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting user temp path.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test manager initialization.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path isolation configuration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path isolation manager.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path rewriting for tmp files.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path rewriting for nested tmp paths.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test paths that don't need rewriting.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test that active user directories are not cleaned up.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
-- [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
-- [[TestPathRewriteResult]] - code - gateway/tests/test_path_isolation.py
-- [[test_path_isolation.py]] - code - gateway/tests/test_path_isolation.py
+- [[API Key Security]] - document - docs/security/security-architecture.md
+- [[AgentShroud Security Architecture]] - document - docs/security/security-architecture.md
+- [[Approval Queue Workflow]] - document - docs/security/security-architecture.md
+- [[Architecture Diagram]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Audit Ledger (SQLite)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Audit Log Encryption]] - document - docs/security/security-architecture.md
+- [[Authentication and Authorization Framework]] - document - docs/security/security-architecture.md
+- [[CVE Mitigation Details]] - document - docs/security/security-architecture.md
+- [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - document - docs/security/security-architecture.md
+- [[CVE-2026-25253 PII Exfiltration via DNS Tunneling]] - document - docs/security/security-architecture.md
+- [[Contributing_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[DNS Filtering]] - concept - docs/project/glossary.md
+- [[Data Entry Points (All User-Controlled)]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Data Flow Control]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Defense-in-Depth]] - concept - docs/project/glossary.md
+- [[Defense-in-Depth Architecture]] - document - docs/security/security-architecture.md
+- [[Deployment Security]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Detection Locations]] - document - docs/security/security-architecture.md
+- [[Detection Patterns]] - document - docs/security/security-architecture.md
+- [[Docker Network Isolation (agentshroud-isolated)]] - concept - docs/security/SECURITY_ARCHITECTURE.md
+- [[Effectiveness Metrics]] - document - docs/security/security-architecture.md
+- [[Emergency Procedures]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Encryption and Cryptographic Controls]] - document - docs/security/security-architecture.md
+- [[Executive Summary]] - document - docs/security/security-architecture.md
+- [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Memory Encryption]] - document - docs/security/security-architecture.md
+- [[PII Detection System]] - document - docs/security/security-architecture.md
+- [[PII Sanitization at Gateway Boundary]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
+- [[Quick Reference_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Transport Encryption]] - document - docs/security/security-architecture.md
+- [[Trust Level Progression]] - document - docs/security/security-architecture.md
+- [[What AgentShroud DOES NOT Protect Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[What AgentShroud Does]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[What We're Protecting Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[security-architecture]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -99,14 +60,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 7 edges to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_docker-cleanup.sh]]
+- 1 edge to [[_COMMUNITY_Enterprise Governance Proxy System (invention)]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes
-- [[TestPathIsolationManager]] - degree 24, connects to 1 community
-- [[PathRewriteResult]] - degree 9, connects to 1 community
-- [[dot-_get_user_temp_dir()]] - degree 8, connects to 1 community
-- [[dot-rewrite_path()]] - degree 7, connects to 1 community
-- [[TestPathIsolationConfig]] - degree 7, connects to 1 community
+- [[AgentShroud Security Architecture]] - degree 32, connects to 7 communities
+- [[DNS Filtering]] - degree 2, connects to 1 community

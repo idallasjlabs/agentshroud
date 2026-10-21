@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Post-v1.0.0 — Deferred"
+community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions"
 location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
 ---
 
 # Multi-Host Deployment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions

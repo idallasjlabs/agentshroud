@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AuditStore"
+community: "AlertDispatcher (5)"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AlertDispatcher_5
 ---
 
 # .test_migration_adds_bot_id_column()
 
 ## Connections
-- [[AuditStore]] - `calls` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
 - [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

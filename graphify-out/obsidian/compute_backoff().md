@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: "Request (2)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/Request_2
 ---
 
 # compute_backoff()
 
 ## Connections
-- [[dot-run()_1]] - `calls` [EXTRACTED]
+- [[dot-run()]] - `calls` [EXTRACTED]
 - [[dot-test_capped_at_cap_for_large_attempts()]] - `calls` [EXTRACTED]
 - [[dot-test_first_attempt_uses_base()]] - `calls` [EXTRACTED]
 - [[dot-test_grows_exponentially_with_attempt()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[slack_socket_client.py]] - `contains` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/Request_2

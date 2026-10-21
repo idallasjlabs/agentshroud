@@ -1,27 +1,28 @@
 ---
 type: community
-members: 14
+members: 15
 ---
 
 # AgentShroud Security Verification (13-check driver)
 
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Seccomp Profile (default-deny syscall allowlist)]] - document - docker/seccomp/agentshroud-seccomp.json
-- [[AgentShroud Security Verification (13-check driver)]] - code - docker/scripts/verify-security.sh
-- [[OpenClaw Volume Architecture (persistent volumes vs tmpfs)]] - concept - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Phase 3 Container Security Hardening Baseline]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Phase 3 Success Criteria]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Read-Only Root FS Constraint — what breaks without proper mounts]] - rationale - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[SecureClaw Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Security Review (SEC) README]] - document - .agents/skills/i-sec/README.md
-- [[check_fail()_1]] - code - docker/scripts/verify-security.sh
-- [[check_pass()_1]] - code - docker/scripts/verify-security.sh
-- [[check_warn()]] - code - docker/scripts/verify-security.sh
-- [[toggle-readonly.sh mode switcher]] - code - docker/scripts/toggle-readonly.sh
-- [[verify-security.sh_1]] - code - docker/scripts/verify-security.sh
-- [[verify-security.sh script]] - code - docker/scripts/verify-security.sh
+- [[Any_72]] - code - voice_gateway/tts.py
+- [[Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal     a]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Kaiser-windowed sinc anti-aliasing filter suppresses content above the output]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz.      For downsa]] - rationale - voice_gateway/tts.py
+- [[Return text suitable for TTS synthesis on the ESP32 voice interface.      Two]] - rationale - voice_gateway/tts.py
+- [[Split an agent reply into ordered sentence-sized TTS chunks.      Applies normal]] - rationale - voice_gateway/tts.py
+- [[Synthesize text to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.]] - rationale - voice_gateway/tts.py
+- [[_get_pipeline()]] - code - voice_gateway/tts.py
+- [[_resample_s16le_mono()]] - code - voice_gateway/tts.py
+- [[normalize_for_speech()]] - code - voice_gateway/tts.py
+- [[split_for_speech()]] - code - voice_gateway/tts.py
+- [[synthesize()]] - code - voice_gateway/tts.py
+- [[test_resample_antialias_attenuates_above_nyquist()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_resample_passband_preserved()]] - code - gateway/tests/test_voice_gateway.py
+- [[tts.py]] - code - voice_gateway/tts.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 6 edges to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY_AgentTarget (4)]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig (3)]]
 
 ## Top bridge nodes
-- [[SecureClaw Security Review (SEC)]] - degree 3, connects to 1 community
+- [[tts.py]] - degree 7, connects to 2 communities
+- [[normalize_for_speech()]] - degree 6, connects to 2 communities
+- [[split_for_speech()]] - degree 5, connects to 2 communities
+- [[_resample_s16le_mono()]] - degree 6, connects to 1 community
+- [[test_resample_antialias_attenuates_above_nyquist()]] - degree 3, connects to 1 community

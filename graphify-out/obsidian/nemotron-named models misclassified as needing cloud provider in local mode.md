@@ -1,13 +1,13 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "nemotron-named models misclassified as needing cloud provider in local mode"
+community: "MCP Server: xmind"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/nemotron-named_models_misclassified_as_needing_cloud_provider_in_local_mode
+  - community/MCP_Server_xmind
 ---
 
 # nemotron-named models misclassified as needing cloud provider in local mode
 
-#graphify/rationale #graphify/EXTRACTED #community/nemotron-named_models_misclassified_as_needing_cloud_provider_in_local_mode
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Server_xmind

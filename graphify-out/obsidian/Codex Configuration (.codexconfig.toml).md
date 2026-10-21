@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "AgentShroud™ Communication Templates"
+community: "voice_task (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/voice_task_2
 ---
 
 # Codex Configuration (.codex/config.toml)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/document #graphify/EXTRACTED #community/voice_task_2

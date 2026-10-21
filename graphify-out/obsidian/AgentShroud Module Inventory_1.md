@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/module-inventory.md"
 type: "document"
-community: "AgentShroud Module Inventory"
+community: "TestCredentialLeakDetection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/TestCredentialLeakDetection
 ---
 
 # AgentShroud Module Inventory
@@ -17,4 +17,4 @@ tags:
 - [[agentshroud-redteamreferencesmodule-inventory]] - `contains` [EXTRACTED]
 - [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection

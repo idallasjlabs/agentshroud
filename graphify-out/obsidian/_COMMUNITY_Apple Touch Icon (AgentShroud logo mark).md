@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Apple Touch Icon (AgentShroud logo mark)]] - image - branding/favicons/apple-touch-icon.png
+- [[MCP Server github-fluence]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

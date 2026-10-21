@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/mcp/servers.json"
 type: "concept"
-community: "hermes/SOUL.md"
+community: "test_ptt_state.c"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/test_ptt_statec
 ---
 
 # agentshroud-gateway MCP proxy entry (disabled)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Gateway]] - `conceptually_related_to` [INFERRED]
 - [[Hermes MCP Servers Config]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/concept #graphify/EXTRACTED #community/test_ptt_statec

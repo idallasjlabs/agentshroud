@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide (4)"
-location: "L383"
+community: "First Time Setup"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_4
+  - community/First_Time_Setup
 ---
 
 # Authentication Issues
 
 ## Connections
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_4
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

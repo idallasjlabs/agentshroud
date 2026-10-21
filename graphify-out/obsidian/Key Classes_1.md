@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "http_proxy.py"
-location: "L35"
+community: "AgentShroud Security Value Proposition - Revised"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Key Classes
 
 ## Connections
-- [[http_proxy.py_1]] - `contains` [EXTRACTED]
+- [[`AuditChain`]] - `contains` [EXTRACTED]
+- [[`PipelineAction` (Enum)]] - `contains` [EXTRACTED]
+- [[`PipelineResult` (Dataclass)]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

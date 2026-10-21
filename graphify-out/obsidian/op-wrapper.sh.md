@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/op-wrapper.sh"
 type: "code"
-community: "killswitch.sh"
+community: "test_credential_injector.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/test_credential_injectorpy
 ---
 
 # op-wrapper.sh
@@ -17,4 +17,4 @@ tags:
 - [[op-wrapper.sh script]] - `contains` [EXTRACTED]
 - [[op_authenticate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/killswitchsh
+#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

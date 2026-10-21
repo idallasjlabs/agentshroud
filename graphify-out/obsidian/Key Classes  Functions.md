@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "auth.py"
-location: "L21"
+community: "AgentShroud Blue Team Security Auditor (3)"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/AgentShroud_Blue_Team_Security_Auditor_3
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

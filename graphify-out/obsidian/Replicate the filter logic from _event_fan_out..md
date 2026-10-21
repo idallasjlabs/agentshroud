@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py (2)"
+community: "TestEgressApprovalQueue"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy_2
+  - community/TestEgressApprovalQueue
 ---
 
 # Replicate the filter logic from _event_fan_out.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_2
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

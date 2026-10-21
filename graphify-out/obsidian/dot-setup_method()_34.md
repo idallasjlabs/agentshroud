@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_log_sanitizer.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "TestLogSanitizer"
-location: "L15"
+community: "Kill Switch Procedure"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/Kill_Switch_Procedure
 ---
 
 # .setup_method()
 
 ## Connections
-- [[LogSanitizer]] - `calls` [EXTRACTED]
-- [[TestLogSanitizer]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Procedure

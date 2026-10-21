@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestTrivySummary"
+community: "blucli/SKILL.md"
 location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrivySummary
+  - community/blucli/SKILLmd
 ---
 
 # TestTrivySummary
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrivySummary
+#graphify/code #graphify/EXTRACTED #community/blucli/SKILLmd

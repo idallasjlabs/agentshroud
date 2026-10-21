@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
+community: "TestCredentialInjection"
 location: "L371"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/TestCredentialInjection
 ---
 
 # Threat Intelligence Integration
@@ -16,4 +16,4 @@ tags:
 - [[Threat Feeds]] - `contains` [EXTRACTED]
 - [[Threat Scoring Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/document #graphify/EXTRACTED #community/TestCredentialInjection

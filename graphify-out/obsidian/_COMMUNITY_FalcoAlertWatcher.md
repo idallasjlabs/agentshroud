@@ -1,65 +1,67 @@
 ---
 type: community
-members: 52
+members: 54
 ---
 
 # FalcoAlertWatcher
 
-**Members:** 52 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[dot-__init__()_47]] - code - gateway/security/falco_monitor.py
-- [[dot-_handle_critical()]] - code - gateway/security/falco_monitor.py
-- [[dot-_process_new_alerts()]] - code - gateway/security/falco_monitor.py
-- [[dot-run()]] - code - gateway/security/falco_monitor.py
-- [[dot-stop()_1]] - code - gateway/security/falco_monitor.py
-- [[dot-test_read_alerts_missing_dir()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_clean()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_top_rules()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_with_alerts()]] - code - gateway/tests/test_security_toolchain.py
-- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Any_11]] - code - gateway/security/falco_monitor.py
-- [[Extend AGENTSHROUD_RULES with bot-specific name prefixes.      Called at gateway]] - rationale - gateway/security/falco_monitor.py
-- [[FalcoAlertWatcher]] - code - gateway/security/falco_monitor.py
-- [[Integration_1]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Network Enforcement]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Parse a single Falco alert.      Args         raw Raw Falco alert JSON.      R]] - rationale - gateway/security/falco_monitor.py
-- [[Path_9]] - code - gateway/security/falco_monitor.py
-- [[Poll Falco alert files until stopped.]] - rationale - gateway/security/falco_monitor.py
-- [[Priority Levels]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Purpose_16]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Purpose_17]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/falco_monitor.py
-- [[Related Notes_19]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Related Notes_20]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Rules Defined]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Shell Spawning Exceptions]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - rationale - gateway/security/falco_monitor.py
-- [[Test Falco Watcher Module]] - code - gateway/tests/test_falco_watcher.py
-- [[TestFalcoSummary]] - code - gateway/tests/test_security_toolchain.py
-- [[Watcher works without a lockdown module — only logs.]] - rationale - gateway/tests/test_falco_watcher.py
-- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[_make_alert()]] - code - gateway/tests/test_falco_watcher.py
-- [[configure_rules()]] - code - gateway/security/falco_monitor.py
-- [[datetime_1]] - code - gateway/security/falco_monitor.py
-- [[falco-rules]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[falco-rules.yaml]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[falco_monitor.py]] - code - gateway/security/falco_monitor.py
-- [[parse_alert()]] - code - gateway/security/falco_monitor.py
-- [[read_alerts()]] - code - gateway/security/falco_monitor.py
-- [[test_critical_alert_triggers_lockdown()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_deduplication_same_alert_twice()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_falco_watcher.py]] - code - gateway/tests/test_falco_watcher.py
-- [[test_missing_alert_dir_noop()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_multiple_critical_alerts()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_no_progressive_lockdown_configured()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_stop_halts_run_loop()]] - code - gateway/tests/test_falco_watcher.py
-- [[test_warning_alert_not_blocked()]] - code - gateway/tests/test_falco_watcher.py
-- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[wazuh-ossec]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[dot-test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_absolute_system_path_write_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_at_limit_file_scans_normally()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_base64_exec_payload_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_binary_content_is_scanned_not_crash()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_clean_skill_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_clean_skill_tree_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_crypto_miner_indicator_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_curl_pipe_to_shell_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_empty_content_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_eval_of_decoded_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_large_opaque_base64_blob_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_line_at_out_of_range_returns_empty()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_manifest_all_tools_wildcard_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_manifest_disable_approval_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_manifest_sudo_command_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_normal_relative_import_no_false_positive()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_oversized_file_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_reads_aws_credentials_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_reads_env_secrets_file_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_reads_ssh_private_key_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_requests_post_to_external_host_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_reverse_shell_indicator_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_scan_rejects_non_string_content()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_severity_ordering()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_single_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_subprocess_shell_true_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_tree_blocks_on_any_critical()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[CompletedProcess]] - code - gateway/tests/test_skill_guard.py
+- [[IntEnum]] - code
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
+- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
+- [[ScanResult_1]] - code - gateway/tests/test_skill_guard.py
+- [[Severity]] - code - gateway/security/skill_guard.py
+- [[SkillGuard]] - code - gateway/tests/test_skill_guard.py
+- [[SkillScanError]] - code - gateway/security/skill_guard.py
+- [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
+- [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
+- [[TestExecOfDownload]] - code - gateway/tests/test_skill_guard.py
+- [[TestExfiltration]] - code - gateway/tests/test_skill_guard.py
+- [[TestKnownMalicious]] - code - gateway/tests/test_skill_guard.py
+- [[TestObfuscation]] - code - gateway/tests/test_skill_guard.py
+- [[TestOversizedUnscannable]] - code - gateway/tests/test_skill_guard.py
+- [[TestPathTraversal]] - code - gateway/tests/test_skill_guard.py
+- [[TestPrivilegeEscalation]] - code - gateway/tests/test_skill_guard.py
+- [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
+- [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
+- [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
+- [[guard()]] - code - gateway/tests/test_skill_guard.py
+- [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -69,21 +71,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_FalcoAlertWatcher (2)]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 2 edges to [[_COMMUNITY_test_security_toolchain.py (2)]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_TrustConfig (2)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 34 edges to [[_COMMUNITY_AuditStore]]
+- 33 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY__wrap_response() (3)_1]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY__make_proxy]]
+- 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
 
 ## Top bridge nodes
-- [[falco_monitor.py]] - degree 15, connects to 7 communities
-- [[read_alerts()]] - degree 10, connects to 3 communities
-- [[wazuh-ossec]] - degree 6, connects to 3 communities
-- [[TestFalcoSummary]] - degree 6, connects to 2 communities
-- [[FalcoAlertWatcher]] - degree 17, connects to 1 community
+- [[IntEnum]] - degree 7, connects to 6 communities
+- [[test_skill_guard.py]] - degree 28, connects to 4 communities
+- [[SkillScanError]] - degree 24, connects to 3 communities
+- [[SkillGuard]] - degree 36, connects to 2 communities
+- [[Severity]] - degree 24, connects to 2 communities

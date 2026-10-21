@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/socjs
 ---
 
 # System Audit Vault
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-savREADME]] - `contains` [EXTRACTED]
-- [[Purpose_141]] - `contains` [EXTRACTED]
-- [[Related Skills_101]] - `contains` [EXTRACTED]
-- [[Usage_108]] - `contains` [EXTRACTED]
+- [[Purpose_96]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_81]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-savREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/socjs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "DataExfilVolumeGuard"
+community: "TestMultipartOutboundPipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/TestMultipartOutboundPipeline
 ---
 
 # data_exfil_volume_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[_SessionState]] - `contains` [EXTRACTED]
 - [[egress_filter.py_1]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

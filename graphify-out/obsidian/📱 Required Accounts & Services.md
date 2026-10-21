@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "📱 Required Accounts & Services"
+community: "generate-job-schedule.py"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Required_Accounts__Services
+  - community/generate-job-schedulepy
 ---
 
 # 📱 Required Accounts & Services
@@ -20,4 +20,4 @@ tags:
 - [[6. Anthropic Account (Claude API)]] - `contains` [EXTRACTED]
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Required_Accounts__Services
+#graphify/document #graphify/EXTRACTED #community/generate-job-schedulepy

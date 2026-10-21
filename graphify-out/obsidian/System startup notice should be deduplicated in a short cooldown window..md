@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer()"
+community: "UserSessionManager (2)"
 location: "L2188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/UserSessionManager_2
 ---
 
 # System startup notice should be deduplicated in a short cooldown window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_request_suppresses_duplicate_system_startup_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2

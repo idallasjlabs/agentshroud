@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Option A Manual Secret Creation]] - document - docs/operations/deployment-procedure.md
-- [[Option A Self-Signed Certificate (DevelopmentTesting)]] - document - docs/operations/deployment-procedure.md
-- [[Option B 1Password Integration]] - document - docs/operations/deployment-procedure.md
-- [[Option B Let's Encrypt Certificate (Production)]] - document - docs/operations/deployment-procedure.md
-- [[Option C Corporate Certificate Authority]] - document - docs/operations/deployment-procedure.md
-- [[Step 10 Initial Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 1 System Preparation]] - document - docs/operations/deployment-procedure.md
-- [[Step 2 Repository Clone and Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 3 Secret Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 4 SSL Certificate Setup]] - document - docs/operations/deployment-procedure.md
-- [[Step 5 Configuration Customization]] - document - docs/operations/deployment-procedure.md
-- [[Step 6 Port Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 7 Docker Secrets Creation]] - document - docs/operations/deployment-procedure.md
-- [[Step 8 Service Startup]] - document - docs/operations/deployment-procedure.md
-- [[Step 9 Health Verification]] - document - docs/operations/deployment-procedure.md
-- [[Step-by-Step Deployment]] - document - docs/operations/deployment-procedure.md
+- [[Config Keys Read_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Imports From  Exports To_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Purpose_115]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[process_request Flow]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[Step-by-Step Deployment]] - degree 11, connects to 1 community
+- [[middleware.py_2]] - degree 12, connects to 1 community

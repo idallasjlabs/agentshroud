@@ -1,30 +1,23 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "main.rs"
-location: "L631"
+community: "Job details"
+location: "L524"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Job_details
 ---
 
 # main()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
-- [[dot-post()_2]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `calls` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
-- [[print_output()]] - `calls` [EXTRACTED]
-- [[resolve_token()]] - `calls` [EXTRACTED]
-- [[run_approvals_decide()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[build_id_plan()]] - `calls` [EXTRACTED]
+- [[compute_stats()]] - `calls` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_registry()_1]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
+- [[render_manual_review()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/Job_details

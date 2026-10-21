@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Configuration  Environment Variables_28]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Function Details_48]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.forward(path, body, headers, method)]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.health_check()]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.set_response_handler(handler)]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Key Classes  Functions_51]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Purpose_188]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Related_55]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[forwarder.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[forwarder.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
+- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Function Details_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Key Classes  Functions_52]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Purpose_160]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Related_56]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Responsibilities_54]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

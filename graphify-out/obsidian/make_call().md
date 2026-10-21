@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection (2)"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # make_call()
@@ -36,4 +36,4 @@ tags:
 - [[MCPToolCall]] - `references` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

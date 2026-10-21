@@ -1,22 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "security.py"
-location: "L36"
+community: "trivy_report.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/trivy_reportpy
 ---
 
 # Function Details
 
 ## Connections
-- [[_validate_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_features_for_runtime(runtime)]] - `contains` [EXTRACTED]
-- [[get_missing_features(runtime)]] - `contains` [EXTRACTED]
-- [[get_security_options(runtime)]] - `contains` [EXTRACTED]
-- [[security.py_2]] - `contains` [EXTRACTED]
-- [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
+- [[CanaryResult.to_dict()]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[run_canary(pipeline, forwarder)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

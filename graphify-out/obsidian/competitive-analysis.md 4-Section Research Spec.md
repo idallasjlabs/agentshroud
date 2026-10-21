@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt"
 type: "concept"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Atlas — Curriculum Architect (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Atlas__Curriculum_Architect_3
 ---
 
 # competitive-analysis.md 4-Section Research Spec
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Hermes Competitive Landscape Update (AMPM)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/concept #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3

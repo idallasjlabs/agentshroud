@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L613"
+community: "ApprovalQueueConfig (3)"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/ApprovalQueueConfig_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

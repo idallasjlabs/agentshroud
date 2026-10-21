@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "document"
-community: "02-infrastructure.md"
+community: "AgentShroud™ — Project Knowledge Base"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # 07-team-planning.md
@@ -18,4 +18,4 @@ tags:
 - [[Roadmap  Timeline — Development Phases]] - `conceptually_related_to` [EXTRACTED]
 - [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

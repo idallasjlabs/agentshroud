@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Step Functions]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[MCP Server awslabs.aws-api-mcp-server]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

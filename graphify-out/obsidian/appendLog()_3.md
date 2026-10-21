@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "hermes/workspace/jira_dev_ticket.py"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # appendLog()
 
 ## Connections
-- [[dot-agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 - [[browserFetch()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

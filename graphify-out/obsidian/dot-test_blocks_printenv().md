@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_env_guard_class.py"
+source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "TestCheckCommandExecution"
-location: "L58"
+community: "check_command"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/check_command
 ---
 
 # .test_blocks_printenv()
 
 ## Connections
-- [[TestCheckCommandExecution]] - `method` [EXTRACTED]
+- [[TestCheckCommand]] - `method` [EXTRACTED]
+- [[check_command()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/check_command

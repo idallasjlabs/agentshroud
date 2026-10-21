@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "TestOutputCanary"
+community: "check-vendor-compat.sh"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/check-vendor-compatsh
 ---
 
 # Initialize the Output Canary System.          Args:             config: Optional
 
 ## Connections
-- [[dot-__init__()_107]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_50]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/check-vendor-compatsh

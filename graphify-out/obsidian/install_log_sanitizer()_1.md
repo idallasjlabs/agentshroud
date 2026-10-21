@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
-type: "document"
-community: "log_sanitizer.py"
-location: "L49"
+source_file: "gateway/security/log_sanitizer.py"
+type: "code"
+community: "_wrap_response() (4)"
+location: "L133"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/_wrap_response_4
 ---
 
 # install_log_sanitizer()
 
 ## Connections
-- [[Function Details_41]] - `contains` [EXTRACTED]
+- [[dot-test_install_log_sanitizer_no_error()]] - `calls` [EXTRACTED]
+- [[Install the log sanitizer on all existing loggers.]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer_1]] - `calls` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

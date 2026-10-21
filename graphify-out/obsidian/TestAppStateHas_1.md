@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scorecard_scoring.py"
+community: "Feature: Global Monitor-Only Mode (\"Observatory Mode\")"
 location: "L581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_Mode
 ---
 
 # TestAppStateHas
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_returns_true_when_attr_set()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/code #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_Mode

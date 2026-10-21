@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L1004"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # Empty STT result: no LLM call, state goes directly to idle.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_empty_transcript_goes_idle()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

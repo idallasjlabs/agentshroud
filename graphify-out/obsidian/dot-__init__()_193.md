@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "DelegationManager"
-location: "L103"
+community: "Usage"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Usage
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/Usage

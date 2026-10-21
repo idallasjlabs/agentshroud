@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Constraints_9]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Content Requirements_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Header_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Objective_5]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Role_110]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Safety_3]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Skill Pull Request (PR) Generator_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Technical Detail_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[openclawskillsi-prSKILL]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Common Actions (Examples)]] - document - skills/openclaw/discord/SKILL.md
+- [[Discord (Via `message`)]] - document - skills/openclaw/discord/SKILL.md
+- [[Discord Components v2 preferred over legacy embeds]] - rationale - skills/openclaw/discord/SKILL.md
+- [[Guidelines]] - document - skills/openclaw/discord/SKILL.md
+- [[Musts]] - document - skills/openclaw/discord/SKILL.md
+- [[Targets]] - document - skills/openclaw/discord/SKILL.md
+- [[Writing Style (Discord)]] - document - skills/openclaw/discord/SKILL.md
+- [[discordSKILL]] - document - skills/openclaw/discord/SKILL.md
+- [[message tool (channel=discord)]] - concept - skills/openclaw/discord/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,3 @@ members: 9
 TABLE source_file, type FROM #community/Skill_Pull_Request_PR_Generator_3
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Pull Request (PR) Generator_2]] - degree 6, connects to 1 community

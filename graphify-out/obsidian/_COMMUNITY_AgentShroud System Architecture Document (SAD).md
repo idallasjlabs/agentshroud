@@ -1,26 +1,25 @@
 ---
 type: community
-members: 13
+members: 12
 ---
 
 # AgentShroud System Architecture Document (SAD)
 
-**Members:** 13 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[AgentShroud System Architecture Document (SAD)]] - document - docs/architecture/system-architecture.md
-- [[Component Architecture]] - document - docs/architecture/system-architecture.md
-- [[Core Technologies]] - document - docs/architecture/system-architecture.md
-- [[Executive Overview]] - document - docs/architecture/system-architecture.md
-- [[Metrics to Track]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Monitoring and Observability]] - document - docs/architecture/system-architecture.md
-- [[Network Isolation Benefits]] - document - docs/architecture/system-architecture.md
-- [[Security Technologies]] - document - docs/architecture/system-architecture.md
-- [[System Context]] - document - docs/architecture/system-architecture.md
-- [[System Traffic Flow]] - document - docs/architecture/system-architecture.md
-- [[Technology Stack_1]] - document - docs/architecture/system-architecture.md
-- [[Two-Network Docker Architecture]] - document - docs/architecture/system-architecture.md
-- [[system-architecture]] - document - docs/architecture/system-architecture.md
+- [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
+- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Purpose_155]] - document - .agents/skills/i-ti/README.md
+- [[Purpose_156]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Related Skills_87]] - document - .agents/skills/i-ti/README.md
+- [[Related Skills_88]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
+- [[Usage_96]] - document - .agents/skills/i-ti/README.md
+- [[Usage_97]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
-- 1 edge to [[_COMMUNITY_Core Components]]
-- 1 edge to [[_COMMUNITY_ADR-003 Two-Network Container Isolation]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[Monitoring and Observability]] - degree 3, connects to 1 community
-- [[Two-Network Docker Architecture]] - degree 3, connects to 1 community
-- [[Component Architecture]] - degree 2, connects to 1 community
+- [[Technical Illustrator (i-ti)]] - degree 10, connects to 2 communities

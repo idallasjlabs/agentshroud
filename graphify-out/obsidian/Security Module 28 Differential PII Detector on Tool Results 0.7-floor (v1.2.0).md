@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "Socrates — Dialogue Architect (2)"
 location: "Module 28"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Socrates__Dialogue_Architect_2
 ---
 
 # Security Module 28: Differential PII Detector on Tool Results 0.7-floor (v1.2.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2

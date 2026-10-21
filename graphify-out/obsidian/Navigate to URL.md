@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (4)"
-location: "L57"
+community: "hermes/workspace/jira_dev_ticket.py"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_4
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # Navigate to URL
 
 ## Connections
-- [[Usage_2]] - `contains` [EXTRACTED]
+- [[Usage_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_4
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

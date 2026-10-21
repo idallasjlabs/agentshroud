@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
+community: "GSDE&G Development Master Checklist Skill"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # D. Interactive Egress Firewall (7 features)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

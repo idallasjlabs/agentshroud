@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "ApprovalQueueConfig (4)"
+community: "MCPPermissionManager"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/MCPPermissionManager
 ---
 
 # Timeout handling for approval requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalTimeout]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

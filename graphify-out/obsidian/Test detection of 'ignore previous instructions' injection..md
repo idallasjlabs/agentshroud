@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "InjectionAction"
+community: "ProxyAction (2)"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction_2
 ---
 
 # Test detection of 'ignore previous instructions' injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_ignore_instructions_injection_high_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionAction
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction_2

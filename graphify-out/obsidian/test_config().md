@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # test_config()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

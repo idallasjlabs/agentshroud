@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "rationale"
-community: "AgentTarget (5)"
+community: "_w"
 location: "docker/scripts/colima-health-check.sh:370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/_w
 ---
 
 # Colima VM default-route auto-heal (step 2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check()_4]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/rationale #graphify/EXTRACTED #community/_w

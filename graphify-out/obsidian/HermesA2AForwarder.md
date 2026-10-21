@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "UserSessionManager"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/UserSessionManager
 ---
 
 # HermesA2AForwarder
 
 ## Connections
-- [[dot-__init__()_178]] - `method` [EXTRACTED]
-- [[dot-close()_16]] - `method` [EXTRACTED]
-- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_202]] - `method` [EXTRACTED]
+- [[dot-close()_20]] - `method` [EXTRACTED]
+- [[dot-forward()_1]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `uses` [INFERRED]
+- [[Request_10]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `calls` [EXTRACTED]
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

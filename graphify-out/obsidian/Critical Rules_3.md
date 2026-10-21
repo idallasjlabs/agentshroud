@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/safe-refactor.agent.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Safe Refactor Specialist"
-location: "L20"
+community: "AgentShroud Schema Documentation"
+location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # Critical Rules
 
 ## Connections
-- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
-- [[⚠️ ONLY Refactor When]] - `contains` [EXTRACTED]
-- [[❌ NEVER]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

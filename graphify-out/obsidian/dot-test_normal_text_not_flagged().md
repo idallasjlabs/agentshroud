@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "CrossBotTrustLedger"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolResult
+  - community/CrossBotTrustLedger
 ---
 
 # .test_normal_text_not_flagged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInjectionDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolResult
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

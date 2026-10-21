@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[pre-commit gitleaks hook (v8.18.1)]] - code - .pre-commit-config.yaml
+- [[pre-commit (gitleaks + git-secrets gate)]] - code - .llm_settings/git-hooks/pre-commit
 
 ## Live Query (requires Dataview plugin)
 

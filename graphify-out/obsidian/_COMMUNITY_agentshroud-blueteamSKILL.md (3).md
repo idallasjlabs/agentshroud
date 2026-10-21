@@ -1,27 +1,31 @@
 ---
 type: community
-members: 14
+members: 18
 ---
 
 # agentshroud-blueteam/SKILL.md (3)
 
-**Members:** 14 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[dot-__init__()_187]] - code - gateway/security/prompt_protection.py
-- [[dot-_compile_detection_patterns()_1]] - code - gateway/security/prompt_protection.py
-- [[dot-_load_protected_content()]] - code - gateway/security/prompt_protection.py
-- [[dot-get_protection_stats()]] - code - gateway/security/prompt_protection.py
-- [[dot-register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
-- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - rationale - gateway/security/prompt_protection.py
-- [[Any_73]] - code - gateway/security/prompt_protection.py
-- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
-- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
-- [[Initialize prompt protection system.          Args             config Configur]] - rationale - gateway/security/prompt_protection.py
-- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
-- [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - rationale - gateway/security/prompt_protection.py
-- [[PromptProtection]] - code - gateway/security/prompt_protection.py
-- [[System Prompt Protection Tests]] - code - gateway/tests/test_prompt_protection.py
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Breaking changes  manual follow-ups]] - document - reports/upgrade-2026-09-06-prod.md
+- [[CRITICAL Docker storage exhausted (live fault, found this run)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Environment Mapping]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[GitHub-hosted findings]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Language dependencies]] - document - reports/upgrade-2026-09-06-prod.md
+- [[PROD OUTAGE 2026-09-06 2020 → 2026-09-07 0727 (~11 hours)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Pipeline remediation (the actual work of this run)]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Preflight  Baseline]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Rollback Instructions]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Security Findings]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Summary_16]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Time spent]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Upgrade Table]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Wazuh  SOC]] - document - reports/upgrade-2026-09-06-prod.md
+- [[upgrade-2026-09-06-prod]] - document - reports/upgrade-2026-09-06-prod.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,17 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Phase 1 — Raw Collection (3)]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (9)]]
-- 1 edge to [[_COMMUNITY_dot-_redact_match]]
-- 1 edge to [[_COMMUNITY_dot-test_protected_content_loading]]
-- 1 edge to [[_COMMUNITY_dot-test_disabled_protection]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_TestPromptProtection]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_ModuleStatsCollector]]
 
 ## Top bridge nodes
-- [[PromptProtection]] - degree 21, connects to 9 communities
-- [[dot-_load_protected_content()]] - degree 4, connects to 1 community
-- [[System Prompt Protection Tests]] - degree 2, connects to 1 community
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - degree 13, connects to 1 community

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ClawHub CLI]] - document - skills/openclaw/clawhub/SKILL.md
-- [[clawhubSKILL]] - document - skills/openclaw/clawhub/SKILL.md
+- [[dot-agentsskillsi-kanbanSKILL]] - document - .agents/skills/i-kanban/SKILL.md
+- [[Skill kanban]] - document - .agents/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

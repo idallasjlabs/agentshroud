@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L348"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # Get aggregate statistics          Returns:             Dictionary with total ent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_stats()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "_wrap_response()"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_3
+  - community/_wrap_response
 ---
 
 # TestClientValidation
@@ -23,4 +23,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_3
+#graphify/code #graphify/INFERRED #community/_wrap_response

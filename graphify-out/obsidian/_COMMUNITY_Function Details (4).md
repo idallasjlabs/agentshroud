@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration  Environment Variables_4]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Function Details_11]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_request(req)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Purpose_116]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Related_16]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[oauth_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[oauth_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[dot-create_skill()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-setUp()_2]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-tearDown()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_allows_nested_regular_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_packages_normal_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_rejects_symlink_directory()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_rejects_symlink_to_external_file()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[Basic validation of a skill]] - rationale - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Package a skill folder into a .skill file.      Args         skill_path Path t]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[TestCase]] - code
+- [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[main()_26]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[test_package_skill.py]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[validate_skill()]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,13 @@ members: 17
 TABLE source_file, type FROM #community/Function_Details_4
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown (3)]]
+- 1 edge to [[_COMMUNITY_test_integration.py]]
+- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
+
+## Top bridge nodes
+- [[package_skill()]] - degree 9, connects to 1 community
+- [[validate_skill()]] - degree 4, connects to 1 community
+- [[package_skill.py]] - degree 3, connects to 1 community

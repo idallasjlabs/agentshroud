@@ -1,17 +1,22 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L253"
+community: "Phase 3: MITIGATE (Rollback First!) (3)"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/Phase_3_MITIGATE_Rollback_First_3
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_3

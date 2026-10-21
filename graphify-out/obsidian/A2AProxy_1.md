@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "UserSessionManager"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/UserSessionManager
 ---
 
 # A2AProxy
 
 ## Connections
-- [[dot-__init__()_177]] - `method` [EXTRACTED]
+- [[dot-__init__()_87]] - `method` [EXTRACTED]
 - [[dot-_audit()_1]] - `method` [EXTRACTED]
 - [[dot-_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-extract_text_for_pii_scan()]] - `method` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[Request_6]] - `uses` [INFERRED]
+- [[Request_10]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_4]] - `uses` [INFERRED]
@@ -50,4 +50,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

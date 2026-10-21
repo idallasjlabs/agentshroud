@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (3)"
+community: "SkillGuard"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_3
+  - community/SkillGuard
 ---
 
 # TestEgressApprovalAPI
@@ -24,8 +24,8 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressApprovalQueue]] - `uses` [INFERRED]
 - [[EgressRequest]] - `uses` [INFERRED]
-- [[RiskLevel]] - `uses` [INFERRED]
+- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[Test suite for egress approval API endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_3
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

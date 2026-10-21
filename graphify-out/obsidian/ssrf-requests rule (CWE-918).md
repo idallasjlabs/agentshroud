@@ -1,12 +1,12 @@
 ---
 source_file: ".semgrep.yml"
 type: "rationale"
-community: "egress_filter.py"
+community: "DelegationManager"
 location: "L111-121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/DelegationManager
 ---
 
 # ssrf-requests rule (CWE-918)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/DelegationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Request (2)"
+community: "pick_latest_stable"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/pick_latest_stable
 ---
 
 # security_headers_middleware()
@@ -21,4 +21,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `calls` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/pick_latest_stable

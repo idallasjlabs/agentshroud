@@ -1,17 +1,17 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
-location: "L57"
+community: "GroupRoleResolver"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # Commands
 
 ## Connections
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[Cli]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

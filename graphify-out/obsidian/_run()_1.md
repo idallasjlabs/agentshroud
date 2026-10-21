@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/tests/test_canary_deploy.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "_run"
-location: "L18"
+community: "Sunday Upgrade prompt"
+location: "L198"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_run
+  - graphify/INFERRED
+  - community/Sunday_Upgrade_prompt
 ---
 
 # _run()
 
 ## Connections
-- [[dot-test_dry_run_allowed_for_any_user()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_changes_nothing_and_previews_actions()]] - `calls` [EXTRACTED]
-- [[dot-test_dry_run_targets_green_ports_not_blue()]] - `calls` [EXTRACTED]
-- [[dot-test_refuses_when_not_green_user()]] - `calls` [EXTRACTED]
-- [[dot-test_tag_fetch_uses_force()]] - `calls` [EXTRACTED]
-- [[dot-test_unknown_arg_rejected()]] - `calls` [EXTRACTED]
-- [[test_canary_deploy.py]] - `contains` [EXTRACTED]
-- [[test_help_prints_usage()]] - `calls` [EXTRACTED]
+- [[_call_with_deadline()]] - `indirect_call` [INFERRED]
+- [[fn()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_run
+#graphify/code #graphify/INFERRED #community/Sunday_Upgrade_prompt

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "TestEgressApprovalQueue"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestEgressApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
-- [[Path_23]] - `references` [EXTRACTED]
-- [[UserSessionManager]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
+- [[WebSocket_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

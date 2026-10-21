@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[plan_1]] - document - docs/planning/redteam/plan.md
-- [[plan]] - document - docs/planning/redteam/plan.md
+- [[Rationale agentshroud-gateway MCP server disabled (no mcp route, crash-loop correlation)]] - rationale - docker/config/openclaw/mcp/servers.json
+- [[openclaw mcpservers.json (MCP server definitions)]] - document - docker/config/openclaw/mcp/servers.json
 
 ## Live Query (requires Dataview plugin)
 

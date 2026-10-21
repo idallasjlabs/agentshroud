@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py"
 location: "L1592"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy
 ---
 
 # Detect collaborator prompts asking to bypass/disable approvals or protections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_policy_bypass_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy

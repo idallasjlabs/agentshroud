@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-agile/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-agile/SKILL.md"
+community: "Hermes Cannot Force-Switch to Custom-Named Local Model (Gap #8)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-agile/SKILLmd
+  - community/Hermes_Cannot_Force-Switch_to_Custom-Named_Local_Model_Gap_8
 ---
 
 # Skill: agile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openclawskillsi-agileSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-agile/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cannot_Force-Switch_to_Custom-Named_Local_Model_Gap_8

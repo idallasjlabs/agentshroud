@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
+community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Execution Summary (Draft)
@@ -23,7 +23,7 @@ tags:
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Bot container verification (2026-03-14)]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `references` [EXTRACTED]
-- [[Executive Summary_10]] - `contains` [EXTRACTED]
+- [[Executive Summary_9]] - `contains` [EXTRACTED]
 - [[Gateway regression suites]] - `contains` [EXTRACTED]
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[OpenClaw_2]] - `references` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[v0.8.0-execution-summary-draft]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook

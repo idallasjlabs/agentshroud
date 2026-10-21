@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L83"
+community: "CrossBotTrustLedger"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[MCPAuditTrail]] - `references` [EXTRACTED]
+- [[MCPInspector]] - `references` [EXTRACTED]
+- [[MCPPermissionManager]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

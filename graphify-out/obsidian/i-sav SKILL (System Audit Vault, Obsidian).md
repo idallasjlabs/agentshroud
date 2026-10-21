@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "GSDE&G Skills Reference Guide"
+community: "AgentShroud Data Dictionary"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # i-sav SKILL (System Audit Vault, Obsidian)
@@ -15,4 +15,4 @@ tags:
 - [[i-sad README (System Audit Documentation)]] - `references` [EXTRACTED]
 - [[i-sav README (System Audit Vault)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

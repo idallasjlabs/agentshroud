@@ -1,17 +1,15 @@
 ---
 type: community
-members: 4
+members: 2
 ---
 
 # AgentShroud v1.0.0 Fortress Release Announcement (3)
 
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Awesome-List PR Templates]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[awesome-ai-security]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[awesome-llm-apps  awesome-llm]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[awesome-security  defensive security list]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[dot-test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test text with multiple types of sensitive content.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +22,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
 
 ## Top bridge nodes
-- [[Awesome-List PR Templates]] - degree 4, connects to 1 community
+- [[dot-test_multiple_redactions()]] - degree 2, connects to 1 community

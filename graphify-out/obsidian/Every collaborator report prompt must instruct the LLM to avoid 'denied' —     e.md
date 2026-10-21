@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "rationale"
-community: "test_cron_jobs_prompts.py"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # Every collaborator report prompt must instruct the LLM to avoid 'denied' —     e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cron_prompts_warn_against_denied_token()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

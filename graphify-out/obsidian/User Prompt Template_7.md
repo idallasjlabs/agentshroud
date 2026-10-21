@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller (3)"
-location: "L131"
+community: "aquasecurity/trivy 403s the Actions token but serves the public feed."
+location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_3
+  - community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[description of what this does_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_3
+#graphify/document #graphify/EXTRACTED #community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed

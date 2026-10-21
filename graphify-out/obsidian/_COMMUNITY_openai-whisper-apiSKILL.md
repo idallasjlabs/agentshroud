@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[API key]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Chat voice responses]] - document - skills/openclaw/sag/SKILL.md
-- [[OpenAI Whisper API (curl)]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Quick start_8]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Useful flags_1]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Whisper (CLI)]] - document - skills/openclaw/openai-whisper/SKILL.md
-- [[openai-whisper-apiSKILL]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[openai-whisperSKILL]] - document - skills/openclaw/openai-whisper/SKILL.md
-- [[sag]] - document - skills/openclaw/sag/SKILL.md
-- [[sagSKILL]] - document - skills/openclaw/sag/SKILL.md
-- [[transcribe.sh]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
-- [[transcribe.sh script]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
-- [[usage()_8]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[1. Verify CI and update the PR]] - document - .agents/skills/i-release/SKILL.md
+- [[2. Merge]] - document - .agents/skills/i-release/SKILL.md
+- [[3. Update graphify]] - document - .agents/skills/i-release/SKILL.md
+- [[4. Tag and release]] - document - .agents/skills/i-release/SKILL.md
+- [[5. Documentation and version visibility]] - document - .agents/skills/i-release/SKILL.md
+- [[6. Close Jira]] - document - .agents/skills/i-release/SKILL.md
+- [[7. Rebuildrestart prod and dev from main]] - document - .agents/skills/i-release/SKILL.md
+- [[Guardrails_14]] - document - .agents/skills/i-release/SKILL.md
+- [[Invocation_9]] - document - .agents/skills/i-release/SKILL.md
+- [[Role_85]] - document - .agents/skills/i-release/SKILL.md
+- [[Skill Release (i-release)]] - document - .agents/skills/i-release/SKILL.md
+- [[Steps]] - document - .agents/skills/i-release/SKILL.md
+- [[i-releaseSKILL]] - document - .agents/skills/i-release/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

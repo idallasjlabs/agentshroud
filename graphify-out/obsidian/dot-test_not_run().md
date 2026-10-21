@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter (15)"
+community: "bsp_iot_button_create"
 location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_15
+  - community/bsp_iot_button_create
 ---
 
 # .test_not_run()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpenscapSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_15
+#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create

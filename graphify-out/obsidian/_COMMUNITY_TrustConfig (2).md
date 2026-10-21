@@ -1,70 +1,72 @@
 ---
 type: community
-members: 57
+members: 59
 ---
 
 # TrustConfig (2)
 
-**Members:** 57 nodes
+**Members:** 59 nodes
 
 ## Members
-- [[dot-__init__()_33]] - code - gateway/security/subagent_monitor.py
-- [[dot-_log_event()]] - code - gateway/security/subagent_monitor.py
-- [[dot-check_tool_usage()]] - code - gateway/security/subagent_monitor.py
-- [[dot-deregister()]] - code - gateway/security/subagent_monitor.py
-- [[dot-get_active()]] - code - gateway/security/subagent_monitor.py
-- [[dot-get_audit_log()]] - code - gateway/security/subagent_monitor.py
-- [[dot-get_flagged_events()]] - code - gateway/security/subagent_monitor.py
-- [[dot-kill_agent()]] - code - gateway/security/subagent_monitor.py
-- [[dot-kill_all()]] - code - gateway/security/subagent_monitor.py
-- [[dot-register_spawn()]] - code - gateway/security/subagent_monitor.py
-- [[dot-test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_default_mode_is_enforce()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_enforce_mode_blocks_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_enforce_mode_blocks_trust_violation()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_generous_concurrent_default()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_kill_logs_event()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_kill_specific_agent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_kill_switch_marks_all_for_termination()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_kill_switch_propagates_to_children()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_list_active_subagents()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_monitor_mode_allows_all_tools()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_monitor_mode_allows_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_nested_subagent_inherits_chain()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_register_subagent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_spawn_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
-- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
-- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
-- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
-- [[TestAuditTrail_1]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestPermissionMonitoring]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestSubagentMonitorConfig]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
-- [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
-- [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
-- [[default_config()]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor()]] - code - gateway/tests/test_subagent_monitor.py
-- [[monitor_config()]] - code - gateway/tests/test_subagent_monitor.py
-- [[strict_config()]] - code - gateway/tests/test_subagent_monitor.py
-- [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
-- [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
-- [[test_subagent_monitor.py]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-__init__()_22]] - code - gateway/tools/port_manager.py
+- [[dot-find_available_port()]] - code - gateway/tools/port_manager.py
+- [[dot-generate_compose_ports()]] - code - gateway/tools/port_manager.py
+- [[dot-has_conflicts()]] - code - gateway/tools/port_manager.py
+- [[dot-is_port_available()]] - code - gateway/tools/port_manager.py
+- [[dot-is_port_available_udp()]] - code - gateway/tools/port_manager.py
+- [[dot-ports()]] - code - gateway/tools/port_manager.py
+- [[dot-resolve_ports()]] - code - gateway/tools/port_manager.py
+- [[dot-summary()]] - code - gateway/tools/port_manager.py
+- [[dot-test_all_free_no_conflicts()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_basic_mapping()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_bound_port_is_not_available()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_conflict_auto_resolved()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_conflict_no_auto_resolve()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_duplicate_port_detection()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_finds_base_when_free()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_has_conflicts()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_no_conflict_mapping()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_offset_applied()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_ports_property()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_raises_if_no_port_found()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_skips_bound_port()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_skips_excluded_ports()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_summary_format()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_udp_bound_not_available()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_udp_unbound_available()]] - code - gateway/tests/test_port_manager.py
+- [[dot-test_unbound_port_is_available()]] - code - gateway/tests/test_port_manager.py
+- [[Busy port should be detected via connect_ex check.]] - rationale - gateway/tests/test_port_manager.py
+- [[Check if a TCP port is available for binding.          Tries to bind briefly. Re]] - rationale - gateway/tools/port_manager.py
+- [[Check if a UDP port is available (used for DNS).]] - rationale - gateway/tools/port_manager.py
+- [[Detect port conflicts and auto-assign available ports.]] - rationale - gateway/tools/port_manager.py
+- [[Find next available port starting from base.          Args             base St]] - rationale - gateway/tools/port_manager.py
+- [[Generate docker-compose port mapping strings from resolution.          Returns d]] - rationale - gateway/tools/port_manager.py
+- [[Get the final port mapping.]] - rationale - gateway/tools/port_manager.py
+- [[If all ports in range are excluded, raises RuntimeError.]] - rationale - gateway/tests/test_port_manager.py
+- [[PortAssignment]] - code - gateway/tools/port_manager.py
+- [[PortManager]] - code - gateway/tools/port_manager.py
+- [[PortResolution]] - code - gateway/tools/port_manager.py
+- [[Quick check are the default ports available Log and return result.]] - rationale - gateway/tools/port_manager.py
+- [[Record of a port assignment decision.]] - rationale - gateway/tools/port_manager.py
+- [[Resolve all ports, detecting conflicts and auto-assigning if needed.          Ar]] - rationale - gateway/tools/port_manager.py
+- [[Result of resolving all ports for an instance.]] - rationale - gateway/tools/port_manager.py
+- [[Test PortResolution dataclass.]] - rationale - gateway/tests/test_port_manager.py
+- [[Test auto-port discovery.]] - rationale - gateway/tests/test_port_manager.py
+- [[Test docker-compose port mapping generation.]] - rationale - gateway/tests/test_port_manager.py
+- [[Test full port resolution logic.]] - rationale - gateway/tests/test_port_manager.py
+- [[Test port availability detection.]] - rationale - gateway/tests/test_port_manager.py
+- [[TestFindAvailablePort]] - code - gateway/tests/test_port_manager.py
+- [[TestGenerateComposePorts]] - code - gateway/tests/test_port_manager.py
+- [[TestIsPortAvailable]] - code - gateway/tests/test_port_manager.py
+- [[TestPortResolution]] - code - gateway/tests/test_port_manager.py
+- [[TestResolveports]] - code - gateway/tests/test_port_manager.py
+- [[Two services requesting same port — second gets reassigned.]] - rationale - gateway/tests/test_port_manager.py
+- [[_fake_socket_factory()]] - code - gateway/tests/test_port_manager.py
+- [[check_and_report()]] - code - gateway/tools/port_manager.py
+- [[find-ports.sh]] - code - scripts/find-ports.sh
+- [[find-ports.sh script]] - code - scripts/find-ports.sh
+- [[port_manager.py]] - code - gateway/tools/port_manager.py
+- [[test_port_manager.py]] - code - gateway/tests/test_port_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,17 +76,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_AlertDispatcher]]
-- 24 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_SessionManager]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
 
 ## Top bridge nodes
-- [[subagent_monitor.py]] - degree 10, connects to 6 communities
-- [[SubagentMonitor]] - degree 46, connects to 3 communities
-- [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
-- [[TestTrustInheritance]] - degree 9, connects to 2 communities
-- [[TestAuditTrail_1]] - degree 8, connects to 2 communities
+- [[PortManager]] - degree 34, connects to 1 community

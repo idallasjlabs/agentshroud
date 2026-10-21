@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "_req"
 location: "L1098"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/_req
 ---
 
 # Empty text field must not bypass filtering when caption contains tool payload.
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/_req

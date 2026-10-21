@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # .set_user_role()
 
 ## Connections
 - [[RBACConfig_3]] - `method` [EXTRACTED]
-- [[Role_23]] - `references` [EXTRACTED]
+- [[Role_19]] - `references` [EXTRACTED]
 - [[Set role for a user ID (owner-only operation).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionManager"
+community: "TelegramAPIProxy (2)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_session_id_is_cryptographically_random()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionCreation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

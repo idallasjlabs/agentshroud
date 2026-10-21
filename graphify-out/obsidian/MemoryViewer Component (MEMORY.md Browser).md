@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 ---
 
 # MemoryViewer Component (MEMORY.md Browser)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboardREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/concept #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT

@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard (2)"
-location: "L59"
+community: "FalcoAlertWatcher"
+location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard_2
+  - community/FalcoAlertWatcher
 ---
 
 # ScanResult
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[Recommendation]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_print_findings()]] - `references` [EXTRACTED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard_2
+#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher

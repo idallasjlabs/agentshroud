@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
+community: "test-sunday-upgrade-scan.sh"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+  - community/test-sunday-upgrade-scansh
 ---
 
 # Features
@@ -20,4 +20,4 @@ tags:
 - [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+#graphify/document #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

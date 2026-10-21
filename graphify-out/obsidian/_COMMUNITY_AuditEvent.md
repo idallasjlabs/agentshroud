@@ -1,40 +1,36 @@
 ---
 type: community
-members: 27
+members: 23
 ---
 
 # AuditEvent
 
-**Members:** 27 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[dot-__init__()_132]] - code - gateway/security/audit_store.py
-- [[dot-_generate_event_id()]] - code - gateway/security/audit_store.py
-- [[dot-_get_latest_hash()]] - code - gateway/security/audit_store.py
-- [[dot-compute_content_hash()]] - code - gateway/security/audit_store.py
-- [[dot-compute_entry_hash()]] - code - gateway/security/audit_store.py
-- [[dot-log_event()_1]] - code - gateway/security/audit_store.py
-- [[dot-test_content_hash()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_event_creation()]] - code - gateway/tests/test_audit_export.py
-- [[dot-to_dict()_7]] - code - gateway/security/audit_store.py
-- [[dot-verify_hash_chain()]] - code - gateway/security/audit_store.py
-- [[AuditEvent_1]] - code - gateway/security/audit_store.py
-- [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
-- [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
-- [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
-- [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
-- [[Get the entry_hash of the most recent event for chain continuation.]] - rationale - gateway/security/audit_store.py
-- [[Log a new audit event with hash chain integrity.          Args             bot_]] - rationale - gateway/security/audit_store.py
-- [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
-- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
-- [[Verify the integrity of the hash chain.          Args             start_id Sta]] - rationale - gateway/security/audit_store.py
-- [[audit_export.py]] - code - gateway/security/audit_export.py
-- [[audit_store.py]] - code - gateway/security/audit_store.py
+- [[Buffered streaming filter (`_filter_outbound_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Claude Opus intercept]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Configuration_9]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Constructor dependencies (dependency injection)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Environment variables_4]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover chain]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover controls]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover notifications]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Header pass-through policy]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Overview_11]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Related_4]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Retry policy (`_forward_request`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Stats tracked]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Streaming]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[True-streaming path (`proxy_messages_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[`think` tag stripping]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,20 +38,3 @@ members: 27
 TABLE source_file, type FROM #community/AuditEvent
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 11 edges to [[_COMMUNITY_AuditStore]]
-- 6 edges to [[_COMMUNITY_AuditExporter]]
-- 4 edges to [[_COMMUNITY_AuditExporter (3)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_Restart Procedure (3)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
-
-## Top bridge nodes
-- [[AuditEvent_1]] - degree 25, connects to 4 communities
-- [[audit_export.py]] - degree 7, connects to 4 communities
-- [[audit_store.py]] - degree 6, connects to 4 communities
-- [[TestAuditEvent]] - degree 9, connects to 3 communities
-- [[dot-log_event()_1]] - degree 5, connects to 1 community

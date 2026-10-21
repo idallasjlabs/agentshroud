@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # .test_soul_md_in_workspace_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot modify SOUL.md even in workspace path.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityPolicyProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

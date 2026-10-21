@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PipelineAction"
+community: "ApprovalQueueConfig"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # .test_clean_response_not_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E05CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

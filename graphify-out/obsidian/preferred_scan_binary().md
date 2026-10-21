@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "asyncio"
+community: "cli/main.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/cli/mainpy
 ---
 
 # preferred_scan_binary()
@@ -20,4 +20,4 @@ tags:
 - [[test_preferred_scan_binary_falls_back_when_daemon_dead()]] - `calls` [EXTRACTED]
 - [[test_preferred_scan_binary_uses_daemon_when_listening()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

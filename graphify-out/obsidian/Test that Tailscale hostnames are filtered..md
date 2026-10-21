@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter"
+community: "FetchOutcome"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/FetchOutcome
 ---
 
 # Test that Tailscale hostnames are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_tailscale_hostname_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[append_trend_log.py]] - code - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

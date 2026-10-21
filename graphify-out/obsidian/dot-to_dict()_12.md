@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Path"
-location: "L68"
+community: "test_a2a_policy.py"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/test_a2a_policypy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[ManifestEntry]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

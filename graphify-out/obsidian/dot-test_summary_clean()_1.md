@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L706"
+community: "Common Queries"
+location: "L513"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Common_Queries
 ---
 
 # .test_summary_clean()
 
 ## Connections
-- [[TestWazuhSummary]] - `method` [EXTRACTED]
+- [[TestClamAVSummary_1]] - `method` [EXTRACTED]
+- [[parse_clamscan_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/Common_Queries

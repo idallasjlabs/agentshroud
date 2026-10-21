@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "ConsentFramework (2)"
+community: "AgentShroud™ README"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework_2
+  - community/AgentShroud_README
 ---
 
 # .test_hook_can_flag_threat()
@@ -15,4 +15,4 @@ tags:
 - [[TestScreenshotAnalysis]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_README

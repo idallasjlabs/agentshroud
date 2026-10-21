@@ -8,29 +8,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[Buffered streaming filter (`_filter_outbound_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Claude Opus intercept]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Configuration_10]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Constructor dependencies (dependency injection)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Environment variables_3]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Failover chain]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Failover controls]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Failover notifications]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Header pass-through policy]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Overview_14]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Related_5]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Retry policy (`_forward_request`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Stats tracked]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Streaming]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[True-streaming path (`proxy_messages_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[`think` tag stripping]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[llm_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[llm_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[CONNECT Retry Logic]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Configuration  Environment Variables]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Function Details_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_81]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Related_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_4]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 

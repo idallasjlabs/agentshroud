@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-value-stream-mapping SKILL.md (minimal stub)]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[SharedMemoryManager User Private Memory Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 

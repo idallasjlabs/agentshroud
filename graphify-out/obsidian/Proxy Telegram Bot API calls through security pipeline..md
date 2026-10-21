@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L4590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # Proxy Telegram Bot API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/rationale #graphify/EXTRACTED #community/_make_cve

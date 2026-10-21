@@ -8,39 +8,39 @@ members: 33
 **Members:** 33 nodes
 
 ## Members
-- [[dot-__init__()_114]] - code - gateway/runtime/podman_engine.py
-- [[dot-_cmd()]] - code - gateway/runtime/podman_engine.py
-- [[dot-_detect_compose()]] - code - gateway/runtime/podman_engine.py
-- [[dot-build()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-compose_down()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-compose_up()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-exec()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-generate_systemd()]] - code - gateway/runtime/podman_engine.py
-- [[dot-health_check()_2]] - code - gateway/runtime/podman_engine.py
-- [[dot-inspect()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-logs()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-network_create()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-network_rm()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-pause()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-pull()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-push()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-rm()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-run()_3]] - code - gateway/runtime/podman_engine.py
-- [[dot-setup_method()_23]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-stop()_9]] - code - gateway/runtime/podman_engine.py
-- [[dot-test_generate_systemd()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_ps_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_run_selinux_volumes()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-unpause()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-volume_create()_1]] - code - gateway/runtime/podman_engine.py
-- [[dot-volume_rm()_1]] - code - gateway/runtime/podman_engine.py
-- [[Any_37]] - code - gateway/runtime/podman_engine.py
-- [[Container engine backed by the Podman CLI.]] - rationale - gateway/runtime/podman_engine.py
-- [[Detect podman compose or podman-compose.]] - rationale - gateway/runtime/podman_engine.py
-- [[Generate a systemd unit file for a container.]] - rationale - gateway/runtime/podman_engine.py
-- [[PodmanEngine]] - code - gateway/runtime/podman_engine.py
-- [[TestPodmanEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[A healthy 200 message body must NOT be failed over.]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[A real production incident a stalled chunked response from a local     model ba]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,     which]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[HTTP 200 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[LLMProxy_1]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_default_still_retries_429()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_interactive_header_skips_retries()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_llm_proxy_failover.py]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_per_request_opt_out_header_skips_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_anthropic_overloaded_529()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_anthropic_overloaded_http200()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_anthropic_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_flag_off_returns_429()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_ollama_down_no_false_notice()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_streaming_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_gemini_tools_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_ollama_unreachable_returns_original_429()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_failover_openai_quota_dropin()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_normal_200_passthrough_untouched()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[test_proxy_post_retry_429_now_failovers()]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[x-agentshroud-interactive 1 → the first 429 returns immediately (no     2s4s8]] - rationale - gateway/tests/test_llm_proxy_failover.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,20 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 5 edges to [[_COMMUNITY_test_runtime_engines.py (2)]]
-- 3 edges to [[_COMMUNITY_RuntimeConfig]]
-- 2 edges to [[_COMMUNITY_ContainerEngine]]
-- 2 edges to [[_COMMUNITY_DockerEngine]]
-- 2 edges to [[_COMMUNITY_get_engine]]
-- 1 edge to [[_COMMUNITY_TestAppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_TestInstallerAPI]]
-- 1 edge to [[_COMMUNITY_TestDockerEngine]]
-- 1 edge to [[_COMMUNITY_TestSecurityFeatures]]
-- 1 edge to [[_COMMUNITY_TestWebAPI]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 3 edges to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[PodmanEngine]] - degree 45, connects to 11 communities
-- [[TestPodmanEngine]] - degree 11, connects to 4 communities
-- [[Any_37]] - degree 3, connects to 2 communities
+- [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
+- [[make_proxy()_1]] - degree 24, connects to 1 community
+- [[LLMProxy_1]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # Analyze a script file for malicious patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_analyze_script_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/rationale #graphify/EXTRACTED #community/SessionManager

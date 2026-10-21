@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AuditExporter (3)"
-location: "L28"
+community: "UserSessionManager"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter_3
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter_3
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

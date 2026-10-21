@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
+- [[audio_set_volume() — spoken volume command target]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

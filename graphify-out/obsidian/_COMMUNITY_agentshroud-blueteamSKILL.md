@@ -1,59 +1,58 @@
 ---
 type: community
-members: 46
+members: 45
 ---
 
 # agentshroud-blueteam/SKILL.md
 
-**Members:** 46 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_66]] - code - gateway/security/tool_result_injection.py
-- [[dot-_detect_hidden_instructions()]] - code - gateway/security/context_guard.py
-- [[dot-_detect_instruction_injection()]] - code - gateway/security/context_guard.py
-- [[dot-_detect_rapid_context_growth()]] - code - gateway/security/context_guard.py
-- [[dot-_detect_repetition_attacks()]] - code - gateway/security/context_guard.py
-- [[dot-analyze_message()]] - code - gateway/security/context_guard.py
-- [[dot-guard()_5]] - code - gateway/tests/test_context_guard.py
-- [[dot-should_block_message()]] - code - gateway/security/context_guard.py
-- [[dot-test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[Analyze a message for context poisoning attempts.          Args             ses]] - rationale - gateway/security/context_guard.py
-- [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-22708 — AI Agent Container Escape via Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-30741 — RCE via Request-Side Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-3690 — Canvas Authentication Bypass]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
-- [[ContextAttack]] - code - gateway/security/context_guard.py
-- [[Detect hidden instructions buried in large text blocks.]] - rationale - gateway/security/context_guard.py
-- [[Detect instruction injection attempts.]] - rationale - gateway/security/context_guard.py
-- [[Detect rapid context window filling.]] - rationale - gateway/security/context_guard.py
-- [[Detect repetition-based context stuffing attacks.]] - rationale - gateway/security/context_guard.py
-- [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
-- [[Determine if a message should be blocked.          Returns             Tuple of]] - rationale - gateway/security/context_guard.py
-- [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
-- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
-- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
-- [[SessionContext]] - code - gateway/security/context_guard.py
-- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
-- [[check_message()]] - code - gateway/security/context_guard.py
-- [[context_guard.py]] - code - gateway/security/context_guard.py
-- [[cve-mitigation-matrix]] - document - docs/security/cve-mitigation-matrix.md
-- [[get_context_guard()]] - code - gateway/security/context_guard.py
-- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
-- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[dot-filter()]] - code - gateway/ingest_api/lifespan.py
+- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
+- [[Application lifespan management for the AgentShroud Gateway]] - rationale - gateway/ingest_api/lifespan.py
+- [[FastAPI]] - code
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
+- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
+- [[LogRecord_1]] - code
+- [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
+- [[Resolve each configured bot's OWN Telegram token, distinct from the default.…]] - rationale - gateway/ingest_api/lifespan.py
+- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
+- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
+- [[_alert_sanitize()]] - code - gateway/ingest_api/lifespan.py
+- [[_audit_chain_heartbeat()]] - code - gateway/ingest_api/lifespan.py
+- [[_build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
+- [[_check_trivy_report()]] - code - gateway/ingest_api/lifespan.py
+- [[_handle()]] - code - gateway/ingest_api/lifespan.py
+- [[_handle()_1]] - code - gateway/ingest_api/lifespan.py
+- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[_on_config_reload()]] - code - gateway/ingest_api/lifespan.py
+- [[_op_authenticate()]] - code - gateway/ingest_api/lifespan.py
+- [[_pipe()]] - code - gateway/ingest_api/lifespan.py
+- [[_pipe()_1]] - code - gateway/ingest_api/lifespan.py
+- [[_prewarm_op()]] - code - gateway/ingest_api/lifespan.py
+- [[_report_sanitize()]] - code - gateway/ingest_api/lifespan.py
+- [[_resource_alert_bridge()]] - code - gateway/ingest_api/lifespan.py
+- [[_run_canvas_proxy()]] - code - gateway/ingest_api/lifespan.py
+- [[_run_hermes_api_forwarder()]] - code - gateway/ingest_api/lifespan.py
+- [[_run_hermes_dashboard_forwarder()]] - code - gateway/ingest_api/lifespan.py
+- [[_run_initial_scan_if_needed()]] - code - gateway/ingest_api/lifespan.py
+- [[_run_security_scheduler()]] - code - gateway/ingest_api/lifespan.py
+- [[_startup_scanner()]] - code - gateway/ingest_api/lifespan.py
+- [[_store_result()]] - code - gateway/ingest_api/lifespan.py
+- [[_verify_bot_image()]] - code - gateway/ingest_api/lifespan.py
+- [[_wazuh_periodic()]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - rationale - gateway/tests/test_telegram_executor.py
+- [[lifespan()]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[test_hermes_forwarder_drops_non_http()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_hermes_forwarder_has_http_peek()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_installs_64_worker_executor()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_telegram_executor.py]] - code - gateway/tests/test_telegram_executor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,28 +62,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_AlertDispatcher]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
-- 4 edges to [[_COMMUNITY_ContextSegment]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
-- 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
-- 1 edge to [[_COMMUNITY_InjectionAction]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_climain.py]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 2 edges to [[_COMMUNITY_Browser — Secure Browser Automation (SKILL)]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
+- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
 - 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_sync-cve-registry.py (2)]]
 
 ## Top bridge nodes
-- [[cve-mitigation-matrix]] - degree 14, connects to 9 communities
-- [[tool_result_injection.py]] - degree 12, connects to 6 communities
-- [[dot-analyze_message()]] - degree 12, connects to 3 communities
-- [[context_guard.py]] - degree 9, connects to 3 communities
-- [[TestCheckMessage]] - degree 9, connects to 2 communities
+- [[lifespan.py]] - degree 20, connects to 9 communities
+- [[lifespan()]] - degree 28, connects to 7 communities
+- [[_DropInvalidHTTPRequestFilter]] - degree 6, connects to 1 community
+- [[FastAPI]] - degree 3, connects to 1 community
+- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - degree 3, connects to 1 community

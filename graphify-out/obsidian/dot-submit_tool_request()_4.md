@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L328"
+community: "ContextSegment"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/ContextSegment
 ---
 
 # .submit_tool_request()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[dot-get_policy_for_tier()]] - `calls` [EXTRACTED]
+- [[dot-get_tool_risk_tier()]] - `calls` [EXTRACTED]
+- [[dot-requires_approval()]] - `calls` [EXTRACTED]
+- [[dot-submit()_1]] - `calls` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
+- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Submit a tool call request for approval.          Args             tool_name T]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

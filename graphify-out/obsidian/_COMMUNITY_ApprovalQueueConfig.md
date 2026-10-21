@@ -1,315 +1,191 @@
 ---
 type: community
-members: 302
+members: 178
 ---
 
 # ApprovalQueueConfig
 
-**Members:** 302 nodes
+**Members:** 178 nodes
 
 ## Members
-- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-__init__()_95]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-__init__()_96]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-_init_presidio()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-block_credentials()_2]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-connect()_1]] - code - gateway/approval_queue/queue.py
-- [[dot-default_config()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-disconnect()]] - code - gateway/approval_queue/queue.py
-- [[dot-execute()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
-- [[dot-expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
-- [[dot-filter_xml_blocks()_2]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-get_mode()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-mock_config()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-pipeline()]] - code - gateway/tests/test_performance.py
-- [[dot-pipeline()_1]] - code - gateway/tests/test_performance.py
-- [[dot-sanitizer()_2]] - code - gateway/tests/test_performance.py
-- [[dot-test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_absolute_path_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_backtick_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_content_at_exact_cap_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dotdot_traversal_from_absolute_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_dotdot_traversal_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_home_tilde_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_null_byte_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
-- [[dot-test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
-- [[dot-test_pipe_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_prefix_collision_sibling_dir_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_relative_path_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
-- [[dot-test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_whitespace_only_path_rejected_at_proxy_layer()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_absolute_path_prefix_collision_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_activity_rejects_empty_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_activity_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-validate_command()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-validate_default_url()]] - code - gateway/ingest_api/config.py
-- [[dot-validate_targets()]] - code - gateway/ingest_api/config.py
-- [[dot-validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[A directory that shares the root as a raw string prefix but is not         actua]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Accept a WebSocket connection and add to connected set          Args]] - rationale - gateway/approval_queue/queue.py
-- [[Agent with low trust cannot perform elevated actions.]] - rationale - gateway/tests/test_security_integration.py
-- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
-- [[AppState]] - code - gateway/ingest_api/state.py
-- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
-- [[ApprovalQueue]] - code - gateway/approval_queue/queue.py
-- [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Clean message flows through entire pipeline without issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
-- [[Config with all security modules enabled.]] - rationale - gateway/tests/test_security_integration.py
-- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
-- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
-- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
-- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Even if trust allows an action, egress filter blocks unauthorized destinations.]] - rationale - gateway/tests/test_security_integration.py
-- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
-- [[Gap coverage confirm a real audit-ledger row is created for BOTH a     successf]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Gap coverage prove the 'content is DATA, not a shell string' design     goal ac]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[GatewayConfig_3]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[GatewayConfig_4]] - code - gateway/ingest_api/config.py
-- [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - rationale - gateway/approval_queue/queue.py
-- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
-- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
-- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Management WebSocket endpoints should use scoped tokens, not master auth.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Message with PII gets sanitized and logged correctly.]] - rationale - gateway/tests/test_security_integration.py
-- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
-- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
-- [[Multiple messages through pipeline concurrently — thread safety.]] - rationale - gateway/tests/test_security_integration.py
-- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Outbound responses have credentials blocked for untrusted sources.]] - rationale - gateway/tests/test_security_integration.py
-- [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
-- [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
-- [[PIIConfig_1]] - code - gateway/security/tool_result_sanitizer.py
-- [[PIIConfig_2]] - code - gateway/ingest_api/config.py
-- [[PIISanitizer]] - code - gateway/security/tool_result_sanitizer.py
-- [[PIISanitizer_1]] - code - gateway/tests/conftest.py
-- [[PIISanitizer_2]] - code - gateway/ingest_api/sanitizer.py
-- [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
-- [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
-- [[RedactionResult]] - code - gateway/security/tool_result_sanitizer.py
-- [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Remove a WebSocket connection from connected set          Args             webs]] - rationale - gateway/approval_queue/queue.py
-- [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Return current enforcement mode          Returns             enforce or moni]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
-- [[RouterConfig]] - code - gateway/ingest_api/config.py
-- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
-- [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSHConfig]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHConfig_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHConfig_2]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
-- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
-- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
-- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
-- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[TestManagementWSTokenScoping]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
-- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
-- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
-- [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
-- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
-- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
-- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should reject empty token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should reject master auth token (R3-L4)]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
-- [[WebSocket]] - code - gateway/approval_queue/queue.py
-- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
-- [[When both PII sanitizer and prompt guard detect issues.]] - rationale - gateway/tests/test_security_integration.py
-- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - concept - gateway/tests/test_filter_xml_blocks.py
-- [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
-- [[approval_queue()_1]] - code - gateway/tests/test_security_integration.py
-- [[auth_headers()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[auth_headers()_2]] - code - gateway/tests/test_ssh_endpoints.py
-- [[auth_headers()_3]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
-- [[canary_pipeline()]] - code - gateway/tests/test_canary.py
-- [[client()_6]] - code - gateway/tests/test_ssh_endpoints.py
-- [[client()_7]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[full_pipeline_config()]] - code - gateway/tests/test_security_integration.py
-- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
-- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - code - gateway/ingest_api/routes/dashboard.py
-- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
-- [[proxy()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
-- [[router()_1]] - code - gateway/tests/test_router_openai_translation.py
-- [[router()_2]] - code - gateway/tests/test_router_streaming.py
-- [[sanitizer()_2]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[sanitizer()_3]] - code - gateway/tests/test_security_integration.py
-- [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[ssh_config()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
-- [[ssh_proxy__init__.py]] - code - gateway/ssh_proxy/__init__.py
-- [[sync_client()]] - code - gateway/tests/test_security_fixes.py
-- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[test_egress_blocks_unauthorized_after_trust_check()]] - code - gateway/tests/test_security_integration.py
-- [[test_encrypted_store_in_pipeline()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_clean_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_pii_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[test_pii_and_prompt_guard_both_trigger()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_concurrent_messages()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
-- [[test_response_credential_blocking()]] - code - gateway/tests/test_security_integration.py
-- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
-- [[test_security_integration.py]] - code - gateway/tests/test_security_integration.py
-- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
-- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[test_trust_insufficient_action_blocked()]] - code - gateway/tests/test_security_integration.py
+- [[dot-__init__()_20]] - code - gateway/proxy/pipeline.py
+- [[dot-__len__()]] - code - gateway/proxy/pipeline.py
+- [[dot-_maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
+- [[dot-_process_inbound_core()]] - code - gateway/proxy/pipeline.py
+- [[dot-_process_outbound_core()]] - code - gateway/proxy/pipeline.py
+- [[dot-_redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-append()]] - code - gateway/proxy/pipeline.py
+- [[dot-append_block()]] - code - gateway/proxy/pipeline.py
+- [[dot-append_owner_bypass()]] - code - gateway/proxy/pipeline.py
+- [[dot-check_response()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-entries()]] - code - gateway/proxy/pipeline.py
+- [[dot-get_stats()_4]] - code - gateway/proxy/pipeline.py
+- [[dot-last_hash()]] - code - gateway/proxy/pipeline.py
+- [[dot-process_inbound()_3]] - code - gateway/proxy/pipeline.py
+- [[dot-process_outbound()]] - code - gateway/proxy/pipeline.py
+- [[dot-sanitize()_3]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-set_global_mode()]] - code - gateway/proxy/pipeline.py
+- [[dot-test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_append_chain()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_append_owner_bypass_persists_high_severity()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_append_single()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_audit_chain_hash_chained()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_base64_content_decoded()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_benign_message_passes()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_blocked_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_canary_token_triggers_block()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_chain_continuity_preserved_across_wrap()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_classic_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_clean_response_not_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_clean_response_passes_unchanged()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_content_hash_deterministic()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_credit_card_stripped_from_response()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_cross_context_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_default_window_is_10k()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_different_content_different_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_email_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_encoding_detector_is_wired()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_entries_returns_copy()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_forwarded_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_genesis()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_jailbreak_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_low_trust_cannot_delete_file()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_metadata()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_no_outbound_filter_does_not_unbind()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_non_owner_inbound_query_still_redacted()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_owner_inbound_query_not_pii_redacted()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_persisted_event_records_true_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_phone_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_pipeline_raises_with_only_prompt_guard()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_pipeline_raises_without_pii_sanitizer()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_ssn_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_tamper_in_retained_window_detected()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_trusted_agent_can_send_message()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[dot-test_unwrapped_chain_must_anchor_at_genesis()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_chain_valid_after_wrap()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_tampered_chain_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_tampered_previous_hash()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_verify_valid()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_window_capped_at_max_entries()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-to_dict()_1]] - code - gateway/proxy/pipeline.py
+- [[dot-total_appended()]] - code - gateway/proxy/pipeline.py
+- [[dot-verify_audit_chain()]] - code - gateway/proxy/pipeline.py
+- [[dot-verify_chain()]] - code - gateway/proxy/pipeline.py
+- [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A self-consistent window on a forged anchor must fail when the         chain nev]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
+- [[Any_4]] - code - gateway/proxy/pipeline.py
+- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
+- [[Attempting to create a pipeline with no PII sanitizer raises RuntimeError.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Audit chain is a hash chain each entry references the previous hash.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[AuditChain]] - code - gateway/proxy/pipeline.py
+- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
+- [[Blocking agent A does not affect agent B's processing.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-01 PromptGuard blocks high-confidence injection payloads.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-02 Social security numbers and email are redacted before forwarding.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-03 PII in agent responses is stripped before delivery.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-04 ContextGuard detects session-level injection in multi-turn context.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-05 Canary tokens in responses trigger full block.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-06 Base64 and Unicode encoding bypasses are decoded and processed.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-07 Low-trust agent cannot perform high-risk actions.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-08 Every pipeline event — block or forward — produces an audit entry.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-09 Two agents process independently with no cross-contamination.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-10 SecurityPipeline refuses to operate without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Encoding detector is active in the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Even with PromptGuard, pipeline refuses to start without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[FilterResult]] - code - gateway/security/outbound_filter.py
+- [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[If an agent response contains a registered canary value, block it.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Injecting a system-level override via a follow-up message is blocked.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[InjectionAction]] - code - gateway/security/tool_result_injection.py
+- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
+- [[Non-owner query must still be PII-scrubbed (detector + threshold unchanged).]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[OutputCanary that always crashes.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Owner messages should NOT be blocked when security module crashes (owner exempti]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Owner query must pass through PII sanitisation unchanged; sanitiser not called.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[PII redacted for agent A does not leak into agent B's audit trail.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[PII sanitiser mock that simulates two entity redactions.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Pipeline must BLOCK (not pass through) when EnhancedToolResultSanitizer crashes]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must BLOCK (not pass through) when OutputCanary crashes for non-owner.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[PipelineAction]] - code - gateway/proxy/pipeline.py
+- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
+- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
+- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
+- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
+- [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Response containing base64-encoded payload is decoded by the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
+- [[SHA-256 hash chain for tamper-evident audit logging.]] - rationale - gateway/proxy/pipeline.py
+- [[Sanitizer that always crashes — simulates module failure.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[SecurityPipeline]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[SecurityPipeline_1]] - code - gateway/proxy/pipeline.py
+- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
+- [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[TestAuditChain]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestAuditChainBounded]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestE2E01PromptGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E02InboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E03OutboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E04ContextGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E05CanaryTripwire]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E06EncodingBypassDetection]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E07TrustEnforcement]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E08AuditChainIntegrity]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E09SessionIsolation]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E10FailClosed]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestOutboundFilterResultBinding]] - code - gateway/tests/test_pipeline_unit.py
+- [[Tests for the SHA-256 hash chain.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[The in-memory window must be bounded; full history lives in SQLite.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - rationale - gateway/proxy/pipeline.py
+- [[_BrokenOutputCanary]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_BrokenSanitizer]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
+- [[_make_pipeline()_1]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
+- [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[pii_config()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pipeline()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pipeline.py]] - code - gateway/proxy/pipeline.py
+- [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[sanitizer()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_e2e_watchtower.py]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_encoding_detector_error_fails_closed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_hex_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_nested_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_owner_encoded_injection_allowed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_plain_benign_message_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_fails_closed_on_output_canary_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
+- [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_ws_e_rt2_inbound_encoding.py]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -319,79 +195,47 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 78 edges to [[_COMMUNITY_PIIConfig]]
-- 56 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 40 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 30 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 30 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 29 edges to [[_COMMUNITY_AlertDispatcher]]
-- 28 edges to [[_COMMUNITY_PipelineAction]]
-- 25 edges to [[_COMMUNITY_ApprovalQueueConfig (6)]]
-- 22 edges to [[_COMMUNITY_AgentTarget]]
-- 19 edges to [[_COMMUNITY_MiddlewareManager]]
-- 15 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 13 edges to [[_COMMUNITY_AgentTarget (7)]]
-- 11 edges to [[_COMMUNITY_SecurityPipeline]]
-- 11 edges to [[_COMMUNITY_TrustConfig]]
-- 9 edges to [[_COMMUNITY_UserSessionManager (4)]]
-- 8 edges to [[_COMMUNITY_ContextSegment]]
-- 7 edges to [[_COMMUNITY_ApprovalQueueConfig (5)]]
-- 7 edges to [[_COMMUNITY_ToolResultSanitizer (2)]]
-- 6 edges to [[_COMMUNITY_AgentTarget (4)]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 6 edges to [[_COMMUNITY__req]]
-- 5 edges to [[_COMMUNITY_socrouter.py]]
-- 5 edges to [[_COMMUNITY__req (2)]]
-- 5 edges to [[_COMMUNITY_AgentTarget (2)]]
-- 5 edges to [[_COMMUNITY_test_dashboard.py]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 4 edges to [[_COMMUNITY_TestMCPResultEndpoint]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager (3)]]
-- 3 edges to [[_COMMUNITY_create_auth_dependency]]
-- 3 edges to [[_COMMUNITY_BotConfig]]
-- 3 edges to [[_COMMUNITY_test_filter_xml_blocks.py]]
-- 3 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 3 edges to [[_COMMUNITY_TestMCPProxyEndpoint]]
-- 3 edges to [[_COMMUNITY__req (3)]]
-- 3 edges to [[_COMMUNITY_test_hermes_model_resolver.py (2)]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 2 edges to [[_COMMUNITY__make_sanitizer()]]
-- 2 edges to [[_COMMUNITY_AWS Cloud Management & FinOps]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
-- 2 edges to [[_COMMUNITY_Git Workflow Guardian (GIT-GUARD)]]
-- 2 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
-- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 2 edges to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 2 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline (2)]]
-- 2 edges to [[_COMMUNITY_TestWebSearchLog]]
-- 2 edges to [[_COMMUNITY_PIIConfig (2)]]
-- 2 edges to [[_COMMUNITY_ForwardRequest (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (5)]]
-- 1 edge to [[_COMMUNITY__req (4)]]
-- 1 edge to [[_COMMUNITY_test_prompt_guard.py (3)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (8)]]
-- 1 edge to [[_COMMUNITY__req (5)]]
-- 1 edge to [[_COMMUNITY_test_security.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (7)]]
-- 1 edge to [[_COMMUNITY_test_forward_stream.py (2)]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (2)]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
+- 47 edges to [[_COMMUNITY_socrouter.py]]
+- 47 edges to [[_COMMUNITY_ApprovalQueueConfig (2)_1]]
+- 46 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 27 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 26 edges to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 25 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 22 edges to [[_COMMUNITY_MiddlewareManager]]
+- 19 edges to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 18 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 17 edges to [[_COMMUNITY_AgentTarget]]
+- 14 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 14 edges to [[_COMMUNITY_WebProxyConfig]]
+- 12 edges to [[_COMMUNITY_A2AGovernanceProxy]]
+- 10 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 9 edges to [[_COMMUNITY_FetchOutcome]]
+- 8 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 7 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 7 edges to [[_COMMUNITY_ProxyAction]]
+- 5 edges to [[_COMMUNITY_api.py (2)]]
+- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 4 edges to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
+- 4 edges to [[_COMMUNITY_AgentTarget (2)_1]]
+- 3 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 3 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 3 edges to [[_COMMUNITY_SCLClient]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (4) (2)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (4)]]
+- 2 edges to [[_COMMUNITY_ProxyAction (2)]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
+- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
+- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming) (2)]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_TestCheckCommandExecution]]
 
 ## Top bridge nodes
-- [[PIIConfig_2]] - degree 175, connects to 37 communities
-- [[PIISanitizer_2]] - degree 151, connects to 24 communities
-- [[RouterConfig]] - degree 66, connects to 10 communities
-- [[GatewayConfig_4]] - degree 65, connects to 10 communities
-- [[test_security_integration.py]] - degree 37, connects to 9 communities
+- [[SecurityPipeline_1]] - degree 138, connects to 27 communities
+- [[AuditChain]] - degree 89, connects to 11 communities
+- [[PipelineAction]] - degree 49, connects to 9 communities
+- [[InjectionAction]] - degree 34, connects to 8 communities
+- [[test_pipeline_unit.py]] - degree 31, connects to 7 communities

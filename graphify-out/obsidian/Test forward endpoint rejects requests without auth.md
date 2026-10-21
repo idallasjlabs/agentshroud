@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "rationale"
-community: "test_integration.py"
+community: "TrustConfig (3)"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/TrustConfig_3
 ---
 
 # Test /forward endpoint rejects requests without auth
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_without_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_3

@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "export-bot-conversations.py (4)"
-location: "L148"
+community: "browser/scripts/browse.py"
+location: "L932"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_4
+  - community/browser/scripts/browsepy
 ---
 
 # main()
 
 ## Connections
-- [[Path_1]] - `calls` [EXTRACTED]
-- [[_parse_since()]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_4
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

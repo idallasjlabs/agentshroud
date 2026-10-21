@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "cli/main.py"
+community: "AlertDispatcher (4)"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/AlertDispatcher_4
 ---
 
 # tail()
@@ -18,4 +18,4 @@ tags:
 - [[climain.py]] - `contains` [EXTRACTED]
 - [[get()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4

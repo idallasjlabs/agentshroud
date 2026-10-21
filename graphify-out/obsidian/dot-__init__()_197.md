@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "ProxyAction"
+community: "_wrap_response()"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/_wrap_response
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockURLResult]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

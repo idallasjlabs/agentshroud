@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L27-L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # Crash backoff escalation (rolling 10-minute start window)
@@ -16,4 +16,4 @@ tags:
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - `implements` [EXTRACTED]
 - [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/rationale #graphify/EXTRACTED #community/_make_cve

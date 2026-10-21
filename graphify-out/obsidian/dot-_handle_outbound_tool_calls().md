@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py (2)"
 location: "L3736"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy_2
 ---
 
 # ._handle_outbound_tool_calls()
@@ -20,8 +20,8 @@ tags:
 - [[dot-_resolve_collaborator_mode()]] - `calls` [EXTRACTED]
 - [[dot-_trigger_web_fetch_approval()]] - `calls` [EXTRACTED]
 - [[dot-_trigger_web_search_log()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_83]] - `references` [EXTRACTED]
 - [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

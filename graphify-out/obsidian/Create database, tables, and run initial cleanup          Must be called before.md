@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # Create database, tables, and run initial cleanup          Must be called before
 
 ## Connections
-- [[dot-initialize()]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

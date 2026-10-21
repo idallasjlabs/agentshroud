@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # asyncio
@@ -21,4 +21,4 @@ tags:
 - [[dot-test_traversal_in_query_closes_without_connecting()]] - `references` [EXTRACTED]
 - [[dot-test_upstream_connect_failure_closes_gracefully()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

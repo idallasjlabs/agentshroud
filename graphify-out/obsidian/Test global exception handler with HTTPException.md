@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Request"
+community: "pick_latest_stable"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request
+  - community/pick_latest_stable
 ---
 
 # Test global exception handler with HTTPException
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_global_exception_handler_http_exception()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

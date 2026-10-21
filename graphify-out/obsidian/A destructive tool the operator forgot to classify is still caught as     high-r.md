@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # A destructive tool the operator forgot to classify is still caught as     high-r
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

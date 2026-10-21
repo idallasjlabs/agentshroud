@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # ._resolve_host()
@@ -15,6 +15,6 @@ tags:
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
 - [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

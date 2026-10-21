@@ -1,20 +1,21 @@
 ---
-source_file: ".agents/skills/i-hermes/README.md"
+source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "Hermes — Podcast Production Orchestrator"
+community: "TestOutboundInfoFilter (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Podcast_Production_Orchestrator
+  - community/TestOutboundInfoFilter_3
 ---
 
 # Hermes — Podcast Production Orchestrator
 
 ## Connections
-- [[dot-agentsskillsi-hermesREADME]] - `contains` [EXTRACTED]
-- [[Purpose_22]] - `contains` [EXTRACTED]
-- [[Related Skills_7]] - `contains` [EXTRACTED]
-- [[Usage_11]] - `contains` [EXTRACTED]
+- [[Purpose_25]] - `contains` [EXTRACTED]
+- [[Related Skills_11]] - `contains` [EXTRACTED]
+- [[Usage_14]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-hermesREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_3

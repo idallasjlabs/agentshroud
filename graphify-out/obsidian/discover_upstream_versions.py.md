@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # discover_upstream_versions.py
@@ -27,12 +27,13 @@ tags:
 - [[_sortable()]] - `contains` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `semantically_similar_to` [INFERRED]
 - [[discover()]] - `contains` [EXTRACTED]
+- [[dockerversions.env]] - `shares_data_with` [EXTRACTED]
 - [[fetch_dockerhub_tags()]] - `contains` [EXTRACTED]
 - [[fetch_npm_versions()]] - `contains` [EXTRACTED]
 - [[is_stable()]] - `contains` [EXTRACTED]
-- [[main()_1]] - `contains` [EXTRACTED]
+- [[main()_3]] - `contains` [EXTRACTED]
 - [[pick_latest_hermes_tag()]] - `contains` [EXTRACTED]
 - [[pick_latest_stable()]] - `contains` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

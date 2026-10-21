@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Job details"
+community: "Browser — Secure Browser Automation"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Job details
@@ -43,4 +43,4 @@ tags:
 - [[Weekly job-log cleanup]] - `contains` [EXTRACTED]
 - [[jira-weekly-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Job_details
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

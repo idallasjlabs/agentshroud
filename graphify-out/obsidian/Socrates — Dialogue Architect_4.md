@@ -1,29 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
-type: "document"
-community: "Socrates — Dialogue Architect (3)"
-location: "L6"
+source_file: "docs/architecture/agentic-os.md"
+type: "concept"
+community: "Output Sections (ALL required) (3)"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_3
+  - community/Output_Sections_ALL_required_3
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Dialogue Techniques_2]] - `contains` [EXTRACTED]
-- [[ElevenLabs v3 Audio Tags_2]] - `contains` [EXTRACTED]
-- [[Input Requirements_11]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - `contains` [EXTRACTED]
-- [[Output Format_21]] - `contains` [EXTRACTED]
-- [[Persona_7]] - `contains` [EXTRACTED]
-- [[Quality Checklist_8]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
-- [[Speaker Definitions_2]] - `contains` [EXTRACTED]
-- [[System Prompt_7]] - `contains` [EXTRACTED]
-- [[User Prompt Template_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-socratesSKILL]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `shares_data_with` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `shares_data_with` [EXTRACTED]
+- [[Hermes — Reference Verifier (podcast agent)]] - `shares_data_with` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_4]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_3
+#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3

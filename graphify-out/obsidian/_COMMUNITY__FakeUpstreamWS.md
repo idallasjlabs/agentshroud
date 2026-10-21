@@ -1,42 +1,41 @@
 ---
 type: community
-members: 29
+members: 28
 ---
 
 # _FakeUpstreamWS
 
-**Members:** 29 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[dot-__aenter__()_4]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__aexit__()_4]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__aiter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__anext__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_122]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_123]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-send()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_lifespan_startup_shutdown()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_relay_with_trusted_origin()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_sec_websocket_protocol_token_authenticates()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_skip_basic_auth_bypasses_gate()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_token_query_param_authenticates_ws()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_unauthorized_returns_401()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_unauthorized_ws_closed_4401()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_upstream_failure_returns_502()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_upstream_ws_exception_closes_gracefully()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Async context manager mimicking websockets.connect().]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Drive the canvas ASGI app with scripted receive events; collect sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Fake upstream WebSocket yields scripted messages, records sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasHTTP]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasLifespan]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasWebSocket]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_FakeUpstreamWS]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_FakeWSConnect]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_http_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_run_asgi()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_ws_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_any_error_since_boot_blocks_regardless_of_successes()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_below_threshold_not_soaked()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_empty_heartbeat_file_skip_alone_is_not_soaked()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_empty_heartbeat_file_skip_does_not_mask_a_real_error()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_empty_heartbeat_file_skip_is_benign_not_blocking()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_empty_job_list()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_missing_state_key_does_not_crash()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_no_runs_since_boot_not_soaked()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_one_success_since_boot_meets_default_threshold()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_other_skipped_status_counts_as_not_ok()]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_runs_before_boot_are_ignored()]] - code - gateway/tests/test_soak_status.py
+- [[2026-09-19 root cause 'heartbeat skipped empty-heartbeat-file' is         Open]] - rationale - gateway/tests/test_soak_status.py
+- [[A benign heartbeat skip must not hide an actual failing job.]] - rationale - gateway/tests/test_soak_status.py
+- [[A job that last succeeded before this boot proves nothing about         THIS dep]] - rationale - gateway/tests/test_soak_status.py
+- [[A skip for any OTHER reason (not the known-benign empty-heartbeat-         file]] - rationale - gateway/tests/test_soak_status.py
+- [[An actively-failing job since redeploy must block soak even if         other job]] - rationale - gateway/tests/test_soak_status.py
+- [[Any_39]] - code - scripts/soak_status.py
+- [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - concept - scripts/soak_status.py
+- [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - rationale - scripts/soak_status.py
+- [[TestClassify_2]] - code - gateway/tests/test_soak_status.py
+- [[The benign skip alone proves nothing — still need a real success.]] - rationale - gateway/tests/test_soak_status.py
+- [[_is_benign_skip]] - code - scripts/soak_status.py
+- [[_is_benign_skip()]] - code - scripts/soak_status.py
+- [[_job()]] - code - gateway/tests/test_soak_status.py
+- [[classify()_2]] - code - scripts/soak_status.py
+- [[main()_18]] - code - scripts/soak_status.py
+- [[soak_status.py]] - code - scripts/soak_status.py
+- [[test_soak_status.py]] - code - gateway/tests/test_soak_status.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,14 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 6 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 5 edges to [[_COMMUNITY_DNSBlocklist]]
-- 3 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 1 edge to [[_COMMUNITY__make_sanitizer()]]
 
 ## Top bridge nodes
-- [[_FakeUpstreamWS]] - degree 12, connects to 3 communities
-- [[_FakeWSConnect]] - degree 9, connects to 3 communities
-- [[TestCanvasWebSocket]] - degree 9, connects to 3 communities
-- [[TestCanvasHTTP]] - degree 7, connects to 3 communities
-- [[TestCanvasLifespan]] - degree 4, connects to 3 communities
+- [[main()_18]] - degree 3, connects to 1 community

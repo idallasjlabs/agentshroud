@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "AgentShroud Incident Response Plan"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # 📋 Current Status
@@ -21,4 +21,4 @@ tags:
 - [[📋 Phase 5 Live Action Dashboard (Planned)]] - `contains` [EXTRACTED]
 - [[📋 Phase 6 Tailscale + Documentation (Planned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

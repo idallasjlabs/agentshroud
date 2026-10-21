@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "TestEgressApprovalQueue"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/TestEgressApprovalQueue
 ---
 
 # TestWSEvent
 
 ## Connections
-- [[dot-test_construction()_2]] - `method` [EXTRACTED]
+- [[dot-test_construction()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

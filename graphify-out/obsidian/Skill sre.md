@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
+source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "AgentTarget (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/AgentTarget_2
 ---
 
 # Skill: sre
 
 ## Connections
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sreSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sreSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

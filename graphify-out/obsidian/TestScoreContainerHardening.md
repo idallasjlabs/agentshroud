@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "TestScoreContainerHardening"
+community: "run-as-root.sh"
 location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScoreContainerHardening
+  - community/run-as-rootsh
 ---
 
 # TestScoreContainerHardening
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_three_baseline_no_openscap()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScoreContainerHardening
+#graphify/code #graphify/EXTRACTED #community/run-as-rootsh

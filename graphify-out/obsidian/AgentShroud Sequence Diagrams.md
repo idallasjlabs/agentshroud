@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "document"
-community: "AgentShroud Sequence Diagrams"
+community: "Competitive Security Matrix — AgentShroud vs AI Agent Platforms"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams
+  - community/Competitive_Security_Matrix__AgentShroud_vs_AI_Agent_Platforms
 ---
 
 # AgentShroud Sequence Diagrams
@@ -19,4 +19,4 @@ tags:
 - [[5. Web Fetch Flow]] - `contains` [EXTRACTED]
 - [[sequence-diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams
+#graphify/document #graphify/EXTRACTED #community/Competitive_Security_Matrix__AgentShroud_vs_AI_Agent_Platforms

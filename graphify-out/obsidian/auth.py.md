@@ -1,26 +1,26 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "create_auth_dependency"
+community: "lifespan()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/lifespan
 ---
 
 # auth.py.md
 
 ## Connections
 - [[Auth Errors]] - `references` [INFERRED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
+- [[GatewayConfig_3]] - `references` [EXTRACTED]
 - [[RateLimiter_1]] - `references` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `references` [EXTRACTED]
 - [[get_auth_dependency()]] - `references` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
-- [[python-jose]] - `references` [INFERRED]
+- [[python-jose_1]] - `references` [INFERRED]
 - [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
 - [[verify_token()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/lifespan

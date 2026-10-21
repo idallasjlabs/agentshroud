@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
+community: "test_playback_state.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/test_playback_statec
 ---
 
 # encrypted_store.py
@@ -19,4 +19,4 @@ tags:
 - [[canary.py]] - `references` [EXTRACTED]
 - [[env_guard.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

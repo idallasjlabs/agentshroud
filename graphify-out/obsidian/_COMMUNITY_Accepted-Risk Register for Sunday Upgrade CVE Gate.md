@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[Accepted-Risk Register for Sunday Upgrade CVE Gate]] - document - .trivyignore.yaml
-- [[CVE-2026-60002 openssh-client no fix (accepted risk)]] - rationale - .trivyignore.yaml
-- [[CVE-2026-6653 libxml2 use-after-free (accepted risk)]] - rationale - .trivyignore.yaml
+- [[check()_2]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 
 ## Live Query (requires Dataview plugin)
 

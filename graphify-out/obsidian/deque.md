@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "AgentTarget (3)"
 location: "L497"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor_3
+  - community/AgentTarget_3
 ---
 
 # deque
 
 ## Connections
-- [[dot-__init__()_55]] - `calls` [EXTRACTED]
-- [[dot-__init__()_52]] - `calls` [INFERRED]
-- [[dot-__init__()_53]] - `calls` [INFERRED]
-- [[dot-__init__()_54]] - `calls` [INFERRED]
-- [[dot-__init__()_149]] - `calls` [INFERRED]
+- [[dot-__init__()_161]] - `calls` [EXTRACTED]
+- [[dot-__init__()_158]] - `calls` [INFERRED]
+- [[dot-__init__()_159]] - `calls` [INFERRED]
+- [[dot-__init__()_160]] - `calls` [INFERRED]
+- [[dot-__init__()_142]] - `calls` [INFERRED]
 - [[dot-_count_recent_events()]] - `references` [EXTRACTED]
 - [[dot-analyze_message()]] - `calls` [INFERRED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/AgentTarget_3

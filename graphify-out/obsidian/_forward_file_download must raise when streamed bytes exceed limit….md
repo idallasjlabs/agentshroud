@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "asyncio"
+community: "ApprovalQueueConfig (2) (2)"
 location: "L8781"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # _forward_file_download must raise when streamed bytes exceed limit…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_forward_file_download_aborts_at_size_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

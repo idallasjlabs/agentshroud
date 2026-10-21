@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "AgentShroud v1.0.0 Fortress Release Announcement (3)"
+community: "ADR-004: API Keys Never in Agent Container"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement_3
+  - community/ADR-004_API_Keys_Never_in_Agent_Container
 ---
 
 # awesome-llm-apps / awesome-llm
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Awesome-List PR Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement_3
+#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container

@@ -12,7 +12,7 @@ tags:
 # downgrade_version()
 
 ## Connections
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Downgrade to a previous version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]

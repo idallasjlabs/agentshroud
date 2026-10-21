@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "create_auth_dependency (2)"
+community: "test_fieldflare_route_strips_unsupported_fields_streaming"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/test_fieldflare_route_strips_unsupported_fields_streaming
 ---
 
 # TestEnhancedStatus
@@ -19,4 +19,4 @@ tags:
 - [[Test enhanced status endpoint with observatory mode and egress info.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming

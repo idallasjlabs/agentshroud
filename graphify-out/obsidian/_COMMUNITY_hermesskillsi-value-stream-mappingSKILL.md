@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill value-stream-mapping_1]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
-- [[hermesskillsi-value-stream-mappingSKILL]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[i-daedalus README — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[i-daedalus SKILL — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

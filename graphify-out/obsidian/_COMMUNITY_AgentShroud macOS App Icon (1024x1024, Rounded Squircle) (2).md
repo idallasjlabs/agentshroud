@@ -1,23 +1,21 @@
 ---
 type: community
-members: 10
+members: 8
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)
 
-**Members:** 10 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[dot-test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
-- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
-- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
-- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
+- [[dot-__init__()_25]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-summary()_1]] - code - gateway/web/dashboard_endpoints.py
+- [[Alert counts by severity.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[AlertStore]] - code - gateway/web/dashboard_endpoints.py
+- [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Test Dashboard Endpoints Suite]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[alerts_summary()]] - code - gateway/web/dashboard_endpoints.py
+- [[test_alert_store_push_and_summary()]] - code - gateway/tests/test_dashboard_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TeamsConfig]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
+- 2 edges to [[_COMMUNITY_main.py]]
+- 1 edge to [[_COMMUNITY_main.py (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (3)]]
 
 ## Top bridge nodes
-- [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 4 communities
+- [[AlertStore]] - degree 9, connects to 4 communities
+- [[alerts_summary()]] - degree 3, connects to 1 community
+- [[test_alert_store_push_and_summary()]] - degree 2, connects to 1 community

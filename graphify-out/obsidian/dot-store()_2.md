@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L229"
+community: "_wrap_response()"
+location: "L693"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/_wrap_response
 ---
 
 # .store()
 
 ## Connections
-- [[IntelReportStore_1]] - `references` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
-- [[TestIntelReportStore]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

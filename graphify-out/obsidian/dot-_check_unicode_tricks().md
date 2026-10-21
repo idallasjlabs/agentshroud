@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "ApprovalQueueConfig (4)"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalQueueConfig_4
 ---
 
 # ._check_unicode_tricks()
 
 ## Connections
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
 - [[Detect unicode obfuscation tricks.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "ApprovalQueueConfig (5)"
+community: "MiddlewareManager (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/MiddlewareManager_3
 ---
 
 # test_approval_queue.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[_HangingWebSocket]] - `contains` [EXTRACTED]
 - [[approval_queue()]] - `contains` [EXTRACTED]
 - [[queue_config()]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

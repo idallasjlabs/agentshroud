@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "MiddlewareManager (8)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/MiddlewareManager_8
 ---
 
 # Usage
 
 ## Connections
-- [[graphify]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8

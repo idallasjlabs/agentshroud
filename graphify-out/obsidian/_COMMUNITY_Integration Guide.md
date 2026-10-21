@@ -1,30 +1,34 @@
 ---
 type: community
-members: 17
+members: 21
 ---
 
 # Integration Guide
 
-**Members:** 17 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[1Password Integration_2]] - document - docs/api/integration-guide.md
-- [[AgentShroud v1.3.0_1]] - document - docs/api/api-reference.md
-- [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
-- [[Docker Security Scanning]] - document - docs/api/integration-guide.md
-- [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
-- [[GitHub Actions Integration]] - document - docs/api/integration-guide.md
-- [[HTTP Proxy Mode]] - document - docs/api/integration-guide.md
-- [[Integration Guide]] - document - docs/api/integration-guide.md
-- [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
-- [[MCP Server Integration_1]] - document - docs/api/integration-guide.md
-- [[Monitoring System Integration]] - document - docs/api/integration-guide.md
-- [[Overview_19]] - document - docs/api/api-reference.md
-- [[Overview_20]] - document - docs/api/integration-guide.md
-- [[Prometheus Metrics]] - document - docs/api/integration-guide.md
-- [[Service Account Setup]] - document - docs/api/integration-guide.md
-- [[Webhook Alerts]] - document - docs/api/integration-guide.md
-- [[integration-guide]] - document - docs/api/integration-guide.md
+- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Executive Summary_11]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Route map (by router)]]
-- 1 edge to [[_COMMUNITY_OpenSCAP]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill (2)]]
 
 ## Top bridge nodes
-- [[Integration Guide]] - degree 8, connects to 1 community
-- [[AgentShroud v1.3.0_1]] - degree 4, connects to 1 community
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 1 community

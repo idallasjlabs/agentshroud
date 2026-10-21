@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
-location: "L3700"
+community: "ApprovalQueueConfig (2)"
+location: "L2721"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_secret_value_block_returns_protect_secret_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

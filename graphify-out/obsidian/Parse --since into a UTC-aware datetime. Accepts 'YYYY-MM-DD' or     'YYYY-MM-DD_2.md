@@ -1,12 +1,12 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/export-telegram-history.py"
 type: "rationale"
-community: "export-bot-conversations.py (3)"
-location: "L42"
+community: "1. Accomplishments This Phase"
+location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_3
+  - community/1_Accomplishments_This_Phase
 ---
 
 # Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_since()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy_3
+#graphify/rationale #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

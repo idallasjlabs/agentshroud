@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[3.1 PII Sanitizer — confidence floor]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.2 Egress filter — enforce mode]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.3 form-urlencoded outbound bypass (PR158 regression check)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.4 KeyVault seeding includes Hermes secrets]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.5 Telegram proxy multi-bot token validation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.6 CONNECT proxy force-blocks api.telegram.org]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[3.7 agentshroud-isolated network isolation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§3 — Bot Pipeline Integrity Checks]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - document - docs/security/threat-model.md
+- [[E — Elevation of Privilege Cross-Process Isolation Break]] - document - docs/security/threat-model.md
+- [[I — Information Disclosure  Elevation of Privilege Unsandboxed Live-Session Injection]] - document - docs/security/threat-model.md
+- [[I — Information Disclosure SSRF via Push-Notification Callback URLs]] - document - docs/security/threat-model.md
+- [[Not Yet Mitigated (Explicitly Deferred)]] - document - docs/security/threat-model.md
+- [[R — Repudiation Rejected Auth Attempts Not Audited]] - document - docs/security/threat-model.md
+- [[S — Spoofing Peer Identity Collapse Behind a Reverse Proxy]] - document - docs/security/threat-model.md
+- [[T — Tampering Cross-Tenant Task Ownership via `contextId` Collision]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessment]]
+- 1 edge to [[_COMMUNITY_TestCredentialInjection]]
 
 ## Top bridge nodes
-- [[§3 — Bot Pipeline Integrity Checks]] - degree 8, connects to 1 community
+- [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - degree 8, connects to 1 community

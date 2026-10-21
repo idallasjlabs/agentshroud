@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # GitGuard
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_168]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_182]] - `method` [EXTRACTED]
 - [[dot-_analyze_file_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_file()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[dot-test_clean_hook_passes()]] - `calls` [EXTRACTED]
 - [[dot-test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
 - [[dot-test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_7]] - `calls` [EXTRACTED]
 - [[dot-test_finding_has_file_path()]] - `calls` [EXTRACTED]
 - [[dot-test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
 - [[dot-test_git_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -44,17 +44,17 @@ tags:
 - [[Any]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and analyze git hooks and package installation scripts.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestFileSandboxDefaultEnforce]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestGitGuard_1]] - `uses` [INFERRED]
+- [[TestGitGuard]] - `uses` [INFERRED]
 - [[TestGitGuardDefaultEnforce]] - `uses` [INFERRED]
 - [[TestHTTPSecurity]] - `uses` [INFERRED]
 - [[TestInfoLeakage]] - `uses` [INFERRED]
@@ -77,13 +77,13 @@ tags:
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestResourceGuardFailClosed]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
@@ -97,4 +97,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard_2
+#graphify/code #graphify/INFERRED #community/SessionManager

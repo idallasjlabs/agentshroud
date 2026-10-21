@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest"
+community: "AsyncMock"
 location: "L825"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/AsyncMock
 ---
 
 # .test_update_request_defaults()
@@ -15,4 +15,4 @@ tags:
 - [[TestAgentshroudUpdates]] - `method` [EXTRACTED]
 - [[UpdateRequest]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

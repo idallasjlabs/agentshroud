@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_collaborator_greeter.py (2)"
+community: "PipelineAction (2)"
 location: "L778"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/PipelineAction_2
 ---
 
 # get_openscap_summary()
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_critical_on_critical_findings()]] - `calls` [EXTRACTED]
 - [[dot-test_not_run_when_no_report()]] - `calls` [EXTRACTED]
 - [[dot-test_warning_on_failures()]] - `calls` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Return latest OpenSCAP compliance summary from saved reports.]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2

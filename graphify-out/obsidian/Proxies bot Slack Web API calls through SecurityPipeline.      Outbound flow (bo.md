@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "AsyncMock (2)"
+community: "api.py (2)"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/apipy_2
 ---
 
 # Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo
 
 ## Connections
-- [[SlackAPIProxy_2]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

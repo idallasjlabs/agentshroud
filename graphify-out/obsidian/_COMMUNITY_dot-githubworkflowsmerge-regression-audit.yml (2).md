@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dot-githubworkflowsmerge-regression-audit.yml_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[i-scrum SKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

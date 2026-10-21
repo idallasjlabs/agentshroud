@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
+- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[If notice send fails, cooldown should not suppress the next retry attempt.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice path should key retry window by user_id, not chat_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Repeated rate-limited messages should each receive a deterministic notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_rate_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_rate_notice()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_rate_notice()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
+- 15 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
 
 ## Top bridge nodes
-- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community
+- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - degree 9, connects to 2 communities
+- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - degree 9, connects to 2 communities
+- [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - degree 8, connects to 2 communities

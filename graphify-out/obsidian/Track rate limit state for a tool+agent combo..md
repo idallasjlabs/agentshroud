@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager (3)"
+community: "CrossBotTrustLedger"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/CrossBotTrustLedger
 ---
 
 # Track rate limit state for a tool+agent combo.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "cli/main.py"
+community: "AlertDispatcher (4)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/AlertDispatcher_4
 ---
 
 # cli/main.py
@@ -36,8 +36,8 @@ tags:
 - [[get_risk()]] - `contains` [EXTRACTED]
 - [[get_services()]] - `contains` [EXTRACTED]
 - [[get_users()]] - `contains` [EXTRACTED]
-- [[main()_31]] - `contains` [EXTRACTED]
-- [[restart()]] - `contains` [EXTRACTED]
+- [[main()_33]] - `contains` [EXTRACTED]
+- [[restart()_1]] - `contains` [EXTRACTED]
 - [[restart_service()_2]] - `contains` [EXTRACTED]
 - [[scan()]] - `contains` [EXTRACTED]
 - [[set()]] - `contains` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[stop_service()_2]] - `contains` [EXTRACTED]
 - [[tail()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4

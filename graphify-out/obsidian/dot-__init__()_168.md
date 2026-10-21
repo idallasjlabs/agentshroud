@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ResourceGuard (2)"
-location: "L53"
+community: "AlertDispatcher (3)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/AlertDispatcher_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_47]] - `calls` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

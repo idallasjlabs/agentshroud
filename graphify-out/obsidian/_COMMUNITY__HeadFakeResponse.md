@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-__aenter__()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__aexit__()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-aiter_bytes()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-aread()]] - code - gateway/tests/test_llm_proxy.py
-- [[_HeadFakeResponse]] - code - gateway/tests/test_llm_proxy.py
+- [[Agentic OS Architecture Doc (91 security-dir files  75 wired)]] - document - docs/architecture/agentic-os.md
+- [[NO SECURITY THEATER Policy (CLAUDE.md §2)]] - concept - docs/testing/test-coverage-report.md
+- [[Red-Team Assessment Plan]] - document - docs/planning/redteam/plan.md
+- [[STPA-Sec Methodology (Nancy Leveson, MIT)]] - concept - docs/testing/test-coverage-report.md
+- [[Test Coverage Report (AgentShroud v1.3.0)]] - document - docs/testing/test-coverage-report.md
+- [[Test Plan (AgentShroud v0.9.0)]] - document - docs/testing/test-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/_HeadFakeResponse
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_llm_proxy.py]]
-
-## Top bridge nodes
-- [[_HeadFakeResponse]] - degree 7, connects to 1 community

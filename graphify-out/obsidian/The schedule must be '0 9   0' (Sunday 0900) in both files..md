@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "rationale"
-community: "test_hermes_cron_seed.py"
+community: "TestFabricatedSecurityNotice (2)"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/TestFabricatedSecurityNotice_2
 ---
 
 # The schedule must be '0 9 * * 0' (Sunday 09:00) in both files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review_schedule_is_sunday_9am()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2

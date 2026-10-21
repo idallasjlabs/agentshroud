@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Function Details (5)"
+community: "Actions"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Actions
 ---
 
 # Function Details
@@ -20,6 +20,6 @@ tags:
 - [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
 - [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
 - [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/document #graphify/EXTRACTED #community/Actions

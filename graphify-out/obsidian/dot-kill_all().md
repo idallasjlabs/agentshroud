@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "TrustConfig (2)"
+community: "asyncio"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/asyncio
 ---
 
 # .kill_all()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
 - [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "FalcoAlertWatcher"
+community: "LLMProxy.proxy_messages (non-streaming) (2)"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/LLMProxyproxy_messages_non-streaming_2
 ---
 
 # Poll Falco alert files until stopped.
 
 ## Connections
-- [[dot-run()]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2

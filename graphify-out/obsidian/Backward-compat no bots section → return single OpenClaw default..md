@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "AlertDispatcher (2)"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/AlertDispatcher_2
 ---
 
 # Backward-compat: no bots section → return single OpenClaw default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_returns_default_when_no_bots_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2

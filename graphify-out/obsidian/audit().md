@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/web/management.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L243"
+community: "CrossBotTrustLedger"
+location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/CrossBotTrustLedger
 ---
 
 # audit()
 
 ## Connections
-- [[Serve the audit log page.]] - `rationale_for` [EXTRACTED]
-- [[management.py]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Manual Usage (Current Method)"
+community: "KeyRotationManager (2) (3)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Manual_Usage_Current_Method
+  - community/KeyRotationManager_2_3
 ---
 
 # Manual Usage (Current Method)
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Fetch with Browser-Fetch Skill]] - `contains` [EXTRACTED]
 - [[Step 3 Parse Output]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Manual_Usage_Current_Method
+#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2_3

@@ -8,35 +8,35 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[_agent_btn_pressed()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[_apply_agent_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_apply_state_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_btn_pressed()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[_btn_released()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[_find_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_ptt_end()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[_ptt_start()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[_report_and_place_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_state_to_emotion()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_touch_pressed()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_touch_start_only()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[esp_err_t_4]] - code - firmware/voice-terminal/main/wakeword.c
-- [[face_animation_pause()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_emotion_t_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_event_t]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_obj_t_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[remote_log.h]] - code - firmware/voice-terminal/main/remote_log.h
-- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_init()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_state()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[wakeword.c]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_deinit()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_init()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_next_agent()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_ptt_press()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_ptt_release()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_request()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[ws_vg_state_t_1]] - code - firmware/voice-terminal/main/ui_face.c
+- [[dot-__aenter__()_4]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aexit__()_4]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aiter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__anext__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_117]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_118]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-send()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_lifespan_startup_shutdown()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_relay_with_trusted_origin()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_sec_websocket_protocol_token_authenticates()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_skip_basic_auth_bypasses_gate()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_token_query_param_authenticates_ws()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_unauthorized_returns_401()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_unauthorized_ws_closed_4401()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_upstream_failure_returns_502()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_upstream_ws_exception_closes_gracefully()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Async context manager mimicking websockets.connect().]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Drive the canvas ASGI app with scripted receive events; collect sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Fake upstream WebSocket yields scripted messages, records sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[TestCanvasHTTP]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestCanvasLifespan]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestCanvasWebSocket]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeUpstreamWS]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeWSConnect]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_http_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_run_asgi()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_ws_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,15 +46,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_test_ptt_state.c]]
-- 7 edges to [[_COMMUNITY_test_playback_state.c]]
-- 6 edges to [[_COMMUNITY_voice_task]]
-- 5 edges to [[_COMMUNITY_lvgl_kawaii_face.c]]
-- 5 edges to [[_COMMUNITY_app_main.c]]
+- 8 edges to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 6 edges to [[_COMMUNITY_TestOAuthInjection]]
+- 5 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
+- 3 edges to [[_COMMUNITY_InjectionAction (2)]]
 
 ## Top bridge nodes
-- [[wakeword.c]] - degree 26, connects to 3 communities
-- [[ui_face_set_state()]] - degree 6, connects to 3 communities
-- [[_touch_pressed()]] - degree 10, connects to 2 communities
-- [[wakeword_ptt_press()]] - degree 6, connects to 2 communities
-- [[ui_face_init()]] - degree 5, connects to 2 communities
+- [[_FakeUpstreamWS]] - degree 12, connects to 3 communities
+- [[_FakeWSConnect]] - degree 9, connects to 3 communities
+- [[TestCanvasWebSocket]] - degree 9, connects to 3 communities
+- [[TestCanvasHTTP]] - degree 7, connects to 3 communities
+- [[TestCanvasLifespan]] - degree 4, connects to 3 communities

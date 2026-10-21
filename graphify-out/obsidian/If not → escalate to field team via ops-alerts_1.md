@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "hermes/SOUL.md"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/hermes/SOULmd
 ---
 
 # If not → escalate to field team via #ops-alerts
@@ -16,4 +16,4 @@ tags:
 - [[API  Function Reference_1]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

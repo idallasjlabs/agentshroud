@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "TestInstallerAPI"
+community: "hermes/skills/i-browser/browse.js"
 location: "L779"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInstallerAPI
+  - community/hermes/skills/i-browser/browsejs
 ---
 
 # TestInstallerAPI
@@ -24,4 +24,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInstallerAPI
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

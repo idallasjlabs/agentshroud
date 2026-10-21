@@ -1,23 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L787"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
-- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues]] - `contains` [EXTRACTED]
-- [[Port Already in Use_2]] - `contains` [EXTRACTED]
-- [[Tests Failing_1]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

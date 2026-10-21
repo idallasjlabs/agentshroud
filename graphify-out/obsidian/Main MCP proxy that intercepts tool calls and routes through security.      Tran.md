@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "CrossBotTrustLedger"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # Main MCP proxy that intercepts tool calls and routes through security.      Tran
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPProxy_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

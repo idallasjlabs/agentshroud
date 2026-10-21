@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/today-in-ai.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "DockerEngine"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/DockerEngine
 ---
 
 # Prompt: Today in AI (12-Query Sweep)
@@ -20,4 +20,4 @@ tags:
 - [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - `conceptually_related_to` [INFERRED]
 - [[append_finding.py Finding-Append Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/DockerEngine

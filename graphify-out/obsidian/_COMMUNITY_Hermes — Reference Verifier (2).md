@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Hermes — Reference Verifier_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Input Requirements_2]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Output Format_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Persona_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Quality Checklist_2]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Role_5]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[System Prompt_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[hermesskillsi-hermesSKILL]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Excessive False Positives]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Engine Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Not Being Detected]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[PII Pipeline Errors]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_7]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[Hermes — Reference Verifier_1]] - degree 8, connects to 1 community
+- [[PII Pipeline Errors]] - degree 8, connects to 1 community

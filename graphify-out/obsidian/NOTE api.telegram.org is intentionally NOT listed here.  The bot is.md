@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "DelegationManager"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/DelegationManager
 ---
 
 # # NOTE: api.telegram.org is intentionally NOT listed here.  The bot is
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[http_proxy.py_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/DelegationManager

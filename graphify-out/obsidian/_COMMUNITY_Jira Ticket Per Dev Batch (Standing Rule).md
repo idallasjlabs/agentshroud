@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Jira Ticket Per Dev Batch (Standing Rule)]] - rationale - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

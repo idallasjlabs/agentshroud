@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "stt.py"
+community: "proxy_status.py"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sttpy
+  - community/proxy_statuspy
 ---
 
 # Transcribe raw 16-bit signed PCM mono audio to text.      Args:         pcm_byte
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[transcribe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sttpy
+#graphify/rationale #graphify/EXTRACTED #community/proxy_statuspy

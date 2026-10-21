@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "UserSessionManager (7)"
+community: "export_bot"
 location: "L681"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_7
+  - community/export_bot
 ---
 
 # TestExtractUserId
@@ -18,8 +18,8 @@ tags:
 - [[dot-test_session_context_priority()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_7
+#graphify/code #graphify/EXTRACTED #community/export_bot

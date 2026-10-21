@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[BT5c streamingchunking questions should return output delivery policy with…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[LogSanitizer PII-Scrubbing Log Filter]] - code - gateway/security/log_sanitizer.py
+- [[Test Log Sanitizer PII Scrubbing]] - code - gateway/tests/test_log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/test_streaming_chunking_probe_gets_output_delivery_policy_notice
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-
-## Top bridge nodes
-- [[dot-test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - degree 2, connects to 1 community

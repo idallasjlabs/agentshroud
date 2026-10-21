@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions"
+community: "notion"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
+  - community/notion
 ---
 
 # Example: Multi-Step Tool Use
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
+#graphify/document #graphify/EXTRACTED #community/notion

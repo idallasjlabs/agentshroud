@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes,     aud]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_fake_kokoro_pipeline()]] - code - gateway/tests/test_voice_gateway.py
-- [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - rationale - gateway/tests/test_voice_gateway.py
-- [[synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[test_tts_resamples_24000_to_16000()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_via_kokoro()]] - code - gateway/tests/test_voice_gateway.py
+- [[find-sessions.sh]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[find-sessions.sh script]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[list_sessions()]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[tmuxSKILL]] - document - skills/openclaw/tmux/SKILL.md
+- [[usage()_3]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[usage()_4]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[wait-for-text.sh]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[wait-for-text.sh script]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_agentshroud-gateway]]
+- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
 
 ## Top bridge nodes
-- [[_fake_kokoro_pipeline()]] - degree 5, connects to 1 community
-- [[test_tts_resamples_24000_to_16000()]] - degree 3, connects to 1 community
-- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - degree 3, connects to 1 community
-- [[test_tts_synthesize_via_kokoro()]] - degree 3, connects to 1 community
+- [[tmuxSKILL]] - degree 4, connects to 2 communities

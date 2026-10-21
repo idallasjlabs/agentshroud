@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (8)"
+community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
 location: "L770"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_8
+  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
 ---
 
 # TestIsPathAllowedForUser
@@ -21,8 +21,8 @@ tags:
 - [[dot-test_users_heuristic_denied()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_8
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Quality_Gates_14_jobs_6_workflows

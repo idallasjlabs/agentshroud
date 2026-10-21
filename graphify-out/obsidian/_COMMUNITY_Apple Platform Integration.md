@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Post-v1.0.0 Roadmap]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Apple Platform Integration]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Apple Watch Support]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Control Center Widget (iPhone + macOS)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Implementation Notes]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[Push Notifications (iPhone + Mac + Apple Watch)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
-- [[ROADMAP-POST-v1.0]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[Synthetic v1modelsid shim for hermes v0.16.0 OAuth-token preflight incompatibility]] - rationale - gateway/tests/test_v1_models_synthetic.py
+- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - rationale - gateway/tests/test_v1_models_synthetic.py
+- [[client()_2]] - code - gateway/tests/test_v1_models_synthetic.py
+- [[test_v1_messages_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
+- [[test_v1_models_get_returns_synthetic_200()]] - code - gateway/tests/test_v1_models_synthetic.py
+- [[test_v1_models_post_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
+- [[test_v1_models_synthetic.py]] - code - gateway/tests/test_v1_models_synthetic.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 7
 TABLE source_file, type FROM #community/Apple_Platform_Integration
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_api.py (2)]]
+
+## Top bridge nodes
+- [[client()_2]] - degree 3, connects to 1 community

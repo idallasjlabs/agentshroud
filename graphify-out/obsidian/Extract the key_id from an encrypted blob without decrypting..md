@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "KillSwitchMonitor (2)"
+community: "PortManager"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/PortManager
 ---
 
 # Extract the key_id from an encrypted blob without decrypting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_blob_key_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

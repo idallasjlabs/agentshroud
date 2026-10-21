@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[Core framework pins fastapi, uvicorn, pydantic, pydantic-settings, aiosqlite, httpx, docker SDK]] - concept - gateway/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 

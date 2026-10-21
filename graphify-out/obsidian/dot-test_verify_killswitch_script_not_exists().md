@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "EgressFilterConfig (4)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressFilterConfig_4
 ---
 
 # .test_verify_killswitch_script_not_exists()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[Test verification when kill switch script does not exist.]] - `rationale_for` [EXTRACTED]
 - [[TestKillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "03-data.md"
+community: "canvas_proxy_app"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/03-datamd
+  - community/canvas_proxy_app
 ---
 
 # Entity Relationship Diagram (ledger, approval_items)
@@ -17,4 +17,4 @@ tags:
 - [[State Machine — Approval Queue Item Lifecycle]] - `shares_data_with` [INFERRED]
 - [[dataREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/03-datamd
+#graphify/concept #graphify/INFERRED #community/canvas_proxy_app

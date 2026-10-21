@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "_HeadFakeClient"
-location: "L818"
+community: "test_main_endpoints.py"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_HeadFakeClient
+  - community/test_main_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeClient]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[dot-test_full_attestation_chain()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_no_sbom_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAiModelSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-_redact_match()]] - code - gateway/security/prompt_protection.py
+- [[Match]] - code - gateway/security/prompt_protection.py
+- [[Replace a regex match with a redaction placeholder.]] - rationale - gateway/security/prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_Deploying AgentShroud on macOS (Apple Silicon  Intel)]]
 
 ## Top bridge nodes
-- [[TestAiModelSupplyChain]] - degree 3, connects to 1 community
-- [[dot-test_full_attestation_chain()]] - degree 2, connects to 1 community
+- [[dot-_redact_match()]] - degree 3, connects to 1 community

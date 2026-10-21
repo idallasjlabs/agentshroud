@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "plan_remediation"
+community: "Path (3)"
 location: "55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/Path_3
 ---
 
 # _OPENCLAW_CVE_REGISTRY
@@ -18,4 +18,4 @@ tags:
 - [[test_no_entry_id_looks_like_a_cve]] - `calls` [EXTRACTED]
 - [[test_real_registry_plan_is_internally_consistent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/Path_3

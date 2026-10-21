@@ -1,33 +1,32 @@
 ---
 type: community
-members: 20
+members: 19
 ---
 
 # TestBuildCollaboratorSafeInfoResponse
 
-**Members:** 20 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[dot-_resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-agentsskillsi-bsSKILL]] - document - .agents/skills/i-bs/SKILL.md
+- [[Anti-Patterns to Flag_15]] - document - .agents/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist]] - document - .agents/skills/i-bs/SKILL.md
+- [[Brand System Components]] - document - .agents/skills/i-bs/SKILL.md
+- [[Color Token Definition]] - document - .agents/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce]] - document - .agents/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules]] - document - .agents/skills/i-bs/SKILL.md
+- [[Dependencies_15]] - document - .agents/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)]] - document - .agents/skills/i-bs/SKILL.md
+- [[File & Directory Conventions]] - document - .agents/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables]] - document - .agents/skills/i-bs/SKILL.md
+- [[Patterns by Output Type]] - document - .agents/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - document - .agents/skills/i-bs/SKILL.md
+- [[Role_48]] - document - .agents/skills/i-bs/SKILL.md
+- [[Rules_16]] - document - .agents/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)]] - document - .agents/skills/i-bs/SKILL.md
+- [[Typography Scale]] - document - .agents/skills/i-bs/SKILL.md
+- [[Validate contrast ratio]] - document - .agents/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide]] - document - .agents/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 3 communities
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - degree 10, connects to 1 community
+- [[Skill Branding Specialist (BS)]] - degree 8, connects to 1 community
+- [[Validate contrast ratio]] - degree 2, connects to 1 community

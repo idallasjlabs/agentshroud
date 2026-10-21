@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "TestDomainValidationHelper (2)"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper_2
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # TestKeyRotationManager
 
 ## Connections
-- [[dot-manager()_1]] - `method` [EXTRACTED]
+- [[dot-manager()_2]] - `method` [EXTRACTED]
 - [[dot-sample_credential()]] - `method` [EXTRACTED]
 - [[dot-test_get_credential_status()]] - `method` [EXTRACTED]
 - [[dot-test_get_health_score_all_healthy()]] - `method` [EXTRACTED]
@@ -20,12 +20,12 @@ tags:
 - [[dot-test_register_credential()]] - `method` [EXTRACTED]
 - [[dot-test_register_validator()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[Test key rotation manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper_2
+#graphify/code #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse

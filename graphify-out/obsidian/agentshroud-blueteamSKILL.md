@@ -1,18 +1,18 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "MiddlewareManager (2)"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/TeamsConfig
 ---
 
 # agentshroud-blueteam/SKILL.md
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 - [[AgentShroud Module Inventory (Blue Team)]] - `references` [INFERRED]
 - [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - `references` [INFERRED]
 - [[Module Coverage Heat Map Legend (EMAC—)]] - `references` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig

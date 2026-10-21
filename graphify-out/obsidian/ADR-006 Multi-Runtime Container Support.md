@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "AlertTelegramRelay"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/AlertTelegramRelay
 ---
 
 # ADR-006: Multi-Runtime Container Support
@@ -32,4 +32,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `conceptually_related_to` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

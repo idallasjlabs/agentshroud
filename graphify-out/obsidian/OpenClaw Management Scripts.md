@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "OpenClaw Management Scripts"
+community: "iCloud Services (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/iCloud_Services_2
 ---
 
 # OpenClaw Management Scripts
@@ -17,7 +17,7 @@ tags:
 - [[File Locations_1]] - `contains` [EXTRACTED]
 - [[Quick Reference_7]] - `contains` [EXTRACTED]
 - [[Security Notes_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 - [[check-status.sh_1]] - `contains` [EXTRACTED]
 - [[devices.sh_1]] - `contains` [EXTRACTED]
 - [[dockerscripts README]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[set-model.sh_1]] - `contains` [EXTRACTED]
 - [[telegram.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2

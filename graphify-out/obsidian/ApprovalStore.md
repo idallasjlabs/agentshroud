@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[dot-__init__()_141]] - `method` [EXTRACTED]
-- [[dot-close()_11]] - `method` [EXTRACTED]
-- [[dot-initialize()_2]] - `method` [EXTRACTED]
-- [[dot-load_all()]] - `method` [EXTRACTED]
+- [[dot-__init__()_190]] - `method` [EXTRACTED]
+- [[dot-close()_17]] - `method` [EXTRACTED]
+- [[dot-initialize()_3]] - `method` [EXTRACTED]
+- [[dot-load_all()_1]] - `method` [EXTRACTED]
 - [[dot-load_pending()]] - `method` [EXTRACTED]
-- [[dot-save()_1]] - `method` [EXTRACTED]
+- [[dot-save()_2]] - `method` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
 - [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
 - [[dot-test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
 - [[dot-update_status()]] - `method` [EXTRACTED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_77]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
@@ -35,7 +35,7 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MFAGuard_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_50]] - `uses` [INFERRED]
+- [[Path_63]] - `uses` [INFERRED]
 - [[SQLite-backed persistence for approval queue items.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
@@ -43,11 +43,11 @@ tags:
 - [[TestAutoExpire]] - `uses` [INFERRED]
 - [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
-- [[TestPersistence_1]] - `uses` [INFERRED]
+- [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
@@ -71,4 +71,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

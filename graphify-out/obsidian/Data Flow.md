@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "PIIConfig"
+community: "MiddlewareManager (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager_4
 ---
 
 # Data Flow.md
@@ -18,10 +18,10 @@ tags:
 - [[EgressFilter_2]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
-- [[PromptGuard_1]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `references` [EXTRACTED]
 - [[SecurityPipeline_1]] - `references` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 - [[ledger.py]] - `references` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PIIConfig
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

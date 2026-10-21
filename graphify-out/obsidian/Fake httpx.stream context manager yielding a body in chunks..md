@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "TelegramAPIProxy (3)"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/TelegramAPIProxy_3
 ---
 
 # Fake httpx.stream context manager yielding a body in chunks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_StreamResp]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3

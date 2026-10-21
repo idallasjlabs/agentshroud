@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
+community: "Output Sections (ALL required) (2)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/Output_Sections_ALL_required_2
 ---
 
 # HTTP 401 — Unauthorized
@@ -18,4 +18,4 @@ tags:
 - [[Token Reset]] - `contains` [EXTRACTED]
 - [[Token Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required_2

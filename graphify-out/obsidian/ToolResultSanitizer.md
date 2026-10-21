@@ -12,7 +12,7 @@ tags:
 # ToolResultSanitizer
 
 ## Connections
-- [[dot-__init__()_24]] - `method` [EXTRACTED]
+- [[dot-__init__()_18]] - `method` [EXTRACTED]
 - [[dot-_domain_matches_pattern()]] - `method` [EXTRACTED]
 - [[dot-_extract_code_blocks()]] - `method` [EXTRACTED]
 - [[dot-_is_domain_allowed()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-sanitize()_2]] - `method` [EXTRACTED]
 - [[dot-sanitize_images()]] - `method` [EXTRACTED]
 - [[dot-sanitize_links()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_5]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_1]] - `calls` [EXTRACTED]
 - [[dot-test_performance_with_large_content()]] - `calls` [EXTRACTED]
 - [[dot-test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
 - [[dot-test_warn_mode()]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[Any]] - `uses` [INFERRED]
 - [[Enhanced markdown sanitizer with configurable domain allowlist.]] - `rationale_for` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "_pcm_bytes"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/_pcm_bytes
 ---
 
 # test_malformed_request_line_returns_400()
@@ -17,4 +17,4 @@ tags:
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

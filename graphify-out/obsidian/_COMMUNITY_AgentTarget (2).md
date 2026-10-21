@@ -1,88 +1,67 @@
 ---
 type: community
-members: 75
+members: 54
 ---
 
 # AgentTarget (2)
 
-**Members:** 75 nodes
+**Members:** 54 nodes
 
 ## Members
-- [[dot-test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_compose_sets_nemotron_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_hermes_dockerfile_installs_xxd()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_hermes_openai_api_key_wired_via_secret()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_hermes_soul_documents_ssh_hosts()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_hermes_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_lifespan_op_prewarm_guarded_against_pytest()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_main_compose_sets_openclaw_bind_lan_default()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_defaults_to_qwen_local_model()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_script_emits_per_chat_group_agents()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_script_recovers_corrupt_json()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_script_seeds_group_allowlist()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_script_sets_control_ui_allowed_origins()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_patch_script_uses_multi_group_allowlist_var()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_ssh_config_allows_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_openclaw_version_pin_is_consistent_across_bot_images()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_patch_slack_sdk_pong_patch_is_idempotent()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_proxy_allowed_network_default_includes_current_subnets()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_start_control_center_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_notifications_use_minimal_message_format()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_notifications_wait_for_runtime_readiness()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_online_notice_sent_only_after_readiness_gate()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_script_skips_anthropic_when_local_model_selected()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_switch_model_script_exists_with_supported_targets()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_switch_model_script_uses_current_target_syntax()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_valid_router_url_accepted()]] - code - gateway/tests/test_config_validation.py
-- [[Bot startup should not load Anthropic secrets when Ollama local model is configu]] - rationale - gateway/tests/test_config_validation.py
-- [[Chat console launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
-- [[Control center launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
-- [[GatewayConfig validation behavior.]] - rationale - gateway/tests/test_config_validation.py
-- [[HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.]] - rationale - gateway/tests/test_config_validation.py
-- [[Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it.]] - rationale - gateway/tests/test_config_validation.py
-- [[Hermes SOUL.md must document all three lab hosts and the gateway sshexec recip]] - rationale - gateway/tests/test_config_validation.py
-- [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect']] - rationale - gateway/tests/test_config_validation.py
-- [[Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker secret.]] - rationale - gateway/tests/test_config_validation.py
-- [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content]] - rationale - gateway/tests/test_config_validation.py
-- [[Init config should seed auth profiles for cloud providers and Ollama in local mo]] - rationale - gateway/tests/test_config_validation.py
-- [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
-- [[Main compose stack should expose a single model-mode switch with localcloud ref]] - rationale - gateway/tests/test_config_validation.py
-- [[Model switch helper should support local and major cloud providers.]] - rationale - gateway/tests/test_config_validation.py
-- [[Online notice must appear after readiness probes to avoid premature status signa]] - rationale - gateway/tests/test_config_validation.py
-- [[OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' direc]] - rationale - gateway/tests/test_config_validation.py
-- [[OpenClaw patch script should default to local Ollama but keep API adapter config]] - rationale - gateway/tests/test_config_validation.py
-- [[OpenClaw's SSH client config must have Host blocks for all three lab hosts.]] - rationale - gateway/tests/test_config_validation.py
-- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (]] - rationale - gateway/tests/test_config_validation.py
-- [[Operator guidance should use valid switch_model target syntax (no legacy cloud p]] - rationale - gateway/tests/test_config_validation.py
-- [[Primary compose stack should bind OpenClaw gateway to lan by default for host Co]] - rationale - gateway/tests/test_config_validation.py
-- [[Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibili]] - rationale - gateway/tests/test_config_validation.py
-- [[Startup notification Telegram calls should be marked as system-originated.]] - rationale - gateway/tests/test_config_validation.py
-- [[Startup script should verify Telegrammodel readiness before sending online noti]] - rationale - gateway/tests/test_config_validation.py
-- [[Startup wrapper should default OpenClaw bind to loopback unless explicitly overr]] - rationale - gateway/tests/test_config_validation.py
-- [[Startupshutdown notifications should use minimal, non-identifying text.]] - rationale - gateway/tests/test_config_validation.py
-- [[TestConfigValidation]] - code - gateway/tests/test_config_validation.py
-- [[The 1Password prewarm thread must never spawn real op subprocesses under pytest.]] - rationale - gateway/tests/test_config_validation.py
-- [[agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot]] - rationale - gateway/tests/test_config_validation.py
-- [[apply-patches.js must create per-chat group-{chatId} agents for the approval rou]] - rationale - gateway/tests/test_config_validation.py
-- [[apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).]] - rationale - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must quarantine malformed JSON instead of exiting.]] - rationale - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must remove unsupported gateway.model key.]] - rationale - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must seed Telegram group allowlist when policy is all]] - rationale - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must seed control UI origins for non-loopback bind.]] - rationale - gateway/tests/test_config_validation.py
-- [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - rationale - gateway/tests/test_config_validation.py
+- [[dot-agentsskillsi-bddSKILL]] - document - .agents/skills/i-bdd/SKILL.md
+- [[dot-agentsskillsi-bsREADME]] - document - .agents/skills/i-bs/README.md
+- [[dot-agentsskillsi-ciSKILL]] - document - .agents/skills/i-ci/SKILL.md
+- [[dot-agentsskillsi-crSKILL]] - document - .agents/skills/i-cr/SKILL.md
+- [[dot-agentsskillsi-dataREADME]] - document - .agents/skills/i-data/README.md
+- [[dot-agentsskillsi-ggREADME]] - document - .agents/skills/i-gg/README.md
+- [[dot-agentsskillsi-gitopsSKILL]] - document - .agents/skills/i-gitops/SKILL.md
+- [[dot-agentsskillsi-kaizenSKILL]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[dot-agentsskillsi-mcpm-doctorREADME]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[dot-agentsskillsi-mcpmREADME]] - document - .agents/skills/i-mcpm/README.md
+- [[dot-agentsskillsi-prREADME]] - document - .agents/skills/i-pr/README.md
+- [[dot-agentsskillsi-sdlcSKILL]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[dot-agentsskillsi-sreSKILL]] - document - .agents/skills/i-sre/SKILL.md
+- [[dot-agentsskillsi-twREADME]] - document - .agents/skills/i-tw/README.md
+- [[Branding Specialist (BS)]] - document - .agents/skills/i-bs/README.md
+- [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
+- [[Feedback Guidelines]] - document - .agents/skills/i-cr/SKILL.md
+- [[Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/README.md
+- [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[MCP Tools Usage (MCPM)]] - document - .agents/skills/i-mcpm/README.md
+- [[Output Format_4]] - document - .agents/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks]] - document - .agents/skills/i-cr/SKILL.md
+- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_13]] - document - .agents/skills/i-bs/README.md
+- [[Purpose_14]] - document - .agents/skills/i-data/README.md
+- [[Purpose_15]] - document - .agents/skills/i-gg/README.md
+- [[Purpose_16]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Purpose_17]] - document - .agents/skills/i-mcpm/README.md
+- [[Purpose_18]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_19]] - document - .agents/skills/i-tw/README.md
+- [[Related Skills_1]] - document - .agents/skills/i-bs/README.md
+- [[Related Skills_2]] - document - .agents/skills/i-data/README.md
+- [[Related Skills_3]] - document - .agents/skills/i-gg/README.md
+- [[Related Skills_4]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Related Skills_5]] - document - .agents/skills/i-mcpm/README.md
+- [[Related Skills_6]] - document - .agents/skills/i-pr/README.md
+- [[Related Skills_7]] - document - .agents/skills/i-tw/README.md
+- [[Review Principles]] - document - .agents/skills/i-cr/SKILL.md
+- [[Role_11]] - document - .agents/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)]] - document - .agents/skills/i-cr/SKILL.md
+- [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
+- [[Skill ci]] - document - .agents/skills/i-ci/SKILL.md
+- [[Skill gitops]] - document - .agents/skills/i-gitops/SKILL.md
+- [[Skill kaizen]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[Skill sdlc]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[Skill sre]] - document - .agents/skills/i-sre/SKILL.md
+- [[Technical Writer (TW)]] - document - .agents/skills/i-tw/README.md
+- [[Usage_3]] - document - .agents/skills/i-bs/README.md
+- [[Usage_4]] - document - .agents/skills/i-data/README.md
+- [[Usage_5]] - document - .agents/skills/i-gg/README.md
+- [[Usage_6]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Usage_7]] - document - .agents/skills/i-mcpm/README.md
+- [[Usage_8]] - document - .agents/skills/i-pr/README.md
+- [[Usage_9]] - document - .agents/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -92,14 +71,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 4 edges to [[_COMMUNITY_test_security.py]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_AgentTarget (4)]]
+- 4 edges to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
+- 3 edges to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
+- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV) (2)]]
+- 1 edge to [[_COMMUNITY_Sprint Cadence Decision]]
+- 1 edge to [[_COMMUNITY_main]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
+- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
+- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
+- 1 edge to [[_COMMUNITY_Identity Reference - AgentShroud System]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity (2)]]
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+- 1 edge to [[_COMMUNITY_Technical Illustrator (i-ti)]]
+- 1 edge to [[_COMMUNITY_Browser Extension]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)]]
+- 1 edge to [[_COMMUNITY_OpenClaw Management Scripts]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL.md (2)]]
+- 1 edge to [[_COMMUNITY_Crash Recovery]]
+- 1 edge to [[_COMMUNITY_Turbo Fieldfare (MLX inference backend)]]
+- 1 edge to [[_COMMUNITY_TestSSRFDetection (2)]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py (2)]]
+- 1 edge to [[_COMMUNITY_MultiHostResult]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset]]
+- 1 edge to [[_COMMUNITY_AgentShroud System Architecture Document (SAD)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 — Red Team Remediation Plan]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
 
 ## Top bridge nodes
-- [[TestConfigValidation]] - degree 45, connects to 3 communities
-- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - degree 3, connects to 1 community
-- [[dot-test_invalid_router_url_rejected()]] - degree 2, connects to 1 community
-- [[dot-test_invalid_target_url_rejected()]] - degree 2, connects to 1 community
-- [[dot-test_router_url_must_be_localhost_or_openclaw()]] - degree 2, connects to 1 community
+- [[dot-agentsskillsi-crSKILL]] - degree 46, connects to 27 communities

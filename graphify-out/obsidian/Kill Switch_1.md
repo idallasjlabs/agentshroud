@@ -1,17 +1,25 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L113"
+community: "test_anthropic_openai_translator.py"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Kill Switch
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[Features_2]] - `contains` [EXTRACTED]
+- [[Mode 1 freeze]] - `contains` [EXTRACTED]
+- [[Mode 2 shutdown]] - `contains` [EXTRACTED]
+- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
+- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
+- [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

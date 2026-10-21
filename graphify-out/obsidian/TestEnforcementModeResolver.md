@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L417"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # TestEnforcementModeResolver
@@ -19,10 +19,10 @@ tags:
 - [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/soc/routerpy

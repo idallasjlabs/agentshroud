@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionManager"
+community: "TelegramAPIProxy (2)"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SessionManager
+  - community/TelegramAPIProxy_2
 ---
 
 # TestEventInjection
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SessionManager
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2

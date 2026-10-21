@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (3)"
+community: "._run_proxy()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_3
+  - community/_run_proxy
 ---
 
 # openclaw/skills/i-daedalus/SKILL.md
 
 ## Connections
-- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_3
+#graphify/document #graphify/EXTRACTED #community/_run_proxy

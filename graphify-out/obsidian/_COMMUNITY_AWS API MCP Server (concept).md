@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS API MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Test-Driven Development default (Red-Green-Refactor)]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

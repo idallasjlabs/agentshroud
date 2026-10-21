@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Scorecard Data Integrity Tests (no stub inflation)]] - code - gateway/tests/test_scorecard_integrity.py
-- [[Scorecard Domain Scorer 0-5 Scale Tests]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Skill value-stream-mapping_2]] - document - docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md
+- [[openclawskillsi-value-stream-mappingSKILL]] - document - docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

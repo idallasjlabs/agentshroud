@@ -1,22 +1,39 @@
 ---
 type: community
-members: 9
+members: 26
 ---
 
 # LOW — Informational
 
-**Members:** 9 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[C4 Root Endpoint `` Exposes System Metrics Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[CRITICAL — Must Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H4 Docker Network `agentshroud-isolated` Not Actually Isolated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H5 `dashboardws-token` Returns Master Auth Token to Browser]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H6 Session Manager Path Traversal via Crafted User ID]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[H7 Error Messages Disclose Internal Details]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[HIGH — Should Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[1Password Authentication Failed]] - document - docs/setup/setup-guide.md
+- [[1Password Integration_1]] - document - docs/setup/setup-guide.md
+- [[AgentShroud Setup Guide]] - document - docs/setup/setup-guide.md
+- [[Audit Trail Verification]] - document - docs/setup/setup-guide.md
+- [[Configure AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Container Unhealthy_1]] - document - docs/setup/setup-guide.md
+- [[Create a Service Account]] - document - docs/setup/setup-guide.md
+- [[Dashboard Security Events]] - document - docs/setup/setup-guide.md
+- [[Gmail Connection Issues]] - document - docs/setup/setup-guide.md
+- [[Health Check Verification]] - document - docs/setup/setup-guide.md
+- [[Important Notes_1]] - document - docs/setup/setup-guide.md
+- [[Optional Requirements]] - document - docs/setup/setup-guide.md
+- [[Performance Issues_1]] - document - docs/setup/setup-guide.md
+- [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
+- [[Prerequisites_6]] - document - docs/setup/setup-guide.md
+- [[Production Checklist]] - document - docs/setup/setup-guide.md
+- [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
+- [[Security Testing]] - document - docs/setup/setup-guide.md
+- [[Security Verification]] - document - docs/setup/setup-guide.md
+- [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
+- [[Supported Platforms]] - document - docs/setup/setup-guide.md
+- [[System Requirements_1]] - document - docs/setup/setup-guide.md
+- [[Tests Failing_1]] - document - docs/setup/setup-guide.md
+- [[Troubleshooting_24]] - document - docs/setup/setup-guide.md
+- [[What is AgentShroud_1]] - document - docs/setup/setup-guide.md
+- [[What's Next]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_LOW — Informational (2)]]
-- 1 edge to [[_COMMUNITY_LOW — Informational (3)]]
-- 1 edge to [[_COMMUNITY_LOW — Informational (4)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (3) (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
+- 1 edge to [[_COMMUNITY_Implement gateway-level outbound information filtering module]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (3)]]
 
 ## Top bridge nodes
-- [[New Findings]] - degree 5, connects to 3 communities
+- [[AgentShroud Setup Guide]] - degree 12, connects to 5 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "STRIDE Threat Analysis"
+community: "TestIsContainerRunning"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/STRIDE_Threat_Analysis
+  - community/TestIsContainerRunning
 ---
 
 # R - Repudiation
@@ -15,4 +15,4 @@ tags:
 - [[STRIDE Threat Analysis]] - `contains` [EXTRACTED]
 - [[Threat Non-Repudiation Bypass]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning

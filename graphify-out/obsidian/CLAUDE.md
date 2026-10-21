@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "postmortem.md"
+community: "Credential Management - 1Password Integration (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/Credential_Management_-_1Password_Integration_2
 ---
 
 # CLAUDE.md
@@ -20,4 +20,4 @@ tags:
 - [[gsd]] - `shares_data_with` [INFERRED]
 - [[postmortem]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration_2

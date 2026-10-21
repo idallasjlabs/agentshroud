@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditExporter"
+community: "The 8D Investigation Process (2)"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditExporter
+  - community/The_8D_Investigation_Process_2
 ---
 
 # TextIO
 
 ## Connections
 - [[dot-export_events()]] - `references` [EXTRACTED]
-- [[AuditEvent_1]] - `uses` [INFERRED]
-- [[AuditStore]] - `uses` [INFERRED]
+- [[AuditEvent]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AuditExporter
+#graphify/code #graphify/INFERRED #community/The_8D_Investigation_Process_2

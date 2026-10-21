@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Technical Specification (2)"
-location: "L127"
+community: "FR3: System Integrity"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/FR3_System_Integrity
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "TestProductionCompose"
 location: "L474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/TestProductionCompose
 ---
 
 # .test_guard_exception_fails_closed()
 
 ## Connections
-- [[TestContextGuard_1]] - `method` [EXTRACTED]
+- [[TestContextGuard]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

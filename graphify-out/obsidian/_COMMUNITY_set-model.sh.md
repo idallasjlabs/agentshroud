@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[set-model.sh]] - code - docker/scripts/set-model.sh
-- [[set-model.sh script]] - code - docker/scripts/set-model.sh
+- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
 
 ## Live Query (requires Dataview plugin)
 

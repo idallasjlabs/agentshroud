@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
+community: "agentshroud-ieee-paper.md"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/agentshroud-ieee-papermd
 ---
 
 # Response Timeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "test_collaborator_tracker.py"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/test_collaborator_trackerpy
 ---
 
 # TestEncodingBypass
@@ -18,8 +18,8 @@ tags:
 - [[dot-test_zero_width_space_stripped()]] - `method` [EXTRACTED]
 - [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[normalize_input()]] - `references` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

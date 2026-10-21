@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Starting a Development Task via Hermes / OpenClaw"
+community: "Mode A — Single task (5)"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Starting_a_Development_Task_via_Hermes_/_OpenClaw
+  - community/Mode_A__Single_task_5
 ---
 
 # BOT_LIVE_SKILLS_DIR
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update-bot-agents.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenClaw
+#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task_5

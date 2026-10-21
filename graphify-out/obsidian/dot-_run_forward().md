@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "AgentTarget (3)"
+community: "TestEmailSend"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/TestEmailSend
 ---
 
 # ._run_forward()
@@ -16,4 +16,4 @@ tags:
 - [[_PipelineCaptor]] - `references` [EXTRACTED]
 - [[_make_mock_app_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

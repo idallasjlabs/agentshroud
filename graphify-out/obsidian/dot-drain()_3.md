@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "WebProxy"
-location: "L98"
+community: "Usage"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Usage
 ---
 
 # .drain()
 
 ## Connections
-- [[_MockWriter_1]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
+- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/Usage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "rationale"
-community: "is_overloaded"
+community: "ConsentFramework"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/ConsentFramework
 ---
 
 # Return (True, "<provider>_overloaded") for a provider capacity-error     envelop
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_overloaded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Multi-Agent Hierarchy — Claude primary, Gemini/Codex secondary/tertiary"
+community: "EnhancedApprovalQueue.wait_for_decision"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi-Agent_Hierarchy__Claude_primary_Gemini/Codex_secondary/tertiary
+  - community/EnhancedApprovalQueuewait_for_decision
 ---
 
 # Multi-Agent Hierarchy — Claude primary, Gemini/Codex secondary/tertiary
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Hierarchy__Claude_primary_Gemini/Codex_secondary/tertiary
+#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueuewait_for_decision

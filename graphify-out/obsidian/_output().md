@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "cli/main.py"
+community: "AlertDispatcher (4)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/AlertDispatcher_4
 ---
 
 # _output()
@@ -21,7 +21,7 @@ tags:
 - [[dot-test_output_table_scalar()]] - `calls` [EXTRACTED]
 - [[dot-test_output_yaml()]] - `calls` [EXTRACTED]
 - [[dot-test_output_yaml_falls_back_to_json_without_pyyaml()]] - `calls` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Print data in the requested format.]] - `rationale_for` [EXTRACTED]
 - [[_print_table()]] - `calls` [EXTRACTED]
 - [[add_collaborator()_1]] - `calls` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[stop_service()_2]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "TestSSRFDetection (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/TestSSRFDetection_2
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
@@ -18,6 +18,6 @@ tags:
 - [[Invoke Before]] - `contains` [EXTRACTED]
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 - [[Pre-Deployment Checklist]] - `contains` [EXTRACTED]
-- [[Role_43]] - `contains` [EXTRACTED]
+- [[Role_42]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2

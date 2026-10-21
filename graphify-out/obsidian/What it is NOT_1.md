@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "test_hermes_model_resolver.py"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/test_hermes_model_resolverpy
 ---
 
 # What it is NOT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy

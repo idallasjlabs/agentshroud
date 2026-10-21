@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "test_dashboard.py (2)"
+community: "lifespan()"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy_2
+  - community/lifespan
 ---
 
 # WebSocket for real-time activity feed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[activity_websocket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy_2
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

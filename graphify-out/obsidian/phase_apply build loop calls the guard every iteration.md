@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L116-L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # phase_apply build loop calls the guard every iteration
@@ -16,4 +16,4 @@ tags:
 - [[_assert_head_unchanged()]] - `references` [EXTRACTED]
 - [[phase_apply()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

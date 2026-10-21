@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (4)"
+community: "StdioConnection"
 location: "L512"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_4
+  - community/StdioConnection
 ---
 
 # When to defer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[9) GOVERNANCE & DECISION-MAKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_4
+#graphify/document #graphify/EXTRACTED #community/StdioConnection

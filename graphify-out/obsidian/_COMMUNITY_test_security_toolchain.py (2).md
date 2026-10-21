@@ -1,34 +1,39 @@
 ---
 type: community
-members: 21
+members: 26
 ---
 
 # test_security_toolchain.py (2)
 
-**Members:** 21 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[dot-test_get_fim_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_get_rootkit_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_level_to_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_empty()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_fim_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_rootkit_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_56]] - code - gateway/security/wazuh_client.py
-- [[Filter alerts to file integrity monitoring events only.      Args         alert]] - rationale - gateway/security/wazuh_client.py
-- [[Filter alerts to rootkit detection events only.      Args         alerts List]] - rationale - gateway/security/wazuh_client.py
-- [[Map Wazuh alert level to severity string.      Args         level Wazuh alert]] - rationale - gateway/security/wazuh_client.py
-- [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - rationale - gateway/security/wazuh_client.py
-- [[Path_44]] - code - gateway/security/wazuh_client.py
-- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/wazuh_client.py
-- [[TestWazuhParser]] - code - gateway/tests/test_security_toolchain.py
-- [[datetime_5]] - code - gateway/security/wazuh_client.py
-- [[get_fim_events()]] - code - gateway/security/wazuh_client.py
-- [[get_rootkit_events()]] - code - gateway/security/wazuh_client.py
-- [[level_to_severity()]] - code - gateway/security/wazuh_client.py
-- [[parse_alert()_1]] - code - gateway/security/wazuh_client.py
-- [[read_alerts()_1]] - code - gateway/security/wazuh_client.py
-- [[wazuh_client.py]] - code - gateway/security/wazuh_client.py
+- [[_send_status_beacon()]] - code - firmware/voice-terminal/main/app_main.c
+- [[audio.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
+- [[bspesp-bsp.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[do_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[esp_err.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
+- [[esp_log.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[freertosFreeRTOS.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[freertostask.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[iot_button.h stub (wakeword PTT test)]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[main()_19]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_clear_allows_fresh_tap()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_ptt_finish_ends_listening()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_ptt_finish_noop_when_idle()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_ptt_state.c]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_push_frame_suppressed_while_triggered()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_tap_in_idle_starts_listen()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[test_vad_timeout_fires_without_audio()]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[vt_agent_count()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[vt_remote_log()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c
+- [[wakeword_clear()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_ended()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_ptt_finish()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_push_frame()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tick()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_triggered()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[ws_client_handle_t]] - code - firmware/voice-terminal/main/app_main.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,18 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 12 edges to [[_COMMUNITY_graphify reference extra exports and benchmark (2)]]
+- 8 edges to [[_COMMUNITY_TestMetadataGuard]]
+- 5 edges to [[_COMMUNITY_AgentShroud Device Pairing Management]]
+- 1 edge to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
 
 ## Top bridge nodes
-- [[wazuh_client.py]] - degree 13, connects to 5 communities
-- [[read_alerts()_1]] - degree 9, connects to 3 communities
-- [[TestWazuhParser]] - degree 8, connects to 2 communities
-- [[get_fim_events()]] - degree 6, connects to 1 community
-- [[get_rootkit_events()]] - degree 6, connects to 1 community
+- [[wakeword_triggered()]] - degree 15, connects to 3 communities
+- [[wakeword_clear()]] - degree 9, connects to 3 communities
+- [[wakeword_ended()]] - degree 9, connects to 2 communities
+- [[wakeword_ptt_finish()]] - degree 6, connects to 2 communities
+- [[_send_status_beacon()]] - degree 5, connects to 2 communities

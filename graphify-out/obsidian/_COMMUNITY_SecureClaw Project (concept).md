@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureClaw Project (concept)]] - concept - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Hermes Local-Model Temperature Repetition-Loop Investigation]] - concept - CONTINUE-2026-08-17.md
 
 ## Live Query (requires Dataview plugin)
 

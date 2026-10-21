@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Common Commands_3]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Configuration_21]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Notes_10]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[apple-notesSKILL]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[bear-notesSKILL]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
-- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
+- [[ADR-007-zero-config-security]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Auto-Configuration Features]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Configuration Hierarchy]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Consequences_6]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Context_9]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Decision_9]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Mitigation_2]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Negative Consequences_5]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Positive Consequences_5]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Status_9]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
 
 ## Live Query (requires Dataview plugin)
 

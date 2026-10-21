@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # TestResourceGuard
 
 ## Connections
-- [[dot-setup_method()_15]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_11]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_brief_spike_below_debounce_does_not_alert()]] - `method` [EXTRACTED]
 - [[dot-test_check_resource_over_limit_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_check_resource_temp_files_limit()]] - `method` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[ResourceLimits]] - `uses` [INFERRED]
 - [[test_resource_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

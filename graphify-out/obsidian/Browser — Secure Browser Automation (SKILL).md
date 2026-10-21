@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "telegram_proxy.py (3)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/telegram_proxypy_3
 ---
 
 # Browser — Secure Browser Automation (SKILL)
@@ -13,14 +13,11 @@ tags:
 ## Connections
 - [[One Claw Tied Behind Your Back Security Framework]] - `references` [EXTRACTED]
 - [[Browser — Secure Browser Automation (README)]] - `references` [INFERRED]
-- [[SecureBrowser Security Config (config.yaml)]] - `shares_data_with` [EXTRACTED]
 - [[SecureBrowser Security Configuration (config.yaml)]] - `references` [EXTRACTED]
-- [[SecureBrowser class]] - `references` [EXTRACTED]
 - [[SecureBrowser._take_screenshot()]] - `references` [EXTRACTED]
 - [[SecureBrowser.click()]] - `references` [EXTRACTED]
 - [[SecureBrowser.extract()]] - `references` [EXTRACTED]
 - [[SecureBrowser.fill_field()]] - `references` [EXTRACTED]
 - [[SecureBrowser.navigate()]] - `references` [EXTRACTED]
-- [[browserFetch()_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3

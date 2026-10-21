@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_151]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Configuration  Environment Variables_15]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Docker Security Options Used]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine._cmd(args, kwargs)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.compose_up(file, detach)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.run(image, name, , ports, volumes, networks, env, privileged, caps, seccomp, detach, read_only, no_new_privileges)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Function Details_27]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Purpose_129]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Related_33]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 15
 TABLE source_file, type FROM #community/agent_isolationpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenSCAP]]
-
-## Top bridge nodes
-- [[agent_isolation.py_2]] - degree 11, connects to 1 community

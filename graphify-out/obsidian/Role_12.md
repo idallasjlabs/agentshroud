@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill: MCP Tools Usage (MCP-TOOLS) (2)"
+community: ".test_egress_callback_from_collaborator_is_rejected()"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Tools_Usage_MCP-TOOLS_2
+  - community/test_egress_callback_from_collaborator_is_rejected
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS_2
+#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected

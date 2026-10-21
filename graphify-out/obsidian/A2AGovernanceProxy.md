@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # A2AGovernanceProxy
 
 ## Connections
-- [[dot-__init__()_137]] - `method` [EXTRACTED]
+- [[dot-__init__()_135]] - `method` [EXTRACTED]
 - [[dot-_check_message_size()]] - `method` [EXTRACTED]
 - [[dot-_check_peer()]] - `method` [EXTRACTED]
 - [[dot-_check_rate_limit()]] - `method` [EXTRACTED]
@@ -21,11 +21,11 @@ tags:
 - [[dot-_process()]] - `method` [EXTRACTED]
 - [[dot-_sanitize_message()]] - `method` [EXTRACTED]
 - [[dot-complete_task()]] - `method` [EXTRACTED]
-- [[dot-get_events()_2]] - `method` [EXTRACTED]
+- [[dot-get_events()_1]] - `method` [EXTRACTED]
 - [[dot-get_peer()]] - `method` [EXTRACTED]
 - [[dot-get_summary()]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_7]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_5]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `method` [EXTRACTED]
 - [[dot-register_peer()]] - `method` [EXTRACTED]
 - [[dot-test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
 - [[dot-test_disabled_allows_all()]] - `calls` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[proxy()_3]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/apipy

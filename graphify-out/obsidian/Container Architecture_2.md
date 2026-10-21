@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (4)"
-location: "L101"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_4
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
-- [[Bot Container (`agentshroud-bot`)_1]] - `contains` [EXTRACTED]
-- [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
+- [[Development Environment_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3

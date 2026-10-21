@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice"
+community: "RBACConfig"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/RBACConfig
 ---
 
 # Test WebhookReceiver integration with session isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebhookReceiverIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

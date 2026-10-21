@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud GitHub Social Preview Image]] - image - branding/social/github-social-preview-1280x640.png
+- [[Performance Baseline v1.0.0]] - document - .benchmarks/baseline-v1.0.0.json
 
 ## Live Query (requires Dataview plugin)
 

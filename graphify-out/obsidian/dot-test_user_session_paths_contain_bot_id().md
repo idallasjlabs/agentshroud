@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (4)"
 location: "L540"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_4
 ---
 
 # .test_user_session_paths_contain_bot_id()
@@ -15,4 +15,4 @@ tags:
 - [[Session directory path must embed bot_id so filesystem confirms isolation.]] - `rationale_for` [EXTRACTED]
 - [[TestSessionPathSeparation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Path (2)"
+community: "AuditStore"
 location: "L360"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Path_2
+  - community/AuditStore
 ---
 
 # TestClient
@@ -22,4 +22,4 @@ tags:
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Path_2
+#graphify/code #graphify/INFERRED #community/AuditStore

@@ -1,227 +1,152 @@
 ---
 type: community
-members: 214
+members: 139
 ---
 
 # TrustConfig
 
-**Members:** 214 nodes
+**Members:** 139 nodes
 
 ## Members
-- [[dot-__init__()_172]] - code - gateway/security/trust_manager.py
-- [[dot-__post_init__()_8]] - code - gateway/security/trust_manager.py
-- [[dot-_apply_decay()]] - code - gateway/security/trust_manager.py
-- [[dot-_force_demotion()]] - code - gateway/security/trust_manager.py
-- [[dot-_init_db()_2]] - code - gateway/security/trust_manager.py
-- [[dot-_promotion_allowed()]] - code - gateway/security/trust_manager.py
-- [[dot-_score_to_level()]] - code - gateway/security/trust_manager.py
-- [[dot-_update_score()]] - code - gateway/security/trust_manager.py
-- [[dot-close()_14]] - code - gateway/security/trust_manager.py
-- [[dot-get_history()]] - code - gateway/security/trust_manager.py
-- [[dot-get_next_trust_level()]] - code - gateway/security/progressive_trust_config.py
-- [[dot-get_previous_trust_level()]] - code - gateway/security/progressive_trust_config.py
-- [[dot-get_trust()]] - code - gateway/security/trust_manager.py
-- [[dot-get_trust_level_order()]] - code - gateway/security/progressive_trust_config.py
-- [[dot-is_action_allowed()]] - code - gateway/security/trust_manager.py
-- [[dot-is_tool_allowed()]] - code - gateway/security/progressive_trust_config.py
-- [[dot-is_tool_allowed()_1]] - code - gateway/security/trust_manager.py
-- [[dot-record_failure()]] - code - gateway/security/trust_manager.py
-- [[dot-record_success()]] - code - gateway/security/trust_manager.py
-- [[dot-record_violation()]] - code - gateway/security/trust_manager.py
-- [[dot-register_agent()]] - code - gateway/security/trust_manager.py
-- [[dot-setup_method()_33]] - code - gateway/tests/test_security_hardening.py
-- [[dot-teardown_method()_7]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_basic_can_read()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_ipv4_mapped_ipv6_private()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_ipv4_private()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_ipv6_link_local()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_ipv6_ula()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_link_local()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_block_localhost_variants()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_custom_points()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_default_config()_8]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_default_mode_is_enforce()_6]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_default_penalties_cover_all_violation_types()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_demotion_recorded_in_history()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_enforce_mode_blocks()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_full_level_wildcard_allows_everything()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_get_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_get_trust_registered()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_get_trust_respects_stored_ceiling()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_get_trust_unregistered()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_history()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_history_empty_for_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_history_recorded()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_is_tool_allowed_per_level()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_is_tool_allowed_returns_none_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_is_tool_allowed_wildcard()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_level_order()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_mapping_is_bijective_and_total()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_monitor_mode_still_allows_permitted_tools()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_monitor_token_resolves_monitor()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_next_and_previous_levels()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_non_severe_typed_violation_does_not_force_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_promotion_granted_once_thresholds_met()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_idempotent()_1]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_register_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_renamed_rungs_map_correctly()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_score_alone_cannot_promote_with_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_score_alone_promotes_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_severe_violation_forces_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_thresholds_populated()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_tool_allowed_at_level()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_tool_denied_above_level()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_trust_deny_wins_over_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_trust_level_enforcement()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_typed_penalty_from_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_unknown_tool_falls_through_to_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_unknown_tool_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_unregistered_agent_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_unregistered_denied()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_untrusted_limited()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_untyped_violation_uses_legacy_points()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_vouching_required_for_top_rung()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[dot-vouch_for_agent()]] - code - gateway/security/trust_manager.py
-- [[A ladder with thresholds small enough for unit tests.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Apply time-based decay to score.]] - rationale - gateway/security/trust_manager.py
-- [[Check if a tool is allowed for the given trust level.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Check if an agent's trust level allows a given action.]] - rationale - gateway/security/trust_manager.py
-- [[Check the progressive ladder's threshold for promotion to target_level.]] - rationale - gateway/security/trust_manager.py
-- [[Config with strict thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Configuration for the progressive trust system.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Convert score to trust level based on thresholds.]] - rationale - gateway/security/trust_manager.py
-- [[Create a temporary trust database.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
-- [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns]] - rationale - gateway/security/progressive_trust_config.py
-- [[First-ever unit tests for the config object itself.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Get current trust level and score for an agent.]] - rationale - gateway/security/trust_manager.py
-- [[Get the next trust level for promotion, or None if already at max.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Get the previous trust level for demotion, or None if already at min.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Get trust history for an agent.]] - rationale - gateway/security/trust_manager.py
-- [[Get trust levels in ascending order.]] - rationale - gateway/security/progressive_trust_config.py
-- [[High score with too few interactions must NOT climb the ladder.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Low-trust agents should be blocked from high-risk actions.]] - rationale - gateway/tests/test_security_audit.py
-- [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
-- [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
-- [[PIISanitizer_3]] - code - gateway/tests/test_redteam_probes.py
-- [[PatternRule]] - code - gateway/security/prompt_guard.py
-- [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - rationale - gateway/security/trust_manager.py
-- [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - rationale - gateway/security/trust_manager.py
-- [[ProgressiveTrustConfig]] - code - gateway/security/trust_manager.py
-- [[ProgressiveTrustConfig_1]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[ProgressiveTrustConfig_2]] - code - gateway/security/progressive_trust_config.py
-- [[PromotionThreshold]] - code - gateway/security/progressive_trust_config.py
-- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Record a failedblocked action, decreasing trust.]] - rationale - gateway/security/trust_manager.py
-- [[Record a security violation, significantly decreasing trust.          With a pro]] - rationale - gateway/security/trust_manager.py
-- [[Record a successful action, increasing trust.]] - rationale - gateway/security/trust_manager.py
-- [[Register a new agent with initial trust.]] - rationale - gateway/security/trust_manager.py
-- [[SCRUM-78 — operational monitor↔enforce lever.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
-- [[SecurityPipeline_2]] - code - gateway/tests/test_redteam_probes.py
-- [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Stored level is the promotion ceiling when the ladder is active.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Test agent registration and initial trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test configuration options.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test that actions are gated by trust level.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust history tracking.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust survives restart.]] - rationale - gateway/tests/test_trust_manager.py
-- [[TestActionGating]] - code - gateway/tests/test_trust_manager.py
-- [[TestAgentRegistration]] - code - gateway/tests/test_trust_manager.py
-- [[TestBackwardCompat]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestConfig]] - code - gateway/tests/test_trust_manager.py
-- [[TestDriftDetectorHardened]] - code - gateway/tests/test_security_hardening.py
-- [[TestEgressSSRF]] - code - gateway/tests/test_security_hardening.py
-- [[TestEnforcementMode]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestEnforcementModeResolver]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestGatedPromotion]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestHistory]] - code - gateway/tests/test_trust_manager.py
-- [[TestPersistence_2]] - code - gateway/tests/test_trust_manager.py
-- [[TestProgressiveTrustConfigUnit]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
-- [[TestToolACLComposition]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestToolGating]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
-- [[TestTypedViolations]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[Tests for SSRF protection in egress filter.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for drift detector hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Trust levels from untrusted to verified.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Trust manager starting at untrusted.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Trust should recover after good behavior.]] - rationale - gateway/tests/test_security_audit.py
-- [[TrustConfig]] - code - gateway/security/trust_manager.py
-- [[TrustLevel_1]] - code - gateway/security/progressive_trust_config.py
-- [[TrustLevel_2]] - code - gateway/security/trust_manager.py
-- [[TrustLevel_3]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TrustManager_2]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TrustManager_3]] - code - gateway/security/trust_manager.py
-- [[TrustManager WITHOUT a progressive config must behave exactly as before.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Types of security violations.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
-- [[ViolationType]] - code - gateway/security/progressive_trust_config.py
-- [[ViolationType_1]] - code - gateway/security/trust_manager.py
-- [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[_make_tm()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[_set_state()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[manager()_2]] - code - gateway/tests/test_trust_manager.py
-- [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
-- [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
-- [[strict_config()_2]] - code - gateway/tests/test_trust_manager.py
-- [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
-- [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
-- [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
-- [[trust_db()]] - code - gateway/tests/test_trust_manager.py
-- [[trust_manager()_1]] - code - gateway/tests/test_a2a_integration.py
-- [[trust_manager()_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[trust_manager()_3]] - code - gateway/tests/test_e2e_watchtower.py
-- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
-- [[trust_manager.py_1]] - code - gateway/security/trust_manager.py
+- [[Add a domain to the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Add an egress allowdeny rule.]] - rationale - gateway/ingest_api/main.py
+- [[Approve an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
+- [[Audit feed for private-data access policy violations.]] - rationale - gateway/ingest_api/main.py
+- [[AuthRequired_2]] - code
+- [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
+- [[CIS Docker Benchmark checks for this container.]] - rationale - gateway/ingest_api/main.py
+- [[Comprehensive container security profile — runs all applicable checks.]] - rationale - gateway/ingest_api/main.py
+- [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
+- [[Cross-signal SOC correlation summary.]] - rationale - gateway/ingest_api/main.py
+- [[Deny an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
+- [[Discard (keep quarantined) a blocked message after admin review.]] - rationale - gateway/ingest_api/main.py
+- [[Discard a blocked outbound message after admin review.]] - rationale - gateway/ingest_api/main.py
+- [[Enabledisable emergency block-all for outbound egress.]] - rationale - gateway/ingest_api/main.py
+- [[Execute SSH command with validation and approval]] - rationale - gateway/ingest_api/main.py
+- [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
+- [[Fetch one report (metadata + content). Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - rationale - gateway/ingest_api/main.py
+- [[Generate comprehensive security health report.]] - rationale - gateway/ingest_api/main.py
+- [[Get DNS blocklist statistics. Returns current DNS filtering statistics from the…]] - rationale - gateway/ingest_api/main.py
+- [[Get a single ledger entry by ID Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Get kill switch monitor status and recent results. Returns Current status…]] - rationale - gateway/ingest_api/main.py
+- [[Get permissions summary for a user (admin+ only).]] - rationale - gateway/ingest_api/main.py
+- [[Get permissions summary for the current user.]] - rationale - gateway/ingest_api/main.py
+- [[HTTP CONNECT proxy traffic statistics. Shows allowedblocked counts and recent…]] - rationale - gateway/ingest_api/main.py
+- [[Ingest API (POST ingest)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[LLMProxy.get_stats]] - code - gateway/proxy/llm_proxy.py
+- [[List all configured agent targets with health status Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[List all security modules and their status.]] - rationale - gateway/ingest_api/main.py
+- [[List all users and their roles (admin+ only).]] - rationale - gateway/security/rbac.py
+- [[List configured SSH hosts (names only)]] - rationale - gateway/ingest_api/main.py
+- [[List pending interactive egress approval requests.]] - rationale - gateway/ingest_api/main.py
+- [[List quarantined blocked inbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
+- [[List quarantined blocked outbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
+- [[List recent egress attempts for dashboardSOC triage.]] - rationale - gateway/ingest_api/main.py
+- [[List report metadata (no content), newest first, optionally by bot. Cross-bot…]] - rationale - gateway/ingest_api/main.py
+- [[Persist last scanner result and emit live event-bus telemetry.]] - rationale - gateway/ingest_api/main.py
+- [[Preview egress risk heuristic for domainport combos.]] - rationale - gateway/ingest_api/main.py
+- [[Query SSH audit entries from ledger]] - rationale - gateway/ingest_api/main.py
+- [[Query the data ledger Returns paginated results with optional filters.…]] - rationale - gateway/ingest_api/main.py
+- [[Release a blocked outbound message for adminmanual resend flow.]] - rationale - gateway/ingest_api/main.py
+- [[Release a quarantined message for admin workflow follow-up.]] - rationale - gateway/ingest_api/main.py
+- [[Remove a domain from the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Remove an egress rule by domain.]] - rationale - gateway/ingest_api/main.py
+- [[Return LLM proxy statistics.]] - rationale - gateway/ingest_api/main.py
+- [[Return a paginated list of blocked domains. Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Return current private-data policy configuration and enforcement state.]] - rationale - gateway/ingest_api/main.py
+- [[Return egress rules and emergency-block status.]] - rationale - gateway/ingest_api/main.py
+- [[Return normalized scanner state + latest results for SOCdashboard views.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent security telemetry events with optional filters.]] - rationale - gateway/ingest_api/main.py
+- [[Return scanner result history for SOC timeline views.]] - rationale - gateway/ingest_api/main.py
+- [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to…]] - rationale - gateway/ingest_api/main.py
+- [[Run OpenSCAP XCCDF evaluation against the running container.]] - rationale - gateway/ingest_api/main.py
+- [[Run Trivy vulnerability scan.]] - rationale - gateway/ingest_api/main.py
+- [[Run all locally available security scanners and return consolidated results.]] - rationale - gateway/ingest_api/main.py
+- [[Run canary integrity checks.]] - rationale - gateway/ingest_api/main.py
+- [[Run kill switch verification test. Args dry_run If True (default), only…]] - rationale - gateway/ingest_api/main.py
+- [[SOC 2 Trust Service Criteria compliance coverage report. Maps active…]] - rationale - gateway/ingest_api/main.py
+- [[SSHExecRequest_1]] - code
+- [[SSHWriteFileRequest_1]] - code
+- [[Scored security health report — grade, per-tool scores, recommendations.…]] - rationale - gateway/ingest_api/main.py
+- [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - rationale - gateway/ingest_api/main.py
+- [[System Control - Live Dashboard Shows real-time system status with links to…]] - rationale - gateway/ingest_api/main.py
+- [[Trigger an immediate blocklist refresh from upstream adlists. Authentication…]] - rationale - gateway/ingest_api/main.py
+- [[Write file content to an allowlisted SSH host via structured transport. Unlike…]] - rationale - gateway/ingest_api/main.py
+- [[_active()]] - code - gateway/ingest_api/main.py
+- [[_count_by_status()]] - code - gateway/ingest_api/main.py
+- [[_execute_and_record()]] - code - gateway/ingest_api/main.py
+- [[_record_scanner_result()]] - code - gateway/ingest_api/main.py
+- [[_scanner_summary()]] - code - gateway/ingest_api/main.py
+- [[_top_reasons()]] - code - gateway/ingest_api/main.py
+- [[add()]] - code - gateway/ingest_api/main.py
+- [[add_blocked_domain()]] - code - gateway/ingest_api/main.py
+- [[container_security_profile()]] - code - gateway/ingest_api/main.py
+- [[delete]] - code
+- [[delete_ledger_entry()]] - code - gateway/ingest_api/main.py
+- [[discard_blocked_message()]] - code - gateway/ingest_api/main.py
+- [[discard_blocked_outbound()]] - code - gateway/ingest_api/main.py
+- [[egress_add_rule()]] - code - gateway/ingest_api/main.py
+- [[egress_approve()]] - code - gateway/ingest_api/main.py
+- [[egress_deny()]] - code - gateway/ingest_api/main.py
+- [[egress_emergency_block()]] - code - gateway/ingest_api/main.py
+- [[egress_log()]] - code - gateway/ingest_api/main.py
+- [[egress_pending()]] - code - gateway/ingest_api/main.py
+- [[egress_remove_rule()]] - code - gateway/ingest_api/main.py
+- [[egress_risk_preview()]] - code - gateway/ingest_api/main.py
+- [[egress_rules()]] - code - gateway/ingest_api/main.py
+- [[falco_alerts()]] - code - gateway/ingest_api/main.py
+- [[full_security_report()]] - code - gateway/ingest_api/main.py
+- [[gateway package __init__]] - code - gateway/__init__.py
+- [[get_1]] - code
+- [[get_dns_stats()]] - code - gateway/ingest_api/main.py
+- [[get_ledger_entry()]] - code - gateway/ingest_api/main.py
+- [[get_my_permissions()]] - code - gateway/ingest_api/main.py
+- [[get_report()]] - code - gateway/ingest_api/main.py
+- [[get_soc2_compliance_report()]] - code - gateway/ingest_api/main.py
+- [[get_user_permissions()]] - code - gateway/ingest_api/main.py
+- [[ingest_apimain.py]] - code - gateway/ingest_api/main.py
+- [[killswitch_status()]] - code - gateway/ingest_api/main.py
+- [[list_agents()]] - code - gateway/ingest_api/main.py
+- [[list_blocked_domains()]] - code - gateway/ingest_api/main.py
+- [[list_blocked_message_quarantine()]] - code - gateway/ingest_api/main.py
+- [[list_blocked_outbound_quarantine()]] - code - gateway/ingest_api/main.py
+- [[list_reports()]] - code - gateway/ingest_api/main.py
+- [[list_security_modules()]] - code - gateway/ingest_api/main.py
+- [[list_users_and_roles()]] - code - gateway/ingest_api/main.py
+- [[llm_proxy_stats]] - code - gateway/ingest_api/main.py
+- [[post_1]] - code
+- [[privacy_audit()]] - code - gateway/ingest_api/main.py
+- [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
+- [[proxy_status()]] - code - gateway/ingest_api/main.py
+- [[quarantine_summary()]] - code - gateway/ingest_api/main.py
+- [[query_ledger()]] - code - gateway/ingest_api/main.py
+- [[refresh_dns_blocklist()]] - code - gateway/ingest_api/main.py
+- [[release_blocked_message()]] - code - gateway/ingest_api/main.py
+- [[release_blocked_outbound()]] - code - gateway/ingest_api/main.py
+- [[remove_blocked_domain()]] - code - gateway/ingest_api/main.py
+- [[run_all_scanners()]] - code - gateway/ingest_api/main.py
+- [[run_canary_checks()]] - code - gateway/ingest_api/main.py
+- [[run_cis_benchmark()]] - code - gateway/ingest_api/main.py
+- [[run_clamav_scan()]] - code - gateway/ingest_api/main.py
+- [[run_openscap_scan()]] - code - gateway/ingest_api/main.py
+- [[run_trivy_scan()]] - code - gateway/ingest_api/main.py
+- [[scanner_history()]] - code - gateway/ingest_api/main.py
+- [[security_health_report()]] - code - gateway/ingest_api/main.py
+- [[soc_correlation()]] - code - gateway/ingest_api/main.py
+- [[soc_events()]] - code - gateway/ingest_api/main.py
+- [[soc_export()]] - code - gateway/ingest_api/main.py
+- [[soc_redirect()]] - code - gateway/ingest_api/main.py
+- [[soc_report()]] - code - gateway/ingest_api/main.py
+- [[ssh_exec()]] - code - gateway/ingest_api/main.py
+- [[ssh_history()]] - code - gateway/ingest_api/main.py
+- [[ssh_hosts()]] - code - gateway/ingest_api/main.py
+- [[ssh_write_file()]] - code - gateway/ingest_api/main.py
+- [[system_control()]] - code - gateway/ingest_api/main.py
+- [[verify_killswitch()]] - code - gateway/ingest_api/main.py
+- [[wazuh_alerts()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -231,32 +156,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 51 edges to [[_COMMUNITY_AlertDispatcher]]
-- 47 edges to [[_COMMUNITY_SecurityPipeline]]
-- 35 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 29 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 27 edges to [[_COMMUNITY_PipelineAction]]
-- 23 edges to [[_COMMUNITY_AgentRegistry]]
-- 22 edges to [[_COMMUNITY_ContextSegment]]
-- 19 edges to [[_COMMUNITY_RBACConfig]]
-- 16 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 14 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 13 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 11 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 10 edges to [[_COMMUNITY_PIIConfig]]
-- 10 edges to [[_COMMUNITY_MiddlewareManager (3)]]
-- 9 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
-- 8 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_GovernanceAction (2)]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_PipelineAction (2)]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 16 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 11 edges to [[_COMMUNITY_sync-llm-settings.sh]]
+- 6 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 5 edges to [[_COMMUNITY_pick_latest_stable]]
+- 4 edges to [[_COMMUNITY_WebContentScanner]]
+- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 3 edges to [[_COMMUNITY_deep_security_test]]
+- 2 edges to [[_COMMUNITY__is_op_reference_allowed]]
+- 2 edges to [[_COMMUNITY__make_cve]]
+- 1 edge to [[_COMMUNITY_climain.py]]
+- 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
+- 1 edge to [[_COMMUNITY_test_dashboard.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2) (2)_1]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)]]
+- 1 edge to [[_COMMUNITY_GroupConfig]]
+- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0 (2)]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX) (3)]]
+- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
 
 ## Top bridge nodes
-- [[TrustManager_3]] - degree 172, connects to 15 communities
-- [[TrustConfig]] - degree 101, connects to 10 communities
-- [[TrustLevel_2]] - degree 53, connects to 9 communities
-- [[TestTrustManager]] - degree 35, connects to 8 communities
-- [[test_security_hardening.py]] - degree 30, connects to 8 communities
+- [[ingest_apimain.py]] - degree 116, connects to 24 communities
+- [[post_1]] - degree 25, connects to 5 communities
+- [[AuthRequired_2]] - degree 66, connects to 4 communities
+- [[get_my_permissions()]] - degree 5, connects to 1 community
+- [[get_user_permissions()]] - degree 5, connects to 1 community

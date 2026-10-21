@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue (3)"
+community: "SkillGuard"
 location: "L400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_3
+  - community/SkillGuard
 ---
 
 # Mock app_state with egress approval queue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-mock_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue_3
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

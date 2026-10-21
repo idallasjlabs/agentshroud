@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[0.2 Current State ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[EXECUTIVE SUMMARY_15]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RECOVERY_PLAN_PARTIAL]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RELEASE HISTORY]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[Funnel hermes via gateway (Hermes isolation boundary)]] - rationale - scripts/tailscale-serve.sh
+- [[Funnel root path  - gateway hermes-dashboard]] - rationale - scripts/tailscale-serve.sh
+- [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[Temporary Funnel stopgap for ESP32 voice terminal]] - rationale - scripts/tailscale-serve.sh
+- [[cmd_persist]] - code - scripts/tailscale-serve.sh
+- [[cmd_start]] - code - scripts/tailscale-serve.sh
+- [[cmd_status]] - code - scripts/tailscale-serve.sh
+- [[cmd_stop]] - code - scripts/tailscale-serve.sh
+- [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,11 @@ members: 11
 TABLE source_file, type FROM #community/AgentShroud_Recovery_Plan_v040_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+
+## Top bridge nodes
+- [[cmd_start]] - degree 8, connects to 1 community
+- [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - degree 2, connects to 1 community

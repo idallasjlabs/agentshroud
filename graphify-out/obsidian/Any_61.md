@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ToolResultSanitizer (2)"
-location: "L28"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_167]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_19]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

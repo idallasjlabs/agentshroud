@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "competitive-report-*.md dated reports"
+community: "Architecture"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Architecture
 ---
 
 # OpenClaw cron: Competitive Analysis Email (Afternoon)
@@ -16,4 +16,4 @@ tags:
 - [[competitive-analysis.md artifact]] - `references` [EXTRACTED]
 - [[competitive-report-.md dated reports]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/code #graphify/EXTRACTED #community/Architecture

@@ -1,46 +1,43 @@
 ---
 type: community
-members: 33
+members: 30
 ---
 
 # KeyRotationManager (2)
 
-**Members:** 33 nodes
+**Members:** 30 nodes
 
 ## Members
-- [[dot-test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_get_credential_status_none_for_unknown()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[Base class for credential validators.]] - rationale - gateway/security/key_rotation.py
-- [[CredentialValidator]] - code - gateway/security/key_rotation.py
-- [[RotationStatus]] - code - gateway/security/key_rotation.py
-- [[Status of a credential rotation.]] - rationale - gateway/security/key_rotation.py
-- [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStatusHelpers]] - code - gateway/tests/test_key_rotation_internals.py
-- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[key_rotation.py (KeyRotationManager)]] - code - gateway/security/key_rotation.py
-- [[key_rotation_config.py (KeyRotationConfig)]] - code - gateway/security/key_rotation_config.py
-- [[manager()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[test_key_rotation_internals.py]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-generate_compose()]] - code - gateway/security/agent_isolation.py
+- [[dot-get()_2]] - code - gateway/security/agent_isolation.py
+- [[dot-list_agents()]] - code - gateway/security/agent_isolation.py
+- [[dot-verify_network_isolation()]] - code - gateway/security/agent_isolation.py
+- [[dot-verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
+- [[dot-verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
+- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
+- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Description_5]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Description_6]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Effect_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
+- [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
+- [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
+- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
+- [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Related Notes_30]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Related Notes_31]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Value_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Values_2]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
+- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
+- [[agent_isolation.py]] - code - gateway/security/agent_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,18 +47,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_UserSessionManager (2)]]
-- 11 edges to [[_COMMUNITY_TestDomainValidationHelper]]
-- 10 edges to [[_COMMUNITY_KeyRotationManager]]
-- 5 edges to [[_COMMUNITY_Restart Procedure]]
-- 4 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
-- 3 edges to [[_COMMUNITY_KeyRotationManager (3)]]
-- 2 edges to [[_COMMUNITY_TestDomainValidationHelper (2)]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 11 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 2 edges to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_test_playback_state.c]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)_1]]
 
 ## Top bridge nodes
-- [[CredentialValidator]] - degree 21, connects to 7 communities
-- [[RotationStatus]] - degree 20, connects to 7 communities
-- [[test_key_rotation_internals.py]] - degree 17, connects to 5 communities
-- [[TestRotateGuardBranches]] - degree 11, connects to 3 communities
-- [[TestReadFrom1Password]] - degree 10, connects to 3 communities
+- [[agent_isolation.py]] - degree 11, connects to 4 communities
+- [[dot-get()_2]] - degree 7, connects to 1 community
+- [[dot-verify_shared_nothing()]] - degree 7, connects to 1 community
+- [[dot-list_agents()]] - degree 6, connects to 1 community
+- [[dot-verify_network_isolation()]] - degree 6, connects to 1 community

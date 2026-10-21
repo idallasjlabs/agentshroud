@@ -1,19 +1,19 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "icloud/scripts/calendar.js"
+community: "TestAuditTrail"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/icloud/scripts/calendarjs
+  - community/TestAuditTrail
 ---
 
 # makeRequest()
 
 ## Connections
 - [[createEvent()_3]] - `calls` [EXTRACTED]
-- [[icloudscriptscalendar.js]] - `contains` [EXTRACTED]
+- [[customicloudscriptscalendar.js]] - `contains` [EXTRACTED]
 - [[listEvents()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/TestAuditTrail

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "rationale"
-community: "test_us_ssn_regex_tightened.py"
+community: "web_config.py"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_us_ssn_regex_tightenedpy
+  - community/web_configpy
 ---
 
 # A competitive-intel body with multiple CVEs is not collapsed into redaction tags
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cve_dense_report_body_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy
+#graphify/rationale #graphify/EXTRACTED #community/web_configpy

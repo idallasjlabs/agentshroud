@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry (2)"
+community: "KeyRotationManager (2)"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/KeyRotationManager_2
 ---
 
 # .generate_compose()
@@ -17,4 +17,4 @@ tags:
 - [[Generate Docker Compose config for all registered agents.]] - `rationale_for` [EXTRACTED]
 - [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2

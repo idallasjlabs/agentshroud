@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
 ---
 
 # UX / Design — One Sprint Ahead
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Team]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3

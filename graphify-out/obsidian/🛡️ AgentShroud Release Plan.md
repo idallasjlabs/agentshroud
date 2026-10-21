@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
+community: "mcp_inspector.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/mcp_inspectorpy
 ---
 
 # 🛡️ AgentShroud Release Plan
@@ -31,4 +31,4 @@ tags:
 - [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - `contains` [EXTRACTED]
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_11]] - `calls` [EXTRACTED]
-- [[dot-__init__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_2]] - `calls` [EXTRACTED]
+- [[dot-__init__()_6]] - `method` [EXTRACTED]
 - [[dot-check()]] - `method` [EXTRACTED]
 - [[dot-reset()]] - `method` [EXTRACTED]
 - [[dot-test_rate_limiter_reset()]] - `calls` [EXTRACTED]
@@ -26,8 +26,8 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
 - [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
@@ -37,6 +37,6 @@ tags:
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxyConfig
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

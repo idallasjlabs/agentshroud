@@ -1,26 +1,24 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
-type: "code"
-community: "WebContentScanner"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+type: "document"
+community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
 ---
 
 # web_content_scanner.py
 
 ## Connections
-- [[ContentFinding]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[FindingSeverity]] - `contains` [EXTRACTED]
-- [[ScanResult]] - `contains` [EXTRACTED]
-- [[WebContentScanner]] - `contains` [EXTRACTED]
-- [[clamav_scanner.py]] - `semantically_similar_to` [INFERRED]
-- [[test_xml_dtd_control.py]] - `imports_from` [EXTRACTED]
-- [[url_analyzer.py]] - `references` [EXTRACTED]
-- [[web_config.py]] - `references` [EXTRACTED]
-- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[Configuration  Environment Variables_14]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Injection Pattern Weights]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
+- [[Related_32]] - `contains` [EXTRACTED]
+- [[Responsibilities_30]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run

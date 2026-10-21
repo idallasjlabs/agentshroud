@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "tts.py"
+community: "AgentShroud Security Verification (13-check driver)"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # Split an agent reply into ordered sentence-sized TTS chunks.      Applies normal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[split_for_speech()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ttspy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Personal AI Assistants_1]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
+- [[CVE-2026-9367 — command injection bypass via terminal_tool]] - document - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,43 +1,44 @@
 ---
 type: community
-members: 30
+members: 31
 ---
 
 # Job details
 
-**Members:** 30 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[AgentShroud Daily Check-in]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[AgentShroud Weekly Summary]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Daily Component Health Digest]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Daily Memory Journal]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Coding-Agent CLIs]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Local Inference Engines]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Mac Clustering]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Model Version Tracker]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Personal AI Assistants]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Email Today in AI]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Job details]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Monthly Chaos Engineering Drill]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter Coding-Agent CLIs]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter Local Inference Engines]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter Mac Clustering]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter Model Version Tracker]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Newsletter Personal AI Assistants]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[OMLX MoE Streaming Health Check]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Today in AI]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Turbo Fieldfare Fix Watch]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Weekly Hermes Stability Report]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Weekly Kaizen Review]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Weekly job-log cleanup]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[jira-weekly-review]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
+- [[dot-__init__()_104]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[dot-confident()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Any_37]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Lowercase alphanumericunderscore tokens, minus stopwords and short noise.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Match a single registry entry to at most one advisory, honestly.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[MatchResult]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Namespace]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Outcome of matching one registry entry to the advisory feed.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Path_25]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[build_id_plan()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[compute_stats()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[fetch_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[gather_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_registry()_1]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_snapshot()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[main()_16]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[match_entry()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[migrate-cve-registry-ghsa.py]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[render_manual_review()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[rewrite_registry_text()_1]] - code - scripts/migrate-cve-registry-ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,7 +48,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 1 edge to [[_COMMUNITY_First iteration ingests + records; second sees dedup and skips. (2)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[Job details]] - degree 30, connects to 1 community
+- [[Counter]] - degree 4, connects to 2 communities

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "create_auth_dependency"
-location: "L15"
+community: "OpenClaw Bot SSH Configuration"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

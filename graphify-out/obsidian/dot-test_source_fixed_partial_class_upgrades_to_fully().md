@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t"
+community: "Path"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/Path
 ---
 
 # .test_source_fixed_partial_class_upgrades_to_fully()
@@ -16,4 +16,4 @@ tags:
 - [[_entry()]] - `calls` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/Path

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill architecture-review_1]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
-- [[hermesskillsi-architecture-reviewSKILL]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
+- [[Secure Multi-Stage Docker Build (builder discarded)]] - rationale - docs/archive/SECURITY.md
+- [[Zero-Trust Build (source never touches the host)]] - rationale - docs/archive/SECURITY-AUDIT.md
 
 ## Live Query (requires Dataview plugin)
 

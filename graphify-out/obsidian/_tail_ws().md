@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "test_cli_coverage.py"
+community: "1. GitHub MCP Authentication Reset (2)"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # _tail_ws()
@@ -20,4 +20,4 @@ tags:
 - [[tail()_1]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

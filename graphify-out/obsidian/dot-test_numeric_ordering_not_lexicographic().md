@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_stable"
+community: "TestFullAccessMiddlewareBypass"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # .test_numeric_ordering_not_lexicographic()
@@ -16,4 +16,4 @@ tags:
 - [[TestPickLatestStable]] - `method` [EXTRACTED]
 - [[pick_latest_stable()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

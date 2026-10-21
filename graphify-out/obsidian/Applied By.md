@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "iCloud Services"
-location: "L43"
+community: "test_collaborator_tracker.py (3)"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/test_collaborator_trackerpy_3
 ---
 
 # Applied By
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

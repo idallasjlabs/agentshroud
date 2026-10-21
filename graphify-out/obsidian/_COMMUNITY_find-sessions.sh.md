@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[find-sessions.sh]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[find-sessions.sh script]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[list_sessions()]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[tmuxSKILL]] - document - skills/openclaw/tmux/SKILL.md
-- [[usage()_3]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[usage()_4]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
-- [[wait-for-text.sh]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
-- [[wait-for-text.sh script]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[Default Ports]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Environment Variables]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Key Class `PortManager`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Purpose_4]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Related Notes_8]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[`resolve_ports(desired dictstr, int) → dictstr, int`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[port_manager.py_2]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[port_manager.py_1]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/find-sessionssh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_tmux Session Control]]
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
-
-## Top bridge nodes
-- [[tmuxSKILL]] - degree 4, connects to 2 communities

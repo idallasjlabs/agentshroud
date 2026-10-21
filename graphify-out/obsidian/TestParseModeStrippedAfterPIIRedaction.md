@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "All Dependencies.md (2)"
 location: "L4330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/All_Dependenciesmd_2
 ---
 
 # TestParseModeStrippedAfterPIIRedaction
@@ -18,10 +18,10 @@ tags:
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - `method` [EXTRACTED]
 - [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_2

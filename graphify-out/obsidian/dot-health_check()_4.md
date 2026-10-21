@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "AgentTarget (7)"
-location: "L389"
+community: "Approval Queue (human-in-the-loop)"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_7
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # .health_check()
 
 ## Connections
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
-- [[Check health of one or all agent targets          Args             target Spec]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_7
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

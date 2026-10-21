@@ -1,0 +1,27 @@
+---
+type: community
+members: 4
+---
+
+# ApprovalQueueConfig (5) (4)
+
+**Members:** 4 nodes
+
+## Members
+- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[⚠️ Potential Security Theater Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[✅ Genuine Security Value Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🎯 Overall Assessment GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/ApprovalQueueConfig_5_4
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+
+## Top bridge nodes
+- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - degree 4, connects to 1 community

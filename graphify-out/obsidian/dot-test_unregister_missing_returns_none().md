@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_a2a_policy.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_a2a_policypy
 ---
 
 # .test_unregister_missing_returns_none()
@@ -15,4 +15,4 @@ tags:
 - [[AgentRegistry]] - `calls` [EXTRACTED]
 - [[TestAgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard (2)"
+community: "SessionManager"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/SessionManager
 ---
 
 # .test_v1_endpoint_is_defined()
@@ -15,4 +15,4 @@ tags:
 - [[TestLLMProxyEndpoints]] - `method` [EXTRACTED]
 - [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

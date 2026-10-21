@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "_make_proxy()"
+location: "L152"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/EXTRACTED
+  - community/_make_proxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_63]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()]] - `references` [EXTRACTED]
+- [[AgentTarget_2]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/incident-response.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L572"
+community: "models.py"
+location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/modelspy
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Contact Information]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/modelspy

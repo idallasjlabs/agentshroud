@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (3)"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_3
 ---
 
 # .test_hermes_violation_does_not_affect_openclaw_trust()
@@ -15,4 +15,4 @@ tags:
 - [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - `rationale_for` [EXTRACTED]
 - [[TestCrossBotTrustPivot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3

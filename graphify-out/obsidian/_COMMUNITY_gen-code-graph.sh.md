@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # gen-code-graph.sh
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - concept - scripts/gen-code-graph.sh
-- [[gen-code-graph.sh]] - code - scripts/gen-code-graph.sh
-- [[gen-code-graph.sh script]] - code - scripts/gen-code-graph.sh
+- [[Gateway container (8 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Hermes container — Not scanned]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[OpenClaw container (17 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§5 — Trivy Container Scan Results]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,9 @@ members: 3
 TABLE source_file, type FROM #community/gen-code-graphsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Error Index.md (3)]]
+
+## Top bridge nodes
+- [[§5 — Trivy Container Scan Results]] - degree 4, connects to 1 community

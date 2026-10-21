@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "One Shroud Over Every Wire (founding mantra)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)
@@ -20,4 +20,4 @@ tags:
 - [[triage_agent_full()]] - `references` [EXTRACTED]
 - [[update-agentshroud.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

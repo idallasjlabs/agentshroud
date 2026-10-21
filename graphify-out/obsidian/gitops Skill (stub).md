@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gitops/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
+community: "Implementation Status"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Implementation_Status
 ---
 
 # gitops Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/INFERRED #community/Implementation_Status

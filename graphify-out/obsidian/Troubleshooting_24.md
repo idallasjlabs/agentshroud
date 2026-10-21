@@ -1,20 +1,23 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L247"
+community: "LOW — Informational"
+location: "L787"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/LOW__Informational
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[Container unhealthy]] - `contains` [EXTRACTED]
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
-- [[Telegram bot not responding]] - `contains` [EXTRACTED]
+- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
+- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
+- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_2]] - `contains` [EXTRACTED]
+- [[Tests Failing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

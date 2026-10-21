@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "app_main.c"
+community: "System Instructions: Credential Security (Ultra-Conservative)"
 location: "L385"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/app_mainc
+  - community/System_Instructions_Credential_Security_Ultra-Conservative
 ---
 
 # ui_face_set_agent()
@@ -17,4 +17,4 @@ tags:
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[voice_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/app_mainc
+#graphify/code #graphify/INFERRED #community/System_Instructions_Credential_Security_Ultra-Conservative

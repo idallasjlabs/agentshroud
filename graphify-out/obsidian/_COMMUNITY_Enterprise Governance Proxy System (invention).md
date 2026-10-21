@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
-- [[Decision_4]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
-- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
-- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
-- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1. Container Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[10. Approval Queue]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[2. Capability Dropping]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[2. Network Isolation]] - document - docs/security/container-policy.md
+- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
+- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
+- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
+- [[3. Resource Limits]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[5. Audit Ledger]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[6. DNS Filter]] - document - docs/security/security-architecture.md
+- [[7. Secrets Management]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
+- [[8. Bot Identity Separation]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
+- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
+- [[Security Controls_2]] - document - docs/security/SECURITY_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Slack Channel Setup (2)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (5)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task (3)]]
+- 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 
 ## Top bridge nodes
-- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community
+- [[Security Controls_2]] - degree 10, connects to 2 communities
+- [[2. Network Isolation]] - degree 6, connects to 1 community
+- [[Layer 2 Network Security (4 Modules)]] - degree 5, connects to 1 community
+- [[10. Approval Queue]] - degree 2, connects to 1 community

@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "openclaw/skills/i-browser/browse.js"
+community: "_wrap_response() (3)"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/browsejs
+  - community/_wrap_response_3
 ---
 
 # appendLog()
 
 ## Connections
 - [[browserFetch()_1]] - `calls` [EXTRACTED]
-- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_3

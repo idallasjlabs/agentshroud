@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "ADR-006: Multi-Runtime Container Support"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # get_collector()
 
 ## Connections
-- [[dot-setup_method()_19]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_20]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_23]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_24]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_egress_counts_as_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_denied_egress_counts_as_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

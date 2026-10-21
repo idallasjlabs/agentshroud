@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
+- [[test_wakeword_statestubsesp_err.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

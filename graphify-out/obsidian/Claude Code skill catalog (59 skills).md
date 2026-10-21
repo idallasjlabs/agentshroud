@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/SKILLS_REFERENCE.md"
 type: "concept"
-community: "Claude Code skill catalog (59 skills)"
+community: "Skill: Test-Driven Development (TDD)"
 location: "Skills by Category"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Claude Code skill catalog (59 skills)
@@ -20,4 +20,4 @@ tags:
 - [[Four-tool role hierarchy summary]] - `references` [EXTRACTED]
 - [[Podcast pipeline skills (atlas→socrates→…→oracle)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

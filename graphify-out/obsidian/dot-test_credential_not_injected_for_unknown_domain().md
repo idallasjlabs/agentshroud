@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestCredentialInjection"
+community: "multi_host_test.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCredentialInjection
+  - community/multi_host_testpy
 ---
 
 # .test_credential_not_injected_for_unknown_domain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCredentialInjection
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

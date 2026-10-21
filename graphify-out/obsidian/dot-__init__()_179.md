@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L55"
+community: "hermes/skills/i-bs/README.md"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[ANTI-HALLUCINATION CHECKLIST_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[CRITICAL RULES — READ BEFORE DOING ANYTHING_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[Competitive Intelligence Report — Standard Prompt]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[OUTPUT REQUIREMENTS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[REPORT STRUCTURE_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 1 MARKET ANALYSIS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 4 NEXT STEPS TO STAY AHEAD_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[openclawworkspacecompetitive-analysis]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[CONFIG_3]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[args_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[createEvent()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[getCredentials()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[hermesskillsi-icloudscriptscalendar.js]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[https_3]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[listEvents()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[makeRequest()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[parseCalendarData()_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[{ execSync }_1]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
 
 ## Live Query (requires Dataview plugin)
 

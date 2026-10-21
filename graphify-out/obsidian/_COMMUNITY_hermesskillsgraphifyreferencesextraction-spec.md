@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[hermesskillsgraphifyreferencesextraction-spec]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
+- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

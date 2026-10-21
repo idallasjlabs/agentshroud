@@ -12,11 +12,11 @@ tags:
 # ToolResultSanitizerConfig
 
 ## Connections
-- [[dot-__init__()_24]] - `references` [EXTRACTED]
-- [[dot-setup_method()_5]] - `calls` [EXTRACTED]
+- [[dot-__init__()_18]] - `references` [EXTRACTED]
+- [[dot-setup_method()_1]] - `calls` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_1]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()_2]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_2]] - `calls` [EXTRACTED]
 - [[dot-test_performance_with_large_content()]] - `calls` [EXTRACTED]
 - [[dot-test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
 - [[dot-test_warn_mode()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[Any]] - `uses` [INFERRED]
 - [[Configuration for tool result markdown sanitization.]] - `rationale_for` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]

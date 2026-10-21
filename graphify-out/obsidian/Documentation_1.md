@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AgentShroud™ README"
+community: "AuditExporter"
 location: "L407"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AuditExporter
 ---
 
 # Documentation
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
 - [[Development Resources]] - `contains` [EXTRACTED]
-- [[Quick Start_3]] - `contains` [EXTRACTED]
+- [[Quick Start_2]] - `contains` [EXTRACTED]
 - [[Technical Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

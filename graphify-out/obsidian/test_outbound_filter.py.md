@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter (3)"
+community: "FetchOutcome"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_3
+  - community/FetchOutcome
 ---
 
 # test_outbound_filter.py
@@ -18,4 +18,4 @@ tags:
 - [[TestIntegration_1]] - `contains` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_3
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

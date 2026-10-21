@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[Audit & Compliance (4)]] - document - docs/security/security-inventory.md
-- [[Collaborator Testing]] - document - docs/security/security-inventory.md
-- [[Encryption & Key Management (3)]] - document - docs/security/security-inventory.md
-- [[External Integrations (4)]] - document - docs/security/security-inventory.md
-- [[Inbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Infrastructure Protection (8)]] - document - docs/security/security-inventory.md
-- [[MCPTool Security (6)]] - document - docs/security/security-inventory.md
-- [[Network & Egress (6)]] - document - docs/security/security-inventory.md
-- [[Orchestration (3)]] - document - docs/security/security-inventory.md
-- [[Outbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Owner Testing]] - document - docs/security/security-inventory.md
-- [[PII & Data Protection (3)]] - document - docs/security/security-inventory.md
-- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
-- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
-- [[Security Modules (58)]] - document - docs/security/security-inventory.md
-- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
-- [[Summary_16]] - document - docs/security/security-inventory.md
-- [[Supply Chain & Browser (2)]] - document - docs/security/security-inventory.md
-- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
-- [[security-inventory]] - document - docs/security/security-inventory.md
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
+- [[dot-script_content()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_creates_incident_record()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_disconnect_exports_ledger()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_freeze_pauses_containers()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_has_confirmation_prompt()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_has_usage_function()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_invalid_mode_shows_usage()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_paranoid_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_paranoid_env_kill_switch_action()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_recommended_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_script_exists()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_script_is_executable()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_sets_strict_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_supports_disconnect_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_supports_freeze_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_supports_shutdown_mode()]] - code - gateway/tests/test_killswitch_modes.py
+- [[Kill switch configuration in example configs.]] - rationale - gateway/tests/test_killswitch_modes.py
+- [[TestKillSwitchConfig]] - code - gateway/tests/test_killswitch_modes.py
+- [[TestKillSwitchScript]] - code - gateway/tests/test_killswitch_modes.py
+- [[Verify the kill switch script structure and modes.]] - rationale - gateway/tests/test_killswitch_modes.py
+- [[test_killswitch_modes.py]] - code - gateway/tests/test_killswitch_modes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +36,3 @@ members: 21
 TABLE source_file, type FROM #community/Security_Modules_58
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-
-## Top bridge nodes
-- [[Security Modules (58)]] - degree 13, connects to 1 community

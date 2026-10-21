@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Rapid-MLX host.docker.internal trusted-hosts fix (local-llms repo)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[Regression tests for LLMProxy._suppress_qwen3_thinking. 2026-10-16 incident…]] - rationale - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[Root cause Nemotron in-band reasoning + Qwen-only no_think suffix]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[_req()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_llm_proxy_thinking_suppression.py]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_missing_model_treated_as_non_qwen()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_non_qwen_caller_supplied_effort_is_overridden_to_none()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_non_qwen_reasoning_effort_already_none_is_noop()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_qwen_list_content_gets_suffix_on_last_text_part()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_qwen_model_gets_no_think_suffix()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_qwen_model_suffix_already_present_is_noop()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[AI Models]] - document - docs/reference/QUICK_REFERENCE.md
+- [[API Keys_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Access Points]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Container Management_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Files_2]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Most Common Commands]] - document - docs/reference/QUICK_REFERENCE.md
+- [[PREREQUISITES_16]] - document - docs/reference/PREREQUISITES.md
+- [[QUICK_REFERENCE]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Quick Reference Card]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Quick Reference Commands]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Secrets Backend Auto-Detection]] - concept - docs/reference/PREREQUISITES.md
+- [[Telegram Bot]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Troubleshooting_35]] - document - docs/reference/QUICK_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results (2)]]
+- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
+- 1 edge to [[_COMMUNITY_Apple Services Setup Guide]]
+- 1 edge to [[_COMMUNITY_What You Must Do When Invoked (3)]]
+- 1 edge to [[_COMMUNITY_First Time Setup (2)]]
+- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py]]
 
 ## Top bridge nodes
-- [[test_llm_proxy_thinking_suppression.py]] - degree 12, connects to 1 community
-- [[Root cause Nemotron in-band reasoning + Qwen-only no_think suffix]] - degree 3, connects to 1 community
+- [[Quick Reference Commands]] - degree 11, connects to 2 communities
+- [[QUICK_REFERENCE]] - degree 5, connects to 2 communities
+- [[PREREQUISITES_16]] - degree 4, connects to 2 communities

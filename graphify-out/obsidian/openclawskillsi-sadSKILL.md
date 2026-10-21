@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "System Audit & Documentation (3)"
+community: "MiddlewareManager (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_3
+  - community/MiddlewareManager_7
 ---
 
 # openclaw/skills/i-sad/SKILL.md
 
 ## Connections
-- [[System Audit & Documentation_2]] - `contains` [EXTRACTED]
+- [[System Audit & Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_3
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_7

@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L558"
+community: "browser/scripts/browse.py"
+location: "L655"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # _next_ash_number()
 
 ## Connections
-- [[Any_16]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Return the next zero-padded ASH id number for an agent's registry list.]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

@@ -1,44 +1,39 @@
 ---
 type: community
-members: 31
+members: 26
 ---
 
 # CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
-**Members:** 31 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Console Access Only (Layer 2)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Credential Access Audit Logging (Layer 3)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Gateway Credential Filter (Layer 1)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Layer 1 Gateway Credential Filter (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Layer 2 Console Access Only (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Layer 3 Audit Logging (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Method 1 Console (Direct Access)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Method 2 Control UI (With Approval)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Method 3 Ask Bot to Configure (No Display)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 1 Friend Asks Your Bot for Password]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 2 You Need to See Password]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 3 You Want Bot to Configure Something]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Scenario 4 Telegram Account Compromised]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 1 Console Access (Should Work)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 2 Via Telegram (Should Be Blocked)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 3 Check Audit Log]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[✅ What the Bot CAN Do via Telegram]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[✅ Your Requirements Met]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[❌ What the Bot CANNOT Do via Telegram]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎉 Result]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎉 What We Implemented]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎓 Configuration]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🎯 Real-World Scenarios]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[📊 Summary]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[📋 Security Guarantees]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🔍 How It Works Internally]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🔐 How to Access Credentials Securely]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🚀 Next Steps]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🛡️ Protection Layers]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🧪 Testing the Protection]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[AgentShroud Security Value Proposition - Revised]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Dockerfile.gateway vault note]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Gateway pre-installed security tools (ClamAV, Trivy, OpenSCAP, 1Password CLI, spaCy)]] - concept - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP & IEC 62443 compliance validation]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP dependency note]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[OpenSCAP relationship to TrivyClamAVFalco]] - concept - docs/vault/05 - Dependencies/openscap.md
+- [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Read-only filesystem (immutable infrastructure)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 3 Prompt Injection → System Compromise]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Seccomp Profiles - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Seccomp profiles (critical, re-enable)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Security Hardening_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Ultra-conservative credential policy (multi-user threat model)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,10 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference]]
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_BotConfig (3)]]
+- 2 edges to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_troubleshooting_1]]
+- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED.md (2)]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 4 communities
+- [[AgentShroud Security Value Proposition - Revised]] - degree 13, connects to 2 communities
+- [[Security Hardening_1]] - degree 2, connects to 1 community

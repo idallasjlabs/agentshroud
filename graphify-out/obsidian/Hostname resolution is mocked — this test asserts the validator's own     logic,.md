@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Hostname resolution is mocked — this test asserts the validator's own     logic,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_callback_url_legitimate_public_urls_are_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

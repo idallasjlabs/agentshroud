@@ -8,49 +8,49 @@ members: 43
 **Members:** 43 nodes
 
 ## Members
-- [[1. Environment Overview]] - document - docs/runbooks/colima-docker-guide.md
-- [[10. Port Forwarding — Dual-Stack Bind Race (silently unreachable host port)]] - document - docs/runbooks/colima-docker-guide.md
-- [[11. Common Errors — Quick Reference]] - document - docs/runbooks/colima-docker-guide.md
-- [[12. Dev Account (agentshroud-bot) Operations]] - document - docs/runbooks/colima-docker-guide.md
-- [[2. `asb` Helper — Primary Interface]] - document - docs/runbooks/colima-docker-guide.md
-- [[3. Colima VM Lifecycle]] - document - docs/runbooks/colima-docker-guide.md
-- [[4. Disk & Resource Monitoring]] - document - docs/runbooks/colima-docker-guide.md
-- [[5. Container Management]] - document - docs/runbooks/colima-docker-guide.md
-- [[6. Volume Management]] - document - docs/runbooks/colima-docker-guide.md
-- [[7. Build Troubleshooting]] - document - docs/runbooks/colima-docker-guide.md
-- [[8. Docker System Pruning]] - document - docs/runbooks/colima-docker-guide.md
-- [[9. VPN Networking Fix (Cisco AnyConnect)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Accounts on Marvin]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check Docker disk usage from host]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check VM disk usage]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check container resource usage (live)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Check what would be removed (dry run)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Clean rebuild (safe — preserves workspace, config, SSH)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Colima & Docker Operations Guide — AgentShroud]] - document - docs/runbooks/colima-docker-guide.md
-- [[Compose Files]] - document - docs/runbooks/colima-docker-guide.md
-- [[Container Names]] - document - docs/runbooks/colima-docker-guide.md
-- [[Diagnose first real disk full vs. phantom no space]] - document - docs/runbooks/colima-docker-guide.md
-- [[Exec into a container]] - document - docs/runbooks/colima-docker-guide.md
-- [[Full wipe (destructive — removes all state)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Health status]] - document - docs/runbooks/colima-docker-guide.md
-- [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
-- [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Logs]] - document - docs/runbooks/colima-docker-guide.md
-- [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
-- [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md
-- [[Prune from inside Colima VM (use when host-side prune hangs)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Reclaim space from dangling layers in overlay2]] - document - docs/runbooks/colima-docker-guide.md
-- [[Remove specific volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Restart a single container]] - document - docs/runbooks/colima-docker-guide.md
-- [[SSH into the VM]] - document - docs/runbooks/colima-docker-guide.md
-- [[Safe prune (removes only stopped containers + unused images + build cache)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Start (required flags)]] - document - docs/runbooks/colima-docker-guide.md
-- [[Status & Info]] - document - docs/runbooks/colima-docker-guide.md
-- [[Stop  Restart]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
+- [[dot-__init__()_60]] - code - gateway/dashboard/proxy_status.py
+- [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-record_pii_redaction()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-set_mode()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-to_display()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-update_audit_status()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-update_canary()]] - code - gateway/dashboard/proxy_status.py
+- [[dot-update_direct_access()]] - code - gateway/dashboard/proxy_status.py
+- [[Collects status from all security components and generates reports.]] - rationale - gateway/dashboard/proxy_status.py
+- [[Complete proxy status report for the dashboard.]] - rationale - gateway/dashboard/proxy_status.py
+- [[Dashboard display should include all required fields.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should count PII redactions.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should default to unprotected mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should reflect proxy mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should reflect sidecar mode with warning.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should show audit chain status.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should show broken audit chain.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should show failed canary.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track canary results.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track direct access status.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track proxied messages.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Dashboard should track uptime.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[ProxyDashboard]] - code - gateway/dashboard/proxy_status.py
+- [[ProxyStatusReport]] - code - gateway/dashboard/proxy_status.py
+- [[ProxyStatusReport.to_display should produce readable strings.]] - rationale - gateway/tests/test_proxy_dashboard.py
+- [[Return human-readable dashboard strings.]] - rationale - gateway/dashboard/proxy_status.py
+- [[proxy_status.py]] - code - gateway/dashboard/proxy_status.py
+- [[test_dashboard_audit_broken()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_audit_status()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_canary_failed()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_canary_status()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_default_unprotected()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_direct_access()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_display_all_fields()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_message_tracking()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_pii_counting()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_set_proxy_mode()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_set_sidecar_mode()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_dashboard_uptime()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_proxy_dashboard.py]] - code - gateway/tests/test_proxy_dashboard.py
+- [[test_status_report_to_display()]] - code - gateway/tests/test_proxy_dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,7 +60,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
 - 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
 
 ## Top bridge nodes
-- [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community
+- [[ProxyDashboard]] - degree 27, connects to 2 communities
+- [[proxy_status.py]] - degree 4, connects to 2 communities

@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Also in v0.9.0]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Blocked By]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Components_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Goal]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Prerequisites]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Secure Voice Conversations (ElevenLabs + Twilio)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Status]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[v0.9.0 — Apple Messages Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[dot-acceptable()]] - code - gateway/security/subagent_governance.py
+- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
+- [[OutputScore]] - code - gateway/security/subagent_governance.py
+- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
+- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
+- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
+- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
+- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 4 edges to [[_COMMUNITY_AgentShroud v0.9.0 (2)]]
+- 3 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 3 edges to [[_COMMUNITY_Message Composition with MML (MIME Meta Language)]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_icloudscriptscalendar.js]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[v0.9.0 — Apple Messages Integration]] - degree 8, connects to 1 community
+- [[subagent_governance.py]] - degree 15, connects to 6 communities
+- [[OutputScore]] - degree 4, connects to 1 community

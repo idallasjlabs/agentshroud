@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # test_skill_guard.py
@@ -25,7 +25,7 @@ tags:
 - [[TestObfuscation]] - `contains` [EXTRACTED]
 - [[TestOversizedUnscannable]] - `contains` [EXTRACTED]
 - [[TestPathTraversal]] - `contains` [EXTRACTED]
-- [[TestPrivilegeEscalation_1]] - `contains` [EXTRACTED]
+- [[TestPrivilegeEscalation]] - `contains` [EXTRACTED]
 - [[TestReloadIntegration]] - `contains` [EXTRACTED]
 - [[TestScanEntrypoint]] - `contains` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

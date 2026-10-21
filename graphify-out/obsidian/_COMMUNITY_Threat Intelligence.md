@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Threat Intelligence]] - concept - docs/project/glossary.md
+- [[Audit-log-every-fetch design rationale]] - rationale - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

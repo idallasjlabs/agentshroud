@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # graphify reference: transcribe video and audio
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[dot-agentsskillsgraphifyreferencestranscribe]] - document - .agents/skills/graphify/references/transcribe.md
-- [[Step 2.5 - Transcribe video  audio files (only if video files detected)]] - document - .agents/skills/graphify/references/transcribe.md
-- [[graphify reference transcribe video and audio]] - document - .agents/skills/graphify/references/transcribe.md
+- [[Current Status_3]] - document - docs/testing/README.md
+- [[Planned Documents_3]] - document - docs/testing/README.md
+- [[Testing Documentation]] - document - docs/testing/README.md
+- [[testingREADME]] - document - docs/testing/README.md
 
 ## Live Query (requires Dataview plugin)
 

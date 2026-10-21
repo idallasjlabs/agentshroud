@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "GovernanceAction"
+community: "TestCanvasAuthHelpers"
 location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/TestCanvasAuthHelpers
 ---
 
 # ._log_event()
@@ -21,4 +21,4 @@ tags:
 - [[GovernanceEventType]] - `references` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GovernanceAction
+#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX) (2)"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_2
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
 ---
 
 # Confirmation Patterns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Interaction Design Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_2
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2

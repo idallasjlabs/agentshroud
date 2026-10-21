@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 10 Validation Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[System Verification]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py (3)]]
 
 ## Top bridge nodes
-- [[8. Performance & Testing]] - degree 5, connects to 1 community
-- [[Phase 10 Validation Checklist]] - degree 5, connects to 1 community
+- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community

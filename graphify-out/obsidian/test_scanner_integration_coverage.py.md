@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (7)"
+community: "UserSessionManager (3) (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/UserSessionManager_3_2
 ---
 
 # test_scanner_integration_coverage.py
@@ -26,7 +26,7 @@ tags:
 - [[TestDaemonConfigReader]] - `contains` [EXTRACTED]
 - [[TestDataConfidentiality]] - `contains` [EXTRACTED]
 - [[TestDockerDaemonConfig]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary]] - `contains` [EXTRACTED]
 - [[TestFluentBitSummary]] - `contains` [EXTRACTED]
 - [[TestGetSbom]] - `contains` [EXTRACTED]
 - [[TestHostOsHardening]] - `contains` [EXTRACTED]
@@ -46,12 +46,12 @@ tags:
 - [[TestRuntimeProtectionAndMalware]] - `contains` [EXTRACTED]
 - [[TestSecretsManagement]] - `contains` [EXTRACTED]
 - [[TestSocketAndPidProbes]] - `contains` [EXTRACTED]
-- [[TestSupplyChain_1]] - `contains` [EXTRACTED]
+- [[TestSupplyChain]] - `contains` [EXTRACTED]
 - [[TestTextReaders]] - `contains` [EXTRACTED]
 - [[TestTrivyImageSummaries]] - `contains` [EXTRACTED]
 - [[TestTrivySummary]] - `contains` [EXTRACTED]
 - [[TestVulnerabilityManagement]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary]] - `contains` [EXTRACTED]
 - [[_FakeResp]] - `contains` [EXTRACTED]
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[tools()]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2

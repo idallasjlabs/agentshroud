@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "TestOutputCanary"
+community: "check-vendor-compat.sh"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/check-vendor-compatsh
 ---
 
 # .test_invisible_canary_creation()
@@ -15,4 +15,4 @@ tags:
 - [[Test that invisible canaries are created properly.]] - `rationale_for` [EXTRACTED]
 - [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

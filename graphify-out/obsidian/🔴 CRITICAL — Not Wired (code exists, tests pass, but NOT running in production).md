@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "AuditChain"
+community: "Integration Guide"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/Integration_Guide
 ---
 
 # 🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)
@@ -19,4 +19,4 @@ tags:
 - [[5. LLMProxy — Never Instantiated]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditChain
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

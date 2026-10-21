@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_dashboard.py (2)"
-location: "L119"
+community: "ProgressiveLockdown"
+location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy_2
+  - community/ProgressiveLockdown
 ---
 
 # WebSocket
 
 ## Connections
-- [[approval_websocket()]] - `references` [EXTRACTED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy_2
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

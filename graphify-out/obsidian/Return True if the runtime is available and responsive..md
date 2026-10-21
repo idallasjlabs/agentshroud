@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "MiddlewareManager (6)"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/MiddlewareManager_6
 ---
 
 # Return True if the runtime is available and responsive.
 
 ## Connections
-- [[dot-health_check()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6

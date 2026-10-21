@@ -1,32 +1,27 @@
 ---
 type: community
-members: 19
+members: 14
 ---
 
 # Path (4)
 
-**Members:** 19 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[dot-do_request()]] - code - docker/bots/hermes/patch_telegram_do_request.py
-- [[dot-from_dict()_6]] - code - gateway/runtime/config.py
-- [[dot-from_env()]] - code - gateway/runtime/config.py
-- [[dot-from_env()_1]] - code - gateway/security/killswitch_config.py
-- [[dot-from_env()_2]] - code - gateway/security/memory_config.py
-- [[dot-from_file()]] - code - gateway/skills/manifest.py
-- [[dot-from_source()]] - code - gateway/skills/manifest.py
-- [[Build a ManifestEntry by reading path from disk.]] - rationale - gateway/skills/manifest.py
-- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - rationale - gateway/skills/manifest.py
-- [[Create configuration from environment variables.]] - rationale - gateway/security/memory_config.py
-- [[Load configuration from environment variables.]] - rationale - gateway/runtime/config.py
-- [[Load configuration from environment variables._1]] - rationale - gateway/security/killswitch_config.py
-- [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
-- [[PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale]] - rationale - docker/bots/hermes/patch_telegram_do_request.py
-- [[Path_45]] - code - gateway/skills/manifest.py
-- [[_Instr]] - code - docker/bots/hermes/patch_telegram_do_request.py
-- [[_wrapped()]] - code - docker/bots/hermes/patch_telegram_do_request.py
-- [[cls]] - code
-- [[patch_telegram_do_request.py]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[1Password Integration_2]] - document - docs/api/integration-guide.md
+- [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
+- [[Docker Security Scanning]] - document - docs/api/integration-guide.md
+- [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
+- [[GitHub Actions Integration]] - document - docs/api/integration-guide.md
+- [[HTTP Proxy Mode]] - document - docs/api/integration-guide.md
+- [[Integration Guide]] - document - docs/api/integration-guide.md
+- [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
+- [[MCP Server Integration]] - document - docs/api/integration-guide.md
+- [[Monitoring System Integration]] - document - docs/api/integration-guide.md
+- [[Prometheus Metrics]] - document - docs/api/integration-guide.md
+- [[Service Account Setup]] - document - docs/api/integration-guide.md
+- [[Webhook Alerts]] - document - docs/api/integration-guide.md
+- [[integration-guide]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,26 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Path]]
-- 2 edges to [[_COMMUNITY_RBACConfig (2)]]
-- 2 edges to [[_COMMUNITY_RuntimeConfig]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine (3)]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (10)]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester (2) (2)]]
 
 ## Top bridge nodes
-- [[cls]] - degree 20, connects to 12 communities
-- [[Path_45]] - degree 5, connects to 1 community
-- [[dot-from_file()]] - degree 5, connects to 1 community
-- [[dot-from_source()]] - degree 5, connects to 1 community
-- [[dot-from_dict()_6]] - degree 3, connects to 1 community
+- [[Integration Guide]] - degree 8, connects to 2 communities

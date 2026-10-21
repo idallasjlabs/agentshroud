@@ -1,124 +1,53 @@
 ---
 type: community
-members: 111
+members: 40
 ---
 
 # WebProxyConfig
 
-**Members:** 111 nodes
+**Members:** 40 nodes
 
 ## Members
-- [[dot-__init__()_2]] - code - gateway/proxy/web_proxy.py
-- [[dot-__init__()_109]] - code - gateway/proxy/http_proxy.py
-- [[dot-allowlist_config()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-allowlist_proxy()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-check()]] - code - gateway/proxy/web_proxy.py
-- [[dot-get_domain_settings()]] - code - gateway/proxy/web_config.py
-- [[dot-is_domain_allowed()]] - code - gateway/proxy/web_config.py
-- [[dot-is_domain_denied()]] - code - gateway/proxy/web_config.py
-- [[dot-reset()]] - code - gateway/proxy/web_proxy.py
-- [[dot-test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_aws_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_base64_in_query_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_case_insensitive()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_clean_comment_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_custom_denylist()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_data_exfil_instruction_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_default_mode_is_denylist()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denied_subdomain_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_denylist_mode_still_works()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_different_domains_independent()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_domain_denied()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_domain_not_in_denylist_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_empty_allowlist_blocks_everything()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_exact_match()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_github_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ignore_instructions_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_adds_security_headers()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_hidden_div()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_html_comment()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_invisible_text()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_in_meta_tag()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_listed_domain_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_allows_everything()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_pii_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_pii_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_private_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_rate_limit_blocks_excess()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_single_zwc_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ssn_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ssrf_blocked_before_allowlist_check()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_system_delimiter_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_tool_invocation_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_unlisted_domain_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_deeper_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_domain_settings()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_matches_root_domain()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_matches_subdomain()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_wildcard_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_zero_width_chars_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[Check if a domain is on the allowlist (used when mode == 'allowlist').]] - rationale - gateway/proxy/web_config.py
-- [[Check if a domain is on the denylist.]] - rationale - gateway/proxy/web_config.py
-- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
-- [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - rationale - gateway/proxy/web_config.py
-- [[Default (denylist) mode is unchanged.]] - rationale - gateway/tests/test_web_proxy.py
-- [[Default-deny allowlist unlisted domains are blocked.]] - rationale - gateway/tests/test_web_proxy.py
-- [[DomainSettings]] - code - gateway/proxy/web_config.py
-- [[EgressFilter_1]] - code - gateway/proxy/http_proxy.py
-- [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
-- [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
-- [[RateLimiter]] - code - gateway/proxy/web_proxy.py
-- [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
-- [[Single zero-width chars are normal (e.g., word joiners).]] - rationale - gateway/tests/test_web_proxy.py
-- [[TestAllowlistMode]] - code - gateway/tests/test_web_proxy.py
-- [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
-- [[TestDataExfiltration]] - code - gateway/tests/test_web_proxy.py
-- [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
-- [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
-- [[TestHiddenContent]] - code - gateway/tests/test_web_proxy.py
-- [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
-- [[TestPIIDetection_2]] - code - gateway/tests/test_web_proxy.py
-- [[TestPassthroughMode]] - code - gateway/tests/test_web_proxy.py
-- [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
-- [[TestStats_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
-- [[TestZeroWidthAttacks]] - code - gateway/tests/test_web_proxy.py
-- [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
-- [[WebProxy_1]] - code - gateway/proxy/http_proxy.py
-- [[WebProxyConfig]] - code - gateway/proxy/web_config.py
-- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
-- [[config()_2]] - code - gateway/tests/test_web_proxy.py
-- [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - rationale - gateway/tests/test_heartbeat_egress.py
-- [[passthrough_proxy()]] - code - gateway/tests/test_web_proxy.py
-- [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
-- [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
+- [[dot-__init__()_64]] - code - gateway/security/canary_tripwire.py
+- [[dot-_check_encoded()]] - code - gateway/security/canary_tripwire.py
+- [[dot-_check_plain()]] - code - gateway/security/canary_tripwire.py
+- [[dot-_normalize()]] - code - gateway/security/canary_tripwire.py
+- [[dot-_record()]] - code - gateway/security/canary_tripwire.py
+- [[dot-detection_count()]] - code - gateway/security/canary_tripwire.py
+- [[dot-register_canary()]] - code - gateway/security/canary_tripwire.py
+- [[dot-scan()_2]] - code - gateway/security/canary_tripwire.py
+- [[dot-scan_response()_1]] - code - gateway/security/canary_tripwire.py
+- [[dot-setup_method()_10]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_case_insensitive()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_code_word_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_counter_increments()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_custom_config()_3]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_empty_input()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_no_canaries()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_normal_content_passes()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_plain_canary_detected()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_reversed_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_rot13_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_scan_response_blocks_on_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_scan_response_no_block_when_block_disabled()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_scan_response_passes_clean_text()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_scan_response_records_scan_method()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_scan_response_returns_tripwire_response()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_spaced_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_url_encoded_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-test_zero_width_bypass()]] - code - gateway/tests/test_canary_tripwire.py
+- [[Bridge result returned by scan_response() for pipeline compatibility.]] - rationale - gateway/security/canary_tripwire.py
+- [[CanaryConfig_1]] - code - gateway/security/canary_tripwire.py
+- [[CanaryResult_1]] - code - gateway/security/canary_tripwire.py
+- [[CanaryTripwire]] - code - gateway/security/canary_tripwire.py
+- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - rationale - gateway/security/canary_tripwire.py
+- [[Register a new canary value at runtime for dynamic tripwire testing.]] - rationale - gateway/security/canary_tripwire.py
+- [[TestCanaryTripwire]] - code - gateway/tests/test_canary_tripwire.py
+- [[TripwireResponse]] - code - gateway/security/canary_tripwire.py
+- [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
+- [[test_canary_tripwire.py]] - code - gateway/tests/test_canary_tripwire.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -128,20 +57,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 47 edges to [[_COMMUNITY_ProxyAction]]
-- 17 edges to [[_COMMUNITY_SecurityPipeline]]
-- 10 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 10 edges to [[_COMMUNITY_WebProxy]]
-- 4 edges to [[_COMMUNITY_WebProxyConfig (3)]]
-- 3 edges to [[_COMMUNITY_TestSSRFDetection]]
-- 3 edges to [[_COMMUNITY__DummyTargetWriter]]
-- 2 edges to [[_COMMUNITY_dot-_process_connect]]
-- 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 14 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 
 ## Top bridge nodes
-- [[WebProxyConfig]] - degree 71, connects to 8 communities
-- [[test_web_proxy.py]] - degree 27, connects to 3 communities
-- [[RateLimiter]] - degree 26, connects to 3 communities
-- [[DomainSettings]] - degree 24, connects to 3 communities
-- [[TestDataExfiltration]] - degree 11, connects to 3 communities
+- [[CanaryTripwire]] - degree 32, connects to 2 communities
+- [[canary_tripwire.py]] - degree 5, connects to 1 community

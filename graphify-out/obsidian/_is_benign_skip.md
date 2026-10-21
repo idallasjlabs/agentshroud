@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "code"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # _is_benign_skip
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - `references` [EXTRACTED]
 - [[classify()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

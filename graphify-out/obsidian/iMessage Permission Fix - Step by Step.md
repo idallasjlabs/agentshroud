@@ -1,21 +1,21 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "How to Fix (5 Minutes)"
+community: "Skill: Technical Illustrator (TI) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/How_to_Fix_5_Minutes
+  - community/Skill_Technical_Illustrator_TI_2
 ---
 
 # iMessage Permission Fix - Step by Step
 
 ## Connections
-- [[Current Status_5]] - `contains` [EXTRACTED]
+- [[Current Status_7]] - `contains` [EXTRACTED]
 - [[How to Fix (5 Minutes)]] - `contains` [EXTRACTED]
 - [[IMESSAGE_PERMISSION_FIX]] - `contains` [EXTRACTED]
 - [[If It Still Doesn't Work]] - `contains` [EXTRACTED]
 - [[The Error We're Getting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2

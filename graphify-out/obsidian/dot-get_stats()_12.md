@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "AuditStore"
-location: "L383"
+community: "AgentTarget"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AgentTarget
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "FY26 Cost Reduction Context"
+community: ".test_fetch_paginates_via_link_cursor()"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FY26_Cost_Reduction_Context
+  - community/test_fetch_paginates_via_link_cursor
 ---
 
 # FY26 Cost Reduction Context
@@ -19,4 +19,4 @@ tags:
 - [[Savings Levers (Ranked by Impact)]] - `contains` [EXTRACTED]
 - [[Target 40% Full-Year Reduction on Global Services Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context
+#graphify/document #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor

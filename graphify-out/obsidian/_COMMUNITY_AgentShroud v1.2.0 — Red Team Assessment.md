@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[AgentShroud v1.2.0 — Red Team Assessment]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Methodology note]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-00 — Tool inventory disclosure]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[red-team-assessment-v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§3 — SAST Scan Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§4 — Findings Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§5 — Acceptance Rationales (Signed Off)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§6 — Regression Test Index]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[dot-test_critical_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_delete_action()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_execute_action_medium_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_high_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_question_defaults_to_read_system()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_read_action_low_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_unknown_defaults_to_tool_use()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_write_action_no_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessment]]
-- 1 edge to [[_COMMUNITY_§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]]
-- 1 edge to [[_COMMUNITY_§1 — Re-run of Prior Scenarios]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_export_bot]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[AgentShroud v1.2.0 — Red Team Assessment]] - degree 8, connects to 2 communities
-- [[red-team-assessment-v1.2.0]] - degree 2, connects to 1 community
+- [[TestAnalyzeRequestForRBAC]] - degree 13, connects to 4 communities

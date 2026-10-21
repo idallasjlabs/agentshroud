@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py (2)"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy_2
 ---
 
 # TestPlanRemediation
@@ -26,4 +26,4 @@ tags:
 - [[The planner decides WHAT bump remediates WHICH advisories.]] - `rationale_for` [EXTRACTED]
 - [[test_auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_2
