@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_7]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Brainstorming Session Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Core Discipline Frame → Structure → Generate → Validate_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Curriculum Design (with `i-atlas`)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Decision Tree Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Dependencies_7]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Example FODL Pipeline Overview_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Export and Sharing Conventions_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Hierarchy Design — Outline First_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Invocation Pattern_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Knowledge Map (PKE  OKE integration)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[MCP Tool markmap-mcp-server_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[MCP Tool xmind-generator-mcp_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Markdown-to-Mindmap Conversion_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Markmap Generation via MCP_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Markmap Invocation Pattern_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Markmap Source Format_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Outline Template_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Project Planning Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Role_33]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Rules_8]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Skill Mindmap Architect (MM)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Use Case Patterns_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Validation Checklist_3]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[When to Use Mindmaps vs Other Formats_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[XMind Generation via MCP_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[hermesskillsi-mmSKILL]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Guardrails_5]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Invocation_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Jira ticket — every development batch gets one_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Mode A — Single task]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Mode B — Comprehensive review sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Reviewers and fixer available to you_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Role_30]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 1 — Sync and confirm clean state]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 10 — Notify the owner]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 12 — Clean up]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2 — Create a branch + worktree]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2 — Work through directories one at a time_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2b — Create the Jira ticket]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 3 — Write and edit code]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 4 — Test and lint]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 5 — Multi-LLM review]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 6 — Build and validate containers]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 7 — Update documentation and website]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 8 — Update the knowledge graph]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 9 — Push and open the PR]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Tools you have for this workflow_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[hermesskillsi-hdevSKILL]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,9 +42,3 @@ members: 27
 TABLE source_file, type FROM #community/Skill_Mindmap_Architect_MM_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Mindmap Architect (MM)_1]] - degree 15, connects to 1 community

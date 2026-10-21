@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Anti-Patterns to Flag]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Core Discipline Understand → Structure → Write → Validate]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Document Structure]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Document-Type Patterns]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[README — Entry Point for a Repo or Service]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Role_11]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Rules]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
-- [[Skill Technical Writer (TW)]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[4. Skill System]] - document - docs/architecture/agentic-os.md
+- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
+- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
+- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
+- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
+- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
+- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
+- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
 
 ## Top bridge nodes
-- [[Skill Technical Writer (TW)]] - degree 8, connects to 1 community
+- [[4. Skill System]] - degree 3, connects to 1 community

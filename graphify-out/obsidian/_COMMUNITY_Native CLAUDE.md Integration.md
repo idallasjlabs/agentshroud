@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[BDD Skill (Gherkin GivenWhenThen specs)]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

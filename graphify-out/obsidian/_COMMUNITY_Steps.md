@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[1. Verify CI and update the PR]] - document - .agents/skills/i-release/SKILL.md
-- [[2. Merge]] - document - .agents/skills/i-release/SKILL.md
-- [[3. Update graphify]] - document - .agents/skills/i-release/SKILL.md
-- [[4. Tag and release]] - document - .agents/skills/i-release/SKILL.md
-- [[5. Documentation and version visibility]] - document - .agents/skills/i-release/SKILL.md
-- [[6. Close Jira]] - document - .agents/skills/i-release/SKILL.md
-- [[7. Rebuildrestart prod and dev from main]] - document - .agents/skills/i-release/SKILL.md
-- [[Guardrails_15]] - document - .agents/skills/i-release/SKILL.md
-- [[Invocation_9]] - document - .agents/skills/i-release/SKILL.md
-- [[Role_91]] - document - .agents/skills/i-release/SKILL.md
-- [[Skill Release (i-release)]] - document - .agents/skills/i-release/SKILL.md
-- [[Steps]] - document - .agents/skills/i-release/SKILL.md
-- [[i-releaseSKILL]] - document - .agents/skills/i-release/SKILL.md
+- [[Rapid-MLX host.docker.internal trusted-hosts fix (local-llms repo)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[Regression tests for LLMProxy._suppress_qwen3_thinking. 2026-10-16 incident…]] - rationale - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[Root cause Nemotron in-band reasoning + Qwen-only no_think suffix]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[_req()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_llm_proxy_thinking_suppression.py]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_missing_model_treated_as_non_qwen()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_non_qwen_caller_supplied_effort_is_overridden_to_none()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_non_qwen_reasoning_effort_already_none_is_noop()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_qwen_list_content_gets_suffix_on_last_text_part()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_qwen_model_gets_no_think_suffix()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[test_qwen_model_suffix_already_present_is_noop()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,11 @@ members: 13
 TABLE source_file, type FROM #community/Steps
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+
+## Top bridge nodes
+- [[test_llm_proxy_thinking_suppression.py]] - degree 12, connects to 1 community
+- [[Root cause Nemotron in-band reasoning + Qwen-only no_think suffix]] - degree 3, connects to 1 community

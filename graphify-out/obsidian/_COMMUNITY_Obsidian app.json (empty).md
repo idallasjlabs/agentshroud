@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian app.json (empty)]] - document - docs/vault/.obsidian/app.json
+- [[Roadmap (v0.9.5 → v0.9.8 → v1.0.0 → Post-v1.0.0)]] - concept - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

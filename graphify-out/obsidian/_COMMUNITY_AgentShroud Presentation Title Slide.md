@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
+- [[AWS Step Functions]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

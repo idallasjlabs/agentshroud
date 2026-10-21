@@ -1,36 +1,35 @@
 ---
 type: community
-members: 23
+members: 22
 ---
 
 # xurl — Agent Skill Reference
 
-**Members:** 23 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[Check your activity]] - document - skills/openclaw/xurl/SKILL.md
-- [[Common Workflows_2]] - document - skills/openclaw/xurl/SKILL.md
-- [[Error Handling_2]] - document - skills/openclaw/xurl/SKILL.md
-- [[Global Flags]] - document - skills/openclaw/xurl/SKILL.md
-- [[Go]] - document - skills/openclaw/xurl/SKILL.md
-- [[Homebrew (macOS)]] - document - skills/openclaw/xurl/SKILL.md
-- [[Installation_2]] - document - skills/openclaw/xurl/SKILL.md
-- [[Notes_3]] - document - skills/openclaw/xurl/SKILL.md
-- [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
-- [[Output Format_11]] - document - skills/openclaw/xurl/SKILL.md
-- [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
-- [[Prerequisites_6]] - document - skills/openclaw/xurl/SKILL.md
-- [[Quick Reference_8]] - document - skills/openclaw/xurl/SKILL.md
-- [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
-- [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
-- [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md
-- [[Search and engage]] - document - skills/openclaw/xurl/SKILL.md
-- [[Secret Safety (Mandatory)]] - document - skills/openclaw/xurl/SKILL.md
-- [[Set up multiple apps]] - document - skills/openclaw/xurl/SKILL.md
-- [[Shell script]] - document - skills/openclaw/xurl/SKILL.md
-- [[Streaming_1]] - document - skills/openclaw/xurl/SKILL.md
-- [[npm]] - document - skills/openclaw/xurl/SKILL.md
-- [[xurl — Agent Skill Reference]] - document - skills/openclaw/xurl/SKILL.md
+- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
+- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
+- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology_1]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_12]] - document - docs/architecture/deployment-diagram.md
+- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
+- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
+- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
+- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
+- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Command Details]]
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
+- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up = fully secured)]]
 
 ## Top bridge nodes
-- [[xurl — Agent Skill Reference]] - degree 12, connects to 2 communities
+- [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

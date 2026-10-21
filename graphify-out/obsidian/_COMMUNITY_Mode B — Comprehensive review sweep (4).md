@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Mode B — Comprehensive review sweep (4)
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Mode B — Comprehensive review sweep_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 2 — Work through directories one at a time_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[dot-test_clean_when_installed_not_running()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_run_when_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_report_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestClamavSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV) (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (3) (2)]]
 
 ## Top bridge nodes
-- [[Mode B — Comprehensive review sweep_3]] - degree 4, connects to 1 community
+- [[TestClamavSummary]] - degree 5, connects to 1 community
+- [[dot-test_running_report_mtime_timestamp()]] - degree 2, connects to 1 community

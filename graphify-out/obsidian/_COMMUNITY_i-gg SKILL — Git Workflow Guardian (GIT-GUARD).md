@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # i-gg SKILL — Git Workflow Guardian (GIT-GUARD)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[i-ab merge regression audit skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[i-pr PR description skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[crSKILL.md code review skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
-- [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[tddSKILL.md test-driven development skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
+- [[A final delta with no terminal punctuation is flushed once the SSE     stream en]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A malformedunexpected-shape SSE chunk is skipped, not fatal — a good     senten]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Build OpenAI-shaped streaming SSE lines for a sequence of content deltas.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_llm_stream posts to v1chatcompletions with streamtrue and     yields e]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_openai_delta_lines()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_flushes_trailing_fragment()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_skips_malformed_chunks()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_yields_sentences()]] - code - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,13 @@ members: 7
 TABLE source_file, type FROM #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_main.rs]]
+- 3 edges to [[_COMMUNITY_ProgressiveLockdown]]
+
+## Top bridge nodes
+- [[test_call_llm_stream_flushes_trailing_fragment()]] - degree 4, connects to 2 communities
+- [[test_call_llm_stream_skips_malformed_chunks()]] - degree 4, connects to 2 communities
+- [[test_call_llm_stream_yields_sentences()]] - degree 4, connects to 2 communities
+- [[_openai_delta_lines()]] - degree 5, connects to 1 community

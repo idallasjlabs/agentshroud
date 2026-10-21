@@ -1,26 +1,25 @@
 ---
 type: community
-members: 13
+members: 12
 ---
 
 # Technical Illustrator (i-ti)
 
-**Members:** 13 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
-- [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Purpose_167]] - document - .agents/skills/i-ti/README.md
-- [[Purpose_168]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Related Skills_105]] - document - .agents/skills/i-ti/README.md
-- [[Related Skills_106]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Usage_113]] - document - .agents/skills/i-ti/README.md
-- [[Usage_114]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[dot-agentsskillsi-mcSKILL]] - document - .agents/skills/i-mc/SKILL.md
+- [[Emergency Hotfix]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G Development Master Checklist]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 2 · TDD  → `tddSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 3 · QA  → `qaSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 4 · Code Review  → `crSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 6 · CI  → `cicdSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 7 · Deploy  → `psSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Quick Commands]] - document - .agents/skills/i-mc/SKILL.md
+- [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[Technical Illustrator (i-ti)]] - degree 10, connects to 2 communities
+- [[GSDE&G Development Master Checklist]] - degree 12, connects to 1 community

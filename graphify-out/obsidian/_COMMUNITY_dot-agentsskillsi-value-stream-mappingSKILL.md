@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-agentsskillsi-value-stream-mappingSKILL]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[dot-agentsskillsgraphifyreferencesextraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,37 +1,26 @@
 ---
 type: community
-members: 24
+members: 13
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List
 
-**Members:** 24 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[A. Steve Hay Requirements (14) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[A. Steve Hay Requirements — ALL Tiers (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[B. Wire ALL Modules (14) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[B. Wire ALL Modules Into Request Path (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[C. Bug Fixes (9 items)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[C. Bug Fixes (9) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[D. Interactive Egress Firewall (7 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[D. Interactive Egress Firewall (7) — 🔴 BROKEN]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[E. Observatory Mode (6 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[E. Observatory Mode (6) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[F. Prompt Injection Hardening (8) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[G. Pi-hole DNS Stack (9 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[G. Pi-hole DNS Stack (9)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[H. Enhanced Audit & Compliance (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[I. E2E Verification (4) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[J. Code Cleanup (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[J. Code Cleanup (5) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[K. Misc Quick Wins (11 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[K. Misc Quick Wins (11) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Moved to v0.9.0 Sentinel]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[Summary_14]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[Updated v0.8.0 Feature List with Wiring Status]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0-feature-list-final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[dot-_make_dispatcher()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_cleanup_seen()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_critical_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_dedup()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_get_digest()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_get_stats()_2]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_high_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_log_to_jsonl()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_low_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_medium_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_notify_failure()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_rate_limiting()]] - code - gateway/tests/test_security_toolchain.py
+- [[TestAlertDispatcher]] - code - gateway/tests/test_security_toolchain.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,8 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]]
-- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
 
 ## Top bridge nodes
-- [[Updated v0.8.0 Feature List with Wiring Status]] - degree 12, connects to 2 communities
+- [[TestAlertDispatcher]] - degree 14, connects to 2 communities
+- [[dot-_make_dispatcher()]] - degree 13, connects to 1 community

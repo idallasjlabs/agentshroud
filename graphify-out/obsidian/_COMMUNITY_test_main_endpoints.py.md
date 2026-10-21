@@ -1,69 +1,68 @@
 ---
 type: community
-members: 56
+members: 55
 ---
 
 # test_main_endpoints.py
 
-**Members:** 56 nodes
+**Members:** 55 nodes
 
 ## Members
-- [[dot-setup_method()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-teardown_method()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_404_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_alerts_accepted_from_localhost()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_alerts_rejected_from_non_localhost()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_approval_decision()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_approval_queue_list()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_bots_inventory_matches_the_real_container_name()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_clamav_default_target_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_clamav_invalid_target_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_discard_blocked_message_not_found_returns_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_google_proxy_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_google_proxy_non_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_method_not_allowed()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_openscap_default_profile_passes_regex()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_openscap_invalid_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_openscap_semicolon_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_quarantine_summary_counts_inbound_and_outbound()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_release_blocked_outbound_marks_item_released()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_status_endpoint()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_trivy_default_scan_type_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_trivy_invalid_scan_type_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[apialerts must reject non-localhost callers (S1 fix).]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Authentication dependency for protected endpoints]] - rationale - gateway/ingest_api/main.py
-- [[Handler returns ok=True when called from 127.0.0.1.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[JSON upstream responses must stay JSON.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Main Endpoints Integration Tests - P1 Middleware Wiring Tests for main.py…]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Plain-text upstream errors must not turn into gateway 500s.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Receive structured security alerts from gateway-internal scripts. Called by…]] - rationale - gateway/ingest_api/main.py
-- [[Regression tests for v1beta proxy response handling.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test 404 handling for non-existent endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test 405 handling for wrong HTTP methods.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test MCP proxy endpoint basic functionality.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test approval queue endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test basic status endpoint functionality.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test error handling across endpoints.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test listing pending approvals.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test making approval decisions.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test quarantine management endpoints in main.py.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestAlertsLocalhostEnforcement]] - code - gateway/tests/test_main_endpoints.py
-- [[TestApprovalEndpoints]] - code - gateway/tests/test_main_endpoints.py
-- [[TestErrorHandling]] - code - gateway/tests/test_main_endpoints.py
-- [[TestGoogleAPIProxy]] - code - gateway/tests/test_main_endpoints.py
-- [[TestHealthCheckDetailBotsInventory]] - code - gateway/tests/test_main_endpoints.py
-- [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
-- [[TestQuarantineEndpoints]] - code - gateway/tests/test_main_endpoints.py
-- [[TestScanParameterAllowlists]] - code - gateway/tests/test_main_endpoints.py
-- [[TestStatusEndpoint]] - code - gateway/tests/test_main_endpoints.py
-- [[auth_dep()]] - code - gateway/ingest_api/main.py
-- [[health_check_detail's per-bot inventory must key the Docker lookup by each…]] - rationale - gateway/tests/test_main_endpoints.py
-- [[receive_security_alert()]] - code - gateway/ingest_api/main.py
-- [[test_main_endpoints.py]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-__init__()_1]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-__init__()_2]] - code - gateway/proxy/web_proxy.py
+- [[dot-_scan_encoded_payloads()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_hidden_content()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_pii()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_prompt_injection()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_xml_dtd()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_zero_width()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-finding_summary()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-flagged()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-scan()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-setUp()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_billion_laughs_detected()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_case_insensitive()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_detected_in_svg()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_detected_when_mislabelled_as_text()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_doctype_internal_subset_detected()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_entity_declaration_detected()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_external_dtd_reference_detected()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_finding_severity_is_critical()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_json_not_flagged()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_plain_html_not_flagged()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_plain_xml_not_flagged()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[dot-test_web_proxy_blocks_on_dangerous_xml()]] - code - gateway/tests/test_xml_dtd_control.py
+- [[A document with no DTD is untouched — this must not break feeds.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[A single finding from content scanning.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[An attacker controls the Content-Type header, so sniff the body.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[ContentFinding]] - code - gateway/proxy/web_content_scanner.py
+- [[Detect DTDentity constructs that drive XML parser memory-safety bugs. Flags…]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Detect zero-width character sequences (steganographic attacks).]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Entity declarations carry both XXE and billion-laughs.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[Enum]] - code
+- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
+- [[Gateway XML DTDentity control — CLAUDE.md 0.05 arm 2. CVE-2026-6653 is a use-…]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[HTML5's bare !DOCTYPE html has no internal subset and is harmless.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[No internal subset, but still pulls a remote DTD.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[Proves enforcement, not just detection.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[Result of scanning web content.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan HTML for hidden instructions in comments, invisible elements, meta tags.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan content for security issues. Args content The web content to scan.…]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan for base64-encoded or otherwise obfuscated payloads.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan for prompt injection patterns.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan response content for PII.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan web content for prompt injection, PII, and hidden payloads. All findings…]] - rationale - gateway/proxy/web_content_scanner.py
+- [[ScanResult]] - code - gateway/proxy/web_content_scanner.py
+- [[TestDangerousXMLDetection]] - code - gateway/tests/test_xml_dtd_control.py
+- [[TestDangerousXMLIsBlockedNotFlagged]] - code - gateway/tests/test_xml_dtd_control.py
+- [[The '' block inside DOCTYPE is what xmlParseInternalSubset parses.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[The distinction this whole control rests on.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[URLAnalyzer]] - code
+- [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
+- [[WebProxyConfig]] - code
+- [[str]] - code
+- [[test_xml_dtd_control.py]] - code - gateway/tests/test_xml_dtd_control.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,21 +72,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_main_endpoints.py (2)]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 3 edges to [[_COMMUNITY_Request]]
-- 2 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
-- 2 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py (3)]]
-- 1 edge to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
-- 1 edge to [[_COMMUNITY_dot-_run_proxy()]]
-- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
-- 1 edge to [[_COMMUNITY_GatewayEmailService]]
+- 3 edges to [[_COMMUNITY_LLMProxy]]
+- 2 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY__pcm_bytes]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py (2)]]
+- 1 edge to [[_COMMUNITY_Path]]
+- 1 edge to [[_COMMUNITY_Path (3)]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
 
 ## Top bridge nodes
-- [[test_main_endpoints.py]] - degree 21, connects to 7 communities
-- [[auth_dep()]] - degree 14, connects to 6 communities
-- [[receive_security_alert()]] - degree 6, connects to 2 communities
-- [[dot-test_alerts_accepted_from_localhost()]] - degree 4, connects to 1 community
-- [[dot-test_bots_inventory_matches_the_real_container_name()]] - degree 2, connects to 1 community
+- [[WebContentScanner]] - degree 22, connects to 6 communities
+- [[web_content_scanner.py]] - degree 10, connects to 3 communities
+- [[dot-__init__()_2]] - degree 5, connects to 2 communities
+- [[test_xml_dtd_control.py]] - degree 7, connects to 1 community

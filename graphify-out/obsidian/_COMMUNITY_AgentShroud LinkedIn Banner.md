@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud LinkedIn Banner]] - image - branding/social/linkedin-banner-1584x396.png
+- [[AgentShroud Logo — GlowLight Variant]] - image - branding/agentshroud-logo-light-bg.png
 
 ## Live Query (requires Dataview plugin)
 

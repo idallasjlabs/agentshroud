@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[freertosFreeRTOS.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
-- [[freertostask.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[sunday-upgrade-report.sh]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
+- [[sunday-upgrade-report.sh script]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
 
 ## Live Query (requires Dataview plugin)
 

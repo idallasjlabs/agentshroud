@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Docker Compose (infra diagram)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Docker Compose (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[Docker Secrets (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[Docker Secrets Management (deployment doc)]] - concept - docs/architecture/deployment-diagram.md
-- [[Docker Secrets Structure (runsecrets)]] - concept - docs/data/schema-documentation.md
-- [[Named Docker Volumes]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[agentshroud-internal network (172.20.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[agentshroud-isolated network (172.21.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[dot-test_255_is_unreachable()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_nonzero_is_fail()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_zero_is_pass()]] - code - gateway/tests/test_multi_host_test.py
+- [[HostStatus]] - code - gateway/tools/multi_host_test.py
+- [[Map a runner exit code to a HostStatus.]] - rationale - gateway/tools/multi_host_test.py
+- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestClassify_1]] - code - gateway/tests/test_multi_host_test.py
+- [[classify()_1]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ADR-003 Two-Network Container Isolation]]
+- 5 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 4 edges to [[_COMMUNITY_parse_trivy_output]]
+- 3 edges to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
+- 2 edges to [[_COMMUNITY_LOW Findings]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List (2)]]
+- 1 edge to [[_COMMUNITY_PermissionLevel (6)]]
+- 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0 (2)]]
+- 1 edge to [[_COMMUNITY_Migration Path (SSH → Distributed Node)]]
 
 ## Top bridge nodes
-- [[agentshroud-isolated network (172.21.0.016)]] - degree 2, connects to 1 community
+- [[HostStatus]] - degree 18, connects to 10 communities
+- [[classify()_1]] - degree 8, connects to 3 communities
+- [[TestClassify_1]] - degree 7, connects to 2 communities

@@ -1,57 +1,38 @@
 ---
 type: community
-members: 44
+members: 25
 ---
 
 # SecureBrowser (2)
 
-**Members:** 44 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[dot-__init__()_74]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_classify_risk()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_domain_matches()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_init_browser()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_load_config()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_log_action()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_log_security_event()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_requires_approval()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_take_screenshot()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-_validate_url()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-click()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-close()_5]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-detect_captcha()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-extract()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-fill_field()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-get_audit_log()_2]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-navigate()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[CLI interface for SecureBrowser_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Check if action requires approval          Security Approval queue integration_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Check if domain matches pattern (supports wildcards)_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Classify action risk level          Security Determines if approval is needed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Clean up browser resources_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Click an element          Security Risk classification for destructive actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Extract data from page          Security No credential extraction allowed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Fill a single form field          Security Risk classification, approval for se_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Initialize browser with security settings_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Load security configuration_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Log browser action to audit trail_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Log security-related events_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Navigate to URL          Security URL validation, audit logging_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Raised when security policy is violated_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Return complete audit log_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Risk classification for browser actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[RiskLevel_2]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Secure browser automation with enterprise controls      Security guarantees_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Security configuration for browser automation_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecurityConfig_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecurityError_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Take screenshot and save to audit directory_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Validate URL against allowlistblocklist          Security This is the primary_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[hermesskillsi-browserscriptsbrowse.py]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[main()_8]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-_mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_both_bots_registered_distinct_ids()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_hermes_token_resolves_to_hermes()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_no_token_collision()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_openclaw_token_resolves_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_registry_rejects_case_variant()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_registry_rejects_empty_string()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_registry_rejects_partial_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_unknown_token_resolves_to_none()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Registry maps two distinct tokens to two distinct bot_ids.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramTokenRegistry]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[Token matching must be exact — case-sensitive.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Tokens are the registry keys — no two bots share a token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Validate the token → bot_id registry logic extracted from the route handler.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[test_telegram_proxy_multibot.py]] - code - gateway/tests/test_telegram_proxy_multibot.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,10 +42,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
+- 4 edges to [[_COMMUNITY_GroupConfig]]
+- 3 edges to [[_COMMUNITY__make_cve]]
+- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — Full Security & Functionality Audit]]
 
 ## Top bridge nodes
-- [[SecurityError_1]] - degree 7, connects to 1 community
-- [[hermesskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
-- [[RiskLevel_2]] - degree 6, connects to 1 community
+- [[test_telegram_proxy_multibot.py]] - degree 9, connects to 5 communities
+- [[TestTelegramTokenRegistry]] - degree 13, connects to 3 communities
+- [[TestTelegramProxyRouteMultiBot]] - degree 9, connects to 2 communities

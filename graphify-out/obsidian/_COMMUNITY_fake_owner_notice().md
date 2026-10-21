@@ -77,15 +77,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 76 edges to [[_COMMUNITY__wrap_response()]]
-- 19 edges to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
-- 19 edges to [[_COMMUNITY_asyncio]]
-- 3 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow()]]
-- 1 edge to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]]
+- 95 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 19 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 3 edges to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py (2)]]
 
 ## Top bridge nodes
-- [[dot-test_revoked_user_messages_require_owner_reapproval()]] - degree 11, connects to 3 communities
-- [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - degree 11, connects to 3 communities
-- [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - degree 10, connects to 3 communities
-- [[dot-test_owner_addcollab_accepts_known_name_alias()]] - degree 9, connects to 3 communities
-- [[dot-test_owner_addcollab_adds_target_and_notifies()]] - degree 9, connects to 3 communities
+- [[fake_owner_notice()_4]] - degree 22, connects to 2 communities
+- [[dot-test_revoked_user_messages_require_owner_reapproval()]] - degree 11, connects to 2 communities
+- [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - degree 11, connects to 2 communities
+- [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - degree 10, connects to 2 communities
+- [[dot-test_owner_addcollab_accepts_known_name_alias()]] - degree 9, connects to 2 communities

@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Decision]] - document - docs/governance/SPRINT_CADENCE.md
-- [[GSD Issue Requirements]] - document - docs/governance/SPRINT_CADENCE.md
-- [[SPRINT_CADENCE]] - document - docs/governance/SPRINT_CADENCE.md
-- [[Skills Available (if needed)]] - document - docs/governance/SPRINT_CADENCE.md
-- [[Sprint Cadence Decision]] - document - docs/governance/SPRINT_CADENCE.md
-- [[What We Do Instead]] - document - docs/governance/SPRINT_CADENCE.md
-- [[When to Revisit]] - document - docs/governance/SPRINT_CADENCE.md
+- [[dot-agentsskillsi-mcpmSKILL]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[1. GitHub MCP]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[2. Atlassian MCP (Jira + Confluence)]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[3. AWS API MCP]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Available MCP Servers]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Role_9]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - document - .agents/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,10 @@ members: 7
 TABLE source_file, type FROM #community/Sprint_Cadence_Decision
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
+
+## Top bridge nodes
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - degree 5, connects to 2 communities

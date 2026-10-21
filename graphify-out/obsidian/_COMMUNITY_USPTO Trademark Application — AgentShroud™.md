@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Notes_7]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[1. Create a parent panel]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[2. Initialise]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[3. Set an emotion]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[4. Reposition]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Adding to your project]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Emotions]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[LVGL KAWAII FACE]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[License_4]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Requirements_1]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Thread safety]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Usage_99]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[lvgl_kawaii_faceREADME]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +27,3 @@ members: 12
 TABLE source_file, type FROM #community/USPTO_Trademark_Application__AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
-
-## Top bridge nodes
-- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-crpr skill]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Cron Agentic AI Threat Intelligence]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

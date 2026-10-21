@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[wakeword.h]] - code - firmware/voice-terminal/main/wakeword.h
+- [[Obsidian core-plugins.json]] - document - docs/vault/.obsidian/core-plugins.json
 
 ## Live Query (requires Dataview plugin)
 

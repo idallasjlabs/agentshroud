@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreIncidentResponse]] - code - gateway/tests/test_scorecard_scoring.py
+- [[7. Recommendations by Severity]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[7.1 Pre-Red Team (Critical)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[7.2 Short-term (High Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[7.3 Medium-term (Medium Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[7.4 Long-term (Low Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2) (2)]]
 
 ## Top bridge nodes
-- [[TestScoreIncidentResponse]] - degree 5, connects to 1 community
+- [[7. Recommendations by Severity]] - degree 5, connects to 1 community

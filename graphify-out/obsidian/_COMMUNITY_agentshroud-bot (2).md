@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+members: 16
 ---
 
 # agentshroud-bot (2)
 
-**Members:** 15 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Extra Hosts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Health Check_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Key Environment Variables]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Logs_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Network_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Related Notes_52]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Secrets_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Security Hardening_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Summary_20]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Volumes_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[agentshroud-bot_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Layer 1 Bot Instructions (Primary Defense)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 2 Gateway Blocking (Defense in Depth)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 3 Audit Logging (Monitoring)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Security Implementation Verification]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 1 Telegram Access (Should Refuse + Block)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 2 Control UI Access (Should Refuse)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 3 Console Access (Should Display)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 4 Internal Use (Should Work)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Ultra-Conservative Policy Requirements]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[✅ Verification Tests]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎯 Policy Compliance Check]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎯 Summary]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🏗️ Architecture Overview]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📊 Multi-Layer Defense]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📋 Compliance Checklist]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🔍 Container Status]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_agentshroud-bot]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_TestDockerEngine]]
+- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
 
 ## Top bridge nodes
-- [[agentshroud-bot_1]] - degree 15, connects to 1 community
+- [[Security Implementation Verification]] - degree 10, connects to 3 communities

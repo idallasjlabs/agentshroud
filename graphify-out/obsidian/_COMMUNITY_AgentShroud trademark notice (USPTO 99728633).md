@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud trademark notice (USPTO 99728633)]] - concept - CHANGELOG.md
+- [[Favicon 512x512 (AgentShroud logo mark)]] - image - branding/favicons/favicon-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

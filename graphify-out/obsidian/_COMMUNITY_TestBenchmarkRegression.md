@@ -1,32 +1,25 @@
 ---
 type: community
-members: 19
+members: 12
 ---
 
 # TestBenchmarkRegression
 
-**Members:** 19 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-setup_method()_32]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-test_single_inbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-test_single_outbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
-- [[100 sequential inbound requests should stay within baseline.          Baseline k]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Assert measured value is within THRESHOLD of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Baseline file must exist and contain expected keys.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Baseline values should be positive and within expected ranges.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Single inbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Single outbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[TestBenchmarkRegression]] - code - gateway/tests/test_benchmark_regression.py
-- [[Time a function over N iterations, return mean ms.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
-- [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py
-- [[test_benchmark_regression.py]] - code - gateway/tests/test_benchmark_regression.py
+- [[1. Owner & Governance Context]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[2. Project]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[3. Prime Directive]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[4. Development Rules (TDD)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[5. Language & Tooling Standards]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[6. Runtime Environment (CRITICAL)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[7. SSH Development Workflow]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[8. Agent Orchestration]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[9. Repository Guardrails]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[9. Skill Lookup]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[DEVELOPER]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[DEVELOPER.md — Development Context for AgentShroud]] - document - docker/config/openclaw/workspace/DEVELOPER.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +27,3 @@ members: 19
 TABLE source_file, type FROM #community/TestBenchmarkRegression
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-
-## Top bridge nodes
-- [[TestBenchmarkRegression]] - degree 10, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Badge Icon 180x180]] - image - branding/logos/variants/badge-180x180.png
+- [[SCRUM-154 Fix submit()decide() held the approval lock while broadcasting to a hung WebSocket client, deadlocking indefinitely — fixed with a bounded per-client broadcast timeout]] - rationale - gateway/tests/test_approval_queue.py
 
 ## Live Query (requires Dataview plugin)
 

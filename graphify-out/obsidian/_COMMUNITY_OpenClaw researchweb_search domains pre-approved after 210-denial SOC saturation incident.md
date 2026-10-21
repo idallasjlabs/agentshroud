@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[OpenClaw researchweb_search domains pre-approved after 210-denial SOC saturation incident]] - rationale - gateway/tests/test_egress_filter.py
+- [[app.json]] - code - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

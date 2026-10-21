@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[GSDE&G Skills Reference Guide]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[setup-https-proxy patchUndiciForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
 
 ## Live Query (requires Dataview plugin)
 

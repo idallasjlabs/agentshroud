@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_action_risk_probe_gets_no_banner_risk_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[B1.5c action-risk questions should get a natural answer without restriction…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
+- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/test_action_risk_probe_gets_no_banner_risk_guidance
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-
-## Top bridge nodes
-- [[dot-test_action_risk_probe_gets_no_banner_risk_guidance()]] - degree 2, connects to 1 community

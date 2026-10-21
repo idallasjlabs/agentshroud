@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "SkillGuard (2)"
+community: "ConfigIntegrityMonitor"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/ConfigIntegrityMonitor
 ---
 
 # _build_tree()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_22]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - `rationale_for` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

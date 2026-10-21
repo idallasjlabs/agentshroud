@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server github]] - code - .mcp.json
+- [[SRE Practices]] - document - .agents/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_ssn_redacted_on_outbound()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[SSN in outbound messages must be redacted.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_userinfo_url_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[URLs with credentials should not be queued for web-fetch approvals.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__make_sanitizer()]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_CronStateMonitor]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
 
 ## Top bridge nodes
-- [[dot-test_ssn_redacted_on_outbound()]] - degree 4, connects to 3 communities
+- [[dot-test_raw_web_fetch_json_userinfo_url_does_not_queue_approval()]] - degree 4, connects to 3 communities

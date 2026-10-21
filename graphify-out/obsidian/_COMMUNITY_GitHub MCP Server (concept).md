@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[GitHub MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Session Isolation End-to-End Tests]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

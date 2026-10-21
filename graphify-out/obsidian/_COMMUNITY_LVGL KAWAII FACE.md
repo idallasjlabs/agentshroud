@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[1. Create a parent panel]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[2. Initialise]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[3. Set an emotion]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[4. Reposition]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Adding to your project]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Emotions]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[LVGL KAWAII FACE]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[License_4]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Requirements_1]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Thread safety]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Usage_128]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[lvgl_kawaii_faceREADME]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
+- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
+- [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
+- [[Notes_9]] - document - skills/openclaw/notion/SKILL.md
+- [[Obsidian]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
+- [[Setup_8]] - document - skills/openclaw/notion/SKILL.md
+- [[notion]] - document - skills/openclaw/notion/SKILL.md
+- [[notionSKILL]] - document - skills/openclaw/notion/SKILL.md
+- [[obsidian-cli quick start]] - document - skills/openclaw/obsidian/SKILL.md
+- [[obsidianSKILL]] - document - skills/openclaw/obsidian/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

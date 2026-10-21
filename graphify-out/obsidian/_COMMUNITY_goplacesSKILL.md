@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[goplaces]] - document - skills/openclaw/goplaces/SKILL.md
-- [[goplaces CLI]] - concept - skills/openclaw/goplaces/SKILL.md
-- [[goplacesSKILL]] - document - skills/openclaw/goplaces/SKILL.md
+- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[graphify reference GitHub clone and cross-repo merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[hermesskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-__init__()_186]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-_periodic_update_loop()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-download_blocklist()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-load_from_text()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-parse_hosts_line()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-start_periodic_updates()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-update()]] - code - gateway/proxy/dns_blocklist.py
-- [[Background loop update blocklists every UPDATE_INTERVAL_SECONDS.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Download a blocklist URL. Uses the gateway's own HTTP client.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Download all blocklists and rebuild the blocked domains set.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Parse blocklist text and add domains. Returns count of new domains.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Path_56]] - code - gateway/proxy/dns_blocklist.py
-- [[Start background task for periodic blocklist updates.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Reference]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_PHASE 4 CLEANUP & v0.4.0 RELEASE]]
+- 1 edge to [[_COMMUNITY_Future Enhancements]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade HEAD Guard Test]]
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23 (5)]]
 
 ## Top bridge nodes
-- [[dot-update()]] - degree 6, connects to 1 community
-- [[dot-parse_hosts_line()]] - degree 4, connects to 1 community
-- [[dot-_periodic_update_loop()]] - degree 4, connects to 1 community
-- [[dot-download_blocklist()]] - degree 3, connects to 1 community
-- [[dot-__init__()_186]] - degree 3, connects to 1 community
+- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities

@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-__aenter__()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__aenter__()_3]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__aexit__()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__aexit__()_3]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__init__()_8]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-__init__()_9]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-aread()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[dot-stream()_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Stands in for httpx.AsyncClient inside LLMProxy._stream().]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_FakeStreamClient]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_FakeStreamResponse]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
+- [[dot-test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
+- [[dot-test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
+- [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
+- [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
+- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
+- [[StatusResponse]] - code - gateway/ingest_api/models.py
+- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
+- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
+- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
+- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
+- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
+- [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
+- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_dot-proxy_messages()]]
+- 2 edges to [[_COMMUNITY_lifespan()]]
 - 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - degree 8, connects to 5 communities
-- [[_FakeStreamClient]] - degree 7, connects to 1 community
-- [[_FakeStreamResponse]] - degree 7, connects to 1 community
+- [[StatusResponse]] - degree 10, connects to 3 communities
+- [[health_check_detail()]] - degree 4, connects to 1 community

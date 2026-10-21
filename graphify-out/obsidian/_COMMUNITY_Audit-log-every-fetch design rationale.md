@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Audit-log-every-fetch design rationale]] - rationale - docker/config/openclaw/skills/i-browser/browse.js
+- [[CVE Triage Report Cron Prompt]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
 
 ## Live Query (requires Dataview plugin)
 

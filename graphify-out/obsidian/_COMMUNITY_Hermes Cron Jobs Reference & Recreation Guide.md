@@ -55,13 +55,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (2)]]
-- 5 edges to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (AMPM)]]
-- 4 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
+- 10 edges to [[_COMMUNITY_DockerEngine]]
+- 5 edges to [[_COMMUNITY_Atlas — Curriculum Architect (3)]]
+- 4 edges to [[_COMMUNITY_hermesskillsi-icloudscriptscalendar.js]]
 - 2 edges to [[_COMMUNITY_Report Delivery Format Instructions (2)]]
-- 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
-- 1 edge to [[_COMMUNITY_Report Delivery Format Instructions]]
-- 1 edge to [[_COMMUNITY_Job details]]
+- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py (4)]]
+- 1 edge to [[_COMMUNITY_AgentTarget (5)]]
+- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation]]
 
 ## Top bridge nodes
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - degree 31, connects to 5 communities

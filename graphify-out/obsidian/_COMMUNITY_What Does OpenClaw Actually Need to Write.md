@@ -1,47 +1,34 @@
 ---
 type: community
-members: 34
+members: 21
 ---
 
 # What Does OpenClaw Actually Need to Write?
 
-**Members:** 34 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[1. Skills Installation (`.openclawskills`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[2. Conversation Memory (`.openclawMEMORY.md`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[3. Workspace Files (`workspace`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[4. npm Cache (`.npm`, `.cache`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[5. Temporary Files (`tmp`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[6. Session Configuration (`.config`, `.local`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Configuration_3]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Goals]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[How to Access Workspace Files]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Minimum Required Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[OPENCLAW_WRITE_REQUIREMENTS]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 1 Docker Volume (Current Setup - Recommended)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 2 Bind Mount (Alternative - More Accessible)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option A Docker Volume (Current)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option B Bind Mount (Easier for You)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Recommended Configuration for Your Use Case]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Summary What the Bot Needs to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[TL;DR]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does OpenClaw Actually Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does the Bot NOT Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What OpenClaw Writes During Normal Operation]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What You Can Do]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Your Shared Folder The Workspace]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Persistent Volumes (Data Survives Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Temporary Filesystems (Cleared on Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ Currently Missing (Would Break Read-Only)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ NO - Here's What Would Break]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ System Directories (Read-Only in Production)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[dot-_compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-entries()_1]] - code - gateway/proxy/mcp_audit.py
+- [[dot-generate_report()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-get_blocked_entries()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-get_entries_for_agent()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-get_entries_for_server()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-get_entries_for_tool()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-get_failed_entries()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-log_tool_call()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-log_tool_result()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-start_call()]] - code - gateway/proxy/mcp_audit.py
+- [[dot-verify_chain()_1]] - code - gateway/proxy/mcp_audit.py
+- [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Any_53]] - code - gateway/proxy/mcp_audit.py
+- [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
+- [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Log an incoming MCP tool result.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Log an outgoing MCP tool call.]] - rationale - gateway/proxy/mcp_audit.py
+- [[MCPAuditEntry]] - code - gateway/proxy/mcp_audit.py
+- [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,3 +36,13 @@ members: 34
 TABLE source_file, type FROM #community/What_Does_OpenClaw_Actually_Need_to_Write
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 14 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+
+## Top bridge nodes
+- [[MCPAuditEntry]] - degree 11, connects to 1 community
+- [[dot-generate_report()]] - degree 6, connects to 1 community
+- [[dot-log_tool_call()]] - degree 6, connects to 1 community
+- [[dot-_compute_chain_hash()]] - degree 4, connects to 1 community
+- [[dot-log_tool_result()]] - degree 4, connects to 1 community

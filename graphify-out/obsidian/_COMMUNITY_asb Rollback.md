@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[asb rollback]] - code - scripts/asb
+- [[pre-commit check-yaml hook (--unsafe)]] - code - .pre-commit-config.yaml
 
 ## Live Query (requires Dataview plugin)
 

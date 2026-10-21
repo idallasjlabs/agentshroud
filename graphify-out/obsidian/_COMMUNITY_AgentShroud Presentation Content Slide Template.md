@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Content Slide Template]] - image - branding/presentation/content-slide-template-1920x1080.png
+- [[AWS Glue Jobs]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

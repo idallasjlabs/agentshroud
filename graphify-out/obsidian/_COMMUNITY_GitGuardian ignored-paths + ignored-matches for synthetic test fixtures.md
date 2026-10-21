@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - document - .gitguardian.yaml
-- [[GitGuardian ignored-paths + ignored-matches for synthetic test fixtures]] - concept - .gitguardian.yaml
+- [[dot-agentsskillsi-scrumSKILL]] - document - .agents/skills/i-scrum/SKILL.md
+- [[Skill scrum]] - document - .agents/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

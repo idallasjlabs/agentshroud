@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PostgreSQL SAVEPOINTROLLBACK test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[asb canary service]] - code - scripts/asb
 
 ## Live Query (requires Dataview plugin)
 

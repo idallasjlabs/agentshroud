@@ -1,21 +1,24 @@
 ---
 type: community
-members: 8
+members: 11
 ---
 
 # All Dependencies.md (2)
 
-**Members:** 8 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Coverage Requirements]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Purpose_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Related Notes_2]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[dot-_make_owner_proxy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[PII redaction must not strip parse_mode for the whole message (owner, fallback p]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[PII redaction via the pipeline path must not strip parse_mode either (owner, pip]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[parse_mode=HTML must be preserved for owner when text contains no PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +28,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 4 edges to [[_COMMUNITY_CronStateMonitor]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
-- [[pytest.ini]] - degree 8, connects to 1 community
+- [[TestParseModeStrippedAfterPIIRedaction]] - degree 11, connects to 2 communities
+- [[dot-_make_owner_proxy()]] - degree 7, connects to 1 community
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - degree 4, connects to 1 community
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - degree 4, connects to 1 community
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - degree 4, connects to 1 community

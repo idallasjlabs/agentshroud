@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # camsnap/SKILL.md
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[camsnap]] - document - skills/openclaw/camsnap/SKILL.md
-- [[camsnap CLI]] - concept - skills/openclaw/camsnap/SKILL.md
-- [[camsnapSKILL]] - document - skills/openclaw/camsnap/SKILL.md
-- [[ffmpeg dependency]] - concept - skills/openclaw/camsnap/SKILL.md
+- [[bad()]] - code - tests/startup_smoke/test_launchd_install.sh
+- [[ok()_1]] - code - tests/startup_smoke/test_launchd_install.sh
+- [[run_install()]] - code - tests/startup_smoke/test_launchd_install.sh
+- [[test_launchd_install.sh]] - code - tests/startup_smoke/test_launchd_install.sh
+- [[test_launchd_install.sh script]] - code - tests/startup_smoke/test_launchd_install.sh
 
 ## Live Query (requires Dataview plugin)
 

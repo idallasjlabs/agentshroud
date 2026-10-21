@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PWA Icon 192x192 (AgentShroud logo mark)]] - image - branding/favicons/icon-192x192.png
+- [[EnhancedApprovalQueue.decide]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

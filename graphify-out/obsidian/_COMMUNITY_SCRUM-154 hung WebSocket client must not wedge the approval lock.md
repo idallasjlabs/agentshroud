@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 hung WebSocket client must not wedge the approval lock]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
 
 ## Live Query (requires Dataview plugin)
 

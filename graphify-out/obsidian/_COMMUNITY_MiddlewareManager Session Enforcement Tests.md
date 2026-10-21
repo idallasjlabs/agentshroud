@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[MiddlewareManager Session Enforcement Tests]] - code - gateway/tests/test_session_isolation.py
-- [[SSHProxy.validate_cwd() Unit Tests]] - code - gateway/tests/test_ssh_endpoints.py
+- [[APPROVAL_ITEMS entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
+- [[LEDGER entity (id, timestamp, source, content_hash, original_content_hash, sanitized, size, redaction_count, redaction_types, forwarded_to, content_type, metadata, created_at, expires_at)]] - concept - docs/diagrams/images/diagram-08-erd.svg
 
 ## Live Query (requires Dataview plugin)
 

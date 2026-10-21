@@ -1,33 +1,32 @@
 ---
 type: community
-members: 20
+members: 19
 ---
 
 # Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)
 
-**Members:** 20 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[C. AWS Athena_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[F. IAM Policies_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[General Rules_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Objective_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Output Format_14]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Role_48]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[openclawskillsi-qaSKILL]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[APPLE-SERVICES-SETUP]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[BOT_DEVELOPMENT_TEAM_RPI_SETUP]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Bot Identity Separation (Separate Accounts)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Current Setup (CORRECT)]] - document - docs/setup/IMESSAGE_FIX.md
+- [[GOOGLE-CALENDAR-QUICK-SETUP]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[GOOGLE-SERVICES-SETUP]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[ICLOUD-SERVICES-SETUP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[IMESSAGE_FIX]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Next Steps_7]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Option 1 Grant Automation Permission (REQUIRED)]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Option 2 Check if Messages.app is Signed In]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Status_2]] - document - docs/setup/IMESSAGE_FIX.md
+- [[The Fix]] - document - docs/setup/IMESSAGE_FIX.md
+- [[The Problem_1]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Verification_5]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Wazuh CVE-2025-24016 (CVSS 9.9)]] - concept - docs/security/security-supply-chain.md
+- [[container-policy]] - document - docs/security/container-policy.md
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - document - docs/setup/IMESSAGE_FIX.md
+- [[security-supply-chain]] - document - docs/security/security-supply-chain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +36,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (5)]]
+- 1 edge to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strategy]]
+- 1 edge to [[_COMMUNITY_TestPromptProtection]]
+- 1 edge to [[_COMMUNITY_TestOutboundClassifierHelpers]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
+- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark (2)_1]]
+- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
+- 1 edge to [[_COMMUNITY_tmux Session Control]]
 
 ## Top bridge nodes
-- [[Skill Quality Assurance (QA)_2]] - degree 7, connects to 1 community
+- [[container-policy]] - degree 6, connects to 4 communities
+- [[security-supply-chain]] - degree 4, connects to 2 communities
+- [[APPLE-SERVICES-SETUP]] - degree 4, connects to 1 community
+- [[BOT_DEVELOPMENT_TEAM_RPI_SETUP]] - degree 3, connects to 1 community
+- [[GOOGLE-SERVICES-SETUP]] - degree 3, connects to 1 community

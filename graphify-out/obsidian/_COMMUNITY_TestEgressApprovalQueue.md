@@ -1,69 +1,138 @@
 ---
 type: community
-members: 56
+members: 125
 ---
 
 # TestEgressApprovalQueue
 
-**Members:** 56 nodes
+**Members:** 125 nodes
 
 ## Members
-- [[dot-__init__()_37]] - code - gateway/security/egress_approval.py
-- [[dot-_append_decision()]] - code - gateway/security/egress_approval.py
-- [[dot-_assess_risk()]] - code - gateway/security/egress_approval.py
-- [[dot-_check_existing_rule()]] - code - gateway/security/egress_approval.py
-- [[dot-_load_rules()]] - code - gateway/security/egress_approval.py
-- [[dot-_rule_to_dict()]] - code - gateway/security/egress_approval.py
-- [[dot-_save_rules()]] - code - gateway/security/egress_approval.py
-- [[dot-add_rule()]] - code - gateway/security/egress_approval.py
-- [[dot-approve()]] - code - gateway/security/egress_approval.py
-- [[dot-cleanup_expired()]] - code - gateway/security/egress_approval.py
-- [[dot-deny()]] - code - gateway/security/egress_approval.py
-- [[dot-from_dict()_2]] - code - gateway/security/egress_approval.py
-- [[dot-get_all_rules()]] - code - gateway/security/egress_approval.py
-- [[dot-get_decision_log()]] - code - gateway/security/egress_approval.py
-- [[dot-get_emergency_status()]] - code - gateway/security/egress_approval.py
-- [[dot-get_pending_requests()]] - code - gateway/security/egress_approval.py
-- [[dot-get_rules_for_user()]] - code - gateway/security/egress_approval.py
-- [[dot-log_external_decision()]] - code - gateway/security/egress_approval.py
-- [[dot-matches()]] - code - gateway/security/egress_approval.py
-- [[dot-preload_permanent_rules()]] - code - gateway/security/egress_approval.py
-- [[dot-remove_rule()]] - code - gateway/security/egress_approval.py
-- [[dot-request_approval()]] - code - gateway/security/egress_approval.py
-- [[dot-revoke_decision()]] - code - gateway/security/egress_approval.py
-- [[dot-set_emergency_block_all()]] - code - gateway/security/egress_approval.py
-- [[dot-set_event_bus()]] - code - gateway/security/egress_approval.py
-- [[dot-to_dict()_2]] - code - gateway/security/egress_approval.py
-- [[Add or modify an egress rule.          Args             domain Target domain]] - rationale - gateway/security/egress_approval.py
-- [[Append an entry to the capped decision audit log (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Approve a pending egress request.          Args             request_id ID of r]] - rationale - gateway/security/egress_approval.py
-- [[Assess risk level for a domainport combination.          Returns             R]] - rationale - gateway/security/egress_approval.py
-- [[Check if domain matches an existing rule.]] - rationale - gateway/security/egress_approval.py
-- [[Defines who an egress rule applies to.      kind values       all   — applies]] - rationale - gateway/security/egress_approval.py
-- [[Deny a pending egress request.          Args             request_id ID of requ]] - rationale - gateway/security/egress_approval.py
-- [[EgressApprovalQueue]] - code - gateway/security/egress_approval.py
-- [[EgressRule]] - code - gateway/security/egress_approval.py
-- [[EgressScope]] - code - gateway/security/egress_approval.py
-- [[Enabledisable emergency global egress deny.]] - rationale - gateway/security/egress_approval.py
-- [[Get all rules (permanent and session) with scope information.]] - rationale - gateway/security/egress_approval.py
-- [[Get emergency block-all state.]] - rationale - gateway/security/egress_approval.py
-- [[Get list of pending approval requests.]] - rationale - gateway/security/egress_approval.py
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - rationale - gateway/security/egress_approval.py
-- [[Load rules from persistent storage.]] - rationale - gateway/security/egress_approval.py
-- [[Log an automatic allowdeny from EgressFilter.check() (non-interactive).]] - rationale - gateway/security/egress_approval.py
-- [[Pre-approve known service domains at startup without interactive prompts.]] - rationale - gateway/security/egress_approval.py
-- [[Public risk assessment helper for managementAPI surfaces.]] - rationale - gateway/security/egress_approval.py
-- [[Remove an egress rule.          Args             domain Domain to remove rule]] - rationale - gateway/security/egress_approval.py
-- [[Remove expired session rules and timed-out requests.]] - rationale - gateway/security/egress_approval.py
-- [[Represents an egress allowdeny rule.]] - rationale - gateway/security/egress_approval.py
-- [[Request approval for egress to a domainport.          Args             domain]] - rationale - gateway/security/egress_approval.py
-- [[Return True if this scope applies to the given user context.]] - rationale - gateway/security/egress_approval.py
-- [[Return all rules whose scope matches the given user context (synchronous, lock-f]] - rationale - gateway/security/egress_approval.py
-- [[Return recent approvaldenial decisions (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Revoke an active rule associated with a decision log entry (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Save rules to persistent storage.]] - rationale - gateway/security/egress_approval.py
-- [[Set optional event bus for approval telemetry.]] - rationale - gateway/security/egress_approval.py
-- [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - rationale - gateway/security/egress_approval.py
+- [[dot-__init__()_96]] - code - gateway/soc/auth.py
+- [[dot-__init__()_97]] - code - gateway/soc/websocket.py
+- [[dot-_event_fan_out()]] - code - gateway/soc/websocket.py
+- [[dot-_keepalive_loop()]] - code - gateway/soc/websocket.py
+- [[dot-_make_handler()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-_matches()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-_send_event()]] - code - gateway/soc/websocket.py
+- [[dot-run()_1]] - code - gateway/soc/websocket.py
+- [[dot-setup_method()_17]] - code - gateway/tests/test_soc_auth.py
+- [[dot-setup_method()_18]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_construction()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_details_excludes_reserved_keys()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_egress_denied()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_token_or_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_event_type_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_expired_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_get_caller_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_import()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_instantiate()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_invalid_dict_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_legacy_inbound_blocked()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_match()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_message_fallback_for_summary()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_mismatch()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_multi_subscription()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_no_subscription_accepts_log_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_no_subscription_accepts_security_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_preserves_severity()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_returns_none_on_bad_input()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_security_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_single_use()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_source_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_subscription_filters_correctly()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_type_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_unknown_severity_defaults_to_info()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_wsevent_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
+- [[Constant-time comparison against the gateway shared secret.]] - rationale - gateway/soc/auth.py
+- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
+- [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - rationale - gateway/soc/websocket.py
+- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
+- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
+- [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
+- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
+- [[Main connection loop.]] - rationale - gateway/soc/websocket.py
+- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Manages a single wssoc client connection.]] - rationale - gateway/soc/websocket.py
+- [[Public FastAPI dependency injected by SCL route handlers.]] - rationale - gateway/soc/auth.py
+- [[RBACManager_2]] - code - gateway/soc/auth.py
+- [[Read the gateway auth token from envsecret.      Resolution order (matches inge]] - rationale - gateway/soc/auth.py
+- [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Replicate the filter logic from _event_fan_out.]] - rationale - gateway/tests/test_soc_websocket.py
+- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
+- [[Role_21]] - code - gateway/soc/auth.py
+- [[SOCWebSocketHandler_1]] - code - gateway/tests/test_soc_websocket.py
+- [[SOCWebSocketHandler_2]] - code - gateway/soc/websocket.py
+- [[Severity_1]] - code - gateway/soc/models.py
+- [[Subscribe to EventBus and forward matching events to the client.]] - rationale - gateway/soc/websocket.py
+- [[Test event filtering via the subscriptions set (mirrors _event_fan_out logic).]] - rationale - gateway/tests/test_soc_websocket.py
+- [[TestCoerceToWSEvent]] - code - gateway/tests/test_soc_websocket.py
+- [[TestCoerceToWSEventExtra]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSOCWebSocketHandlerImport]] - code - gateway/tests/test_soc_websocket.py
+- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
+- [[TestSubscriptionFilter]] - code - gateway/tests/test_soc_websocket.py
+- [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestVerifyBearer]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSEvent]] - code - gateway/tests/test_soc_models.py
+- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
+- [[WSEvent]] - code - gateway/soc/models.py
+- [[WSEvent_1]] - code - gateway/soc/websocket.py
+- [[WSEventType]] - code - gateway/soc/models.py
+- [[WebSocket_2]] - code - gateway/soc/websocket.py
+- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_coerce_to_ws_event()]] - code - gateway/soc/websocket.py
+- [[_get_config_token()]] - code - gateway/soc/auth.py
+- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
+- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_resolve_caller()]] - code - gateway/soc/auth.py
+- [[_verify_bearer()]] - code - gateway/soc/auth.py
+- [[_verify_session_token()]] - code - gateway/soc/auth.py
+- [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[get_caller()]] - code - gateway/soc/auth.py
+- [[issue_session_token()]] - code - gateway/soc/auth.py
+- [[issue_ws_token()]] - code - gateway/soc/auth.py
+- [[redeem_ws_token()]] - code - gateway/soc/auth.py
+- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
+- [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
+- [[websocket.py]] - code - gateway/soc/websocket.py
+- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,18 +142,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 3 edges to [[_COMMUNITY_make_event]]
-- 2 edges to [[_COMMUNITY_TestEgressApprovalQueue (3)]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
+- 62 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 18 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 13 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 12 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 7 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 5 edges to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection]]
+- 2 edges to [[_COMMUNITY_api.py (2)]]
+- 2 edges to [[_COMMUNITY_ResourceGuard (2)]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
 
 ## Top bridge nodes
-- [[EgressApprovalQueue]] - degree 33, connects to 4 communities
-- [[dot-request_approval()]] - degree 7, connects to 3 communities
-- [[EgressScope]] - degree 12, connects to 2 communities
-- [[dot-approve()]] - degree 7, connects to 2 communities
-- [[dot-deny()]] - degree 7, connects to 2 communities
+- [[test_soc_realtime_coverage.py]] - degree 47, connects to 5 communities
+- [[WSEvent]] - degree 14, connects to 4 communities
+- [[websocket.py]] - degree 11, connects to 3 communities
+- [[get_caller()]] - degree 7, connects to 3 communities
+- [[SOCWebSocketHandler_2]] - degree 40, connects to 2 communities

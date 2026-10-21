@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[eightctl]] - document - skills/openclaw/eightctl/SKILL.md
-- [[eightctl CLI]] - concept - skills/openclaw/eightctl/SKILL.md
-- [[eightctlSKILL]] - document - skills/openclaw/eightctl/SKILL.md
+- [[MCP Server atlassian-agentshroud]] - code - .mcp.json
+- [[MCP Server github-agentshroud]] - code - .mcp.json
+- [[MCP tools available — GitHub (reposPRsissues), Atlassian (JiraConfluence)]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

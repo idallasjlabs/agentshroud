@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[ToolChainAnalyzer Exfiltration Pattern Detection Tests]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

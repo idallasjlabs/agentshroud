@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[description of what this does_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Athena — Knowledge Distiller_3]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Input Requirements_21]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Output Format_36]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Persona_15]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Quality Checklist_18]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Role_92]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[System Prompt_15]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[User Prompt Template_6]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[cheatsheet_2]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[hermesskillsi-athenaSKILL]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[show_notes_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[dot-test_adds_connection_close_when_absent()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[dot-test_forces_connection_close_on_plain_request()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[dot-test_host_header_match_is_case_insensitive()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[dot-test_preserves_other_headers_and_order()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[dot-test_rewrites_host_header_to_target()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[dot-test_websocket_upgrade_keeps_connection_header_untouched()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the         han]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
+- [[Forcing Connection close makes every request single-shot per TCP         connec]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
+- [[TestRewriteRequestHeaders]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[bridge_module()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[dashboard_bridge.py (Hermes)]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[test_hermes_dashboard_bridge.py]] - code - gateway/tests/test_hermes_dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +27,9 @@ members: 12
 TABLE source_file, type FROM #community/Athena__Knowledge_Distiller_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+
+## Top bridge nodes
+- [[test_hermes_dashboard_bridge.py]] - degree 4, connects to 1 community

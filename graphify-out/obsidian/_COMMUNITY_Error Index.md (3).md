@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Error Index.md (3)
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[Related Notes_6]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Method]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Previously FIXED findings — verification]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Previously OPEN findings — current status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§1 — Re-audit of v0.8.0 Prior Findings]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§2 — New v1.2.0 Findings (OpenClaw-specific)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§6 — SAST (Semgrep) Status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§7 — Summary Table]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§8 — Regression Tests]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_gen-code-graph.sh]]
+- 1 edge to [[_COMMUNITY_Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]]
+- 1 edge to [[_COMMUNITY_AgentShroud State Diagrams (doc)]]
+- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
 
 ## Top bridge nodes
-- [[MCP Proxy Errors]] - degree 2, connects to 1 community
+- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - degree 10, connects to 4 communities

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[patch_edge_tts_proxy.py]] - code - docker/bots/hermes/patch_edge_tts_proxy.py
+- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

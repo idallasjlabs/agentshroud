@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "TestOutboundPipelineIntegration"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/TestOutboundPipelineIntegration
 ---
 
 # _make_filter()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_agent_specific_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
-- [[dot-test_allowed_domain_passes()]] - `calls` [EXTRACTED]
+- [[dot-test_allowed_domain_passes()_1]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_domain_still_allowed_in_monitor()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_ip()]] - `calls` [EXTRACTED]
 - [[dot-test_attempt_fields()]] - `calls` [EXTRACTED]
@@ -36,14 +36,14 @@ tags:
 - [[dot-test_unknown_domain_allowed_when_approved()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_domain_denied_when_denied()]] - `calls` [EXTRACTED]
 - [[dot-test_unlisted_domain_allowed_in_monitor()]] - `calls` [EXTRACTED]
-- [[dot-test_unlisted_domain_blocked()]] - `calls` [EXTRACTED]
+- [[dot-test_unlisted_domain_blocked()_1]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_does_not_match_deep_subdomain()]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_matches_base_domain()]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_one_level()]] - `calls` [EXTRACTED]
 - [[Create an EgressFilter with a simple config.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

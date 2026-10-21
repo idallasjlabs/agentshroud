@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[API Queries]] - document - skills/openclaw/github/SKILL.md
-- [[CIWorkflow Runs]] - document - skills/openclaw/github/SKILL.md
-- [[Common Commands_2]] - document - skills/openclaw/github/SKILL.md
-- [[GitHub Skill]] - document - skills/openclaw/github/SKILL.md
-- [[Issue Triage]] - document - skills/openclaw/github/SKILL.md
-- [[Issues]] - document - skills/openclaw/github/SKILL.md
-- [[JSON Output]] - document - skills/openclaw/github/SKILL.md
-- [[Notes_5]] - document - skills/openclaw/github/SKILL.md
-- [[PR Review Summary]] - document - skills/openclaw/github/SKILL.md
-- [[Pull Requests]] - document - skills/openclaw/github/SKILL.md
-- [[Setup_7]] - document - skills/openclaw/github/SKILL.md
-- [[Templates]] - document - skills/openclaw/github/SKILL.md
-- [[When NOT to Use_2]] - document - skills/openclaw/github/SKILL.md
-- [[When to Use_2]] - document - skills/openclaw/github/SKILL.md
+- [[dot-_agent_id_for_peer()]] - code - gateway/proxy/http_proxy.py
+- [[dot-_clamav_scan_bytes()]] - code - gateway/proxy/http_proxy.py
+- [[dot-_handle_client()]] - code - gateway/proxy/http_proxy.py
+- [[dot-_process_connect()]] - code - gateway/proxy/http_proxy.py
+- [[dot-_relay()]] - code - gateway/proxy/http_proxy.py
+- [[dot-_relay_and_scan()]] - code - gateway/proxy/http_proxy.py
+- [[Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1]] - rationale - gateway/proxy/http_proxy.py
+- [[Copy bytes from reader to writer, sampling the first scan_limit bytes         fo]] - rationale - gateway/proxy/http_proxy.py
+- [[Handle a single incoming client connection.]] - rationale - gateway/proxy/http_proxy.py
+- [[Parse CONNECT request, check allowlist, relay or block.]] - rationale - gateway/proxy/http_proxy.py
+- [[Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta]] - rationale - gateway/proxy/http_proxy.py
+- [[StreamReader_3]] - code - gateway/proxy/http_proxy.py
+- [[StreamWriter_2]] - code - gateway/proxy/http_proxy.py
+- [[Write data to a temp file and scan with ClamAV.          Runs in a thread execut]] - rationale - gateway/proxy/http_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gh-issuesSKILL]]
+- 6 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 2 edges to [[_COMMUNITY__pcm_bytes]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
 
 ## Top bridge nodes
-- [[GitHub Skill]] - degree 8, connects to 1 community
+- [[StreamReader_3]] - degree 6, connects to 2 communities
+- [[StreamWriter_2]] - degree 6, connects to 2 communities
+- [[dot-_clamav_scan_bytes()]] - degree 4, connects to 2 communities
+- [[dot-_process_connect()]] - degree 8, connects to 1 community
+- [[dot-_relay_and_scan()]] - degree 7, connects to 1 community

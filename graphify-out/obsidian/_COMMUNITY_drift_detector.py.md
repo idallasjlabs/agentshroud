@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Configuration_13]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[ContainerSnapshot.config_hash()]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Database Schema_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Drift Categories and Severity]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.acknowledge_alert(alert_id)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.check_drift(current)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.set_baseline(snapshot)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Environment Variables_6]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Function Details_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Key Classes  Functions_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Purpose_109]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Related_9]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Responsibilities_7]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[drift_detector.py_2]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[drift_detector.py_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Configuration  Environment Variables_1]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Function Details_7]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Generic Key Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Key Classes  Functions_7]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyInjector.inject_for_request(url, headers, agent_id, key_name)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyLeakDetector.scan_outbound(text)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyVault.check_value_match(text)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyVault.get_audit_log()]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyVault.get_key(name, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyVault.redact(text)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyVault.rotate_key(name, new_value)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[KeyVault.store_key(name, value, scopes)]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Purpose_101]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Related_11]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Responsibilities_9]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[Threat Model_8]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[key_vault.py_1]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
+- [[key_vault.py]] - document - docs/vault/02 - Modules/Security Modules/key_vault.py.md
 
 ## Live Query (requires Dataview plugin)
 

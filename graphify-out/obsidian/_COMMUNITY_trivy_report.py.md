@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Function Details_42]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Purpose_166]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Related_48]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Severity Order (for ranking)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[generate_summary(report)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[parse_trivy_output(raw)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[save_report(report, log_dir)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[trivy_report.py_2]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[trivy_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[Canary Checks]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[CanaryResult.to_dict()]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Environment Variables_17]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Function Details_38]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Key Classes  Functions_40]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Operational Notes_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Purpose_142]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Related_44]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[Threat Model_24]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[canary.py_2]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[canary.py_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[run_canary(pipeline, forwarder)]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
 
 ## Live Query (requires Dataview plugin)
 

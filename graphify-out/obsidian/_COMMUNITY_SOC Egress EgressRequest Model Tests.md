@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOC Egress EgressRequest Model Tests]] - code - gateway/tests/test_soc_egress.py
+- [[test_unknown_bot_id_raises_key_error]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

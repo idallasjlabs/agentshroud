@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration  Environment Variables_9]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Function Details_20]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Key Classes  Functions_22]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Key Rule ID Sets]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Purpose_130]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Related_26]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Responsibilities_24]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Threat Model_16]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Wazuh Level to Severity Mapping]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[generate_summary(alerts)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[level_to_severity(level)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[parse_alert(raw)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[read_alerts(alert_dir, since)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[wazuh_client.py_2]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[wazuh_client.py_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[0. Session context]] - document - reports/upgrade-2026-09-14.md
+- [[1. Bugs found and fixed in the Sunday-upgrade tooling itself]] - document - reports/upgrade-2026-09-14.md
+- [[2. Baseline (captured before any change)]] - document - reports/upgrade-2026-09-14.md
+- [[3. Vendor version bumps]] - document - reports/upgrade-2026-09-14.md
+- [[4.1 OpenClaw 2026.9.4 — BLOCKED, root cause fully diagnosed]] - document - reports/upgrade-2026-09-14.md
+- [[4.2 Hermes v0.20.6 — BLOCKED after two real fixes landed]] - document - reports/upgrade-2026-09-14.md
+- [[5. CVE matrix updates]] - document - reports/upgrade-2026-09-14.md
+- [[6. Incident during apply exit 50, manual recovery required]] - document - reports/upgrade-2026-09-14.md
+- [[7. Apply  verify — final result PASS]] - document - reports/upgrade-2026-09-14.md
+- [[8. Post-rebuild CVE rescan]] - document - reports/upgrade-2026-09-14.md
+- [[9. Remaining work]] - document - reports/upgrade-2026-09-14.md
+- [[AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)]] - document - reports/upgrade-2026-09-14.md
+- [[Next Steps (Not in Phase 3A3B)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A.8 Note DM Policy]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Summary line_1]] - document - reports/upgrade-2026-09-14.md
+- [[upgrade-2026-09-14]] - document - reports/upgrade-2026-09-14.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 16
 TABLE source_file, type FROM #community/wazuh_clientpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestSecurityFeatures]]
+
+## Top bridge nodes
+- [[9. Remaining work]] - degree 4, connects to 1 community

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_wrap_response()"
-location: "L5638"
+community: ".test_fetch_paginates_via_link_cursor() (2)"
+location: "L518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_fetch_paginates_via_link_cursor_2
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_owner_activity_is_tracked_with_flag()]] - `contains` [EXTRACTED]
+- [[dot-test_fetch_paginates_via_link_cursor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor_2

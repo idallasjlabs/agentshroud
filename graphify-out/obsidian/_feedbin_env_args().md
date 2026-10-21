@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "make_event"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/make_event
 ---
 
 # _feedbin_env_args()
@@ -17,4 +17,4 @@ tags:
 - [[cmd_up()]] - `calls` [EXTRACTED]
 - [[run-standalone.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/code #graphify/EXTRACTED #community/make_event

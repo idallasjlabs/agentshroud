@@ -1,25 +1,21 @@
 ---
 type: community
-members: 12
+members: 8
 ---
 
 # create_auth_dependency (3)
 
-**Members:** 12 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[ApprovalDecision_1]] - code - gateway/ingest_api/routes/approval.py
-- [[ApprovalRequest_5]] - code - gateway/ingest_api/routes/approval.py
-- [[Approve or reject a pending action      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/approval.py
-- [[AuthRequired_4]] - code - gateway/ingest_api/routes/approval.py
-- [[List all pending approval requests      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Request_9]] - code - gateway/ingest_api/routes/approval.py
-- [[Submit an action for human approval      Called by agents when attempting sensit]] - rationale - gateway/ingest_api/routes/approval.py
-- [[auth_dep()_4]] - code - gateway/ingest_api/routes/approval.py
-- [[decide_approval()]] - code - gateway/ingest_api/routes/approval.py
-- [[list_pending_approvals()_1]] - code - gateway/ingest_api/routes/approval.py
-- [[submit_approval_request()]] - code - gateway/ingest_api/routes/approval.py
+- [[dot-test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs. A…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,12 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 2 edges to [[_COMMUNITY_make_event]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency]]
 
 ## Top bridge nodes
-- [[decide_approval()]] - degree 6, connects to 2 communities
-- [[submit_approval_request()]] - degree 6, connects to 2 communities
-- [[auth_dep()_4]] - degree 4, connects to 2 communities
-- [[list_pending_approvals()_1]] - degree 4, connects to 1 community
+- [[TestCrossBotTrustPivot]] - degree 5, connects to 1 community

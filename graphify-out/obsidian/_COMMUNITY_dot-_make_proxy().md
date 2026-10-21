@@ -1,163 +1,153 @@
 ---
 type: community
-members: 150
+members: 140
 ---
 
 # ._make_proxy()
 
-**Members:** 150 nodes
+**Members:** 140 nodes
 
 ## Members
-- [[dot-_make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_make_proxy()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_make_proxy()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collab_threshold_notices_fire_only_once_per_level()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_cooldown_suppresses_second_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_dm_hello_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_filter_disabled_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_grant_immunity_bypasses_suspension()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_group_command_with_bot_suffix_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_group_message_with_mention_forwarded_and_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_group_message_without_mention_forwarded_but_flagged()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_hello_in_group_sends_hermes_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_hello_in_group_sends_openclaw_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_hermes_mention_ignored_when_processed_as_openclaw()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_hermes_mention_sets_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_immune_command_lists_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_immune_command_no_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_immune_user_lockdown_not_incremented()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_immune_user_message_passes_through_when_suspended()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_locked_no_active_lockdowns()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_locked_shows_suspended_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_no_bot_username_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_notify_user_blocked_uses_collaborator_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_openclaw_mention_does_not_affect_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_partial_phrase_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_hello_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_hi_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_partial_match_does_not_fire()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_status_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_strips_leading_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_trailing_punctuation_stripped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_predicate_whos_there_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_private_message_does_not_set_eligibility_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_revoke_immunity_restores_enforcement()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_revoke_immunity_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_status_in_group_sends_short_ack_not_full_status()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_stranger_hello_in_group_receives_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_two_bots_same_group_independent_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unlock_calls_reset_on_lockdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unlock_clears_suspended_drop_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unlock_persists_unpause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_username_for_bot_falls_back_to_default()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_username_for_bot_returns_per_bot_username()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[command@botname marks chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[gi uid must grant immunity so the user bypasses lockdown suspension check.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[immune must list all immune user IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[immune with no immune users must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[locked must list users with non-normal lockdown state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[locked with no active lockdowns must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[ri uid must remove immunity and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[ri for a user not in immune set must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[status in a group sends only the short liveness ack (no operational details).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock uid must call reset() on the lockdown module and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock for a user with no lockdown state must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock must clear the suspended-drop notice cooldown so user gets fresh notice…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock must persist through unpause_collaborator() so resume survives a…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_bot mention sets only openclaw eligible; hermes entry is absent.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot message processed as openclaw yields ineligible for…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A dropped message past the cooldown window must produce a new notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A user manually revoke'd (paused) with no ProgressiveLockdown block history…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Build a Telegram group message update.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator block notice should retry with deterministic unavailable fallback…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive escalation notice at block 5.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive suspension notice at block 10.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive warning text when they reach 3 security blocks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[DMs don't interact with the group eligibility map.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group messages without @mention are forwarded (for context) but mark chat as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group presence probe bare trigger phrases make each bot reply with a short…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Immune user must not be dropped by the suspension path (stub must not appear).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Integration tests for group at-mention filtering. The bot reads ALL group…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[On construction, _runtime_revoked_collaborators must be backed by the persisted…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner block notice should retry with owner-specific fallback when first send…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-bot eligibility — each bot in a shared group tracks mention state…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TelegramAPIProxy]] - code
-- [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Tests for lockdown UX unlock fix, collaborator notifications, locked,…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_make_group_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_username_for_bot returns the correct @username for each bot_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notice()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_12]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_13]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_14]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_15]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_16]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_17]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_18]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello, can you help' must NOT match — exact-match guard.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[noop()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[noop_owner_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-__del__()]] - code - gateway/security/resource_guard.py
+- [[dot-__init__()_66]] - code - gateway/security/resource_guard.py
+- [[dot-_alert_high_usage()]] - code - gateway/security/resource_guard.py
+- [[dot-_build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-_check_system_resources()]] - code - gateway/security/resource_guard.py
+- [[dot-_cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
+- [[dot-_get_disk_io_stats()]] - code - gateway/security/resource_guard.py
+- [[dot-_monitor_resources()]] - code - gateway/security/resource_guard.py
+- [[dot-_start_monitoring_task()]] - code - gateway/security/resource_guard.py
+- [[dot-add_alert_callback()_1]] - code - gateway/security/resource_guard.py
+- [[dot-check_cpu_limit()]] - code - gateway/security/resource_guard.py
+- [[dot-check_disk_write_limit()]] - code - gateway/security/resource_guard.py
+- [[dot-check_memory_limit()]] - code - gateway/security/resource_guard.py
+- [[dot-check_resource()]] - code - gateway/security/resource_guard.py
+- [[dot-check_vram_headroom()]] - code - gateway/security/resource_guard.py
+- [[dot-cleanup_temp_files()]] - code - gateway/security/resource_guard.py
+- [[dot-get_usage_stats()]] - code - gateway/security/resource_guard.py
+- [[dot-register_temp_file()]] - code - gateway/security/resource_guard.py
+- [[dot-setup_method()_11]] - code - gateway/tests/test_resource_guard.py
+- [[dot-start_request_tracking()]] - code - gateway/security/resource_guard.py
+- [[dot-stop()_6]] - code - gateway/security/resource_guard.py
+- [[dot-stop_monitoring()]] - code - gateway/security/resource_guard.py
+- [[dot-teardown_method()_4]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
+- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
+- [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
+- [[Any_18]] - code - gateway/security/resource_guard.py
+- [[Any_19]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
+- [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if resource usage is allowed for an agent.          Args             agen]] - rationale - gateway/security/resource_guard.py
+- [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
+- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
+- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
+- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
+- [[ResourceGuard]] - code - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[ResourceUsage]] - code - gateway/security/resource_guard.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
+- [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
+- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
+- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
+- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
+- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
+- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
+- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
+- [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[guard()_2]] - code - gateway/tests/test_resource_guard_limits.py
+- [[resource_guard.py]] - code - gateway/security/resource_guard.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -167,18 +157,37 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 62 edges to [[_COMMUNITY__wrap_response()]]
-- 45 edges to [[_COMMUNITY_asyncio]]
-- 5 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 4 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]]
-- 2 edges to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
-- 1 edge to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow()]]
+- 18 edges to [[_COMMUNITY__wrap_response()]]
+- 13 edges to [[_COMMUNITY_MiddlewareManager]]
+- 10 edges to [[_COMMUNITY_SessionManager]]
+- 5 edges to [[_COMMUNITY_test_playback_state.c]]
+- 4 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 4 edges to [[_COMMUNITY__wrap_response() (2)_1]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
+- 3 edges to [[_COMMUNITY_asyncio]]
+- 3 edges to [[_COMMUNITY__wrap_response() (4)]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
+- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
+- 2 edges to [[_COMMUNITY_Common Queries]]
+- 2 edges to [[_COMMUNITY__wrap_response() (5)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_NetworkSecurityFinding]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_SecureBrowser (3)]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY_PortManager]]
+- 1 edge to [[_COMMUNITY_WebProxy]]
+- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
 
 ## Top bridge nodes
-- [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - degree 9, connects to 3 communities
-- [[dot-test_suspended_drop_notice_respects_cooldown()]] - degree 9, connects to 3 communities
-- [[dot-test_suspended_user_receives_drop_notice()]] - degree 9, connects to 3 communities
-- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - degree 6, connects to 3 communities
-- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 5, connects to 3 communities
+- [[TestResourceProtection]] - degree 43, connects to 21 communities
+- [[ResourceGuard]] - degree 85, connects to 10 communities
+- [[ResourceLimits]] - degree 41, connects to 7 communities
+- [[TestResourceGuardFailClosed]] - degree 11, connects to 5 communities
+- [[resource_guard.py]] - degree 10, connects to 3 communities

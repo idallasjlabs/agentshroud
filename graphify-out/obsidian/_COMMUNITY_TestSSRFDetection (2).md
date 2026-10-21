@@ -1,24 +1,34 @@
 ---
 type: community
-members: 11
+members: 21
 ---
 
 # TestSSRFDetection (2)
 
-**Members:** 11 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Common Issues_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Configuration Files_3]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Health Checks_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Kill Switch_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Logs_4]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Related Notes_64]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[dot-agentsskillsi-psSKILL]] - document - .agents/skills/i-ps/SKILL.md
+- [[1. Change Documentation]] - document - .agents/skills/i-ps/SKILL.md
+- [[2. Testing Evidence]] - document - .agents/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback]] - document - .agents/skills/i-ps/SKILL.md
+- [[4. Blast Radius]] - document - .agents/skills/i-ps/SKILL.md
+- [[5. Observability]] - document - .agents/skills/i-ps/SKILL.md
+- [[6. Security]] - document - .agents/skills/i-ps/SKILL.md
+- [[7. Communication]] - document - .agents/skills/i-ps/SKILL.md
+- [[8. Service Control Commands]] - document - .agents/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)]] - document - .agents/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong]] - document - .agents/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Invoke Before]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Role_42]] - document - .agents/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[Quick Reference — AgentShroud]] - degree 11, connects to 1 community
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - degree 7, connects to 1 community

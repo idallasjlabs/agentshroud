@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[1. Clone the Repository]] - document - docs/operations/raspberry-pi.md
-- [[2. Install Docker]] - document - docs/operations/raspberry-pi.md
-- [[3. Set Up Secrets]] - document - docs/operations/raspberry-pi.md
-- [[4. Configure AgentShroud]] - document - docs/operations/raspberry-pi.md
-- [[5. Build and Start]] - document - docs/operations/raspberry-pi.md
-- [[6. Verify]] - document - docs/operations/raspberry-pi.md
-- [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
-- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
-- [[Fresh Install]] - document - docs/operations/raspberry-pi.md
-- [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md
-- [[From a Tagged Release]] - document - docs/operations/raspberry-pi.md
-- [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
-- [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
-- [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
-- [[Prerequisites_9]] - document - docs/operations/raspberry-pi.md
-- [[Slow Builds_1]] - document - docs/operations/raspberry-pi.md
-- [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
-- [[Troubleshooting_30]] - document - docs/operations/raspberry-pi.md
-- [[Updating to Latest Release]] - document - docs/operations/raspberry-pi.md
-- [[seccomp on ARM64]] - document - docs/operations/raspberry-pi.md
+- [[dot-__aenter__()_5]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aexit__()_5]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_137]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_138]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-request()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_compression_pointer()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_dns_blocklist_import_failure_sets_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_pointer_loop_bounded()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_simple_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_truncated_name_breaks()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Parse a DNS domain name from wire format, handling compression pointers.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[Provision a gateway password file and return the password.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Stands in for httpx.AsyncClient; records request kwargs.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[TestImportFallback]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestParseDomainName]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeAsyncClient]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeUpstreamResponse]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[fake_httpx_client()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[gateway_password()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[parse_domain_name()]] - code - gateway/proxy/dns_forwarder.py
+- [[test_dns_canvas_coverage.py]] - code - gateway/tests/test_dns_canvas_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
+- 9 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
+- 8 edges to [[_COMMUNITY_wakeword.c]]
+- 8 edges to [[_COMMUNITY_TestOAuthInjection]]
+- 3 edges to [[_COMMUNITY_TestLeakDetection]]
+- 3 edges to [[_COMMUNITY_web_proxy.py]]
+- 3 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 2 edges to [[_COMMUNITY_InjectionAction (2)]]
+- 1 edge to [[_COMMUNITY_Examples]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
 
 ## Top bridge nodes
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - degree 7, connects to 1 community
+- [[test_dns_canvas_coverage.py]] - degree 35, connects to 9 communities
+- [[parse_domain_name()]] - degree 8, connects to 2 communities
+- [[_FakeAsyncClient]] - degree 8, connects to 2 communities
+- [[TestParseDomainName]] - degree 7, connects to 2 communities
+- [[_FakeUpstreamResponse]] - degree 5, connects to 2 communities

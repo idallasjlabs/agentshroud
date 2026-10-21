@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
-- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Purpose_9]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Related Notes_13]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Where Used_3]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
-- 1 edge to [[_COMMUNITY_Publish SecureBrowser to ClawHub - Step-by-Step Guide]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
-- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community
+- [[spaCy]] - degree 7, connects to 1 community

@@ -1,43 +1,30 @@
 ---
 type: community
-members: 30
+members: 17
 ---
 
 # dashboard_endpoints.py
 
-**Members:** 30 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[dot-__init__()_119]] - code - gateway/web/dashboard_endpoints.py
-- [[dot-__init__()_120]] - code - gateway/web/dashboard_endpoints.py
-- [[dot-recent()]] - code - gateway/web/dashboard_endpoints.py
-- [[dot-tail()]] - code - gateway/web/dashboard_endpoints.py
-- [[AlertStore]] - code - gateway/web/dashboard_endpoints.py
-- [[Any_41]] - code - gateway/web/dashboard_endpoints.py
-- [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
-- [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[Test Dashboard Endpoints Suite]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[auth_headers()_4]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[test_alert_store_push_and_summary()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_tail()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_param()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_includes_pipeline_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_returns_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_online()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_returns_hosts()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[ClamAV — Malware Detection]] - document - docs/security/security-supply-chain.md
+- [[Detailed Profiles]] - document - docs/security/security-supply-chain.md
+- [[Docker Engine]] - document - docs/security/security-supply-chain.md
+- [[Falco — Runtime Security Monitoring]] - document - docs/security/security-supply-chain.md
+- [[FastAPI  Starlette  Uvicorn — Web Framework]] - document - docs/security/security-supply-chain.md
+- [[OpenSCAP — Compliance Scanning]] - document - docs/security/security-supply-chain.md
+- [[Overview_16]] - document - docs/security/security-supply-chain.md
+- [[Podman]] - document - docs/security/security-supply-chain.md
+- [[Python 3.11 — Runtime]] - document - docs/security/security-supply-chain.md
+- [[Recommendations_1]] - document - docs/security/security-supply-chain.md
+- [[SQLite — Approval Queue  Audit Storage]] - document - docs/security/security-supply-chain.md
+- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
+- [[Trivy — Container Image Scanning]] - document - docs/security/security-supply-chain.md
+- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
+- [[Wazuh — Host Integrity Monitoring ⚠️]] - document - docs/security/security-supply-chain.md
+- [[cryptography (Python) — Encryption Library]] - document - docs/security/security-supply-chain.md
+- [[spaCy + Presidio — PII Detection]] - document - docs/security/security-supply-chain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,12 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_dashboard_endpoints.py (2)]]
-- 1 edge to [[_COMMUNITY_ForwardRequest (2)]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes
-- [[test_dashboard_endpoints.py]] - degree 20, connects to 1 community
-- [[AlertStore]] - degree 9, connects to 1 community
-- [[LogBuffer]] - degree 8, connects to 1 community
-- [[Any_41]] - degree 3, connects to 1 community
-- [[dot-tail()]] - degree 3, connects to 1 community
+- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community

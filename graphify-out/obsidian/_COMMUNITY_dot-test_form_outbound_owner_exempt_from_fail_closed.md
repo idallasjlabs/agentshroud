@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_form_outbound_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner form messages still pass through when the pipeline crashes.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck SKILL messages without sandbox context should not trigger sandbox re]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__make_sanitizer()]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_CronStateMonitor]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
 
 ## Top bridge nodes
-- [[dot-test_form_outbound_owner_exempt_from_fail_closed()]] - degree 4, connects to 3 communities
+- [[dot-test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - degree 4, connects to 3 communities

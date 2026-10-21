@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[TickType_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
-- [[test_playback_statestubsfreertosFreeRTOS.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
-- [[xTaskGetTickCount()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[agentshroud-gateway service (sidecar mode, optional scan)]] - code - docker-compose.sidecar.yml
+- [[openclaw service (sidecar mode, exposed normally)]] - code - docker-compose.sidecar.yml
+- [[shared network (sidecar mode bridge)]] - code - docker-compose.sidecar.yml
 
 ## Live Query (requires Dataview plugin)
 

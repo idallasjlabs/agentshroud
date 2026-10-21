@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-__aenter__()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__aexit__()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-aiter_bytes()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-aread()]] - code - gateway/tests/test_llm_proxy.py
+- [[_HeadFakeResponse]] - code - gateway/tests/test_llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,12 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 2 edges to [[_COMMUNITY_test_voice_gateway.py]]
 
 ## Top bridge nodes
-- [[TestProcScans]] - degree 6, connects to 1 community
-- [[dot-test_falco_running_detected()]] - degree 2, connects to 1 community
-- [[dot-test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
-- [[dot-test_wazuh_agent_absent()]] - degree 2, connects to 1 community
-- [[dot-test_wazuh_agent_detected()]] - degree 2, connects to 1 community
+- [[_HeadFakeResponse]] - degree 7, connects to 1 community

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Secure Multi-Stage Docker Build (builder discarded)]] - rationale - docs/archive/SECURITY.md
-- [[Zero-Trust Build (source never touches the host)]] - rationale - docs/archive/SECURITY-AUDIT.md
+- [[dot-agentsskillsi-incident-responseSKILL]] - document - .agents/skills/i-incident-response/SKILL.md
+- [[Skill incident-response]] - document - .agents/skills/i-incident-response/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[A stalemismatched If-None-Match must serve the full new binary (200).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Authenticated request but no firmware on disk → 404 (not a 500empty 200).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Empty allowlist = OTA un-gated any non-empty token is accepted (200).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[GET firmwarebin token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[If-None-Match equal to the current ETag → 304 with no body.      This is the who]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Wire the firmwarebin route to a fake binary + a fixed OTA token allowlist.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_fw_client()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_firmware_bin_304_on_matching_if_none_match()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_firmware_bin_404_when_absent()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_firmware_bin_auth_and_etag()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_firmware_bin_stale_if_none_match_returns_body()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_firmware_bin_ungated_when_allowlist_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_search_json_owner_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_web_search_log_called_with_correct_params()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_web_search_no_egress_filter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_web_search_query_truncation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator chat raw web_search JSON produces a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner chat raw web_search JSON produces 'Switch to tool-capable model' message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Queries longer than 200 chars are truncated in the SOC log reason.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestWebSearchLog]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_trigger_web_search_log returns silently when egress_filter is None.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +29,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 5 edges to [[_COMMUNITY_CronStateMonitor]]
+- 5 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
-- [[_fw_client()]] - degree 7, connects to 1 community
-- [[test_firmware_bin_304_on_matching_if_none_match()]] - degree 3, connects to 1 community
-- [[test_firmware_bin_404_when_absent()]] - degree 3, connects to 1 community
-- [[test_firmware_bin_auth_and_etag()]] - degree 3, connects to 1 community
-- [[test_firmware_bin_stale_if_none_match_returns_body()]] - degree 3, connects to 1 community
+- [[TestWebSearchLog]] - degree 11, connects to 2 communities
+- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 2 communities
+- [[dot-test_raw_web_search_json_owner_message()]] - degree 4, connects to 2 communities
+- [[dot-test_web_search_log_called_with_correct_params()]] - degree 4, connects to 2 communities
+- [[dot-test_web_search_no_egress_filter()]] - degree 4, connects to 2 communities

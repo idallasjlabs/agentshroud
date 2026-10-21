@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[BDD Skill (Gherkin GivenWhenThen specs)]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 

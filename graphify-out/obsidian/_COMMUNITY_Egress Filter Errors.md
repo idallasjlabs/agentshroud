@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+members: 10
 ---
 
 # Egress Filter Errors
 
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Common Missing Domains]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Diagnosis_1]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Egress Filter Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Egress Filter Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Fix Add Domain to Allowlist]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[HTTP 403 — Egress Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Monitor Mode — Egress Not Enforced]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[RFC1918 Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Related Notes_73]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[dot-test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditTrail_2]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 14 edges to [[_COMMUNITY_CrossBotTrustLedger]]
 
 ## Top bridge nodes
-- [[Egress Filter Errors_2]] - degree 6, connects to 1 community
+- [[TestAuditTrail_2]] - degree 23, connects to 1 community

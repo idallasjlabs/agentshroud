@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Competitive Security Matrix — AgentShroud vs AI Agent Platforms]] - document - docs/security/competitive-security-matrix.md
-- [[Container Security Toolchain Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Key Takeaways]] - document - docs/security/competitive-security-matrix.md
-- [[Module Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Security Score (out of 28)]] - document - docs/security/competitive-security-matrix.md
-- [[Updated Magic Quadrant Position]] - document - docs/security/competitive-security-matrix.md
-- [[competitive-security-matrix]] - document - docs/security/competitive-security-matrix.md
+- [[1. Normal Message Flow]] - document - docs/flows/sequence-diagrams.md
+- [[2. MCP Tool Call Flow]] - document - docs/flows/sequence-diagrams.md
+- [[3. Kill Switch Activation Flow]] - document - docs/flows/sequence-diagrams.md
+- [[4. SSH Command Flow]] - document - docs/flows/sequence-diagrams.md
+- [[5. Web Fetch Flow]] - document - docs/flows/sequence-diagrams.md
+- [[AgentShroud Sequence Diagrams]] - document - docs/flows/sequence-diagrams.md
+- [[sequence-diagrams]] - document - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 

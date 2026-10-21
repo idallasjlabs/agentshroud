@@ -1,31 +1,24 @@
 ---
 type: community
-members: 18
+members: 11
 ---
 
 # Route map (by router)
 
-**Members:** 18 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[API Reference]] - document - docs/api/api-reference.md
-- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
-- [[Audit  ledger]] - document - docs/api/api-reference.md
-- [[Authentication]] - document - docs/api/api-reference.md
-- [[DNS]] - document - docs/api/api-reference.md
-- [[Egress control]] - document - docs/api/api-reference.md
-- [[Error responses]] - document - docs/api/api-reference.md
-- [[Example `GET managehealth`]] - document - docs/api/api-reference.md
-- [[Example `POST manageegress{request_id}approve`]] - document - docs/api/api-reference.md
-- [[Health & status]] - document - docs/api/api-reference.md
-- [[Quarantine]] - document - docs/api/api-reference.md
-- [[RBAC]] - document - docs/api/api-reference.md
-- [[Route map (by router)]] - document - docs/api/api-reference.md
-- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
-- [[Scanning]] - document - docs/api/api-reference.md
-- [[Source of truth_1]] - document - docs/api/api-reference.md
-- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
-- [[api-reference]] - document - docs/api/api-reference.md
+- [[ADR-003-two-network-container-isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[ADR-003 Two-Network Container Isolation]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Consequences_5]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Context_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Decision_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Mitigation_1]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Network Configuration]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Status_8]] - document - docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- [[Three-Network Architecture (externalmgmtinternal)]] - concept - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Integration Guide]]
+- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer (2)]]
+- 1 edge to [[_COMMUNITY_Control Center]]
 
 ## Top bridge nodes
-- [[API Reference]] - degree 8, connects to 1 community
+- [[ADR-003 Two-Network Container Isolation]] - degree 8, connects to 2 communities

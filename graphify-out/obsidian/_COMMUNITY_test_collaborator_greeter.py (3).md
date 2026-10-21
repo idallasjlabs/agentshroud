@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetWazuhSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
-- [[get_wazuh_summary()]] - code - gateway/security/scanner_integration.py
+- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 10 Validation Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[System Verification]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,16 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_scanner_integration.py]]
-- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_AgentTarget (6)]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_Path (3)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
+- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
 
 ## Top bridge nodes
-- [[get_wazuh_summary()]] - degree 13, connects to 6 communities
-- [[_is_wazuh_agent_running()]] - degree 4, connects to 1 community
-- [[TestGetWazuhSummary]] - degree 4, connects to 1 community
-- [[dot-test_not_run_when_no_alert_dir()]] - degree 3, connects to 1 community
+- [[8. Performance & Testing]] - degree 5, connects to 1 community
+- [[Phase 10 Validation Checklist]] - degree 5, connects to 1 community

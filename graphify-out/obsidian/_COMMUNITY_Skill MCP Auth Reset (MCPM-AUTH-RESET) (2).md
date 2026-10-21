@@ -1,30 +1,42 @@
 ---
 type: community
-members: 17
+members: 29
 ---
 
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET) (2)
 
-**Members:** 17 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[AWS Credentials_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_88]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_65]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Troubleshooting_32]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_95]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_7]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[openclawskillsi-mcpm-auth-resetSKILL]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[1. Branch Creation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[2. Development (TDD)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[3. Production Testing (if needed)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[4. Pull Request]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[5. Pre-Merge]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Cloud & FinOps]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Common Commands Quick Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Content & Communication]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Core Development]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Data Operations]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Contacts_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GSDE&G Skills Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GitHub Workflow Integration]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Investigation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[MCP Tools]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[P1 Incident Response]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Safety]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Testing Guidelines]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Quick Reference When to Use Each Skill]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Reference_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[SecureClaw (Project-Specific)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Directory Structure]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Invocation Examples]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skills by Category]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[System Utilities]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Workflow_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[hermesskillsi-referenceSKILLS_GUIDE]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[📚 Created Documentation]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +46,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (4)]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX) (3)]]
+- 1 edge to [[_COMMUNITY_models.py]]
 
 ## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - degree 9, connects to 1 community
+- [[📚 Created Documentation]] - degree 3, connects to 2 communities

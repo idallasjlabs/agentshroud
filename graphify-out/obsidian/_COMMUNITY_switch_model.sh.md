@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[ensure_local_model_available()]] - code - scripts/switch_model.sh
-- [[normalize_cloud_ref()]] - code - scripts/switch_model.sh
-- [[preflight_local()]] - code - scripts/switch_model.sh
-- [[switch_model.sh]] - code - scripts/switch_model.sh
-- [[switch_model.sh script]] - code - scripts/switch_model.sh
-- [[upsert_env_value()]] - code - scripts/switch_model.sh
-- [[usage()_1]] - code - scripts/switch_model.sh
-- [[verify_both_bots_healthy()]] - code - scripts/switch_model.sh
-- [[wait_for_local_model()]] - code - scripts/switch_model.sh
+- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 9
 TABLE source_file, type FROM #community/switch_modelsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+
+## Top bridge nodes
+- [[3. Remaining Work — Prioritized by Value_3]] - degree 9, connects to 1 community

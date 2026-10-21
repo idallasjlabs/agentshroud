@@ -1,24 +1,23 @@
 ---
 type: community
-members: 11
+members: 10
 ---
 
 # AgentShroud (system, C4 context) (3)
 
-**Members:** 11 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Deployment Modes_1]] - document - docs/architecture/deployment-diagram.md
-- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
-- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
-- [[Proxy Mode (Recommended)_1]] - document - docs/architecture/deployment-diagram.md
-- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
-- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[dot-test_argv_shape()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_custom_user()]] - code - gateway/tests/test_multi_host_test.py
+- [[Build the ssh argv for a host. Non-interactive, fail-fast on connect.      ``Bat]] - rationale - gateway/tools/multi_host_test.py
+- [[Describe exactly what would run, without executing anything.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestBuildSshArgv]] - code - gateway/tests/test_multi_host_test.py
+- [[Turn argparse REMAINDER tokens into a command string.      Drops a leading ``--`]] - rationale - gateway/tools/multi_host_test.py
+- [[_dry_run_report()]] - code - gateway/tools/multi_host_test.py
+- [[_resolve_command()]] - code - gateway/tools/multi_host_test.py
+- [[build_ssh_argv()]] - code - gateway/tools/multi_host_test.py
+- [[multi_host_test.py]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,14 +27,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Deployment Architecture]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity (2)]]
+- 4 edges to [[_COMMUNITY_parse_trivy_output]]
+- 3 edges to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 3 edges to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
+- 3 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 1 edge to [[_COMMUNITY_Migration Path (SSH → Distributed Node)]]
+- 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0 (2)]]
+- 1 edge to [[_COMMUNITY_PermissionLevel (6)]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_LOW Findings]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List (2)]]
 
 ## Top bridge nodes
-- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 4 communities
-- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
-- [[Deployment Modes_1]] - degree 3, connects to 1 community
+- [[multi_host_test.py]] - degree 15, connects to 10 communities
+- [[TestBuildSshArgv]] - degree 6, connects to 3 communities
+- [[build_ssh_argv()]] - degree 6, connects to 1 community
+- [[_dry_run_report()]] - degree 4, connects to 1 community
+- [[_resolve_command()]] - degree 3, connects to 1 community

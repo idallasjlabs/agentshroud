@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Adversary Model_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Attack Phases_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Attack Techniques Reference_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements_3]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Critical Rules_6]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Infrastructure_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Key Principle_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Output_5]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 2 Prompt Injection_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 3 Indirect Injection_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 4 Data Exfiltration_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 5 Exploitation Chains_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 6 Detection Validation_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Test Structure_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Writing Exploit Tests_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[hermesskillsi-sec-offenseSKILL]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[Dialogue Adaptations_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Dialogue Techniques_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[EXPERT_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Expert Persona_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[HOST_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Input Requirements_8]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Output Format_19]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Persona_6]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Quality Checklist_6]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Role_58]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Socrates — Dialogue Architect_3]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Speaker Definitions_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[System Prompt_6]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[User Prompt Template_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[openclawskillsi-socratesSKILL]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[AgentShroud Red Team Adversarial Tester_2]] - degree 8, connects to 1 community
+- [[Socrates — Dialogue Architect_3]] - degree 13, connects to 1 community

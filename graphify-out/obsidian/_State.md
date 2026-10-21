@@ -1,19 +1,19 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # _State
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[_send_state()]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

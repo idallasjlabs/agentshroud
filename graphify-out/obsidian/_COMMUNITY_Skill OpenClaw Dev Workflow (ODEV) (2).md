@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Guardrails_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Invocation_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Jira ticket — every development batch gets one_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Reviewers and fixer available to you_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Role_10]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[Tools you have for this workflow_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
-- [[openclawskillsi-odevSKILL]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[dot-agentsskillsi-secREADME]] - document - .agents/skills/i-sec/README.md
+- [[Purpose_3]] - document - .agents/skills/i-sec/README.md
+- [[Related Skills]] - document - .agents/skills/i-sec/README.md
+- [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
+- [[Usage]] - document - .agents/skills/i-sec/README.md
+- [[hermesagentsi-security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
+- [[openclawagentsi-security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV) (2)]]
-- 1 edge to [[_COMMUNITY_Mode A — Single task (6)]]
-- 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep (4)]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - degree 10, connects to 3 communities
+- [[Security Review (SEC)]] - degree 7, connects to 1 community

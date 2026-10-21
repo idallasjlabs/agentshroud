@@ -1,56 +1,34 @@
 ---
 type: community
-members: 43
+members: 21
 ---
 
 # test_forward_stream.py (2)
 
-**Members:** 43 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[dot-body_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-subject_not_empty()]] - code - gateway/ingest_api/models.py
-- [[AgentTarget]] - code - gateway/ingest_api/routes/forward.py
-- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/forward.py
-- [[AuthRequired_1]] - code - gateway/ingest_api/routes/forward.py
-- [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - rationale - gateway/ingest_api/routes/forward.py
-- [[EmailSendRequest]] - code - gateway/ingest_api/routes/forward.py
-- [[EmailSendRequest_1]] - code - gateway/ingest_api/models.py
-- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
-- [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - rationale - gateway/ingest_api/routes/forward.py
-- [[ForwardRequest_1]] - code - gateway/ingest_api/routes/forward.py
-- [[ForwardResponse]] - code - gateway/ingest_api/models.py
-- [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - rationale - gateway/ingest_api/routes/forward.py
-- [[MiddlewareManager.process_request()]] - code - gateway/ingest_api/middleware.py
-- [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
-- [[OwnerEmailRequest]] - code - gateway/ingest_api/routes/forward.py
-- [[Request_2]] - code - gateway/ingest_api/routes/forward.py
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
-- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
-- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
-- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Send an email to the owner without exposing the recipient address in the request]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - rationale - gateway/ingest_api/routes/forward.py
-- [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
-- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
-- [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
-- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
-- [[auth_dep()_2]] - code - gateway/ingest_api/routes/forward.py
-- [[bypass_auth()]] - code - gateway/tests/test_channel_ownership.py
-- [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
-- [[client()_4]] - code - gateway/tests/test_channel_ownership.py
-- [[client()_5]] - code - gateway/tests/test_email_owner_bypasses_pii.py
-- [[email_send()]] - code - gateway/ingest_api/routes/forward.py
-- [[email_send_owner()]] - code - gateway/ingest_api/routes/forward.py
-- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
-- [[forward_content()]] - code - gateway/ingest_api/routes/forward.py
-- [[forward_content_stream()]] - code - gateway/ingest_api/routes/forward.py
-- [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
-- [[test_channel_ownership.py]] - code - gateway/tests/test_channel_ownership.py
-- [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[dot-test_downgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_downgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_full_workflow()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_get_available()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_get_current_version()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_get_history_empty()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_review_version()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_rollback_no_history()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_rollback_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_dry_run()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_invalid_version()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
+- [[Create a test FastAPI app with version routes.]] - rationale - gateway/tests/test_version_routes.py
+- [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
+- [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
+- [[app()]] - code - gateway/tests/test_version_routes.py
+- [[client()_17]] - code - gateway/tests/test_version_routes.py
+- [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
+- [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
+- [[version_routes APIRouter — apiv1versions]] - code - gateway/ingest_api/version_routes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,32 +36,3 @@ members: 43
 TABLE source_file, type FROM #community/test_forward_streampy_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 9 edges to [[_COMMUNITY_RBACConfig]]
-- 7 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 6 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 3 edges to [[_COMMUNITY_GatewayEmailService]]
-- 3 edges to [[_COMMUNITY_make_event]]
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 2 edges to [[_COMMUNITY_test_security.py]]
-- 2 edges to [[_COMMUNITY_create_auth_dependency]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 2 edges to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
-- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
-- 1 edge to [[_COMMUNITY_TestEmailSend]]
-- 1 edge to [[_COMMUNITY_TestEmailSend (2)]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-
-## Top bridge nodes
-- [[forward.py]] - degree 37, connects to 13 communities
-- [[_process_inbound()]] - degree 12, connects to 4 communities
-- [[email_send()]] - degree 13, connects to 3 communities
-- [[test_channel_ownership.py]] - degree 7, connects to 3 communities
-- [[test_email_owner_bypasses_pii.py]] - degree 7, connects to 3 communities

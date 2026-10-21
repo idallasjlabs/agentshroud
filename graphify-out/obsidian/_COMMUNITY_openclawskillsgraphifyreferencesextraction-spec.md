@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[graphify reference extraction subagent prompt_2]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
-- [[openclawskillsgraphifyreferencesextraction-spec]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[i-hermes README — Podcast Production Orchestrator]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[i-hermes SKILL — Reference Verifier]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[canary-cron.sh]] - code - scripts/canary-cron.sh
-- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
+- [[freertosFreeRTOS.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[freertostask.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 

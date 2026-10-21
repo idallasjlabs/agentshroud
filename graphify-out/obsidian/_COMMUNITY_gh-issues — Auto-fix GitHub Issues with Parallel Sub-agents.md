@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Phase 1 — Parse Arguments]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 2 — Fetch Issues]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 3 — Present & Confirm]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 4 — Pre-flight Checks]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 5 — Spawn Sub-agents (Parallel)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 6 — PR Review Handler]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Results Collection]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Spawn configuration per sub-agent]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.1 — Discover PRs to Monitor]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.2 — Fetch All Review Sources]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.3 — Analyze Comments for Actionability]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.4 — Present Review Comments]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.5 — Spawn Review Fix Sub-agents (Parallel)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.6 — Review Results]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Sub-agent Task Prompt]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Timeout Handling]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Watch Mode (if --watch is active)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
+- [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
+- [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
+- [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
+- [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
+- [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN bolt-app http request failed getaddrinfo ENOTFOUND gateway`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN socket-modeSlackWebSocketN A pong wasn't received from the server before the timeout of 5000ms!`]] - document - docs/runbooks/troubleshooting.md
+- [[`agentembedded embedded run agent end isError=true error=Ollama API stream ended without a final response`]] - document - docs/runbooks/troubleshooting.md
+- [[`gateway ⚠️ Gateway is binding to a non-loopback address`]] - document - docs/runbooks/troubleshooting.md
+- [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - document - docs/runbooks/troubleshooting.md
+- [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - document - docs/runbooks/troubleshooting.md
+- [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gh-issuesSKILL]]
+- 2 edges to [[_COMMUNITY_graphify reference extra exports and benchmark (3)]]
 
 ## Top bridge nodes
-- [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - degree 9, connects to 1 community
+- [[Known Log Messages]] - degree 19, connects to 1 community

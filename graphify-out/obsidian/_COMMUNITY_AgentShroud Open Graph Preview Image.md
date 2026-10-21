@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
+- [[Favicon 128x128 (AgentShroud logo mark)]] - image - branding/favicons/favicon-128x128.png
 
 ## Live Query (requires Dataview plugin)
 

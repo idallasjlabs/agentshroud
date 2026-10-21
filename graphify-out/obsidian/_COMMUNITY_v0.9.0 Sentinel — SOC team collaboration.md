@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[v0.9.0 Sentinel — SOC team collaboration]] - document - CHANGELOG.md
+- [[Favicon 96x96 (AgentShroud logo mark)]] - image - branding/favicons/favicon-96x96.png
 
 ## Live Query (requires Dataview plugin)
 

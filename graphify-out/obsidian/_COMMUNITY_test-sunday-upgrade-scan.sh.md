@@ -1,30 +1,35 @@
 ---
 type: community
-members: 17
+members: 22
 ---
 
 # test-sunday-upgrade-scan.sh
 
-**Members:** 17 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[check()_8]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[check()_9]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[dev_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[handoff_status()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[smoke.sh Startup Smoke Runner]] - code - scripts/smoke.sh
-- [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[test_openclaw_model_provider_consistency.sh]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_model_provider_consistency.sh script]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
-- [[test_openclaw_readiness_retry.sh]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[test_openclaw_readiness_retry.sh script]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
-- [[write_fake()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[1. Observatory Mode (Global Monitor-Only Switch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[2. Prompt Injection Hardening]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[2a. Fix ContextGuard Enforcement Bug (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[2b. Expand PromptGuard Patterns (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[2c. Input Normalization Layer (~6h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[2d. Cross-Turn Correlation (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[2e. Tool Result Sanitization (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[4. ML-Based Injection Classifier (Stretch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[5. Output Canary System]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[6. Enhanced Audit & Compliance]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[A. Steve Hay — ALL Tiers (14 features, 23 requirements)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Features_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[K. Merge Pending PRs  Code Cleanup]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[M. Misc Quick Wins]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +39,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 1 edge to [[_COMMUNITY_AgentTarget (5)]]
+- 1 edge to [[_COMMUNITY_package_skill]]
+- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill (2)]]
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
 
 ## Top bridge nodes
-- [[test-sunday-upgrade-scan.sh]] - degree 12, connects to 1 community
-- [[smoke.sh Startup Smoke Runner]] - degree 4, connects to 1 community
+- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 2 communities
+- [[Features_1]] - degree 7, connects to 1 community
+- [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community

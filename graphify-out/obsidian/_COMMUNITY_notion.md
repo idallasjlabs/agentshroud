@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
-- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
-- [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
-- [[Notes_8]] - document - skills/openclaw/notion/SKILL.md
-- [[Obsidian]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
-- [[Setup_9]] - document - skills/openclaw/notion/SKILL.md
-- [[notion]] - document - skills/openclaw/notion/SKILL.md
-- [[notionSKILL]] - document - skills/openclaw/notion/SKILL.md
-- [[obsidian-cli quick start]] - document - skills/openclaw/obsidian/SKILL.md
-- [[obsidianSKILL]] - document - skills/openclaw/obsidian/SKILL.md
+- [[AGENTS]] - document - docker/config/openclaw/AGENTS.md
+- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - document - docker/config/openclaw/AGENTS.md
+- [[Approved Tools and Their Arguments]] - document - docker/config/openclaw/AGENTS.md
+- [[Critical Rules for Local Models]] - document - docker/config/openclaw/AGENTS.md
+- [[Example Multi-Step Tool Use]] - document - docker/config/openclaw/AGENTS.md
+- [[Failover Behaviour (Local Mode)]] - document - docker/config/openclaw/AGENTS.md
+- [[Tool Invocation Format]] - document - docker/config/openclaw/AGENTS.md
+- [[bash]] - document - docker/config/openclaw/AGENTS.md
+- [[file_read]] - document - docker/config/openclaw/AGENTS.md
+- [[file_write]] - document - docker/config/openclaw/AGENTS.md
+- [[send_message]] - document - docker/config/openclaw/AGENTS.md
+- [[web_search]] - document - docker/config/openclaw/AGENTS.md
 
 ## Live Query (requires Dataview plugin)
 

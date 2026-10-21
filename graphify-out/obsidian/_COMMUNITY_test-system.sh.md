@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[test-system.sh]] - code - docker/scripts/test-system.sh
-- [[test-system.sh script]] - code - docker/scripts/test-system.sh
+- [[patch-slack-sdk.sh]] - code - docker/scripts/patch-slack-sdk.sh
+- [[patch-slack-sdk.sh script]] - code - docker/scripts/patch-slack-sdk.sh
 
 ## Live Query (requires Dataview plugin)
 

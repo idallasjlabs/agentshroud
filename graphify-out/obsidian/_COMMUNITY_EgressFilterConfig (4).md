@@ -1,73 +1,97 @@
 ---
 type: community
-members: 60
+members: 84
 ---
 
 # EgressFilterConfig (4)
 
-**Members:** 60 nodes
+**Members:** 84 nodes
 
 ## Members
-- [[dot-test_agent_specific_policy()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_full_url()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_host_port_format()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_localhost_hostname_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_log_filters_by_agent()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_log_records_attempts()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_log_size_limit()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_port_not_allowed()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_private_ip_blocked_ssrf()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_stats_counts()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
-- [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
-- [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
-- [[ApprovalResult]] - code - gateway/security/egress_approval.py
-- [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter records attempts and provides stats.]] - rationale - gateway/tests/test_egress_filter.py
-- [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
-- [[Per-agent policies override the default.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
-- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
-- [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
-- [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
-- [[TestLogging]] - code - gateway/tests/test_egress_filter.py
-- [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestPerAgentPolicy]] - code - gateway/tests/test_egress_filter.py
-- [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
-- [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
-- [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
-- [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
-- [[test_egress_filter.py]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_allows_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_cleans_stale_entries()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_does_not_affect_other_domains()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_expired_falls_back_to_deny()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_invalid_iso_is_ignored()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-from_env()]] - code - gateway/security/killswitch_config.py
+- [[dot-test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_auto_revert_timer_logic()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_critical_logged_when_setting_non_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_default_config()_7]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_default_mode_is_enforce()_4]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_module_mode_pinned_modules()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_module_mode_respect_global_override()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_init()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_module_mode_resolution()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_no_critical_when_setting_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_observatory_mode_state_initialization()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_observatory_mode_validation()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_pinned_modules_validation()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_security_pipeline_set_global_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_security_pipeline_set_global_mode_missing_components()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-to_dict()_9]] - code - gateway/security/killswitch_config.py
+- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Any_54]] - code - gateway/security/killswitch_config.py
+- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
+- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
+- [[FastAPI_3]] - code - gateway/tests/test_observatory_mode.py
+- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
+- [[Load configuration from environment variables.]] - rationale - gateway/security/killswitch_config.py
+- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
+- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test Observatory Mode configuration and endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test SecurityPipeline.set_global_mode method.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test auto-revert timer functionality.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._5]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test module mode resolution with pinned modules.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test set_global_mode handles missing components gracefully.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test that get_module_mode respects AGENTSHROUD_MODE env var.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test that observatory mode state is properly initialized.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test that pinned modules always return enforce even in monitor mode.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test validation of observatory mode parameters.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test validation of pinned module names.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[TestAutoRevert]] - code - gateway/tests/test_observatory_mode.py
+- [[TestCriticalLogging]] - code - gateway/tests/test_observatory_mode.py
+- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
+- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
+- [[client()_18]] - code - gateway/tests/test_observatory_mode.py
+- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
+- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
+- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[set_mode()]] - code - gateway/web/api.py
+- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
+- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,18 +101,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
-- 21 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 20 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 4 edges to [[_COMMUNITY_TestEgressApprovalQueue (2)]]
-- 3 edges to [[_COMMUNITY_StdioConnection (2)]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue (3)]]
+- 28 edges to [[_COMMUNITY_AgentTarget (3)]]
+- 15 edges to [[_COMMUNITY_AsyncMock]]
+- 10 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig (4) (2)]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_TestWebSearchLog]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[ApprovalResult]] - degree 22, connects to 5 communities
-- [[TestEnforceMode]] - degree 16, connects to 4 communities
-- [[_make_filter()]] - degree 33, connects to 3 communities
-- [[test_egress_filter.py]] - degree 29, connects to 3 communities
-- [[TestIPRules]] - degree 14, connects to 3 communities
+- [[test_observatory_mode.py]] - degree 19, connects to 6 communities
+- [[KillSwitchConfig]] - degree 43, connects to 4 communities
+- [[killswitch_monitor.py]] - degree 6, connects to 4 communities
+- [[TestObservatoryMode]] - degree 15, connects to 3 communities
+- [[TestGetMode]] - degree 9, connects to 3 communities

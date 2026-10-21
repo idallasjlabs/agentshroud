@@ -8,40 +8,40 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the REST v3 add-comment URL against the cloud-id gateway.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Compose the human-readable weekly summary posted as the comment.      - commits]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Extract SCRUM-n keys mentioned in commit subjects.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch one secret field from the gateway op-proxy. Returns the value._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Jira Dev-Ticket Helper Module]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[Jira Weekly Review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[POST and return (status_code, response_text). Raises urllib errors up.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[SCRUM-81 (Jira weekly review ticket)]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[Unauthenticated site-to-cloud-ID discovery URL._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_adf_paragraph()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_git_commits_last_week()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_post_json()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_basic_auth_header()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_payload()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_op_proxy_request()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_tenant_info_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[datetime_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[fetch_op_secret()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[resolve_cloud_id()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[run()_4]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[dot-client()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-client()_3]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_compose_healthcheck()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_dashboard_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_apple_script()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_custom_services()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_docker_compose()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_generate_podman_compose()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_put_then_get()]] - code - gateway/tests/test_runtime_engines.py
+- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
+- [[Definition of a single service for compose generation.]] - rationale - gateway/runtime/compose_generator.py
+- [[Generate a compose YAML file for Docker or Podman.      Args         services]] - rationale - gateway/runtime/compose_generator.py
+- [[Generate a shell script to start services with Apple Containers.      Apple Cont]] - rationale - gateway/runtime/compose_generator.py
+- [[ServiceDef]] - code - gateway/runtime/compose_generator.py
+- [[TestComposeGenerator]] - code - gateway/tests/test_runtime_engines.py
+- [[TestConfigRoundTrip]] - code - gateway/tests/test_runtime_engines.py
+- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
+- [[TestManagementPage]] - code - gateway/tests/test_runtime_engines.py
+- [[detect_runtime()]] - code - gateway/runtime/__init__.py
+- [[gatewayruntimeconfig.py (RuntimeConfig)]] - code - gateway/runtime/config.py
+- [[gatewayruntimedocker_engine.py (DockerEngine)]] - code - gateway/runtime/docker_engine.py
+- [[gatewayruntimepodman_engine.py (PodmanEngine)]] - code - gateway/runtime/podman_engine.py
+- [[gatewayruntimesecurity.py (get_features_for_runtime)]] - code - gateway/runtime/security.py
+- [[generate_apple_script()]] - code - gateway/runtime/compose_generator.py
+- [[generate_compose()]] - code - gateway/runtime/compose_generator.py
+- [[test_runtime_engines.py]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,14 +51,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_jira_dev_ticket run]]
-- 1 edge to [[_COMMUNITY_openclawworkspacejira_dev_ticket.py]]
-- 1 edge to [[_COMMUNITY_hermesworkspacejira_dev_ticket.py]]
-- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 7 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 7 edges to [[_COMMUNITY_egress_retry.py]]
+- 7 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 6 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 6 edges to [[_COMMUNITY__get_gmail_app_password]]
+- 5 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 4 edges to [[_COMMUNITY_Workflow (follow in order)]]
+- 4 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 2 edges to [[_COMMUNITY_server.py]]
+- 2 edges to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
+- 2 edges to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
+- 2 edges to [[_COMMUNITY_tts.py]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[run()_4]] - degree 11, connects to 2 communities
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - degree 3, connects to 2 communities
-- [[resolve_cloud_id()_2]] - degree 5, connects to 1 community
-- [[build_basic_auth_header()_2]] - degree 4, connects to 1 community
-- [[build_op_proxy_request()_2]] - degree 4, connects to 1 community
+- [[test_runtime_engines.py]] - degree 33, connects to 13 communities
+- [[ServiceDef]] - degree 20, connects to 9 communities
+- [[TestComposeGenerator]] - degree 14, connects to 4 communities
+- [[TestDetectRuntime]] - degree 11, connects to 4 communities
+- [[TestConfigRoundTrip]] - degree 8, connects to 4 communities

@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Skill: Code Review (CR) (2)
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Feedback Guidelines_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Output Format_7]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Review Principles_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Role_17]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[dot-test_basic_spawn()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_depth_exceeded_allowed_in_monitor()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_depth_exceeded_denied()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_depth_penalty_reduces_trust()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_disabled_always_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_strict_inheritance_caps_trust()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestSpawnAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 4 edges to [[_COMMUNITY_Message Composition with MML (MIME Meta Language)]]
+- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
 
 ## Top bridge nodes
-- [[Skill Code Review (CR)_2]] - degree 6, connects to 1 community
+- [[TestSpawnAuthorization]] - degree 12, connects to 2 communities

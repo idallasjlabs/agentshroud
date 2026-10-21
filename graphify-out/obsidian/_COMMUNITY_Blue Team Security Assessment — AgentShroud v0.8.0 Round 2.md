@@ -1,38 +1,39 @@
 ---
 type: community
-members: 25
+members: 26
 ---
 
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
 
-**Members:** 25 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[Final Assessment Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[CRITICAL Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Executive Summary_8]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Executive Summary_9]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Fixes Applied_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[HIGH Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[LOW Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[MEDIUM Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[OWNER_USER_IDS bypass mechanism]] - concept - docs/planning/reviews/phase-review-2026-03-04.md
-- [[Overall Security Posture STRONG 🟢]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[R2-C1 RBAC Management Endpoints Missing Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-H1 1Password CLI Download Without Checksum Verification (Bot Dockerfile)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-H2 Bot Dockerfile Missing setuidsetgid Bit Stripping (CIS 4.8)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-L1 No Global Security Headers Middleware for API Responses]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-L2 WebSocket Connection Leak in `webapi.py`]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-L3 OCI Image Version Labels Outdated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-M1 Missing `aiohttp` in `requirements.txt`]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-M2 WebSocket Endpoints in `webapi.py` Use Full Auth Token (Not Scoped)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Round 1 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Round 2 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Summary_13]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Verification of ALL Prior Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Verification of Round 1 Fixes]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[dot-test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_high_risk_leakage_detects_function_calls_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_high_risk_leakage_detects_identity_md_in_reveal_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_high_risk_leakage_detects_invoke_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_high_risk_leakage_skips_protected_header_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_internal_approval_banner_detects_allow_always_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_internal_approval_banner_detects_allow_once_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_internal_approval_banner_detects_deny_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_internal_approval_banner_detects_standard_banner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_internal_approval_banner_ignores_normal_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_internal_approval_banner_ignores_unrelated_deny_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_legacy_block_notice_detects_legacy_bracket_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contains_legacy_block_notice_detects_legacy_protected_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_extract_first_egress_target_skips_identity_md()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_extract_first_egress_target_skips_md_filenames()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_extract_first_egress_target_still_catches_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_is_no_reply_token_accepts_fenced_and_punctuated_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_is_no_reply_token_rejects_non_token_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_looks_like_filename_reference_catches_common_extensions()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_looks_like_filename_reference_rejects_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[BOOTSTRAP.md must NOT be treated as an egress domain.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Our own protected notices must never be double-filtered.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOutboundClassifierHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[bootstrap.md mentioned in a denial should NOT trigger the high-risk filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,14 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
-- 1 edge to [[_COMMUNITY_LOW — Informational (2)]]
-- 1 edge to [[_COMMUNITY_Recommendation]]
-- 1 edge to [[_COMMUNITY_LOW Findings]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
-- 1 edge to [[_COMMUNITY_Findings & Mitigations]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - degree 18, connects to 7 communities
-- [[OWNER_USER_IDS bypass mechanism]] - degree 2, connects to 1 community
+- [[TestOutboundClassifierHelpers]] - degree 27, connects to 2 communities

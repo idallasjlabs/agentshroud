@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CLAUDE.md as the repo constitution]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[ToolResultInjectionScanner Test Suite]] - code - gateway/tests/test_tool_injection_scan.py
 
 ## Live Query (requires Dataview plugin)
 

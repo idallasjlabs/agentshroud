@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[BLOCKED-Awaiting-Dev Outcome]] - rationale - reports/upgrade-2026-08-30.md
+- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

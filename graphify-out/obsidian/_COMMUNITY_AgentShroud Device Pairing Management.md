@@ -1,43 +1,48 @@
 ---
 type: community
-members: 30
+members: 35
 ---
 
 # AgentShroud Device Pairing Management
 
-**Members:** 30 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[1. Regular Audits]] - document - docs/setup/DEVICE_PAIRING.md
-- [[2. Principle of Least Privilege]] - document - docs/setup/DEVICE_PAIRING.md
-- [[3. Monitor Remote IPs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[4. Document Your Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[5. Rotate on Compromise]] - document - docs/setup/DEVICE_PAIRING.md
-- [[AgentShroud Device Pairing Management]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Approve All Pending Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Approving Device Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[File Locations]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Finding Pending Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[How Device Pairing Works]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Integration with AgentShroud Workflow]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Listing Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Method 1 Via CLI (Recommended)]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Method 2 View Raw Pending File]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Method 3 Check Container Logs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Overview_7]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem pairing required but no pending requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem Approved device still can't connect]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Problem Too many pending requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Quick Approval (Single Device)]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Rejecting Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Revoking Device Access]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Best Practices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Security Notes_1]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Troubleshooting_16]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Verify Approval]] - document - docs/setup/DEVICE_PAIRING.md
-- [[View All Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
-- [[View Detailed Device Information]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Why Device Pairing Matters]] - document - docs/setup/DEVICE_PAIRING.md
+- [[_on_tts_pcm()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_vg_state()]] - code - firmware/voice-terminal/main/app_main.c
+- [[delivery_resume_offset()]] - code - firmware/voice-terminal/main/playback_logic.h
+- [[delivery_track_sent_ok()]] - code - firmware/voice-terminal/main/playback_logic.h
+- [[face_set_state()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[face_state_t]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[main()_13]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[playback_gate_should_open()]] - code - firmware/voice-terminal/main/playback_logic.h
+- [[playback_logic.h]] - code - firmware/voice-terminal/main/playback_logic.h
+- [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - code - firmware/voice-terminal/main/playback_logic.h
+- [[playback_step()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[playback_step() — reproduces tts_task's gate-opendrain branches for testing]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[reset_all()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[stubsaudio.h (host-test stub replacing audio.h constants)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
+- [[test_drain_clears_playing_and_returns_idle()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_drain_keeps_face_off_idle_when_retriggered()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_gate_open_sets_speaking_and_tts_playing()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_gate_opens_on_20s_age()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_gate_opens_on_768kb_cap()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_gate_opens_on_reply_complete()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_gate_stays_closed_before_any_cap()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_gate_stays_closed_leaves_state_idle()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_playback_state.c]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_playback_state.c (host-native unit tests, SCRUM-59)]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_resume_offset_first_attempt_is_zero()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_resume_offset_rewinds_8kb()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[test_track_sent_ok_is_monotonic()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[tts_task()]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_agent_count()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[vt_remote_log()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[wakeword_set_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tts_stop_clear()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tts_stop_requested()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[ws_vg_state_t]] - code - firmware/voice-terminal/main/app_main.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,9 +52,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management (2)]]
-- 1 edge to [[_COMMUNITY_BotConfig (3)]]
-- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
+- 7 edges to [[_COMMUNITY_graphify reference extra exports and benchmark (2)]]
+- 6 edges to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
+- 5 edges to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 5 edges to [[_COMMUNITY_TestMetadataGuard]]
 
 ## Top bridge nodes
-- [[AgentShroud Device Pairing Management]] - degree 16, connects to 3 communities
+- [[tts_task()]] - degree 9, connects to 3 communities
+- [[_on_vg_state()]] - degree 6, connects to 3 communities
+- [[wakeword_tts_playing()]] - degree 8, connects to 2 communities
+- [[test_drain_keeps_face_off_idle_when_retriggered()]] - degree 7, connects to 2 communities
+- [[wakeword_tts_stop_requested()]] - degree 6, connects to 2 communities

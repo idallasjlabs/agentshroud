@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Kawaii Face Basic Cycle Example Root CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt
-- [[Kawaii Face Basic Cycle Main Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/CMakeLists.txt
-- [[LVGL 9.x Graphics Library Dependency]] - concept - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
-- [[LVGL Kawaii Face Component CMakeLists]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/CMakeLists.txt
-- [[LVGL Kawaii Face IDF Component Manifest (v1.0.0)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/idf_component.yml
-- [[Voice Terminal Main Component CMakeLists (app_main, audio, ota, ui_face)]] - code - firmware/voice-terminal/main/CMakeLists.txt
-- [[Voice Terminal Main IDF Component Manifest]] - code - firmware/voice-terminal/main/idf_component.yml
-- [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - concept - firmware/voice-terminal/main/idf_component.yml
-- [[esp-sr Speech Recognition Library (WakeNet WN9)]] - concept - firmware/voice-terminal/main/idf_component.yml
+- [[Branch Naming_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Commit Messages  (Conventional Commits)_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Emergency Hotfix_5]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Mandatory Workflow  (10 steps)_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[REFUSE These_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Role_100]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[openclawskillsi-ggSKILL]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 9
 TABLE source_file, type FROM #community/LVGL_Kawaii_Face_Component_CMakeLists
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_soc.js]]
+
+## Top bridge nodes
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - degree 9, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Atlassian MCP Server (Jira + Confluence, concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Prime Directive — no new files, minimal diffs]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

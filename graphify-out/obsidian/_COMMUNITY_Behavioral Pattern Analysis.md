@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Behavioral Pattern Analysis]] - concept - docs/project/glossary.md
+- [[podcast_plan.json (voice config)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

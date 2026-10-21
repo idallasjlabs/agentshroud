@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[Approval queue (notify Isaiah via Telegram, wait up to 1 hour)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Execute action via HTTP CONNECT proxy]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Isaiah decides (approved  rejected  timeout)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[MCP Inspector (injection scan, PII scan, sensitive op scan)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Main agent (agentshroud_bot)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Response delivered to user]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Threat level (NONELOW, MEDIUM, HIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[User sends message or cron fires]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Write audit entry to ledger.db (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[author_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[description_16]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[keywords_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[license_8]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[main_3]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[name_6]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[openclawskillsi-browserpackage.json]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[scripts_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[test_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[version_8]] - code - docker/config/openclaw/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 

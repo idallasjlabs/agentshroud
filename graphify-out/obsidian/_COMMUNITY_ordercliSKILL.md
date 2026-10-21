@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
-- [[ordercliSKILL]] - document - skills/openclaw/ordercli/SKILL.md
+- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
+- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

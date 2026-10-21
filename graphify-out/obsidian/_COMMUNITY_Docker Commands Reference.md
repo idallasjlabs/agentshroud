@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Container management_2]] - document - examples/docker-commands.md
-- [[Container status_1]] - document - examples/docker-commands.md
-- [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
-- [[Docker Commands Reference]] - document - examples/docker-commands.md
-- [[Exec into containers]] - document - examples/docker-commands.md
-- [[Logs_3]] - document - examples/docker-commands.md
-- [[Networking_1]] - document - examples/docker-commands.md
-- [[OpenClaw CLI commands (run inside agentshroud-bot)]] - document - examples/docker-commands.md
-- [[Reading files from containers]] - document - examples/docker-commands.md
-- [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
-- [[Volume management]] - document - examples/docker-commands.md
-- [[Writing files to containers]] - document - examples/docker-commands.md
+- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +27,3 @@ members: 12
 TABLE source_file, type FROM #community/Docker_Commands_Reference
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
-
-## Top bridge nodes
-- [[Docker Commands Reference]] - degree 12, connects to 1 community

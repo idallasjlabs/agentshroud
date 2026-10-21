@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_three_when_semgrep_and_precommit_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - rationale - gateway/security/scanner_integration.py
-- [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_secure_development()]] - code - gateway/security/scanner_integration.py
+- [[Purpose_59]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Related Skills_45]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Technical Writer (TW)_1]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Usage_48]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[openclawskillsi-twREADME]] - document - docker/config/openclaw/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_scanner_integration.py]]
-- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_AgentTarget (6)]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[_score_secure_development()]] - degree 7, connects to 3 communities
-- [[TestScoreSecureDevelopment]] - degree 3, connects to 1 community
+- [[Technical Writer (TW)_1]] - degree 5, connects to 1 community

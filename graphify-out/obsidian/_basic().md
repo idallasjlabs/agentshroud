@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestCanvasAuthHelpers"
+community: "InjectionAction (2)"
 location: "L488"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCanvasAuthHelpers
+  - community/InjectionAction_2
 ---
 
 # _basic()
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_upstream_ws_exception_closes_gracefully()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers
+#graphify/code #graphify/EXTRACTED #community/InjectionAction_2

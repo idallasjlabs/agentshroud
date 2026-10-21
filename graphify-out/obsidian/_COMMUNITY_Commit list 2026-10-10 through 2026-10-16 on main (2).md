@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Core framework pins fastapi, uvicorn, pydantic, pydantic-settings, aiosqlite, httpx, docker SDK]] - concept - gateway/requirements.txt
+- [[test_playback_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

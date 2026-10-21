@@ -1,155 +1,151 @@
 ---
 type: community
-members: 142
+members: 138
 ---
 
 # ingest_api/main.py
 
-**Members:** 142 nodes
+**Members:** 138 nodes
 
 ## Members
-- [[Add a domain to the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[Add an egress allowdeny rule.]] - rationale - gateway/ingest_api/main.py
-- [[Approve an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
-- [[Audit feed for private-data access policy violations.]] - rationale - gateway/ingest_api/main.py
-- [[AuthRequired]] - code
-- [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
-- [[CIS Docker Benchmark checks for this container.]] - rationale - gateway/ingest_api/main.py
-- [[Comprehensive container security profile — runs all applicable checks.]] - rationale - gateway/ingest_api/main.py
-- [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
-- [[Cross-signal SOC correlation summary.]] - rationale - gateway/ingest_api/main.py
-- [[Deny an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
-- [[Discard (keep quarantined) a blocked message after admin review.]] - rationale - gateway/ingest_api/main.py
-- [[Discard a blocked outbound message after admin review.]] - rationale - gateway/ingest_api/main.py
-- [[Enabledisable emergency block-all for outbound egress.]] - rationale - gateway/ingest_api/main.py
-- [[Execute SSH command with validation and approval]] - rationale - gateway/ingest_api/main.py
-- [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
-- [[Fetch one report (metadata + content). Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - rationale - gateway/ingest_api/main.py
-- [[Generate comprehensive security health report.]] - rationale - gateway/ingest_api/main.py
-- [[Get DNS blocklist statistics. Returns current DNS filtering statistics from the…]] - rationale - gateway/ingest_api/main.py
-- [[Get a single ledger entry by ID Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[Get kill switch monitor status and recent results. Returns Current status…]] - rationale - gateway/ingest_api/main.py
-- [[Get permissions summary for a user (admin+ only).]] - rationale - gateway/ingest_api/main.py
-- [[Get permissions summary for the current user.]] - rationale - gateway/ingest_api/main.py
-- [[HTTP CONNECT proxy traffic statistics. Shows allowedblocked counts and recent…]] - rationale - gateway/ingest_api/main.py
-- [[Ingest API (POST ingest)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[LLMProxy.get_stats]] - code - gateway/proxy/llm_proxy.py
-- [[List all configured agent targets with health status Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[List all security modules and their status.]] - rationale - gateway/ingest_api/main.py
-- [[List all users and their roles (admin+ only).]] - rationale - gateway/security/rbac.py
-- [[List configured SSH hosts (names only)]] - rationale - gateway/ingest_api/main.py
-- [[List pending interactive egress approval requests.]] - rationale - gateway/ingest_api/main.py
-- [[List quarantined blocked inbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
-- [[List quarantined blocked outbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
-- [[List recent egress attempts for dashboardSOC triage.]] - rationale - gateway/ingest_api/main.py
-- [[List report metadata (no content), newest first, optionally by bot. Cross-bot…]] - rationale - gateway/ingest_api/main.py
-- [[Persist last scanner result and emit live event-bus telemetry.]] - rationale - gateway/ingest_api/main.py
-- [[Preview egress risk heuristic for domainport combos.]] - rationale - gateway/ingest_api/main.py
-- [[Query SSH audit entries from ledger]] - rationale - gateway/ingest_api/main.py
-- [[Query the data ledger Returns paginated results with optional filters.…]] - rationale - gateway/ingest_api/main.py
-- [[Release a blocked outbound message for adminmanual resend flow.]] - rationale - gateway/ingest_api/main.py
-- [[Release a quarantined message for admin workflow follow-up.]] - rationale - gateway/ingest_api/main.py
-- [[Remove a domain from the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[Remove an egress rule by domain.]] - rationale - gateway/ingest_api/main.py
-- [[Return LLM proxy statistics.]] - rationale - gateway/ingest_api/main.py
-- [[Return a paginated list of blocked domains. Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[Return current private-data policy configuration and enforcement state.]] - rationale - gateway/ingest_api/main.py
-- [[Return egress rules and emergency-block status.]] - rationale - gateway/ingest_api/main.py
-- [[Return normalized scanner state + latest results for SOCdashboard views.]] - rationale - gateway/ingest_api/main.py
-- [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
-- [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - rationale - gateway/ingest_api/main.py
-- [[Return recent security telemetry events with optional filters.]] - rationale - gateway/ingest_api/main.py
-- [[Return scanner result history for SOC timeline views.]] - rationale - gateway/ingest_api/main.py
-- [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to…]] - rationale - gateway/ingest_api/main.py
-- [[Run OpenSCAP XCCDF evaluation against the running container.]] - rationale - gateway/ingest_api/main.py
-- [[Run Trivy vulnerability scan.]] - rationale - gateway/ingest_api/main.py
-- [[Run all locally available security scanners and return consolidated results.]] - rationale - gateway/ingest_api/main.py
-- [[Run canary integrity checks.]] - rationale - gateway/ingest_api/main.py
-- [[Run kill switch verification test. Args dry_run If True (default), only…]] - rationale - gateway/ingest_api/main.py
-- [[SOC 2 Trust Service Criteria compliance coverage report. Maps active…]] - rationale - gateway/ingest_api/main.py
-- [[SSHExecRequest]] - code
-- [[SSHWriteFileRequest]] - code
-- [[Scored security health report — grade, per-tool scores, recommendations.…]] - rationale - gateway/ingest_api/main.py
-- [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - rationale - gateway/ingest_api/main.py
-- [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - rationale - gateway/ingest_api/main.py
-- [[System Control - Live Dashboard Shows real-time system status with links to…]] - rationale - gateway/ingest_api/main.py
-- [[Trigger an immediate blocklist refresh from upstream adlists. Authentication…]] - rationale - gateway/ingest_api/main.py
-- [[Write file content to an allowlisted SSH host via structured transport. Unlike…]] - rationale - gateway/ingest_api/main.py
-- [[_active()]] - code - gateway/ingest_api/main.py
-- [[_count_by_status()]] - code - gateway/ingest_api/main.py
-- [[_execute_and_record()]] - code - gateway/ingest_api/main.py
-- [[_record_scanner_result()]] - code - gateway/ingest_api/main.py
-- [[_scanner_summary()]] - code - gateway/ingest_api/main.py
-- [[_top_reasons()]] - code - gateway/ingest_api/main.py
-- [[add()]] - code - gateway/ingest_api/main.py
-- [[add_blocked_domain()]] - code - gateway/ingest_api/main.py
-- [[container_security_profile()]] - code - gateway/ingest_api/main.py
-- [[create_report()]] - code - gateway/ingest_api/main.py
-- [[delete]] - code
-- [[delete_ledger_entry()]] - code - gateway/ingest_api/main.py
-- [[discard_blocked_message()]] - code - gateway/ingest_api/main.py
-- [[discard_blocked_outbound()]] - code - gateway/ingest_api/main.py
-- [[egress_add_rule()]] - code - gateway/ingest_api/main.py
-- [[egress_approve()]] - code - gateway/ingest_api/main.py
-- [[egress_deny()]] - code - gateway/ingest_api/main.py
-- [[egress_emergency_block()]] - code - gateway/ingest_api/main.py
-- [[egress_log()]] - code - gateway/ingest_api/main.py
-- [[egress_pending()]] - code - gateway/ingest_api/main.py
-- [[egress_remove_rule()]] - code - gateway/ingest_api/main.py
-- [[egress_risk_preview()]] - code - gateway/ingest_api/main.py
-- [[egress_rules()]] - code - gateway/ingest_api/main.py
-- [[falco_alerts()]] - code - gateway/ingest_api/main.py
-- [[full_security_report()]] - code - gateway/ingest_api/main.py
-- [[gateway package __init__]] - code - gateway/__init__.py
-- [[get]] - code
-- [[get_dns_stats()]] - code - gateway/ingest_api/main.py
-- [[get_ledger_entry()]] - code - gateway/ingest_api/main.py
-- [[get_my_permissions()]] - code - gateway/ingest_api/main.py
-- [[get_report()]] - code - gateway/ingest_api/main.py
-- [[get_soc2_compliance_report()]] - code - gateway/ingest_api/main.py
-- [[get_user_permissions()]] - code - gateway/ingest_api/main.py
-- [[ingest_apimain.py]] - code - gateway/ingest_api/main.py
-- [[killswitch_status()]] - code - gateway/ingest_api/main.py
-- [[list_agents()]] - code - gateway/ingest_api/main.py
-- [[list_blocked_domains()]] - code - gateway/ingest_api/main.py
-- [[list_blocked_message_quarantine()]] - code - gateway/ingest_api/main.py
-- [[list_blocked_outbound_quarantine()]] - code - gateway/ingest_api/main.py
-- [[list_reports()]] - code - gateway/ingest_api/main.py
-- [[list_security_modules()]] - code - gateway/ingest_api/main.py
-- [[list_users_and_roles()]] - code - gateway/ingest_api/main.py
-- [[llm_proxy_stats]] - code - gateway/ingest_api/main.py
-- [[post]] - code
-- [[privacy_audit()]] - code - gateway/ingest_api/main.py
-- [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
-- [[proxy_status()]] - code - gateway/ingest_api/main.py
-- [[quarantine_summary()]] - code - gateway/ingest_api/main.py
-- [[query_ledger()]] - code - gateway/ingest_api/main.py
-- [[refresh_dns_blocklist()]] - code - gateway/ingest_api/main.py
-- [[release_blocked_message()]] - code - gateway/ingest_api/main.py
-- [[release_blocked_outbound()]] - code - gateway/ingest_api/main.py
-- [[remove_blocked_domain()]] - code - gateway/ingest_api/main.py
-- [[run_all_scanners()]] - code - gateway/ingest_api/main.py
-- [[run_canary_checks()]] - code - gateway/ingest_api/main.py
-- [[run_cis_benchmark()]] - code - gateway/ingest_api/main.py
-- [[run_clamav_scan()]] - code - gateway/ingest_api/main.py
-- [[run_openscap_scan()]] - code - gateway/ingest_api/main.py
-- [[run_trivy_scan()]] - code - gateway/ingest_api/main.py
-- [[scanner_history()]] - code - gateway/ingest_api/main.py
-- [[security_health_report()]] - code - gateway/ingest_api/main.py
-- [[soc_correlation()]] - code - gateway/ingest_api/main.py
-- [[soc_events()]] - code - gateway/ingest_api/main.py
-- [[soc_export()]] - code - gateway/ingest_api/main.py
-- [[soc_redirect()]] - code - gateway/ingest_api/main.py
-- [[soc_report()]] - code - gateway/ingest_api/main.py
-- [[ssh_exec()]] - code - gateway/ingest_api/main.py
-- [[ssh_history()]] - code - gateway/ingest_api/main.py
-- [[ssh_hosts()]] - code - gateway/ingest_api/main.py
-- [[ssh_write_file()]] - code - gateway/ingest_api/main.py
-- [[system_control()]] - code - gateway/ingest_api/main.py
-- [[verify_killswitch()]] - code - gateway/ingest_api/main.py
-- [[wazuh_alerts()]] - code - gateway/ingest_api/main.py
-- [[websockets=17.1,18.0 pin]] - concept - gateway/requirements.txt
+- [[dot-__init__()_81]] - code - gateway/security/tool_acl.py
+- [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[dot-_get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
+- [[dot-_get_role()]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool()_1]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
+- [[dot-check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
+- [[dot-effective_admin()]] - code - gateway/security/tool_acl.py
+- [[dot-effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
+- [[dot-effective_private()]] - code - gateway/security/tool_acl.py
+- [[dot-enforcer()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-get_allowed_tools()]] - code - gateway/security/tool_acl.py
+- [[dot-get_denial_counts()]] - code - gateway/security/tool_acl.py
+- [[dot-get_denied_tools()]] - code - gateway/security/tool_acl.py
+- [[dot-get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
+- [[dot-get_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
+- [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_operator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_owner()_1]] - code - gateway/security/rbac_config.py
+- [[dot-set_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[dot-test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_can_use_allowed_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_can_use_unknown_tool_when_not_denied()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_can_use_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
+- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
+- [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
+- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
+- [[Authorize a tool call, refusing owner elevation over an unverified origin.]] - rationale - gateway/security/tool_acl.py
+- [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
+- [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
+- [[Check whether user_id may invoke the named tool.          Returns             (]] - rationale - gateway/security/tool_acl.py
+- [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - rationale - gateway/security/tool_acl.py
+- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
+- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
+- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
+- [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
+- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
+- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
+- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
+- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
+- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
+- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
+- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
+- [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
+- [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
+- [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - rationale - gateway/security/tool_acl.py
+- [[RBACConfig]] - code - gateway/security/rbac.py
+- [[RBACConfig_1]] - code - gateway/tests/test_privacy_policy.py
+- [[RBACConfig_2]] - code - gateway/tests/test_tool_acl.py
+- [[RBACConfig_3]] - code - gateway/security/rbac_config.py
+- [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
+- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
+- [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
+- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
+- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
+- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
+- [[Role_19]] - code - gateway/security/rbac_config.py
+- [[SCLCaller]] - code - gateway/tests/test_soc_bots.py
+- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
+- [[TeamsConfig_2]] - code - gateway/tests/test_tool_acl.py
+- [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
+- [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
+- [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
+- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
+- [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
+- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
+- [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
+- [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
+- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
+- [[ToolACLConfig]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
+- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
+- [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - rationale - gateway/security/rbac_config.py
+- [[_make_rbac()]] - code - gateway/tests/test_tool_acl.py
+- [[can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
+- [[enforcer()]] - code - gateway/tests/test_tool_acl.py
+- [[rbac()]] - code - gateway/tests/test_tool_acl.py
+- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
+- [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
+- [[tool_acl.py]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -159,34 +155,54 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_Request]]
-- 11 edges to [[_COMMUNITY_test_prompt_guard.py (2)]]
-- 6 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 4 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 3 edges to [[_COMMUNITY_lifespan()]]
-- 3 edges to [[_COMMUNITY_deep_security_test]]
-- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 2 edges to [[_COMMUNITY_test_main_endpoints.py (2)]]
-- 2 edges to [[_COMMUNITY_Request (2)]]
-- 2 edges to [[_COMMUNITY_asyncio]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_ProxyDashboard]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ReportStore]]
-- 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_cmd_start]]
-- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (2)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_sync-cve-registry.py (2)]]
+- 61 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 30 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 29 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 21 edges to [[_COMMUNITY_chatbotmain.py]]
+- 19 edges to [[_COMMUNITY_socrouter.py]]
+- 18 edges to [[_COMMUNITY_colima-health-check.sh]]
+- 18 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 16 edges to [[_COMMUNITY_MiddlewareManager]]
+- 15 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 13 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 9 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 7 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 7 edges to [[_COMMUNITY_SCLClient]]
+- 7 edges to [[_COMMUNITY_TestToolChainAnalyzer (2)]]
+- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 5 edges to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
+- 5 edges to [[_COMMUNITY_ResourceGuard]]
+- 4 edges to [[_COMMUNITY_KillSwitchMonitor (5)]]
+- 4 edges to [[_COMMUNITY_Canvas Skill]]
+- 4 edges to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection]]
+- 4 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
+- 4 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 3 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_Remediation]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_Function Details]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2) (2)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
+- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
+- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (4)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (3)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py (2)]]
 
 ## Top bridge nodes
-- [[ingest_apimain.py]] - degree 118, connects to 22 communities
-- [[AuthRequired]] - degree 66, connects to 4 communities
-- [[post]] - degree 25, connects to 4 communities
-- [[create_report()]] - degree 5, connects to 1 community
-- [[get_my_permissions()]] - degree 5, connects to 1 community
+- [[RBACConfig_3]] - degree 217, connects to 31 communities
+- [[Role_19]] - degree 107, connects to 17 communities
+- [[ToolACLEnforcer]] - degree 75, connects to 5 communities
+- [[tool_acl.py]] - degree 9, connects to 3 communities
+- [[RBACConfig_1]] - degree 7, connects to 2 communities

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolACLEnforcer.check_tool_rate_limit]] - code - gateway/security/tool_acl.py
+- [[test_wakeword_statestubsesp_log.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

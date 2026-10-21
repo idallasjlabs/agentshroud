@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[TickType_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[test_wakeword_statestubsfreertostask.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
-- [[vTaskDelay()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[blu CLI (BluesoundNAD control)]] - concept - skills/openclaw/blucli/SKILL.md
+- [[blucli (blu)]] - document - skills/openclaw/blucli/SKILL.md
+- [[blucliSKILL]] - document - skills/openclaw/blucli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

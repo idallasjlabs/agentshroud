@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Environment Variables_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Function Details_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Mode Enforce vs Monitor_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Purpose_103]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Related_6]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Threat Model_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[dot-__init__()_141]] - code - gateway/tests/test_key_rotation.py
+- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +36,16 @@ members: 21
 TABLE source_file, type FROM #community/env_guardpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 12 edges to [[_COMMUNITY_A2AMethod]]
+- 4 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 4 edges to [[_COMMUNITY_AgentShroud Documentation]]
+- 1 edge to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
+
+## Top bridge nodes
+- [[MockValidator]] - degree 14, connects to 3 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 3 communities
+- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[dot-test_register_validator()]] - degree 3, connects to 1 community

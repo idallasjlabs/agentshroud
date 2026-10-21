@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PythonBoto3AWS moto test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[append_trend_log.py]] - code - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 
 ## Live Query (requires Dataview plugin)
 

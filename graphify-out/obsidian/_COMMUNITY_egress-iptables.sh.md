@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
-- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
+- [[canary-cron.sh]] - code - scripts/canary-cron.sh
+- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
 
 ## Live Query (requires Dataview plugin)
 

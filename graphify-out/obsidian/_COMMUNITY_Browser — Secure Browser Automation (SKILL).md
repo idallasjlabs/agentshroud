@@ -1,48 +1,30 @@
 ---
 type: community
-members: 35
+members: 17
 ---
 
 # Browser — Secure Browser Automation (SKILL)
 
-**Members:** 35 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[One Claw Tied Behind Your Back Security Framework]] - concept - docker/config/hermes/skills/i-browser/SKILL.md
-- [[dot-agentsskillsi-browserbrowse.js]] - code - .agents/skills/i-browser/browse.js
-- [[Browser Skill README (OpenClaw)]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Browser — Secure Browser Automation (README)]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Browser — Secure Browser Automation (SKILL)]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Browser — Secure Browser Automation SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[RiskLevel enum]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[SecureBrowser Security Config (config.yaml)]] - document - .agents/skills/i-browser/config.yaml
-- [[SecureBrowser Security Configuration (config.yaml)]] - document - docker/config/hermes/skills/i-browser/config.yaml
-- [[SecureBrowser Security Configuration (config.yaml, OpenClaw)]] - code - docker/config/openclaw/skills/i-browser/config.yaml
-- [[SecureBrowser class]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._classify_risk()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._domain_matches()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._init_browser()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._load_config()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._log_action()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._log_security_event()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._requires_approval()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._take_screenshot()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser._validate_url()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser.click()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser.extract()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser.fill_field()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser.navigate()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecurityConfig dataclass]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[SecurityError exception]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[appendLog()_3]] - code - .agents/skills/i-browser/browse.js
-- [[browse.py — SecureBrowser CLI (OpenClaw)]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
-- [[browser-fetch package.json_2]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[browser-fetch package.json_3]] - document - .agents/skills/i-browser/package.json
-- [[browserFetch()_3]] - code - .agents/skills/i-browser/browse.js
-- [[fs_5]] - code - .agents/skills/i-browser/browse.js
-- [[main() CLI entrypoint]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[path_25]] - code - .agents/skills/i-browser/browse.js
-- [[{ chromium }_3]] - code - .agents/skills/i-browser/browse.js
+- [[CollaboratorActivityTracker_1]] - code - gateway/tests/test_lifespan_prune.py
+- [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Path_49]] - code - gateway/tests/test_lifespan_prune.py
+- [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Startup prune must remove fixture markdown files from every contributor dir.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[_is_fixture_uid()]] - code - gateway/security/collaborator_tracker.py
+- [[_make_md()]] - code - gateway/tests/test_lifespan_prune.py
+- [[_prune_fixture_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[collaborator_tracker.py]] - code - gateway/security/collaborator_tracker.py
+- [[test_is_fixture_uid_blocks_short_numeric()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_blocks_test_user_prefix()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_passes_real_uids()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_lifespan_prune.py]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_prune_keeps_real_uid_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_prune_walks_all_contributor_dirs()]] - code - gateway/tests/test_lifespan_prune.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,3 +32,14 @@ members: 35
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation_SKILL
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 7 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+
+## Top bridge nodes
+- [[test_lifespan_prune.py]] - degree 10, connects to 2 communities
+- [[_is_fixture_uid()]] - degree 8, connects to 1 community
+- [[_prune_fixture_markdown()]] - degree 7, connects to 1 community
+- [[test_prune_keeps_real_uid_markdown()]] - degree 6, connects to 1 community
+- [[test_prune_walks_all_contributor_dirs()]] - degree 6, connects to 1 community

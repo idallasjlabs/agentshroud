@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-test_anthropic_default_strips_x_api_key()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_credential_injected_into_request()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_credential_not_injected_for_unknown_domain()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_has_credential_false_for_missing()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_has_credential_true_for_loaded()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_injection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_strip_headers_removes_conflicting_header()]] - code - gateway/tests/test_credential_injector.py
-- [[Default Anthropic mapping must strip x-api-key (regression guard).]] - rationale - gateway/tests/test_credential_injector.py
-- [[TestCredentialInjection]] - code - gateway/tests/test_credential_injector.py
-- [[strip_headers must remove x-api-key before injecting Authorization Bearer.]] - rationale - gateway/tests/test_credential_injector.py
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - document - docs/security/threat-model.md
+- [[Assets Under Protection]] - document - docs/security/threat-model.md
+- [[Executive Summary_16]] - document - docs/security/threat-model.md
+- [[Mitigation Coverage Matrix]] - document - docs/security/threat-model.md
+- [[System Components in Scope]] - document - docs/security/threat-model.md
+- [[Threat Feeds]] - document - docs/security/threat-model.md
+- [[Threat Intelligence Integration]] - document - docs/security/threat-model.md
+- [[Threat Modeling Scope]] - document - docs/security/threat-model.md
+- [[Threat Scoring Matrix]] - document - docs/security/threat-model.md
+- [[threat-model]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_CredentialInjector]]
-- 1 edge to [[_COMMUNITY_test_credential_injector.py]]
+- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
+- 1 edge to [[_COMMUNITY_§3 — Bot Pipeline Integrity Checks]]
 
 ## Top bridge nodes
-- [[TestCredentialInjection]] - degree 9, connects to 2 communities
-- [[dot-test_anthropic_default_strips_x_api_key()]] - degree 3, connects to 1 community
-- [[dot-test_strip_headers_removes_conflicting_header()]] - degree 3, connects to 1 community
-- [[dot-test_injection_disabled()]] - degree 2, connects to 1 community
+- [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities

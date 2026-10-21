@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Architecture_2]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Files]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - concept - gateway/tests/test_slack_proxy.py
+- [[SharedMemoryManager Private Content DetectionFiltering]] - code - gateway/tests/test_shared_memory.py
+- [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/Technical_Details
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
-
-## Top bridge nodes
-- [[Technical Details]] - degree 4, connects to 1 community

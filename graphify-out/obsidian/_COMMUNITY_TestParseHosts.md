@@ -1,24 +1,22 @@
 ---
 type: community
-members: 11
+members: 9
 ---
 
 # TestParseHosts
 
-**Members:** 11 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[dot-test_comma_separated()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_custom_default()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_dedup_preserves_first_order()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_empty_string_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_mixed_separators_and_stripping()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_none_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_only_separators_falls_back_to_default()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_whitespace_separated()]] - code - gateway/tests/test_multi_host_test.py
-- [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - rationale - gateway/tools/multi_host_test.py
-- [[TestParseHosts]] - code - gateway/tests/test_multi_host_test.py
-- [[parse_hosts()]] - code - gateway/tools/multi_host_test.py
+- [[dot-__init__()_205]] - code - gateway/security/memory_lifecycle.py
+- [[dot-sanitize_content()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_lifecycle.py
+- [[Path_68]] - code - gateway/security/memory_lifecycle.py
+- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MultiHostResult]]
-- 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_main (2)]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
+- 9 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_generate_branding_assets.py]]
 
 ## Top bridge nodes
-- [[TestParseHosts]] - degree 12, connects to 3 communities
-- [[parse_hosts()]] - degree 12, connects to 3 communities
+- [[Path_68]] - degree 5, connects to 3 communities
+- [[dot-scan_content_for_threats()]] - degree 5, connects to 1 community
+- [[dot-validate_memory_write()]] - degree 5, connects to 1 community
+- [[dot-sanitize_content()]] - degree 4, connects to 1 community
+- [[dot-__init__()_205]] - degree 3, connects to 1 community

@@ -1,39 +1,32 @@
 ---
 type: community
-members: 26
+members: 19
 ---
 
 # iCloud Services Setup - Complete Guide
 
-**Members:** 26 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[401 Unauthorized_4]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[403 Forbidden]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Connection timeout_4]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Notes folder not found]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Access Notes via IMAP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Challenge]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Discovery Process]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Server Settings_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 1 Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 2 Install Dependencies]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 3 Test Services]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 4 Verify All Working]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Test CalDAV Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Test IMAP Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[iCloud Services Setup - Complete Guide]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[✅ Setup Checklist_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🎯 Next Steps After Setup]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📅 iCloud Calendar (CalDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📝 iCloud Notes]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📞 iCloud Contacts (CardDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📦 Required Node.js Packages]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📧 iCloud Mail (IMAPSMTP)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🔍 Troubleshooting]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🔐 Important App-Specific Passwords]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🚀 Complete Setup Script]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[API Keys Setup Guide]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Create the Anthropic OAuth Token File]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 1 Use Anthropic Claude (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Overview_15]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Security Notes_6]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 3 Configure API Keys in OpenClaw]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 4 Set Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 5 Verify Configuration]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 6 Add Telegram Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 7 Test the Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Summary Checklist]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,7 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide (2)]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
+- 1 edge to [[_COMMUNITY_01-architecture]]
 
 ## Top bridge nodes
-- [[iCloud Services Setup - Complete Guide]] - degree 11, connects to 1 community
+- [[API Keys Setup Guide]] - degree 13, connects to 3 communities

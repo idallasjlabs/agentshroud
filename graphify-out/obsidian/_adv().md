@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_sync"
+community: "_adv()"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sync
+  - community/_adv
 ---
 
 # _adv()
 
 ## Connections
-- [[dot-test_append_targets_correct_agent_marker()]] - `calls` [EXTRACTED]
+- [[dot-test_append_on_unlocatable_list_exits_nonzero()]] - `calls` [EXTRACTED]
+- [[dot-test_append_targets_correct_agent_list()]] - `calls` [EXTRACTED]
 - [[dot-test_cvss_none_when_absent()]] - `calls` [EXTRACTED]
 - [[dot-test_dedup_by_cve_id()]] - `calls` [EXTRACTED]
 - [[dot-test_dedup_by_ghsa_id()]] - `calls` [EXTRACTED]
@@ -20,6 +21,7 @@ tags:
 - [[dot-test_duplicate_within_same_feed_page_registered_once()]] - `calls` [EXTRACTED]
 - [[dot-test_entry_to_py_handles_none_cvss()]] - `calls` [EXTRACTED]
 - [[dot-test_entry_to_py_roundtrips()]] - `calls` [EXTRACTED]
+- [[dot-test_every_agent_list_accepts_an_append()]] - `calls` [EXTRACTED]
 - [[dot-test_fetch_paginates_via_link_cursor()]] - `calls` [EXTRACTED]
 - [[dot-test_id_numbering_continues_from_max()]] - `calls` [EXTRACTED]
 - [[dot-test_idempotent_on_rerun()]] - `calls` [EXTRACTED]
@@ -27,6 +29,7 @@ tags:
 - [[dot-test_new_advisory_becomes_under_review()]] - `calls` [EXTRACTED]
 - [[dot-test_openclaw_advisory_does_not_touch_hermes_registry()]] - `calls` [EXTRACTED]
 - [[dot-test_per_agent_prefix_applied()]] - `calls` [EXTRACTED]
+- [[_fake_urlopen()_7]] - `calls` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sync
+#graphify/code #graphify/EXTRACTED #community/_adv

@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Allowlist]] - document - docker/bot-capabilities.md
-- [[Already in your environment at startup]] - document - docker/bot-capabilities.md
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - document - docker/bot-capabilities.md
-- [[Credential flow]] - document - docker/bot-capabilities.md
-- [[Credentials set at startup (already in environment)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[How to retrieve a credential]] - document - docker/bot-capabilities.md
-- [[How to retrieve a credential at runtime]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Known working credentials]] - document - docker/bot-capabilities.md
-- [[What NEVER to do]] - document - docker/bot-capabilities.md
-- [[What NEVER to do_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[You do NOT have direct 1Password access]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[AgentShroud Bot Capabilities]] - document - docker/bot-capabilities.md
+- [[Docker Compose Override — Raspberry Pi Bot Host]] - code - docker/docker-compose.agentshroud-bot.raspberrypi.yml
+- [[Gateway credentialsop-proxy Endpoint (1Password isolation)]] - concept - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Never Display Credentials in Chat Policy (Ultra-Conservative)]] - rationale - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Option 1 — Professional (email, formal)]] - document - docker/bot-capabilities.md
+- [[Option 2 — Compact (Telegram, Slack — default)]] - document - docker/bot-capabilities.md
+- [[Option 3 — Full Collaborator Notice (first contact only)]] - document - docker/bot-capabilities.md
+- [[Rules_25]] - document - docker/bot-capabilities.md
+- [[SYSTEM-INSTRUCTIONS-SECURITY]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Trademark Statements]] - document - docker/bot-capabilities.md
+- [[Which statement to use]] - document - docker/bot-capabilities.md
+- [[bot-capabilities]] - document - docker/bot-capabilities.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
-- 1 edge to [[_COMMUNITY_Trademark Statements]]
+- 1 edge to [[_COMMUNITY_What You Must Do When Invoked (3)]]
+- 1 edge to [[_COMMUNITY_auth.py (2)]]
+- 1 edge to [[_COMMUNITY_TestRewriteRequestHeaders]]
 
 ## Top bridge nodes
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - degree 7, connects to 1 community
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - degree 6, connects to 1 community
+- [[AgentShroud Bot Capabilities]] - degree 4, connects to 2 communities
+- [[SYSTEM-INSTRUCTIONS-SECURITY]] - degree 4, connects to 1 community

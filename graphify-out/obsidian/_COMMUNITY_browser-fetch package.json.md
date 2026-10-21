@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[browser-fetch package.json]] - document - docker/config/hermes/skills/i-browser/package.json
+- [[docker-compose.sidecar.yml — Sidecar Mode Deployment]] - document - docker-compose.sidecar.yml
 
 ## Live Query (requires Dataview plugin)
 

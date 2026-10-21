@@ -1,34 +1,51 @@
 ---
 type: community
-members: 21
+members: 38
 ---
 
 # gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)
 
-**Members:** 21 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_157]] - code - gateway/tests/test_key_rotation.py
-- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
-- [[dot-validate()_2]] - code - gateway/tests/test_key_rotation.py
-- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
-- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
+- [[dot-__post_init__()_2]] - code - gateway/security/memory_lifecycle.py
+- [[dot-setup_method()_12]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-setup_method()_13]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-teardown_method()_5]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_status_reporting()_1]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_threat_cleanup()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
+- [[ContentThreat]] - code - gateway/security/memory_lifecycle.py
+- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
+- [[Detected threat in memory file content.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Manages memory file lifecycle and content security.]] - rationale - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig]] - code - gateway/security/memory_config.py
+- [[MemoryLifecycleManager]] - code - gateway/security/memory_lifecycle.py
+- [[Set up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test cleanup of old threat records.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
+- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
+- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,16 +55,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_UserSessionManager (2)]]
-- 4 edges to [[_COMMUNITY_KeyRotationManager]]
-- 4 edges to [[_COMMUNITY_KeyRotationManager (2)]]
-- 4 edges to [[_COMMUNITY_TestDomainValidationHelper]]
-- 2 edges to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_TestDomainValidationHelper (2)]]
+- 21 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 17 edges to [[_COMMUNITY_MiddlewareManager]]
+- 14 edges to [[_COMMUNITY_generate_branding_assets.py]]
+- 9 edges to [[_COMMUNITY_TestParseHosts]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases) (2)]]
+- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases) (3)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py (2)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py (3)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py (4)]]
 
 ## Top bridge nodes
-- [[MockValidator]] - degree 14, connects to 5 communities
-- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
-- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
-- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
-- [[dot-test_register_validator()]] - degree 3, connects to 1 community
+- [[MemoryLifecycleManager]] - degree 37, connects to 4 communities
+- [[TestMemoryLifecycleManager]] - degree 20, connects to 4 communities
+- [[TestMemoryIntegrityConfig]] - degree 12, connects to 4 communities
+- [[MemoryLifecycleConfig]] - degree 16, connects to 3 communities
+- [[ContentThreat]] - degree 15, connects to 3 communities

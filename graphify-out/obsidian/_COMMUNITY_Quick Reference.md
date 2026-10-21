@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[Change Default Model]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Check Current Profile_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Telegram Channel Status]] - document - docs/setup/SETUP_API_KEYS.md
-- [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
-- [[List Available Profiles_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_10]] - document - docs/setup/SETUP_API_KEYS.md
-- [[View Configured Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
+- [[ADR-004-api-keys-never-in-agent-container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[ADR-004 API Keys Never in Agent Container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Consequences_8]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Context_12]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Decision_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Implementation]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Mitigation_4]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Negative Consequences_7]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Positive Consequences_7]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Status_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,13 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/Quick_Reference
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)]]
-- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
-
-## Top bridge nodes
-- [[Quick Reference_10]] - degree 5, connects to 1 community
-- [[List Available Profiles_2]] - degree 4, connects to 1 community
-- [[List Available Profiles_1]] - degree 3, connects to 1 community

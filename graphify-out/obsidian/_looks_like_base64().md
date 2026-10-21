@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # _looks_like_base64()
@@ -19,6 +19,6 @@ tags:
 - [[dot-test_short_string_not_base64()]] - `calls` [EXTRACTED]
 - [[Heuristic does this string look like base64-encoded data]] - `rationale_for` [EXTRACTED]
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
-- [[url_analyzer.py]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

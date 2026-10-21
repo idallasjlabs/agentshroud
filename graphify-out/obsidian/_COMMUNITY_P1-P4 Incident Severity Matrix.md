@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[P1-P4 Incident Severity Matrix]] - concept - docker/config/openclaw/skills/i-production/SKILL.md
+- [[SCRUM-110 restart recovery must preserve original timeout_action, not hardcoded deny]] - rationale - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

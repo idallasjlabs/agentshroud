@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (Vulcan-approved dialogue input)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Stale Cron Session Claim Cleanup]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[dot-test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_all_upstreams_fail_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_failover_to_second_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_first_upstream_succeeds()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Build a fake `socket` module namespace driving forward_query without IO.      E]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Forward a DNS query to upstream resolvers with failover.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[TestForwardQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[forward_query()]] - code - gateway/proxy/dns_forwarder.py
+- [[make_fake_socket_module()]] - code - gateway/tests/test_dns_canvas_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_credential_injector.py]]
-- 1 edge to [[_COMMUNITY_CredentialInjector]]
+- 3 edges to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 2 edges to [[_COMMUNITY_TestOAuthInjection]]
+- 1 edge to [[_COMMUNITY_web_proxy.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
 
 ## Top bridge nodes
-- [[TestLeakDetection]] - degree 8, connects to 1 community
-- [[dot-test_leak_detection_disabled()]] - degree 2, connects to 1 community
+- [[forward_query()]] - degree 7, connects to 3 communities
+- [[TestForwardQuery]] - degree 6, connects to 3 communities
+- [[make_fake_socket_module()]] - degree 5, connects to 1 community

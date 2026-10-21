@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[pre-commit check-yaml hook (--unsafe)]] - code - .pre-commit-config.yaml
+- [[Production testing guidelines (test isolation patterns)]] - rationale - .llm_settings/docs/SKILLS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Constraints_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Evidence_3]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Problem_4]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Severity_6]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Verification_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Option A Manual Secret Creation]] - document - docs/operations/deployment-procedure.md
+- [[Option A Self-Signed Certificate (DevelopmentTesting)]] - document - docs/operations/deployment-procedure.md
+- [[Option B 1Password Integration]] - document - docs/operations/deployment-procedure.md
+- [[Option B Let's Encrypt Certificate (Production)]] - document - docs/operations/deployment-procedure.md
+- [[Option C Corporate Certificate Authority]] - document - docs/operations/deployment-procedure.md
+- [[Step 10 Initial Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 1 System Preparation]] - document - docs/operations/deployment-procedure.md
+- [[Step 2 Repository Clone and Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 3 Secret Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 4 SSL Certificate Setup]] - document - docs/operations/deployment-procedure.md
+- [[Step 5 Configuration Customization]] - document - docs/operations/deployment-procedure.md
+- [[Step 6 Port Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 7 Docker Secrets Creation]] - document - docs/operations/deployment-procedure.md
+- [[Step 8 Service Startup]] - document - docs/operations/deployment-procedure.md
+- [[Step 9 Health Verification]] - document - docs/operations/deployment-procedure.md
+- [[Step-by-Step Deployment]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 16
 TABLE source_file, type FROM #community/Remediation_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+
+## Top bridge nodes
+- [[Step-by-Step Deployment]] - degree 11, connects to 1 community

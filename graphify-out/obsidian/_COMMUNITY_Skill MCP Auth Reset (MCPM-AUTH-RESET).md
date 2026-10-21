@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[AWS Credentials]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Token expired (SSO)_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Bad credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_87]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_62]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Troubleshooting_31]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_94]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_6]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[hermesskillsi-mcpm-auth-resetSKILL]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[10. Security Supply Chain Analysis]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.1 Core Runtime Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.2 Security-Specific Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.3 Container Security Tools]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.4 High-Risk Dependency Wazuh]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.5 Supply Chain Security Practices]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Cost & timeline (indicative)]] - document - docs/compliance/soc2-attestation-path.md
+- [[Immediate Actions (Pre-Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Long-Term Strategic Items]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Next Phase Priorities]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Readiness assessment — existing controls vs SOC 2 Common Criteria]] - document - docs/compliance/soc2-attestation-path.md
+- [[Recommendation_1]] - document - docs/compliance/soc2-attestation-path.md
+- [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - document - docs/compliance/soc2-attestation-path.md
+- [[Tracking]] - document - docs/compliance/soc2-attestation-path.md
+- [[What SOC 2 Type II actually requires]] - document - docs/compliance/soc2-attestation-path.md
+- [[Why this is on the board]] - document - docs/compliance/soc2-attestation-path.md
+- [[soc2-attestation-path]] - document - docs/compliance/soc2-attestation-path.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset]]
+- 1 edge to [[_COMMUNITY_TeamsConfig (3)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
+- 1 edge to [[_COMMUNITY_InjectionAction]]
 
 ## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - degree 9, connects to 1 community
+- [[Recommendation_1]] - degree 7, connects to 2 communities
+- [[10. Security Supply Chain Analysis]] - degree 7, connects to 1 community

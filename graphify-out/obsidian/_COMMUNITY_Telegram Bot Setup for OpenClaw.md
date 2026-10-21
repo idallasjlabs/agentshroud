@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Important Notes_2]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Next Steps_10]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Troubleshooting_34]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Configuration  Environment Variables_18]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Function Details_32]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Key Classes  Functions_34]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Priority Mapping]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Purpose_134]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Related_38]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Responsibilities_36]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[categorize_alerts(alerts)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[falco_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[falco_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[generate_summary(alerts)_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[is_agentshroud_rule(rule_name)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[parse_alert(raw)_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[read_alerts(alert_dir, since, agentshroud_only)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 15
 TABLE source_file, type FROM #community/Telegram_Bot_Setup_for_OpenClaw
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
-
-## Top bridge nodes
-- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community

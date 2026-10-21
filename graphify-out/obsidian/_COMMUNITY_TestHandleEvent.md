@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[dot-test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
-- [[dot-test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
-- [[dot-test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
-- [[dot-test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
-- [[dot-test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
-- [[dot-test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackAPIProxy]] - code - gateway/tests/test_slack_proxy.py
-- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
-- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[AgentShroud Blue Team Security Auditor_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Critical Rules_6]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Heat Map Legend_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Infrastructure_7]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Loss Categories_2]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Methodology_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Output Format_22]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)_1]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[openclawskillsi-sec-defenseSKILL]] - document - docker/config/openclaw/skills/i-sec-defense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,10 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 2 edges to [[_COMMUNITY__make_proxy]]
-- 2 edges to [[_COMMUNITY_AsyncMock (2)]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[TestHandleEvent]] - degree 10, connects to 3 communities
-- [[SlackAPIProxy]] - degree 9, connects to 3 communities
+- [[AgentShroud Blue Team Security Auditor_1]] - degree 7, connects to 1 community

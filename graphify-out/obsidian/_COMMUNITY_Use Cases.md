@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[AgentShroud Security Proxy]] - document - docs/requirements/use-cases.md
-- [[Overview_26]] - document - docs/requirements/use-cases.md
-- [[UC-001 User Sends Message to Agent (PII Sanitization Flow)]] - document - docs/requirements/use-cases.md
-- [[UC-002 Agent Calls MCP Tool (Inspection + Permission Check)]] - document - docs/requirements/use-cases.md
-- [[UC-003 Agent Fetches Web Content (SSRF Check + Content Scan)]] - document - docs/requirements/use-cases.md
-- [[UC-004 Admin Activates Kill Switch]] - document - docs/requirements/use-cases.md
-- [[UC-005 Agent Requests SSH Access (Approval Queue)]] - document - docs/requirements/use-cases.md
-- [[UC-006 Security Alert Triggers Notification]] - document - docs/requirements/use-cases.md
-- [[UC-007 New Agent Onboarding (Trust Level 0)]] - document - docs/requirements/use-cases.md
-- [[UC-008 Operator Reviews Audit Trail]] - document - docs/requirements/use-cases.md
-- [[UC-009 System Detects Prompt Injection]] - document - docs/requirements/use-cases.md
-- [[UC-010 Multi-Instance Deployment with Port Auto-Detection]] - document - docs/requirements/use-cases.md
-- [[Use Cases_3]] - document - docs/requirements/use-cases.md
+- [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Responsibilities_48]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,3 @@ members: 13
 TABLE source_file, type FROM #community/Use_Cases
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
-
-## Top bridge nodes
-- [[Use Cases_3]] - degree 12, connects to 1 community

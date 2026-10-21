@@ -1,39 +1,50 @@
 ---
 type: community
-members: 26
+members: 37
 ---
 
 # Action
 
-**Members:** 26 nodes
+**Members:** 37 nodes
 
 ## Members
-- [[dot-_store_path()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_load_collab_store_returns_empty_on_corrupt_json()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_load_removed_and_paused_ids_empty_when_no_file()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_pause_and_unpause_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_pause_does_not_remove_from_collaborator_role()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_pause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_pause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_persist_and_load_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_persist_is_idempotent()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_persist_returns_none_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_persist_returns_none_on_mkdir_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_removed_and_paused_ids_coexist_independently()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_removed_dynamic_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_revoke_hardcoded_collaborator_records_removal_even_though_never_persisted()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_revoke_removes_dynamic_collaborator_and_records_removal()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_revoke_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_revoke_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_unpause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_unpause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[Bug 1 RBACConfig.__post_init__ must exclude persisted-removed IDs from the]] - rationale - gateway/tests/test_rbac.py
-- [[Bug 1 revoking a hardcoded default (never in approved_collaborators.json)]] - rationale - gateway/tests/test_rbac.py
-- [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - rationale - gateway/tests/test_rbac.py
-- [[TestCollaboratorPersistence]] - code - gateway/tests/test_rbac.py
-- [[Writes to one exclusion set must not clobber the other persisted keys.]] - rationale - gateway/tests/test_rbac.py
-- [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - rationale - gateway/tests/test_rbac.py
+- [[1. Authentication Events (AUTH)]] - document - docs/security/audit-specification.md
+- [[2. Authorization Events (AUTHZ)]] - document - docs/security/audit-specification.md
+- [[3. Security Events (SEC)]] - document - docs/security/audit-specification.md
+- [[4. Data Events (DATA)]] - document - docs/security/audit-specification.md
+- [[5. System Events (SYS)]] - document - docs/security/audit-specification.md
+- [[A.12.4 Logging and Monitoring]] - document - docs/security/audit-specification.md
+- [[Advanced Search Query]] - document - docs/security/audit-specification.md
+- [[AgentShroud Audit Specification]] - document - docs/security/audit-specification.md
+- [[Archival Process]] - document - docs/security/audit-specification.md
+- [[Audit Event Types and Schema]] - document - docs/security/audit-specification.md
+- [[Audit System Performance Metrics]] - document - docs/security/audit-specification.md
+- [[Basic Event Query]] - document - docs/security/audit-specification.md
+- [[Block Structure]] - document - docs/security/audit-specification.md
+- [[Chain Architecture]] - document - docs/security/audit-specification.md
+- [[Chain Verification Query]] - document - docs/security/audit-specification.md
+- [[Compliance Mapping]] - document - docs/security/audit-specification.md
+- [[Core Event Categories]] - document - docs/security/audit-specification.md
+- [[GDPR Article 30 Record Keeping]] - document - docs/security/audit-specification.md
+- [[Genesis Block Specification]] - document - docs/security/audit-specification.md
+- [[Hash Calculation Algorithm]] - document - docs/security/audit-specification.md
+- [[Hash Chain Structure]] - document - docs/security/audit-specification.md
+- [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
+- [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
+- [[Overview_1]] - document - docs/security/audit-specification.md
+- [[Performance and Scalability]] - document - docs/security/audit-specification.md
+- [[Processing Activities Register]] - document - docs/security/audit-specification.md
+- [[Query API Specification]] - document - docs/security/audit-specification.md
+- [[Query Capabilities]] - document - docs/security/audit-specification.md
+- [[Query Response Format]] - document - docs/security/audit-specification.md
+- [[Real-Time Event Streaming]] - document - docs/security/audit-specification.md
+- [[Retention Policies]] - document - docs/security/audit-specification.md
+- [[SOX Compliance (Section 404)]] - document - docs/security/audit-specification.md
+- [[Tier 1 Critical Security Events (7 Years)]] - document - docs/security/audit-specification.md
+- [[Tier 2 Operational Events (3 Years)]] - document - docs/security/audit-specification.md
+- [[Tier 3 Debug and Diagnostic Events (1 Year)]] - document - docs/security/audit-specification.md
+- [[Tier 4 High-Volume Events (90 Days)]] - document - docs/security/audit-specification.md
+- [[Tier-Based Retention Strategy]] - document - docs/security/audit-specification.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +54,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_Action (2)]]
+- 2 edges to [[_COMMUNITY_ApprovalHardening]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 30, connects to 3 communities
-- [[dot-test_pause_does_not_remove_from_collaborator_role()]] - degree 4, connects to 1 community
-- [[dot-test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - degree 4, connects to 1 community
-- [[dot-test_removed_dynamic_collaborator_excluded_from_effective_set()]] - degree 3, connects to 1 community
+- [[AgentShroud Audit Specification]] - degree 8, connects to 1 community
+- [[Compliance Mapping]] - degree 5, connects to 1 community

@@ -8,38 +8,38 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[1. Health Check (Gateway)]] - document - docker/QUICKSTART.md
-- [[2. Get Auth Token (Gateway)]] - document - docker/QUICKSTART.md
-- [[3. Send Test Message]] - document - docker/QUICKSTART.md
-- [[4. Verify Isaiah's Personality]] - document - docker/QUICKSTART.md
-- [[API Key Error]] - document - docker/QUICKSTART.md
-- [[AgentShroud Phase 3 - Quick Start Guide]] - document - docker/QUICKSTART.md
-- [[Architecture Diagram_1]] - document - docker/QUICKSTART.md
-- [[Check File Permissions]] - document - docker/QUICKSTART.md
-- [[Check Status_1]] - document - docker/QUICKSTART.md
-- [[Container Won't Start_1]] - document - docker/QUICKSTART.md
-- [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
-- [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
-- [[Graceful Shutdown]] - document - docker/QUICKSTART.md
-- [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
-- [[Launch the Stack]] - document - docker/QUICKSTART.md
-- [[Next Steps_4]] - document - docker/QUICKSTART.md
-- [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
-- [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
-- [[Prerequisites_2]] - document - docker/QUICKSTART.md
-- [[QUICKSTART]] - document - docker/QUICKSTART.md
-- [[Security Validation]] - document - docker/QUICKSTART.md
-- [[Server-side setup]] - document - docker/QUICKSTART.md
-- [[Setup (One-Time)]] - document - docker/QUICKSTART.md
-- [[Start Everything]] - document - docker/QUICKSTART.md
-- [[Step 1 Add Your API Key]] - document - docker/QUICKSTART.md
-- [[Stop the Stack_1]] - document - docker/QUICKSTART.md
-- [[Success Criteria]] - document - docker/QUICKSTART.md
-- [[Test the System]] - document - docker/QUICKSTART.md
-- [[Troubleshooting_13]] - document - docker/QUICKSTART.md
-- [[Verify]] - document - docker/QUICKSTART.md
-- [[Verify Isolation]] - document - docker/QUICKSTART.md
-- [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Agent Interaction Protocol_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Architecture Context_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Confidence Scoring_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Critical Rules_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D0 — Planning & Scoping_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D1 — Team & Expertise Identification_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D2 — Problem Description (Data Collection & Characterization)_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D3 — Interim Containment Assessment_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D4 — Root Cause Analysis (Correlated Event Detection)_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D5 — Permanent Corrective Action Definition_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D6 — Implementation Verification_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D7 — Systemic Prevention_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[D8 — Documentation & Recognition_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Device Hierarchy_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[How to Collaborate with the AWS Agent_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[How to Interact with the Human Investigator_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Input Requirements_5]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Knowledge Base Schema_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Learning System (Continuous Improvement)_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Overview_4]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Pattern Matching for New Incidents_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Step 1 Collect the Error Event Data_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Step 2 Collect ALL Data in the Time Window_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Step 3 Collect Alarms and Events_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Step 4 Build the IS  IS NOT Matrix_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Step 5 Establish Baseline_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[The 8D Investigation Process_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[What to Extract_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Why This Matters_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[XML Configuration File Parsing_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[openclawskillsi-eightdSKILL]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

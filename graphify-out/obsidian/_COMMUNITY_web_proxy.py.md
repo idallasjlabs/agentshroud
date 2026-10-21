@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Purpose_175]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Responsibilities_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[dot-_handle_query()]] - code - gateway/proxy/dns_forwarder.py
+- [[dot-datagram_received()]] - code - gateway/proxy/dns_forwarder.py
+- [[dot-test_malformed_pointer_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_too_short()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_truncated_after_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_valid_a_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_valid_aaaa_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_zero_qdcount()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Extract domain name and query type from a DNS query packet.      Returns (domai]] - rationale - gateway/proxy/dns_forwarder.py
+- [[Handle incoming DNS query.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[Process a single DNS query log, forward, respond.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[TestParseQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[parse_query()]] - code - gateway/proxy/dns_forwarder.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +28,17 @@ members: 13
 TABLE source_file, type FROM #community/web_proxypy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_TestOAuthInjection]]
+- 3 edges to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 2 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 1 edge to [[_COMMUNITY_TestLeakDetection]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
+
+## Top bridge nodes
+- [[TestParseQuery]] - degree 9, connects to 3 communities
+- [[parse_query()]] - degree 11, connects to 2 communities
+- [[dot-_handle_query()]] - degree 5, connects to 2 communities
+- [[dot-datagram_received()]] - degree 3, connects to 1 community
+- [[dot-test_valid_a_query()]] - degree 3, connects to 1 community

@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Guardrails_14]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Invocation_8]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Role_72]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 0 — Pre-flight checks_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 1 — Check for an in-progress merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 2 — Merge without committing_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 3 — Audit the pending merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 3a — Present and resolve confirmed regressions_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 3b — Re-audit to confirm clean_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 3c — Commit the merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 4 — Push the branch_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 5 — Generate the PR description_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[Step 6 — Create the PR_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
-- [[openclawskillsi-crprSKILL]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Guardrails_11]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Invocation_7]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Role_68]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[hermesskillsi-crprSKILL]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - degree 15, connects to 1 community
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - degree 15, connects to 1 community

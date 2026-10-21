@@ -1,86 +1,69 @@
 ---
 type: community
-members: 73
+members: 56
 ---
 
 # .agents/skills/i-cr/SKILL.md
 
-**Members:** 73 nodes
+**Members:** 56 nodes
 
 ## Members
-- [[dot-agentsskillsi-apolloREADME]] - document - .agents/skills/i-apollo/README.md
-- [[dot-agentsskillsi-awsREADME]] - document - .agents/skills/i-aws/README.md
-- [[dot-agentsskillsi-bddSKILL]] - document - .agents/skills/i-bdd/SKILL.md
-- [[dot-agentsskillsi-bsREADME]] - document - .agents/skills/i-bs/README.md
-- [[dot-agentsskillsi-ciSKILL]] - document - .agents/skills/i-ci/SKILL.md
-- [[dot-agentsskillsi-crSKILL]] - document - .agents/skills/i-cr/SKILL.md
-- [[dot-agentsskillsi-daedalusREADME]] - document - .agents/skills/i-daedalus/README.md
-- [[dot-agentsskillsi-ggREADME]] - document - .agents/skills/i-gg/README.md
-- [[dot-agentsskillsi-gitopsSKILL]] - document - .agents/skills/i-gitops/SKILL.md
-- [[dot-agentsskillsi-kaizenSKILL]] - document - .agents/skills/i-kaizen/SKILL.md
-- [[dot-agentsskillsi-mcpmREADME]] - document - .agents/skills/i-mcpm/README.md
-- [[dot-agentsskillsi-prREADME]] - document - .agents/skills/i-pr/README.md
-- [[dot-agentsskillsi-sadREADME]] - document - .agents/skills/i-sad/README.md
-- [[dot-agentsskillsi-savREADME]] - document - .agents/skills/i-sav/README.md
-- [[dot-agentsskillsi-sdlcSKILL]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[dot-agentsskillsi-sec-offenseREADME]] - document - .agents/skills/i-sec-offense/README.md
-- [[dot-agentsskillsi-sreSKILL]] - document - .agents/skills/i-sre/SKILL.md
-- [[dot-agentsskillsi-twREADME]] - document - .agents/skills/i-tw/README.md
-- [[dot-agentsskillsi-vulcanREADME]] - document - .agents/skills/i-vulcan/README.md
-- [[AWS Cloud Management & FinOps_2]] - document - .agents/skills/i-aws/README.md
-- [[Apollo — Audio Systems Producer_2]] - document - .agents/skills/i-apollo/README.md
-- [[Branding Specialist (BS)_2]] - document - .agents/skills/i-bs/README.md
-- [[Daedalus — Concept Illustrator_1]] - document - .agents/skills/i-daedalus/README.md
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - .agents/skills/i-gg/README.md
-- [[MCP Tools Usage (MCPM)_2]] - document - .agents/skills/i-mcpm/README.md
-- [[Pull Request Generator (PR)_2]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_133]] - document - .agents/skills/i-apollo/README.md
-- [[Purpose_134]] - document - .agents/skills/i-aws/README.md
-- [[Purpose_135]] - document - .agents/skills/i-bs/README.md
-- [[Purpose_136]] - document - .agents/skills/i-daedalus/README.md
-- [[Purpose_137]] - document - .agents/skills/i-gg/README.md
-- [[Purpose_138]] - document - .agents/skills/i-mcpm/README.md
-- [[Purpose_139]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_140]] - document - .agents/skills/i-sad/README.md
-- [[Purpose_141]] - document - .agents/skills/i-sav/README.md
-- [[Purpose_142]] - document - .agents/skills/i-sec-offense/README.md
-- [[Purpose_143]] - document - .agents/skills/i-tw/README.md
-- [[Purpose_144]] - document - .agents/skills/i-vulcan/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - .agents/skills/i-sec-offense/README.md
-- [[Related Skills_93]] - document - .agents/skills/i-apollo/README.md
-- [[Related Skills_94]] - document - .agents/skills/i-aws/README.md
-- [[Related Skills_95]] - document - .agents/skills/i-bs/README.md
-- [[Related Skills_96]] - document - .agents/skills/i-daedalus/README.md
-- [[Related Skills_97]] - document - .agents/skills/i-gg/README.md
-- [[Related Skills_98]] - document - .agents/skills/i-mcpm/README.md
-- [[Related Skills_99]] - document - .agents/skills/i-pr/README.md
-- [[Related Skills_100]] - document - .agents/skills/i-sad/README.md
-- [[Related Skills_101]] - document - .agents/skills/i-sav/README.md
-- [[Related Skills_102]] - document - .agents/skills/i-sec-offense/README.md
-- [[Related Skills_103]] - document - .agents/skills/i-tw/README.md
-- [[Related Skills_104]] - document - .agents/skills/i-vulcan/README.md
-- [[Skill bdd_1]] - document - .agents/skills/i-bdd/SKILL.md
-- [[Skill ci_1]] - document - .agents/skills/i-ci/SKILL.md
-- [[Skill gitops_1]] - document - .agents/skills/i-gitops/SKILL.md
-- [[Skill kaizen_1]] - document - .agents/skills/i-kaizen/SKILL.md
-- [[Skill sdlc_1]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Skill sre_1]] - document - .agents/skills/i-sre/SKILL.md
-- [[System Audit Documentation_1]] - document - .agents/skills/i-sad/README.md
-- [[System Audit Vault_1]] - document - .agents/skills/i-sav/README.md
-- [[Technical Writer (TW)_2]] - document - .agents/skills/i-tw/README.md
-- [[Usage_100]] - document - .agents/skills/i-apollo/README.md
-- [[Usage_101]] - document - .agents/skills/i-aws/README.md
-- [[Usage_102]] - document - .agents/skills/i-bs/README.md
-- [[Usage_103]] - document - .agents/skills/i-daedalus/README.md
-- [[Usage_104]] - document - .agents/skills/i-gg/README.md
-- [[Usage_105]] - document - .agents/skills/i-mcpm/README.md
-- [[Usage_106]] - document - .agents/skills/i-pr/README.md
-- [[Usage_107]] - document - .agents/skills/i-sad/README.md
-- [[Usage_108]] - document - .agents/skills/i-sav/README.md
-- [[Usage_109]] - document - .agents/skills/i-sec-offense/README.md
-- [[Usage_110]] - document - .agents/skills/i-tw/README.md
-- [[Usage_111]] - document - .agents/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor_1]] - document - .agents/skills/i-vulcan/README.md
+- [[dot-__call__()_1]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__call__()_2]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_27]] - code - gateway/security/cron_state_monitor.py
+- [[dot-__init__()_28]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_29]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-_dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-_episode_id()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-_evaluate()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-_run()_1]] - code - gateway/security/cron_state_monitor.py
+- [[dot-_safe_dispatch()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-check()_1]] - code - gateway/security/cron_state_monitor.py
+- [[dot-parse_store()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-start()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-stop()]] - code - gateway/security/cron_state_monitor.py
+- [[dot-test_alert_ids_stable_per_job_episode()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_corrupt_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_disabled_jobs_ignored()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_dispatch_failure_does_not_raise()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_first_sight_failing_alerts_once()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_flood_capped_with_aggregate_alert()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_hermes_jobs_reach_critical_via_observed_runs()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_job_name_capped_in_alert()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_malformed_consecutive_errors_does_not_blind_store()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_missing_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_multiple_stores_checked()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_ok_jobs_not_failing()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_ok_to_fail_dispatches_high_alert()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_oversized_store_skipped()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_parses_hermes_schema()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_parses_openclaw_schema()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_recovery_refail_realerts_through_real_dedup()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_recovery_resets_alerting()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_repeated_failure_escalates_to_critical()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-test_start_is_idempotent()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[CronStateMonitor]] - code - gateway/security/cron_state_monitor.py
+- [[Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard]] - rationale - gateway/security/cron_state_monitor.py
+- [[JobState]] - code - gateway/security/cron_state_monitor.py
+- [[Mimics AlertDispatcher's id-based 24h dedup — the real downstream.]] - rationale - gateway/tests/test_cron_state_monitor.py
+- [[Normalized view of one bot cron job.]] - rationale - gateway/security/cron_state_monitor.py
+- [[One poll pass over all stores.  Never raises.]] - rationale - gateway/security/cron_state_monitor.py
+- [[Poll bot cron stores; dispatch AlertDispatcher alerts on failures.]] - rationale - gateway/security/cron_state_monitor.py
+- [[Read one bot's cron store; tolerate absencecorruption.]] - rationale - gateway/security/cron_state_monitor.py
+- [[Start the poll loop as an asyncio task (idempotent).]] - rationale - gateway/security/cron_state_monitor.py
+- [[Task]] - code - gateway/security/cron_state_monitor.py
+- [[TestAdversarial]] - code - gateway/tests/test_cron_state_monitor.py
+- [[TestParsing]] - code - gateway/tests/test_cron_state_monitor.py
+- [[TestTransitions]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_DedupDispatchFake]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_DispatchSpy]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_hermes_job()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_hermes_store()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_oc_job()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_openclaw_store()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[cron_state_monitor.py]] - code - gateway/security/cron_state_monitor.py
+- [[test_cron_state_monitor.py]] - code - gateway/tests/test_cron_state_monitor.py
+- [[test_poll_loop_runs_and_stops()]] - code - gateway/tests/test_cron_state_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -90,49 +73,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 3 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill]]
-- 2 edges to [[_COMMUNITY_Project Management (README)]]
-- 1 edge to [[_COMMUNITY_Security Review (SEC)]]
-- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Code Review (CR)]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (3)]]
-- 1 edge to [[_COMMUNITY_8D Root Cause Analysis]]
-- 1 edge to [[_COMMUNITY_macOS System Administrator (MAC)]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (4)]]
-- 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA)]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (5)]]
-- 1 edge to [[_COMMUNITY_iCloud Services]]
-- 1 edge to [[_COMMUNITY_8D Root Cause Analysis — Data-Driven Control System Investigation]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)]]
-- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
-- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
-- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
-- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
-- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI)]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
-- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]]
-- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
-- 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation (3)]]
-- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection]]
-- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
-- 1 edge to [[_COMMUNITY_System Audit & Documentation]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
-- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
-- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist]]
-- 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
-- 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator]]
-- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
-- 1 edge to [[_COMMUNITY_Test-Driven Development README]]
-- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
-- 1 edge to [[_COMMUNITY_Technical Illustrator (i-ti)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[dot-agentsskillsi-crSKILL]] - degree 67, connects to 43 communities
+- [[CronStateMonitor]] - degree 34, connects to 1 community

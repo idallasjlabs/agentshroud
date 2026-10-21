@@ -1,54 +1,56 @@
 ---
 type: community
-members: 41
+members: 43
 ---
 
 # hermes/skills/i-cr/SKILL.md
 
-**Members:** 41 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[API  Function Reference]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Anti-Patterns to Flag_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Architecture Decision Record (ADR)]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Changelog Entry_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Core Discipline Understand → Structure → Write → Validate_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Dependencies_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Document Structure_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Document-Type Patterns_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Expected output]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Expected ok]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Expected INFO Re-queued 3 jobs]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Formatting_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[If not → escalate to field team via ops-alerts]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Role_21]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Skill agile_2]] - document - docker/config/hermes/skills/i-agile/SKILL.md
-- [[Skill bdd]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
-- [[Skill cd]] - document - docker/config/hermes/skills/i-cd/SKILL.md
-- [[Skill ci]] - document - docker/config/hermes/skills/i-ci/SKILL.md
-- [[Skill gitops]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
-- [[Skill sdlc]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
-- [[Skill sre]] - document - docker/config/hermes/skills/i-sre/SKILL.md
-- [[Validation Checklist_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Voice & Tone_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[What Belongs Where_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Writing Style Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[hermesskillsi-agileSKILL]] - document - docker/config/hermes/skills/i-agile/SKILL.md
-- [[hermesskillsi-bddSKILL]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
-- [[hermesskillsi-cdSKILL]] - document - docker/config/hermes/skills/i-cd/SKILL.md
-- [[hermesskillsi-ciSKILL]] - document - docker/config/hermes/skills/i-ci/SKILL.md
-- [[hermesskillsi-crSKILL]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[hermesskillsi-gitopsSKILL]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
-- [[hermesskillsi-sdlcSKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
-- [[hermesskillsi-sreSKILL]] - document - docker/config/hermes/skills/i-sre/SKILL.md
-- [[hermesskillsi-twSKILL]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[dot-config()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-config()_2]] - code - gateway/tests/test_config_validation.py
+- [[dot-config()_3]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_approval_queue_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_container_hardening()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_file_exists()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_gateway_port()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_log_level()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_kill_switch_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_long_retention()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_pii_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_rootless()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_ssh_requires_approval()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_tailscale_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
+- [[Path_12]] - code - gateway/tests/test_config_validation.py
+- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
+- [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
+- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
+- [[TestRecommendedConfig]] - code - gateway/tests/test_config_validation.py
+- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
+- [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
+- [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
+- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
+- [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
+- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,36 +60,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements (2)]]
-- 1 edge to [[_COMMUNITY_Hermes — Reference Verifier (2)]]
-- 1 edge to [[_COMMUNITY_10. Troubleshooting (2)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL.md (2)]]
-- 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection (2)]]
-- 1 edge to [[_COMMUNITY_Technical Specification]]
-- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (3)]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (3)]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
-- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (2)]]
-- 1 edge to [[_COMMUNITY_iCloud Services (2)]]
-- 1 edge to [[_COMMUNITY_Mac App Discovery Skill]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (2)]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Project Management (PM) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator (2)]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (2)]]
-- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)]]
-- 1 edge to [[_COMMUNITY_System Audit & Documentation (2)]]
-- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)]]
-- 1 edge to [[_COMMUNITY_Skill Security Review (SEC) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (2)]]
-- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (2)]]
-- 1 edge to [[_COMMUNITY_Skill UI Expert (UI) (2)]]
-- 1 edge to [[_COMMUNITY_Skill UX Expert (UX) (2)]]
-- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor (2)]]
+- 6 edges to [[_COMMUNITY__make_proxy()]]
+- 6 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
 
 ## Top bridge nodes
-- [[hermesskillsi-crSKILL]] - degree 47, connects to 30 communities
+- [[test_config_validation.py]] - degree 11, connects to 6 communities
+- [[TestParanoidConfig]] - degree 23, connects to 2 communities
+- [[TestRecommendedConfig]] - degree 10, connects to 2 communities
+- [[TestMinimalConfig]] - degree 9, connects to 2 communities
+- [[TestAllExampleConfigsExist]] - degree 5, connects to 2 communities

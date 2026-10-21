@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "AWS Cloud Management & FinOps"
+community: "export_bot"
 location: "L899"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/export_bot
 ---
 
 # _bot()
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_non_default_bot_fallback()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/code #graphify/EXTRACTED #community/export_bot

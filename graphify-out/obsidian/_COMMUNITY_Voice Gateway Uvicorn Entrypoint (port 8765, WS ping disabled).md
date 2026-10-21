@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice Gateway Uvicorn Entrypoint (port 8765, WS ping disabled)]] - code - voice_gateway/__main__.py
+- [[Skill Package Symlink Security Tests]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
 
 ## Live Query (requires Dataview plugin)
 

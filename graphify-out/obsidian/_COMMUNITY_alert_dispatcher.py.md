@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Alert JSONL Format]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[AlertDispatcher._send_notification(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[AlertDispatcher.cleanup_seen()]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[AlertDispatcher.dispatch(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[AlertDispatcher.get_digest(clear)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Configuration_12]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Function Details_4]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Mode Enforce vs Monitor_2]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Module-Level Constants_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Operational Notes]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Purpose_108]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Related_8]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Responsibilities_6]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Threat Model_4]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[alert_dispatcher.py_2]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[alert_dispatcher.py_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Blob Wire Format]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Configuration_14]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.decrypt(blob)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.encrypt(data)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Environment Variables_8]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Function Details_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Key Classes  Functions_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Key Rotation Workflow]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Mode Enforce vs Monitor_5]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Purpose_100]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Related_10]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Responsibilities_8]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Threat Model_7]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[_secure_zero(buffer)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[encrypted_store.py_2]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[encrypted_store.py_1]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 
 ## Live Query (requires Dataview plugin)
 

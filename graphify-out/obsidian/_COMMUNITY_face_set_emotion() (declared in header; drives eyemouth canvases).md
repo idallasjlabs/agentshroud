@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[Diagram 12 Credential Flow]] - image - docs/diagrams/images/diagram-12-credential-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

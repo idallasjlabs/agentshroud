@@ -1,32 +1,31 @@
 ---
 type: community
-members: 19
+members: 18
 ---
 
 # MultiHostResult
 
-**Members:** 19 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[dot-all_ok()]] - code - gateway/tools/multi_host_test.py
-- [[dot-exit_code()]] - code - gateway/tools/multi_host_test.py
-- [[dot-failed()]] - code - gateway/tools/multi_host_test.py
-- [[dot-ok()_2]] - code - gateway/tools/multi_host_test.py
-- [[dot-passed()]] - code - gateway/tools/multi_host_test.py
-- [[dot-test_ok_only_when_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_render_summary_all_pass_overall()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_render_summary_contains_hosts_and_overall()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_render_summary_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-unreachable()]] - code - gateway/tools/multi_host_test.py
-- [[0 iff all hosts passed; 1 otherwise (incl. empty  any unreachable).]] - rationale - gateway/tools/multi_host_test.py
-- [[Aggregated outcome across all hosts.]] - rationale - gateway/tools/multi_host_test.py
-- [[HostResult]] - code - gateway/tools/multi_host_test.py
-- [[MultiHostResult]] - code - gateway/tools/multi_host_test.py
-- [[Result of running the command on a single host.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestHostResult]] - code - gateway/tests/test_multi_host_test.py
-- [[TestMultiHostResultProperties]] - code - gateway/tests/test_multi_host_test.py
-- [[True only if every host passed (none failed or unreachable).]] - rationale - gateway/tools/multi_host_test.py
-- [[True only when the host ran the command and it exited 0.]] - rationale - gateway/tools/multi_host_test.py
+- [[dot-agentsskillsi-tddREADME]] - document - .agents/skills/i-tdd/README.md
+- [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
+- [[Purpose_86]] - document - .agents/skills/i-tdd/README.md
+- [[Purpose_87]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Related Skills_65]] - document - .agents/skills/i-tdd/README.md
+- [[Related Skills_66]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Technical Illustrator (TI)_2]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
+- [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
+- [[Technical Writer README]] - document - .agents/skills/i-tw/README.md
+- [[Test-Driven Development (TDD)_1]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Test-Driven Development (TDD) Coach]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
+- [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
+- [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
+- [[Usage_71]] - document - .agents/skills/i-tdd/README.md
+- [[Usage_72]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[hermesskillsi-tddREADME]] - document - docker/config/hermes/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,18 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 4 edges to [[_COMMUNITY_HostStatus]]
-- 4 edges to [[_COMMUNITY_run_multi_host]]
-- 4 edges to [[_COMMUNITY_multi_host_test.py]]
-- 3 edges to [[_COMMUNITY_main (2)]]
-- 2 edges to [[_COMMUNITY_TestTail]]
-- 2 edges to [[_COMMUNITY_ssh_runner]]
-- 2 edges to [[_COMMUNITY_TestParserAndCommandResolution]]
-- 2 edges to [[_COMMUNITY_TestParseHosts]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
 
 ## Top bridge nodes
-- [[MultiHostResult]] - degree 25, connects to 9 communities
-- [[HostResult]] - degree 23, connects to 9 communities
-- [[TestMultiHostResultProperties]] - degree 7, connects to 2 communities
-- [[TestHostResult]] - degree 5, connects to 2 communities
+- [[Test-Driven Development README]] - degree 11, connects to 3 communities

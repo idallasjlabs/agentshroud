@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Incident Response Plan (stop, investigate, contain, recover)]] - document - docs/archive/SECURITY-ANALYSIS.md
-- [[Incident Response Runbook (stop, review, rotate, rebuild, report)]] - document - docs/archive/SECURITY.md
+- [[dot-agentsskillsi-chaos-engineeringSKILL]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[Skill chaos-engineering]] - document - .agents/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

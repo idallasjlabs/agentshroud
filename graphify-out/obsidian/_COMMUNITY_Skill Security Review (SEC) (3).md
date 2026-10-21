@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_22]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Core Principle_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 1 Application Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 2 Container Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 3 Network Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Layer 4 Data Flow Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Output Format_35]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Review Layers_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Role_88]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[SecureClaw-Specific Threat Model_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Skill Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Verification Commands_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[openclawskillsi-secSKILL]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[1. GitHub MCP Authentication Reset_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[2. Atlassian MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
+- 1 edge to [[_COMMUNITY_Phase 3 MITIGATE (Rollback First!) (3)]]
 
 ## Top bridge nodes
-- [[Skill Security Review (SEC)_2]] - degree 9, connects to 1 community
+- [[1. GitHub MCP Authentication Reset_2]] - degree 5, connects to 1 community
+- [[Authentication Reset Procedures_1]] - degree 4, connects to 1 community

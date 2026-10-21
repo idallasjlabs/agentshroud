@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "test_jira_weekly_review.py"
+community: "test_wazuh_watchdog.py (2)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/test_wazuh_watchdogpy_2
 ---
 
 # _load_module()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy_2

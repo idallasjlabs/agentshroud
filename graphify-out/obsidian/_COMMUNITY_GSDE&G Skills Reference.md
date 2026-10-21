@@ -1,30 +1,42 @@
 ---
 type: community
-members: 17
+members: 29
 ---
 
 # GSDE&G Skills Reference
 
-**Members:** 17 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[1. Branch Creation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[2. Development (TDD)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[3. Production Testing (if needed)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[4. Pull Request]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[5. Pre-Merge]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Common Commands Quick Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Contacts]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Procedures_2]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[GSDE&G Skills Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[GitHub Workflow Integration]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[P1 Incident Response]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Production Testing Guidelines]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Quick Reference When to Use Each Skill]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Skill Directory Structure]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Skill Invocation Examples]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[hermesskillsi-referenceSKILLS_GUIDE]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[📚 Created Documentation]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[animation_timer_cb()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[app_main()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[draw_eye()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[draw_mouth()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[emotion_cycle_task()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[esp_err_t_3]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_deinit()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_init()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_update()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_config_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_emotion_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_get_container()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_get_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_lock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_malloc_canvas()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_auto_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_eye_openness()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_lvgl_lock_fns()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_mouth_shape()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_position()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_trigger_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_unlock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lv_obj_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lv_timer_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
+- [[main.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[update_emotion_parameters()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,10 +46,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_Skills by Category]]
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference (2)]]
+- 5 edges to [[_COMMUNITY_graphify reference extra exports and benchmark (2)]]
 
 ## Top bridge nodes
-- [[📚 Created Documentation]] - degree 3, connects to 2 communities
-- [[GSDE&G Skills Reference]] - degree 10, connects to 1 community
+- [[lvgl_kawaii_face.c]] - degree 20, connects to 1 community
+- [[face_set_emotion()]] - degree 12, connects to 1 community
+- [[face_animation_init()]] - degree 10, connects to 1 community

@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Gateway container (8 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Hermes container — Not scanned]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[OpenClaw container (17 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§5 — Trivy Container Scan Results]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[devices.sh]] - code - docker/scripts/devices.sh
+- [[devices.sh script]] - code - docker/scripts/devices.sh
+- [[telegram.sh]] - code - docker/scripts/telegram.sh
+- [[telegram.sh script]] - code - docker/scripts/telegram.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/5__Trivy_Container_Scan_Results
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessment]]
-
-## Top bridge nodes
-- [[§5 — Trivy Container Scan Results]] - degree 4, connects to 1 community

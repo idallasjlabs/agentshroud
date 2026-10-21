@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS RDS MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[goStep()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

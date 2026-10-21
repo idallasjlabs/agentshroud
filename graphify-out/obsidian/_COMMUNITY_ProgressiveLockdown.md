@@ -8,80 +8,80 @@ members: 74
 **Members:** 74 nodes
 
 ## Members
-- [[dot-__init__()_175]] - code - gateway/security/progressive_lockdown.py
-- [[dot-__init__()_176]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-_get_state()]] - code - gateway/security/progressive_lockdown.py
-- [[dot-_run_owner_cmd()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-_run_owner_cmd()_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-_setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-all_statuses()]] - code - gateway/security/progressive_lockdown.py
-- [[dot-get_status()_1]] - code - gateway/security/progressive_lockdown.py
-- [[dot-is_owner()_4]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-is_suspended()]] - code - gateway/security/progressive_lockdown.py
-- [[dot-process_inbound()_10]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-record_block()]] - code - gateway/security/progressive_lockdown.py
-- [[dot-reset()_2]] - code - gateway/security/progressive_lockdown.py
-- [[dot-test_alert_level_at_3_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_all_statuses_empty_initially()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_all_statuses_excludes_reset_users()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_all_statuses_tracks_all_users()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_escalated_level_at_5_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_locked_includes_unlock_hint()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_locked_lists_suspended_user()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_locked_no_active_lockdowns()_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_locked_shows_all_non_normal_users()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_no_notify_below_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_notify_owner_fires_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_owner_messages_pass_despite_collab_suspension()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_reset_false_for_unknown_user()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_reset_removes_suspended_state()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_reset_true_for_known_user()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_suspended_drop_notice_respects_cooldown()_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_suspended_level_at_10_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_suspended_user_gets_drop_notice()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_unlock_clears_suspended_drop_cooldown()_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_unlock_known_user_succeeds()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_unlock_unknown_user_reports_no_state()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-test_unlock_without_user_id_shows_usage()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Drive a single owner command through the proxy and capture admin notices.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[FakePipelineResult_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[FakeRBAC_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[LockdownAction]] - code - gateway/security/progressive_lockdown.py
-- [[LockdownLevel]] - code - gateway/security/progressive_lockdown.py
-- [[Owner command reset lockdown state for a user. Returns True if existed.]] - rationale - gateway/security/progressive_lockdown.py
-- [[Owner messages must never be blocked by the suspension logic.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[PassthroughPipeline_1]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Progressive Lockdown UX Tests]] - code - gateway/tests/test_progressive_lockdown.py
-- [[ProgressiveLockdown]] - code - gateway/security/progressive_lockdown.py
-- [[Record one blocked request for user_id and return the resulting action.]] - rationale - gateway/security/progressive_lockdown.py
-- [[Return True if the user's session is currently suspended.]] - rationale - gateway/security/progressive_lockdown.py
-- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Return current lockdown state for a user (for collabs or owner inspection).]] - rationale - gateway/security/progressive_lockdown.py
-- [[Return lockdown status for all tracked users.]] - rationale - gateway/security/progressive_lockdown.py
-- [[TelegramAPIProxy_3]] - code - gateway/tests/test_progressive_lockdown.py
-- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
-- [[TestLockedCommand]] - code - gateway/tests/test_progressive_lockdown.py
-- [[TestProgressiveLockdownUnit]] - code - gateway/tests/test_progressive_lockdown.py
-- [[TestSuspendedDropNotice]] - code - gateway/tests/test_progressive_lockdown.py
-- [[TestUnlockCommand]] - code - gateway/tests/test_progressive_lockdown.py
-- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Tracks per-user block counts and returns escalation actions.      Thread-safe fo]] - rationale - gateway/security/progressive_lockdown.py
-- [[UserLockdownState]] - code - gateway/security/progressive_lockdown.py
-- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Verify suspended users get a drop notice (rate-limited to avoid spam).]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[What the caller should do in response to this block.]] - rationale - gateway/security/progressive_lockdown.py
-- [[_make_proxy()_2]] - code - gateway/tests/test_progressive_lockdown.py
-- [[_make_update()_2]] - code - gateway/tests/test_progressive_lockdown.py
-- [[_wrap()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
-- [[test_progressive_lockdown.py]] - code - gateway/tests/test_progressive_lockdown.py
+- [[A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A read-timeout (worst-case latency) is still recorded, then falls back.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[A turn exceeding the soft threshold is flagged as an outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[A turn under the soft threshold is recorded as a non-outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Best-effort model warm-up.      Preloading the STT model and TTS pipeline at sta]] - rationale - voice_gateway/server.py
+- [[Build a system message with the current datetime for voice context.]] - rationale - voice_gateway/server.py
+- [[Build the ``metadata`` dict attached to a voice ``forward`` request.      Defau]] - rationale - voice_gateway/server.py
+- [[DEFAULT OFF forwardstream body carries NO metadata key — byte-for-byte legacy]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Emit a structured per-turn latency record for a voice ``forward`` call.      Re]] - rationale - voice_gateway/server.py
+- [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[FastAPI_4]] - code - voice_gateway/server.py
+- [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[ON no_memory=True → {no_memory True} ephemeral tag.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Outliers log at WARNING; normal turns do not.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Parse a spoken usetellaskswitch to modelagent command.      Returns (k]] - rationale - voice_gateway/server.py
+- [[Request body must carry the configured model, max_tokens=150, and     streamtru]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Return the requested volume (0-100, clamped) for a spoken     set the volume]] - rationale - voice_gateway/server.py
+- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's     POS]] - rationale - voice_gateway/server.py
+- [[Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.]] - rationale - voice_gateway/server.py
+- [[Spoken answer for a volume READ query the tracked level, or a     calibration h]] - rationale - voice_gateway/server.py
+- [[Stream conversation history through the gateway's OpenAI-compat     endpoint, yi]] - rationale - voice_gateway/server.py
+- [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
+- [[WebSocket_7]] - code - voice_gateway/server.py
+- [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[_State]] - code - voice_gateway/server.py
+- [[__main__.py]] - code - voice_gateway/__main__.py
+- [[_answer_volume_query()]] - code - voice_gateway/server.py
+- [[_call_agent_stream emits a latency record on the success path.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[_call_agent_stream()]] - code - voice_gateway/server.py
+- [[_call_llm_stream()]] - code - voice_gateway/server.py
+- [[_effective_voice_model()]] - code - voice_gateway/server.py
+- [[_is_volume_query()]] - code - voice_gateway/server.py
+- [[_keepalive()]] - code - voice_gateway/server.py
+- [[_lifespan()]] - code - voice_gateway/server.py
+- [[_mock_stream_resp()_1]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_parse_model_switch_command()]] - code - voice_gateway/server.py
+- [[_parse_volume_command()]] - code - voice_gateway/server.py
+- [[_record_turn_latency()]] - code - voice_gateway/server.py
+- [[_send_state()]] - code - voice_gateway/server.py
+- [[_sse_body()_1]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_voice_forward_metadata()]] - code - voice_gateway/server.py
+- [[_voice_system_message()]] - code - voice_gateway/server.py
+- [[_warm()]] - code - voice_gateway/server.py
+- [[health()]] - code - voice_gateway/server.py
+- [[omlx-keepwarm.sh]] - code - scripts/omlx-keepwarm.sh
+- [[omlx-keepwarm.sh script]] - code - scripts/omlx-keepwarm.sh
+- [[server.py]] - code - voice_gateway/server.py
+- [[switch_model.sh main flow]] - code - scripts/switch_model.sh
+- [[test_call_agent_default_body_has_no_metadata()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_records_latency_on_read_timeout()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_records_latency_on_success()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_stream_non_400_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_llm_stream_sends_full_history()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_record_turn_latency_boundary_is_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_default_threshold_from_module()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_normal_logs_info()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_normal_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_outlier_logs_warning()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_over_threshold_is_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_default_off_is_empty()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_module_default_is_off()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_latency_guard.py]] - code - gateway/tests/test_voice_latency_guard.py
+- [[voice_endpoint()]] - code - voice_gateway/server.py
+- [[voice_gateway__init__.py]] - code - voice_gateway/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -91,17 +91,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 8 edges to [[_COMMUNITY__FakeRBAC (2)]]
-- 3 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 8 edges to [[_COMMUNITY_main.rs]]
+- 4 edges to [[_COMMUNITY_GATEWAY_OP_PROXY_URL]]
+- 4 edges to [[_COMMUNITY_AgentShroud (system, C4 context) (2) (2)]]
+- 3 edges to [[_COMMUNITY_i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Verification (13-check driver)]]
+- 1 edge to [[_COMMUNITY_proxy_status.py]]
 
 ## Top bridge nodes
-- [[ProgressiveLockdown]] - degree 47, connects to 4 communities
-- [[LockdownLevel]] - degree 14, connects to 2 communities
-- [[progressive_lockdown.py]] - degree 6, connects to 2 communities
-- [[_make_proxy()_2]] - degree 18, connects to 1 community
-- [[TestProgressiveLockdownUnit]] - degree 15, connects to 1 community
+- [[server.py]] - degree 29, connects to 5 communities
+- [[_call_agent_stream()]] - degree 18, connects to 2 communities
+- [[_call_llm_stream()]] - degree 11, connects to 2 communities
+- [[test_call_agent_stream_non_400_http_error_falls_back()]] - degree 3, connects to 1 community
+- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - degree 3, connects to 1 community

@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_explicit_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_explicit_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_explicit_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_invalid_runtime()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_no_runtime_available()]] - code - gateway/tests/test_runtime_engines.py
-- [[ContainerEngine_2]] - code - gateway/runtime/__init__.py
-- [[Return an appropriate container engine instance.      Args         preference]] - rationale - gateway/runtime/__init__.py
-- [[TestGetEngine_1]] - code - gateway/tests/test_runtime_engines.py
-- [[get_engine()]] - code - gateway/runtime/__init__.py
+- [[1. Schema Validation_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[2. Partition Coverage_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[3. Data Quality Checks_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[4. Cross-Site Comparison_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[Critical Cost Control_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[Role_92]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[Skill Data Validation (DATA-VAL)_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[Test Data Validation Pattern_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[Validation Layers_2]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[openclawskillsi-dataSKILL]] - document - docker/config/openclaw/skills/i-data/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,19 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 2 edges to [[_COMMUNITY_api.py (2)]]
-- 2 edges to [[_COMMUNITY_PodmanEngine]]
-- 2 edges to [[_COMMUNITY_DockerEngine]]
-- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_ContainerEngine]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_RuntimeConfig]]
-- 1 edge to [[_COMMUNITY_test_runtime_engines.py (2)]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[get_engine()]] - degree 16, connects to 6 communities
-- [[TestGetEngine_1]] - degree 12, connects to 5 communities
-- [[ContainerEngine_2]] - degree 5, connects to 4 communities
+- [[Skill Data Validation (DATA-VAL)_2]] - degree 6, connects to 1 community

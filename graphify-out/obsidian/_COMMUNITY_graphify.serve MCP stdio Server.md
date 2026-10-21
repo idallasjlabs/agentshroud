@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[God Nodes Analysis]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[graphify.serve MCP stdio Server]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Skill devsecops_1]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[hermesskillsi-devsecopsSKILL]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

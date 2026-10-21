@@ -8,40 +8,40 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_110]] - code - gateway/security/config_integrity.py
-- [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
-- [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
-- [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
-- [[dot-check()_4]] - code - gateway/security/config_integrity.py
-- [[dot-format_alert_text()]] - code - gateway/security/config_integrity.py
-- [[dot-reset_baseline()]] - code - gateway/security/config_integrity.py
-- [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
-- [[Compare current file hashes against baseline.          Returns a list of change]] - rationale - gateway/security/config_integrity.py
-- [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - rationale - gateway/security/config_integrity.py
-- [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
-- [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
-- [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_27]] - code - gateway/security/config_integrity.py
-- [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
-- [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
-- [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
-- [[_write_openclaw()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[dirs()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_added_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_baseline_advances_only_when_clean()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_config_integrity_monitor.py]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_first_boot_establishes_baseline_without_alerts()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_format_alert_text_handles_missing_hashes()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_format_alert_text_includes_event_and_hash_prefixes()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_hash_file_is_stable_and_content_sensitive()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_hash_file_returns_none_for_missing()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_load_baseline_missing_file_returns_empty()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_load_baseline_tolerates_corrupt_json()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_modified_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_removed_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_reset_baseline_accepts_current_state()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_unchanged_second_run_reports_no_changes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[dot-__init__()_99]] - code - gateway/security/skill_guard.py
+- [[dot-_line_at()]] - code - gateway/security/skill_guard.py
+- [[dot-_scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
+- [[dot-blocked()]] - code - gateway/security/skill_guard.py
+- [[dot-extend()]] - code - gateway/security/skill_guard.py
+- [[dot-recommendation()]] - code - gateway/security/skill_guard.py
+- [[dot-scan_file()]] - code - gateway/security/skill_guard.py
+- [[dot-scan_skill_tree()]] - code - gateway/security/skill_guard.py
+- [[dot-severity()]] - code - gateway/security/skill_guard.py
+- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
+- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
+- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
+- [[Finding]] - code - gateway/security/skill_guard.py
+- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
+- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
+- [[Path_22]] - code - gateway/skills/scan.py
+- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - rationale - gateway/web/api.py
+- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
+- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
+- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
+- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
+- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
+- [[ScanResult_2]] - code - gateway/skills/scan.py
+- [[ScanResult_3]] - code - gateway/security/skill_guard.py
+- [[SkillGuard_1]] - code - gateway/security/skill_guard.py
+- [[_Rule]] - code - gateway/security/skill_guard.py
+- [[_build_tree()]] - code - gateway/skills/scan.py
+- [[_c()]] - code - gateway/security/skill_guard.py
+- [[_print_findings()]] - code - gateway/skills/scan.py
+- [[_skills_reload_impl()]] - code - gateway/web/api.py
+- [[main()_14]] - code - gateway/skills/scan.py
+- [[scan.py]] - code - gateway/skills/scan.py
+- [[skill_guard.py]] - code - gateway/security/skill_guard.py
+- [[skills_reload()]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,7 +51,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
+- 33 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 17 edges to [[_COMMUNITY_AuditStore]]
+- 6 edges to [[_COMMUNITY_SecurityPipeline (3)]]
+- 5 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
 
 ## Top bridge nodes
-- [[ConfigIntegrityMonitor]] - degree 24, connects to 1 community
+- [[SkillGuard_1]] - degree 34, connects to 4 communities
+- [[skill_guard.py]] - degree 9, connects to 3 communities
+- [[scan.py]] - degree 8, connects to 3 communities
+- [[ScanResult_3]] - degree 32, connects to 2 communities
+- [[_skills_reload_impl()]] - degree 8, connects to 2 communities

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ElevenLabs Text-to-Dialogue API_1]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[eleven_v3 model]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Host Application Firewall Layer (Little Snitch  Lulu on vpnkit)]] - rationale - docs/archive/SECURITY.md
+- [[In-Container iptables Firewall (container-firewall.sh, needs privileges)]] - rationale - docs/archive/SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 

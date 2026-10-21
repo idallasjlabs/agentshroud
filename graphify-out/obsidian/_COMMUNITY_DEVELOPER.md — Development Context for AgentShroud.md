@@ -1,31 +1,25 @@
 ---
 type: community
-members: 18
+members: 12
 ---
 
 # DEVELOPER.md — Development Context for AgentShroud
 
-**Members:** 18 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[1. Owner & Governance Context]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[2. Project]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[3. Prime Directive]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[4) LANGUAGE & TOOLING STANDARDS]] - document - AGENTS.md
-- [[4. Development Rules (TDD)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[5. Language & Tooling Standards]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[6. Runtime Environment (CRITICAL)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[7. SSH Development Workflow]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[8. Agent Orchestration]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[9. Repository Guardrails]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[9. Skill Lookup]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[Cross-platform requirement]] - document - CLAUDE.md
-- [[DEVELOPER]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[DEVELOPER.md — Development Context for AgentShroud]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[Next.js  UI Standards]] - document - AGENTS.md
-- [[Provisioning philosophy]] - document - CLAUDE.md
-- [[Python]] - document - CLAUDE.md
-- [[Python Standards]] - document - AGENTS.md
+- [[Commands_4]] - document - skills/openclaw/weather/SKILL.md
+- [[Current Weather]] - document - skills/openclaw/weather/SKILL.md
+- [[Forecasts]] - document - skills/openclaw/weather/SKILL.md
+- [[Format Codes]] - document - skills/openclaw/weather/SKILL.md
+- [[Format Options]] - document - skills/openclaw/weather/SKILL.md
+- [[Location_1]] - document - skills/openclaw/weather/SKILL.md
+- [[Notes_10]] - document - skills/openclaw/weather/SKILL.md
+- [[Quick Responses]] - document - skills/openclaw/weather/SKILL.md
+- [[Weather Skill]] - document - skills/openclaw/weather/SKILL.md
+- [[When NOT to Use_3]] - document - skills/openclaw/weather/SKILL.md
+- [[When to Use_4]] - document - skills/openclaw/weather/SKILL.md
+- [[weatherSKILL]] - document - skills/openclaw/weather/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]]
-- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]]
+- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
 
 ## Top bridge nodes
-- [[4) LANGUAGE & TOOLING STANDARDS]] - degree 8, connects to 2 communities
+- [[weatherSKILL]] - degree 2, connects to 1 community

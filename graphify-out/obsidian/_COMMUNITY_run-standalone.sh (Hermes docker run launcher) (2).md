@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[OpenClaw Cron Jobs Configuration]] - document - docker/config/openclaw/cron/jobs.json
-- [[S10 start-agentshroud.sh force-reconciles security-critical live cron jobs]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S11 init-openclaw-config.sh seeds jira_dev_ticket.py into live OpenClaw workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S8 no raw sshagentshroud-bot@real Tailscale FQDN in baked bot config]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[S9 init-openclaw-config.sh seeds agentshroud-ssh-exec.sh rules into live AGENTS]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[_oc_config_set()]] - code - docker/scripts/init-openclaw-config.sh
-- [[_sha256()_3]] - code - docker/scripts/init-openclaw-config.sh
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - code - docker/scripts/init-openclaw-config.sh
-- [[init-openclaw-config.sh runs doctor --fix before version seed (schema v23-v24 trap)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[init-openclaw-config.sh script]] - code - docker/scripts/init-openclaw-config.sh
+- [[AgentShroud Blue — 1583f0]] - concept - branding/QUICK-REFERENCE.md
+- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
+- [[AgentShroud Logo — Dark Background Variant]] - image - branding/agentshroud-logo-dark-bg.png
+- [[AgentShroud MerchandiseStationery Mockup]] - image - branding/agentshroud-mockup.png
+- [[AgentShroud Primary Logo]] - image - branding/logo.png
+- [[INDEX_1]] - document - branding/INDEX.md
+- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
+- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
+- [[QUICK-REFERENCE]] - document - branding/QUICK-REFERENCE.md
+- [[brandingREADME]] - document - branding/README.md
+- [[typography_2]] - document - branding/typography/typography.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +28,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
-- 1 edge to [[_COMMUNITY_apply-patches.js]]
-- 1 edge to [[_COMMUNITY_test_hermes_cron_seed.py (2)]]
+- 2 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
+- 1 edge to [[_COMMUNITY_Findings & Mitigations]]
+- 1 edge to [[_COMMUNITY_dashboard_bridge.py]]
+- 1 edge to [[_COMMUNITY_BotConfig (3)]]
 
 ## Top bridge nodes
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - degree 9, connects to 2 communities
-- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - degree 2, connects to 1 community
-- [[OpenClaw Cron Jobs Configuration]] - degree 2, connects to 1 community
+- [[INDEX_1]] - degree 5, connects to 2 communities
+- [[brandingREADME]] - degree 6, connects to 1 community
+- [[QUICK-REFERENCE]] - degree 4, connects to 1 community
+- [[typography_2]] - degree 4, connects to 1 community

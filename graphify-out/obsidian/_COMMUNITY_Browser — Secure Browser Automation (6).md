@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+members: 6
 ---
 
 # Browser — Secure Browser Automation (6)
 
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Browser — Secure Browser Automation_1]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Purpose_29]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Related Skills_14]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Usage_18]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[hermesskillsi-browserREADME]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[dot-__enter__()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__exit__()]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_31]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-read()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,10 @@ members: 5
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation_6
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
+- 1 edge to [[_COMMUNITY_OpenClaw and Hermes are processed on fully separate paths; one failing never…]]
+
+## Top bridge nodes
+- [[_FakeHTTPResponse]] - degree 7, connects to 2 communities

@@ -8,34 +8,34 @@ members: 28
 **Members:** 28 nodes
 
 ## Members
-- [[dot-test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
+- [[AsyncClient]] - code - gateway/proxy/collaborator_greeter.py
+- [[Forward content → PII sanitized → ledger entry created → event bus fired.]] - rationale - gateway/tests/test_e2e.py
+- [[Forward without auth returns 401403.]] - rationale - gateway/tests/test_e2e.py
+- [[Fully initialized async client with lifespan.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboard with valid cookie auth returns HTML.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboard with valid cookie serves HTML]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard without auth returns 403.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboardstats returns JSON stats.]] - rationale - gateway/tests/test_e2e.py
+- [[GET status returns service info.]] - rationale - gateway/tests/test_e2e.py
+- [[Submit SSH command → approval queued.]] - rationale - gateway/tests/test_e2e.py
+- [[client()_6]] - code - gateway/tests/test_dashboard.py
+- [[client()_7]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[client()_8]] - code - gateway/tests/test_e2e.py
+- [[client()_9]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[client()_10]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[client()_11]] - code - gateway/tests/test_security_fixes.py
+- [[client()_12]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[client()_13]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_dashboard_requires_auth()_1]] - code - gateway/tests/test_e2e.py
+- [[test_dashboard_returns_html()]] - code - gateway/tests/test_e2e.py
+- [[test_dashboard_serves_html()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_returns_json()]] - code - gateway/tests/test_e2e.py
+- [[test_e2e.py]] - code - gateway/tests/test_e2e.py
+- [[test_forward_pii_sanitized_and_ledger_entry()]] - code - gateway/tests/test_e2e.py
+- [[test_forward_without_auth_rejected()]] - code - gateway/tests/test_e2e.py
+- [[test_ssh_submit_queues_approval()]] - code - gateway/tests/test_e2e.py
+- [[test_status_endpoint()]] - code - gateway/tests/test_e2e.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,12 +45,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_MiddlewareManager]]
-- 5 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 2 edges to [[_COMMUNITY_export-bot-conversations.py (2)]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 2 communities
-- [[TestIsToolCallRequest]] - degree 12, connects to 2 communities
-- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 2 communities
-- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 2 communities
-- [[session_manager()_1]] - degree 2, connects to 1 community
+- [[test_e2e.py]] - degree 13, connects to 5 communities
+- [[AsyncClient]] - degree 10, connects to 1 community
+- [[dot-test_dashboard_cookie_auth_serves_html()]] - degree 3, connects to 1 community
+- [[client()_6]] - degree 2, connects to 1 community
+- [[client()_7]] - degree 2, connects to 1 community

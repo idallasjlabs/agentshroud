@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Elevator pitch]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Key Messaging]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[One-liner]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[What it is NOT]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[check_fail()]] - code - docker/scripts/health-check.sh
+- [[check_pass()]] - code - docker/scripts/health-check.sh
+- [[health-check.sh]] - code - docker/scripts/health-check.sh
+- [[health-check.sh script]] - code - docker/scripts/health-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/AgentShroud_Brand_Guidelines_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-
-## Top bridge nodes
-- [[Key Messaging]] - degree 4, connects to 1 community

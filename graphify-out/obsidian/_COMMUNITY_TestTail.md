@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-test_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_keeps_last_n_lines()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_only_newlines()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_shorter_than_n()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_strips_trailing_newline()]] - code - gateway/tests/test_multi_host_test.py
-- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestTail]] - code - gateway/tests/test_multi_host_test.py
-- [[tail()]] - code - gateway/tools/multi_host_test.py
+- [[cmd_buildkit()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_diagnose()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_nuclear()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_restart()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_safe_prune()]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh script]] - code - docker/scripts/docker-cleanup.sh
+- [[usage()_2]] - code - docker/scripts/docker-cleanup.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,14 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/TestTail
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_MultiHostResult]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_run_multi_host]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-
-## Top bridge nodes
-- [[TestTail]] - degree 9, connects to 3 communities
-- [[tail()]] - degree 9, connects to 3 communities

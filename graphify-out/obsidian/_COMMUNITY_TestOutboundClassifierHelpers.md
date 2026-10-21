@@ -8,32 +8,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[dot-test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_high_risk_leakage_detects_function_calls_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_high_risk_leakage_detects_identity_md_in_reveal_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_high_risk_leakage_detects_invoke_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_high_risk_leakage_skips_protected_header_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_internal_approval_banner_detects_allow_always_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_internal_approval_banner_detects_allow_once_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_internal_approval_banner_detects_deny_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_internal_approval_banner_detects_standard_banner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_internal_approval_banner_ignores_normal_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_internal_approval_banner_ignores_unrelated_deny_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_legacy_block_notice_detects_legacy_bracket_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_contains_legacy_block_notice_detects_legacy_protected_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_extract_first_egress_target_skips_identity_md()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_extract_first_egress_target_skips_md_filenames()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_extract_first_egress_target_still_catches_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_is_no_reply_token_accepts_fenced_and_punctuated_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_is_no_reply_token_rejects_non_token_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_looks_like_filename_reference_catches_common_extensions()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[dot-test_looks_like_filename_reference_rejects_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[BOOTSTRAP.md must NOT be treated as an egress domain.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Our own protected notices must never be double-filtered.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestOutboundClassifierHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[bootstrap.md mentioned in a denial should NOT trigger the high-risk filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[401 Unauthorized_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[403 Forbidden]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Connection timeout_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Notes folder not found]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Access Notes via IMAP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Challenge]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Discovery Process]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Server Settings_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 1 Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 2 Install Dependencies]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 3 Test Services]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 4 Verify All Working]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Test CalDAV Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Test IMAP Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[iCloud Services Setup - Complete Guide]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[✅ Setup Checklist_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🎯 Next Steps After Setup]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📅 iCloud Calendar (CalDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📝 iCloud Notes]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📞 iCloud Contacts (CardDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📦 Required Node.js Packages]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📧 iCloud Mail (IMAPSMTP)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🔍 Troubleshooting]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🔐 Important App-Specific Passwords]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🚀 Complete Setup Script]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes
-- [[TestOutboundClassifierHelpers]] - degree 27, connects to 3 communities
+- [[iCloud Services Setup - Complete Guide]] - degree 11, connects to 1 community

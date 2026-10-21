@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_64]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Related Skills_49]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Technical Writer (TW)]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Usage_53]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[openclawskillsi-twREADME]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Purpose_31]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Related Skills_17]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Usage_20]] - document - docker/config/hermes/skills/i-production/README.md
+- [[hermesskillsi-productionREADME]] - document - docker/config/hermes/skills/i-production/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/Technical_Writer_TW
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Technical Writer (TW)]] - degree 5, connects to 1 community

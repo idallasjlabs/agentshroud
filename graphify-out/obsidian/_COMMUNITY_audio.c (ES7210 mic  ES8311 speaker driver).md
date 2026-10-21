@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
-- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
+- [[Skill chaos-engineering_2]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[openclawskillsi-chaos-engineeringSKILL]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -50,8 +50,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_cli_coverage.py]]
-- 4 edges to [[_COMMUNITY_SCLClient]]
+- 7 edges to [[_COMMUNITY_1. GitHub MCP Authentication Reset (2)]]
+- 4 edges to [[_COMMUNITY_OpenClaw and Hermes are processed on fully separate paths; one failing never…]]
 
 ## Top bridge nodes
 - [[TestEgressAndAdminCommands]] - degree 10, connects to 2 communities

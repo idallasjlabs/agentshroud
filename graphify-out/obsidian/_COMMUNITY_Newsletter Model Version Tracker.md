@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Model Version Tracker_1]] - document - docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt
+- [[CVE-2026-35190 — execute_command owner-only fix]] - document - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

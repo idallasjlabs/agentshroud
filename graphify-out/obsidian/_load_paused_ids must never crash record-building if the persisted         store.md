@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
-community: "_FakeRBAC (2)"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_FakeRBAC_2
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
 ---
 
 # _load_paused_ids must never crash record-building if the persisted         store
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_load_paused_ids_defaults_to_empty_set_on_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

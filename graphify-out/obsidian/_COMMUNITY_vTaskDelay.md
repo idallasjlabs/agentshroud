@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[TickType_t_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
-- [[test_playback_statestubsfreertostask.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
-- [[vTaskDelay()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[Claude Code (PRIMARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[Codex CLI (TERTIARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[Gemini CLI (SECONDARY agent)]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

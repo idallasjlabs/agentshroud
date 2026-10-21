@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill chaos-engineering_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
-- [[hermesskillsi-chaos-engineeringSKILL]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[ClawHub CLI]] - document - skills/openclaw/clawhub/SKILL.md
+- [[clawhubSKILL]] - document - skills/openclaw/clawhub/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

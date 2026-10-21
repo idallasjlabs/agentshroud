@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[dot-test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreContainerHardening]] - code - gateway/tests/test_scorecard_scoring.py
+- [[2. Security Value Audit_2]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[PARTIAL PROTECTION (real logic, but gaps or dependencies)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[REAL PROTECTION (functional enforcement, would stop actual attacks)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[SECURITY THEATER RISK (looks good, limited real value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 
 ## Top bridge nodes
-- [[TestScoreContainerHardening]] - degree 4, connects to 1 community
+- [[2. Security Value Audit_2]] - degree 4, connects to 1 community

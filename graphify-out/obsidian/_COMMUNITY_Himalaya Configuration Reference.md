@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Additional Options]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Downloads directory]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Editor for composing]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Folder Aliases]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Gmail Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Himalaya Configuration Reference]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Minimal IMAP + SMTP Setup]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Multiple Accounts_1]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Notmuch Backend (local mail)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[OAuth2 Authentication (for providers that support it)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Password Options]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Password from command (recommended)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Raw password (testing only, not recommended)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Signature]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[System keyring (requires keyring feature)]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[iCloud Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[1. Clone the Repository_1]] - document - docs/operations/linux.md
+- [[2. Install Docker_1]] - document - docs/operations/linux.md
+- [[3. Set Up Secrets_1]] - document - docs/operations/linux.md
+- [[4. Configure AgentShroud_1]] - document - docs/operations/linux.md
+- [[5. Build and Start_1]] - document - docs/operations/linux.md
+- [[6. Verify_1]] - document - docs/operations/linux.md
+- [[Architecture Notes]] - document - docs/operations/linux.md
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
+- [[Firewall]] - document - docs/operations/linux.md
+- [[Fresh Install_1]] - document - docs/operations/linux.md
+- [[Non-Root User]] - document - docs/operations/linux.md
+- [[Prerequisites_12]] - document - docs/operations/linux.md
+- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
+- [[Updating to Latest Release_1]] - document - docs/operations/linux.md
+- [[VPS Deployment Notes]] - document - docs/operations/linux.md
+- [[linux]] - document - docs/operations/linux.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,3 @@ members: 16
 TABLE source_file, type FROM #community/Himalaya_Configuration_Reference
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
-
-## Top bridge nodes
-- [[Himalaya Configuration Reference]] - degree 10, connects to 1 community

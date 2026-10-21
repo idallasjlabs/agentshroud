@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice Gateway FastAPI Server]] - code - voice_gateway/server.py
+- [[soc__init__.py]] - code - gateway/soc/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

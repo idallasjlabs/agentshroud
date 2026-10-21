@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
+- [[omlx-keepwarm.sh — keeps gemma model resident (cold 5.06s vs warm 0.69s)]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

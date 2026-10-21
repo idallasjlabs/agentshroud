@@ -8,7 +8,7 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_139]] - code - gateway/runtime/apple_engine.py
+- [[dot-__init__()_131]] - code - gateway/runtime/apple_engine.py
 - [[dot-_cmd()_2]] - code - gateway/runtime/apple_engine.py
 - [[dot-build()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-compose_down()_3]] - code - gateway/runtime/apple_engine.py
@@ -21,14 +21,14 @@ members: 24
 - [[dot-network_rm()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-pause()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-pull()_3]] - code - gateway/runtime/apple_engine.py
-- [[dot-push()_3]] - code - gateway/runtime/apple_engine.py
+- [[dot-push()_4]] - code - gateway/runtime/apple_engine.py
 - [[dot-rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[dot-run()_6]] - code - gateway/runtime/apple_engine.py
-- [[dot-stop()_11]] - code - gateway/runtime/apple_engine.py
+- [[dot-run()_5]] - code - gateway/runtime/apple_engine.py
+- [[dot-stop()_10]] - code - gateway/runtime/apple_engine.py
 - [[dot-unpause()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-volume_create()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-volume_rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[Any_50]] - code - gateway/runtime/apple_engine.py
+- [[Any_47]] - code - gateway/runtime/apple_engine.py
 - [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
 - [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
 - [[get_engine]] - code - gateway/runtime/__init__.py
@@ -41,19 +41,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 4 edges to [[_COMMUNITY_test_runtime_engines.py (2)]]
-- 3 edges to [[_COMMUNITY_RuntimeConfig]]
-- 2 edges to [[_COMMUNITY_TestAppleContainerEngine]]
-- 2 edges to [[_COMMUNITY_ContainerEngine]]
-- 2 edges to [[_COMMUNITY_get_engine]]
-- 1 edge to [[_COMMUNITY_TestInstallerAPI]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_DockerEngine]]
-- 1 edge to [[_COMMUNITY_TestDockerEngine]]
-- 1 edge to [[_COMMUNITY_TestSecurityFeatures]]
-- 1 edge to [[_COMMUNITY_TestWebAPI]]
+- 6 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 4 edges to [[_COMMUNITY_egress_retry.py]]
+- 3 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 2 edges to [[_COMMUNITY_server.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (6)]]
+- 2 edges to [[_COMMUNITY_Workflow (follow in order)]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
+- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
+- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
+- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
+- 1 edge to [[_COMMUNITY_tts.py]]
 
 ## Top bridge nodes
 - [[AppleContainerEngine]] - degree 45, connects to 12 communities
-- [[Any_50]] - degree 3, connects to 2 communities
+- [[Any_47]] - degree 3, connects to 2 communities

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Mac Clustering_1]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
+- [[AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 

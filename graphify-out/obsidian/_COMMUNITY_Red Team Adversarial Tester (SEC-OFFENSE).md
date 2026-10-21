@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_60]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Related Skills_45]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Usage_49]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[openclawskillsi-sec-offenseREADME]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Purpose_26]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Related Skills_12]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Usage_15]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[hermesskillsi-icloudREADME]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[iCloud Data Manager (ICLOUD)]] - document - docker/config/hermes/skills/i-icloud/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - degree 5, connects to 1 community

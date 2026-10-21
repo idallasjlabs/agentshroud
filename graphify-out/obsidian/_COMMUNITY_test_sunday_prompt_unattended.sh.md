@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[fail()_2]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
-- [[pass()_1]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
-- [[test_sunday_prompt_unattended.sh]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
-- [[test_sunday_prompt_unattended.sh script]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
+- [[Architecture_2]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Files]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,9 @@ members: 4
 TABLE source_file, type FROM #community/test_sunday_prompt_unattendedsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
+
+## Top bridge nodes
+- [[Technical Details]] - degree 4, connects to 1 community

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill architecture-review_2]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
-- [[openclawskillsi-architecture-reviewSKILL]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
+- [[Skill kaizen_1]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[hermesskillsi-kaizenSKILL]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

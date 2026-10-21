@@ -1,23 +1,29 @@
 ---
 type: community
-members: 10
+members: 16
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents (2)
 
-**Members:** 10 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[9. Deep Security Hardening (v0.9.0)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.1 Log Sanitizer (gatewaysecuritylog_sanitizer.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.2 Environment Leakage Guard (gatewaysecurityenv_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.3 Context Window Poisoning Defense (gatewaysecuritycontext_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.4 Git Hook Guard (gatewaysecuritygit_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.5 Metadata Channel Guard (gatewaysecuritymetadata_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.6 Network Isolation Validator (gatewaysecuritynetwork_validator.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.7 Resource Exhaustion Guard (gatewaysecurityresource_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.8 Tool Result Injection Scanning (MCP Inspector Enhancement)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.9 Deep Hardening Impact]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Config Keys Read_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Environment Variables Used_5]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Function Details_15]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Purpose_117]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Related_21]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Responsibilities_19]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[VersionRequest Fields]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[downgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[get_version_history()_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[rollback_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[upgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[version_routes.py_2]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[version_routes.py_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +31,3 @@ members: 10
 TABLE source_file, type FROM #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-
-## Top bridge nodes
-- [[9. Deep Security Hardening (v0.9.0)]] - degree 10, connects to 1 community

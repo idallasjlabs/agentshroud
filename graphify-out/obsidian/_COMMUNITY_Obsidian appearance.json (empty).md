@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian appearance.json (empty)]] - document - docs/vault/.obsidian/appearance.json
+- [[AgentShroud Gateway OpenAPI Spec v1.2.1]] - document - docs/api/openapi.json
 
 ## Live Query (requires Dataview plugin)
 

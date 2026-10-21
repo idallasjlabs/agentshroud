@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server home-assistant]] - code - .mcp.json
+- [[scriptscheck-vendor-compat.sh — A2A JSON-RPC smoke check]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

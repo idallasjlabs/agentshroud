@@ -8,29 +8,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Agents Rule of Two]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-22708 (Indirect Prompt Injection via Web Browsing)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-25253 (OpenClaw RCE)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[DNS-Layer Enforcement]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Debenedetti et al., The Attacker Moves Second (2025)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Leveson, Engineering a Safer World (2012)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Log-To-Leak MCP Exfiltration Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MCP Proxy Layer]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Microsoft Presidio PII Detection Engine]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MiddlewareManager (35 Modules)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[ToolHijacker Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Transparent Proxy Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Zetherion AI Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[agentshroud-ieee-paper]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[step-ca Private Certificate Authority]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[7-Layer Security Architecture]] - concept - SECURITY.md
+- [[AgentShroud™ Security Policy]] - document - SECURITY.md
+- [[CI Security Scanning Toolchain]] - concept - SECURITY.md
+- [[Compliance Alignment]] - document - SECURITY.md
+- [[Daily CVE Sync + Page Update Workflow]] - document - .github/workflows/update-cve-page.yml
+- [[Emergency Response]] - document - SECURITY.md
+- [[Kill Switch Operations]] - concept - CHEATSHEET.md
+- [[Layer 1 — Core Pipeline (P0)]] - document - SECURITY.md
+- [[Layer 2 — Middleware (P1)]] - document - SECURITY.md
+- [[Layer 3 — Output Protection]] - document - SECURITY.md
+- [[Layer 4 — Tool & Agent Control]] - document - SECURITY.md
+- [[Layer 5 — Network & Egress]] - document - SECURITY.md
+- [[Layer 6 — File & Memory Integrity]] - document - SECURITY.md
+- [[Layer 7 — Infrastructure & Supply Chain]] - document - SECURITY.md
+- [[Monitor Mode Warning]] - document - SECURITY.md
+- [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - rationale - .github/workflows/update-cve-page.yml
+- [[Reporting a Vulnerability]] - document - SECURITY.md
+- [[Response Timeline]] - document - SECURITY.md
+- [[Security Architecture_3]] - document - SECURITY.md
+- [[Security Scanning]] - document - SECURITY.md
+- [[Supported Versions]] - document - SECURITY.md
+- [[Trademark_2]] - document - BRAND.md
+- [[Upstream Agent CVE Tracking]] - document - SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,9 +40,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_WebProxyConfig (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
+- 3 edges to [[_COMMUNITY_AuditExporter]]
+- 2 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
 
 ## Top bridge nodes
-- [[agentshroud-ieee-paper]] - degree 24, connects to 3 communities
+- [[AgentShroud™ Security Policy]] - degree 14, connects to 2 communities
+- [[Trademark_2]] - degree 4, connects to 2 communities
+- [[Kill Switch Operations]] - degree 2, connects to 1 community
+- [[7-Layer Security Architecture]] - degree 2, connects to 1 community

@@ -1,154 +1,193 @@
 ---
 type: community
-members: 141
+members: 180
 ---
 
 # ContextSegment
 
-**Members:** 141 nodes
+**Members:** 180 nodes
 
 ## Members
-- [[--- new instructions patterns should be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[dot-__init__()_63]] - code - gateway/security/context_integrity.py
-- [[dot-__init__()_64]] - code - gateway/security/prompt_guard.py
-- [[dot-_check_encoded_content()]] - code - gateway/security/prompt_guard.py
-- [[dot-_check_unicode_tricks()]] - code - gateway/security/prompt_guard.py
-- [[dot-_get_hmac_key()]] - code - gateway/security/prompt_guard.py
-- [[dot-get_segment_provenance()]] - code - gateway/security/context_guard.py
-- [[dot-guard()_2]] - code - gateway/tests/test_performance.py
-- [[dot-guard()_3]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-guard()_4]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-pg()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-reanchor_delimiters()]] - code - gateway/security/prompt_guard.py
-- [[dot-record_segment()]] - code - gateway/security/context_guard.py
-- [[dot-register_system_prompt()]] - code - gateway/security/prompt_guard.py
-- [[dot-scan()_1]] - code - gateway/security/prompt_guard.py
-- [[dot-scan_tool_result()_1]] - code - gateway/security/prompt_guard.py
-- [[dot-score_context()]] - code - gateway/security/context_integrity.py
-- [[dot-setup_method()_10]] - code - gateway/tests/test_security_hardening.py
-- [[dot-setup_method()_11]] - code - gateway/tests/test_security_hardening.py
-- [[dot-tag_segment()]] - code - gateway/security/context_guard.py
-- [[dot-test_base64_encoded_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_below_alert_threshold_logs_warning()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_benign_tool_result_passes()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_clean_input()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_direct_injection_in_tool_result_blocked()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_duplicate_hashes_detected()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_empty_context_scores_clean()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_empty_input()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_empty_prompt()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_empty_tool_result_passes()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_explicit_key_used()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_injected_untrusted_segment_lowers_score()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_lower_threshold_than_direct_scan()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_new_instructions_override()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_none_input()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_preserves_legitimate_markdown()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_pristine_context_scores_high()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_prompt_extraction()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_prompt_guard_large_input()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_and_verify()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_role_override_in_tool_result_blocked()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_role_reassignment()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_strips_fake_system_tags()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_strips_separator_overrides()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_tamper_detected()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-test_tampered_system_prompt_lowers_score()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_write_baseline_json()]] - code - gateway/tests/test_performance.py
-- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-verify_system_prompt()]] - code - gateway/security/prompt_guard.py
-- [[system style fake tags should be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[A well-formed context with valid HMAC should score close to 1.0.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Any_15]] - code - gateway/security/context_integrity.py
-- [[Args             block_threshold Score at or above which input is blocked.]] - rationale - gateway/security/prompt_guard.py
-- [[CVE-2026-31045 — indirect prompt injection via tool results]] - concept - gateway/tests/test_prompt_guard.py
-- [[Check for suspicious base64 content that decodes to injection attempts.]] - rationale - gateway/security/prompt_guard.py
-- [[Compute a 0.0–1.0 integrity score for the given context segments.          Args]] - rationale - gateway/security/context_integrity.py
-- [[Compute and return an HMAC-SHA256 fingerprint for the system prompt.]] - rationale - gateway/security/prompt_guard.py
-- [[ContextIntegrityScorer]] - code - gateway/security/context_integrity.py
-- [[ContextSegment]] - code - gateway/security/context_guard.py
-- [[Create a PromptGuard instance for testing]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
-- [[Detect and block prompt injection attempts.]] - rationale - gateway/security/prompt_guard.py
-- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - rationale - gateway/security/input_normalizer.py
-- [[Detect unicode obfuscation tricks.]] - rationale - gateway/security/prompt_guard.py
-- [[Double-base64 encoded lower-ranked injection is caught (was top-5 only).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Duplicate content hashes reduce score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Empty prompt should still register and verify cleanly.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Empty segment list should not penalize the score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Explicit ignore-instructions payload embedded in a tool result.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Explicit key parameter should override session key.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
-- [[HMAC-SHA256 fingerprint for a registered system prompt.]] - rationale - gateway/security/prompt_guard.py
-- [[IntegrityScore]] - code - gateway/security/context_integrity.py
-- [[Large inputs shouldn't crash prompt guard.]] - rationale - gateway/tests/test_security_audit.py
-- [[Mismatched HMAC should reduce score by at least 0.15.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Normal markdown headers ( Title) should not be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[PromptGuard_1]] - code - gateway/security/prompt_guard.py
-- [[Return HMAC key env var preferred, session-scoped random fallback.]] - rationale - gateway/security/prompt_guard.py
-- [[Return True if prompt_text matches the stored HMAC fingerprint.]] - rationale - gateway/security/prompt_guard.py
-- [[Return ordered list of provenance records for the session.]] - rationale - gateway/security/context_guard.py
-- [[Rolling context integrity score for a session.]] - rationale - gateway/security/context_integrity.py
-- [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
-- [[Scan input text for prompt injection patterns.          Args             text]] - rationale - gateway/security/prompt_guard.py
-- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - rationale - gateway/security/prompt_guard.py
-- [[Score below 0.6 should produce a warning log.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - rationale - gateway/security/context_integrity.py
-- [[Strip injected fake delimiters and return sanitized message.          Called whe]] - rationale - gateway/security/prompt_guard.py
-- [[SystemPromptFingerprint]] - code - gateway/security/prompt_guard.py
-- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
-- [[Tagged provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
-- [[Test PromptGuard initialization]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Test that normal messages pass through]] - rationale - gateway/tests/test_prompt_guard.py
-- [[TestContextIntegrityScorer]] - code - gateway/tests/test_context_integrity.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
-- [[TestReanchorDelimiters]] - code - gateway/tests/test_prompt_guard.py
-- [[TestSystemPromptHMAC]] - code - gateway/tests/test_prompt_guard.py
-- [[TestToolResultScan]] - code - gateway/tests/test_prompt_guard.py
-- [[Tests for indirect prompt injection detection in tool results.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Untrusted segment injected after system segment reduces score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Verifying a tampered prompt should return False.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[_make_segment()]] - code - gateway/tests/test_context_integrity.py
-- [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[context_integrity.py]] - code - gateway/security/context_integrity.py
-- [[detect_base64_payloads()]] - code - gateway/security/input_normalizer.py
-- [[guard()_1]] - code - gateway/tests/test_context_integrity.py
-- [[prompt_guard()]] - code - gateway/tests/test_prompt_guard.py
-- [[prompt_guard()_1]] - code - gateway/tests/test_security_integration.py
-- [[register_system_prompt + verify_system_prompt should succeed.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[scorer()]] - code - gateway/tests/test_context_integrity.py
-- [[test_benign_message()]] - code - gateway/tests/test_prompt_guard.py
-- [[test_context_integrity.py]] - code - gateway/tests/test_context_integrity.py
-- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
-- [[test_prompt_guard.py]] - code - gateway/tests/test_prompt_guard.py
-- [[test_prompt_guard_double_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_prompt_guard_init()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-__init__()_189]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-__init__()_190]] - code - gateway/approval_queue/store.py
+- [[dot-_notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-_schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-_timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-broadcast()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_16]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_17]] - code - gateway/approval_queue/store.py
+- [[dot-connect()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-decide()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-disconnect()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_item()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_pending()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-initialize()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-initialize()_3]] - code - gateway/approval_queue/store.py
+- [[dot-load_all()_1]] - code - gateway/approval_queue/store.py
+- [[dot-load_pending()]] - code - gateway/approval_queue/store.py
+- [[dot-mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-save()_2]] - code - gateway/approval_queue/store.py
+- [[dot-send_json()_1]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-submit()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-submit_tool_request()_4]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_critical_tool_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_enforce_mode_disabled()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_get_tool_risk_tier()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_low_risk_tool_no_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_owner_bypass()_1]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_owner_dm_contains_action_type()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_owner_dm_references_group_chat_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_timeout_auto_deny()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_wait_for_decision()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-update_status()]] - code - gateway/approval_queue/store.py
+- [[dot-wait_for_decision()_4]] - code - gateway/approval_queue/enhanced_queue.py
+- [[A WebSocket stand-in whose send_json never returns.      Models a real-world dea]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
+- [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Any_77]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
+- [[ApprovalQueueConfig_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
+- [[ApprovalQueueItem_3]] - code - gateway/tests/test_approval_store.py
+- [[ApprovalQueueItem_4]] - code - gateway/ingest_api/models.py
+- [[ApprovalRequest_4]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalRequest_5]] - code - gateway/ingest_api/models.py
+- [[ApprovalStore]] - code - gateway/approval_queue/store.py
+- [[ApprovalStore_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
+- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Check if a tool requires approval based on risk tier and policy.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Close the database connection._1]] - rationale - gateway/approval_queue/store.py
+- [[Close the store and cancel timeout tasks.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Create a temporary SQLite store for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create a test tool risk configuration.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
+- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[EnhancedApprovalQueue_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
+- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
+- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get the risk tier for a tool.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
+- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
+- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
+- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
+- [[MCPProxy.check_approval_required]] - code - gateway/proxy/mcp_proxy.py
+- [[MFAGuard_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[MFAResult]] - code - gateway/security/mfa_guard.py
+- [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
+- [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
+- [[Owner DM message text must reference the originating group chat_id.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Owner DM must describe the action_type that requires approval.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Owner must receive a DM when an approval originates from a group chat.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Path_62]] - code - gateway/approval_queue/store.py
+- [[Path_63]] - code - gateway/tests/test_approval_store.py
+- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_approval_store.py
+- [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Request for human approval of a sensitive action      Submitted by an agent when]] - rationale - gateway/ingest_api/models.py
+- [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
+- [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm_1]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
+- [[Schedule a timeout task for a request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send a JSON message to all connected WebSocket clients.          SCRUM-154 boun]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
+- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit a tool call request for approval.          Args             tool_name T]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Test MCP proxy integration with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test SQLite persistence across restarts.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test approval requirement logic.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test denial flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test full approval flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test risk tier lookup.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that approval events are generated for WebSocket notification.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that approval is bypassed when enforce mode is disabled.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that critical tools are identified as requiring approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools don't require approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that pending items are restored after restart.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test the complete approval workflow.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test timeout with auto-deny.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test tool risk tier classification.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test waiting for approval decision.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[TestApprovalWorkflow]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
+- [[TestMCPProxyIntegration]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestPersistence_2]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestToolRiskClassification]] - code - gateway/tests/test_enhanced_approval.py
+- [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
+- [[ToolRiskConfig]] - code - gateway/ingest_api/config.py
+- [[ToolRiskConfig_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ToolRiskPolicy]] - code - gateway/ingest_api/config.py
+- [[ToolRiskPolicy_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
+- [[Wait for an approval decision.          Returns             True if approved, F]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[WebSocket_8]] - code - gateway/approval_queue/enhanced_queue.py
+- [[_HangingWebSocket_1]] - code - gateway/tests/test_enhanced_approval.py
+- [[_make_item()]] - code - gateway/tests/test_approval_store.py
+- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
+- [[broadcast() itself must bound its wait per-client, not just rely on     callers]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
+- [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
+- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
+- [[group_router.py]] - code - gateway/approval_queue/group_router.py
+- [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[store()_2]] - code - gateway/tests/test_approval_store.py
+- [[store.py]] - code - gateway/approval_queue/store.py
+- [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
+- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
+- [[test_enhanced_approval.py]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_approval_store.py
+- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_websocket_notifications()]] - code - gateway/tests/test_enhanced_approval.py
+- [[tool_risk_config()]] - code - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -158,33 +197,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_AlertDispatcher]]
-- 22 edges to [[_COMMUNITY_TrustConfig]]
-- 17 edges to [[_COMMUNITY_SecurityPipeline]]
-- 15 edges to [[_COMMUNITY_PipelineAction]]
-- 14 edges to [[_COMMUNITY_PIIConfig]]
-- 13 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 8 edges to [[_COMMUNITY_MiddlewareManager]]
-- 8 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 7 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 7 edges to [[_COMMUNITY_AgentRegistry]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 4 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 4 edges to [[_COMMUNITY_TestNewPatternsV080]]
-- 3 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 3 edges to [[_COMMUNITY_TestMultilingualInjection]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager (3)]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (3)]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (5)]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_test_prompt_guard.py]]
+- 56 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 31 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 19 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 18 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 16 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 14 edges to [[_COMMUNITY_test_a2a_proxy.py]]
+- 8 edges to [[_COMMUNITY__make_proxy()]]
+- 5 edges to [[_COMMUNITY_GroupConfig]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager (4)]]
+- 4 edges to [[_COMMUNITY_AlertDispatcher (5)]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 2 edges to [[_COMMUNITY_lifespan()]]
+- 2 edges to [[_COMMUNITY_pick_latest_stable]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]]
+- 1 edge to [[_COMMUNITY_SCLClient]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)_1]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 
 ## Top bridge nodes
-- [[PromptGuard_1]] - degree 148, connects to 17 communities
-- [[TestPromptGuard_1]] - degree 40, connects to 8 communities
-- [[TestPromptGuardEvasion]] - degree 26, connects to 8 communities
-- [[test_prompt_guard.py]] - degree 14, connects to 5 communities
-- [[SystemPromptFingerprint]] - degree 13, connects to 2 communities
+- [[ApprovalRequest_5]] - degree 79, connects to 9 communities
+- [[EnhancedApprovalQueue_1]] - degree 57, connects to 6 communities
+- [[ToolRiskConfig]] - degree 38, connects to 5 communities
+- [[enhanced_queue.py]] - degree 13, connects to 5 communities
+- [[ApprovalQueueItem_4]] - degree 30, connects to 4 communities

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
-- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
+- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
 
 ## Live Query (requires Dataview plugin)
 

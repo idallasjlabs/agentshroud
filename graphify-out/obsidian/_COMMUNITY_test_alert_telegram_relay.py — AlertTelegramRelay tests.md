@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_alert_telegram_relay.py — AlertTelegramRelay tests]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[_INJECTION_PATTERNS (prompt injection regex set)]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[web__init__.py]] - code - gateway/web/__init__.py
+- [[Admin CLI Chat Console (OpenClaw via Gateway)]] - code - src/interfaces/chat_console.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Alert Thresholds (approval queue 1h timeout, context 200K hard limit, op-proxy 6 retries)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
-- [[Bot observability (docker logs, GET apihealth, context tokens 200K limit)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

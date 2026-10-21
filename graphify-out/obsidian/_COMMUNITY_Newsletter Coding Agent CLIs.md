@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Coding Agent CLIs]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[CriticalHighMediumLow tool risk tiers gating approval requirement]] - concept - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

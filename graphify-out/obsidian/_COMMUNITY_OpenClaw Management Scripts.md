@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[API Keys]] - document - docker/scripts/README.md
-- [[Changing AI Model]] - document - docker/scripts/README.md
-- [[Common Tasks]] - document - docker/scripts/README.md
-- [[Container Management]] - document - docker/scripts/README.md
-- [[Debugging Issues]] - document - docker/scripts/README.md
-- [[Direct Docker Commands]] - document - docker/scripts/README.md
-- [[File Locations_1]] - document - docker/scripts/README.md
-- [[Initial Setup]] - document - docker/scripts/README.md
-- [[OpenClaw CLI]] - document - docker/scripts/README.md
-- [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
-- [[Quick Reference_7]] - document - docker/scripts/README.md
-- [[Security Notes_2]] - document - docker/scripts/README.md
-- [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
-- [[check-status.sh_1]] - document - docker/scripts/README.md
-- [[devices.sh_1]] - document - docker/scripts/README.md
-- [[dockerscripts README]] - document - docker/scripts/README.md
-- [[dockerscriptsREADME]] - document - docker/scripts/README.md
-- [[drift-detector.sh (planned)]] - concept - scripts/README.md
-- [[logs.sh_1]] - document - docker/scripts/README.md
-- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
-- [[restart.sh_1]] - document - docker/scripts/README.md
-- [[security-audit.sh (planned)]] - concept - scripts/README.md
-- [[set-model.sh_1]] - document - docker/scripts/README.md
-- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
-- [[telegram.sh_1]] - document - docker/scripts/README.md
-- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
-- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
+- [[dot-agentsskillsi-mmSKILL]] - document - .agents/skills/i-mm/SKILL.md
+- [[Anti-Patterns to Flag_5]] - document - .agents/skills/i-mm/SKILL.md
+- [[Brainstorming Session Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Core Discipline Frame → Structure → Generate → Validate]] - document - .agents/skills/i-mm/SKILL.md
+- [[Curriculum Design (with `i-atlas`)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Decision Tree Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Dependencies_5]] - document - .agents/skills/i-mm/SKILL.md
+- [[Example FODL Pipeline Overview]] - document - .agents/skills/i-mm/SKILL.md
+- [[Export and Sharing Conventions]] - document - .agents/skills/i-mm/SKILL.md
+- [[Hierarchy Design — Outline First]] - document - .agents/skills/i-mm/SKILL.md
+- [[Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Knowledge Map (PKE  OKE integration)]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool markmap-mcp-server]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool xmind-generator-mcp]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markdown-to-Mindmap Conversion]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
+- [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
+- [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Role_28]] - document - .agents/skills/i-mm/SKILL.md
+- [[Rules_6]] - document - .agents/skills/i-mm/SKILL.md
+- [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md
+- [[Validation Checklist_2]] - document - .agents/skills/i-mm/SKILL.md
+- [[When to Use Mindmaps vs Other Formats]] - document - .agents/skills/i-mm/SKILL.md
+- [[XMind Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,7 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[OpenClaw Management Scripts]] - degree 14, connects to 1 community
+- [[Skill Mindmap Architect (MM)]] - degree 15, connects to 1 community

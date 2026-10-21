@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[App Icon 32x32 (AgentShroud logo mark)]] - image - branding/icons/app/icon-32x32.png
+- [[EnhancedApprovalQueue.wait_for_decision]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

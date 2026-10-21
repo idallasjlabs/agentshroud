@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Install Script]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Installation_1]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Windows]] - document - .github/COPILOT_CLI_SETUP.md
-- [[macOS  Linux]] - document - .github/COPILOT_CLI_SETUP.md
-- [[npm (Cross-platform)]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Purpose_32]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Related Skills_18]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[System Audit Documentation]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Usage_21]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[hermesskillsi-sadREADME]] - document - docker/config/hermes/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[Installation_1]] - degree 5, connects to 1 community
+- [[System Audit Documentation]] - degree 5, connects to 1 community

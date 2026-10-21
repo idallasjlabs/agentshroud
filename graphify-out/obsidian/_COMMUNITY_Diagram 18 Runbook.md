@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
-- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
+- [[graphify reference extraction subagent prompt_2]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[openclawskillsgraphifyreferencesextraction-spec]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

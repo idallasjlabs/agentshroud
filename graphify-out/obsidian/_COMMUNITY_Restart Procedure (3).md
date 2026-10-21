@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Restart Procedure (3)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Purpose_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Related Notes_10]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Where Used_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[dot-test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_AuditEvent]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
+- 1 edge to [[_COMMUNITY_setup-https-proxy.js]]
 
 ## Top bridge nodes
-- [[aiosqlite]] - degree 5, connects to 4 communities
+- [[TestLeakDetection]] - degree 8, connects to 1 community
+- [[dot-test_leak_detection_disabled()]] - degree 2, connects to 1 community

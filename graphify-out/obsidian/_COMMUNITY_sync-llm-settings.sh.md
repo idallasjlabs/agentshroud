@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[_python()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_1]] - code - scripts/validate-skills-manifest.sh
-- [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
-- [[check()_10]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
-- [[sync-llm-settings.sh]] - code - scripts/sync-llm-settings.sh
-- [[sync-llm-settings.sh script]] - code - scripts/sync-llm-settings.sh
-- [[test-skills-sync.sh]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[test-skills-sync.sh script]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[validate-skills-manifest.sh]] - code - scripts/validate-skills-manifest.sh
-- [[validate-skills-manifest.sh script]] - code - scripts/validate-skills-manifest.sh
+- [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - rationale - gateway/ingest_api/main.py
+- [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - rationale - gateway/ingest_api/main.py
+- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
+- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
+- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
+- [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
+- [[Return True if the recipient is in the allowlist.]] - rationale - gateway/ingest_api/main.py
+- [[Validate and normalize agentuser identity used for policy checks.]] - rationale - gateway/ingest_api/main.py
+- [[_is_imessage_recipient_allowed()]] - code - gateway/ingest_api/main.py
+- [[_normalize_agent_identity()]] - code - gateway/ingest_api/main.py
+- [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
+- [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
+- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 11 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 2 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 
 ## Top bridge nodes
-- [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community
+- [[mcp_proxy_endpoint()]] - degree 8, connects to 2 communities
+- [[mcp_result_endpoint()]] - degree 7, connects to 2 communities
+- [[MCPProxyRequest]] - degree 4, connects to 2 communities
+- [[MCPResultRequest]] - degree 4, connects to 2 communities
+- [[_resolve_effective_agent_id()]] - degree 5, connects to 1 community

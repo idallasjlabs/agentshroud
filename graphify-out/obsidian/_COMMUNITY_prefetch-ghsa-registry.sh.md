@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[prefetch-ghsa-registry.sh]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
-- [[prefetch-ghsa-registry.sh script]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 

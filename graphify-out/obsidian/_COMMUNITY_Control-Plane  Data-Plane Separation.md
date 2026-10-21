@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Control-Plane  Data-Plane Separation]] - rationale - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[HexStrike MCP Proxy Plan]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[dot-agentsskillsi-observabilitySKILL]] - document - .agents/skills/i-observability/SKILL.md
+- [[Skill observability]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

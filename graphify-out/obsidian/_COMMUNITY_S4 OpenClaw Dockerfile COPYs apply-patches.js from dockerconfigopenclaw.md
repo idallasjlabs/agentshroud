@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[S4 OpenClaw Dockerfile COPYs apply-patches.js from dockerconfigopenclaw]] - concept - tests/startup_smoke/test_bot_boot_static.sh
+- [[feed_hosts.py]] - code - gateway/security/feed_hosts.py
 
 ## Live Query (requires Dataview plugin)
 

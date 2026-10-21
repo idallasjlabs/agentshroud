@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[A blocked slash command must always produce a protected notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Even a generic message triggers _send_collaborator_safe_info_response…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Every collaborator message must produce a response — never a silent drop.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestNoResponseGuarantee]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown users must always receive either a pending notice or a rate-limit…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_owner_notice()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_22]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_23]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_24]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Check gateway and bot status]] - rationale - src/interfaces/chat_console.py
+- [[Display chat console banner]] - rationale - src/interfaces/chat_console.py
+- [[Read gateway password from secrets file or environment.]] - rationale - src/interfaces/chat_console.py
+- [[Send message to OpenClaw via gateway]] - rationale - src/interfaces/chat_console.py
+- [[_read_auth_token()]] - code - src/interfaces/chat_console.py
+- [[chat-console launcher]] - code - scripts/chat-console
+- [[chat_console.py]] - code - src/interfaces/chat_console.py
+- [[check_status()]] - code - src/interfaces/chat_console.py
+- [[main()_32]] - code - src/interfaces/chat_console.py
+- [[print_banner()]] - code - src/interfaces/chat_console.py
+- [[print_help()]] - code - src/interfaces/chat_console.py
+- [[send_message()]] - code - src/interfaces/chat_console.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,16 +27,3 @@ members: 12
 TABLE source_file, type FROM #community/test_unknown_user_always_gets_pending_or_rate_limit_notice
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 12 edges to [[_COMMUNITY__wrap_response()]]
-- 3 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 3 edges to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 1 edge to [[_COMMUNITY_fake_owner_notice()]]
-
-## Top bridge nodes
-- [[dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - degree 11, connects to 4 communities
-- [[dot-test_collaborator_always_gets_response_for_generic_message()]] - degree 9, connects to 3 communities
-- [[dot-test_collaborator_blocked_command_always_gets_notice()]] - degree 9, connects to 3 communities
-- [[TestNoResponseGuarantee]] - degree 5, connects to 1 community

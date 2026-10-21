@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[ANTI-HALLUCINATION CHECKLIST]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[CRITICAL RULES — READ BEFORE DOING ANYTHING]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[OUTPUT REQUIREMENTS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[REPORT STRUCTURE]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 1 MARKET ANALYSIS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[hermesworkspacecompetitive-analysis]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[01-architecture]] - document - docs/diagrams/01-architecture.md
+- [[1. C4 Level 0 — Context Diagram (Executive View)]] - document - docs/diagrams/01-architecture.md
+- [[2. C4 Level 1 — Container Diagram]] - document - docs/diagrams/01-architecture.md
+- [[3. Architecture Component Diagram — Gateway internals]] - document - docs/diagrams/01-architecture.md
+- [[AgentShroud — Architecture Diagrams]] - document - docs/diagrams/01-architecture.md
+- [[C4 Level 0 — System Context Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[C4 Level 1 — Container Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[Gateway Internals Component Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[Rendered C4 Context Diagram (PNG)]] - image - docs/diagrams/images/diagram-01-c4-context.png
+- [[Rendered Gateway Components Diagram (PNG)]] - image - docs/diagrams/images/diagram-03-gateway-components.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +25,9 @@ members: 10
 TABLE source_file, type FROM #community/REPORT_STRUCTURE
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+
+## Top bridge nodes
+- [[01-architecture]] - degree 5, connects to 1 community

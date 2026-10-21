@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Apache License 2.0 (skill-creator)]] - document - skills/openclaw/skill-creator/license.txt
+- [[Stale Baseline Turns Rollback Into Unintended Revert]] - rationale - reports/upgrade-2026-09-14.md
 
 ## Live Query (requires Dataview plugin)
 

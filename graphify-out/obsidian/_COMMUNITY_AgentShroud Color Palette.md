@@ -1,36 +1,31 @@
 ---
 type: community
-members: 23
+members: 18
 ---
 
 # AgentShroud Color Palette
 
-**Members:** 23 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[Accessibility]] - document - branding/colors/palette.md
-- [[AgentShroud Blue 1583f0]] - concept - branding/colors/palette.md
-- [[AgentShroud Blue (Primary)]] - document - branding/colors/palette.md
-- [[AgentShroud Color Palette]] - document - branding/colors/palette.md
-- [[Applications]] - document - branding/colors/palette.md
-- [[Borders]] - document - branding/colors/palette.md
-- [[Color Combinations]] - document - branding/colors/palette.md
-- [[Dark Surface Hierarchy]] - document - branding/colors/palette.md
-- [[Dark Theme]] - document - branding/colors/palette.md
-- [[Deep Navy]] - document - branding/colors/palette.md
-- [[Ice Blue]] - document - branding/colors/palette.md
-- [[Light Mode]] - document - branding/colors/palette.md
-- [[Light Theme]] - document - branding/colors/palette.md
-- [[Master Feature List (historical index)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Neutral Colors]] - document - branding/colors/palette.md
-- [[Primary Colors]] - document - branding/colors/palette.md
-- [[Secondary Colors]] - document - branding/colors/palette.md
-- [[Semantic Colors]] - document - branding/colors/palette.md
-- [[Steel Blue]] - document - branding/colors/palette.md
-- [[Text]] - document - branding/colors/palette.md
-- [[Usage Guidelines_2]] - document - branding/colors/palette.md
-- [[Variations]] - document - branding/colors/palette.md
-- [[palette]] - document - branding/colors/palette.md
+- [[ADR-002 Default-Allow with Comprehensive Logging]] - concept - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[ADR-009-enforce-by-default]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Compliance Alignment (9 standards)]] - concept - docs/architecture/agentic-os.md
+- [[Configuration_11]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Context_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Decision_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Migration from ADR-002]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Negative Consequences]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Policy Table]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Positive Consequences]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Related_7]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Security Modules (30+, gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[SecurityPipeline (75 modules, 7 layers)]] - concept - docs/architecture/agentic-os.md
+- [[Status_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[prompt_guard (prompt injection)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[trust_manager (trust levels)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +33,11 @@ members: 23
 TABLE source_file, type FROM #community/AgentShroud_Color_Palette
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_dot-cursormcp.json]]
+
+## Top bridge nodes
+- [[SecurityPipeline (75 modules, 7 layers)]] - degree 4, connects to 1 community
+- [[trust_manager (trust levels)]] - degree 2, connects to 1 community

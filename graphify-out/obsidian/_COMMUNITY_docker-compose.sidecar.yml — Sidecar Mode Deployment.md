@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[docker-compose.sidecar.yml — Sidecar Mode Deployment]] - document - docker-compose.sidecar.yml
+- [[agentshroud-soc Cargo package]] - document - cli/Cargo.toml
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[AI Models]] - document - docs/reference/QUICK_REFERENCE.md
-- [[API Keys_1]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Access Points]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Container Management_1]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Files_2]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Most Common Commands]] - document - docs/reference/QUICK_REFERENCE.md
-- [[PREREQUISITES_16]] - document - docs/reference/PREREQUISITES.md
-- [[QUICK_REFERENCE]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Quick Reference Card]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Quick Reference Commands]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Secrets Backend Auto-Detection]] - concept - docs/reference/PREREQUISITES.md
-- [[Telegram Bot]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Troubleshooting_37]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Input Requirements_13]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Oracle — Feedback Analyst_2]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Oracle — Feedback Analyst_3]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Output Format_27]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Persona_9]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Purpose_147]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Quality Checklist_11]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Related Skills_86]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Role_81]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[System Prompt_9]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Usage_94]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[openclawskillsi-oracleREADME]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[openclawskillsi-oracleSKILL]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,16 +28,3 @@ members: 13
 TABLE source_file, type FROM #community/Quick_Reference_Commands
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_AgentShroud Prerequisites]]
-- 1 edge to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig (2)]]
-- 1 edge to [[_COMMUNITY_Tailscale Remote Access Setup]]
-
-## Top bridge nodes
-- [[Quick Reference Commands]] - degree 11, connects to 2 communities
-- [[QUICK_REFERENCE]] - degree 5, connects to 2 communities
-- [[PREREQUISITES_16]] - degree 4, connects to 2 communities

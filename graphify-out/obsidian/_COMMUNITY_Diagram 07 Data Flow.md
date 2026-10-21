@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Self-Written Whisper Domain-Hint Prompt]] - concept - docker/config/openclaw/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

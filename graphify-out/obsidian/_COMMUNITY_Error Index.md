@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
-- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
-- [[Auth Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Crash Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Egress Filter Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Error Index]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Health Checks]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Prompt Injection Blocks_1]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection Blocks]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Related Notes_30]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Related Notes_31]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
-- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[docker-commands]] - document - examples/docker-commands.md
+- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Prerequisites_4]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Related Notes_38]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Related Notes_39]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Startup Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,25 +44,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_First Time Setup]]
-- 2 edges to [[_COMMUNITY_All Dependencies]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 1 edge to [[_COMMUNITY_Restart Procedure (2)]]
-- 1 edge to [[_COMMUNITY_Error Index.md (3)]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_HTTP 401 — Unauthorized]]
-- 1 edge to [[_COMMUNITY_Egress Filter Errors]]
-- 1 edge to [[_COMMUNITY_Error Index_1]]
-- 1 edge to [[_COMMUNITY_troubleshooting_1]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_Crash Recovery]]
-- 1 edge to [[_COMMUNITY_Health Checks]]
-- 1 edge to [[_COMMUNITY_Kill Switch Procedure]]
-- 1 edge to [[_COMMUNITY_Docker Commands Reference]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
 
 ## Top bridge nodes
-- [[Troubleshooting Matrix]] - degree 8, connects to 4 communities
-- [[Error Index]] - degree 9, connects to 3 communities
-- [[Crash Recovery]] - degree 6, connects to 3 communities
-- [[Auth Errors]] - degree 4, connects to 2 communities
-- [[Container Errors_1]] - degree 4, connects to 2 communities
+- [[Restart Procedure_1]] - degree 3, connects to 2 communities
+- [[First Time Setup_1]] - degree 12, connects to 1 community
+- [[Startup Errors]] - degree 4, connects to 1 community

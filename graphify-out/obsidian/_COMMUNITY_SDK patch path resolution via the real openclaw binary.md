@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SDK patch path resolution via the real openclaw binary]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[P1-P4 Incident Severity Matrix]] - concept - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

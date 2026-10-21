@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-security-reviewer.md (security-reviewer agent)]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[i-value-stream-mapping SKILL.md (minimal stub)]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

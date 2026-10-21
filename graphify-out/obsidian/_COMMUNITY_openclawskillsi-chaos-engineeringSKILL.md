@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill chaos-engineering_2]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
-- [[openclawskillsi-chaos-engineeringSKILL]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[i-mac README — macOS System Administrator (MAC)]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[i-mac SKILL — Mac App Discovery]] - document - docker/config/hermes/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

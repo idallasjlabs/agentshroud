@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolACLEnforcer.get_allowed_tools]] - code - gateway/security/tool_acl.py
+- [[BaseModel]] - code
 
 ## Live Query (requires Dataview plugin)
 

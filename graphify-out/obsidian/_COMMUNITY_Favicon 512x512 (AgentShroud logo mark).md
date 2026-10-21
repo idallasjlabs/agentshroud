@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 512x512 (AgentShroud logo mark)]] - image - branding/favicons/favicon-512x512.png
+- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 

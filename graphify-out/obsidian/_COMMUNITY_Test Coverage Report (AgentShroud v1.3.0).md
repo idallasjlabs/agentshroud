@@ -1,19 +1,15 @@
 ---
 type: community
-members: 6
+members: 2
 ---
 
 # Test Coverage Report (AgentShroud v1.3.0)
 
-**Members:** 6 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Agentic OS Architecture Doc (91 security-dir files  75 wired)]] - document - docs/architecture/agentic-os.md
-- [[NO SECURITY THEATER Policy (CLAUDE.md §2)]] - concept - docs/testing/test-coverage-report.md
-- [[Red-Team Assessment Plan]] - document - docs/planning/redteam/plan.md
-- [[STPA-Sec Methodology (Nancy Leveson, MIT)]] - concept - docs/testing/test-coverage-report.md
-- [[Test Coverage Report (AgentShroud v1.3.0)]] - document - docs/testing/test-coverage-report.md
-- [[Test Plan (AgentShroud v0.9.0)]] - document - docs/testing/test-plan.md
+- [[dot-test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
+- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +17,9 @@ members: 6
 TABLE source_file, type FROM #community/Test_Coverage_Report_AgentShroud_v130
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+
+## Top bridge nodes
+- [[dot-test_sensitive_not_blocked_default()]] - degree 2, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Newsletter Coding Agent CLIs]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 
 ## Live Query (requires Dataview plugin)
 

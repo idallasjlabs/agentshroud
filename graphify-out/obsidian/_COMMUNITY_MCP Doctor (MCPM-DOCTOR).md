@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Operating Rules (Non-Negotiable)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 1 All Regions, Every Time]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 2 Default Read-Only]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 3 Script Everything]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 4 Evidence-First Recommendations]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 5 Safe Tagging]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 6 Never Delete Automatically]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
+- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (3)]]
 
 ## Top bridge nodes
-- [[VII. v0.8.0 Remediation]] - degree 7, connects to 1 community
+- [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community

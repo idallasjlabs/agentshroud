@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[ContextGuard Bug — should_block_message() Always Returns False (monitor-only in enforce mode)]] - concept - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Prompt Injection Threat Assessment v0.7.0 — 4-Layer Defense Analysis]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
+- [[ordercliSKILL]] - document - skills/openclaw/ordercli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

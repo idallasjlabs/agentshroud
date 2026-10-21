@@ -1,53 +1,48 @@
 ---
 type: community
-members: 40
+members: 35
 ---
 
 # Release Notes - AgentShroud v0.9.0
 
-**Members:** 40 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Acknowledgments]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Executive Summary_3]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Installation and Upgrade Instructions]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Known Issues and Limitations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Latency Measurements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Performance Benchmarks]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Release Notes - AgentShroud v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Module Performance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Support and Resources]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Testing and Quality Assurance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Throughput Improvements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[What's New in v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[release-notes-v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚠️ Breaking Changes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚡ Performance Optimizations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏁 Quick Start]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏗️ Repository and Code Organization]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏢 Enterprise Partners]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🐛 Known Issues]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[👥 Contributors]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📈 Future Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📊 Monitoring and Observability]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📋 System Requirements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📖 Documentation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📚 Comprehensive Documentation Suite]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔄 Migration Guide]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔍 Advanced Audit Capabilities]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Deep Security Hardening]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Research]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Testing]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔧 Troubleshooting]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🚀 Enhanced Deployment Options]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🛡️ Vulnerability Remediation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤖 AI-Powered Security]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤝 Community and Support]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🧪 Test Coverage Excellence]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
+- [[COLLAB_LOCAL_INFO_ONLY]] - code - docker/config/openclaw/apply-patches.js
+- [[GROUP_CHAT_IDS]] - code - docker/config/openclaw/apply-patches.js
+- [[LOCAL_PROVIDER_KEY derivation (mode-derived, not ref-derived)]] - code - docker/config/openclaw/apply-patches.js
+- [[LOCAL_PROVIDER_KEY mode-derivation design]] - rationale - docker/config/openclaw/apply-patches.js
+- [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
+- [[Telegram channel tokendmPolicyallowlist patch (Patch 3)]] - code - docker/config/openclaw/apply-patches.js
+- [[Telegram channel-wide fallback binding design]] - rationale - docker/config/openclaw/apply-patches.js
+- [[Telegram dmPolicy=open security tradeoff]] - rationale - docker/config/openclaw/apply-patches.js
+- [[_COLLAB_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
+- [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - code - docker/config/openclaw/apply-patches.js
+- [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
+- [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
+- [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
+- [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
+- [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[apply-patches.js]] - code - docker/config/openclaw/apply-patches.js
+- [[cIdx]] - code - docker/config/openclaw/apply-patches.js
+- [[config]] - code - docker/config/openclaw/apply-patches.js
+- [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
+- [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
+- [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[fs_5]] - code - docker/config/openclaw/apply-patches.js
+- [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
+- [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
+- [[hasMain]] - code - docker/config/openclaw/apply-patches.js
+- [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
+- [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
+- [[path_20]] - code - docker/config/openclaw/apply-patches.js
+- [[providerModels]] - code - docker/config/openclaw/apply-patches.js
+- [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
+- [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
+- [[{ profile _genericProfile, deny _genericCollabDeny }]] - code - docker/config/openclaw/apply-patches.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,3 +50,10 @@ members: 40
 TABLE source_file, type FROM #community/Release_Notes_-_AgentShroud_v090
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Release Notes - AgentShroud v0.9.0 (2)]]
+- 1 edge to [[_COMMUNITY_TestSendTelegramTruncation]]
+
+## Top bridge nodes
+- [[apply-patches.js]] - degree 38, connects to 2 communities

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[IAM Policies]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[SlackAPIProxy Outbound Scanning Tests]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 

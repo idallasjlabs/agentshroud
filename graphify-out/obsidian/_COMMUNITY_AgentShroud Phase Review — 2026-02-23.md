@@ -1,69 +1,59 @@
 ---
 type: community
-members: 56
+members: 46
 ---
 
 # AgentShroud Phase Review — 2026-02-23
 
-**Members:** 56 nodes
+**Members:** 46 nodes
 
 ## Members
-- [[High Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[High Value (Critical Security Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Lower Value (Nice-to-Have)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Medium Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Medium Value (Enhancement & Hardening)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[Monitoring Blindspots]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[1. Changes in This Diff]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[1. Changes in This Diff (Summary)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[1. Prior Review Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[2. New Blue Team Changes Since Round 1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[2. Security Value Audit_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[3. Code Quality]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[3a. IEEE Paper]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3b. Restore Script Simplification]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3c. Deleted Files]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[4. Risks & Gaps_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[4. Test Coverage Assessment]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[4. Test Results Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[5. Errors & Warnings Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[5. Errors & Warnings Summary_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[5. Strategic Recommendations]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[5. Summary]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[6. Verdict]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[6. Verdict_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[6. Verdict_2]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[7. Fix Log]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[7. Post-Fix Verification]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[Action Items Before Merge]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[AgentShroud Phase Review — 2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Summary_5]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[Summary_6]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[What This Means]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[⚠️ Areas Requiring Vigilance]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[⚠️ Potential Security Theater Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[⚡ Next Phase Focus]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ Genuine Security Value Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[✅ Genuine Security Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[✅ Key Achievements]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[❌ Potential Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[🎯 Immediate Actions (Next 2 Weeks)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎯 Overall Assessment GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🎯 Strategic Position]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[📋 Architecture Evolution (Next Quarter)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔧 Phase Planning (Next 4-8 Weeks)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[--verify flag causes switch_model.sh to check both bots are healthy.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[dot-_run_and_read()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-_run_and_read()_1]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-_run_twice()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_anthropic_sets_cloud_mode()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_cloud_anthropic_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_cloud_switch_writes_hermes_main_model()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_anchor_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_coder_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_coder_sets_local_multi_mode()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_coder_switch_both_bots()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_default_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_model_mode_is_local()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_multi_writes_anchor_coding_reasoning()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_sets_required_keys()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_switch_hermes_and_openclaw_models_match()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_switch_writes_hermes_main_model()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_with_explicit_model_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_local_with_model_ref_sets_correct_model()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_verify_flag_accepted_without_error()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[dot-test_verify_flag_with_model_ref()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[After cloud switch, HERMES_MAIN_MODEL is written for Hermes too.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[After local switch, HERMES_MAIN_MODEL is written to .env.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[CompletedProcess_1]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[Expected keys are present in docker.env after a switch.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[HERMES_MAIN_MODEL and OPENCLAW_MAIN_MODEL must reference the same model.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[Parse a docker.env file into a dict.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[Path_9]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[Returns (env_after_first_run, env_after_second_run).]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[Run switch_model.sh with mocked external commands.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelBothBots]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelEnvKeys]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelIdempotent]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelVerifyFlag]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[_read_env()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[_run_switch()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[anthropic target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local qwen314b second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local-coder switch writes matching HERMES_MAIN_MODEL.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local-coder target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh local --verify exits 0 (mocked health checks).]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh local m twice must leave docker.env unchanged on second run.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh local qwen314b --verify exits 0.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh must write model config for both OpenClaw and Hermes.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[test_switch_model_idempotent.py]] - code - gateway/tests/test_switch_model_idempotent.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -71,27 +61,3 @@ members: 56
 TABLE source_file, type FROM #community/AgentShroud_Phase_Review__2026-02-23
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
-- 2 edges to [[_COMMUNITY_AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]]
-- 2 edges to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
-- 1 edge to [[_COMMUNITY_3. Remaining Work — Prioritized by Value]]
-- 1 edge to [[_COMMUNITY_4. Risks & Gaps]]
-- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23 (3)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23 (4)]]
-- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase (3)]]
-- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase — Delivered Security Infrastructure]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit — Real Protection vs. Theater Assessment]]
-- 1 edge to [[_COMMUNITY_5. Test Results]]
-- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase]]
-- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23 (2)]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit]]
-- 1 edge to [[_COMMUNITY_3. Brutally Honest Self-Assessment]]
-- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
-- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have) (2)]]
-- 1 edge to [[_COMMUNITY_2. Security Analysis]]
-
-## Top bridge nodes
-- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 19 communities

@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[03-session-isolation]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Constraints_2]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Evidence_2]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Implement per-user session isolation using Telegram user ID]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Problem_3]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Remediation_3]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Root Cause_3]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Severity_5]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 1 Add user session registry to the gateway]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 2 Partition conversation context at the gateway]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 3 Isolate file workspaces per user]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 4 Scope the system prompt per session]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 5 Isolate memory persistence]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 6 Add cross-session access controls to sessions_send]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 7 Add session listing protections]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Verification_7]] - document - docs/planning/redteam/03-session-isolation.md
+- [[AgentShroud Web Installer — Step-by-step installation wizard.]] - rationale - gateway/web/installer.py
+- [[BaseModel_2]] - code
+- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
+- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
+- [[InstallConfig]] - code - gateway/web/installer.py
+- [[PrerequisiteCheck]] - code - gateway/web/installer.py
+- [[Request_8]] - code
+- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
+- [[Start the installation process. This endpoint kicks off the install and returns…]] - rationale - gateway/web/installer.py
+- [[check_prerequisites()]] - code - gateway/web/installer.py
+- [[get_2]] - code
+- [[get_runtimes()]] - code - gateway/web/installer.py
+- [[installer.py_2]] - code - gateway/web/installer.py
+- [[installer_page()]] - code - gateway/web/installer.py
+- [[post_2]] - code
+- [[start_install()]] - code - gateway/web/installer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 16
 TABLE source_file, type FROM #community/Implement_per-user_session_isolation_using_Telegram_user_ID
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+
+## Top bridge nodes
+- [[installer.py_2]] - degree 8, connects to 1 community

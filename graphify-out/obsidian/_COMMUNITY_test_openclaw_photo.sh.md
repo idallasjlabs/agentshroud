@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[AgentShroud Tagline]] - concept - BRAND.md
-- [[AgentShroud Taglines List]] - document - branding/taglines.json
-- [[check()_5]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[check()_6]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[check()_7]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
-- [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
-- [[jobs.yaml (Hermes cron)]] - document - docker/config/hermes/cron/jobs.yaml
-- [[run_test()]] - code - scripts/smoke.sh
-- [[smoke.sh]] - code - scripts/smoke.sh
-- [[smoke.sh script]] - code - scripts/smoke.sh
-- [[test_hermes_chown_coverage.sh]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[test_hermes_chown_coverage.sh script]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[dot-agentsskillsi-productionSKILL]] - document - .agents/skills/i-production/SKILL.md
+- [[Follow-up (within 48 hours)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Glue Job Rollback_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Incident Response Workflow_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Post-Incident_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Post-Mortem Template_1]] - document - .agents/skills/i-production/SKILL.md
+- [[RDS Rollback (Point-in-Time or Snapshot)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Role_59]] - document - .agents/skills/i-production/SKILL.md
+- [[S3 Data Rollback_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Severity Matrix_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Step Function Rollback_1]] - document - .agents/skills/i-production/SKILL.md
+- [[Zabbix Rollback_1]] - document - .agents/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +32,3 @@ members: 17
 TABLE source_file, type FROM #community/test_openclaw_photosh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
-
-## Top bridge nodes
-- [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities
-- [[run_test()]] - degree 3, connects to 1 community
-- [[AgentShroud Tagline]] - degree 2, connects to 1 community

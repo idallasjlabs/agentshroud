@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
-- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
-- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
-- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
-- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
-- [[Favicon]] - document - branding/QUICK-REFERENCE.md
-- [[File Locations_2]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Files_2]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Usage Rules]] - document - branding/QUICK-REFERENCE.md
-- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
-- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
-- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
-- [[Typography_1]] - document - branding/QUICK-REFERENCE.md
-- [[Website Header]] - document - branding/QUICK-REFERENCE.md
-- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
-- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
+- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
+- [[Decision_4]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
+- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
+- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
+- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_brandingREADME]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (3)]]
 
 ## Top bridge nodes
-- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community
+- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community

@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[1. Install Dependencies]] - document - gateway/README.md
-- [[2. Configure]] - document - gateway/README.md
-- [[3. Run]] - document - gateway/README.md
-- [[4. Test]] - document - gateway/README.md
-- [[Approval Queue_1]] - document - gateway/README.md
-- [[Authentication_3]] - document - gateway/README.md
-- [[Data Ledger]] - document - gateway/README.md
-- [[Features_4]] - document - gateway/README.md
-- [[Gateway Layer]] - document - gateway/README.md
-- [[Implementation Status_3]] - document - gateway/README.md
-- [[Ingest API]] - document - gateway/README.md
-- [[PII Sanitizer]] - document - gateway/README.md
-- [[Setup_6]] - document - gateway/README.md
-- [[Structure_2]] - document - gateway/README.md
-- [[Tech Stack_1]] - document - gateway/README.md
+- [[Mode A — Single task_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 10 — Notify the owner_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 12 — Clean up_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 2 — Create a branch + worktree_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 2b — Create the Jira ticket_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 3 — Write and edit code_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 4 — Test and lint_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 5 — Multi-LLM review_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 6 — Build and validate containers_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 7 — Update documentation and website_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 8 — Update the knowledge graph_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 9 — Push and open the PR_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 1 edge to [[_COMMUNITY_fixture]]
 
 ## Top bridge nodes
-- [[Gateway Layer]] - degree 6, connects to 1 community
+- [[Mode A — Single task_4]] - degree 15, connects to 1 community

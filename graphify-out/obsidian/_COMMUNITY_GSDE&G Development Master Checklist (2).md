@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Emergency Hotfix_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Quick Commands_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Skill Index_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[hermesskillsi-mcSKILL]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[description of what this does]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Athena — Knowledge Distiller_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Input Requirements_14]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Output Format_29]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Persona_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Quality Checklist_12]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Role_86]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[System Prompt_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[User Prompt Template_4]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[cheatsheet_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[hermesskillsi-athenaSKILL]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[show_notes]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +27,3 @@ members: 12
 TABLE source_file, type FROM #community/GSDEG_Development_Master_Checklist_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[GSDE&G Development Master Checklist_1]] - degree 12, connects to 1 community

@@ -8,38 +8,38 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[dot-test_allowed_path_different_item()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_allowed_path_passes()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_atlassian_token_allowed()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_brave_api_key_reference_allowed()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_disallowed_vault_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_empty_reference_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_every_dedicated_op_ref_is_allowlisted()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_missing_op_prefix_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_path_traversal_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_requires_auth()_1]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
-- [[1Password credential proxy (P2 credential isolation). Reads a secret from…]] - rationale - gateway/ingest_api/main.py
-- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_op_proxy.py
-- [[OpProxyRequest]] - code - gateway/ingest_api/main.py
-- [[Real functional check, not a boot-time smoke test every op reference     doc]] - rationale - gateway/tests/test_op_proxy.py
-- [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
-- [[Return True if the op reference matches an allowed path pattern.]] - rationale - gateway/ingest_api/main.py
-- [[SCRUM-81 Hermes weekly Jira review needs tokenemaildomain fields.]] - rationale - gateway/tests/test_op_proxy.py
-- [[TestIsOpReferenceAllowed]] - code - gateway/tests/test_op_proxy.py
-- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
-- [[TestOpRefAllowlistCoverage]] - code - gateway/tests/test_op_proxy.py
-- [[The vault has no item literally titled Brave Search API Key —         the real]] - rationale - gateway/tests/test_op_proxy.py
-- [[_do_op_read()]] - code - gateway/ingest_api/main.py
-- [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
-- [[_refresh_session()]] - code - gateway/ingest_api/main.py
-- [[client()_8]] - code - gateway/tests/test_op_proxy.py
-- [[op_proxy()]] - code - gateway/ingest_api/main.py
-- [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
+- [[dot-_mock_websocket()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_backslash_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_dotdot_path_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_encoded_traversal_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_mixed_case_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_proxy_returns_400_on_traversal()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_relays_text_and_bytes_both_directions()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_safe_path_passes()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_traversal_in_path_closes_without_connecting()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_traversal_in_query_closes_without_connecting()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_upstream_connect_failure_closes_gracefully()]] - code - gateway/tests/test_main_endpoints.py
+- [[A deadunreachable bridge must not raise out of the route -- it closes the…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Relay the Hermes dashboard's WebSocket channels (apiws, apipub) through the…]] - rationale - gateway/ingest_api/main.py
+- [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
+- [[TestHermesDashboardWsProxy]] - code - gateway/tests/test_main_endpoints.py
+- [[Upstream URL must be ws (not http) at the bridge port, with the client's…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[WebSocket relay for Slack Socket Mode inbound traffic. Bot connects here…]] - rationale - gateway/ingest_api/main.py
+- [[_bot_to_upstream()]] - code - gateway/ingest_api/main.py
+- [[_client_to_upstream()]] - code - gateway/ingest_api/main.py
+- [[_empty_aiter()]] - code - gateway/tests/test_main_endpoints.py
+- [[_one_frame_aiter()]] - code - gateway/tests/test_main_endpoints.py
+- [[_upstream_to_bot()]] - code - gateway/ingest_api/main.py
+- [[_upstream_to_client()]] - code - gateway/ingest_api/main.py
+- [[asyncio_1]] - code
+- [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_ws_proxy()]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
+- [[websocket_3]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,16 +49,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_setup-secrets.sh (2)]]
-- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
+- 5 edges to [[_COMMUNITY_WebContentScanner]]
+- 4 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 2 edges to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[TestIsOpReferenceAllowed]] - degree 12, connects to 2 communities
-- [[test_op_proxy.py]] - degree 7, connects to 2 communities
-- [[OpProxyRequest]] - degree 4, connects to 2 communities
-- [[_is_op_reference_allowed()]] - degree 15, connects to 1 community
-- [[op_proxy()]] - degree 8, connects to 1 community
+- [[hermes_dashboard_ws_proxy()]] - degree 13, connects to 3 communities
+- [[TestHermesDashboardPathTraversal]] - degree 10, connects to 2 communities
+- [[TestHermesDashboardWsProxy]] - degree 9, connects to 1 community
+- [[asyncio_1]] - degree 9, connects to 1 community
+- [[slack_ws_relay()]] - degree 5, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[v1.0.0 Fortress]] - document - CHANGELOG.md
+- [[PWA Icon 192x192 (AgentShroud logo mark)]] - image - branding/favicons/icon-192x192.png
 
 ## Live Query (requires Dataview plugin)
 

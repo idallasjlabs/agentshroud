@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-test_default_deny()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_exception_fails_secure()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_session_manager_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_other_user_under_users_base_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_own_workspace_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_bypass()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_users_heuristic_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
+- [[7. Security findings]] - document - reports/upgrade-2026-09-20.md
+- [[7a. Image scan (Trivy, CRITICAL+HIGH, prod's currently-running tags)]] - document - reports/upgrade-2026-09-20.md
+- [[7b. `npm audit` — browser-extension]] - document - reports/upgrade-2026-09-20.md
+- [[7c. AgentShroud CVE-mitigation triage — NEW FINDING 98-advisory scope gap]] - document - reports/upgrade-2026-09-20.md
+- [[7d. Python dependency audit]] - document - reports/upgrade-2026-09-20.md
+- [[7e. WazuhSOC alerts]] - document - reports/upgrade-2026-09-20.md
+- [[7f. Base images  other pinned components — inventoried, not re-verified against registry this run]] - document - reports/upgrade-2026-09-20.md
+- [[7g. Untracked host services — confirmed still out of repo scope]] - document - reports/upgrade-2026-09-20.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY__req (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_docker_engine.py]]
 
 ## Top bridge nodes
-- [[TestIsPathAllowedForUser]] - degree 12, connects to 4 communities
+- [[7. Security findings]] - degree 8, connects to 1 community

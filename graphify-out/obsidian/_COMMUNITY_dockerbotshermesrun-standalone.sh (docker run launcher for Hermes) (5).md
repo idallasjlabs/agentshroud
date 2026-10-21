@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[pre-commit semgrep local hook (new findings only, system semgrep)]] - code - .pre-commit-config.yaml
+- [[dot-mcp.json (project MCP servers)]] - document - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

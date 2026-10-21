@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "_pcm_bytes"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/_pcm_bytes
 ---
 
 # _make_stream()
@@ -25,4 +25,4 @@ tags:
 - [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
 - [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

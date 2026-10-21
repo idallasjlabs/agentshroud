@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_18]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Function Details_33]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Key Classes  Functions_35]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Priority Mapping]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Purpose_155]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Related_39]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Responsibilities_37]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[categorize_alerts(alerts)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[falco_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[falco_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[generate_summary(alerts)_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[is_agentshroud_rule(rule_name)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[parse_alert(raw)_1]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[read_alerts(alert_dir, since, agentshroud_only)]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Configuration  Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Allowlist]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Denylist Categories]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.from_environment()]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.is_denylisted(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Key Classes  Functions_32]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Purpose_132]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Threat Model_20]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

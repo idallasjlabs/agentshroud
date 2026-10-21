@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Hermes Local-Model Temperature Repetition-Loop Investigation]] - concept - CONTINUE-2026-08-17.md
+- [[Mermaid Brand Theme Init Block]] - concept - docker/config/openclaw/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

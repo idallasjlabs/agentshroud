@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # ClamAV
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[ClamAV]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Installation]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_10]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_15]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[canary-deploy.sh]] - code - scripts/canary-deploy.sh
+- [[canary-deploy.sh script]] - code - scripts/canary-deploy.sh
+- [[deploy_ref()]] - code - scripts/canary-deploy.sh
+- [[die()]] - code - scripts/canary-deploy.sh
+- [[log()]] - code - scripts/canary-deploy.sh
+- [[run()_1]] - code - scripts/canary-deploy.sh
+- [[run_in_repo()]] - code - scripts/canary-deploy.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 6
 TABLE source_file, type FROM #community/ClamAV
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
-
-## Top bridge nodes
-- [[ClamAV]] - degree 6, connects to 1 community

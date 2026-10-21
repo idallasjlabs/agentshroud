@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.submit_tool_request]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Knowledge Map — Obsidian vault entry points]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

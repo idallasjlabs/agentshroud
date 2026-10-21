@@ -8,40 +8,40 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Architecture Overview_1]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Data Locations]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Gateway Can't Reach OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Initial Configuration]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Inside Container]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Next Steps_2]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[On Host (Docker Volumes)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Features Now Available]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Won't Start]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Quick Start_5]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Recommendations]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[SSH Not Working]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Security Notes]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 1 Add Your OpenAI API Key]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 2 Configure Bot Identity]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 3 Load Persona (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 4 Set Up Channels (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Through AgentShroud Gateway (Port 8080)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Through Control UI (Port 18789)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Troubleshooting_10]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Using OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Via CLI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[What Changed]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Agents]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ MCP Servers]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Multi-LLM Support]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Skills]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Bot was blocked by user Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[IMAP not enabled Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Invalid credentials Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[1. Backup Configuration]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[2. Regular Health Checks]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[3. Auto-Restart on Reboot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[4. Monitor Logs]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[5. Test Regularly]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Bot Not Responding]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Bot Responds Slowly]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Documentation Created]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Gmail Not Detecting New Emails]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Gmail Not Receiving Emails from Bot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[If Bot Doesn't Respond]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Monthly Checklist]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 1 Test Telegram Bot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 2 Set Up Gmail Integration]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 3 Ensure Functionality Remains]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 4 Gmail Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 5 Telegram Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 6 Complete System Test]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 7 Maintaining Functionality]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Prerequisites_2]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Quick Start Commands]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 1 Enable IMAP in Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 2 Create Gmail App Password]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 3 Add Gmail to OpenClaw]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 4 Verify Gmail Channel]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 5 Test Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Summary_7]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Telegram & Gmail Integration Guide]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Test Now]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[When Upgrading macOS]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[✅ Current Status]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,7 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
 
 ## Top bridge nodes
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - degree 12, connects to 1 community
+- [[Telegram & Gmail Integration Guide]] - degree 10, connects to 1 community

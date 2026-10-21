@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Admin CLI Chat Console (OpenClaw via Gateway)]] - code - src/interfaces/chat_console.py
+- [[append_finding.py]] - code - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
 
 ## Live Query (requires Dataview plugin)
 

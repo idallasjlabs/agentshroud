@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
+- [[PIISanitizer.block_credentials]] - code - gateway/ingest_api/sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 

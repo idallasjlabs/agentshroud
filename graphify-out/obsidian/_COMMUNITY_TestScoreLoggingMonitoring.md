@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[dot-test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreLoggingMonitoring]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_json_escape()_1]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[_read_token_file()_1]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-write-file.sh]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-write-file.sh script]] - code - docker/scripts/agentshroud-ssh-write-file.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/TestScoreLoggingMonitoring
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
-
-## Top bridge nodes
-- [[TestScoreLoggingMonitoring]] - degree 4, connects to 1 community

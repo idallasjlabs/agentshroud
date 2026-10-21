@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[approval_queue__init__.py]] - code - gateway/approval_queue/__init__.py
+- [[No Security Theater — no stubsplaceholdersfake green]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,34 +1,35 @@
 ---
 type: community
-members: 21
+members: 22
 ---
 
 # MiddlewareManager (9)
 
-**Members:** 21 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[dot-setup_method()_31]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_5]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_6]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Set up test environment._1]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
+- [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.1 The New Attack Surface]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.2 The Industry Gap]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.3 Threat Model]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11. Competitive Security Comparison Matrix]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.1 Complete 26-Module Security Matrix]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.2 Unique AgentShroud Modules (No Competitor Implementation)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.3 Competitor Analysis Details]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.4 Security Coverage Gap Analysis]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.5 Security Score Evolution]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
+- [[12. Roadmap]] - document - docs/papers/agentshroud-whitepaper.md
+- [[13. Conclusion]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6. Competitive Landscape]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary_10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,14 +39,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_MiddlewareManager (6)]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (8)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (11)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (7)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (9) (2)_1]]
+- 1 edge to [[_COMMUNITY_📱 Required Accounts & Services]]
+- 1 edge to [[_COMMUNITY_AsyncMock (2)]]
+- 1 edge to [[_COMMUNITY_Report Delivery Format Instructions]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
+- 1 edge to [[_COMMUNITY_TelegramGatewayRelay]]
+- 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
 
 ## Top bridge nodes
-- [[TestMemoryLifecycleManager]] - degree 20, connects to 5 communities
-- [[dot-setup_method()_31]] - degree 4, connects to 2 communities
-- [[dot-teardown_method()_5]] - degree 2, connects to 1 community
-- [[Set up test environment._1]] - degree 2, connects to 1 community
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 8 communities

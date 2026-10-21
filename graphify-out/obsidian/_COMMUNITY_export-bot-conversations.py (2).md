@@ -1,26 +1,52 @@
 ---
 type: community
-members: 13
+members: 39
 ---
 
 # export-bot-conversations.py (2)
 
-**Members:** 13 nodes
+**Members:** 39 nodes
 
 ## Members
-- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);]] - rationale - scripts/export-bot-conversations.py
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-bot-conversations.py
-- [[Path_59]] - code - scripts/export-bot-conversations.py
-- [[Read a file out of a container via `exec cat` rather than `docker cp` —     on t]] - rationale - scripts/export-bot-conversations.py
-- [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
-- [[_docker_read_file()]] - code - scripts/export-bot-conversations.py
-- [[_extract_text()]] - code - scripts/export-bot-conversations.py
-- [[_parse_since()_1]] - code - scripts/export-bot-conversations.py
-- [[datetime_7]] - code - scripts/export-bot-conversations.py
-- [[export-bot-conversations.py]] - code - scripts/export-bot-conversations.py
-- [[export_hermes()]] - code - scripts/export-bot-conversations.py
-- [[export_openclaw()]] - code - scripts/export-bot-conversations.py
-- [[main()_29]] - code - scripts/export-bot-conversations.py
+- [[dot-__init__()_67]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_persist_state()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-maybe_greet()]] - code - gateway/proxy/collaborator_greeter.py
+- [[CollaboratorGreeter]] - code - gateway/proxy/collaborator_greeter.py
+- [[CollaboratorGreeter creates its own httpx client lazily.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[Greet user if cooldown has expired. Returns True when greeting was sent.]] - rationale - gateway/proxy/collaborator_greeter.py
+- [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - rationale - gateway/proxy/collaborator_greeter.py
+- [[Unexpected exception in maybe_greet must be caught and return False.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[When state JSON is corrupt AND writing the empty recovery file fails, no excepti]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_err_response()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[_load_state reads and returns a pre-existing valid JSON dict.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_load_state returns {} when state file is a JSON list (not a dict).]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_load_taglines falls back to default when JSON is valid but not a list.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_make_greeter()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[_ok_response()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[_persist_state failure must not raise.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[collaborator_greeter.py]] - code - gateway/proxy/collaborator_greeter.py
+- [[test_bot_isolation()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_caption_length_clamped()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_collaborator_greeter.py]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_exception_in_maybe_greet_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_first_call_sends_greeting_and_persists_state()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_first_name_none_uses_there_fallback()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_get_client_creates_own_when_not_injected()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_state_loads_existing_valid_dict()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_state_non_dict_json_returns_empty()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_state_write_empty_fails_silently()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_taglines_with_non_list_json_falls_back()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_missing_logo_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_missing_taglines_falls_back_to_default()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_persist_state_exception_is_swallowed()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_random_tagline_pulled_from_file()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_repeat_after_24h_greets_again()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_repeat_within_24h_is_suppressed()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_send_failure_does_not_persist_state()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_state_file_corruption_recovers()]] - code - gateway/tests/test_collaborator_greeter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +56,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_export-bot-conversations.py (4)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py (3)]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (3)]]
+- 1 edge to [[_COMMUNITY_Recommendation]]
 
 ## Top bridge nodes
-- [[_parse_since()_1]] - degree 6, connects to 2 communities
-- [[export_openclaw()]] - degree 7, connects to 1 community
-- [[export_hermes()]] - degree 6, connects to 1 community
+- [[CollaboratorGreeter]] - degree 21, connects to 1 community
+- [[dot-__init__()_67]] - degree 4, connects to 1 community
+- [[dot-_get_client()]] - degree 3, connects to 1 community

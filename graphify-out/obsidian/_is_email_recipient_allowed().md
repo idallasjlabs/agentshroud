@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_forward_stream.py (2)"
+community: "_make_proxy()"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/_make_proxy
 ---
 
 # _is_email_recipient_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

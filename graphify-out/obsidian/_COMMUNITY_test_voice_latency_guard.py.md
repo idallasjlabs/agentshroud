@@ -1,87 +1,79 @@
 ---
 type: community
-members: 74
+members: 66
 ---
 
 # test_voice_latency_guard.py
 
-**Members:** 74 nodes
+**Members:** 66 nodes
 
 ## Members
-- [[A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A read-timeout (worst-case latency) is still recorded, then falls back.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[A turn exceeding the soft threshold is flagged as an outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[A turn under the soft threshold is recorded as a non-outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Best-effort model warm-up.      Preloading the STT model and TTS pipeline at sta]] - rationale - voice_gateway/server.py
-- [[Build a system message with the current datetime for voice context.]] - rationale - voice_gateway/server.py
-- [[Build the ``metadata`` dict attached to a voice ``forward`` request.      Defau]] - rationale - voice_gateway/server.py
-- [[DEFAULT OFF forwardstream body carries NO metadata key — byte-for-byte legacy]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Emit a structured per-turn latency record for a voice ``forward`` call.      Re]] - rationale - voice_gateway/server.py
-- [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[FastAPI_4]] - code - voice_gateway/server.py
-- [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[ON no_memory=True → {no_memory True} ephemeral tag.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Outliers log at WARNING; normal turns do not.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Parse a spoken usetellaskswitch to modelagent command.      Returns (k]] - rationale - voice_gateway/server.py
-- [[Request body must carry the configured model, max_tokens=150, and     streamtru]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Return the requested volume (0-100, clamped) for a spoken     set the volume]] - rationale - voice_gateway/server.py
-- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's     POS]] - rationale - voice_gateway/server.py
-- [[Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.]] - rationale - voice_gateway/server.py
-- [[Spoken answer for a volume READ query the tracked level, or a     calibration h]] - rationale - voice_gateway/server.py
-- [[Stream conversation history through the gateway's OpenAI-compat     endpoint, yi]] - rationale - voice_gateway/server.py
-- [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
-- [[WebSocket_5]] - code - voice_gateway/server.py
-- [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[_State]] - code - voice_gateway/server.py
-- [[__main__.py]] - code - voice_gateway/__main__.py
-- [[_answer_volume_query()]] - code - voice_gateway/server.py
-- [[_call_agent_stream emits a latency record on the success path.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[_call_agent_stream()]] - code - voice_gateway/server.py
-- [[_call_llm_stream()]] - code - voice_gateway/server.py
-- [[_effective_voice_model()]] - code - voice_gateway/server.py
-- [[_is_volume_query()]] - code - voice_gateway/server.py
-- [[_keepalive()]] - code - voice_gateway/server.py
-- [[_lifespan()]] - code - voice_gateway/server.py
-- [[_mock_stream_resp()_1]] - code - gateway/tests/test_voice_latency_guard.py
-- [[_parse_model_switch_command()]] - code - voice_gateway/server.py
-- [[_parse_volume_command()]] - code - voice_gateway/server.py
-- [[_record_turn_latency()]] - code - voice_gateway/server.py
-- [[_send_state()]] - code - voice_gateway/server.py
-- [[_sse_body()_1]] - code - gateway/tests/test_voice_latency_guard.py
-- [[_voice_forward_metadata()]] - code - voice_gateway/server.py
-- [[_voice_system_message()]] - code - voice_gateway/server.py
-- [[_warm()]] - code - voice_gateway/server.py
-- [[health()]] - code - voice_gateway/server.py
-- [[omlx-keepwarm.sh]] - code - scripts/omlx-keepwarm.sh
-- [[omlx-keepwarm.sh script]] - code - scripts/omlx-keepwarm.sh
-- [[server.py]] - code - voice_gateway/server.py
-- [[switch_model.sh main flow]] - code - scripts/switch_model.sh
-- [[test_call_agent_default_body_has_no_metadata()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_records_latency_on_read_timeout()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_records_latency_on_success()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_stream_non_400_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_sends_full_history()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_record_turn_latency_boundary_is_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_default_threshold_from_module()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_normal_logs_info()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_normal_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_outlier_logs_warning()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_over_threshold_is_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_forward_metadata_default_off_is_empty()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_forward_metadata_module_default_is_off()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_latency_guard.py]] - code - gateway/tests/test_voice_latency_guard.py
-- [[voice_endpoint()]] - code - voice_gateway/server.py
-- [[voice_gateway__init__.py]] - code - voice_gateway/__init__.py
+- [[dot-__init__()_195]] - code - gateway/security/mfa_guard.py
+- [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
+- [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
+- [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
+- [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
+- [[dot-is_required()]] - code - gateway/security/mfa_guard.py
+- [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
+- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
+- [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
+- [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
+- [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
+- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
+- [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
+- [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - rationale - gateway/tests/test_mfa_guard.py
+- [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - rationale - gateway/security/mfa_guard.py
+- [[Verify the second factor for a high-risk action.          Args             acti]] - rationale - gateway/security/mfa_guard.py
+- [[_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[_ref_totp()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_enhanced_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
+- [[_truthy()]] - code - gateway/security/mfa_guard.py
+- [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
+- [[now()_11]] - code - gateway/tests/test_mfa_guard.py
+- [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_invalid_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_replayed_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_reject_never_requires_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_disabled_allows_even_high_risk_with_no_code()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_disabled_by_default_allows_without_factor()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_empty_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enabled_without_secret_denies_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_missing_item_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_reject_no_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_enabled_no_secret_warns()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_reads_secret_and_flag()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_reads_secret_file()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_unreadable_secret_file()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_invalid_base32_secret_treated_as_unconfigured()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_invalid_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_is_required_tool_call_disabled_never_required()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_is_required_tool_call_tier_parsing()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_mfa_guard.py]] - code - gateway/tests/test_mfa_guard.py
+- [[test_missing_code_denies_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_non_high_risk_action_not_required()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_prune_used_drops_stale_entries()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_real_time_default_now()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_replayed_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_uses_constant_time_compare()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_valid_totp_allows_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_valid_totp_prev_window_allowed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_wrong_length_code_denies()]] - code - gateway/tests/test_mfa_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -91,17 +83,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 4 edges to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
-- 4 edges to [[_COMMUNITY_server.py]]
-- 3 edges to [[_COMMUNITY_server.py (2)]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_stt.py]]
-- 1 edge to [[_COMMUNITY_tts.py]]
+- 31 edges to [[_COMMUNITY_ContextSegment]]
+- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 3 edges to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[server.py]] - degree 29, connects to 5 communities
-- [[_call_agent_stream()]] - degree 18, connects to 2 communities
-- [[_call_llm_stream()]] - degree 11, connects to 2 communities
-- [[test_call_agent_stream_non_400_http_error_falls_back()]] - degree 3, connects to 1 community
-- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - degree 3, connects to 1 community
+- [[MFAGuard_2]] - degree 48, connects to 4 communities
+- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
+- [[mfa_guard.py]] - degree 6, connects to 3 communities
+- [[_queue()]] - degree 11, connects to 2 communities
+- [[_submit_high_risk()]] - degree 9, connects to 1 community

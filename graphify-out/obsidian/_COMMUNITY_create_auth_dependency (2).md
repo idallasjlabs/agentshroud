@@ -1,27 +1,23 @@
 ---
 type: community
-members: 14
+members: 10
 ---
 
 # create_auth_dependency (2)
 
-**Members:** 14 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[dot-test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
-- [[dot-test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
-- [[dot-test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
-- [[AuthRequired_2]] - code - gateway/ingest_api/routes/health.py
-- [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
-- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
-- [[StatusResponse]] - code - gateway/ingest_api/models.py
-- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
-- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
-- [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
-- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
+- [[dot-test_get_user_memory_openclaw_and_hermes_are_separate_paths()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-test_hermes_memory_write_does_not_appear_in_openclaw_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-test_openclaw_memory_write_does_not_appear_in_hermes_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-test_shared_memory_manager_get_user_memory_accepts_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H1 SharedMemoryManager.get_user_memory must accept a bot_id parameter. The…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H4 (reverse) Writing to Hermes workspace does not bleed into OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H4 Writing to the openclaw workspace must not leak into the hermes…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Finding BT-H1BT-H2BT-H3 SharedMemoryManager must not collapse bot workspaces.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[TestBotIdIsolationInSharedMemory]] - code - gateway/tests/test_security_regressions_v1_2.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 
 ## Top bridge nodes
-- [[StatusResponse]] - degree 10, connects to 2 communities
-- [[health_check_detail()]] - degree 4, connects to 1 community
+- [[TestBotIdIsolationInSharedMemory]] - degree 6, connects to 1 community

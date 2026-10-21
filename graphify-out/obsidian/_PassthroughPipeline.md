@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "UserSessionManager (2) (2)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/UserSessionManager_2_2
 ---
 
 # _PassthroughPipeline
 
 ## Connections
-- [[dot-__init__()_62]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_5]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_3]] - `method` [EXTRACTED]
-- [[AgentTarget_3]] - `uses` [INFERRED]
+- [[dot-__init__()_39]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_4]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_2]] - `method` [EXTRACTED]
+- [[AgentTarget_2]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - `rationale_for` [EXTRACTED]
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[test_filtered_stream_releases_sentences_in_order()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

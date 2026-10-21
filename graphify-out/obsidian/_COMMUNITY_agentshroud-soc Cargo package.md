@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-soc Cargo package]] - document - cli/Cargo.toml
+- [[AgentShroud Badge Icon 180x180]] - image - branding/logos/variants/badge-180x180.png
 
 ## Live Query (requires Dataview plugin)
 

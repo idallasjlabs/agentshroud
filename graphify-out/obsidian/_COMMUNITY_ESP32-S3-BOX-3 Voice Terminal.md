@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[1Password CLI Skill]] - document - skills/openclaw/1password/SKILL.md
-- [[1Password Desktop App Integration Flow]] - document - skills/openclaw/1password/references/get-started.md
-- [[1Password Item ID Vault-Structure Disclosure]] - rationale - docs/security/secret-scan-results.md
-- [[Archive Directory Exposure Risk]] - concept - docs/security/secret-scan-results.md
-- [[Credential Rotation Checklist]] - concept - docs/security/secrets-inventory.md
-- [[Deploy-Time dockersecrets Provisioning]] - concept - docs/security/secrets-inventory.md
-- [[Gateway Auth Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
-- [[Git History Expungement via filter-repo]] - rationale - docs/security/secrets-inventory.md
-- [[GitHub 90-Day Unreferenced-Commit Cache Warning]] - rationale - docs/security/secrets-inventory.md
-- [[Gitignored wifi_credentials.h Pattern]] - rationale - firmware/voice-terminal/SETUP.md
-- [[Post-Purge Gitleaks Verification]] - concept - docs/security/secret-scan-results.md
-- [[Pre-Purge Secret Rotation Checklist]] - document - docs/security/secret-scan-results.md
-- [[Pre-Release Secrets Inventory]] - document - docs/security/secrets-inventory.md
-- [[Real Credentials Present in Git History]] - concept - docs/security/secrets-inventory.md
-- [[Required Dedicated tmux Session For op]] - rationale - skills/openclaw/1password/SKILL.md
-- [[Secret-Adjacent Template Files (.example)]] - concept - docs/security/secrets-inventory.md
-- [[Telegram Bot Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
-- [[Telegram Chat History Artifact Risk]] - concept - docs/security/secret-scan-results.md
-- [[iCloud App-Specific Password Reference Exposure]] - concept - docs/security/secret-scan-results.md
-- [[op Secret-Handling Guardrails]] - rationale - skills/openclaw/1password/SKILL.md
-- [[op read  run  inject Command Examples]] - document - skills/openclaw/1password/references/cli-examples.md
+- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
+- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
+- [[Image]] - code - scripts/generate_branding_assets.py
+- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
+- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
+- [[Path_44]] - code - scripts/generate_branding_assets.py
+- [[ensure()]] - code - scripts/generate_branding_assets.py
+- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
+- [[generate_email()]] - code - scripts/generate_branding_assets.py
+- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
+- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
+- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
+- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
+- [[generate_social()]] - code - scripts/generate_branding_assets.py
+- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
+- [[generate_variants()]] - code - scripts/generate_branding_assets.py
+- [[get_font()]] - code - scripts/generate_branding_assets.py
+- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
+- [[load_logo()]] - code - scripts/generate_branding_assets.py
+- [[main()_23]] - code - scripts/generate_branding_assets.py
+- [[save()]] - code - scripts/generate_branding_assets.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,11 +36,3 @@ members: 21
 TABLE source_file, type FROM #community/ESP32-S3-BOX-3_Voice_Terminal
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal (2)]]
-- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (3)]]
-
-## Top bridge nodes
-- [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community
-- [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community

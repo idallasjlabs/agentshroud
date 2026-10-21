@@ -1,50 +1,26 @@
 ---
 type: community
-members: 37
+members: 13
 ---
 
 # iCloud Services
 
-**Members:** 37 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[401 Unauthorized]] - document - .agents/skills/i-icloud/SKILL.md
-- [[CalendarContacts not found]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Connection timeout]] - document - .agents/skills/i-icloud/SKILL.md
-- [[dot-agentsskillsi-icloudSKILL]] - document - .agents/skills/i-icloud/SKILL.md
-- [[7. Deployment]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.1 Supported Platforms]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.2 Quick Start]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Add Contact]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Applied By]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Calendar Operations]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Configuration_2]] - document - skills/custom/securebrowser/README.md
-- [[Contact Operations]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Create Event]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Create Note]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Delete Event]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
-- [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[List Contacts]] - document - .agents/skills/i-icloud/SKILL.md
-- [[List Events]] - document - .agents/skills/i-icloud/SKILL.md
-- [[List Messages]] - document - .agents/skills/i-icloud/SKILL.md
-- [[List Notes]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Mail Operations]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Notes Operations]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Purpose_67]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_23]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Search Contacts]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Search Mail]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Search Notes]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Security_6]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Send Email]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Setup]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Troubleshooting_7]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Update Contact]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Update Event]] - document - .agents/skills/i-icloud/SKILL.md
-- [[iCloud Services]] - document - .agents/skills/i-icloud/SKILL.md
+- [[10. Known Gaps  Open Items]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[11. Quick Reference — Switching to Local Mode]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[2. Source Files]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[3. How Provider Detection Works (`llm_proxy.py95-153`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[5. Model Switching CLI (`scriptsswitch_model.sh`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[6. Three Local Backends]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[8. Telegram Integration]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[9. Bot Startup Flow (local mode)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[LOCAL_LLM_REVIEW]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Local LLM Support — Implementation Review]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Multi-model mode (`local-multi`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Quick Reference — Switching to Turbo Fieldflare]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,13 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
-- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
+- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
 
 ## Top bridge nodes
-- [[iCloud Services]] - degree 11, connects to 1 community
-- [[SSH Config]] - degree 7, connects to 1 community
-- [[7. Deployment]] - degree 5, connects to 1 community
-- [[Configuration_2]] - degree 5, connects to 1 community
+- [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dockerQUICKSTART.md — 5-minute stack launch guide]] - document - docker/QUICKSTART.md
+- [[graphify add URL Ingestion]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

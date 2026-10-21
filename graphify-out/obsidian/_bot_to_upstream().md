@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 location: "L4804"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # _bot_to_upstream()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[slack_ws_relay()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

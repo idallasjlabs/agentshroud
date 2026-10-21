@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-hermes README — Podcast Production Orchestrator]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[i-hermes SKILL — Reference Verifier]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[dot-gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - document - .gitguardian.yaml
+- [[GitGuardian ignored-paths + ignored-matches for synthetic test fixtures]] - concept - .gitguardian.yaml
 
 ## Live Query (requires Dataview plugin)
 

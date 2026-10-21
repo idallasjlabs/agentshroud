@@ -8,36 +8,36 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[Action requires approval but none granted_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Browser timeout_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[CAPTCHA detected_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Rate limit exceeded_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[URL not in allowlist_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[1. Always Specify Risk Level_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[2. Use Allowlisting Liberally_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[3. Take Screenshots for Audit Trail_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[5. Never Extract Credentials_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Approval Integration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Audit Logging_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Best Practices_5]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Browser — Secure Browser Automation_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Click Element_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Core Security Principles_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Example Apple ID Creation (Semi-Automated)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Extract Data_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Fill Form_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Limitations_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Navigate to URL_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Risk Levels_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Architecture_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Configuration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Guarantees_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Take Screenshot_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Troubleshooting_15]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Usage_63]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[openclawskillsi-browserSKILL]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Action requires approval but none granted_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser timeout_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[CAPTCHA detected_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Rate limit exceeded_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[URL not in allowlist_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[1. Always Specify Risk Level_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[2. Use Allowlisting Liberally_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[3. Take Screenshots for Audit Trail_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Best Practices_4]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Extract Data_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Fill Form]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Limitations_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Navigate to URL_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Risk Levels_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Architecture_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Troubleshooting_15]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_63]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,9 +45,3 @@ members: 30
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Browser — Secure Browser Automation_4]] - degree 14, connects to 1 community

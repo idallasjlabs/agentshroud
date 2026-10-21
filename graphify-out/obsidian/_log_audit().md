@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # _log_audit()
 
 ## Connections
-- [[Any_75]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
 - [[AuditResult]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

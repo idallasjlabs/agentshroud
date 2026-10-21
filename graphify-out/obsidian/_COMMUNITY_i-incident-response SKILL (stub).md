@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
-- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[Daily Component Health Digest_1]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Trivy (vulnerability scanner)]] - concept - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,43 +8,43 @@ members: 37
 **Members:** 37 nodes
 
 ## Members
-- [[dot-test_containerized_compose_equivalents()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_compose_internal_network()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_compose_private_registry()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_fallback_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_no_cosign_no_pipeline_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_pipeline_evidence_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_containerized_public_image_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_cosign_with_runtime_verification()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_cosign_with_wired_verifier_module()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_distinct_namespaces_partial_caps()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_docker_config_auths_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_empty_auths_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_empty_sbom_scores_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_full_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_full_host_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_full_root_caps_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_fully_isolated_container_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_icc_disabled_with_validator()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_icc_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_namespace_check_exception_assumes_isolated()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_no_config_not_containerized_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_no_cosign_outside_container_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_no_kernel_info_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_not_containerized_no_config_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_sbom_with_packages_trivy_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_shared_mount_namespace_returns_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_unreadable_status_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestContainerRuntimeIsolation]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestDockerDaemonConfig]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestHostOsHardening]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestImageSigningProvenance]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestNetworkSegmentation]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestRegistrySecurity]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSupplyChain_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Write a file under the sandbox root, creating parents.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[_w()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Auto-start a stopped Colima VM (step 1a)]] - rationale - docker/scripts/colima-health-check.sh
+- [[Colima VM default-route auto-heal (step 2)]] - rationale - docker/scripts/colima-health-check.sh
+- [[Container net-diag expected-failure baseline (step 5)]] - rationale - docker/scripts/colima-health-check.sh
+- [[DOCKER-USER iptables reapply + verify (step 3)]] - rationale - docker/scripts/colima-health-check.sh
+- [[Daily summary state tracking]] - rationale - docker/scripts/colima-health-check.sh
+- [[Dead docker.sock forward repair (step 1a-bis)]] - rationale - docker/scripts/colima-health-check.sh
+- [[PATH_18]] - code - docker/scripts/colima-health-check.sh
+- [[Strip comments before grepping for regressions]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_RETRY_TEST()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_bounce()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_colima_vm_flags()]] - code - docker/scripts/colima-health-check.sh
+- [[_enforce_for()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_guard_says()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_hc()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_lock_try()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_mk()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_render_build()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_up_says()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_upgrade_in_progress()]] - code - docker/scripts/colima-health-check.sh
+- [[_ver_verdict()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[_wait_healthy()]] - code - docker/scripts/colima-health-check.sh
+- [[_wait_result()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[check()_3]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[check()_4]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[colima-health-check.sh]] - code - docker/scripts/colima-health-check.sh
+- [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
+- [[colima-vm-flags behavioral check (2026-10-16)]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[hc_run()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[log()_5]] - code - docker/scripts/colima-health-check.sh
+- [[notify()]] - code - docker/scripts/colima-health-check.sh
+- [[read_state()]] - code - docker/scripts/colima-health-check.sh
+- [[resolve_docker_host()]] - code - docker/scripts/colima-health-check.sh
+- [[test_bot_boot_static.sh]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[test_bot_boot_static.sh script]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
+- [[write_state()]] - code - docker/scripts/colima-health-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,31 +54,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 8 edges to [[_COMMUNITY_Layer-by-Layer Breakdown (2)]]
-- 4 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
-- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter (15)]]
-- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter (17)]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (13)]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (14)]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (16)]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (4)]]
-- 2 edges to [[_COMMUNITY_TestResourceAvailability]]
-- 2 edges to [[_COMMUNITY_TestDaemonConfigReader]]
-- 2 edges to [[_COMMUNITY_TestMandatoryGates]]
-- 2 edges to [[_COMMUNITY_TestSecretsManagement]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (10)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (12)]]
-- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
-- 1 edge to [[_COMMUNITY_TestFluentBitSummary]]
-- 1 edge to [[_COMMUNITY_TestSocketAndPidProbes]]
-- 1 edge to [[_COMMUNITY_TestTrivySummary]]
-- 1 edge to [[_COMMUNITY_TestAiModelSupplyChain]]
-- 1 edge to [[_COMMUNITY_TestIdentityAuth]]
+- 9 edges to [[_COMMUNITY_PIIConfig]]
+- 5 edges to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY_Function Details (5)]]
 
 ## Top bridge nodes
-- [[_w()]] - degree 73, connects to 21 communities
-- [[TestContainerRuntimeIsolation]] - degree 7, connects to 1 community
-- [[TestDockerDaemonConfig]] - degree 6, connects to 1 community
-- [[TestImageSigningProvenance]] - degree 6, connects to 1 community
-- [[TestRegistrySecurity]] - degree 6, connects to 1 community
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - degree 17, connects to 2 communities
+- [[colima-health-check.sh]] - degree 16, connects to 2 communities
+- [[_upgrade_in_progress()]] - degree 5, connects to 1 community
+- [[_render_build()]] - degree 4, connects to 1 community
+- [[_wait_result()]] - degree 3, connects to 1 community

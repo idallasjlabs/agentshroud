@@ -1,34 +1,28 @@
 ---
 type: community
-members: 21
+members: 15
 ---
 
 # Pre-Deployment Checklist
 
-**Members:** 21 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[dot-agentsskillsi-psSKILL]] - document - .agents/skills/i-ps/SKILL.md
-- [[1. Change Documentation]] - document - .agents/skills/i-ps/SKILL.md
-- [[2. Testing Evidence]] - document - .agents/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback]] - document - .agents/skills/i-ps/SKILL.md
-- [[4. Blast Radius]] - document - .agents/skills/i-ps/SKILL.md
-- [[5. Observability]] - document - .agents/skills/i-ps/SKILL.md
-- [[6. Security]] - document - .agents/skills/i-ps/SKILL.md
-- [[7. Communication]] - document - .agents/skills/i-ps/SKILL.md
-- [[8. Service Control Commands]] - document - .agents/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)]] - document - .agents/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong]] - document - .agents/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Invoke Before]] - document - .agents/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Role_43]] - document - .agents/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
+- [[11 Cron Jobs]] - document - docs/architecture/agentic-os.md
+- [[11. Automated Operations]] - document - docs/architecture/agentic-os.md
+- [[Approval Queue (human-in-the-loop)]] - concept - docs/architecture/agentic-os.md
+- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
+- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
+- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
+- [[SOC Dashboard]] - document - docs/architecture/agentic-os.md
+- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
+- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[egress-config.yml]] - code - docs/data/schema-documentation.md
+- [[gatewaysocrouter.py (SOC Shared Command Layer)]] - code - docs/api/api-reference.md
+- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +32,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_AgentShroud Color Palette]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (2)_1]]
 
 ## Top bridge nodes
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - degree 7, connects to 1 community
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 3 communities
+- [[11. Automated Operations]] - degree 3, connects to 1 community
+- [[Approval Queue (human-in-the-loop)]] - degree 2, connects to 1 community

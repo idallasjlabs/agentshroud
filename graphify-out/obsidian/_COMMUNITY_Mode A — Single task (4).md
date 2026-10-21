@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Mode A — Single task_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 10 — Notify the owner_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 12 — Clean up_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2 — Create a branch + worktree_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2b — Create the Jira ticket_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 3 — Write and edit code_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 4 — Test and lint_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 5 — Multi-LLM review_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 6 — Build and validate containers_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 7 — Update documentation and website_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 8 — Update the knowledge graph_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 9 — Push and open the PR_3]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Extra Hosts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Health Check_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Key Environment Variables]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Logs_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Network_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Related Notes_56]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Secrets_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Security Hardening_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Summary_20]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Volumes_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[agentshroud-bot_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
+- 1 edge to [[_COMMUNITY_OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]]
 
 ## Top bridge nodes
-- [[Mode A — Single task_3]] - degree 15, connects to 1 community
+- [[agentshroud-bot_1]] - degree 15, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
+- [[Origin-Aware Authorization (refuse owner elevation over unverified origin)]] - rationale - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

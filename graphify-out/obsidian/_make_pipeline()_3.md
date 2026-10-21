@@ -1,33 +1,22 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L197"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # _make_pipeline()
 
 ## Connections
-- [[dot-test_clean_message_passes()]] - `calls` [EXTRACTED]
-- [[dot-test_context_guard_error_fails_closed()]] - `calls` [EXTRACTED]
-- [[dot-test_critical_injection_blocks()]] - `calls` [EXTRACTED]
-- [[dot-test_high_injection_blocks()]] - `calls` [EXTRACTED]
-- [[dot-test_missing_trust_manager_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_no_context_guard_passes_through()]] - `calls` [EXTRACTED]
-- [[dot-test_no_outbound_filter_does_not_unbind()]] - `calls` [EXTRACTED]
-- [[dot-test_no_scorer_leaves_result_unscored()]] - `calls` [EXTRACTED]
-- [[dot-test_no_signer_leaves_envelope_empty()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_block_does_not_emit_owner_bypass()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass_is_recorded_in_audit_chain()]] - `calls` [EXTRACTED]
-- [[dot-test_repetition_attack_does_not_block()]] - `calls` [EXTRACTED]
-- [[dot-test_skip_context_guard_bypasses_step0()]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - `rationale_for` [EXTRACTED]
+- [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
+- [[test_pipeline_blocks_and_downstream_not_reached()_1]] - `calls` [EXTRACTED]
+- [[test_pipeline_disabled_guard_passthrough()]] - `calls` [EXTRACTED]
+- [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

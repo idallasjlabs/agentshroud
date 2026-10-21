@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+members: 6
 ---
 
 # hermes/skills/i-bs/README.md (3)
 
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Purpose_28]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Related Skills_13]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_17]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[hermesskillsi-awsREADME]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[dot-_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_findings_and_denials_penalised()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_heavy_findings_clamp_to_red_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stats_exception_defaults_to_zero_denials()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_unknown_bot_clean_score()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeBotScorecard]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps]] - degree 5, connects to 1 community
+- [[TestComputeBotScorecard]] - degree 6, connects to 1 community

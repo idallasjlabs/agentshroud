@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "ApprovalQueueConfig (3)"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ApprovalQueueConfig_3
 ---
 
 # _full_inspect_info()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_zero_started_at_skips_uptime()]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

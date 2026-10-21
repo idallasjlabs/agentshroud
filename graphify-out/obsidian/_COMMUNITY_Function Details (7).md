@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration  Environment Variables_8]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Function Details_17]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Classes  Functions_19]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Differences from DockerEngine]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.__init__(cli)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine._detect_compose()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.generate_systemd(name)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Purpose_127]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Related_23]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[0.1 Code Inventory ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[0.2 Current State ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.1 Top Up Anthropic API Credits]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.2 Grant iMessage Automation Permission]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.3 Verify Both Working]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.1 Test Manual Send from Host]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.2 Test from Container]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[EXECUTIVE SUMMARY_12]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[NEXT STEPS_8]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 3 iMESSAGE INTEGRATION TEST]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[RECOVERY_PLAN]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,10 @@ members: 16
 TABLE source_file, type FROM #community/Function_Details_7
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
+- 1 edge to [[_COMMUNITY_jira_dev_ticket run]]
+
+## Top bridge nodes
+- [[AgentShroud Recovery Plan v0.4.0]] - degree 8, connects to 2 communities

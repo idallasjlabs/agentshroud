@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[curriculum.md (podcast pipeline learning objectives artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

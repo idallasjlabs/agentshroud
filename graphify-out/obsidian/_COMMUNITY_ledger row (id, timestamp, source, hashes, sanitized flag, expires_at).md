@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Emergency Hotfix_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[GSDE&G Development Master Checklist_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 2 · TDD  → `tddSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 3 · QA  → `qaSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 4 · Code Review  → `crSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 6 · CI  → `cicdSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Phase 7 · Deploy  → `psSKILL.md`_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Quick Commands_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Skill Index_2]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[openclawskillsi-mcSKILL]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +27,9 @@ members: 12
 TABLE source_file, type FROM #community/ledger_row_id_timestamp_source_hashes_sanitized_flag_expires_at
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_soc.js]]
+
+## Top bridge nodes
+- [[GSDE&G Development Master Checklist_2]] - degree 12, connects to 1 community

@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[OpenClaw cron Collaborator Daily Digest]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[OpenClaw cron Collaborator Report - Evening]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[OpenClaw cron Collaborator Report - Morning (Telegram HTML, PII filter rules)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
+- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
+- [[i- prefix rename of all 58 skills]] - rationale - .llm_settings/UPGRADE_LOG.md
 
 ## Live Query (requires Dataview plugin)
 

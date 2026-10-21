@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[1. Scope of Change_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[2. What Changes and Why_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[3. Scalability Gate_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[4. Blast Radius_5]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[5. Known Limits and Assumptions_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[6. Alternatives Considered_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[7. Open Questions_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[8. Verification Plan_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Output Sections (ALL required)_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Apollo — Audio Systems Producer_4]] - concept - docs/architecture/agentic-os.md
+- [[Athena — Knowledge Distiller_4]] - concept - docs/architecture/agentic-os.md
+- [[Atlas — Curriculum Architect_4]] - concept - docs/architecture/agentic-os.md
+- [[Daedalus — Concept Illustrator_4]] - concept - docs/architecture/agentic-os.md
+- [[Hermes — Reference Verifier (podcast agent)]] - concept - docs/architecture/agentic-os.md
+- [[Mnemosyne — Retention Engineer_4]] - concept - docs/architecture/agentic-os.md
+- [[Oracle — Feedback Analyst_4]] - concept - docs/architecture/agentic-os.md
+- [[Socrates — Dialogue Architect_4]] - concept - docs/architecture/agentic-os.md
+- [[Vulcan — Subject Matter Auditor_4]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +24,3 @@ members: 9
 TABLE source_file, type FROM #community/Output_Sections_ALL_required_3
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA) (2)]]
-- 1 edge to [[_COMMUNITY_Output Sections (ALL required) (2)]]
-
-## Top bridge nodes
-- [[Output Sections (ALL required)_2]] - degree 10, connects to 2 communities

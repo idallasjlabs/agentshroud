@@ -8,32 +8,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[AgentShroud Control Layers (PromptGuard  EgressFilter  ToolACL  ApprovalQueue  AuditChain)]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Dated Competitive Report Artifact (competitive-report-YYYY-MM-DD.md)]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
-- [[Gateway op-proxy Credential Broker]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[Keep Atlassian Account Non-Idle]] - rationale - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[Mandatory --html Flag Rule]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[Mandatory Daily Delivery (never SILENT)]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
-- [[No .py Writes to tmp (workspace-only renderer scripts)]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[No execute_code  python3 -c  pip install in Cron Mode]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
-- [[Prompt Newsletter — Personal AI Assistants]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
-- [[Prompt jira-weekly-review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[SCRUM-81 Weekly Review Ticket]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[Seed Job AI Security Standards Tracker]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job Agentic AI CVE and Exploit Watch]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Seed Job jira-weekly-review]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Silence-Over-Hallucination Principle]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
-- [[Tracked AI Governance Standards (NIST, CSA MAESTRO, OWASP ASI, EU AI Act, ISO 42001, MITRE ATLAS, MAS)]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Tracked Personal Agent Platforms (OpenClaw, IronClaw, Hermes, Grok Bot)]] - concept - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
-- [[Zero-Hallucination Primary-Source Rule (30-day recency)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[agentshroud-email-send.sh Gateway Email Sender]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[competitive-analysis.md 4-Section Research Spec]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
-- [[jira_weekly_review.py Pre-Committed Posting Script]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[render_md_email.py Markdown-to-Inline-CSS Email Renderer]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
+- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
+- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
+- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
+- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[coding-agentSKILL]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[geminiSKILL]] - document - skills/openclaw/gemini/SKILL.md
+- [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - concept - .agents/skills/i-odev/SKILL.md
+- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 3 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide (2)]]
+- 2 edges to [[_COMMUNITY_TestDockerSecretIsolation]]
+- 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
+- 1 edge to [[_COMMUNITY_Seccomp Profiles]]
 
 ## Top bridge nodes
-- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - degree 6, connects to 2 communities
-- [[Prompt Newsletter — Personal AI Assistants]] - degree 3, connects to 2 communities
-- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - degree 6, connects to 1 community
-- [[Prompt jira-weekly-review]] - degree 5, connects to 1 community
-- [[Mandatory Daily Delivery (never SILENT)]] - degree 2, connects to 1 community
+- [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities
+- [[coding-agentSKILL]] - degree 9, connects to 1 community

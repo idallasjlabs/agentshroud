@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[06-outbound-info-filter]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Constraints]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Evidence]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Problem_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Remediation_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Root Cause_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Severity_3]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 4 Configure per-trust-level disclosure rules]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Verification_5]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Check Current Version]] - document - docs/operations/updating.md
+- [[Checking the Changelog]] - document - docs/operations/updating.md
+- [[Database Migrations]] - document - docs/operations/updating.md
+- [[Manual Update Process]] - document - docs/setup/setup-guide.md
+- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
+- [[Rollback Procedure]] - document - docs/operations/updating.md
+- [[Tracking Main Branch]] - document - docs/operations/updating.md
+- [[Tracking a Tagged Release]] - document - docs/operations/updating.md
+- [[Update AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
+- [[Update from Git]] - document - docs/operations/updating.md
+- [[Update from Release Tarball]] - document - docs/operations/updating.md
+- [[Updating_1]] - document - docs/setup/setup-guide.md
+- [[With Git]] - document - docs/operations/updating.md
+- [[Without Git]] - document - docs/operations/updating.md
+- [[deployment]] - document - docs/runbooks/deployment.md
+- [[updating]] - document - docs/operations/updating.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,12 @@ members: 17
 TABLE source_file, type FROM #community/Implement_gateway-level_outbound_information_filtering_module
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TestNewPatternsV080]]
+- 1 edge to [[_COMMUNITY_LOW — Informational]]
+- 1 edge to [[_COMMUNITY__run]]
+
+## Top bridge nodes
+- [[deployment]] - degree 4, connects to 2 communities
+- [[Updating_1]] - degree 5, connects to 1 community

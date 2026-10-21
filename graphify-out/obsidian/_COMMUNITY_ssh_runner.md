@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-test_ssh_runner_none_streams()]] - code - gateway/tests/test_multi_host_test.py
-- [[dot-test_ssh_runner_uses_subprocess()]] - code - gateway/tests/test_multi_host_test.py
-- [[HostRunner]] - code - gateway/tools/multi_host_test.py
-- [[Return a HostRunner that executes the command on the host over SSH.      SSH con]] - rationale - gateway/tools/multi_host_test.py
-- [[TestSshRunner]] - code - gateway/tests/test_multi_host_test.py
-- [[ssh_runner()]] - code - gateway/tools/multi_host_test.py
+- [[Cryptographic Node Pairing Process]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Marvin (Mac Studio) — Primary devbuild server]] - concept - docs/TEAM.md
+- [[Pi (Raspberry Pi 4B) — Edgetest node]] - concept - docs/TEAM.md
+- [[Tailscale mesh VPN (tail240ea8.ts.net)]] - concept - docs/TEAM.md
+- [[Trillian (Mac Mini) — Secondary buildCI]] - concept - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,16 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/ssh_runner
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_main (2)]]
-- 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_MultiHostResult]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_run_multi_host]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-
-## Top bridge nodes
-- [[ssh_runner()]] - degree 7, connects to 3 communities
-- [[TestSshRunner]] - degree 6, connects to 3 communities
-- [[HostRunner]] - degree 3, connects to 2 communities

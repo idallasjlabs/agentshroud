@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "test_cli_coverage.py"
+community: "1. GitHub MCP Authentication Reset (2)"
 location: "L645"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # _install_fake_websockets()
@@ -18,4 +18,4 @@ tags:
 - [[_FakeWS]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

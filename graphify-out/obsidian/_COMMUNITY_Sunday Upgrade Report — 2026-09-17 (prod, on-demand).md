@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[0. Pre-existing session context worth recording]] - document - reports/upgrade-2026-09-06-dev.md
-- [[1. Summary]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[1. Summary line]] - document - reports/upgrade-2026-09-17.md
-- [[10. Jira — unavailable this run]] - document - reports/upgrade-2026-09-17.md
-- [[11. Verification evidence]] - document - reports/upgrade-2026-09-17.md
-- [[12. Breaking changes  manual follow-ups]] - document - reports/upgrade-2026-09-17.md
-- [[13. Rollback instructions]] - document - reports/upgrade-2026-09-17.md
-- [[14. Time spent]] - document - reports/upgrade-2026-09-17.md
-- [[2. Environment mapping (discovered, not assumed)]] - document - reports/upgrade-2026-09-17.md
-- [[3. Dev handoff check (gating decision)]] - document - reports/upgrade-2026-09-17.md
-- [[4. Preflight (prod, read-only)]] - document - reports/upgrade-2026-09-17.md
-- [[5. Breaking changes  manual follow-ups (human review needed)]] - document - reports/upgrade-2026-09-06-dev.md
-- [[5. Inventory — wrapped agents (mandatory script, cited)]] - document - reports/upgrade-2026-09-17.md
-- [[6. Preflighthygiene (git)]] - document - reports/upgrade-2026-09-17.md
-- [[8. Branch  commits]] - document - reports/upgrade-2026-09-06-dev.md
-- [[8. Security findings table]] - document - reports/upgrade-2026-09-17.md
-- [[9. Upgrade table]] - document - reports/upgrade-2026-09-17.md
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - document - reports/upgrade-2026-09-06-dev.md
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Appendix first-pass abort evidence (0734–0826 ET, superseded)]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Prod promotion BLOCKED-awaiting-dev finding (2026-09-17)]] - concept - reports/upgrade-2026-09-17.md
-- [[Run history]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Summary line]] - document - reports/upgrade-2026-09-06-dev.md
-- [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - document - reports/upgrade-2026-09-17.md
-- [[Trivy scan results — 22 CRITICAL across gatewayopenclawhermes (2026-09-17)]] - concept - reports/upgrade-2026-09-17.md
-- [[pip-audit gap — gateway Python deps not scanned]] - rationale - reports/upgrade-2026-09-17.md
-- [[upgrade-2026-08-30]] - document - reports/upgrade-2026-08-30.md
+- [[dot-test_collaborator_rate_limit_resets_after_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_owner_unaffected_by_collaborator_rate_limiter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[After the rate-limit window expires, collaborator messages go through normally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[First message from unknown user (within limit) queues approval flow.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Messages within the window are blocked; after the window passes they succeed.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Once stranger exhausts rate limit, they get a rate-limit notice; owner is NOT…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner messages are never rate-limited by the collaborator limiter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Repeated rate-limited messages within the cooldown window send at most one…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestCollaboratorRateLimitRecovery]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestStrangerRateLimit]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknownunapproved users have stricter rate limits than collaborators. After…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[__enter__()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[__exit__()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_owner_notice()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_owner_notice()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_pending_notice()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_rl_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_rl_notice()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_rl_notice()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_73]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[read()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,17 +44,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_SecurityFinding]]
-- 2 edges to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06 (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30 (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30]]
-- 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade — 2026-09-06]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-20 (PROD run, full)]]
+- 23 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline]]
+- 3 edges to [[_COMMUNITY_fake_owner_notice()]]
 
 ## Top bridge nodes
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - degree 11, connects to 3 communities
-- [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - degree 18, connects to 2 communities
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30]] - degree 11, connects to 2 communities
-- [[upgrade-2026-08-30]] - degree 3, connects to 2 communities
-- [[11. Verification evidence]] - degree 4, connects to 1 community
+- [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - degree 11, connects to 3 communities
+- [[dot-test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - degree 10, connects to 3 communities
+- [[dot-test_owner_unaffected_by_collaborator_rate_limiter()]] - degree 9, connects to 3 communities
+- [[dot-test_collaborator_rate_limit_resets_after_window()]] - degree 9, connects to 2 communities
+- [[dot-test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - degree 9, connects to 2 communities

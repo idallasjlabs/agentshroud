@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # _app_state()
@@ -54,7 +54,7 @@ tags:
 - [[list_bots()]] - `calls` [EXTRACTED]
 - [[list_delegations()]] - `calls` [EXTRACTED]
 - [[list_groups()]] - `calls` [EXTRACTED]
-- [[list_pending_approvals()]] - `calls` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `calls` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
 - [[override_egress_rule()]] - `calls` [EXTRACTED]
@@ -69,4 +69,4 @@ tags:
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[verify_audit_chain()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

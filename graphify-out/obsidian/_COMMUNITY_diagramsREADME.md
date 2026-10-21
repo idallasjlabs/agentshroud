@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[04-security]] - document - docs/diagrams/04-security.md
-- [[06-operations]] - document - docs/diagrams/06-operations.md
-- [[11. Trust Boundary Diagram]] - document - docs/diagrams/04-security.md
-- [[12. Credential Flow Diagram]] - document - docs/diagrams/04-security.md
-- [[13. Network Security Diagram — Egress Controls]] - document - docs/diagrams/04-security.md
-- [[18. Runbook  Decision Tree — On-Call Logic]] - document - docs/diagrams/06-operations.md
-- [[19. Incident Response Flow — Severity & Escalation]] - document - docs/diagrams/06-operations.md
-- [[20. Monitoring & Observability Map]] - document - docs/diagrams/06-operations.md
-- [[AgentShroud — Diagram Library]] - document - docs/diagrams/README.md
-- [[AgentShroud — Operations & Reliability Diagrams]] - document - docs/diagrams/06-operations.md
-- [[AgentShroud — Security & Access Diagrams]] - document - docs/diagrams/04-security.md
-- [[Credential Flow Diagram (op-proxy)]] - concept - docs/diagrams/04-security.md
-- [[Diagrams Not Yet Implemented]] - document - docs/diagrams/README.md
-- [[Incident Response Flow — Severity & Escalation]] - concept - docs/diagrams/06-operations.md
-- [[Index]] - document - docs/diagrams/README.md
-- [[Monitoring & Observability Map]] - concept - docs/diagrams/06-operations.md
-- [[Network Security Diagram — Egress Controls]] - concept - docs/diagrams/04-security.md
-- [[Priority Reading Order]] - document - docs/diagrams/README.md
-- [[Runbook  Decision Tree — On-Call Logic]] - concept - docs/diagrams/06-operations.md
-- [[diagramsREADME]] - document - docs/diagrams/README.md
+- [[1. Code Audit]] - document - docs/claude-security-audit-prompt.md
+- [[2. Verify Open Findings]] - document - docs/claude-security-audit-prompt.md
+- [[3. Test Each Module]] - document - docs/claude-security-audit-prompt.md
+- [[4. Collaborator Isolation]] - document - docs/claude-security-audit-prompt.md
+- [[5. Update the Module Matrix]] - document - docs/claude-security-audit-prompt.md
+- [[Additional Security Components]] - document - docs/claude-security-audit-prompt.md
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - document - docs/claude-security-audit-prompt.md
+- [[Architecture_9]] - document - docs/claude-security-audit-prompt.md
+- [[Collaborator Access Control Tests]] - document - docs/claude-security-audit-prompt.md
+- [[Context for Claude]] - document - docs/claude-security-audit-prompt.md
+- [[Fixed Findings]] - document - docs/claude-security-audit-prompt.md
+- [[Key Files to Review]] - document - docs/claude-security-audit-prompt.md
+- [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - document - docs/claude-security-audit-prompt.md
+- [[Open Findings]] - document - docs/claude-security-audit-prompt.md
+- [[Output Format_14]] - document - docs/claude-security-audit-prompt.md
+- [[Steve Hay's Specific Findings]] - document - docs/claude-security-audit-prompt.md
+- [[The 34 Security Modules]] - document - docs/claude-security-audit-prompt.md
+- [[What is AgentShroud_2]] - document - docs/claude-security-audit-prompt.md
+- [[Your Tasks]] - document - docs/claude-security-audit-prompt.md
+- [[claude-security-audit-prompt]] - document - docs/claude-security-audit-prompt.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,20 +35,3 @@ members: 20
 TABLE source_file, type FROM #community/diagrams/READMEmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_02-infrastructure]]
-- 2 edges to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
-- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
-- 1 edge to [[_COMMUNITY_01-architecture]]
-- 1 edge to [[_COMMUNITY_03-data]]
-- 1 edge to [[_COMMUNITY_05-behavior]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (3)]]
-
-## Top bridge nodes
-- [[diagramsREADME]] - degree 8, connects to 4 communities
-- [[04-security]] - degree 5, connects to 1 community
-- [[Incident Response Flow — Severity & Escalation]] - degree 3, connects to 1 community
-- [[Runbook  Decision Tree — On-Call Logic]] - degree 3, connects to 1 community
-- [[Credential Flow Diagram (op-proxy)]] - degree 2, connects to 1 community

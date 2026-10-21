@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcSKILL]] - document - .agents/skills/i-mc/SKILL.md
-- [[Emergency Hotfix]] - document - .agents/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Quick Commands]] - document - .agents/skills/i-mc/SKILL.md
-- [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
+- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_65]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist]] - degree 12, connects to 1 community
+- [[Health Checks_2]] - degree 10, connects to 1 community

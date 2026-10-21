@@ -41,9 +41,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Report Delivery Format Instructions]]
+- 5 edges to [[_COMMUNITY_AgentTarget (5)]]
 - 2 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)]]
 
 ## Top bridge nodes
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - degree 13, connects to 3 communities

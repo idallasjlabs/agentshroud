@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Endpoints (Inferred)]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[Key Features]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[Purpose_9]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[Related Notes_14]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[When Used]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[installer.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[installer.py]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[3. Brutally Honest Self-Assessment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we adding real value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we covering known attack vectors]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we scanning for emerging threats]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Have we implemented real security]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Is the investment still justified]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Should we continue or cut losses]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 7
 TABLE source_file, type FROM #community/installerpy_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+
+## Top bridge nodes
+- [[3. Brutally Honest Self-Assessment]] - degree 7, connects to 1 community

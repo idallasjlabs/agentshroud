@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
-- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
-- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
-- [[Common Commands]] - document - skills/openclaw/tmux/SKILL.md
-- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[Notes_4]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
-- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
-- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
-- [[When NOT to Use]] - document - skills/openclaw/tmux/SKILL.md
-- [[When to Use]] - document - skills/openclaw/tmux/SKILL.md
-- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
-- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
+- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_find-sessions.sh]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes
-- [[tmux Session Control]] - degree 8, connects to 1 community
+- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community

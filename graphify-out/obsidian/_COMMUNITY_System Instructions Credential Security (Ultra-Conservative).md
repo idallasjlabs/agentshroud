@@ -8,30 +8,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[Example 1 User Asks for Password (Chat)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Example 2 User Asks for Password (Console)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Example 3 User Wants Service Configured]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Example 4 User Insists on Seeing Password]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
-- [[Rule 1 Never Display in Chat (ANY CHAT)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Rule 2 Always Display in Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Rule 3 Always Use Internally]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[System Instructions Credential Security (Ultra-Conservative)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[The Problems with Trusted Chat]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Control UI]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Via Telegram_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Why This Rule]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[✅ Summary]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🎓 Why No Exceptions]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🎯 The Ultra-Conservative Approach]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[💬 Example Conversations]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[📊 Security Rules]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[📝 Implementation Checklist]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🔄 What Changed from Previous Version]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🔐 Core Security Principle]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🛡️ Security Benefits]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🧪 Decision Examples]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[_build_ws_url()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_ws_ctrl()]] - code - firmware/voice-terminal/main/app_main.c
+- [[app_main()_1]] - code - firmware/voice-terminal/main/app_main.c
+- [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
+- [[audio.c]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_capture_frame()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_get_saved_volume()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_init()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_play()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_preinit()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_set_volume()]] - code - firmware/voice-terminal/main/audio.c
+- [[audio_volume_tick()]] - code - firmware/voice-terminal/main/audio.c
+- [[esp_err_t_6]] - code - firmware/voice-terminal/main/audio.c
+- [[esp_event_base_t_1]] - code - firmware/voice-terminal/main/app_main.c
+- [[lv_display_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_face_set_agent()]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_init()]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_state_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_agent_count()_2]] - code - firmware/voice-terminal/main/app_main.c
+- [[vt_remote_log()_2]] - code - firmware/voice-terminal/main/app_main.c
+- [[wifi_event_handler()]] - code - firmware/voice-terminal/main/app_main.c
+- [[wifi_init()]] - code - firmware/voice-terminal/main/app_main.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,11 +41,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Trademark Statements]]
-- 1 edge to [[_COMMUNITY_Credential Isolation — Gateway op-proxy (ACTIVE)]]
-- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
+- 9 edges to [[_COMMUNITY_TestMetadataGuard]]
+- 6 edges to [[_COMMUNITY_AgentShroud Device Pairing Management]]
+- 5 edges to [[_COMMUNITY_graphify reference extra exports and benchmark (2)]]
+- 1 edge to [[_COMMUNITY_Project Documentation]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
 
 ## Top bridge nodes
-- [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 3 communities
-- [[Quick-reference commands]] - degree 2, connects to 1 community
+- [[app_main.c]] - degree 19, connects to 4 communities
+- [[app_main()_1]] - degree 13, connects to 3 communities
+- [[ui_face_set_agent()]] - degree 4, connects to 2 communities
+- [[vt_remote_log()_2]] - degree 5, connects to 1 community
+- [[_build_ws_url()]] - degree 3, connects to 1 community

@@ -1,35 +1,46 @@
 ---
 type: community
-members: 22
+members: 33
 ---
 
 # How to Fix (5 Minutes)
 
-**Members:** 22 nodes
+**Members:** 33 nodes
 
 ## Members
-- [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
-- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current Status_5]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Next Steps_5]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Step 1 Switch to agentshroud-bot User]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 2 Grant Automation Permission]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 3 Test It]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 4 Verify from Docker]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[The Error We're Getting]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Permission Fix - Step by Step]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[1. System Profiler (most comprehensive single source)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[10. Spotlight Catch-All]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[2. Applications Folders (catch drag-and-drop installs)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[3. Homebrew (formulae + casks)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[4. Mac App Store (via `mas` CLI)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[5. Setapp Detection]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[6. Package Receipts (direct .pkg installs)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[7. CLI Tools & Utilities (non-.app installs)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[8. Launch Agents & Daemons (background services)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[9. Browser Extensions (optional but useful)]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[A. `mac_app_catalog.json` — Machine-readable manifest]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Discovery Strategy]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Error Handling]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Error Handling_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Future Extensions (for collaborative sharing)]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Future Extensions (for collaborative sharing)_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Mac App Discovery Skill]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Mac App Discovery Skill_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Performance Notes]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Performance Notes_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 1 — Raw Collection]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[When to Use This Skill]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[When to Use This Skill_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[hermesskillsi-macSKILL]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[i-mac README (macOS System Administrator)]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[mac_app_catalog.json output artifact]] - concept - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[mac_app_catalog.md output artifact]] - concept - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[openclawskillsi-macSKILL]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
+- 2 edges to [[_COMMUNITY_soc.js]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+- 1 edge to [[_COMMUNITY_ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS]]
 
 ## Top bridge nodes
-- [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community
+- [[Mac App Discovery Skill]] - degree 16, connects to 3 communities
+- [[Mac App Discovery Skill_1]] - degree 7, connects to 1 community

@@ -8,25 +8,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[dot-effective_rootless()]] - code - gateway/runtime/config.py
-- [[dot-test_effective_rootless_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_effective_rootless_override()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_effective_rootless_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_from_dict()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_from_env_defaults()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_from_env_set()]] - code - gateway/tests/test_runtime_engines.py
-- [[Configuration for container runtime selection and behavior.      Loaded from env]] - rationale - gateway/runtime/config.py
-- [[Resolve rootless setting based on runtime.]] - rationale - gateway/runtime/config.py
-- [[RuntimeConfig]] - code - gateway/runtime/config.py
-- [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
-- [[apple_engine.py]] - code - gateway/runtime/apple_engine.py
-- [[compose_generator.py]] - code - gateway/runtime/compose_generator.py
-- [[docker_engine.py]] - code - gateway/runtime/docker_engine.py
-- [[engine.py]] - code - gateway/runtime/engine.py
-- [[podman_engine.py]] - code - gateway/runtime/podman_engine.py
-- [[runtime__init__.py]] - code - gateway/runtime/__init__.py
-- [[runtimeconfig.py]] - code - gateway/runtime/config.py
-- [[security.py]] - code - gateway/runtime/security.py
+- [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-setup_method()_30]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_single_inbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-test_single_outbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
+- [[100 sequential inbound requests should stay within baseline.          Baseline k]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Assert measured value is within THRESHOLD of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Baseline file must exist and contain expected keys.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Baseline values should be positive and within expected ranges.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Single inbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Single outbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[TestBenchmarkRegression]] - code - gateway/tests/test_benchmark_regression.py
+- [[Time a function over N iterations, return mean ms.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
+- [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py
+- [[test_benchmark_regression.py]] - code - gateway/tests/test_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,22 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 6 edges to [[_COMMUNITY_ContainerEngine]]
-- 5 edges to [[_COMMUNITY_TestSecurityFeatures]]
-- 5 edges to [[_COMMUNITY_test_runtime_engines.py (2)]]
-- 3 edges to [[_COMMUNITY_PodmanEngine]]
-- 3 edges to [[_COMMUNITY_api.py]]
-- 3 edges to [[_COMMUNITY_DockerEngine]]
-- 3 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 2 edges to [[_COMMUNITY_api.py (2)]]
-- 2 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
-- 2 edges to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_get_engine]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
 
 ## Top bridge nodes
-- [[runtime__init__.py]] - degree 10, connects to 6 communities
-- [[TestRuntimeConfig]] - degree 12, connects to 5 communities
-- [[docker_engine.py]] - degree 9, connects to 4 communities
-- [[podman_engine.py]] - degree 9, connects to 4 communities
-- [[RuntimeConfig]] - degree 13, connects to 3 communities
+- [[TestBenchmarkRegression]] - degree 10, connects to 1 community

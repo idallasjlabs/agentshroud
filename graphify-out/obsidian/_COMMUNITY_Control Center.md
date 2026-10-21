@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Text Interfaces]] - document - src/interfaces/README.md
-- [[Control Center]] - document - src/interfaces/README.md
-- [[Controls]] - document - src/interfaces/README.md
-- [[Future Interfaces]] - document - src/interfaces/README.md
-- [[Usage_3]] - document - src/interfaces/README.md
-- [[What it Shows]] - document - src/interfaces/README.md
-- [[interfacesREADME]] - document - src/interfaces/README.md
+- [[Docker Compose (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[Docker Secrets (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[Docker Secrets Management (deployment doc)]] - concept - docs/architecture/deployment-diagram.md
+- [[Docker Secrets Structure (runsecrets)]] - concept - docs/data/schema-documentation.md
+- [[Named Docker Volumes]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[agentshroud-internal network (172.20.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[agentshroud-isolated network (172.21.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,9 @@ members: 7
 TABLE source_file, type FROM #community/Control_Center
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Route map (by router)]]
+
+## Top bridge nodes
+- [[agentshroud-isolated network (172.21.0.016)]] - degree 2, connects to 1 community

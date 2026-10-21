@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Basic Usage]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Check Context Usage]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Run with Specific Agent]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Select Model]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Start Interactive Session]] - document - .github/COPILOT_CLI_SETUP.md
+- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Purpose_29]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Related Skills_15]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Usage_18]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[hermesskillsi-mcpmREADME]] - document - docker/config/hermes/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[Basic Usage]] - degree 5, connects to 1 community
+- [[MCP Tools Usage (MCPM)_1]] - degree 5, connects to 1 community

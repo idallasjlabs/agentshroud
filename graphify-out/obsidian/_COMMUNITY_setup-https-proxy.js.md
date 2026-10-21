@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[dot-constructor()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[dot-createConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[ConnectProxyAgent]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[NO_PROXY_HOSTS]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[PatchedWebSocket]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[http]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[https]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[net]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy patchWsForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy.js]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[tls]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[dot-injector()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-injector()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-injector_with_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_has_credential()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_inject_anthropic_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_inject_openai_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_leak_detection_disabled()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_no_injection_unknown_domain()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_no_injection_when_disabled()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_no_secrets_loaded_from_empty_dir()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_status_report()]] - code - gateway/tests/test_credential_isolation.py
+- [[Agent container should have no secrets.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[CredentialInjector]] - code - gateway/tests/test_credential_injector.py
+- [[Test the CredentialInjector module.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestCredentialInjector]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh (2)]]
+- 4 edges to [[_COMMUNITY_multi_host_test.py]]
+- 2 edges to [[_COMMUNITY_ModeRequest (3)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py (2)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure (3)]]
+- 1 edge to [[_COMMUNITY_i-eightd SKILL — 8D Root Cause Analysis]]
+- 1 edge to [[_COMMUNITY_Browser Fetch Skill]]
+- 1 edge to [[_COMMUNITY_AgentShroud System Status Report]]
 
 ## Top bridge nodes
-- [[setup-https-proxy.js]] - degree 10, connects to 1 community
+- [[CredentialInjector]] - degree 13, connects to 6 communities
+- [[TestCredentialInjector]] - degree 12, connects to 2 communities
+- [[dot-injector()_1]] - degree 2, connects to 1 community
+- [[dot-test_leak_detection_disabled()_1]] - degree 2, connects to 1 community

@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+members: 13
 ---
 
 # AgentShroud (system, C4 context) (2)
 
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Collaborator Setup Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Executive Summary_14]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Files intentionally not for collaborators]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Optional local tooling]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required for local model-profile persistence]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required for standard Docker runtime]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required if using 1Password-backed secret retrieval]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required if using external LLM providers]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Restore Priority After Clean Build]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Root `.env`]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Secrets Usage and Collaborator Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Anti-Patterns to Flag_22]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Core Principle_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 1 Application Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 2 Container Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 3 Network Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Layer 4 Data Flow Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Output Format_28]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Review Layers_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Role_82]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[SecureClaw-Specific Threat Model_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Skill Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Verification Commands_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[openclawskillsi-secSKILL]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - degree 5, connects to 4 communities
+- [[Skill Security Review (SEC)_2]] - degree 9, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ci (Continuous Integration) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
+- [[Dev Hermes polled prod's Hermes Telegram bot token all night]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
 
 ## Live Query (requires Dataview plugin)
 

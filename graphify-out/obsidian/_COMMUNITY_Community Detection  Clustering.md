@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Community Detection  Clustering]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Chaos Engineering Skill_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

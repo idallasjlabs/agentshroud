@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # _fake_forward()
@@ -20,4 +20,4 @@ tags:
 - [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `indirect_call` [INFERRED]
 - [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxypy
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

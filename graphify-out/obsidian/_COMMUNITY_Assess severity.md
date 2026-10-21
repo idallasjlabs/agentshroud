@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # Assess severity
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Assess severity]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[Incident detected]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P1 — Critical (respond immediately; owner Isaiah Jefferson; kill switch  revoke  rotate)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P2 — High (respond within 1 hour; restart containers, rebuild image)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P4 — Low (resolve in next session; fix branch + PR)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[RT-MB1 — Cross-Bot Trust Pivot]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB2 — Shared-Memory Leak Between Bots]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB3 — Group-Context Escalation (Anticipating Workstream A)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 — Hermes Cron Job Injection (NEW — Hermes-specific)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB6 — Cross-Bot Telegram Token Confusion]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/Assess_severity
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Error Index.md (4)]]
+
+## Top bridge nodes
+- [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - degree 7, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Roadmap (v0.9.5 → v0.9.8 → v1.0.0 → Post-v1.0.0)]] - concept - docs/agentshroud-knowledge.md
+- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,27 +1,31 @@
 ---
 type: community
-members: 14
+members: 18
 ---
 
 # Deploying AgentShroud on macOS (Apple Silicon / Intel)
 
-**Members:** 14 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[1. Clone the Repository_2]] - document - docs/operations/macos.md
-- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
-- [[3. Set Up Secrets_2]] - document - docs/operations/macos.md
-- [[4. Configure AgentShroud_2]] - document - docs/operations/macos.md
-- [[5. Build and Start_2]] - document - docs/operations/macos.md
-- [[6. Verify_2]] - document - docs/operations/macos.md
-- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
-- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
-- [[Fresh Install_2]] - document - docs/operations/macos.md
-- [[Prerequisites_13]] - document - docs/operations/macos.md
-- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
-- [[Updating to Latest Release_2]] - document - docs/operations/macos.md
-- [[macos]] - document - docs/operations/macos.md
+- [[dot-__init__()_155]] - code - gateway/security/prompt_protection.py
+- [[dot-_compile_detection_patterns()_1]] - code - gateway/security/prompt_protection.py
+- [[dot-_load_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[dot-add_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[dot-get_protection_stats()]] - code - gateway/security/prompt_protection.py
+- [[dot-register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
+- [[dot-test_disabled_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - rationale - gateway/security/prompt_protection.py
+- [[Add content to the protected registry.          Args             name Identifi]] - rationale - gateway/security/prompt_protection.py
+- [[Any_59]] - code - gateway/security/prompt_protection.py
+- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
+- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
+- [[Initialize prompt protection system.          Args             config Configur]] - rationale - gateway/security/prompt_protection.py
+- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
+- [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - rationale - gateway/security/prompt_protection.py
+- [[PromptProtection]] - code - gateway/security/prompt_protection.py
+- [[System Prompt Protection Tests]] - code - gateway/tests/test_prompt_protection.py
+- [[Test that disabled protection passes through content unchanged.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +33,18 @@ members: 14
 TABLE source_file, type FROM #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_AgentShroud Module Inventory]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_Mode B — Comprehensive review sweep (3)]]
+- 2 edges to [[_COMMUNITY_AgentShroud v1.0.0 Fortress Release Announcement]]
+- 1 edge to [[_COMMUNITY_TestAiModelSupplyChain]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration (2)]]
+- 1 edge to [[_COMMUNITY_FetchOutcome]]
+
+## Top bridge nodes
+- [[PromptProtection]] - degree 21, connects to 7 communities
+- [[dot-add_protected_content()]] - degree 4, connects to 1 community
+- [[dot-test_disabled_protection()]] - degree 3, connects to 1 community
+- [[System Prompt Protection Tests]] - degree 2, connects to 1 community

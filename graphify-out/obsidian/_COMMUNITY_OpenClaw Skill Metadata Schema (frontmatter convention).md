@@ -8,28 +8,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[CLI_1]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Config_1]] - document - skills/openclaw/summarize/SKILL.md
-- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[Quick start_7]] - document - skills/openclaw/summarize/SKILL.md
-- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
-- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
-- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Useful flags]] - document - skills/openclaw/summarize/SKILL.md
-- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
-- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
-- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
-- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
-- [[songseeSKILL]] - document - skills/openclaw/songsee/SKILL.md
-- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[spotify-playerSKILL]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[summarizeSKILL]] - document - skills/openclaw/summarize/SKILL.md
-- [[things-macSKILL]] - document - skills/openclaw/things-mac/SKILL.md
-- [[voice-callSKILL]] - document - skills/openclaw/voice-call/SKILL.md
-- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
-- [[wacliSKILL]] - document - skills/openclaw/wacli/SKILL.md
-- [[xurlSKILL]] - document - skills/openclaw/xurl/SKILL.md
+- [[dot-test_bot_id_filter_matches_bot_image()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_bot_id_filter_unknown_bot_returns_all()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_corrupt_report_file_is_skipped()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_critical_report_status_is_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_each_entry_has_image_key()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_ignores_non_image_prefixed_files()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_empty_list_when_dir_missing()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_empty_when_no_image_reports()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_one_entry_per_report_file()]] - code - gateway/tests/test_scanner_integration.py
+- [[A JSON-corrupt file is silently skipped, others are still returned.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Directory exists but contains only fs scan files — returns .]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Files named trivy-.json (fs scans) are not included.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Path_43]] - code - gateway/tests/test_scanner_integration.py
+- [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration.py
+- [[Unknown bot_id with no config match falls through and returns all entries.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[Write a fake image report file in the expected filename format.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[_clean_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[_critical_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[_write_image_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[bot_id + config param restricts results to that bot's image.]] - rationale - gateway/tests/test_scanner_integration.py
+- [[get_trivy_image_summaries()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +39,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_find-sessions.sh]]
-- 1 edge to [[_COMMUNITY_frame.sh]]
-- 1 edge to [[_COMMUNITY_xurl — Agent Skill Reference]]
-- 1 edge to [[_COMMUNITY_package_skill]]
-- 1 edge to [[_COMMUNITY_Actions]]
-- 1 edge to [[_COMMUNITY_Usage]]
-- 1 edge to [[_COMMUNITY_Weather Skill]]
+- 8 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 3 edges to [[_COMMUNITY_PipelineAction (2)_1]]
+- 3 edges to [[_COMMUNITY_FalcoAlertWatcher (2)]]
+- 2 edges to [[_COMMUNITY__load_latest_json]]
+- 1 edge to [[_COMMUNITY_server.py (2)]]
+- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
+- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 
 ## Top bridge nodes
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
-- [[xurlSKILL]] - degree 3, connects to 1 community
+- [[Path_43]] - degree 18, connects to 4 communities
+- [[get_trivy_image_summaries()]] - degree 14, connects to 4 communities
+- [[_write_image_report()]] - degree 11, connects to 1 community
+- [[_clean_trivy_report()]] - degree 10, connects to 1 community
+- [[TestGetTrivyImageSummaries]] - degree 10, connects to 1 community

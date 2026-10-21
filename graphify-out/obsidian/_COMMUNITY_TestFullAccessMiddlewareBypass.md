@@ -8,32 +8,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[dot-test_default_collab_outbound_still_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_default_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_collaborator_passes_despite_middleware_block()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_outbound_not_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_per_user_mode_override_controls_outbound_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_project_scoped_collaborator_still_blocked_by_middleware()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Middleware block must be bypassed for full_access collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-user mode override is respected by the outbound filter. A collaborator…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFullAccessMiddlewareBypass]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notify_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notify_blocked()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notify_blocked()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send_text()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access bypass applies even when the message has no interrogative marker.…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator must receive the general-access disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator outbound must pass through even when leakage filter…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborators must pass through middleware and secondary pipeline…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborator must receive the restricted-scope disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborators must still be blocked by the leakage filter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[process_request()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[process_request()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[process_request()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[project_scoped collaborators are still blocked when middleware blocks (non-…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_beta_rc_alpha_are_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_downstream_counter_sorts_above_its_base_release()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_downstream_rebuild_counter_is_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_empty_is_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_no_stable_versions_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_numeric_ordering_not_lexicographic()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_picks_the_highest_stable_version()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_plain_releases_are_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_real_openclaw_tail_picks_2026_9_4()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_unparseable_entries_are_skipped_not_crashed_on()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[2026.10.1' must beat '2026.9.4' — string compare gets this wrong.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[2026.7.1-2 is a patch published after 2026.7.1, so it must win.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[2026.7.1-2' is a real published OpenClaw release, not a prerelease marker — the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[Newest stable release from an npm version list, or None.]] - rationale - scripts/discover_upstream_versions.py
+- [[Pre-release builds must never be shipped to production automatically.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[Selecting the newest shippable npm release.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[TestIsStable]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[TestPickLatestStable]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[The actual npm tail as of 2026-09-15.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[True when ``version`` is a shippable release rather than a pre-release.]] - rationale - scripts/discover_upstream_versions.py
+- [[Version - comparable int tuple, or None if not numeric. A trailing ``-N``…]] - rationale - scripts/discover_upstream_versions.py
+- [[_sortable()]] - code - scripts/discover_upstream_versions.py
+- [[is_stable()]] - code - scripts/discover_upstream_versions.py
+- [[pick_latest_stable()]] - code - scripts/discover_upstream_versions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,13 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY__wrap_response()]]
-- 8 edges to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
+- 6 edges to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
-- [[dot-test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - degree 9, connects to 2 communities
-- [[dot-test_project_scoped_collaborator_still_blocked_by_middleware()]] - degree 9, connects to 2 communities
-- [[dot-test_full_access_collaborator_passes_despite_middleware_block()]] - degree 8, connects to 2 communities
-- [[dot-test_default_disclosure_text()]] - degree 6, connects to 2 communities
-- [[dot-test_full_access_disclosure_text()]] - degree 5, connects to 2 communities
+- [[pick_latest_stable()]] - degree 13, connects to 1 community
+- [[TestPickLatestStable]] - degree 10, connects to 1 community
+- [[is_stable()]] - degree 7, connects to 1 community
+- [[TestIsStable]] - degree 6, connects to 1 community
+- [[_sortable()]] - degree 3, connects to 1 community

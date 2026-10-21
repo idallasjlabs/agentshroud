@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L2320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # _determine_iec_sl()
@@ -16,4 +16,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

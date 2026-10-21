@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[4.1 Per-bot egress allowlist completeness]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.2 Per-bot trust seeding]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.3 Per-bot CVE triage cron health]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.4 Hermes SOUL.md information disclosure posture]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.5 Hermes dashboard TCP forwarder — binding address]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Step 1 Install ClawHub CLI]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 2 Create ClawHub Account]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 3 Verify Skill Ready]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 4 Publish to ClawHub]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 5 Verify Publication]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 6 Test Installation (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📋 Detailed Step-by-Step]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessment]]
+- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
 
 ## Top bridge nodes
-- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - degree 7, connects to 1 community
+- [[📋 Detailed Step-by-Step]] - degree 7, connects to 1 community

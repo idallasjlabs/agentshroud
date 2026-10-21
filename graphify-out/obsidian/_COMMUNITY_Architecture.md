@@ -1,22 +1,31 @@
 ---
 type: community
-members: 9
+members: 18
 ---
 
 # Architecture
 
-**Members:** 9 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[Architecture_13]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Design Philosophy_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Infrastructure_10]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Multi-Platform Support]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Outbound Pipeline (Agent → User)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Security Modules]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Security Pipeline]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
+- [[Hermes Competitive Intelligence Email (AMPM)_1]] - document - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[Hermes Competitive Landscape Update (AMPM)_1]] - document - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[OpenClaw cron Competitive Analysis Email (Afternoon)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Competitive Landscape Update (Afternoon)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Daily Competitive Analysis Email (AM)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[OpenClaw cron Daily Competitive Landscape Update (zero-hallucination sourcing rules)]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
+- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
+- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
+- [[agentshroud-email-send.sh]] - code - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[competitive-analysis.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[competitive-report-.md dated reports]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[cron-operations skill]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[main()_25]] - code - docker/bots/hermes/render_md_email.py
+- [[render()_2]] - code - docker/bots/hermes/render_md_email.py
+- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
+- [[trend-log.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +33,3 @@ members: 9
 TABLE source_file, type FROM #community/Architecture
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
-
-## Top bridge nodes
-- [[Architecture_13]] - degree 7, connects to 2 communities

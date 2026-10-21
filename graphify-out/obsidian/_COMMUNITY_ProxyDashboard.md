@@ -1,56 +1,57 @@
 ---
 type: community
-members: 43
+members: 44
 ---
 
 # ProxyDashboard
 
-**Members:** 43 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_79]] - code - gateway/dashboard/proxy_status.py
-- [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-record_pii_redaction()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-set_mode()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-to_display()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-update_audit_status()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-update_canary()]] - code - gateway/dashboard/proxy_status.py
-- [[dot-update_direct_access()]] - code - gateway/dashboard/proxy_status.py
-- [[Collects status from all security components and generates reports.]] - rationale - gateway/dashboard/proxy_status.py
-- [[Complete proxy status report for the dashboard.]] - rationale - gateway/dashboard/proxy_status.py
-- [[Dashboard display should include all required fields.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should count PII redactions.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should default to unprotected mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should reflect proxy mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should reflect sidecar mode with warning.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show audit chain status.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show broken audit chain.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show failed canary.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track canary results.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track direct access status.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track proxied messages.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track uptime.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[ProxyDashboard]] - code - gateway/dashboard/proxy_status.py
-- [[ProxyStatusReport]] - code - gateway/dashboard/proxy_status.py
-- [[ProxyStatusReport.to_display should produce readable strings.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Return human-readable dashboard strings.]] - rationale - gateway/dashboard/proxy_status.py
-- [[proxy_status.py]] - code - gateway/dashboard/proxy_status.py
-- [[test_dashboard_audit_broken()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_audit_status()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_canary_failed()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_canary_status()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_default_unprotected()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_direct_access()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_display_all_fields()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_message_tracking()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_pii_counting()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_set_proxy_mode()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_set_sidecar_mode()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_uptime()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_proxy_dashboard.py]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_status_report_to_display()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[dot-__init__()_52]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_classify_risk()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_domain_matches()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_init_browser()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_load_config()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_log_action()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_log_security_event()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_requires_approval()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_take_screenshot()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-_validate_url()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-click()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-close()_4]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-detect_captcha()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-extract()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-fill_field()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-get_audit_log()_4]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-navigate()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[CLI interface for SecureBrowser_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Check if action requires approval          Security Approval queue integration_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Check if domain matches pattern (supports wildcards)_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Classify action risk level          Security Determines if approval is needed_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Clean up browser resources_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Click an element          Security Risk classification for destructive actions_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Detect if CAPTCHA is present on page_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Extract data from page          Security No credential extraction allowed_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Fill a single form field          Security Risk classification, approval for se_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Initialize browser with security settings_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Load security configuration_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Log browser action to audit trail_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Log security-related events_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Navigate to URL          Security URL validation, audit logging_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Raised when security policy is violated_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Return complete audit log_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Risk classification for browser actions_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[RiskLevel_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Secure browser automation with enterprise controls      Security guarantees_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[SecureBrowser_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Security configuration for browser automation_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[SecurityConfig_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[SecurityError_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Take screenshot and save to audit directory_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Validate URL against allowlistblocklist          Security This is the primary_1]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[main()_7]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[openclawskillsi-browserscriptsbrowse.py]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,11 +61,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 
 ## Top bridge nodes
-- [[ProxyDashboard]] - degree 27, connects to 2 communities
-- [[proxy_status.py]] - degree 4, connects to 2 communities
+- [[SecurityError_2]] - degree 7, connects to 1 community
+- [[openclawskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
+- [[RiskLevel_2]] - degree 6, connects to 1 community

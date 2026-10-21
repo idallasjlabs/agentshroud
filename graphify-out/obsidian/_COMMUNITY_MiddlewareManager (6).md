@@ -1,46 +1,48 @@
 ---
 type: community
-members: 33
+members: 35
 ---
 
 # MiddlewareManager (6)
 
-**Members:** 33 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[dot-setup_method()_24]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_4]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_default_config()_2]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_integrated_memory_protection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_status_reporting()_1]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
-- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
-- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
-- [[ModificationSource]] - code - gateway/security/memory_integrity.py
-- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
-- [[Test complete memory protection workflow.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test default configuration values._2]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
-- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
-- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
+- [[dot-_run()_2]] - code - gateway/runtime/engine.py
+- [[dot-build()]] - code - gateway/runtime/engine.py
+- [[dot-compose_down()]] - code - gateway/runtime/engine.py
+- [[dot-compose_up()]] - code - gateway/runtime/engine.py
+- [[dot-exec()]] - code - gateway/runtime/engine.py
+- [[dot-health_check()_2]] - code - gateway/runtime/engine.py
+- [[dot-inspect()]] - code - gateway/runtime/engine.py
+- [[dot-logs()]] - code - gateway/runtime/engine.py
+- [[dot-network_create()]] - code - gateway/runtime/engine.py
+- [[dot-network_rm()]] - code - gateway/runtime/engine.py
+- [[dot-pause()]] - code - gateway/runtime/engine.py
+- [[dot-pull()]] - code - gateway/runtime/engine.py
+- [[dot-push()_1]] - code - gateway/runtime/engine.py
+- [[dot-rm()]] - code - gateway/runtime/engine.py
+- [[dot-stop()_7]] - code - gateway/runtime/engine.py
+- [[dot-unpause()]] - code - gateway/runtime/engine.py
+- [[dot-volume_create()]] - code - gateway/runtime/engine.py
+- [[dot-volume_rm()]] - code - gateway/runtime/engine.py
+- [[ABC]] - code
+- [[Any_31]] - code - gateway/runtime/engine.py
+- [[Bring up services from a compose file.]] - rationale - gateway/runtime/engine.py
+- [[Build an image. Returns the image idtag.]] - rationale - gateway/runtime/engine.py
+- [[CompletedProcess_3]] - code - gateway/runtime/engine.py
+- [[ContainerEngine]] - code - gateway/runtime/engine.py
+- [[Execute a command inside a running container.]] - rationale - gateway/runtime/engine.py
+- [[Pull an image from a registry.]] - rationale - gateway/runtime/engine.py
+- [[Push an image to a registry.]] - rationale - gateway/runtime/engine.py
+- [[Retrieve container logs.]] - rationale - gateway/runtime/engine.py
+- [[Return True if the runtime is available and responsive.]] - rationale - gateway/runtime/engine.py
+- [[Return detailed container metadata.]] - rationale - gateway/runtime/engine.py
+- [[Run a CLI command and return the result.]] - rationale - gateway/runtime/engine.py
+- [[Start a container. Returns container id.]] - rationale - gateway/runtime/engine.py
+- [[Stop a running container.]] - rationale - gateway/runtime/engine.py
+- [[Tear down services from a compose file.]] - rationale - gateway/runtime/engine.py
+- [[Unified interface for container runtimes (Docker  Podman  Apple Containers).]] - rationale - gateway/runtime/engine.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,19 +52,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_MiddlewareManager (7)]]
-- 9 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY_MiddlewareManager (8)]]
-- 6 edges to [[_COMMUNITY_MiddlewareManager (9)]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager (10)]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager (11)]]
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (15)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 6 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 4 edges to [[_COMMUNITY_egress_retry.py]]
+- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 2 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
 
 ## Top bridge nodes
-- [[TestMemoryIntegrityMonitor]] - degree 17, connects to 6 communities
-- [[test_memory_lifecycle.py]] - degree 12, connects to 5 communities
-- [[MemoryIntegrityConfig]] - degree 16, connects to 4 communities
-- [[TestMemorySecurityIntegration]] - degree 14, connects to 4 communities
-- [[ModificationSource]] - degree 13, connects to 4 communities
+- [[ContainerEngine]] - degree 36, connects to 6 communities
+- [[ABC]] - degree 2, connects to 1 community

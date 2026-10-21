@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[patch_telegram_edit_message_date.py]] - code - docker/bots/hermes/patch_telegram_edit_message_date.py
+- [[AgentShroud TwitterX Header]] - image - branding/social/twitter-header-1500x500.png
 
 ## Live Query (requires Dataview plugin)
 

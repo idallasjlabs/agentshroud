@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Drift Detection in Pipeline]] - code - gateway/tests/test_security_integration.py
+- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
 
 ## Live Query (requires Dataview plugin)
 

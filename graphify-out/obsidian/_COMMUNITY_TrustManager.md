@@ -1,36 +1,37 @@
 ---
 type: community
-members: 23
+members: 24
 ---
 
 # TrustManager
 
-**Members:** 23 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
-- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
-- [[Database Schema]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Environment Variables_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
-- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_83]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Related_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Threat Model_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
-- [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[trust_manager.py]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Acceptance]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Intent]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Module surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open question (planning-only — decide before coding)]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Source of truth]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream A Groups and Teamwork in OpenClaw]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream C Full Local-Model Parity (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,11 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesSOUL]]
-- 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
+- 4 edges to [[_COMMUNITY_Socrates — Dialogue Architect (2)]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 5 communities
+- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 1 community
+- [[Workstream A Groups and Teamwork in OpenClaw]] - degree 7, connects to 1 community
+- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 1 community
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - degree 7, connects to 1 community

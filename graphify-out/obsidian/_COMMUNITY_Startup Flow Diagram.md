@@ -1,16 +1,17 @@
 ---
 type: community
-members: 3
+members: 4
 ---
 
 # Startup Flow Diagram
 
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[Related Notes_21]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
-- [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
-- [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[logs.sh]] - code - docker/scripts/logs.sh
+- [[logs.sh script]] - code - docker/scripts/logs.sh
+- [[restart.sh]] - code - docker/scripts/restart.sh
+- [[restart.sh script]] - code - docker/scripts/restart.sh
 
 ## Live Query (requires Dataview plugin)
 

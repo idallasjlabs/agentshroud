@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-test_egress_callback_from_collaborator_is_rejected()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator callback attempts must not approvedeny egress requests.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[answer_callback()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[approve()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[deny()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[handle_callback()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Feedback Guidelines_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Output Format_5]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Review Principles_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Role_12]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
-- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[dot-test_egress_callback_from_collaborator_is_rejected()]] - degree 8, connects to 3 communities
+- [[Skill Code Review (CR)_1]] - degree 6, connects to 1 community

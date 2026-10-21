@@ -1,71 +1,65 @@
 ---
 type: community
-members: 58
+members: 52
 ---
 
 # test_a2a_proxy.py
 
-**Members:** 58 nodes
+**Members:** 52 nodes
 
 ## Members
-- [[dot-__init__()_30]] - code - gateway/tests/test_a2a_proxy.py
-- [[dot-__init__()_31]] - code - gateway/tests/test_a2a_proxy.py
-- [[dot-__post_init__()]] - code - gateway/security/differential_pii_detector.py
-- [[dot-forward()]] - code - gateway/tests/test_a2a_proxy.py
-- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A freshly-constructed, un-set result must default to blocked, not     allowed —]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A message with MULTIPLE text parts must not leave a second, unredacted     text]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A2APolicyEngine]] - code - gateway/tests/test_a2a_proxy.py
-- [[A2AProxy]] - code - gateway/tests/test_a2a_proxy.py
-- [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig]] - code - gateway/security/differential_pii_detector.py
-- [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Token comparison must not leak timing information — same guarantee as     Hermes]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
-- [[_StubForwarder]] - code - gateway/tests/test_a2a_proxy.py
-- [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
-- [[_jsonrpc()]] - code - gateway/tests/test_a2a_proxy.py
-- [[forwarder()]] - code - gateway/tests/test_a2a_proxy.py
-- [[proxy()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_agent_card_discovery_is_never_policy_gated()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_agent_card_discovery_is_still_audited()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_concatenates_text_parts()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_empty_message_returns_empty_string()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_flags_binary_parts_without_scanning_them()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_handles_missing_parts_key()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_extract_text_skips_non_dict_entries_in_parts()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_accepts_legacy_path_style_method_alias()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_extracts_callback_url_from_set_push_config()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_extracts_method_and_task_id_from_send_message()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_extracts_task_id_from_get_task()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_missing_method_field_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_non_dict_body_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_tolerates_non_dict_params()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_parse_jsonrpc_unknown_method_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_malformed_body_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_from_known_bearer_token()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_malformed_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_missing_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_unknown_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_uses_constant_time_comparison()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_37]] - code - gateway/approval_queue/group_router.py
+- [[dot-_build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
+- [[dot-_build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
+- [[dot-_default_send()]] - code - gateway/approval_queue/group_router.py
+- [[dot-extract_group_chat_id()]] - code - gateway/approval_queue/group_router.py
+- [[dot-is_group_context()]] - code - gateway/approval_queue/group_router.py
+- [[dot-route_approval()]] - code - gateway/approval_queue/group_router.py
+- [[dot-test_default_send_stub_returns_ok()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_extract_chat_id_from_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_extract_chat_id_returns_none_for_non_group()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_is_group_context_false_for_collab_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_is_group_context_false_for_default()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
+- [[Any_10]] - code - gateway/approval_queue/group_router.py
+- [[ApprovalRequest_1]] - code - gateway/approval_queue/group_router.py
+- [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
+- [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
+- [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Extract the raw chat_id from a group-{chat_id} agent_id.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i]] - rationale - gateway/approval_queue/group_router.py
+- [[GroupApprovalRouter]] - code - gateway/approval_queue/group_router.py
+- [[GroupApprovalRouter must correctly distinguish group vs DM context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[GroupApprovalRouter wired with a mock Telegram send function.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[GroupApprovalRouter._default_send returns {ok True} without raising.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Mock async Telegram sendMessage to capture DM and group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[No-op send stub — used when no transport is injected.]] - rationale - gateway/approval_queue/group_router.py
+- [[Return (router, sent_list) tuple for assertion convenience.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Return True if agent_id represents a Telegram group workspace.]] - rationale - gateway/approval_queue/group_router.py
+- [[Route an approval notification to the appropriate recipients.          Routing l]] - rationale - gateway/approval_queue/group_router.py
+- [[Router with no send_message_fn uses the default stub (no network calls).]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - rationale - gateway/approval_queue/group_router.py
+- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
+- [[TestGroupApprovalRouterContextDetection]] - code - gateway/tests/test_group_approval_routing.py
+- [[TestGroupApprovalRouterDefaultSend]] - code - gateway/tests/test_group_approval_routing.py
+- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[agent_id starting with 'collab-' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[agent_id starting with 'group-' is recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - code - gateway/approval_queue/group_router.py
+- [[group_router.py (GroupApprovalRouter)]] - code - gateway/approval_queue/group_router.py
+- [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
+- [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[router()]] - code - gateway/tests/test_group_approval_routing.py
+- [[router_with_sent()]] - code - gateway/tests/test_group_approval_routing.py
+- [[test_group_approval_routing.py]] - code - gateway/tests/test_group_approval_routing.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -75,13 +69,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 22 edges to [[_COMMUNITY_DifferentialPIIDetector]]
-- 5 edges to [[_COMMUNITY_A2APolicyEngine (3)]]
+- 14 edges to [[_COMMUNITY_ContextSegment]]
 
 ## Top bridge nodes
-- [[test_a2a_proxy.py]] - degree 50, connects to 3 communities
-- [[A2AProxy]] - degree 27, connects to 3 communities
-- [[_StubForwarder]] - degree 26, connects to 3 communities
-- [[_StubAuditStore]] - degree 12, connects to 3 communities
-- [[A2APolicyEngine]] - degree 10, connects to 3 communities
+- [[GroupApprovalRouter]] - degree 23, connects to 1 community
+- [[test_group_approval_routing.py]] - degree 11, connects to 1 community
+- [[TestGroupApprovalRouterContextDetection]] - degree 10, connects to 1 community
+- [[TestDMApprovalOwnerOnly]] - degree 6, connects to 1 community
+- [[TestGroupApprovalRouterDefaultSend]] - degree 6, connects to 1 community

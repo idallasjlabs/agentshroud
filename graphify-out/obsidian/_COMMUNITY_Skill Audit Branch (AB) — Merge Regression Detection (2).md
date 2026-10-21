@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Check A — Substantive change on the losing side_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Check B — Tied to a real ticket_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Check C — Still broken at HEAD (not self-healed)_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Guardrails_11]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Invocation Forms_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Jira  PR Comment Format_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Role_69]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 1 — Verify the script exists_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 2 — Determine the target_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 3 — Run the audit script_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 4 — Triage each finding_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 5 — Classify findings_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Step 6 — Output the report_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[hermesskillsi-abSKILL]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Mode A — Single task_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 10 — Notify the owner_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 12 — Clean up_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2 — Create a branch + worktree_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2b — Create the Jira ticket_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 3 — Write and edit code_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 4 — Test and lint_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 5 — Multi-LLM review_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 6 — Build and validate containers_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 7 — Update documentation and website_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 8 — Update the knowledge graph_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9 — Push and open the PR_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_3]] - document - .agents/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer (3)]]
 
 ## Top bridge nodes
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - degree 12, connects to 1 community
+- [[Mode A — Single task_3]] - degree 15, connects to 1 community

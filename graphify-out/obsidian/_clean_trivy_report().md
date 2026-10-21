@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Path (3)"
+community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
 location: "L1050"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
 ---
 
 # _clean_trivy_report()
@@ -19,8 +19,8 @@ tags:
 - [[dot-test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_empty_when_no_image_reports()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[_critical_trivy_report()]] - `calls` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_3
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention

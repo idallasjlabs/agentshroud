@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[podcast_plan.json (voice config)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[i-sdlc SKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

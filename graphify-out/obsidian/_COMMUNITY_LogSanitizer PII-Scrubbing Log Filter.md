@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[LogSanitizer PII-Scrubbing Log Filter]] - code - gateway/security/log_sanitizer.py
-- [[Test Log Sanitizer PII Scrubbing]] - code - gateway/tests/test_log_sanitizer.py
+- [[Skill observability_2]] - document - docker/config/openclaw/skills/i-observability/SKILL.md
+- [[openclawskillsi-observabilitySKILL]] - document - docker/config/openclaw/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

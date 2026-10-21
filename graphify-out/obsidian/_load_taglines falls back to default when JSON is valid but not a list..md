@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "test_collaborator_greeter.py"
+community: "export-bot-conversations.py (2)"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/export-bot-conversationspy_2
 ---
 
 # _load_taglines falls back to default when JSON is valid but not a list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_taglines_with_non_list_json_falls_back()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy_2

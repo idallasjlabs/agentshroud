@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CriticalHighMediumLow tool risk tiers gating approval requirement]] - concept - gateway/tests/test_enhanced_approval.py
+- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

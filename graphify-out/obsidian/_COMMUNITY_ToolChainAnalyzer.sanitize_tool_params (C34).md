@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer.sanitize_tool_params (C34)]] - code - gateway/security/tool_chain_analyzer.py
+- [[post]] - code
 
 ## Live Query (requires Dataview plugin)
 

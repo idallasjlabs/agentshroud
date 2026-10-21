@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Post-Retry Rate Limit Failover Tests]] - code - gateway/tests/test_rate_limit_failover.py
+- [[CitationVerifier._verify_url()]] - code - gateway/security/citation_verifier.py
 
 ## Live Query (requires Dataview plugin)
 

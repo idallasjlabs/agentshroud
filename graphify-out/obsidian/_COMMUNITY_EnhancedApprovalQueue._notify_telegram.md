@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue._notify_telegram]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Docker sidecar integrity — falcoclamavfluent-bit in-process, wazuh-agent standalone sidecar]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

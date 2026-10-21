@@ -8,40 +8,40 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[Bot was blocked by user Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[IMAP not enabled Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Invalid credentials Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[1. Backup Configuration]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[2. Regular Health Checks]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[3. Auto-Restart on Reboot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[4. Monitor Logs]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[5. Test Regularly]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Bot Not Responding]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Bot Responds Slowly]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Documentation Created]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Gmail Not Detecting New Emails]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Gmail Not Receiving Emails from Bot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[If Bot Doesn't Respond]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Monthly Checklist]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 1 Test Telegram Bot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 2 Set Up Gmail Integration]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 3 Ensure Functionality Remains]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 4 Gmail Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 5 Telegram Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 6 Complete System Test]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Part 7 Maintaining Functionality]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Prerequisites_1]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Quick Start Commands]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Step 1 Enable IMAP in Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Step 2 Create Gmail App Password]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Step 3 Add Gmail to OpenClaw]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Step 4 Verify Gmail Channel]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Step 5 Test Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Summary_11]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Telegram & Gmail Integration Guide]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Test Now]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[When Upgrading macOS]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[✅ Current Status]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[dot-compose()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-compose()_1]] - code - gateway/tests/test_docker_compose.py
+- [[dot-compose()_2]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_file_exists_and_parses()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_has_healthcheck()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_has_logging_config()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_has_pids_limit()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_has_ports()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_has_resource_limits()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_has_tmpfs()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_no_new_privileges()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_ports_bound_to_localhost()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_gateway_read_only()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_has_at_least_one_service()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_has_gateway_service()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_has_gateway_service()_1]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_has_services_key()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_has_volume_definitions()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_has_volumes()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_healthcheck_has_interval()]] - code - gateway/tests/test_docker_compose.py
+- [[dot-test_valid_yaml()]] - code - gateway/tests/test_docker_compose.py
+- [[All compose files should be valid YAML.]] - rationale - gateway/tests/test_docker_compose.py
+- [[Load a docker-compose YAML file.]] - rationale - gateway/tests/test_docker_compose.py
+- [[Load raw text of a compose file.]] - rationale - gateway/tests/test_docker_compose.py
+- [[TestAllComposeFilesValid]] - code - gateway/tests/test_docker_compose.py
+- [[TestDockerComposeMain]] - code - gateway/tests/test_docker_compose.py
+- [[TestMinimalCompose]] - code - gateway/tests/test_docker_compose.py
+- [[TestProductionCompose]] - code - gateway/tests/test_docker_compose.py
+- [[Validate dockerdocker-compose.yml (main compose).]] - rationale - gateway/tests/test_docker_compose.py
+- [[Validate examplesdocker-compose.minimal.yml.]] - rationale - gateway/tests/test_docker_compose.py
+- [[Validate examplesdocker-compose.production.yml.]] - rationale - gateway/tests/test_docker_compose.py
+- [[_load_compose()]] - code - gateway/tests/test_docker_compose.py
+- [[_load_compose_raw()]] - code - gateway/tests/test_docker_compose.py
+- [[test_docker_compose.py]] - code - gateway/tests/test_docker_compose.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,9 +49,3 @@ members: 34
 TABLE source_file, type FROM #community/Telegram__Gmail_Integration_Guide
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
-
-## Top bridge nodes
-- [[Telegram & Gmail Integration Guide]] - degree 10, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.submit]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Graphify query-first-then-keep-current workflow]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

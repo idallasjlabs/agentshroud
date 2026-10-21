@@ -1,85 +1,77 @@
 ---
 type: community
-members: 72
+members: 64
 ---
 
 # test_mfa_guard.py
 
-**Members:** 72 nodes
+**Members:** 64 nodes
 
 ## Members
-- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[dot-__init__()_185]] - code - gateway/security/mfa_guard.py
-- [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
-- [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
-- [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
-- [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
-- [[dot-is_required()]] - code - gateway/security/mfa_guard.py
-- [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
-- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
-- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
-- [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
-- [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
-- [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
-- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
-- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
-- [[MFAResult]] - code - gateway/security/mfa_guard.py
-- [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
-- [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
-- [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - rationale - gateway/tests/test_mfa_guard.py
-- [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - rationale - gateway/security/mfa_guard.py
-- [[Verify the second factor for a high-risk action.          Args             acti]] - rationale - gateway/security/mfa_guard.py
-- [[_queue()]] - code - gateway/tests/test_mfa_guard.py
-- [[_ref_totp()]] - code - gateway/tests/test_mfa_guard.py
-- [[_submit_enhanced_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
-- [[_truthy()]] - code - gateway/security/mfa_guard.py
-- [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
-- [[now()]] - code - gateway/tests/test_mfa_guard.py
-- [[queue.py]] - code - gateway/approval_queue/queue.py
-- [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_invalid_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_replayed_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_mfa_enabled_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_decide_reject_never_requires_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_disabled_allows_even_high_risk_with_no_code()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_disabled_by_default_allows_without_factor()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_empty_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enabled_without_secret_denies_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_missing_item_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_reject_no_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_decide_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_enabled_no_secret_warns()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_reads_secret_and_flag()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_reads_secret_file()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_from_env_unreadable_secret_file()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_invalid_base32_secret_treated_as_unconfigured()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_invalid_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_is_required_tool_call_disabled_never_required()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_is_required_tool_call_tier_parsing()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_mfa_guard.py]] - code - gateway/tests/test_mfa_guard.py
-- [[test_missing_code_denies_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_non_high_risk_action_not_required()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_prune_used_drops_stale_entries()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_real_time_default_now()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_replayed_code_denies()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_uses_constant_time_compare()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_valid_totp_allows_high_risk()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_valid_totp_prev_window_allowed()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_wrong_length_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
+- [[Path_66]] - code - gateway/security/scanner_integration.py
+- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if running inside a Docker container (.dockerenv present).]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if the named Docker container is currently in 'running' state.]] - rationale - gateway/security/scanner_integration.py
+- [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
+- [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 15 Data Confidentiality & Encryption (0-5). IEC 62443 FR4.      1=]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 16 Resource Availability & Limits (0-5). IEC 62443 FR7.      1=mem]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 17 Image Signing & Provenance (0-5). NIST 800-190 §3.1.      0=no]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 18 Registry Security (0-5). NIST 800-190 §3.2.      0=public regis]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 19 Host OS Hardening (0-5). NIST 800-190 §3.5.      0=no info, 1=k]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 20 Docker Daemon Configuration (0-5). CIS Sections 2 & 3.      0=d]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 21 Container Runtime Isolation (0-5). CIS Section 5.      0=privil]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 22 Prompt Injection Defense (0-5). OWASP ASI-07, MITRE AML.T0051.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 23 Agent Goal & Behavior Integrity (0-5). OWASP ASI-01, NIST AI RM]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 24 Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 25 Least Agency Enforcement (0-5). OWASP ASI-05, NIST AI Agent Sta]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 26 Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standar]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 28 Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA M]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
+- [[_app_state_has()]] - code - gateway/security/scanner_integration.py
+- [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
+- [[_is_container_running()]] - code - gateway/security/scanner_integration.py
+- [[_is_containerized()]] - code - gateway/security/scanner_integration.py
+- [[_is_falco_running()]] - code - gateway/security/scanner_integration.py
+- [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
+- [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
+- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
+- [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
+- [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
+- [[_score_ai_observability()]] - code - gateway/security/scanner_integration.py
+- [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
+- [[_score_data_confidentiality_encryption()]] - code - gateway/security/scanner_integration.py
+- [[_score_data_exfiltration_prevention()]] - code - gateway/security/scanner_integration.py
+- [[_score_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
+- [[_score_host_os_hardening()]] - code - gateway/security/scanner_integration.py
+- [[_score_human_in_the_loop()]] - code - gateway/security/scanner_integration.py
+- [[_score_identity_authentication()]] - code - gateway/security/scanner_integration.py
+- [[_score_image_signing_provenance()]] - code - gateway/security/scanner_integration.py
+- [[_score_inter_agent_trust()]] - code - gateway/security/scanner_integration.py
+- [[_score_least_agency()]] - code - gateway/security/scanner_integration.py
+- [[_score_memory_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_network_segmentation()]] - code - gateway/security/scanner_integration.py
+- [[_score_prompt_injection_defense()]] - code - gateway/security/scanner_integration.py
+- [[_score_registry_security()]] - code - gateway/security/scanner_integration.py
+- [[_score_resource_availability()]] - code - gateway/security/scanner_integration.py
+- [[_score_rogue_agent_containment()]] - code - gateway/security/scanner_integration.py
+- [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
+- [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
+- [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
+- [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -89,19 +81,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 11 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
-- 1 edge to [[_COMMUNITY_egress_filter.py (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 27 edges to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 12 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 10 edges to [[_COMMUNITY_PipelineAction (2)_1]]
+- 5 edges to [[_COMMUNITY_FalcoAlertWatcher (2)]]
+- 5 edges to [[_COMMUNITY__load_latest_json]]
+- 4 edges to [[_COMMUNITY_server.py (2)]]
+- 4 edges to [[_COMMUNITY_Incident ConduitHermes instability 2026-10-16]]
+- 2 edges to [[_COMMUNITY_API Documentation]]
+- 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 2 edges to [[_COMMUNITY_TestVersionRoutes]]
+- 2 edges to [[_COMMUNITY_AgentShroud Security Assessment — v0.8.0]]
+- 1 edge to [[_COMMUNITY_Common Queries]]
+- 1 edge to [[_COMMUNITY_Skill Project Management (PM) (3)]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
+- 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
 
 ## Top bridge nodes
-- [[queue.py]] - degree 14, connects to 5 communities
-- [[MFAGuard_2]] - degree 48, connects to 4 communities
-- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
-- [[_queue()]] - degree 11, connects to 2 communities
-- [[_submit_high_risk()]] - degree 9, connects to 2 communities
+- [[scanner_integration.py]] - degree 67, connects to 16 communities
+- [[Path_66]] - degree 34, connects to 7 communities
+- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
+- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities
+- [[_score_secrets_management()]] - degree 7, connects to 2 communities

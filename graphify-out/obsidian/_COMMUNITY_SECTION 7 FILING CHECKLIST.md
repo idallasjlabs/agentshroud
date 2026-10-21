@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # SECTION 7: FILING CHECKLIST
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Patent Center Filing Steps]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Post-Filing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Pre-Filing Preparation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 7 FILING CHECKLIST]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[dot-test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsFresh_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Provisional Patent Application]]
-- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Trademark Application]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
 
 ## Top bridge nodes
-- [[SECTION 7 FILING CHECKLIST]] - degree 5, connects to 2 communities
+- [[dot-test_old_file_returns_false()]] - degree 3, connects to 2 communities
+- [[TestIsFresh_1]] - degree 5, connects to 1 community
+- [[dot-test_fresh_file_returns_true()]] - degree 2, connects to 1 community

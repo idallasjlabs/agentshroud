@@ -8,25 +8,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[Attachments_1]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Common Operations]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Debugging_1]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Delete an Email]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Forward an Email]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Himalaya Email CLI]] - document - skills/openclaw/himalaya/SKILL.md
-- [[List Emails]] - document - skills/openclaw/himalaya/SKILL.md
-- [[List Folders]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Manage Flags]] - document - skills/openclaw/himalaya/SKILL.md
-- [[MoveCopy Emails]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Multiple Accounts]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Output Formats]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Prerequisites_10]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Read an Email]] - document - skills/openclaw/himalaya/SKILL.md
-- [[References_4]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Reply to an Email]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Search Emails]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Tips_4]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Write a New Email]] - document - skills/openclaw/himalaya/SKILL.md
+- [[1. Purpose and Scope]] - document - docs/requirements/system-requirements.md
+- [[1.1 Purpose]] - document - docs/requirements/system-requirements.md
+- [[1.2 Scope]] - document - docs/requirements/system-requirements.md
+- [[1.3 Intended Audience]] - document - docs/requirements/system-requirements.md
+- [[2. Functional Requirements]] - document - docs/requirements/system-requirements.md
+- [[2.1 Core Security Modules]] - document - docs/requirements/system-requirements.md
+- [[3. Non-Functional Requirements]] - document - docs/requirements/system-requirements.md
+- [[4. Constraints and Assumptions]] - document - docs/requirements/system-requirements.md
+- [[4.1 Technical Constraints]] - document - docs/requirements/system-requirements.md
+- [[4.2 Operational Constraints]] - document - docs/requirements/system-requirements.md
+- [[4.3 Assumptions]] - document - docs/requirements/system-requirements.md
+- [[5. Compliance Requirements]] - document - docs/requirements/system-requirements.md
+- [[5.1 Security Standards]] - document - docs/requirements/system-requirements.md
+- [[5.2 Audit Requirements]] - document - docs/requirements/system-requirements.md
+- [[6. Risk Assessment]] - document - docs/requirements/system-requirements.md
+- [[6.1 Security Risks]] - document - docs/requirements/system-requirements.md
+- [[6.2 Operational Risks]] - document - docs/requirements/system-requirements.md
+- [[AgentShroud v0.9.0_1]] - document - docs/requirements/system-requirements.md
+- [[System Requirements Specification (SRS)]] - document - docs/requirements/system-requirements.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,8 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
-- 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
 
 ## Top bridge nodes
-- [[Himalaya Email CLI]] - degree 10, connects to 2 communities
+- [[System Requirements Specification (SRS)]] - degree 2, connects to 1 community

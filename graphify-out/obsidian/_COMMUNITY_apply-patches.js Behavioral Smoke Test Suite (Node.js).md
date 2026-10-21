@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[apply-patches.js Behavioral Smoke Test Suite (Node.js)]] - code - tests/startup_smoke/test_apply_patches.js
+- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

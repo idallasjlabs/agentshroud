@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # All Dependencies.md (3)
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[dot-require()]] - code - gateway/soc/auth.py
-- [[Action_2]] - code - gateway/soc/auth.py
-- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Resource_2]] - code - gateway/soc/auth.py
+- [[dot-test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
 
 ## Top bridge nodes
-- [[dot-require()]] - degree 4, connects to 1 community
+- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
+- [[dot-test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community
+- [[dot-test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[dot-test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community

@@ -1,98 +1,85 @@
 ---
 type: community
-members: 85
+members: 72
 ---
 
 # hermes/skills/i-bs/README.md
 
-**Members:** 85 nodes
+**Members:** 72 nodes
 
 ## Members
-- [[8D Root Cause Analysis_2]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Apollo — Audio Systems Producer_1]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Atlas — Curriculum Architect_2]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Data Validation (DATA-VAL)_2]] - document - docker/config/hermes/skills/i-data/README.md
-- [[GSDE&G Development Master Checklist (MC)_2]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Hermes — Podcast Production Orchestrator_1]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Pull Request Generator (PR)_1]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_86]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_87]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_88]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Purpose_89]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Purpose_90]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Purpose_91]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Purpose_92]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Purpose_93]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_94]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Purpose_95]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Purpose_96]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_97]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Purpose_98]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_99]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Purpose_100]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Purpose_101]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Purpose_102]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_65]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Related Skills_66]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Related Skills_67]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Related Skills_68]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Related Skills_69]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Related Skills_70]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Related Skills_71]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Related Skills_72]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_73]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Related Skills_74]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Related Skills_75]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Related Skills_76]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Related Skills_77]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_78]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_79]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Related Skills_80]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Related Skills_81]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Security Review (SEC)_2]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[System Audit Documentation]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_75]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_76]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_77]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Usage_78]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Usage_79]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Usage_80]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Usage_81]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Usage_82]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_83]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Usage_84]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Usage_85]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Usage_86]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Usage_87]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_88]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Usage_89]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Usage_90]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_91]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[hermesskillsi-apolloREADME]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[hermesskillsi-atlasREADME]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[hermesskillsi-bsREADME]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[hermesskillsi-dataREADME]] - document - docker/config/hermes/skills/i-data/README.md
-- [[hermesskillsi-eightdREADME]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[hermesskillsi-hermesREADME]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[hermesskillsi-macREADME]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[hermesskillsi-mcREADME]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[hermesskillsi-mcpm-doctorREADME]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[hermesskillsi-mcpmREADME]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[hermesskillsi-prREADME]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[hermesskillsi-sadREADME]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[hermesskillsi-sec-defenseREADME]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[hermesskillsi-sec-offenseREADME]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[hermesskillsi-secREADME]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[hermesskillsi-twREADME]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[hermesskillsi-vulcanREADME]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[macOS System Administrator (MAC)_2]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[dot-__init__()_179]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-__init__()_180]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-allowed()_1]] - code - gateway/security/a2a_policy.py
+- [[dot-from_dict()_7]] - code - gateway/security/a2a_policy.py
+- [[dot-submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-submit_tool_request()_3]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-wait_for_decision()_3]] - code - gateway/tests/test_a2a_policy.py
+- [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A2AMethod_1]] - code - gateway/tests/test_a2a_policy.py
+- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
+- [[A2APolicyConfig]] - code - gateway/tests/test_a2a_policy.py
+- [[A2APolicyDecision]] - code - gateway/security/a2a_policy.py
+- [[A2APolicyEngine_2]] - code - gateway/tests/test_a2a_policy.py
+- [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Any_74]] - code - gateway/security/a2a_policy.py
+- [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - rationale - gateway/security/a2a_policy.py
+- [[Hostname resolution is mocked — this test asserts the validator's own     logic,]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - rationale - gateway/tests/test_a2a_policy.py
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - rationale - gateway/security/a2a_policy.py
+- [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - rationale - gateway/tests/test_a2a_policy.py
+- [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - rationale - gateway/tests/test_a2a_policy.py
+- [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
+- [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
+- [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
+- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
+- [[_StubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
+- [[_base_config()_1]] - code - gateway/tests/test_a2a_policy.py
+- [[engine()_1]] - code - gateway/tests/test_a2a_policy.py
+- [[is_safe_a2a_callback_url()]] - code - gateway/security/a2a_policy.py
+- [[test_a2a_policy.py]] - code - gateway/tests/test_a2a_policy.py
+- [[test_allowlisted_peer_low_risk_method_is_allowed()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_bare_dot_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_hostname_resolving_to_a_private_ip_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_ipv4_mapped_ipv6_loopback_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_legitimate_public_urls_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_malformed_url_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_out_of_range_decimal_literal_is_not_treated_as_a_valid_ip()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_rejects_non_http_schemes()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_scheme_only_no_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_ssrf_bypass_encodings_are_rejected()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_callback_url_unresolvable_hostname_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_decision_allowed_property_only_true_for_terminal_allow()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_default_action_allow_lets_unlisted_peers_through_to_risk_tier_check()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_deny_wins_over_allow_for_a_peer_on_both_lists()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_denylisted_peer_is_denied_even_if_method_safe()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_falls_back_to_legacy_queue_signature_without_force_tier()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_high_risk_method_approved_resolves_to_allow()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_high_risk_method_rejected_resolves_to_deny()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_high_risk_method_with_no_approval_queue_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_low_risk_method_bypasses_approval_queue_entirely()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_enforce_task_ownership_violation_never_reaches_approval_queue()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_evaluate_accepts_a_plain_string_method_not_just_the_enum()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_high_risk_methods_require_approval()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_low_risk_methods_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_medium_risk_methods_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_owner_bypass_defaults_false_and_does_not_bypass_a2a_high_risk()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_peer_cannot_access_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_peer_cannot_cancel_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_peer_cannot_subscribe_to_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_set_push_notification_config_with_safe_callback_still_requires_approval()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_set_push_notification_config_with_unsafe_callback_is_denied_and_severe()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_task_creator_can_access_their_own_task()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_task_ownership_check_is_a_no_op_for_an_unknown_task_id()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - code - gateway/tests/test_a2a_policy.py
+- [[test_unknown_peer_is_denied_by_default()]] - code - gateway/tests/test_a2a_policy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -102,17 +89,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Project Management (README)]]
-- 2 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (2)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (3)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (4)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (5)]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester (3)]]
-- 1 edge to [[_COMMUNITY_Test-Driven Development README]]
-- 1 edge to [[_COMMUNITY_Technical Illustrator (i-ti)]]
+- 21 edges to [[_COMMUNITY_UserSessionManager]]
+- 8 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 7 edges to [[_COMMUNITY_Security Module Inventory]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes
-- [[hermesskillsi-bsREADME]] - degree 30, connects to 11 communities
+- [[A2APolicyAction]] - degree 13, connects to 4 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
+- [[A2APolicyEngine_2]] - degree 31, connects to 2 communities
+- [[is_safe_a2a_callback_url()]] - degree 16, connects to 2 communities
+- [[A2APolicyDecision]] - degree 13, connects to 2 communities

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SharedMemoryManager Group Memory ReadWrite Tests]] - code - gateway/tests/test_shared_memory.py
+- [[ToolChainAnalyzer.score_reversibility (C37)]] - code - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

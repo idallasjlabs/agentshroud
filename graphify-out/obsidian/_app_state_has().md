@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "scanner_integration.py"
+community: "test_mfa_guard.py"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_mfa_guardpy
 ---
 
 # _app_state_has()
@@ -36,4 +36,4 @@ tags:
 - [[_score_tool_use_safety()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

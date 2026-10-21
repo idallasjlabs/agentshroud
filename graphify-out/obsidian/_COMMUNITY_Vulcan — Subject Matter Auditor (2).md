@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Input Requirements_28]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Output Format_43]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Persona_22]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Quality Checklist_25]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Role_108]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[System Prompt_22]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[User Prompt Template_10]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Vulcan — Subject Matter Auditor_4]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[hermesskillsi-vulcanSKILL]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[AgentShroud — Collaborator Knowledge Base]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Collaboration Guidelines]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Contact_2]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Project Goals_1]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[What Does It Do]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[What is AgentShroud_4]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Who Can Use It]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[collaborator-workspacePUBLIC-INFO]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[workspacePUBLIC-INFO]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
 
 ## Top bridge nodes
-- [[Vulcan — Subject Matter Auditor_4]] - degree 9, connects to 1 community
+- [[collaborator-workspacePUBLIC-INFO]] - degree 2, connects to 1 community

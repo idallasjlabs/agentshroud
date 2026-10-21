@@ -8,28 +8,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[4 Architectural Gaps (No Existing Module)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Credential Isolation Planning]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Critical Finding]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Enterprise Security Feature Priorities]] - document - docs/planning/redteam/feature-priorities.md
-- [[Implementation Notes_1]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Loss Categories]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Outbound Information Filter Planning]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Red Team Engagement Plan (Pending)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Separation of Privilege Planning]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Source]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 1 Enforce-by-Default (R-02, R-03)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 2 Outbound Information Filter (R-01)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 3 Human-in-the-Loop (R-08, R-09)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 4 Per-User Session Isolation (R-04, R-05)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 5 Separation of Privilege (R-06, R-07)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 2 Should-Have (Compliance Enablers) — v0.7.x or v0.8.0]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 3 Nice-to-Have — v0.9.0+]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[v0.6.0 → v0.7.0 Delta]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[v0.7.0-remediation-plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[dot-agentsskillsi-tiSKILL]] - document - .agents/skills/i-ti/SKILL.md
+- [[ASCII Art (fallback — no renderer available)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_12]] - document - .agents/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components]] - document - .agents/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export]] - document - .agents/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms]] - document - .agents/skills/i-ti/SKILL.md
+- [[Dependencies_12]] - document - .agents/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples]] - document - .agents/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema]] - document - .agents/skills/i-ti/SKILL.md
+- [[File and Directory Conventions]] - document - .agents/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule]] - document - .agents/skills/i-ti/SKILL.md
+- [[Online renderer]] - document - .agents/skills/i-ti/SKILL.md
+- [[Render locally with mmdc]] - document - .agents/skills/i-ti/SKILL.md
+- [[Rendering and Export]] - document - .agents/skills/i-ti/SKILL.md
+- [[Role_38]] - document - .agents/skills/i-ti/SKILL.md
+- [[Rules_13]] - document - .agents/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems]] - document - .agents/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)]] - document - .agents/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle]] - document - .agents/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting]] - document - .agents/skills/i-ti/SKILL.md
+- [[Validation Checklist_6]] - document - .agents/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +37,9 @@ members: 22
 TABLE source_file, type FROM #community/AgentShroud_v070__Red_Team_Remediation_Plan
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+
+## Top bridge nodes
+- [[Skill Technical Illustrator (TI)]] - degree 12, connects to 1 community

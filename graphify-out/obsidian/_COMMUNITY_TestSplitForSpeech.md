@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-_s()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_empty_after_normalise_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_empty_string_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_long_sentence_wrapped_at_max_chars()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_multi_sentence_returns_ordered_chunks()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_per_chunk_normalisation()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_short_fragment_merged_forward()]] - code - gateway/tests/test_voice_gateway.py
-- [[dot-test_single_sentence_returns_one_chunk()]] - code - gateway/tests/test_voice_gateway.py
-- [[A fragment under 12 chars is merged into the following chunk.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[TestSplitForSpeech]] - code - gateway/tests/test_voice_gateway.py
-- [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[split_for_speech normalises the full text so no markdown or tokens survive.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A stalemismatched If-None-Match must serve the full new binary (200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Authenticated request but no firmware on disk → 404 (not a 500empty 200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Empty allowlist = OTA un-gated any non-empty token is accepted (200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[GET firmwarebin token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If-None-Match equal to the current ETag → 304 with no body.      This is the who]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Wire the firmwarebin route to a fake binary + a fixed OTA token allowlist.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_fw_client()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_304_on_matching_if_none_match()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_404_when_absent()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_auth_and_etag()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_stale_if_none_match_returns_body()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_ungated_when_allowlist_empty()]] - code - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_tts.py]]
+- 6 edges to [[_COMMUNITY_main.rs]]
 
 ## Top bridge nodes
-- [[TestSplitForSpeech]] - degree 10, connects to 1 community
-- [[dot-_s()]] - degree 9, connects to 1 community
+- [[_fw_client()]] - degree 7, connects to 1 community
+- [[test_firmware_bin_304_on_matching_if_none_match()]] - degree 3, connects to 1 community
+- [[test_firmware_bin_404_when_absent()]] - degree 3, connects to 1 community
+- [[test_firmware_bin_auth_and_etag()]] - degree 3, connects to 1 community
+- [[test_firmware_bin_stale_if_none_match_returns_body()]] - degree 3, connects to 1 community

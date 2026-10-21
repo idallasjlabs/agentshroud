@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Red Team Finding 02: No Human Approval for High-Risk Tool Calls
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[MCP Tool Risk Tier Classification (criticalhighmediumlow) with Approval Policy]] - concept - docs/planning/redteam/02-human-in-the-loop.md
-- [[Red Team Finding 02 No Human Approval for High-Risk Tool Calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Red Team Finding 03 All Users Share Agent Context and File System]] - document - docs/planning/redteam/03-session-isolation.md
-- [[SessionManager — Telegram User ID as Partition Key for Workspaces and Memory]] - concept - docs/planning/redteam/03-session-isolation.md
+- [[dot-test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +20,12 @@ members: 4
 TABLE source_file, type FROM #community/Red_Team_Finding_02_No_Human_Approval_for_High-Risk_Tool_Calls
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
+
+## Top bridge nodes
+- [[TestGetSbom]] - degree 5, connects to 1 community
+- [[dot-test_invalid_json()]] - degree 2, connects to 1 community
+- [[dot-test_valid()]] - degree 2, connects to 1 community

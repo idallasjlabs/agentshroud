@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Security Integration — Full Pipeline Tests]] - code - gateway/tests/test_security_integration.py
+- [[ToolACLEnforcer.check_tool_rate_limit]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

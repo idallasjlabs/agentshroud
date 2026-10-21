@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[C. AWS Athena_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[F. IAM Policies_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[General Rules_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Objective_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Output Format_13]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Role_47]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[hermesskillsi-qaSKILL]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[AGENT_ROLES]] - document - docs/governance/AGENT_ROLES.md
+- [[Authorization Matrix_1]] - document - docs/governance/AGENT_ROLES.md
+- [[Decision Tree for New Tasks]] - document - docs/governance/AGENT_ROLES.md
+- [[Diagram 21 Team Structure]] - image - docs/diagrams/images/diagram-21-team-structure.svg
+- [[Diagram 23 Roadmap Gantt (2026)]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Escalation Path]] - document - docs/governance/AGENT_ROLES.md
+- [[GSD Cadence — Get Shit Done Governance]] - document - docs/governance/GSD_CADENCE.md
+- [[GSD Cadence — Get Shit Done Governance (doc)]] - document - docs/governance/GSD_CADENCE.md
+- [[GSD_CADENCE]] - document - docs/governance/GSD_CADENCE.md
+- [[Monthly (1st of month)]] - document - docs/governance/GSD_CADENCE.md
+- [[Multi-Agent Role Matrix]] - document - docs/governance/AGENT_ROLES.md
+- [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - document - docs/governance/AGENT_ROLES.md
+- [[Out of Scope_1]] - document - docs/governance/GSD_CADENCE.md
+- [[References_3]] - document - docs/governance/AGENT_ROLES.md
+- [[Rule 1 — GSD Issue Before the Branch]] - document - docs/governance/GSD_CADENCE.md
+- [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - concept - docs/governance/GSD_CADENCE.md
+- [[Rule 2 — Approval Tag for High-Severity Changes]] - document - docs/governance/GSD_CADENCE.md
+- [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - document - docs/governance/GSD_CADENCE.md
+- [[Security-Sensitive Paths]] - document - docs/governance/AGENT_ROLES.md
+- [[Weekly (every Friday)]] - document - docs/governance/GSD_CADENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +35,3 @@ members: 20
 TABLE source_file, type FROM #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Quality Assurance (QA)_1]] - degree 7, connects to 1 community

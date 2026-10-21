@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Hyperedges Rule (max 3chunk)]] - concept - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[Vulcan (i-vulcan skill, script approver)]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

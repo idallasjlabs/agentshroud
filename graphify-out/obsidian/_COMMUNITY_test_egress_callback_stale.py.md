@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[_real_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[_stale_callback_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[_stale_edit_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_answer_callback_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_answer_callback_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_edit_decision_message_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_edit_decision_message_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_egress_callback_stale.py]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_stale_detectors()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[ensure_local_model_available()]] - code - scripts/switch_model.sh
+- [[normalize_cloud_ref()]] - code - scripts/switch_model.sh
+- [[preflight_local()]] - code - scripts/switch_model.sh
+- [[switch_model.sh]] - code - scripts/switch_model.sh
+- [[switch_model.sh script]] - code - scripts/switch_model.sh
+- [[upsert_env_value()]] - code - scripts/switch_model.sh
+- [[usage()_1]] - code - scripts/switch_model.sh
+- [[verify_both_bots_healthy()]] - code - scripts/switch_model.sh
+- [[wait_for_local_model()]] - code - scripts/switch_model.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,14 +24,3 @@ members: 9
 TABLE source_file, type FROM #community/test_egress_callback_stalepy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_EgressTelegramNotifier]]
-- 4 edges to [[_COMMUNITY__is_stale_callback_error]]
-
-## Top bridge nodes
-- [[test_egress_callback_stale.py]] - degree 11, connects to 2 communities
-- [[test_stale_detectors()]] - degree 6, connects to 1 community
-- [[test_answer_callback_real_error_still_logs_error()]] - degree 3, connects to 1 community
-- [[test_answer_callback_stale_logs_debug_not_error()]] - degree 3, connects to 1 community
-- [[test_edit_decision_message_real_error_still_logs_error()]] - degree 3, connects to 1 community

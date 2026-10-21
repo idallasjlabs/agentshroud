@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "test_soc_egress_endpoints.py"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/test_soc_egress_endpointspy
 ---
 
 # _any_detector_fires()
@@ -24,10 +24,10 @@ tags:
 - [[dot-test_prompt_extraction_detection_rate()]] - `calls` [EXTRACTED]
 - [[Combined detected if ANY defense layer triggers.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[_heuristic_detects()]] - `calls` [EXTRACTED]
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
 - [[_prompt_guard_detects()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

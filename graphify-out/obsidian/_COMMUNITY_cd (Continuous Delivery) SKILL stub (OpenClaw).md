@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
+- [[calendar.js (iCloud CalDAV skill)]] - code - skills/custom/icloud/scripts/calendar.js
 
 ## Live Query (requires Dataview plugin)
 

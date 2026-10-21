@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Any_29]] - code
+- [[wakeword.h]] - code - firmware/voice-terminal/main/wakeword.h
 
 ## Live Query (requires Dataview plugin)
 

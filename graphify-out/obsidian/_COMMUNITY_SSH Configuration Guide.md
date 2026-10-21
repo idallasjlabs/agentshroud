@@ -8,29 +8,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[1Password iCloud Credential Retrieval]] - concept - skills/custom/icloud/SKILL.md
-- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
-- [[Field Reference]] - document - docs/ssh-configuration.md
-- [[Full Annotated Example]] - document - docs/ssh-configuration.md
-- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
-- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
-- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
-- [[MML (MIME Meta Language)]] - concept - skills/openclaw/himalaya/references/message-composition.md
-- [[P4 Low Priority Incidents]] - document - docs/operations/incident-response.md
-- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
-- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
-- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
-- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
-- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
-- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
-- [[gog]] - document - skills/openclaw/gog/SKILL.md
-- [[gog CLI (Google Workspace)]] - concept - skills/openclaw/gog/SKILL.md
-- [[gogSKILL]] - document - skills/openclaw/gog/SKILL.md
-- [[himalaya CLI]] - concept - skills/openclaw/himalaya/SKILL.md
-- [[himalayaSKILL]] - document - skills/openclaw/himalaya/SKILL.md
-- [[icloudSKILL]] - document - skills/custom/icloud/SKILL.md
-- [[message-composition]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[ssh-configuration]] - document - docs/ssh-configuration.md
+- [[Accessibility]] - document - branding/colors/palette.md
+- [[AgentShroud Blue 1583f0]] - concept - branding/colors/palette.md
+- [[AgentShroud Blue (Primary)]] - document - branding/colors/palette.md
+- [[AgentShroud Color Palette]] - document - branding/colors/palette.md
+- [[Applications]] - document - branding/colors/palette.md
+- [[Borders]] - document - branding/colors/palette.md
+- [[Color Combinations]] - document - branding/colors/palette.md
+- [[Dark Surface Hierarchy]] - document - branding/colors/palette.md
+- [[Dark Theme]] - document - branding/colors/palette.md
+- [[Deep Navy]] - document - branding/colors/palette.md
+- [[Ice Blue]] - document - branding/colors/palette.md
+- [[Light Mode]] - document - branding/colors/palette.md
+- [[Light Theme]] - document - branding/colors/palette.md
+- [[Master Feature List (historical index)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Neutral Colors]] - document - branding/colors/palette.md
+- [[Primary Colors]] - document - branding/colors/palette.md
+- [[Secondary Colors]] - document - branding/colors/palette.md
+- [[Semantic Colors]] - document - branding/colors/palette.md
+- [[Steel Blue]] - document - branding/colors/palette.md
+- [[Text]] - document - branding/colors/palette.md
+- [[Usage Guidelines_2]] - document - branding/colors/palette.md
+- [[Variations]] - document - branding/colors/palette.md
+- [[palette]] - document - branding/colors/palette.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,19 +38,3 @@ members: 23
 TABLE source_file, type FROM #community/SSH_Configuration_Guide
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)]]
-- 1 edge to [[_COMMUNITY_iCloud Services (4)]]
-- 1 edge to [[_COMMUNITY_Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]]
-- 1 edge to [[_COMMUNITY_Himalaya Configuration Reference]]
-- 1 edge to [[_COMMUNITY_Common Operations]]
-- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
-- 1 edge to [[_COMMUNITY_Message Composition with MML (MIME Meta Language)]]
-
-## Top bridge nodes
-- [[ssh-configuration]] - degree 7, connects to 3 communities
-- [[himalayaSKILL]] - degree 4, connects to 1 community
-- [[icloudSKILL]] - degree 4, connects to 1 community
-- [[message-composition]] - degree 3, connects to 1 community
-- [[P4 Low Priority Incidents]] - degree 2, connects to 1 community

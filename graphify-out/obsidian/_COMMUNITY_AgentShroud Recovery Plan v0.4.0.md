@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[0.2 Current State ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[2.1 Top Up Anthropic API Credits]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[2.2 Grant iMessage Automation Permission]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[2.3 Verify Both Working]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.1 Test Manual Send from Host]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.2 Test from Container]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[EXECUTIVE SUMMARY_11]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[NEXT STEPS_8]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 3 iMESSAGE INTEGRATION TEST]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[RECOVERY_PLAN]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Bootstrap cron copy must also have denial-token avoidance — except the     Daily]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Every collaborator report prompt must instruct the LLM to avoid 'denied' —     e]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Path_53]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,8 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PHASE 4 CLEANUP & v0.4.0 RELEASE]]
-- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[AgentShroud Recovery Plan v0.4.0]] - degree 8, connects to 2 communities
+- [[test_cron_jobs_prompts.py]] - degree 9, connects to 1 community

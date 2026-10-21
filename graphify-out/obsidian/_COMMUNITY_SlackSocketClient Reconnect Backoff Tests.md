@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SlackSocketClient Reconnect Backoff Tests]] - code - gateway/tests/test_slack_socket_client.py
+- [[test_list_cve_agents_returns_wrapped_agents_and_security_tools]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

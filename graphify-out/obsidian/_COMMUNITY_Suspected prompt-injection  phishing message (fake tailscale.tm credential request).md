@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Suspected prompt-injection  phishing message (fake tailscale.tm credential request)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[SOC Auth Session Token Tests]] - code - gateway/tests/test_soc_auth.py
 
 ## Live Query (requires Dataview plugin)
 

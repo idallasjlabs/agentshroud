@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[System Audit & Documentation_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
-- [[hermesskillsi-sadSKILL]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[Apple Reminders CLI (remindctl)]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Clawdbot cron tool as reminder alternative]] - rationale - skills/openclaw/apple-reminders/SKILL.md
+- [[Common Commands_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[CompleteDelete]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Create Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Date Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Example Clarifying User Intent]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Manage Lists]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Output Formats_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Setup_4]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[View Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[When NOT to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[When to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[apple-remindersSKILL]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[remindctl CLI]] - concept - skills/openclaw/apple-reminders/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +30,3 @@ members: 15
 TABLE source_file, type FROM #community/System_Audit__Documentation_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[System Audit & Documentation_1]] - degree 15, connects to 1 community

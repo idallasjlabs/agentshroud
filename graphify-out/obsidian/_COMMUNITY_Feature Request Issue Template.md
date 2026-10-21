@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
+- [[Security Integration — Full Pipeline Tests]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 

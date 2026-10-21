@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # _TrackingInjector
 
 ## Connections
-- [[dot-__init__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `method` [EXTRACTED]
 - [[dot-inject_headers()]] - `method` [EXTRACTED]
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - `rationale_for` [EXTRACTED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[skills__init__.py]] - code - gateway/skills/__init__.py
+- [[Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)]] - concept - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -29,13 +29,13 @@ members: 32
 - [[Option 2 Manual Configuration_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Organization_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Quick Reference_5]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_57]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_24]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_58]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_22]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_7]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_6]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_11]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_12]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Use SSO Profile with MCP_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Using AssumeRole for Cross-Account Access_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[What is an AWS Profile_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
@@ -49,9 +49,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_Quick Reference]]
-- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_01-architecture]]
+- 1 edge to [[_COMMUNITY_dot-ompmcp.json]]
 
 ## Top bridge nodes
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - degree 15, connects to 3 communities

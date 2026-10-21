@@ -1,20 +1,28 @@
 ---
 type: community
-members: 7
+members: 15
 ---
 
 # GitHub Copilot CLI Setup Guide (2)
 
-**Members:** 7 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[1. Add Test Coverage]] - document - .github/COPILOT_CLI_SETUP.md
-- [[1. test-augmenter]] - document - .github/COPILOT_CLI_SETUP.md
-- [[2. Run Validation Suite]] - document - .github/COPILOT_CLI_SETUP.md
-- [[2. validation-runner]] - document - .github/COPILOT_CLI_SETUP.md
-- [[3. safe-refactor]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Common Workflows]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Custom Agents]] - document - .github/COPILOT_CLI_SETUP.md
+- [[AGENTS.md Codex CLI guidance]] - document - AGENTS.md
+- [[AI Engineering Workflow lifecycle]] - document - .llm_settings/WORKFLOW.md
+- [[Codex role test augmenter  validation runner  safe refactor]] - rationale - AGENTS.md
+- [[Copilot Instructions (mirrored CLAUDE.md + llm-init context)]] - document - .github/copilot-instructions.md
+- [[Copilot Trusted Folders  URL  Path Permissions]] - rationale - .github/COPILOT_CLI_SETUP.md
+- [[Definition of Done]] - concept - .github/copilot-instructions.md
+- [[GitHub Copilot CLI Setup Guide]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Hard Guardrails (Non-Negotiables)]] - rationale - .github/copilot-instructions.md
+- [[I_GATE=reportblock gate mode]] - concept - .llm_settings/WORKFLOW.md
+- [[LLM Operating Context (llm-init)]] - concept - .github/copilot-instructions.md
+- [[Multi-Agent Hierarchy (Claude Code primary)]] - rationale - .github/copilot-instructions.md
+- [[Testing Agent Workflow (gate scripts)]] - concept - .llm_settings/WORKFLOW.md
+- [[safe-refactor agent]] - concept - .github/COPILOT_CLI_SETUP.md
+- [[test-augmenter agent]] - concept - .github/COPILOT_CLI_SETUP.md
+- [[validation-runner agent]] - concept - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,8 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 1 edge to [[_COMMUNITY_scriptsrender-agents.sh (agents-src - .llm_settings)]]
 
 ## Top bridge nodes
-- [[Common Workflows]] - degree 4, connects to 1 community
-- [[Custom Agents]] - degree 4, connects to 1 community
+- [[GitHub Copilot CLI Setup Guide]] - degree 5, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Test-Driven Development default (Red-Green-Refactor)]] - rationale - CLAUDE.md
+- [[Create PR with Pre-Flight Audit (CRPR) Skill]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,28 +8,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2. Prompt Injection Hardening]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2a. Fix ContextGuard Enforcement Bug (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2b. Expand PromptGuard Patterns (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2c. Input Normalization Layer (~6h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2d. Cross-Turn Correlation (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2e. Tool Result Sanitization (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[4. ML-Based Injection Classifier (Stretch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[5. Output Canary System]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[6. Enhanced Audit & Compliance]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[A. Steve Hay — ALL Tiers (14 features, 23 requirements)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[K. Merge Pending PRs  Code Cleanup]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[M. Misc Quick Wins]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[CLI_1]] - document - skills/openclaw/voice-call/SKILL.md
+- [[Config_1]] - document - skills/openclaw/summarize/SKILL.md
+- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
+- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Quick start_7]] - document - skills/openclaw/summarize/SKILL.md
+- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
+- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
+- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
+- [[Useful flags]] - document - skills/openclaw/summarize/SKILL.md
+- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
+- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
+- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
+- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
+- [[songseeSKILL]] - document - skills/openclaw/songsee/SKILL.md
+- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[spotify-playerSKILL]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[summarizeSKILL]] - document - skills/openclaw/summarize/SKILL.md
+- [[things-macSKILL]] - document - skills/openclaw/things-mac/SKILL.md
+- [[voice-callSKILL]] - document - skills/openclaw/voice-call/SKILL.md
+- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
+- [[wacliSKILL]] - document - skills/openclaw/wacli/SKILL.md
+- [[xurlSKILL]] - document - skills/openclaw/xurl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +39,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud — Master Feature List (Everything Ever Mentioned)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 1 edge to [[_COMMUNITY_test_voice_gateway.py (2)]]
+- 1 edge to [[_COMMUNITY_ClamAV (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Hardening Plan]]
+- 1 edge to [[_COMMUNITY_Function Details (4)]]
+- 1 edge to [[_COMMUNITY_ANTHROPIC_BASE_URL]]
+- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice (2) (2)]]
+- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud]]
 
 ## Top bridge nodes
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 1 community
-- [[Features_1]] - degree 7, connects to 1 community
-- [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community
+- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
+- [[xurlSKILL]] - degree 3, connects to 1 community

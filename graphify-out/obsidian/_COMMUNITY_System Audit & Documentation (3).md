@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[System Audit & Documentation_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[openclawskillsi-sadSKILL]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[AgentShroud Blue Team Security Auditor]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Critical Rules_5]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Heat Map Legend]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Infrastructure_6]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Loss Categories_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Methodology]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Output Format_21]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[hermesskillsi-sec-defenseSKILL]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[System Audit & Documentation_2]] - degree 15, connects to 1 community
+- [[AgentShroud Blue Team Security Auditor]] - degree 7, connects to 1 community

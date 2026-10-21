@@ -32,8 +32,8 @@ members: 77
 - [[dot-test_successful_upgrade()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[dot-test_valid_version()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[dot-test_with_env_var()]] - code - gateway/tests/test_agentshroud_manager.py
-- [[Any_67]] - code - gateway/ingest_api/version_routes.py
-- [[Any_68]] - code - gateway/tools/agentshroud_manager.py
+- [[Any_65]] - code - gateway/ingest_api/version_routes.py
+- [[Any_66]] - code - gateway/tools/agentshroud_manager.py
 - [[Check the currently installed OpenClaw version.]] - rationale - gateway/tools/agentshroud_manager.py
 - [[Connection_1]] - code - gateway/tools/agentshroud_manager.py
 - [[Create a temporary database for testing.]] - rationale - gateway/tests/test_agentshroud_manager.py
@@ -94,10 +94,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_api.py (2)]]
-- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
-- 1 edge to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
 
 ## Top bridge nodes
 - [[upgrade()]] - degree 19, connects to 1 community

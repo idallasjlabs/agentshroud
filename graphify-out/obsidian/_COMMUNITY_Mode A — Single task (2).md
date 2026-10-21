@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Guardrails_6]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Invocation_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Jira ticket — every development batch gets one_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Mode A — Single task_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Mode B — Comprehensive review sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Reviewers and fixer available to you_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Role_34]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 10 — Notify the owner_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 12 — Clean up_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 2 — Create a branch + worktree_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 2 — Work through directories one at a time_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 2b — Create the Jira ticket_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 3 — Write and edit code_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 4 — Test and lint_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 5 — Multi-LLM review_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 6 — Build and validate containers_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 7 — Update documentation and website_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 8 — Update the knowledge graph_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 9 — Push and open the PR_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Tools you have for this workflow_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[hermesskillsi-odevSKILL]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[401 Unauthorized]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Connection timeout]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Add Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Calendar Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Configuration_4]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Contact Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Note]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Delete Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Events]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Messages]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Mail Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Notes Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_8]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Setup]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Troubleshooting_18]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Update Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Update Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[hermesskillsi-icloudSKILL]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,3 +42,9 @@ members: 27
 TABLE source_file, type FROM #community/Mode_A__Single_task_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+
+## Top bridge nodes
+- [[iCloud Services]] - degree 10, connects to 1 community

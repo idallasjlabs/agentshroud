@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[MemoryIntegrityMonitor Tamper Detection]] - code - gateway/security/memory_integrity.py
-- [[MemoryLifecycleManager PII Scan and Retention]] - code - gateway/security/memory_lifecycle.py
-- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Claude Code Statusline Documentation]] - document - .claude/statusline.sh
+- [[statusline.sh]] - code - .claude/statusline.sh
+- [[statusline.sh script]] - code - .claude/statusline.sh
 
 ## Live Query (requires Dataview plugin)
 

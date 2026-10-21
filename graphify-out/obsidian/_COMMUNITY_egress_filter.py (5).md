@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[check()_12]] - code - scripts/preflight-check.sh
-- [[fail()_6]] - code - scripts/tailscale-check.sh
-- [[infra-check.sh]] - code - scripts/infra-check.sh
-- [[infra-check.sh script]] - code - scripts/infra-check.sh
-- [[ok()_2]] - code - scripts/tailscale-check.sh
-- [[preflight-check.sh]] - code - scripts/preflight-check.sh
-- [[preflight-check.sh script]] - code - scripts/preflight-check.sh
-- [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
-- [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
-- [[warn()_6]] - code - scripts/tailscale-check.sh
+- [[Abstract Method Reference]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Configuration  Environment Variables_31]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[ContainerEngine._run(cmd, check, capture, timeout)]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Function Details_51]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Key Classes  Functions_54]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Purpose_176]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Related_58]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[Responsibilities_57]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[engine.py_2]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
+- [[engine.py_1]] - document - docs/vault/02 - Modules/Runtime/engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/egress_filterpy_5
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-
-## Top bridge nodes
-- [[preflight-check.sh]] - degree 4, connects to 1 community

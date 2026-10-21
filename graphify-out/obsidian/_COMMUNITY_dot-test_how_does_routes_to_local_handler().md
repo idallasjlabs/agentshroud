@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_how_does_routes_to_local_handler()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Probes containing 'how does' should be caught by…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_PII_PATTERNS (URL PII regex set)]] - code - gateway/proxy/url_analyzer.py
+- [[_RESPONSE_PII_PATTERNS (content PII regex set)]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/test_how_does_routes_to_local_handler
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-
-## Top bridge nodes
-- [[dot-test_how_does_routes_to_local_handler()]] - degree 2, connects to 1 community

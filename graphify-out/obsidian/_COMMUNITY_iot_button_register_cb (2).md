@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[button_cb_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[button_event_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button_delete()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button_register_cb()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[test_wakeword_statestubsiot_button.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[dot-__init__()_30]] - code - gateway/approval_queue/queue.py
+- [[dot-_load_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueConfig]] - code - gateway/approval_queue/queue.py
+- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
+- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
+- [[MFAGuard]] - code - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,10 @@ members: 6
 TABLE source_file, type FROM #community/iot_button_register_cb_2
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
+
+## Top bridge nodes
+- [[dot-__init__()_30]] - degree 5, connects to 1 community
+- [[dot-_load_pending_store()]] - degree 3, connects to 1 community

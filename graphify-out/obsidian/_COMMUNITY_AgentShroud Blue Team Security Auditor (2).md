@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Audit Procedure_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Critical Rules_9]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Heat Map Legend_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Infrastructure_6]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Loss Categories_2]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Methodology_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Output Format_24]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 1 Code-Level Module Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 3 Integration Gap Analysis_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 4 Configuration Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[Unsafe Control Actions (UCAs)_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
-- [[hermesskillsi-sec-defenseSKILL]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Get Shit Done (GSD) Cadence]] - document - docs/architecture/agentic-os.md
+- [[8. Governance Model]] - document - docs/architecture/agentic-os.md
+- [[AgentShroud CLAUDE.md operating rules]] - document - CLAUDE.md
+- [[Branch Protection (belt-and-suspenders)]] - document - docs/architecture/agentic-os.md
+- [[Cron Daily CVE Triage & Remediation Scan]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[No Security Theater (Rule A-E)]] - rationale - CLAUDE.md
+- [[Prove the Outcome, Never the Steps]] - rationale - CLAUDE.md
+- [[Recurring Governance Rituals]] - document - docs/architecture/agentic-os.md
+- [[Weekly Upgrades EVERYTHING Means Everything]] - rationale - CLAUDE.md
+- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[gatewaysecurityagent_cve_registry.py GHSA registry]] - concept - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[main()_30]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_browserscriptsbrowse.py]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
 
 ## Top bridge nodes
-- [[AgentShroud Blue Team Security Auditor_1]] - degree 7, connects to 1 community
+- [[8. Governance Model]] - degree 5, connects to 1 community
+- [[Prove the Outcome, Never the Steps]] - degree 2, connects to 1 community

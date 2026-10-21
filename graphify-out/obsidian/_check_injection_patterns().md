@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "TestPatternDetection"
+community: "AgentShroud v0.9.0 (2)"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/AgentShroud_v090_2
 ---
 
 # _check_injection_patterns()
@@ -20,4 +20,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090_2

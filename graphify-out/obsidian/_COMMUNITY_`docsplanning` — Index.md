@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Active]] - document - docs/planning/README.md
-- [[Historic  archive]] - document - docs/planning/README.md
-- [[How to add a plan]] - document - docs/planning/README.md
-- [[Layout]] - document - docs/planning/README.md
-- [[What does NOT live here]] - document - docs/planning/README.md
-- [[`docsplanning` — Index]] - document - docs/planning/README.md
-- [[planningREADME]] - document - docs/planning/README.md
+- [[i-ab merge regression audit skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[i-pr PR description skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[crSKILL.md code review skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
+- [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[tddSKILL.md test-driven development skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

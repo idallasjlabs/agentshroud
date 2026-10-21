@@ -1,34 +1,35 @@
 ---
 type: community
-members: 21
+members: 22
 ---
 
 # generate_branding_assets.py
 
-**Members:** 21 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
-- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
-- [[Image]] - code - scripts/generate_branding_assets.py
-- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
-- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_42]] - code - scripts/generate_branding_assets.py
-- [[ensure()]] - code - scripts/generate_branding_assets.py
-- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
-- [[generate_email()]] - code - scripts/generate_branding_assets.py
-- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
-- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
-- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
-- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
-- [[generate_social()]] - code - scripts/generate_branding_assets.py
-- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
-- [[generate_variants()]] - code - scripts/generate_branding_assets.py
-- [[get_font()]] - code - scripts/generate_branding_assets.py
-- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
-- [[load_logo()]] - code - scripts/generate_branding_assets.py
-- [[main()_21]] - code - scripts/generate_branding_assets.py
-- [[save()_1]] - code - scripts/generate_branding_assets.py
+- [[dot-__post_init__()_7]] - code - gateway/security/memory_lifecycle.py
+- [[dot-_cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-_cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-archive_file()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
+- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Any_50]] - code - gateway/security/memory_lifecycle.py
+- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
+- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +37,14 @@ members: 21
 TABLE source_file, type FROM #community/generate_branding_assetspy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 14 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 1 edge to [[_COMMUNITY_TestParseHosts]]
+
+## Top bridge nodes
+- [[dot-archive_file()]] - degree 6, connects to 2 communities
+- [[RetentionAction]] - degree 8, connects to 1 community
+- [[dot-run_lifecycle_maintenance()]] - degree 6, connects to 1 community
+- [[dot-enforce_memory_md_size_limit()]] - degree 5, connects to 1 community
+- [[dot-get_lifecycle_status()]] - degree 5, connects to 1 community

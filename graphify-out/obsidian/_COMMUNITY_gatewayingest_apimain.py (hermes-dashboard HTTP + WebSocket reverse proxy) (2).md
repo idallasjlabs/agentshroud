@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[get_1]] - code
+- [[OTA API Header]] - code - firmware/voice-terminal/main/ota.h
 
 ## Live Query (requires Dataview plugin)
 

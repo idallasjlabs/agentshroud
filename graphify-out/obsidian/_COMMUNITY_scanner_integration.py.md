@@ -1,77 +1,57 @@
 ---
 type: community
-members: 64
+members: 44
 ---
 
 # scanner_integration.py
 
-**Members:** 64 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
-- [[Path_61]] - code - gateway/security/scanner_integration.py
-- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if running inside a Docker container (.dockerenv present).]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if the named Docker container is currently in 'running' state.]] - rationale - gateway/security/scanner_integration.py
-- [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
-- [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 15 Data Confidentiality & Encryption (0-5). IEC 62443 FR4.      1=]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 16 Resource Availability & Limits (0-5). IEC 62443 FR7.      1=mem]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 17 Image Signing & Provenance (0-5). NIST 800-190 §3.1.      0=no]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 18 Registry Security (0-5). NIST 800-190 §3.2.      0=public regis]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 19 Host OS Hardening (0-5). NIST 800-190 §3.5.      0=no info, 1=k]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 20 Docker Daemon Configuration (0-5). CIS Sections 2 & 3.      0=d]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 21 Container Runtime Isolation (0-5). CIS Section 5.      0=privil]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 22 Prompt Injection Defense (0-5). OWASP ASI-07, MITRE AML.T0051.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 23 Agent Goal & Behavior Integrity (0-5). OWASP ASI-01, NIST AI RM]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 24 Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 25 Least Agency Enforcement (0-5). OWASP ASI-05, NIST AI Agent Sta]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 26 Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standar]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 28 Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA M]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
-- [[_app_state_has()]] - code - gateway/security/scanner_integration.py
-- [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
-- [[_is_container_running()]] - code - gateway/security/scanner_integration.py
-- [[_is_containerized()]] - code - gateway/security/scanner_integration.py
-- [[_is_falco_running()]] - code - gateway/security/scanner_integration.py
-- [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
-- [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
-- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
-- [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
-- [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
-- [[_score_ai_observability()]] - code - gateway/security/scanner_integration.py
-- [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
-- [[_score_data_confidentiality_encryption()]] - code - gateway/security/scanner_integration.py
-- [[_score_data_exfiltration_prevention()]] - code - gateway/security/scanner_integration.py
-- [[_score_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
-- [[_score_host_os_hardening()]] - code - gateway/security/scanner_integration.py
-- [[_score_human_in_the_loop()]] - code - gateway/security/scanner_integration.py
-- [[_score_identity_authentication()]] - code - gateway/security/scanner_integration.py
-- [[_score_image_signing_provenance()]] - code - gateway/security/scanner_integration.py
-- [[_score_inter_agent_trust()]] - code - gateway/security/scanner_integration.py
-- [[_score_least_agency()]] - code - gateway/security/scanner_integration.py
-- [[_score_memory_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_network_segmentation()]] - code - gateway/security/scanner_integration.py
-- [[_score_prompt_injection_defense()]] - code - gateway/security/scanner_integration.py
-- [[_score_registry_security()]] - code - gateway/security/scanner_integration.py
-- [[_score_resource_availability()]] - code - gateway/security/scanner_integration.py
-- [[_score_rogue_agent_containment()]] - code - gateway/security/scanner_integration.py
-- [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
-- [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
-- [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
-- [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
+- [[dot-__init__()_54]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-__init__()_55]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-__init__()_56]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-flagged()_1]] - code - gateway/proxy/web_proxy.py
+- [[dot-setUp()_1]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
+- [[Enum_1]] - code
+- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
+- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
+- [[Set up test fixtures._2]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
+- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
+- [[str_1]] - code
+- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
+- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -81,27 +61,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_AgentTarget (6)]]
-- 12 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 10 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 5 edges to [[_COMMUNITY_get_trivy_summary]]
-- 5 edges to [[_COMMUNITY__load_latest_json]]
-- 4 edges to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
-- 4 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 2 edges to [[_COMMUNITY_AgentTarget (8)]]
-- 2 edges to [[_COMMUNITY_test_scanner_integration.py (2)]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
-- 1 edge to [[_COMMUNITY_Path (3)]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py (2)]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 18 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 12 edges to [[_COMMUNITY__pcm_bytes]]
+- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
+- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 17 communities
-- [[Path_61]] - degree 34, connects to 7 communities
-- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
-- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities
-- [[_score_secrets_management()]] - degree 7, connects to 2 communities
+- [[web_proxy.py]] - degree 9, connects to 5 communities
+- [[MockEgressChannel]] - degree 6, connects to 3 communities
+- [[MockThreatLevel]] - degree 6, connects to 3 communities
+- [[ProxyAction]] - degree 28, connects to 2 communities
+- [[MockDNSVerdict]] - degree 15, connects to 2 communities

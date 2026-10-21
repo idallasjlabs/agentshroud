@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[check()_1]] - code - tests/startup_smoke/test_bot_boot_live.sh
-- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
-- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[Test Kill Switch Monitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[Test Kill Switch Script Modes]] - code - gateway/tests/test_killswitch_modes.py
+- [[Test Observatory Mode API and Kill Switch Verification]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 

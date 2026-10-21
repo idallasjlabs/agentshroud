@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[openclawskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[dot-agentsskillsgraphifyreferencestranscribe]] - document - .agents/skills/graphify/references/transcribe.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)]] - document - .agents/skills/graphify/references/transcribe.md
+- [[graphify reference transcribe video and audio]] - document - .agents/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

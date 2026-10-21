@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - document - docs/security/threat-model.md
-- [[Assets Under Protection]] - document - docs/security/threat-model.md
-- [[Executive Summary_16]] - document - docs/security/threat-model.md
-- [[Mitigation Coverage Matrix]] - document - docs/security/threat-model.md
-- [[System Components in Scope]] - document - docs/security/threat-model.md
-- [[Threat Feeds]] - document - docs/security/threat-model.md
-- [[Threat Intelligence Integration]] - document - docs/security/threat-model.md
-- [[Threat Modeling Scope]] - document - docs/security/threat-model.md
-- [[Threat Scoring Matrix]] - document - docs/security/threat-model.md
-- [[threat-model]] - document - docs/security/threat-model.md
+- [[dot-test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[dot-test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[Smoke test against the actual committed registry — every real         ghsa_id cu]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
+- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[list_registry_ghsa_ids.py]] - code - scripts/list_registry_ghsa_ids.py
+- [[main()_36]] - code - scripts/list_registry_ghsa_ids.py
+- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/AgentShroud_Threat_Model_STRIDE_Analysis
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
-- 1 edge to [[_COMMUNITY_A2A (Agent-to-Agent) Protocol Threat Analysis]]
-
-## Top bridge nodes
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities

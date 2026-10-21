@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-110 restart recovery must preserve original timeout_action, not hardcoded deny]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[i-security-reviewer.md (security-reviewer agent)]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 
 ## Live Query (requires Dataview plugin)
 

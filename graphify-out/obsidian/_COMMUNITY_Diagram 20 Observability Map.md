@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Gemini Semantic Extraction Backend]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

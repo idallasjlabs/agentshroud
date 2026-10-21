@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
+- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

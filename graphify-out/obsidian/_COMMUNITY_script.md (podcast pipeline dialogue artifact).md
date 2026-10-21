@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[CLAUDE.md as the repo constitution]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
 
 ## Live Query (requires Dataview plugin)
 

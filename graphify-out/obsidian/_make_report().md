@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py (2)"
-location: "L21"
+community: "format_cve_report() (2)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy_2
+  - community/format_cve_report_2
 ---
 
 # _make_report()
@@ -26,6 +26,12 @@ tags:
 - [[dot-test_total_vulnerability_count_shown()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_count_severity_omitted()]] - `calls` [EXTRACTED]
 - [[Build a minimal parsed Trivy report.]] - `rationale_for` [EXTRACTED]
+- [[_fake_trivy_scan()]] - `calls` [EXTRACTED]
+- [[_fake_trivy_scan()_1]] - `calls` [EXTRACTED]
+- [[_fake_trivy_scan()_2]] - `calls` [EXTRACTED]
+- [[_fake_trivy_scan()_3]] - `calls` [EXTRACTED]
+- [[_fake_trivy_scan()_4]] - `calls` [EXTRACTED]
+- [[_fake_trivy_scan()_5]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy_2
+#graphify/code #graphify/EXTRACTED #community/format_cve_report_2

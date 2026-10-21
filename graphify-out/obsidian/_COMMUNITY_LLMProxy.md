@@ -1,111 +1,75 @@
 ---
 type: community
-members: 98
+members: 62
 ---
 
 # LLMProxy
 
-**Members:** 98 nodes
+**Members:** 62 nodes
 
 ## Members
-- [[dot-__init__()_3]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_flatten_fieldflare_schema()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_get_local_secondary_model()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_is_local_oom()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_local_backend_headers()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_local_failover_base()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_local_secondary_failover_request()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_merge_object_schemas()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_normalize_local_model()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_strip_fieldflare_unsupported_fields()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-get_stats()]] - code - gateway/proxy/llm_proxy.py
-- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls through to…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Attempt a local→local-secondary failover when the primary local model hits OOM.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[FIELDFLARE_API_BASE (TurboFieldfare 8238)]] - code - gateway/proxy/llm_proxy.py
-- [[Fieldflare and other no-auth local backends are left untouched.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Fieldflare representable tool-schema subset (two-branch nullable unions only)]] - rationale - gateway/proxy/llm_proxy.py
-- [[For Ollama backend the colon is kept (Ollama expects it).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[If the model already uses dashes (LM Studio native ID), normalizing again is a…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Inject per-backend auth for local backends that require it. Unlike LM Studio …]] - rationale - gateway/proxy/llm_proxy.py
-- [[LLMProxy]] - code - gateway/proxy/llm_proxy.py
-- [[Non-coder Qwen3 models (e.g. the 14B base) keep the generic LM Studio route —…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Only the known stalemismatched alias is rewritten; anything else forwards as-…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Qwen3-Coder-30B-A3B (registered opt-in coding model, served via oMLX) must win…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Remove OpenAI request fields TurboFieldfare rejects with HTTP 400, in place.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Return True if the response indicates a local-model OOM or backend_unavailable.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Return the bare secondary local model name, or None if not configured. Reads…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Returns a copy — never mutates the caller's headers dict in place.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Rewrite a tool-parameter JSON schema into the subset Fieldflare's Gemma…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Single-branch unions unwrap, null-only unions are left alone, and a union…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM Studio…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Union several object schemas into one (see _flatten_fieldflare_schema).…]] - rationale - gateway/proxy/llm_proxy.py
-- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[VRAMHeadroomError must be a distinct exception, not a subclass of…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Workstream C — Full local-model parity for both bots. Tests that every cloud-…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom detects 'out of memory' in error message string.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom handles raw non-JSON bodies from some backends.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for cloud 429 quota errors (different failover…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for successful responses.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_local_failover_base resolves correct backend for secondary model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_op()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[_skill_manage_like_request()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[gemma-4-12b-it-4bit is NOT renamed — oMLX accepts it case-insensitively…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[oMLX requires a bearer token, unlike LM Studiomlx_lmFieldflare.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic 'deepseek-r1' -…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[oMLX's gemma-4-12B-it-4bit must win over the generic 'gemma' LM Studio route,…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[oMLX's own v1models only recognizes the exact-cased, exact-suffixed ID…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[ollamaqwen314b → qwen3-14b for LM Studio backend.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_collapses_type_list_to_one_concrete_type_plus_null()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_degenerate_unions()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_inlines_allof_and_recurses_into_nested_nodes()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_is_noop_without_the_fields()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_keeps_first_branch_of_scalar_union()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_keeps_null_branch_when_merging()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_keeps_two_branch_nullable_union_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_leaves_representable_tool_schemas_alone()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_merges_multi_branch_object_union_into_one_object()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_shim_tolerates_malformed_tool_entries()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_detects_backend_unavailable()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_detects_oom_in_error_message()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_handles_non_json_body()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_returns_false_for_200()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_returns_false_for_quota_429()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_llm_proxy_local_parity.py]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_backend_headers_does_not_mutate_input()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_backend_headers_no_auth_for_fieldflare()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_other_gemma_models_still_route_to_lmstudio()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_other_qwen3_models_still_route_to_lmstudio()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_secondary_failover_base_routes_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_already_dashed_is_idempotent()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_mlxlm_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_ollama_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_vram_headroom_error_is_not_resource_warning()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[dot-__init__()_201]] - code - gateway/proxy/url_analyzer.py
+- [[dot-_check_base64()]] - code - gateway/proxy/url_analyzer.py
+- [[dot-_is_private_ip()_2]] - code - gateway/proxy/url_analyzer.py
+- [[dot-_is_ssrf()]] - code - gateway/proxy/url_analyzer.py
+- [[dot-_resolve_host()]] - code - gateway/proxy/url_analyzer.py
+- [[dot-analyze()_1]] - code - gateway/proxy/url_analyzer.py
+- [[dot-analyze_and_pin()]] - code - gateway/proxy/url_analyzer.py
+- [[dot-flagged()_2]] - code - gateway/proxy/url_analyzer.py
+- [[dot-test_actual_base64()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_all_lowercase_not_base64()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_api_endpoint_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_base64_in_path_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_credit_card_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_docs_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_email_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_empty_url()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_github_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_https_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_long_query_string_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_many_params_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_news_site_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_no_scheme()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_non_base64_chars()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_normal_query_not_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_phone_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_public_ip_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_short_base64_not_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_short_string_not_base64()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_stackoverflow_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_weird_scheme()]] - code - gateway/tests/test_url_analyzer.py
+- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
+- [[Data exfiltration patterns in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Edge cases and malformed URLs.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Ensure normal browsing URLs pass through.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Heuristic does this string look like base64-encoded data]] - rationale - gateway/proxy/url_analyzer.py
+- [[PII detection in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
+- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Short base64 strings are normal (e.g., API tokens in URLs).]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Test the _looks_like_base64 helper.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[TestBase64Heuristic]] - code - gateway/tests/test_url_analyzer.py
+- [[TestDataExfiltration_1]] - code - gateway/tests/test_url_analyzer.py
+- [[TestLegitimateURLsAllowed]] - code - gateway/tests/test_url_analyzer.py
+- [[TestMalformedURLs]] - code - gateway/tests/test_url_analyzer.py
+- [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
+- [[URLAnalysisResult_1]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer_1]] - code - gateway/proxy/url_analyzer.py
+- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
+- [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
+- [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
+- [[url_analyzer.py_2]] - code - gateway/proxy/url_analyzer.py
+- [[web_config.py_2]] - code - gateway/proxy/web_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -115,19 +79,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_dot-proxy_messages()]]
-- 33 edges to [[_COMMUNITY__make_proxy()]]
-- 27 edges to [[_COMMUNITY_test_llm_proxy.py]]
-- 6 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 3 edges to [[_COMMUNITY_test_fieldflare_route_strips_unsupported_fields_streaming]]
-- 3 edges to [[_COMMUNITY_LLMProxy (2)]]
-- 3 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
-- 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py (2)]]
-- 2 edges to [[_COMMUNITY_is_rate_limited_post_retry]]
+- 8 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 3 edges to [[_COMMUNITY_test_main_endpoints.py]]
+- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 2 edges to [[_COMMUNITY_LLMProxy (2)_1]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[LLMProxy]] - degree 109, connects to 8 communities
-- [[test_llm_proxy_local_parity.py]] - degree 79, connects to 3 communities
-- [[dot-_local_secondary_failover_request()]] - degree 9, connects to 2 communities
-- [[dot-_strip_fieldflare_unsupported_fields()]] - degree 20, connects to 1 community
-- [[dot-_local_failover_base()]] - degree 13, connects to 1 community
+- [[URLAnalyzer_1]] - degree 19, connects to 3 communities
+- [[web_config.py_2]] - degree 5, connects to 3 communities
+- [[TestDataExfiltration_1]] - degree 11, connects to 2 communities
+- [[test_url_analyzer.py]] - degree 10, connects to 2 communities
+- [[url_analyzer.py_2]] - degree 8, connects to 2 communities

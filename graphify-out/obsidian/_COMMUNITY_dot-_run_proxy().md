@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[dot-_run_proxy()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_decoded_body_drops_upstream_encoding_and_recomputes_length()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_multiple_set_cookie_headers_are_not_folded()]] - code - gateway/tests/test_main_endpoints.py
-- [[TestHermesDashboardProxyHeaders]] - code - gateway/tests/test_main_endpoints.py
-- [[__aenter__()]] - code - gateway/tests/test_main_endpoints.py
-- [[__aexit__()]] - code - gateway/tests/test_main_endpoints.py
-- [[__init__()_2]] - code - gateway/tests/test_main_endpoints.py
-- [[_body()]] - code - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_proxy must relay upstream headers header-by-header. Found on…]] - rationale - gateway/tests/test_main_endpoints.py
-- [[multi_items()]] - code - gateway/tests/test_main_endpoints.py
-- [[request()]] - code - gateway/tests/test_main_endpoints.py
+- [[Daedalus — Concept Illustrator_3]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Input Requirements_17]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Output Format_32]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Persona_13]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_15]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Role_89]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[System Prompt_13]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)_1]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)_1]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[openclawskillsi-daedalusSKILL]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
-- 1 edge to [[_COMMUNITY_Request]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[TestHermesDashboardProxyHeaders]] - degree 6, connects to 2 communities
+- [[Daedalus — Concept Illustrator_3]] - degree 8, connects to 1 community

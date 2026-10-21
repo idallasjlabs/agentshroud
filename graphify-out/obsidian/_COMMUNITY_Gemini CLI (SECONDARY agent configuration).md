@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Gemini CLI (SECONDARY agent configuration)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[Lifespan 64-Worker Executor and HTTP Peek Filter Tests]] - code - gateway/tests/test_telegram_executor.py
 
 ## Live Query (requires Dataview plugin)
 

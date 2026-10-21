@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[POST forwardstream (streaming voice pipeline)]] - code - gateway/ingest_api/routes/forward.py
+- [[SSH Exec Endpoint Tests (allowlist, deny, injection)]] - code - gateway/tests/test_ssh_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 

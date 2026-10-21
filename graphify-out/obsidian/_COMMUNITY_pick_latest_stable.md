@@ -1,39 +1,53 @@
 ---
 type: community
-members: 26
+members: 40
 ---
 
 # pick_latest_stable
 
-**Members:** 26 nodes
+**Members:** 40 nodes
 
 ## Members
-- [[dot-test_beta_rc_alpha_are_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_downstream_counter_sorts_above_its_base_release()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_downstream_rebuild_counter_is_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_empty_is_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_no_stable_versions_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_numeric_ordering_not_lexicographic()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_picks_the_highest_stable_version()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_plain_releases_are_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_real_openclaw_tail_picks_2026_9_4()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[dot-test_unparseable_entries_are_skipped_not_crashed_on()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[2026.10.1' must beat '2026.9.4' — string compare gets this wrong.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[2026.7.1-2 is a patch published after 2026.7.1, so it must win.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[2026.7.1-2' is a real published OpenClaw release, not a prerelease marker — the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Newest stable release from an npm version list, or None.]] - rationale - scripts/discover_upstream_versions.py
-- [[Pre-release builds must never be shipped to production automatically.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Selecting the newest shippable npm release.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[TestIsStable]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[TestPickLatestStable]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[The actual npm tail as of 2026-09-15.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[True when ``version`` is a shippable release rather than a pre-release.]] - rationale - scripts/discover_upstream_versions.py
-- [[Version - comparable int tuple, or None if not numeric. A trailing ``-N``…]] - rationale - scripts/discover_upstream_versions.py
-- [[_sortable()]] - code - scripts/discover_upstream_versions.py
-- [[is_stable()]] - code - scripts/discover_upstream_versions.py
-- [[pick_latest_stable()]] - code - scripts/discover_upstream_versions.py
+- [[Add security headers to all responses (defense-in-depth). Also catches Python…]] - rationale - gateway/ingest_api/main.py
+- [[ApprovalDecision_1]] - code - gateway/ingest_api/models.py
+- [[CORS middleware that uses config from app_state]] - rationale - gateway/ingest_api/main.py
+- [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - rationale - gateway/ingest_api/main.py
+- [[Log all incoming requests Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
+- [[Reject request bodies larger than 1MB before parsing. Checks Content-Length…]] - rationale - gateway/ingest_api/main.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
+- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[_body_stream()]] - code - gateway/ingest_api/main.py
+- [[cors_middleware()]] - code - gateway/ingest_api/main.py
+- [[exception_handler]] - code
+- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
+- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body()]] - code - gateway/ingest_api/main.py
+- [[log_requests()]] - code - gateway/ingest_api/main.py
+- [[middleware]] - code
+- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
+- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
+- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,11 +57,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_discover_upstream_versions.py]]
+- 5 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 5 edges to [[_COMMUNITY_TrustConfig]]
+- 5 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[pick_latest_stable()]] - degree 13, connects to 1 community
-- [[TestPickLatestStable]] - degree 10, connects to 1 community
-- [[is_stable()]] - degree 7, connects to 1 community
-- [[TestIsStable]] - degree 6, connects to 1 community
-- [[_sortable()]] - degree 3, connects to 1 community
+- [[global_exception_handler()]] - degree 8, connects to 3 communities
+- [[ApprovalDecision_1]] - degree 6, connects to 3 communities
+- [[test_main_simple.py]] - degree 22, connects to 2 communities
+- [[limit_request_body()]] - degree 9, connects to 2 communities
+- [[security_headers_middleware()]] - degree 8, connects to 2 communities

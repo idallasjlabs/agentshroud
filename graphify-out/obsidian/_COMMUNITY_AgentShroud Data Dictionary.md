@@ -8,27 +8,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
-- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[ApprovalRequest_2]] - document - docs/data/data-dictionary.md
-- [[AuditEntry]] - document - docs/data/data-dictionary.md
-- [[Configuration Entities]] - document - docs/data/data-dictionary.md
-- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Core Audit Entities]] - document - docs/data/data-dictionary.md
-- [[DNSQuery]] - document - docs/data/data-dictionary.md
-- [[Data Classification]] - document - docs/data/data-dictionary.md
-- [[Data Retention Policies]] - document - docs/data/data-dictionary.md
-- [[InspectionResult_1]] - document - docs/data/data-dictionary.md
-- [[Network Security Entities]] - document - docs/data/data-dictionary.md
-- [[RateLimitBucket]] - document - docs/data/data-dictionary.md
-- [[Relationship Diagram]] - document - docs/data/data-dictionary.md
-- [[Runtime State Entities]] - document - docs/data/data-dictionary.md
-- [[Security Management Entities]] - document - docs/data/data-dictionary.md
-- [[SessionState]] - document - docs/data/data-dictionary.md
-- [[TrustLevel]] - document - docs/data/data-dictionary.md
-- [[URLAnalysisResult]] - document - docs/data/data-dictionary.md
-- [[data-dictionary]] - document - docs/data/data-dictionary.md
+- [[GSDE&G Skills Reference Guide_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[STPA-Sec Methodology]] - concept - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Steve Hay's Phase 1 Probes (RedBlue Team Assessment)]] - concept - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[i-production README (Incident Response)]] - document - docker/config/hermes/skills/i-production/README.md
+- [[i-production SKILL (Incident Response  INCIDENT)]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[i-ps README (Production Safety Checklist)]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[i-ps SKILL (Production Safety Checklist  PROD-SAFETY)]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[i-qa README (Quality Assurance)]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[i-qa SKILL (Quality Assurance  QA)]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[i-sad README (System Audit Documentation)]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[i-sav README (System Audit Vault)]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[i-sav SKILL (System Audit Vault, Obsidian)]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[i-sec README (Security Review, SecureClaw)]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[i-sec SKILL (Security Review  SEC, SecureClaw)]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[i-sec-defense README (Blue Team Security Auditor)]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[i-sec-offense README (Red Team Adversarial Tester)]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[i-session-prompt SKILL (Session Prompt Generator)]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[i-socrates README (Dialogue Architect)]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[i-socrates SKILL (Dialogue Architect, podcast pipeline)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,13 +36,3 @@ members: 21
 TABLE source_file, type FROM #community/AgentShroud_Data_Dictionary
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecurityFinding]]
-- 1 edge to [[_COMMUNITY_Common Operations]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Security Policies]]
-
-## Top bridge nodes
-- [[Network Security Entities]] - degree 5, connects to 1 community
-- [[Approval Workflows]] - degree 3, connects to 1 community
-- [[Configuration Setup]] - degree 2, connects to 1 community

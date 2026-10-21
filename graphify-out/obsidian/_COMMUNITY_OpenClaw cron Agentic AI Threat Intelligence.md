@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[OpenClaw cron Agentic AI Threat Intelligence]] - code - docker/bots/openclaw/config/cron/jobs.json
+- [[v0.9.0 Sentinel — SOC team collaboration]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

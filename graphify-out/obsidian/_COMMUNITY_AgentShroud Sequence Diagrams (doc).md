@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+members: 7
 ---
 
 # AgentShroud Sequence Diagrams (doc)
 
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Sequence Diagrams (doc)]] - document - docs/flows/sequence-diagrams.md
-- [[Diagram 15 Sequence — Telegram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)]] - concept - docs/flows/sequence-diagrams.md
-- [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - concept - docs/flows/sequence-diagrams.md
-- [[SSH Command Flow (injection check, approval queue, executor, audit)]] - concept - docs/flows/sequence-diagrams.md
-- [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - concept - docs/flows/sequence-diagrams.md
+- [[AgentShroud Post-v1.0.0 Roadmap]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[Apple Platform Integration]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[Apple Watch Support]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[Control Center Widget (iPhone + macOS)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[Implementation Notes]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[Push Notifications (iPhone + Mac + Apple Watch)]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
+- [[ROADMAP-POST-v1.0]] - document - docs/planning/v1.0/ROADMAP-POST-v1.0.md
 
 ## Live Query (requires Dataview plugin)
 

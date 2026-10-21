@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Daily CVE Triage & Remediation Scan]] - document - docker/config/openclaw/cron/jobs.json
-- [[_fmt()]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
-- [[_json_escape()]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[_read_token_file()]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[agentshroud-ssh-exec.sh]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[agentshroud-ssh-exec.sh script]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[daily-checkin.sh]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
-- [[daily-checkin.sh script]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[Codex CLI (codex exec  Codex -p)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[Gemini CLI (--skip-trust)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[Hermes Dev Workflow (HDEV) Skill]] - document - .agents/skills/i-hdev/SKILL.md
+- [[LM Studio local model (Qwen3-14B)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[agentshroud-ssh-exec.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
+- [[agentshroud-ssh-write-file.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
+- [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[scriptssmoke.sh (static startup smoke suite)]] - code - scripts/smoke.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY_sync-cve-registry.py (2)]]
+- 2 edges to [[_COMMUNITY_Implementation Status]]
+- 1 edge to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (AMPM)]]
 
 ## Top bridge nodes
-- [[agentshroud-ssh-exec.sh]] - degree 6, connects to 1 community
-- [[Daily CVE Triage & Remediation Scan]] - degree 2, connects to 1 community
+- [[Hermes Dev Workflow (HDEV) Skill]] - degree 9, connects to 1 community
+- [[LM Studio local model (Qwen3-14B)]] - degree 3, connects to 1 community

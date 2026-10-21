@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Performance Baseline v1.0.0]] - document - .benchmarks/baseline-v1.0.0.json
+- [[MCP Server devonthink]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

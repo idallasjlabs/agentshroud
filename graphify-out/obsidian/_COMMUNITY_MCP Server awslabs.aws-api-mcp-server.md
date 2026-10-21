@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server awslabs.aws-api-mcp-server]] - code - .mcp.json
+- [[Observability Skill]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

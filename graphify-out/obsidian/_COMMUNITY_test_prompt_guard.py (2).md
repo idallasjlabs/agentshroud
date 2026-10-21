@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - rationale - gateway/ingest_api/main.py
-- [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - rationale - gateway/ingest_api/main.py
-- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
-- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
-- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
-- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
-- [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
-- [[Return True if the recipient is in the allowlist.]] - rationale - gateway/ingest_api/main.py
-- [[Validate and normalize agentuser identity used for policy checks.]] - rationale - gateway/ingest_api/main.py
-- [[_is_imessage_recipient_allowed()]] - code - gateway/ingest_api/main.py
-- [[_normalize_agent_identity()]] - code - gateway/ingest_api/main.py
-- [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
-- [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
-- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
+- [[AgentShroud Job Schedule Dashboard]] - document - docs/job-schedule.html
+- [[Canonical Kept Job Set (model-pin tiebreak)]] - concept - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
+- [[Dedupe Deletion ID List (2026-08-31)]] - document - docs/dev-notes/cron-backup-20260831-161542/delete-ids.txt
+- [[Hermes BLOCKED — A2A Config Key Stripped On Boot]] - rationale - reports/upgrade-2026-09-14.md
+- [[Hermes Cron Dedupe (dev)]] - rationale - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
+- [[Per-Bot Status Badge Vocabulary]] - concept - docs/job-schedule.html
+- [[Pre-Dedupe Scheduled Jobs Listing]] - document - docs/dev-notes/cron-backup-20260831-161542/hermes-cron-full.txt
+- [[Pre-Dedupe Store Recovery Procedure]] - concept - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
+- [[Prefers-Color-Scheme Token Palette]] - concept - docs/job-schedule.html
+- [[ProdDev Env-Split Keep-List Defect]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Responsive Table-to-Card Collapse Pattern]] - concept - docs/job-schedule.html
+- [[Sunday Upgrade 2026-09-14 (dev)]] - document - reports/upgrade-2026-09-14.md
+- [[Telegram Send-Base-URL Patch Re-Anchoring]] - rationale - reports/upgrade-2026-09-14.md
+- [[_seed_cron Missing --all Defect]] - rationale - docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_Request]]
+- 2 edges to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_format_upstream_cve_alert()]]
 
 ## Top bridge nodes
-- [[mcp_proxy_endpoint()]] - degree 8, connects to 2 communities
-- [[mcp_result_endpoint()]] - degree 7, connects to 2 communities
-- [[MCPProxyRequest]] - degree 4, connects to 2 communities
-- [[MCPResultRequest]] - degree 4, connects to 2 communities
-- [[_resolve_effective_agent_id()]] - degree 5, connects to 1 community
+- [[Sunday Upgrade 2026-09-14 (dev)]] - degree 4, connects to 2 communities
+- [[Per-Bot Status Badge Vocabulary]] - degree 2, connects to 1 community

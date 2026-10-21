@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-test_adds_connection_close_when_absent()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dot-test_forces_connection_close_on_plain_request()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dot-test_host_header_match_is_case_insensitive()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dot-test_preserves_other_headers_and_order()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dot-test_rewrites_host_header_to_target()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dot-test_websocket_upgrade_keeps_connection_header_untouched()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the         han]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
-- [[Forcing Connection close makes every request single-shot per TCP         connec]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
-- [[TestRewriteRequestHeaders]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[bridge_module()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dashboard_bridge.py (Hermes)]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[test_hermes_dashboard_bridge.py]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[Advanced 1Password Access]] - document - docker/bot-capabilities.md
+- [[Available Commands]] - document - docker/bot-capabilities.md
+- [[Credential Management - 1Password Integration]] - document - docker/bot-capabilities.md
+- [[Security Decision Tree]] - document - docker/bot-capabilities.md
+- [[Security Rules (Ultra-Conservative)]] - document - docker/bot-capabilities.md
+- [[Troubleshooting_36]] - document - docker/bot-capabilities.md
+- [[Usage Examples_2]] - document - docker/bot-capabilities.md
+- [[Vault Access]] - document - docker/bot-capabilities.md
+- [[Why Ultra-Conservative]] - document - docker/bot-capabilities.md
+- [[🔴 Chat Interfaces (NEVER display credentials)]] - document - docker/bot-capabilities.md
+- [[🟢 Console Commands (ALWAYS display)]] - document - docker/bot-capabilities.md
+- [[🟢 Internal Use (ALWAYS allowed)]] - document - docker/bot-capabilities.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py]]
+- 1 edge to [[_COMMUNITY_Credential Isolation — Gateway op-proxy (ACTIVE)]]
 
 ## Top bridge nodes
-- [[test_hermes_dashboard_bridge.py]] - degree 4, connects to 1 community
+- [[Credential Management - 1Password Integration]] - degree 9, connects to 1 community

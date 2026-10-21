@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L272"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # _FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_129]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()_2]] - `method` [EXTRACTED]
-- [[dot-wait_for_decision()_2]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[dot-__init__()_126]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_1]] - `method` [EXTRACTED]
+- [[dot-wait_for_decision()_1]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "MiddlewareManager (2)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/MiddlewareManager_2
 ---
 
 # _FakeResponse
 
 ## Connections
-- [[dot-__init__()_43]] - `method` [EXTRACTED]
-- [[dot-read()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_164]] - `method` [EXTRACTED]
+- [[dot-read()_2]] - `method` [EXTRACTED]
 - [[dot-test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[dot-test_404_returns_empty_dict()]] - `calls` [EXTRACTED]
 - [[dot-test_500_returns_none()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

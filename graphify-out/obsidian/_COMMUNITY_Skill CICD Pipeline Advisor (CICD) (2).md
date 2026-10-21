@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD) (2)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Deployment Matrix  (Direct to Prod)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Role_14]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[openclawskillsi-cicdSKILL]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Also in v0.9.0]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Blocked By]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Components]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Goal]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Prerequisites]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Secure Voice Conversations (ElevenLabs + Twilio)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Status]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[v0.9.0 — Apple Messages Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
 
 ## Top bridge nodes
-- [[Skill CICD Pipeline Advisor (CICD)]] - degree 7, connects to 1 community
+- [[v0.9.0 — Apple Messages Integration]] - degree 8, connects to 1 community

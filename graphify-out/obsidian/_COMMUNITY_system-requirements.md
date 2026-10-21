@@ -1,63 +1,38 @@
 ---
 type: community
-members: 50
+members: 25
 ---
 
 # system-requirements.md
 
-**Members:** 50 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[AgentShroud (security proxy)]] - concept - docs/project/glossary.md
-- [[AgentShroud v0.8.0 Watchtower Release Plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[Approval Queue_2]] - concept - docs/project/glossary.md
-- [[Audit Trail_1]] - concept - docs/project/glossary.md
-- [[CVE-2026-22708 (Prompt Injection bypass)]] - concept - docs/project/glossary.md
-- [[CVE-2026-25253 (DNS Tunneling)]] - concept - docs/project/glossary.md
-- [[Competitive Analysis Reports Archive]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[Container Runtime]] - concept - docs/project/glossary.md
-- [[DNS Tunneling]] - concept - docs/project/glossary.md
-- [[Default Selection Notes]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[Enforce Mode]] - concept - docs/project/glossary.md
-- [[Functional Requirements Coverage]] - document - docs/security/audit-specification.md
-- [[HERMES_SETUP]] - document - docs/setup/HERMES_SETUP.md
-- [[Hash Chain]] - concept - docs/project/glossary.md
-- [[Hermes Agent (OpenAI-compatible LLM endpoint)]] - concept - docs/setup/HERMES_SETUP.md
-- [[IEC 62443 Industrial Security Framework]] - document - docs/security/audit-specification.md
-- [[Kill Switch_2]] - concept - docs/project/glossary.md
-- [[MCP (Model Context Protocol)]] - concept - docs/project/glossary.md
-- [[Marvin (proddev host)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Monitor Mode_1]] - concept - docs/project/glossary.md
-- [[NFKC Normalization]] - concept - docs/project/glossary.md
-- [[OPENCLAW_SETUP]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw_2]] - concept - docs/project/glossary.md
-- [[PII (Personally Identifiable Information)]] - concept - docs/project/glossary.md
-- [[Prompt Injection]] - concept - docs/project/glossary.md
-- [[Proxy Mode]] - concept - docs/project/glossary.md
-- [[Raspberry Pi (host, arm64, low-resource)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Reports]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[SSRF (Server-Side Request Forgery)]] - concept - docs/project/glossary.md
-- [[STPA-Sec (Systems-Theoretic Process Analysis for Security)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Levels Mapping]] - document - docs/security/audit-specification.md
-- [[Sidecar Mode_1]] - concept - docs/project/glossary.md
-- [[Steven Hay (Security Advisor)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[TELEGRAM_GMAIL_SETUP]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Trillian (host, x86_64)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Trust Level]] - concept - docs/project/glossary.md
-- [[Trust Management]] - concept - docs/project/glossary.md
-- [[WEB_CONTROL_CENTER_SUMMARY]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[Zero-Config Deployment]] - concept - docs/project/glossary.md
-- [[Zero-Trust Architecture]] - concept - docs/project/glossary.md
-- [[access-control-matrix]] - document - docs/security/access-control-matrix.md
-- [[audit-specification]] - document - docs/security/audit-specification.md
-- [[colima-docker-guide]] - document - docs/runbooks/colima-docker-guide.md
-- [[competitive-analysis-reports-archive]] - document - docs/security/competitive-analysis-reports-archive.md
-- [[securityincident-response]] - document - docs/security/incident-response.md
-- [[setup-guide]] - document - docs/setup/setup-guide.md
-- [[system-requirements]] - document - docs/requirements/system-requirements.md
-- [[use-cases]] - document - docs/requirements/use-cases.md
+- [[dot-test_all_clean()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_empty_summaries()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_format_report_string()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_generate_report()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_history_persistence()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_partial_tools()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_45]] - code - gateway/security/health_report.py
+- [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
+- [[Connection]] - code - gateway/security/health_report.py
+- [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
+- [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
+- [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
+- [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
+- [[Path_32]] - code - gateway/security/health_report.py
+- [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
+- [[TestHealthOverallScore]] - code - gateway/tests/test_security_toolchain.py
+- [[TestHealthReport]] - code - gateway/tests/test_security_toolchain.py
+- [[calculate_overall_score()]] - code - gateway/security/health_report.py
+- [[format_report()]] - code - gateway/security/health_report.py
+- [[generate_report()]] - code - gateway/security/health_report.py
+- [[get_trend()]] - code - gateway/security/health_report.py
+- [[health_report.py]] - code - gateway/security/health_report.py
+- [[init_db()]] - code - gateway/security/health_report.py
+- [[save_to_history()]] - code - gateway/security/health_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,28 +42,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 7 edges to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]]
-- 5 edges to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
-- 3 edges to [[_COMMUNITY_EgressFilter]]
-- 2 edges to [[_COMMUNITY_AgentShroud Audit Specification]]
-- 1 edge to [[_COMMUNITY_AgentShroud Web Control Center - Implementation Summary]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.9.0 (2)]]
-- 1 edge to [[_COMMUNITY_Use Cases]]
+- 8 edges to [[_COMMUNITY_TestVersionRoutes]]
+- 6 edges to [[_COMMUNITY_system-requirements.md (2)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
-- 1 edge to [[_COMMUNITY_AgentShroud Access Control Matrix]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_Incident Response Playbook — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Hermes Agent — Connection Setup]]
-- 1 edge to [[_COMMUNITY_OpenClaw Setup Guide - agentshroud.ai Bot]]
-- 1 edge to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
-- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
-- 1 edge to [[_COMMUNITY_Telegram & Gmail Integration Guide]]
+- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase]]
+- 1 edge to [[_COMMUNITY_test_playback_state.c]]
 
 ## Top bridge nodes
-- [[system-requirements]] - degree 16, connects to 3 communities
-- [[OPENCLAW_SETUP]] - degree 9, connects to 3 communities
-- [[Trust Level]] - degree 5, connects to 3 communities
-- [[setup-guide]] - degree 11, connects to 2 communities
-- [[PII (Personally Identifiable Information)]] - degree 9, connects to 2 communities
+- [[health_report.py]] - degree 17, connects to 8 communities
+- [[generate_report()]] - degree 12, connects to 2 communities
+- [[calculate_overall_score()]] - degree 9, connects to 2 communities
+- [[TestHealthReport]] - degree 6, connects to 2 communities
+- [[TestHealthOverallScore]] - degree 5, connects to 2 communities

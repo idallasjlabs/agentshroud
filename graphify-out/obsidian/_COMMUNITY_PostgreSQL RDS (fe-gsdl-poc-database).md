@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PostgreSQL RDS (fe-gsdl-poc-database)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[AWS Step Functions MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cross-Bot Trust Ledger (Module 27)]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[test_wakeword_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

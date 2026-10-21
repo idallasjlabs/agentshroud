@@ -8,23 +8,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[A. Private Service Data Isolation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Security Operations Center (SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Steve Hay Remediation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Collaborators_2]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[D. Apple Messages Integration]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Security Tools (Full Integration, Not Stubs)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Development Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_18]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[dot-_format_alert_message()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_duplicate()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_log_alert()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_stats()_19]] - code - gateway/security/alert_dispatcher.py
+- [[Any_61]] - code - gateway/security/alert_dispatcher.py
+- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
+- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
+- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,12 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
-- 1 edge to [[_COMMUNITY_v1.0.0 — Fortress (Polish + Public Release)]]
-- 1 edge to [[_COMMUNITY_Post-v1.0.0 — Deferred]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
+- 8 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities
-- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - degree 9, connects to 1 community
-- [[L. Multi-Agent Architecture]] - degree 2, connects to 1 community
+- [[dot-dispatch()]] - degree 7, connects to 1 community
+- [[dot-_send_notification()]] - degree 5, connects to 1 community
+- [[dot-_format_alert_message()]] - degree 4, connects to 1 community
+- [[dot-_log_alert()]] - degree 4, connects to 1 community
+- [[dot-get_digest()]] - degree 3, connects to 1 community

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Legacy 'Protected by AgentShroud' wording should normalize to canonical protecte]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Whitespace in leaked URL should queue approval using first URL token.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__make_sanitizer()]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_CronStateMonitor]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
 
 ## Top bridge nodes
-- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_json()]] - degree 4, connects to 3 communities
+- [[dot-test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token()]] - degree 4, connects to 3 communities

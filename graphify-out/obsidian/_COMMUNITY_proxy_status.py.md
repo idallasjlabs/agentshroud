@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Competitive Intelligence Protocol_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[IDENTITY.md - Who I Am_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[My Owner_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Responsibilities_1]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Role_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[Purpose_190]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Related Notes_63]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[workspaceIDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
+- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
+- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
+- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
+- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
+- [[_get_model()]] - code - voice_gateway/stt.py
+- [[_resolve_model_size()]] - code - voice_gateway/stt.py
+- [[record_transcription_latency()]] - code - voice_gateway/stt.py
+- [[reset_model()]] - code - voice_gateway/stt.py
+- [[select_model_size()]] - code - voice_gateway/stt.py
+- [[stt.py]] - code - voice_gateway/stt.py
+- [[transcribe()]] - code - voice_gateway/stt.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +27,11 @@ members: 12
 TABLE source_file, type FROM #community/proxy_statuspy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
+- 1 edge to [[_COMMUNITY_main.rs]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+
+## Top bridge nodes
+- [[stt.py]] - degree 9, connects to 3 communities

@@ -8,22 +8,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Read up to the end of the request's header block (rnrn).      Returns (h]] - rationale - docker/bots/hermes/dashboard_bridge.py
-- [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - rationale - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader_1]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader_2]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_handle()_2]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[_handle()_3]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_pipe()_2]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[_pump()]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[main()_26]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[main()_27]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
+- [[Assets Needed]] - document - branding/INDEX.md
+- [[Brand Color]] - document - branding/INDEX.md
+- [[Documentation_4]] - document - branding/INDEX.md
+- [[Documentation Needed]] - document - branding/INDEX.md
+- [[Documentation Status]] - document - branding/INDEX.md
+- [[Icon Sets]] - document - branding/INDEX.md
+- [[Logo Files_1]] - document - branding/INDEX.md
+- [[Logo Formats Available]] - document - branding/INDEX.md
+- [[Social Media_1]] - document - branding/INDEX.md
+- [[🎨 Quick Access]] - document - branding/INDEX.md
+- [[💡 Usage Tips]] - document - branding/INDEX.md
+- [[📁 Directory Overview]] - document - branding/INDEX.md
+- [[📊 Asset Summary]] - document - branding/INDEX.md
+- [[📝 To-Do]] - document - branding/INDEX.md
+- [[📞 Contact]] - document - branding/INDEX.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 16
 TABLE source_file, type FROM #community/dashboard_bridgepy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher) (2)]]
+
+## Top bridge nodes
+- [[AgentShroud Branding Assets Index]] - degree 7, connects to 1 community

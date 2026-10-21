@@ -1,35 +1,32 @@
 ---
 type: community
-members: 22
+members: 19
 ---
 
 # Skill: Technical Illustrator (TI) (3)
 
-**Members:** 22 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[ASCII Art (fallback — no renderer available)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Anti-Patterns to Flag_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Architecture (C4  block) — System boundaries and components_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Brand Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Core Discipline Understand → Diagram → Validate → Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Data Flow — How data moves and transforms_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Dependencies_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Diagram Types and Data Lakehouse Examples_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[ER Diagram — Table relationships and control schema_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[File and Directory Conventions_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Gantt — Daily pipeline schedule_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Online renderer_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Render locally with mmdc_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Rendering and Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Role_42]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Rules_16]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Sequence — Order of operations between systems_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Skill Technical Illustrator (TI)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[State Diagram — Job or process lifecycle_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Validate syntax without exporting_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Validation Checklist_8]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[openclawskillsi-tiSKILL]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[AWS Cloud Management & FinOps Agent_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[AWS tagging standard (CostCenter, FOD, DataRetentionTier…)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
+- [[Cost Optimization Priority_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Decision Framework_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[EBS bottleneck vs oversize distinction]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
+- [[Expertise_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FinOps agent safety model (dry-run default, tiered approval)]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
+- [[Guardrails_7]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Identity_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Numbered script naming convention (00-99)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
+- [[Required Tags (All Resources)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rightsizing Logic_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tag Audit Process_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Tagging Standard_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Workflow_4]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[hermesskillsi-awsSKILL]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_dot-test_fetch_paginates_via_link_cursor()]]
+- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (3) (2)]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
 
 ## Top bridge nodes
-- [[Skill Technical Illustrator (TI)_2]] - degree 12, connects to 1 community
+- [[AWS Cloud Management & FinOps Agent_1]] - degree 17, connects to 5 communities

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Constrained query-vocabulary expansion]] - rationale - docker/config/hermes/skills/graphify/references/query.md
-- [[save-result Feedback Loop]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[Incident Response Plan (stop, investigate, contain, recover)]] - document - docs/archive/SECURITY-ANALYSIS.md
+- [[Incident Response Runbook (stop, review, rotate, rebuild, report)]] - document - docs/archive/SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 

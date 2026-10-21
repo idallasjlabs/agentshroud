@@ -1,53 +1,54 @@
 ---
 type: community
-members: 40
+members: 41
 ---
 
 # OpenClaw Workspace Usage Guide
 
-**Members:** 40 nodes
+**Members:** 41 nodes
 
 ## Members
-- [[Advanced Direct Docker Commands]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Backup Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Backup and Restore]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Common Workflows_1]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Configuration_1]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Create Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Current Setup (Kept)]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Decision Summary]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Docker Volume Chosen Over Bind Mount]] - rationale - docs/architecture/WORKSPACE_DECISION.md
-- [[File Permissions]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Files Created]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Helper Script]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Integration with Bot]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Next Steps]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[OpenClaw Workspace Usage Guide]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Problem Container not running]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Problem File not found]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Problem Permission denied]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Quick Reference_3]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Recommended Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Restore Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Summary_9]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Troubleshooting_5]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Using the Helper Script]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Via Skills]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Via Telegram]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[WORKSPACE_DECISION]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[WORKSPACE_USAGE]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[What is the Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Why Docker Volume vs Bind Mount]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Why This Matters for Read-Only Filesystem]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Workflow 1 Give Bot a File to Process]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Workflow 2 Bot Creates Files for You]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Workflow 3 Bot Takes Screenshots]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Workflow 4 Bulk File Operations]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Workflow 5 Interactive Editing]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Workspace Configuration Decision]] - document - docs/architecture/WORKSPACE_DECISION.md
-- [[Workspace Organization Tips]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Workspace Size]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[workspace.sh Helper Script]] - concept - docs/architecture/WORKSPACE_USAGE.md
+- [[API  Function Reference]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Anti-Patterns to Flag_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Architecture Decision Record (ADR)]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Changelog Entry_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Dependencies_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Document Structure_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Document-Type Patterns_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected output]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected ok]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Expected INFO Re-queued 3 jobs]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Formatting_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[If not → escalate to field team via ops-alerts]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_17]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Skill agile_2]] - document - docker/config/hermes/skills/i-agile/SKILL.md
+- [[Skill bdd_1]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[Skill cd]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[Skill ci_1]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[Skill gitops_1]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[Skill sdlc_1]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[Skill sre_1]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[Validation Checklist_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Voice & Tone_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[What Belongs Where_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Writing Style Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[hermesskillsi-agileSKILL]] - document - docker/config/hermes/skills/i-agile/SKILL.md
+- [[hermesskillsi-bddSKILL]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[hermesskillsi-cdSKILL]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[hermesskillsi-ciSKILL]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[hermesskillsi-crSKILL]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[hermesskillsi-gitopsSKILL]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[hermesskillsi-sdlcSKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[hermesskillsi-sreSKILL]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[hermesskillsi-twSKILL]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,3 +56,38 @@ members: 40
 TABLE source_file, type FROM #community/OpenClaw_Workspace_Usage_Guide
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_model_usage.py]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py (2) (2)]]
+- 1 edge to [[_COMMUNITY_dot-test_egress_callback_from_collaborator_is_rejected()]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL.md (5)]]
+- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection (3)]]
+- 1 edge to [[_COMMUNITY_SSH Capability Architecture Document]]
+- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL) (3)]]
+- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (3)]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR) (3)]]
+- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Gateway (holds 1Password service account)]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task (2)]]
+- 1 edge to [[_COMMUNITY_How to Fix (5 Minutes)]]
+- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (3)]]
+- 1 edge to [[_COMMUNITY_02-infrastructure]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI) (2)]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent (3)]]
+- 1 edge to [[_COMMUNITY_Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]]
+- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference Guide]]
+- 1 edge to [[_COMMUNITY_background.js]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task (6)]]
+- 1 edge to [[_COMMUNITY_migrate-cve-registry-ghsa.py]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (3)]]
+- 1 edge to [[_COMMUNITY_workspace.sh]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
+- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM) (3)]]
+- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)]]
+- 1 edge to [[_COMMUNITY_Threat Model]]
+
+## Top bridge nodes
+- [[hermesskillsi-crSKILL]] - degree 47, connects to 30 communities

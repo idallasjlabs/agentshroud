@@ -1,91 +1,70 @@
 ---
 type: community
-members: 78
+members: 57
 ---
 
 # CompetitiveIntelReport
 
-**Members:** 78 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[dot-__init__()_171]] - code - gateway/security/citation_verifier.py
-- [[dot-_compute_content_hash()]] - code - gateway/security/intel_report.py
-- [[dot-_make_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-_verify_url()]] - code - gateway/security/citation_verifier.py
-- [[dot-load_all()_1]] - code - gateway/security/intel_report.py
-- [[dot-load_latest()]] - code - gateway/security/intel_report.py
-- [[dot-report_id_not_empty()]] - code - gateway/security/intel_report.py
-- [[dot-source_not_empty()]] - code - gateway/security/intel_report.py
-- [[dot-store()_2]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-store_dir()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_content_hash_is_deterministic()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_different_content_different_hash()_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_empty_report_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_empty_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_full_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_minimal_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_missing_required_fields_raises()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_negative_security_score_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_report_has_content_hash()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_report_roundtrips_via_json()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_report_serialises_to_json()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_security_score_above_max_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_verify_integrity_fails_after_tampering()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-test_verify_integrity_passes_for_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[dot-verify_chain()_2]] - code - gateway/security/intel_report.py
-- [[dot-verify_entry()]] - code - gateway/security/citation_verifier.py
-- [[dot-verify_integrity()]] - code - gateway/security/intel_report.py
-- [[dot-verify_report()]] - code - gateway/security/citation_verifier.py
-- [[A single competitor record in a competitive intel report.]] - rationale - gateway/security/intel_report.py
-- [[A verified source backing a competitor claim.      A Citation is only created by]] - rationale - gateway/security/intel_report.py
-- [[Citation]] - code - gateway/security/citation_verifier.py
-- [[Citation_1]] - code - gateway/security/intel_report.py
-- [[CitationVerifier.verify_report()]] - code - gateway/security/citation_verifier.py
-- [[CompetitiveIntelReport]] - code - gateway/security/citation_verifier.py
-- [[CompetitiveIntelReport_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[CompetitiveIntelReport_2]] - code - gateway/security/intel_report.py
-- [[CompetitorEntry]] - code - gateway/security/citation_verifier.py
-- [[CompetitorEntry_1]] - code - gateway/security/intel_report.py
-- [[Compute SHA-256 over the canonical content fields of a report.      Fields inclu]] - rationale - gateway/security/intel_report.py
-- [[Derive content_hash from the canonical content fields.          Only computed wh]] - rationale - gateway/security/intel_report.py
-- [[Fetcher]] - code - gateway/security/citation_verifier.py
-- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[Load all reports in chronological order (oldest first).]] - rationale - gateway/security/intel_report.py
-- [[Load the most recently saved report.          Args             verify If True,]] - rationale - gateway/security/intel_report.py
-- [[Path_51]] - code - gateway/tests/test_intel_pipeline.py
-- [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
-- [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - rationale - gateway/security/citation_verifier.py
-- [[ReportIntegrityError]] - code - gateway/security/intel_report.py
-- [[Return True iff the stored content_hash matches recomputation.]] - rationale - gateway/security/intel_report.py
-- [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - rationale - gateway/security/citation_verifier.py
-- [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - rationale - gateway/security/intel_report.py
-- [[TestCompetitiveIntelReportSchema]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportHashIntegrity]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
-- [[Tests for Pydantic model validation.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[Verify every draft claim; return a report of only verified claims.          Clai]] - rationale - gateway/security/citation_verifier.py
-- [[Walk the entire report chain and verify hash linkage.          Returns]] - rationale - gateway/security/intel_report.py
-- [[_compute_hash()]] - code - gateway/security/intel_report.py
-- [[citation_verifier.py]] - code - gateway/security/citation_verifier.py
-- [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
-- [[intel_report.py]] - code - gateway/security/intel_report.py
-- [[test_intel_pipeline.py]] - code - gateway/tests/test_intel_pipeline.py
+- [[dot-test_scoped_ws_token_is_single_use()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_accepts_scoped_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
+- [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
+- [[Fallback activity entries when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Fallback activity summary when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[GET dashboard includes Content-Security-Policy header]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboard without auth returns 403]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboardstats returns JSON stats]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboardstats without auth returns 401]] - rationale - gateway/tests/test_dashboard.py
+- [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Path_1]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Scoped WS token should be consumed after first use (single-use)]] - rationale - gateway/tests/test_security_fixes.py
+- [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_dashboard.py
+- [[WS wsactivity accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should accept scoped ws_ token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WebSocket wsactivity connects and authenticates via scoped WS token]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity receives emitted events]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity rejects bad auth during handshake]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress connects and emits egress snapshot.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward auth_ events for SOC visibility.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward privacy_ events.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward scanner_result events.]] - rationale - gateway/tests/test_dashboard.py
+- [[_build_activity_entries_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_build_activity_summary_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_create_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_load_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_parse_collaborator_log_dirs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[get_collaborators()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[serve_dashboard()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[sync_client()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_entries_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines()]] - code - gateway/tests/test_dashboard.py
+- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard.py]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_has_csp_header()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_endpoint()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_xss_prevention()]] - code - gateway/tests/test_dashboard.py
+- [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - code - gateway/tests/test_dashboard.py
+- [[test_parse_collaborator_log_dirs_dedupes_and_preserves_order()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_connects()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_receives_events()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_connects_and_snapshot()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_auth_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_privacy_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_scanner_event()]] - code - gateway/tests/test_dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -95,16 +74,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_api.py]]
-- 8 edges to [[_COMMUNITY_FetchOutcome]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_CompetitiveIntelReport (2)]]
-- 1 edge to [[_COMMUNITY_ConsentFramework (2)]]
+- 14 edges to [[_COMMUNITY_lifespan()]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
+- 5 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (3)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[CompetitiveIntelReport_2]] - degree 36, connects to 4 communities
-- [[CompetitorEntry_1]] - degree 22, connects to 3 communities
-- [[Citation_1]] - degree 11, connects to 3 communities
-- [[citation_verifier.py]] - degree 10, connects to 3 communities
-- [[dot-load_latest()]] - degree 6, connects to 2 communities
+- [[test_dashboard.py]] - degree 31, connects to 3 communities
+- [[_create_ws_token()]] - degree 15, connects to 2 communities
+- [[serve_dashboard()]] - degree 5, connects to 2 communities
+- [[get_collaborators()]] - degree 9, connects to 1 community
+- [[_build_activity_entries_from_contributor_logs()]] - degree 6, connects to 1 community

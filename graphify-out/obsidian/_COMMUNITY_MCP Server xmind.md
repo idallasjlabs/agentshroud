@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server xmind]] - code - .mcp.json
+- [[nemotron-named models misclassified as needing cloud provider in local mode]] - rationale - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

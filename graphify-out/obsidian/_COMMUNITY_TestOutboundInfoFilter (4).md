@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[dot-_sanitize_text()]] - code - gateway/security/log_sanitizer.py
-- [[dot-filter()_1]] - code - gateway/security/log_sanitizer.py
-- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
-- [[LogRecord]] - code - gateway/security/log_sanitizer.py
-- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
+- [[Purpose_27]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Related Skills_13]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Usage_16]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[hermesskillsi-macREADME]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)]] - document - docker/config/hermes/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-filter()_1]] - degree 4, connects to 1 community
-- [[dot-_sanitize_text()]] - degree 3, connects to 1 community
+- [[macOS System Administrator (MAC)]] - degree 5, connects to 1 community

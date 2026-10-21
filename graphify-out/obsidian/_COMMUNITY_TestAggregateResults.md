@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-_patch_all()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_all_clean()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Any_5]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Input Requirements_1]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[Oracle — Feedback Analyst]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[Output Format_1]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[Persona_1]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[Quality Checklist_1]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[Role_3]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[System Prompt_1]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[hermesskillsi-oracleSKILL]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/TestAggregateResults
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-
-## Top bridge nodes
-- [[TestAggregateResults]] - degree 6, connects to 1 community
-- [[_stub_summary()]] - degree 3, connects to 1 community

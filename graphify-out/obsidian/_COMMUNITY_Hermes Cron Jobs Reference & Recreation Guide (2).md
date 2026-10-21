@@ -8,30 +8,30 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-finding-scratch.md Overwrite-Per-Query Protocol]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Apple Silicon Local-LLM Stack (oMLX, MLX-LM, MLX-VLM, vLLM-MLX, Ollama, Turbo Fieldfare)]] - concept - docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt
-- [[Autonomous Cron Agent Persona (no narration)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Dated Job-Log Snapshot Copy (optdataworkspacejob-logs)]] - concept - docker/config/hermes/cron/prompts/today-in-ai.txt
-- [[Distributed Mac Inference Topic (exo, MLX Thunderbolt, prima.cpp, llama.cpp RPC)]] - concept - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
-- [[Minimal GitHub API Polling (2 calls, last 1-2 comments only)]] - rationale - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
-- [[MoE Expert SSD Offload  Streaming Technique]] - concept - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
-- [[Pre-Written Dated Report Header (agent must not compute the date)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Prompt Newsletter — Chat Front-Ends & Search Infra]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
-- [[Prompt Newsletter — Coding-Agent CLIs]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Prompt Newsletter — Local Inference Engines]] - document - docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt
-- [[Prompt Newsletter — Mac Clustering]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
-- [[Prompt Newsletter — MoE Streaming & SSD Offload]] - document - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
-- [[Prompt Today in AI (12-Query Sweep)]] - document - docker/config/hermes/cron/prompts/today-in-ai.txt
-- [[Prompt Turbo Fieldfare Fix Watch]] - document - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
-- [[Search-Snippets-Only Rule (web_extractfetchbrowse unconfigured)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Streaming Probe Metrics (time-to-first-token, stall detection, total latency)]] - concept - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
-- [[Strict Sequential 4-Query Search Protocol]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[TL;DR Cross-Query Synthesis Step]] - concept - docker/config/hermes/cron/prompts/today-in-ai.txt
-- [[Turbo Fieldfare Issue 84 (decoder_consume malformed tool-call bug)]] - concept - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
-- [[Weekly job-log cleanup (cleanup-job-logs.sh)]] - concept - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[append_finding.py Finding-Append Script]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[append_trend_log.py Trend-Log Append Script]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[trend-log.md Rolling One-Line Summary Log]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[graphify_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For --update and --cluster-only_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For graphify add and --watch_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For graphify query_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[For the commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Honesty Rules_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 2 - Detect files_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 5 - Label communities_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Usage_66]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[What graphify is for_1]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[hermesskillsgraphifySKILL]] - document - docker/config/hermes/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +39,3 @@ members: 24
 TABLE source_file, type FROM #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 3 edges to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (AMPM)]]
-
-## Top bridge nodes
-- [[Strict Sequential 4-Query Search Protocol]] - degree 12, connects to 2 communities
-- [[Prompt Today in AI (12-Query Sweep)]] - degree 8, connects to 1 community
-- [[Prompt Newsletter — Coding-Agent CLIs]] - degree 4, connects to 1 community
-- [[Prompt Newsletter — Local Inference Engines]] - degree 4, connects to 1 community
-- [[Prompt Newsletter — MoE Streaming & SSD Offload]] - degree 4, connects to 1 community

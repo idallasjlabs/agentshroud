@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[ConnectionPool.get_or_create(server_name, config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Function Details_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.check_approval_required(tool_call)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Purpose_147]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[Convert an Anthropic message content field to OpenAI format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[Flatten Anthropic system prompt (string or content-block list) to plain text.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
+- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[_anthropic_content_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[_anthropic_system_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[_random_msg_id()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[anthropic_openai_translator.py]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,16 @@ members: 15
 TABLE source_file, type FROM #community/Function_Details_8
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 6 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
+- 2 edges to [[_COMMUNITY_ModeRequest]]
+- 2 edges to [[_COMMUNITY_7. Security findings]]
+- 1 edge to [[_COMMUNITY_agentshroud-gateway service (proxy mode) (2)]]
+
+## Top bridge nodes
+- [[test_claude_via_openai_path.py]] - degree 9, connects to 3 communities
+- [[anthropic_openai_translator.py]] - degree 7, connects to 1 community
+- [[_random_msg_id()]] - degree 4, connects to 1 community
+- [[_anthropic_content_to_openai()]] - degree 3, connects to 1 community
+- [[_anthropic_system_to_openai()]] - degree 3, connects to 1 community

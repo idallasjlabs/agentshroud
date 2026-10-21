@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
-- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_clean_code_passes()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_clean_content_passes()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_1password_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_aws_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_github_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_google_oauth_secret()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_jwt_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_openai_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[Test that credential patterns are detected in outbound content.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestCredentialLeakDetection]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_ModeRequest]]
+- 2 edges to [[_COMMUNITY_setup-https-proxy.js]]
+- 1 edge to [[_COMMUNITY_Browser Fetch Skill]]
 
 ## Top bridge nodes
-- [[TestConfig_1]] - degree 12, connects to 1 community
+- [[TestCredentialLeakDetection]] - degree 12, connects to 2 communities

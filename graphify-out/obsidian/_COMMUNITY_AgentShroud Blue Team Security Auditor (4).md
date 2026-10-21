@@ -1,27 +1,28 @@
 ---
 type: community
-members: 14
+members: 15
 ---
 
 # AgentShroud Blue Team Security Auditor (4)
 
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Critical Rules_11]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Infrastructure_8]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Output Format_27]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[API Response]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Architecture (high-level)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Concept]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Console Management]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Design]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Estimated Effort]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Implementation Priority]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Key Behaviors]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Open Questions (for v0.8.0 planning)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Risk Assessment Heuristic]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Use Cases_2]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[User Experience]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[v0.8.0-egress-firewall]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +30,3 @@ members: 14
 TABLE source_file, type FROM #community/AgentShroud_Blue_Team_Security_Auditor_4
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
-
-## Top bridge nodes
-- [[AgentShroud Blue Team Security Auditor_3]] - degree 6, connects to 1 community

@@ -1,41 +1,32 @@
 ---
 type: community
-members: 28
+members: 19
 ---
 
 # parse_trivy_output
 
-**Members:** 28 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[dot-test_custom_prefix()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_default_prefix()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_log_dir_created_if_missing()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_affected_packages()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_counts_by_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_empty_output()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_has_timestamp()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_no_results_key()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_scanner_name()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_top_cves_limited()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_top_cves_ordered_by_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_total_vulnerabilities()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_unknown_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_report_content_persisted()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_clean()_3]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_critical()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_top_cves_ids()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
-- [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
-- [[Saved file is valid JSON containing the report keys.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[TestTrivyParser]] - code - gateway/tests/test_security_toolchain.py
-- [[TestTrivySaveReport]] - code - gateway/tests/test_security_toolchain.py
-- [[TestTrivySummary_1]] - code - gateway/tests/test_security_toolchain.py
-- [[parse_trivy_output()]] - code - gateway/security/trivy_report.py
-- [[save_report creates the log directory if it does not exist.]] - rationale - gateway/tests/test_security_toolchain.py
+- [[dot-all_ok()]] - code - gateway/tools/multi_host_test.py
+- [[dot-exit_code()]] - code - gateway/tools/multi_host_test.py
+- [[dot-failed()]] - code - gateway/tools/multi_host_test.py
+- [[dot-ok()_1]] - code - gateway/tools/multi_host_test.py
+- [[dot-passed()]] - code - gateway/tools/multi_host_test.py
+- [[dot-test_ok_only_when_pass()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_render_summary_all_pass_overall()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_render_summary_contains_hosts_and_overall()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_render_summary_empty()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-unreachable()]] - code - gateway/tools/multi_host_test.py
+- [[0 iff all hosts passed; 1 otherwise (incl. empty  any unreachable).]] - rationale - gateway/tools/multi_host_test.py
+- [[Aggregated outcome across all hosts.]] - rationale - gateway/tools/multi_host_test.py
+- [[HostResult]] - code - gateway/tools/multi_host_test.py
+- [[MultiHostResult]] - code - gateway/tools/multi_host_test.py
+- [[Result of running the command on a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestHostResult]] - code - gateway/tests/test_multi_host_test.py
+- [[TestMultiHostResultProperties]] - code - gateway/tests/test_multi_host_test.py
+- [[True only if every host passed (none failed or unreachable).]] - rationale - gateway/tools/multi_host_test.py
+- [[True only when the host ran the command and it exited 0.]] - rationale - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,14 +36,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 4 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 8 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 4 edges to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 4 edges to [[_COMMUNITY_LOW Findings]]
+- 4 edges to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
+- 3 edges to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
+- 2 edges to [[_COMMUNITY_Migration Path (SSH → Distributed Node)]]
+- 2 edges to [[_COMMUNITY_Red Team Assessment v1.2.0 (2)]]
+- 2 edges to [[_COMMUNITY_PermissionLevel (6)]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List (2)]]
 
 ## Top bridge nodes
-- [[parse_trivy_output()]] - degree 23, connects to 3 communities
-- [[TestTrivyParser]] - degree 12, connects to 2 communities
-- [[TestTrivySummary_1]] - degree 7, connects to 2 communities
-- [[TestTrivySaveReport]] - degree 6, connects to 2 communities
-- [[dot-test_custom_prefix()]] - degree 4, connects to 1 community
+- [[MultiHostResult]] - degree 25, connects to 9 communities
+- [[HostResult]] - degree 23, connects to 9 communities
+- [[TestMultiHostResultProperties]] - degree 7, connects to 2 communities
+- [[TestHostResult]] - degree 5, connects to 2 communities

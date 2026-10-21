@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_playback_statestubsesp_log.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
+- [[audio_preinit() — claims I2S at 16 kHz before display init]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

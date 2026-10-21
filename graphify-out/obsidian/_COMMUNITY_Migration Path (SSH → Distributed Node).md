@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Migration Path (SSH → Distributed Node)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Migration Path (SSH → Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 1 Verify Option 1 Working]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 2 Install OpenClaw on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 3 Pair Nodes]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 4 Test Basic Communication]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 5 Migrate Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Step 6 Deprecate SSH (Optional)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[dot-test_empty()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_keeps_last_n_lines()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_only_newlines()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_shorter_than_n()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_strips_trailing_newline()]] - code - gateway/tests/test_multi_host_test.py
+- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestTail]] - code - gateway/tests/test_multi_host_test.py
+- [[tail()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+- 2 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 2 edges to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 1 edge to [[_COMMUNITY_LOW Findings]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
 
 ## Top bridge nodes
-- [[Migration Path (SSH → Distributed Node)]] - degree 7, connects to 1 community
+- [[TestTail]] - degree 9, connects to 3 communities
+- [[tail()]] - degree 9, connects to 3 communities

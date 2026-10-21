@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "test_hermes_cron_seed.py (2)"
+community: "TestFabricatedSecurityNotice (2)"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy_2
+  - community/TestFabricatedSecurityNotice_2
 ---
 
 # _injectable_providers()
@@ -16,4 +16,4 @@ tags:
 - [[_seed_cron]] - `references` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy_2
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2

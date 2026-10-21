@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill incident-response_1]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
-- [[hermesskillsi-incident-responseSKILL]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
+- [[AGENTSHROUD_ENV auto-detected from invoking account]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[Hermes resource caps by environment]] - rationale - docker/bots/hermes/run-standalone.sh
 
 ## Live Query (requires Dataview plugin)
 

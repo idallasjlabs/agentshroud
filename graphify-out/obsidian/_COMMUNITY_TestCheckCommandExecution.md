@@ -1,48 +1,29 @@
 ---
 type: community
-members: 35
+members: 16
 ---
 
 # TestCheckCommandExecution
 
-**Members:** 35 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[dot-test_allows_file_named_environ_elsewhere()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_allows_plain_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_allows_unrelated_file()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_base64_padding_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_cat_proc_environ_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_printenv()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_critical_leakage_yields_critical_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_empty_command_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_export_writes_valid_json_report()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_long_alphanumeric_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_many_medium_yields_medium_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_multiple_high_yields_high_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_named_var_with_short_value_uses_redacted_marker()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_no_activity_is_low_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_plain_word_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_scrubs_credential_looking_value_for_unknown_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_scrubs_named_credential_env_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_scrubs_openai_key_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_short_value_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_summary_aggregates_by_severity_and_method()]] - code - gateway/tests/test_env_guard_class.py
-- [[dot-test_unparseable_text_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckCommandExecution]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckFileAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestLooksLikeCredential]] - code - gateway/tests/test_env_guard_class.py
-- [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
-- [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_4]] - code - gateway/tests/test_env_guard_class.py
-- [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-__init__()_166]] - code - gateway/security/tool_result_injection.py
+- [[dot-_detect_encoded_injection()]] - code - gateway/security/tool_result_injection.py
+- [[dot-_detect_unicode_obfuscation()]] - code - gateway/security/tool_result_injection.py
+- [[dot-scan_tool_result()_3]] - code - gateway/security/tool_result_injection.py
+- [[Check for base64 or hex encoded injection attempts.]] - rationale - gateway/security/tool_result_injection.py
+- [[Detect unicode-based obfuscation techniques.]] - rationale - gateway/security/tool_result_injection.py
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
+- [[InjectionResult]] - code - gateway/security/tool_result_injection.py
+- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
+- [[Result from tool result injection scan.]] - rationale - gateway/security/tool_result_injection.py
+- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
+- [[Scan tool result content for injection attempts.          Args             tool]] - rationale - gateway/security/tool_result_injection.py
+- [[Strip potentially malicious markdown from tool results.      Removes     - Mark]] - rationale - gateway/security/input_normalizer.py
+- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
+- [[strip_markdown_exfil()]] - code - gateway/security/input_normalizer.py
+- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,11 +33,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 5 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
+- 2 edges to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 
 ## Top bridge nodes
-- [[TestCheckCommandExecution]] - degree 9, connects to 1 community
-- [[test_env_guard_class.py]] - degree 8, connects to 1 community
-- [[TestScrubCommandOutput]] - degree 7, connects to 1 community
-- [[TestCheckFileAccess]] - degree 6, connects to 1 community
-- [[TestLooksLikeCredential]] - degree 6, connects to 1 community
+- [[tool_result_injection.py]] - degree 11, connects to 6 communities
+- [[input_normalizer.py]] - degree 4, connects to 3 communities
+- [[strip_markdown_exfil()]] - degree 7, connects to 2 communities
+- [[dot-scan_tool_result()_3]] - degree 7, connects to 2 communities
+- [[dot-_detect_encoded_injection()]] - degree 4, connects to 2 communities

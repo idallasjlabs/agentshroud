@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "UserSessionManager (2) (2)"
 location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/UserSessionManager_2_2
 ---
 
 # _filtered_sentence_stream()
@@ -24,4 +24,4 @@ tags:
 - [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

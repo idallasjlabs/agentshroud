@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Raw-flag triage discipline (74-merge sweep)]] - rationale - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Cron Daily Competitive Analysis Email]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

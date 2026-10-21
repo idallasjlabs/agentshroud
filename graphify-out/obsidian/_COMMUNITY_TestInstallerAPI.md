@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[dot-client()_1]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_install()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
-- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[i-bs SKILL.md (Brand Systems, referenced dependency)]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[i-ti README]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[i-tw README]] - document - docker/config/hermes/skills/i-tw/README.md
+- [[i-tw SKILL.md (Technical Writer)]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[i-ui SKILL.md (UI Engineer, CSS architecture, WCAG AA)]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,13 +22,3 @@ members: 7
 TABLE source_file, type FROM #community/TestInstallerAPI
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 1 edge to [[_COMMUNITY_DockerEngine]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_test_runtime_engines.py (2)]]
-
-## Top bridge nodes
-- [[TestInstallerAPI]] - degree 11, connects to 5 communities

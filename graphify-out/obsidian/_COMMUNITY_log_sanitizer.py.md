@@ -8,20 +8,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_22]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Key Classes  Functions_43]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[LogSanitizer._sanitize_text(text)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[LogSanitizer.filter(record)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Pattern Taxonomy]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Purpose_165]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Related_47]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[get_sanitizer_stats()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[install_log_sanitizer()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[log_sanitizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[log_sanitizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[dot-test_dry_run_allowed_for_any_user()]] - code - gateway/tests/test_canary_deploy.py
+- [[dot-test_dry_run_changes_nothing_and_previews_actions()]] - code - gateway/tests/test_canary_deploy.py
+- [[dot-test_dry_run_targets_green_ports_not_blue()]] - code - gateway/tests/test_canary_deploy.py
+- [[dot-test_refuses_when_not_green_user()]] - code - gateway/tests/test_canary_deploy.py
+- [[dot-test_tag_fetch_uses_force()]] - code - gateway/tests/test_canary_deploy.py
+- [[dot-test_unknown_arg_rejected()]] - code - gateway/tests/test_canary_deploy.py
+- [[TestDryRun]] - code - gateway/tests/test_canary_deploy.py
+- [[TestGuard]] - code - gateway/tests/test_canary_deploy.py
+- [[_run()_3]] - code - gateway/tests/test_canary_deploy.py
+- [[canary-deploy.sh (bluegreen canary deploy)]] - code - scripts/canary-deploy.sh
+- [[test_canary_deploy.py]] - code - gateway/tests/test_canary_deploy.py
+- [[test_help_prints_usage()]] - code - gateway/tests/test_canary_deploy.py
+- [[test_script_exists_and_is_executable()]] - code - gateway/tests/test_canary_deploy.py
+- [[test_syntax_is_valid()]] - code - gateway/tests/test_canary_deploy.py
 
 ## Live Query (requires Dataview plugin)
 

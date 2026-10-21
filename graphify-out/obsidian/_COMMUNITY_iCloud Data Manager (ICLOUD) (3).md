@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_49]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[Related Skills_34]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[Usage_38]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[iCloud Data Manager (ICLOUD)_2]] - document - docker/config/openclaw/skills/i-icloud/README.md
-- [[openclawskillsi-icloudREADME]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Streaming direct voice path (_call_llm_stream)]] - concept - CHANGELOG.md
+- [[Trivy action immutable SHA pin (CI supply chain)]] - rationale - CHANGELOG.md
+- [[Upstream-advisory watch cron jobs (8 toolchain components)]] - concept - CHANGELOG.md
+- [[v1.5.1 — A2A Governance patch release]] - document - CHANGELOG.md
+- [[v1.6.0 — voice terminal release]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/iCloud_Data_Manager_ICLOUD_3
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[iCloud Data Manager (ICLOUD)_2]] - degree 5, connects to 1 community

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
-- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
+- [[bspesp-bsp.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h
+- [[iot_button.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 

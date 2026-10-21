@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[1. Scope of Change_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[2. What Changes and Why_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[3. Scalability Gate_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[4. Blast Radius_4]] - document - .agents/skills/i-pca/SKILL.md
-- [[5. Known Limits and Assumptions_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[6. Alternatives Considered_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[7. Open Questions_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[Output Sections (ALL required)_1]] - document - .agents/skills/i-pca/SKILL.md
-- [[Verification Plan]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[1Password Auth Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Auth Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Common Causes]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Diagnosis]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[HTTP 401 — Unauthorized]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Related Notes_72]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Token Reset]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Token Verification]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[`op read` Failing]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA)]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
-- 1 edge to [[_COMMUNITY_Output Sections (ALL required) (3)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
 
 ## Top bridge nodes
-- [[Verification Plan]] - degree 3, connects to 2 communities
-- [[Output Sections (ALL required)_1]] - degree 9, connects to 1 community
+- [[Auth Errors_2]] - degree 4, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server devonthink]] - code - .mcp.json
+- [[Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

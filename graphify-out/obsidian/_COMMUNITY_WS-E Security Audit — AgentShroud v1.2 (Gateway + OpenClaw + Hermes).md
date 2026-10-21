@@ -8,35 +8,35 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[Dead-code  unwired security modules surfaced (No-Security-Theater flags)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Executive Summary_6]] - document - docs/security/ws-e-audit-v1.2.md
-- [[IEC 62443 risk justification for ACCEPTED items]] - document - docs/security/ws-e-audit-v1.2.md
-- [[MFA note]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-1 · Prompt injection — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-10 · Subagent  delegation privilege escalation — BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-11 · MCP-server compromise — BLOCKED-if-configured  dormant-by-default]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-12 · Skill supply-chain — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-2 · Inbound encoding bypass — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-3 · Cross-collaborator data access — BLOCKED (isolation)  gated by RT-6]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-4 · Cross-group access — data BLOCKED  group tool-ACL UNWIRED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-5 · Shared-memory write poisoning — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-5 — Shared-Memory Write Poisoning (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-6 · Owner-identity spoofing via `forward` body — EXPLOITABLE → FIXED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-7 · Egress exfiltration — BLOCKED in practice  pipeline hook is dead code + residual bypass]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-8 · Multi-bot lateral movement (trust ledger) — EXPLOITABLE (inert)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-9 · Approval-queue bypass — PARTIALLY EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Risk Callouts]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Verification Steps]] - document - docs/security/ws-e-audit-v1.2.md
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - code - gateway/proxy/pipeline.py
-- [[rbac.py (5-level RBAC hierarchy)]] - code - gateway/security/rbac.py
-- [[ws-e-audit-v1.2]] - document - docs/security/ws-e-audit-v1.2.md
+- [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[A valid requested value overrides the default (the AB knob).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[An unknown model size does NOT crash — it falls back to the default.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Duration is rounded for stable, log-friendly records.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[No requested value → the default is used (behaviour unchanged).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Operator-friendly trims + lowercases before matching.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The documented AB knob values are all accepted.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The fallback is visible to operators (WARNING, not silent).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The helper returns a record tagged with model size + duration.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[The record is emitted through the module logger for AB comparison.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[Zero  unknown audio length → rtf is None (no divide-by-zero).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_defaults_to_small_en()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_env_override()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_module_model_size_invalid_env_falls_back()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_handles_zero_audio()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_logs_info()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_returns_structured_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_record_transcription_latency_rounds_duration()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_default_when_unset()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_env_override_selects_configured_model()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_invalid_falls_back_to_default()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_invalid_logs_warning()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_select_model_size_is_case_and_whitespace_insensitive()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_transcribe_emits_latency_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_valid_model_sizes_contains_documented_ab_set()]] - code - gateway/tests/test_voice_stt_model_ab.py
+- [[test_voice_stt_model_ab.py]] - code - gateway/tests/test_voice_stt_model_ab.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,9 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_system-requirements]]
-- 2 edges to [[_COMMUNITY_test_forward_stream.py (2)]]
+- 1 edge to [[_COMMUNITY_proxy_status.py]]
 
 ## Top bridge nodes
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 2 communities
-- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - degree 2, connects to 1 community
+- [[test_voice_stt_model_ab.py]] - degree 15, connects to 1 community

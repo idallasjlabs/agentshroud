@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
-- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
-- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Configured Hosts_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Key Class `SSHProxy`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Purpose_177]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Related Notes_74]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Responsibilities_58]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Security Notes_8]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[`execute(host str, command str, session_id str) → SSHExecResult`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[ssh_proxy.py_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[ssh_proxy.py]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,3 @@ members: 9
 TABLE source_file, type FROM #community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
-
-## Top bridge nodes
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community

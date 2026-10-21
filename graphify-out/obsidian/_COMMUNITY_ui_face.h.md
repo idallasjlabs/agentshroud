@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ui_face.h]] - code - firmware/voice-terminal/main/ui_face.h
+- [[Obsidian app.json (empty)]] - document - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,20 @@
 ---
 type: community
-members: 11
+members: 7
 ---
 
 # cmd_start
 
-**Members:** 11 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Funnel hermes via gateway (Hermes isolation boundary)]] - rationale - scripts/tailscale-serve.sh
-- [[Funnel root path  - gateway hermes-dashboard]] - rationale - scripts/tailscale-serve.sh
-- [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[Temporary Funnel stopgap for ESP32 voice terminal]] - rationale - scripts/tailscale-serve.sh
-- [[cmd_persist]] - code - scripts/tailscale-serve.sh
-- [[cmd_start]] - code - scripts/tailscale-serve.sh
-- [[cmd_status]] - code - scripts/tailscale-serve.sh
-- [[cmd_stop]] - code - scripts/tailscale-serve.sh
-- [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
-- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
+- [[dot-get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[dot-get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[dot-to_dict()_2]] - code - gateway/security/memory_integrity.py
+- [[Any_7]] - code - gateway/security/memory_integrity.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Request]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 5 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency (2)_1]]
 
 ## Top bridge nodes
-- [[cmd_start]] - degree 8, connects to 1 community
-- [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - degree 2, connects to 1 community
+- [[dot-to_dict()_2]] - degree 4, connects to 2 communities
+- [[Any_7]] - degree 5, connects to 1 community
+- [[dot-get_integrity_status()]] - degree 4, connects to 1 community
+- [[dot-get_recent_alerts()]] - degree 4, connects to 1 community

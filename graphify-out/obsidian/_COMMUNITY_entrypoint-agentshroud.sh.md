@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
-- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[codex-review.sh]] - code - scripts/codex-review.sh
+- [[codex-review.sh script]] - code - scripts/codex-review.sh
 
 ## Live Query (requires Dataview plugin)
 

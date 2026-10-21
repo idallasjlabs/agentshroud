@@ -1,35 +1,32 @@
 ---
 type: community
-members: 22
+members: 19
 ---
 
 # AWS Cloud Management & FinOps Agent (3)
 
-**Members:** 22 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps Agent_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Cost Optimization Priority_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Cross-Account & Future Proofing_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Decision Framework_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Deliverables_3]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[EBS Performance Analysis (Critical Pattern)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[EBS bottleneck vs oversize distinction]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
-- [[Expertise_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[FinOps agent safety model (dry-run default, tiered approval)]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
-- [[Guardrails_8]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Identity_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Numbered script naming convention (00-99)]] - concept - .llm_settings/docs/AWS_AGENT_README.md
-- [[Reports (`.reports`)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Required Tags (All Resources)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Resource Inventory CSV Schema_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rightsizing Logic_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Script Templates_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Scripts (`.scripts`)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Tag Audit Process_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Tagging Standard_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Workflow_3]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[hermesskillsi-awsSKILL]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Assigning Work_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Continuity Files_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Definition of Done (from CLAUDE.md)]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Escalation_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Known Risks_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Project Roadmap_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[README.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Risk Management_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Role_53]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Status Reporting_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Task Coordination_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Tracking Format_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[hermesskillsi-pmSKILL]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Operating Rules (Non-Negotiable) (2)]]
-- 1 edge to [[_COMMUNITY_FY26 Cost Reduction Context]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
-- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
+- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps Agent_1]] - degree 17, connects to 5 communities
+- [[Skill Project Management (PM)_1]] - degree 8, connects to 1 community

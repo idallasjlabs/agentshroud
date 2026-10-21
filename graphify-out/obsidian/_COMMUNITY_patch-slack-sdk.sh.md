@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[patch-slack-sdk.sh]] - code - docker/scripts/patch-slack-sdk.sh
-- [[patch-slack-sdk.sh script]] - code - docker/scripts/patch-slack-sdk.sh
+- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
+- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
 
 ## Live Query (requires Dataview plugin)
 

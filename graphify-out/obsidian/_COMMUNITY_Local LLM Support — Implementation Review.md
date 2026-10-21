@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[10. Known Gaps  Open Items]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[11. Quick Reference — Switching to Local Mode]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[2. Source Files]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[3. How Provider Detection Works (`llm_proxy.py95-153`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[5. Model Switching CLI (`scriptsswitch_model.sh`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[6. Three Local Backends]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[8. Telegram Integration]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[9. Bot Startup Flow (local mode)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[LOCAL_LLM_REVIEW]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Local LLM Support — Implementation Review]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Multi-model mode (`local-multi`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Quick Reference — Switching to Turbo Fieldflare]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[dot-test_cross_group_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_legacy_no_rbac_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_member_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_non_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_owner_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_unknown_group_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[A legitimate group member's write lands.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A member of group B cannot write into group A's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A user who is NOT a member of the target group cannot poison its memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Back-compat with no RBAC context supplied, the namespace-isolation         call]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[TestGroupMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[The owner may write into any group's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Writing to a group that does not exist in the RBAC config is denied.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +30,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenSCAP]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
-- [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities
+- [[TestGroupMemoryWriteACL]] - degree 11, connects to 5 communities

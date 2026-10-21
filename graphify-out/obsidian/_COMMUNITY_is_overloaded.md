@@ -1,61 +1,52 @@
 ---
 type: community
-members: 48
+members: 39
 ---
 
 # is_overloaded
 
-**Members:** 48 nodes
+**Members:** 39 nodes
 
 ## Members
-- [[dot-test_anthropic_api_error_500_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_anthropic_detection_unchanged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_empty_and_garbage_bodies()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_gemini_invalid_argument_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_gemini_resource_exhausted_stays_quota_territory()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_gemini_unavailable_503()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_gemini_unavailable_http_200()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_http_200_with_overloaded_body()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_http_503_with_overloaded_body()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_http_529_with_overloaded_body()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_mention_in_content_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_non_dict_json_body_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_normal_200_message_body_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_openai_invalid_request_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_openai_overloaded_message_http_200()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_openai_server_error_500_requires_capacity_wording()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_openai_server_error_503()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_openai_server_error_503_without_capacity_wording()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_other_error_types_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_overloaded_word_in_chat_content_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_quota_statuses_not_claimed()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[dot-test_unrecognized_error_shape_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[Return (True, provider_overloaded) for a provider capacity-error     envelop]] - rationale - gateway/proxy/llm_quota_detector.py
-- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - rationale - gateway/proxy/llm_quota_detector.py
-- [[SCRUM-60 in-body overload envelopes from OpenAI and Gemini must fail     over e]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[TestIsOverloaded]] - code - gateway/tests/test_llm_quota_detector.py
-- [[TestOverloadedMultiProvider]] - code - gateway/tests/test_llm_quota_detector.py
-- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[is_overloaded()]] - code - gateway/proxy/llm_quota_detector.py
-- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
-- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
-- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[A HERMES_MAIN_MODEL naming the anchor model directly (not via the     'qwen3-14b]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[An unrecognized mode value is treated conservatively as cloud.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[Mode comparison tolerates case and surrounding whitespace from env files.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[No arg → emit the model (start.sh convenience).]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[Resolve (model, provider) for Hermes from the container environment.      Preced]] - rationale - docker/bots/hermes/resolve_model.py
+- [[_apply_stale_alias_correction()]] - code - docker/bots/hermes/resolve_model.py
+- [[_load_resolver()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[cloud mode with a Claude HERMES_MAIN_MODEL → that model + anthropic provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[cloud mode with an OpenAI HERMES_MAIN_MODEL → openai provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[cloud mode with everything unset → safe Anthropic default, never empty.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[cloud mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_CLOUD_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[gateway LLM proxy local-model routing (llm_proxy.py)]] - concept - docker/bots/hermes/resolve_model.py
+- [[local mode must not use a stale cloud HERMES_MAIN_MODEL.      Guards against the]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[local mode requested but neither HERMES_MAIN_MODEL nor local ref is local.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[local mode with HERMES_MAIN_MODEL set → bare local model + ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[local mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_LOCAL_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[local-multi mode LM Studio dash-style anchor model → ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
+- [[resolve_model()]] - code - docker/bots/hermes/resolve_model.py
+- [[test_cli_default_key_is_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cli_emits_model_line()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cli_emits_provider_line()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cli_unknown_key_returns_nonzero()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cloud_mode_falls_back_to_cloud_ref_when_main_unset()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cloud_mode_no_refs_returns_safe_default()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cloud_mode_openai_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_cloud_mode_uses_hermes_main_model_when_claude()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_hermes_model_resolver.py]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_local_mode_empty_local_ref_falls_back_to_default_local_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_local_mode_falls_back_to_local_ref_when_main_unset()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_local_mode_ignores_stale_cloud_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_local_mode_recognizes_nemotron_as_local()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_local_mode_uses_hermes_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_local_multi_mode_uses_lmstudio_dash_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_mode_case_insensitive_and_whitespace_tolerant()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_resolve_model_corrects_stale_alias_from_hermes_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_stale_qwen3_rapid_alias_corrected_to_nemotron()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_unknown_mode_treated_as_cloud()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[test_unrelated_model_names_pass_through_uncorrected()]] - code - gateway/tests/test_hermes_model_resolver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,7 +56,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_is_rate_limited_post_retry]]
+- 7 edges to [[_COMMUNITY_is_overloaded (2)]]
+- 1 edge to [[_COMMUNITY_Release Notes - AgentShroud v0.9.0 (2)]]
 
 ## Top bridge nodes
-- [[llm_quota_detector.py]] - degree 7, connects to 1 community
+- [[test_hermes_model_resolver.py]] - degree 23, connects to 1 community
+- [[resolve_model()]] - degree 21, connects to 1 community
+- [[_apply_stale_alias_correction()]] - degree 4, connects to 1 community
+- [[gateway LLM proxy local-model routing (llm_proxy.py)]] - degree 2, connects to 1 community

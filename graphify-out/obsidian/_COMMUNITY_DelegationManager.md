@@ -1,78 +1,77 @@
 ---
 type: community
-members: 65
+members: 64
 ---
 
 # DelegationManager
 
-**Members:** 65 nodes
+**Members:** 64 nodes
 
 ## Members
-- [[dot-__init__()_193]] - code - gateway/security/delegation.py
-- [[dot-_load()]] - code - gateway/security/delegation.py
-- [[dot-_require_owner()]] - code - gateway/security/delegation.py
-- [[dot-_revoke_by_user_privilege()]] - code - gateway/security/delegation.py
-- [[dot-_save()]] - code - gateway/security/delegation.py
-- [[dot-cleanup_expired()_2]] - code - gateway/security/delegation.py
-- [[dot-delegate()]] - code - gateway/security/delegation.py
-- [[dot-from_dict()_8]] - code - gateway/security/delegation.py
-- [[dot-get_active_delegations()]] - code - gateway/security/delegation.py
-- [[dot-get_delegations_for_user()]] - code - gateway/security/delegation.py
-- [[dot-is_active()]] - code - gateway/security/delegation.py
-- [[dot-is_delegated()]] - code - gateway/security/delegation.py
-- [[dot-revoke()]] - code - gateway/security/delegation.py
-- [[dot-revoke_all_for_user()]] - code - gateway/security/delegation.py
-- [[dot-test_cleanup_expired_removes_and_returns_count()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_create_egress_delegation()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_create_user_management_delegation()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_delegation_expires_correctly()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_delegation_has_unique_id()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_delegation_to_dict_and_back()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_duration_over_max_rejected()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_duration_zero_rejected()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_get_active_delegations_excludes_expired()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_get_delegations_for_user()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_false_after_expiry()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_false_for_other_privilege()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_false_for_other_user()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_true_for_active()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_no_active_delegations_initially()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_non_owner_cannot_delegate()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_non_owner_cannot_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_owner_cannot_self_delegate()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_redelegate_replaces_existing()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-to_dict()_14]] - code - gateway/security/delegation.py
-- [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
-- [[Create a time-bounded delegation.          Args             owner_id Must matc]] - rationale - gateway/security/delegation.py
-- [[Delegation_1]] - code - gateway/security/delegation.py
-- [[DelegationError]] - code - gateway/security/delegation.py
-- [[DelegationManager]] - code - gateway/tests/test_delegation.py
-- [[DelegationManager_1]] - code - gateway/security/delegation.py
-- [[DelegationPrivilege]] - code - gateway/security/delegation.py
-- [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
-- [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
-- [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
-- [[Remove expired delegations, persist result. Returns count removed.]] - rationale - gateway/security/delegation.py
-- [[Return True if the user currently holds the delegated privilege.]] - rationale - gateway/security/delegation.py
-- [[Return all active delegations held by a specific user.]] - rationale - gateway/security/delegation.py
-- [[Return all currently active (non-expired) delegations.]] - rationale - gateway/security/delegation.py
-- [[Revoke all delegations for a specific user. Returns count removed.]] - rationale - gateway/security/delegation.py
-- [[Revoke an active delegation.          Returns True if a matching active delegati]] - rationale - gateway/security/delegation.py
-- [[Subset of privileges that can be delegated by the owner.]] - rationale - gateway/security/delegation.py
-- [[TestAccessControl_2]] - code - gateway/tests/test_delegation.py
-- [[TestDelegateBasic]] - code - gateway/tests/test_delegation.py
-- [[TestIsDelegated]] - code - gateway/tests/test_delegation.py
-- [[TestListAndCleanup]] - code - gateway/tests/test_delegation.py
-- [[TestRedelegation]] - code - gateway/tests/test_delegation.py
-- [[TestRevoke]] - code - gateway/tests/test_delegation.py
-- [[TestSerialization_2]] - code - gateway/tests/test_delegation.py
-- [[ValueError]] - code
-- [[delegation.py]] - code - gateway/security/delegation.py
-- [[mgr()_2]] - code - gateway/tests/test_delegation.py
-- [[test_delegation.py]] - code - gateway/tests/test_delegation.py
+- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - rationale - gateway/proxy/http_proxy.py
+- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[AGENTSHROUD_MODE]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
+- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
+- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
+- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
+- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
+- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
+- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
+- [[Description_12]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
+- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
+- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
+- [[FR1 Identification and Authentication Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR3 System Integrity]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR5 Restricted Data Flow]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR6 Timely Response to Events]] - concept - docs/compliance/iec-62443-matrix.md
+- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
+- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
+- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
+- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
+- [[Related Notes_69]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
+- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
+- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
+- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
+- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
+- [[Rule agentshroud-ssrf-httpx]] - concept - .semgrep.yml
+- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
+- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
+- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
+- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
+- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Summary_26]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
+- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Usage_113]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Values_3]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[assert-security-check rule (CWE-617)]] - rationale - .semgrep.yml
+- [[config_integrity.py]] - code - gateway/security/config_integrity.py
+- [[egress_filter.py_1]] - code - gateway/security/egress_filter.py
+- [[hardcoded-password rule (CWE-798)]] - rationale - .semgrep.yml
+- [[heuristic_classifier.py]] - code - gateway/security/heuristic_classifier.py
+- [[http_proxy.py_2]] - code - gateway/proxy/http_proxy.py
+- [[iec-62443-matrix]] - document - docs/compliance/iec-62443-matrix.md
+- [[log-sensitive-key rule (CWE-532)]] - rationale - .semgrep.yml
+- [[path-traversal-open rule (CWE-22)]] - rationale - .semgrep.yml
+- [[pickle-load rule (CWE-502)]] - rationale - .semgrep.yml
+- [[prompt_guard.py_1]] - code - gateway/security/prompt_guard.py
+- [[sql-injection rule (CWE-89)]] - rationale - .semgrep.yml
+- [[ssrf-httpx rule (CWE-918)]] - rationale - .semgrep.yml
+- [[ssrf-requests rule (CWE-918)]] - rationale - .semgrep.yml
+- [[subprocess-shell-true rule (CWE-78)]] - rationale - .semgrep.yml
+- [[subprocess-unvalidated-input rule (CWE-78)]] - rationale - .semgrep.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -82,19 +81,59 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 6 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 4 edges to [[_COMMUNITY__make_proxy()]]
+- 4 edges to [[_COMMUNITY_DelegationManager (2)]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
 - 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_Path (2)]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
+- 3 edges to [[_COMMUNITY_test_playback_state.c]]
+- 2 edges to [[_COMMUNITY_Common Queries]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager (2)]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (5)]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
+- 2 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY__pcm_bytes]]
+- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
+- 1 edge to [[_COMMUNITY_A2AMethod]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY_First iteration ingests + records; second sees dedup and skips. (2)]]
+- 1 edge to [[_COMMUNITY__wrap_response() (2)_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_TestCheckCommandExecution]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator (3)]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase]]
+- 1 edge to [[_COMMUNITY_Regression guard (2026-08-30) the report scanned latest tags while deploys…]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+- 1 edge to [[_COMMUNITY_main.py]]
 
 ## Top bridge nodes
-- [[DelegationPrivilege]] - degree 25, connects to 5 communities
-- [[delegation.py]] - degree 6, connects to 2 communities
-- [[DelegationManager_1]] - degree 24, connects to 1 community
-- [[dot-from_dict()_8]] - degree 3, connects to 1 community
-- [[ValueError]] - degree 2, connects to 1 community
+- [[egress_filter.py_1]] - degree 26, connects to 14 communities
+- [[http_proxy.py_2]] - degree 15, connects to 11 communities
+- [[prompt_guard.py_1]] - degree 16, connects to 9 communities
+- [[FR3 System Integrity]] - degree 9, connects to 4 communities
+- [[iec-62443-matrix]] - degree 8, connects to 4 communities

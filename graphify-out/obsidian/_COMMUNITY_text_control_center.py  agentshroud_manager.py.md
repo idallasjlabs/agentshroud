@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Purpose_14]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Related Notes_18]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Containers startup order agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Deployment Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Images docker-agentshroud (node22-bookworm-slim, Dockerfile.agentshroud), docker-gateway (python3.11-slim, gatewayDockerfile)]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Secrets required before containers start (openai_api_key.txt, 1password_bot_ , gateway_password.txt, 1password_service_account)]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[Docker Volumes (auto-created) agentshroud-config, agentshroud-workspace, agentshroud-ssh, gateway-data]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
+- [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - image - docs/diagrams/images/diagram-22-dependency-graph.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,12 @@ members: 6
 TABLE source_file, type FROM #community/text_control_centerpy_/_agentshroud_managerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_sanitizer.py]]
+- 1 edge to [[_COMMUNITY_competitive-report-.md dated reports]]
+
+## Top bridge nodes
+- [[Containers startup order agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy]] - degree 5, connects to 1 community
+- [[Docker Secrets required before containers start (openai_api_key.txt, 1password_bot_ , gateway_password.txt, 1password_service_account)]] - degree 3, connects to 1 community
+- [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - degree 3, connects to 1 community

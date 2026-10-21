@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud LinkedIn Profile Image]] - image - branding/social/linkedin-profile-400x400.png
+- [[Apple Touch Icon (AgentShroud logo mark)]] - image - branding/favicons/apple-touch-icon.png
 
 ## Live Query (requires Dataview plugin)
 

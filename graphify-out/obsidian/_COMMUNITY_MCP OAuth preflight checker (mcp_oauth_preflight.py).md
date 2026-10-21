@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # MCP OAuth preflight checker (mcp_oauth_preflight.py)
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Atlassian OAuth 2.0 (3LO) config]] - concept - .llm_settings/docs/MCP_README.md
-- [[GitHub OAuth device authorization flow config]] - concept - .llm_settings/docs/MCP_README.md
-- [[MCP OAuth preflight checker (mcp_oauth_preflight.py)]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
-- [[Secrets stay in .env, never in the repo]] - rationale - .llm_settings/docs/MCP_README.md
+- [[dot-test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload empty text should not shadow caption filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +20,14 @@ members: 4
 TABLE source_file, type FROM #community/MCP_OAuth_preflight_checker_mcp_oauth_preflightpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY__req]]
+- 4 edges to [[_COMMUNITY_CronStateMonitor]]
+- 4 edges to [[_COMMUNITY_UserSessionManager (2)]]
+
+## Top bridge nodes
+- [[dot-test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[dot-test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[dot-test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[dot-test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - degree 4, connects to 3 communities

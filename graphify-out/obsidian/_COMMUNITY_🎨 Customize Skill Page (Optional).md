@@ -8,10 +8,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Add Long Description]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Add Screenshots]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Add Security Badge]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎨 Customize Skill Page (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Mode B — Comprehensive review sweep_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 2 — Work through directories one at a time_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Publish SecureBrowser to ClawHub - Step-by-Step Guide]]
+- 1 edge to [[_COMMUNITY_fixture]]
 
 ## Top bridge nodes
-- [[🎨 Customize Skill Page (Optional)]] - degree 4, connects to 1 community
+- [[Mode B — Comprehensive review sweep_2]] - degree 4, connects to 1 community

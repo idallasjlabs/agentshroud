@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Prune old nodes for changed files before AST re-insert (1178)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
+- [[AGENTSHROUD_VERSION fallback to dockerversions.env]] - rationale - docker/bots/hermes/run-standalone.sh
 
 ## Live Query (requires Dataview plugin)
 

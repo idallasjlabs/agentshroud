@@ -1,71 +1,65 @@
 ---
 type: community
-members: 58
+members: 52
 ---
 
 # ReportStore
 
-**Members:** 58 nodes
+**Members:** 52 nodes
 
 ## Members
-- [[dot-__init__()_32]] - code - gateway/security/report_store.py
-- [[dot-_check_size()]] - code - gateway/security/report_store.py
-- [[dot-_enforce_count_cap()]] - code - gateway/security/report_store.py
-- [[dot-_path()]] - code - gateway/security/report_store.py
-- [[dot-_persist()]] - code - gateway/security/report_store.py
-- [[dot-_sanitize_async()]] - code - gateway/security/report_store.py
-- [[dot-_sanitize_sync()]] - code - gateway/security/report_store.py
-- [[dot-_valid_id()]] - code - gateway/security/report_store.py
-- [[dot-client()]] - code - gateway/tests/test_report_store.py
-- [[dot-delete()]] - code - gateway/security/report_store.py
-- [[dot-get()]] - code - gateway/security/report_store.py
-- [[dot-list()]] - code - gateway/security/report_store.py
-- [[dot-save()]] - code - gateway/security/report_store.py
-- [[dot-save_async()]] - code - gateway/security/report_store.py
-- [[dot-test_async_sanitizer_refused_on_sync_save()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_bot_and_title_length_capped()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_content_cap_default_is_1mb()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_content_size_cap()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_corrupt_metadata_skipped_in_list()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_count_cap_prunes_oldest()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_create_list_get_roundtrip()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_cross_bot_visibility()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_delete()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_get_missing_returns_none()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_get_rejects_path_traversal()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_list_filter_by_bot()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_list_returns_metadata_without_content()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_missing_content_422()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_pii_redacted_on_save()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_report_id_is_path_safe()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_round_trip()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_save_async_size_cap()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_save_async_with_async_sanitizer()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_save_async_with_sync_sanitizer()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_survives_new_instance()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_tags_preserved()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_title_and_tags_sanitized_async()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_title_and_tags_sanitized_sync()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
-- [[dot-test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
-- [[Any_4]] - code - gateway/security/report_store.py
-- [[Filesystem-backed shared report store on the gateway-data volume.]] - rationale - gateway/security/report_store.py
-- [[Metadata (no content) for all reports, newest first.          O(n) file reads pe]] - rationale - gateway/security/report_store.py
-- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
-- [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
-- [[Prune oldest reports so the shared volume can't be filled.]] - rationale - gateway/security/report_store.py
-- [[ReportStore]] - code - gateway/security/report_store.py
-- [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
-- [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - rationale - gateway/tests/test_report_store.py
-- [[TestAsyncSave]] - code - gateway/tests/test_report_store.py
-- [[TestPersistence]] - code - gateway/tests/test_report_store.py
-- [[TestReportAPI]] - code - gateway/tests/test_report_store.py
-- [[TestReviewHardening]] - code - gateway/tests/test_report_store.py
-- [[TestSaveAndGet]] - code - gateway/tests/test_report_store.py
-- [[TestSecurity]] - code - gateway/tests/test_report_store.py
-- [[report_store.py]] - code - gateway/security/report_store.py
-- [[store()]] - code - gateway/tests/test_report_store.py
-- [[test_report_store.py]] - code - gateway/tests/test_report_store.py
+- [[dot-__init__()_35]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_36]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-forward()]] - code - gateway/tests/test_a2a_proxy.py
+- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[A2APolicyEngine]] - code - gateway/tests/test_a2a_proxy.py
+- [[A2AProxy]] - code - gateway/tests/test_a2a_proxy.py
+- [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Token comparison must not leak timing information — same guarantee as     Hermes]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
+- [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
+- [[_StubForwarder]] - code - gateway/tests/test_a2a_proxy.py
+- [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
+- [[_jsonrpc()]] - code - gateway/tests/test_a2a_proxy.py
+- [[forwarder()]] - code - gateway/tests/test_a2a_proxy.py
+- [[proxy()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_agent_card_discovery_is_never_policy_gated()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_agent_card_discovery_is_still_audited()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_concatenates_text_parts()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_empty_message_returns_empty_string()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_flags_binary_parts_without_scanning_them()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_handles_missing_parts_key()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_skips_non_dict_entries_in_parts()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_accepts_legacy_path_style_method_alias()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_extracts_callback_url_from_set_push_config()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_extracts_method_and_task_id_from_send_message()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_extracts_task_id_from_get_task()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_missing_method_field_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_non_dict_body_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_tolerates_non_dict_params()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_unknown_method_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_malformed_body_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_from_known_bearer_token()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_malformed_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_missing_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_unknown_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_uses_constant_time_comparison()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -75,9 +69,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 17 edges to [[_COMMUNITY_UserSessionManager]]
+- 15 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 14 edges to [[_COMMUNITY_test_llm_proxy.py]]
 
 ## Top bridge nodes
-- [[test_report_store.py]] - degree 10, connects to 1 community
-- [[dot-_path()]] - degree 5, connects to 1 community
+- [[test_a2a_proxy.py]] - degree 50, connects to 3 communities
+- [[A2AProxy]] - degree 27, connects to 3 communities
+- [[_StubForwarder]] - degree 26, connects to 3 communities
+- [[_StubAuditStore]] - degree 12, connects to 3 communities
+- [[A2APolicyEngine]] - degree 10, connects to 3 communities

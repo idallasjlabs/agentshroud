@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Purpose_34]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[Related Skills_20]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[Usage_23]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[hermesskillsi-secREADME]] - document - docker/config/hermes/skills/i-sec/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[IV. System Architecture]] - degree 5, connects to 1 community
+- [[Security Review (SEC)_1]] - degree 5, connects to 1 community

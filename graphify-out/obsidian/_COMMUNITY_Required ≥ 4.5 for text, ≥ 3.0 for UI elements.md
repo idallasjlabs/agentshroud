@@ -1,32 +1,28 @@
 ---
 type: community
-members: 19
+members: 15
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
 
-**Members:** 19 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[dot-agentsskillsi-bsSKILL]] - document - .agents/skills/i-bs/SKILL.md
-- [[Anti-Patterns to Flag_15]] - document - .agents/skills/i-bs/SKILL.md
-- [[Brand Audit Checklist]] - document - .agents/skills/i-bs/SKILL.md
-- [[Brand System Components]] - document - .agents/skills/i-bs/SKILL.md
-- [[Color Token Definition]] - document - .agents/skills/i-bs/SKILL.md
-- [[Core Discipline Audit → Define → Apply → Enforce]] - document - .agents/skills/i-bs/SKILL.md
-- [[Deck  Slide Master Rules]] - document - .agents/skills/i-bs/SKILL.md
-- [[Dependencies_15]] - document - .agents/skills/i-bs/SKILL.md
-- [[Diagram Theme Block (Mermaid)]] - document - .agents/skills/i-bs/SKILL.md
-- [[File & Directory Conventions]] - document - .agents/skills/i-bs/SKILL.md
-- [[HTML  CSS Brand Variables]] - document - .agents/skills/i-bs/SKILL.md
-- [[Patterns by Output Type]] - document - .agents/skills/i-bs/SKILL.md
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - document - .agents/skills/i-bs/SKILL.md
-- [[Role_49]] - document - .agents/skills/i-bs/SKILL.md
-- [[Rules_17]] - document - .agents/skills/i-bs/SKILL.md
-- [[Skill Branding Specialist (BS)]] - document - .agents/skills/i-bs/SKILL.md
-- [[Typography Scale]] - document - .agents/skills/i-bs/SKILL.md
-- [[Validate contrast ratio]] - document - .agents/skills/i-bs/SKILL.md
-- [[Voice & Tone Guide]] - document - .agents/skills/i-bs/SKILL.md
+- [[Autonomous remote dev workflows (hdev, odev)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
+- [[Credential isolation — keys live only in the gateway]] - rationale - docker-compose.secure.yml
+- [[Gateway DNS filter endpoint (port 53)]] - concept - docker-compose.secure.yml
+- [[MCP servers confined to the internal network]] - rationale - docker-compose.secure.yml
+- [[PostgreSQL ~.pgpass password management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[agentshroud-external network]] - code - docker-compose.secure.yml
+- [[agentshroud-gateway service (proxy mode)]] - code - docker-compose.secure.yml
+- [[agentshroud-internal network (no external access)]] - code - docker-compose.secure.yml
+- [[direnv-based environment variable management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[external network (gateway host-facing bridge)]] - code - docker-compose.secure.yml
+- [[internal network (isolated, internaltrue)]] - code - docker-compose.secure.yml
+- [[openclaw service (internal network only)]] - code - docker-compose.secure.yml
+- [[openclaw service (proxy mode, internal-only network)]] - code - docker-compose.secure.yml
+- [[wazuh service (proxy-mode HIDS sidecar)]] - code - docker-compose.secure.yml
+- [[wazuh-agent sidecar (pinned 4.14.7)]] - code - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements (2)]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
 
 ## Top bridge nodes
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - degree 10, connects to 1 community
-- [[Skill Branding Specialist (BS)]] - degree 8, connects to 1 community
-- [[Validate contrast ratio]] - degree 2, connects to 1 community
+- [[agentshroud-gateway service (proxy mode)]] - degree 6, connects to 1 community
+- [[Autonomous remote dev workflows (hdev, odev)]] - degree 2, connects to 1 community

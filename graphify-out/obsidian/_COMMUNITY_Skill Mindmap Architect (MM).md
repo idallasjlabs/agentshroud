@@ -1,40 +1,30 @@
 ---
 type: community
-members: 27
+members: 17
 ---
 
 # Skill: Mindmap Architect (MM)
 
-**Members:** 27 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[dot-agentsskillsi-mmSKILL]] - document - .agents/skills/i-mm/SKILL.md
-- [[Anti-Patterns to Flag_5]] - document - .agents/skills/i-mm/SKILL.md
-- [[Brainstorming Session Map]] - document - .agents/skills/i-mm/SKILL.md
-- [[Core Discipline Frame → Structure → Generate → Validate]] - document - .agents/skills/i-mm/SKILL.md
-- [[Curriculum Design (with `i-atlas`)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Decision Tree Map]] - document - .agents/skills/i-mm/SKILL.md
-- [[Dependencies_5]] - document - .agents/skills/i-mm/SKILL.md
-- [[Example FODL Pipeline Overview]] - document - .agents/skills/i-mm/SKILL.md
-- [[Export and Sharing Conventions]] - document - .agents/skills/i-mm/SKILL.md
-- [[Hierarchy Design — Outline First]] - document - .agents/skills/i-mm/SKILL.md
-- [[Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
-- [[Knowledge Map (PKE  OKE integration)]] - document - .agents/skills/i-mm/SKILL.md
-- [[MCP Tool markmap-mcp-server]] - document - .agents/skills/i-mm/SKILL.md
-- [[MCP Tool xmind-generator-mcp]] - document - .agents/skills/i-mm/SKILL.md
-- [[Markdown-to-Mindmap Conversion]] - document - .agents/skills/i-mm/SKILL.md
-- [[Markmap Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
-- [[Markmap Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
-- [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
-- [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
-- [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
-- [[Role_30]] - document - .agents/skills/i-mm/SKILL.md
-- [[Rules_6]] - document - .agents/skills/i-mm/SKILL.md
-- [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md
-- [[Validation Checklist_2]] - document - .agents/skills/i-mm/SKILL.md
-- [[When to Use Mindmaps vs Other Formats]] - document - .agents/skills/i-mm/SKILL.md
-- [[XMind Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
+- [[dot-agentsskillsi-crREADME]] - document - .agents/skills/i-cr/README.md
+- [[Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
+- [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
+- [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Production-Ready PR (i-crpr)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
+- [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
+- [[Purpose_103]] - document - .agents/skills/i-cr/README.md
+- [[Purpose_104]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Related Skills_77]] - document - .agents/skills/i-cr/README.md
+- [[Related Skills_78]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
+- [[Usage_83]] - document - .agents/skills/i-cr/README.md
+- [[Usage_84]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,7 +34,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 3 edges to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_MultiHostResult]]
 
 ## Top bridge nodes
-- [[Skill Mindmap Architect (MM)]] - degree 15, connects to 1 community
+- [[Code Review (i-cr)]] - degree 10, connects to 2 communities
+- [[Project Management (SKILL)]] - degree 8, connects to 2 communities
+- [[Pull Request Generator (README)]] - degree 2, connects to 1 community

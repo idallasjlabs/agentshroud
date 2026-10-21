@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCHEMA_VERSION entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
+- [[--cluster-only Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

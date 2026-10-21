@@ -1,96 +1,64 @@
 ---
 type: community
-members: 83
+members: 51
 ---
 
 # MiddlewareManager (4)
 
-**Members:** 83 nodes
+**Members:** 51 nodes
 
 ## Members
-- [[dot-test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
-- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
-- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
-- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
-- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
-- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
+- [[1Password credential isolation]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud Security Perimeter]] - concept - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud — Vault Home]] - document - docs/vault/00 - START HERE/Home.md
+- [[Architecture Overview_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Architecture Overview]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Audit ledger (hash-verifiable chain)]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Common Issues]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Components_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Configuration & Infrastructure]] - document - docs/vault/00 - START HERE/Home.md
+- [[Configuration Files]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Container Architecture_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Data Flow]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Diagrams]] - document - docs/vault/00 - START HERE/Home.md
+- [[Enforce mode by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Fail-closed by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Full System Diagram]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Health Checks]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Home]] - document - docs/vault/00 - START HERE/Home.md
+- [[Human-in-the-loop approval queue]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Kill Switch]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Least privilege MCP permissions]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Logs]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Module Index]] - document - docs/vault/00 - START HERE/Home.md
+- [[Navigate This Vault]] - document - docs/vault/00 - START HERE/Home.md
+- [[Network Topology]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Operations]] - document - docs/vault/00 - START HERE/Home.md
+- [[PII redacted before forwarding]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Quick Reference]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_20]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_21]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_22]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Shutdown & Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Startup Sequence]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Summary_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[ledger.py]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -100,12 +68,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_AlertDispatcher]]
-- 11 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 4 edges to [[_COMMUNITY_ContextSegment]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task (3)]]
+- 1 edge to [[_COMMUNITY_Health Checks]]
+- 1 edge to [[_COMMUNITY__make_proxy() (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]]
+- 1 edge to [[_COMMUNITY_dot-pimcp.json]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[test_privilege_separation.py]] - degree 15, connects to 2 communities
-- [[TestAgentShroudSourceCodeProtection]] - degree 9, connects to 2 communities
-- [[TestReadAccess]] - degree 9, connects to 2 communities
-- [[TestSecurityPolicyProtection]] - degree 9, connects to 2 communities
-- [[TestConfigurationProtection]] - degree 8, connects to 2 communities
+- [[main.py]] - degree 17, connects to 11 communities
+- [[Data Flow]] - degree 11, connects to 6 communities
+- [[Startup Sequence]] - degree 10, connects to 6 communities
+- [[ledger.py]] - degree 7, connects to 3 communities
+- [[Shutdown & Recovery]] - degree 3, connects to 1 community

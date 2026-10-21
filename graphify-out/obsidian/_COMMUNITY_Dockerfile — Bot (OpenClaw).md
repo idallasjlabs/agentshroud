@@ -1,39 +1,33 @@
 ---
 type: community
-members: 26
+members: 20
 ---
 
 # Dockerfile — Bot (OpenClaw)
 
-**Members:** 26 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Directory Structure_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Dockerfile.gateway vault note]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Gateway pre-installed security tools (ClamAV, Trivy, OpenSCAP, 1Password CLI, spaCy)]] - concept - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[OpenSCAP & IEC 62443 compliance validation]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[OpenSCAP dependency note]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[OpenSCAP relationship to TrivyClamAVFalco]] - concept - docs/vault/05 - Dependencies/openscap.md
-- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Related Notes_36]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Related Notes_37]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Security Hardening]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
-- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
-- [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[dot-agentsskillsi-qaSKILL]] - document - .agents/skills/i-qa/SKILL.md
+- [[A. AWS Glue Jobs]] - document - .agents/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions]] - document - .agents/skills/i-qa/SKILL.md
+- [[C. AWS Athena]] - document - .agents/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)]] - document - .agents/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)]] - document - .agents/skills/i-qa/SKILL.md
+- [[F. IAM Policies]] - document - .agents/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network]] - document - .agents/skills/i-qa/SKILL.md
+- [[General Rules]] - document - .agents/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist]] - document - .agents/skills/i-qa/SKILL.md
+- [[Objective]] - document - .agents/skills/i-qa/SKILL.md
+- [[Output Format_11]] - document - .agents/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
+- [[Role_45]] - document - .agents/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
+- [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Dockerfile — Bot (OpenClaw) (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
-- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
-- 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[Dockerfile — Gateway]] - degree 11, connects to 3 communities
-- [[Dockerfile — Bot (OpenClaw)]] - degree 12, connects to 1 community
-- [[OpenSCAP & IEC 62443 compliance validation]] - degree 2, connects to 1 community
+- [[Skill Quality Assurance (QA)]] - degree 7, connects to 1 community

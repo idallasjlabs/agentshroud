@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo — GlowLight Variant]] - image - branding/agentshroud-logo-light-bg.png
+- [[MCP Server github]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

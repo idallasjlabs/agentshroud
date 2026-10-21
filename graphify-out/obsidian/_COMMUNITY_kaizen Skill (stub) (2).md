@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[incident-response Skill (stub)_1]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
-- [[kaizen Skill (stub)_1]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
-- [[kanban Skill (stub)_1]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
+- [[eightctl]] - document - skills/openclaw/eightctl/SKILL.md
+- [[eightctl CLI]] - concept - skills/openclaw/eightctl/SKILL.md
+- [[eightctlSKILL]] - document - skills/openclaw/eightctl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

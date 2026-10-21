@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Hermes Dev Workflow (HDEV) Skill
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Codex CLI (codex exec  Codex -p)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[Gemini CLI (--skip-trust)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[Hermes Dev Workflow (HDEV) Skill]] - document - .agents/skills/i-hdev/SKILL.md
-- [[LM Studio local model (Qwen3-14B)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[agentshroud-ssh-exec.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
-- [[agentshroud-ssh-write-file.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
-- [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - concept - .agents/skills/i-hdev/SKILL.md
-- [[scriptssmoke.sh (static startup smoke suite)]] - code - scripts/smoke.sh
+- [[Key Endpoints]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Purpose]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Pydantic Models]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Related Notes]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Responsibilities]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Runtime Engine Integration]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Security]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[api.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[api.py]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,11 +24,3 @@ members: 8
 TABLE source_file, type FROM #community/Hermes_Dev_Workflow_HDEV_Skill
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_GSDE&G Development Master Checklist Skill]]
-- 1 edge to [[_COMMUNITY_Coding Agent (bash-first)]]
-
-## Top bridge nodes
-- [[Hermes Dev Workflow (HDEV) Skill]] - degree 9, connects to 1 community
-- [[LM Studio local model (Qwen3-14B)]] - degree 3, connects to 1 community

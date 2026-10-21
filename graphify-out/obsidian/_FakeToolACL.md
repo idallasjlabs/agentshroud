@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L537"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # _FakeToolACL
 
 ## Connections
-- [[dot-__init__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_9]] - `method` [EXTRACTED]
 - [[dot-can_use_tool()]] - `method` [EXTRACTED]
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

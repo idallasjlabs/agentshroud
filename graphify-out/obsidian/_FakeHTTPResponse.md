@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "_FakeHTTPResponse"
+community: "Browser — Secure Browser Automation (6)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeHTTPResponse
+  - community/Browser__Secure_Browser_Automation_6
 ---
 
 # _FakeHTTPResponse
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-__enter__()]] - `method` [EXTRACTED]
 - [[dot-__exit__()]] - `method` [EXTRACTED]
-- [[dot-__init__()_46]] - `method` [EXTRACTED]
-- [[dot-read()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_31]] - `method` [EXTRACTED]
+- [[dot-read()_1]] - `method` [EXTRACTED]
 - [[Context-manager stand-in for the object urlopen() yields.]] - `rationale_for` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6

@@ -8,13 +8,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[dot-test_api_key_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_clean_output_high_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_exfil_pattern_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_injection_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_low_agent_trust_penalty()]] - code - gateway/tests/test_subagent_governance.py
-- [[dot-test_pii_detected_lowers_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestOutputTrustScoring]] - code - gateway/tests/test_subagent_governance.py
+- [[MCP AWS Profile Configuration Skill]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Auth Reset Skill]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[MCP Tools Usage Skill]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[i-mcpm README (MCP Tools Usage)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[i-mcpm-auth-reset README]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[i-mcpm-aws-profile README]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[mcpm-doctor Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,3 @@ members: 7
 TABLE source_file, type FROM #community/TestOutputTrustScoring
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_SubagentGovernance]]
-- 2 edges to [[_COMMUNITY_GovernanceAction]]
-
-## Top bridge nodes
-- [[TestOutputTrustScoring]] - degree 12, connects to 2 communities

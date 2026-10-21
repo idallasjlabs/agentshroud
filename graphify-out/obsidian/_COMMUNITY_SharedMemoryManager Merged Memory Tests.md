@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
-- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
+- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
 
 ## Live Query (requires Dataview plugin)
 

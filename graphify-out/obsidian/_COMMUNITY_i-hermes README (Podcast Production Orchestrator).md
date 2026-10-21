@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[Hermes — Reference Verifier Skill]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Podcast Production Pipeline (multi-agent)_1]] - concept - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[i-hermes README (Podcast Production Orchestrator)]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[GET ledger audit query API]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Observability Gaps (Future Work) no log aggregation, no metrics export, no uptime monitor, Zabbix uninstalled]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 

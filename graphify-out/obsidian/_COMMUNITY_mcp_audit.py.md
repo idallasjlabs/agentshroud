@@ -8,21 +8,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_10]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Function Details_23]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Hash Chain Structure_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.generate_report()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Purpose_145]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Related_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Advanced Integrations]] - document - docs/planning/RELEASE-PLAN.md
+- [[Browser Extension_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Command Center — CLITUI (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Full Configuration System]] - document - docs/planning/RELEASE-PLAN.md
+- [[Infrastructure (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Integration Hub]] - document - docs/planning/RELEASE-PLAN.md
+- [[Mac Mini Onboarding]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Host Deployment]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Platform Container Support]] - document - docs/planning/RELEASE-PLAN.md
+- [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
+- [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Security Hardening_4]] - document - docs/planning/RELEASE-PLAN.md
+- [[iOSmacOS Shortcuts]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,9 @@ members: 15
 TABLE source_file, type FROM #community/mcp_auditpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
+
+## Top bridge nodes
+- [[v1.3.0 — Platform Expansion (53 items)]] - degree 15, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[calendar.js (iCloud CalDAV skill)]] - code - skills/custom/icloud/scripts/calendar.js
+- [[SlackSocketClient Reconnect Backoff Tests]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 

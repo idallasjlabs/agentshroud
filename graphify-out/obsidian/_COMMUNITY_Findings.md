@@ -1,25 +1,36 @@
 ---
 type: community
-members: 12
+members: 23
 ---
 
 # Findings
 
-**Members:** 12 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[L1 State Dir is a Symlink]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[L2 Browser Control Enabled]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[L3 Memory Index Not Built]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[LOW — Informational_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[M1 No Rate Limiting on Security Endpoints]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[M2 subprocess Calls Use Lists (Good) but No Resource Limits]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[M3 Pi-hole Web Password in Secrets File]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[MEDIUM — Recommended]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Remediation Plan]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
-- [[Summary_24]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[AgentShroud Security Hardening Plan]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Architecture_7]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Endpoints_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Execution Order]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[FINAL Network Lockdown Activation ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[GitHub Workflow]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Injection vectors explicitly covered]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Key points the Cisco finding implies]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Module Status Summary]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[P0 Fix Pre-Existing Test Failures ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[P2 Credential Isolation via op-proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[P3 Channel Ownership — Telegram + Email ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[P4 Wire MCP Proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[P5 Wire SecurityPipeline to forward ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[PII Detection]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Roadmap_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[SECURITY_PLAN]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Threat Coverage Matrix]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[What Security Experts Will See]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Why This Matters_2]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +38,3 @@ members: 12
 TABLE source_file, type FROM #community/Findings
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_LOW — Informational (2)]]
-- 1 edge to [[_COMMUNITY_Findings (2)]]
-- 1 edge to [[_COMMUNITY_Findings (3)]]
-
-## Top bridge nodes
-- [[Findings]] - degree 5, connects to 2 communities
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - degree 4, connects to 1 community

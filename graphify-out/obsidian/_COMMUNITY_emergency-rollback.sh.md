@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[emergency-rollback.sh]] - code - scripts/emergency-rollback.sh
-- [[emergency-rollback.sh script]] - code - scripts/emergency-rollback.sh
+- [[check-status.sh]] - code - docker/scripts/check-status.sh
+- [[check-status.sh script]] - code - docker/scripts/check-status.sh
 
 ## Live Query (requires Dataview plugin)
 

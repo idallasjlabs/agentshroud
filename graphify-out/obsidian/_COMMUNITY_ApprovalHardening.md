@@ -1,62 +1,63 @@
 ---
 type: community
-members: 49
+members: 50
 ---
 
 # ApprovalHardening
 
-**Members:** 49 nodes
+**Members:** 50 nodes
 
 ## Members
-- [[dot-config()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-hardening()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_format_hardened_message_basic()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_format_hardened_message_with_normalization()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_get_stats()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_initialization()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_parameter_fingerprinting_different_params()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_parameter_obfuscation_detection_base64()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_parameter_obfuscation_detection_hex()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
-- [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Create test configuration.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test approval hardening functionality.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of authoritylegitimacy claims.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of base64-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of destructive commands not indicated in description.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of downplaying language.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of misleading descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test detection of repeat request patterns.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test getting hardening statistics.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardened message formatting when description is normalized.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardened message formatting with security concerns.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that different requests are not affected by cooldown.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[TestApprovalHardening]] - code - gateway/tests/test_approval_hardening.py
+- [[AgentShroud (security proxy)]] - concept - docs/project/glossary.md
+- [[AgentShroud v0.8.0 Watchtower Release Plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[Approval Queue_2]] - concept - docs/project/glossary.md
+- [[Audit Trail_1]] - concept - docs/project/glossary.md
+- [[CVE-2026-22708 (Prompt Injection bypass)]] - concept - docs/project/glossary.md
+- [[CVE-2026-25253 (DNS Tunneling)]] - concept - docs/project/glossary.md
+- [[Competitive Analysis Reports Archive]] - document - docs/security/competitive-analysis-reports-archive.md
+- [[Container Runtime]] - concept - docs/project/glossary.md
+- [[DNS Tunneling]] - concept - docs/project/glossary.md
+- [[Default Selection Notes]] - document - docs/security/competitive-analysis-reports-archive.md
+- [[Enforce Mode]] - concept - docs/project/glossary.md
+- [[Functional Requirements Coverage]] - document - docs/security/audit-specification.md
+- [[HERMES_SETUP]] - document - docs/setup/HERMES_SETUP.md
+- [[Hash Chain]] - concept - docs/project/glossary.md
+- [[Hermes Agent (OpenAI-compatible LLM endpoint)]] - concept - docs/setup/HERMES_SETUP.md
+- [[IEC 62443 Industrial Security Framework]] - document - docs/security/audit-specification.md
+- [[Kill Switch_2]] - concept - docs/project/glossary.md
+- [[MCP (Model Context Protocol)]] - concept - docs/project/glossary.md
+- [[Marvin (proddev host)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[Monitor Mode_1]] - concept - docs/project/glossary.md
+- [[NFKC Normalization]] - concept - docs/project/glossary.md
+- [[OPENCLAW_SETUP]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[OpenClaw_2]] - concept - docs/project/glossary.md
+- [[PII (Personally Identifiable Information)]] - concept - docs/project/glossary.md
+- [[Prompt Injection]] - concept - docs/project/glossary.md
+- [[Proxy Mode]] - concept - docs/project/glossary.md
+- [[Raspberry Pi (host, arm64, low-resource)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[Reports]] - document - docs/security/competitive-analysis-reports-archive.md
+- [[SSRF (Server-Side Request Forgery)]] - concept - docs/project/glossary.md
+- [[STPA-Sec (Systems-Theoretic Process Analysis for Security)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Security Levels Mapping]] - document - docs/security/audit-specification.md
+- [[Sidecar Mode_1]] - concept - docs/project/glossary.md
+- [[Steven Hay (Security Advisor)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[TELEGRAM_GMAIL_SETUP]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Trillian (host, x86_64)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[Trust Level]] - concept - docs/project/glossary.md
+- [[Trust Management]] - concept - docs/project/glossary.md
+- [[WEB_CONTROL_CENTER_SUMMARY]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[Zero-Config Deployment]] - concept - docs/project/glossary.md
+- [[Zero-Trust Architecture]] - concept - docs/project/glossary.md
+- [[access-control-matrix]] - document - docs/security/access-control-matrix.md
+- [[audit-specification]] - document - docs/security/audit-specification.md
+- [[colima-docker-guide]] - document - docs/runbooks/colima-docker-guide.md
+- [[competitive-analysis-reports-archive]] - document - docs/security/competitive-analysis-reports-archive.md
+- [[securityincident-response]] - document - docs/security/incident-response.md
+- [[setup-guide]] - document - docs/setup/setup-guide.md
+- [[system-requirements]] - document - docs/requirements/system-requirements.md
+- [[use-cases]] - document - docs/requirements/use-cases.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,11 +67,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_MiddlewareManager (5)]]
+- 7 edges to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
+- 5 edges to [[_COMMUNITY_GSDE&G Skills Reference (2)]]
+- 3 edges to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
+- 1 edge to [[_COMMUNITY_Common Operations]]
+- 1 edge to [[_COMMUNITY_compose_generator.py]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]]
+- 1 edge to [[_COMMUNITY_RateLimitGuard]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_Security Verification Report]]
+- 1 edge to [[_COMMUNITY_Hermes Agent — Connection Setup]]
+- 1 edge to [[_COMMUNITY_SkillGuard (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Audit Specification]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
+- 1 edge to [[_COMMUNITY_LOW — Informational]]
+- 1 edge to [[_COMMUNITY_OpenClaw Setup Guide - agentshroud.ai Bot]]
 
 ## Top bridge nodes
-- [[TestApprovalHardening]] - degree 32, connects to 1 community
-- [[dot-config()]] - degree 3, connects to 1 community
-- [[dot-hardening()]] - degree 3, connects to 1 community
-- [[dot-test_format_hardened_message_basic()]] - degree 3, connects to 1 community
-- [[dot-test_format_hardened_message_with_normalization()]] - degree 3, connects to 1 community
+- [[system-requirements]] - degree 16, connects to 3 communities
+- [[OPENCLAW_SETUP]] - degree 9, connects to 3 communities
+- [[Trust Level]] - degree 5, connects to 3 communities
+- [[setup-guide]] - degree 11, connects to 2 communities
+- [[PII (Personally Identifiable Information)]] - degree 9, connects to 2 communities

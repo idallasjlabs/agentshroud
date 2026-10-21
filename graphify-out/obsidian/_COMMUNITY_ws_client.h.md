@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
+- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - code - firmware/voice-terminal/CMakeLists.txt
 
 ## Live Query (requires Dataview plugin)
 

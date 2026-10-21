@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+members: 6
 ---
 
 # Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (3)
 
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - document - CLAUDE.md
-- [[75 Active Security Modules — No Stubs]] - document - CLAUDE.md
-- [[Development commands]] - document - CLAUDE.md
-- [[Hard constraints]] - document - CLAUDE.md
-- [[Key source directories]] - document - CLAUDE.md
+- [[1. Accomplishments This Phase_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🎯 Binary Detection & Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[📊 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🔧 Security Module Constructor Fixes — Critical Infrastructure Repairs]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🚀 New Management Endpoints — Real-Time Security Visibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🛡️ Environment Resilience — TestProduction Compatibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
 
 ## Top bridge nodes
-- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - degree 5, connects to 1 community
+- [[1. Accomplishments This Phase_1]] - degree 6, connects to 1 community

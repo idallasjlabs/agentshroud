@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
+- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

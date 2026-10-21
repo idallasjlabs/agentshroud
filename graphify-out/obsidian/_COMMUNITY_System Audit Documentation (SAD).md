@@ -1,17 +1,15 @@
 ---
 type: community
-members: 4
+members: 2
 ---
 
 # System Audit Documentation (SAD)
 
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Session Prompt Generator]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[System Audit Documentation (SAD)]] - document - .agents/skills/i-sad/SKILL.md
-- [[System Audit Vault (SAV)]] - document - .agents/skills/i-sav/SKILL.md
-- [[System Audit Vault README]] - document - .agents/skills/i-sav/README.md
+- [[dot-test_unknown_model_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unknown model errors should be rewritten without leaking raw stack text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +17,11 @@ members: 4
 TABLE source_file, type FROM #community/System_Audit_Documentation_SAD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_CronStateMonitor]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
+
+## Top bridge nodes
+- [[dot-test_unknown_model_error_is_sanitized()]] - degree 4, connects to 3 communities

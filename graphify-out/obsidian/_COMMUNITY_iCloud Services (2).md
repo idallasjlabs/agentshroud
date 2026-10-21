@@ -8,33 +8,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[401 Unauthorized_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[CalendarContacts not found_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Connection timeout_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Add Contact_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Calendar Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Configuration_4]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Contact Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Create Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Create Note_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Delete Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Contacts_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Events_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Messages_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Notes_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Mail Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Notes Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Search Contacts_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Search Mail_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Search Notes_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Security_9]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Send Email_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Setup_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Troubleshooting_18]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Update Contact_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Update Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[hermesskillsi-icloudSKILL]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[iCloud Services_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[API Keys]] - document - docker/scripts/README.md
+- [[Changing AI Model]] - document - docker/scripts/README.md
+- [[Common Tasks]] - document - docker/scripts/README.md
+- [[Container Management]] - document - docker/scripts/README.md
+- [[Debugging Issues]] - document - docker/scripts/README.md
+- [[Direct Docker Commands]] - document - docker/scripts/README.md
+- [[File Locations_1]] - document - docker/scripts/README.md
+- [[Initial Setup]] - document - docker/scripts/README.md
+- [[OpenClaw CLI]] - document - docker/scripts/README.md
+- [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
+- [[Quick Reference_7]] - document - docker/scripts/README.md
+- [[Security Notes_2]] - document - docker/scripts/README.md
+- [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
+- [[check-status.sh_1]] - document - docker/scripts/README.md
+- [[devices.sh_1]] - document - docker/scripts/README.md
+- [[dockerscripts README]] - document - docker/scripts/README.md
+- [[dockerscriptsREADME]] - document - docker/scripts/README.md
+- [[drift-detector.sh (planned)]] - concept - scripts/README.md
+- [[logs.sh_1]] - document - docker/scripts/README.md
+- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
+- [[restart.sh_1]] - document - docker/scripts/README.md
+- [[security-audit.sh (planned)]] - concept - scripts/README.md
+- [[set-model.sh_1]] - document - docker/scripts/README.md
+- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
+- [[telegram.sh_1]] - document - docker/scripts/README.md
+- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
+- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,7 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide (2)]]
 
 ## Top bridge nodes
-- [[iCloud Services_1]] - degree 10, connects to 1 community
+- [[OpenClaw Management Scripts]] - degree 14, connects to 1 community

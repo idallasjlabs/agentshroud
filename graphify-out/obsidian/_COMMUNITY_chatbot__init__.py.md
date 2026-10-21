@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[chatbot__init__.py]] - code - chatbot/__init__.py
+- [[App Icon 128x128 (AgentShroud logo mark)]] - image - branding/icons/app/icon-128x128.png
 
 ## Live Query (requires Dataview plugin)
 

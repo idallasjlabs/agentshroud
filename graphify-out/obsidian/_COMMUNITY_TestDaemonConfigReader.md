@@ -8,9 +8,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[dot-test_invalid_json_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_reads_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestDaemonConfigReader]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Quick start_1]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[nano-pdf]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[nano-pdfSKILL]] - document - skills/openclaw/nano-pdf/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,12 +18,3 @@ members: 3
 TABLE source_file, type FROM #community/TestDaemonConfigReader
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__w]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-
-## Top bridge nodes
-- [[TestDaemonConfigReader]] - degree 3, connects to 1 community
-- [[dot-test_invalid_json_returns_empty()]] - degree 2, connects to 1 community
-- [[dot-test_reads_daemon_json()]] - degree 2, connects to 1 community

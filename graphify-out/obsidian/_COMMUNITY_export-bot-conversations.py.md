@@ -1,32 +1,45 @@
 ---
 type: community
-members: 19
+members: 32
 ---
 
 # export-bot-conversations.py
 
-**Members:** 19 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[dot-test_run_binary_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_empty_stdout_is_error_not_clean()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_image_scan_type()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_nonzero_exit_code_is_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_parse_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_success()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_timeout()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_run_whitespace_only_stdout_is_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
-- [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Any_59]] - code - gateway/security/trivy_report.py
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
-- [[Generate a summary dict suitable for the health report.      Args         repor]] - rationale - gateway/security/trivy_report.py
-- [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - rationale - gateway/security/trivy_report.py
-- [[TestTrivyRun]] - code - gateway/tests/test_security_toolchain.py
-- [[generate_summary()_3]] - code - gateway/security/trivy_report.py
-- [[returncode 0 = clean, 1 = vulns found (both expected); anything         else mea]] - rationale - gateway/tests/test_security_toolchain.py
-- [[run_trivy_scan()_1]] - code - gateway/security/trivy_report.py
-- [[scan_type='image' is passed correctly to the trivy binary.]] - rationale - gateway/tests/test_security_toolchain.py
+- [[dot-test_allowed_path_different_item()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_allowed_path_passes()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_atlassian_token_allowed()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_brave_api_key_reference_allowed()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_disallowed_vault_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_empty_reference_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_every_dedicated_op_ref_is_allowlisted()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_missing_op_prefix_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_path_traversal_blocked()_1]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_requires_auth()_2]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
+- [[1Password credential proxy (P2 credential isolation). Reads a secret from…]] - rationale - gateway/ingest_api/main.py
+- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
+- [[OpProxyRequest]] - code - gateway/ingest_api/main.py
+- [[Real functional check, not a boot-time smoke test every op reference     doc]] - rationale - gateway/tests/test_op_proxy.py
+- [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
+- [[Return True if the op reference matches an allowed path pattern.]] - rationale - gateway/ingest_api/main.py
+- [[SCRUM-81 Hermes weekly Jira review needs tokenemaildomain fields.]] - rationale - gateway/tests/test_op_proxy.py
+- [[TestIsOpReferenceAllowed]] - code - gateway/tests/test_op_proxy.py
+- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
+- [[TestOpRefAllowlistCoverage]] - code - gateway/tests/test_op_proxy.py
+- [[The vault has no item literally titled Brave Search API Key —         the real]] - rationale - gateway/tests/test_op_proxy.py
+- [[_do_op_read()]] - code - gateway/ingest_api/main.py
+- [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
+- [[_refresh_session()]] - code - gateway/ingest_api/main.py
+- [[client()_5]] - code - gateway/tests/test_op_proxy.py
+- [[op_proxy()]] - code - gateway/ingest_api/main.py
+- [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,16 +49,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 4 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_parse_trivy_output]]
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py (2)]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 6 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]]
+- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 
 ## Top bridge nodes
-- [[run_trivy_scan()_1]] - degree 19, connects to 4 communities
-- [[generate_summary()_3]] - degree 10, connects to 4 communities
-- [[TestTrivyRun]] - degree 10, connects to 2 communities
-- [[Any_59]] - degree 4, connects to 2 communities
-- [[dot-test_trivy_binary_not_found()]] - degree 2, connects to 1 community
+- [[TestIsOpReferenceAllowed]] - degree 12, connects to 2 communities
+- [[test_op_proxy.py]] - degree 7, connects to 2 communities
+- [[OpProxyRequest]] - degree 4, connects to 2 communities
+- [[_is_op_reference_allowed()]] - degree 15, connects to 1 community
+- [[op_proxy()]] - degree 8, connects to 1 community

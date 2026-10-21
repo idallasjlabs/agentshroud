@@ -1,41 +1,32 @@
 ---
 type: community
-members: 28
+members: 19
 ---
 
 # TestClassify
 
-**Members:** 28 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[dot-test_any_error_since_boot_blocks_regardless_of_successes()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_below_threshold_not_soaked()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_empty_heartbeat_file_skip_alone_is_not_soaked()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_empty_heartbeat_file_skip_does_not_mask_a_real_error()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_empty_heartbeat_file_skip_is_benign_not_blocking()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_empty_job_list()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_missing_state_key_does_not_crash()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_no_runs_since_boot_not_soaked()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_one_success_since_boot_meets_default_threshold()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_other_skipped_status_counts_as_not_ok()]] - code - gateway/tests/test_soak_status.py
-- [[dot-test_runs_before_boot_are_ignored()]] - code - gateway/tests/test_soak_status.py
-- [[2026-09-19 root cause 'heartbeat skipped empty-heartbeat-file' is         Open]] - rationale - gateway/tests/test_soak_status.py
-- [[A benign heartbeat skip must not hide an actual failing job.]] - rationale - gateway/tests/test_soak_status.py
-- [[A job that last succeeded before this boot proves nothing about         THIS dep]] - rationale - gateway/tests/test_soak_status.py
-- [[A skip for any OTHER reason (not the known-benign empty-heartbeat-         file]] - rationale - gateway/tests/test_soak_status.py
-- [[An actively-failing job since redeploy must block soak even if         other job]] - rationale - gateway/tests/test_soak_status.py
-- [[Any_43]] - code - scripts/soak_status.py
-- [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - concept - scripts/soak_status.py
-- [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - rationale - scripts/soak_status.py
-- [[TestClassify_2]] - code - gateway/tests/test_soak_status.py
-- [[The benign skip alone proves nothing — still need a real success.]] - rationale - gateway/tests/test_soak_status.py
-- [[_is_benign_skip]] - code - scripts/soak_status.py
-- [[_is_benign_skip()]] - code - scripts/soak_status.py
-- [[_job()]] - code - gateway/tests/test_soak_status.py
-- [[classify()_2]] - code - scripts/soak_status.py
-- [[main()_17]] - code - scripts/soak_status.py
-- [[soak_status.py]] - code - scripts/soak_status.py
-- [[test_soak_status.py]] - code - gateway/tests/test_soak_status.py
+- [[dot-test_parse_affected_packages()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_counts_by_severity()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_empty_output()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_has_timestamp()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_no_results_key()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_scanner_name()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_top_cves_limited()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_top_cves_ordered_by_severity()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_total_vulnerabilities()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_unknown_severity()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_clean()_3]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_critical()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_top_cves_ids()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
+- [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
+- [[TestTrivyParser]] - code - gateway/tests/test_security_toolchain.py
+- [[TestTrivySummary_1]] - code - gateway/tests/test_security_toolchain.py
+- [[parse_trivy_output()]] - code - gateway/security/trivy_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,7 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
+- 7 edges to [[_COMMUNITY_Skill Project Management (PM) (3)]]
+- 3 edges to [[_COMMUNITY_TestVersionRoutes]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[main()_17]] - degree 3, connects to 1 community
+- [[parse_trivy_output()]] - degree 23, connects to 2 communities
+- [[TestTrivyParser]] - degree 12, connects to 2 communities
+- [[TestTrivySummary_1]] - degree 7, connects to 2 communities

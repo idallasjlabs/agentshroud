@@ -8,15 +8,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[PATCHES_FILE]] - code - tests/startup_smoke/test_apply_patches.js
-- [[assert()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[fs]] - code - tests/startup_smoke/test_apply_patches.js
-- [[os]] - code - tests/startup_smoke/test_apply_patches.js
-- [[path_2]] - code - tests/startup_smoke/test_apply_patches.js
-- [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
-- [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
-- [[{ spawnSync }]] - code - tests/startup_smoke/test_apply_patches.js
+- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
+- [[describe_cron()]] - code - scripts/generate-job-schedule.py
+- [[docker_exec()]] - code - scripts/generate-job-schedule.py
+- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
+- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
+- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
+- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
+- [[main()_4]] - code - scripts/generate-job-schedule.py
+- [[render_html()]] - code - scripts/generate-job-schedule.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Multi-Agent Hierarchy — Claude primary, GeminiCodex secondarytertiary]] - rationale - CLAUDE.md
+- [[Agile Skill (stub)]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

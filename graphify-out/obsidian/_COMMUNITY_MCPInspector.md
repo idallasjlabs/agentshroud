@@ -1,48 +1,28 @@
 ---
 type: community
-members: 35
+members: 15
 ---
 
 # MCPInspector
 
-**Members:** 35 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[dot-__init__()_104]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-__init__()_105]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-_redact_pii()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-_scan_text()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-_scan_value()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-_should_block()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-get_stats()_10]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-has_findings()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-highest_threat()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-inspect_tool_call()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-inspect_tool_result()]] - code - gateway/proxy/mcp_inspector.py
-- [[dot-send_request()_2]] - code - gateway/proxy/mcp_proxy.py
-- [[Any_34]] - code - gateway/proxy/mcp_inspector.py
-- [[Any_35]] - code - gateway/proxy/mcp_proxy.py
-- [[Decide whether to block based on findings and mode.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[EnhancedApprovalQueue]] - code - gateway/proxy/mcp_proxy.py
-- [[Get proxy statistics.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Inspect a tool result for PII and encoding issues.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Inspect an outgoing tool call for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[InspectionResult]] - code - gateway/proxy/mcp_inspector.py
-- [[Inspects MCP tool calls and responses for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[MCPAuditTrail]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPInspector]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPInspector_1]] - code - gateway/proxy/mcp_inspector.py
-- [[MCPPermissionManager_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxy.process_tool_call]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxy.process_tool_result]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxyConfig_3]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPTransport]] - code - gateway/proxy/mcp_config.py
-- [[Recursively redact HIGH-severity PII from a value.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Recursively scan a value, appending findings in-place.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Result of inspecting a tool call or response.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Return the highest threat level from all findings.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Scan a single string for all threat types.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Send an HTTP request to the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Guardrails_13]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Invocation_8]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Role_70]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[openclawskillsi-crprSKILL]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,28 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 48 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 31 edges to [[_COMMUNITY_StdioConnection]]
-- 25 edges to [[_COMMUNITY_MCPPermissionManager (3)]]
-- 19 edges to [[_COMMUNITY_StdioConnection (2)]]
-- 11 edges to [[_COMMUNITY_MCPPermissionManager (4)]]
-- 9 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 7 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
-- 3 edges to [[_COMMUNITY_TestMCPProxyEndpoint]]
-- 2 edges to [[_COMMUNITY_MCPToolResult]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (5)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (6)]]
-- 2 edges to [[_COMMUNITY_Athena — Knowledge Distiller (4)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (7)]]
-- 2 edges to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[MCPTransport]] - degree 63, connects to 16 communities
-- [[MCPInspector_1]] - degree 77, connects to 13 communities
-- [[InspectionResult]] - degree 22, connects to 5 communities
-- [[Any_35]] - degree 13, connects to 5 communities
-- [[EnhancedApprovalQueue]] - degree 8, connects to 3 communities
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - degree 15, connects to 1 community

@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-09-06-prod.md
-- [[CRITICAL Docker storage exhausted (live fault, found this run)]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Environment Mapping]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)]] - document - reports/upgrade-2026-09-06-prod.md
-- [[GitHub-hosted findings]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Language dependencies]] - document - reports/upgrade-2026-09-06-prod.md
-- [[PROD OUTAGE 2026-09-06 2020 → 2026-09-07 0727 (~11 hours)]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Pipeline remediation (the actual work of this run)]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Preflight  Baseline_1]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Rollback Instructions_1]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Security Findings]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Summary_17]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Time spent_1]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Upgrade Table_1]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Wazuh  SOC]] - document - reports/upgrade-2026-09-06-prod.md
-- [[upgrade-2026-09-06-prod]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Alert JSONL Format]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher._send_notification(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.cleanup_seen()]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.dispatch(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.get_digest(clear)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Configuration_12]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Environment Variables_6]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Function Details_4]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Module-Level Constants_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Operational Notes]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Purpose_98]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Related_8]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Responsibilities_6]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[alert_dispatcher.py_2]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[alert_dispatcher.py_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,3 @@ members: 18
 TABLE source_file, type FROM #community/AgentShroud_Weekly_Upgrade__2026-09-06
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
-
-## Top bridge nodes
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - degree 13, connects to 1 community

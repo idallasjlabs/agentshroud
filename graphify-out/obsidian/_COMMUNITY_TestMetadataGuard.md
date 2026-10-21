@@ -8,31 +8,31 @@ members: 25
 **Members:** 25 nodes
 
 ## Members
-- [[dot-setup_method()_28]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
+- [[_deliver_utterance()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_event()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[esp_err_t_5]] - code - firmware/voice-terminal/main/ws_client.c
+- [[esp_event_base_t]] - code - firmware/voice-terminal/main/ws_client.c
+- [[rlog_task()]] - code - firmware/voice-terminal/main/app_main.c
+- [[voice_task()]] - code - firmware/voice-terminal/main/app_main.c
+- [[wakeword_agent_index()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_agent_switch_ack()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_agent_switch_pending()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_feed_bytes()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[ws_client.c]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_connected()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_create()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_destroy()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_handle_t_1]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_end()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_keepalive()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_listen()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_listen_resume()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_log()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_pcm()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_send_stop()]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_ctrl_cb_t]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_pcm_cb_t]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_state_cb_t]] - code - firmware/voice-terminal/main/ws_client.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,9 +42,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_test_prompt_guard.py]]
+- 9 edges to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
+- 8 edges to [[_COMMUNITY_test_security_toolchain.py (2)]]
+- 6 edges to [[_COMMUNITY_graphify reference extra exports and benchmark (2)]]
+- 5 edges to [[_COMMUNITY_AgentShroud Device Pairing Management]]
 
 ## Top bridge nodes
-- [[TestMetadataGuard]] - degree 16, connects to 2 communities
-- [[dot-setup_method()_28]] - degree 2, connects to 1 community
+- [[voice_task()]] - degree 25, connects to 4 communities
+- [[_deliver_utterance()]] - degree 10, connects to 2 communities
+- [[rlog_task()]] - degree 4, connects to 2 communities
+- [[ws_client.c]] - degree 12, connects to 1 community
+- [[ws_client_create()]] - degree 7, connects to 1 community

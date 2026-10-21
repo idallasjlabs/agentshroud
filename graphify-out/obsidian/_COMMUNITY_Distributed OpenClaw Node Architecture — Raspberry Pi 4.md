@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[Additional Costs (Option 2 vs Option 1)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Architecture Comparison]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Benefits Gained]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Best Use Cases for Distributed Node Approach]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Comparison Matrix]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Concept Overview]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Conclusion_2]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Cost-Benefit Analysis]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Current Approach (Option 1 Direct SSH)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Decision Points]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Defense in Depth]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Future Approach (Option 2 Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Implementation Timeline]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Next Steps_6]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Not Ideal For]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Prerequisites (Before Implementation)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Security Architecture_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Use Cases_1]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[04-security]] - document - docs/diagrams/04-security.md
+- [[06-operations]] - document - docs/diagrams/06-operations.md
+- [[11. Trust Boundary Diagram]] - document - docs/diagrams/04-security.md
+- [[12. Credential Flow Diagram]] - document - docs/diagrams/04-security.md
+- [[13. Network Security Diagram — Egress Controls]] - document - docs/diagrams/04-security.md
+- [[18. Runbook  Decision Tree — On-Call Logic]] - document - docs/diagrams/06-operations.md
+- [[19. Incident Response Flow — Severity & Escalation]] - document - docs/diagrams/06-operations.md
+- [[20. Monitoring & Observability Map]] - document - docs/diagrams/06-operations.md
+- [[AgentShroud — Diagram Library]] - document - docs/diagrams/README.md
+- [[AgentShroud — Operations & Reliability Diagrams]] - document - docs/diagrams/06-operations.md
+- [[AgentShroud — Security & Access Diagrams]] - document - docs/diagrams/04-security.md
+- [[Credential Flow Diagram (op-proxy)]] - concept - docs/diagrams/04-security.md
+- [[Diagrams Not Yet Implemented]] - document - docs/diagrams/README.md
+- [[Incident Response Flow — Severity & Escalation]] - concept - docs/diagrams/06-operations.md
+- [[Index]] - document - docs/diagrams/README.md
+- [[Monitoring & Observability Map]] - concept - docs/diagrams/06-operations.md
+- [[Network Security Diagram — Egress Controls]] - concept - docs/diagrams/04-security.md
+- [[Priority Reading Order]] - document - docs/diagrams/README.md
+- [[Runbook  Decision Tree — On-Call Logic]] - concept - docs/diagrams/06-operations.md
+- [[diagramsREADME]] - document - docs/diagrams/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,11 +37,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Migration Path (SSH → Distributed Node)]]
-- 1 edge to [[_COMMUNITY_Key Benefits]]
-- 1 edge to [[_COMMUNITY_Resources]]
-- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
-- 1 edge to [[_COMMUNITY_AgentShroud System Architecture Document (SAD)]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
+- 2 edges to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_sanitizer.py]]
+- 1 edge to [[_COMMUNITY_REPORT STRUCTURE]]
+- 1 edge to [[_COMMUNITY_canvas_proxy_app]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-browserpackage.json]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - degree 14, connects to 5 communities
+- [[diagramsREADME]] - degree 8, connects to 4 communities
+- [[04-security]] - degree 5, connects to 1 community
+- [[Incident Response Flow — Severity & Escalation]] - degree 3, connects to 1 community
+- [[Runbook  Decision Tree — On-Call Logic]] - degree 3, connects to 1 community
+- [[Credential Flow Diagram (op-proxy)]] - degree 2, connects to 1 community

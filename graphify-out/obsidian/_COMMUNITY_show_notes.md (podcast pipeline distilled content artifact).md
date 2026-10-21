@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[AWS RDS MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 
 ## Live Query (requires Dataview plugin)
 

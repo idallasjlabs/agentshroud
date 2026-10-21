@@ -8,18 +8,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Any_77]] - code - gateway/security/egress_retry.py
-- [[Calculate delay with exponential backoff and jitter.]] - rationale - gateway/security/egress_retry.py
-- [[Configuration for egress retry behavior.]] - rationale - gateway/security/egress_retry.py
-- [[Execute a request with exponential backoff retry on transient failures.      Arg]] - rationale - gateway/security/egress_retry.py
-- [[Result of a retried operation.]] - rationale - gateway/security/egress_retry.py
-- [[RetryConfig]] - code - gateway/security/egress_retry.py
-- [[RetryResult]] - code - gateway/security/egress_retry.py
-- [[Synchronous version of retry_request for non-async contexts.]] - rationale - gateway/security/egress_retry.py
-- [[calculate_delay()]] - code - gateway/security/egress_retry.py
-- [[egress_retry.py]] - code - gateway/security/egress_retry.py
-- [[retry_request()]] - code - gateway/security/egress_retry.py
-- [[retry_request_sync()]] - code - gateway/security/egress_retry.py
+- [[dot-ps()]] - code - gateway/runtime/apple_engine.py
+- [[dot-ps()_1]] - code - gateway/runtime/docker_engine.py
+- [[dot-ps()_2]] - code - gateway/runtime/engine.py
+- [[dot-ps()_3]] - code - gateway/runtime/podman_engine.py
+- [[dot-test_defaults()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_with_data()]] - code - gateway/tests/test_runtime_engines.py
+- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
+- [[ContainerInfo_1]] - code - gateway/runtime/docker_engine.py
+- [[ContainerInfo_2]] - code - gateway/runtime/podman_engine.py
+- [[ContainerInfo_3]] - code - gateway/runtime/engine.py
+- [[Lightweight container metadata returned by psinspect.]] - rationale - gateway/runtime/engine.py
+- [[TestContainerInfo]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 7 edges to [[_COMMUNITY_jira_weekly_review.py]]
+- 5 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 5 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager (6)]]
+- 4 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 4 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_server.py]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
+- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
+- 1 edge to [[_COMMUNITY_tts.py]]
+- 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
 
 ## Top bridge nodes
-- [[egress_retry.py]] - degree 6, connects to 1 community
+- [[ContainerInfo_3]] - degree 31, connects to 11 communities
+- [[TestContainerInfo]] - degree 8, connects to 4 communities
+- [[ContainerInfo]] - degree 3, connects to 1 community
+- [[ContainerInfo_1]] - degree 3, connects to 1 community
+- [[ContainerInfo_2]] - degree 3, connects to 1 community

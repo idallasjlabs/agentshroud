@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ingest_api__init__.py]] - code - gateway/ingest_api/__init__.py
+- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
 
 ## Live Query (requires Dataview plugin)
 

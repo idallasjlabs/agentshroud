@@ -8,19 +8,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[1. Clone]] - document - README.md
-- [[2. Store credentials]] - document - README.md
-- [[3. Start the stack]] - document - README.md
-- [[4. Verify_1]] - document - README.md
-- [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - document - README.md
-- [[Build troubleshooting (BuildKit stale overlay  disk full)]] - concept - docs/runbooks/colima-docker-guide.md
-- [[Colima & Docker Operations Guide]] - document - docs/runbooks/colima-docker-guide.md
-- [[Dual-stack bind race — Lima SSH port forwarder]] - rationale - docs/runbooks/colima-docker-guide.md
-- [[Prerequisites_15]] - document - README.md
-- [[Quickstart_1]] - document - README.md
-- [[`asb` reference]] - document - README.md
-- [[asb Helper — Primary Interface]] - concept - docs/runbooks/colima-docker-guide.md
-- [[asb Wrapper Script]] - concept - CHEATSHEET.md
+- [[dot-agentsskillsi-session-promptSKILL]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Role_75]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Rules_19]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 2 — Answer Six Questions]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 4 — Write the File]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 5 — Inject into All Three LLMs]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 6 — Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Trigger_1]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +28,3 @@ members: 13
 TABLE source_file, type FROM #community/Quickstart
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
-
-## Top bridge nodes
-- [[Quickstart_1]] - degree 9, connects to 1 community
-- [[Colima & Docker Operations Guide]] - degree 4, connects to 1 community
-- [[asb Wrapper Script]] - degree 3, connects to 1 community

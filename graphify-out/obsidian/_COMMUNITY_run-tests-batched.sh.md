@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[run-tests-batched.sh]] - code - scripts/run-tests-batched.sh
-- [[run-tests-batched.sh script]] - code - scripts/run-tests-batched.sh
+- [[export-openapi.sh]] - code - scripts/export-openapi.sh
+- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
 
 ## Live Query (requires Dataview plugin)
 

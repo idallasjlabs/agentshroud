@@ -8,14 +8,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[client()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_get_chat_completions_alias_also_routes()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_root_v1_messages_still_works_unchanged()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[Guardrails_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Invocation_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Jira ticket — every development batch gets one_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Reviewers and fixer available to you_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Role_7]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Tools you have for this workflow_3]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[openclawskillsi-odevSKILL]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py (2)]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_fixture]]
+- 1 edge to [[_COMMUNITY_check_upstream_cves()]]
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23 (2)]]
 
 ## Top bridge nodes
-- [[test_chat_completions_alias.py]] - degree 7, connects to 1 community
-- [[client()]] - degree 2, connects to 1 community
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - degree 2, connects to 1 community
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - degree 10, connects to 3 communities

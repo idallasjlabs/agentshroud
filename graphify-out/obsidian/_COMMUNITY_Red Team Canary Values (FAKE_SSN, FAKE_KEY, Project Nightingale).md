@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)]] - concept - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

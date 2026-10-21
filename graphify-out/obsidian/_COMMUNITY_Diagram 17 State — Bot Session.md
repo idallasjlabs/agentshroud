@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[Cumulative Token Cost Tracker]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

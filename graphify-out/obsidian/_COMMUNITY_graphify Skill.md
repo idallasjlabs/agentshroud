@@ -1,33 +1,27 @@
 ---
 type: community
-members: 20
+members: 14
 ---
 
 # graphify Skill
 
-**Members:** 20 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[--update Incremental Re-extraction Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
-- [[--watch Background Watcher]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[Extraction Cache Check — Step B0]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Neo4j Export]] - concept - .agents/skills/graphify/SKILL.md
-- [[Post-commit Auto-rebuild Hook]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
-- [[Release Workflow (i-release)]] - document - .agents/skills/i-release/SKILL.md
-- [[Semantic Extraction — Part B (parallel subagents)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Structural (AST) Extraction — Part A]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Whisper Transcription]] - concept - .agents/skills/graphify/references/transcribe.md
-- [[build_merge() rationale (801 edge direction, 1178 stale-node collapse)]] - rationale - docker/config/openclaw/skills/graphify/references/update.md
-- [[graphify Add & Watch Reference]] - document - .agents/skills/graphify/references/add-watch.md
-- [[graphify Commit Hook & CLAUDE.md Integration Reference]] - document - .agents/skills/graphify/references/hooks.md
-- [[graphify Exports & Benchmark Reference]] - document - .agents/skills/graphify/references/exports.md
-- [[graphify Extraction Subagent Prompt Spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify GitHub Clone & Cross-Repo Merge Reference]] - document - .agents/skills/graphify/references/github-and-merge.md
-- [[graphify MCP Stdio Server]] - concept - .agents/skills/graphify/SKILL.md
-- [[graphify QueryPathExplain Reference]] - document - .agents/skills/graphify/references/query.md
-- [[graphify Skill]] - document - .agents/skills/graphify/SKILL.md
-- [[graphify Transcribe Reference]] - document - .agents/skills/graphify/references/transcribe.md
-- [[graphify Update & Cluster-Only Reference]] - document - .agents/skills/graphify/references/update.md
+- [[0) PRIME DIRECTIVE (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[0.0) PROVE THE OUTCOME, NEVER THE STEPS (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[0.05) WEEKLY UPGRADES — UNATTENDED, AND ON DEMAND]] - document - CLAUDE.md
+- [[0.1) MULTI-AGENT HIERARCHY]] - document - CLAUDE.md
+- [[1) PROJECT IDENTITY]] - document - CLAUDE.md
+- [[10) CLAUDE CODE OPERATIONAL RULES]] - document - CLAUDE.md
+- [[6) SECURITY & SAFETY REQUIREMENTS]] - document - CLAUDE.md
+- [[8) OUTPUT FORMATTING CONTRACT]] - document - CLAUDE.md
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - document - CLAUDE.md
+- [[Avoid]] - document - CLAUDE.md
+- [[EVERYTHING MEANS EVERYTHING (owner directive 2026-09-15, verbatim intent)]] - document - CLAUDE.md
+- [[GRAPHIFY — QUERY IT FIRST, THEN KEEP IT CURRENT]] - document - CLAUDE.md
+- [[KNOWLEDGE MAP — READ THIS FIRST]] - document - CLAUDE.md
+- [[MCP tools available]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +31,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Coding Agent (bash-first)]]
+- 1 edge to [[_COMMUNITY_ToolChainAnalyzer.analyze_tool_call]]
+- 1 edge to [[_COMMUNITY_Credential Management - 1Password Integration (2)]]
+- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist (MC)]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_graphify Skill (2)]]
+- 1 edge to [[_COMMUNITY_graphify Skill (3)]]
 
 ## Top bridge nodes
-- [[graphify Skill]] - degree 15, connects to 1 community
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - degree 15, connects to 6 communities

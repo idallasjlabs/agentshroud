@@ -22,7 +22,7 @@ members: 37
 - [[Container-Image CVE Domain (our own images)]] - concept - docs/security/cve-mitigation-matrix.md
 - [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Daily GHSA  NVD Registry Sync]] - concept - docs/security/cve-mitigation-matrix.md
-- [[Executive Summary_5]] - document - docs/security/cve-mitigation-matrix.md
+- [[Executive Summary_3]] - document - docs/security/cve-mitigation-matrix.md
 - [[Fresh-DB vs Cached-DB Trivy Verification]] - rationale - docs/security/cve-mitigation-matrix.md
 - [[Gateway image (fresh-DB residual 5C  132H — all `fix NONE` or in-place-unfixable)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Gitleaks Allowlist Strategy]] - concept - docs/security/secrets-inventory.md
@@ -54,9 +54,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal (2)]]
-- 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_format_upstream_cve_alert()]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
 
 ## Top bridge nodes
 - [[AgentShroud™ CVE Mitigation Matrix]] - degree 16, connects to 3 communities
