@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "KillSwitchMonitor"
 location: "L237"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/KillSwitchMonitor
 ---
 
 # ._check()
@@ -22,4 +22,4 @@ tags:
 - [[FileSandbox]] - `method` [EXTRACTED]
 - [[FileVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L190"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "StdioConnection"
-location: "L95"
+community: "_make_proxy()"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/_make_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

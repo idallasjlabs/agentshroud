@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "setup-secrets.sh (2)"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # container-runtime.sh
@@ -17,4 +17,4 @@ tags:
 - [[container_runtime_engine()]] - `defines` [EXTRACTED]
 - [[detect_container_runtime()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

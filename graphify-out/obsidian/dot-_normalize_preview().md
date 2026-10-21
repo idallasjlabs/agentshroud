@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig
 ---
 
 # ._normalize_preview()
@@ -16,4 +16,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
 - [[Normalize previews to single-line safe text for JSONL + markdown mirrors.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_latency_guard.py (2)"
+community: "GATEWAY_OP_PROXY_URL"
 location: "L1114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy_2
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # _sse_body()
@@ -18,4 +18,4 @@ tags:
 - [[test_call_agent_stream_yields_sentences_in_order()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy_2
+#graphify/code #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

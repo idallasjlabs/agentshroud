@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_fieldflare_route_strips_unsupported_fields_streaming"
-location: "L1437"
+community: "ModeRequest"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fieldflare_route_strips_unsupported_fields_streaming
+  - community/ModeRequest
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamClient]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller (2)"
+community: "FR3: System Integrity"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/FR3_System_Integrity
 ---
 
 # cheatsheet.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[description of what this does_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity

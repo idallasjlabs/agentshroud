@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "api.py"
+community: "MCPPolicyEngine (2)"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine_2
 ---
 
 # ._verifier()
@@ -29,6 +29,6 @@ tags:
 - [[dot-test_wildcard_allowlist_match_kept()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `calls` [EXTRACTED]
 - [[TestVerifyReport]] - `method` [EXTRACTED]
-- [[_FakeFetcher_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

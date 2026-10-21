@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_openclaw_readiness_retry.sh"
+source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
 type: "code"
-community: "test-sunday-upgrade-scan.sh"
-location: "L21"
+community: "Recommendation"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/Recommendation
 ---
 
 # check()
 
 ## Connections
-- [[test_openclaw_readiness_retry.sh]] - `defines` [EXTRACTED]
-- [[test_openclaw_readiness_retry.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_cron_html_email.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_cron_html_email.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/code #graphify/EXTRACTED #community/Recommendation

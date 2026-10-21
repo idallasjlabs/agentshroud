@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh (2)"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L616-L636"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # asb rebuild [full|hermes]
@@ -22,4 +22,4 @@ tags:
 - [[_reset_device_store()]] - `calls` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

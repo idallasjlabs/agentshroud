@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
+community: "PIIConfig"
 location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/PIIConfig
 ---
 
 # _wait_for_docker()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[_attempt_rollback()]] - `calls` [EXTRACTED]
 - [[_wait_result()]] - `references` [EXTRACTED]
-- [[log()_2]] - `calls` [EXTRACTED]
+- [[log()_1]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_preflight()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

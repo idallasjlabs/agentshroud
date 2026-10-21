@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "KillSwitchMonitor"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/KillSwitchMonitor
 ---
 
 # ._match_pattern()
@@ -17,4 +17,4 @@ tags:
 - [[Enhanced pattern matching for file paths.]] - `rationale_for` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "SecureBrowser (4)"
 location: "L714"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/SecureBrowser_4
 ---
 
 # ._local_backend_headers()
@@ -23,4 +23,4 @@ tags:
 - [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - `calls` [INFERRED]
 - [[test_local_backend_headers_no_auth_for_fieldflare()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

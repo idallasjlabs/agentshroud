@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # can_use_tool_from_origin
@@ -18,4 +18,4 @@ tags:
 - [[record_decision()]] - `calls` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

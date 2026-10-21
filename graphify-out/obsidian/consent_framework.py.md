@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "SecureBrowser (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/SecureBrowser_3
 ---
 
 # consent_framework.py
@@ -20,7 +20,7 @@ tags:
 - [[ServerConfig]] - `contains` [EXTRACTED]
 - [[ShellInjectionDetected]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `references` [EXTRACTED]
-- [[oauth_security.py]] - `references` [EXTRACTED]
+- [[oauth_security.py_2]] - `references` [EXTRACTED]
 - [[test_consent_framework.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

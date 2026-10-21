@@ -1,26 +1,22 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L808"
+community: "browser/scripts/browse.py"
+location: "L913"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # _run_nvd_sync()
 
 ## Connections
-- [[Namespace]] - `references` [EXTRACTED]
-- [[Run the legacy NVD keyword source for OpenClaw + Hermes (unchanged).]] - `rationale_for` [EXTRACTED]
-- [[_print_summary()]] - `calls` [EXTRACTED]
-- [[_process_nvd_results()]] - `calls` [EXTRACTED]
-- [[_read_pinned_version()]] - `calls` [EXTRACTED]
-- [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
-- [[append_to_registry()]] - `calls` [EXTRACTED]
+- [[Namespace_1]] - `references` [EXTRACTED]
+- [[Report the NVD keyword backlog for OpenClaw + Hermes. Writes NOTHING. The NVD…]] - `rationale_for` [EXTRACTED]
+- [[_nvd_backlog()]] - `calls` [EXTRACTED]
 - [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[main()_6]] - `calls` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

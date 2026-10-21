@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L54"
+community: "MiddlewareManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

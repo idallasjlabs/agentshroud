@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestStartupScannerKeying"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # ._clean_report()
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_legacy_trivy_key_present()]] - `calls` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/code #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

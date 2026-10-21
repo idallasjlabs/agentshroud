@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TestNewPatternsV080"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # ._hits()
@@ -36,4 +36,4 @@ tags:
 - [[dot-test_whitespace_obfuscation()]] - `calls` [EXTRACTED]
 - [[TestNewPatternsV080]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/code #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

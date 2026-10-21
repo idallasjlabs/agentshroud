@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "MiddlewareManager (8)"
-location: "L75"
+community: "test_soc_egress_endpoints.py"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/test_soc_egress_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_43]] - `references` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

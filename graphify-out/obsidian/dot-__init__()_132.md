@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "AuditEvent"
-location: "L62"
+community: "Critical Findings"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Critical_Findings
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
-- [[AuditEvent_1]] - `method` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/Critical_Findings

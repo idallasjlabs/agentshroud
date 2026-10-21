@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "tts.py"
+community: "AgentShroud Security Verification (13-check driver)"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # _resample_s16le_mono()
@@ -19,4 +19,4 @@ tags:
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ttspy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestOAuthInjection"
+community: "AgentShroud System Status Report"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/AgentShroud_System_Status_Report
 ---
 
 # ._make_anthropic_injector()
@@ -22,4 +22,4 @@ tags:
 - [[Path_52]] - `references` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

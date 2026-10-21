@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ResourceGuard"
-location: "L88"
+community: "CrossBotTrustLedger"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
-- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceLimits]] - `references` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

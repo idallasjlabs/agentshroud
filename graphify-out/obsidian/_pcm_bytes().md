@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_pcm_bytes"
+community: "TestSSRFDetection"
 location: "L919"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/TestSSRFDetection
 ---
 
 # _pcm_bytes()
@@ -39,4 +39,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

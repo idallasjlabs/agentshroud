@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # ._allowed_networks()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_miss_still_rejected_after_rebuild_if_truly_unknown()]] - `calls` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/_make_cve

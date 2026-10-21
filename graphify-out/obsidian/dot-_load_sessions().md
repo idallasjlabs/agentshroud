@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "UserSessionManager"
+community: "RBACConfig"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig
 ---
 
 # ._load_sessions()
 
 ## Connections
-- [[dot-__init__()_97]] - `calls` [EXTRACTED]
+- [[dot-__init__()_170]] - `calls` [EXTRACTED]
 - [[dot-_session_key()]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
 - [[Load existing sessions from metadata file.          Handles both the new ``{use]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "TeamsConfig"
-location: "L57"
+community: "ApprovalQueueConfig (3)"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

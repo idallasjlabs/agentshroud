@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # .add_custom_policy()
 
 ## Connections
 - [[Add or update a rotation policy for a specific credential type.]] - `rationale_for` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `method` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `references` [EXTRACTED]
+- [[KeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

@@ -1,13 +1,13 @@
 ---
 source_file: "docker-compose.sidecar.yml"
 type: "document"
-community: "docker-compose.sidecar.yml — Sidecar Mode Deployment"
+community: "browser-fetch package.json"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-composesidecaryml__Sidecar_Mode_Deployment
+  - community/browser-fetch_packagejson
 ---
 
 # docker-compose.sidecar.yml — Sidecar Mode Deployment
 
-#graphify/document #graphify/EXTRACTED #community/docker-composesidecaryml__Sidecar_Mode_Deployment
+#graphify/document #graphify/EXTRACTED #community/browser-fetch_packagejson

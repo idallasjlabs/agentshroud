@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # _read_running_version_str
@@ -14,4 +14,4 @@ tags:
 - [[check-version-pins-parity.sh]] - `semantically_similar_to` [INFERRED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

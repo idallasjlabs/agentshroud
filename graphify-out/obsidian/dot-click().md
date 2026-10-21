@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser"
+community: "browser/scripts/browse.py (2)"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/browser/scripts/browsepy_2
 ---
 
 # .click()
@@ -16,9 +16,8 @@ tags:
 - [[dot-_log_action()]] - `calls` [EXTRACTED]
 - [[dot-_log_security_event()]] - `calls` [EXTRACTED]
 - [[dot-_requires_approval()]] - `calls` [EXTRACTED]
-- [[Click an element          Security Risk classification for destructive actions]] - `rationale_for` [EXTRACTED]
+- [[Click an element Security Risk classification for destructive actions]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 - [[SecurityError]] - `calls` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2

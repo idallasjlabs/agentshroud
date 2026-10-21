@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py (2)"
+community: "MCPPolicyEngine"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/MCPPolicyEngine
 ---
 
 # check_bot_updates()
@@ -18,4 +18,4 @@ tags:
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[check_openclaw_updates()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

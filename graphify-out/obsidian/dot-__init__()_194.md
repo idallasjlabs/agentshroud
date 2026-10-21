@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L323"
+community: "_wrap_response() (4)"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/_wrap_response_4
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[LogSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "soc/router.py"
-location: "L27"
+community: "ContextSegment"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

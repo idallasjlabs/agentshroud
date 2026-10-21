@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "colima-health-check.sh"
-location: "L151"
+community: "_make_sanitizer()"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # _return_to_main()
@@ -15,4 +15,4 @@ tags:
 - [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

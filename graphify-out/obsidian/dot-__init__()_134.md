@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "api.py"
-location: "L941"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

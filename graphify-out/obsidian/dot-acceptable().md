@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "GovernanceAction (2)"
+community: "v0.9.0 — Apple Messages Integration"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GovernanceAction_2
+  - community/v090__Apple_Messages_Integration
 ---
 
 # .acceptable()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputScore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GovernanceAction_2
+#graphify/code #graphify/EXTRACTED #community/v090__Apple_Messages_Integration

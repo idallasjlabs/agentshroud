@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "ToolResultSanitizer (2)"
-location: "L28"
+community: "NetworkSecurityFinding"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/NetworkSecurityFinding
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_61]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

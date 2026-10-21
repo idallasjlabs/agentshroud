@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "_t"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/_t
 ---
 
 # ._detect_rapid_context_growth()
@@ -18,4 +18,4 @@ tags:
 - [[Detect rapid context window filling.]] - `rationale_for` [EXTRACTED]
 - [[SessionContext]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_t

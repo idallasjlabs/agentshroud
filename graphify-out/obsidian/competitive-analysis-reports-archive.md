@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-analysis-reports-archive.md"
 type: "document"
-community: "system-requirements.md"
+community: "ApprovalHardening"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/ApprovalHardening
 ---
 
 # competitive-analysis-reports-archive.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud (security proxy)]] - `references` [EXTRACTED]
 - [[Competitive Analysis Reports Archive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening

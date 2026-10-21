@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "CompetitiveIntelReport (2)"
-location: "L205"
+community: "test_collaborator_tracker.py (3)"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport_2
+  - community/test_collaborator_trackerpy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_7]] - `references` [EXTRACTED]
+- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport_2
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

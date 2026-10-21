@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "test_collaborator_greeter.py"
 location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/test_collaborator_greeterpy
 ---
 
 # .check_tool_permission()
@@ -17,7 +17,7 @@ tags:
 - [[dot-get_trust_level()]] - `calls` [EXTRACTED]
 - [[dot-infer_permission_level()]] - `calls` [EXTRACTED]
 - [[Check if an agent can call a specific tool.          Default-allow only blocks]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

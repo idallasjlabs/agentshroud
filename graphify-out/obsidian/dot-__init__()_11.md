@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "WebContentScanner"
-location: "L155"
+community: "🛡️ AgentShroud Release Plan (2)"
+location: "L1437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/_AgentShroud_Release_Plan_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `calls` [EXTRACTED]
-- [[URLAnalyzer_1]] - `references` [EXTRACTED]
-- [[WebContentScanner]] - `references` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyConfig_1]] - `references` [EXTRACTED]
+- [[_FakeStreamClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/_AgentShroud_Release_Plan_2

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "sunday-scan.sh"
+community: "run_multi_host"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/run_multi_host
 ---
 
 # _sunday_warn_expiring_acceptances()
@@ -17,4 +17,4 @@ tags:
 - [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 - [[warn()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-scansh
+#graphify/code #graphify/EXTRACTED #community/run_multi_host

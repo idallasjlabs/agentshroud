@@ -1,11 +1,11 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "Browser Extension"
+community: "middleware.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Browser_Extension
+  - community/middlewarepy
 ---
 
 # browser-extension package.json (Jest test harness)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[browser-extensionREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Browser_Extension
+#graphify/code #graphify/INFERRED #community/middlewarepy

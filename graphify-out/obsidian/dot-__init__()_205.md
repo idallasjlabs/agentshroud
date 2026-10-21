@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "SessionManager"
-location: "L57"
+community: "TestParseHosts"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TestParseHosts
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `references` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Path_68]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TestParseHosts

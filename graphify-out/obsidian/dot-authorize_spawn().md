@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "GovernanceAction"
+community: "TestCanvasAuthHelpers"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/TestCanvasAuthHelpers
 ---
 
 # .authorize_spawn()
@@ -17,4 +17,4 @@ tags:
 - [[ResourceUsage_2]] - `calls` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GovernanceAction
+#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers

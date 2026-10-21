@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L87"
+community: "wakeword.c"
+location: "L718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/wakewordc
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/wakewordc

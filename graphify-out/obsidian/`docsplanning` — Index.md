@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "`docs/planning/` — Index"
+community: "TestToolAuthorization"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/planning/__Index
+  - community/TestToolAuthorization
 ---
 
 # `docs/planning/` — Index
@@ -19,4 +19,4 @@ tags:
 - [[What does NOT live here]] - `contains` [EXTRACTED]
 - [[planningREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/planning/__Index
+#graphify/document #graphify/EXTRACTED #community/TestToolAuthorization

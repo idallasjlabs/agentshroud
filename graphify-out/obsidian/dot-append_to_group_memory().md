@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # .append_to_group_memory()
@@ -16,4 +16,4 @@ tags:
 - [[Append a timestamped entry to the group shared memory file.          Authorizati]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

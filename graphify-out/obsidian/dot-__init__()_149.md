@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L148"
+community: "test_playback_state.c"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/test_playback_statec
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

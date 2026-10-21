@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: ""
 type: "code"
-community: "export-bot-conversations.py (3)"
-location: "L41"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_3
+  - community/sync-cve-registrypy
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()_2]] - `references` [EXTRACTED]
-- [[_report_date()]] - `references` [EXTRACTED]
-- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
+- [[_already_checked_upstream_today()]] - `references` [EXTRACTED]
+- [[_already_ingested_ghsa_today()]] - `references` [EXTRACTED]
+- [[_already_sent_today()]] - `references` [EXTRACTED]
+- [[browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_3
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

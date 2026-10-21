@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "OpenClaw Management Scripts"
+community: "iCloud Services (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/iCloud_Services_2
 ---
 
 # docker/scripts README.md
@@ -19,4 +19,4 @@ tags:
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2

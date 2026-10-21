@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L88"
+community: "TestProductionCompose"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/TestProductionCompose
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

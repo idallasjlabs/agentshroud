@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # ._fake_aiohttp()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
 - [[TestHttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

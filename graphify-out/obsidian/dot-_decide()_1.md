@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L461"
+community: "ToolResultSanitizer"
+location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # ._decide()
 
 ## Connections
 - [[dot-_tier_for()_1]] - `calls` [EXTRACTED]
-- [[dot-evaluate()]] - `calls` [EXTRACTED]
-- [[A2AMethod]] - `references` [EXTRACTED]
-- [[A2APolicyDecision]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
-- [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
+- [[dot-evaluate()_1]] - `calls` [EXTRACTED]
+- [[MCPPolicyDecision]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "test_ptt_state.c"
+community: "test_security_toolchain.py (2)"
 location: "L537"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/test_security_toolchainpy_2
 ---
 
 # _send_status_beacon()
@@ -18,4 +18,4 @@ tags:
 - [[ws_client_handle_t]] - `references` [EXTRACTED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

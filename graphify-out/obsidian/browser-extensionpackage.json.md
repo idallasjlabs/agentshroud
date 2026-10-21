@@ -1,18 +1,18 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "browser-extension/package.json"
+community: "Technical Specification"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/Technical_Specification
 ---
 
 # browser-extension/package.json
 
 ## Connections
-- [[description_7]] - `contains` [EXTRACTED]
+- [[description_10]] - `contains` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[jest_1]] - `contains` [EXTRACTED]
 - [[license_3]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[scripts]] - `contains` [EXTRACTED]
 - [[version_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/Technical_Specification

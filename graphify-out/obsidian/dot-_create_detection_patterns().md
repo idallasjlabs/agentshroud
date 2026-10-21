@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "MiddlewareManager (13)"
+community: "Step-by-Step Installation (2)"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_13
+  - community/Step-by-Step_Installation_2
 ---
 
 # ._create_detection_patterns()
@@ -17,4 +17,4 @@ tags:
 - [[OutputCanary]] - `method` [EXTRACTED]
 - [[Pattern]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_13
+#graphify/code #graphify/EXTRACTED #community/Step-by-Step_Installation_2

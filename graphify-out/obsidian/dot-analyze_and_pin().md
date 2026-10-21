@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # .analyze_and_pin()
 
 ## Connections
-- [[dot-_is_private_ip()]] - `calls` [EXTRACTED]
+- [[dot-_is_private_ip()_2]] - `calls` [EXTRACTED]
 - [[dot-_resolve_host()]] - `calls` [EXTRACTED]
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - `rationale_for` [EXTRACTED]
 - [[URLAnalysisResult_1]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

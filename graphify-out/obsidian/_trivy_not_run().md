@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "parse_clamscan_output"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/parse_clamscan_output
 ---
 
 # _trivy_not_run()
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_initial_when_not_run()_1]] - `calls` [EXTRACTED]
 - [[dot-test_one_when_sbom_exists()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_when_no_sbom_no_trivy()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

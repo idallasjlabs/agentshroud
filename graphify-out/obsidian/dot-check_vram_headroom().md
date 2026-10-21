@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # .check_vram_headroom()
@@ -16,4 +16,4 @@ tags:
 - [[ResourceGuard]] - `method` [EXTRACTED]
 - [[VRAMHeadroomError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

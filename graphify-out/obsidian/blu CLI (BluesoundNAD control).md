@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/blucli/SKILL.md"
 type: "concept"
-community: "blucli/SKILL.md"
+community: "vTaskDelay (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/blucli/SKILLmd
+  - community/vTaskDelay_2
 ---
 
 # blu CLI (Bluesound/NAD control)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[blucliSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/blucli/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/vTaskDelay_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig
 ---
 
 # ._normalize_username()
@@ -16,4 +16,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
 - [[Normalize username for safe contributor-log tokenization.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

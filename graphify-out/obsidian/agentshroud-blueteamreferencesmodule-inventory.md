@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "AgentShroud Module Inventory"
+community: "TestCredentialLeakDetection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/TestCredentialLeakDetection
 ---
 
 # agentshroud-blueteam/references/module-inventory.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection

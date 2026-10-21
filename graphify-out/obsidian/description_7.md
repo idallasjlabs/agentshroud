@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: "browser-extension/manifest.json"
 type: "code"
-community: "browser-extension/package.json"
+community: "Audit Ledger (SHA-256 hash only)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # description
 
 ## Connections
-- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
+- [[browser-extensionmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

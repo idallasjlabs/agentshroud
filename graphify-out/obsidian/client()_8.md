@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "_is_op_reference_allowed"
-location: "L121"
+community: "UserSessionManager (3)"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/UserSessionManager_3
 ---
 
 # client()
 
 ## Connections
-- [[test_op_proxy.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

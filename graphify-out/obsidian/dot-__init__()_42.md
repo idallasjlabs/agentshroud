@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: "test_collaborator_tracker.py (3)"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_collaborator_trackerpy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_9]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

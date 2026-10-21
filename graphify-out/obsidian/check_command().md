@@ -20,7 +20,7 @@ tags:
 - [[dot-test_allows_safe_command()]] - `calls` [EXTRACTED]
 - [[dot-test_blocks_dollar_env()]] - `calls` [EXTRACTED]
 - [[dot-test_blocks_env_pipe()]] - `calls` [EXTRACTED]
-- [[dot-test_blocks_printenv()_1]] - `calls` [EXTRACTED]
+- [[dot-test_blocks_printenv()]] - `calls` [EXTRACTED]
 - [[dot-test_blocks_proc_environ()]] - `calls` [EXTRACTED]
 - [[dot-test_blocks_proc_star_environ()]] - `calls` [EXTRACTED]
 - [[Check if command execution should be allowed.      Args         cmd Command to]] - `rationale_for` [EXTRACTED]

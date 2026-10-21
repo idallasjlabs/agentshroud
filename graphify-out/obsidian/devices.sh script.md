@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/devices.sh"
 type: "code"
-community: "devices.sh"
+community: "§5 — Trivy Container Scan Results"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/devicessh
+  - community/5__Trivy_Container_Scan_Results
 ---
 
 # devices.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[devices.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/devicessh
+#graphify/code #graphify/EXTRACTED #community/5__Trivy_Container_Scan_Results

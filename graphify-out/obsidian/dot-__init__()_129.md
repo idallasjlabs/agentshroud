@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/web/api.py"
 type: "code"
 community: "MCPPolicyEngine"
-location: "L278"
+location: "L941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[SkillGuardBlocked]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

@@ -1,13 +1,16 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/package.json"
-type: "document"
-community: "browser-fetch package.json"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
+type: "code"
+community: "telegram_proxy.py (3) (2)"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/browser-fetch_packagejson
+  - graphify/code
+  - graphify/AMBIGUOUS
+  - community/telegram_proxypy_3_2
 ---
 
 # browser-fetch package.json
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetch_packagejson
+## Connections
+- [[browse.py — SecureBrowser CLI (OpenClaw)]] - `semantically_similar_to` [AMBIGUOUS]
+
+#graphify/code #graphify/AMBIGUOUS #community/telegram_proxypy_3_2

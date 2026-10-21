@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "Common Queries"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Common_Queries
 ---
 
 # clamav_scanner.py
@@ -28,6 +28,6 @@ tags:
 - [[test_clamav_pipeline.py]] - `imports_from` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[update_virus_db()]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `semantically_similar_to` [INFERRED]
+- [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/Common_Queries

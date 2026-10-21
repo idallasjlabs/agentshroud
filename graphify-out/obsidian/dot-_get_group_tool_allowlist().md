@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L641"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # ._get_group_tool_allowlist()
@@ -17,4 +17,4 @@ tags:
 - [[Collect additional tools granted to the user via their group memberships.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

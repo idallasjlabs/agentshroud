@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "export-bot-conversations.py (2)"
-location: "L43"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_2
+  - community/archive_old_events
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()_1]] - `references` [EXTRACTED]
-- [[export-bot-conversations.py]] - `imports_from` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

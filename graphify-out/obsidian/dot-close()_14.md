@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "TrustConfig"
-location: "L442"
+community: "_pcm_bytes"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/_pcm_bytes
 ---
 
 # .close()
 
 ## Connections
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "ServiceManager"
-location: "L54"
+community: ".proxy_messages()"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/proxy_messages
 ---
 
 # .close()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L166"
+community: "TelegramAPIProxy (2)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/TelegramAPIProxy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

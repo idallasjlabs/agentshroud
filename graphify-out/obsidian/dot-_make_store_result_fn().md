@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestStartupScannerKeying"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # ._make_store_result_fn()
@@ -20,4 +20,4 @@ tags:
 - [[Reproduce the _store_result closure from lifespan.py.]] - `rationale_for` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/code #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

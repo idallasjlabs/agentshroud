@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-firewall.sh"
 type: "code"
-community: "colima-firewall.sh"
+community: "export-openapi.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-firewallsh
+  - community/export-openapish
 ---
 
 # colima-firewall.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[colima-firewall.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-firewallsh
+#graphify/code #graphify/EXTRACTED #community/export-openapish

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L55"
+community: "AgentTarget"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

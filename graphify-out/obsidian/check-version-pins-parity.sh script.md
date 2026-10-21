@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-version-pins-parity.sh"
 type: "code"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # check-version-pins-parity.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check-version-pins-parity.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

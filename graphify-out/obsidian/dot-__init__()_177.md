@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L148"
+community: "_t (2)"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/_t_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine_1]] - `references` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[dot-update()]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/_t_2

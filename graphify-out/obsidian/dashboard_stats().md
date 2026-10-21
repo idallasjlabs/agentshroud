@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "test_dashboard.py"
+community: "lifespan()"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/lifespan
 ---
 
 # dashboard_stats()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[JSON stats for dashboard]] - `rationale_for` [EXTRACTED]
-- [[Request_7]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/lifespan

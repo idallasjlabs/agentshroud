@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L57"
+community: "HTTPConnectProxy"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/HTTPConnectProxy
 ---
 
 # .close()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

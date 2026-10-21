@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer (2)"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer_2
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # ._extract_scannable_content()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_extract_dict_content()]] - `calls` [EXTRACTED]
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[Extract text content from various tool result formats for PII scanning]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer_2
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

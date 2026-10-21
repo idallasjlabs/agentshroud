@@ -1,14 +1,14 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "asb Canary Service"
+community: "PostgreSQL SAVEPOINT/ROLLBACK test pattern"
 location: "L681-L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asb_Canary_Service
+  - community/PostgreSQL_SAVEPOINT/ROLLBACK_test_pattern
 ---
 
 # asb canary [service]
 
-#graphify/code #graphify/EXTRACTED #community/asb_Canary_Service
+#graphify/code #graphify/EXTRACTED #community/PostgreSQL_SAVEPOINT/ROLLBACK_test_pattern

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py"
 location: "L2920"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy
 ---
 
 # ._proxy_request_impl()
@@ -26,6 +26,6 @@ tags:
 - [[dot-_username_for_bot()]] - `calls` [EXTRACTED]
 - [[dot-proxy_request()]] - `calls` [EXTRACTED]
 - [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

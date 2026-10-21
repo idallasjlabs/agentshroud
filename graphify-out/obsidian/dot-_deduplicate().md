@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_llm_proxy.py"
 location: "L505"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_llm_proxypy
 ---
 
 # ._deduplicate()
@@ -18,4 +18,4 @@ tags:
 - [[PIIHit]] - `references` [EXTRACTED]
 - [[Remove overlapping hits, preferring higher confidence.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

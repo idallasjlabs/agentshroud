@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "archive_old_events"
-location: "L46"
+community: "1. Accomplishments This Phase"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/1_Accomplishments_This_Phase
 ---
 
 # datetime
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[audit_archive.py]] - `imports_from` [EXTRACTED]
+- [[_parse_since()_2]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[export-telegram-history.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

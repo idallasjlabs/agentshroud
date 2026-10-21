@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "RBACConfig (2)"
-location: "L181"
+community: "_wrap_response()"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/_wrap_response
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "FetchOutcome"
+community: "TelegramAPIProxy (3)"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/TelegramAPIProxy_3
 ---
 
 # ._patch_stream()
@@ -21,4 +21,4 @@ tags:
 - [[Patch httpx.stream; return a list that records the call kwargs.]] - `rationale_for` [EXTRACTED]
 - [[TestMakeHttpxFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

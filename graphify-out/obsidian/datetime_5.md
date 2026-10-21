@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L66"
+community: "TestEgressTelegramNotify"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/TestEgressTelegramNotify
 ---
 
 # datetime
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
+- [[build_weekly_summary()]] - `references` [EXTRACTED]
+- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

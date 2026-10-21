@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Message Composition with MML (MIME Meta Language)"
+community: "Multi-Agent Role Matrix"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # `<#part>`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MML Tag Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

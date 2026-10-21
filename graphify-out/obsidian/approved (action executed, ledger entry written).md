@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-16-state-approval-queue.svg"
 type: "concept"
-community: "pending (bot submits action requiring approval)"
+community: "AgentShroud Phase Review — 2026-02-23 (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/pending_bot_submits_action_requiring_approval
+  - community/AgentShroud_Phase_Review__2026-02-23_3
 ---
 
 # approved (action executed, ledger entry written)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[pending (bot submits action requiring approval)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/pending_bot_submits_action_requiring_approval
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_3

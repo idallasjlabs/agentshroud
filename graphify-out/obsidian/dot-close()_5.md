@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (2)"
+community: "format_cve_report()"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/format_cve_report
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[Clean up browser resources_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[main()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

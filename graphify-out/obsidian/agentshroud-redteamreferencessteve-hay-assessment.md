@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-assessment.md"
 type: "document"
-community: "agentshroud-redteam/references/steve-hay-assessment.md"
+community: "toggle-readonly.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-redteam/references/steve-hay-assessmentmd
+  - community/toggle-readonlysh
 ---
 
 # agentshroud-redteam/references/steve-hay-assessment.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-redteam/references/steve-hay-assessmentmd
+#graphify/document #graphify/EXTRACTED #community/toggle-readonlysh

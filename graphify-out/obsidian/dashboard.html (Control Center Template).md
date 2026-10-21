@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/dashboard.html"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilterConfig (2) (2)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilterConfig_2_2
 ---
 
 # dashboard.html (Control Center Template)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L78"
+community: "Usage"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/Usage
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/Usage

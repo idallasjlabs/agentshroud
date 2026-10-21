@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "AlertDispatcher (2)"
 location: "L2617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/AlertDispatcher_2
 ---
 
 # compute_bot_scorecard()
@@ -27,7 +27,7 @@ tags:
 - [[dot-test_risk_level_yellow_50_to_79()]] - `calls` [EXTRACTED]
 - [[dot-test_score_clamped_to_hundred()]] - `calls` [EXTRACTED]
 - [[dot-test_score_clamped_to_zero()]] - `calls` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - `rationale_for` [EXTRACTED]
 - [[TestComputeBotScorecard_1]] - `calls` [EXTRACTED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[test_manage_soc_report_endpoint()]] - `shares_data_with` [INFERRED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

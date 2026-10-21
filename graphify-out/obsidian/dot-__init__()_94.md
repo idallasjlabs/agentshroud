@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L23"
+community: "EgressFilterConfig (2) (2)"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/EgressFilterConfig_2_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

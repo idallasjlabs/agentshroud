@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py"
 location: "L7093"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy
 ---
 
 # ._send_telegram_text()
@@ -22,6 +22,6 @@ tags:
 - [[dot-_send_local_notice_with_fallback()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Best-effort Telegram sender with bounded retries.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L187"
+community: "MiddlewareManager"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileSandboxConfig]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,20 +1,20 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L1047"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # approvals_list_formats_rows()
 
 ## Connections
 - [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-ok()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

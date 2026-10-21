@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy
 ---
 
 # _print_plan()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[RemediationPlan dataclass]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

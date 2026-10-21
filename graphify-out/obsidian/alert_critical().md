@@ -1,19 +1,19 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "security-entrypoint.sh"
+community: "test_collaborator_tracker.py (4)"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/test_collaborator_trackerpy_4
 ---
 
 # alert_critical()
 
 ## Connections
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_6]] - `calls` [EXTRACTED]
 - [[security-entrypoint.sh]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

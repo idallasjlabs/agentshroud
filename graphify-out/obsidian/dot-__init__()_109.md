@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L111"
+community: "api.py (2)"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/apipy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_1]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/apipy_2

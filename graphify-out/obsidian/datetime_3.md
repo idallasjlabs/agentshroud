@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L132"
+community: "1. Accomplishments This Phase"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/1_Accomplishments_This_Phase
 ---
 
 # datetime
 
 ## Connections
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[_parse_since()_1]] - `references` [EXTRACTED]
+- [[_report_date()]] - `references` [EXTRACTED]
+- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L78"
+community: "ApprovalQueueConfig (3)"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/ApprovalQueueConfig_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[KeyLeakDetector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

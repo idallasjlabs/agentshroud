@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "run-as-root.sh"
+community: "agentshroud-gateway pyproject config"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/run-as-rootsh
+  - community/agentshroud-gateway_pyproject_config
 ---
 
 # browser-fetch skill.json (tool manifest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[run-as-root.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/run-as-rootsh
+#graphify/code #graphify/INFERRED #community/agentshroud-gateway_pyproject_config

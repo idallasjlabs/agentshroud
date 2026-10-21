@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/tests/test_e2e.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ForwardRequest (2)"
-location: "L24"
+community: "MCPPermissionManager"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest_2
+  - community/MCPPermissionManager
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
-- [[test_e2e.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

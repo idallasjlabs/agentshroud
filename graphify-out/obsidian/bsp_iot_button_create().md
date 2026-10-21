@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "bsp_iot_button_create"
+community: "AgentShroud Phase Review — 2026-02-23 (6)"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bsp_iot_button_create
+  - community/AgentShroud_Phase_Review__2026-02-23_6
 ---
 
 # bsp_iot_button_create()
@@ -16,4 +16,4 @@ tags:
 - [[esp_err_t_1]] - `references` [EXTRACTED]
 - [[test_playback_statestubsbspesp-bsp.h]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_6

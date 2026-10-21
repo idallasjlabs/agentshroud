@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L404"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

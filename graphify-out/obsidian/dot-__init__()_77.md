@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection (2)"
-location: "L445"
+community: "CrossBotTrustLedger"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L116"
+community: "ApprovalQueueConfig (3)"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

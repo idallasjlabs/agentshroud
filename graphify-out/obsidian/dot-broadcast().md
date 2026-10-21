@@ -15,7 +15,7 @@ tags:
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
 - [[dot-decide()]] - `calls` [EXTRACTED]
 - [[dot-submit()]] - `calls` [EXTRACTED]
-- [[Any_54]] - `references` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Send a JSON message to all connected WebSocket clients          Silently removes]] - `rationale_for` [EXTRACTED]
 

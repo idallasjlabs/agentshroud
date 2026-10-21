@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "AlertTelegramRelay"
+community: "EgressFilterConfig (2) (2)"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/EgressFilterConfig_2_2
 ---
 
 # ._handle()
 
 ## Connections
-- [[dot-__call__()_6]] - `calls` [EXTRACTED]
+- [[dot-__call__()_5]] - `calls` [EXTRACTED]
 - [[dot-_clean_tool()]] - `calls` [EXTRACTED]
 - [[dot-_coerce()]] - `calls` [EXTRACTED]
 - [[dot-_dedup_key()]] - `calls` [EXTRACTED]
 - [[dot-_spawn_send()]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "RBACConfig (2)"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/RBACConfig_2
 ---
 
 # _save_sessions must go through os.replace(tmp, final), never a         partial i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_save_uses_atomic_replace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig_2

@@ -1,18 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "SecureBrowser (4)"
-location: "L65"
+community: "CrossBotTrustLedger"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

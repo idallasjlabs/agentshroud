@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages()"
+community: "SecureBrowser (4)"
 location: "L2148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SecureBrowser_4
 ---
 
 # ._forward_request()
@@ -20,4 +20,4 @@ tags:
 - [[_read_error_body()]] - `indirect_call` [INFERRED]
 - [[_urlopen_and_read()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

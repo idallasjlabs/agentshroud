@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "code"
-community: "egress_filter.py (3)"
+community: "1. Accomplishments This Phase"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy_3
+  - community/1_Accomplishments_This_Phase
 ---
 
 # backup-bot-memory.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[backup-bot-memory.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy_3
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

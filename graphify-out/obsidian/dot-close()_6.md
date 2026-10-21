@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "SecureBrowser (3)"
-location: "L401"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

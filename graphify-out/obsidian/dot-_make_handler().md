@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "test_soc_realtime_coverage.py (2)"
+community: "TestEgressApprovalQueue"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy_2
+  - community/TestEgressApprovalQueue
 ---
 
 # ._make_handler()
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_no_subscription_accepts_log_event()]] - `calls` [EXTRACTED]
 - [[dot-test_no_subscription_accepts_security_event()]] - `calls` [EXTRACTED]
 - [[dot-test_subscription_filters_correctly()]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `references` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy_2
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

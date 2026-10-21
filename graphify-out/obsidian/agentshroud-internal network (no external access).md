@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "code"
-community: "agentshroud-gateway service (proxy mode)"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L111-118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_service_proxy_mode
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # agentshroud-internal network (no external access)
@@ -17,4 +17,4 @@ tags:
 - [[openclaw service (internal network only)]] - `shares_data_with` [EXTRACTED]
 - [[wazuh-agent sidecar (pinned 4.14.7)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode
+#graphify/code #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "SkillGuard (2)"
-location: "L314"
+community: "_wrap_response() (2)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/_wrap_response_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuard_1]] - `method` [EXTRACTED]
-- [[_Rule]] - `references` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/camsnap/SKILL.md"
 type: "document"
-community: "camsnap/SKILL.md"
+community: "MCPPermissionManager (2) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/camsnap/SKILLmd
+  - community/MCPPermissionManager_2_2
 ---
 
 # camsnap/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[camsnap]] - `contains` [EXTRACTED]
 - [[camsnap CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/camsnap/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_2_2

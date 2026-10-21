@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # ._is_owner()
@@ -16,4 +16,4 @@ tags:
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 - [[Return True if user_id is the system owner (oversight override).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "MCPPolicyEngine"
 location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine
 ---
 
 # _skills_reload_paths()
 
 ## Connections
-- [[Path_35]] - `references` [EXTRACTED]
+- [[Path_33]] - `references` [EXTRACTED]
 - [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

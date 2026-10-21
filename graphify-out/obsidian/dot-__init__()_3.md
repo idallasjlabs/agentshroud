@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "LLMProxy"
-location: "L251"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
+location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
 ---
 
 # .__init__()
 
 ## Connections
-- [[LLMProxy]] - `method` [EXTRACTED]
+- [[_HeadFakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report

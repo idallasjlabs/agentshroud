@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "_wrap_response()"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/_wrap_response
 ---
 
 # .check_state_reuse()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthError]] - `calls` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

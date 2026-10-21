@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Error Index.md"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/ApprovalQueueConfig_7
 ---
 
 # docker-commands.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

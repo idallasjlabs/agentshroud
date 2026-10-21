@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L307"
+community: "UserSessionManager (2)"
+location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/UserSessionManager_2
 ---
 
 # ._decide()
 
 ## Connections
 - [[dot-_tier_for()]] - `calls` [EXTRACTED]
-- [[dot-evaluate()_1]] - `calls` [EXTRACTED]
-- [[MCPPolicyDecision]] - `references` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[dot-evaluate()]] - `calls` [EXTRACTED]
+- [[A2AMethod]] - `references` [EXTRACTED]
+- [[A2APolicyDecision]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `method` [EXTRACTED]
+- [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

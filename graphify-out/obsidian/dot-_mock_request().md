@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # ._mock_request()
@@ -18,4 +18,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/_make_cve

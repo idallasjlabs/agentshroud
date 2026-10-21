@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "agentshroud-bot (2)"
+community: "Mode A — Single task (4)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot_2
+  - community/Mode_A__Single_task_4
 ---
 
 # agentshroud-bot
@@ -16,16 +16,16 @@ tags:
 - [[Extra Hosts]] - `contains` [EXTRACTED]
 - [[Health Check_2]] - `contains` [EXTRACTED]
 - [[Key Environment Variables]] - `contains` [EXTRACTED]
-- [[Logs_2]] - `contains` [EXTRACTED]
+- [[Logs_3]] - `contains` [EXTRACTED]
 - [[Network_1]] - `contains` [EXTRACTED]
 - [[Ports_1]] - `contains` [EXTRACTED]
-- [[Related Notes_52]] - `contains` [EXTRACTED]
+- [[Related Notes_56]] - `contains` [EXTRACTED]
 - [[Resource Limits_1]] - `contains` [EXTRACTED]
 - [[Secrets_3]] - `contains` [EXTRACTED]
-- [[Security Hardening_2]] - `contains` [EXTRACTED]
+- [[Security Hardening_3]] - `contains` [EXTRACTED]
 - [[Summary_20]] - `contains` [EXTRACTED]
 - [[Volumes_3]] - `contains` [EXTRACTED]
 - [[agentshroud-bot]] - `contains` [EXTRACTED]
 - [[tmpfs Mounts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot_2
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4

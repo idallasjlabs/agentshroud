@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "EgressTelegramNotifier"
+community: "Critical Findings"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Critical_Findings
 ---
 
 # .cleanup_expired()
@@ -15,4 +15,4 @@ tags:
 - [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 - [[Remove pending requests older than max_age_seconds. Returns count removed.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/Critical_Findings

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "A2AMethod"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/A2AMethod
 ---
 
 # datetime
 
 ## Connections
-- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

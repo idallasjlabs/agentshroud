@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "setup-secrets.sh (2)"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L593-L609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # asb up [full|hermes]
@@ -20,4 +20,4 @@ tags:
 - [[phase_baseline()]] - `references` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

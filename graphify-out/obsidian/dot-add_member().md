@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py (3)"
+community: "Function Details"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_3
+  - community/Function_Details
 ---
 
 # .add_member()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRegistry]] - `method` [EXTRACTED]
 - [[_persist_groups()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_3
+#graphify/code #graphify/EXTRACTED #community/Function_Details

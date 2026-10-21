@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "MCPPolicyEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPolicyEngine
 ---
 
 # api.py
@@ -17,7 +17,7 @@ tags:
 - [[DraftEntry]] - `imports` [EXTRACTED]
 - [[IntelDraftEntry]] - `contains` [EXTRACTED]
 - [[IntelDraftRequest]] - `contains` [EXTRACTED]
-- [[IntelReportStore]] - `imports` [EXTRACTED]
+- [[IntelReportStore_1]] - `imports` [EXTRACTED]
 - [[KillSwitchAction]] - `contains` [EXTRACTED]
 - [[ModeRequest]] - `contains` [EXTRACTED]
 - [[RuntimeConfig]] - `imports` [EXTRACTED]
@@ -58,7 +58,7 @@ tags:
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[installer.py_2]] - `references` [EXTRACTED]
-- [[killswitch()]] - `contains` [EXTRACTED]
+- [[killswitch()_1]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[management.py]] - `imports_from` [EXTRACTED]
@@ -88,4 +88,4 @@ tags:
 - [[ws_logs()]] - `contains` [EXTRACTED]
 - [[ws_updates()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

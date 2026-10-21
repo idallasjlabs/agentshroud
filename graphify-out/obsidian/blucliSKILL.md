@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/blucli/SKILL.md"
 type: "document"
-community: "blucli/SKILL.md"
+community: "vTaskDelay (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/blucli/SKILLmd
+  - community/vTaskDelay_2
 ---
 
 # blucli/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[blu CLI (BluesoundNAD control)]] - `implements` [EXTRACTED]
 - [[blucli (blu)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/blucli/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/vTaskDelay_2

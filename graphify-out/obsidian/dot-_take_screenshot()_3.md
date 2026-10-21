@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "format_cve_report()"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/format_cve_report
 ---
 
 # ._take_screenshot()
@@ -15,6 +15,6 @@ tags:
 - [[dot-navigate()_3]] - `calls` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[Take screenshot and save to audit directory_3]] - `rationale_for` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[main()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

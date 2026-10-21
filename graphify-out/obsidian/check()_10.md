@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-skills-sync.sh"
+source_file: "tests/startup_smoke/test_openclaw_photo.sh"
 type: "code"
-community: "sync-llm-settings.sh"
-location: "L38"
+community: "Recommendation"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/Recommendation
 ---
 
 # check()
 
 ## Connections
-- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
-- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
+- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/Recommendation

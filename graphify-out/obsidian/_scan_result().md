@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_prompt_guard.py (3)"
+community: "export_bot"
 location: "L827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_3
+  - community/export_bot
 ---
 
 # _scan_result()
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_warn_action_returns_sanitized()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy_3
+#graphify/code #graphify/EXTRACTED #community/export_bot

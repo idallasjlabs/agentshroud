@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L868"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # ._all_not_run_patches()
@@ -31,4 +31,4 @@ tags:
 - [[_trivy_not_run()]] - `calls` [EXTRACTED]
 - [[_wazuh_not_run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

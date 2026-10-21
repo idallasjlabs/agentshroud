@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # `PipelineResult` (Dataclass)
 
 ## Connections
-- [[Key Classes]] - `contains` [EXTRACTED]
+- [[Key Classes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

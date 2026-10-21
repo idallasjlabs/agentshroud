@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-gitops/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/AgentTarget_2
 ---
 
 # .agents/skills/i-gitops/SKILL.md
 
 ## Connections
-- [[Skill gitops_1]] - `contains` [EXTRACTED]
+- [[Skill gitops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
+source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
-location: "L11"
+community: "One Shroud Over Every Wire (founding mantra)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
+- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
+- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

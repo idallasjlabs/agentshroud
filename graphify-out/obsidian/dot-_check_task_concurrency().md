@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # ._check_task_concurrency()
@@ -18,4 +18,4 @@ tags:
 - [[A2AMessage]] - `references` [EXTRACTED]
 - [[Check concurrent task limit for task_request messages.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/apipy

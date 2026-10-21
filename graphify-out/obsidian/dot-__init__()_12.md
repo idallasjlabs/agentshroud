@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L70"
+community: "🛡️ AgentShroud Release Plan (2)"
+location: "L1413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_AgentShroud_Release_Plan_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/_AgentShroud_Release_Plan_2

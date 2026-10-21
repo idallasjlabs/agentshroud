@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "TrustConfig"
-location: "L97"
+community: "MCPPolicyEngine (2)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/MCPPolicyEngine_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `references` [EXTRACTED]
-- [[TrustLevel_2]] - `references` [EXTRACTED]
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

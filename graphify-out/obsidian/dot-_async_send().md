@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "EgressTelegramNotifier"
+community: "Critical Findings"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Critical_Findings
 ---
 
 # ._async_send()
@@ -19,4 +19,4 @@ tags:
 - [[Async wrapper around sync Telegram API call.]] - `rationale_for` [EXTRACTED]
 - [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/Critical_Findings

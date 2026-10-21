@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "concept"
-community: "blogwatcher/SKILL.md"
+community: "xTaskGetTickCount (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/blogwatcher/SKILLmd
+  - community/xTaskGetTickCount_2
 ---
 
 # blogwatcher CLI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[blogwatcherSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/blogwatcher/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/xTaskGetTickCount_2

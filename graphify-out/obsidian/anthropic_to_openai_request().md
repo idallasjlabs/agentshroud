@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "test_anthropic_openai_translator.py"
+community: "TestFabricatedSecurityNotice"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # anthropic_to_openai_request()
@@ -29,4 +29,4 @@ tags:
 - [[test_translator_tool_result_becomes_tool_role_message()]] - `calls` [EXTRACTED]
 - [[test_translator_tool_use_blocks()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

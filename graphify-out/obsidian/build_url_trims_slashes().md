@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L950"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # build_url_trims_slashes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

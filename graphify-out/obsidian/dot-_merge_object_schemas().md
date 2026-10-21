@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "ModeRequest"
 location: "L673"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ModeRequest
 ---
 
 # ._merge_object_schemas()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Union several object schemas into one (see _flatten_fieldflare_schema).…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

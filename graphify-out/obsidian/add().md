@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "TrustConfig"
 location: "L3110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TrustConfig
 ---
 
 # add()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_cis_benchmark()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

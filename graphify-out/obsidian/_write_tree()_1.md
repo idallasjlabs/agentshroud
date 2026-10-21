@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # _write_tree()
@@ -37,8 +37,8 @@ tags:
 - [[dot-test_reload_returns_200_with_skills_list()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
 - [[dot-test_serialise_contains_version_and_timestamp()]] - `calls` [EXTRACTED]
-- [[Path_58]] - `references` [EXTRACTED]
+- [[Path_64]] - `references` [EXTRACTED]
 - [[Write {relative_path content} under root.]] - `rationale_for` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "test_voice_latency_guard.py"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_voice_latency_guardpy
 ---
 
 # ._totp_for_counter()
@@ -16,4 +16,4 @@ tags:
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - `rationale_for` [EXTRACTED]
 - [[MFAGuard_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

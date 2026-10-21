@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (7)"
+community: "create_auth_dependency (2)"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/create_auth_dependency_2
 ---
 
 # ._detect_modification_source()
@@ -17,6 +17,6 @@ tags:
 - [[Attempt to detect the source of a file modification.          Detection strategy]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[ModificationSource]] - `references` [EXTRACTED]
-- [[Path_34]] - `references` [EXTRACTED]
+- [[Path_55]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

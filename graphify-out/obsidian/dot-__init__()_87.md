@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L107"
+community: "UserSessionManager (2)"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/UserSessionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `references` [EXTRACTED]
+- [[A2AProxy_1]] - `method` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

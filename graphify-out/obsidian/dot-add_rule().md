@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "SkillGuard"
 location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/SkillGuard
 ---
 
 # .add_rule()
@@ -19,4 +19,4 @@ tags:
 - [[EgressRule]] - `calls` [EXTRACTED]
 - [[EgressScope]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

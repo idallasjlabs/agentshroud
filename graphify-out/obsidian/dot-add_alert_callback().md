@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L445"
+location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # .add_alert_callback()
 
 ## Connections
-- [[Add a callback function for alerts.]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[Add a callback function for chain detection alerts.]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 - [[callable]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

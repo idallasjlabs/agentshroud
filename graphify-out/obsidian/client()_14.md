@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ForwardRequest (2)"
-location: "L25"
+community: "AsyncMock"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest_2
+  - community/AsyncMock
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

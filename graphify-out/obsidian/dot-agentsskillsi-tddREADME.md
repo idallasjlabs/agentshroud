@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "MultiHostResult"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/MultiHostResult
 ---
 
 # .agents/skills/i-tdd/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

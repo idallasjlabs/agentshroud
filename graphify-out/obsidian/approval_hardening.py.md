@@ -12,7 +12,6 @@ tags:
 # approval_hardening.py
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `contains` [EXTRACTED]
 - [[ApprovalHardeningConfig]] - `contains` [EXTRACTED]
 - [[DeceptionDetection]] - `contains` [EXTRACTED]

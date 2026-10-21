@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "api.py"
-location: "L29"
+community: "TelegramAPIProxy"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/TelegramAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[Any_48]] - `references` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

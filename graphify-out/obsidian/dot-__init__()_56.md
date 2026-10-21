@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "StdioConnection"
-location: "L201"
+community: "scanner_integration.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/scanner_integrationpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `method` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

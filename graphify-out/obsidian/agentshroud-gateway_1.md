@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "agentshroud-gateway"
+community: "AgentShroud Branding Assets Index"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # agentshroud-gateway.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

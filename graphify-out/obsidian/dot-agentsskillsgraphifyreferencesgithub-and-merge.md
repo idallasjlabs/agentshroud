@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "graphify reference: GitHub clone and cross-repo merge"
+community: "graphify reference: GitHub clone and cross-repo merge (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_GitHub_clone_and_cross-repo_merge
+  - community/graphify_reference_GitHub_clone_and_cross-repo_merge_2
 ---
 
 # .agents/skills/graphify/references/github-and-merge.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference GitHub clone and cross-repo merge]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_merge
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_merge_2

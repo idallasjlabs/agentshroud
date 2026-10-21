@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "egress_filter.py (3)"
+community: "DelegationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy_3
+  - community/DelegationManager
 ---
 
 # config_integrity.py
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy_3
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

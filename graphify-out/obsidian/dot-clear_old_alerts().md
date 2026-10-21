@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (7)"
+community: "create_auth_dependency (2)"
 location: "L330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/create_auth_dependency_2
 ---
 
 # .clear_old_alerts()
@@ -16,4 +16,4 @@ tags:
 - [[Clear alerts older than N days.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "auth.py"
+community: "test_gemini_openai_translator.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/test_gemini_openai_translatorpy
 ---
 
 # auth.py
 
 ## Connections
-- [[Config Keys Read]] - `contains` [EXTRACTED]
+- [[Config Keys Read_6]] - `contains` [EXTRACTED]
 - [[Environment Variables_16]] - `contains` [EXTRACTED]
-- [[Function Details]] - `contains` [EXTRACTED]
+- [[Function Details_42]] - `contains` [EXTRACTED]
 - [[HTTP Responses]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes]] - `contains` [EXTRACTED]
-- [[Purpose_81]] - `contains` [EXTRACTED]
-- [[Related]] - `contains` [EXTRACTED]
-- [[Responsibilities_2]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
+- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Related_48]] - `contains` [EXTRACTED]
+- [[Responsibilities_51]] - `contains` [EXTRACTED]
 - [[auth.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

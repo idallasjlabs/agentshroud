@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "ForwardRequest (2)"
-location: "L51"
+community: "test_forward_stream.py (2)"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest_2
+  - community/test_forward_streampy_2
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest_2
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2

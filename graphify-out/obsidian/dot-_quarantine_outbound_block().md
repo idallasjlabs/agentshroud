@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py (2)"
 location: "L6915"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy_2
 ---
 
 # ._quarantine_outbound_block()
@@ -18,6 +18,6 @@ tags:
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
 - [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
 - [[Persist blocked outbound messages for admin review.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

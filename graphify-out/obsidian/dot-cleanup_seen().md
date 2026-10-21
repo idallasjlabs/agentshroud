@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AlertDispatcher"
+community: "MiddlewareManager"
 location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .cleanup_seen()
@@ -15,4 +15,4 @@ tags:
 - [[AlertDispatcher]] - `method` [EXTRACTED]
 - [[Remove expired entries from seen IDs cache.          Returns             Number]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

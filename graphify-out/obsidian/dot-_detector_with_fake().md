@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "test_llm_proxy.py"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_llm_proxypy
 ---
 
 # ._detector_with_fake()
@@ -19,4 +19,4 @@ tags:
 - [[DifferentialPIIDetector]] - `references` [EXTRACTED]
 - [[TestPresidioPathContract]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

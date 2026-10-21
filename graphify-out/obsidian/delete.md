@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/main.py"
+community: "TrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TrustConfig
 ---
 
 # delete
@@ -15,4 +15,4 @@ tags:
 - [[egress_remove_rule()]] - `references` [EXTRACTED]
 - [[remove_blocked_domain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

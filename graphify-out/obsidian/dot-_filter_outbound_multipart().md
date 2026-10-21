@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_collaborator_tracker.py (2)"
 location: "L3489"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_collaborator_trackerpy_2
 ---
 
 # ._filter_outbound_multipart()
@@ -21,8 +21,8 @@ tags:
 - [[dot-_quarantine_outbound_block()]] - `calls` [EXTRACTED]
 - [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
 - [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2

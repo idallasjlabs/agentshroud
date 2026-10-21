@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "AgentRegistry"
-location: "L90"
+community: "ContextSegment"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `references` [EXTRACTED]
-- [[IsolationVerifier]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `references` [EXTRACTED]
+- [[ApprovalStore_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_1]] - `references` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

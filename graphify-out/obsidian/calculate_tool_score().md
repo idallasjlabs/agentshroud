@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "system-requirements.md (2)"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/system-requirementsmd_2
 ---
 
 # calculate_tool_score()
@@ -17,11 +17,11 @@ tags:
 - [[dot-test_one_critical()]] - `calls` [EXTRACTED]
 - [[dot-test_perfect_score()]] - `calls` [EXTRACTED]
 - [[dot-test_score_floor()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - `rationale_for` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd_2

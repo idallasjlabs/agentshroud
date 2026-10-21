@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L630"
+community: "AgentTarget (3)"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/AgentTarget_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

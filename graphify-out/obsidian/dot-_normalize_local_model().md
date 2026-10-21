@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "LLMProxy"
+community: "SecureBrowser (4)"
 location: "L419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/SecureBrowser_4
 ---
 
 # ._normalize_local_model()
@@ -26,4 +26,4 @@ tags:
 - [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - `calls` [EXTRACTED]
 - [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

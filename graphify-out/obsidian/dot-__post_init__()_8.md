@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "TrustConfig"
-location: "L68"
+community: "test_llm_proxy.py"
+location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/test_llm_proxypy
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[TrustConfig]] - `method` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

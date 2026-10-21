@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "MiddlewareManager (8)"
-location: "L67"
+community: "Security Module Inventory"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Security_Module_Inventory
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[RetentionAction]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
+- [[_norm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Inventory

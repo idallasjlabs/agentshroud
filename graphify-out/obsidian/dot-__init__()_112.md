@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L29"
+community: "TelegramAPIProxy (3)"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TelegramAPIProxy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[WebSocket_4]] - `references` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

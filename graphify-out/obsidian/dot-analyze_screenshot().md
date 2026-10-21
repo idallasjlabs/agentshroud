@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AgentShroud™ README"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/AgentShroud_README
 ---
 
 # .analyze_screenshot()
@@ -15,4 +15,4 @@ tags:
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_README

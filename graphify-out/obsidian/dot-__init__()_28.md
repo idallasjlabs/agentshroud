@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "KillSwitchMonitor (2)"
-location: "L61"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

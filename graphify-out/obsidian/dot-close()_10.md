@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L106"
+community: "HTTPConnectProxy"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/HTTPConnectProxy
 ---
 
 # .close()
 
 ## Connections
-- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[_CloseRaisesWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

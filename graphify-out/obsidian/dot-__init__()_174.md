@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "_req (3)"
-location: "L144"
+community: "test_soc_router_coverage.py"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_3
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_3
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

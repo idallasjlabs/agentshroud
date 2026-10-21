@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "Request (2)"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/Request_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_15]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/Request_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "ContainerEngine"
+community: "MiddlewareManager (6)"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/MiddlewareManager_6
 ---
 
 # .compose_down()
@@ -15,4 +15,4 @@ tags:
 - [[ContainerEngine]] - `method` [EXTRACTED]
 - [[Tear down services from a compose file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

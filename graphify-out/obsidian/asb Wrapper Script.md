@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "Quickstart"
+community: "Skill: Test-Driven Development (TDD) (2)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Quickstart
+  - community/Skill_Test-Driven_Development_TDD_2
 ---
 
 # asb Wrapper Script
@@ -15,4 +15,4 @@ tags:
 - [[Quickstart_1]] - `semantically_similar_to` [INFERRED]
 - [[asb Helper — Primary Interface]] - `references` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Quickstart
+#graphify/concept #graphify/INFERRED #community/Skill_Test-Driven_Development_TDD_2

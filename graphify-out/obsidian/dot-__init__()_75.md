@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "SecureBrowser (3)"
-location: "L65"
+community: "CrossBotTrustLedger"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/CrossBotTrustLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

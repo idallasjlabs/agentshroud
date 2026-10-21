@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages()"
+community: "SecureBrowser (4)"
 location: "L951"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SecureBrowser_4
 ---
 
 # ._local_backend_unavailable_response()
@@ -17,4 +17,4 @@ tags:
 - [[Build a structured 503 for an unreachable local backend. Logs one WARNING per…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestEgressApprovalQueue"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestEgressApprovalQueue
 ---
 
 # _resolve_caller()
@@ -28,4 +28,4 @@ tags:
 - [[socauth.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

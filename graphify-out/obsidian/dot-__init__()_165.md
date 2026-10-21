@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_FakeRBAC (2)"
-location: "L25"
+community: "MiddlewareManager (2)"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC_2
+  - community/MiddlewareManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

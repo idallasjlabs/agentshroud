@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "system-requirements.md"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/system-requirementsmd
 ---
 
 # calculate_overall_score()
@@ -15,11 +15,11 @@ tags:
 - [[dot-test_all_clean()_1]] - `calls` [EXTRACTED]
 - [[dot-test_empty_summaries()]] - `calls` [EXTRACTED]
 - [[dot-test_partial_tools()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[Calculate weighted overall security score.      Args         summaries Dict ma]] - `rationale_for` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

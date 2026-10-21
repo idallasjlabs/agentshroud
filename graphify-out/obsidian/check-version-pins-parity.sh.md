@@ -1,20 +1,18 @@
 ---
 source_file: "scripts/check-version-pins-parity.sh"
 type: "code"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # check-version-pins-parity.sh
 
 ## Connections
-- [[Automatic prod cutover gate (no human tap, 2026-10-18)]] - `references` [EXTRACTED]
 - [[Prod promotion blocked dev tested an unmerged branch]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)]] - `references` [EXTRACTED]
@@ -22,4 +20,4 @@ tags:
 - [[check-version-pins-parity.sh script]] - `contains` [EXTRACTED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

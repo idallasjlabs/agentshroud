@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L372"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # .can_user_manage_user()
@@ -17,4 +17,4 @@ tags:
 - [[Check if one user can manage another user.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

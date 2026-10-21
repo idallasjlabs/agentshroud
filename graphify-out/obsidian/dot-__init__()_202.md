@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "WebProxy"
-location: "L91"
+community: "UserSessionManager"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter_1]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

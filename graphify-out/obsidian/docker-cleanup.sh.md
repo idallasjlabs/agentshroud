@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "docker-cleanup.sh"
+community: "TestTail"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/TestTail
 ---
 
 # docker-cleanup.sh
@@ -20,4 +20,4 @@ tags:
 - [[docker-cleanup.sh script]] - `contains` [EXTRACTED]
 - [[usage()_2]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/code #graphify/EXTRACTED #community/TestTail

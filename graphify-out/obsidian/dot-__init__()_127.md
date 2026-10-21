@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L122"
+community: "TestToolChainAnalyzer"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/TestToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

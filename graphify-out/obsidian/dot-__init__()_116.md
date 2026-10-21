@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L67"
+community: "test_soc_bots.py"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/test_soc_botspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

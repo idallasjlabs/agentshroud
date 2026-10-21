@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L70"
+community: "_wrap_response() (2)"
+location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/_wrap_response_2
 ---
 
 # .close()
 
 ## Connections
-- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_2

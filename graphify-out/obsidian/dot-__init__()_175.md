@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L69"
+community: "WebProxy"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/WebProxy

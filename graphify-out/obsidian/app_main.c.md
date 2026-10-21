@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "app_main.c"
+community: "System Instructions: Credential Security (Ultra-Conservative)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/System_Instructions_Credential_Security_Ultra-Conservative
 ---
 
 # app_main.c
@@ -32,4 +32,4 @@ tags:
 - [[wifi_event_handler()]] - `contains` [EXTRACTED]
 - [[wifi_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative

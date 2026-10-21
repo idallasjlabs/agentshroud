@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "GatewayEmailService"
+community: "AgentShroud Access Control Matrix"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # _service()
@@ -23,4 +23,4 @@ tags:
 - [[_FakeSmtp]] - `calls` [EXTRACTED]
 - [[test_gateway_email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ProxyDashboard"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ProxyDashboard
 ---
 
 # ._requires_approval()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-click()_2]] - `calls` [EXTRACTED]
 - [[dot-fill_field()_2]] - `calls` [EXTRACTED]
-- [[Check if action requires approval          Security Approval queue integration_2]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_3]] - `references` [EXTRACTED]
+- [[Check if action requires approval          Security Approval queue integration_1]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_2]] - `references` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

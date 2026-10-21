@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L57"
+community: "The 8D Investigation Process"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/The_8D_Investigation_Process
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[AuditExportConfig]] - `references` [EXTRACTED]
+- [[AuditExporter]] - `method` [EXTRACTED]
+- [[AuditStore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

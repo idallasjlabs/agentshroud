@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "wakeword.c"
+community: "graphify reference: extra exports and benchmark (2)"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/wakewordc
+  - community/graphify_reference_extra_exports_and_benchmark_2
 ---
 
 # _touch_pressed()
@@ -23,4 +23,4 @@ tags:
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_request()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/wakewordc
+#graphify/code #graphify/INFERRED #community/graphify_reference_extra_exports_and_benchmark_2

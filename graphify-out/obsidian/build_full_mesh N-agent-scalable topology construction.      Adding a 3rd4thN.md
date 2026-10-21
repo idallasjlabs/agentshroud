@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "CrossBotTrustLedger"
+community: "A2AGovernanceProxy"
 location: "L507"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/A2AGovernanceProxy
 ---
 
 # build_full_mesh: N-agent-scalable topology construction.      Adding a 3rd/4th/N
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildFullMesh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy

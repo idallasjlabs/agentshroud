@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages()"
+community: "SecureBrowser (4)"
 location: "L936"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SecureBrowser_4
 ---
 
 # ._is_connect_error()
@@ -19,4 +19,4 @@ tags:
 - [[_stream()]] - `calls` [EXTRACTED]
 - [[test_is_connect_error_classification()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4

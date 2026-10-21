@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L745"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWSConnect]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

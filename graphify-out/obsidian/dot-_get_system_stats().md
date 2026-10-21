@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "AgentTarget (3)"
 location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/AgentTarget_3
 ---
 
 # ._get_system_stats()
 
 ## Connections
-- [[dot-_check_system_resources()]] - `calls` [EXTRACTED]
+- [[dot-_check_system_resources()_1]] - `calls` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[dot-get_status()]] - `calls` [EXTRACTED]
+- [[dot-get_status()_1]] - `calls` [EXTRACTED]
 - [[dot-heartbeat_check()]] - `calls` [EXTRACTED]
-- [[Any_13]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[Get current system statistics.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_3

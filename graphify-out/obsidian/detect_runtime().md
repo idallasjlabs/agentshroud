@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "test_runtime_engines.py"
+community: "jira_weekly_review.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/jira_weekly_reviewpy
 ---
 
 # detect_runtime()
@@ -24,4 +24,4 @@ tags:
 - [[runtime__init__.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

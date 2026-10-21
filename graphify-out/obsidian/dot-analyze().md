@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "test_agent_cve_registry.py (2)"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/test_agent_cve_registrypy_2
 ---
 
 # .analyze()
@@ -22,4 +22,4 @@ tags:
 - [[EncodingDetector]] - `method` [EXTRACTED]
 - [[EncodingResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

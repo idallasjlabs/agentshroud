@@ -1,13 +1,13 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "calendar.js (iCloud CalDAV skill)"
+community: "cd (Continuous Delivery) SKILL stub (OpenClaw)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/calendarjs_iCloud_CalDAV_skill
+  - community/cd_Continuous_Delivery_SKILL_stub_OpenClaw
 ---
 
 # calendar.js (iCloud CalDAV skill)
 
-#graphify/code #graphify/EXTRACTED #community/calendarjs_iCloud_CalDAV_skill
+#graphify/code #graphify/EXTRACTED #community/cd_Continuous_Delivery_SKILL_stub_OpenClaw

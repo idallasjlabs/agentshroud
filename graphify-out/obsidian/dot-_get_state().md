@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher (3)"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher_3
 ---
 
 # ._get_state()
@@ -16,4 +16,4 @@ tags:
 - [[ProgressiveLockdown]] - `method` [EXTRACTED]
 - [[UserLockdownState]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

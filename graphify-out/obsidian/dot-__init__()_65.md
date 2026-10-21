@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "_FakeRBAC (3)"
-location: "L141"
+community: "AgentShroud™ Brand Guidelines"
+location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC_3
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager_2]] - `references` [EXTRACTED]
-- [[Role_20]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC_3
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

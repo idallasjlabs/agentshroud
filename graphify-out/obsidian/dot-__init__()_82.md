@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L73"
+community: "test_agent_cve_registry.py (2)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/test_agent_cve_registrypy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
-- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

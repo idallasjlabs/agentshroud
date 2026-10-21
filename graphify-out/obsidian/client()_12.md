@@ -1,17 +1,18 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L33"
+community: "UserSessionManager (3)"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/UserSessionManager_3
 ---
 
 # client()
 
 ## Connections
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

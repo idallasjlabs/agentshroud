@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/post-deploy-check.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "Sunday Upgrade prompt"
-location: "L45"
+community: "4. Compliance & Standards Alignment"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/4_Compliance__Standards_Alignment
 ---
 
 # check()
 
 ## Connections
-- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
-- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/4_Compliance__Standards_Alignment

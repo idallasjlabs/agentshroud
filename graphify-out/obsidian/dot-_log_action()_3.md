@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "format_cve_report()"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/format_cve_report
 ---
 
 # ._log_action()
@@ -17,7 +17,7 @@ tags:
 - [[dot-fill_field()_3]] - `calls` [EXTRACTED]
 - [[dot-navigate()_3]] - `calls` [EXTRACTED]
 - [[Log browser action to audit trail_3]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_4]] - `references` [EXTRACTED]
+- [[RiskLevel_3]] - `references` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

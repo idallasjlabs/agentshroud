@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L72"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyVault]] - `method` [EXTRACTED]
-- [[KeyVaultConfig]] - `references` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

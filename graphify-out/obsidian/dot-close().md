@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L308"
+community: "browser/scripts/browse.py (2)"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/browser/scripts/browsepy_2
 ---
 
 # .close()
 
 ## Connections
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2

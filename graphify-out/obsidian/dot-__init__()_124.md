@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "test_jira_weekly_review.py"
-location: "L195"
+community: "EgressFilterConfig (2)"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/EgressFilterConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

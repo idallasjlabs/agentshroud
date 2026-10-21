@@ -1,18 +1,20 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "jira_weekly_review.py"
-location: "L140"
+community: "1. Accomplishments This Phase"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/1_Accomplishments_This_Phase
 ---
 
 # datetime
 
 ## Connections
-- [[build_weekly_summary()]] - `references` [EXTRACTED]
-- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
+- [[_parse_since()]] - `references` [EXTRACTED]
+- [[export-bot-conversations.py]] - `imports_from` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

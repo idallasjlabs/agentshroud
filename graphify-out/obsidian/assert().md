@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "test_apply_patches.js"
+community: "ServiceManager (2)"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/ServiceManager_2
 ---
 
 # assert()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/ServiceManager_2

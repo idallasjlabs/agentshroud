@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L33"
+community: "TestPatternDetection"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/TestPatternDetection
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._3]] - `rationale_for` [EXTRACTED]
-- [[Request_9]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
+- [[forward.py]] - `contains` [EXTRACTED]
+- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
+- [[test_forward_stream.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

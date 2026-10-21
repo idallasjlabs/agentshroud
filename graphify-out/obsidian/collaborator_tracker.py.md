@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # collaborator_tracker.py
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

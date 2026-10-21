@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy
 ---
 
 # auto_remediate_cves.py
@@ -19,8 +19,8 @@ tags:
 - [[apply_remediation()]] - `contains` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `semantically_similar_to` [INFERRED]
 - [[discover_upstream_versions.py]] - `semantically_similar_to` [INFERRED]
-- [[load_registry()_1]] - `contains` [EXTRACTED]
-- [[main()_33]] - `contains` [EXTRACTED]
+- [[load_registry()]] - `contains` [EXTRACTED]
+- [[main()_15]] - `contains` [EXTRACTED]
 - [[parse_version()_1]] - `contains` [EXTRACTED]
 - [[plan_remediation()]] - `contains` [EXTRACTED]
 - [[read_pin()]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[versions.env]] - `references` [EXTRACTED]
 - [[write_pin()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

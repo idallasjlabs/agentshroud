@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "EgressFilterConfig (5)"
-location: "L278"
+community: "UserSessionManager (2) (2)"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_5
+  - community/UserSessionManager_2_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_5
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
