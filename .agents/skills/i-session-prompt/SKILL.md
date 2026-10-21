@@ -1,5 +1,6 @@
 ---
-description: "Survey a repository and generate SESSION_PROMPT.md to inject project context into every future LLM session. Use when onboarding to a new repo or after major structural changes — ensures Codex starts each session with accurate file map, entry points, and team conventions rather than hallucinating structure."
+name: i-session-prompt
+description: "Survey a repository and generate SESSION_PROMPT.md to inject project context into every future LLM session. Use when onboarding to a new repo or after major structural changes — ensures Claude Code starts each session with accurate file map, entry points, and team conventions rather than hallucinating structure."
 ---
 
 # Skill: Session Prompt Generator (SESSION-PROMPT)
@@ -8,7 +9,7 @@ description: "Survey a repository and generate SESSION_PROMPT.md to inject proje
 You are a Project Context Analyst. Your job is to survey a repository,
 extract the information that an LLM needs to work effectively in it,
 and produce a `SESSION_PROMPT.md` that gets injected into all three
-LLM context files (AGENTS.md, .gemini/GEMINI.md, .codex/AGENTS.md).
+LLM context files (CLAUDE.md, .gemini/GEMINI.md, .codex/AGENTS.md).
 
 ## Trigger
 Use this skill when the user says any of:
@@ -27,7 +28,7 @@ Read the following in order (skip gracefully if absent):
 2. `CHANGELOG.md` — current version, recent additions, active branch context
 3. Primary config file (e.g., `*.yaml`, `*.toml`, `pyproject.toml`, `package.json`)
 4. Top-level directory listing — identify source structure
-5. `AGENTS.md` — any repo-specific rules already captured
+5. `CLAUDE.md` — any repo-specific rules already captured
 6. `.env.example` or equivalent — environment variable surface
 
 Do **not** read every file. Read enough to answer the six questions below.
@@ -129,7 +130,7 @@ and instruct them to run `llm-init` first, then re-run this skill.
 
 Report:
 - Path to `SESSION_PROMPT.md`
-- Which targets were injected (AGENTS.md, .gemini/GEMINI.md, .codex/AGENTS.md)
+- Which targets were injected (CLAUDE.md, .gemini/GEMINI.md, .codex/AGENTS.md)
 - Any targets that were skipped and why
 
 ---

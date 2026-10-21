@@ -1,4 +1,5 @@
 ---
+name: i-mm
 description: "Structure complex knowledge hierarchically as XMind or Markmap mind maps with visual hierarchy best practices. Use when planning a complex change with many moving parts, mapping dependencies, or communicating system structure to stakeholders before implementation."
 ---
 

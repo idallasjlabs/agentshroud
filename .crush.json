@@ -1,0 +1,69 @@
+{
+  "mcp": {
+    "github": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh",
+      "args": []
+    },
+    "github-idallasj": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/github/idallasj/github-mcp-wrapper.sh",
+      "args": []
+    },
+    "github-agentshroud": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh",
+      "args": []
+    },
+    "atlassian-agentshroud": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh",
+      "args": []
+    },
+    "atlassian-idallasj": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh",
+      "args": []
+    },
+    "xmind": {
+      "type": "stdio",
+      "command": "/opt/homebrew/bin/npx",
+      "args": [
+        "-y",
+        "xmind-generator-mcp"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "outputPath": "$HOME/Desktop",
+        "autoOpenFile": "true"
+      }
+    },
+    "safari": {
+      "type": "stdio",
+      "command": "/opt/homebrew/bin/npx",
+      "args": [
+        "-y",
+        "safari-mcp"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+      }
+    },
+    "home-assistant": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/home-assistant/mcp-ha.sh",
+      "args": []
+    },
+    "devonthink": {
+      "type": "stdio",
+      "command": ".llm_settings/mcp-servers/devonthink/mcp-devonthink.sh",
+      "args": []
+    }
+  },
+  "options": {
+    "context_paths": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  }
+}

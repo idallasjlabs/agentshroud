@@ -291,6 +291,10 @@ services:
       - wazuh-manager-wodles:/var/ossec/wodles
       - wazuh-manager-stats:/var/ossec/stats
       - wazuh-manager-api-config:/var/ossec/api/configuration
+      # The image starts its daemons once, from cont-init, and s6 supervises
+      # none of them; this service restarts them when they die (2026-10-21:
+      # dev's manager sat with zero daemons for hours after a VM bounce).
+      - ./wazuh/services.d/wazuh-watchdog:/etc/services.d/wazuh-watchdog:ro
     mem_limit: 1g
     cpus: 1.0
     logging:

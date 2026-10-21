@@ -1,6 +1,9 @@
 ---
-description: "Design and execute multi-layered testing strategies: unit, integration, system, regression, and production smoke tests. Use before declaring a feature done — validates test coverage across all layers and confirms no testing shortcuts were taken. Produces a test plan and coverage report."
+name: i-qa
+description: "DEPRECATED — use /i-integration-qa and /i-system-nfr. Design and execute multi-layered testing strategies: unit, integration, system, regression, and production smoke tests. Use before declaring a feature done — validates test coverage across all layers and confirms no testing shortcuts were taken. Produces a test plan and coverage report."
 ---
+
+> **DEPRECATED (kept as an alias for one release):** use `/i-integration-qa` and `/i-system-nfr` instead. This skill still works; its original content follows unchanged.
 
 # Skill: Quality Assurance (QA)
 

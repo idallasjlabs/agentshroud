@@ -1,4 +1,5 @@
 ---
+name: i-pm
 description: "Coordinate project phases, track tasks, manage dependencies, and maintain continuity files for delivery and status reporting. Use for multi-week or multi-person initiatives that need structured tracking beyond a single Jira ticket — produces project plan, RACI, and status reports."
 ---
 
@@ -79,7 +80,7 @@ Match tasks to the right agent:
 | Documentation | doc-writer | pr |
 | Phase planning | pm (you) | pm |
 
-### Definition of Done (from AGENTS.md)
+### Definition of Done (from CLAUDE.md)
 A task is done when:
 - [ ] Tests written FIRST (TDD red phase)
 - [ ] All tests pass (green phase)
@@ -123,7 +124,7 @@ Keep the phase table in README.md current after each phase completion.
 ## [Unreleased]
 
 ### Added
-- Bot development team: 6 agents + AGENTS.md constitution
+- Bot development team: 6 agents + CLAUDE.md constitution
 
 ### Changed
 - Upgraded doc-writer and security-reviewer agents
@@ -138,7 +139,7 @@ Keep the phase table in README.md current after each phase completion.
 | Risk | Impact | Mitigation |
 |------|--------|-----------|
 | Pi OOM under load | Agent crash | Expand swap to 4GB |
-| Codex OOM on Pi | Can't use for large tasks | SSH from sandbox instead |
+| Claude Code OOM on Pi | Can't use for large tasks | SSH from sandbox instead |
 | op CLI sessions expire | Credential access fails | Re-auth in tmux |
 | Docker builds slow on ARM | 2-3x slower | Cache aggressively |
 

@@ -1,6 +1,9 @@
 ---
-description: "Conduct security-focused code review with production safety checklist: blast radius, rollback path, test isolation, Athena cost guards (LIMIT/partition WHERE), and OWASP Top 10. Use on every PR as the reviewer — not the author. The 400-line rule, IAM checks, and data safety audit are mandatory outputs."
+name: i-cr
+description: "DEPRECATED — use /i-code-reviewer. Conduct security-focused code review with production safety checklist: blast radius, rollback path, test isolation, Athena cost guards (LIMIT/partition WHERE), and OWASP Top 10. Use on every PR as the reviewer — not the author. The 400-line rule, IAM checks, and data safety audit are mandatory outputs."
 ---
+
+> **DEPRECATED (kept as an alias for one release):** use `/i-code-reviewer` instead. This skill still works; its original content follows unchanged.
 
 # Skill: Code Review (CR)
 

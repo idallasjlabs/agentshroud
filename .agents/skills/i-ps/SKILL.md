@@ -1,4 +1,5 @@
 ---
+name: i-ps
 description: "Execute pre/post-deployment checklists: confirm backup taken, blast radius documented, rollback procedure ready (pre), then smoke tests passed and data validation clean (post). Use before AND after every production deployment — mandatory gate on both sides."
 ---
 

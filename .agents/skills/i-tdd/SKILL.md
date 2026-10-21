@@ -1,6 +1,9 @@
 ---
-description: "Enforce Red-Green-Refactor TDD cycle with stack-specific test patterns for pytest, moto, SAVEPOINT, and mocks. Use for every code behavior change — write the failing test first, implement the minimum code to pass, then refactor. Mandatory per repo SDLC; prevents untested code reaching production."
+name: i-tdd
+description: "DEPRECATED — use /i-unit-tdd. Enforce Red-Green-Refactor TDD cycle with stack-specific test patterns for pytest, moto, SAVEPOINT, and mocks. Use for every code behavior change — write the failing test first, implement the minimum code to pass, then refactor. Mandatory per repo SDLC; prevents untested code reaching production."
 ---
+
+> **DEPRECATED (kept as an alias for one release):** use `/i-unit-tdd` instead. This skill still works; its original content follows unchanged.
 
 # Skill: Test-Driven Development (TDD)
 
