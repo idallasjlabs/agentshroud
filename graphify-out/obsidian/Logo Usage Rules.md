@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
+community: "BotConfig (3)"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/BotConfig_3
 ---
 
 # Logo Usage Rules
@@ -16,4 +16,4 @@ tags:
 - [[✅ Do]] - `contains` [EXTRACTED]
 - [[❌ Don't]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/BotConfig_3

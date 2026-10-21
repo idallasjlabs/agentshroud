@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "system-requirements.md"
+community: "ApprovalHardening"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/ApprovalHardening
 ---
 
 # PII (Personally Identifiable Information)
@@ -21,4 +21,4 @@ tags:
 - [[system-requirements]] - `references` [EXTRACTED]
 - [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening

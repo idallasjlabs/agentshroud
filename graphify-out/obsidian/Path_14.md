@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L704"
+community: "1. Accomplishments This Phase"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/1_Accomplishments_This_Phase
 ---
 
 # Path
 
 ## Connections
-- [[main()_6]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

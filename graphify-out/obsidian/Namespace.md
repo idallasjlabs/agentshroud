@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L808"
+community: "Job details"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Job_details
 ---
 
 # Namespace
 
 ## Connections
-- [[_run_nvd_sync()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Job_details

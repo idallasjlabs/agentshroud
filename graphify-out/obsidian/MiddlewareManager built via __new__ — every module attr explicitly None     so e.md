@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "_req (2)"
+community: "export_bot"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_req_2
+  - community/export_bot
 ---
 
 # MiddlewareManager built via __new__ — every module attr explicitly None     so e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_req_2
+#graphify/rationale #graphify/EXTRACTED #community/export_bot

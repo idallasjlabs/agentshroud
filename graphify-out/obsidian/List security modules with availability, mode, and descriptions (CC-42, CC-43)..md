@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L1746"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # List security modules with availability, mode, and descriptions (CC-42, CC-43).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

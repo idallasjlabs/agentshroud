@@ -1,17 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "SSH Capability Architecture Document"
-location: "L3"
+community: "AgentShroud Security Value Proposition - Revised"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Overview
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

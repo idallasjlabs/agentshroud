@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Remediation"
-location: "L6"
+community: "Function Details (3)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Function_Details_3
 ---
 
 # Problem
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/Function_Details_3

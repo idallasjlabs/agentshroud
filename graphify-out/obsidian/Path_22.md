@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "_make_cve"
-location: "L249"
+community: "ConfigIntegrityMonitor"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_make_cve
+  - graphify/INFERRED
+  - community/ConfigIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[dot-_run_generate()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor

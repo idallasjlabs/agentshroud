@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ResourceGuard (2)"
-location: "L219"
+community: "AgentShroud Consolidated Issues Report"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_168]] - `calls` [EXTRACTED]
-- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
-- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
-- [[dot-_quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
-- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
-- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
-- [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

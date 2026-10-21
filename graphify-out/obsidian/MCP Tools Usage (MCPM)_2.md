@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "TestOutboundInfoFilter (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/TestOutboundInfoFilter_7
 ---
 
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcpmREADME]] - `contains` [EXTRACTED]
-- [[Purpose_138]] - `contains` [EXTRACTED]
-- [[Related Skills_98]] - `contains` [EXTRACTED]
-- [[Usage_105]] - `contains` [EXTRACTED]
+- [[Purpose_49]] - `contains` [EXTRACTED]
+- [[Related Skills_35]] - `contains` [EXTRACTED]
+- [[Usage_38]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7

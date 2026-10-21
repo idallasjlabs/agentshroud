@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "Morning Checklist (5 minutes)"
+community: "security.py"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Morning_Checklist_5_minutes
+  - community/securitypy
 ---
 
 # Morning Checklist (5 minutes)
@@ -19,4 +19,4 @@ tags:
 - [[5. Resource Usage]] - `contains` [EXTRACTED]
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes
+#graphify/document #graphify/EXTRACTED #community/securitypy

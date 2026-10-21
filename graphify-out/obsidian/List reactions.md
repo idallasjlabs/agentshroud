@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Actions"
+community: "ANTHROPIC_BASE_URL"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # List reactions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Actions_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

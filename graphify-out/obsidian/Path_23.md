@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "Skill: Project Management (PM) (3)"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/Skill_Project_Management_PM_3
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_97]] - `references` [EXTRACTED]
-- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

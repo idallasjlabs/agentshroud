@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Pre-Change Analysis (PCA)"
+community: "MCP Server: devonthink"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Change_Analysis_PCA
+  - community/MCP_Server_devonthink
 ---
 
 # Pre-Change Analysis (PCA)
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Change_Analysis_PCA
+#graphify/document #graphify/EXTRACTED #community/MCP_Server_devonthink

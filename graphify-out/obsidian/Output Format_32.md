@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (2)"
+community: "._run_proxy()"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_2
+  - community/_run_proxy
 ---
 
 # Output Format
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
+- [[diagramsREADME_2]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2
+#graphify/document #graphify/EXTRACTED #community/_run_proxy

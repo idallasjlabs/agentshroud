@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "Hermes Cron Jobs Reference & Recreation Guide (3)"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3
 ---
 
 # Manual Re-authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Atlassian MCP Authentication Reset]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_3

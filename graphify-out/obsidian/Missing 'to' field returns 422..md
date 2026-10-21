@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestEmailSend"
+community: "TestPatternDetection"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/TestPatternDetection
 ---
 
 # Missing 'to' field returns 422.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_missing_to_returns_422()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend
+#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection

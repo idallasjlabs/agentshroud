@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2)"
-location: "L10"
+community: "AgentShroud Red Team Adversarial Tester (2) (2)"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/AgentShroud_Red_Team_Adversarial_Tester_2_2
 ---
 
 # Overview
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2_2

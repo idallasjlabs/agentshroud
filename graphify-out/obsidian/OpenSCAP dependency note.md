@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # OpenSCAP dependency note
@@ -16,4 +16,4 @@ tags:
 - [[OpenSCAP & IEC 62443 compliance validation]] - `conceptually_related_to` [INFERRED]
 - [[OpenSCAP relationship to TrivyClamAVFalco]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L16"
+community: "ANTHROPIC_BASE_URL"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Overview
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

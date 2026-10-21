@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ToolResultSanitizer"
 location: "L252"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - community/ToolResultSanitizer
 ---
 
 # MonkeyPatch
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[test_decision_records_soc_heatmap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

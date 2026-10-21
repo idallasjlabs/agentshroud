@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # OpenAI exceptions should not leak internal details to the client.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_internal_error_not_leaked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy

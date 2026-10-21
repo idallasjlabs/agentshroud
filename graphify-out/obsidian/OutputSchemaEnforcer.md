@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "plan_remediation"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/plan_remediation
 ---
 
 # OutputSchemaEnforcer
 
 ## Connections
-- [[dot-__init__()_116]] - `method` [EXTRACTED]
+- [[dot-__init__()_103]] - `method` [EXTRACTED]
 - [[dot-_register_default_schema()]] - `method` [EXTRACTED]
 - [[dot-register_schema()]] - `method` [EXTRACTED]
 - [[dot-validate()_1]] - `method` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Job details"
+community: "Browser — Secure Browser Automation"
 location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Newsletter: Personal AI Assistants
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Job details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Job_details
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

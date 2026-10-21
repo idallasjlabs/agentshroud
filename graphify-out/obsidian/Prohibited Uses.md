@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
+community: "AgentShroud Agentic OS"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Agentic_OS
 ---
 
 # Prohibited Uses
@@ -16,4 +16,4 @@ tags:
 - [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
 - [[Logo Usage_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

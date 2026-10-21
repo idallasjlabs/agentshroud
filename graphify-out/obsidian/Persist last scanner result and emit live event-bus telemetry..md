@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TrustConfig"
 location: "L1444"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TrustConfig
 ---
 
 # Persist last scanner result and emit live event-bus telemetry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_record_scanner_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

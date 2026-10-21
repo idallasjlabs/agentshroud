@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "ProxyAction"
+community: "scanner_integration.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/scanner_integrationpy
 ---
 
 # MockURLResult
 
 ## Connections
-- [[dot-__init__()_197]] - `method` [EXTRACTED]
+- [[dot-__init__()_56]] - `method` [EXTRACTED]
 - [[dot-test_browser_security_blocks_high_risk_urls()]] - `calls` [EXTRACTED]
 - [[dot-test_browser_security_flags_medium_risk_urls()]] - `calls` [EXTRACTED]
 - [[dot-test_browser_security_skips_non_browser_user_agents()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

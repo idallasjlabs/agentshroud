@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # Ordered severity ladder (``IntEnum`` so comparisons work).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Severity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPPermissionManager (4)"
+community: "CrossBotTrustLedger"
 location: "L81"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager_4
+  - community/CrossBotTrustLedger
 ---
 
 # MCPToolCall
@@ -17,16 +17,16 @@ tags:
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[make_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager_4
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_6]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_3]] - `calls` [EXTRACTED]
 - [[dot-test_default_penalties_cover_all_violation_types()]] - `calls` [EXTRACTED]
 - [[dot-test_enforce_mode_blocks()]] - `calls` [EXTRACTED]
 - [[dot-test_full_level_wildcard_allows_everything()]] - `calls` [EXTRACTED]
@@ -32,10 +32,10 @@ tags:
 - [[PromotionThreshold]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

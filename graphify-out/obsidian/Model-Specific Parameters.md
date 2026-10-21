@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "EgressTelegramNotifier"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/EgressTelegramNotifier
 ---
 
 # Model-Specific Parameters
@@ -17,4 +17,4 @@ tags:
 - [[Quality]] - `contains` [EXTRACTED]
 - [[Size]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier

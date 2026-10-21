@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Canvas Skill"
-location: "L5"
+community: "xurl — Agent Skill Reference"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Overview
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # Open the database and create the schema. Idempotent: a second call         must
 
 ## Connections
-- [[dot-initialize()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

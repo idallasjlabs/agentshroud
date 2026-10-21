@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "EgressFilterConfig"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EgressFilterConfig
 ---
 
 # PII detection and redaction configuration
 
 ## Connections
-- [[PIIConfig_2]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

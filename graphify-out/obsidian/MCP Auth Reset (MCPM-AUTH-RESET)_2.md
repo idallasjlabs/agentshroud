@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
+community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_122]] - `contains` [EXTRACTED]
-- [[Related Skills_91]] - `contains` [EXTRACTED]
-- [[Usage_98]] - `contains` [EXTRACTED]
+- [[Purpose_114]] - `contains` [EXTRACTED]
+- [[Related Skills_83]] - `contains` [EXTRACTED]
+- [[Usage_89]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation

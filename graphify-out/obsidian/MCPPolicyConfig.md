@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # MCPPolicyConfig
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[_base_config()]] - `references` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

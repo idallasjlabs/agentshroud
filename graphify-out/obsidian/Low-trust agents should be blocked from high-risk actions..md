@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # Low-trust agents should be blocked from high-risk actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_trust_level_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "Workflow: Survey → Draft → Inject → Confirm (3)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Workflow_Survey__Draft__Inject__Confirm_3
 ---
 
 # Persona
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_3

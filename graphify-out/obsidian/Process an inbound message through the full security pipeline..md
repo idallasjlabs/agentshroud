@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig"
 location: "L513"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig
 ---
 
 # Process an inbound message through the full security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_process_inbound_core()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

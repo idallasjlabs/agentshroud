@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Error Index.md (4)"
+community: "Hermes — Reference Verifier (2)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_4
+  - community/Hermes__Reference_Verifier_2
 ---
 
 # PII Pipeline Errors
@@ -21,4 +21,4 @@ tags:
 - [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
 - [[spaCy Model Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_4
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_2

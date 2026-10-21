@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
+community: "parse_query"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/parse_query
 ---
 
 # OpenAI Whisper API (curl)
@@ -17,4 +17,4 @@ tags:
 - [[Useful flags_1]] - `contains` [EXTRACTED]
 - [[openai-whisper-apiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/parse_query

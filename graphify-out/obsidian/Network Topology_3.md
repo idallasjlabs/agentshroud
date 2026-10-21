@@ -1,17 +1,22 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (4)"
-location: "L145"
+community: "MiddlewareManager (2) (2)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_4
+  - community/MiddlewareManager_2_2
 ---
 
 # Network Topology
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Container Network Diagram]] - `contains` [EXTRACTED]
+- [[Hostname Resolution]] - `contains` [EXTRACTED]
+- [[Network Security Notes]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
+- [[Related Notes_58]] - `contains` [EXTRACTED]
+- [[Traffic Routing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2

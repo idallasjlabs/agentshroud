@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "format_cve_report()"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/format_cve_report
 ---
 
 # Load security configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/format_cve_report

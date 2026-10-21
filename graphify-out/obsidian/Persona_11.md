@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "FR3: System Integrity"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/FR3_System_Integrity
 ---
 
 # Persona
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity

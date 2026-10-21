@@ -1,19 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L218"
+community: "MiddlewareManager (4)"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/MiddlewareManager_4
 ---
 
 # Network Topology
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
-- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
-- [[Three-Network Architecture]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

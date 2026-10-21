@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC) (2)"
-location: "L81"
+community: "Threat Model"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC_2
+  - community/Threat_Model
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

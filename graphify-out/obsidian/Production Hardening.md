@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "KillSwitchMonitor (2)"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/KillSwitchMonitor_2
 ---
 
 # Production Hardening
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 - [[Performance Tuning]] - `contains` [EXTRACTED]
-- [[Security Hardening_4]] - `contains` [EXTRACTED]
+- [[Security Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2

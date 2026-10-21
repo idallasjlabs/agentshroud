@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # Outliers log at WARNING; normal turns do not.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_turn_latency_outlier_logs_warning()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

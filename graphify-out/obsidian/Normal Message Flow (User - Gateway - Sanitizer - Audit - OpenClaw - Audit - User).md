@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "concept"
-community: "AgentShroud Sequence Diagrams (doc)"
+community: "browser-fetch.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams_doc
+  - community/browser-fetchjs
 ---
 
 # Normal Message Flow (User -> Gateway -> Sanitizer -> Audit -> OpenClaw -> Audit -> User)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Sequence Diagrams (doc)]] - `references` [EXTRACTED]
 - [[Diagram 15 Sequence — Telegram]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/browser-fetchjs

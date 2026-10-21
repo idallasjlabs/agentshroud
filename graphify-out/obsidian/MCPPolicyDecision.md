@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # MCPPolicyDecision
 
 ## Connections
-- [[dot-_decide()]] - `references` [EXTRACTED]
+- [[dot-_decide()_1]] - `references` [EXTRACTED]
 - [[dot-allowed()]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `references` [EXTRACTED]
 - [[dot-evaluate()_1]] - `references` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

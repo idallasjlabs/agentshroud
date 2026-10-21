@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-11.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Prod promotion blocked: dev tested an unmerged branch
@@ -15,4 +15,4 @@ tags:
 - [[Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)]] - `references` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer

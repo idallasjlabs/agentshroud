@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L46"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

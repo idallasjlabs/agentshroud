@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "Approval queue (notify Isaiah via Telegram, wait up to 1 hour)"
+community: "test_security_regressions_v1_2.py (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Approval_queue_notify_Isaiah_via_Telegram_wait_up_to_1_hour
+  - community/test_security_regressions_v1_2py_2
 ---
 
 # Main agent (agentshroud_bot)
@@ -14,4 +14,4 @@ tags:
 - [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - `calls` [EXTRACTED]
 - [[User sends message or cron fires]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait_up_to_1_hour
+#graphify/concept #graphify/EXTRACTED #community/test_security_regressions_v1_2py_2

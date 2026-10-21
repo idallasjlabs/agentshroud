@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-component-health-digest.txt"
 type: "rationale"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Atlas — Curriculum Architect (3)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Atlas__Curriculum_Architect_3
 ---
 
 # Mandatory Daily Delivery (never [SILENT])
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Daily Component Health Digest]] - `rationale_for` [EXTRACTED]
 - [[Silence-Over-Hallucination Principle]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/rationale #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "test_prompt_guard.py"
+community: "_wrap_response()"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/_wrap_response
 ---
 
 # Provenance record for a document ingested into the agent context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DocumentTag]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

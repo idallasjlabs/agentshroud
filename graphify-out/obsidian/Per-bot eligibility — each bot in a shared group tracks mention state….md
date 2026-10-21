@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L9021"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # Per-bot eligibility — each bot in a shared group tracks mention state…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPerBotGroupMentionFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

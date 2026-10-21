@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "Turbo Fieldfare (MLX inference backend)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
 # Objective
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

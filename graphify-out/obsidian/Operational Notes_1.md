@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "canary.py"
+community: "trivy_report.py"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/trivy_reportpy
 ---
 
 # Operational Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

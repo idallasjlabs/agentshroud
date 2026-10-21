@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L38"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L17"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - graphify/INFERRED
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_54]] - `references` [EXTRACTED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[_parse_env_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/INFERRED #community/hermes/skills/i-cr/SKILLmd

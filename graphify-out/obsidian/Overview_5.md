@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L16"
+community: "EgressFilterConfig (2) (3)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/EgressFilterConfig_2_3
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3

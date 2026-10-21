@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "concept"
-community: "MiddlewareManager (2)"
+community: "TeamsConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/TeamsConfig
 ---
 
 # Module Coverage Heat Map Legend (E/M/A/C/?/—)
@@ -14,4 +14,4 @@ tags:
 - [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/concept #graphify/EXTRACTED #community/TeamsConfig

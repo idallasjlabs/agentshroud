@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "EgressTelegramNotifier"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/EgressTelegramNotifier
 ---
 
 # Nano Banana Pro (Gemini 3 Pro Image)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[nano-banana-proSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier

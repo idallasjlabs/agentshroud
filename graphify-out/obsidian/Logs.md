@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/colima-docker-guide.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Colima & Docker Operations Guide — AgentShroud"
-location: "L137"
+community: "MiddlewareManager (4)"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/MiddlewareManager_4
 ---
 
 # Logs
 
 ## Connections
-- [[5. Container Management]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Implement gateway-level outbound information filtering module"
-location: "L9"
+community: "AlertTelegramRelay"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_filtering_module
+  - community/AlertTelegramRelay
 ---
 
 # Problem
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

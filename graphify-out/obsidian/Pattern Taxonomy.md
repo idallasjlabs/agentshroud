@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "log_sanitizer.py"
+community: "TestParseHostsLine"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/TestParseHostsLine
 ---
 
 # Pattern Taxonomy
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine

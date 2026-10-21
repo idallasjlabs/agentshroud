@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L33"
+community: "create_auth_dependency (2)"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/create_auth_dependency_2
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[dot-__init__()_89]] - `references` [EXTRACTED]
+- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
+- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
+- [[dot-scan_file()_1]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2

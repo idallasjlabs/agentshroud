@@ -1,21 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L5"
+community: "Himalaya Configuration Reference"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Prerequisites
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements_1]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

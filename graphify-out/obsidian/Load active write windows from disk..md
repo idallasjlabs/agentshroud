@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "MiddlewareManager (7)"
+community: "test_llm_proxy_failover.py"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/test_llm_proxy_failoverpy
 ---
 
 # Load active write windows from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_write_windows()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

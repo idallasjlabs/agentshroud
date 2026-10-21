@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Features"
+community: "🛡️ AgentShroud Release Plan"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/_AgentShroud_Release_Plan
 ---
 
 # PII Sanitizer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

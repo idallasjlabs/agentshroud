@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "All Dependencies.md"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/EgressFilter
 ---
 
 # PII Pipeline Errors.md
@@ -18,4 +18,4 @@ tags:
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

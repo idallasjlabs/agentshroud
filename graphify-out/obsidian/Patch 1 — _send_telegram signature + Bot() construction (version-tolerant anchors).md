@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_send_base_url.py"
 type: "code"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
+community: "Contributing to AgentShroud™"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Contributing_to_AgentShroud
 ---
 
 # Patch 1 — _send_telegram signature + Bot() construction (version-tolerant anchors)
@@ -14,4 +14,4 @@ tags:
 - [[Vendor target _send_telegram (toolssend_message_tool.py or send_message_senders.py)]] - `references` [EXTRACTED]
 - [[_read()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/code #graphify/EXTRACTED #community/Contributing_to_AgentShroud

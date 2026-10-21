@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "GroupConfig"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/GroupConfig
 ---
 
 # Load and validate configuration from agentshroud.yaml      Search order:     1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/GroupConfig

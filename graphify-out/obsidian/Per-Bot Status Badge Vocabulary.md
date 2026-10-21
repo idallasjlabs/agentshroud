@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "concept"
-community: "Hermes Cron Dedupe (dev)"
+community: "test_prompt_guard.py (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/test_prompt_guardpy_2
 ---
 
 # Per-Bot Status Badge Vocabulary
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Job Schedule Dashboard]] - `implements` [EXTRACTED]
 - [[Local-Model Job Quality Matrix]] - `shares_data_with` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/concept #graphify/EXTRACTED #community/test_prompt_guardpy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Plan: Proxying HexStrike AI MCP Agents via AgentShroud"
+community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_AgentShroud
+  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
 ---
 
 # Proposed architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30

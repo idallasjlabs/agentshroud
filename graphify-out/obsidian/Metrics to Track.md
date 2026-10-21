@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Mnemosyne — Retention Engineer (2)"
 location: "L567"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Mnemosyne__Retention_Engineer_2
 ---
 
 # Metrics to Track
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_2

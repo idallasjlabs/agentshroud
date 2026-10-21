@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "TestOpenAPIContract"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # OpenAPI schema and version consistency tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpenAPIContract]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

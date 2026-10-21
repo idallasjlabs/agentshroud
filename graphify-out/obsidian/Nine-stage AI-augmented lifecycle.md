@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Claude Code skill catalog (59 skills)"
+community: "Skill: Test-Driven Development (TDD)"
 location: "Lifecycle"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Nine-stage AI-augmented lifecycle
@@ -17,4 +17,4 @@ tags:
 - [[CICD system capabilities (GitOps, self-healing, progressive delivery)]] - `conceptually_related_to` [EXTRACTED]
 - [[SRE practice area (observability, runbooks, postmortems)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/concept #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

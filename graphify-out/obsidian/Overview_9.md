@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L11"
+community: "test_security.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/test_securitypy
 ---
 
 # Overview
 
 ## Connections
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

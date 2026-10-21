@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/weather/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Weather Skill"
-location: "L107"
+community: "LVGL KAWAII FACE"
+location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Notes
 
 ## Connections
-- [[Weather Skill]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

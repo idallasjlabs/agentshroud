@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "FY26 Cost Reduction Context"
+community: ".test_fetch_paginates_via_link_cursor()"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FY26_Cost_Reduction_Context
+  - community/test_fetch_paginates_via_link_cursor
 ---
 
 # Out-of-Scope Departments (Inventory & Tag Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context
+#graphify/document #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor

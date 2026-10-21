@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Output Sections (ALL required)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Output_Sections_ALL_required
 ---
 
 # Phase 4 — Channels: iMessage MCP integration, iCloud Email (replaces Gmail), Telegram startup notification
@@ -15,4 +15,4 @@ tags:
 - [[Phase 3 — Credential Isolation Op-Proxy, 1Password service account, cascading retry+startup]] - `conceptually_related_to` [EXTRACTED]
 - [[Phase 5 — Stability Context limit fix (Patch 4), MCP key crash fix (Patch 3), Documentation & Diagrams]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/image #graphify/EXTRACTED #community/Output_Sections_ALL_required

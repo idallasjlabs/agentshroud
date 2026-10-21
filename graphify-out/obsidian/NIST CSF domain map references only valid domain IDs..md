@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "AgentTarget (6)"
+community: "AgentShroud Docker Configuration"
 location: "L956"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_6
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # NIST CSF domain map references only valid domain IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_nist_csf_domain_map_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_6
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "EgressFilterConfig (3)"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/EgressFilterConfig_3
 ---
 
 # Option B: Podman (Red Hat/Enterprise)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 2 Choose Your Container Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_3

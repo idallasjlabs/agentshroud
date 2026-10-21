@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "_make_cve"
 location: "L365-L445"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/_make_cve
 ---
 
 # Post-migration model lock + sandboxed terminal + cron fleet default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/rationale #graphify/EXTRACTED #community/_make_cve

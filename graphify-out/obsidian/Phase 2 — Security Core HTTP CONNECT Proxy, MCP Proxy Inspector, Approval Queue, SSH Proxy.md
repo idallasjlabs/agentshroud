@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "AgentShroud Development Roadmap — 2026 Gantt Chart"
+community: "Output Sections (ALL required)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+  - community/Output_Sections_ALL_required
 ---
 
 # Phase 2 — Security Core: HTTP CONNECT Proxy, MCP Proxy Inspector, Approval Queue, SSH Proxy
@@ -18,4 +18,4 @@ tags:
 - [[Phase 1 — Foundation Gateway API+Ledger, Bot Container+Telegram, HMAC Auth+PII Sanitizer]] - `conceptually_related_to` [EXTRACTED]
 - [[Phase 3 — Credential Isolation Op-Proxy, 1Password service account, cascading retry+startup]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Chart
+#graphify/image #graphify/EXTRACTED #community/Output_Sections_ALL_required

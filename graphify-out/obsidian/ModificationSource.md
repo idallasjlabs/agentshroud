@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MiddlewareManager (6)"
+community: "test_llm_proxy_failover.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/test_llm_proxy_failoverpy
 ---
 
 # ModificationSource
 
 ## Connections
 - [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
 - [[dot-register_expected_write()]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
 - [[Source of a file modification.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

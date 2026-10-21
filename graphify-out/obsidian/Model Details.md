@@ -1,18 +1,18 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "models.py"
+community: "Update AgentShroud"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Update_AgentShroud
 ---
 
 # Model Details
 
 ## Connections
-- [[AgentTarget_2]] - `contains` [EXTRACTED]
+- [[AgentTarget_3]] - `contains` [EXTRACTED]
 - [[EmailSendRequest_2]] - `contains` [EXTRACTED]
 - [[ForwardRequest_3]] - `contains` [EXTRACTED]
 - [[ForwardResponse_1]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[SSHExecRequest  SSHExecResponse]] - `contains` [EXTRACTED]
 - [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

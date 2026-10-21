@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPInspector"
+community: "CrossBotTrustLedger"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPInspector
+  - community/CrossBotTrustLedger
 ---
 
 # MCPInspector
 
 ## Connections
-- [[dot-__init__()_105]] - `references` [EXTRACTED]
+- [[dot-__init__()_79]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCPInspector
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

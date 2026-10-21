@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "test_voice_latency_guard.py"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_voice_latency_guardpy
 ---
 
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_185]] - `method` [EXTRACTED]
+- [[dot-__init__()_195]] - `method` [EXTRACTED]
 - [[dot-_decode_secret()]] - `method` [EXTRACTED]
 - [[dot-_prune_used()]] - `method` [EXTRACTED]
 - [[dot-_totp_for_counter()]] - `method` [EXTRACTED]
 - [[dot-from_env()_3]] - `method` [EXTRACTED]
 - [[dot-is_required()]] - `method` [EXTRACTED]
 - [[dot-verify()_1]] - `method` [EXTRACTED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_77]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
@@ -33,7 +33,7 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 - [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
@@ -61,4 +61,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `calls` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

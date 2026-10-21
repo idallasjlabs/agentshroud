@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

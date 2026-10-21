@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # Normal markdown headers (# Title) should not be stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_preserves_legitimate_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

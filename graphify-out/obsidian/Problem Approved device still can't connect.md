@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
+community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
 location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/AgentShroud_v070_Enforcement_Audit_Results_2
 ---
 
 # Problem: Approved device still can't connect
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2

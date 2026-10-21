@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # PromotionThreshold
@@ -23,10 +23,10 @@ tags:
 - [[TestToolGating]] - `uses` [INFERRED]
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[Threshold for promoting to a trust level.]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_3]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/soc/routerpy

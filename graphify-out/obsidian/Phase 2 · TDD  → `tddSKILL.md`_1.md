@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (2)"
+community: "Athena — Knowledge Distiller (3)"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_2
+  - community/Athena__Knowledge_Distiller_3
 ---
 
 # Phase 2 · TDD  → `tdd/SKILL.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_3

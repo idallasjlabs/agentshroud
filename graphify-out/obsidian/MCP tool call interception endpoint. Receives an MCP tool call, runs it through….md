@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "test_prompt_guard.py (2)"
+community: "sync-llm-settings.sh"
 location: "L706"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_2
+  - community/sync-llm-settingssh
 ---
 
 # MCP tool call interception endpoint. Receives an MCP tool call, runs it through…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_proxy_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy_2
+#graphify/rationale #graphify/EXTRACTED #community/sync-llm-settingssh

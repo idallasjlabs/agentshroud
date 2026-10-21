@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "ESP32-S3-BOX-3 Voice Terminal (2)"
+community: "format_upstream_cve_alert()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_2
+  - community/format_upstream_cve_alert
 ---
 
 # OpenClaw BLOCKED — node:sqlite NUL Truncation
@@ -15,4 +15,4 @@ tags:
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [EXTRACTED]
 - [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - `cites` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_2
+#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert

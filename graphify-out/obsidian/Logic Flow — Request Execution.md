@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "05-behavior.md"
+community: "openclaw/skills/i-browser/package.json"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/05-behaviormd
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
 # Logic Flow — Request Execution
@@ -15,4 +15,4 @@ tags:
 - [[Sequence Diagram — Telegram Message to Response]] - `references` [INFERRED]
 - [[State Machine — Approval Queue Item Lifecycle]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/05-behaviormd
+#graphify/concept #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

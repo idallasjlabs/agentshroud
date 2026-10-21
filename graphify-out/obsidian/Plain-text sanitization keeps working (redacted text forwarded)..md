@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "_make_proxy"
+community: "AgentRegistry"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentRegistry
 ---
 
 # Plain-text sanitization keeps working (redacted text forwarded).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_text_sanitization_still_applied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

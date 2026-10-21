@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "chatbot/main.py"
+community: "egress_filter.py"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/egress_filterpy
 ---
 
 # Load Isaiah's persona from IDENTITY, SOUL, and USER files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_persona_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy

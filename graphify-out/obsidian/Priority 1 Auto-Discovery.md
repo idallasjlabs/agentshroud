@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Future Enhancements"
+community: "postmortem.md (2) (2)"
 location: "L340"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/postmortemmd_2_2
 ---
 
 # Priority 1: Auto-Discovery
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Future Enhancements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/document #graphify/EXTRACTED #community/postmortemmd_2_2

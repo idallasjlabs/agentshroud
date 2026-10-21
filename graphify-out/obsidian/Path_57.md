@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L66"
+community: "WebProxy"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/WebProxy
 ---
 
 # Path
 
 ## Connections
-- [[_load_contributor_logs()]] - `references` [EXTRACTED]
-- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `calls` [EXTRACTED]
-- [[serve_dashboard()]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "KillSwitchMonitor (2) (5)"
 location: "L476"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/KillSwitchMonitor_2_5
 ---
 
 # Post-Incident Activities
@@ -17,4 +17,4 @@ tags:
 - [[Lessons Learned Integration]] - `contains` [EXTRACTED]
 - [[Post-Incident Review Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_5

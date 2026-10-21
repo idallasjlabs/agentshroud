@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
-location: "L27"
+community: "diagrams/README.md"
+location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+  - community/diagrams/READMEmd
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

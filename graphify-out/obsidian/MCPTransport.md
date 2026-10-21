@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCPInspector"
+community: "CrossBotTrustLedger"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPInspector
+  - community/CrossBotTrustLedger
 ---
 
 # MCPTransport
 
 ## Connections
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[Any_25]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
@@ -53,9 +53,9 @@ tags:
 - [[TestHttpSseConnection]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
@@ -72,8 +72,8 @@ tags:
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPInspector
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

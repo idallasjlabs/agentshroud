@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "test_hermes_cron_seed.py"
 location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/test_hermes_cron_seedpy
 ---
 
 # Move an issue to the named status (matched against available transitions).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[transition_issue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy

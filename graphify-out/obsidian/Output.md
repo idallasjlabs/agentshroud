@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
-location: "L132"
+community: "EgressFilterConfig (2) (3)"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/EgressFilterConfig_2_3
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_2_3

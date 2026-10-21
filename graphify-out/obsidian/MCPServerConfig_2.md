@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "CrossBotTrustLedger"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager_3
+  - community/CrossBotTrustLedger
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
 - [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_get_or_create_by_transport_and_caching()]] - `calls` [EXTRACTED]
 - [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
@@ -20,31 +20,31 @@ tags:
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
 - [[dot-test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
 - [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `uses` [INFERRED]
+- [[Any_25]] - `uses` [INFERRED]
 - [[Configuration for an MCP server.]] - `rationale_for` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[PermissionCheck]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[PrivateAccessAttempt]] - `uses` [INFERRED]
 - [[PrivateRedactionEvent]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
@@ -70,9 +70,9 @@ tags:
 - [[TestInferPermission]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPermissionLevel]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager_3
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

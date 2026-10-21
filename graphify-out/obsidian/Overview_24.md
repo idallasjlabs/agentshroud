@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
-location: "L3"
+community: "test_us_ssn_regex_tightened.py"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

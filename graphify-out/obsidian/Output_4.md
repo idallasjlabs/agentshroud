@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (2)"
+community: "Phase 1 — Raw Collection"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_2
+  - community/Phase_1__Raw_Collection
 ---
 
 # Output
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

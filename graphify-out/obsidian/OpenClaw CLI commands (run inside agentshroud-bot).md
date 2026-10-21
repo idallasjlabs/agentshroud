@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Docker Commands Reference"
+community: "ssh_config.py"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/ssh_configpy
 ---
 
 # OpenClaw CLI commands (run inside agentshroud-bot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: ""
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L58"
+community: "._run_and_read"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_run_and_read
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

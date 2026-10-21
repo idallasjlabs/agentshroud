@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect (2)"
+community: "GSDE&G Development Master Checklist (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_2
+  - community/GSDEG_Development_Master_Checklist_2
 ---
 
 # Persona
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_2
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2

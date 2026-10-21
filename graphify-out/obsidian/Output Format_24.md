@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor (2)"
-location: "L129"
+community: "dashboard_endpoints.py (2)"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_2
+  - community/dashboard_endpointspy_2
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2
+#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2

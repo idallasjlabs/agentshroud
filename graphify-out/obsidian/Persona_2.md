@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst (3)"
+community: "WebContentScanner (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst_3
+  - community/WebContentScanner_2
 ---
 
 # Persona
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_3
+#graphify/document #graphify/EXTRACTED #community/WebContentScanner_2

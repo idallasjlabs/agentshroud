@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "test_collaborator_tracker.py (4) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/test_collaborator_trackerpy_4_2
 ---
 
 # OpenClaw Control UI Pairing Instructions
@@ -17,7 +17,7 @@ tags:
 - [[Get Token Again]] - `contains` [EXTRACTED]
 - [[PAIRING_INSTRUCTIONS]] - `contains` [EXTRACTED]
 - [[Security Note_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_36]] - `contains` [EXTRACTED]
+- [[Troubleshooting_34]] - `contains` [EXTRACTED]
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_4_2

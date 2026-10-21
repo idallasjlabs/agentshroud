@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/CONFIGURATION_SUMMARY.md"
 type: "concept"
-community: "awslabs.aws-api-mcp-server configuration (--readonly)"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2) (2)"
 location: "MCP Integration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--readonly
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2_2
 ---
 
 # MCP server integration matrix per tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2_2

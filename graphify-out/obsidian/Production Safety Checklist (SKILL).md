@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
+community: "OpenClaw Bot SSH Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Production Safety Checklist (SKILL)
@@ -14,14 +14,14 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-psREADME]] - `contains` [EXTRACTED]
 - [[Incident Response (SKILL)]] - `semantically_similar_to` [INFERRED]
+- [[Purpose_66]] - `contains` [EXTRACTED]
 - [[Purpose_69]] - `contains` [EXTRACTED]
-- [[Purpose_71]] - `contains` [EXTRACTED]
 - [[Quality Assurance (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[Related Skills_53]] - `contains` [EXTRACTED]
-- [[Related Skills_55]] - `contains` [EXTRACTED]
+- [[Related Skills_51]] - `contains` [EXTRACTED]
+- [[Related Skills_54]] - `contains` [EXTRACTED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_57]] - `contains` [EXTRACTED]
-- [[Usage_59]] - `contains` [EXTRACTED]
+- [[Usage_53]] - `contains` [EXTRACTED]
+- [[Usage_56]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

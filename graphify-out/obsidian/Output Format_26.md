@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L26"
+community: "Skill: Test-Driven Development (TDD) (3)"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/Skill_Test-Driven_Development_TDD_3
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
-- [[show_notes]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_3

@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "MCP Tools Usage (MCPM)"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM
+  - community/AgentTarget_2
 ---
 
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[Purpose_54]] - `contains` [EXTRACTED]
-- [[Related Skills_39]] - `contains` [EXTRACTED]
-- [[Usage_43]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpmREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpmREADME]] - `contains` [EXTRACTED]
+- [[Purpose_17]] - `contains` [EXTRACTED]
+- [[Related Skills_5]] - `contains` [EXTRACTED]
+- [[Usage_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

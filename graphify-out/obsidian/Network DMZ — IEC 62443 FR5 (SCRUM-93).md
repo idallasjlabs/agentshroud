@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "AgentShroud Docker Configuration"
+community: "TestMultilingualInjection"
 location: "docker/README.md:188"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/TestMultilingualInjection
 ---
 
 # Network DMZ — IEC 62443 FR5 (SCRUM-93)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dockerREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/concept #graphify/EXTRACTED #community/TestMultilingualInjection

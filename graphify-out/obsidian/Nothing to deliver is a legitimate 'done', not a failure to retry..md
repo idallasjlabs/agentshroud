@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
-location: "L1818"
+community: "First iteration ingests + records; second sees dedup and skips."
+location: "L1967"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
 ---
 
 # Nothing to deliver is a legitimate 'done', not a failure to retry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_zero_new_cves_marks_checked_immediately()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

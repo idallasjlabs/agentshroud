@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L472"
+community: "ToolResultSanitizer"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - graphify/INFERRED
+  - community/ToolResultSanitizer
 ---
 
 # Path
 
 ## Connections
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

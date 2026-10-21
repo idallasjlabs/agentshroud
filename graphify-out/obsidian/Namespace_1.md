@@ -1,17 +1,16 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: ""
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L480"
+community: "browser/scripts/browse.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/browser/scripts/browsepy
 ---
 
 # Namespace
 
 ## Connections
-- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[_run_nvd_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

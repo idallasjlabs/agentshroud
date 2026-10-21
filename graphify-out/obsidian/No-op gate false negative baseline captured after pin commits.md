@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-25.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "PIIConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/PIIConfig
 ---
 
 # No-op gate false negative: baseline captured after pin commits
@@ -20,4 +20,4 @@ tags:
 - [[dev-result-date.json dev-prod handoff contract]] - `conceptually_related_to` [EXTRACTED]
 - [[phase_baseline()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/PIIConfig

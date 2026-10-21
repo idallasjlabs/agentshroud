@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "DockerEngine"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/DockerEngine
 ---
 
 # Prompt: Newsletter — Coding-Agent CLIs
@@ -16,4 +16,4 @@ tags:
 - [[append_finding.py Finding-Append Script]] - `references` [EXTRACTED]
 - [[append_trend_log.py Trend-Log Append Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/DockerEngine

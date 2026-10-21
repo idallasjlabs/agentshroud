@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "A2AMethod"
+community: "Security Module Inventory"
 location: "line 19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Security_Module_Inventory
 ---
 
 # PromptArmor: Atlassian Rovo Content-Borne Injection Disclosure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2AMethod
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

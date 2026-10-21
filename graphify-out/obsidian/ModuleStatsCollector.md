@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "ADR-006: Multi-Runtime Container Support"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # ModuleStatsCollector
 
 ## Connections
-- [[dot-__init__()_108]] - `method` [EXTRACTED]
-- [[dot-record()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_123]] - `method` [EXTRACTED]
+- [[dot-record()]] - `method` [EXTRACTED]
 - [[dot-reset()_1]] - `method` [EXTRACTED]
 - [[dot-snapshot()]] - `method` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `calls` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

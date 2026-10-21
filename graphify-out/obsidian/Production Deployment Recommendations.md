@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Pre-Deployment Checklist (3)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Slack_Channel_Setup_2
+  - community/Pre-Deployment_Checklist_3
 ---
 
 # Production Deployment Recommendations
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH AllowDeny List Evaluation Order]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/INFERRED #community/Pre-Deployment_Checklist_3

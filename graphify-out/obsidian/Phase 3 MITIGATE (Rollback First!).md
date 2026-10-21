@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "MiddlewareManager (8)"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/MiddlewareManager_8
 ---
 
 # Phase 3: MITIGATE (Rollback First!)
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Rollback]] - `contains` [EXTRACTED]
 - [[Zabbix Rollback]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "rationale"
-community: "Coding Agent (bash-first)"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # PTY Mode Required for Interactive Coding Agents
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[coding-agentSKILL]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

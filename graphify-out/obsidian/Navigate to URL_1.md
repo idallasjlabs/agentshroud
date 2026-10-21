@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
-location: "L56"
+community: "Browser — Secure Browser Automation (2)"
+location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - community/Browser__Secure_Browser_Automation_2
 ---
 
 # Navigate to URL
 
 ## Connections
-- [[Usage_55]] - `contains` [EXTRACTED]
+- [[Usage_63]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2

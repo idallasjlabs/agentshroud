@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md (2)"
+community: ".test_egress_callback_from_collaborator_is_rejected()"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd_2
+  - community/test_egress_callback_from_collaborator_is_rejected
 ---
 
 # Production-Specific Review Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected

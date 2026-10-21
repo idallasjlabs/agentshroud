@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager (4)"
+community: "CrossBotTrustLedger"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager_4
+  - community/CrossBotTrustLedger
 ---
 
 # MCPToolResult
 
 ## Connections
-- [[dot-__post_init__()_3]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
 - [[dot-test_admin_private_data_not_redacted_for_owner()]] - `calls` [EXTRACTED]
@@ -30,19 +30,19 @@ tags:
 - [[dot-test_result_audit_logged()]] - `calls` [EXTRACTED]
 - [[dot-test_result_processing_time()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
@@ -66,9 +66,9 @@ tags:
 - [[TestHttpSseConnection]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
@@ -90,4 +90,4 @@ tags:
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager_4
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

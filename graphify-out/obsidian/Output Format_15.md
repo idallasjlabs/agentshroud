@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
-location: "L266"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionality_Audit
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

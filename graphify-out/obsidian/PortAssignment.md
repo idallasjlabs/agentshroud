@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "PortManager"
+community: "TrustConfig (2)"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TrustConfig_2
 ---
 
 # PortAssignment
@@ -27,4 +27,4 @@ tags:
 - [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect (3)"
-location: "L40"
+community: "System Audit & Documentation (3)"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_3
+  - community/System_Audit__Documentation_3
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_3
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "UserSessionManager (2) (5)"
 location: "L1862"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/UserSessionManager_2_5
 ---
 
 # Missing content-type must not bypass outbound JSON leak filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_json_without_content_type_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_5

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services (2)"
+community: "Skill: UI Expert (UI) (3)"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/Skill_UI_Expert_UI_3
 ---
 
 # Mail Operations
@@ -17,4 +17,4 @@ tags:
 - [[Send Email_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_3

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill: Code Review (CR)"
+community: ".test_egress_callback_from_collaborator_is_rejected()"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR
+  - community/test_egress_callback_from_collaborator_is_rejected
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected

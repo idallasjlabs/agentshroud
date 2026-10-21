@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "export-bot-conversations.py (2)"
-location: "L60"
+community: "KillSwitchMonitor (3)"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_2
+  - community/KillSwitchMonitor_3
 ---
 
 # Path
 
 ## Connections
-- [[_docker_read_file()]] - `references` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
-- [[main()_29]] - `calls` [EXTRACTED]
+- [[dot-__init__()_181]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

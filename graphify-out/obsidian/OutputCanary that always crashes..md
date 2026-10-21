@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PipelineAction"
+community: "ApprovalQueueConfig"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalQueueConfig
 ---
 
 # OutputCanary that always crashes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BrokenOutputCanary]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

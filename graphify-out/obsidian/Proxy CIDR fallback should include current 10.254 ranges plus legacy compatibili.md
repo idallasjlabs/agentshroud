@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L329"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibili
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_allowed_network_default_includes_current_subnets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig

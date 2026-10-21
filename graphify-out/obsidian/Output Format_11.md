@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L356"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Output Format
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

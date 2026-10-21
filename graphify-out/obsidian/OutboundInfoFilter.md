@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "SecurityPipeline"
+community: "FetchOutcome"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/FetchOutcome
 ---
 
 # OutboundInfoFilter
 
 ## Connections
-- [[dot-__init__()_146]] - `method` [EXTRACTED]
+- [[dot-__init__()_136]] - `method` [EXTRACTED]
 - [[dot-_classify_response_risk()]] - `method` [EXTRACTED]
 - [[dot-_compile_patterns()]] - `method` [EXTRACTED]
 - [[dot-_is_allowed_for_trust()]] - `method` [EXTRACTED]
 - [[dot-filter_response()_1]] - `method` [EXTRACTED]
-- [[dot-get_stats()_14]] - `method` [EXTRACTED]
-- [[dot-setup_method()_26]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
+- [[dot-setup_method()_22]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
 - [[dot-test_custom_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_initialization_with_config()]] - `calls` [EXTRACTED]
 - [[dot-test_monitor_mode()]] - `calls` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

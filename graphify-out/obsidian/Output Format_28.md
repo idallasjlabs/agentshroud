@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Atlas — Curriculum Architect (2)"
-location: "L26"
+community: "AgentShroud (system, C4 context) (2)"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_2
+  - community/AgentShroud_system_C4_context_2
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2

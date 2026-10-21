@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "ToolResultSanitizer"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # MCPPolicyEngine
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -52,4 +52,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `references` [EXTRACTED]
 - [[test_unknown_server_is_denied_by_default()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

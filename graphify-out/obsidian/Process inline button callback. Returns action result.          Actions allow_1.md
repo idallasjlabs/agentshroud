@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "EgressTelegramNotifier"
+community: "Critical Findings"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Critical_Findings
 ---
 
 # Process inline button callback. Returns action result.          Actions: allow_1
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-handle_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/rationale #graphify/EXTRACTED #community/Critical_Findings

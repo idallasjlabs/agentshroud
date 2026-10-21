@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Bear Notes"
-location: "L102"
+community: "DEVELOPER.md — Development Context for AgentShroud"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/DEVELOPERmd__Development_Context_for_AgentShroud
 ---
 
 # Notes
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud

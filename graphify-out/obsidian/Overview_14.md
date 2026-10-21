@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L22"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Overview
 
 ## Connections
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

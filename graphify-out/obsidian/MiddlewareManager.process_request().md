@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "test_forward_stream.py (2)"
+community: "SCLClient"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/SCLClient
 ---
 
 # MiddlewareManager.process_request()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/code #graphify/EXTRACTED #community/SCLClient

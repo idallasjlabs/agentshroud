@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode A — Single task (2)"
+community: "iCloud Services (3)"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_2
+  - community/iCloud_Services_3
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_1]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3

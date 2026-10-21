@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Common Queries"
-location: "L27"
+community: "AgentShroud Blue Team Security Auditor (3)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/AgentShroud_Blue_Team_Security_Auditor_3
 ---
 
 # Overview
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

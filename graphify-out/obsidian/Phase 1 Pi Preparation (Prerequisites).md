@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "1.4 Implementation Plan"
+community: "jira_dev_ticket run"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/jira_dev_ticket_run
 ---
 
 # Phase 1: Pi Preparation (Prerequisites)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/jira_dev_ticket_run

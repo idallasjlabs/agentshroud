@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # ProgressiveTrustConfig
@@ -20,7 +20,7 @@ tags:
 - [[Configuration for the progressive trust system.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[Request_6]] - `uses` [INFERRED]
+- [[Request_10]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
@@ -32,11 +32,11 @@ tags:
 - [[TestToolGating]] - `uses` [INFERRED]
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustLevel_3]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType_1]] - `uses` [INFERRED]
 - [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
@@ -49,6 +49,6 @@ tags:
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager()_5]] - `calls` [EXTRACTED]
-- [[trust_manager.py_1]] - `imports` [EXTRACTED]
+- [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/soc/routerpy

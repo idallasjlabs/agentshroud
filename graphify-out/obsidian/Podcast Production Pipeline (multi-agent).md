@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "concept"
-community: "Hermes Podcast Production Orchestrator README"
+community: "TestIdentityAuth"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Podcast_Production_Orchestrator_README
+  - community/TestIdentityAuth
 ---
 
 # Podcast Production Pipeline (multi-agent)
 
 ## Connections
-- [[Hermes Podcast Production Orchestrator README]] - `conceptually_related_to` [EXTRACTED]
-- [[Hermes Reference Verifier Skill]] - `conceptually_related_to` [INFERRED]
+- [[Hermes — Reference Verifier Skill]] - `conceptually_related_to` [EXTRACTED]
+- [[i-hermes README (Podcast Production Orchestrator)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Podcast_Production_Orchestrator_README
+#graphify/concept #graphify/EXTRACTED #community/TestIdentityAuth

@@ -1,17 +1,20 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
-location: "L81"
+community: "AgentShroud -- USPTO Provisional Patent Application"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
+- [[diagramsREADME_1]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

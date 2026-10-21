@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "rationale"
-community: "generate_branding_assets.py"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Load source logo, optionally resize and composite onto bg.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_logo()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

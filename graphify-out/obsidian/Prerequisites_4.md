@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L3"
+community: "Error Index.md"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Error_Indexmd
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
