@@ -355,7 +355,43 @@ class TestNvdAppend:
         assert mod.append_to_hermes_registry([], False, "v0.22") == 0
 
 
-class TestNvdFetchRetry:
+class TestNvdReportOnly:
+    """The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_id/cve_id).
+
+    2026-10-21 auto-PR #524 wrote 724 such entries and broke
+    test_agent_cve_registry.py on main. Until it emits the ASH-ref schema it
+    must report its backlog and write nothing.
+    """
+
+    def _run(self, monkeypatch, capsys, oc_ids, hermes_ids):
+        import argparse
+
+        mod = _sync()
+        feeds = {mod.NVD_KEYWORD: oc_ids, mod.NVD_KEYWORD_HERMES: hermes_ids}
+        monkeypatch.setattr(
+            mod, "fetch_nvd_cves", lambda kw: [{"cve": {"id": i}} for i in feeds[kw]]
+        )
+
+        def _no_write(*a, **k):
+            raise AssertionError("NVD path must not write the registry")
+
+        monkeypatch.setattr(mod, "append_to_registry", _no_write)
+        monkeypatch.setattr(mod, "append_to_hermes_registry", _no_write)
+        monkeypatch.setattr(mod, "_insert_into_list", _no_write)
+        args = argparse.Namespace(dry_run=False, openclaw_version="2026.10.4", hermes_version="v0")
+        mod._run_nvd_sync(args)
+        return mod, capsys.readouterr().out
+
+    def test_never_writes_and_says_so(self, monkeypatch, capsys):
+        _, out = self._run(monkeypatch, capsys, ["CVE-2099-0001"], ["CVE-2099-0002"])
+        assert "NOT written" in out
+
+    def test_known_cves_matched_by_cve_id_not_id(self, monkeypatch, capsys):
+        mod = _sync()
+        known = next(e["cve_id"] for e in mod.AGENT_CVE_REGISTRY if e.get("cve_id"))
+        _, out = self._run(monkeypatch, capsys, [known, "CVE-2099-0001"], [])
+        assert "OpenClaw: 1 NVD CVE(s) not in the registry" in out
+
     @staticmethod
     def _page(total, n):
         import io
