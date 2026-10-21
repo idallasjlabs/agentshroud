@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (4)"
-location: "L280"
+community: "1. GitHub MCP Authentication Reset"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_4
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Test Structure
 
 ## Connections
-- [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_4
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

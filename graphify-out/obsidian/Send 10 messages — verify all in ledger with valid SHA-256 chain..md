@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "AgentTarget"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/AgentTarget
 ---
 
 # Send 10 messages — verify all in ledger with valid SHA-256 chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

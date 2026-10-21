@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "Common Queries"
 location: "L883"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/Common_Queries
 ---
 
 # Test container hardening and runtime security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContainerSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/Common_Queries

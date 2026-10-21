@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AgentShroud™ README"
+community: "AuditExporter"
 location: "L250"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AuditExporter
 ---
 
 # Terminal Control Center
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Control Centers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

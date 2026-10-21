@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # Severity
 
 ## Connections
 - [[dot-severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_4]] - `uses` [INFERRED]
+- [[CompletedProcess]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Path_27]] - `uses` [INFERRED]
+- [[ScanResult_1]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[TestObfuscation]] - `uses` [INFERRED]
 - [[TestOversizedUnscannable]] - `uses` [INFERRED]
 - [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestReloadIntegration]] - `uses` [INFERRED]
 - [[TestScanEntrypoint]] - `uses` [INFERRED]
 - [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher

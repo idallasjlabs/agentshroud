@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L51"
+community: "KillSwitchMonitor (2)"
+location: "L475"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/KillSwitchMonitor_2
 ---
 
 # Security Hardening
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
-- [[Dockerfile.gateway vault note]] - `references` [EXTRACTED]
+- [[Production Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2

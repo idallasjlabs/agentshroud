@@ -1,17 +1,19 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L443"
+community: "SkillGuard (2)"
+location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/SkillGuard_2
 ---
 
 # Security Notes
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Current Security Posture]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/SkillGuard_2

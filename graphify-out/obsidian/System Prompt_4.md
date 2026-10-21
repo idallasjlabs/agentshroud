@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (3)"
-location: "L88"
+community: "Skill: Data Validation (DATA-VAL) (3)"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_3
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # System Prompt
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

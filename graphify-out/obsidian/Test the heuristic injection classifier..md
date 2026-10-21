@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "rationale"
-community: "A2APolicyEngine (2)"
+community: "test_soc_egress_endpoints.py"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_2
+  - community/test_soc_egress_endpointspy
 ---
 
 # Test the heuristic injection classifier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHeuristicClassifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine_2
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy

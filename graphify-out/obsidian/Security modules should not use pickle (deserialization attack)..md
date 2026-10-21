@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "_wrap_response() (2)"
 location: "L631"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_2
 ---
 
 # Security modules should not use pickle (deserialization attack).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_no_pickle_in_security_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2

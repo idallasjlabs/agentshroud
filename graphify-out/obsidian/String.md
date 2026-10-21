@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # String
@@ -34,4 +34,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

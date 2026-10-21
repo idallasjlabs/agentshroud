@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "PIIConfig"
+community: "MiddlewareManager (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager_4
 ---
 
 # System Overview.md
@@ -19,4 +19,4 @@ tags:
 - [[Home]] - `references` [EXTRACTED]
 - [[Quick Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PIIConfig
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

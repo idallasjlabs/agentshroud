@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
+source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "AgentTarget (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/AgentTarget_2
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sdlcSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sdlcSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

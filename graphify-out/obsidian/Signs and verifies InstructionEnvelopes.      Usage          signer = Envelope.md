@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (2)"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_2
 ---
 
 # Signs and verifies InstructionEnvelopes.      Usage::          signer = Envelope
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvelopeSigner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

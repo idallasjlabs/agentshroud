@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # Test that PII sanitizer defaults to redact action.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pii_sanitizer_default_action()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

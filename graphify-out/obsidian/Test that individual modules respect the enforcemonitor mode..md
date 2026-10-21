@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # Test that individual modules respect the enforce/monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModuleEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

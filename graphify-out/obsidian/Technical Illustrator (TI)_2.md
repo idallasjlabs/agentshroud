@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "MultiHostResult"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/MultiHostResult
 ---
 
 # Technical Illustrator (TI)
@@ -18,4 +18,4 @@ tags:
 - [[UI Expert (UI)]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

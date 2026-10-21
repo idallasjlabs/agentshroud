@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Test default configuration
 
 ## Connections
-- [[dot-test_default_config()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

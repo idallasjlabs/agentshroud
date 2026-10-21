@@ -1,19 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L326"
+community: "KillSwitchMonitor (2) (9)"
+location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/KillSwitchMonitor_2_9
 ---
 
 # Security Validation
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Check File Permissions]] - `contains` [EXTRACTED]
-- [[Verify Isolation]] - `contains` [EXTRACTED]
+- [[Post-Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_9

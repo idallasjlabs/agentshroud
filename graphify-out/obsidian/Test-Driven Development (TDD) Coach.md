@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "MultiHostResult"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/MultiHostResult
 ---
 
 # Test-Driven Development (TDD) Coach
@@ -14,4 +14,4 @@ tags:
 - [[Technical Illustrator (TI)_2]] - `conceptually_related_to` [INFERRED]
 - [[Test-Driven Development README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

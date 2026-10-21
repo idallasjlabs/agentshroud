@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "PortManager"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PortManager
 ---
 
 # Test that errors don't leak sensitive information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInfoLeakage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

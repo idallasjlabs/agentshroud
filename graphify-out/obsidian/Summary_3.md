@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "LOW — Informational (2)"
-location: "L141"
+community: "ApprovalQueueConfig (5)"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational_2
+  - community/ApprovalQueueConfig_5
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational_2
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5

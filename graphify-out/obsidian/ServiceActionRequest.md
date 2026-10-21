@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # ServiceActionRequest
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[SCLCaller_2]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

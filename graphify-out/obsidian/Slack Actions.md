@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Actions"
+community: "ANTHROPIC_BASE_URL"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Slack Actions
@@ -15,7 +15,7 @@ tags:
 - [[Actions_1]] - `contains` [EXTRACTED]
 - [[Ideas to try]] - `contains` [EXTRACTED]
 - [[Inputs to collect]] - `contains` [EXTRACTED]
-- [[Overview_22]] - `contains` [EXTRACTED]
+- [[Overview_17]] - `contains` [EXTRACTED]
 - [[slackSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

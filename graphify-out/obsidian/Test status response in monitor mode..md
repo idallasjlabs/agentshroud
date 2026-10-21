@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "create_auth_dependency (2)"
+community: "test_fieldflare_route_strips_unsupported_fields_streaming"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/test_fieldflare_route_strips_unsupported_fields_streaming
 ---
 
 # Test status response in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_status_response_monitor_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/rationale #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming

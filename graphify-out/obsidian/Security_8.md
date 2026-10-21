@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)"
-location: "L298"
+community: "Mode A — Single task (2)"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+  - community/Mode_A__Single_task_2
 ---
 
 # Security
 
 ## Connections
-- [[Best Practices_3]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE_3
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2

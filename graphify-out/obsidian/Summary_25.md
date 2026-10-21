@@ -1,17 +1,18 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "egress_filter.py"
-location: "L1"
+community: "Daedalus — Concept Illustrator (3)"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Daedalus__Concept_Illustrator_3
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_3

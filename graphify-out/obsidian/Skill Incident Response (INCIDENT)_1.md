@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!) (2)"
+community: "test_openclaw_photo.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First_2
+  - community/test_openclaw_photosh
 ---
 
 # Skill: Incident Response (INCIDENT)
@@ -15,7 +15,7 @@ tags:
 - [[dot-agentsskillsi-productionSKILL]] - `contains` [EXTRACTED]
 - [[Incident Response Workflow_1]] - `contains` [EXTRACTED]
 - [[Post-Incident_1]] - `contains` [EXTRACTED]
-- [[Role_61]] - `contains` [EXTRACTED]
+- [[Role_59]] - `contains` [EXTRACTED]
 - [[Severity Matrix_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_2
+#graphify/document #graphify/EXTRACTED #community/test_openclaw_photosh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # Test that low-risk tools are allowed without approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_low_risk_tool_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

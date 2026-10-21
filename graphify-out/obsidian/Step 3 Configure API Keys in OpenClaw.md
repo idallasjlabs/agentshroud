@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "iCloud Services Setup - Complete Guide"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/iCloud_Services_Setup_-_Complete_Guide
 ---
 
 # Step 3: Configure API Keys in OpenClaw
@@ -16,4 +16,4 @@ tags:
 - [[Option A Via Control UI (Recommended)]] - `contains` [EXTRACTED]
 - [[Option B Via Command Line]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

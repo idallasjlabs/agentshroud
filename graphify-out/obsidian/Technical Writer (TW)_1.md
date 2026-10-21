@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "AgentTarget (8)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/AgentTarget_8
 ---
 
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_101]] - `contains` [EXTRACTED]
-- [[Related Skills_80]] - `contains` [EXTRACTED]
-- [[Usage_90]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-twREADME]] - `contains` [EXTRACTED]
+- [[Purpose_59]] - `contains` [EXTRACTED]
+- [[Related Skills_45]] - `contains` [EXTRACTED]
+- [[Usage_48]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-twREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_8

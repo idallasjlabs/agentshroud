@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "create_auth_dependency (3)"
+community: "lifespan()"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/lifespan
 ---
 
 # Submit an action for human approval      Called by agents when attempting sensit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[submit_approval_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

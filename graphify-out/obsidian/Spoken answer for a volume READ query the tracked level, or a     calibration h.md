@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L669"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # Spoken answer for a volume READ query: the tracked level, or a     calibration h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_answer_volume_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "ModeRequest (3)"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest_3
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # TestConfig
@@ -25,4 +25,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest_3
+#graphify/code #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

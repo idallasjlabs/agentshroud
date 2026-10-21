@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "MultiTurnTracker"
-location: "L361"
+community: "test_soc_router_coverage.py"
+location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/test_soc_router_coveragepy
 ---
 
 # Test cleanup of old sessions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_session_cleanup()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

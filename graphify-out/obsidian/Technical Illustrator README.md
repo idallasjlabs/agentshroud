@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "MultiHostResult"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/MultiHostResult
 ---
 
 # Technical Illustrator README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Technical Illustrator (TI)_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

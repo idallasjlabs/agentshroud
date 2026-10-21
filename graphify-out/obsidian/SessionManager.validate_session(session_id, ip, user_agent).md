@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Function Details (5)"
+community: "Actions"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Actions
 ---
 
 # SessionManager.validate_session(session_id, ip, user_agent)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_5
+#graphify/document #graphify/EXTRACTED #community/Actions

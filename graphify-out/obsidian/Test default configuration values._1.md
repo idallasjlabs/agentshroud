@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
 community: "MiddlewareManager"
-location: "L21"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

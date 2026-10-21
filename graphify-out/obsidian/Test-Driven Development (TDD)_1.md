@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "MultiHostResult"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/MultiHostResult
 ---
 
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_107]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[Usage_93]] - `contains` [EXTRACTED]
+- [[Purpose_87]] - `contains` [EXTRACTED]
+- [[Related Skills_66]] - `contains` [EXTRACTED]
+- [[Usage_72]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tddREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

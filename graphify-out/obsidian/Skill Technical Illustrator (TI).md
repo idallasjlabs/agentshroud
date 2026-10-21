@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
+community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/AgentShroud_v070__Red_Team_Remediation_Plan
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -21,8 +21,8 @@ tags:
 - [[Diagram Types and Data Lakehouse Examples]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions]] - `contains` [EXTRACTED]
 - [[Rendering and Export]] - `contains` [EXTRACTED]
-- [[Role_39]] - `contains` [EXTRACTED]
-- [[Rules_14]] - `contains` [EXTRACTED]
+- [[Role_38]] - `contains` [EXTRACTED]
+- [[Rules_13]] - `contains` [EXTRACTED]
 - [[Validation Checklist_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "export_bot"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L503"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # TestCollectRecentEvents
@@ -20,9 +20,9 @@ tags:
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

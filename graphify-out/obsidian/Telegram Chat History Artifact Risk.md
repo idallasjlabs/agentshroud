@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secret-scan-results.md"
 type: "concept"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "Slack Channel Setup (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Slack_Channel_Setup_2
 ---
 
 # Telegram Chat History Artifact Risk
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Bot Token Reference Exposure]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup_2

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Usage"
+community: "LVGL KAWAII FACE"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Setup
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

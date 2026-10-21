@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Simple in-memory per-domain rate limiter using sliding window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimiter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

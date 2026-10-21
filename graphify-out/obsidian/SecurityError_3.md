@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "format_cve_report()"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/format_cve_report
 ---
 
 # SecurityError
@@ -16,8 +16,8 @@ tags:
 - [[dot-extract()_3]] - `calls` [EXTRACTED]
 - [[dot-fill_field()_3]] - `calls` [EXTRACTED]
 - [[dot-navigate()_3]] - `calls` [EXTRACTED]
-- [[Exception_3]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated_3]] - `rationale_for` [EXTRACTED]
 - [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

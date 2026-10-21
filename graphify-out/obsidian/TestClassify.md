@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "_t"
+community: "Path"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/Path
 ---
 
 # TestClassify
@@ -19,4 +19,4 @@ tags:
 - [[classify()]] - `calls` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/Path

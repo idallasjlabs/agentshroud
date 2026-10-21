@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Remediation"
+community: "Incident Response Playbook — AgentShroud"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Step 1: Define MCP tool risk tiers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier (2)"
-location: "L59"
+community: "TestAggregateResults"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier_2
+  - community/TestAggregateResults
 ---
 
 # System Prompt
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_2
+#graphify/document #graphify/EXTRACTED #community/TestAggregateResults

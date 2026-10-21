@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: ".test_user_id_redaction"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_user_id_redaction
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # Test redaction of user ID patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_user_id_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_user_id_redaction
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

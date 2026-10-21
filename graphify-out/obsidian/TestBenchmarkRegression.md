@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "TestBenchmarkRegression"
+community: "RuntimeConfig"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/RuntimeConfig
 ---
 
 # TestBenchmarkRegression
 
 ## Connections
 - [[dot-_time_fn()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_32]] - `method` [EXTRACTED]
+- [[dot-setup_method()_30]] - `method` [EXTRACTED]
 - [[dot-test_100_inbound_requests()]] - `method` [EXTRACTED]
 - [[dot-test_baseline_file_exists()]] - `method` [EXTRACTED]
 - [[dot-test_baseline_values_are_reasonable()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[HTTPConnectProxy_1]] - `references` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

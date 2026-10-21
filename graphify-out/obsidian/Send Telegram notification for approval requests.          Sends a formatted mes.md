@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "ApprovalQueueConfig (4)"
+community: "ContextSegment"
 location: "L463"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/ContextSegment
 ---
 
 # Send Telegram notification for approval requests.          Sends a formatted mes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_notify_telegram()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

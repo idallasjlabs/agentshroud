@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
+community: "workspace.sh"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/workspacesh
 ---
 
 # Test Structure
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/workspacesh

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "AgentShroud Agentic OS"
+community: "PipelineAction"
 location: "L190"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/PipelineAction
 ---
 
 # Security-Sensitive Paths (Claude-Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Multi-Agent Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

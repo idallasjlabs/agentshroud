@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # Set up app state and provide TestClient.
 
 ## Connections
-- [[client()_6]] - `rationale_for` [EXTRACTED]
+- [[client()_15]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

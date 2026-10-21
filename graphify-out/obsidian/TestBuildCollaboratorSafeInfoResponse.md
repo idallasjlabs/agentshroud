@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestBuildCollaboratorSafeInfoResponse"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L4251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # TestBuildCollaboratorSafeInfoResponse
@@ -31,10 +31,10 @@ tags:
 - [[dot-test_security_model()]] - `method` [EXTRACTED]
 - [[dot-test_what_can_you_capability()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Static response builder for collaborator conceptual queries.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/code #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

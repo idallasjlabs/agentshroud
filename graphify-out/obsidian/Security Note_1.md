@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "All Dependencies.md"
+community: "EgressFilter"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/EgressFilter
 ---
 
 # Security Note
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

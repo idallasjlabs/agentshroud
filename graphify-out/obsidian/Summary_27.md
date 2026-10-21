@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (4)"
-location: "L10"
+community: "killswitch.sh"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_4
+  - community/killswitchsh
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4
+#graphify/document #graphify/EXTRACTED #community/killswitchsh

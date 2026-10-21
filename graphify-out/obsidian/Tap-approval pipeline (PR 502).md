@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-12.md"
 type: "concept"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Tap-approval pipeline (PR #502)
@@ -17,4 +17,4 @@ tags:
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-approve.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/concept #graphify/EXTRACTED #community/_wrap_response_2

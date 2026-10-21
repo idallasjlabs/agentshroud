@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "test_main_endpoints.py"
+community: "WebContentScanner"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/WebContentScanner
 ---
 
 # Test MCP proxy endpoint basic functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_mcp_proxy_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

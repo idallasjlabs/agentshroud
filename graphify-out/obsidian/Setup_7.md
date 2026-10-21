@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "GitHub Skill"
-location: "L56"
+community: "TestFabricatedSecurityNotice (2) (2)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/TestFabricatedSecurityNotice_2_2
 ---
 
 # Setup
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TrustConfig"
+community: "TelegramAPIProxy (2)"
 location: "L842"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/TelegramAPIProxy_2
 ---
 
 # TestEgressSSRF
 
 ## Connections
-- [[dot-setup_method()_9]] - `method` [EXTRACTED]
+- [[dot-setup_method()_6]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]
@@ -33,12 +33,12 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Tests for SSRF protection in egress filter.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (2)"
 location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_2
 ---
 
 # TestContextIntegrityInPipeline
@@ -36,7 +36,7 @@ tags:
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2

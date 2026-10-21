@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TrustConfig"
 location: "L2211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TrustConfig
 ---
 
 # Summarize inbound/outbound quarantine state for SOC/dashboard use.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[quarantine_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

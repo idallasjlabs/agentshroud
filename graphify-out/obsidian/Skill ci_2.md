@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ci/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "soc.js"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/socjs
 ---
 
 # Skill: ci
@@ -15,4 +15,4 @@ tags:
 - [[openclawskillsi-ciSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/socjs

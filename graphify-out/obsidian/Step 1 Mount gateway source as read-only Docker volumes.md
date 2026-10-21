@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Make gateway source code, config, and security policies read-only to the agent"
+community: "🟢 INFO (nice to have)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
+  - community/_INFO_nice_to_have
 ---
 
 # Step 1: Mount gateway source as read-only Docker volumes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
+#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "PipelineAction"
+community: "WebProxyConfig"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/WebProxyConfig
 ---
 
 # TestCanaryTripwire
 
 ## Connections
-- [[dot-setup_method()_25]] - `method` [EXTRACTED]
+- [[dot-setup_method()_10]] - `method` [EXTRACTED]
 - [[dot-test_api_key_canary()]] - `method` [EXTRACTED]
 - [[dot-test_base64_canary()]] - `method` [EXTRACTED]
-- [[dot-test_case_insensitive()_2]] - `method` [EXTRACTED]
+- [[dot-test_case_insensitive()_1]] - `method` [EXTRACTED]
 - [[dot-test_code_word_canary()]] - `method` [EXTRACTED]
 - [[dot-test_counter_increments()]] - `method` [EXTRACTED]
-- [[dot-test_custom_config()_2]] - `method` [EXTRACTED]
-- [[dot-test_empty_input()_2]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()_3]] - `method` [EXTRACTED]
+- [[dot-test_empty_input()_1]] - `method` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `method` [EXTRACTED]
 - [[dot-test_normal_content_passes()]] - `method` [EXTRACTED]
 - [[dot-test_plain_canary_detected()]] - `method` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[TripwireResponse]] - `uses` [INFERRED]
 - [[test_canary_tripwire.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

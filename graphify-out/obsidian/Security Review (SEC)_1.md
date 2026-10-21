@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
-community: "Security Review (SEC) (2)"
+community: "TestOutboundInfoFilter (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC_2
+  - community/TestOutboundInfoFilter_7
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_61]] - `contains` [EXTRACTED]
-- [[Related Skills_46]] - `contains` [EXTRACTED]
-- [[Usage_50]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-secREADME]] - `contains` [EXTRACTED]
+- [[Purpose_34]] - `contains` [EXTRACTED]
+- [[Related Skills_20]] - `contains` [EXTRACTED]
+- [[Usage_23]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-secREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7

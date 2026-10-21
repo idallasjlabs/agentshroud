@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "OpenClaw Bot Container"
+community: "Hermes Cron Dedupe (dev)"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # Tailscale ACLs (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxyConfig"
+community: "test_soc_realtime_coverage.py"
 location: "L386"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxyConfig
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestDataExfiltration
@@ -21,7 +21,7 @@ tags:
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[TestDataExfiltration_1]] - `semantically_similar_to` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxyConfig
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

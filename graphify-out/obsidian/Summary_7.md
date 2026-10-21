@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
-location: "L6"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

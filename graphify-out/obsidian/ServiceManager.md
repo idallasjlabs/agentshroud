@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ServiceManager"
+community: "ApprovalQueueConfig (3)"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ApprovalQueueConfig_3
 ---
 
 # ServiceManager
 
 ## Connections
-- [[dot-__init__()_42]] - `method` [EXTRACTED]
+- [[dot-__init__()_174]] - `method` [EXTRACTED]
 - [[dot-_describe_service()]] - `method` [EXTRACTED]
 - [[dot-_get_engine()]] - `method` [EXTRACTED]
 - [[dot-_logs_via_socket()]] - `method` [EXTRACTED]
-- [[dot-get_logs()]] - `method` [EXTRACTED]
+- [[dot-get_logs()_1]] - `method` [EXTRACTED]
 - [[dot-get_service()]] - `method` [EXTRACTED]
 - [[dot-list_services()]] - `method` [EXTRACTED]
 - [[dot-mgr_with_engine()]] - `calls` [EXTRACTED]
-- [[dot-restart_service()]] - `method` [EXTRACTED]
+- [[dot-restart_service()_1]] - `method` [EXTRACTED]
 - [[dot-start_service()]] - `method` [EXTRACTED]
-- [[dot-stop_service()]] - `method` [EXTRACTED]
+- [[dot-stop_service()_1]] - `method` [EXTRACTED]
 - [[dot-test_all_actions_false_without_engine()]] - `calls` [EXTRACTED]
 - [[dot-test_bytes_payload_is_decoded()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_info_means_container_not_found()]] - `calls` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[dot-update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_75]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -71,7 +71,7 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_8]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
@@ -119,4 +119,4 @@ tags:
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

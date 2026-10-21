@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MCPPermissionManager"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MCPPermissionManager
 ---
 
 # Test paginated ledger query
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_query_ledger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

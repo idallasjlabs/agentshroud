@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/live-assessment-results.md"
 type: "document"
-community: "v0.6.0 Baseline Results"
+community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v060_Baseline_Results
+  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
 ---
 
 # Test Environment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Assessment — Live Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v060_Baseline_Results
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL

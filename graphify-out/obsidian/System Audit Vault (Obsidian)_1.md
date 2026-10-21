@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)"
+community: "Skill: UX Expert (UX) (2)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+  - community/Skill_UX_Expert_UX_2
 ---
 
 # System Audit Vault (Obsidian)
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_1]] - `contains` [EXTRACTED]
 - [[OBSIDIAN VAULT RULES (Follow These Exactly)_1]] - `contains` [EXTRACTED]
-- [[OUTPUT FORMAT_9]] - `contains` [EXTRACTED]
+- [[OUTPUT FORMAT_8]] - `contains` [EXTRACTED]
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-savSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-savSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_2

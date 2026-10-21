@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L21"
+community: "KillSwitchMonitor (2) (4)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/KillSwitchMonitor_2_4
 ---
 
 # System Requirements
 
 ## Connections
-- [[Prerequisites_5]] - `contains` [EXTRACTED]
+- [[Prerequisites_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4

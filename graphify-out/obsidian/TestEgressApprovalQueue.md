@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue (2)"
+community: "SkillGuard"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue_2
+  - community/SkillGuard
 ---
 
 # TestEgressApprovalQueue
@@ -18,7 +18,7 @@ tags:
 - [[dot-test_approval_flow_once()]] - `method` [EXTRACTED]
 - [[dot-test_approval_flow_permanent()]] - `method` [EXTRACTED]
 - [[dot-test_approval_flow_session()]] - `method` [EXTRACTED]
-- [[dot-test_cleanup_expired_requests()]] - `method` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()_1]] - `method` [EXTRACTED]
 - [[dot-test_denial_flow()]] - `method` [EXTRACTED]
 - [[dot-test_denylist_persistence()]] - `method` [EXTRACTED]
 - [[dot-test_emergency_block_all_denies_requests()]] - `method` [EXTRACTED]
@@ -37,9 +37,9 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressApprovalQueue]] - `uses` [INFERRED]
 - [[EgressRequest]] - `uses` [INFERRED]
-- [[RiskLevel]] - `uses` [INFERRED]
+- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[Test suite for EgressApprovalQueue functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceMode]] - `semantically_similar_to` [INFERRED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

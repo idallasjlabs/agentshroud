@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
+community: "Mnemosyne — Retention Engineer (3)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/Mnemosyne__Retention_Engineer_3
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
@@ -20,7 +20,7 @@ tags:
 - [[Mode A — Single task_3]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_1]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_1]] - `contains` [EXTRACTED]
-- [[Role_4]] - `contains` [EXTRACTED]
+- [[Role_1]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_3

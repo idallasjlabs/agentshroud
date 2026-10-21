@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (3)"
+community: "FetchOutcome"
 location: "L620"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_3
+  - community/FetchOutcome
 ---
 
 # Test with realistic agent response patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_real_world_agent_responses()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_3
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

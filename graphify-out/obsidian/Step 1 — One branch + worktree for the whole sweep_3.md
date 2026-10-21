@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mode B — Comprehensive review sweep (4)"
+community: "AgentShroud Phase Review — 2026-02-23 (2)"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep_4
+  - community/AgentShroud_Phase_Review__2026-02-23_2
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_4
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_2

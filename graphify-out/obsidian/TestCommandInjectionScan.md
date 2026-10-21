@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "AgentShroud Setup Guide"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/AgentShroud_Setup_Guide
 ---
 
 # TestCommandInjectionScan
@@ -18,8 +18,8 @@ tags:
 - [[dot-test_shell_injection_detected()]] - `method` [EXTRACTED]
 - [[dot-test_sql_injection_detected()]] - `method` [EXTRACTED]
 - [[dot-xml_filter()]] - `method` [EXTRACTED]
-- [[FilterResult]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[test_xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

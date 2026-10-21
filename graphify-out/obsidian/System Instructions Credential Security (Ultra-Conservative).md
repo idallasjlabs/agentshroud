@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
+community: "What You Must Do When Invoked (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/What_You_Must_Do_When_Invoked_3
 ---
 
 # System Instructions: Credential Security (Ultra-Conservative)
@@ -27,4 +27,4 @@ tags:
 - [[🛡️ Security Benefits]] - `contains` [EXTRACTED]
 - [[🧪 Decision Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_3

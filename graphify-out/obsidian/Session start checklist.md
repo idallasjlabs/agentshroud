@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
+community: "graphify Skill (2)"
 location: "L309"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+  - community/graphify_Skill_2
 ---
 
 # Session start checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3) SDLC — HOW TO WORK IN THIS REPO]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill_2

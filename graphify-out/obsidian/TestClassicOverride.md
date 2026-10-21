@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "test_soc_egress_endpoints.py"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/test_soc_egress_endpointspy
 ---
 
 # TestClassicOverride
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_classic_payloads_individually()]] - `method` [EXTRACTED]
 - [[Classic instruction-override payloads — should have near-100% detection.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

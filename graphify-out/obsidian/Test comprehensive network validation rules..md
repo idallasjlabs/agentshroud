@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # Test comprehensive network validation rules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_network_validation_comprehensive_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/rationale #graphify/EXTRACTED #community/WebProxy

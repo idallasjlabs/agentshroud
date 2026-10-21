@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-inventory.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "Security Modules (58)"
-location: "L215"
+community: "agentshroud-blueteam/SKILL.md (3)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # Summary
 
 ## Connections
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
+community: "triage-cve-mitigations.py (2)"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/triage-cve-mitigationspy_2
 ---
 
 # Step 2: Document Write Paths
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy_2

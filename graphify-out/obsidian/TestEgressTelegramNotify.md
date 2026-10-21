@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "code"
-community: "TestEgressTelegramNotify"
+community: "apply-patches.js"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/apply-patchesjs
 ---
 
 # TestEgressTelegramNotify
@@ -15,7 +15,7 @@ tags:
 - [[dot-notifier()]] - `method` [EXTRACTED]
 - [[dot-test_answer_callback_error()]] - `method` [EXTRACTED]
 - [[dot-test_answer_callback_success()]] - `method` [EXTRACTED]
-- [[dot-test_cleanup_expired_requests()_1]] - `method` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()]] - `method` [EXTRACTED]
 - [[dot-test_get_pending_count()]] - `method` [EXTRACTED]
 - [[dot-test_handle_callback_allow_always_returns_agent_id()]] - `method` [EXTRACTED]
 - [[dot-test_handle_callback_approve_1h()]] - `method` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[Test Telegram egress notification system.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

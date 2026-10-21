@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "10. Troubleshooting (2)"
+community: "First Time Setup"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting_2
+  - community/First_Time_Setup
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
@@ -15,8 +15,8 @@ tags:
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Available MCP Servers_1]] - `contains` [EXTRACTED]
 - [[MCP Troubleshooting]] - `contains` [EXTRACTED]
-- [[Role_13]] - `contains` [EXTRACTED]
+- [[Role_27]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpmSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting_2
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

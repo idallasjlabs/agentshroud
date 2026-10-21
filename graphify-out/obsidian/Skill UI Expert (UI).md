@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Mode A — Single task"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Mode_A__Single_task
 ---
 
 # Skill: UI Expert (UI)
@@ -23,8 +23,8 @@ tags:
 - [[Dependencies_6]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture]] - `contains` [EXTRACTED]
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
-- [[Role_31]] - `contains` [EXTRACTED]
+- [[Role_29]] - `contains` [EXTRACTED]
 - [[Rules_7]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

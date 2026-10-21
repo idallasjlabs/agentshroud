@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "Sprint Cadence Decision"
+community: "PermissionLevel (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_Decision
+  - community/PermissionLevel_3
 ---
 
 # Sprint Cadence Decision
@@ -19,4 +19,4 @@ tags:
 - [[What We Do Instead]] - `contains` [EXTRACTED]
 - [[When to Revisit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision
+#graphify/document #graphify/EXTRACTED #community/PermissionLevel_3

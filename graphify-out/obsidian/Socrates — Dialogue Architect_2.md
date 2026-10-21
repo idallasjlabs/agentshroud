@@ -1,21 +1,28 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect (7)"
-location: "L1"
+community: "run-standalone.sh (Hermes docker run launcher)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_7
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_62]] - `contains` [EXTRACTED]
-- [[Related Skills_47]] - `contains` [EXTRACTED]
-- [[Usage_51]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-socratesREADME]] - `contains` [EXTRACTED]
+- [[Dialogue Techniques]] - `contains` [EXTRACTED]
+- [[ElevenLabs v3 Audio Tags]] - `contains` [EXTRACTED]
+- [[Input Requirements_7]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - `contains` [EXTRACTED]
+- [[Output Format_18]] - `contains` [EXTRACTED]
+- [[Persona_5]] - `contains` [EXTRACTED]
+- [[Quality Checklist_5]] - `contains` [EXTRACTED]
+- [[Role_57]] - `contains` [EXTRACTED]
+- [[Speaker Definitions]] - `contains` [EXTRACTED]
+- [[System Prompt_5]] - `contains` [EXTRACTED]
+- [[User Prompt Template_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-socratesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_7
+#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

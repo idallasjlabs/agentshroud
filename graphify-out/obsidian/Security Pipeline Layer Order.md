@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "concept"
-community: "`SecurityPipeline`"
+community: "MiddlewareManager (2) (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/MiddlewareManager_2_2
 ---
 
 # Security Pipeline Layer Order
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Security Pipeline Flow]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_2_2

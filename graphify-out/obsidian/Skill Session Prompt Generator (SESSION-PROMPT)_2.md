@@ -1,22 +1,22 @@
 ---
 source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm (3)"
+community: "Security Verification Report (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm_3
+  - community/Security_Verification_Report_2
 ---
 
 # Skill: Session Prompt Generator (SESSION-PROMPT)
 
 ## Connections
 - [[Re-injection Command (for reference)_2]] - `contains` [EXTRACTED]
-- [[Role_89]] - `contains` [EXTRACTED]
-- [[Rules_24]] - `contains` [EXTRACTED]
+- [[Role_83]] - `contains` [EXTRACTED]
+- [[Rules_23]] - `contains` [EXTRACTED]
 - [[Trigger_3]] - `contains` [EXTRACTED]
 - [[Workflow Survey → Draft → Inject → Confirm_2]] - `contains` [EXTRACTED]
 - [[openclawskillsi-session-promptSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_3
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report_2

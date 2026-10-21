@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # TestConfigValidation
@@ -53,9 +53,9 @@ tags:
 - [[dot-test_switch_model_script_uses_current_target_syntax()]] - `method` [EXTRACTED]
 - [[dot-test_valid_forward_request()]] - `method` [EXTRACTED]
 - [[dot-test_valid_router_url_accepted()]] - `method` [EXTRACTED]
-- [[ForwardRequest]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[GatewayConfig validation behavior.]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

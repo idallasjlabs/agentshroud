@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Implementation Status"
+community: ".github/mcp.json"
 location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/github/mcpjson
 ---
 
 # Step 4: Test the Protection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/github/mcpjson

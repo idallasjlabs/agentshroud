@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "OpenClaw Host Hardening"
+community: "oracle — best use"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/oracle__best_use
 ---
 
 # Stable-named cron scheduling for periodic audits
@@ -15,4 +15,4 @@ tags:
 - [[healthcheckSKILL]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/concept #graphify/EXTRACTED #community/oracle__best_use

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
+source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "hermes/skills/i-kaizen/SKILL.md"
+community: "AgentTarget (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-kaizen/SKILLmd
+  - community/AgentTarget_2
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[hermesskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kaizen/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_2

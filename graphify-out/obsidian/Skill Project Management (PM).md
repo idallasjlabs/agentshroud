@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Crash Recovery"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Crash_Recovery
 ---
 
 # Skill: Project Management (PM)
@@ -17,8 +17,8 @@ tags:
 - [[Continuity Files]] - `contains` [EXTRACTED]
 - [[Project Roadmap]] - `contains` [EXTRACTED]
 - [[Risk Management]] - `contains` [EXTRACTED]
-- [[Role_51]] - `contains` [EXTRACTED]
+- [[Role_50]] - `contains` [EXTRACTED]
 - [[Status Reporting]] - `contains` [EXTRACTED]
 - [[Task Coordination]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "sync-cve-registry.py"
-location: "L641"
+community: "browser/scripts/browse.py"
+location: "L738"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/browser/scripts/browsepy
 ---
 
 # Serialize an under_review entry to Python source matching the file schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ghsa_entry_to_py()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy

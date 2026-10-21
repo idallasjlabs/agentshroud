@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "InjectionAction"
+community: "ProxyAction"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/ProxyAction
 ---
 
 # TestEncodedInjection
 
 ## Connections
 - [[dot-test_base64_clean_content_not_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()_1]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

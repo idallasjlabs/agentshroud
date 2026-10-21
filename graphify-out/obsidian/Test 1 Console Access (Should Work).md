@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "Skill: UX Expert (UX) (3)"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/Skill_UX_Expert_UX_3
 ---
 
 # Test 1: Console Access (Should Work)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🧪 Testing the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_3

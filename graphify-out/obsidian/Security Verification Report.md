@@ -1,26 +1,26 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Security Verification Report"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Security Verification Report
 
 ## Connections
-- [[Conclusion]] - `contains` [EXTRACTED]
-- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
+- [[Conclusion_2]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_3]] - `contains` [EXTRACTED]
 - [[Gitignore Protection (Multi-Layer)]] - `contains` [EXTRACTED]
 - [[SECURITY_VERIFICATION]] - `contains` [EXTRACTED]
 - [[Security Guarantees_4]] - `contains` [EXTRACTED]
-- [[Summary_12]] - `contains` [EXTRACTED]
+- [[Summary_19]] - `contains` [EXTRACTED]
 - [[Verification Tests]] - `contains` [EXTRACTED]
 - [[What Is Protected (Never Committed)]] - `contains` [EXTRACTED]
 - [[What Users Need to Do]] - `contains` [EXTRACTED]
 - [[What Was Committed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

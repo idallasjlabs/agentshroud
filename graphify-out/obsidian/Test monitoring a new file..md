@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MiddlewareManager (6)"
+community: "test_llm_proxy_failover.py"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/test_llm_proxy_failoverpy
 ---
 
 # Test monitoring a new file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_file_monitoring_new_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

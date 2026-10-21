@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_FakeUpstreamWS"
+community: "wakeword.c"
 location: "L625"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/wakewordc
 ---
 
 # TestCanvasLifespan
@@ -17,4 +17,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/wakewordc

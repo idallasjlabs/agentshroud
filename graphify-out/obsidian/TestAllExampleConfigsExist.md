@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (4)"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_4
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # TestAllExampleConfigsExist
 
 ## Connections
 - [[dot-test_file_exists()]] - `method` [EXTRACTED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[Verify all referenced example configs exist.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_4
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

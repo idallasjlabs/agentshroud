@@ -1,17 +1,17 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "KillSwitchMonitor (2) (4)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/KillSwitchMonitor_2_4
 ---
 
 # Software Dependencies
 
 ## Connections
-- [[Prerequisites_12]] - `contains` [EXTRACTED]
+- [[Prerequisites_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4

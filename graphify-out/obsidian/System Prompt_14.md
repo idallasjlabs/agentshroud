@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Oracle — Feedback Analyst (2)"
-location: "L73"
+community: "Threat Model"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst_2
+  - community/Threat_Model
 ---
 
 # System Prompt
 
 ## Connections
-- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_2
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

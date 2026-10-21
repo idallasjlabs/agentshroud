@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Route map (by router)"
-location: "L172"
+community: "Mode A — Single task (5)"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Mode_A__Single_task_5
 ---
 
 # Source of truth
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
+- [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_5

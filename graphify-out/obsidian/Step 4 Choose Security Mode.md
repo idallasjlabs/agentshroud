@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "EgressFilterConfig (3)"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/EgressFilterConfig_3
 ---
 
 # Step 4: Choose Security Mode
@@ -16,4 +16,4 @@ tags:
 - [[Sidecar Mode]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/EgressFilterConfig_3

@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "SkillGuard (2)"
+community: "ConfigIntegrityMonitor"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard_2
+  - community/ConfigIntegrityMonitor
 ---
 
 # SkillGuard
 
 ## Connections
-- [[dot-__init__()_111]] - `method` [EXTRACTED]
+- [[dot-__init__()_99]] - `method` [EXTRACTED]
 - [[dot-_line_at()]] - `method` [EXTRACTED]
 - [[dot-_scan_opaque_blobs()]] - `method` [EXTRACTED]
 - [[dot-scan_file()]] - `method` [EXTRACTED]
 - [[dot-scan_skill_tree()]] - `method` [EXTRACTED]
-- [[CompletedProcess_4]] - `uses` [INFERRED]
-- [[Path_28]] - `uses` [INFERRED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[CompletedProcess]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
+- [[Path_27]] - `uses` [INFERRED]
 - [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_1]] - `uses` [INFERRED]
 - [[ScanResult_2]] - `uses` [INFERRED]
+- [[ScanResult_1]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillsManifest]] - `shares_data_with` [EXTRACTED]
 - [[TestAggregation]] - `uses` [INFERRED]
@@ -34,7 +34,7 @@ tags:
 - [[TestObfuscation]] - `uses` [INFERRED]
 - [[TestOversizedUnscannable]] - `uses` [INFERRED]
 - [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestReloadIntegration]] - `uses` [INFERRED]
 - [[TestScanEntrypoint]] - `uses` [INFERRED]
 - [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
@@ -42,9 +42,9 @@ tags:
 - [[TestSyncScriptPreflight]] - `uses` [INFERRED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `imports` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 - [[scan.py]] - `imports` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard_2
+#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor

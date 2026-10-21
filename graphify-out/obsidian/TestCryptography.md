@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response()"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/_wrap_response
 ---
 
 # TestCryptography
 
 ## Connections
-- [[dot-store()]] - `method` [EXTRACTED]
+- [[dot-store()_2]] - `method` [EXTRACTED]
 - [[dot-test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
 - [[dot-test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
 - [[dot-test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
 - [[dot-test_encrypt_json()]] - `method` [EXTRACTED]
-- [[dot-test_key_rotation()]] - `method` [EXTRACTED]
+- [[dot-test_key_rotation()_1]] - `method` [EXTRACTED]
 - [[dot-test_key_vault_init()]] - `method` [EXTRACTED]
 - [[dot-test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_key_fails()]] - `method` [EXTRACTED]
+- [[dot-test_wrong_key_fails()_1]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -39,13 +39,13 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -54,7 +54,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test encryption, key management, and secret handling.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/_wrap_response

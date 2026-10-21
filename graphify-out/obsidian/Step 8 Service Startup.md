@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Step-by-Step Deployment"
+community: "Remediation (2)"
 location: "L307"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Remediation_2
 ---
 
 # Step 8: Service Startup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Remediation_2

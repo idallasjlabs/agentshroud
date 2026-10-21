@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "MCPPolicyEngine"
 location: "L137"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/MCPPolicyEngine
 ---
 
 # ServiceAction
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

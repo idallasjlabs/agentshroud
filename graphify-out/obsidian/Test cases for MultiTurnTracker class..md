@@ -12,6 +12,6 @@ tags:
 # Test cases for MultiTurnTracker class.
 
 ## Connections
-- [[TestMultiTurnTracker_1]] - `rationale_for` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

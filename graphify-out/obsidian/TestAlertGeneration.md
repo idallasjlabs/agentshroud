@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "_wrap_response() (3)"
 location: "L235"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/_wrap_response_3
 ---
 
 # TestAlertGeneration
@@ -22,4 +22,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/_wrap_response_3

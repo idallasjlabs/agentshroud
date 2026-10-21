@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "EgressFilterConfig"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - community/EgressFilterConfig
 ---
 
 # SecurityModuleConfig
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
 - [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[Security module configuration]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

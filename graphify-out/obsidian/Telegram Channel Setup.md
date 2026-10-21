@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Slack Channel Setup"
+community: "test_collaborator_greeter.py (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/test_collaborator_greeterpy_2
 ---
 
 # Telegram Channel Setup
 
 ## Connections
 - [[Collaborators_1]] - `contains` [EXTRACTED]
-- [[Prerequisites_4]] - `contains` [EXTRACTED]
+- [[Prerequisites_5]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Bot]] - `contains` [EXTRACTED]
 - [[Step 2 Write the Token to Secrets]] - `contains` [EXTRACTED]
 - [[Step 3 Find Your Telegram User ID]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Troubleshooting_21]] - `contains` [EXTRACTED]
 - [[setup-telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_2

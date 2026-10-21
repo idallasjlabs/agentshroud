@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-plan.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "test_scorecard_integrity.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/test_scorecard_integritypy
 ---
 
 # Test Plan
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 - [[test-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/test_scorecard_integritypy

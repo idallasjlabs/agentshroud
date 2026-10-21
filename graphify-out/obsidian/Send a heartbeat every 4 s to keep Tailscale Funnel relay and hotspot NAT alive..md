@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "test_voice_latency_guard.py"
+community: "ProgressiveLockdown"
 location: "L426"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/ProgressiveLockdown
 ---
 
 # Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_keepalive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

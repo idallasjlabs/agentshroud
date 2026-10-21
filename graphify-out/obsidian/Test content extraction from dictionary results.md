@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Test content extraction from dictionary results
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_extract_scannable_content_dict()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_extract_scannable_content_list()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

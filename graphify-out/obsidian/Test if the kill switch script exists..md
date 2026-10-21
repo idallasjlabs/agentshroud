@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "AgentTarget (3)"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/AgentTarget_3
 ---
 
 # Test if the kill switch script exists.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_test_script_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_3

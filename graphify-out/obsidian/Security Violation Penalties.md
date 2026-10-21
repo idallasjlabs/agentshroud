@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
+community: "RateLimitGuard"
 location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/RateLimitGuard
 ---
 
 # Security Violation Penalties
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trust Degradation Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/RateLimitGuard

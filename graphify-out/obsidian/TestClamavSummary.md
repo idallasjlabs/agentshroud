@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestOutboundInfoFilter (10)"
+community: "Mode B — Comprehensive review sweep (4)"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_10
+  - community/Mode_B__Comprehensive_review_sweep_4
 ---
 
 # TestClamavSummary
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_running_without_report()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_10
+#graphify/code #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "test_forward_stream.py (2)"
+community: "SCLClient"
 location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy_2
+  - community/SCLClient
 ---
 
 # Streaming variant of /forward for OpenAI-compat agents (Hermes).      Same inbou
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_content_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy_2
+#graphify/rationale #graphify/EXTRACTED #community/SCLClient

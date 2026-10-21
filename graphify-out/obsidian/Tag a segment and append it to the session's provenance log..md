@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L524"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # Tag a segment and append it to the session's provenance log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-record_segment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

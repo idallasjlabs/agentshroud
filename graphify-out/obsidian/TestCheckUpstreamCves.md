@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L268"
+community: "check_upstream_cves() (2)"
+location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/check_upstream_cves_2
 ---
 
 # TestCheckUpstreamCves
@@ -22,4 +22,4 @@ tags:
 - [[dot-test_uses_github_token_in_header()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves_2

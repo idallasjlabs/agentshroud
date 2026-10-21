@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw) (2)"
+community: "Skill: Security Review (SEC)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw_2
+  - community/Skill_Security_Review_SEC
 ---
 
 # Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

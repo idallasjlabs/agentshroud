@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-bdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "OpenClaw Workspace Usage Guide"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[dot-agentsskillsi-bddSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bddSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

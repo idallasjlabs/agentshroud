@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect (5)"
+community: "run"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_5
+  - community/run
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[dot-agentsskillsi-socratesREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-socratesSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_12]] - `contains` [EXTRACTED]
-- [[Related Skills_1]] - `contains` [EXTRACTED]
-- [[Usage_4]] - `contains` [EXTRACTED]
+- [[Purpose_35]] - `contains` [EXTRACTED]
+- [[Related Skills_21]] - `contains` [EXTRACTED]
+- [[Usage_24]] - `contains` [EXTRACTED]
+- [[hermesskillsi-socratesREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_5
+#graphify/document #graphify/EXTRACTED #community/run

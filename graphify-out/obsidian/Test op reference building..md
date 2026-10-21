@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "A2AMethod"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AMethod
 ---
 
 # Test op:// reference building.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_op_reference_builds_correctly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

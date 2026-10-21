@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-08-30-20260830-2010.md"
 type: "document"
-community: "check-vendor-compat.sh"
+community: "One Shroud Over Every Wire (founding mantra)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # Sunday Upgrade Report 2026-08-30 (local-llms upgrade requested)
@@ -15,4 +15,4 @@ tags:
 - [[Sunday Upgrade Report 2026-08-30 (final)]] - `conceptually_related_to` [EXTRACTED]
 - [[op-to-keychain.sh]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

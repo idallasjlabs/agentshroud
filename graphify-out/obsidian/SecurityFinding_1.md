@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "SecurityFinding"
+community: "Recommendations for Production Deployment"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityFinding
+  - community/Recommendations_for_Production_Deployment
 ---
 
 # SecurityFinding
@@ -19,7 +19,7 @@ tags:
 - [[7e. Base images (Dockerfiles) — inventoried, not re-verified against registry]] - `contains` [EXTRACTED]
 - [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - `contains` [EXTRACTED]
 - [[AgentShroud Weekly Upgrade Report — 2026-08-30]] - `contains` [EXTRACTED]
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 - [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)_1]] - `contains` [EXTRACTED]
 - [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)_1]] - `contains` [EXTRACTED]
 - [[GitHub-hosted findings_1]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - `contains` [EXTRACTED]
 - [[Wazuh  SOC_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityFinding
+#graphify/document #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "Stale Cron Session Claim Cleanup"
+community: "script.md (Vulcan-approved dialogue input)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Stale_Cron_Session_Claim_Cleanup
+  - community/scriptmd_Vulcan-approved_dialogue_input
 ---
 
 # Stale Cron Session Claim Cleanup
 
-#graphify/rationale #graphify/EXTRACTED #community/Stale_Cron_Session_Claim_Cleanup
+#graphify/rationale #graphify/EXTRACTED #community/scriptmd_Vulcan-approved_dialogue_input

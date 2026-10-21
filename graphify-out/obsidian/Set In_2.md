@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "AgentRegistry (2)"
-location: "L36"
+community: "DelegationManager (2)"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry_2
+  - community/DelegationManager_2
 ---
 
 # Set In
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry_2
+#graphify/document #graphify/EXTRACTED #community/DelegationManager_2

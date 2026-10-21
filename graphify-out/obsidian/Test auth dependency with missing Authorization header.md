@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "lifespan() (2)"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/lifespan_2
 ---
 
 # Test auth dependency with missing Authorization header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_auth_dependency_missing_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/lifespan_2

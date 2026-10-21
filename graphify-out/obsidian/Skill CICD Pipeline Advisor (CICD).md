@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD) (2)"
+community: "1. Accomplishments This Phase (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+  - community/1_Accomplishments_This_Phase_2
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
@@ -16,8 +16,8 @@ tags:
 - [[GitHub Actions Best Practices]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)]] - `contains` [EXTRACTED]
-- [[Role_14]] - `contains` [EXTRACTED]
+- [[Role_10]] - `contains` [EXTRACTED]
 - [[openclawskillsi-cicdSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "TelegramAPIProxy (2)"
 location: "L377"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/TelegramAPIProxy_2
 ---
 
 # TestAuth
@@ -43,13 +43,13 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -58,7 +58,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test authentication and authorization enforcement.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2
