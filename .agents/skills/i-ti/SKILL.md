@@ -1,4 +1,5 @@
 ---
+name: i-ti
 description: "Produce accurate Mermaid diagrams from code with brand theme applied; validates diagram accuracy against source before exporting SVG. Use when documenting data flows, system architecture, or sequence diagrams for PRs, runbooks, or Confluence pages."
 ---
 

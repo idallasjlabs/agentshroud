@@ -1,0 +1,66 @@
+#!/bin/sh
+# Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
+# wazuh-watchdog — s6 service that restarts the manager's daemons when they die.
+#
+# The upstream wazuh/wazuh-manager image starts its daemons exactly once, from
+# cont-init (`wazuh-control start` at the end of /etc/cont-init.d/2-manager).
+# s6 supervises only filebeat and the ossec.log tail, so a daemon that dies, or
+# a start that is cut off, stays dead for good. On 2026-10-21 a Colima VM bounce
+# left dev's manager with no Wazuh daemon for hours, ossec.log stopped mid-start,
+# and Docker never restarts a container that is merely unhealthy.
+#
+# Mounted read-only at /etc/services.d/wazuh-watchdog by docker-compose.yml.
+# REQUIRED must stay in step with the wazuh-manager healthcheck there
+# (gateway/tests/test_wazuh_watchdog.py enforces it).
+
+CTL="${WAZUH_CONTROL:-/var/ossec/bin/wazuh-control}"
+INTERVAL="${WAZUH_WATCHDOG_INTERVAL:-30}"
+GRACE="${WAZUH_WATCHDOG_GRACE:-2}"        # consecutive misses before acting
+MAX_LOOPS="${WAZUH_WATCHDOG_MAX_LOOPS:-0}" # 0 = forever; tests bound it
+REQUIRED="wazuh-remoted wazuh-authd wazuh-analysisd wazuh-db"
+
+log() { echo "wazuh-watchdog: $*" >&2; }
+
+# Prints the required daemons that are not running; empty when all are up.
+missing() {
+    status=$("$CTL" status 2>&1)
+    down=""
+    for d in $REQUIRED; do
+        echo "$status" | grep -q "$d is running" || down="$down $d"
+    done
+    echo "${down# }"
+}
+
+restart() {
+    # Bounded: a hung restart must not wedge the watchdog itself.
+    if command -v timeout >/dev/null 2>&1; then
+        timeout 300 "$CTL" restart >&2 2>&1
+    else
+        "$CTL" restart >&2 2>&1
+    fi
+}
+
+misses=0
+loops=0
+while [ "$MAX_LOOPS" -eq 0 ] || [ "$loops" -lt "$MAX_LOOPS" ]; do
+    loops=$((loops + 1))
+    sleep "$INTERVAL"
+    down=$(missing)
+    if [ -z "$down" ]; then
+        misses=0
+        continue
+    fi
+    misses=$((misses + 1))
+    log "not running: $down ($misses/$GRACE)"
+    [ "$misses" -lt "$GRACE" ] && continue
+
+    log "restarting Wazuh (wazuh-control restart)"
+    restart
+    misses=0
+    still=$(missing)
+    if [ -z "$still" ]; then
+        log "restored: all required daemons running"
+    else
+        log "restart did not recover; still not running: $still"
+    fi
+done

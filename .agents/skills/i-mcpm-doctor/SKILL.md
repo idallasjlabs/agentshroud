@@ -1,4 +1,5 @@
 ---
+name: i-mcpm-doctor
 description: "Diagnose MCP server connectivity and configuration issues with automated checks and fixes"
 ---
 
@@ -148,7 +149,7 @@ uvx --version
    - AWS: `aws sts get-caller-identity`
 
 4. **Check Logs**
-   - Codex MCP logs: `~/.Codex/logs/`
+   - Claude Code MCP logs: `~/.claude/logs/`
    - Docker logs: `docker logs <container-id>`
 
 ## Output Format

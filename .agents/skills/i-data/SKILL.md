@@ -1,4 +1,5 @@
 ---
+name: i-data
 description: "Validate data pipeline correctness: Athena partition filters, schema consistency, Parquet field contracts, S3 path correctness, and Glue job cost guards. Use when writing or modifying data extraction, transformation, or Athena query logic. Prevents full-table scans, schema drift, and silent data loss."
 ---
 

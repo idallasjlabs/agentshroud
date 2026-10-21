@@ -1,4 +1,5 @@
 ---
+name: i-ab
 description: "Audit a merge commit for silently-discarded changes — the GSDL-715/720 failure mode where conflict resolution keeps stale branch content and reverts already-landed fixes. Use after git merge origin/main to triage raw flags into confirmed regressions, false positives, and self-healed findings before anything reaches git history. Standalone audit tool; /i-crpr orchestrates this automatically as part of PR creation."
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: i-pr
 description: "Generate production-ready PR descriptions with safety assessment, affected systems checklist, testing evidence, and rollback plan. Use when writing a PR body — called automatically by /i-crpr but can be invoked standalone for PRs that do not need a merge regression audit."
 ---
 

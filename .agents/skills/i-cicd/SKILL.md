@@ -1,4 +1,5 @@
 ---
+name: i-cicd
 description: "Design and validate end-to-end CI/CD pipelines with quality gates for Python, AWS, and production-safe deployments. Use when setting up a new pipeline or auditing an existing one for missing safety checks. Covers build, test, security scan, deploy, and rollback stages."
 ---
 

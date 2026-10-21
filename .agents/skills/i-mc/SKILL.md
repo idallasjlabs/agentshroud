@@ -1,4 +1,5 @@
 ---
+name: i-mc
 description: "Master development lifecycle checklist covering every phase from planning through post-deployment verification. Use as a sanity check before declaring any feature done — catches skipped steps across PCA, TDD, code review, security, and deployment gates."
 ---
 
