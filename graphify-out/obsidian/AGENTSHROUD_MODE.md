@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "egress_filter.py"
+community: "DelegationManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/egress_filterpy
+  - community/DelegationManager
 ---
 
 # AGENTSHROUD_MODE.md
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 - [[OPENCLAW_SANDBOX_MODE]] - `semantically_similar_to` [INFERRED]
-- [[agentshroud.yaml_1]] - `references` [EXTRACTED]
+- [[agentshroud.yaml]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [INFERRED]
 - [[mcp_config.py]] - `references` [INFERRED]
-- [[prompt_guard.py]] - `references` [INFERRED]
+- [[prompt_guard.py_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/egress_filterpy
+#graphify/document #graphify/INFERRED #community/DelegationManager

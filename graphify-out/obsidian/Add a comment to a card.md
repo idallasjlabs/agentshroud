@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Usage"
+community: "TestFabricatedSecurityNotice (2) (2)"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/TestFabricatedSecurityNotice_2_2
 ---
 
 # Add a comment to a card
 
 ## Connections
-- [[Usage_119]] - `contains` [EXTRACTED]
+- [[Usage_95]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2

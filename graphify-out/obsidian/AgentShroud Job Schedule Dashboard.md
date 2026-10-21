@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "test_prompt_guard.py (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/test_prompt_guardpy_2
 ---
 
 # AgentShroud Job Schedule Dashboard
@@ -16,4 +16,4 @@ tags:
 - [[Prefers-Color-Scheme Token Palette]] - `implements` [EXTRACTED]
 - [[Responsive Table-to-Card Collapse Pattern]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/test_prompt_guardpy_2

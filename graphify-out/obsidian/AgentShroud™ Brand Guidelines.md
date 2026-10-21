@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "test_hermes_model_resolver.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/test_hermes_model_resolverpy
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -24,12 +24,12 @@ tags:
 - [[Color Usage]] - `contains` [EXTRACTED]
 - [[Colors]] - `contains` [EXTRACTED]
 - [[Communication Templates]] - `contains` [EXTRACTED]
-- [[Contact]] - `contains` [EXTRACTED]
+- [[Contact_1]] - `contains` [EXTRACTED]
 - [[Directory Structure]] - `contains` [EXTRACTED]
 - [[File Formats]] - `contains` [EXTRACTED]
 - [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
-- [[License_1]] - `contains` [EXTRACTED]
+- [[License]] - `contains` [EXTRACTED]
 - [[Logo Usage]] - `contains` [EXTRACTED]
 - [[Logo Usage_3]] - `contains` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
@@ -39,9 +39,9 @@ tags:
 - [[Trademark_2]] - `contains` [EXTRACTED]
 - [[Typography]] - `contains` [EXTRACTED]
 - [[Typography in Practice]] - `contains` [EXTRACTED]
-- [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 - [[Voice & Tone_2]] - `contains` [EXTRACTED]
 - [[brand-guidelines]] - `contains` [EXTRACTED]
 - [[brandingREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy

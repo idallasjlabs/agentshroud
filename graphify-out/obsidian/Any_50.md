@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L149"
+community: "generate_branding_assets.py"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AppleContainerEngine
+  - graphify/EXTRACTED
+  - community/generate_branding_assetspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

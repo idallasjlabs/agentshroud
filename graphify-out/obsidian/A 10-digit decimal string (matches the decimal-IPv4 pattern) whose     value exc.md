@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_callback_url_out_of_range_decimal_literal_is_not_treated_as_a_valid_ip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

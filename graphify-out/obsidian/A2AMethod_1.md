@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L106"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_a2a_policypy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # A2AMethod
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyDecision]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[test_high_risk_methods_require_approval()]] - `references` [EXTRACTED]
 - [[test_low_risk_methods_are_allowed()]] - `references` [EXTRACTED]
 - [[test_medium_risk_methods_are_allowed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_a2a_policypy
+#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd

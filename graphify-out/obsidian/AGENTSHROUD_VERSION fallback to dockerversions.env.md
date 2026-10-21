@@ -1,14 +1,14 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "AGENTSHROUD_VERSION fallback to docker/versions.env"
+community: "Prune old nodes for changed files before AST re-insert (#1178)"
 location: "docker/bots/hermes/run-standalone.sh:53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_VERSION_fallback_to_docker/versionsenv
+  - community/Prune_old_nodes_for_changed_files_before_AST_re-insert_1178
 ---
 
 # AGENTSHROUD_VERSION fallback to docker/versions.env
 
-#graphify/rationale #graphify/EXTRACTED #community/AGENTSHROUD_VERSION_fallback_to_docker/versionsenv
+#graphify/rationale #graphify/EXTRACTED #community/Prune_old_nodes_for_changed_files_before_AST_re-insert_1178

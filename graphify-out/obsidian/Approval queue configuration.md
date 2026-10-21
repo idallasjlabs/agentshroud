@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "MCPPermissionManager"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/MCPPermissionManager
 ---
 
 # Approval queue configuration
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

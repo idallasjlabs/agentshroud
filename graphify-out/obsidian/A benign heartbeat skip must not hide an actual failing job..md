@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soak_status.py"
 type: "rationale"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # A benign heartbeat skip must not hide an actual failing job.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_empty_heartbeat_file_skip_does_not_mask_a_real_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestClassify
+#graphify/rationale #graphify/EXTRACTED #community/_FakeUpstreamWS

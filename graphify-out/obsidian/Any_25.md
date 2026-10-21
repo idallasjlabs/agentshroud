@@ -1,21 +1,29 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "SCLClient"
-location: "L23"
+community: "CrossBotTrustLedger"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SCLClient
+  - graphify/INFERRED
+  - community/CrossBotTrustLedger
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()_1]] - `references` [EXTRACTED]
-- [[dot-get()_1]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_9]] - `references` [EXTRACTED]
+- [[dot-send_request()_1]] - `references` [EXTRACTED]
+- [[dot-send_request()_2]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-08-30.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
+community: "Phase 1 — Raw Collection (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
+  - community/Phase_1__Raw_Collection_3
 ---
 
 # AgentShroud Weekly Upgrade Report — 2026-08-30
@@ -24,4 +24,4 @@ tags:
 - [[Run history_1]] - `contains` [EXTRACTED]
 - [[upgrade-2026-08-30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3

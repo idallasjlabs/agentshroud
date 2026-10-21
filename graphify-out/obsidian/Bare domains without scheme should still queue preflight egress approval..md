@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ApprovalQueueConfig (2)"
 location: "L5883"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2
 ---
 
 # Bare domains without scheme should still queue preflight egress approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_owner_bare_domain_triggers_egress_preflight_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "ADR-008-progressive-trust-levels.md"
+community: "branding/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-008-progressive-trust-levelsmd
+  - community/branding/READMEmd
 ---
 
 # ADR-008-progressive-trust-levels.md
@@ -17,4 +17,4 @@ tags:
 - [[Decision_10]] - `contains` [EXTRACTED]
 - [[Status_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd
+#graphify/document #graphify/EXTRACTED #community/branding/READMEmd

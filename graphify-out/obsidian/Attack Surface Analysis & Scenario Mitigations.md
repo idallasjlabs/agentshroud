@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY-AUDIT.md"
 type: "rationale"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "AgentRegistry (2)"
 location: "L138-L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/AgentRegistry_2
 ---
 
 # Attack Surface Analysis & Scenario Mitigations
@@ -15,4 +15,4 @@ tags:
 - [[Self-Assessed 1010 Maximum Security Score]] - `references` [EXTRACTED]
 - [[Threat Model & Attack Surface (post-RCE blast radius)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry_2

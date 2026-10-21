@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L18530"
+community: "AlertDispatcher (4)"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/AlertDispatcher_4
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4

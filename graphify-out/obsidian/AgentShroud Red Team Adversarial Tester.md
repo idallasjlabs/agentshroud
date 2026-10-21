@@ -1,24 +1,23 @@
 ---
-source_file: ".agents/skills/i-sec-offense/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "Test-Driven Development README"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/Test-Driven_Development_README
 ---
 
 # AgentShroud Red Team Adversarial Tester
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sec-offenseSKILL]] - `contains` [EXTRACTED]
 - [[Adversary Model]] - `contains` [EXTRACTED]
 - [[Attack Phases]] - `contains` [EXTRACTED]
-- [[Critical Rules_4]] - `contains` [EXTRACTED]
+- [[Critical Rules_2]] - `contains` [EXTRACTED]
 - [[Infrastructure]] - `contains` [EXTRACTED]
-- [[Output_3]] - `contains` [EXTRACTED]
+- [[Output_2]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
+- [[agentshroud-redteamSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

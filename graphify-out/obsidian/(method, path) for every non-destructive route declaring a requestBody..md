@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "rationale"
-community: "test_api_contract_fuzz.py"
+community: "gitleaks.toml"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/gitleakstoml
 ---
 
 # (method, path) for every non-destructive route declaring a requestBody.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fuzzable_endpoints()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/rationale #graphify/EXTRACTED #community/gitleakstoml

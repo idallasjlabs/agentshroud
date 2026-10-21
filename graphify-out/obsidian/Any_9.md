@@ -1,23 +1,23 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ServiceManager"
-location: "L25"
+community: "MiddlewareManager (2)"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ServiceManager
+  - graphify/INFERRED
+  - community/MiddlewareManager_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_42]] - `references` [EXTRACTED]
-- [[dot-_describe_service()]] - `references` [EXTRACTED]
-- [[dot-_get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "UserSessionManager (2)"
 location: "L83"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2APolicyEngine
+  - community/UserSessionManager_2
 ---
 
 # A2AProxyResult
@@ -17,7 +17,7 @@ tags:
 - [[dot-process_inbound_request()]] - `references` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[Result of proxying a single inbound A2A request.]] - `rationale_for` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_proxy_result_defaults_are_safe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/INFERRED #community/UserSessionManager_2

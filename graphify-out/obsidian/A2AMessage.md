@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # A2AMessage
@@ -20,8 +20,8 @@ tags:
 - [[dot-_process()]] - `references` [EXTRACTED]
 - [[dot-_sanitize_message()]] - `references` [EXTRACTED]
 - [[dot-fingerprint()]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_7]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_5]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
 - [[dot-test_fingerprint_deterministic()]] - `calls` [EXTRACTED]
 - [[dot-test_fingerprint_differs_for_different_payloads()]] - `calls` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `shares_data_with` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/apipy

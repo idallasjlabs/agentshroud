@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "AgentShroud Setup Guide"
+community: "LOW — Informational"
 location: "L965"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/LOW__Informational
 ---
 
 # Audit Trail Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

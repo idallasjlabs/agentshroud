@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "MiddlewareManager (4)"
+community: "KillSwitchMonitor"
 location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/KillSwitchMonitor
 ---
 
 # Agent can write to its own workspace directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_workspace_write_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

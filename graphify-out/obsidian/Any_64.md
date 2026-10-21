@@ -1,25 +1,25 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
-location: "L141"
+community: "ApprovalQueueConfig (3)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_4
+  - community/ApprovalQueueConfig_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
-- [[dot-submit_tool_request()_3]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

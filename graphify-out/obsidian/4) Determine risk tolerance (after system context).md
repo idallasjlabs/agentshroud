@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Workflow (follow in order)"
+community: "_llm_init_emit_merge_json()"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_follow_in_order
+  - community/_llm_init_emit_merge_json
 ---
 
 # 4) Determine risk tolerance (after system context)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_follow_in_order
+#graphify/document #graphify/EXTRACTED #community/_llm_init_emit_merge_json

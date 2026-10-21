@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "_t (3)"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/_t_3
 ---
 
 # Authentication Issues
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
-- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/_t_3

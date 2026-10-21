@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "rationale"
-community: "AgentTarget (5)"
+community: "_w"
 location: "docker/scripts/colima-health-check.sh:201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/_w
 ---
 
 # Auto-start a stopped Colima VM (step 1a)
@@ -17,4 +17,4 @@ tags:
 - [[hc_run()]] - `references` [EXTRACTED]
 - [[resolve_docker_host()]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/rationale #graphify/EXTRACTED #community/_w

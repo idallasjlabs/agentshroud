@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L66"
+community: "Production Safety Checklist (SKILL)"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_17]] - `references` [EXTRACTED]
+- [[dot-to_dict()_10]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

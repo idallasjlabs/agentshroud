@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "BDD Skill (Gherkin Given/When/Then specs)"
+community: "Native CLAUDE.md Integration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BDD_Skill_Gherkin_Given/When/Then_specs
+  - community/Native_CLAUDEmd_Integration
 ---
 
 # BDD Skill (Gherkin Given/When/Then specs)
 
-#graphify/document #graphify/EXTRACTED #community/BDD_Skill_Gherkin_Given/When/Then_specs
+#graphify/document #graphify/EXTRACTED #community/Native_CLAUDEmd_Integration

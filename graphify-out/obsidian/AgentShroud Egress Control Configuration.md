@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "document"
-community: "Default Monitor-Mode Egress Rationale"
+community: "dashboard_endpoints.py (4)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Default_Monitor-Mode_Egress_Rationale
+  - community/dashboard_endpointspy_4
 ---
 
 # AgentShroud Egress Control Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Default Monitor-Mode Egress Rationale]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Default_Monitor-Mode_Egress_Rationale
+#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_4

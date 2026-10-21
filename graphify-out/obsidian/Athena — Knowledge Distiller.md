@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-athena/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller (5)"
+community: "active"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_5
+  - community/active
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[dot-agentsskillsi-athenaREADME]] - `contains` [EXTRACTED]
-- [[Purpose_15]] - `contains` [EXTRACTED]
-- [[Related Skills_2]] - `contains` [EXTRACTED]
-- [[Usage_6]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
+- [[Related Skills_24]] - `contains` [EXTRACTED]
+- [[Usage_27]] - `contains` [EXTRACTED]
+- [[openclawskillsi-athenaREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_5
+#graphify/document #graphify/EXTRACTED #community/active

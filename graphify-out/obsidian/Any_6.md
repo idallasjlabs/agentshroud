@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "PermissionLevel"
-location: "L98"
+community: "is_rate_limited_post_retry"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/is_rate_limited_post_retry
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/is_rate_limited_post_retry

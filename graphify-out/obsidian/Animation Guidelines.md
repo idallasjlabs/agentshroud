@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Animation Guidelines"
+community: "test_telegram_executor.py"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/test_telegram_executorpy
 ---
 
 # Animation Guidelines
@@ -21,4 +21,4 @@ tags:
 - [[Status & Feedback Animations]] - `contains` [EXTRACTED]
 - [[Timing & Easing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/document #graphify/EXTRACTED #community/test_telegram_executorpy

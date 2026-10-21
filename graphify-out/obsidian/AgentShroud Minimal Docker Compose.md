@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.minimal.yml"
 type: "document"
-community: "Error Index.md"
+community: "ApprovalQueueConfig (7)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Error_Indexmd
+  - community/ApprovalQueueConfig_7
 ---
 
 # AgentShroud Minimal Docker Compose
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Error_Indexmd
+#graphify/document #graphify/INFERRED #community/ApprovalQueueConfig_7

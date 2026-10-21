@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
-location: "L479"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # Adding a future agent
 
 ## Connections
-- [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
+- [[Usage_70]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

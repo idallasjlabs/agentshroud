@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "AsyncMock"
+community: "api.py (2)"
 location: "L8630"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AsyncMock
+  - community/apipy_2
 ---
 
 # AsyncMock
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-__call__()]] - `method` [EXTRACTED]
 - [[dot-__init__()_7]] - `method` [EXTRACTED]
-- [[dot-__init__()_181]] - `calls` [INFERRED]
+- [[dot-__init__()_108]] - `calls` [INFERRED]
 - [[dot-_handler()]] - `calls` [INFERRED]
 - [[dot-_mock_request()]] - `calls` [INFERRED]
-- [[dot-_passthrough_pii()_1]] - `calls` [INFERRED]
 - [[dot-_passthrough_pii()]] - `calls` [INFERRED]
+- [[dot-_passthrough_pii()_1]] - `calls` [INFERRED]
 - [[dot-_pipeline_with_trust()]] - `calls` [INFERRED]
 - [[dot-_redacting_pii()]] - `calls` [INFERRED]
 - [[dot-mock_auth()]] - `calls` [INFERRED]
@@ -165,9 +165,9 @@ tags:
 - [[_make_client()]] - `calls` [INFERRED]
 - [[_make_integrity_pipeline()]] - `calls` [INFERRED]
 - [[_make_mock_app_state()]] - `calls` [INFERRED]
-- [[_make_pipeline()_1]] - `calls` [INFERRED]
-- [[_make_pipeline()_3]] - `calls` [INFERRED]
 - [[_make_pipeline()_2]] - `calls` [INFERRED]
+- [[_make_pipeline()_4]] - `calls` [INFERRED]
+- [[_make_pipeline()_3]] - `calls` [INFERRED]
 - [[_make_signer_pipeline()]] - `calls` [INFERRED]
 - [[_make_stream_app_state()]] - `calls` [INFERRED]
 - [[_make_trust_app_state()]] - `calls` [INFERRED]
@@ -222,4 +222,4 @@ tags:
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
 - [[test_ws_stop_during_speaking_aborts_tts()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AsyncMock
+#graphify/code #graphify/INFERRED #community/apipy_2

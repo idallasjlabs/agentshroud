@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_owner_bypass_defaults_false_and_does_not_bypass_a2a_high_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

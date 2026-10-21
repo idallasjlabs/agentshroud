@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "AgentShroud Security Value Proposition - Revised"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # AgentShroud Security Value Proposition - Revised
@@ -25,4 +25,4 @@ tags:
 - [[Ultra-conservative credential policy (multi-user threat model)]] - `references` [EXTRACTED]
 - [[What's Actually Over-Engineered (Revised Answer)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

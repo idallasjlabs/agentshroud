@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "TrustManager"
+community: ".cursor/mcp.json"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/cursor/mcpjson
 ---
 
 # Approval Queue (gateway diagram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Approval Queue (SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/TrustManager
+#graphify/image #graphify/EXTRACTED #community/cursor/mcpjson

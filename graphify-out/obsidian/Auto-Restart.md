@@ -1,12 +1,12 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Crash Recovery"
-location: "L28"
+community: "Mode A — Single task (3)"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Mode_A__Single_task_3
 ---
 
 # Auto-Restart
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Crash Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

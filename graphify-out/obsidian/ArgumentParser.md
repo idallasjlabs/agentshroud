@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "TestParserAndCommandResolution"
+community: "PermissionLevel (6)"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParserAndCommandResolution
+  - community/PermissionLevel_6
 ---
 
 # ArgumentParser
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParserAndCommandResolution
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel_6

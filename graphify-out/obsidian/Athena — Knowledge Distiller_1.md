@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md (2)"
-location: "L1"
+community: "GSDE&G Development Master Checklist (2)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_2
+  - community/GSDEG_Development_Master_Checklist_2
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Purpose_27]] - `contains` [EXTRACTED]
-- [[Related Skills_12]] - `contains` [EXTRACTED]
-- [[Usage_16]] - `contains` [EXTRACTED]
-- [[hermesskillsi-athenaREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Input Requirements_14]] - `contains` [EXTRACTED]
+- [[Output Format_29]] - `contains` [EXTRACTED]
+- [[Persona_10]] - `contains` [EXTRACTED]
+- [[Role_86]] - `contains` [EXTRACTED]
+- [[hermesskillsi-athenaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_2
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2

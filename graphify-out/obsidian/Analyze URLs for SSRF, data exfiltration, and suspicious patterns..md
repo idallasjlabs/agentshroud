@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # Analyze URLs for SSRF, data exfiltration, and suspicious patterns.
 
 ## Connections
-- [[URLAnalyzer]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/report-template.html"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "AgentTarget (5)"
 location: "L1-L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/AgentTarget_5
 ---
 
 # AgentShroud Branded HTML Report Template
@@ -21,4 +21,4 @@ tags:
 - [[Report Template Placeholder Contract ({{REPORT_TITLE}}{{REPORT_TYPE}}{{REPORT_DATE}}{{REPORT_CONTENT}})]] - `implements` [EXTRACTED]
 - [[Stdin-Pipe File Deployment Pattern (never docker cp)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_5

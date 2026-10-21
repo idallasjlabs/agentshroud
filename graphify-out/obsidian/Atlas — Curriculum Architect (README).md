@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect (SKILL)"
+community: "Skill: Data Validation (DATA-VAL) (3)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Atlas__Curriculum_Architect_SKILL
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Atlas — Curriculum Architect (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Atlas__Curriculum_Architect_SKILL
+#graphify/document #graphify/INFERRED #community/Skill_Data_Validation_DATA-VAL_3

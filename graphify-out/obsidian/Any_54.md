@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "UserSessionManager (4)"
-location: "L369"
+community: "EgressFilterConfig (4)"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/EgressFilterConfig_4
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

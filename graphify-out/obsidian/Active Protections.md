@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "AgentShroud Incident Response Plan"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Active Protections
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔐 Security Features]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

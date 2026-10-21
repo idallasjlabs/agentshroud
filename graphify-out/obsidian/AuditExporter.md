@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditExporter"
+community: "The 8D Investigation Process"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/The_8D_Investigation_Process
 ---
 
 # AuditExporter
 
 ## Connections
-- [[dot-__init__()_204]] - `method` [EXTRACTED]
+- [[dot-__init__()_69]] - `method` [EXTRACTED]
 - [[dot-_export_cef()]] - `method` [EXTRACTED]
 - [[dot-_export_json()]] - `method` [EXTRACTED]
 - [[dot-_export_jsonld()]] - `method` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[dot-test_tamper_detection()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_export_integrity()]] - `calls` [EXTRACTED]
 - [[dot-verify_export_integrity()]] - `method` [EXTRACTED]
-- [[AuditEvent_1]] - `uses` [INFERRED]
-- [[AuditStore]] - `uses` [INFERRED]
+- [[AuditEvent]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `uses` [INFERRED]
 - [[Exports audit events in various compliance formats.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[audit_export.py]] - `contains` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process

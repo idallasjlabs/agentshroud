@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "main"
+community: "AgentShroud Blue Team Security Auditor (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/AgentShroud_Blue_Team_Security_Auditor_2
 ---
 
 # AgentShroud CLAUDE.md operating rules
@@ -15,4 +15,4 @@ tags:
 - [[Prove the Outcome, Never the Steps]] - `references` [EXTRACTED]
 - [[Weekly Upgrades EVERYTHING Means Everything]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2

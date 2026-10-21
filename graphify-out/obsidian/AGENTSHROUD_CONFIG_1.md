@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "egress_filter.py"
+community: "DelegationManager (2)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/DelegationManager_2
 ---
 
 # AGENTSHROUD_CONFIG
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG]] - `contains` [EXTRACTED]
 - [[Default Search Order (when NOT set)]] - `contains` [EXTRACTED]
-- [[Description_9]] - `contains` [EXTRACTED]
-- [[Related Notes_65]] - `contains` [EXTRACTED]
-- [[Usage_129]] - `contains` [EXTRACTED]
+- [[Description_2]] - `contains` [EXTRACTED]
+- [[Related Notes_27]] - `contains` [EXTRACTED]
+- [[Usage_62]] - `contains` [EXTRACTED]
 - [[When to Set]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/DelegationManager_2

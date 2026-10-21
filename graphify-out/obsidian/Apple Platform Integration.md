@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Apple Platform Integration"
+community: "AgentShroud Sequence Diagrams (doc)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Platform_Integration
+  - community/AgentShroud_Sequence_Diagrams_doc
 ---
 
 # Apple Platform Integration
@@ -18,4 +18,4 @@ tags:
 - [[Implementation Notes]] - `contains` [EXTRACTED]
 - [[Push Notifications (iPhone + Mac + Apple Watch)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Platform_Integration
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc

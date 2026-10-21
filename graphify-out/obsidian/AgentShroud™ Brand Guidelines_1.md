@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
+community: "test_hermes_model_resolver.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/test_hermes_model_resolverpy
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -25,21 +25,21 @@ tags:
 - [[File Formats]] - `contains` [EXTRACTED]
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
 - [[Key Messaging]] - `contains` [EXTRACTED]
+- [[License]] - `contains` [EXTRACTED]
 - [[License_1]] - `contains` [EXTRACTED]
-- [[License_2]] - `contains` [EXTRACTED]
 - [[Logo Usage_2]] - `contains` [EXTRACTED]
 - [[Logo Usage]] - `references` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
 - [[Need Help]] - `contains` [EXTRACTED]
 - [[Social Handles]] - `contains` [EXTRACTED]
 - [[Social Handles_1]] - `contains` [EXTRACTED]
-- [[Trademark]] - `contains` [EXTRACTED]
+- [[Trademark_1]] - `contains` [EXTRACTED]
 - [[Trademark_2]] - `references` [EXTRACTED]
 - [[Typography]] - `contains` [EXTRACTED]
-- [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 - [[Voice & Tone_3]] - `contains` [EXTRACTED]
 - [[Voice & Tone_2]] - `references` [EXTRACTED]
 - [[brandingREADME]] - `contains` [EXTRACTED]
 - [[workspaceBRAND]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy

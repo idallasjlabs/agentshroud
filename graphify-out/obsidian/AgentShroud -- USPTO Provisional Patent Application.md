@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Application"
+community: "test_telegram_proxy_inbound.py (3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
+  - community/test_telegram_proxy_inboundpy_3
 ---
 
 # AgentShroud -- USPTO Provisional Patent Application
@@ -21,4 +21,4 @@ tags:
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application
+#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_3

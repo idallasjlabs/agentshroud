@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/linkedin-banner-1584x396.png"
 type: "image"
-community: "AgentShroud LinkedIn Banner"
+community: "DNSQuery (data entity)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_LinkedIn_Banner
+  - community/DNSQuery_data_entity
 ---
 
 # AgentShroud LinkedIn Banner
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_LinkedIn_Banner
+#graphify/image #graphify/EXTRACTED #community/DNSQuery_data_entity

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "concept"
-community: "--cluster-only Flow"
+community: "SCHEMA_VERSION entity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/--cluster-only_Flow
+  - community/SCHEMA_VERSION_entity
 ---
 
 # --cluster-only Flow
 
-#graphify/concept #graphify/EXTRACTED #community/--cluster-only_Flow
+#graphify/concept #graphify/EXTRACTED #community/SCHEMA_VERSION_entity

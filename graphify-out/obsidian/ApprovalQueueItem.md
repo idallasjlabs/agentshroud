@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "TestSSRFDetection (4)"
-location: "L63"
+community: "UserSessionManager (4)"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_4
+  - community/UserSessionManager_4
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[dot-load_all()]] - `references` [EXTRACTED]
-- [[dot-load_pending()]] - `references` [EXTRACTED]
-- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[dot-decide()]] - `references` [EXTRACTED]
+- [[dot-get_item()_1]] - `references` [EXTRACTED]
+- [[dot-get_pending()]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection_4
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4

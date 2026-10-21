@@ -1,48 +1,48 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig
 ---
 
 # AuditChain
 
 ## Connections
-- [[dot-__init__()_143]] - `calls` [EXTRACTED]
-- [[dot-__init__()_53]] - `method` [EXTRACTED]
-- [[dot-__len__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_20]] - `calls` [EXTRACTED]
+- [[dot-__init__()_159]] - `method` [EXTRACTED]
+- [[dot-__len__()]] - `method` [EXTRACTED]
 - [[dot-append()]] - `method` [EXTRACTED]
 - [[dot-append_block()]] - `method` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `method` [EXTRACTED]
-- [[dot-entries()_1]] - `method` [EXTRACTED]
-- [[dot-last_hash()_1]] - `method` [EXTRACTED]
+- [[dot-entries()]] - `method` [EXTRACTED]
+- [[dot-last_hash()]] - `method` [EXTRACTED]
 - [[dot-test_append_chain()]] - `calls` [EXTRACTED]
 - [[dot-test_append_owner_bypass_persists_high_severity()]] - `calls` [EXTRACTED]
 - [[dot-test_append_single()]] - `calls` [EXTRACTED]
 - [[dot-test_audit_chain_hash_chained()]] - `calls` [EXTRACTED]
 - [[dot-test_chain_continuity_preserved_across_wrap()]] - `calls` [EXTRACTED]
 - [[dot-test_content_hash_deterministic()]] - `calls` [EXTRACTED]
-- [[dot-test_default_window_is_10k()_1]] - `calls` [EXTRACTED]
+- [[dot-test_default_window_is_10k()]] - `calls` [EXTRACTED]
 - [[dot-test_different_content_different_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_entries_returns_copy()]] - `calls` [EXTRACTED]
 - [[dot-test_genesis()]] - `calls` [EXTRACTED]
 - [[dot-test_metadata()]] - `calls` [EXTRACTED]
 - [[dot-test_persisted_event_records_true_previous_hash()]] - `calls` [EXTRACTED]
-- [[dot-test_tamper_in_retained_window_detected()_1]] - `calls` [EXTRACTED]
+- [[dot-test_tamper_in_retained_window_detected()]] - `calls` [EXTRACTED]
 - [[dot-test_unwrapped_chain_must_anchor_at_genesis()]] - `calls` [EXTRACTED]
-- [[dot-test_verify_chain_valid_after_wrap()_1]] - `calls` [EXTRACTED]
+- [[dot-test_verify_chain_valid_after_wrap()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_tampered_chain_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_tampered_previous_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_valid()]] - `calls` [EXTRACTED]
-- [[dot-test_window_capped_at_max_entries()_1]] - `calls` [EXTRACTED]
-- [[dot-total_appended()_1]] - `method` [EXTRACTED]
-- [[dot-verify_chain()_1]] - `method` [EXTRACTED]
+- [[dot-test_window_capped_at_max_entries()]] - `calls` [EXTRACTED]
+- [[dot-total_appended()]] - `method` [EXTRACTED]
+- [[dot-verify_chain()]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult_1]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `semantically_similar_to` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
@@ -74,8 +74,8 @@ tags:
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
 - [[TestRateLimiting_1]] - `uses` [INFERRED]
@@ -102,4 +102,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

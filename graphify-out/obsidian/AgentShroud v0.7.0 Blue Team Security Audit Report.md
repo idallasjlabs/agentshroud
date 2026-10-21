@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "test_collaborator_tracker.py (2) (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/test_collaborator_trackerpy_2_2
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
@@ -20,15 +20,14 @@ tags:
 - [[7. Recommendations by Severity]] - `contains` [EXTRACTED]
 - [[8. Red Team Readiness Assessment]] - `contains` [EXTRACTED]
 - [[9. Final Assessment]] - `contains` [EXTRACTED]
-- [[A) Test Coverage Analysis]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `conceptually_related_to` [INFERRED]
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
-- [[Executive Summary]] - `contains` [EXTRACTED]
+- [[Executive Summary_4]] - `contains` [EXTRACTED]
 - [[FileSandbox (path isolation)]] - `references` [EXTRACTED]
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[planningreviewsblue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2_2

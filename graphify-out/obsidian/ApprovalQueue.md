@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # ApprovalQueue
 
 ## Connections
-- [[dot-__init__()_40]] - `method` [EXTRACTED]
+- [[dot-__init__()_30]] - `method` [EXTRACTED]
 - [[dot-_append_audit_event()]] - `method` [EXTRACTED]
 - [[dot-_expire_stale()]] - `method` [EXTRACTED]
 - [[dot-_load_pending_store()]] - `method` [EXTRACTED]
 - [[dot-_persist_pending_store()]] - `method` [EXTRACTED]
 - [[dot-broadcast()]] - `method` [EXTRACTED]
 - [[dot-cleanup_decided()]] - `method` [EXTRACTED]
-- [[dot-connect()_1]] - `method` [EXTRACTED]
+- [[dot-connect()]] - `method` [EXTRACTED]
 - [[dot-decide()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-disconnect()]] - `method` [EXTRACTED]
@@ -49,8 +49,8 @@ tags:
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()_1]] - `calls` [EXTRACTED]
-- [[client()_6]] - `calls` [EXTRACTED]
-- [[client()_7]] - `calls` [EXTRACTED]
+- [[client()_15]] - `calls` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `contains` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

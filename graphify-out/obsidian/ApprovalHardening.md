@@ -12,8 +12,8 @@ tags:
 # ApprovalHardening
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_19]] - `method` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_14]] - `method` [EXTRACTED]
 - [[dot-_check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[dot-_check_misleading_language()]] - `method` [EXTRACTED]
 - [[dot-_check_parameter_obfuscation()]] - `method` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[Any]] - `uses` [INFERRED]
 - [[ContextGuard]] - `semantically_similar_to` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]

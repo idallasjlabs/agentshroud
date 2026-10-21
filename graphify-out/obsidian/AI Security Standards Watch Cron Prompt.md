@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "AgentTarget (5)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Report_Delivery_Format_Instructions
+  - community/AgentTarget_5
 ---
 
 # AI Security Standards Watch Cron Prompt
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Agentic AI Threat Intelligence Cron Prompt]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/INFERRED #community/AgentTarget_5

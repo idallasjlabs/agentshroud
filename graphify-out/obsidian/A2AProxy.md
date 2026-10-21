@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ReportStore"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ReportStore
 ---
 
 # A2AProxy
 
 ## Connections
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[proxy()]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `references` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

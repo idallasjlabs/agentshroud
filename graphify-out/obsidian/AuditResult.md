@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # AuditResult
@@ -21,4 +21,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[_log_audit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3

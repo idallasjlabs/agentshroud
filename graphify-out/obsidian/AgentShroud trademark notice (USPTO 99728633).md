@@ -1,14 +1,14 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "AgentShroud trademark notice (USPTO 99728633)"
+community: "Cron: Agentic AI Threat Intelligence"
 location: "L4"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_trademark_notice_USPTO_99728633
+  - community/Cron_Agentic_AI_Threat_Intelligence
 ---
 
 # AgentShroud trademark notice (USPTO 99728633)
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_trademark_notice_USPTO_99728633
+#graphify/concept #graphify/EXTRACTED #community/Cron_Agentic_AI_Threat_Intelligence

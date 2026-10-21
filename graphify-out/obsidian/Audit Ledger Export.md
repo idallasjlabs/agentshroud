@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Incident Response Playbook — AgentShroud"
+community: "Security Verification Report"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_Playbook__AgentShroud
+  - community/Security_Verification_Report
 ---
 
 # Audit Ledger Export
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Evidence Preservation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report

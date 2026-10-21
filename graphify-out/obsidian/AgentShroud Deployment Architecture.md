@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
+community: "xurl — Agent Skill Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # AgentShroud Deployment Architecture
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
 - [[Multi-Runtime Support_1]] - `contains` [EXTRACTED]
-- [[Network Topology]] - `contains` [EXTRACTED]
-- [[Overview_15]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Overview_12]] - `contains` [EXTRACTED]
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 - [[Volume Mounts and Secrets Management]] - `contains` [EXTRACTED]
 - [[Zero-Configuration Deployment]] - `contains` [EXTRACTED]
 - [[deployment-diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

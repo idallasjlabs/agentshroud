@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "DockerEngine"
-location: "L139"
+community: "TelegramAPIProxy"
+location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DockerEngine
+  - community/TelegramAPIProxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-__init__()_133]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DockerEngine
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Add information filtering to prevent agent self-disclosure"
+community: "MCPPermissionManager (2) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-disclosure
+  - community/MCPPermissionManager_2_2
 ---
 
 # Add information filtering to prevent agent self-disclosure
@@ -21,4 +21,4 @@ tags:
 - [[Severity_9]] - `contains` [EXTRACTED]
 - [[Verification_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure
+#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_2_2

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "AgentShroud State Diagrams (doc)"
+community: "AgentShroud™ — Trademark Prior Use Record (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams_doc
+  - community/AgentShroud__Trademark_Prior_Use_Record_3
 ---
 
 # Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 - [[Diagram 16 State — Approval Queue]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_3

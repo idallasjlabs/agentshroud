@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
+community: "GSDE&G Development Master Checklist Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List
@@ -24,7 +24,7 @@ tags:
 - [[J. Code Cleanup (5 features)]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11 features)]] - `contains` [EXTRACTED]
 - [[Moved to v0.9.0 Sentinel]] - `contains` [EXTRACTED]
-- [[Summary_14]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 - [[v0.8.0-feature-list-final]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

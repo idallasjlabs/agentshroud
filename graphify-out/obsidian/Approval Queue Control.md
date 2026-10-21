@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "rationale"
-community: "BotConfig (3)"
+community: "installer.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/installerpy
 ---
 
 # Approval Queue Control
@@ -16,4 +16,4 @@ tags:
 - [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
 - [[IEC 62443 Compliance Matrix]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/installerpy

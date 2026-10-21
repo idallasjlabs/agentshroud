@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Integration Guide"
+community: "AgentShroud Red Team Adversarial Tester (2) (2)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/AgentShroud_Red_Team_Adversarial_Tester_2_2
 ---
 
 # AgentShroud v1.3.0
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 - [[Integration Guide]] - `contains` [EXTRACTED]
-- [[Overview_19]] - `contains` [EXTRACTED]
-- [[Overview_20]] - `contains` [EXTRACTED]
+- [[Overview_26]] - `contains` [EXTRACTED]
+- [[Overview_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2_2

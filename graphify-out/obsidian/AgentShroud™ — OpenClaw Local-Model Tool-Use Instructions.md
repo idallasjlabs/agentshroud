@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions"
+community: "notion"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
+  - community/notion
 ---
 
 # AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions
@@ -19,4 +19,4 @@ tags:
 - [[Failover Behaviour (Local Mode)]] - `contains` [EXTRACTED]
 - [[Tool Invocation Format]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
+#graphify/document #graphify/EXTRACTED #community/notion

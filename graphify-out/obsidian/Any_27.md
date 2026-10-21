@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "UserSessionManager (2)"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/UserSessionManager_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_7]] - `references` [EXTRACTED]
-- [[dot-to_dict()_4]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-__init__()_87]] - `references` [EXTRACTED]
+- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "alert_dispatcher.py"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # AlertDispatcher.dispatch(alert)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06

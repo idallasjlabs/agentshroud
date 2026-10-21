@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "concept"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "AgentShroud Color Palette"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/AgentShroud_Color_Palette
 ---
 
 # ADR-002: Default-Allow with Comprehensive Logging
@@ -14,4 +14,4 @@ tags:
 - [[ADR-009 Enforce-by-Default Security Philosophy]] - `references` [EXTRACTED]
 - [[SecurityPipeline (75 modules, 7 layers)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/concept #graphify/AMBIGUOUS #community/AgentShroud_Color_Palette

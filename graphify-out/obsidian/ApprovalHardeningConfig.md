@@ -12,8 +12,8 @@ tags:
 # ApprovalHardeningConfig
 
 ## Connections
-- [[dot-__init__()_18]] - `calls` [EXTRACTED]
-- [[dot-__init__()_19]] - `references` [EXTRACTED]
+- [[dot-__init__()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_14]] - `references` [EXTRACTED]
 - [[dot-config()]] - `calls` [EXTRACTED]
 - [[dot-test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_config()]] - `calls` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[Any]] - `uses` [INFERRED]
 - [[Configuration for approval queue hardening.]] - `rationale_for` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]

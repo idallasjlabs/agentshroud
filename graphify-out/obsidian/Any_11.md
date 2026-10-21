@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (3)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_3
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-recent()]] - `references` [EXTRACTED]
+- [[dot-tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_3

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L93"
+community: "._make_proxy()"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - graphify/INFERRED
+  - community/_make_proxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_5]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/INFERRED #community/_make_proxy

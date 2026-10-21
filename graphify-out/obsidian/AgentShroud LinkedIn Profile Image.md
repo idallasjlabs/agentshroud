@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/linkedin-profile-400x400.png"
 type: "image"
-community: "AgentShroud LinkedIn Profile Image"
+community: "SessionState (data entity)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_LinkedIn_Profile_Image
+  - community/SessionState_data_entity
 ---
 
 # AgentShroud LinkedIn Profile Image
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_LinkedIn_Profile_Image
+#graphify/image #graphify/EXTRACTED #community/SessionState_data_entity

@@ -1,17 +1,23 @@
 ---
-source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Findings & Mitigations"
-location: "L10"
+community: "Skill: Git Workflow Guardian (GIT-GUARD) (3)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings__Mitigations
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
 ---
 
 # Architecture
 
 ## Connections
-- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Design Philosophy_1]] - `contains` [EXTRACTED]
+- [[F. Infrastructure]] - `contains` [EXTRACTED]
+- [[Infrastructure_1]] - `contains` [EXTRACTED]
+- [[Multi-Platform Support]] - `contains` [EXTRACTED]
+- [[Security Modules]] - `contains` [EXTRACTED]
+- [[The Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_3

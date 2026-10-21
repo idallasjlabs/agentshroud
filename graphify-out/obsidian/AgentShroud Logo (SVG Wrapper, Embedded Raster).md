@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo.svg"
 type: "image"
-community: "egress_filter.py (2)"
+community: "DelegationManager"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/egress_filterpy_2
+  - community/DelegationManager
 ---
 
 # AgentShroud Logo (SVG Wrapper, Embedded Raster)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/egress_filterpy_2
+#graphify/image #graphify/INFERRED #community/DelegationManager

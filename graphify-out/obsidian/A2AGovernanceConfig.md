@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "api.py"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/apipy
 ---
 
 # A2AGovernanceConfig
 
 ## Connections
-- [[dot-__init__()_137]] - `references` [EXTRACTED]
+- [[dot-__init__()_135]] - `references` [EXTRACTED]
 - [[dot-test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
 - [[dot-test_disabled_allows_all()]] - `calls` [EXTRACTED]
 - [[dot-test_oversized_denied()]] - `calls` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[proxy()_3]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/apipy

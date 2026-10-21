@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "MiddlewareManager (2)"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/TeamsConfig
 ---
 
 # AgentShroud Skills Library
@@ -15,7 +15,7 @@ tags:
 - [[Custom Skills]] - `contains` [EXTRACTED]
 - [[Directory Structure_2]] - `contains` [EXTRACTED]
 - [[OpenClaw Built-in Skills]] - `contains` [EXTRACTED]
-- [[Usage_68]] - `contains` [EXTRACTED]
+- [[Usage_91]] - `contains` [EXTRACTED]
 - [[skillsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig

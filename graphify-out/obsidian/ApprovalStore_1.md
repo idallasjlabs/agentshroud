@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[dot-__init__()_140]] - `references` [EXTRACTED]
+- [[dot-__init__()_189]] - `references` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [INFERRED]
 - [[dot-test_restore_pending_items()]] - `calls` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [INFERRED]
 - [[test_websocket_notifications()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/INFERRED #community/ContextSegment

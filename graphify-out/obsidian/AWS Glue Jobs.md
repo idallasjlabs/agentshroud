@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "concept"
-community: "AWS Glue Jobs"
+community: "AgentShroud Presentation Content Slide Template"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AWS_Glue_Jobs
+  - community/AgentShroud_Presentation_Content_Slide_Template
 ---
 
 # AWS Glue Jobs
 
-#graphify/concept #graphify/EXTRACTED #community/AWS_Glue_Jobs
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Presentation_Content_Slide_Template

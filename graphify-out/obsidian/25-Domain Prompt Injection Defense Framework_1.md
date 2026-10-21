@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Slack Channel Setup (2)"
+community: "Pre-Deployment Checklist (3)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Slack_Channel_Setup_2
+  - community/Pre-Deployment_Checklist_3
 ---
 
 # 25-Domain Prompt Injection Defense Framework
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[prompt_guard module (observatory mode — too aggressive for enforce)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Slack_Channel_Setup_2
+#graphify/concept #graphify/INFERRED #community/Pre-Deployment_Checklist_3

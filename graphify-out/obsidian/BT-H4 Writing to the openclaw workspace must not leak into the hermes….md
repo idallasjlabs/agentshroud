@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "test_security_regressions_v1_2.py"
+community: "create_auth_dependency (2)"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/create_auth_dependency_2
 ---
 
 # BT-H4: Writing to the openclaw workspace must not leak into the hermes…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_openclaw_memory_write_does_not_appear_in_hermes_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "All Dependencies.md (3)"
+community: "AgentShroud Phase Review — 2026-02-23 (7)"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_3
+  - community/AgentShroud_Phase_Review__2026-02-23_7
 ---
 
 # Action
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-require()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_3
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_7
