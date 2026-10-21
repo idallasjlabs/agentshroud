@@ -60,6 +60,13 @@ for needle in 'everything is up and usable by 08:00 ET' 'After **07:00 ET** do n
   if grep -qF -- "$needle" "$PROMPT"; then pass "window mentions: $needle"; else fail "window missing: $needle"; fi
 done
 
+# 2e. Named inventory items (owner 2026-10-20): ClamAV ships from Debian, so
+# "latest" must come from upstream releases, not apt; the Hermes image's
+# critical findings are a tracked item, not a number in the scan table.
+for needle in 'Cisco-Talos/clamav' 'not the Debian package' 'Hermes image critical findings'; do
+  if grep -qF -- "$needle" "$PROMPT"; then pass "inventory names: $needle"; else fail "inventory missing: $needle"; fi
+done
+
 # 3. The automatic prod-cutover gate names every condition and the rollback.
 for needle in \
   'Gate the cutover automatically' \

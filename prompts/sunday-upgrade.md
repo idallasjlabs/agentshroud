@@ -175,6 +175,8 @@ Build a complete table of every upgradable thing in the repo. Include, at minimu
 - Tooling (Colima, Docker CLI, compose plugin) — report available updates but only apply them if the project docs say the Sunday job owns host tooling.
 - **GitHub Actions versions** — every `uses: owner/action@ref` line across `.github/workflows/*.yml` (`grep -rn 'uses:' .github/workflows/`). Pin to a release tag or a full commit SHA, never a floating major tag like `@v4` if a more specific stable tag/SHA exists.
 - **AI model IDs and SDKs the product itself depends on** — hardcoded model identifiers in gateway/runtime code (e.g. an Anthropic/OpenAI model string), and the SDK package versions that call them (`anthropic`, `openai`, or equivalent in `pyproject.toml`/lockfiles). A stale model ID pointing at a deprecated model is an upgrade finding, same as a stale package pin.
+- **ClamAV** — the gateway installs it from Debian, which lags upstream (2026-10-20: Debian 1.4.3 with four open DoS CVEs, upstream 1.4.6 / 1.5.4). "Latest" is the newest stable release at `gh release list -R Cisco-Talos/clamav --exclude-pre-releases`, not the Debian package version. If the Debian package is behind, that is an upgrade finding: build or install the upstream release, or report why not under *Not updated this run*.
+- **Hermes image critical findings** — the `agentshroud/hermes` image carried 5 CRITICAL / 404 HIGH on 2026-10-20 (2,614 total). List each CRITICAL with its package, fixed version (or "no fix"), and whether this run cleared it. A count alone is not a triage.
 
 For each item: current version, latest stable version, source URL you used to determine it, and whether a changelog mentions breaking changes or security fixes.
 
