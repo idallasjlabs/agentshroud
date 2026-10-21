@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "SSH Capability Architecture Document"
+community: "create_auth_dependency (2) (2)"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/create_auth_dependency_2_2
 ---
 
 # Request Flow
@@ -17,4 +17,4 @@ tags:
 - [[Denied Commands]] - `contains` [EXTRACTED]
 - [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2

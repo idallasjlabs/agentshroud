@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
 type: "concept"
-community: "jira_weekly_review.py"
+community: "TestEgressTelegramNotify"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/TestEgressTelegramNotify
 ---
 
 # SCRUM-81 (Jira weekly review ticket)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Jira Weekly Review]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/concept #graphify/EXTRACTED #community/TestEgressTelegramNotify

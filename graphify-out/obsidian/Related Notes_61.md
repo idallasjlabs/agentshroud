@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Health Checks.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Health Checks"
-location: "L173"
+community: "Skill: Security Review (SEC)"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/Skill_Security_Review_SEC
 ---
 
 # Related Notes
 
 ## Connections
-- [[Health Checks_1]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

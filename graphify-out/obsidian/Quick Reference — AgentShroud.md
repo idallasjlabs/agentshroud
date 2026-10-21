@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "TestSSRFDetection (2)"
+community: "MiddlewareManager (4)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/MiddlewareManager_4
 ---
 
 # Quick Reference — AgentShroud
 
 ## Connections
-- [[Common Issues_2]] - `contains` [EXTRACTED]
-- [[Configuration Files_3]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
+- [[Configuration Files]] - `contains` [EXTRACTED]
 - [[Environment Variables (required)]] - `contains` [EXTRACTED]
-- [[Health Checks_2]] - `contains` [EXTRACTED]
+- [[Health Checks]] - `contains` [EXTRACTED]
 - [[Key Ports]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
-- [[Logs_4]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Logs]] - `contains` [EXTRACTED]
 - [[Quick Reference]] - `contains` [EXTRACTED]
-- [[Related Notes_64]] - `contains` [EXTRACTED]
+- [[Related Notes_20]] - `contains` [EXTRACTED]
 - [[Security Mode Toggle]] - `contains` [EXTRACTED]
 - [[Start  Stop]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

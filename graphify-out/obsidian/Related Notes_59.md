@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2)"
-location: "L173"
+community: "AuditExporter (2)"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/AuditExporter_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/document #graphify/EXTRACTED #community/AuditExporter_2

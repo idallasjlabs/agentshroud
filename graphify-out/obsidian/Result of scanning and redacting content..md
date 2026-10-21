@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "AgentShroud Module Inventory"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/AgentShroud_Module_Inventory
 ---
 
 # Result of scanning and redacting content.
 
 ## Connections
-- [[RedactionResult_1]] - `rationale_for` [EXTRACTED]
+- [[RedactionResult_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Module_Inventory

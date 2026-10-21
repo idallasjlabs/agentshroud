@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md (2)"
+community: "openclaw/skills/i-cr/SKILL.md (5)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd_2
+  - community/openclaw/skills/i-cr/SKILLmd_5
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_5

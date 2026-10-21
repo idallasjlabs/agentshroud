@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "concept"
-community: "BROWSER_FETCH_SKILL.md"
+community: "scripts/security-scan.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/scripts/security-scansh
 ---
 
 # SecureBrowser Skill
@@ -14,4 +14,4 @@ tags:
 - [[BROWSER_FETCH_SKILL]] - `semantically_similar_to` [INFERRED]
 - [[PUBLISH-TO-CLAWHUB]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/scripts/security-scansh

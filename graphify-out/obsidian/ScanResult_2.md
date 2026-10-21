@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "SkillGuard (2)"
-location: "L50"
+community: "ConfigIntegrityMonitor"
+location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard_2
+  - community/ConfigIntegrityMonitor
 ---
 
 # ScanResult
@@ -14,9 +14,8 @@ tags:
 ## Connections
 - [[Recommendation]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_finding_categories()]] - `references` [EXTRACTED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_print_findings()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard_2
+#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "rationale"
-community: "DNSFilterConfig"
+community: "NetworkSecurityFinding"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/NetworkSecurityFinding
 ---
 
 # Resolve domain to an IP and cache it for 5 minutes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-resolve_and_cache()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

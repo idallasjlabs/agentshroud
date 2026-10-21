@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "TestFabricatedSecurityNotice"
+community: "AgentTarget"
 location: "L374"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/AgentTarget
 ---
 
 # Replace message text in payload with sanitized version.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_replace_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

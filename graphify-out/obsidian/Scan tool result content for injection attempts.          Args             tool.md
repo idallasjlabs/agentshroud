@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TestCheckCommandExecution"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TestCheckCommandExecution
 ---
 
 # Scan tool result content for injection attempts.          Args:             tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_tool_result()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TestCheckCommandExecution

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Crash Recovery"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Crash_Recovery
 ---
 
 # Quick Status (for chat/Telegram)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Status Reporting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

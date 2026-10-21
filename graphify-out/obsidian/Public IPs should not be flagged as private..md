@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "DNSFilterConfig"
+community: "NetworkSecurityFinding"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/NetworkSecurityFinding
 ---
 
 # Public IPs should not be flagged as private.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_public_ip_not_private()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

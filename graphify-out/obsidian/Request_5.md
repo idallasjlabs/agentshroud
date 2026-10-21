@@ -1,16 +1,13 @@
 ---
 source_file: ""
 type: "code"
-community: "installer.py"
+community: "ToolChainAnalyzer.score_reversibility (C37)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/ToolChainAnalyzerscore_reversibility_C37
 ---
 
 # Request
 
-## Connections
-- [[installer_page()]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzerscore_reversibility_C37

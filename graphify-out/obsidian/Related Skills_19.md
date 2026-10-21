@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst (4)"
-location: "L14"
+community: "openclaw/skills/i-cr/SKILL.md (6)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst_4
+  - community/openclaw/skills/i-cr/SKILLmd_6
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst_4
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_6

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "ServiceManager"
+community: "test_soc_router_coverage.py"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_router_coveragepy
 ---
 
 # Return ServiceDescriptor for each known container plus internal gateway services
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-list_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

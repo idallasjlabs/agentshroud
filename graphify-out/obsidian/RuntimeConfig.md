@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "RuntimeConfig"
+community: "pipeline.py — Security Pipeline"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # RuntimeConfig
 
 ## Connections
 - [[dot-effective_rootless()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_6]] - `method` [EXTRACTED]
-- [[dot-from_env()]] - `method` [EXTRACTED]
+- [[dot-from_dict()_5]] - `method` [EXTRACTED]
+- [[dot-from_env()_1]] - `method` [EXTRACTED]
 - [[dot-test_effective_rootless_docker()]] - `calls` [EXTRACTED]
 - [[dot-test_effective_rootless_override()]] - `calls` [EXTRACTED]
 - [[dot-test_effective_rootless_podman()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[runtimeconfig.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

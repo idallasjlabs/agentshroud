@@ -1,17 +1,19 @@
 ---
-source_file: "docker/README.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L9"
+community: "SkillGuard (2)"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/SkillGuard_2
 ---
 
 # Quick Start
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[1. Build and Start OpenClaw]] - `contains` [EXTRACTED]
+- [[2. Access OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/SkillGuard_2

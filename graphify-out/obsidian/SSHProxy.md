@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # SSHProxy
 
 ## Connections
-- [[dot-__init__()_96]] - `method` [EXTRACTED]
+- [[dot-__init__()_148]] - `method` [EXTRACTED]
 - [[dot-execute()]] - `method` [EXTRACTED]
 - [[dot-is_auto_approved()]] - `method` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
@@ -49,8 +49,8 @@ tags:
 - [[dot-validate_write_file()]] - `method` [EXTRACTED]
 - [[dot-write_file()]] - `method` [EXTRACTED]
 - [[SSH command proxy with validation and audit support]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `shares_data_with` [EXTRACTED]
 - [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
@@ -79,8 +79,8 @@ tags:
 - [[TestValidateCommand]] - `uses` [INFERRED]
 - [[TestVersionConsistency]] - `uses` [INFERRED]
 - [[TestWebSocketHandshakeAuth]] - `uses` [INFERRED]
-- [[client()_6]] - `calls` [EXTRACTED]
-- [[client()_7]] - `calls` [EXTRACTED]
+- [[client()_15]] - `calls` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
 - [[proxy.py]] - `contains` [EXTRACTED]
 - [[ssh_proxy__init__.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
@@ -89,4 +89,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

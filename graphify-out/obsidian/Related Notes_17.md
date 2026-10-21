@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "browser-fetch.js"
-location: "L37"
+community: "SECTION 2: MARK INFORMATION"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/SECTION_2_MARK_INFORMATION
 ---
 
 # Related Notes
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION

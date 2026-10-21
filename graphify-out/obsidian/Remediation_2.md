@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Remediation"
+community: "Incident Response Playbook — AgentShroud"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Remediation
@@ -21,4 +21,4 @@ tags:
 - [[Step 7 Return clear error messages to the agent]] - `contains` [EXTRACTED]
 - [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

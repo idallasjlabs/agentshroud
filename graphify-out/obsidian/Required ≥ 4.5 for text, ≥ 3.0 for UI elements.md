@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
@@ -23,4 +23,4 @@ tags:
 - [[Typography Scale]] - `contains` [EXTRACTED]
 - [[Voice & Tone Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

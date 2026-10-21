@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer()"
+community: "CronStateMonitor (11)"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/CronStateMonitor_11
 ---
 
 # Raw tool-call JSON blobs must be suppressed before Telegram delivery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_raw_tool_call_json_never_leaks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor_11

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (3)"
+community: "EgressFilterConfig (2)"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/EgressFilterConfig_2
 ---
 
 # Record a time-limited interactive approval for a domain.          Called by the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-grant_timed_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

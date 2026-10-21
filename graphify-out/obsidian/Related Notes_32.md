@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "First Time Setup"
-location: "L161"
+community: "AgentShroud Blue Team Security Auditor (3)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/AgentShroud_Blue_Team_Security_Auditor_3
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_1]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

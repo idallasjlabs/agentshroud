@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L373"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # Remove private-looking content from shared memory before serving         to non-
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_strip_private_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

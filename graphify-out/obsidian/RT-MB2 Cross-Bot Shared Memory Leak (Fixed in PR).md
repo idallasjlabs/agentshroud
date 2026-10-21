@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "Socrates — Dialogue Architect (2)"
 location: "§2 RT-MB2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Socrates__Dialogue_Architect_2
 ---
 
 # RT-MB2: Cross-Bot Shared Memory Leak (Fixed in PR)
@@ -15,4 +15,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2

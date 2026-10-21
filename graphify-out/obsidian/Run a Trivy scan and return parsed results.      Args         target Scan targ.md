@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "export-bot-conversations.py"
+community: "Skill: Project Management (PM) (3)"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/Skill_Project_Management_PM_3
 ---
 
 # Run a Trivy scan and return parsed results.      Args:         target: Scan targ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_trivy_scan()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

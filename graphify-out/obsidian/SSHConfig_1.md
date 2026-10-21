@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L19"
+community: "MCPPermissionManager (2)"
+location: "L138"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/MCPPermissionManager_2
 ---
 
 # SSHConfig
 
 ## Connections
-- [[dot-test_ssh_disabled_config()]] - `calls` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
-- [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_1]] - `references` [EXTRACTED]
-- [[ssh_config()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_148]] - `references` [EXTRACTED]
+- [[SSHConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

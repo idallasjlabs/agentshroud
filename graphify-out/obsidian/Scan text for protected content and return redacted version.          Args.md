@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Phase 1 — Raw Collection (3)"
+community: "AgentShroud Module Inventory"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection_3
+  - community/AgentShroud_Module_Inventory
 ---
 
 # Scan text for protected content and return redacted version.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_response()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Module_Inventory

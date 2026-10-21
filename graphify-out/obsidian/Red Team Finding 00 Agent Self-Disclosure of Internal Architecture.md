@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)"
+community: "5. Test Results"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
+  - community/5_Test_Results
 ---
 
 # Red Team Finding 00: Agent Self-Disclosure of Internal Architecture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
+#graphify/document #graphify/EXTRACTED #community/5_Test_Results

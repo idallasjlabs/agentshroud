@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "create_auth_dependency (3)"
-location: "L33"
+community: "egress_filter.py"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_3
+  - community/egress_filterpy
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[chat()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_3
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

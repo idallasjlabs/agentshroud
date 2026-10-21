@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Socrates — Dialogue Architect (7)"
-location: "L6"
+community: "LLMProxy.proxy_messages (non-streaming)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_7
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_7
+#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

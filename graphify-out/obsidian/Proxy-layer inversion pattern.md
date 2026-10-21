@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "concept"
-community: "Sunday Upgrade prompt"
+community: "_wrap_response() (2)"
 location: "L84"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/_wrap_response_2
 ---
 
 # Proxy-layer inversion pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/concept #graphify/EXTRACTED #community/_wrap_response_2

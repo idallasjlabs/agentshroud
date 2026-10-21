@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "egress_filter.py"
+community: "DelegationManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/DelegationManager
 ---
 
 # Rule: agentshroud-subprocess-shell-true
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[key_rotation.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/egress_filterpy
+#graphify/concept #graphify/EXTRACTED #community/DelegationManager

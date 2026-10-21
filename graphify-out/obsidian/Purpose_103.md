@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "env_guard.py"
-location: "L12"
+community: "Skill: Mindmap Architect (MM)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Purpose
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

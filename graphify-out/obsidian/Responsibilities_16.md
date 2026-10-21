@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Function Details (6)"
+community: "TestOpenAPIContract"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_6
+  - community/TestOpenAPIContract
 ---
 
 # Responsibilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_6
+#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract

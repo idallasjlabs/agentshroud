@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "test_mfa_guard.py"
 location: "L1821"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_mfa_guardpy
 ---
 
 # Score domain 24: Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_tool_use_safety()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

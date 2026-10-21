@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "AgentShroud v0.9.0"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/AgentShroud_v090
 ---
 
 # Return the contents of ``` fenced code blocks (the runnable recipes).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fenced_code_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090

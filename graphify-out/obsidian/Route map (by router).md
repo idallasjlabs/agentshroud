@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Route map (by router)"
+community: "AgentShroud Red Team Adversarial Tester (2)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/AgentShroud_Red_Team_Adversarial_Tester_2
 ---
 
 # Route map (by router)
@@ -24,4 +24,4 @@ tags:
 - [[Scanning]] - `contains` [EXTRACTED]
 - [[Web control center (`gatewaywebapi.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2

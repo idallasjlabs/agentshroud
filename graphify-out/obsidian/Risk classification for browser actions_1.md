@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser (2)"
+community: ".proxy_messages()"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/proxy_messages
 ---
 
 # Risk classification for browser actions
 
 ## Connections
-- [[RiskLevel_2]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

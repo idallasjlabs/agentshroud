@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Quickstart"
+community: "Skill: Test-Driven Development (TDD) (2)"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Skill_Test-Driven_Development_TDD_2
 ---
 
 # Quickstart
@@ -22,4 +22,4 @@ tags:
 - [[`asb` reference]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_2

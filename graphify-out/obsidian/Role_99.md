@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (2)"
-location: "L7"
+community: "Threat Model"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_2
+  - community/Threat_Model
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_2
+#graphify/document #graphify/EXTRACTED #community/Threat_Model

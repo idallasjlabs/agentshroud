@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Socrates — Dialogue Architect (5)"
-location: "L6"
+community: "SECTION 2: MARK INFORMATION"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_5
+  - community/SECTION_2_MARK_INFORMATION
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_5
+#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Path"
+community: "SecurityPipeline (3)"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # Return names of entries that are missing or hash-mismatched in *dest*.      Retu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate_manifest()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_3

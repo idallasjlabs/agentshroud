@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "plan_remediation"
+community: "test_daily_cve_report.py"
 location: "scripts/auto_remediate_cves.py:130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_daily_cve_reportpy
 ---
 
 # RemediationPlan dataclass
 
 ## Connections
-- [[dot-to_dict()_15]] - `method` [EXTRACTED]
+- [[dot-to_dict()_4]] - `method` [EXTRACTED]
 - [[TestPlanAgainstRealRegistry]] - `uses` [INFERRED]
 - [[TestPlanRemediation]] - `uses` [INFERRED]
 - [[TestVersionPinIO]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
 - [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

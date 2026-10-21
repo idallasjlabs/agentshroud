@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "rationale"
-community: "WebProxyConfig (2)"
+community: "First Time Setup (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/First_Time_Setup_2
 ---
 
 # STPA-Sec Analysis of AgentShroud
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup_2

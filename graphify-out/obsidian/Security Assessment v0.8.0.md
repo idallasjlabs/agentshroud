@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "AgentShroud v1.0.0 Fortress Release Announcement (2)"
+community: "ADR-004: API Keys Never in Agent Container"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement_2
+  - community/ADR-004_API_Keys_Never_in_Agent_Container
 ---
 
 # Security Assessment v0.8.0
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Overview v0.8.0]] - `references` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement_2
+#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container

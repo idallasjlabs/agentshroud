@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L2203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_sbom()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

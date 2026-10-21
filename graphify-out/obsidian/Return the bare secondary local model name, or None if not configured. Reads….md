@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "LLMProxy"
+community: "SecureBrowser (4)"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/SecureBrowser_4
 ---
 
 # Return the bare secondary local model name, or None if not configured. Reads…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_local_secondary_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4

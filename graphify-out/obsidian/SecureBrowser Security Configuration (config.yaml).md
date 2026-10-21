@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/config.yaml"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "telegram_proxy.py (3)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/telegram_proxypy_3
 ---
 
 # SecureBrowser Security Configuration (config.yaml)
@@ -14,4 +14,4 @@ tags:
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [EXTRACTED]
 - [[SecureBrowser._load_config()]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_3

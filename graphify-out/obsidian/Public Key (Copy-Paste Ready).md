@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "AgentShroud Audit Specification"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Public Key (Copy-Paste Ready)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

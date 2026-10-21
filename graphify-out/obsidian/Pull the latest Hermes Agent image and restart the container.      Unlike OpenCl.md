@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L2606"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # Pull the latest Hermes Agent image and restart the container.      Unlike OpenCl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_hermes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Technical Specification (2)"
-location: "L8"
+community: "Quickstart"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/Quickstart
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/document #graphify/EXTRACTED #community/Quickstart

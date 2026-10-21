@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "egress_filter.py (4)"
-location: "L213"
+community: "mcp_permissions.py"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy_4
+  - community/mcp_permissionspy
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud.yaml]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy_4
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

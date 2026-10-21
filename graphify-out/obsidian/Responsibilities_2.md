@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "auth.py"
-location: "L15"
+community: "Mode A — Single task (3)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Mode_A__Single_task_3
 ---
 
 # Responsibilities
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

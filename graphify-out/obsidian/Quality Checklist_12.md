@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Technical Specification (2)"
-location: "L137"
+community: "GSDE&G Development Master Checklist (2)"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/GSDEG_Development_Master_Checklist_2
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_2

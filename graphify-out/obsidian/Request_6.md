@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L61"
+community: "SCLClient"
+location: "L126"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/A2APolicyEngine
+  - graphify/EXTRACTED
+  - community/SCLClient
 ---
 
 # Request
 
 ## Connections
-- [[dot-_handle()_1]] - `references` [EXTRACTED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[_process_inbound()]] - `references` [EXTRACTED]
+- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/SCLClient

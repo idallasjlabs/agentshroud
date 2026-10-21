@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "AuditStore"
+community: "AlertDispatcher (5)"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AlertDispatcher_5
 ---
 
 # SQLite-backed audit event store with tamper-evident hash chain.
 
 ## Connections
-- [[AuditStore]] - `rationale_for` [EXTRACTED]
+- [[AuditStore_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditStore
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_5

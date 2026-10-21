@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "test_voice_gateway.py"
 location: "L239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_voice_gatewaypy
 ---
 
 # Same regression as…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_messages_streaming_strips_openai_local_prefix_and_routes_to_backend()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

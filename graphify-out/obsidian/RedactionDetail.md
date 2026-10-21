@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # RedactionDetail
@@ -18,11 +18,11 @@ tags:
 - [[dot-test_process_tool_result_success()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_dict_with_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_string_with_pii()]] - `calls` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Individual redaction record]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[RedactionResult_1]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
 - [[TestMiddlewareIntegration]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

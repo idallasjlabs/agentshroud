@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC) (3)"
+community: "AgentShroud (system, C4 context) (2)"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC_3
+  - community/AgentShroud_system_C4_context_2
 ---
 
 # Review Layers
@@ -18,4 +18,4 @@ tags:
 - [[Layer 4 Data Flow Security_2]] - `contains` [EXTRACTED]
 - [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2

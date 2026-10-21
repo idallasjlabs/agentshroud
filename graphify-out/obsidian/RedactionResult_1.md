@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L39"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-scan_response()_2]] - `references` [EXTRACTED]
-- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
-- [[prompt_protection.py]] - `contains` [EXTRACTED]
+- [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
+- [[dot-sanitize()_4]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

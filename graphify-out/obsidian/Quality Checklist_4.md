@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier (3)"
-location: "L71"
+community: "Skill: Data Validation (DATA-VAL) (3)"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier_3
+  - community/Skill_Data_Validation_DATA-VAL_3
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "concept"
-community: "Python/Boto3/AWS moto test pattern"
+community: "xmind-generator-mcp (MCP server)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Python/Boto3/AWS_moto_test_pattern
+  - community/xmind-generator-mcp_MCP_server
 ---
 
 # Python/Boto3/AWS moto test pattern
 
-#graphify/concept #graphify/EXTRACTED #community/Python/Boto3/AWS_moto_test_pattern
+#graphify/concept #graphify/EXTRACTED #community/xmind-generator-mcp_MCP_server

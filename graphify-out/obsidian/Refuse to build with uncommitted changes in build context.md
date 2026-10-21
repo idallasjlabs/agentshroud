@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-22.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "_make_sanitizer()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/_make_sanitizer
 ---
 
 # Refuse to build with uncommitted changes in build context
@@ -15,4 +15,4 @@ tags:
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

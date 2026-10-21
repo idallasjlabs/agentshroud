@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "rationale"
-community: "TestClassify"
+community: "_FakeUpstreamWS"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/_FakeUpstreamWS
 ---
 
 # Return (soaked, message) for the given cron job list.      soaked=True only if a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[classify()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestClassify
+#graphify/rationale #graphify/EXTRACTED #community/_FakeUpstreamWS

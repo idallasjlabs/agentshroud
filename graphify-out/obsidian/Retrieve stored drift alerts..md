@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "_wrap_response() (2)"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/_wrap_response_2
 ---
 
 # Retrieve stored drift alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2

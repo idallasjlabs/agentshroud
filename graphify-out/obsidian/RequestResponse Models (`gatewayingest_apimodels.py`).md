@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "SSH Capability Architecture Document"
+community: "create_auth_dependency (2) (2)"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/create_auth_dependency_2_2
 ---
 
 # Request/Response Models (`gateway/ingest_api/models.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Components_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2

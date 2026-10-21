@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "Report Delivery Format Instructions"
+community: "AgentTarget (5)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/AgentTarget_5
 ---
 
 # Report Delivery Format Instructions
@@ -29,4 +29,4 @@ tags:
 - [[Stdin-Pipe File Deployment Pattern (never docker cp)]] - `references` [EXTRACTED]
 - [[html-report-instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/AgentTarget_5

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "ClamAV (2)"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # Purpose
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[ClamAV]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV_2
+#graphify/document #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

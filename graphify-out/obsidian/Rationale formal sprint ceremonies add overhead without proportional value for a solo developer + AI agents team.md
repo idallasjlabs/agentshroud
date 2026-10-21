@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "rationale"
-community: "Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred"
+community: "AgentShroud User Guide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
+  - community/AgentShroud_User_Guide
 ---
 
 # Rationale: formal sprint ceremonies add overhead without proportional value for a solo developer + AI agents team
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD (Get Shit Done) cadence — adopted in place of formal ScrumSAFe sprints]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_User_Guide

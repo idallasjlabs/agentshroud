@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (3)"
+community: "LVGL Kawaii Face Component CMakeLists"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/LVGL_Kawaii_Face_Component_CMakeLists
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists

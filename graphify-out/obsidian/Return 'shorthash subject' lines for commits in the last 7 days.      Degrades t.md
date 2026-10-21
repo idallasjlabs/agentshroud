@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "jira_weekly_review.py"
+community: "TestEgressTelegramNotify"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/TestEgressTelegramNotify
 ---
 
 # Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_git_commits_last_week()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify

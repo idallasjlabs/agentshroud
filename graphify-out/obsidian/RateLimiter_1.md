@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "test_collaborator_tracker.py (3)"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/test_collaborator_trackerpy_3
 ---
 
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_164]] - `calls` [EXTRACTED]
-- [[dot-__init__()_163]] - `method` [EXTRACTED]
+- [[dot-__init__()_42]] - `calls` [EXTRACTED]
+- [[dot-__init__()_41]] - `method` [EXTRACTED]
 - [[dot-check()_2]] - `method` [EXTRACTED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[Any_83]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[auth.py]] - `references` [EXTRACTED]
 - [[ingest_apiauth.py]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_rate_limiter_window_cleanup()]] - `calls` [EXTRACTED]
 - [[test_security.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

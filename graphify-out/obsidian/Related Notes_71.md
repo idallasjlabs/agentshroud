@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (4)"
-location: "L183"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_4
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_4
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "._redact_match"
+community: "TestAiModelSupplyChain"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_redact_match
+  - community/TestAiModelSupplyChain
 ---
 
 # Replace a regex match with a redaction placeholder.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_redact_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_redact_match
+#graphify/rationale #graphify/EXTRACTED #community/TestAiModelSupplyChain

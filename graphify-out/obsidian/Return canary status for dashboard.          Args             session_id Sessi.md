@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "TestSSRFDetection (3)"
+community: "check-vendor-compat.sh"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_3
+  - community/check-vendor-compatsh
 ---
 
 # Return canary status for dashboard.          Args:             session_id: Sessi
 
 ## Connections
-- [[dot-get_status()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection_3
+#graphify/rationale #graphify/EXTRACTED #community/check-vendor-compatsh

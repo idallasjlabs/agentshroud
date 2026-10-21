@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (3)"
-location: "L6"
+community: "Skill: Pre-Change Analysis (PCA)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_3
+  - community/Skill_Pre-Change_Analysis_PCA
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA

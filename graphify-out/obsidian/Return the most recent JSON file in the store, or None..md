@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "CompetitiveIntelReport (2)"
+community: "KillSwitchMonitor (3)"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport_2
+  - community/KillSwitchMonitor_3
 ---
 
 # Return the most recent JSON file in the store, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_latest_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport_2
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3

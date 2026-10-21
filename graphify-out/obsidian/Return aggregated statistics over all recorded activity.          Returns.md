@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "EgressFilterConfig"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig
 ---
 
 # Return aggregated statistics over all recorded activity.          Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_activity_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

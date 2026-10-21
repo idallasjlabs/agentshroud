@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "test_mfa_guard.py"
 location: "L1404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_mfa_guardpy
 ---
 
 # Score domain 17: Image Signing & Provenance (0-5). NIST 800-190 §3.1.      0=no
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_image_signing_provenance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "MiddlewareManager (2)"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MiddlewareManager_2
 ---
 
 # RBACManager
 
 ## Connections
-- [[dot-__init__()_23]] - `method` [EXTRACTED]
+- [[dot-__init__()_32]] - `method` [EXTRACTED]
 - [[dot-_build_permission_matrix()]] - `method` [EXTRACTED]
 - [[dot-_build_tool_permissions()]] - `method` [EXTRACTED]
 - [[dot-audit_privilege_change()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[dot-is_privilege_escalation()]] - `method` [EXTRACTED]
 - [[dot-list_users_and_roles()]] - `method` [EXTRACTED]
 - [[dot-set_user_role()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_4]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_5]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_action_resource_combinations()]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_user_id()]] - `calls` [EXTRACTED]
 - [[dot-test_permission_check_with_context()]] - `calls` [EXTRACTED]
@@ -34,14 +34,14 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any]] - `uses` [INFERRED]
 - [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
-- [[Role_23]] - `uses` [INFERRED]
+- [[Role_19]] - `uses` [INFERRED]
 - [[Role-Based Access Control Manager.]] - `rationale_for` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
@@ -61,4 +61,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_rbac.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

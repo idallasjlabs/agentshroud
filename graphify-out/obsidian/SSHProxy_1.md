@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig (6)"
+community: "MCPPermissionManager (2)"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_6
+  - community/MCPPermissionManager_2
 ---
 
 # SSHProxy
@@ -37,10 +37,10 @@ tags:
 - [[dot-test_validate_command_not_in_allowlist()]] - `references` [EXTRACTED]
 - [[dot-test_validate_command_unknown_host()]] - `references` [EXTRACTED]
 - [[dot-test_validate_empty_command()]] - `references` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_1]] - `references` [EXTRACTED]
+- [[proxy()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_6
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

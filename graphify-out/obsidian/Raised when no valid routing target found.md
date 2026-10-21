@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "AgentTarget (7)"
+community: "_make_proxy()"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_7
+  - community/_make_proxy
 ---
 
 # Raised when no valid routing target found
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RouterError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_7
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

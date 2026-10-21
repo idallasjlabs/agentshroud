@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "GSDE&G Skills Reference"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (2)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
 ---
 
 # Quick Reference: When to Use Each Skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2

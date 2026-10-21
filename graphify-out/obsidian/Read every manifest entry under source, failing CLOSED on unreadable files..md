@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "rationale"
-community: "SkillGuard (2)"
+community: "ConfigIntegrityMonitor"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/ConfigIntegrityMonitor
 ---
 
 # Read every manifest entry under *source*, failing CLOSED on unreadable files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_tree()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Red Team Finding 02: No Human Approval for High-Risk Tool Calls"
+community: "AgentShroud Phase Review — 2026-02-23 (4)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Finding_02_No_Human_Approval_for_High-Risk_Tool_Calls
+  - community/AgentShroud_Phase_Review__2026-02-23_4
 ---
 
 # Red Team Finding 02: No Human Approval for High-Risk Tool Calls
@@ -14,4 +14,4 @@ tags:
 - [[MCP Tool Risk Tier Classification (criticalhighmediumlow) with Approval Policy]] - `implements` [EXTRACTED]
 - [[Red Team Finding 03 All Users Share Agent Context and File System]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Finding_02_No_Human_Approval_for_High-Risk_Tool_Calls
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_4

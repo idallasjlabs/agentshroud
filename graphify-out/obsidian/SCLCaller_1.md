@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # SCLCaller
@@ -69,7 +69,7 @@ tags:
 - [[list_bots()]] - `references` [EXTRACTED]
 - [[list_delegations()]] - `references` [EXTRACTED]
 - [[list_groups()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
 - [[list_services()]] - `references` [EXTRACTED]
 - [[list_users()]] - `references` [EXTRACTED]
 - [[override_egress_rule()]] - `references` [EXTRACTED]
@@ -100,4 +100,4 @@ tags:
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 - [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

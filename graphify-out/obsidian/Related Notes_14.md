@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "installer.py (2)"
-location: "L42"
+community: "AgentShroud Sequence Diagrams"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy_2
+  - community/AgentShroud_Sequence_Diagrams
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams

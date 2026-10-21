@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # Result
@@ -19,7 +19,7 @@ tags:
 - [[dot-post()_2]] - `references` [EXTRACTED]
 - [[dot-request()]] - `references` [EXTRACTED]
 - [[dot-request()_1]] - `references` [EXTRACTED]
-- [[main()_16]] - `references` [EXTRACTED]
+- [[main()_20]] - `references` [EXTRACTED]
 - [[main.rs]] - `imports_from` [EXTRACTED]
 - [[run_approvals_decide()]] - `references` [EXTRACTED]
 - [[run_approvals_list()]] - `references` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

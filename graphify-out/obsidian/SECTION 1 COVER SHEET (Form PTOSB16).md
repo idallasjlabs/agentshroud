@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "SECTION 1: COVER SHEET (Form PTO/SB/16)"
+community: "8. Performance & Testing"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+  - community/8_Performance__Testing
 ---
 
 # SECTION 1: COVER SHEET (Form PTO/SB/16)
@@ -21,4 +21,4 @@ tags:
 - [[1.7 Entity Status]] - `contains` [EXTRACTED]
 - [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+#graphify/document #graphify/EXTRACTED #community/8_Performance__Testing

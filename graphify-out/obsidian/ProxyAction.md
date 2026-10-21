@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "scanner_integration.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProxyAction
+  - community/scanner_integrationpy
 ---
 
 # ProxyAction
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[MockDNSVerdict]] - `uses` [INFERRED]
 - [[MockEgressChannel]] - `uses` [INFERRED]
 - [[MockEgressEvent]] - `uses` [INFERRED]
@@ -26,8 +26,8 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
 - [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
@@ -36,9 +36,9 @@ tags:
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/scanner_integrationpy
