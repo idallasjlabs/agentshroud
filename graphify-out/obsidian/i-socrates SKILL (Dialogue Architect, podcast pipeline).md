@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "GSDE&G Skills Reference Guide"
+community: "AgentShroud Data Dictionary"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # i-socrates SKILL (Dialogue Architect, podcast pipeline)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
 - [[i-socrates README (Dialogue Architect)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (3)"
+community: "AgentShroud Schema Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_3
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # hermes/skills/i-sec-offense/SKILL.md
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

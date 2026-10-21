@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "asyncio"
+community: "cli/main.py"
 location: "L270"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/cli/mainpy
 ---
 
 # fake_run()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_capture()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/cli/mainpy

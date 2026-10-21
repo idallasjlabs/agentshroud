@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "FalcoAlertWatcher"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/FalcoAlertWatcher
 ---
 
 # .test_subprocess_shell_true_flags()
@@ -16,4 +16,4 @@ tags:
 - [[TestExecOfDownload]] - `method` [EXTRACTED]
 - [[_finding_categories()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

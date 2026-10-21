@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ContextSegment"
+community: "TelegramAPIProxy"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TelegramAPIProxy
 ---
 
 # .test_tampered_system_prompt_lowers_score()
@@ -16,4 +16,4 @@ tags:
 - [[TestContextIntegrityScorer]] - `method` [EXTRACTED]
 - [[_make_segment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

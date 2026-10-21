@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "LLMProxy"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/LLMProxy
 ---
 
 # .test_short_string_not_base64()
@@ -15,4 +15,4 @@ tags:
 - [[TestBase64Heuristic]] - `method` [EXTRACTED]
 - [[_looks_like_base64()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

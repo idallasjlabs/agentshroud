@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/system-requirementsmd
 ---
 
 # health_report.py
@@ -19,7 +19,7 @@ tags:
 - [[format_report()]] - `contains` [EXTRACTED]
 - [[generate_report()]] - `contains` [EXTRACTED]
 - [[generate_summary()_1]] - `shares_data_with` [EXTRACTED]
-- [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]
+- [[generate_summary()_3]] - `shares_data_with` [EXTRACTED]
 - [[get_trend()]] - `contains` [EXTRACTED]
 - [[init_db()]] - `contains` [EXTRACTED]
 - [[proxy_status.py]] - `references` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[wazuh-ossec]] - `references` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

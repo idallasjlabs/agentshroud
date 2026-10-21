@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AsyncMock (2)"
+community: "api.py (2)"
 location: "L377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock_2
+  - community/apipy_2
 ---
 
 # .test_success_returns_channel_id_with_sanitized_name()
@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Channel name is lowercased, spacesunderscores → hyphens, symbols dropped.]] - `rationale_for` [EXTRACTED]
 - [[TestProvisionGroupChannel]] - `method` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock_2
+#graphify/code #graphify/EXTRACTED #community/apipy_2

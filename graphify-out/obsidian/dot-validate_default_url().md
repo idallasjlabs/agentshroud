@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # .validate_default_url()
 
 ## Connections
-- [[RouterConfig]] - `method` [EXTRACTED]
+- [[RouterConfig_1]] - `method` [EXTRACTED]
 - [[Validate that default_url uses httphttps and targets an internal Docker host.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

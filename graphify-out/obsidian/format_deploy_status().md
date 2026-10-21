@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # format_deploy_status()
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-get()_4]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_2]] - `references` [EXTRACTED]
+- [[Value_4]] - `references` [EXTRACTED]
 - [[deploy_status_formats_version_and_services()]] - `calls` [EXTRACTED]
 - [[deploy_status_no_services()]] - `calls` [EXTRACTED]
 - [[json_str()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_deploy_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

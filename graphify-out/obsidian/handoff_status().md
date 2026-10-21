@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "test-sunday-upgrade-scan.sh"
+community: "Function Details (5)"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/Function_Details_5
 ---
 
 # handoff_status()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/code #graphify/EXTRACTED #community/Function_Details_5

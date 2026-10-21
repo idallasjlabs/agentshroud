@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/hermes-cron-dedup.sh"
 type: "code"
-community: "hermes-cron-dedup.sh"
+community: "set-model.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes-cron-dedupsh
+  - community/set-modelsh
 ---
 
 # hermes-cron-dedup.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes-cron-dedup.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes-cron-dedupsh
+#graphify/code #graphify/EXTRACTED #community/set-modelsh

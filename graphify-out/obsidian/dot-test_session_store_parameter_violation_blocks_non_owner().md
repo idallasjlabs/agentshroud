@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "CrossBotTrustLedger"
 location: "L960"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # .test_session_store_parameter_violation_blocks_non_owner()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

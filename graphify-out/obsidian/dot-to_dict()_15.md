@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "SecurityPipeline (3)"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/SecurityPipeline_3
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_78]] - `references` [EXTRACTED]
-- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
-- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[dot-to_json()]] - `calls` [EXTRACTED]
+- [[SkillsManifest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

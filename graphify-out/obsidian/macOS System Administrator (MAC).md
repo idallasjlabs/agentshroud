@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "macOS System Administrator (MAC)"
+community: "TestOutboundInfoFilter (4)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC
+  - community/TestOutboundInfoFilter_4
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-macREADME]] - `contains` [EXTRACTED]
-- [[Purpose_24]] - `contains` [EXTRACTED]
-- [[Related Skills_9]] - `contains` [EXTRACTED]
-- [[Usage_13]] - `contains` [EXTRACTED]
+- [[Purpose_27]] - `contains` [EXTRACTED]
+- [[Related Skills_13]] - `contains` [EXTRACTED]
+- [[Usage_16]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-macREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_4

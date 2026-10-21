@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "ledger.py"
+community: "_make_proxy() (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledgerpy
+  - community/_make_proxy_2
 ---
 
 # ledger.py
 
 ## Connections
-- [[Config Keys Read_5]] - `contains` [EXTRACTED]
+- [[Config Keys Read_4]] - `contains` [EXTRACTED]
 - [[Database Schema_2]] - `contains` [EXTRACTED]
 - [[Environment Variables Used_6]] - `contains` [EXTRACTED]
-- [[Function Details_22]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_5]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_24]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_6]] - `contains` [EXTRACTED]
-- [[Purpose_132]] - `contains` [EXTRACTED]
-- [[Related_28]] - `contains` [EXTRACTED]
-- [[Responsibilities_26]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
+- [[Purpose_123]] - `contains` [EXTRACTED]
+- [[Related_27]] - `contains` [EXTRACTED]
+- [[Responsibilities_25]] - `contains` [EXTRACTED]
 - [[ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledgerpy
+#graphify/document #graphify/EXTRACTED #community/_make_proxy_2

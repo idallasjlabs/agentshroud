@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # .validate_docker_compose_config()
@@ -25,4 +25,4 @@ tags:
 - [[Validate docker-compose network configuration.          Args             compos]] - `rationale_for` [EXTRACTED]
 - [[validate_network_security()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

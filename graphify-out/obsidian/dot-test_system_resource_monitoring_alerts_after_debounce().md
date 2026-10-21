@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # .test_system_resource_monitoring_alerts_after_debounce()
@@ -15,4 +15,4 @@ tags:
 - [[Sustained high CPU fires the alert after debounce samples are crossed.]] - `rationale_for` [EXTRACTED]
 - [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

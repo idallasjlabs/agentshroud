@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Project Management (README)"
+community: "Skill: Mindmap Architect (MM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # hermes/skills/i-cr/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

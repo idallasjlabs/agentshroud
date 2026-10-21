@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # .test_start_request_tracking_survives_psutil_error()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUsageStatsAndTracking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

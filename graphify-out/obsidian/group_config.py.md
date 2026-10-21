@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py (5)"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy_5
+  - community/colima-health-checksh
 ---
 
 # group_config.py
@@ -15,7 +15,7 @@ tags:
 - [[GroupConfig]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[ProjectConfig]] - `contains` [EXTRACTED]
-- [[TeamsConfig_2]] - `contains` [EXTRACTED]
+- [[TeamsConfig_1]] - `contains` [EXTRACTED]
 - [[_apply_persisted_overrides()]] - `contains` [EXTRACTED]
 - [[_load_overrides()]] - `contains` [EXTRACTED]
 - [[_save_overrides()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[persist_user_collab_mode()]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy_5
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

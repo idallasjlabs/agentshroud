@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "postmortem.md"
+community: "Credential Management - 1Password Integration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # gsd.md
@@ -17,6 +17,6 @@ tags:
 - [[CLAUDE]] - `shares_data_with` [INFERRED]
 - [[Effort]] - `contains` [EXTRACTED]
 - [[Outcome]] - `contains` [EXTRACTED]
-- [[Problem_8]] - `contains` [EXTRACTED]
+- [[Problem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

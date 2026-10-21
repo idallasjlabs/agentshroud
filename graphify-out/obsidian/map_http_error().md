@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "GroupRoleResolver"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/GroupRoleResolver
 ---
 
 # map_http_error()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[dot-get()_4]] - `calls` [EXTRACTED]
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-ok()]] - `calls` [EXTRACTED]
 - [[dot-post()_1]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[map_http_error_generic_status()]] - `calls` [EXTRACTED]
 - [[map_http_error_includes_detail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

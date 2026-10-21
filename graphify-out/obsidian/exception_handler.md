@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Request"
+community: "pick_latest_stable"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/pick_latest_stable
 ---
 
 # exception_handler
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/pick_latest_stable

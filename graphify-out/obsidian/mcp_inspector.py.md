@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPPermissionManager (3)"
+community: "CrossBotTrustLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_3
+  - community/CrossBotTrustLedger
 ---
 
 # mcp_inspector.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FindingType]] - `contains` [EXTRACTED]
 - [[InspectionFinding]] - `contains` [EXTRACTED]
 - [[InspectionResult]] - `contains` [EXTRACTED]
 - [[MCPInspector_1]] - `contains` [EXTRACTED]
-- [[ThreatLevel_2]] - `contains` [EXTRACTED]
+- [[ThreatLevel_1]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
 - [[proxy__init__.py]] - `re_exports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_3
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

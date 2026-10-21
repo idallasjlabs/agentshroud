@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "TestVersionRoutes"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/TestVersionRoutes
 ---
 
 # get_fim_events()
 
 ## Connections
 - [[dot-test_get_fim_events()]] - `calls` [EXTRACTED]
-- [[Any_56]] - `references` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
 - [[Filter alerts to file integrity monitoring events only.      Args         alert]] - `rationale_for` [EXTRACTED]
-- [[generate_summary()_2]] - `calls` [EXTRACTED]
+- [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

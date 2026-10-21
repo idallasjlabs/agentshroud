@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "DNSFilterConfig"
 location: "L583"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/DNSFilterConfig
 ---
 
 # .test_switch_model_script_uses_current_target_syntax()
@@ -15,4 +15,4 @@ tags:
 - [[Operator guidance should use valid switch_model target syntax (no legacy cloud p]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

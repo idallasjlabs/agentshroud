@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (3)"
+community: "Coding Agent (bash-first)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Coding_Agent_bash-first
 ---
 
 # graphify reference: extra exports and benchmark
@@ -21,4 +21,4 @@ tags:
 - [[Step 7d - MCP server (only if --mcp flag)_2]] - `contains` [EXTRACTED]
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

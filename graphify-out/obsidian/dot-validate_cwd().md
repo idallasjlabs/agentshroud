@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # .validate_cwd()
@@ -15,4 +15,4 @@ tags:
 - [[SSHProxy]] - `method` [EXTRACTED]
 - [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

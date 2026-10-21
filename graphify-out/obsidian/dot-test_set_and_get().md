@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "TelegramAPIProxy (2) (6)"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/TelegramAPIProxy_2_6
 ---
 
 # .test_set_and_get()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustLevels]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2_6

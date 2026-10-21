@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # hermes/skills/i-ti/README.md
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "kaizen Skill (stub)"
+community: "Diagram 08: Entity Relationship Diagram"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/kaizen_Skill_stub
+  - community/Diagram_08_Entity_Relationship_Diagram
 ---
 
 # incident-response Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[kaizen Skill (stub)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/kaizen_Skill_stub
+#graphify/document #graphify/INFERRED #community/Diagram_08_Entity_Relationship_Diagram

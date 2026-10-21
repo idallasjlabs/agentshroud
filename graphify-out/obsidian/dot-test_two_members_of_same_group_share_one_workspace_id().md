@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_two_members_of_same_group_share_one_workspace_id()
@@ -15,4 +15,4 @@ tags:
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
 - [[TestMembersShareGroupWorkspace]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

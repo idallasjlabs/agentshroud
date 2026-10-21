@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "jira_dev_ticket run"
+community: "Backup & Restore Runbook — AgentShroud"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_dev_ticket_run
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # jira_dev_ticket run()
@@ -19,4 +19,4 @@ tags:
 - [[run()_4]] - `semantically_similar_to` [INFERRED]
 - [[test_jira_dev_ticket.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_dev_ticket_run
+#graphify/code #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud

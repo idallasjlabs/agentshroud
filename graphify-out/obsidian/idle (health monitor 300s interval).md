@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "active"
+community: "test_launchd_install.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/active
+  - community/test_launchd_installsh
 ---
 
 # idle (health monitor 300s interval)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[active_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/active
+#graphify/concept #graphify/EXTRACTED #community/test_launchd_installsh

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "make_event"
+community: "Production Safety Checklist (SKILL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/make_event
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # event_bus.py.md
@@ -18,4 +18,4 @@ tags:
 - [[main.py]] - `references` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/make_event
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

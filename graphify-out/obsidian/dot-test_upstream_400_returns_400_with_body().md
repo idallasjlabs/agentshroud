@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestStreamingProxyStatusPropagation"
+community: "TestLoadAllSecretFileValues"
 location: "L823"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStreamingProxyStatusPropagation
+  - community/TestLoadAllSecretFileValues
 ---
 
 # .test_upstream_400_returns_400_with_body()
@@ -17,4 +17,4 @@ tags:
 - [[StreamHead]] - `calls` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation
+#graphify/code #graphify/EXTRACTED #community/TestLoadAllSecretFileValues

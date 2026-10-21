@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .test_untyped_violation_uses_legacy_points()
@@ -15,4 +15,4 @@ tags:
 - [[TestBackwardCompat]] - `method` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

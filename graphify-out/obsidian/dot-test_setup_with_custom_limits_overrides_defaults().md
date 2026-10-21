@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ResourceGuard"
+community: "._make_proxy()"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_make_proxy
 ---
 
 # .test_setup_with_custom_limits_overrides_defaults()
@@ -16,4 +16,4 @@ tags:
 - [[TestResourceGuardWiring]] - `method` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

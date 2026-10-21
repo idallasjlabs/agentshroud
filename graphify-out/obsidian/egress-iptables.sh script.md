@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/egress-iptables.sh"
 type: "code"
-community: "egress-iptables.sh"
+community: "patch-slack-sdk.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress-iptablessh
+  - community/patch-slack-sdksh
 ---
 
 # egress-iptables.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress-iptables.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress-iptablessh
+#graphify/code #graphify/EXTRACTED #community/patch-slack-sdksh

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "RBACConfig"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/RBACConfig
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

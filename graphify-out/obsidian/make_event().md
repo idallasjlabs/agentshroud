@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event"
+community: "TestOutboundInfoFilter (2)"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/TestOutboundInfoFilter_2
 ---
 
 # make_event()
@@ -19,7 +19,7 @@ tags:
 - [[dot-check_async()]] - `calls` [EXTRACTED]
 - [[dot-deny()]] - `calls` [EXTRACTED]
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_event_has_required_fields()]] - `calls` [EXTRACTED]
 - [[test_get_recent()]] - `calls` [EXTRACTED]
-- [[test_get_stats()_1]] - `calls` [EXTRACTED]
+- [[test_get_stats()]] - `calls` [EXTRACTED]
 - [[test_manage_soc_events_endpoint()]] - `calls` [EXTRACTED]
 - [[test_manage_soc_report_endpoint()]] - `calls` [EXTRACTED]
 - [[test_non_alert_events_ignored()]] - `calls` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

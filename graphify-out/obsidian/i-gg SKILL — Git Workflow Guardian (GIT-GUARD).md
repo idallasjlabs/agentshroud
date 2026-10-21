@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "`docs/planning/` — Index"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/docs/planning/__Index
 ---
 
 # i-gg SKILL — Git Workflow Guardian (GIT-GUARD)
@@ -17,4 +17,4 @@ tags:
 - [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 - [[tddSKILL.md test-driven development skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/docs/planning/__Index

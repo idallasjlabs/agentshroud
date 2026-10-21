@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L5077"
+community: "test_voice_gateway.py"
+location: "L416"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - graphify/INFERRED
+  - community/test_voice_gatewaypy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `contains` [EXTRACTED]
+- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "system-requirements.md"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/system-requirementsmd
 ---
 
 # generate_report()
 
 ## Connections
-- [[dot-test_generate_report()]] - `calls` [EXTRACTED]
+- [[dot-test_generate_report()_1]] - `calls` [EXTRACTED]
 - [[dot-test_history_persistence()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - `rationale_for` [EXTRACTED]
-- [[Path_10]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 - [[get_trend()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[score_to_grade()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager (2)"
 location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager_2
 ---
 
 # .write_file()
@@ -16,4 +16,4 @@ tags:
 - [[SSHWriteResult]] - `references` [EXTRACTED]
 - [[Write file content to a remote host via structured (non-shell-string) transport.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

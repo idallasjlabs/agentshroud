@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "AgentTarget"
+community: "_make_proxy()"
 location: "L306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/_make_proxy
 ---
 
 # load_config computes CORS origins from the configured port.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cors_origins_include_configured_port()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

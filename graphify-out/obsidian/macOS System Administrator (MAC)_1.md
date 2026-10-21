@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "macOS System Administrator (MAC) (2)"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC_2
+  - community/socjs
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_50]] - `contains` [EXTRACTED]
-- [[Related Skills_35]] - `contains` [EXTRACTED]
-- [[Usage_39]] - `contains` [EXTRACTED]
+- [[Purpose_92]] - `contains` [EXTRACTED]
+- [[Related Skills_71]] - `contains` [EXTRACTED]
+- [[Usage_77]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-macREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC_2
+#graphify/document #graphify/EXTRACTED #community/socjs

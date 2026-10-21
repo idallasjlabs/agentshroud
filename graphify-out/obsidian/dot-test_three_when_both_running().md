@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "parse_clamscan_output"
 location: "L855"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/parse_clamscan_output
 ---
 
 # .test_three_when_both_running()
@@ -17,4 +17,4 @@ tags:
 - [[_score_incident_response()]] - `calls` [EXTRACTED]
 - [[_wazuh_clean()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

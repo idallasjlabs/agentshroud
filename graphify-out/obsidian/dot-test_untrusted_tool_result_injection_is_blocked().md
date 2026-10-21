@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "ApprovalQueueConfig (4)"
 location: "L699"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/ApprovalQueueConfig_4
 ---
 
 # .test_untrusted_tool_result_injection_is_blocked()
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 - [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
 type: "document"
-community: "hermes/skills/i-scrum/SKILL.md"
+community: "openclaw/skills/i-observability/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-scrum/SKILLmd
+  - community/openclaw/skills/i-observability/SKILLmd
 ---
 
 # hermes/skills/i-scrum/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill scrum_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-scrum/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-observability/SKILLmd

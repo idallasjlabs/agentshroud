@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_soc_router_coverage.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_with_resource_usage()
@@ -16,4 +16,4 @@ tags:
 - [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
 - [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

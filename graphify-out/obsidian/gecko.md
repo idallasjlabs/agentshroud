@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "browser-extension/manifest.json"
+community: "Audit Ledger (SHA-256 hash only)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # gecko
@@ -15,4 +15,4 @@ tags:
 - [[browser_specific_settings]] - `contains` [EXTRACTED]
 - [[id]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

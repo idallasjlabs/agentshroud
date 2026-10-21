@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "concept"
-community: "markmap-mcp-server (MCP server)"
+community: "Whitespace/EOF fixers exclude vendored SCAP datastream"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/markmap-mcp-server_MCP_server
+  - community/Whitespace/EOF_fixers_exclude_vendored_SCAP_datastream
 ---
 
 # markmap-mcp-server (MCP server)
 
-#graphify/concept #graphify/EXTRACTED #community/markmap-mcp-server_MCP_server
+#graphify/concept #graphify/EXTRACTED #community/Whitespace/EOF_fixers_exclude_vendored_SCAP_datastream

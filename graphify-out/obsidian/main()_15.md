@@ -1,19 +1,23 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "ControlCenter"
-location: "L427"
+community: "test_daily_cve_report.py"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/test_daily_cve_reportpy
 ---
 
 # main()
 
 ## Connections
-- [[dot-run()_4]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py_1]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_4]] - `calls` [EXTRACTED]
+- [[_print_plan()]] - `calls` [EXTRACTED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
+- [[load_registry()]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 location: "L641"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # .test_upstream_connect_failure_closes_gracefully()
@@ -18,4 +18,4 @@ tags:
 - [[asyncio_1]] - `references` [EXTRACTED]
 - [[hermes_dashboard_ws_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

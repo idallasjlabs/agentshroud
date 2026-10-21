@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "TrustConfig"
 location: "L4059"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TrustConfig
 ---
 
 # list_blocked_domains()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
 - [[Return a paginated list of blocked domains. Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[get]] - `references` [EXTRACTED]
+- [[get_1]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

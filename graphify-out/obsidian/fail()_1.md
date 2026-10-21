@@ -1,12 +1,12 @@
 ---
 source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "test-op-auth.sh"
+community: "MCP Tools Usage (MCPM)"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-op-authsh
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # fail()
@@ -15,4 +15,4 @@ tags:
 - [[test-op-auth.sh]] - `defines` [EXTRACTED]
 - [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-op-authsh
+#graphify/code #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "WebProxy"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/WebProxy
 ---
 
 # .test_validate_docker_compose_config_invalid_file()
@@ -15,4 +15,4 @@ tags:
 - [[Test handling of invalidnon-existent files.]] - `rationale_for` [EXTRACTED]
 - [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/WebProxy

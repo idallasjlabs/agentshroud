@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "mcp_inspector.py"
+community: "web_content_scanner.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/web_content_scannerpy
 ---
 
 # mcp_inspector.py
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Configuration  Environment Variables_11]] - `contains` [EXTRACTED]
 - [[Detection Patterns_1]] - `contains` [EXTRACTED]
-- [[Function Details_24]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_26]] - `contains` [EXTRACTED]
-- [[Purpose_146]] - `contains` [EXTRACTED]
-- [[Related_30]] - `contains` [EXTRACTED]
-- [[Responsibilities_28]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_25]] - `contains` [EXTRACTED]
+- [[Purpose_125]] - `contains` [EXTRACTED]
+- [[Related_29]] - `contains` [EXTRACTED]
+- [[Responsibilities_27]] - `contains` [EXTRACTED]
 - [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

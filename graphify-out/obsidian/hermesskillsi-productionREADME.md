@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Incident Response (INCIDENT)"
+community: "Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_INCIDENT
+  - community/Technical_Writer_TW
 ---
 
 # hermes/skills/i-production/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

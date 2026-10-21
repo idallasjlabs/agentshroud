@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "hermes/skills/i-incident-response/SKILL.md"
+community: "openclaw/skills/i-agile/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-incident-response/SKILLmd
+  - community/openclaw/skills/i-agile/SKILLmd
 ---
 
 # hermes/skills/i-incident-response/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-incident-response/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-agile/SKILLmd

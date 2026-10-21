@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "KillSwitchMonitor (3)"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/KillSwitchMonitor_3
 ---
 
 # .verify_integrity()
@@ -18,4 +18,4 @@ tags:
 - [[Return True iff the stored content_hash matches recomputation.]] - `rationale_for` [EXTRACTED]
 - [[_compute_hash()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

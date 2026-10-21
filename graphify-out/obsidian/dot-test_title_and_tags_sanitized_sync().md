@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "ReportStore"
+community: "test_dashboard.py"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/test_dashboardpy
 ---
 
 # .test_title_and_tags_sanitized_sync()
@@ -15,4 +15,4 @@ tags:
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestReviewHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

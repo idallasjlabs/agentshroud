@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)"
+community: "KillSwitchMonitor (5)"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+  - community/KillSwitchMonitor_5
 ---
 
 # get_merged_memory_for_user returns group section and private section separately.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_merged_memory_separates_group_and_dm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_5

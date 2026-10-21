@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "ApprovalQueueConfig (3)"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ApprovalQueueConfig_3
 ---
 
 # get_security_alerts()
@@ -17,4 +17,4 @@ tags:
 - [[from_dict()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

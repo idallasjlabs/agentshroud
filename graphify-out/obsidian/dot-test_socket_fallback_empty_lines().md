@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "MiddlewareManager (2)"
 location: "L683"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/MiddlewareManager_2
 ---
 
 # .test_socket_fallback_empty_lines()
@@ -16,4 +16,4 @@ tags:
 - [[TestGetLogs]] - `method` [EXTRACTED]
 - [[_patch_exists()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "lifespan()"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # lifespan()
@@ -17,7 +17,7 @@ tags:
 - [[FastAPI]] - `references` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[_alert_sanitize()]] - `indirect_call` [INFERRED]
 - [[_audit_chain_heartbeat()]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

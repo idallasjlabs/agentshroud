@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L732"
+community: "ApprovalQueueConfig (2)"
+location: "L5219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_revoke_command_requires_target_user_id()]] - `contains` [EXTRACTED]
+- [[dot-test_self_diagnose_with_zero_width_char_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

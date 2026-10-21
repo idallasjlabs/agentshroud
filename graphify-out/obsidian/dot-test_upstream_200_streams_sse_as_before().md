@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestStreamingProxyStatusPropagation"
+community: "TestLoadAllSecretFileValues"
 location: "L844"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStreamingProxyStatusPropagation
+  - community/TestLoadAllSecretFileValues
 ---
 
 # .test_upstream_200_streams_sse_as_before()
@@ -17,4 +17,4 @@ tags:
 - [[StreamHead]] - `calls` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation
+#graphify/code #graphify/EXTRACTED #community/TestLoadAllSecretFileValues

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "_FakeRBAC"
+community: "AlertDispatcher (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/AlertDispatcher_2
 ---
 
 # event_adapter.py
 
 ## Connections
-- [[SecurityEvent]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[SecurityEvent_1]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[_map_severity()]] - `contains` [EXTRACTED]
 - [[collect_recent_events()]] - `contains` [EXTRACTED]
 - [[from_anomaly_alert()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

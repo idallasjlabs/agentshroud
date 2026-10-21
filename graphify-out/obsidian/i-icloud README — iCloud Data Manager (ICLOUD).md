@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "i-icloud SKILL — iCloud Services"
+community: "test_gemini_openai_translator.py (3)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-icloud_SKILL__iCloud_Services
+  - community/test_gemini_openai_translatorpy_3
 ---
 
 # i-icloud README — iCloud Data Manager (ICLOUD)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-icloud_SKILL__iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy_3

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "export_bot"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L517"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # .test_severity_filter_drops_lower()
@@ -16,4 +16,4 @@ tags:
 - [[TestCollectRecentEvents]] - `method` [EXTRACTED]
 - [[_audit_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

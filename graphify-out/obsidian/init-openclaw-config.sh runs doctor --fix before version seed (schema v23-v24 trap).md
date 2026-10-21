@@ -1,12 +1,12 @@
 ---
 source_file: "INCIDENT-2026-10-16-conduit-and-stability.md"
 type: "concept"
-community: "run-standalone.sh (Hermes docker run launcher) (2)"
+community: "TestSendTelegramTruncation"
 location: "200"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher_2
+  - community/TestSendTelegramTruncation
 ---
 
 # init-openclaw-config.sh runs doctor --fix before version seed (schema v23->v24 trap)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_2
+#graphify/concept #graphify/EXTRACTED #community/TestSendTelegramTruncation

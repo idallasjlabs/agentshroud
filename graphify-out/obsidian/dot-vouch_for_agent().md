@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # .vouch_for_agent()
 
 ## Connections
 - [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_3]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

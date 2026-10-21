@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L352"
+community: "TelegramAPIProxy (2)"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TelegramAPIProxy_2
 ---
 
 # .test_xml_tag_injection()
 
 ## Connections
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_a2a_policy.py"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_a2a_policypy
 ---
 
 # .test_shared_volume_flagged_in_full_check()
@@ -17,4 +17,4 @@ tags:
 - [[TestSharedNothing]] - `method` [EXTRACTED]
 - [[_make_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

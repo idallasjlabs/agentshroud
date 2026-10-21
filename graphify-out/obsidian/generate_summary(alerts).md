@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "wazuh_client.py"
+community: "TestStartupScannerKeying"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/TestStartupScannerKeying
 ---
 
 # generate_summary(alerts)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying

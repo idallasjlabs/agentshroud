@@ -1,20 +1,18 @@
 ---
-source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "main"
-location: "L46"
+community: "test_cron_jobs_prompts.py"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/main
+  - community/test_cron_jobs_promptspy
 ---
 
 # main()
 
 ## Connections
-- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
-- [[curl_json()]] - `calls` [EXTRACTED]
-- [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
+- [[_handle()_2]] - `calls` [EXTRACTED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/main
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

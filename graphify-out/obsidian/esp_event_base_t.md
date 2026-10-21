@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "voice_task"
+community: "TestMetadataGuard"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/TestMetadataGuard
 ---
 
 # esp_event_base_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_on_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "test_gemini_openai_translator.py"
+community: "BotConfig"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/BotConfig
 ---
 
 # gemini_failover_unsupported_reason()
@@ -20,4 +20,4 @@ tags:
 - [[test_unsupported_reason_streaming_path()]] - `calls` [EXTRACTED]
 - [[test_unsupported_reason_tools_in_body()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/BotConfig

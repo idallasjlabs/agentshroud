@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter (2)"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L551"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # flagging' gerund form.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_flagging_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

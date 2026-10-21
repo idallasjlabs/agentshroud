@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "_make_proxy()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/_make_proxy
 ---
 
 # ingest_api/models.py
 
 ## Connections
-- [[AgentTarget_3]] - `contains` [EXTRACTED]
-- [[ApprovalDecision]] - `contains` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_4]] - `contains` [EXTRACTED]
-- [[EmailSendRequest_1]] - `contains` [EXTRACTED]
+- [[AgentTarget_2]] - `contains` [EXTRACTED]
+- [[ApprovalDecision_1]] - `contains` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
+- [[EmailSendRequest]] - `contains` [EXTRACTED]
 - [[EmailSendResponse]] - `contains` [EXTRACTED]
-- [[ForwardRequest]] - `contains` [EXTRACTED]
+- [[ForwardRequest_1]] - `contains` [EXTRACTED]
 - [[ForwardResponse]] - `contains` [EXTRACTED]
 - [[LedgerEntry]] - `contains` [EXTRACTED]
 - [[LedgerQueryResponse]] - `contains` [EXTRACTED]
 - [[RedactionDetail]] - `contains` [EXTRACTED]
-- [[RedactionResult_3]] - `contains` [EXTRACTED]
-- [[SSHExecRequest_1]] - `contains` [EXTRACTED]
+- [[RedactionResult_2]] - `contains` [EXTRACTED]
+- [[SSHExecRequest]] - `contains` [EXTRACTED]
 - [[SSHExecResponse]] - `contains` [EXTRACTED]
-- [[SSHWriteFileRequest_1]] - `contains` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `contains` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `contains` [EXTRACTED]
 - [[StatusResponse]] - `contains` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

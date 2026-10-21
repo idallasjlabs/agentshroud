@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "EgressFilterConfig (4)"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressFilterConfig_4
 ---
 
 # .test_set_observatory_mode_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[Test POST managemode endpoint requestresponse.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryModeAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4

@@ -1,17 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "BRAND.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L396"
+community: "test_hermes_model_resolver.py"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/test_hermes_model_resolverpy
 ---
 
 # License
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy

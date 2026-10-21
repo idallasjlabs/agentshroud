@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "egress_filter.py (3)"
+community: "DelegationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy_3
+  - community/DelegationManager
 ---
 
 # heuristic_classifier.py
@@ -16,4 +16,4 @@ tags:
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy_3
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

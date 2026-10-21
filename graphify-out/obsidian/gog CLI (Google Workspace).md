@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "concept"
-community: "SSH Configuration Guide"
+community: ".omp/mcp.json"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/omp/mcpjson
 ---
 
 # gog CLI (Google Workspace)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gogSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/concept #graphify/EXTRACTED #community/omp/mcpjson

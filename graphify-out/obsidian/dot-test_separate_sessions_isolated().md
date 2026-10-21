@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "_t"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/_t
 ---
 
 # .test_separate_sessions_isolated()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_t

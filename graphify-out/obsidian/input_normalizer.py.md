@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TestCheckCommandExecution"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TestCheckCommandExecution
 ---
 
 # input_normalizer.py
@@ -17,4 +17,4 @@ tags:
 - [[normalize_input()]] - `contains` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

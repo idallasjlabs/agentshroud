@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "egress_config.py"
+community: "falco_monitor.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/falco_monitorpy
 ---
 
 # egress_config.py
@@ -15,12 +15,12 @@ tags:
 - [[Configuration  Environment Variables_16]] - `contains` [EXTRACTED]
 - [[Default Allowlist]] - `contains` [EXTRACTED]
 - [[Default Denylist Categories]] - `contains` [EXTRACTED]
-- [[Function Details_31]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_33]] - `contains` [EXTRACTED]
-- [[Purpose_153]] - `contains` [EXTRACTED]
-- [[Related_37]] - `contains` [EXTRACTED]
-- [[Responsibilities_35]] - `contains` [EXTRACTED]
+- [[Function Details_30]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
+- [[Purpose_132]] - `contains` [EXTRACTED]
+- [[Related_36]] - `contains` [EXTRACTED]
+- [[Responsibilities_34]] - `contains` [EXTRACTED]
 - [[Threat Model_20]] - `contains` [EXTRACTED]
 - [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

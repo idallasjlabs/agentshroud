@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/security-report-retention.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "FR3: System Integrity"
-location: "L20"
+community: "run_multi_host"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/run_multi_host
 ---
 
 # log()
 
 ## Connections
-- [[security-report-retention.sh]] - `defines` [EXTRACTED]
-- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/run_multi_host

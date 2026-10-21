@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L3929"
+community: "ApprovalQueueConfig (2) (2)"
+location: "L6851"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - `contains` [EXTRACTED]
+- [[dot-test_rate_limit_notice_mentions_configured_limit()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

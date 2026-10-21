@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "is_overloaded"
+community: "ConsentFramework"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/ConsentFramework
 ---
 
 # is_overloaded()
@@ -38,4 +38,4 @@ tags:
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_overloaded
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

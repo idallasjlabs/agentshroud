@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response()"
-location: "L1728"
+community: "ApprovalQueueConfig (2)"
+location: "L2944"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

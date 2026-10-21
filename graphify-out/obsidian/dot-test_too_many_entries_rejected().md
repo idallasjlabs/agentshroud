@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "FetchOutcome"
+community: "MCPPolicyEngine (2)"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/MCPPolicyEngine_2
 ---
 
 # .test_too_many_entries_rejected()
@@ -16,4 +16,4 @@ tags:
 - [[_draft()]] - `calls` [EXTRACTED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy()"
+community: "SecurityPipeline"
 location: "L8223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/SecurityPipeline
 ---
 
 # fake_send()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

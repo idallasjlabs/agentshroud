@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)"
+community: "cve-registry-manual-review.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-vulcan_SKILLmd_Subject_Matter_Auditor_podcast_QA_gate
+  - community/cve-registry-manual-reviewmd
 ---
 
 # i-atlas SKILL.md (Curriculum Architect, referenced dependency)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-vulcan_SKILLmd_Subject_Matter_Auditor_podcast_QA_gate
+#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd

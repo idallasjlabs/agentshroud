@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "plan_remediation"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/plan_remediation
 ---
 
 # enforcer()
@@ -15,4 +15,4 @@ tags:
 - [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
 - [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

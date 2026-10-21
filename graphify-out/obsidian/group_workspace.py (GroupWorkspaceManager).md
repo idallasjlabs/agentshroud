@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TeamsConfig"
+community: "TestToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestToolChainAnalyzer
 ---
 
 # group_workspace.py (GroupWorkspaceManager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_workspace_manager.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

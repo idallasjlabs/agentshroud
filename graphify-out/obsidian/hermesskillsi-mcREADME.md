@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "TestOutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/TestOutboundInfoFilter
 ---
 
 # hermes/skills/i-mc/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,25 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "SecureBrowser (4)"
-location: "L431"
+community: "1. Accomplishments This Phase"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/1_Accomplishments_This_Phase
 ---
 
 # main()
 
 ## Connections
-- [[dot-_take_screenshot()_3]] - `calls` [EXTRACTED]
-- [[dot-click()_3]] - `calls` [EXTRACTED]
-- [[dot-close()_7]] - `calls` [EXTRACTED]
-- [[dot-extract()_3]] - `calls` [EXTRACTED]
-- [[dot-fill_field()_3]] - `calls` [EXTRACTED]
-- [[dot-navigate()_3]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_3]] - `calls` [EXTRACTED]
-- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Path_14]] - `calls` [EXTRACTED]
+- [[_parse_since()]] - `calls` [EXTRACTED]
+- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
+- [[export_hermes()]] - `calls` [EXTRACTED]
+- [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

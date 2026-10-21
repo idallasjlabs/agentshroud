@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "_is_op_reference_allowed"
 location: "L4918"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/_is_op_reference_allowed
 ---
 
 # hermes_dashboard_ws_proxy()
@@ -24,6 +24,6 @@ tags:
 - [[hermes_dashboard_proxy()]] - `shares_data_with` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
-- [[websocket_1]] - `references` [EXTRACTED]
+- [[websocket_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

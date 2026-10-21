@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "FalcoAlertWatcher (2)"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # is_agentshroud_rule()
@@ -20,4 +20,4 @@ tags:
 - [[read_alerts()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

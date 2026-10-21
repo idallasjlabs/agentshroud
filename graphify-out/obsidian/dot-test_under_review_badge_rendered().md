@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "_make_cve"
+community: "GatewayEmailService"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/GatewayEmailService
 ---
 
 # .test_under_review_badge_rendered()
@@ -16,4 +16,4 @@ tags:
 - [[TestBuildTable]] - `method` [EXTRACTED]
 - [[_make_cve()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

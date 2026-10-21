@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "Sunday Upgrade prompt"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Sunday_Upgrade_prompt
 ---
 
 # .test_single_attempt_never_sleeps()
@@ -15,4 +15,4 @@ tags:
 - [[TestRetry]] - `method` [EXTRACTED]
 - [[_retry()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

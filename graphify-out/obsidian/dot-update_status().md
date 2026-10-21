@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ContextSegment"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ContextSegment
 ---
 
 # .update_status()
@@ -15,4 +15,4 @@ tags:
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Update the status of an existing item.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

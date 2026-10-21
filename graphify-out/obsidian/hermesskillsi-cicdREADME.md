@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "Skill: UI Expert (UI)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/Skill_UI_Expert_UI
 ---
 
 # hermes/skills/i-cicd/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

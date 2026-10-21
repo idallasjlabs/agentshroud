@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "security-entrypoint.sh"
-location: "L18"
+community: "ClamAV"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/ClamAV
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/code #graphify/EXTRACTED #community/ClamAV

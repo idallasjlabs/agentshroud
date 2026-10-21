@@ -1,18 +1,19 @@
 ---
-source_file: "docker/scripts/security-report.sh"
+source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "FR3: System Integrity"
+community: "test_collaborator_tracker.py (4)"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/test_collaborator_trackerpy_4
 ---
 
 # log()
 
 ## Connections
-- [[security-report.sh]] - `defines` [EXTRACTED]
-- [[security-report.sh script]] - `calls` [EXTRACTED]
+- [[alert_critical()]] - `calls` [EXTRACTED]
+- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
+- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

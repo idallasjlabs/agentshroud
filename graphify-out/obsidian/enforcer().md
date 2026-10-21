@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ingest_api/main.py"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ingest_api/mainpy
 ---
 
 # enforcer()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

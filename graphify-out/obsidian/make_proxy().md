@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection (2)"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # make_proxy()
@@ -42,10 +42,10 @@ tags:
 - [[dot-test_unknown_server_returns_error_result()]] - `calls` [EXTRACTED]
 - [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
 - [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPProxy]] - `references` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

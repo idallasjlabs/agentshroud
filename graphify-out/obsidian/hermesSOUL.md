@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "hermes/SOUL.md"
+community: "test_ptt_state.c"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/test_ptt_statec
 ---
 
 # hermes/SOUL.md
@@ -23,9 +23,9 @@ tags:
 - [[agentshroud-ssh-exec.sh helper]] - `references` [EXTRACTED]
 - [[approval_queue.py]] - `references` [EXTRACTED]
 - [[marvin (lab host)]] - `references` [EXTRACTED]
-- [[prompt_guard.py_1]] - `references` [EXTRACTED]
+- [[prompt_guard.py]] - `references` [EXTRACTED]
 - [[raspberrypi (lab host)]] - `references` [EXTRACTED]
 - [[tirith command-safety scanner]] - `references` [EXTRACTED]
 - [[trillian (lab host)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/test_ptt_statec

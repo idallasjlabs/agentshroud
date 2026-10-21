@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/i-security-reviewer.md"
 type: "document"
-community: "Security Review (SEC)"
+community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
 ---
 
 # hermes/agents/i-security-reviewer.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "i-mac README — macOS System Administrator (MAC)"
+community: "openclaw/skills/i-chaos-engineering/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-mac_README__macOS_System_Administrator_MAC
+  - community/openclaw/skills/i-chaos-engineering/SKILLmd
 ---
 
 # i-mac SKILL — Mac App Discovery
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-mac README — macOS System Administrator (MAC)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-mac_README__macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-chaos-engineering/SKILLmd

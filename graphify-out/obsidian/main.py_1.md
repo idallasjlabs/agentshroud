@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "main.py"
+community: ".pi/mcp.json"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/pi/mcpjson
 ---
 
 # main.py
@@ -15,15 +15,15 @@ tags:
 - [[Endpoints]] - `contains` [EXTRACTED]
 - [[Environment Variables Used_1]] - `contains` [EXTRACTED]
 - [[Key Dependencies — Modules Wired at Init]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_1]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes]] - `contains` [EXTRACTED]
 - [[Lifespan  Startup]] - `contains` [EXTRACTED]
 - [[Middleware (applied to all requests, outermost first)]] - `contains` [EXTRACTED]
-- [[Overview_13]] - `contains` [EXTRACTED]
+- [[Overview_10]] - `contains` [EXTRACTED]
 - [[POST forward — 5-Step Security Pipeline]] - `contains` [EXTRACTED]
-- [[Related_3]] - `contains` [EXTRACTED]
-- [[Security Notes_4]] - `contains` [EXTRACTED]
+- [[Related_2]] - `contains` [EXTRACTED]
+- [[Security Notes_3]] - `contains` [EXTRACTED]
 - [[Static Mounts]] - `contains` [EXTRACTED]
 - [[WebSocket Endpoints]] - `contains` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/pi/mcpjson

@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "._run_and_read"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/_run_and_read
 ---
 
 # gap_report_path()
 
 ## Connections
-- [[Path_13]] - `references` [EXTRACTED]
+- [[Path_19]] - `references` [EXTRACTED]
 - [[Per-agent gap report path. This used to be the single constant…]] - `rationale_for` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

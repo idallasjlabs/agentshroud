@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: Pre-Change Analysis (PCA) (2)"
+community: "openclaw/skills/i-cr/SKILL.md (5)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA_2
+  - community/openclaw/skills/i-cr/SKILLmd_5
 ---
 
 # hermes/skills/i-pca/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA_2
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_5

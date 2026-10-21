@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "concept"
-community: "graphify Skill"
+community: "Seccomp Profiles"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/Seccomp_Profiles
 ---
 
 # graphify MCP Stdio Server
@@ -14,4 +14,4 @@ tags:
 - [[graphify Exports & Benchmark Reference]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphify_Skill
+#graphify/concept #graphify/EXTRACTED #community/Seccomp_Profiles

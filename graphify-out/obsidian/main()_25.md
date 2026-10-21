@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L309"
+community: "Architecture"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/Architecture
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[render()_2]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/Architecture

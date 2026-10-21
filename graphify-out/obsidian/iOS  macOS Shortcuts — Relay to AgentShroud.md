@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
+community: "GitHub Copilot CLI Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # iOS / macOS Shortcuts — Relay to AgentShroud
@@ -22,7 +22,7 @@ tags:
 - [[Recipe E — Share Sheet photo relay]] - `contains` [EXTRACTED]
 - [[Status_4]] - `contains` [EXTRACTED]
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
+- [[Troubleshooting_31]] - `contains` [EXTRACTED]
 - [[shortcutsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

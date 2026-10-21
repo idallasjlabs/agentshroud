@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/add-watch.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "10. Troubleshooting"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/10_Troubleshooting
 ---
 
 # graphify reference: add a URL and watch a folder
@@ -17,4 +17,4 @@ tags:
 - [[hermesskillsgraphifyreferencesadd-watch]] - `contains` [EXTRACTED]
 - [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

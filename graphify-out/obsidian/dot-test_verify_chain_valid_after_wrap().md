@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L364"
+community: "ApprovalQueueConfig"
+location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/ApprovalQueueConfig
 ---
 
 # .test_verify_chain_valid_after_wrap()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
-- [[TestAuditTrailBounded]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[TestAuditChainBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

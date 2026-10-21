@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Path"
+community: "SecurityPipeline (3)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/SecurityPipeline_3
 ---
 
 # gateway/skills/manifest.py (SkillsManifest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

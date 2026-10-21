@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "test_gemini_openai_translator.py"
+community: "BotConfig"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/BotConfig
 ---
 
 # gemini_to_openai_request()
@@ -27,4 +27,4 @@ tags:
 - [[test_gemini_role_mapping_model_to_assistant()]] - `calls` [EXTRACTED]
 - [[test_gemini_system_instruction_snake_case_and_string()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/code #graphify/EXTRACTED #community/BotConfig
