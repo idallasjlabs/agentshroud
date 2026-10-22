@@ -17168,7 +17168,23 @@ _COSIGN_CVE_REGISTRY: list[dict[str, Any]] = (
 )
 
 # ── OpenSCAP CVE Registry
-_OPENSCAP_CVE_REGISTRY: list[dict[str, Any]] = []
+_OPENSCAP_CVE_REGISTRY: list[dict[str, Any]] = [
+    # ── GHSA sync 2026-10-22: 1 new openscap advisory(ies) auto-registered as under_review ──
+    {
+        "id": "ASH-OSCAP-001",
+        "ghsa_id": "GHSA-gr93-5vq9-7wh3",
+        "cve_id": "CVE-2026-85518",
+        "title": "Path traversal in ds_dump_component_sources via component id and catalog uri name",
+        "cvss": 6.1,
+        "severity": "MEDIUM",
+        "disclosed": "2026-10-22",
+        "fixed_in": "1.4.6",
+        "description": "### Summary\r \r `ds_dump_component_sources` composes an output path by concatenating the target directory with a name taken from the datastream document, then creates parent directories and writes the file, with no containment check. Both the component-ref `id` and the catalog `<uri name>` are attacker-controlled through the input XML, so `oscap ds sds-split` on a crafted file writes outside the ou",
+        "status": "under_review",
+        "mitigation": "",
+        "defense_layers": [],
+    },
+]
 
 # ── Syft CVE Registry
 _SYFT_CVE_REGISTRY: list[dict[str, Any]] = (
