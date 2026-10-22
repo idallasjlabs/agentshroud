@@ -224,6 +224,46 @@ def test_clamd_socket_constant_matches_both_images_clamd_conf():
     assert want in Path("docker/bots/openclaw/Dockerfile").read_text(encoding="utf-8")
 
 
+# CVE-2026-20213..20216 (2026-10-22): trixie ships clamav 1.4.3; the fix,
+# 1.4.6+dfsg-1~deb13u1, is only in trixie-proposed-updates. Both images take
+# ClamAV (and nothing else) from there until it reaches a point release.
+_IMAGES_WITH_CLAMAV = ("gateway/Dockerfile", "docker/bots/openclaw/Dockerfile")
+
+
+@pytest.mark.parametrize("dockerfile", _IMAGES_WITH_CLAMAV)
+def test_clamav_comes_from_proposed_updates_and_nothing_else_does(dockerfile):
+    text = Path(dockerfile).read_text(encoding="utf-8")
+    assert "Suites: trixie-proposed-updates" in text
+    # Every other package stays on stable: proposed-updates defaults to priority 1.
+    assert "Package: *\\nPin: release a=trixie-proposed-updates\\nPin-Priority: 1\\n" in text
+    assert (
+        "Package: clamav* clamdscan libclamav*\\nPin: release a=trixie-proposed-updates\\n"
+        "Pin-Priority: 990\\n"
+    ) in text
+
+
+# GHSA-6q48-6c7w-9gw2 (CRITICAL, 2026-10-20): the python:3.13-slim base ships
+# pip 26.2.1, whose vendored certifi (2026.06.17) bundles the compromised emSign
+# roots. pip 26.2.2 vendors certifi 2026.10.19.
+def test_gateway_upgrades_pip_past_the_vendored_certifi_advisory():
+    assert '"pip>=26.2.2"' in Path("gateway/Dockerfile").read_text(encoding="utf-8")
+
+
+# The 2026-03-27 `Trusted: yes` workaround (apt 2.6 arm64/bookworm gpgv bug)
+# turned off repo signature checks. OpenClaw removed it on trixie 2026-09-24;
+# the gateway kept it. An image that installs unverified packages is a
+# supply-chain exposure.
+@pytest.mark.parametrize("dockerfile", _IMAGES_WITH_CLAMAV)
+def test_apt_repo_signatures_are_verified(dockerfile):
+    code = "\n".join(
+        line
+        for line in Path(dockerfile).read_text(encoding="utf-8").splitlines()
+        if not line.lstrip().startswith("#")
+    )
+    assert "Trusted: yes" not in code
+    assert "trusted=yes" not in code
+
+
 def test_clamd_available_true_when_daemon_listening(clamd_sock_path):
     srv = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
     srv.bind(clamd_sock_path)
