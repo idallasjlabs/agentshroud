@@ -70,7 +70,7 @@ done
 # 2f. Conduit plugin (owner 2026-10-22): conduit_push was hand-installed into
 # Hermes's data volume, so no repo pin existed and Sunday never checked it
 # (0.41.0 vs upstream 0.55.2). Upstream has no tags: "latest" is plugin.yaml.
-for needle in 'conduit_push' 'kaishi00/hermes-conduit-notifier' 'plugin.yaml' 'Pulse stays off'; do
+for needle in 'conduit_push' 'kaishi00/hermes-conduit-notifier' 'plugin.yaml' 'Pulse stays off' 'accepted risk (owner 2026-10-22)' 'pinned to a reviewed commit SHA'; do
   if grep -qF -- "$needle" "$PROMPT"; then pass "inventory names: $needle"; else fail "inventory missing: $needle"; fi
 done
 
