@@ -65,7 +65,20 @@ else:
     row = sqlite3.connect(p).execute("SELECT value_json FROM settings WHERE key=?", ("enabled",)).fetchone()
     print("true" if row and json.loads(row[0]) else "false")' 2>/dev/null
 }
+# /opt/hermes/bin/hermes is a shim that drops `docker exec`'s root to the
+# hermes user (uid 10000), so the plugin manager must own what it swaps out.
+# The 2026-10-16 hand install left the plugin dir and install metadata
+# root-owned, and the first run here failed with EACCES in _swap_in_plugin
+# (prod, 2026-10-22). Hand them to hermes, as everything else in
+# $HERMES_HOME already is. Idempotent.
+own_plugin_files() {
+  docker exec -u 0 "$C" chown -R hermes:hermes \
+    /opt/data/plugins/conduit_push \
+    /opt/data/plugins/.install-metadata.json \
+    /opt/data/plugins/.install-metadata.json.lock
+}
 install_ref() {
+  own_plugin_files || return 1
   docker exec "$C" "$HERMES" plugins install --force --ref "$1" --enable "$REPO" >&2
 }
 restart_and_wait() {

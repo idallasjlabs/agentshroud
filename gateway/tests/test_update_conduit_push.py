@@ -51,8 +51,12 @@ case "$1" in
     case "$cmd" in
       *"plugins show conduit_push"*)
         printf 'conduit_push v%s\nStatus: %s\n' "$(cat "$S/version")" "$(cat "$S/status")" ;;
+      *"chown -R hermes:hermes"*) echo hermes > "$S/owner" ;;
       *"plugins install"*)
         [ -f "$S/install_fails" ] && { echo "install failed" >&2; exit 1; }
+        # The hermes CLI shim drops root to uid 10000; it cannot move a
+        # root-owned plugin dir aside (prod 2026-10-22, EACCES in _swap_in_plugin).
+        [ "$(cat "$S/owner")" = hermes ] || { echo "PermissionError: [Errno 13]" >&2; exit 1; }
         ref=$(echo "$cmd" | sed -n 's/.*--ref \([0-9a-f]\{40\}\).*/\1/p')
         echo "$ref" > "$S/ref"
         if [ "$ref" = "$(cat "$S/install_ref" 2>/dev/null)" ]; then
@@ -87,6 +91,7 @@ def _run(tmp_path, *, version="0.41.0", ref=OLD_REF, pulse="absent", flags=(), v
     (state / "ref").write_text(ref)
     (state / "status").write_text("enabled")
     (state / "pulse").write_text(pulse)
+    (state / "owner").write_text("root")  # as hand-installed on 2026-10-16
     (state / "install_ref").write_text(NEW_REF)
     (state / "install_version").write_text("0.58.0")
     for f in flags:
@@ -128,6 +133,17 @@ class TestUpgrade:
         assert len(install) == 1
         assert re.search(r"--ref [0-9a-f]{40}\b", install[0])
         assert "plugins update" not in calls  # `update` pulls floating latest
+
+    def test_root_owned_install_is_handed_to_hermes_before_installing(self, tmp_path):
+        proc, calls, _, state = _run(tmp_path)
+        assert proc.returncode == 0, proc.stderr
+        lines = calls.splitlines()
+        chown = next(i for i, c in enumerate(lines) if "chown -R hermes:hermes" in c)
+        install = next(i for i, c in enumerate(lines) if "plugins install" in c)
+        assert chown < install
+        assert "/opt/data/plugins/conduit_push" in lines[chown]
+        assert "/opt/data/plugins/.install-metadata.json" in lines[chown]
+        assert (state / "owner").read_text().strip() == "hermes"
 
     def test_already_at_pin_is_a_distinct_no_op(self, tmp_path):
         proc, calls, restarts, _ = _run(tmp_path, version="0.58.0", ref=NEW_REF)
