@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Error Index.md (2)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -32,7 +34,7 @@ members: 26
 - [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 - [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 - [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[Summary_11]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Summary_10]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 - [[Test Results]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Hermes Dev Workflow (HDEV) Skill
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members

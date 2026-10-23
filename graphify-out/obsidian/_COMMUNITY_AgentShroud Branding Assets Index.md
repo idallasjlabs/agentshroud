@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # AgentShroud Branding Assets Index
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -12,14 +14,14 @@ members: 16
 - [[Environment Variables_10]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Health Check_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Key Endpoints_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Logs_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Logs_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Networks_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Ports]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Related Notes_55]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_47]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Resource Limits]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Secrets_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Security Hardening_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Summary_18]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_19]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[Volumes_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[agentshroud-gateway_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 - [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md

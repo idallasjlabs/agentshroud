@@ -1,47 +1,50 @@
 ---
 type: community
-members: 34
+cohesion: 0.15
+members: 35
 ---
 
 # AlertTelegramRelay
 
-**Members:** 34 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[1. Pre-cache the Lima disk image]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[2. Start Colima]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[3. Apply the VPN networking fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[4. Verify]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[ADR-006-multi-runtime-support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[ADR-006 Multi-Runtime Container Support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Cisco AnyConnect VPN Networking Fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Colima (primary macOS runtime)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Colima Initial Setup Procedure]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Colima as primary macOS dev runtime]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Consequences]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Context_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Decision_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Docker Desktop (network topology diagram)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
-- [[Fix (Colima)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Fix (Docker Desktop)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Mitigation]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Multi-Runtime Support (DockerPodmanApple Containers)]] - concept - docs/architecture/deployment-diagram.md
-- [[Negative]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Per-Host Runtime Selection]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Positive]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Problem_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Roadmap]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Runtime Abstraction Layer]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Status_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Supported Runtimes]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
-- [[Tailscale (encrypted overlay network)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Tailscale Overlay Network (tail240ea8.ts.net)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[VPN Networking Fix (Cisco AnyConnect) runbook]] - rationale - docs/runbooks/colima-docker-guide.md
-- [[macOS Host (Development Machine)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[marvin (100.90.175.83, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[trillian (100.94.68.61, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[dot-__call__()_7]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__call__()_8]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__init__()_95]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__init__()_96]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-_clean_tool()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_coerce()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_dedup_key()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_handle()_1]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_spawn_send()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-flush()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Any_32]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Await in-flight sends (testshutdown helper).]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[_SendSpy]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_dedup_key_includes_source()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_dedup_same_alert_sent_once()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_final_text_capped_below_telegram_limit()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_info_severity_not_relayed()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_non_alert_events_ignored()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_outgoing_text_passes_through_sanitizer()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_plain_dict_event_tolerated()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_rate_limit_caps_sends_per_hour()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_send_failure_rolls_back_dedup_for_retry()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_send_failure_swallowed()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_subscribed_relay_receives_bus_emissions()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_tool_field_control_chars_stripped_and_capped()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_warning_alert_relayed_with_orange_marker()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_warning_flood_cannot_starve_critical()]] - code - gateway/tests/test_alert_telegram_relay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,11 +54,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
-- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD) (2)]]
-- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
+- 6 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[ADR-006 Multi-Runtime Container Support]] - degree 19, connects to 1 community
-- [[VPN Networking Fix (Cisco AnyConnect) runbook]] - degree 2, connects to 1 community
-- [[Tailscale (encrypted overlay network)]] - degree 2, connects to 1 community
+- [[test_alert_telegram_relay.py]] - degree 23, connects to 3 communities
+- [[_SendSpy]] - degree 21, connects to 1 community
+- [[_alert_event()]] - degree 16, connects to 1 community
+- [[test_subscribed_relay_receives_bus_emissions()]] - degree 5, connects to 1 community
+- [[test_non_alert_events_ignored()]] - degree 4, connects to 1 community

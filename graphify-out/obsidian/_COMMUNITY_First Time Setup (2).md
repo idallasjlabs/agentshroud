@@ -1,30 +1,37 @@
 ---
 type: community
-members: 17
+cohesion: 0.09
+members: 22
 ---
 
 # First Time Setup (2)
 
-**Members:** 17 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
-- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
-- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
+- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Prerequisites_6]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Prerequisites_7]] - document - docs/setup-telegram.md
+- [[Related Notes_40]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
+- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
+- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
+- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
+- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
+- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 7 Verify]] - document - docs/setup-telegram.md
+- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
+- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
+- [[Troubleshooting_25]] - document - docs/setup-telegram.md
+- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[setup-telegram]] - document - docs/setup-telegram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,13 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_dot-mcp.json]]
-- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy_thinking_suppression.py]]
+- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
-- [[STPA-Sec Analysis of AgentShroud]] - degree 9, connects to 1 community
-- [[RELEASE-PLAN]] - degree 7, connects to 1 community
-- [[Credential Isolation Architecture]] - degree 4, connects to 1 community
-- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - degree 3, connects to 1 community
-- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community
+- [[First Time Setup_1]] - degree 12, connects to 1 community
+- [[Telegram Channel Setup]] - degree 11, connects to 1 community
+- [[Step 8 Configure Environment]] - degree 2, connects to 1 community

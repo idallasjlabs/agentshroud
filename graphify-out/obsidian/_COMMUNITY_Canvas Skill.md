@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 37
 ---
 
 # Canvas Skill
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -37,7 +39,7 @@ members: 37
 - [[Bug 1 revoking a hardcoded default (never in approved_collaborators.json)]] - rationale - gateway/tests/test_rbac.py
 - [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
 - [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - rationale - gateway/tests/test_rbac.py
-- [[RBACConfig_4]] - code - gateway/tests/test_rbac.py
+- [[RBACConfig]] - code - gateway/tests/test_rbac.py
 - [[Test default RBAC configuration initialization.]] - rationale - gateway/tests/test_rbac.py
 - [[Test dynamic role assignment.]] - rationale - gateway/tests/test_rbac.py
 - [[Test getting users by role.]] - rationale - gateway/tests/test_rbac.py
@@ -54,14 +56,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 19 edges to [[_COMMUNITY_MiddlewareManager (2)]]
 - 3 edges to [[_COMMUNITY_Function Details]]
 - 2 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 30, connects to 4 communities
-- [[RBACConfig_4]] - degree 18, connects to 4 communities
+- [[TestCollaboratorPersistence]] - degree 30, connects to 3 communities
+- [[RBACConfig]] - degree 18, connects to 3 communities
 - [[dot-test_default_config_initialization()]] - degree 3, connects to 1 community
 - [[dot-test_get_users_by_role()]] - degree 3, connects to 1 community
 - [[dot-test_owner_and_collaborators_can_be_overridden_from_env()]] - degree 3, connects to 1 community

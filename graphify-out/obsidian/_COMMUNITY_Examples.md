@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.22
 members: 16
 ---
 
 # Examples
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 16 nodes
 
 ## Members
 - [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Any_67]] - code - gateway/proxy/canvas_proxy.py
+- [[Any_64]] - code - gateway/proxy/canvas_proxy.py
 - [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
 - [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
 - [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
@@ -34,7 +36,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY__pcm_bytes]]
 
 ## Top bridge nodes
 - [[canvas_proxy_app()]] - degree 7, connects to 2 communities

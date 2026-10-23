@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 36
 ---
 
 # Function Details
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 36 nodes
 
 ## Members
@@ -53,15 +55,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 12 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 - 3 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 3 edges to [[_COMMUNITY_Canvas Skill]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[GroupRegistry]] - degree 29, connects to 3 communities
-- [[TestGroupRegistry]] - degree 21, connects to 3 communities
+- [[GroupRegistry]] - degree 29, connects to 4 communities
+- [[TestGroupRegistry]] - degree 21, connects to 2 communities
 - [[Group]] - degree 9, connects to 2 communities
 - [[_persist_groups()]] - degree 8, connects to 2 communities
 - [[dot-_make_rbac()]] - degree 12, connects to 1 community

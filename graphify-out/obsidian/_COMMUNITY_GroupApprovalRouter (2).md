@@ -1,13 +1,18 @@
 ---
 type: community
-members: 12
+cohesion: 0.10
+members: 19
 ---
 
 # GroupApprovalRouter (2)
 
-**Members:** 12 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 19 nodes
 
 ## Members
+- [[dot-test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_group_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_missing_chat_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_normalize_command_token_handles_empty_or_non_string()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_normalize_command_token_handles_numeric_input_as_non_command()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_normalize_command_token_handles_uppercase_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -18,7 +23,11 @@ members: 12
 - [[dot-test_normalize_command_token_preserves_hyphen_and_underscore()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_normalize_command_token_strips_leading_noise_before_symbol_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_normalize_command_token_strips_mention_and_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_private_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_supergroup_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestCommandTokenNormalization]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unit tests for command token normalization used by local inbound handlers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
@@ -29,7 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline]]
 
 ## Top bridge nodes
 - [[TestCommandTokenNormalization]] - degree 12, connects to 1 community
+- [[TestIsGroupMessage]] - degree 7, connects to 1 community

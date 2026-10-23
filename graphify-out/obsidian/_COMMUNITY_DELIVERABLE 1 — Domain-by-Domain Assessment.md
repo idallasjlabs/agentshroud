@@ -1,11 +1,13 @@
 ---
 type: community
-members: 50
+cohesion: 0.04
+members: 48
 ---
 
 # DELIVERABLE 1 — Domain-by-Domain Assessment
 
-**Members:** 50 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 48 nodes
 
 ## Members
 - [[10-digit real UID must still be written to JSONL and markdown.]] - rationale - gateway/tests/test_collaborator_tracker.py
@@ -55,9 +57,7 @@ members: 50
 - [[test_summary_last_activity_is_latest_timestamp()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_test_user_prefix_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_unknown_user_is_skipped()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[test_username_is_normalized_for_log_safety()]] - code - gateway/tests/test_collaborator_tracker.py
-- [[tracker()]] - code - gateway/tests/test_collaborator_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,7 +68,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
 
 ## Top bridge nodes
 - [[test_collaborator_tracker.py]] - degree 40, connects to 2 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 29
 ---
 
 # GSDE&G Skills Reference
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 29 nodes
 
 ## Members

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # AgentShroud™ — Trademark Prior Use Record
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
 - [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Purpose_7]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Purpose_9]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Related Notes_11]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Related Notes_12]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[Where Used_2]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
 

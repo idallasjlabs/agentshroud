@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # AgentShroud State Diagrams
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members

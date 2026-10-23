@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 10
 ---
 
 # AgentShroud Threat Model (STRIDE Analysis)
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 10
 - [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 - [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 - [[list_registry_ghsa_ids.py]] - code - scripts/list_registry_ghsa_ids.py
-- [[main()_36]] - code - scripts/list_registry_ghsa_ids.py
+- [[main()_34]] - code - scripts/list_registry_ghsa_ids.py
 - [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)

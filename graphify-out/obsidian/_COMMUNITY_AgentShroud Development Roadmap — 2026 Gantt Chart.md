@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 20
 ---
 
 # AgentShroud Development Roadmap — 2026 Gantt Chart
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 20 nodes
 
 ## Members

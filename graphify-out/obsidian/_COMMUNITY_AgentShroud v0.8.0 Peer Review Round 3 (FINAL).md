@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # AgentShroud v0.8.0 Peer Review Round 3 (FINAL)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members

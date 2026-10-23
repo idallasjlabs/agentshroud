@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Approval queue (notify Isaiah via Telegram, wait up to 1 hour)
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members

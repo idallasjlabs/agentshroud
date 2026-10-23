@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # Dockerfile — Bot (OpenClaw)
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -25,7 +27,7 @@ members: 20
 - [[Objective]] - document - .agents/skills/i-qa/SKILL.md
 - [[Output Format_11]] - document - .agents/skills/i-qa/SKILL.md
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
-- [[Role_45]] - document - .agents/skills/i-qa/SKILL.md
+- [[Role_43]] - document - .agents/skills/i-qa/SKILL.md
 - [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
 - [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
 
@@ -37,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Skill Quality Assurance (QA)]] - degree 7, connects to 1 community

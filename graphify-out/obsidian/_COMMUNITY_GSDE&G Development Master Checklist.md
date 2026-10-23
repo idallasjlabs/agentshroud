@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # GSDE&G Development Master Checklist
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -15,10 +17,10 @@ members: 12
 - [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_65]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_61]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)
@@ -29,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
-- [[Health Checks_2]] - degree 10, connects to 1 community
+- [[Health Checks_1]] - degree 10, connects to 1 community

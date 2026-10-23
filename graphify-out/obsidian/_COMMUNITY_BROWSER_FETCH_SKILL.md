@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # BROWSER_FETCH_SKILL.md
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
 - [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Purpose_9]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Purpose_10]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[Related Notes_13]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[Where Used_3]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
 
 ## Top bridge nodes
 - [[spaCy]] - degree 7, connects to 1 community

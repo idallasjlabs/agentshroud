@@ -1,21 +1,23 @@
 ---
 type: community
-members: 75
+cohesion: 0.06
+members: 74
 ---
 
 # AlertDispatcher (3)
 
-**Members:** 75 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 74 nodes
 
 ## Members
-- [[dot-__init__()_168]] - code - gateway/security/progressive_lockdown.py
-- [[dot-__init__()_169]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-__init__()_179]] - code - gateway/security/progressive_lockdown.py
+- [[dot-__init__()_180]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-_get_state()]] - code - gateway/security/progressive_lockdown.py
 - [[dot-_run_owner_cmd()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-_run_owner_cmd()_1]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-_setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-all_statuses()]] - code - gateway/security/progressive_lockdown.py
-- [[dot-get_status()_2]] - code - gateway/security/progressive_lockdown.py
+- [[dot-get_status()_1]] - code - gateway/security/progressive_lockdown.py
 - [[dot-is_owner()_5]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-is_suspended()]] - code - gateway/security/progressive_lockdown.py
 - [[dot-process_inbound()_10]] - code - gateway/tests/test_progressive_lockdown.py
@@ -50,7 +52,6 @@ members: 75
 - [[dot-test_unlock_unknown_user_reports_no_state()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-test_unlock_without_user_id_shows_usage()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[Drive a single owner command through the proxy and capture admin notices.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
 - [[FakePipelineResult_1]] - code - gateway/tests/test_progressive_lockdown.py
 - [[FakeRBAC_1]] - code - gateway/tests/test_progressive_lockdown.py
 - [[LockdownAction]] - code - gateway/security/progressive_lockdown.py
@@ -78,7 +79,7 @@ members: 75
 - [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[Verify suspended users get a drop notice (rate-limited to avoid spam).]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[What the caller should do in response to this block.]] - rationale - gateway/security/progressive_lockdown.py
-- [[_make_proxy()_3]] - code - gateway/tests/test_progressive_lockdown.py
+- [[_make_proxy()_4]] - code - gateway/tests/test_progressive_lockdown.py
 - [[_make_update()_2]] - code - gateway/tests/test_progressive_lockdown.py
 - [[_wrap()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
@@ -92,23 +93,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 8 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 13 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 9 edges to [[_COMMUNITY_ServiceManager]]
+- 3 edges to [[_COMMUNITY_Enum]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 - 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 1 edge to [[_COMMUNITY__make_proxy]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
-- 1 edge to [[_COMMUNITY_openclawskillsi-browserpackage.json]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 
 ## Top bridge nodes
-- [[ProgressiveLockdown]] - degree 47, connects to 6 communities
-- [[FR2 Use Control]] - degree 7, connects to 6 communities
-- [[_make_proxy()_3]] - degree 18, connects to 1 community
+- [[ProgressiveLockdown]] - degree 47, connects to 4 communities
+- [[progressive_lockdown.py]] - degree 6, connects to 2 communities
+- [[_make_proxy()_4]] - degree 18, connects to 1 community
 - [[TestProgressiveLockdownUnit]] - degree 15, connects to 1 community
 - [[LockdownLevel]] - degree 14, connects to 1 community

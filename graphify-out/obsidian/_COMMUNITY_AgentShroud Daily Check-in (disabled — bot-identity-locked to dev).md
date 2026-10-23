@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

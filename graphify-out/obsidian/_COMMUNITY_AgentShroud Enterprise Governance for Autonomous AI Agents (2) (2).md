@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents (2) (2)
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members

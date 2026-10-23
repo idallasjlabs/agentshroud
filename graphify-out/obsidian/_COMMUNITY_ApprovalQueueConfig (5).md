@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 45
 ---
 
 # ApprovalQueueConfig (5)
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 45 nodes
 
 ## Members
@@ -47,9 +49,9 @@ members: 45
 - [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
 - [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[Summary_5]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Summary_5]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Summary_6]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 - [[What This Means]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[What Would Change This to NO-GO]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
@@ -82,7 +84,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_config.py]]
 - 1 edge to [[_COMMUNITY_switch_model.sh]]
 - 1 edge to [[_COMMUNITY_test_security_toolchain.py (2) (2)]]
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have) (2)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Deployment & Troubleshooting Runbook]]
 
 ## Top bridge nodes

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 10
 ---
 
 # An unreachable feed must fail the run, not print '0 new' and exit 0.
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -15,8 +17,8 @@ members: 10
 - [[dot-test_nvd_layout_failure_exits_nonzero()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[An unreachable feed must fail the run, not print '0 new' and exit 0.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestFailsLoudly]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[_boom()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_boom()_1]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_boom()_2]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_timeout()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
@@ -27,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 - 1 edge to [[_COMMUNITY_ControlCenter]]
 - 1 edge to [[_COMMUNITY__adv()]]
 

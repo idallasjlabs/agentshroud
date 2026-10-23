@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 11
 ---
 
 # AgentShroud Module Inventory
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -29,7 +31,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Deploying AgentShroud on macOS (Apple Silicon  Intel)]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
 
 ## Top bridge nodes
 - [[prompt_protection.py]] - degree 4, connects to 2 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members

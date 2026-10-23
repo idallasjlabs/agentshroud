@@ -1,77 +1,103 @@
 ---
 type: community
-members: 102
+cohesion: 0.02
+members: 137
 ---
 
 # EgressFilterConfig (2)
 
-**Members:** 102 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 137 nodes
 
 ## Members
-- [[dot-__init__()_124]] - code - gateway/security/egress_filter.py
+- [[dot-__init__()_72]] - code - gateway/security/egress_filter.py
 - [[dot-_matches_any_pattern()]] - code - gateway/security/egress_config.py
 - [[dot-flush_notifications()]] - code - gateway/security/egress_filter.py
 - [[dot-from_environment()]] - code - gateway/security/egress_config.py
 - [[dot-get_effective_allowlist()]] - code - gateway/security/egress_config.py
+- [[dot-get_log()]] - code - gateway/security/egress_filter.py
+- [[dot-get_stats()_5]] - code - gateway/security/egress_filter.py
+- [[dot-get_top_destinations()]] - code - gateway/security/egress_filter.py
 - [[dot-grant_timed_approval()]] - code - gateway/security/egress_filter.py
 - [[dot-is_denylisted()]] - code - gateway/security/egress_config.py
-- [[dot-matches_allowlist()]] - code - gateway/security/egress_config.py
 - [[dot-set_approval_queue()]] - code - gateway/security/egress_filter.py
-- [[dot-set_event_bus()_2]] - code - gateway/security/egress_filter.py
+- [[dot-set_event_bus()]] - code - gateway/security/egress_filter.py
 - [[dot-set_notifier()]] - code - gateway/security/egress_filter.py
-- [[dot-setup_method()_25]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_11]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_12]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_allowed_domain()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
-- [[dot-test_allowed_ip()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_allowed_ip()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_allowed_specific_ip()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_ipv4_mapped_ipv6_private()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_ipv4_private()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_ipv6_link_local()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_ipv6_loopback()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_ipv6_ula()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_link_local()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_block_localhost_variants()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_default_config()_6]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_default_config()_3]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_denied_domain()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_denied_ip()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_denied_port()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_deny_all_false()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_denylist_monitor_mode()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_denylist_overrides_allowlist()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_denylist_wildcards()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_domains_in_default_allowlist()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_domains_not_denylisted()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_effective_allowlist_basic()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_effective_allowlist_with_denylist()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_egress_filter_allows_in_enforce_mode()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_egress_filter_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[dot-test_egress_mode_override()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_empty_ports_allows_all()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_enforce_mode_blocks_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_from_environment_enforce()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_from_environment_monitor()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_invalid_mode_handling()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_key_rotation_with_zeroing()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_log()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_logging_differences_by_mode()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_monitor_mode_allows_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_per_agent_policy()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_port_filtering()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_private_ip_blocking()]] - code - gateway/tests/test_egress_enforce.py
-- [[dot-test_stats()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_simultaneous_baseline_and_config_change()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_stats()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_url_parsing()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_url_parsing()_1]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_url_port_extraction()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_wildcard_allowlist_matching()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_wildcard_base_domain()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_wildcard_domain()]] - code - gateway/tests/test_security_hardening.py
+- [[All four domains must be in EgressFilterConfig's default allowlist.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
 - [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
 - [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
 - [[Create config from environment variables and AGENTSHROUD_MODE.]] - rationale - gateway/security/egress_config.py
-- [[EgressFilter_2]] - code - gateway/security/egress_filter.py
+- [[EgressAction]] - code - gateway/security/egress_filter.py
+- [[EgressFilter]] - code - gateway/security/egress_filter.py
+- [[EgressFilter in enforce mode allows all four domains for openclaw.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilterConfig]] - code - gateway/security/egress_config.py
+- [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - rationale - gateway/tests/test_security_hardening.py
 - [[FEED_HOSTS]] - code - gateway/security/feed_hosts.py
 - [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - rationale - gateway/security/egress_filter.py
+- [[Get egress attempt log, optionally filtered by agent.]] - rationale - gateway/security/egress_filter.py
+- [[Get summary statistics of egress attempts.]] - rationale - gateway/security/egress_filter.py
 - [[Get the effective allowlist for a specific agent.]] - rationale - gateway/security/egress_config.py
 - [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
+- [[None of the four domains should match the default denylist.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Only DENY egress decisions persisted to audit store (ALLOW caused 57M+ row32GB unbounded growth)]] - rationale - gateway/tests/test_egress_filter.py
 - [[PERMANENT_EGRESS_DOMAINS]] - code - gateway/security/egress_config.py
 - [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - code - gateway/security/egress_config.py
-- [[Public does domain match any pattern in the effective default allowlist…]] - rationale - gateway/security/egress_config.py
+- [[PIISanitizer]] - code - gateway/tests/test_redteam_probes.py
+- [[PatternRule]] - code - gateway/security/prompt_guard.py
 - [[Record a time-limited interactive approval for a domain.          Called by the]] - rationale - gateway/security/egress_filter.py
-- [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The]] - rationale - gateway/tests/test_module_stats.py
+- [[Return top destination domains by volume.]] - rationale - gateway/security/egress_filter.py
 - [[Send pending egress notifications via Telegram. Called from request handler.]] - rationale - gateway/security/egress_filter.py
 - [[Set interactive egress approval queue.]] - rationale - gateway/security/egress_filter.py
 - [[Set optional event bus for real-time egress telemetry.]] - rationale - gateway/security/egress_filter.py
@@ -84,7 +110,7 @@ members: 102
 - [[Test basic allowlist functionality.]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test config creation from environment in enforce mode.]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test config creation from environment in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Test default configuration values._4]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test default configuration values._1]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test denylist behavior in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test denylist wildcard matching.]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test handling of invalid modes.]] - rationale - gateway/tests/test_egress_enforce.py
@@ -98,18 +124,29 @@ members: 102
 - [[Test that private IPs are blocked regardless of mode.]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test the management API endpoints (would need FastAPI test client).]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test wildcard matching in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[TestDriftDetectorHardened]] - code - gateway/tests/test_security_hardening.py
 - [[TestEgressFilter]] - code - gateway/tests/test_security_hardening.py
 - [[TestEgressFilterConfig]] - code - gateway/tests/test_egress_enforce.py
 - [[TestEgressFilterEnforcement]] - code - gateway/tests/test_egress_enforce.py
 - [[TestEgressManagementAPI]] - code - gateway/tests/test_egress_enforce.py
-- [[TestEgressWiringEndToEnd]] - code - gateway/tests/test_module_stats.py
-- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
+- [[TestEgressSSRF]] - code - gateway/tests/test_security_hardening.py
+- [[TestOpenClawResearchDomainsAllowlisted]] - code - gateway/tests/test_egress_filter.py
+- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
+- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
+- [[Tests for SSRF protection in egress filter.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Tests for drift detector hardening.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
+- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Verify drift is detected even with rapid changes.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - rationale - gateway/tests/test_egress_filter.py
 - [[egress_config.py]] - code - gateway/security/egress_config.py
-- [[egress_filter()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
+- [[egress_filter()_1]] - code - gateway/tests/test_security_integration.py
 - [[get_egress_config()]] - code - gateway/security/egress_config.py
 - [[set_egress_config()]] - code - gateway/security/egress_config.py
 - [[test_egress_enforce.py]] - code - gateway/tests/test_egress_enforce.py
-- [[update_egress_allowlist()]] - code - gateway/web/management.py
+- [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -119,41 +156,46 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 56 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 22 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 13 edges to [[_COMMUNITY_First iteration ingests + records; second sees dedup and skips. (2)]]
-- 10 edges to [[_COMMUNITY_MiddlewareManager]]
-- 8 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
+- 88 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 29 edges to [[_COMMUNITY_ContextGuard]]
+- 29 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 25 edges to [[_COMMUNITY_socrouter.py]]
+- 15 edges to [[_COMMUNITY_PromptGuard]]
+- 9 edges to [[_COMMUNITY_dot-_make_proxy()]]
+- 8 edges to [[_COMMUNITY_EgressFilterConfig (2) (2)]]
+- 8 edges to [[_COMMUNITY_ModuleStatsCollector]]
 - 7 edges to [[_COMMUNITY_AgentTarget]]
-- 7 edges to [[_COMMUNITY_SessionManager]]
-- 7 edges to [[_COMMUNITY_EgressFilterConfig (2) (2)]]
-- 7 edges to [[_COMMUNITY_socrouter.py]]
 - 6 edges to [[_COMMUNITY_DelegationManager]]
-- 6 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 5 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 4 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 4 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 3 edges to [[_COMMUNITY_PortManager]]
+- 6 edges to [[_COMMUNITY_PathIsolationManager]]
+- 6 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 5 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 5 edges to [[_COMMUNITY_Any]]
+- 5 edges to [[_COMMUNITY_TestEncryptedStore]]
+- 5 edges to [[_COMMUNITY_TestPromptGuardEvasion]]
+- 5 edges to [[_COMMUNITY_socrouter.py (2)]]
+- 4 edges to [[_COMMUNITY_test_security_integration.py]]
+- 4 edges to [[_COMMUNITY_domain_matches()]]
+- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 3 edges to [[_COMMUNITY__pcm_bytes]]
 - 3 edges to [[_COMMUNITY_MiddlewareManager (4)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (3)_1]]
-- 2 edges to [[_COMMUNITY_socrouter.py (2)]]
+- 3 edges to [[_COMMUNITY_PortManager]]
 - 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_test_playback_state.c]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
-- 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 2 edges to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
 - 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 1 edge to [[_COMMUNITY_TestEnforceDefaults]]
+- 1 edge to [[_COMMUNITY_URLAnalyzer]]
+- 1 edge to [[_COMMUNITY_Job details]]
 
 ## Top bridge nodes
-- [[EgressFilter_2]] - degree 102, connects to 21 communities
-- [[EgressFilterConfig]] - degree 103, connects to 20 communities
-- [[TestEgressFilter]] - degree 34, connects to 7 communities
-- [[egress_config.py]] - degree 12, connects to 6 communities
-- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
+- [[EgressFilter]] - degree 102, connects to 22 communities
+- [[EgressFilterConfig]] - degree 103, connects to 16 communities
+- [[EgressAction]] - degree 45, connects to 14 communities
+- [[test_security_hardening.py]] - degree 30, connects to 10 communities
+- [[PIISanitizer]] - degree 13, connects to 9 communities

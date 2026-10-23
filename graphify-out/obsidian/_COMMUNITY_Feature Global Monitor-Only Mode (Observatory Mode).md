@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Feature: Global Monitor-Only Mode ("Observatory Mode")
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -33,15 +35,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_OpenSCAP]]
-- 2 edges to [[_COMMUNITY_Command Details]]
 - 2 edges to [[_COMMUNITY_hermesskillsi-crSKILL.md (2)]]
+- 2 edges to [[_COMMUNITY_Command Details]]
 - 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (4)]]
 - 1 edge to [[_COMMUNITY_MCP Auth Reset (MCPM-AUTH-RESET)]]
 - 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py (6)]]
 - 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py (7)]]
 - 1 edge to [[_COMMUNITY_run-as-root.sh]]
 - 1 edge to [[_COMMUNITY_A2APolicyEngine (gatewaysecuritya2a_policy.py)]]
-- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)]]
+- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)_1]]
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-observabilitySKILL]]
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 

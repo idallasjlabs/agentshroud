@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # GSDE&G Skills Reference Guide
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -24,7 +26,7 @@ members: 21
 - [[Post-Deployment Verification_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 - [[Pre-Deployment Checklist_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 - [[Resume After Testing (MANDATORY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Role_43]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Role_41]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 - [[Short-Term (15 min – 24 hr)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 - [[Sign-Off_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md

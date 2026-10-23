@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 24
 ---
 
 # DockerEngine
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 24 nodes
 
 ## Members

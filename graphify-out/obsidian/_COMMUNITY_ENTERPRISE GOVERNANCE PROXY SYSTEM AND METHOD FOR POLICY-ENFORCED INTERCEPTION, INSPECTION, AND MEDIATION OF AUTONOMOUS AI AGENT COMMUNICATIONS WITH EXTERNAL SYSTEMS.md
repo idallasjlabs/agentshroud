@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members

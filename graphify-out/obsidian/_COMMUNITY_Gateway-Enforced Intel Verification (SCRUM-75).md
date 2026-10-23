@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Gateway-Enforced Intel Verification (SCRUM-75)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.27
 members: 11
 ---
 
 # AgentShroud Recovery Plan v0.4.0 (2)
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 11 nodes
 
 ## Members

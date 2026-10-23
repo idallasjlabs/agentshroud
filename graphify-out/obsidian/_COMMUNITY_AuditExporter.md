@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 39
 ---
 
 # AuditExporter
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 39 nodes
 
 ## Members

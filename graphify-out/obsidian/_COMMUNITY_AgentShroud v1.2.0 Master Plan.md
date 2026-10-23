@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.08
 members: 24
 ---
 
 # AgentShroud v1.2.0 Master Plan
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[dot-setup_method()_27]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-setup_method()_23]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_build()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_build_with_args()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_down()]] - code - gateway/tests/test_runtime_engines.py
@@ -43,10 +45,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_jira_weekly_review.py]]
 - 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
+- 1 edge to [[_COMMUNITY_PodmanEngine]]
 - 1 edge to [[_COMMUNITY_AppleContainerEngine]]
 - 1 edge to [[_COMMUNITY_egress_retry.py]]
 
 ## Top bridge nodes
 - [[TestDockerEngine]] - degree 29, connects to 5 communities
-- [[dot-setup_method()_27]] - degree 2, connects to 1 community
+- [[dot-setup_method()_23]] - degree 2, connects to 1 community

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 13
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -30,8 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 
 ## Top bridge nodes
 - [[TestAlertDispatcher]] - degree 14, connects to 2 communities

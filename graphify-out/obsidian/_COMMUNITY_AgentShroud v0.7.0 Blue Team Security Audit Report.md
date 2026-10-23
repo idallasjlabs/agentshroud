@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
 - [[dot-__aenter__()]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-__aexit__()]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_3]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-aiter_bytes()]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-aread()]] - code - gateway/tests/test_llm_proxy.py
 - [[_HeadFakeResponse]] - code - gateway/tests/test_llm_proxy.py

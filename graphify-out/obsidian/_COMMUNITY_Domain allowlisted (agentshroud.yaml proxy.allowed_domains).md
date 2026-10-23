@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Domain allowlisted? (agentshroud.yaml proxy.allowed_domains)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members

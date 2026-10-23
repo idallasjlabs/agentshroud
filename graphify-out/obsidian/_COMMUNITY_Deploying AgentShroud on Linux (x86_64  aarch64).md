@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Deploying AgentShroud on Linux (x86_64 / aarch64)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 16
 - [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[Known Issues  Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
-- [[Purpose_116]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
+- [[Purpose_114]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[Related_20]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[Responsibilities_18]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md
 - [[_sanitize_presidio(content)]] - document - docs/vault/02 - Modules/Gateway Core/sanitizer.py.md

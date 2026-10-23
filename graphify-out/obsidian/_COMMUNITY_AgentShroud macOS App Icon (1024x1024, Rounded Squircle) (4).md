@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[dot-__init__()_40]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-__init__()_47]] - code - gateway/web/dashboard_endpoints.py
 - [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
 - [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

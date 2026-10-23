@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.06
 members: 40
 ---
 
 # AgentShroud™ Brand Guidelines
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[dot-__call__()_3]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[dot-__init__()_65]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[dot-__call__()_5]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[dot-__init__()_75]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
 - [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[_load_module()]] - code - gateway/tests/test_jira_dev_ticket.py

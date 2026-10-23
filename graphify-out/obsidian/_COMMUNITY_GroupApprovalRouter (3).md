@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # GroupApprovalRouter (3)
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.27
 members: 11
 ---
 
 # All Dependencies.md (2)
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -28,13 +30,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_CronStateMonitor]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
+- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[TestParseModeStrippedAfterPIIRedaction]] - degree 11, connects to 2 communities
+- [[TestParseModeStrippedAfterPIIRedaction]] - degree 11, connects to 5 communities
 - [[dot-_make_owner_proxy()]] - degree 7, connects to 1 community
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - degree 4, connects to 1 community
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - degree 4, connects to 1 community

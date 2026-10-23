@@ -1,28 +1,38 @@
 ---
 type: community
-members: 96
+cohesion: 0.03
+members: 106
 ---
 
 # GroupConfig
 
-**Members:** 96 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 106 nodes
 
 ## Members
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
+- [[dot-_mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-base_url()]] - code - gateway/ingest_api/bot_config.py
 - [[dot-model_post_init()_1]] - code - gateway/ingest_api/config.py
 - [[dot-resolved_container_name()]] - code - gateway/ingest_api/bot_config.py
 - [[dot-test_bot_config_has_telegram_token_secret_field()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_bot_config_image_field_present()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_bot_config_telegram_token_secret_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[dot-test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[dot-test_openclaw_bot_config_backward_compat()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[AuditExportConfig_1]] - code - gateway/ingest_api/config.py
+- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[AuditExportConfig]] - code - gateway/ingest_api/config.py
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
 - [[BotConfig]] - code - gateway/ingest_api/bot_config.py
 - [[BotConfig.base_url computes http{hostname}{port}.]] - rationale - gateway/tests/test_config.py
@@ -36,14 +46,16 @@ members: 96
 - [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[Explicit container_name wins over the 'agentshroud-{id}' convention —     regres]] - rationale - gateway/tests/test_config.py
 - [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[GatewayConfig_4]] - code - gateway/tests/test_config_hot_reload.py
+- [[GatewayConfig]] - code - gateway/tests/test_config_hot_reload.py
+- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - rationale - gateway/ingest_api/config.py
 - [[Load the real agentshroud.yaml when present (deployment host), else the     comm]] - rationale - gateway/tests/test_config.py
 - [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
 - [[No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).]] - rationale - gateway/tests/test_config.py
 - [[OpenClaw BotConfig must still work without the new fields.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Path_36]] - code - gateway/ingest_api/config.py
-- [[Path_37]] - code - gateway/tests/test_config_hot_reload.py
+- [[Path_34]] - code - gateway/ingest_api/config.py
+- [[Path_35]] - code - gateway/tests/test_config_hot_reload.py
 - [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
 - [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
 - [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
@@ -54,17 +66,17 @@ members: 96
 - [[Test that configuration has sensible defaults]] - rationale - gateway/tests/test_config.py
 - [[Test that load_config() populates bots — from YAML or backward-compat default.]] - rationale - gateway/tests/test_config.py
 - [[TestTelegramBotConfigTokenSecretField]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[The real docker container name for this bot — see container_name field.]] - rationale - gateway/ingest_api/bot_config.py
 - [[Verify BotConfig.telegram_token_secret field is present and defaults correctly.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - rationale - gateway/tests/test_config.py
-- [[_bot_service_names() must use each bot's real container name, not a     hardcode]] - rationale - gateway/tests/test_config.py
 - [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[_default_mtime()]] - code - gateway/ingest_api/config.py
 - [[_ensure_agentshroud_config_resolvable()]] - code - gateway/tests/conftest.py
 - [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
 - [[_load()]] - code - gateway/tests/test_config_hot_reload.py
 - [[_load_config()]] - code - gateway/tests/test_config.py
-- [[_write()_1]] - code - gateway/tests/test_config_hot_reload.py
+- [[_write()]] - code - gateway/tests/test_config_hot_reload.py
 - [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
 - [[bot_config.py]] - code - gateway/ingest_api/bot_config.py
 - [[config_watcher()]] - code - gateway/ingest_api/config.py
@@ -81,7 +93,6 @@ members: 96
 - [[test_bot_config_base_url()]] - code - gateway/tests/test_config.py
 - [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - code - gateway/tests/test_config.py
 - [[test_bot_config_resolved_container_name_uses_explicit_override()]] - code - gateway/tests/test_config.py
-- [[test_bot_service_names_uses_resolved_container_name()]] - code - gateway/tests/test_config.py
 - [[test_config.py]] - code - gateway/tests/test_config.py
 - [[test_config_defaults()]] - code - gateway/tests/test_config.py
 - [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
@@ -99,6 +110,7 @@ members: 96
 - [[test_resolve_config_path_explicit_and_env()]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_router_config_accepts_docker_service_hostname()]] - code - gateway/tests/test_config.py
 - [[test_router_config_accepts_hermes_hostname()]] - code - gateway/tests/test_config.py
+- [[test_telegram_proxy_multibot.py]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[test_watcher_ignores_missing_file()]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_watcher_reloads_on_mtime_change()]] - code - gateway/tests/test_config_hot_reload.py
 - [[test_watcher_stops_on_event()]] - code - gateway/tests/test_config_hot_reload.py
@@ -113,29 +125,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 10 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 10 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 34 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 9 edges to [[_COMMUNITY_MCPPolicyEngine]]
 - 9 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 8 edges to [[_COMMUNITY__make_proxy()]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 5 edges to [[_COMMUNITY_ContextSegment]]
-- 4 edges to [[_COMMUNITY_SecureBrowser (2)]]
+- 8 edges to [[_COMMUNITY_ContextSegment]]
+- 5 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 4 edges to [[_COMMUNITY__make_cve]]
+- 4 edges to [[_COMMUNITY_TestEnforceDefaults]]
+- 4 edges to [[_COMMUNITY__make_proxy()]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 3 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 2 edges to [[_COMMUNITY__make_cve]]
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 3 edges to [[_COMMUNITY_ServiceManager]]
+- 3 edges to [[_COMMUNITY_PathIsolationManager]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.8.0 — Full Security & Functionality Audit]]
+- 2 edges to [[_COMMUNITY_SecureBrowser (2)]]
+- 2 edges to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY__resolve_bot_container()]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — Full Security & Functionality Audit]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)_1]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency()]]
 - 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
 
 ## Top bridge nodes
-- [[ingest_apiconfig.py]] - degree 41, connects to 11 communities
-- [[load_config()]] - degree 47, connects to 9 communities
-- [[BotConfig]] - degree 34, connects to 7 communities
+- [[ingest_apiconfig.py]] - degree 41, connects to 15 communities
+- [[load_config()]] - degree 47, connects to 11 communities
+- [[BotConfig]] - degree 34, connects to 9 communities
+- [[test_telegram_proxy_multibot.py]] - degree 9, connects to 5 communities
 - [[test_config.py]] - degree 18, connects to 2 communities
-- [[TestTelegramBotConfigTokenSecretField]] - degree 8, connects to 2 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Himalaya Configuration Reference
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 16
 - [[Firewall]] - document - docs/operations/linux.md
 - [[Fresh Install_1]] - document - docs/operations/linux.md
 - [[Non-Root User]] - document - docs/operations/linux.md
-- [[Prerequisites_12]] - document - docs/operations/linux.md
+- [[Prerequisites_11]] - document - docs/operations/linux.md
 - [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
 - [[Updating to Latest Release_1]] - document - docs/operations/linux.md
 - [[VPS Deployment Notes]] - document - docs/operations/linux.md

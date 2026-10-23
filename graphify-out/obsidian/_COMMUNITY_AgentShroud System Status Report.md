@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 16
 ---
 
 # AgentShroud System Status Report
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 16
 - [[dot-test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - code - gateway/tests/test_credential_injector.py
 - [[Caller-supplied anthropic-version (e.g. a newer beta date) must not be clobbered]] - rationale - gateway/tests/test_credential_injector.py
 - [[Existing anthropic-beta values are kept; oauth-2025-04-20 is appended once.]] - rationale - gateway/tests/test_credential_injector.py
-- [[Path_52]] - code - gateway/tests/test_credential_injector.py
+- [[Path_53]] - code - gateway/tests/test_credential_injector.py
 - [[TestOAuthInjection]] - code - gateway/tests/test_credential_injector.py
 - [[Verify gateway-side OAuth-token translation for the Anthropic path.      Root ca]] - rationale - gateway/tests/test_credential_injector.py
 - [[anthropic-version is required on every v1messages call; the gateway adds it]] - rationale - gateway/tests/test_credential_injector.py

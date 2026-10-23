@@ -1,27 +1,47 @@
 ---
 type: community
-members: 14
+cohesion: 0.09
+members: 32
 ---
 
 # AuditExporter (2)
 
-**Members:** 14 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Architecture Overview_3]] - document - docs/api/integration-guide.md
-- [[Configuration_19]] - document - docs/api/integration-guide.md
-- [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Integration Testing]] - document - docs/api/integration-guide.md
-- [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
-- [[OpenSCAP_1]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Purpose_136]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Related Notes_59]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[dot-_export_cef()]] - code - gateway/security/audit_export.py
+- [[dot-_export_json()]] - code - gateway/security/audit_export.py
+- [[dot-_export_jsonld()]] - code - gateway/security/audit_export.py
+- [[dot-_parse_cef_for_verification()]] - code - gateway/security/audit_export.py
+- [[dot-audit_store()]] - code - gateway/tests/test_audit_export.py
+- [[dot-export_events()]] - code - gateway/security/audit_export.py
+- [[dot-test_export_cef()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_filtering()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_json()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[dot-verify_export_integrity()]] - code - gateway/security/audit_export.py
+- [[AuditEvent]] - code - gateway/security/audit_export.py
+- [[AuditExporter]] - code - gateway/security/audit_export.py
+- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
+- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
+- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
+- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
+- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,14 +51,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
-- 1 edge to [[_COMMUNITY_egress_config.py]]
-- 1 edge to [[_COMMUNITY_iCloud Services]]
-- 1 edge to [[_COMMUNITY_Path (4)]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher (5)]]
+- 6 edges to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
+- 3 edges to [[_COMMUNITY_AuditExportConfig]]
+- 2 edges to [[_COMMUNITY_The 8D Investigation Process]]
 
 ## Top bridge nodes
-- [[Architecture Overview_3]] - degree 6, connects to 2 communities
-- [[OpenSCAP_1]] - degree 8, connects to 1 community
-- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 1 community
-- [[Integration Testing]] - degree 3, connects to 1 community
+- [[AuditExporter]] - degree 22, connects to 4 communities
+- [[TestAuditExporter]] - degree 15, connects to 4 communities
+- [[AuditEvent]] - degree 6, connects to 2 communities
+- [[TextIO]] - degree 3, connects to 2 communities
+- [[dot-audit_store()]] - degree 3, connects to 1 community

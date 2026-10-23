@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Enterprise Governance Proxy System (invention)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members

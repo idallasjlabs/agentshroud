@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # AgentShroud Phase Review — 2026-02-23 (5)
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members

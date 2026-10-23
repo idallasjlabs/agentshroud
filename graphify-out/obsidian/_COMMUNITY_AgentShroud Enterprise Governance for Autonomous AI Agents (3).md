@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents (3)
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -26,10 +28,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 12 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 3 edges to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
+- 3 edges to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
-- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - degree 9, connects to 2 communities
-- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - degree 9, connects to 2 communities
-- [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - degree 8, connects to 2 communities
+- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - degree 9, connects to 3 communities
+- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - degree 9, connects to 3 communities
+- [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - degree 8, connects to 3 communities

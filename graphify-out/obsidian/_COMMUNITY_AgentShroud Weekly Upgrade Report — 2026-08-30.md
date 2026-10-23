@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # AgentShroud Weekly Upgrade Report — 2026-08-30
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Attack Teardowns: How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members

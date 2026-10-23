@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 7
 ---
 
 # AgentShroud™ Communication Templates (2)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 7
 - [[PATH_3]] - code - scripts/peer-review.sh
 - [[call_gemini()]] - code - scripts/gemini-review.py
 - [[gemini-review.py]] - code - scripts/gemini-review.py
-- [[main()_5]] - code - scripts/gemini-review.py
+- [[main()_4]] - code - scripts/gemini-review.py
 - [[peer-review.sh]] - code - scripts/peer-review.sh
 - [[peer-review.sh script]] - code - scripts/peer-review.sh
 

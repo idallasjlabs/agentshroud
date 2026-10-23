@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # AgentShroud Weekly Upgrade — 2026-09-06
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 18
 - [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 - [[Module-Level Constants_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 - [[Operational Notes]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
-- [[Purpose_98]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Purpose_87]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 - [[Related_8]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 - [[Responsibilities_6]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 - [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md

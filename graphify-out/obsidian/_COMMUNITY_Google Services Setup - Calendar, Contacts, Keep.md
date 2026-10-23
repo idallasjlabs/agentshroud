@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 29
 ---
 
 # Google Services Setup - Calendar, Contacts, Keep
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -46,7 +48,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
 
 ## Top bridge nodes
-- [[TestNewPatternsV080]] - degree 32, connects to 1 community
+- [[TestNewPatternsV080]] - degree 32, connects to 2 communities

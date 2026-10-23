@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 17
 ---
 
 # Function Details (4)
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 17
 - [[Package a skill folder into a .skill file.      Args         skill_path Path t]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[TestCase]] - code
 - [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[main()_26]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[main()_23]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py

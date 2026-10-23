@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # ContextSegment (3)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members

@@ -1,20 +1,20 @@
 ---
 type: community
-members: 21
+cohesion: 0.11
+members: 19
 ---
 
 # AgentShroud Operations Cheat Sheet
 
-**Members:** 21 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
 - [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
 - [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[ApprovalRequest_3]] - document - docs/data/data-dictionary.md
+- [[ApprovalRequest_4]] - document - docs/data/data-dictionary.md
 - [[AuditEntry]] - document - docs/data/data-dictionary.md
-- [[Configuration Entities]] - document - docs/data/data-dictionary.md
-- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
 - [[Core Audit Entities]] - document - docs/data/data-dictionary.md
 - [[DNSQuery]] - document - docs/data/data-dictionary.md
 - [[Data Classification]] - document - docs/data/data-dictionary.md
@@ -38,11 +38,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 - 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
+- 1 edge to [[_COMMUNITY_Himalaya Email CLI]]
+- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
 
 ## Top bridge nodes
+- [[AgentShroud Data Dictionary]] - degree 9, connects to 1 community
 - [[Network Security Entities]] - degree 5, connects to 1 community
 - [[Approval Workflows]] - degree 3, connects to 1 community
-- [[Configuration Setup]] - degree 2, connects to 1 community

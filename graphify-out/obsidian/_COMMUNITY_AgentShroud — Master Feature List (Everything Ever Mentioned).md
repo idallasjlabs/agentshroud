@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 17
 ---
 
 # AgentShroud — Master Feature List (Everything Ever Mentioned)
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -15,8 +17,8 @@ members: 17
 - [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
 - [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
 - [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-get_stats()_19]] - code - gateway/security/alert_dispatcher.py
-- [[Any_61]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_stats()_16]] - code - gateway/security/alert_dispatcher.py
+- [[Any_62]] - code - gateway/security/alert_dispatcher.py
 - [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
 - [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
 - [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
@@ -34,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_MiddlewareManager]]
+- 8 edges to [[_COMMUNITY_ContextGuard]]
 
 ## Top bridge nodes
 - [[dot-dispatch()]] - degree 7, connects to 1 community

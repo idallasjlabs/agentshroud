@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist (5)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # AgentShroud Documentation (2)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
@@ -23,8 +25,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_A2AMethod]]
-- 2 edges to [[_COMMUNITY_AgentShroud Documentation]]
+- 1 edge to [[_COMMUNITY_test_key_rotation_internals.py]]
+- 1 edge to [[_COMMUNITY_CredentialInfo]]
 - 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
 
 ## Top bridge nodes
-- [[TestReadFrom1Password]] - degree 10, connects to 3 communities
+- [[TestReadFrom1Password]] - degree 10, connects to 4 communities

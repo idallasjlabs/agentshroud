@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Egress Filter Errors
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -27,7 +29,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 5 edges to [[_COMMUNITY_MCPToolCall]]
+- 4 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 2 edges to [[_COMMUNITY_MCPInspector]]
+- 1 edge to [[_COMMUNITY_What Does OpenClaw Actually Need to Write]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_MCPToolResult]]
 
 ## Top bridge nodes
-- [[TestAuditTrail_2]] - degree 23, connects to 1 community
+- [[TestAuditTrail_2]] - degree 23, connects to 6 communities

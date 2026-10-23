@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members

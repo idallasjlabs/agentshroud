@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # GroupApprovalRouter
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -38,15 +40,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 18 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 6 edges to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
+- 6 edges to [[_COMMUNITY_asyncio]]
 - 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]]
 - 1 edge to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
 
 ## Top bridge nodes
-- [[BlockingPipeline]] - degree 10, connects to 3 communities
-- [[dot-test_clean_message_passes_through()]] - degree 7, connects to 2 communities
-- [[dot-test_encoding_detected_on_getUpdates()]] - degree 7, connects to 2 communities
-- [[dot-test_inbound_text_normalized_before_pipeline()]] - degree 7, connects to 2 communities
-- [[dot-test_owner_message_not_blocked()]] - degree 7, connects to 2 communities
+- [[BlockingPipeline]] - degree 10, connects to 4 communities
+- [[dot-test_clean_message_passes_through()]] - degree 7, connects to 3 communities
+- [[dot-test_encoding_detected_on_getUpdates()]] - degree 7, connects to 3 communities
+- [[dot-test_inbound_text_normalized_before_pipeline()]] - degree 7, connects to 3 communities
+- [[dot-test_owner_message_not_blocked()]] - degree 7, connects to 3 communities

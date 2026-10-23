@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 15
 - [[Function Details_26]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Purpose_128]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Purpose_126]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Related_32]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Responsibilities_30]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md

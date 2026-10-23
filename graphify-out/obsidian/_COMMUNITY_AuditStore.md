@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.16
 members: 30
 ---
 
 # AuditStore
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -27,15 +29,15 @@ members: 30
 - [[dot-test_sync_allows_clean_tree()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
-- [[Path_27]] - code - gateway/tests/test_skill_guard.py
-- [[Recommendation]] - code - gateway/security/skill_guard.py
+- [[Path_30]] - code - gateway/tests/test_skill_guard.py
+- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
+- [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestClient]] - code - gateway/tests/test_skill_guard.py
 - [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
 - [[TestScanEntrypoint]] - code - gateway/tests/test_skill_guard.py
 - [[TestScanEntrypointInProcess]] - code - gateway/tests/test_skill_guard.py
 - [[TestSyncScriptPreflight]] - code - gateway/tests/test_skill_guard.py
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - rationale - gateway/tests/test_skill_guard.py
-- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
 - [[_run_scan_cli()]] - code - gateway/tests/test_skill_guard.py
 - [[_write_tree()]] - code - gateway/tests/test_skill_guard.py
 
@@ -47,12 +49,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 17 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 24 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 23 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY__make_proxy]]
 
 ## Top bridge nodes
-- [[Recommendation]] - degree 27, connects to 2 communities
-- [[Path_27]] - degree 24, connects to 2 communities
+- [[SkillScanError]] - degree 24, connects to 3 communities
+- [[Path_30]] - degree 24, connects to 2 communities
 - [[TestScanEntrypointInProcess]] - degree 13, connects to 2 communities
 - [[TestSyncScriptPreflight]] - degree 11, connects to 2 communities
 - [[TestReloadIntegration]] - degree 10, connects to 2 communities

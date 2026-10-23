@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 7
 ---
 
 # AgentShroud™ Communication Templates (3)
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 7 nodes
 
 ## Members

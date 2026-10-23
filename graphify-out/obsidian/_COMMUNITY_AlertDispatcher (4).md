@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 66
 ---
 
 # AlertDispatcher (4)
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 66 nodes
 
 ## Members
@@ -24,7 +26,7 @@ members: 66
 - [[Add a user to a group.]] - rationale - gateway/cli/main.py
 - [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
 - [[Aggregate health report.]] - rationale - gateway/cli/main.py
-- [[Any_82]] - code - gateway/cli/main.py
+- [[Any_80]] - code - gateway/cli/main.py
 - [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
@@ -65,12 +67,12 @@ members: 66
 - [[get_risk()]] - code - gateway/cli/main.py
 - [[get_services()]] - code - gateway/cli/main.py
 - [[get_users()]] - code - gateway/cli/main.py
-- [[main()_33]] - code - gateway/cli/main.py
+- [[main()_31]] - code - gateway/cli/main.py
 - [[restart()_1]] - code - gateway/cli/main.py
 - [[restart_service()_2]] - code - gateway/cli/main.py
 - [[scan()]] - code - gateway/cli/main.py
 - [[set()]] - code - gateway/cli/main.py
-- [[set_mode()_1]] - code - gateway/cli/main.py
+- [[set_mode()]] - code - gateway/cli/main.py
 - [[stop()]] - code - gateway/cli/main.py
 - [[stop_service()_2]] - code - gateway/cli/main.py
 - [[tail()_1]] - code - gateway/cli/main.py

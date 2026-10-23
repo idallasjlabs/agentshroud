@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.11
 members: 24
 ---
 
 # Critical Findings
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_132]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-__init__()_144]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_api_url()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_async_send()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_send_request()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_token_for()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[dot-cleanup_expired()_1]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-cleanup_expired()_2]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py

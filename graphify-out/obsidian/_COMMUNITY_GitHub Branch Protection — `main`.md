@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # GitHub Branch Protection — `main`
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[Feedback Guidelines_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Output Format_6]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Review Principles_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Role_13]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Feedback Guidelines_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Output Format_5]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Review Principles_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Role_12]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,4 +28,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Skill Code Review (CR)_2]] - degree 6, connects to 1 community
+- [[Skill Code Review (CR)_1]] - degree 6, connects to 1 community

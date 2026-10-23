@@ -1,44 +1,37 @@
 ---
 type: community
-members: 31
+cohesion: 0.12
+members: 22
 ---
 
 # AgentTarget (2)
 
-**Members:** 31 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[dot-to_dict()_5]] - code - gateway/security/canary.py
-- [[Any_38]] - code - gateway/security/canary.py
-- [[Canary result should serialize to dict properly.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should detect that fake PII was stripped.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should fail when no pipeline configured.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should pass proxy check with healthy forwarder.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should pass when pipeline is properly configured.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should verify audit chain integrity.]] - rationale - gateway/tests/test_canary.py
-- [[CanaryCheck]] - code - gateway/security/canary.py
-- [[CanaryResult_2]] - code - gateway/security/canary.py
-- [[Individual canary check result.]] - rationale - gateway/security/canary.py
-- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
-- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - rationale - gateway/security/canary.py
-- [[fail()_4]] - code - scripts/verify-proxy.sh
-- [[info()_1]] - code - scripts/verify-proxy.sh
-- [[pass()_3]] - code - scripts/verify-proxy.sh
-- [[run_bypass()]] - code - scripts/verify-proxy.sh
-- [[run_canary()]] - code - scripts/verify-proxy.sh
-- [[run_canary()_1]] - code - gateway/security/canary.py
-- [[run_chain()]] - code - scripts/verify-proxy.sh
-- [[run_full()]] - code - scripts/verify-proxy.sh
-- [[run_quick()]] - code - scripts/verify-proxy.sh
-- [[test_canary_fails_without_pipeline()]] - code - gateway/tests/test_canary.py
-- [[test_canary_passes_with_pipeline()]] - code - gateway/tests/test_canary.py
-- [[test_canary_result_serialization()]] - code - gateway/tests/test_canary.py
-- [[test_canary_verifies_audit_chain()]] - code - gateway/tests/test_canary.py
-- [[test_canary_verifies_pii_stripping()]] - code - gateway/tests/test_canary.py
-- [[test_canary_with_healthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[test_canary_with_unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[verify-proxy.sh]] - code - scripts/verify-proxy.sh
-- [[verify-proxy.sh script]] - code - scripts/verify-proxy.sh
+- [[dot-__init__()_145]] - code - gateway/ingest_api/router.py
+- [[dot-_build_forward_payload()]] - code - gateway/ingest_api/router.py
+- [[dot-forward_to_agent()]] - code - gateway/ingest_api/router.py
+- [[dot-forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
+- [[dot-health_check()_4]] - code - gateway/ingest_api/router.py
+- [[dot-list_targets()]] - code - gateway/ingest_api/router.py
+- [[dot-register_bots()]] - code - gateway/ingest_api/router.py
+- [[dot-resolve_target()]] - code - gateway/ingest_api/router.py
+- [[AgentShroud Secure Chat Interface (static HTMLJS)]] - code - gateway/ingest_api/static/chat.html
+- [[AgentTarget_1]] - code - gateway/ingest_api/router.py
+- [[Any_53]] - code - gateway/ingest_api/router.py
+- [[Build the outbound payload for `target`, shared by the blocking and         stre]] - rationale - gateway/ingest_api/router.py
+- [[Check health of one or all agent targets          Args             target Spec]] - rationale - gateway/ingest_api/router.py
+- [[Determine which agent should receive this content          Args             req]] - rationale - gateway/ingest_api/router.py
+- [[Forward sanitized content to agent via HTTP POST          Args             targ]] - rationale - gateway/ingest_api/router.py
+- [[ForwardRequest_1]] - code - gateway/ingest_api/router.py
+- [[Initialize router          Args             config Router configuration]] - rationale - gateway/ingest_api/router.py
+- [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - rationale - gateway/ingest_api/router.py
+- [[Return all configured agent targets          Returns             List of AgentT]] - rationale - gateway/ingest_api/router.py
+- [[RouterConfig]] - code - gateway/ingest_api/router.py
+- [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - rationale - gateway/ingest_api/router.py
+- [[sendMessage() JS — POST forward from browser chat UI]] - code - gateway/ingest_api/static/chat.html
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,19 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_AgentTarget]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 3 edges to [[_COMMUNITY_test_playback_state.c]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
-- 1 edge to [[_COMMUNITY_ResourceUsage]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 12 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 5 edges to [[_COMMUNITY__make_proxy()]]
+- 4 edges to [[_COMMUNITY_ForwardRequest]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (2) (2)]]
 
 ## Top bridge nodes
-- [[run_canary()_1]] - degree 19, connects to 6 communities
-- [[run_canary()]] - degree 11, connects to 3 communities
-- [[run_quick()]] - degree 9, connects to 2 communities
-- [[run_chain()]] - degree 8, connects to 2 communities
-- [[verify-proxy.sh]] - degree 10, connects to 1 community
+- [[AgentTarget_1]] - degree 11, connects to 3 communities
+- [[Any_53]] - degree 7, connects to 3 communities
+- [[ForwardRequest_1]] - degree 4, connects to 3 communities
+- [[RouterConfig]] - degree 4, connects to 3 communities
+- [[dot-forward_to_agent()]] - degree 8, connects to 2 communities

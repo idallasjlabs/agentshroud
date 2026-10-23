@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 12
 ---
 
 # Docker Commands Reference
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 12 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 31
 ---
 
 # EgressFilterConfig (2) (3)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
@@ -26,7 +28,7 @@ members: 31
 - [[Model usage]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Notes_1]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
 - [[Output]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Overview_5]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Overview_4]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Quick start_5]] - document - skills/openclaw/model-usage/SKILL.md
 - [[References]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Search across ALL sessions for a phrase]] - document - skills/openclaw/session-logs/SKILL.md

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -14,16 +16,16 @@ members: 16
 - [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Purpose_117]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[Purpose_115]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[Related_21]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[Responsibilities_19]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[VersionRequest Fields]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[downgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[get_version_history()_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[get_version_history()]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[rollback_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[upgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_2]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 - [[version_routes.py_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[version_routes.py]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
 
 ## Live Query (requires Dataview plugin)
 

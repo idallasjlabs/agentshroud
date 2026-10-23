@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 20
 ---
 
 # Distributed OpenClaw Node Architecture — Raspberry Pi 4
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -43,8 +45,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_REPORT STRUCTURE]]
 - 1 edge to [[_COMMUNITY_canvas_proxy_app]]
 - 1 edge to [[_COMMUNITY_openclawskillsi-browserpackage.json]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (2)]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 
 ## Top bridge nodes
 - [[diagramsREADME]] - degree 8, connects to 4 communities

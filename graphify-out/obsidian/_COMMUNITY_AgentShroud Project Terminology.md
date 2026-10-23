@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # AgentShroud Project Terminology
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -30,7 +32,7 @@ members: 26
 - [[Security_10]] - document - skills/custom/icloud/SKILL.md
 - [[Send Email_2]] - document - skills/custom/icloud/SKILL.md
 - [[Setup_2]] - document - skills/custom/icloud/SKILL.md
-- [[Troubleshooting_23]] - document - skills/custom/icloud/SKILL.md
+- [[Troubleshooting_22]] - document - skills/custom/icloud/SKILL.md
 - [[Update Contact_2]] - document - skills/custom/icloud/SKILL.md
 - [[Update Event_2]] - document - skills/custom/icloud/SKILL.md
 - [[iCloud Services_2]] - document - skills/custom/icloud/SKILL.md
@@ -43,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-ompmcp.json]]
+- 1 edge to [[_COMMUNITY_ssh-configuration]]
 
 ## Top bridge nodes
 - [[iCloud Services_2]] - degree 9, connects to 1 community
