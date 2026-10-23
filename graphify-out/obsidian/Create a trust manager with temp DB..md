@@ -12,6 +12,6 @@ tags:
 # Create a trust manager with temp DB.
 
 ## Connections
-- [[manager()]] - `rationale_for` [EXTRACTED]
+- [[manager()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "system-requirements.md (2)"
+community: "system-requirements.md"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/system-requirementsmd_2
+  - community/system-requirementsmd
 ---
 
 # Convert score to letter grade.      Args:         score: Numeric score (0-100).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[score_to_grade()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/system-requirementsmd_2
+#graphify/rationale #graphify/EXTRACTED #community/system-requirementsmd

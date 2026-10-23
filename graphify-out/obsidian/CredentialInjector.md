@@ -12,7 +12,7 @@ tags:
 # CredentialInjector
 
 ## Connections
-- [[dot-__init__()_13]] - `calls` [INFERRED]
+- [[dot-__init__()_118]] - `calls` [INFERRED]
 - [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 - [[dot-injector()]] - `calls` [INFERRED]
 - [[dot-injector()_1]] - `calls` [INFERRED]

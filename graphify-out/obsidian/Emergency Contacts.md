@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "KillSwitchMonitor (2) (10)"
+community: "AgentShroud Incident Response Plan"
 location: "L572"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_10
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Emergency Contacts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_10
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
-location: "L1"
+community: "Mode A — Single task (3)"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Mode_A__Single_task_3
 ---
 
-# Crash Recovery.md
+# Crash Recovery
 
 ## Connections
-- [[Container Errors_1]] - `references` [EXTRACTED]
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
-- [[Health Checks_1]] - `references` [EXTRACTED]
-- [[Restart Procedure_1]] - `references` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
-- [[store.py]] - `references` [INFERRED]
+- [[Auto-Restart]] - `contains` [EXTRACTED]
+- [[Detecting a Crash]] - `contains` [EXTRACTED]
+- [[Manual Recovery]] - `contains` [EXTRACTED]
+- [[OOM Recovery]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

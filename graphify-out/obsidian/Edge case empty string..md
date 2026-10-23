@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # Edge case: empty string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_empty_and_none_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

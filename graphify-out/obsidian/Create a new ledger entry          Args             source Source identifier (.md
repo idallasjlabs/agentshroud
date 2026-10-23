@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "_make_proxy()"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/_make_proxy
 ---
 
 # Create a new ledger entry          Args:             source: Source identifier (
 
 ## Connections
-- [[dot-record()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-record()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

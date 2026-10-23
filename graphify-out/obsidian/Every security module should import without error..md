@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L1103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # Every security module should import without error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_all_security_modules_importable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

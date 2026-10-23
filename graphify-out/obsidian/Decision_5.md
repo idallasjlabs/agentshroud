@@ -1,18 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
-location: "L15"
+community: "Apple Reminders CLI (remindctl)"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
-- [[Hash Chain Structure_1]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

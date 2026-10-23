@@ -12,6 +12,6 @@ tags:
 # Derived (set at runtime by `config.py`)
 
 ## Connections
-- [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py (2)"
+community: "triage-cve-mitigations.py"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy_2
+  - community/triage-cve-mitigationspy
 ---
 
 # Development Workflow
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Verify OS Immutability]] - `contains` [EXTRACTED]
 - [[Step 6 Revert to Development if Needed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy_2
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

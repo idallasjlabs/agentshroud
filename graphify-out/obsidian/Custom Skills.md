@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "TeamsConfig"
+community: "FileSandbox"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/FileSandbox
 ---
 
 # Custom Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig
+#graphify/document #graphify/EXTRACTED #community/FileSandbox

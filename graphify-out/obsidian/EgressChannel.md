@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # EgressChannel
 
 ## Connections
-- [[dot-get_events()_2]] - `references` [EXTRACTED]
+- [[dot-get_events()]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[MockEgressChannel]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
+- [[TestAnomalyDetection]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -27,7 +27,7 @@ tags:
 - [[TestHTTPSecurity]] - `uses` [INFERRED]
 - [[TestInfoLeakage]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response_3
+#graphify/code #graphify/INFERRED #community/ContextGuard

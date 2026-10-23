@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "model_usage.py"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/model_usagepy
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

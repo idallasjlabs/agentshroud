@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_152]] - `method` [EXTRACTED]
+- [[dot-__init__()_102]] - `method` [EXTRACTED]
 - [[dot-_compute_signature()]] - `method` [EXTRACTED]
 - [[dot-sign()]] - `method` [EXTRACTED]
 - [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

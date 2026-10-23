@@ -1,24 +1,20 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
-location: "L9"
+community: "Restart Procedure"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+  - community/Restart_Procedure
 ---
 
-# Container Errors
+# Container Errors.md
 
 ## Connections
 - [[Container Errors_1]] - `contains` [EXTRACTED]
-- [[Container Won't Stop (Stuck in Stopping)]] - `contains` [EXTRACTED]
-- [[Exit Code Reference]] - `contains` [EXTRACTED]
-- [[OOM Kill (Exit Code 137)]] - `contains` [EXTRACTED]
-- [[Port Already in Use]] - `contains` [EXTRACTED]
-- [[Read-Only Filesystem Errors]] - `contains` [EXTRACTED]
-- [[Related Notes_5]] - `contains` [EXTRACTED]
-- [[`no-new-privileges` Security Denial]] - `contains` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
+- [[Startup Errors]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "EgressFilterConfig (2)"
 location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/EgressFilterConfig_2
 ---
 
 # Ensure zeroing doesn't break normal encrypt/decrypt flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "OpenSCAP dependency note"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/OpenSCAP_dependency_note
 ---
 
 # Dockerfile.gateway vault note
@@ -15,4 +15,4 @@ tags:
 - [[OpenSCAP dependency note]] - `references` [EXTRACTED]
 - [[Security Hardening_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP_dependency_note

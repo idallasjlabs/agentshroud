@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[DNS Resolution]] - `contains` [EXTRACTED]
 - [[Network Architecture]] - `contains` [EXTRACTED]
-- [[Related Notes_54]] - `contains` [EXTRACTED]
+- [[Related Notes_34]] - `contains` [EXTRACTED]
 - [[agentshroud-internal]] - `contains` [EXTRACTED]
 - [[agentshroud-isolated]] - `contains` [EXTRACTED]
-- [[networks_1]] - `contains` [EXTRACTED]
+- [[networks]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh

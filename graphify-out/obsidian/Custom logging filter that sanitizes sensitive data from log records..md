@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "_wrap_response() (4)"
+community: "ContextGuard"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/ContextGuard
 ---
 
 # Custom logging filter that sanitizes sensitive data from log records.
 
 ## Connections
-- [[LogSanitizer_1]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

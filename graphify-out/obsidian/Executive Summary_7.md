@@ -1,5 +1,5 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
 community: "TeamsConfig (3)"
 location: "L10"

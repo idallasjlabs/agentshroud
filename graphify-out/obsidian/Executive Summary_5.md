@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/ws-e-audit-v1.2.md"
+source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "GSDE&G Skills Reference (2)"
-location: "L16"
+community: "InjectionAction"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/InjectionAction
 ---
 
 # Executive Summary
 
 ## Connections
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
+- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/document #graphify/EXTRACTED #community/InjectionAction

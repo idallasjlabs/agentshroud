@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "test_voice_latency_guard.py"
 location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextSegment
+  - community/test_voice_latency_guardpy
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
 - [[ApprovalQueue]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[_submit_tool_call()]] - `references` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/INFERRED #community/test_voice_latency_guardpy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "rationale"
-community: "test_anthropic_openai_translator.py"
+community: "Git History Purge Plan"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Git_History_Purge_Plan
 ---
 
 # Defense in Depth (Bot Instructions + Gateway + Audit Log)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/rationale #graphify/EXTRACTED #community/Git_History_Purge_Plan

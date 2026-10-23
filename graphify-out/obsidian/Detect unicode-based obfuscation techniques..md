@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "TestCheckCommandExecution"
+community: "ProxyAction"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/ProxyAction
 ---
 
 # Detect unicode-based obfuscation techniques.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_detect_unicode_obfuscation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

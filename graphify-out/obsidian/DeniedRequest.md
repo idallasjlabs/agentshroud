@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Any"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # DeniedRequest
@@ -22,4 +22,4 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Any

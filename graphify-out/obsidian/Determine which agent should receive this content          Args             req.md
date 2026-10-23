@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "AgentTarget (2)"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentTarget_2
 ---
 
 # Determine which agent should receive this content          Args:             req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-resolve_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2

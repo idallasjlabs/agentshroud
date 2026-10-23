@@ -15,6 +15,6 @@ tags:
 - [[4. Environment Variables]] - `contains` [EXTRACTED]
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 - [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/_run

@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/security/module_stats.py"
-type: "code"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L29"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+type: "document"
+community: "AgentShroud Color Palette"
+location: "L28"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/AgentShroud_Color_Palette
 ---
 
 # Decision
 
 ## Connections
-- [[dot-record()]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
-- [[TestEnforcementWiring]] - `uses` [INFERRED]
-- [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
-- [[test_module_stats.py]] - `imports` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[Configuration_11]] - `contains` [EXTRACTED]
+- [[Policy Table]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # Enum
@@ -13,9 +13,9 @@ tags:
 ## Connections
 - [[A2ADecision]] - `inherits` [EXTRACTED]
 - [[A2AMessageType]] - `inherits` [EXTRACTED]
-- [[A2AMethod]] - `inherits` [EXTRACTED]
+- [[A2AMethod_1]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
-- [[Action_1]] - `inherits` [EXTRACTED]
+- [[Action_3]] - `inherits` [EXTRACTED]
 - [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
 - [[ApprovalMode]] - `inherits` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[AuditResult_1]] - `inherits` [EXTRACTED]
 - [[ChainAction]] - `inherits` [EXTRACTED]
 - [[ContentThreatType]] - `inherits` [EXTRACTED]
-- [[Decision_2]] - `inherits` [EXTRACTED]
+- [[Decision_6]] - `inherits` [EXTRACTED]
 - [[DelegationPrivilege]] - `inherits` [EXTRACTED]
 - [[DisclosureCategory]] - `inherits` [EXTRACTED]
 - [[EgressAction]] - `inherits` [EXTRACTED]
@@ -48,7 +48,7 @@ tags:
 - [[PermissionLevel_1]] - `inherits` [EXTRACTED]
 - [[PipelineAction]] - `inherits` [EXTRACTED]
 - [[Platform]] - `inherits` [EXTRACTED]
-- [[Resource_1]] - `inherits` [EXTRACTED]
+- [[Resource_2]] - `inherits` [EXTRACTED]
 - [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[RiskLevel_2]] - `inherits` [EXTRACTED]
@@ -56,12 +56,12 @@ tags:
 - [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[RiskLevel_3]] - `inherits` [EXTRACTED]
 - [[RiskLevel_6]] - `inherits` [EXTRACTED]
-- [[Role_19]] - `inherits` [EXTRACTED]
+- [[Role_64]] - `inherits` [EXTRACTED]
 - [[RotationStatus]] - `inherits` [EXTRACTED]
 - [[SCLInterface_1]] - `inherits` [EXTRACTED]
 - [[ServicePrivacy]] - `inherits` [EXTRACTED]
 - [[ServiceStatus_1]] - `inherits` [EXTRACTED]
-- [[Severity_1]] - `inherits` [EXTRACTED]
+- [[Severity_8]] - `inherits` [EXTRACTED]
 - [[SubagentEventType]] - `inherits` [EXTRACTED]
 - [[ThreatAction]] - `inherits` [EXTRACTED]
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
@@ -98,7 +98,7 @@ tags:
 - [[multi_turn_tracker.py]] - `imports_from` [EXTRACTED]
 - [[openclawskillsi-browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
 - [[outbound_filter.py]] - `imports_from` [EXTRACTED]
-- [[pipeline.py]] - `imports_from` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[privacy_policy.py]] - `imports_from` [EXTRACTED]
 - [[progressive_lockdown.py]] - `imports_from` [EXTRACTED]
 - [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
@@ -117,4 +117,4 @@ tags:
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

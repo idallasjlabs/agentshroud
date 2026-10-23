@@ -12,13 +12,13 @@ tags:
 # DockerEngine
 
 ## Connections
-- [[dot-__init__()_130]] - `method` [EXTRACTED]
+- [[dot-__init__()_141]] - `method` [EXTRACTED]
 - [[dot-_cmd()_1]] - `method` [EXTRACTED]
 - [[dot-build()_2]] - `method` [EXTRACTED]
 - [[dot-compose_down()_2]] - `method` [EXTRACTED]
 - [[dot-compose_up()_2]] - `method` [EXTRACTED]
 - [[dot-exec()_2]] - `method` [EXTRACTED]
-- [[dot-health_check()_4]] - `method` [EXTRACTED]
+- [[dot-health_check()_2]] - `method` [EXTRACTED]
 - [[dot-inspect()_2]] - `method` [EXTRACTED]
 - [[dot-logs()_2]] - `method` [EXTRACTED]
 - [[dot-network_create()_2]] - `method` [EXTRACTED]
@@ -29,8 +29,8 @@ tags:
 - [[dot-push()_3]] - `method` [EXTRACTED]
 - [[dot-rm()_2]] - `method` [EXTRACTED]
 - [[dot-run()_4]] - `method` [EXTRACTED]
-- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
-- [[dot-stop()_9]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `calls` [EXTRACTED]
+- [[dot-stop()_8]] - `method` [EXTRACTED]
 - [[dot-unpause()_2]] - `method` [EXTRACTED]
 - [[dot-volume_create()_2]] - `method` [EXTRACTED]
 - [[dot-volume_rm()_2]] - `method` [EXTRACTED]

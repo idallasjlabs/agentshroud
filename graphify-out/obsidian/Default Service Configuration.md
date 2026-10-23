@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[compose_generator.py_2]] - `contains` [EXTRACTED]
 - [[gateway service]] - `contains` [EXTRACTED]
-- [[openclaw service]] - `contains` [EXTRACTED]
+- [[openclaw service_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/libsh

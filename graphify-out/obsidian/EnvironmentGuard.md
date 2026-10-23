@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "ContextGuard"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_playback_statec
+  - community/ContextGuard
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[dot-__init__()_13]] - `calls` [EXTRACTED]
-- [[dot-__init__()_149]] - `method` [EXTRACTED]
+- [[dot-__init__()_118]] - `calls` [EXTRACTED]
+- [[dot-__init__()_16]] - `method` [EXTRACTED]
 - [[dot-_contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[dot-_looks_like_credential()]] - `method` [EXTRACTED]
 - [[dot-_record_leakage()]] - `method` [EXTRACTED]
@@ -30,23 +30,23 @@ tags:
 - [[dot-test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
 - [[dot-test_env_guard_scrubs_output()]] - `calls` [INFERRED]
 - [[dot-test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_unparseable_text_is_allowed()_1]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
+- [[dot-test_unparseable_text_is_allowed()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[Guard against environment variable leakage and unauthorized access.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestCheckCommandExecution]] - `uses` [INFERRED]
 - [[TestCheckFileAccess]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -67,23 +67,23 @@ tags:
 - [[TestMonitorEnvironmentAccess]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceGuardFailClosed]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestScrubCommandOutput]] - `uses` [INFERRED]
 - [[TestSummaryAndExport]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py]] - `contains` [EXTRACTED]
 - [[get_env_guard()]] - `references` [EXTRACTED]
-- [[guard()_4]] - `calls` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[guard()_3]] - `calls` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[test_env_guard_class.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_playback_statec
+#graphify/code #graphify/INFERRED #community/ContextGuard

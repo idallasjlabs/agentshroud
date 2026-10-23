@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "soc/router.py"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/soc/routerpy
 ---
 
 # Enforces tool-level access control based on user role and group membership.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLEnforcer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

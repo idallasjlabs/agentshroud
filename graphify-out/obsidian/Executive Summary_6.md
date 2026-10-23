@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "InjectionAction"
-location: "L6"
+community: "TeamsConfig (3)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/TeamsConfig_3
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3

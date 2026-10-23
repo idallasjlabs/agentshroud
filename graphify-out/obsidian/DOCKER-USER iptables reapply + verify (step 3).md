@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[check()_4]] - `references` [EXTRACTED]
-- [[log()_5]] - `references` [EXTRACTED]
+- [[log()_6]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_w

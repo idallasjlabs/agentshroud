@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "StdioConnection (2)"
+community: "Any"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/Any
 ---
 
 # Create approval hardening instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-hardening()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/rationale #graphify/EXTRACTED #community/Any

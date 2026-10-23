@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # Empty segment list should not penalize the score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_empty_context_scores_clean()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

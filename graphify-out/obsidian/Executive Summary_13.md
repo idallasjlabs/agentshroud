@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
+source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
-location: "L10"
+community: "agent_cve_registry.py"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/agent_cve_registrypy
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
+- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/agent_cve_registrypy

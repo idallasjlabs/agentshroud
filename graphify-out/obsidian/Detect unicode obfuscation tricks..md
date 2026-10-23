@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "ApprovalQueueConfig (4)"
+community: "PromptGuard"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/PromptGuard
 ---
 
 # Detect unicode obfuscation tricks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_unicode_tricks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

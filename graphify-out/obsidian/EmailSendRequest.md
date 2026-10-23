@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "_make_proxy()"
-location: "L329"
+community: "UserSessionManager (2) (2)"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/UserSessionManager_2_2
 ---
 
 # EmailSendRequest
 
 ## Connections
-- [[dot-body_not_empty()]] - `method` [EXTRACTED]
-- [[dot-subject_not_empty()]] - `method` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - `rationale_for` [EXTRACTED]
-- [[forward.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

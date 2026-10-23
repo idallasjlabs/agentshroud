@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # ContextIntegrityScorer
 
 ## Connections
-- [[dot-__init__()_133]] - `method` [EXTRACTED]
+- [[dot-__init__()_93]] - `method` [EXTRACTED]
 - [[dot-score_context()]] - `method` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `shares_data_with` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - `rationale_for` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[TestContextIntegrityScorer]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[scorer()]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

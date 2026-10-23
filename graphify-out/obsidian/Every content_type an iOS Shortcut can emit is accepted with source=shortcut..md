@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "test_docs_accuracy.py"
+community: "ForwardRequest"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/ForwardRequest
 ---
 
 # Every content_type an iOS Shortcut can emit is accepted with source=shortcut.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shortcut_content_types_accepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

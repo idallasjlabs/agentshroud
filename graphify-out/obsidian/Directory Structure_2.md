@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "TeamsConfig"
-location: "L5"
+community: "troubleshooting.md"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/troubleshootingmd
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

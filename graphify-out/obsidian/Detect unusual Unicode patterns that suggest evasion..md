@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "test_soc_egress_endpoints.py"
+community: "HeuristicClassifier"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/HeuristicClassifier
 ---
 
 # Detect unusual Unicode patterns that suggest evasion.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compute_unicode_anomaly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

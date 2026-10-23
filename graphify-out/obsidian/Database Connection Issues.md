@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "TestOutboundInfoFilter (15)"
+community: "AgentShroud Incident Response Plan"
 location: "L619"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_15
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Database Connection Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_15
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

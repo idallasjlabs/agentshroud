@@ -1,18 +1,17 @@
 ---
-source_file: "docs/security/cve-mitigation-matrix.md"
+source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
-location: "L13"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
-- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
+- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

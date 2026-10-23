@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "TrustConfig (2) (2)"
-location: "L106"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustConfig_2_2
+  - community/Required__45_for_text__30_for_UI_elements_2
 ---
 
 # Dependencies
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2

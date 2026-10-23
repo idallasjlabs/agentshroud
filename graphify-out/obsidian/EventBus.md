@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Production Safety Checklist (SKILL)"
+community: "TestOutboundInfoFilter (2)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/TestOutboundInfoFilter_2
 ---
 
 # EventBus
 
 ## Connections
-- [[dot-__init__()_150]] - `method` [EXTRACTED]
+- [[dot-__init__()_191]] - `method` [EXTRACTED]
 - [[dot-emit()_1]] - `method` [EXTRACTED]
 - [[dot-get_recent()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_17]] - `method` [EXTRACTED]
+- [[dot-get_stats()_18]] - `method` [EXTRACTED]
 - [[dot-subscribe()_1]] - `method` [EXTRACTED]
 - [[dot-unsubscribe()_1]] - `method` [EXTRACTED]
 - [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[Simple in-process event bus with async support]] - `rationale_for` [EXTRACTED]
 - [[_SendSpy]] - `uses` [INFERRED]
 - [[bus()]] - `calls` [EXTRACTED]
-- [[event_bus.py]] - `contains` [EXTRACTED]
-- [[event_bus.py_1]] - `references` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `calls` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "_t"
+community: "MultiTurnTracker"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_t
+  - community/MultiTurnTracker
 ---
 
 # Context tracking for a session.
@@ -15,4 +15,4 @@ tags:
 - [[SessionContext]] - `rationale_for` [EXTRACTED]
 - [[SessionContext_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_t
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

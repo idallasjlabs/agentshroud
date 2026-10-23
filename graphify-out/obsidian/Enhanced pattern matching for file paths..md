@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 location: "L356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # Enhanced pattern matching for file paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_match_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Approval Queue]] - `contains` [EXTRACTED]
 - [[Ledger Database]] - `contains` [EXTRACTED]
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

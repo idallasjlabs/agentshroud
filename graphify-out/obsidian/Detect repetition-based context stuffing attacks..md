@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "_t"
+community: "MultiTurnTracker"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_t
+  - community/MultiTurnTracker
 ---
 
 # Detect repetition-based context stuffing attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_detect_repetition_attacks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_t
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

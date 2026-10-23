@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/testing/README.md"
 type: "document"
-community: "DelegationManager (2)"
-location: "L22"
+community: "graphify reference: transcribe video and audio"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager_2
+  - community/graphify_reference_transcribe_video_and_audio
 ---
 
 # Current Status
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[Testing Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager_2
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_transcribe_video_and_audio

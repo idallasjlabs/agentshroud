@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "DelegationManager (2)"
+community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager_2
+  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
 ---
 
 # Description
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager_2
+#graphify/document #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM

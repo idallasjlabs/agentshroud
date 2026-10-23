@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "ContextGuard"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/ContextGuard
 ---
 
 # Different sessions should have different identities.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_session_cannot_impersonate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

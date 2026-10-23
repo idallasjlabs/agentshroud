@@ -1,18 +1,17 @@
 ---
-source_file: "docs/testing/test-coverage-report.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "test_scorecard_integrity.py"
-location: "L4"
+community: "MiddlewareManager (5)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/MiddlewareManager_5
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5

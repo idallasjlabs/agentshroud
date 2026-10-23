@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "ContextGuard"
 location: "L605"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ContextGuard
 ---
 
 # Environment guard should monitor data access patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_env_guard_detects_data_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

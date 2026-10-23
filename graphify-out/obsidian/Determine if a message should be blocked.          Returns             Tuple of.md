@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "_t"
+community: "MultiTurnTracker"
 location: "L448"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_t
+  - community/MultiTurnTracker
 ---
 
 # Determine if a message should be blocked.          Returns:             Tuple of
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-should_block_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_t
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

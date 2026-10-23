@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "StdioConnection (2)"
-location: "L52"
+community: "PathIsolationManager"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/PathIsolationManager
 ---
 
 # Create test configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

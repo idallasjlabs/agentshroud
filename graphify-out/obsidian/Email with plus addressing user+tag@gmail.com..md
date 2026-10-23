@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # Email with plus addressing: user+tag@gmail.com.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_email_with_plus()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

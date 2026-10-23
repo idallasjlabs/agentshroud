@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L297"
+community: "Path (3)"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Path_3
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Path_3
