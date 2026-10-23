@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[TestTrivySkipDirs]] - `method` [EXTRACTED]
 - [[The daily fs scan of  must exclude varlogsecurity (trivy's own cache +…]] - `rationale_for` [EXTRACTED]
-- [[_fake_send()_5]] - `contains` [EXTRACTED]
-- [[_fake_send()_14]] - `indirect_call` [INFERRED]
+- [[_fake_send()_10]] - `contains` [EXTRACTED]
+- [[_fake_send()]] - `indirect_call` [INFERRED]
 - [[_fake_trivy_scan()_5]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]
 

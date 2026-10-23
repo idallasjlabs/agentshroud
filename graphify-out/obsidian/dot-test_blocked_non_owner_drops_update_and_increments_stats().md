@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "SecurityPipeline (2)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/SecurityPipeline_2
 ---
 
 # .test_blocked_non_owner_drops_update_and_increments_stats()
@@ -16,7 +16,7 @@ tags:
 - [[TestInboundPipelineBlockedNonOwner]] - `method` [EXTRACTED]
 - [[_getUpdates_response()]] - `calls` [EXTRACTED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[_make_update()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

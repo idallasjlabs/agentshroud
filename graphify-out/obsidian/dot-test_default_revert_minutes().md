@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "AsyncMock"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/AsyncMock
 ---
 
 # .test_default_revert_minutes()
@@ -15,4 +15,4 @@ tags:
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestModeRequestModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L403"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # .test_collaborator_start_uses_local_notice_and_does_not_forward()
@@ -19,6 +19,6 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

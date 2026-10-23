@@ -15,6 +15,6 @@ tags:
 - [[DomainSettings]] - `calls` [EXTRACTED]
 - [[TestResponseSizeLimits]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

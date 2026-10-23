@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Agile Skill (stub)"
+community: "TelegramAPIProxy"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agile_Skill_stub
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_legacy_block_notice_is_normalized_json()
 
 ## Connections
 - [[Legacy bracket-style block notices should normalize to Protect wording.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agile_Skill_stub
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

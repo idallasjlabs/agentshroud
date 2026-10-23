@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "MCP OAuth preflight checker (mcp_oauth_preflight.py)"
+community: "TelegramAPIProxy"
 location: "L1143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_OAuth_preflight_checker_mcp_oauth_preflightpy
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_form_empty_text_with_message_payload_is_normalized()
 
 ## Connections
 - [[Form payload empty text should not shadow caption filtering.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_OAuth_preflight_checker_mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

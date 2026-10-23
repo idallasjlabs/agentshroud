@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L136"
+community: "Enum"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Enum
 ---
 
 # .test_construction()
 
 ## Connections
-- [[TestWSEvent]] - `method` [EXTRACTED]
-- [[WSEvent]] - `calls` [EXTRACTED]
+- [[ContributorRecord_1]] - `calls` [EXTRACTED]
+- [[TestContributorRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/Enum

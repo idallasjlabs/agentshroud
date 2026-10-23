@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "AgentShroud Setup Guide"
+community: "Any"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Any
 ---
 
 # .test_clean_text_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCommandInjectionScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/code #graphify/EXTRACTED #community/Any

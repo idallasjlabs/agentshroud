@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Any"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # .test_basic_detection()
@@ -16,4 +16,4 @@ tags:
 - [[Test basic detection result creation.]] - `rationale_for` [EXTRACTED]
 - [[TestDeceptionDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Any

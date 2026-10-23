@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # .test_anomaly_detection_excessive_tool_calls()
 
 ## Connections
-- [[KillSwitchConfig]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[Test anomaly detection with excessive tool calls.]] - `rationale_for` [EXTRACTED]
 - [[TestKillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

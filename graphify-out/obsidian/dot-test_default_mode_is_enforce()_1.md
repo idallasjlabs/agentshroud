@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L44"
+community: "soc/router.py"
+location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/soc/routerpy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig_1]] - `calls` [EXTRACTED]
+- [[TestEnforcementMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

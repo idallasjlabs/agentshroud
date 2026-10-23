@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L287"
+community: "FetchOutcome"
+location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/FetchOutcome
 ---
 
 # .test_custom_patterns()
 
 ## Connections
-- [[Test loading custom patterns from configuration.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[Test adding custom filter patterns.]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

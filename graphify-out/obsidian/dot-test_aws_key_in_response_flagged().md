@@ -12,6 +12,6 @@ tags:
 # .test_aws_key_in_response_flagged()
 
 ## Connections
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[TestPIIDetection_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "EgressFilterConfig (4)"
-location: "L27"
+community: "Any"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/Any
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[KillSwitchConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._5]] - `rationale_for` [EXTRACTED]
-- [[TestKillSwitchConfig_1]] - `method` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/Any

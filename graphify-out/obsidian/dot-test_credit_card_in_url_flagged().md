@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "LLMProxy"
+community: "TestPIIInURLs"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/TestPIIInURLs
 ---
 
 # .test_credit_card_in_url_flagged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIInURLs]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/TestPIIInURLs

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L248"
+community: "ProxyAction"
+location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/ProxyAction
 ---
 
 # .test_base64_encoded_injection()
 
 ## Connections
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[Test detection of base64 encoded injections.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

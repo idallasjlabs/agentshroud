@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "_wrap_response() (2)"
+community: "ContextGuard"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/ContextGuard
 ---
 
 # .test_context_guard_session_isolation_under_load()
@@ -16,4 +16,4 @@ tags:
 - [[Sessions shouldn't leak data under concurrent access.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

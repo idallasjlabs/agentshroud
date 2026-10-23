@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "TestPIIDetection"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/TestPIIDetection
 ---
 
 # .test_clean_result_passes_through()
 
 ## Connections
-- [[TestPIIDetection]] - `method` [EXTRACTED]
+- [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/TestPIIDetection

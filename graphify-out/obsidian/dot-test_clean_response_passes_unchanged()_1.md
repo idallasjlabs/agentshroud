@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L632"
+community: "ApprovalQueueConfig"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ApprovalQueueConfig
 ---
 
 # .test_clean_response_passes_unchanged()
 
 ## Connections
-- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
+- [[TestE2E03OutboundPIIRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

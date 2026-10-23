@@ -12,7 +12,7 @@ tags:
 # .test_critical_report_status_is_critical()
 
 ## Connections
-- [[Path_43]] - `calls` [EXTRACTED]
+- [[Path_33]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_critical_trivy_report()]] - `calls` [EXTRACTED]
 - [[_write_image_report()]] - `calls` [EXTRACTED]

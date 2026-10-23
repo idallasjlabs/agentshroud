@@ -12,6 +12,6 @@ tags:
 # .test_check_for_exif_detects_magic_bytes()
 
 ## Connections
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft

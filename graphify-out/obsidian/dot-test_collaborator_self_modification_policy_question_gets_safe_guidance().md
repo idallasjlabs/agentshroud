@@ -19,7 +19,7 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_23]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_68]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

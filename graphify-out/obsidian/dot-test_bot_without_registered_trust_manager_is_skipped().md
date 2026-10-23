@@ -12,9 +12,9 @@ tags:
 # .test_bot_without_registered_trust_manager_is_skipped()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
 - [[Propagation to a peer with no registered TrustManager must not raise.]] - `rationale_for` [EXTRACTED]
 - [[TestIncidentPropagation]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

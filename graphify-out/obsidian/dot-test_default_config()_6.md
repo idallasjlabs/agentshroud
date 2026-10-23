@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L30"
+community: "Any"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Any
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
-- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/Any

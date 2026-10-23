@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L51"
+community: "SessionManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/SessionManager
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[TestGitGuardDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/SessionManager

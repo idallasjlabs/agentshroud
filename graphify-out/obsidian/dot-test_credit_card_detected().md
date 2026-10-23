@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L123"
+community: "TestPIIDetection"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TestPIIDetection
 ---
 
 # .test_credit_card_detected()
 
 ## Connections
-- [[PIIScanner]] - `calls` [EXTRACTED]
-- [[TestPIIScanning]] - `method` [EXTRACTED]
+- [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TestPIIDetection

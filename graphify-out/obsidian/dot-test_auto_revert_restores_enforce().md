@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # .test_auto_revert_restores_enforce()
@@ -15,6 +15,6 @@ tags:
 - [[Auto-revert task sets mode back to enforce after delay.]] - `rationale_for` [EXTRACTED]
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestAutoRevert]] - `method` [EXTRACTED]
-- [[set_mode()]] - `calls` [EXTRACTED]
+- [[set_mode()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

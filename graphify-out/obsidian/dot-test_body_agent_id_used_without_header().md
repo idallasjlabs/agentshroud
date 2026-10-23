@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "TestMCPResultEndpoint"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/TestMCPResultEndpoint
 ---
 
 # .test_body_agent_id_used_without_header()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint

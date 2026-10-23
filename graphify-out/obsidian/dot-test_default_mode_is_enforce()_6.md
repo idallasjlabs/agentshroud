@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "_wrap_response() (3)"
-location: "L36"
+community: "NetworkSecurityFinding"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/NetworkSecurityFinding
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
 - [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - `rationale_for` [EXTRACTED]
-- [[TestEgressMonitorConfig]] - `method` [EXTRACTED]
+- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Tailscale mesh VPN (tail240ea8.ts.net)"
+community: "SubagentGovernance"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tailscale_mesh_VPN_tail240ea8tsnet
+  - community/SubagentGovernance
 ---
 
 # .test_denied_in_monitor_still_allows()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolAuthorization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tailscale_mesh_VPN_tail240ea8tsnet
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

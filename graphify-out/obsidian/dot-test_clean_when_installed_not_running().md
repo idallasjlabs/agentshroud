@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "server.py (2)"
-location: "L354"
+community: "PipelineAction (2)"
+location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy_2
+  - community/PipelineAction_2
 ---
 
 # .test_clean_when_installed_not_running()
 
 ## Connections
-- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[TestGetFalcoSummary]] - `method` [EXTRACTED]
+- [[get_falco_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy_2
+#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
