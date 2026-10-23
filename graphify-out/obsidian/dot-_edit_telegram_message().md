@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "test_collaborator_tracker.py (3)"
 location: "L7191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/test_collaborator_trackerpy_3
 ---
 
 # ._edit_telegram_message()
@@ -17,4 +17,4 @@ tags:
 - [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3

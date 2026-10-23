@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
 - [[Log PII redaction for audit trail without logging actual PII]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

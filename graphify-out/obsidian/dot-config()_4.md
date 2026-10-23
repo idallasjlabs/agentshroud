@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "SecurityPipeline (2)"
-location: "L62"
+community: "ForwardRequest"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/ForwardRequest
 ---
 
 # .config()
 
 ## Connections
-- [[Create test configuration._1]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[TestRecommendedConfig]] - `method` [EXTRACTED]
+- [[_parse_env_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # ._detect_raw_traversal()
@@ -16,4 +16,4 @@ tags:
 - [[Detect path traversal attempts in raw input before normalization.]] - `rationale_for` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

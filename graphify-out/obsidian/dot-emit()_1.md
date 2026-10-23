@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Production Safety Checklist (SKILL)"
+community: "TestOutboundInfoFilter (2)"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/TestOutboundInfoFilter_2
 ---
 
 # .emit()
@@ -16,4 +16,4 @@ tags:
 - [[EventBus]] - `method` [EXTRACTED]
 - [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

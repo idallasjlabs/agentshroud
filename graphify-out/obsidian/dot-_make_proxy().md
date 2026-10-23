@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy]] - `references` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecurityPipeline

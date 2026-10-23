@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "TestCanvasAuthHelpers"
+community: "SubagentGovernance"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCanvasAuthHelpers
+  - community/SubagentGovernance
 ---
 
 # .authorize_spawn()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_log_event()_1]] - `calls` [EXTRACTED]
 - [[Authorize a subagent spawn. Returns (allowed, reason).]] - `rationale_for` [EXTRACTED]
-- [[ResourceUsage_2]] - `calls` [EXTRACTED]
+- [[ResourceUsage]] - `calls` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "tool_chain_analyzer.py"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/tool_chain_analyzerpy
 ---
 
 # ._cleanup_old_sessions()
@@ -16,4 +16,4 @@ tags:
 - [[Remove old sessions to prevent memory bloat._1]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

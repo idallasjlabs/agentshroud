@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "._record_leakage()"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/_record_leakage
 ---
 
 # .check_command_execution()
@@ -18,4 +18,4 @@ tags:
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[check_command()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/_record_leakage

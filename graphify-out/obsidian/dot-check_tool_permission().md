@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L231"
+community: "MiddlewareManager"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/MiddlewareManager
 ---
 
 # .check_tool_permission()
 
 ## Connections
-- [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[Check if a user can use tools of a specific tier.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
-- [[ToolTier_1]] - `references` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L401"
+community: "UserSessionManager"
+location: "L466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/UserSessionManager
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

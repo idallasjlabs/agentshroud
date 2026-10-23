@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Usage"
-location: "L94"
+community: "_pcm_bytes"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/_pcm_bytes
 ---
 
 # .drain()
 
 ## Connections
-- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
-- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
+- [[_MockWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

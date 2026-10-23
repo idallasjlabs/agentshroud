@@ -12,7 +12,7 @@ tags:
 # ._load_protected_content()
 
 ## Connections
-- [[dot-__init__()_155]] - `calls` [EXTRACTED]
+- [[dot-__init__()_162]] - `calls` [EXTRACTED]
 - [[dot-add_protected_content()]] - `calls` [EXTRACTED]
 - [[Load protected content from configured sources.]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "HeuristicClassifier"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/HeuristicClassifier
 ---
 
 # .classify()
@@ -18,4 +18,4 @@ tags:
 - [[Classify text for injection probability.          Args             text Input]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

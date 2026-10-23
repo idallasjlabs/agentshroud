@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L445"
+community: "._make_proxy()"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/_make_proxy
 ---
 
 # .add_alert_callback()
 
 ## Connections
-- [[Add a callback function for alerts.]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[callable_1]] - `references` [EXTRACTED]
+- [[Add a callback function to be called when resource alerts are triggered.]] - `rationale_for` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

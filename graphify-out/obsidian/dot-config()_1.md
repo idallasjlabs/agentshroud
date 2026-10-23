@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L103"
+community: "Any"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/Any
 ---
 
 # .config()
 
 ## Connections
-- [[TestMinimalConfig]] - `method` [EXTRACTED]
-- [[_parse_env_file()]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Create test configuration._1]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Any

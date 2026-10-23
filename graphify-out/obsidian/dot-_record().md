@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L63"
+community: "TestOutboundPipelineIntegration"
+location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/TestOutboundPipelineIntegration
 ---
 
 # ._record()
 
 ## Connections
-- [[dot-scan()_2]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[EgressAction]] - `references` [EXTRACTED]
+- [[EgressAttempt]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

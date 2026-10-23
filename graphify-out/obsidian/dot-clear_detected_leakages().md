@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "ContextGuard"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/ContextGuard
 ---
 
 # .clear_detected_leakages()
@@ -15,4 +15,4 @@ tags:
 - [[Clear the list of detected leakages.]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

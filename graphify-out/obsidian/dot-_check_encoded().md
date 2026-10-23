@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "WebProxyConfig"
+community: "ApprovalQueueConfig"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/ApprovalQueueConfig
 ---
 
 # ._check_encoded()
 
 ## Connections
 - [[dot-_normalize()]] - `calls` [EXTRACTED]
-- [[dot-scan()_2]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[CanaryResult_2]] - `references` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

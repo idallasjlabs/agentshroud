@@ -15,7 +15,7 @@ tags:
 - [[dot-_detect_pii()]] - `calls` [EXTRACTED]
 - [[dot-_redact()]] - `calls` [EXTRACTED]
 - [[dot-scan_prompt()]] - `calls` [EXTRACTED]
-- [[dot-scan_tool_result()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_3]] - `calls` [EXTRACTED]
 - [[Core scan normalize adversarial patterns, then run PII recognition.]] - `rationale_for` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
 - [[ToolResultPIIReport]] - `references` [EXTRACTED]

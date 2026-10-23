@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
 - [[Reconstruct the tool result with sanitized content]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

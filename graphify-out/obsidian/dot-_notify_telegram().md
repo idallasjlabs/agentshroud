@@ -12,8 +12,8 @@ tags:
 # ._notify_telegram()
 
 ## Connections
-- [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 - [[Send Telegram notification for approval requests.          Sends a formatted mes]] - `rationale_for` [EXTRACTED]
 

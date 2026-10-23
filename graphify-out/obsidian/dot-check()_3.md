@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L108"
+community: "TestOutboundPipelineIntegration"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_burst_limit()]] - `calls` [EXTRACTED]
-- [[dot-_sustained_limit()]] - `calls` [EXTRACTED]
-- [[RateLimitDecision]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
-- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[EgressAttempt]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - `rationale_for` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

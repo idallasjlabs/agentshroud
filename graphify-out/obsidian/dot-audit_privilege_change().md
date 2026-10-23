@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-is_privilege_escalation()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
 - [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
-- [[Role_14]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[Role_63]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Critical Findings"
-location: "L332"
+community: "SkillGuard"
+location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Critical_Findings
+  - community/SkillGuard
 ---
 
 # .cleanup_expired()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
-- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - `rationale_for` [EXTRACTED]
+- [[dot-_save_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Remove expired session rules and timed-out requests.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Critical_Findings
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

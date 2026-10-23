@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_blocked_unauthorized_command()]] - `calls` [EXTRACTED]
 - [[dot-test_blocking_suspicious_code_execution()]] - `calls` [EXTRACTED]
-- [[dot-test_case_insensitive()_3]] - `calls` [EXTRACTED]
+- [[dot-test_case_insensitive()_1]] - `calls` [EXTRACTED]
 - [[dot-test_continues_blocking()]] - `calls` [EXTRACTED]
 - [[dot-test_exact_past_tense()]] - `calls` [EXTRACTED]
 - [[dot-test_flagging_form()]] - `calls` [EXTRACTED]

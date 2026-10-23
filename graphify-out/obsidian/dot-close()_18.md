@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Usage"
-location: "L102"
+community: "HTTPConnectProxy"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/HTTPConnectProxy
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesTargetWriter]] - `method` [EXTRACTED]
-- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

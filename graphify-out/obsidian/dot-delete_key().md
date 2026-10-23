@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # .delete_key()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_log_audit()]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KeyVault

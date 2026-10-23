@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ContextGuard"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .cleanup_old_sessions()
@@ -15,4 +15,4 @@ tags:
 - [[Clean up old session data.]] - `rationale_for` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

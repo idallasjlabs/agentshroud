@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "StdioConnection (2)"
-location: "L51"
+community: "PathIsolationManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/PathIsolationManager
 ---
 
 # .config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
 - [[Create test configuration.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

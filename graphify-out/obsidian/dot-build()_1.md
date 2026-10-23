@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "setup-secrets.sh"
+community: "PodmanEngine"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/PodmanEngine
 ---
 
 # .build()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

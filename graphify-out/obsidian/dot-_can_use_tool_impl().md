@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: ".can_use_tool()"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/can_use_tool
 ---
 
 # ._can_use_tool_impl()
@@ -18,4 +18,4 @@ tags:
 - [[Check whether user_id may invoke the named tool.          Returns             (]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/can_use_tool

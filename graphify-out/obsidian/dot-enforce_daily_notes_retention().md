@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "generate_branding_assets.py"
+community: "MemoryIntegrityMonitor"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/MemoryIntegrityMonitor
 ---
 
 # .enforce_daily_notes_retention()
@@ -17,4 +17,4 @@ tags:
 - [[Enforce retention policy for daily notes.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

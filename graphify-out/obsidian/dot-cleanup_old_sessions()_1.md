@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # .cleanup_old_sessions()
@@ -16,4 +16,4 @@ tags:
 - [[Clean up sessions that haven't been active for the specified number of days.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

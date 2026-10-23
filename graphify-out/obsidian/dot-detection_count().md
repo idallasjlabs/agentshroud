@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "WebProxyConfig"
+community: "ApprovalQueueConfig"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .detection_count()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

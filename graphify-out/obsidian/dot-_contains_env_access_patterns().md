@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "._record_leakage()"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/_record_leakage
 ---
 
 # ._contains_env_access_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[Check if command contains patterns that could access environment.]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/_record_leakage

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L34"
+community: "ForwardRequest"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/ForwardRequest
 ---
 
 # .config()
 
 ## Connections
-- [[TestParanoidConfig]] - `method` [EXTRACTED]
+- [[TestMinimalConfig]] - `method` [EXTRACTED]
 - [[_parse_env_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

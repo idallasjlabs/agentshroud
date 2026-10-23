@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "ServiceManager"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ServiceManager
 ---
 
 # ._load_paused_ids()
@@ -17,4 +17,4 @@ tags:
 - [[ContributorManager]] - `method` [EXTRACTED]
 - [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

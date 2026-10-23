@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Pin _running_image to the docker-unavailable fallback (same as…]] - `rationale_for` [EXTRACTED]
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
-- [[fixture_2]] - `references` [EXTRACTED]
+- [[fixture_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/format_cve_report_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "_coerce_to_ws_event()"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/_coerce_to_ws_event
 ---
 
 # ._event_fan_out()
@@ -18,4 +18,4 @@ tags:
 - [[Subscribe to EventBus and forward matching events to the client.]] - `rationale_for` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event

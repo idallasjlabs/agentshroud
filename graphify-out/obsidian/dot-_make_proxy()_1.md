@@ -60,7 +60,7 @@ tags:
 - [[dot-test_username_for_bot_falls_back_to_default()]] - `calls` [EXTRACTED]
 - [[dot-test_username_for_bot_returns_per_bot_username()]] - `calls` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy]] - `references` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecurityPipeline

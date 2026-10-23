@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "ServiceManager"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ServiceManager
 ---
 
 # ._build_record()
@@ -18,4 +18,4 @@ tags:
 - [[ContributorRecord]] - `references` [EXTRACTED]
 - [[_role_enum()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

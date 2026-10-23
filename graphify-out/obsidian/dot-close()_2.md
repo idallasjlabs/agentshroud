@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "soc/router.py"
-location: "L442"
+community: "MiddlewareManager"
+location: "L1438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/MiddlewareManager
 ---
 
 # .close()
 
 ## Connections
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

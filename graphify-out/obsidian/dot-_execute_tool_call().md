@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "StdioConnection"
 location: "L696"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/StdioConnection
 ---
 
 # ._execute_tool_call()
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-get_or_create()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-send_request()_1]] - `calls` [EXTRACTED]
+- [[dot-send_request()]] - `calls` [EXTRACTED]
 - [[Actually execute the tool call against the MCP server.]] - `rationale_for` [EXTRACTED]
-- [[Any_25]] - `references` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 - [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

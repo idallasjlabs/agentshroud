@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "_t"
+community: "MultiTurnTracker"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MultiTurnTracker
 ---
 
 # .analyze_message()
@@ -25,4 +25,4 @@ tags:
 - [[deque]] - `calls` [INFERRED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

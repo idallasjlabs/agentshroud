@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L99"
+community: "test_llm_proxy.py"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/test_llm_proxypy
 ---
 
 # ._init_presidio()
 
 ## Connections
-- [[dot-__init__()_114]] - `calls` [EXTRACTED]
-- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_164]] - `calls` [EXTRACTED]
+- [[Attempt to initialise Presidio deterministically; else regex.          SECURITY]] - `rationale_for` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

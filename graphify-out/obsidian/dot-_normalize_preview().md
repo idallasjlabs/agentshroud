@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-record_activity()]] - `calls` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[Normalize previews to single-line safe text for JSONL + markdown mirrors.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

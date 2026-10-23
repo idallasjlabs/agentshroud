@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-record_activity()]] - `calls` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[Mirror activity into workspace contributor logs used by daily digests.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

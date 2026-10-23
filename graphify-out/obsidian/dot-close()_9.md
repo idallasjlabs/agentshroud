@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L401"
+community: "ApprovalStore"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ApprovalStore
 ---
 
 # .close()
 
 ## Connections
-- [[Close database connection]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

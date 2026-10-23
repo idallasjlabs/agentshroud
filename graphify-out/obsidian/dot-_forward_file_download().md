@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "._proxy_request_impl()"
 location: "L8229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/_proxy_request_impl
 ---
 
 # ._forward_file_download()
@@ -16,4 +16,4 @@ tags:
 - [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

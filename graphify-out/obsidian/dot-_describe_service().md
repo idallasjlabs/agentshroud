@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # ._describe_service()
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-get_service()]] - `calls` [EXTRACTED]
 - [[dot-list_services()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[ServiceDescriptor]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 - [[_engine_health_to_health()]] - `calls` [EXTRACTED]
 - [[_engine_status_to_service_status()]] - `calls` [EXTRACTED]
 - [[_inspect_via_socket()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

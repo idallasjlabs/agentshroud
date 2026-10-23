@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "_pcm_bytes"
+community: "scanner_integration.py"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/scanner_integrationpy
 ---
 
 # .check_request()
@@ -17,4 +17,4 @@ tags:
 - [[WebProxy]] - `method` [EXTRACTED]
 - [[WebProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

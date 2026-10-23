@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-record_activity()]] - `calls` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[Normalize username for safe contributor-log tokenization.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

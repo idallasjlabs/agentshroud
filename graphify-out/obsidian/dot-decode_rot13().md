@@ -12,7 +12,7 @@ tags:
 # .decode_rot13()
 
 ## Connections
-- [[dot-analyze()]] - `calls` [EXTRACTED]
+- [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a]] - `rationale_for` [EXTRACTED]
 - [[DecodedLayer]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `method` [EXTRACTED]

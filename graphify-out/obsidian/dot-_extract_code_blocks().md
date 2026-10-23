@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Any"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # ._extract_code_blocks()
 
 ## Connections
-- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_3]] - `calls` [EXTRACTED]
 - [[Extract code blocks to preserve them during sanitization.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Any

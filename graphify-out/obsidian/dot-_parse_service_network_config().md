@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-validate_docker_compose_config()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[NetworkConfiguration]] - `references` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Parse network configuration for a service.]] - `rationale_for` [EXTRACTED]

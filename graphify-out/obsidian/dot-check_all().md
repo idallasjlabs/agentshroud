@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "test_collaborator_greeter.py"
+community: "MCPPermissionManager (2)"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/MCPPermissionManager_2
 ---
 
 # .check_all()
@@ -16,8 +16,8 @@ tags:
 - [[dot-check_rate_limit()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_parameters()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_permission()_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 - [[Run all permission checks in order. Returns first failure or final success.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
