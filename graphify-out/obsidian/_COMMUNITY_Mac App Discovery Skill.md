@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # Mac App Discovery Skill
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 23
 - [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_2]] - code - .mcp.json
 - [[dot-mcp.json]] - code - .mcp.json
 - [[opthomebrewbinnpx_2]] - code - .mcp.json
-- [[PATH_40]] - code - .mcp.json
+- [[PATH_43]] - code - .mcp.json
 - [[atlassian-agentshroud_3]] - code - .mcp.json
 - [[atlassian-idallasj_3]] - code - .mcp.json
 - [[autoOpenFile_3]] - code - .mcp.json

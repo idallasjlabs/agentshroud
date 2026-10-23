@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # S1 start-agentshroud.sh launches openclaw with --stack-size=65536 (2)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 26
 ---
 
 # Prompt: Hermes Competitive Intelligence Email (AM/PM)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -45,7 +47,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_TestDockerSecretIsolation]]
 - 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
-- 1 edge to [[_COMMUNITY_Seccomp Profiles]]
+- 1 edge to [[_COMMUNITY_graphify Skill]]
 
 ## Top bridge nodes
 - [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities

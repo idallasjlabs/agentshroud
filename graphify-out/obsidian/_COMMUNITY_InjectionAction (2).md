@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 13
 ---
 
 # InjectionAction (2)
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 13 nodes
 
 ## Members

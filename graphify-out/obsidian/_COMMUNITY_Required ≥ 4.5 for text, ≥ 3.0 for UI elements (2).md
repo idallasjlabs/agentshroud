@@ -1,17 +1,34 @@
 ---
 type: community
-members: 4
+cohesion: 0.11
+members: 19
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)
 
-**Members:** 4 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Proxy mode — full network isolation + egress control]] - concept - docker-compose.secure.yml
-- [[Sidecar mode — optional security scanning]] - concept - docker-compose.sidecar.yml
-- [[agentshroud-gateway service (sidecar mode)]] - code - docker-compose.sidecar.yml
-- [[openclaw service (exposed, sidecar mode)]] - code - docker-compose.sidecar.yml
+- [[Anti-Patterns to Flag_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Dependencies_18]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Role_52]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Rules_18]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[openclawskillsi-bsSKILL]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
+- 3 edges to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Proxy mode — full network isolation + egress control]] - degree 2, connects to 1 community
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - degree 10, connects to 1 community
+- [[Skill Branding Specialist (BS)_2]] - degree 8, connects to 1 community
+- [[Validate contrast ratio_2]] - degree 2, connects to 1 community

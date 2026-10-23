@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 42
 ---
 
 # SlackSocketClient
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 42 nodes
 
 ## Members
@@ -42,14 +44,14 @@ members: 42
 - [[_fake_notify()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_fake_notify()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_fake_notify()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_fake_send()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_fake_send()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_fake_send()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_68]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_69]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_70]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_71]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_72]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_send()_12]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_send()_13]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_fake_send()_14]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_59]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_60]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_61]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_62]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_63]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,12 +61,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 55 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 10 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 40 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 15 edges to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
+- 10 edges to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
-- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - degree 13, connects to 2 communities
-- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - degree 13, connects to 2 communities
-- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - degree 11, connects to 2 communities
-- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - degree 11, connects to 2 communities
-- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - degree 11, connects to 2 communities
+- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - degree 13, connects to 3 communities
+- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - degree 13, connects to 3 communities
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - degree 11, connects to 3 communities
+- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - degree 11, connects to 3 communities
+- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - degree 11, connects to 3 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 17
 ---
 
 # Recommendation
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -37,7 +39,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
 - 1 edge to [[_COMMUNITY_export-bot-conversations.py (2)]]
 - 1 edge to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
-- 1 edge to [[_COMMUNITY_troubleshooting_1]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
 
 ## Top bridge nodes
 - [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities

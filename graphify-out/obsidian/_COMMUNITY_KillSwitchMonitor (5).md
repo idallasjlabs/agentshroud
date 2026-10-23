@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 30
 ---
 
 # KillSwitchMonitor (5)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -32,12 +34,12 @@ members: 30
 - [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
 - [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
 - [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[rbac()_2]] - code - gateway/tests/test_group_isolation.py
-- [[session_manager()_1]] - code - gateway/tests/test_group_isolation.py
+- [[rbac()]] - code - gateway/tests/test_group_isolation.py
+- [[session_manager()_2]] - code - gateway/tests/test_group_isolation.py
 - [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
 - [[teams()_2]] - code - gateway/tests/test_group_isolation.py
 - [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
-- [[tmp_workspace()_2]] - code - gateway/tests/test_group_isolation.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_group_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,15 +50,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 6 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 4 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 4 edges to [[_COMMUNITY_RBACConfig]]
-- 4 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager (2)]]
 
 ## Top bridge nodes
-- [[test_group_isolation.py]] - degree 18, connects to 6 communities
+- [[test_group_isolation.py]] - degree 18, connects to 5 communities
 - [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities
 - [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 5 communities
-- [[rbac()_2]] - degree 2, connects to 1 community
-- [[session_manager()_1]] - degree 2, connects to 1 community
+- [[rbac()]] - degree 2, connects to 1 community
+- [[session_manager()_2]] - degree 2, connects to 1 community

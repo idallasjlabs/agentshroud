@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Internal MCP gateway pattern (Entra-fronted)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
 
 ## Top bridge nodes
 - [[dot-test_how_does_routes_to_local_handler()]] - degree 2, connects to 1 community

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 35
 ---
 
 # One Shroud Over Every Wire (founding mantra)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 35 nodes
 
 ## Members
@@ -33,7 +35,7 @@ members: 35
 - [[fail()_3]] - code - scripts/check-vendor-compat.sh
 - [[op-to-keychain.sh]] - code - scripts/op-to-keychain.sh
 - [[op-to-keychain.sh script]] - code - scripts/op-to-keychain.sh
-- [[pass()_2]] - code - scripts/check-vendor-compat.sh
+- [[pass()_3]] - code - scripts/check-vendor-compat.sh
 - [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
 - [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
 - [[restore-backup.sh]] - code - scripts/restore-backup.sh
@@ -42,7 +44,7 @@ members: 35
 - [[sunday-upgrade.sh (remote-control launcher)]] - code - scripts/sunday-upgrade.sh
 - [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
 - [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
-- [[warn()_3]] - code - scripts/check-vendor-compat.sh
+- [[warn()_2]] - code - scripts/check-vendor-compat.sh
 
 ## Live Query (requires Dataview plugin)
 

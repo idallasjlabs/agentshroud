@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Publish SecureBrowser to ClawHub - Step-by-Step Guide
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 14
 - [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Purpose_139]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Purpose_137]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[Related_41]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[Responsibilities_39]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md

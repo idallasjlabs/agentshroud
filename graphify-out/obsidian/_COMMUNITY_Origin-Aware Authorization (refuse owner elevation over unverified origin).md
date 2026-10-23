@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Origin-Aware Authorization (refuse owner elevation over unverified origin)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[get]] - code
+- [[get_1]] - code
 
 ## Live Query (requires Dataview plugin)
 

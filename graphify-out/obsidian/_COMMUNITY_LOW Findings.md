@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.35
 members: 11
 ---
 
 # LOW Findings
 
+**Cohesion:** 0.35 - loosely connected
 **Members:** 11 nodes
 
 ## Members

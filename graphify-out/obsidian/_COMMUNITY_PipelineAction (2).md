@@ -1,18 +1,21 @@
 ---
 type: community
-members: 5
+cohesion: 0.47
+members: 6
 ---
 
 # PipelineAction (2)
 
-**Members:** 5 nodes
+**Cohesion:** 0.47 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[10. Infrastructure & Runtime]] - document - docs/architecture/agentic-os.md
-- [[Container Architecture]] - document - docs/architecture/agentic-os.md
-- [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
-- [[Multi-Runtime Support]] - document - docs/architecture/agentic-os.md
-- [[`asb` CLI — Deployment Tool]] - document - docs/architecture/agentic-os.md
+- [[dot-test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetFalcoSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[get_falco_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 4 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 4 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
 
 ## Top bridge nodes
-- [[10. Infrastructure & Runtime]] - degree 5, connects to 1 community
+- [[get_falco_summary()]] - degree 13, connects to 3 communities
+- [[TestGetFalcoSummary]] - degree 4, connects to 1 community
+- [[dot-test_not_run_when_no_alert_dir()]] - degree 3, connects to 1 community

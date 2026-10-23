@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.08
 members: 25
 ---
 
 # TeamsConfig (3)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
 - [[Final Assessment Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[CRITICAL Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Executive Summary_7]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
-- [[Executive Summary_8]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Executive Summary_6]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[Executive Summary_7]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Fixes Applied_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[HIGH Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[LOW Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
@@ -30,7 +32,7 @@ members: 25
 - [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 - [[Round 1 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Round 2 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
-- [[Summary_12]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Summary_11]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Verification of ALL Prior Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 - [[Verification of Round 1 Fixes]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 
@@ -46,7 +48,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_stt.py]]
 - 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
 - 1 edge to [[_COMMUNITY_02-infrastructure.md (2)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 - 1 edge to [[_COMMUNITY_Project Management (README)]]
 - 1 edge to [[_COMMUNITY_main (2)]]
 

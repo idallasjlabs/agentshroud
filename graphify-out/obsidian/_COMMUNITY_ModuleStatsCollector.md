@@ -1,40 +1,44 @@
 ---
 type: community
-members: 27
+cohesion: 0.11
+members: 29
 ---
 
 # ModuleStatsCollector
 
-**Members:** 27 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[0. Pre-existing session context worth recording]] - document - reports/upgrade-2026-09-06-dev.md
-- [[1. Summary]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[1. Summary line]] - document - reports/upgrade-2026-09-17.md
-- [[10. Jira — unavailable this run]] - document - reports/upgrade-2026-09-17.md
-- [[11. Verification evidence]] - document - reports/upgrade-2026-09-17.md
-- [[12. Breaking changes  manual follow-ups]] - document - reports/upgrade-2026-09-17.md
-- [[13. Rollback instructions]] - document - reports/upgrade-2026-09-17.md
-- [[14. Time spent]] - document - reports/upgrade-2026-09-17.md
-- [[2. Environment mapping (discovered, not assumed)]] - document - reports/upgrade-2026-09-17.md
-- [[3. Dev handoff check (gating decision)]] - document - reports/upgrade-2026-09-17.md
-- [[4. Preflight (prod, read-only)]] - document - reports/upgrade-2026-09-17.md
-- [[5. Breaking changes  manual follow-ups (human review needed)]] - document - reports/upgrade-2026-09-06-dev.md
-- [[5. Inventory — wrapped agents (mandatory script, cited)]] - document - reports/upgrade-2026-09-17.md
-- [[6. Preflighthygiene (git)]] - document - reports/upgrade-2026-09-17.md
-- [[8. Branch  commits]] - document - reports/upgrade-2026-09-06-dev.md
-- [[8. Security findings table]] - document - reports/upgrade-2026-09-17.md
-- [[9. Upgrade table]] - document - reports/upgrade-2026-09-17.md
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - document - reports/upgrade-2026-09-06-dev.md
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Appendix first-pass abort evidence (0734–0826 ET, superseded)]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Prod promotion BLOCKED-awaiting-dev finding (2026-09-17)]] - concept - reports/upgrade-2026-09-17.md
-- [[Run history]] - document - reports/upgrade-2026-08-30-20260830-2009.md
-- [[Summary line]] - document - reports/upgrade-2026-09-06-dev.md
-- [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - document - reports/upgrade-2026-09-17.md
-- [[Trivy scan results — 22 CRITICAL across gatewayopenclawhermes (2026-09-17)]] - concept - reports/upgrade-2026-09-17.md
-- [[pip-audit gap — gateway Python deps not scanned]] - rationale - reports/upgrade-2026-09-17.md
-- [[upgrade-2026-08-30]] - document - reports/upgrade-2026-08-30.md
+- [[dot-__init__()_126]] - code - gateway/security/module_stats.py
+- [[dot-record()_1]] - code - gateway/security/module_stats.py
+- [[dot-reset()_1]] - code - gateway/security/module_stats.py
+- [[dot-setup_method()_19]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_20]] - code - gateway/tests/test_module_stats.py
+- [[dot-snapshot()]] - code - gateway/security/module_stats.py
+- [[dot-test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
+- [[dot-test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
+- [[dot-test_record_decision_helper()]] - code - gateway/tests/test_module_stats.py
+- [[dot-test_record_decision_never_raises()]] - code - gateway/tests/test_module_stats.py
+- [[dot-test_tool_acl_can_use_tool_records()]] - code - gateway/tests/test_module_stats.py
+- [[ModuleStatsCollector]] - code - gateway/security/module_stats.py
+- [[Record one enforcement decision for ``module``.          Never raises an unknow]] - rationale - gateway/security/module_stats.py
+- [[Return a per-module stats snapshot with totals and block rate.]] - rationale - gateway/security/module_stats.py
+- [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The]] - rationale - gateway/tests/test_module_stats.py
+- [[SCRUM-80 — the record helper + wrapped enforcement points feed real data.]] - rationale - gateway/tests/test_module_stats.py
+- [[TestEgressWiringEndToEnd]] - code - gateway/tests/test_module_stats.py
+- [[TestEnforcementWiring]] - code - gateway/tests/test_module_stats.py
+- [[Thread-safe per-module allowblocksanitize counters.]] - rationale - gateway/security/module_stats.py
+- [[get_collector()]] - code - gateway/security/module_stats.py
+- [[test_block_rate_computed()]] - code - gateway/tests/test_module_stats.py
+- [[test_empty_module_zero_rate_not_division_error()]] - code - gateway/tests/test_module_stats.py
+- [[test_module_stats.py]] - code - gateway/tests/test_module_stats.py
+- [[test_record_and_snapshot()]] - code - gateway/tests/test_module_stats.py
+- [[test_record_ignores_invalid_decision_safely()]] - code - gateway/tests/test_module_stats.py
+- [[test_reset()]] - code - gateway/tests/test_module_stats.py
+- [[test_sanitize_decision()]] - code - gateway/tests/test_module_stats.py
+- [[test_thread_safe_under_concurrency()]] - code - gateway/tests/test_module_stats.py
+- [[test_unknown_module_created_on_demand()]] - code - gateway/tests/test_module_stats.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,17 +48,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Recommendations for Production Deployment]]
-- 2 edges to [[_COMMUNITY_killswitch.sh]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised (2)]]
-- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection (3)]]
-- 1 edge to [[_COMMUNITY_Add information filtering to prevent agent self-disclosure]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL.md (3)]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
+- 8 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 7 edges to [[_COMMUNITY_Enum]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_record_decision()]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - degree 11, connects to 3 communities
-- [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - degree 18, connects to 2 communities
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30]] - degree 11, connects to 2 communities
-- [[upgrade-2026-08-30]] - degree 3, connects to 2 communities
-- [[11. Verification evidence]] - degree 4, connects to 1 community
+- [[test_module_stats.py]] - degree 18, connects to 4 communities
+- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
+- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
+- [[get_collector()]] - degree 11, connects to 2 communities
+- [[dot-record()_1]] - degree 4, connects to 2 communities

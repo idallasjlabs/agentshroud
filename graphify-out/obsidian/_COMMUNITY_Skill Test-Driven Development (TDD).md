@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.22
 members: 13
 ---
 
 # Skill: Test-Driven Development (TDD)
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[AI Engineering OS v1.0 integration (2026-03-08)]] - document - .llm_settings/UPGRADE_LOG.md
 - [[AWS API MCP server (official, recommended)]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS Athena MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS Athena MCP server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 - [[Agent layer (skills, subagents, orchestration)]] - concept - .llm_settings/WORKFLOW.md
 - [[CICD system capabilities (GitOps, self-healing, progressive delivery)]] - concept - .llm_settings/ci-cd/README.md
 - [[Claude Code skill catalog (59 skills)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
@@ -38,4 +40,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[Claude Code skill catalog (59 skills)]] - degree 7, connects to 3 communities
 - [[AWS API MCP server (official, recommended)]] - degree 4, connects to 1 community
-- [[AWS Athena MCP server]] - degree 2, connects to 1 community
+- [[AWS Athena MCP server_1]] - degree 2, connects to 1 community

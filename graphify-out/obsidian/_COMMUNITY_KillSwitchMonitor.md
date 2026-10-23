@@ -1,188 +1,187 @@
 ---
 type: community
-members: 175
+cohesion: 0.02
+members: 172
 ---
 
 # KillSwitchMonitor
 
-**Members:** 175 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 172 nodes
 
 ## Members
-- [[dot-__init__()_26]] - code - gateway/security/file_sandbox.py
-- [[dot-_check()]] - code - gateway/security/file_sandbox.py
-- [[dot-_detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
-- [[dot-_is_immutable_file()]] - code - gateway/security/file_sandbox.py
-- [[dot-_match_pattern()]] - code - gateway/security/file_sandbox.py
-- [[dot-_matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
-- [[dot-_matches_blocked()]] - code - gateway/security/file_sandbox.py
-- [[dot-check_read()]] - code - gateway/security/file_sandbox.py
-- [[dot-check_write()]] - code - gateway/security/file_sandbox.py
-- [[dot-detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
-- [[dot-get_audit_log()_2]] - code - gateway/security/file_sandbox.py
-- [[dot-get_security_violations()]] - code - gateway/security/file_sandbox.py
-- [[dot-get_temp_files()]] - code - gateway/security/file_sandbox.py
-- [[dot-record_network_activity()]] - code - gateway/security/file_sandbox.py
-- [[dot-scan()_1]] - code - gateway/security/file_sandbox.py
-- [[dot-test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_credit_card_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_mode_is_enforce()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_mode_is_enforce()_2]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_dns_tunneling_detection()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_egress_monitor_loaded()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_env_guard_detects_data_access()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_file_sandbox_mcp_write()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_file_sandbox_staging_detection()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_path_traversal_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
-- [[Detect data staging patterns (collect → compress → exfil).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
-- [[Egress monitoring should be available.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
-- [[Environment guard should monitor data access patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Even blocked paths are allowed in monitor mode (just flagged).]] - rationale - gateway/tests/test_file_sandbox.py
-- [[FileOperation]] - code - gateway/security/file_sandbox.py
-- [[FileSandbox]] - code - gateway/security/file_sandbox.py
-- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
-- [[FileVerdict]] - code - gateway/security/file_sandbox.py
-- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
-- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[High-entropy DNS queries indicate tunneling.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Large-write-then-network-activity stagingexfiltration pattern detection]] - concept - gateway/tests/test_file_sandbox.py
-- [[MCP file writes should go through sandbox.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[PIIFinding]] - code - gateway/security/file_sandbox.py
-- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
-- [[PIIScanner]] - code - gateway/security/file_sandbox.py
-- [[Path Isolation Manager Tests]] - code - gateway/tests/test_path_isolation.py
-- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Privilege Separation File Sandbox Tests]] - code - gateway/tests/test_privilege_separation.py
-- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Round 2 Security Hardening Tests]] - code - gateway/tests/test_round2_hardening.py
-- [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
-- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[StagingPattern]] - code - gateway/security/file_sandbox.py
-- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test detection of data exfiltration patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
-- [[TestExfiltrationDetection]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
-- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
-- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
-- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
-- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
-- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
-- [[default_config()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
-- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
-- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
-- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_config()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
-- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-__init__()_196]] - code - gateway/proxy/mcp_audit.py
+- [[dot-__init__()_197]] - code - gateway/proxy/pipeline.py
+- [[dot-__init__()_198]] - code - gateway/security/alert_dispatcher.py
+- [[dot-__init__()_199]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_check_request_rate()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_check_system_resources()_1]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_check_token_usage()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_check_tool_call_rate()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_clean_old_metrics()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_count_recent_events()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_get_system_stats()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_log_heartbeat_result()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_log_verification_result()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_make_monitor()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-_send_anomaly_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_send_heartbeat_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_send_verification_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_test_docker_available()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_test_killswitch_mode()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_test_script_exists()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_test_script_permissions()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-_test_script_syntax()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-anomaly_detection()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-get_status()_2]] - code - gateway/security/killswitch_monitor.py
+- [[dot-heartbeat_check()]] - code - gateway/security/killswitch_monitor.py
+- [[dot-test_all_pass_when_script_valid()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_auto_revert_timer_logic()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_clean_old_metrics_drops_stale_entries()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_critical_logged_when_setting_non_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_default_config()_8]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_default_mode_is_enforce()_7]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_docker_unavailable_is_fail()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_dry_run_exercises_enabled_modes()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_excessive_requests_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_excessive_tokens_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_excessive_tool_calls_flagged_and_alerted()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_fail_when_script_missing_triggers_alert()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_failure_increments_and_alerts_at_threshold()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_get_module_mode_pinned_modules()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_get_status_reports_verification_due()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_get_system_stats_handles_psutil_error()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_healthy_resets_miss_counter()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_init()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_module_mode_resolution()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_no_anomaly_when_within_limits()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_no_critical_when_setting_enforce()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_observatory_mode_state_initialization()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_observatory_mode_validation()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_pinned_modules_validation()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_timestamp()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_returns_monitor_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_returns_observatory_when_set()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode_endpoint()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_slow_when_response_exceeds_timeout()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_system_resource_cpu_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_system_resource_memory_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dot-test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[dot-to_dict()_17]] - code - gateway/security/killswitch_config.py
+- [[dot-verify_killswitch()]] - code - gateway/security/killswitch_monitor.py
+- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Any_81]] - code - gateway/security/killswitch_config.py
+- [[Any_82]] - code - gateway/security/killswitch_monitor.py
+- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Check if request rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if system resource usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if the agent is responding within expected parameters.          Returns]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if token usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if tool call rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
+- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
+- [[Count events in the last N seconds.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Detect unusual patterns that might indicate rogue behavior.          Args]] - rationale - gateway/security/killswitch_monitor.py
+- [[FastAPI_4]] - code - gateway/tests/test_observatory_mode.py
+- [[Get current kill switch monitor status.          Returns             Dict conta]] - rationale - gateway/security/killswitch_monitor.py
+- [[Get current system statistics.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Integration tests for Observatory Mode API endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[KillSwitchConfig]] - code - gateway/security/killswitch_monitor.py
+- [[KillSwitchConfig_1]] - code - gateway/security/killswitch_config.py
+- [[KillSwitchMonitor]] - code - gateway/security/killswitch_monitor.py
+- [[Log heartbeat result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Log verification result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Minimal FastAPI app that mounts the management router with auth bypassed.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Monitor and verify kill switch functionality.      Provides automated verificati]] - rationale - gateway/security/killswitch_monitor.py
+- [[Path_62]] - code - gateway/security/alert_dispatcher.py
+- [[Path_63]] - code - gateway/tests/test_observatory_mode.py
+- [[Remove metrics older than cutoff_time.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Send alert for anomaly detection.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for heartbeat failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for verification failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
+- [[Test GET managemode endpoint returns correct structure.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test Observatory Mode configuration and endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test POST managemode endpoint requestresponse.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test a specific kill switch mode.          Args             mode The kill swit]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test auto-revert timer functionality.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._5]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test if Docker is available.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script exists.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script has correct permissions.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script has valid syntax.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test module mode resolution with pinned modules.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test that observatory mode state is properly initialized.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test that pinned modules always return enforce even in monitor mode.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test validation of observatory mode parameters.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test validation of pinned module names.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[TestAnomalyDetection_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestAutoRevert]] - code - gateway/tests/test_observatory_mode.py
+- [[TestCriticalLogging]] - code - gateway/tests/test_observatory_mode.py
+- [[TestGetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestHeartbeat]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestObservatoryModeAPI]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[TestStatusAndStats]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
+- [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[_make_app()]] - code - gateway/tests/test_observatory_mode.py
+- [[client()_19]] - code - gateway/tests/test_observatory_mode.py
+- [[config()_4]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[deque]] - code - gateway/security/killswitch_monitor.py
+- [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
+- [[killswitch_config.py (KillSwitchConfig)]] - code - gateway/security/killswitch_config.py
+- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
+- [[killswitch_monitor.py (KillSwitchMonitor)]] - code - gateway/security/killswitch_monitor.py
+- [[reset_env_and_task()]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[set_mode()_1]] - code - gateway/web/api.py
+- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
+- [[test_killswitch_monitor_behavior.py]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[test_observatory_mode.py]] - code - gateway/tests/test_observatory_mode.py
+- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -192,33 +191,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 53 edges to [[_COMMUNITY_MiddlewareManager]]
-- 16 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 14 edges to [[_COMMUNITY__wrap_response()]]
-- 11 edges to [[_COMMUNITY_SessionManager]]
-- 7 edges to [[_COMMUNITY__wrap_response() (4)]]
-- 6 edges to [[_COMMUNITY__wrap_response() (3)_1]]
-- 6 edges to [[_COMMUNITY_test_playback_state.c]]
-- 5 edges to [[_COMMUNITY_PortManager]]
-- 4 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
-- 2 edges to [[_COMMUNITY_Common Queries]]
-- 2 edges to [[_COMMUNITY__wrap_response() (5)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_SecureBrowser (3)]]
-- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 17 edges to [[_COMMUNITY_AsyncMock]]
+- 12 edges to [[_COMMUNITY_SecurityPipeline (2)]]
+- 9 edges to [[_COMMUNITY_Any]]
+- 6 edges to [[_COMMUNITY_PathIsolationManager]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_TestEnforceDefaults]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_What Does OpenClaw Actually Need to Write]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[TestExfiltrationDetection]] - degree 29, connects to 16 communities
-- [[FileSandboxConfig]] - degree 80, connects to 12 communities
-- [[FileSandbox]] - degree 85, connects to 11 communities
-- [[TestFileSandboxDefaultEnforce]] - degree 8, connects to 5 communities
-- [[Rule agentshroud-path-traversal-open]] - degree 3, connects to 2 communities
+- [[test_observatory_mode.py]] - degree 19, connects to 4 communities
+- [[KillSwitchMonitor]] - degree 78, connects to 3 communities
+- [[KillSwitchConfig_1]] - degree 43, connects to 3 communities
+- [[TestObservatoryMode]] - degree 15, connects to 3 communities
+- [[killswitch_monitor.py]] - degree 6, connects to 3 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 34
 ---
 
 # OpenClaw Setup Guide - agentshroud.ai Bot
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 34 nodes
 
 ## Members
@@ -30,14 +32,14 @@ members: 34
 - [[Part 5 Telegram Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Part 6 Complete System Test]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Part 7 Maintaining Functionality]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Prerequisites_2]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Prerequisites_1]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Quick Start Commands]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 1 Enable IMAP in Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 2 Create Gmail App Password]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 3 Add Gmail to OpenClaw]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 4 Verify Gmail Channel]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 5 Test Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Summary_7]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Summary_9]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Telegram & Gmail Integration Guide]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Test Now]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[When Upgrading macOS]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md

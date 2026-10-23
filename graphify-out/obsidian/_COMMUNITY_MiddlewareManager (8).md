@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # MiddlewareManager (8)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -21,7 +23,7 @@ members: 22
 - [[Purpose_82]] - document - docker/config/openclaw/skills/i-production/README.md
 - [[RDS Rollback (Point-in-Time or Snapshot)]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Related Skills_61]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Role_40]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Role_38]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[S3 Data Rollback]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Severity Matrix]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 - [[Skill Incident Response (INCIDENT)]] - document - docker/config/openclaw/skills/i-production/SKILL.md

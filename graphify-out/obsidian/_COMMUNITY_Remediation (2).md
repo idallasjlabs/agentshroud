@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Remediation (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -33,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
 
 ## Top bridge nodes
 - [[Step-by-Step Deployment]] - degree 11, connects to 1 community

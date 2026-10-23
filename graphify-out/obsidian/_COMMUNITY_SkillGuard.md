@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.02
 members: 125
 ---
 
 # SkillGuard
 
+**Cohesion:** 0.02 - loosely connected
 **Members:** 125 nodes
 
 ## Members
-- [[dot-__init__()_100]] - code - gateway/security/egress_approval.py
+- [[dot-__init__()_97]] - code - gateway/security/egress_approval.py
 - [[dot-_append_decision()]] - code - gateway/security/egress_approval.py
 - [[dot-_assess_risk()]] - code - gateway/security/egress_approval.py
 - [[dot-_check_existing_rule()]] - code - gateway/security/egress_approval.py
@@ -18,9 +20,9 @@ members: 125
 - [[dot-add_rule()]] - code - gateway/security/egress_approval.py
 - [[dot-approval_queue()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-approve()]] - code - gateway/security/egress_approval.py
-- [[dot-cleanup_expired()]] - code - gateway/security/egress_approval.py
+- [[dot-cleanup_expired()_1]] - code - gateway/security/egress_approval.py
 - [[dot-deny()]] - code - gateway/security/egress_approval.py
-- [[dot-from_dict()_2]] - code - gateway/security/egress_approval.py
+- [[dot-from_dict()_3]] - code - gateway/security/egress_approval.py
 - [[dot-get_all_rules()]] - code - gateway/security/egress_approval.py
 - [[dot-get_decision_log()]] - code - gateway/security/egress_approval.py
 - [[dot-get_emergency_status()]] - code - gateway/security/egress_approval.py
@@ -43,7 +45,7 @@ members: 125
 - [[dot-test_approval_flow_permanent()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_approval_flow_session()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_approve_endpoint_logic()]] - code - gateway/tests/test_egress_approval.py
-- [[dot-test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_approval.py
+- [[dot-test_cleanup_expired_requests()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_denial_flow()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_deny_endpoint_logic()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_denylist_persistence()]] - code - gateway/tests/test_egress_approval.py
@@ -62,7 +64,7 @@ members: 125
 - [[dot-test_rule_management()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_session_rules_not_persisted()]] - code - gateway/tests/test_egress_approval.py
 - [[dot-test_timeout_behavior()]] - code - gateway/tests/test_egress_approval.py
-- [[dot-to_dict()_3]] - code - gateway/security/egress_approval.py
+- [[dot-to_dict()_5]] - code - gateway/security/egress_approval.py
 - [[Add or modify an egress rule.          Args             domain Target domain]] - rationale - gateway/security/egress_approval.py
 - [[Append an entry to the capped decision audit log (CC-40).]] - rationale - gateway/security/egress_approval.py
 - [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
@@ -144,15 +146,15 @@ SORT file.name ASC
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
 - 5 edges to [[_COMMUNITY_ResourceGuard]]
-- 4 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 4 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
 - 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 3 edges to [[_COMMUNITY_Enum]]
 - 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 - 1 edge to [[_COMMUNITY_api.py (2)]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
 - 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 - 1 edge to [[_COMMUNITY__make_proxy]]
 - 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 

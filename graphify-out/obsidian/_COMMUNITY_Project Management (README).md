@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Project Management (README)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -36,7 +38,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_TeamsConfig (3)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
 
 ## Top bridge nodes
 - [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities

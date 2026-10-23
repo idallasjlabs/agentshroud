@@ -1,51 +1,54 @@
 ---
 type: community
-members: 223
+cohesion: 0.02
+members: 186
 ---
 
 # MCPPermissionManager
 
-**Members:** 223 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 186 nodes
 
 ## Members
-- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-_hash_content()]] - code - gateway/ingest_api/ledger.py
-- [[dot-close()_9]] - code - gateway/ingest_api/ledger.py
-- [[dot-connect()]] - code - gateway/approval_queue/queue.py
+- [[dot-__init__()_174]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-_init_presidio()_1]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-block_credentials()_2]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-close()_13]] - code - gateway/ingest_api/ledger.py
 - [[dot-delete_entry()]] - code - gateway/ingest_api/ledger.py
 - [[dot-disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-disconnect()]] - code - gateway/approval_queue/queue.py
 - [[dot-enforce_retention()]] - code - gateway/ingest_api/ledger.py
-- [[dot-initialize()_1]] - code - gateway/ingest_api/ledger.py
+- [[dot-filter_xml_blocks()_2]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-get_mode()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
+- [[dot-guard()_6]] - code - gateway/tests/test_performance.py
+- [[dot-initialize()_3]] - code - gateway/ingest_api/ledger.py
 - [[dot-ledger()]] - code - gateway/tests/test_performance.py
 - [[dot-ledger()_1]] - code - gateway/tests/test_performance.py
 - [[dot-no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-record()_1]] - code - gateway/ingest_api/ledger.py
+- [[dot-pipeline()]] - code - gateway/tests/test_performance.py
+- [[dot-sanitizer()_2]] - code - gateway/tests/test_performance.py
+- [[dot-sanitizer()_3]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
 - [[dot-test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
+- [[dot-test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
+- [[dot-test_1000_messages_under_5s()]] - code - gateway/tests/test_performance.py
 - [[dot-test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[dot-test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
 - [[dot-test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_header_user_id_overrides_body_agent_id()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_invalid_header_identity_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[dot-test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_owner_body_identity_rejected_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[dot-test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
 - [[dot-test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
 - [[dot-test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[dot-test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[dot-test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
 - [[dot-test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[dot-test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[dot-test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
@@ -57,27 +60,22 @@ members: 223
 - [[dot-test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[dot-test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[dot-test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[dot-test_trust_update_performance()]] - code - gateway/tests/test_performance.py
 - [[dot-validate_default_url()]] - code - gateway/ingest_api/config.py
 - [[dot-validate_targets()]] - code - gateway/ingest_api/config.py
-- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
+- [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
 - [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
-- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Accept a WebSocket connection and add to connected set          Args]] - rationale - gateway/approval_queue/queue.py
-- [[Agent with low trust cannot perform elevated actions.]] - rationale - gateway/tests/test_security_integration.py
 - [[AppState]] - code - gateway/ingest_api/state.py
-- [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
 - [[ApprovalQueue]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueConfig_1]] - code - gateway/ingest_api/config.py
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
-- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Body-only owner identity must be rejected to prevent impersonation.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
 - [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Clean message flows through entire pipeline without issues.]] - rationale - gateway/tests/test_security_integration.py
 - [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
+- [[Collect and write benchmark baselines to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
 - [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
 - [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
@@ -86,7 +84,6 @@ members: 223
 - [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
 - [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
-- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
 - [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
 - [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
 - [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
@@ -96,7 +93,7 @@ members: 223
 - [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
 - [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Even if trust allows an action, egress filter blocks unauthorized destinations.]] - rationale - gateway/tests/test_security_integration.py
+- [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
 - [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
@@ -106,131 +103,99 @@ members: 223
 - [[GatewayConfig_2]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[GatewayConfig_3]] - code - gateway/ingest_api/config.py
 - [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - rationale - gateway/approval_queue/queue.py
+- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Injection attempts should be detected even under load.]] - rationale - gateway/tests/test_performance.py
 - [[LedgerConfig_1]] - code - gateway/ingest_api/config.py
 - [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Message with PII gets sanitized and logged correctly.]] - rationale - gateway/tests/test_security_integration.py
 - [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
 - [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
-- [[Multiple messages through pipeline concurrently — thread safety.]] - rationale - gateway/tests/test_security_integration.py
-- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Outbound responses have credentials blocked for untrusted sources.]] - rationale - gateway/tests/test_security_integration.py
-- [[PIISanitizer_3]] - code - gateway/tests/conftest.py
+- [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
+- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
+- [[PIISanitizer_2]] - code - gateway/tests/conftest.py
+- [[PIISanitizer_3]] - code - gateway/ingest_api/sanitizer.py
 - [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_ledger.py
-- [[Remove a WebSocket connection from connected set          Args             webs]] - rationale - gateway/approval_queue/queue.py
-- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Prompt guard 1000 messages in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_ledger.py
+- [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
+- [[Return current enforcement mode          Returns             enforce or moni]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
 - [[RouterConfig_1]] - code - gateway/ingest_api/config.py
 - [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
-- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
-- [[SSHConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[Sensitive audit data can be encrypted at rest.]] - rationale - gateway/tests/test_security_integration.py
+- [[SSHConfig_2]] - code - gateway/ingest_api/ssh_config.py
+- [[Scan 1000 messages in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
 - [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
 - [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
-- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
 - [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
-- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
 - [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
-- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
+- [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
+- [[TestBenchmarkBaseline]] - code - gateway/tests/test_performance.py
 - [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
-- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
 - [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
+- [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
 - [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
+- [[TestPromptGuardPerformance]] - code - gateway/tests/test_performance.py
 - [[TestRetention]] - code - gateway/tests/test_audit_chain.py
 - [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
 - [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
 - [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
 - [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
 - [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
-- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[TestTrustManagerPerformance]] - code - gateway/tests/test_performance.py
 - [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
-- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Trust check 10000 lookups in  1s.]] - rationale - gateway/tests/test_performance.py
 - [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
 - [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
+- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
 - [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
-- [[WebSocket_5]] - code - gateway/approval_queue/queue.py
-- [[When both PII sanitizer and prompt guard detect issues.]] - rationale - gateway/tests/test_security_integration.py
+- [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
 - [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
-- [[approval_queue()_1]] - code - gateway/tests/test_security_integration.py
-- [[auth_headers()]] - code - gateway/tests/conftest.py
-- [[auth_headers()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[auth_headers()_2]] - code - gateway/tests/test_ssh_endpoints.py
-- [[auth_headers()_3]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[client()_15]] - code - gateway/tests/test_ssh_endpoints.py
-- [[client()_16]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - concept - gateway/tests/test_filter_xml_blocks.py
+- [[auth_headers()_2]] - code - gateway/tests/conftest.py
+- [[auth_headers()_3]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[auth_headers()_4]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_17]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_18]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[conftest.py]] - code - gateway/tests/conftest.py
 - [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[encrypted_store()]] - code - gateway/tests/test_security_integration.py
 - [[full_pipeline_config()]] - code - gateway/tests/test_security_integration.py
-- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
-- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
 - [[ledger()]] - code - gateway/tests/test_audit_chain.py
 - [[ledger()_1]] - code - gateway/tests/test_security_integration.py
-- [[queue()]] - code - gateway/tests/test_approval_stress.py
 - [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
 - [[router()_2]] - code - gateway/tests/test_router_openai_translation.py
 - [[router()_3]] - code - gateway/tests/test_router_streaming.py
-- [[sanitizer()_4]] - code - gateway/tests/conftest.py
-- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[ssh_config()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[store()_1]] - code - gateway/tests/test_approval_stress.py
-- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
+- [[sanitizer()_2]] - code - gateway/tests/conftest.py
+- [[sanitizer()_3]] - code - gateway/tests/test_e2e_proxy.py
+- [[sanitizer()_4]] - code - gateway/tests/test_e2e_watchtower.py
+- [[ssh_config()_2]] - code - gateway/tests/test_ssh_endpoints.py
+- [[state.py]] - code - gateway/ingest_api/state.py
 - [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
 - [[test_client()]] - code - gateway/tests/conftest.py
 - [[test_config()]] - code - gateway/tests/conftest.py
 - [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
 - [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
-- [[test_egress_blocks_unauthorized_after_trust_check()]] - code - gateway/tests/test_security_integration.py
-- [[test_encrypted_store_in_pipeline()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_clean_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_full_pipeline_pii_message()]] - code - gateway/tests/test_security_integration.py
-- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
 - [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
-- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_ledger.py
+- [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_ledger.py
 - [[test_ledger()]] - code - gateway/tests/conftest.py
-- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
 - [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[test_pii_and_prompt_guard_both_trigger()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_concurrent_messages()]] - code - gateway/tests/test_security_integration.py
-- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
-- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_performance.py]] - code - gateway/tests/test_performance.py
 - [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
-- [[test_response_credential_blocking()]] - code - gateway/tests/test_security_integration.py
-- [[test_security_integration.py]] - code - gateway/tests/test_security_integration.py
 - [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[test_trust_insufficient_action_blocked()]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -240,42 +205,78 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 111 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
-- 70 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 56 edges to [[_COMMUNITY_ContextSegment]]
-- 54 edges to [[_COMMUNITY__make_proxy()]]
-- 36 edges to [[_COMMUNITY_GroupConfig]]
-- 10 edges to [[_COMMUNITY_MiddlewareManager (3)]]
-- 9 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 67 edges to [[_COMMUNITY_SSHProxy]]
+- 56 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 45 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 34 edges to [[_COMMUNITY_GroupConfig]]
+- 34 edges to [[_COMMUNITY__make_proxy()]]
+- 26 edges to [[_COMMUNITY_ContextSegment]]
+- 23 edges to [[_COMMUNITY_ContextGuard]]
+- 14 edges to [[_COMMUNITY_socrouter.py]]
+- 13 edges to [[_COMMUNITY_PromptGuard]]
+- 13 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 13 edges to [[_COMMUNITY_SecurityPipeline (2)]]
+- 12 edges to [[_COMMUNITY_test_security_integration.py]]
+- 12 edges to [[_COMMUNITY_AgentTarget (2)_1]]
+- 12 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 9 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 9 edges to [[_COMMUNITY_ForwardRequest]]
 - 9 edges to [[_COMMUNITY_UserSessionManager (4)]]
-- 6 edges to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 6 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 5 edges to [[_COMMUNITY_MiddlewareManager]]
+- 8 edges to [[_COMMUNITY_TestEnforceDefaults]]
+- 6 edges to [[_COMMUNITY_PathIsolationManager]]
+- 6 edges to [[_COMMUNITY_create_auth_dependency()]]
+- 5 edges to [[_COMMUNITY_AgentTarget]]
+- 5 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 5 edges to [[_COMMUNITY_TestSecurityPipelineChainLatency]]
 - 5 edges to [[_COMMUNITY_MiddlewareManager (4)]]
-- 5 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 - 5 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 4 edges to [[_COMMUNITY_lifespan()]]
-- 4 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_ServiceManager]]
+- 4 edges to [[_COMMUNITY_TestMCPResultEndpoint]]
+- 3 edges to [[_COMMUNITY_AgentTarget (2)]]
+- 3 edges to [[_COMMUNITY_AgentShroud Security Value Proposition]]
+- 3 edges to [[_COMMUNITY_UserSessionManager (2) (2)]]
+- 3 edges to [[_COMMUNITY_test_ledger.py]]
+- 3 edges to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_iot_button_register_cb (2)]]
-- 2 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_PortManager]]
+- 2 edges to [[_COMMUNITY_dot-connect()]]
+- 2 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 2 edges to [[_COMMUNITY_test_filter_xml_blocks.py]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 2 edges to [[_COMMUNITY_What Does OpenClaw Actually Need to Write]]
+- 2 edges to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer.sanitize_tool_result]]
+- 2 edges to [[_COMMUNITY_DelegationManager]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (5)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
+- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]]
+- 1 edge to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
+- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
+- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
+- 1 edge to [[_COMMUNITY_TestDomainValidationHelper]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_CompetitiveIntelReport]]
+- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
+- 1 edge to [[_COMMUNITY_MCPToolCall]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig (4)]]
+- 1 edge to [[_COMMUNITY_All Dependencies.md (2)]]
+- 1 edge to [[_COMMUNITY__fw_client]]
+- 1 edge to [[_COMMUNITY__pcm_bytes]]
 
 ## Top bridge nodes
-- [[GatewayConfig_3]] - degree 65, connects to 9 communities
-- [[ApprovalQueueConfig_1]] - degree 80, connects to 8 communities
-- [[test_security_integration.py]] - degree 37, connects to 8 communities
-- [[ApprovalQueue]] - degree 51, connects to 7 communities
-- [[RouterConfig_1]] - degree 66, connects to 6 communities
+- [[PIISanitizer_3]] - degree 151, connects to 34 communities
+- [[state.py]] - degree 34, connects to 20 communities
+- [[GatewayConfig_3]] - degree 65, connects to 11 communities
+- [[RouterConfig_1]] - degree 66, connects to 10 communities
+- [[LedgerConfig_1]] - degree 62, connects to 9 communities

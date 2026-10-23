@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # OpenClaw Host Hardening
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -16,10 +18,10 @@ members: 13
 - [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Key Classes  Functions_45]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Purpose_149]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Purpose_148]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Related_49]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Responsibilities_46]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[event_bus.py_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[event_bus.py]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[make_event(event_type, summary, details, severity)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 
 ## Live Query (requires Dataview plugin)
@@ -30,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
 
 ## Top bridge nodes
-- [[event_bus.py_2]] - degree 11, connects to 1 community
+- [[event_bus.py]] - degree 11, connects to 1 community

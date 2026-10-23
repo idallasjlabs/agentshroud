@@ -1,14 +1,17 @@
 ---
 type: community
-members: 14
+cohesion: 0.12
+members: 17
 ---
 
 # Path (4)
 
-**Members:** 14 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
 - [[1Password Integration_2]] - document - docs/api/integration-guide.md
+- [[AgentShroud v1.3.0_1]] - document - docs/api/api-reference.md
 - [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
 - [[Docker Security Scanning]] - document - docs/api/integration-guide.md
 - [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
@@ -18,6 +21,8 @@ members: 14
 - [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
 - [[MCP Server Integration]] - document - docs/api/integration-guide.md
 - [[Monitoring System Integration]] - document - docs/api/integration-guide.md
+- [[Overview_18]] - document - docs/api/api-reference.md
+- [[Overview_19]] - document - docs/api/integration-guide.md
 - [[Prometheus Metrics]] - document - docs/api/integration-guide.md
 - [[Service Account Setup]] - document - docs/api/integration-guide.md
 - [[Webhook Alerts]] - document - docs/api/integration-guide.md
@@ -31,8 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester (2) (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester (2)]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)_1]]
 
 ## Top bridge nodes
-- [[Integration Guide]] - degree 8, connects to 2 communities
+- [[Integration Guide]] - degree 8, connects to 1 community
+- [[AgentShroud v1.3.0_1]] - degree 4, connects to 1 community

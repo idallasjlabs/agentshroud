@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 15
 ---
 
 # OpenSCAP
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 15
 - [[dot-test_zero_without_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[Return a mock Path that exists and whose glob() returns named mock files.]] - rationale - gateway/tests/test_scorecard_scoring.py
 - [[TestScoreImageIntegrity_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSupplyChain_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSupplyChain]] - code - gateway/tests/test_scorecard_scoring.py
 - [[_mock_dir_with_files()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[_mock_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
@@ -42,5 +44,5 @@ SORT file.name ASC
 - [[_mock_dir_with_files()]] - degree 13, connects to 5 communities
 - [[_mock_missing_dir()]] - degree 6, connects to 3 communities
 - [[TestScoreImageIntegrity_1]] - degree 7, connects to 2 communities
-- [[TestScoreSupplyChain_1]] - degree 6, connects to 1 community
+- [[TestScoreSupplyChain]] - degree 6, connects to 1 community
 - [[dot-test_five_optimal()]] - degree 2, connects to 1 community

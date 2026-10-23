@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # PWA Icon 192x192 (AgentShroud logo mark)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

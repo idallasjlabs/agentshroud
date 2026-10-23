@@ -1,64 +1,78 @@
 ---
 type: community
-members: 51
+cohesion: 0.04
+members: 63
 ---
 
 # MiddlewareManager (4)
 
-**Members:** 51 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 63 nodes
 
 ## Members
 - [[1Password credential isolation]] - rationale - docs/vault/00 - START HERE/System Overview.md
 - [[AgentShroud Security Perimeter]] - concept - docs/vault/00 - START HERE/System Overview.md
 - [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[AgentShroud — Vault Home]] - document - docs/vault/00 - START HERE/Home.md
-- [[Architecture Overview_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Architecture Overview]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Architecture Overview_3]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Architecture Overview_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[Audit ledger (hash-verifiable chain)]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Common Issues]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Components_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Boot Sequence (Numbered)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Bot Container (`agentshroud-bot`)_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Common Issues_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Components_2]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[Configuration & Infrastructure]] - document - docs/vault/00 - START HERE/Home.md
-- [[Configuration Files]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Container Architecture_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Data Flow]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Configuration Files_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Container Architecture_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Data Flow_1]] - document - docs/vault/01 - Architecture/Data Flow.md
 - [[Diagrams]] - document - docs/vault/00 - START HERE/Home.md
 - [[Enforce mode by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
 - [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
 - [[Fail-closed by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Full System Diagram]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Container (`agentshroud-gateway`)_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Health Checks]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Home]] - document - docs/vault/00 - START HERE/Home.md
-- [[Human-in-the-loop approval queue]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Health Checks_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Home_1]] - document - docs/vault/00 - START HERE/Home.md
+- [[Human-in-the-loop approval queue_1]] - rationale - docs/vault/00 - START HERE/System Overview.md
 - [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Kill Switch]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Kill Switch_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
 - [[Least privilege MCP permissions]] - rationale - docs/vault/00 - START HERE/System Overview.md
-- [[Logs]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Logs_4]] - document - docs/vault/00 - START HERE/Quick Reference.md
 - [[Module Index]] - document - docs/vault/00 - START HERE/Home.md
 - [[Navigate This Vault]] - document - docs/vault/00 - START HERE/Home.md
-- [[Network Topology]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Network Topology_3]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[Operations]] - document - docs/vault/00 - START HERE/Home.md
+- [[Overview_27]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[PII redacted before forwarding]] - rationale - docs/vault/00 - START HERE/System Overview.md
 - [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Quick Reference]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Related Notes_20]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Related Notes_21]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[Related Notes_22]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Quick Reference_10]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_67]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_68]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_69]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Related Notes_70]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Shutdown & Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 4 Bot Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 5 Fully Operational]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Startup Indicators]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Sequence_1]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Startup Sequence]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Summary_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Summary_26]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
 - [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
-- [[ledger.py]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[main.py_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -72,22 +86,21 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_ContextSegment]]
 - 3 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 3 edges to [[_COMMUNITY_PromptGuard]]
+- 2 edges to [[_COMMUNITY_SecurityPipeline (2)]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 - 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (3)]]
 - 1 edge to [[_COMMUNITY_Mode A — Single task (3)]]
-- 1 edge to [[_COMMUNITY_Health Checks]]
-- 1 edge to [[_COMMUNITY__make_proxy() (2)]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]]
+- 1 edge to [[_COMMUNITY_OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]]
 - 1 edge to [[_COMMUNITY_dot-pimcp.json]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY__make_proxy() (2)]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency()]]
 
 ## Top bridge nodes
-- [[main.py]] - degree 17, connects to 11 communities
-- [[Data Flow]] - degree 11, connects to 6 communities
-- [[Startup Sequence]] - degree 10, connects to 6 communities
-- [[ledger.py]] - degree 7, connects to 3 communities
-- [[Shutdown & Recovery]] - degree 3, connects to 1 community
+- [[main.py_1]] - degree 17, connects to 11 communities
+- [[Data Flow_1]] - degree 11, connects to 6 communities
+- [[Startup Sequence]] - degree 10, connects to 5 communities
+- [[ledger.py_2]] - degree 7, connects to 3 communities
+- [[Shutdown & Recovery_1]] - degree 3, connects to 1 community

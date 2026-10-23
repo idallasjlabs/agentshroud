@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # Phase 3: MITIGATE (Rollback First!)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members

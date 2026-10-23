@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # Skill: Mindmap Architect (MM) (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 27
 - [[Mode A — Single task]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Mode B — Comprehensive review sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Reviewers and fixer available to you_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
-- [[Role_30]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Role_27]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Step 1 — One branch + worktree for the whole sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Step 1 — Sync and confirm clean state]] - document - docker/config/hermes/skills/i-hdev/SKILL.md

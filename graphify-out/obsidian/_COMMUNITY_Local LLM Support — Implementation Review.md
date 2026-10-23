@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Local LLM Support — Implementation Review
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -30,11 +32,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
 
 ## Top bridge nodes
-- [[TestGroupMemoryWriteACL]] - degree 11, connects to 5 communities
+- [[TestGroupMemoryWriteACL]] - degree 11, connects to 4 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members

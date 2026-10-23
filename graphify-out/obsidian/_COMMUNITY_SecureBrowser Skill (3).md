@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # SecureBrowser Skill (3)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
@@ -24,7 +26,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_SecureBrowser Skill]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill (4)_1]]
+- 1 edge to [[_COMMUNITY_COMMUNICATION-TEMPLATES]]
 
 ## Top bridge nodes
 - [[TRADEMARK]] - degree 5, connects to 2 communities

@@ -1,18 +1,19 @@
 ---
 type: community
-members: 159
+cohesion: 0.02
+members: 152
 ---
 
 # SecurityPipeline
 
-**Members:** 159 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 152 nodes
 
 ## Members
 - [[dot-_make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-_make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-_make_proxy()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-_make_proxy()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -23,7 +24,6 @@ members: 159
 - [[dot-test_filter_disabled_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_grant_immunity_bypasses_suspension()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_group_command_with_bot_suffix_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_group_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_group_message_with_mention_forwarded_and_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_group_message_without_mention_forwarded_but_flagged()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_hello_in_group_sends_hermes_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -38,7 +38,6 @@ members: 159
 - [[dot-test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_locked_no_active_lockdowns()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_locked_shows_suspended_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_missing_chat_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_no_bot_username_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_notify_user_blocked_uses_collaborator_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -52,14 +51,12 @@ members: 159
 - [[dot-test_predicate_strips_leading_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_predicate_trailing_punctuation_stripped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_predicate_whos_there_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_private_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_private_message_does_not_set_eligibility_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_revoke_immunity_restores_enforcement()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_revoke_immunity_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_status_in_group_sends_short_ack_not_full_status()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_stranger_hello_in_group_receives_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_supergroup_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -108,10 +105,9 @@ members: 159
 - [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TelegramAPIProxy_2]] - code
+- [[TelegramAPIProxy]] - code
 - [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[Tests for TelegramAPIProxy inbound security pipeline integration. Proves that…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -119,7 +115,6 @@ members: 159
 - [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -176,22 +171,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 69 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 47 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
-- 5 edges to [[_COMMUNITY_ServiceManager]]
+- 66 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
+- 47 edges to [[_COMMUNITY_asyncio]]
+- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
 - 4 edges to [[_COMMUNITY_api.py (2)]]
 - 4 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py (2)]]
+- 3 edges to [[_COMMUNITY_TestInboundPipelineOnGetUpdates]]
 - 3 edges to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
 - 3 edges to [[_COMMUNITY_GroupApprovalRouter]]
+- 2 edges to [[_COMMUNITY_GroupApprovalRouter (2)]]
 - 1 edge to [[_COMMUNITY_iCloud Services (4)]]
-- 1 edge to [[_COMMUNITY_GroupApprovalRouter (2)]]
 - 1 edge to [[_COMMUNITY_GroupApprovalRouter (3)]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency (8)]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency]]
 
 ## Top bridge nodes
-- [[test_telegram_proxy_inbound.py]] - degree 27, connects to 12 communities
+- [[test_telegram_proxy_inbound.py]] - degree 27, connects to 13 communities
 - [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - degree 9, connects to 3 communities
 - [[dot-test_suspended_drop_notice_respects_cooldown()]] - degree 9, connects to 3 communities
 - [[dot-test_suspended_user_receives_drop_notice()]] - degree 9, connects to 3 communities
-- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 5, connects to 3 communities
+- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - degree 6, connects to 3 communities

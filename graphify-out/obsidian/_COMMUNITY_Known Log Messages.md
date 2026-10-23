@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Known Log Messages
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 18
 - [[Function Details_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Key Classes  Functions_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Mode Enforce vs Monitor_4]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Purpose_99]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[Purpose_88]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Related_9]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Responsibilities_7]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
 - [[Threat Model_6]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md

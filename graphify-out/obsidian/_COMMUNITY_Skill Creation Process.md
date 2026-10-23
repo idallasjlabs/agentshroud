@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Skill Creation Process
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 17
 - [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[OAuthSecurityValidator.validate_request(req)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Purpose_108]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[Purpose_97]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[Related_16]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md

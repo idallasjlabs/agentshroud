@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.27
 members: 10
 ---
 
 # Required Software
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[dot-__init__()_199]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[dot-__init__()_200]] - code - gateway/proxy/telegram_gateway_relay.py
 - [[dot-send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
 - [[dot-send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
 - [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py

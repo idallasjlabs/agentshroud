@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Skill: Test-Driven Development (TDD) (2)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 13
 - [[Build troubleshooting (BuildKit stale overlay  disk full)]] - concept - docs/runbooks/colima-docker-guide.md
 - [[Colima & Docker Operations Guide]] - document - docs/runbooks/colima-docker-guide.md
 - [[Dual-stack bind race — Lima SSH port forwarder]] - rationale - docs/runbooks/colima-docker-guide.md
-- [[Prerequisites_15]] - document - README.md
+- [[Prerequisites_14]] - document - README.md
 - [[Quickstart_1]] - document - README.md
 - [[`asb` reference]] - document - README.md
 - [[asb Helper — Primary Interface]] - concept - docs/runbooks/colima-docker-guide.md
@@ -30,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
+- 1 edge to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
 - 1 edge to [[_COMMUNITY_AuditExporter]]
 - 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
 

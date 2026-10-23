@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Layer-by-Layer Breakdown (3)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members

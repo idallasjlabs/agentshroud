@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # LVGL KAWAII FACE
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
 - [[API Basics]] - document - skills/openclaw/notion/SKILL.md
-- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
+- [[Common Operations]] - document - skills/openclaw/notion/SKILL.md
 - [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
 - [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
 - [[Notes_9]] - document - skills/openclaw/notion/SKILL.md

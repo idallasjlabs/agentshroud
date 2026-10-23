@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 31
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (3)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
@@ -31,7 +33,7 @@ members: 31
 - [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Role_26]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Role_22]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Rules_5]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md

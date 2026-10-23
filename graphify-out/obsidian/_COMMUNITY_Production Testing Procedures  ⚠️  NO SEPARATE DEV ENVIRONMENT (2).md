@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 20
 ---
 
 # Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 20 nodes
 
 ## Members

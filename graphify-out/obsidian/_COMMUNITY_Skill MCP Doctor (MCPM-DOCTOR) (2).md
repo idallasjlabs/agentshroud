@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR) (2)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -23,7 +25,7 @@ members: 19
 - [[Issue uvx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[Output Format_17]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[Related Skills_64]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Role_55]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Role_53]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[When to Invoke_5]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[openclawskillsi-mcpm-doctorSKILL]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md

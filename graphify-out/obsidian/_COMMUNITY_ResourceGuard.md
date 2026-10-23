@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.02
 members: 135
 ---
 
 # ResourceGuard
 
+**Cohesion:** 0.02 - loosely connected
 **Members:** 135 nodes
 
 ## Members
-- [[dot-__init__()_83]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_84]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_85]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_86]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_76]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_77]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_78]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_79]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-is_group_admin()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-is_owner()_2]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-is_owner()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-require()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-require()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[FakeAuditStore]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
@@ -153,14 +155,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_api.py (2)]]
-- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager (2)]]
 - 5 edges to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
 - 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 151, connects to 6 communities
+- [[test_soc_router_coverage.py]] - degree 151, connects to 5 communities
 - [[FakeGroup]] - degree 13, connects to 2 communities
 - [[FakeCaller]] - degree 12, connects to 2 communities
 - [[FakeAuditStore]] - degree 7, connects to 2 communities

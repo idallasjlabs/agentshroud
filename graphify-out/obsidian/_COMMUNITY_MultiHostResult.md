@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.15
 members: 18
 ---
 
 # MultiHostResult
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 18 nodes
 
 ## Members
 - [[dot-agentsskillsi-tddREADME]] - document - .agents/skills/i-tdd/README.md
 - [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
-- [[Purpose_86]] - document - .agents/skills/i-tdd/README.md
-- [[Purpose_87]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Purpose_85]] - document - .agents/skills/i-tdd/README.md
+- [[Purpose_86]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[Related Skills_65]] - document - .agents/skills/i-tdd/README.md
 - [[Related Skills_66]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[Technical Illustrator (TI)_2]] - document - .agents/skills/i-ti/SKILL.md
@@ -35,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
 

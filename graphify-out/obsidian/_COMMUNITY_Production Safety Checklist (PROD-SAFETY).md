@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Production Safety Checklist (PROD-SAFETY)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members

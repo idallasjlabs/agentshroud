@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Mode A — Single task (5)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 15
 - [[How to start a task]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
 - [[Monitoring progress]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
 - [[Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)]] - concept - docker/config/hermes/skills/i-hdev/SKILL.md
-- [[Source of truth_1]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Source of truth_2]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
 - [[Starting a Development Task via Hermes  OpenClaw]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
 - [[Status ready to use, with 4 known gaps (see below)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
 - [[Things that will make a task halt and ask you, not fail silently]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md

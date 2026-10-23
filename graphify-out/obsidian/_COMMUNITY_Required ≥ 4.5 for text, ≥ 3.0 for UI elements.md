@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 15
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -32,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements (2)]]
+- 1 edge to [[_COMMUNITY_Proxy mode — full network isolation + egress control]]
 - 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
 
 ## Top bridge nodes

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 21
 ---
 
 # Slack Channel Setup (2)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -42,5 +44,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_hermesskillsi-icloudscriptscalendar.js]]
 
 ## Top bridge nodes
-- [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community
 - [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community
+- [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community

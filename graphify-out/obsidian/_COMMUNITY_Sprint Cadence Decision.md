@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Sprint Cadence Decision
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 - 1 edge to [[_COMMUNITY_First Time Setup]]
 
 ## Top bridge nodes

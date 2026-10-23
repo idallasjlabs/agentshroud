@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Obsidian workspace.json (open-tab layout)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members

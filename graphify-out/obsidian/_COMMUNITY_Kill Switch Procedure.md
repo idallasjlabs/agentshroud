@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Kill Switch Procedure
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members

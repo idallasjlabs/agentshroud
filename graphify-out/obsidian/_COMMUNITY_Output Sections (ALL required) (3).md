@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 9
 ---
 
 # Output Sections (ALL required) (3)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 9 nodes
 
 ## Members

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.13
 members: 17
 ---
 
 # Skill: Mindmap Architect (MM)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 17 nodes
 
 ## Members
 - [[dot-agentsskillsi-crREADME]] - document - .agents/skills/i-cr/README.md
-- [[Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Code Review (CR)]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
 - [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
 - [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
@@ -17,13 +19,13 @@ members: 17
 - [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
 - [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
 - [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
-- [[Purpose_103]] - document - .agents/skills/i-cr/README.md
-- [[Purpose_104]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Related Skills_77]] - document - .agents/skills/i-cr/README.md
-- [[Related Skills_78]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Purpose_92]] - document - .agents/skills/i-cr/README.md
+- [[Purpose_93]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Related Skills_67]] - document - .agents/skills/i-cr/README.md
+- [[Related Skills_68]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_83]] - document - .agents/skills/i-cr/README.md
-- [[Usage_84]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_73]] - document - .agents/skills/i-cr/README.md
+- [[Usage_74]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -35,7 +37,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 - 1 edge to [[_COMMUNITY_MultiHostResult]]
 

@@ -1,19 +1,19 @@
 ---
 type: community
-members: 10
+cohesion: 0.25
+members: 8
 ---
 
 # Regression guard (2026-08-30): the report scanned :latest tags while deploys… (2)
 
-**Members:** 10 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[dot-test_agent_label_falls_back_when_source_missing()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_prefers_running_image_over_configured_tag()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_running_image_parses_docker_inspect_stdout()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_running_image_returns_none_on_inspect_failure()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_running_image_returns_none_when_docker_missing()]] - code - gateway/tests/test_daily_cve_report.py
-- [[If the per-agent source config is missing, the label falls back gracefully.]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Regression guard (2026-08-30) the report scanned latest tags while deploys…]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[TestRunningImageResolution]] - code - gateway/tests/test_daily_cve_report.py
 - [[_raise()]] - code - gateway/tests/test_daily_cve_report.py
@@ -27,10 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw and Hermes are processed on fully separate paths; one failing never… (2)]]
 - 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
-- [[dot-test_agent_label_falls_back_when_source_missing()]] - degree 4, connects to 2 communities
 - [[TestRunningImageResolution]] - degree 5, connects to 1 community
+- [[_raise()]] - degree 2, connects to 1 community

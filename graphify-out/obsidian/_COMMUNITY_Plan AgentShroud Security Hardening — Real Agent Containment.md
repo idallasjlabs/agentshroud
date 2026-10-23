@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Plan: AgentShroud Security Hardening — Real Agent Containment
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -24,7 +26,7 @@ members: 19
 - [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Output Format_15]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Related Skills_62]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Role_49]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Role_47]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 - [[When to Invoke_3]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 

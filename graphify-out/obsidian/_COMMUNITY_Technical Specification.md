@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Technical Specification
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
 - [[browser-extensionpackage.json]] - code - browser-extension/package.json
 - [[collectCoverageFrom]] - code - browser-extension/package.json
-- [[description_10]] - code - browser-extension/package.json
+- [[description_7]] - code - browser-extension/package.json
 - [[devDependencies]] - code - browser-extension/package.json
 - [[jest]] - code - browser-extension/package.json
 - [[jest_1]] - code - browser-extension/package.json

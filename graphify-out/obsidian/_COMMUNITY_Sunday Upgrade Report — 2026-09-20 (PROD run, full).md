@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Sunday Upgrade Report — 2026-09-20 (PROD run, full)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members

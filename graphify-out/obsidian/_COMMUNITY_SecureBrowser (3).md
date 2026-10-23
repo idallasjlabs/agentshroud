@@ -1,14 +1,16 @@
 ---
 type: community
-members: 46
+cohesion: 0.08
+members: 45
 ---
 
 # SecureBrowser (3)
 
-**Members:** 46 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_48]] - code - gateway/security/consent_framework.py
+- [[dot-__init__()_63]] - code - gateway/security/consent_framework.py
 - [[dot-add_to_blacklist()]] - code - gateway/security/consent_framework.py
 - [[dot-add_to_whitelist()]] - code - gateway/security/consent_framework.py
 - [[dot-get_blacklist()]] - code - gateway/security/consent_framework.py
@@ -40,7 +42,6 @@ members: 46
 - [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - paper - gateway/security/consent_framework.py
 - [[ConfigValidationError]] - code - gateway/security/consent_framework.py
-- [[ConsentDecision]] - code - gateway/security/consent_framework.py
 - [[ConsentFramework]] - code - gateway/security/consent_framework.py
 - [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - paper - gateway/security/consent_framework.py
@@ -63,24 +64,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY__wrap_response()]]
-- 6 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
+- 10 edges to [[_COMMUNITY_ContextGuard]]
+- 9 edges to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
 - 2 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
-- 2 edges to [[_COMMUNITY_PortManager]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY__wrap_response() (4)]]
-- 1 edge to [[_COMMUNITY_test_playback_state.c]]
-- 1 edge to [[_COMMUNITY__wrap_response() (5)]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
 - 1 edge to [[_COMMUNITY_SessionManager]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[ConsentDecision]] - degree 33, connects to 11 communities
-- [[ConsentFramework]] - degree 31, connects to 3 communities
-- [[consent_framework.py]] - degree 10, connects to 2 communities
-- [[ConfigValidationError]] - degree 3, connects to 1 community
-- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - degree 2, connects to 1 community
+- [[ConsentFramework]] - degree 31, connects to 4 communities
+- [[consent_framework.py]] - degree 10, connects to 3 communities
+- [[TestServerConfigValidation]] - degree 13, connects to 1 community
+- [[TestEnvironmentValidation]] - degree 10, connects to 1 community
+- [[TestWhitelistBlacklist]] - degree 9, connects to 1 community

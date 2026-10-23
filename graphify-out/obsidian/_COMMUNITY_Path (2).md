@@ -1,27 +1,45 @@
 ---
 type: community
-members: 14
+cohesion: 0.12
+members: 30
 ---
 
 # Path (2)
 
-**Members:** 14 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[dot-test_not_source_fixed_newer()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_parse_non_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_parse_none_and_empty()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_parse_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_running_version_matches_pinned_openclaw_version()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_source_fixed_equal()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_source_fixed_older()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[dot-test_unparseable_is_not_source_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[Parse a dotted numeric version (e.g. ``2026.4.11`` or ``2026.7.1-2``) to a…]] - rationale - scripts/triage-cve-mitigations.py
-- [[Regression guard for the 2026-07-29 staleness incident. RUNNING_VERSION was…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
-- [[TestVersion]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[True when ``fixed_in`` version is = the running image (already patched). Args…]] - rationale - scripts/triage-cve-mitigations.py
-- [[is_source_fixed()]] - code - scripts/triage-cve-mitigations.py
-- [[parse_version()]] - code - scripts/triage-cve-mitigations.py
+- [[dot-__init__()_115]] - code - src/interfaces/text_control_center.py
+- [[dot-clear_screen()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_approvals()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_box()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_dashboard()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_kill_switch()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_log()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_modules()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
+- [[dot-get_auth()]] - code - src/interfaces/text_control_center.py
+- [[dot-get_key()_1]] - code - src/interfaces/text_control_center.py
+- [[dot-make_api_request()]] - code - src/interfaces/text_control_center.py
+- [[dot-run()_3]] - code - src/interfaces/text_control_center.py
+- [[ANSI]] - code - src/interfaces/text_control_center.py
+- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
+- [[ControlCenter]] - code - src/interfaces/text_control_center.py
+- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
+- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
+- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
+- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
+- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
+- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
+- [[main()_14]] - code - src/interfaces/text_control_center.py
+- [[start-control-center]] - code - scripts/start-control-center
+- [[text_control_center.py_1]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,15 +47,3 @@ members: 14
 TABLE source_file, type FROM #community/Path_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 9 edges to [[_COMMUNITY_Path]]
-- 3 edges to [[_COMMUNITY_dot-_run_and_read]]
-- 2 edges to [[_COMMUNITY__make_sanitizer()]]
-
-## Top bridge nodes
-- [[TestVersion]] - degree 12, connects to 2 communities
-- [[is_source_fixed()]] - degree 6, connects to 2 communities
-- [[parse_version()]] - degree 4, connects to 1 community
-- [[dot-test_running_version_matches_pinned_openclaw_version()]] - degree 3, connects to 1 community
-- [[dot-test_not_source_fixed_newer()]] - degree 2, connects to 1 community

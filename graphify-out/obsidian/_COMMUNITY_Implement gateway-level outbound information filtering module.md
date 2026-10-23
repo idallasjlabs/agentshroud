@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 17
 ---
 
 # Implement gateway-level outbound information filtering module
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 17 nodes
 
 ## Members

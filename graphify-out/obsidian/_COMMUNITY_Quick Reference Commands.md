@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Quick Reference Commands
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -13,12 +15,12 @@ members: 13
 - [[Oracle — Feedback Analyst_3]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Output Format_27]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Persona_9]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Purpose_147]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Purpose_146]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[Quality Checklist_11]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Related Skills_86]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[Role_81]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[System Prompt_9]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Usage_94]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Usage_95]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleREADME]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleSKILL]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 

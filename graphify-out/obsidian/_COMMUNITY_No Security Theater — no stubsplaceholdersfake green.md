@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # No Security Theater — no stubs/placeholders/fake green
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members

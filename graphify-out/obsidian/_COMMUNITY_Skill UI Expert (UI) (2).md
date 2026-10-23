@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # Skill: UI Expert (UI) (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -27,7 +29,7 @@ members: 27
 - [[Markmap Source Format_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Outline Template_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Project Planning Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Role_31]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Role_29]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Rules_8]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Use Case Patterns_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 13
 ---
 
 # Skill: Security Review (SEC) (3)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 13 nodes
 
 ## Members

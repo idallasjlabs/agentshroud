@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.23
 members: 12
 ---
 
 # Red Team Assessment v1.2.0
 
+**Cohesion:** 0.23 - loosely connected
 **Members:** 12 nodes
 
 ## Members

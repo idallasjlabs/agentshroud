@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.23
 members: 13
 ---
 
 # Steps
 
+**Cohesion:** 0.23 - loosely connected
 **Members:** 13 nodes
 
 ## Members

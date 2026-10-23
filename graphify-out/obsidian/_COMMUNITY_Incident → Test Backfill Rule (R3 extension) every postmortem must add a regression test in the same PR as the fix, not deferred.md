@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -27,7 +29,7 @@ members: 27
 - [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Role_34]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Role_32]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Rules_10]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
