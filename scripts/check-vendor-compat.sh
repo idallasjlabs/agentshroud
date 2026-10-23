@@ -30,6 +30,11 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 # candidate-build failure (live false FAIL, 2026-08-30).
 COMPAT_TMP="${TMPDIR:-/tmp}"
 COMPAT_TMP="${COMPAT_TMP%/}"
+# Directories bind-mounted into a candidate container live under $HOME: Colima
+# shares only the home directory with its VM, so a $TMPDIR (/var/folders/...)
+# source mounted as an empty VM-side dir — the candidate never saw the
+# A2A-enabled config.yaml and step 5 failed Hermes v0.22.2 and v0.22.5 for it.
+COMPAT_MOUNT_TMP="${COMPAT_MOUNT_TMP:-$HOME/.cache/agentshroud-compat}"
 
 BOT=""
 OPENCLAW_VERSION_CANDIDATE=""
@@ -254,7 +259,7 @@ check_hermes() {
   # was tried directly against the cached vendor image — confirmed while
   # developing this check. Mounting the parent directory avoids that class of
   # bug entirely.
-  local a2a_data_dir="$COMPAT_TMP/check-vendor-compat-hermes-optdata-$$"
+  local a2a_data_dir="$COMPAT_MOUNT_TMP/check-vendor-compat-hermes-optdata-$$"
   mkdir -p "$a2a_data_dir"
   cat "$REPO_ROOT/docker/config/hermes/config.yaml.tmpl" > "$a2a_data_dir/config.yaml"
   cat >> "$a2a_data_dir/config.yaml" <<'YAMLEOF'

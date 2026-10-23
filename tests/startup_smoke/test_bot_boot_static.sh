@@ -306,6 +306,17 @@ check "S20: clamd supervised in gateway + bot; no /var/run/clamav socket probes"
     "$([[ "$_s20_sup" -eq 2 && "$_s20_bad" -eq 0 ]] && echo true || echo false)" \
     "supervised=${_s20_sup}/2 files-probing-wrong-path=${_s20_bad}"
 
+# S21: check-vendor-compat.sh bind-mounts the A2A-enabled /opt/data from a dir
+# under $HOME. Colima shares only the home directory with its VM; from $TMPDIR
+# (/var/folders/...) the container got an empty /opt/data, A2A was never
+# enabled, and step 5 failed Hermes v0.22.2 (10-18) and v0.22.5 (10-23) although
+# both answer GetTask once the config is visible.
+_s21_cvc="$REPO/scripts/check-vendor-compat.sh"
+_s21_dir="$(HOME=/Users/s21home TMPDIR=/var/folders/s21tmp bash -c "$(grep '^COMPAT_MOUNT_TMP=' "$_s21_cvc" || true)"$'\n''echo "${COMPAT_MOUNT_TMP:-}"')"
+check "S21: compat gate mounts the candidate's /opt/data from under \$HOME, not \$TMPDIR" \
+    "$([[ "$_s21_dir" == /Users/s21home/* ]] && grep -q 'a2a_data_dir="$COMPAT_MOUNT_TMP/' "$_s21_cvc" && ! grep -qE -- '-v "\$COMPAT_TMP' "$_s21_cvc" && echo true || echo false)" \
+    "COMPAT_MOUNT_TMP='${_s21_dir}'"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
