@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L228"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .sanitize()
 
 ## Connections
-- [[dot-_extract_code_blocks()]] - `calls` [EXTRACTED]
-- [[dot-_restore_code_blocks()]] - `calls` [EXTRACTED]
-- [[dot-sanitize_images()]] - `calls` [EXTRACTED]
-- [[dot-sanitize_links()]] - `calls` [EXTRACTED]
-- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
-- [[sanitize_tool_result()]] - `calls` [EXTRACTED]
+- [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
+- [[Detect and redact PII from content          Args             content Text to s]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer_3]] - `method` [EXTRACTED]
+- [[RedactionResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

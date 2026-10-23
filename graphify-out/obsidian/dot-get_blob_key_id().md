@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "PortManager"
+community: "ContextGuard"
 location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/ContextGuard
 ---
 
 # .get_blob_key_id()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `method` [EXTRACTED]
 - [[Extract the key_id from an encrypted blob without decrypting.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

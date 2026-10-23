@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L472"
+community: "agentshroud-blueteam/SKILL.md (2)"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_1]] - `references` [EXTRACTED]
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

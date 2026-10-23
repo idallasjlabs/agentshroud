@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "ResourceGuard"
-location: "L47"
+community: "ServiceManager"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ServiceManager
 ---
 
 # .require()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[Action]] - `references` [EXTRACTED]
+- [[Raise 403 if the caller lacks the required permission.]] - `rationale_for` [EXTRACTED]
+- [[Resource]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

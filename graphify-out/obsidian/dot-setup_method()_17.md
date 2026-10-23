@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L56"
+community: "Any"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Any
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestSessionTokens]] - `method` [EXTRACTED]
+- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/Any

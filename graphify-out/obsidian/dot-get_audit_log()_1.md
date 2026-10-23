@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "asyncio"
-location: "L159"
+community: "KeyVault"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/KeyVault
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[SubagentEvent]] - `references` [EXTRACTED]
-- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[KeyAuditEvent]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/KeyVault

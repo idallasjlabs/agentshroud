@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # .get_supported_entities()
 
 ## Connections
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[PIISanitizer_3]] - `method` [EXTRACTED]
 - [[Return list of entity types currently enabled          Returns             List]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

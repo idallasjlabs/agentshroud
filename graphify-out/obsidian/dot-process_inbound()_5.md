@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "TestEmailSend"
-location: "L28"
+community: "_make_proxy()"
+location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/_make_proxy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

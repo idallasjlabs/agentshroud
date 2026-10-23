@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger (2)"
+community: "AgentShroud Security Value Proposition"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_2
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # .process_tool_call()
@@ -22,4 +22,4 @@ tags:
 - [[Process an MCP tool call through the security pipeline.          Args]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

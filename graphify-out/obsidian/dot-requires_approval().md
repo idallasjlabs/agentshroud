@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_policy_for_tier()]] - `calls` [EXTRACTED]
 - [[dot-get_tool_risk_tier()]] - `calls` [EXTRACTED]
-- [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
+- [[dot-submit_tool_request()_2]] - `calls` [EXTRACTED]
 - [[Check if a tool requires approval based on risk tier and policy.]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
 

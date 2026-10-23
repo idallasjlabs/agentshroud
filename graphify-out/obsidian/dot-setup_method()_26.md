@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
-location: "L18"
+community: "RuntimeConfig"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+  - community/RuntimeConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
+- [[load_baseline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "TestCheckCommandExecution"
-location: "L245"
+community: "test_llm_proxy.py"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/test_llm_proxypy
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
-- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
-- [[InjectionResult]] - `references` [EXTRACTED]
-- [[Scan tool result content for injection attempts.          Args             tool]] - `rationale_for` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[normalize_input()]] - `calls` [EXTRACTED]
-- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
+- [[dot-_scan()]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
+- [[Scan a tool result with the lower confidence floor.          Args             t]] - `rationale_for` [EXTRACTED]
+- [[ToolResultPIIReport]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

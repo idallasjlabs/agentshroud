@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "generate_branding_assets.py"
+community: "MemoryIntegrityMonitor"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/MemoryIntegrityMonitor
 ---
 
 # .run_lifecycle_maintenance()
@@ -19,4 +19,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[Run all lifecycle maintenance tasks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

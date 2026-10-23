@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # .middleware_manager()
@@ -17,4 +17,4 @@ tags:
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

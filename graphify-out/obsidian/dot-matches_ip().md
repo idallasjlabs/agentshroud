@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips. (2)"
+community: "TestOutboundPipelineIntegration"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .matches_ip()
@@ -16,4 +16,4 @@ tags:
 - [[Check if IP matches any allowed IPCIDR.]] - `rationale_for` [EXTRACTED]
 - [[EgressPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

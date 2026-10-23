@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-_compute_chain_hash()]] - `calls` [EXTRACTED]
 - [[dot-start_call()]] - `calls` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[Log an outgoing MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

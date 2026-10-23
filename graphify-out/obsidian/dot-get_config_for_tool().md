@@ -15,7 +15,7 @@ tags:
 - [[dot-_get_sanitizer_for_tool()]] - `calls` [EXTRACTED]
 - [[dot-get_tool_config()]] - `calls` [EXTRACTED]
 - [[Get PII config for a specific tool, applying overrides if configured]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

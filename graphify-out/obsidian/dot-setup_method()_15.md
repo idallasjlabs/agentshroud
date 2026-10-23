@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_multilingual_injection.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "A2APolicyEngine (2)"
-location: "L10"
+community: "check-vendor-compat.sh"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_2
+  - community/check-vendor-compatsh
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TestMultilingualInjection]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[OutputCanary]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

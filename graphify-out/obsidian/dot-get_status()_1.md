@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L295"
+community: "AlertDispatcher (3)"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/AlertDispatcher_3
 ---
 
 # .get_status()
 
 ## Connections
-- [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
-- [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
-- [[Get current kill switch monitor status.          Returns             Dict conta]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[dot-all_statuses()]] - `calls` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[Return current lockdown state for a user (for collabs or owner inspection).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

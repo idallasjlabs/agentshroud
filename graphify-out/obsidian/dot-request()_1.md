@@ -12,13 +12,13 @@ tags:
 # .request()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[dot-post()_2]] - `calls` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
 - [[Method_1]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[ReqwestTransport]] - `method` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value_4]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

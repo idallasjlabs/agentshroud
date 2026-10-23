@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips. (2)"
-location: "L644"
+community: "AgentTarget"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+  - community/AgentTarget
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-get_log()]] - `calls` [EXTRACTED]
-- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

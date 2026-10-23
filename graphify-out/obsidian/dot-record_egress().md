@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "purge_low_value_events"
+community: "SubagentGovernance"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/SubagentGovernance
 ---
 
 # .record_egress()
@@ -16,4 +16,4 @@ tags:
 - [[Record outbound data volume.]] - `rationale_for` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

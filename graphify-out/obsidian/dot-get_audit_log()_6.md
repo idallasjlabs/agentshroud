@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L174"
+community: "FileSandbox"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/FileSandbox
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `references` [EXTRACTED]
+- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
+- [[FileOperation]] - `references` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

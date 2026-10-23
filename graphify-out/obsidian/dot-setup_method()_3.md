@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Pydantic"
-location: "L101"
+community: "agentshroud-blueteam/SKILL.md (2)"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pydantic
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "ConsentFramework (2) (2)"
+community: "MCPPermissionManager (2)"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework_2_2
+  - community/MCPPermissionManager_2
 ---
 
 # .get_private_access_summary()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_private_access_events()]] - `calls` [EXTRACTED]
 - [[Aggregate recent private-tool violations for SOC reporting.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework_2_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

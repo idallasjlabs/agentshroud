@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "UserSessionManager (4)"
-location: "L237"
+community: "ContextSegment"
+location: "L450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/ContextSegment
 ---
 
 # .get_pending()
 
 ## Connections
-- [[dot-_expire_stale()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[Get all pending (not expired, not decided) items          First expires any stal]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Get all pending approval items.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

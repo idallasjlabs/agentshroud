@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2) (3)"
-location: "L143"
+community: "AgentShroud Security Architecture"
+location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2_3
+  - community/AgentShroud_Security_Architecture
 ---
 
 # .stop()
 
 ## Connections
-- [[StdioConnection]] - `method` [EXTRACTED]
-- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2_3
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

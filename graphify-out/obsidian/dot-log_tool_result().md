@@ -15,6 +15,6 @@ tags:
 - [[dot-_compute_chain_hash()]] - `calls` [EXTRACTED]
 - [[Log an incoming MCP tool result.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditEntry]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

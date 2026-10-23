@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_performance.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L52"
+community: "ContextGuard"
+location: "L955"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ContextGuard
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

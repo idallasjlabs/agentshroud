@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Any"
 location: "L413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # .format_hardened_message()
 
 ## Connections
 - [[dot-_format_parameters_with_highlighting()]] - `calls` [EXTRACTED]
-- [[Any_1]] - `references` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[DeceptionDetection]] - `references` [EXTRACTED]
 - [[Format an approval message with hardening measures applied.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Any

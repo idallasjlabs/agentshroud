@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L271"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # .get_or_create_session()
@@ -26,4 +26,4 @@ tags:
 - [[UserSession]] - `references` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

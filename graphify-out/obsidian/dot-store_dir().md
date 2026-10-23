@@ -12,7 +12,7 @@ tags:
 # .store_dir()
 
 ## Connections
-- [[Path_60]] - `references` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

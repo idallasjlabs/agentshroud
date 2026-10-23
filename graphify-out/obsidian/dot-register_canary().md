@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "WebProxyConfig"
+community: "ApprovalQueueConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .register_canary()
@@ -15,4 +15,4 @@ tags:
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 - [[Register a new canary value at runtime for dynamic tripwire testing.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

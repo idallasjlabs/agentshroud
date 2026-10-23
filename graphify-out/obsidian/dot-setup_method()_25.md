@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L407"
+community: "._make_proxy()"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/_make_proxy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressFilter]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

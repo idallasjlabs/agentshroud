@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "_pcm_bytes"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/_pcm_bytes
 ---
 
 # .start()
@@ -15,4 +15,4 @@ tags:
 - [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
 - [[Start the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

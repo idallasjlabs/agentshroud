@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Step-by-Step Installation (2)"
+community: "Any"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation_2
+  - community/Any
 ---
 
 # .generate_canary()
@@ -17,4 +17,4 @@ tags:
 - [[Generate and store a canary for this session.          Args             session]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Step-by-Step_Installation_2
+#graphify/code #graphify/EXTRACTED #community/Any

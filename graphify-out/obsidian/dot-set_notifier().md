@@ -12,7 +12,7 @@ tags:
 # .set_notifier()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
 - [[Set the Telegram notifier for egress approval requests.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

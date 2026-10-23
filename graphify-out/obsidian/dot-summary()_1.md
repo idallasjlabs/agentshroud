@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)"
-location: "L59"
+community: "TrustConfig (2)"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+  - community/TrustConfig_2
 ---
 
 # .summary()
 
 ## Connections
-- [[AlertStore]] - `method` [EXTRACTED]
-- [[alerts_summary()]] - `calls` [EXTRACTED]
+- [[dot-resolve_ports()]] - `calls` [EXTRACTED]
+- [[PortResolution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

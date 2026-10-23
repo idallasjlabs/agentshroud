@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "_wrap_response()"
-location: "L312"
+community: "MCPPermissionManager"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/MCPPermissionManager
 ---
 
 # .guard()
 
 ## Connections
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[TestContextGuard_1]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

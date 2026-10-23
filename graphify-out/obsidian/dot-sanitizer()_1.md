@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L43"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[TestPIIDetection_2]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

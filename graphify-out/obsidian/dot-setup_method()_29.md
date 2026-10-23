@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_heuristic_classifier.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L13"
+community: "MiddlewareManager (2)"
+location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/MiddlewareManager_2
 ---
 
 # .setup_method()
 
 ## Connections
-- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
-- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestRBACIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

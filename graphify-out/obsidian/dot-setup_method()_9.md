@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "AgentShroud Security Architecture"
-location: "L59"
+community: "TestEgressApprovalQueue"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/TestEgressApprovalQueue
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestIsBlocked]] - `method` [EXTRACTED]
+- [[TestSessionTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

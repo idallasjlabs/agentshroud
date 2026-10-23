@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ServiceManager"
 location: "L444"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ServiceManager
 ---
 
 # .get_logs()
@@ -17,4 +17,4 @@ tags:
 - [[ServiceManager]] - `method` [EXTRACTED]
 - [[TestGetLogs]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

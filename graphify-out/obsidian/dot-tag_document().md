@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "_wrap_response()"
+community: "TestDocumentTagging"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/TestDocumentTagging
 ---
 
 # .tag_document()
@@ -16,4 +16,4 @@ tags:
 - [[DocumentTag]] - `references` [EXTRACTED]
 - [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "api.py (3)"
-location: "L149"
+community: "Browser — Secure Browser Automation (6)"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_3
+  - community/Browser__Secure_Browser_Automation_6
 ---
 
 # .read()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_3
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6

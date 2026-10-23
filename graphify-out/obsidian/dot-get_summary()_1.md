@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "icloud/scripts/calendar.js"
-location: "L472"
+community: "api.py"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/icloud/scripts/calendarjs
+  - community/apipy
 ---
 
 # .get_summary()
 
 ## Connections
-- [[dot-to_dict()_17]] - `calls` [EXTRACTED]
-- [[Get a summary of all subagent governance state for a session.]] - `rationale_for` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[dot-to_dict()_9]] - `calls` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[Get governance proxy summary.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/apipy

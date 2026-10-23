@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-export_report()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Get comprehensive network security report.]] - `rationale_for` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 

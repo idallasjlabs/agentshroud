@@ -16,7 +16,7 @@ tags:
 - [[dot-_normalize_preview()]] - `calls` [EXTRACTED]
 - [[dot-_normalize_username()]] - `calls` [EXTRACTED]
 - [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - `rationale_for` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L281"
+community: "UserSessionManager (2)"
+location: "L452"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/UserSessionManager_2
 ---
 
 # .log_event()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[_Event]] - `calls` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

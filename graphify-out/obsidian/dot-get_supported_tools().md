@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Get list of tools with specific PII configurations]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

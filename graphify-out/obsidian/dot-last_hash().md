@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L306"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # .last_hash()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

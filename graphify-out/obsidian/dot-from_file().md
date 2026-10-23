@@ -15,7 +15,7 @@ tags:
 - [[dot-from_source()]] - `calls` [EXTRACTED]
 - [[Build a ManifestEntry by reading path from disk.]] - `rationale_for` [EXTRACTED]
 - [[ManifestEntry]] - `method` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

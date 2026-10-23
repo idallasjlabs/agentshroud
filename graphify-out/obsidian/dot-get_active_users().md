@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "PathIsolationManager"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PathIsolationManager
 ---
 
 # .get_active_users()
@@ -15,4 +15,4 @@ tags:
 - [[Get set of currently active users.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

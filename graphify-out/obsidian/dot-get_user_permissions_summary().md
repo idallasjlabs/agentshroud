@@ -12,9 +12,9 @@ tags:
 # .get_user_permissions_summary()
 
 ## Connections
-- [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Get a summary of permissions for a user.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ContextGuard"
 location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .get_attack_summary()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-export_attack_report()]] - `calls` [EXTRACTED]
 - [[dot-get_session_risk_level()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Get summary of detected attacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "KeyVaultConfig"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/KeyVaultConfig
 ---
 
 # .record_incident()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_propagate()]] - `calls` [EXTRACTED]
 - [[BotIncidentSeverity]] - `references` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
 - [[IncidentRecord]] - `references` [EXTRACTED]
 - [[Log an incident and propagate trust decay to registered peers.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

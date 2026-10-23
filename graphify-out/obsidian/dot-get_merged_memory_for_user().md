@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "SharedMemoryManager"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SharedMemoryManager
 ---
 
 # .get_merged_memory_for_user()
@@ -20,4 +20,4 @@ tags:
 - [[Build merged memory context for bot prompt injection.          Includes]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

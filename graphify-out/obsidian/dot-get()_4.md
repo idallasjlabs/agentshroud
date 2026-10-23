@@ -1,29 +1,23 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L509"
+community: "test_a2a_policy.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_a2a_policypy
 ---
 
 # .get()
 
 ## Connections
-- [[dot-request()_1]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `method` [EXTRACTED]
-- [[Value_4]] - `references` [EXTRACTED]
-- [[format_cves()]] - `calls` [EXTRACTED]
-- [[format_deploy_status()]] - `calls` [EXTRACTED]
-- [[json_str()]] - `calls` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[dot-generate_compose()]] - `calls` [EXTRACTED]
+- [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
+- [[dot-verify_shared_nothing()]] - `calls` [EXTRACTED]
+- [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `references` [EXTRACTED]
+- [[Get container config for an agent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

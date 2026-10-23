@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "AgentTarget"
-location: "L93"
+community: "Any"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Any
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_29]] - `references` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Any

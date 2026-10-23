@@ -12,7 +12,7 @@ tags:
 # .get_incidents()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
 - [[IncidentRecord]] - `references` [EXTRACTED]
 - [[Return incidents, optionally filtered by source bot.          Args]] - `rationale_for` [EXTRACTED]
 

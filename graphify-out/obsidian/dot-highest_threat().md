@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPInspector"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPInspector
 ---
 
 # .highest_threat()
@@ -16,4 +16,4 @@ tags:
 - [[Return the highest threat level from all findings.]] - `rationale_for` [EXTRACTED]
 - [[ThreatLevel_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # .list_services()
@@ -20,4 +20,4 @@ tags:
 - [[TestListServices]] - `calls` [EXTRACTED]
 - [[_known_services()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L229"
+community: "AlertDispatcher (5)"
+location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/AlertDispatcher_5
 ---
 
 # .store()
 
 ## Connections
-- [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_60]] - `references` [EXTRACTED]
-- [[TestIntelReportStore]] - `method` [EXTRACTED]
+- [[AuditStore]] - `calls` [EXTRACTED]
+- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

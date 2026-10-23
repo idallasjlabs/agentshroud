@@ -12,9 +12,9 @@ tags:
 # .list_users_and_roles()
 
 ## Connections
-- [[dot-check_permission()]] - `calls` [EXTRACTED]
+- [[dot-check_permission()_1]] - `calls` [EXTRACTED]
 - [[List all users and their roles (admin+ only).]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

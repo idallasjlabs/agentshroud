@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "WebProxy"
-location: "L19"
+community: "_wrap_response() (4)"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/_wrap_response_4
 ---
 
 # .setup_method()
 
 ## Connections
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[TestNetworkValidator]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/_wrap_response_4

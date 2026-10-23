@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/runtime/config.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
 community: "Skill: MCP Doctor (MCPM-DOCTOR)"
-location: "L36"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # .from_env()
 
 ## Connections
+- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 - [[Load configuration from environment variables._1]] - `rationale_for` [EXTRACTED]
-- [[RuntimeConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

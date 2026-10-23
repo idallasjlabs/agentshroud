@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_audit_export.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L303"
+community: "ContextGuard"
+location: "L693"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/ContextGuard
 ---
 
 # .store()
 
 ## Connections
-- [[AuditStore_1]] - `calls` [EXTRACTED]
-- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

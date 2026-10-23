@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "FetchOutcome"
-location: "L351"
+community: "Any"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/Any
 ---
 
 # .filter_response()
 
 ## Connections
-- [[dot-_classify_response_risk()]] - `calls` [EXTRACTED]
-- [[dot-_is_allowed_for_trust()]] - `calls` [EXTRACTED]
-- [[Filter agent response for sensitive information disclosure.          Args]] - `rationale_for` [EXTRACTED]
-- [[FilterMatch]] - `calls` [EXTRACTED]
+- [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
 - [[FilterResult]] - `references` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/Any

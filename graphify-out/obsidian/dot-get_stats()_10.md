@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "AgentTarget"
-location: "L160"
+community: "SlackAPIProxy"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/SlackAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_28]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

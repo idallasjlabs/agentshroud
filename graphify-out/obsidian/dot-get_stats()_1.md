@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "_pcm_bytes"
-location: "L628"
+community: "ModeRequest"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/ModeRequest
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_73]] - `references` [EXTRACTED]
-- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

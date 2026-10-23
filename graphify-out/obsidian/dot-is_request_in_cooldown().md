@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Any"
 location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # .is_request_in_cooldown()
 
 ## Connections
 - [[dot-_create_parameter_fingerprint()]] - `calls` [EXTRACTED]
-- [[Any_1]] - `references` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[Check if a similar request is still in cooldown period.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Any

@@ -16,7 +16,7 @@ tags:
 - [[GatewayClientT]] - `method` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value_4]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[build_url()]] - `calls` [EXTRACTED]
 - [[map_http_error()]] - `calls` [EXTRACTED]
 

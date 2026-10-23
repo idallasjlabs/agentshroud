@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
-location: "L83"
+community: "ContextGuard"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+  - community/ContextGuard
 ---
 
 # .get_events()
 
 ## Connections
-- [[dot-get()_1]] - `calls` [EXTRACTED]
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[EgressChannel]] - `references` [EXTRACTED]
+- [[EgressEvent]] - `references` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

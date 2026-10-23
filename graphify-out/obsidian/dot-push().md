@@ -12,7 +12,7 @@ tags:
 # .push()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[Alert]] - `calls` [EXTRACTED]
 - [[AlertStore]] - `method` [EXTRACTED]
 

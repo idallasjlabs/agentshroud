@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2) (2)"
+community: "StdioConnection"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2_2
+  - community/StdioConnection
 ---
 
 # .stop_all()
@@ -16,4 +16,4 @@ tags:
 - [[dot-stop()_1]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2_2
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

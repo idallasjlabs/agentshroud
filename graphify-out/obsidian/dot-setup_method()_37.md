@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "ProxyAction (2)"
-location: "L23"
+community: "FetchOutcome"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction_2
+  - community/FetchOutcome
 ---
 
 # .setup_method()
 
 ## Connections
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction_2
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

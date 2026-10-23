@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py (2)"
+community: "ToolChainAnalyzer"
 location: "L559"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy_2
+  - community/ToolChainAnalyzer
 ---
 
 # .get_global_stats()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[Get global analyzer statistics.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy_2
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

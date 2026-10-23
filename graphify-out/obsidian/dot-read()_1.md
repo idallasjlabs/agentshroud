@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Browser — Secure Browser Automation (6)"
-location: "L39"
+community: "test_soc_services_coverage.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/test_soc_services_coveragepy
 ---
 
 # .read()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[_FakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy

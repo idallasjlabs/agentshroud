@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[Set configuration and initialize tool result sanitizer]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L83"
+community: "ApprovalQueueConfig"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/ApprovalQueueConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEnforcementWiring]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

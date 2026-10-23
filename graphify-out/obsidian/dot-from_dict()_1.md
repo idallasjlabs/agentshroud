@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
-location: "L56"
+community: "MiddlewareManager"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MiddlewareManager
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_7]] - `references` [EXTRACTED]
-- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
-- [[ModificationSource]] - `calls` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
+- [[ConversationMessage]] - `calls` [EXTRACTED]
+- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
+- [[Path_1]] - `calls` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

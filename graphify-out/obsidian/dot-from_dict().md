@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L98"
+community: "ContextGuard"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/ContextGuard
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_24]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `method` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel_1]] - `calls` [EXTRACTED]
+- [[dot-get_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L165"
+community: "TestOutboundInfoFilter (2)"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/TestOutboundInfoFilter_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

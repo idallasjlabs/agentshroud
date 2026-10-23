@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "_t"
+community: "MultiTurnTracker"
 location: "L447"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MultiTurnTracker
 ---
 
 # .should_block_message()
@@ -16,4 +16,4 @@ tags:
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Determine if a message should be blocked.          Returns             Tuple of]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

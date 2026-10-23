@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "ApprovalQueueConfig (4)"
-location: "L786"
+community: "_t"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_4
+  - community/_t
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
-- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_4]] - `references` [EXTRACTED]
+- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
+- [[InjectionResult]] - `references` [EXTRACTED]
+- [[Scan tool result content for injection attempts.          Args             tool]] - `rationale_for` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_4
+#graphify/code #graphify/EXTRACTED #community/_t

@@ -12,7 +12,7 @@ tags:
 # .flush_notifications()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
 - [[Send pending egress notifications via Telegram. Called from request handler.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
