@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L145"
+community: "MiddlewareManager (2) (2)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/MiddlewareManager_2_2
 ---
 
-# Network Topology
+# Network Topology.md
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Bot Network Isolation Design]] - `rationale_for` [EXTRACTED]
+- [[Full System Flowchart]] - `references` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2

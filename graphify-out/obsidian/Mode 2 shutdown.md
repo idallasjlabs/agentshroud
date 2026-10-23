@@ -12,6 +12,6 @@ tags:
 # Mode 2: shutdown
 
 ## Connections
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

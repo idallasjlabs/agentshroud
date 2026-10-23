@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Pre-Deployment Checklist (2)"
+community: "Proxy Layer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_2
+  - community/Proxy_Layer
 ---
 
 # MCP Proxy
@@ -16,4 +16,4 @@ tags:
 - [[mcp-config.yml]] - `conceptually_related_to` [EXTRACTED]
 - [[mcp_proxy.py (MCP tool call gate)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2
+#graphify/concept #graphify/EXTRACTED #community/Proxy_Layer

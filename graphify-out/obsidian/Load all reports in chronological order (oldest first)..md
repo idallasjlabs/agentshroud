@@ -12,6 +12,6 @@ tags:
 # Load all reports in chronological order (oldest first).
 
 ## Connections
-- [[dot-load_all()]] - `rationale_for` [EXTRACTED]
+- [[dot-load_all()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "lifespan() (3)"
-location: "L23"
+community: "agentshroud-gateway container (starts first)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan_3
+  - community/agentshroud-gateway_container_starts_first
 ---
 
 # Key Features
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lifespan_3
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first

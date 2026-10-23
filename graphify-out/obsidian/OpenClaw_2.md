@@ -1,18 +1,16 @@
 ---
-source_file: "docs/project/glossary.md"
+source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "ApprovalHardening"
+community: "test_ptt_state.c"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/test_ptt_statec
 ---
 
 # OpenClaw
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `references` [EXTRACTED]
-- [[OPENCLAW_SETUP]] - `references` [EXTRACTED]
-- [[TELEGRAM_GMAIL_SETUP]] - `references` [EXTRACTED]
+- [[hermesSOUL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/concept #graphify/EXTRACTED #community/test_ptt_statec

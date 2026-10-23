@@ -12,6 +12,6 @@ tags:
 # Minimal RBAC stand-in with controllable check_permission results.
 
 ## Connections
-- [[_FakeRBAC]] - `rationale_for` [EXTRACTED]
+- [[_FakeRBAC_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

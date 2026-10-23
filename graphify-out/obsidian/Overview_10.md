@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: ".pi/mcp.json"
-location: "L13"
+community: "MiddlewareManager (2) (2)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pi/mcpjson
+  - community/MiddlewareManager_2_2
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pi/mcpjson
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2

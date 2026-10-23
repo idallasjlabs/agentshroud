@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "dashboard_endpoints.py"
-location: "L5"
+community: "Hermes Agent — Connection Setup"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Overview
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

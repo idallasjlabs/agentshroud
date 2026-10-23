@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (26)"
+community: "TelegramAPIProxy"
 location: "L2096"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_26
+  - community/TelegramAPIProxy
 ---
 
 # Owner HTML formatting should preserve parse_mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_html_parse_mode_preserved_without_redaction_placeholders()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_26
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

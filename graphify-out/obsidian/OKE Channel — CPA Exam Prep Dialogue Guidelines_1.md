@@ -15,6 +15,6 @@ tags:
 - [[Dialogue Adaptations_1]] - `contains` [EXTRACTED]
 - [[Episode Closing (Mandatory for OKE)_1]] - `contains` [EXTRACTED]
 - [[Expert Persona_1]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_3

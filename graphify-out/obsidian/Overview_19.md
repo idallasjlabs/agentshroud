@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Skill: Security Review (SEC) (2)"
-location: "L3"
+community: "Path (4)"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC_2
+  - community/Path_4
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Path_4

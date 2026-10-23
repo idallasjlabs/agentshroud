@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[FODL — Fluence Operational Data Lakehouse]] - `references` [INFERRED]
 - [[LLM Operating Context — Isaiah Jefferson]] - `references` [EXTRACTED]
-- [[Zabbix MCP server]] - `conceptually_related_to` [INFERRED]
+- [[Zabbix MCP server_1]] - `conceptually_related_to` [INFERRED]
 
 #graphify/concept #graphify/INFERRED #community/agentshroud-gateway_service_proxy_mode

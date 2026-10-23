@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "concept"
-community: ".omp/mcp.json"
+community: "ssh-configuration.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/omp/mcpjson
+  - community/ssh-configurationmd
 ---
 
 # MML (MIME Meta Language)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message-composition]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/omp/mcpjson
+#graphify/concept #graphify/EXTRACTED #community/ssh-configurationmd

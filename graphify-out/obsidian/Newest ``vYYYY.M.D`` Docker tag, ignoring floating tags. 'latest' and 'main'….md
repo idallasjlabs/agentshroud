@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
 community: "Sunday Upgrade prompt"
-location: "L140"
+location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "AgentTarget (3)"
+community: "KillSwitchMonitor"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/KillSwitchMonitor
 ---
 
 # KillSwitchMonitor
 
 ## Connections
-- [[dot-__init__()_13]] - `calls` [EXTRACTED]
-- [[dot-__init__()_161]] - `method` [EXTRACTED]
+- [[dot-__init__()_118]] - `calls` [EXTRACTED]
+- [[dot-__init__()_199]] - `method` [EXTRACTED]
 - [[dot-_check_request_rate()]] - `method` [EXTRACTED]
 - [[dot-_check_system_resources()_1]] - `method` [EXTRACTED]
 - [[dot-_check_token_usage()]] - `method` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[dot-_test_script_permissions()]] - `method` [EXTRACTED]
 - [[dot-_test_script_syntax()]] - `method` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `method` [EXTRACTED]
-- [[dot-get_status()_1]] - `method` [EXTRACTED]
+- [[dot-get_status()_2]] - `method` [EXTRACTED]
 - [[dot-heartbeat_check()]] - `method` [EXTRACTED]
 - [[dot-test_all_pass_when_script_valid()]] - `calls` [EXTRACTED]
 - [[dot-test_anomaly_detection_excessive_tool_calls()]] - `calls` [EXTRACTED]
@@ -58,19 +58,19 @@ tags:
 - [[dot-test_system_resource_memory_anomaly()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_killswitch_script_not_exists()]] - `calls` [EXTRACTED]
 - [[dot-verify_killswitch()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
+- [[FastAPI_4]] - `uses` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - `rationale_for` [EXTRACTED]
-- [[Path_65]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAnomalyDetection]] - `uses` [INFERRED]
+- [[Path_63]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestCriticalLogging]] - `uses` [INFERRED]
 - [[TestGetMode]] - `uses` [INFERRED]
@@ -86,9 +86,9 @@ tags:
 - [[TestVerifyKillswitch]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[killswitch_monitor.py]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

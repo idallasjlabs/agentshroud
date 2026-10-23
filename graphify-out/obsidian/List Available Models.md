@@ -12,6 +12,6 @@ tags:
 # List Available Models
 
 ## Connections
-- [[Quick Reference_10]] - `contains` [EXTRACTED]
+- [[Quick Reference_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/01-architecturemd

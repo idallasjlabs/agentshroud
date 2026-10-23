@@ -12,7 +12,7 @@ tags:
 # OutputSchemaEnforcer
 
 ## Connections
-- [[dot-__init__()_103]] - `method` [EXTRACTED]
+- [[dot-__init__()_107]] - `method` [EXTRACTED]
 - [[dot-_register_default_schema()]] - `method` [EXTRACTED]
 - [[dot-register_schema()]] - `method` [EXTRACTED]
 - [[dot-validate()_1]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[SchemaValidationResult]] - `references` [EXTRACTED]
 - [[TestOutputSchemaEnforcer]] - `uses` [INFERRED]
 - [[Validates outbound responses against structural schemas.      Usage          e]] - `rationale_for` [EXTRACTED]
-- [[enforcer()_1]] - `calls` [EXTRACTED]
+- [[enforcer()]] - `calls` [EXTRACTED]
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 

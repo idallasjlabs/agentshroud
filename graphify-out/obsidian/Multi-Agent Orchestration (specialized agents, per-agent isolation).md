@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L326-L356"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # Multi-Agent Orchestration (specialized agents, per-agent isolation)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes service (agentshroud-hermes-v2)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/_wrap_response_2
+#graphify/concept #graphify/INFERRED #community/run-standalonesh

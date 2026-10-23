@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "rationale"
-community: "installer.py"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # Multi-User/Multi-Tenant Threat Model (Reversal Driver)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/installerpy
+#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy

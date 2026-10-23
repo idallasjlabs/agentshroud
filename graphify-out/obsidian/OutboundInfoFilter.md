@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "FetchOutcome"
+community: "KeyVaultConfig"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/KeyVaultConfig
 ---
 
 # OutboundInfoFilter
 
 ## Connections
-- [[dot-__init__()_136]] - `method` [EXTRACTED]
+- [[dot-__init__()_38]] - `method` [EXTRACTED]
 - [[dot-_classify_response_risk()]] - `method` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_is_allowed_for_trust()]] - `method` [EXTRACTED]
-- [[dot-filter_response()_1]] - `method` [EXTRACTED]
-- [[dot-get_stats()_16]] - `method` [EXTRACTED]
-- [[dot-setup_method()_22]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
-- [[dot-test_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-filter_response()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_37]] - `calls` [EXTRACTED]
+- [[dot-test_custom_patterns()_1]] - `calls` [EXTRACTED]
 - [[dot-test_initialization_with_config()]] - `calls` [EXTRACTED]
 - [[dot-test_monitor_mode()]] - `calls` [EXTRACTED]
 - [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - `calls` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestFabricatedSecurityNotice]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestIntegration_1]] - `uses` [INFERRED]
+- [[TestIntegration]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundInfoFilter]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

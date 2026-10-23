@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Pre-Deployment Checklist (2)"
+community: "Proxy Layer"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Pre-Deployment_Checklist_2
+  - community/Proxy_Layer
 ---
 
 # MCP Server Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Pre-Deployment_Checklist_2
+#graphify/document #graphify/INFERRED #community/Proxy_Layer

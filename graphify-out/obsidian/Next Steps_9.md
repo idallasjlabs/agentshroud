@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "`SecurityPipeline`"
-location: "L204"
+community: "TestDNSForwarderProtocol"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/TestDNSForwarderProtocol
 ---
 
 # Next Steps
 
 ## Connections
-- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "test_us_ssn_regex_tightened.py"
-location: "L9"
+community: "oracle — best use"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_us_ssn_regex_tightenedpy
+  - community/oracle__best_use
 ---
 
 # Overview
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

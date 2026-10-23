@@ -12,6 +12,6 @@ tags:
 # Overall Security Posture: **STRONG** 🟢
 
 ## Connections
-- [[Summary_12]] - `contains` [EXTRACTED]
+- [[Summary_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TeamsConfig_3

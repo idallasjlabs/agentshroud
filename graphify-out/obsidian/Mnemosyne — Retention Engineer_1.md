@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Troubleshooting"
+community: "Mnemosyne — Retention Engineer"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Mnemosyne — Retention Engineer
@@ -18,4 +18,4 @@ tags:
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

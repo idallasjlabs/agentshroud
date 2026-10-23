@@ -12,7 +12,7 @@ tags:
 # LedgerEntry
 
 ## Connections
-- [[Any_14]] - `uses` [INFERRED]
+- [[Any_48]] - `uses` [INFERRED]
 - [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
@@ -20,6 +20,6 @@ tags:
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[Single entry from the data ledger]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[ledger.py_1]] - `imports` [EXTRACTED]
+- [[ledger.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/_make_proxy

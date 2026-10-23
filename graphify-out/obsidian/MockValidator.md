@@ -12,7 +12,7 @@ tags:
 # MockValidator
 
 ## Connections
-- [[dot-__init__()_141]] - `method` [EXTRACTED]
+- [[dot-__init__()_183]] - `method` [EXTRACTED]
 - [[dot-setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[dot-test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[dot-test_register_validator()]] - `calls` [EXTRACTED]

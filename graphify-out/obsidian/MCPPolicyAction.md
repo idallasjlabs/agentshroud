@@ -12,12 +12,12 @@ tags:
 # MCPPolicyAction
 
 ## Connections
-- [[dot-from_dict()_4]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
+- [[Path_36]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]

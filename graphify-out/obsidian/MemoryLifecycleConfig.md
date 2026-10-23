@@ -1,32 +1,18 @@
 ---
-source_file: "gateway/security/memory_config.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
-location: "L48"
+community: "MemoryIntegrityMonitor"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - graphify/EXTRACTED
+  - community/MemoryIntegrityMonitor
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
-- [[Any_50]] - `uses` [INFERRED]
-- [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
-- [[ContentThreat]] - `uses` [INFERRED]
-- [[ContentThreatType]] - `uses` [INFERRED]
+- [[dot-__init__()_67]] - `references` [EXTRACTED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[Path_68]] - `uses` [INFERRED]
-- [[RetentionAction]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
-- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
-- [[memory_config.py]] - `contains` [EXTRACTED]
-- [[memory_lifecycle.py]] - `imports` [EXTRACTED]
-- [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

@@ -12,7 +12,7 @@ tags:
 # MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Connections
-- [[Purpose_113]] - `contains` [EXTRACTED]
+- [[Purpose_111]] - `contains` [EXTRACTED]
 - [[Related Skills_82]] - `contains` [EXTRACTED]
 - [[Usage_88]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]

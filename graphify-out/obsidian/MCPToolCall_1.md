@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPToolCall"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - community/MCPToolCall
 ---
 
 # MCPToolCall
 
 ## Connections
-- [[dot-__post_init__()_3]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
 - [[dot-process_tool_call()]] - `references` [EXTRACTED]
 - [[dot-test_audit_entry_created()]] - `calls` [EXTRACTED]
@@ -29,8 +29,8 @@ tags:
 - [[dot-test_injection_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_low_risk_tool_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_mixed_allowed_blocked_chain()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]
-- [[dot-test_passthrough_allows_everything()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypass()_3]] - `calls` [EXTRACTED]
+- [[dot-test_passthrough_allows_everything()_1]] - `calls` [EXTRACTED]
 - [[dot-test_passthrough_still_audits()]] - `calls` [EXTRACTED]
 - [[dot-test_pii_redacted_in_params()]] - `calls` [EXTRACTED]
 - [[dot-test_private_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
@@ -44,14 +44,14 @@ tags:
 - [[dot-test_stats_tracking()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_server_default_allow()_1]] - `calls` [EXTRACTED]
 - [[dot-test_workspace_contributor_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
@@ -82,9 +82,9 @@ tags:
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
@@ -101,7 +101,7 @@ tags:
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[_HangingWebSocket_1]] - `uses` [INFERRED]
+- [[_HangingWebSocket]] - `uses` [INFERRED]
 - [[make_call()]] - `calls` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
@@ -113,4 +113,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/MCPToolCall

@@ -12,9 +12,9 @@ tags:
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_147]] - `contains` [EXTRACTED]
+- [[Purpose_146]] - `contains` [EXTRACTED]
 - [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[Usage_94]] - `contains` [EXTRACTED]
+- [[Usage_95]] - `contains` [EXTRACTED]
 - [[openclawskillsi-oracleREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 

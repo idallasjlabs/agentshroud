@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud (security proxy)]] - `references` [EXTRACTED]
 - [[Approval Queue_2]] - `references` [EXTRACTED]
 - [[HERMES_SETUP]] - `conceptually_related_to` [INFERRED]
-- [[OpenClaw_2]] - `references` [EXTRACTED]
+- [[OpenClaw_3]] - `references` [EXTRACTED]
 - [[OpenClaw Bot Container]] - `references` [EXTRACTED]
 - [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 - [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]

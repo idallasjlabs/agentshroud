@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "concept"
-community: "AlertTelegramRelay"
+community: "ADR-006: Multi-Runtime Container Support"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Multi-Runtime Support (Docker/Podman/Apple Containers)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
