@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 23
 ---
 
 # .github/mcp.json
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -28,7 +30,7 @@ members: 23
 - [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Summary_13]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Summary_12]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 
@@ -40,14 +42,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__make_proxy()]]
 - 1 edge to [[_COMMUNITY_Skill UX Expert (UX) (3)]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_BotConfig (2)]]
 - 1 edge to [[_COMMUNITY_Apple Reminders CLI (remindctl)]]
 - 1 edge to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY_installer.py]]
 - 1 edge to [[_COMMUNITY_SecurityPipeline (4)]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 3 communities
+- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
 - [[Implementation Status]] - degree 11, connects to 2 communities
 - [[Access Control (7)]] - degree 2, connects to 1 community

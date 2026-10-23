@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 34
 ---
 
 # TestEgressTelegramNotify
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 34 nodes
 
 ## Members
@@ -35,7 +37,7 @@ members: 34
 - [[build_op_proxy_request()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[build_tenant_info_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[datetime_5]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[datetime_4]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[fetch_op_secret()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.31
 members: 9
 ---
 
 # _llm_init_agent_reference_paths() (2)
 
+**Cohesion:** 0.31 - loosely connected
 **Members:** 9 nodes
 
 ## Members

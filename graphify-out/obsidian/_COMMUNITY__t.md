@@ -1,20 +1,18 @@
 ---
 type: community
-members: 42
+cohesion: 0.07
+members: 34
 ---
 
 # _t
 
-**Members:** 42 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[dot-_detect_hidden_instructions()]] - code - gateway/security/context_guard.py
-- [[dot-_detect_instruction_injection()]] - code - gateway/security/context_guard.py
-- [[dot-_detect_rapid_context_growth()]] - code - gateway/security/context_guard.py
-- [[dot-_detect_repetition_attacks()]] - code - gateway/security/context_guard.py
-- [[dot-analyze_message()]] - code - gateway/security/context_guard.py
-- [[dot-guard()]] - code - gateway/tests/test_context_guard.py
-- [[dot-should_block_message()]] - code - gateway/security/context_guard.py
+- [[dot-__init__()_101]] - code - gateway/security/tool_result_injection.py
+- [[dot-guard()_4]] - code - gateway/tests/test_context_guard.py
+- [[dot-scan_tool_result()_2]] - code - gateway/security/tool_result_injection.py
 - [[dot-test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
 - [[dot-test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
 - [[dot-test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
@@ -26,30 +24,26 @@ members: 42
 - [[dot-test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
 - [[dot-test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
 - [[dot-test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[Analyze a message for context poisoning attempts.          Args             ses]] - rationale - gateway/security/context_guard.py
-- [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - rationale - docs/security/cve-mitigation-matrix.md
 - [[CVE-2026-22708 — AI Agent Container Escape via Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
 - [[CVE-2026-30741 — RCE via Request-Side Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-3690 — Canvas Authentication Bypass]] - rationale - docs/security/cve-mitigation-matrix.md
 - [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
-- [[Context tracking for a session.]] - rationale - gateway/security/context_guard.py
-- [[ContextAttack]] - code - gateway/security/context_guard.py
-- [[Detect hidden instructions buried in large text blocks.]] - rationale - gateway/security/context_guard.py
-- [[Detect instruction injection attempts.]] - rationale - gateway/security/context_guard.py
-- [[Detect rapid context window filling.]] - rationale - gateway/security/context_guard.py
-- [[Detect repetition-based context stuffing attacks.]] - rationale - gateway/security/context_guard.py
-- [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
-- [[Determine if a message should be blocked.          Returns             Tuple of]] - rationale - gateway/security/context_guard.py
 - [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
-- [[SessionContext]] - code - gateway/security/context_guard.py
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
+- [[InjectionResult]] - code - gateway/security/tool_result_injection.py
+- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
+- [[Result from tool result injection scan.]] - rationale - gateway/security/tool_result_injection.py
+- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
+- [[Scan tool result content for injection attempts.          Args             tool]] - rationale - gateway/security/tool_result_injection.py
+- [[Strip potentially malicious markdown from tool results.      Removes     - Mark]] - rationale - gateway/security/input_normalizer.py
 - [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
 - [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
 - [[check_message()]] - code - gateway/security/context_guard.py
 - [[context_guard.py]] - code - gateway/security/context_guard.py
-- [[cve-mitigation-matrix]] - document - docs/security/cve-mitigation-matrix.md
 - [[get_context_guard()]] - code - gateway/security/context_guard.py
+- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
+- [[strip_markdown_exfil()]] - code - gateway/security/input_normalizer.py
 - [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
+- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,26 +53,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_MiddlewareManager]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 6 edges to [[_COMMUNITY_ContextGuard]]
+- 5 edges to [[_COMMUNITY_PromptGuard]]
+- 4 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 3 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 3 edges to [[_COMMUNITY_ProxyAction]]
+- 3 edges to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 - 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_TestCheckCommandExecution]]
-- 1 edge to [[_COMMUNITY_ApprovalHardening]]
-- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
-- 1 edge to [[_COMMUNITY__make_sanitizer()]]
-- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
 
 ## Top bridge nodes
-- [[cve-mitigation-matrix]] - degree 14, connects to 9 communities
-- [[dot-analyze_message()]] - degree 12, connects to 3 communities
-- [[context_guard.py]] - degree 9, connects to 3 communities
+- [[tool_result_injection.py]] - degree 11, connects to 6 communities
+- [[context_guard.py]] - degree 9, connects to 4 communities
+- [[dot-scan_tool_result()_2]] - degree 7, connects to 3 communities
+- [[input_normalizer.py]] - degree 4, connects to 3 communities
 - [[TestCheckMessage]] - degree 9, connects to 2 communities
-- [[TestSourceTagging]] - degree 9, connects to 2 communities

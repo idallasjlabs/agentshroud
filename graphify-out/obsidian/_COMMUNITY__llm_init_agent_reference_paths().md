@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # _llm_init_agent_reference_paths()
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -26,8 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
 - 1 edge to [[_COMMUNITY_The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).…]]
+- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
 
 ## Top bridge nodes
 - [[Threat Model_28]] - degree 7, connects to 1 community

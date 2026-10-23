@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # TestOpenAPIContract
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
 - [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[Function Details_13]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Purpose_110]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Purpose_99]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[Related_18]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[Responsibilities_16]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md

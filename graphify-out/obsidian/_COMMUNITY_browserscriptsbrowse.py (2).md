@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.07
 members: 45
 ---
 
 # browser/scripts/browse.py (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_5]] - code - .agents/skills/browser/scripts/browse.py
+- [[dot-__init__()_3]] - code - .agents/skills/browser/scripts/browse.py
 - [[dot-_classify_risk()]] - code - .agents/skills/browser/scripts/browse.py
 - [[dot-_domain_matches()]] - code - .agents/skills/browser/scripts/browse.py
 - [[dot-_init_browser()]] - code - .agents/skills/browser/scripts/browse.py
@@ -52,7 +54,7 @@ members: 45
 - [[Take screenshot and save to audit directory]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist Security This is the primary URL…]] - rationale - .agents/skills/browser/scripts/browse.py
 - [[browserscriptsbrowse.py]] - code - .agents/skills/browser/scripts/browse.py
-- [[main()]] - code - .agents/skills/browser/scripts/browse.py
+- [[main()_1]] - code - .agents/skills/browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,10 +64,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
 - 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
 - [[browserscriptsbrowse.py]] - degree 9, connects to 3 communities

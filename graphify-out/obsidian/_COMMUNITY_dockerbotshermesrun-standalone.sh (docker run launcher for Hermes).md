@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -12,8 +14,8 @@ members: 6
 - [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
 - [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
 - [[Installation]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_11]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_16]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Purpose_12]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Related Notes_17]] - document - docs/vault/05 - Dependencies/clamav.md
 
 ## Live Query (requires Dataview plugin)
 

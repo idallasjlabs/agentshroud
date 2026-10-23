@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # _sync
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -32,9 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
 - 1 edge to [[_COMMUNITY_dot-mcp.json]]
 - 1 edge to [[_COMMUNITY_security.py]]
+- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
 
 ## Top bridge nodes
 - [[daily-operations]] - degree 3, connects to 1 community

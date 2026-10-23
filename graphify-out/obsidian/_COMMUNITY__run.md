@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # _run
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 14
 - [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
 - [[Environment Variables_16]] - document - docs/runbooks/deployment.md
 - [[First-Time Setup]] - document - docs/runbooks/deployment.md
-- [[Prerequisites_14]] - document - docs/runbooks/deployment.md
+- [[Prerequisites_13]] - document - docs/runbooks/deployment.md
 - [[Quick Summary]] - document - docs/runbooks/deployment.md
 - [[Rolling Back]] - document - docs/runbooks/deployment.md
 - [[Standard Deployment]] - document - docs/runbooks/deployment.md
@@ -31,8 +33,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_troubleshooting_1]]
 - 1 edge to [[_COMMUNITY_Implement gateway-level outbound information filtering module]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
 - 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py]]
 - 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
 

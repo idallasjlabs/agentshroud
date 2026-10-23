@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.16
 members: 25
 ---
 
 # TestMetadataGuard
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 25 nodes
 
 ## Members

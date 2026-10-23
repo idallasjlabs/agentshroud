@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # agent_cve_registry.py
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[Collaborator Setup Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Executive Summary_14]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Executive Summary_13]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
 - [[Files intentionally not for collaborators]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
 - [[Optional local tooling]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
 - [[Required for local model-profile persistence]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
@@ -30,8 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 1 edge to [[_COMMUNITY_GroupConfig]]
 - 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 

@@ -1,98 +1,59 @@
 ---
 type: community
-members: 159
+cohesion: 0.03
+members: 102
 ---
 
 # _make_proxy()
 
-**Members:** 159 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 102 nodes
 
 ## Members
-- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[dot-__init__()_57]] - code - gateway/ingest_api/ledger.py
-- [[dot-__init__()_58]] - code - gateway/ingest_api/router.py
-- [[dot-_build_forward_payload()]] - code - gateway/ingest_api/router.py
-- [[dot-body_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-content_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-forward_to_agent()]] - code - gateway/ingest_api/router.py
-- [[dot-forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
+- [[dot-__init__()_136]] - code - gateway/ingest_api/ledger.py
+- [[dot-_hash_content()]] - code - gateway/ingest_api/ledger.py
 - [[dot-get_entry()]] - code - gateway/ingest_api/ledger.py
-- [[dot-get_stats()_6]] - code - gateway/ingest_api/ledger.py
-- [[dot-health_check()]] - code - gateway/ingest_api/router.py
-- [[dot-list_targets()]] - code - gateway/ingest_api/router.py
-- [[dot-path_not_empty()]] - code - gateway/ingest_api/models.py
-- [[dot-process_inbound()_7]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_outbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[dot-get_stats()_12]] - code - gateway/ingest_api/ledger.py
+- [[dot-process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_2]] - code - gateway/tests/test_forward_routing.py
 - [[dot-query()]] - code - gateway/ingest_api/ledger.py
-- [[dot-register_bots()]] - code - gateway/ingest_api/router.py
-- [[dot-resolve_target()]] - code - gateway/ingest_api/router.py
-- [[dot-subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-record()_2]] - code - gateway/ingest_api/ledger.py
 - [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
-- [[dot-validate_base64()]] - code - gateway/ingest_api/models.py
-- [[dot-validate_source()]] - code - gateway/ingest_api/models.py
-- [[AgentShroud Secure Chat Interface (static HTMLJS)]] - code - gateway/ingest_api/static/chat.html
-- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
-- [[AgentTarget_1]] - code - gateway/ingest_api/router.py
-- [[AgentTarget_2]] - code - gateway/ingest_api/models.py
+- [[AgentTarget]] - code - gateway/ingest_api/models.py
 - [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
 - [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
-- [[Any_14]] - code - gateway/ingest_api/ledger.py
-- [[Any_15]] - code - gateway/ingest_api/router.py
+- [[Any_48]] - code - gateway/ingest_api/ledger.py
 - [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Build the outbound payload for `target`, shared by the blocking and         stre]] - rationale - gateway/ingest_api/router.py
-- [[Check health of one or all agent targets          Args             target Spec]] - rationale - gateway/ingest_api/router.py
+- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
 - [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
 - [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
-- [[Determine which agent should receive this content          Args             req]] - rationale - gateway/ingest_api/router.py
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
-- [[EmailSendRequest]] - code - gateway/ingest_api/models.py
-- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
 - [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
-- [[Forward sanitized content to agent via HTTP POST          Args             targ]] - rationale - gateway/ingest_api/router.py
-- [[ForwardError]] - code - gateway/ingest_api/router.py
-- [[ForwardRequest]] - code - gateway/ingest_api/router.py
-- [[ForwardRequest_1]] - code - gateway/ingest_api/models.py
-- [[ForwardResponse]] - code - gateway/ingest_api/models.py
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
 - [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Initialize router          Args             config Router configuration]] - rationale - gateway/ingest_api/router.py
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[LedgerConfig]] - code - gateway/ingest_api/ledger.py
 - [[LedgerEntry]] - code - gateway/ingest_api/models.py
 - [[LedgerEntry_1]] - code - gateway/ingest_api/ledger.py
 - [[LedgerQueryResponse]] - code - gateway/ingest_api/models.py
 - [[LedgerQueryResponse_1]] - code - gateway/ingest_api/ledger.py
 - [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - rationale - gateway/tests/test_router_streaming.py
-- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
 - [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
-- [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - rationale - gateway/ingest_api/router.py
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
-- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
 - [[Raised when no valid routing target found]] - rationale - gateway/ingest_api/router.py
 - [[Regression forward returned out_result.sanitized_message without checking]] - rationale - gateway/tests/test_forward_routing.py
-- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
-- [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
-- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
-- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
-- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
-- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
-- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
-- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Return all configured agent targets          Returns             List of AgentT]] - rationale - gateway/ingest_api/router.py
-- [[RouterConfig]] - code - gateway/ingest_api/router.py
+- [[Related Notes_31]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 - [[RouterError]] - code - gateway/ingest_api/router.py
-- [[SSHExecRequest]] - code - gateway/ingest_api/models.py
-- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileRequest]] - code - gateway/ingest_api/models.py
-- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
+- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
 - [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
 - [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
-- [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - rationale - gateway/ingest_api/router.py
-- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
 - [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
 - [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
@@ -101,17 +62,12 @@ members: 159
 - [[Test health check for single target]] - rationale - gateway/tests/test_router.py
 - [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
 - [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
-- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
-- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
-- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
 - [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
 - [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
-- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
 - [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
 - [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
 - [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
-- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
 - [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
 - [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
@@ -121,20 +77,13 @@ members: 159
 - [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
 - [[ingest_apimodels.py]] - code - gateway/ingest_api/models.py
 - [[ingest_apirouter.py]] - code - gateway/ingest_api/router.py
-- [[ledger.py_1]] - code - gateway/ingest_api/ledger.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
 - [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
-- [[queue.py]] - code - gateway/approval_queue/queue.py
 - [[router()_1]] - code - gateway/tests/test_router.py
 - [[router_config()]] - code - gateway/tests/test_router.py
-- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
-- [[sendMessage() JS — POST forward from browser chat UI]] - code - gateway/ingest_api/static/chat.html
-- [[state.py]] - code - gateway/ingest_api/state.py
 - [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
 - [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
 - [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
-- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
 - [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
 - [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
 - [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
@@ -152,9 +101,6 @@ members: 159
 - [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
 - [[test_router.py]] - code - gateway/tests/test_router.py
 - [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
@@ -166,7 +112,6 @@ members: 159
 - [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
 - [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
-- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -176,55 +121,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 54 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 21 edges to [[_COMMUNITY_TestEmailSend]]
+- 34 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 17 edges to [[_COMMUNITY_UserSessionManager (2) (2)]]
-- 11 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 11 edges to [[_COMMUNITY_SCLClient]]
-- 10 edges to [[_COMMUNITY_lifespan()]]
-- 9 edges to [[_COMMUNITY_test_docs_accuracy.py]]
-- 8 edges to [[_COMMUNITY_ContextSegment]]
-- 8 edges to [[_COMMUNITY_GroupConfig]]
-- 6 edges to [[_COMMUNITY_hermesskillsi-crSKILL]]
-- 5 edges to [[_COMMUNITY_pick_latest_stable]]
-- 4 edges to [[_COMMUNITY_DelegationManager]]
+- 13 edges to [[_COMMUNITY_TestEmailSend]]
+- 9 edges to [[_COMMUNITY_ForwardRequest]]
+- 7 edges to [[_COMMUNITY_ServiceManager]]
+- 5 edges to [[_COMMUNITY_AgentTarget (2)_1]]
 - 4 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 4 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 3 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_TestPatternDetection]]
-- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 2 edges to [[_COMMUNITY_dot-githubmcp.json]]
-- 2 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
-- 2 edges to [[_COMMUNITY_AgentShroud Access Control Matrix]]
-- 2 edges to [[_COMMUNITY_GSDE&G Skills Reference (2)]]
+- 4 edges to [[_COMMUNITY_GroupConfig]]
+- 3 edges to [[_COMMUNITY_create_auth_dependency()]]
+- 2 edges to [[_COMMUNITY_Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]]
+- 2 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
 - 1 edge to [[_COMMUNITY_api.py (2)]]
-- 1 edge to [[_COMMUNITY_Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Sequence Diagrams]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
-- 1 edge to [[_COMMUNITY_test_fieldflare_route_strips_unsupported_fields_streaming]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_Remediation]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_pick_latest_stable]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
+- 1 edge to [[_COMMUNITY_test_fieldflare_route_strips_unsupported_fields_streaming]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (3)]]
+- 1 edge to [[_COMMUNITY_dot-githubmcp.json]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager (2) (2)]]
 
 ## Top bridge nodes
-- [[state.py]] - degree 34, connects to 15 communities
-- [[forward.py]] - degree 37, connects to 12 communities
-- [[ForwardRequest_1]] - degree 57, connects to 9 communities
-- [[sanitizer.py]] - degree 12, connects to 6 communities
-- [[gatewayREADME]] - degree 11, connects to 6 communities
+- [[ingest_apimodels.py]] - degree 27, connects to 11 communities
+- [[gatewayREADME]] - degree 11, connects to 7 communities
+- [[AgentTarget]] - degree 58, connects to 5 communities
+- [[ingest_apirouter.py]] - degree 13, connects to 5 communities
+- [[test_router.py]] - degree 28, connects to 4 communities

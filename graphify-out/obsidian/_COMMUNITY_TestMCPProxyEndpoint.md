@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.19
 members: 20
 ---
 
 # TestMCPProxyEndpoint
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -26,7 +28,7 @@ members: 20
 - [[Root Causes (5 distinct bugs)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 - [[Tests_2]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 - [[Tests (TDD)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Verification_4]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 - [[What Exists]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 
 ## Live Query (requires Dataview plugin)

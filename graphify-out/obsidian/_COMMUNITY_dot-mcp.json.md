@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 23
 ---
 
 # .mcp.json
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -40,7 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_First Time Setup (2)]]
+- 3 edges to [[_COMMUNITY_First Time Setup (2)_1]]
 - 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
 - 1 edge to [[_COMMUNITY__sync]]
 

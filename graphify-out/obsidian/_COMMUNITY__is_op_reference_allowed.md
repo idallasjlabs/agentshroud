@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 32
 ---
 
 # _is_op_reference_allowed
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -39,7 +41,7 @@ members: 32
 - [[hermes_dashboard_ws_proxy()]] - code - gateway/ingest_api/main.py
 - [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.…]] - rationale - gateway/tests/test_main_endpoints.py
 - [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
-- [[websocket_3]] - code
+- [[websocket_2]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,6 +58,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[hermes_dashboard_ws_proxy()]] - degree 13, connects to 3 communities
 - [[TestHermesDashboardPathTraversal]] - degree 10, connects to 2 communities
-- [[TestHermesDashboardWsProxy]] - degree 9, connects to 1 community
 - [[asyncio_1]] - degree 9, connects to 1 community
+- [[TestHermesDashboardWsProxy]] - degree 9, connects to 1 community
 - [[slack_ws_relay()]] - degree 5, connects to 1 community

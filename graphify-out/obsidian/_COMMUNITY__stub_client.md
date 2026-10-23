@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 33
 ---
 
 # _stub_client
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 33 nodes
 
 ## Members

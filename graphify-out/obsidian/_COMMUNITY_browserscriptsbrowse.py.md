@@ -1,16 +1,18 @@
 ---
 type: community
-members: 80
+cohesion: 0.05
+members: 74
 ---
 
 # browser/scripts/browse.py
 
-**Members:** 80 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 74 nodes
 
 ## Members
 - [[A Python string literal using black's quote preference. CI runs black on…]] - rationale - scripts/sync-cve-registry.py
 - [[A sync step failed; the run must exit non-zero, never report 0 new.]] - rationale - scripts/sync-cve-registry.py
-- [[Any_60]] - code
+- [[Any_74]] - code
 - [[Append count rendered entries to var_name and prove the list grew by…]] - rationale - scripts/sync-cve-registry.py
 - [[Append new_entries to AGENT_CVE_REGISTRY (OpenClaw). Returns count appended.]] - rationale - scripts/sync-cve-registry.py
 - [[Append new_entries to _HERMES_CVE_REGISTRY. Returns count appended.]] - rationale - scripts/sync-cve-registry.py
@@ -24,17 +26,15 @@ members: 80
 - [[Name of agent_id's list, read from the ``_AGENT_CVE_REGISTRIES`` dict literal.]] - rationale - scripts/sync-cve-registry.py
 - [[Namespace_1]] - code
 - [[Parse raw NVD vulnerability records into registry entry dicts.]] - rationale - scripts/sync-cve-registry.py
-- [[Path_50]] - code
+- [[Path_59]] - code
 - [[Print a human-readable breakdown of new entries by severitystatus.]] - rationale - scripts/sync-cve-registry.py
 - [[Read a vendor version from dockerversions.env — the single source of truth…]] - rationale - scripts/sync-cve-registry.py
 - [[RegistryLayoutError]] - code - scripts/sync-cve-registry.py
 - [[Report the NVD keyword backlog for OpenClaw + Hermes. Writes NOTHING. The NVD…]] - rationale - scripts/sync-cve-registry.py
 - [[Return (status, mitigation, defense_layers).]] - rationale - scripts/sync-cve-registry.py
 - [[Return True if version a = version b.]] - rationale - scripts/sync-cve-registry.py
-- [[Return the CVE-pipeline config for bot_id (raises KeyError if unknown). Args…]] - rationale - gateway/security/agent_cve_registry.py
 - [[Return the first patched version string across the advisory's vulns, else ''.]] - rationale - scripts/sync-cve-registry.py
 - [[Return the next zero-padded ASH id number for an agent's registry list.]] - rationale - scripts/sync-cve-registry.py
-- [[Return the resolved GitHub advisory repo slug for bot_id. Honors the per-…]] - rationale - gateway/security/agent_cve_registry.py
 - [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.…]] - rationale - scripts/sync-cve-registry.py
 - [[Run the GHSA pipeline for EVERY registered agent, each on its OWN path. Returns…]] - rationale - scripts/sync-cve-registry.py
 - [[RuntimeError]] - code
@@ -43,8 +43,6 @@ members: 80
 - [[SyncError]] - code - scripts/sync-cve-registry.py
 - [[The registry file cannot be appended to as expected — never silent.]] - rationale - scripts/sync-cve-registry.py
 - [[Top-level list literals of an assignment value ``..`` or ``.. + ..``.]] - rationale - scripts/sync-cve-registry.py
-- [[_AGENT_CVE_SOURCES]] - code - gateway/security/agent_cve_registry.py
-- [[_AGENT_CVE_SOURCES (per-agent CVE pipeline config)]] - code - gateway/security/agent_cve_registry.py
 - [[_append_nvd_entries()]] - code - scripts/sync-cve-registry.py
 - [[_append_verified()]] - code - scripts/sync-cve-registry.py
 - [[_assigned_lists()]] - code - scripts/sync-cve-registry.py
@@ -77,10 +75,8 @@ members: 80
 - [[expr]] - code
 - [[fetch_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
 - [[fetch_nvd_cves()]] - code - scripts/sync-cve-registry.py
-- [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
-- [[get_agent_ghsa_repo()]] - code - gateway/security/agent_cve_registry.py
 - [[lit()]] - code - scripts/sync-cve-registry.py
-- [[main()_2]] - code - scripts/sync-cve-registry.py
+- [[main()_3]] - code - scripts/sync-cve-registry.py
 - [[offset()]] - code - scripts/sync-cve-registry.py
 - [[process_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
 - [[render()]] - code - scripts/sync-cve-registry.py
@@ -97,17 +93,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 4 edges to [[_COMMUNITY__make_sanitizer()]]
-- 3 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 4 edges to [[_COMMUNITY_check_upstream_cves() (2)]]
+- 3 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 3 edges to [[_COMMUNITY__make_sanitizer()]]
 - 2 edges to [[_COMMUNITY_dot-_run_and_read]]
-- 2 edges to [[_COMMUNITY__wrap_response() (2)]]
-- 1 edge to [[_COMMUNITY_check_upstream_cves() (2)]]
+- 2 edges to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor (2)]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
-- [[sync-cve-registry.py]] - degree 48, connects to 3 communities
-- [[get_agent_ghsa_repo()]] - degree 8, connects to 3 communities
-- [[get_agent_cve_source()]] - degree 9, connects to 2 communities
+- [[sync-cve-registry.py]] - degree 48, connects to 5 communities
 - [[process_ghsa_advisories()]] - degree 9, connects to 2 communities
+- [[sync_agent_ghsa()]] - degree 11, connects to 1 community
 - [[_classify()]] - degree 6, connects to 1 community
+- [[run_ghsa_sync()]] - degree 6, connects to 1 community

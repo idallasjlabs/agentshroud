@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 28
 ---
 
 # _FakeUpstreamWS
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 28 nodes
 
 ## Members
@@ -24,7 +26,7 @@ members: 28
 - [[A job that last succeeded before this boot proves nothing about         THIS dep]] - rationale - gateway/tests/test_soak_status.py
 - [[A skip for any OTHER reason (not the known-benign empty-heartbeat-         file]] - rationale - gateway/tests/test_soak_status.py
 - [[An actively-failing job since redeploy must block soak even if         other job]] - rationale - gateway/tests/test_soak_status.py
-- [[Any_39]] - code - scripts/soak_status.py
+- [[Any_47]] - code - scripts/soak_status.py
 - [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - concept - scripts/soak_status.py
 - [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - rationale - scripts/soak_status.py
 - [[TestClassify_2]] - code - gateway/tests/test_soak_status.py
@@ -33,7 +35,7 @@ members: 28
 - [[_is_benign_skip()]] - code - scripts/soak_status.py
 - [[_job()]] - code - gateway/tests/test_soak_status.py
 - [[classify()_2]] - code - scripts/soak_status.py
-- [[main()_18]] - code - scripts/soak_status.py
+- [[main()_15]] - code - scripts/soak_status.py
 - [[soak_status.py]] - code - scripts/soak_status.py
 - [[test_soak_status.py]] - code - gateway/tests/test_soak_status.py
 
@@ -48,4 +50,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY__make_sanitizer()]]
 
 ## Top bridge nodes
-- [[main()_18]] - degree 3, connects to 1 community
+- [[main()_15]] - degree 3, connects to 1 community

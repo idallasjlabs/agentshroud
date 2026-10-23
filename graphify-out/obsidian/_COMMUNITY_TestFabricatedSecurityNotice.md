@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 25
 ---
 
 # TestFabricatedSecurityNotice
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 25 nodes
 
 ## Members

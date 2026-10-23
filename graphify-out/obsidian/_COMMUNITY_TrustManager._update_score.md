@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # TrustManager._update_score
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members

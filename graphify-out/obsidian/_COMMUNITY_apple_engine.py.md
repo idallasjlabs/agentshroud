@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # apple_engine.py
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -33,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 
 ## Top bridge nodes
 - [[AgentShroud System Status Report]] - degree 8, connects to 1 community

@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.15
 members: 16
 ---
 
 # TestOAuthInjection
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[dot-__init__()_163]] - code - gateway/proxy/dns_forwarder.py
+- [[dot-__init__()_167]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-close()_12]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-connection_made()]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-error_received()]] - code - gateway/proxy/dns_forwarder.py
@@ -22,7 +24,7 @@ members: 16
 - [[UDP protocol handler for DNS forwarding with optional blocklist.]] - rationale - gateway/proxy/dns_forwarder.py
 - [[dns_blocklist.py]] - code - gateway/proxy/dns_blocklist.py
 - [[dns_forwarder.py]] - code - gateway/proxy/dns_forwarder.py
-- [[main()_27]] - code - gateway/proxy/dns_forwarder.py
+- [[main()_24]] - code - gateway/proxy/dns_forwarder.py
 - [[start_dns_forwarder()]] - code - gateway/proxy/dns_forwarder.py
 
 ## Live Query (requires Dataview plugin)

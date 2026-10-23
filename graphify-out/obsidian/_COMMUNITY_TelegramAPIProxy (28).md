@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # TelegramAPIProxy (28)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
@@ -19,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__req]]
-- 1 edge to [[_COMMUNITY_CronStateMonitor]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[dot-test_raw_web_fetch_json_queues_egress_approval_when_available()]] - degree 4, connects to 3 communities
+- [[dot-test_raw_web_fetch_json_queues_egress_approval_when_available()]] - degree 4, connects to 1 community

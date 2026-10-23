@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.03
 members: 65
 ---
 
 # TestOutboundInfoFilter
 
+**Cohesion:** 0.03 - loosely connected
 **Members:** 65 nodes
 
 ## Members
@@ -47,19 +49,19 @@ members: 65
 - [[Related Skills_100]] - document - docker/config/hermes/skills/i-sec-offense/README.md
 - [[Related Skills_101]] - document - docker/config/hermes/skills/i-tw/README.md
 - [[Technical Writer (TW)_2]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_100]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_101]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Usage_102]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_103]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_104]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Usage_105]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Usage_106]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Usage_107]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_108]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Usage_109]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Usage_110]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_111]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Usage_112]] - document - docker/config/hermes/skills/i-tw/README.md
+- [[Usage_101]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Usage_102]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Usage_103]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Usage_104]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Usage_105]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Usage_106]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Usage_107]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Usage_108]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Usage_109]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Usage_110]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Usage_111]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Usage_112]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Usage_113]] - document - docker/config/hermes/skills/i-tw/README.md
 - [[hermesskillsi-apolloREADME]] - document - docker/config/hermes/skills/i-apollo/README.md
 - [[hermesskillsi-athenaREADME]] - document - docker/config/hermes/skills/i-athena/README.md
 - [[hermesskillsi-atlasREADME]] - document - docker/config/hermes/skills/i-atlas/README.md
@@ -83,7 +85,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
+- 1 edge to [[_COMMUNITY_8D Root Cause Analysis]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (3)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (4)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (5)]]
@@ -91,7 +93,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL.md (6)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (7)]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (8)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Schema Documentation]]
+- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
 - 1 edge to [[_COMMUNITY_System Audit & Documentation (3)]]
 - 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]

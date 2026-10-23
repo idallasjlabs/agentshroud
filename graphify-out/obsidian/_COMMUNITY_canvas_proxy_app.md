@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 16
 ---
 
 # canvas_proxy_app
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 16
 - [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
 - [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
 - [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
-- [[Current Status_10]] - document - docs/data/README.md
+- [[Current Status_7]] - document - docs/data/README.md
 - [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
 - [[Data Documentation]] - document - docs/data/README.md
 - [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md

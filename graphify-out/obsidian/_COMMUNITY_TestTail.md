@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.46
 members: 8
 ---
 
 # TestTail
 
+**Cohesion:** 0.46 - moderately connected
 **Members:** 8 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 8
 - [[cmd_safe_prune()]] - code - docker/scripts/docker-cleanup.sh
 - [[docker-cleanup.sh]] - code - docker/scripts/docker-cleanup.sh
 - [[docker-cleanup.sh script]] - code - docker/scripts/docker-cleanup.sh
-- [[usage()_2]] - code - docker/scripts/docker-cleanup.sh
+- [[usage()]] - code - docker/scripts/docker-cleanup.sh
 
 ## Live Query (requires Dataview plugin)
 

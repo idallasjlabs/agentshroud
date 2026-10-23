@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.17
 members: 13
 ---
 
 # agentshroud-gateway service (proxy mode)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[2026-05-05 agent stub cleanup (160 files removed)]] - document - .llm_settings/UPGRADE_LOG.md
-- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS Glue MCP server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 - [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
 - [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
 - [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
@@ -19,7 +21,7 @@ members: 13
 - [[LLM Operating Context — Isaiah Jefferson]] - concept - .llm_settings/scripts/CLAUDE.md
 - [[MCP server expansion (3 → 11) and --mcp flag]] - document - .llm_settings/UPGRADE_LOG.md
 - [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[Zabbix MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[Zabbix MCP server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 - [[llm-init.sh — project-level multi-tool config deployment]] - concept - .llm_settings/scripts/README.md
 
 ## Live Query (requires Dataview plugin)

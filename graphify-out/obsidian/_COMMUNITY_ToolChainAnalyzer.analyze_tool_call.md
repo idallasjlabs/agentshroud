@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # ToolChainAnalyzer.analyze_tool_call
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_graphify Skill]]
+- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)]]
 
 ## Top bridge nodes
 - [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - degree 6, connects to 1 community

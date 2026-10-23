@@ -1,15 +1,17 @@
 ---
 type: community
-members: 140
+cohesion: 0.01
+members: 237
 ---
 
 # ._make_proxy()
 
-**Members:** 140 nodes
+**Cohesion:** 0.01 - loosely connected
+**Members:** 237 nodes
 
 ## Members
 - [[dot-__del__()]] - code - gateway/security/resource_guard.py
-- [[dot-__init__()_66]] - code - gateway/security/resource_guard.py
+- [[dot-__init__()_158]] - code - gateway/security/resource_guard.py
 - [[dot-_alert_high_usage()]] - code - gateway/security/resource_guard.py
 - [[dot-_build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-_check_system_resources()]] - code - gateway/security/resource_guard.py
@@ -17,7 +19,7 @@ members: 140
 - [[dot-_get_disk_io_stats()]] - code - gateway/security/resource_guard.py
 - [[dot-_monitor_resources()]] - code - gateway/security/resource_guard.py
 - [[dot-_start_monitoring_task()]] - code - gateway/security/resource_guard.py
-- [[dot-add_alert_callback()_1]] - code - gateway/security/resource_guard.py
+- [[dot-add_alert_callback()_2]] - code - gateway/security/resource_guard.py
 - [[dot-check_cpu_limit()]] - code - gateway/security/resource_guard.py
 - [[dot-check_disk_write_limit()]] - code - gateway/security/resource_guard.py
 - [[dot-check_memory_limit()]] - code - gateway/security/resource_guard.py
@@ -26,13 +28,15 @@ members: 140
 - [[dot-cleanup_temp_files()]] - code - gateway/security/resource_guard.py
 - [[dot-get_usage_stats()]] - code - gateway/security/resource_guard.py
 - [[dot-register_temp_file()]] - code - gateway/security/resource_guard.py
-- [[dot-setup_method()_11]] - code - gateway/tests/test_resource_guard.py
+- [[dot-setup_method()_25]] - code - gateway/tests/test_resource_guard.py
 - [[dot-start_request_tracking()]] - code - gateway/security/resource_guard.py
-- [[dot-stop()_6]] - code - gateway/security/resource_guard.py
+- [[dot-stop()_10]] - code - gateway/security/resource_guard.py
 - [[dot-stop_monitoring()]] - code - gateway/security/resource_guard.py
-- [[dot-teardown_method()_4]] - code - gateway/tests/test_resource_guard.py
+- [[dot-teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
@@ -47,28 +51,52 @@ members: 140
 - [[dot-test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_default_mode_is_enforce()_5]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
@@ -77,15 +105,48 @@ members: 140
 - [[dot-test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
+- [[dot-test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
 - [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
 - [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
-- [[Any_18]] - code - gateway/security/resource_guard.py
-- [[Any_19]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Any_59]] - code - gateway/security/resource_guard.py
+- [[Any_60]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
 - [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
+- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
 - [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
 - [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
@@ -96,26 +157,41 @@ members: 140
 - [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
 - [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
 - [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
 - [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
 - [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
 - [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
+- [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
+- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
+- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[ResourceGuard]] - code - gateway/security/resource_guard.py
 - [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[ResourceLimits]] - code - gateway/security/resource_guard.py
-- [[ResourceUsage]] - code - gateway/security/resource_guard.py
+- [[ResourceUsage_1]] - code - gateway/security/resource_guard.py
+- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
 - [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
 - [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
 - [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
 - [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
 - [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
 - [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
@@ -123,31 +199,54 @@ members: 140
 - [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
+- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
+- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
+- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
+- [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
 - [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
+- [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
 - [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
+- [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
+- [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
+- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
+- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
 - [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
 - [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
 - [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
+- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
+- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
 - [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
 - [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
+- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
 - [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
 - [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
 - [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
 - [[get_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[guard()_2]] - code - gateway/tests/test_resource_guard_limits.py
+- [[guard()_4]] - code - gateway/tests/test_resource_guard_limits.py
+- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
 - [[resource_guard.py]] - code - gateway/security/resource_guard.py
 - [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
 - [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
 - [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
 - [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
 - [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -157,37 +256,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY__wrap_response()]]
-- 13 edges to [[_COMMUNITY_MiddlewareManager]]
-- 10 edges to [[_COMMUNITY_SessionManager]]
-- 5 edges to [[_COMMUNITY_test_playback_state.c]]
-- 4 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 4 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
-- 3 edges to [[_COMMUNITY_asyncio]]
-- 3 edges to [[_COMMUNITY__wrap_response() (4)]]
+- 70 edges to [[_COMMUNITY_ContextGuard]]
+- 27 edges to [[_COMMUNITY_FileSandbox]]
+- 21 edges to [[_COMMUNITY_Any]]
+- 14 edges to [[_COMMUNITY_MiddlewareManager]]
+- 12 edges to [[_COMMUNITY_SessionManager]]
+- 9 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 9 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 8 edges to [[_COMMUNITY__wrap_response()]]
+- 6 edges to [[_COMMUNITY_PathIsolationManager]]
+- 3 edges to [[_COMMUNITY_SubagentMonitor]]
 - 2 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
-- 2 edges to [[_COMMUNITY_Common Queries]]
-- 2 edges to [[_COMMUNITY__wrap_response() (5)]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_SecureBrowser (3)]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 - 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 1 edge to [[_COMMUNITY_PortManager]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
 - 1 edge to [[_COMMUNITY_WebProxy]]
 - 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
 
 ## Top bridge nodes
-- [[TestResourceProtection]] - degree 43, connects to 21 communities
-- [[ResourceGuard]] - degree 85, connects to 10 communities
-- [[ResourceLimits]] - degree 41, connects to 7 communities
-- [[TestResourceGuardFailClosed]] - degree 11, connects to 5 communities
-- [[resource_guard.py]] - degree 10, connects to 3 communities
+- [[TestResourceProtection]] - degree 43, connects to 15 communities
+- [[FileSandboxConfig]] - degree 80, connects to 6 communities
+- [[ResourceGuard]] - degree 85, connects to 4 communities
+- [[test_round2_hardening.py]] - degree 17, connects to 4 communities
+- [[TestResourceGuardFailClosed]] - degree 11, connects to 4 communities

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # .test_fetch_paginates_via_link_cursor() (2)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
 - [[dot-test_fetch_paginates_via_link_cursor()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[__enter__()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[__exit__()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[__init__()_1]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[__init__()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_fake_urlopen()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[read()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_aquasecuritytrivy 403s the Actions token but serves the public feed. (2)]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 - 1 edge to [[_COMMUNITY__adv()]]
 - 1 edge to [[_COMMUNITY_The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).… (2)]]
 

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # TestCredentialInjection
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -27,8 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
 - 1 edge to [[_COMMUNITY_§3 — Bot Pipeline Integrity Checks]]
+- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
 
 ## Top bridge nodes
 - [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities

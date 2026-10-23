@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # TestFabricatedSecurityNotice (2) (2)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 13
 - [[Notes_7]] - document - skills/openclaw/trello/SKILL.md
 - [[Setup_7]] - document - skills/openclaw/trello/SKILL.md
 - [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
-- [[Usage_95]] - document - skills/openclaw/trello/SKILL.md
+- [[Usage_96]] - document - skills/openclaw/trello/SKILL.md
 - [[trelloSKILL]] - document - skills/openclaw/trello/SKILL.md
 
 ## Live Query (requires Dataview plugin)

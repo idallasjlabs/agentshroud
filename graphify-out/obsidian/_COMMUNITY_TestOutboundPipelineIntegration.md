@@ -1,22 +1,36 @@
 ---
 type: community
-members: 116
+cohesion: 0.03
+members: 131
 ---
 
 # TestOutboundPipelineIntegration
 
-**Members:** 116 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 131 nodes
 
 ## Members
-- [[dot-__init__()_105]] - code - gateway/tests/test_egress_filter.py
-- [[dot-log_event()_1]] - code - gateway/tests/test_egress_filter.py
+- [[dot-__init__()_91]] - code - gateway/tests/test_egress_filter.py
+- [[dot-_check_impl()]] - code - gateway/security/egress_filter.py
+- [[dot-_is_ipv6()]] - code - gateway/security/egress_filter.py
+- [[dot-_is_private_ip()]] - code - gateway/security/egress_filter.py
+- [[dot-_matches_allowlist_domain()]] - code - gateway/security/egress_filter.py
+- [[dot-_matches_ip_list()]] - code - gateway/security/egress_filter.py
+- [[dot-_record()]] - code - gateway/security/egress_filter.py
+- [[dot-check()_3]] - code - gateway/security/egress_filter.py
+- [[dot-check_async()]] - code - gateway/security/egress_filter.py
+- [[dot-get_policy()_1]] - code - gateway/security/egress_filter.py
+- [[dot-log_event()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-matches_domain()]] - code - gateway/security/egress_filter.py
+- [[dot-matches_ip()]] - code - gateway/security/egress_filter.py
+- [[dot-matches_port()]] - code - gateway/security/egress_filter.py
 - [[dot-set_agent_policy()]] - code - gateway/security/egress_filter.py
 - [[dot-test_agent_specific_policy()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_allow_is_not_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_allowed_cidr()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_domain_passes()_1]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_ip()_1]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
@@ -28,9 +42,6 @@ members: 116
 - [[dot-test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_deny_is_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_domains_in_default_allowlist()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_domains_not_denylisted()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_egress_filter_allows_in_enforce_mode()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_egress_filter_blocks_mcp_exfil()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_egress_filter_loaded()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
@@ -56,22 +67,30 @@ members: 116
 - [[dot-test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_unlisted_domain_blocked()_1]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
 - [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
-- [[All four domains must be in EgressFilterConfig's default allowlist.]] - rationale - gateway/tests/test_egress_filter.py
 - [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
 - [[ApprovalResult]] - code - gateway/security/egress_approval.py
+- [[Async egress check with interactive approval for unknown domains.]] - rationale - gateway/security/egress_filter.py
 - [[CIDR in policy allowlist should match.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Check if IP matches any IPCIDR in the list.]] - rationale - gateway/security/egress_filter.py
+- [[Check if IP matches any allowed IPCIDR.]] - rationale - gateway/security/egress_filter.py
+- [[Check if an outbound connection is allowed.          Args             agent_id]] - rationale - gateway/security/egress_filter.py
+- [[Check if domain matches any allowed domain (supports wildcards).          Wildca]] - rationale - gateway/security/egress_filter.py
+- [[Check if domain matches any domain in the allowlist (supports wildcards).]] - rationale - gateway/security/egress_filter.py
+- [[Check if host is a private, loopback, link-local, or reserved IP.          Cover]] - rationale - gateway/security/egress_filter.py
+- [[Check if host looks like an IPv6 address.]] - rationale - gateway/security/egress_filter.py
+- [[Check if port is allowed.]] - rationale - gateway/security/egress_filter.py
 - [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Egress filter should be available for MCP network calls.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Egress policy for an agent or global default.]] - rationale - gateway/security/egress_filter.py
+- [[EgressAttempt]] - code - gateway/security/egress_filter.py
 - [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter_1]] - code - gateway/tests/test_egress_filter.py
 - [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in enforce mode allows all four domains for openclaw.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter must NOT notify when domain is allowed.]] - rationale - gateway/tests/test_egress_filter.py
@@ -81,15 +100,16 @@ members: 116
 - [[EgressPolicy default allows port 465 (SMTPS).]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressPolicy default allows port 587 (SMTP submissionSTARTTLS).]] - rationale - gateway/tests/test_egress_filter.py
 - [[FakeAuditStore_1]] - code - gateway/tests/test_egress_filter.py
+- [[Get effective policy for an agent.]] - rationale - gateway/security/egress_filter.py
 - [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
-- [[None of the four domains should match the default denylist.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW]] - rationale - gateway/tests/test_egress_filter.py
 - [[Per-agent policies override the default.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Port 465 on an un-allowlisted domain is still denied in enforce mode.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed     by the]] - rationale - gateway/tests/test_egress_filter.py
 - [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - rationale - gateway/tests/test_egress_filter.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - rationale - gateway/security/egress_filter.py
 - [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
 - [[Set a per-agent egress policy.]] - rationale - gateway/security/egress_filter.py
 - [[TestAuditStorePersistence]] - code - gateway/tests/test_egress_filter.py
@@ -100,16 +120,13 @@ members: 116
 - [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
 - [[TestLogging]] - code - gateway/tests/test_egress_filter.py
 - [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestOpenClawResearchDomainsAllowlisted]] - code - gateway/tests/test_egress_filter.py
 - [[TestPerAgentPolicy]] - code - gateway/tests/test_egress_filter.py
 - [[TestSMTPIMAPPorts]] - code - gateway/tests/test_egress_filter.py
 - [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
 - [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Unit tests for EgressPolicy matching methods.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - rationale - gateway/tests/test_egress_filter.py
 - [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
 - [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[egress_filter()]] - code - gateway/tests/test_security_integration.py
 - [[flush_notifications with no notifier set should not crash.]] - rationale - gateway/tests/test_egress_filter.py
 - [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
 - [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
@@ -133,35 +150,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 56 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 22 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 19 edges to [[_COMMUNITY_First iteration ingests + records; second sees dedup and skips. (2)]]
-- 8 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 7 edges to [[_COMMUNITY__wrap_response()]]
+- 88 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 24 edges to [[_COMMUNITY_ContextGuard]]
 - 6 edges to [[_COMMUNITY_SkillGuard]]
 - 3 edges to [[_COMMUNITY_test_bots_ssh_exec_wrapper.py]]
 - 3 edges to [[_COMMUNITY_AgentTarget]]
-- 3 edges to [[_COMMUNITY_PortManager]]
 - 2 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 2 edges to [[_COMMUNITY_DelegationManager]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_record_decision()]]
+- 1 edge to [[_COMMUNITY_test_security_integration.py]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 - 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
-- 1 edge to [[_COMMUNITY__wrap_response() (4)]]
-- 1 edge to [[_COMMUNITY_test_playback_state.c]]
-- 1 edge to [[_COMMUNITY__wrap_response() (5)]]
 - 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)_1]]
+- 1 edge to [[_COMMUNITY_TestEncryptedStore]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_TestPromptGuardEvasion]]
 - 1 edge to [[_COMMUNITY_socrouter.py (2)]]
 
 ## Top bridge nodes
-- [[EgressPolicy]] - degree 97, connects to 22 communities
-- [[TestEnforceMode]] - degree 16, connects to 4 communities
-- [[test_egress_filter.py]] - degree 29, connects to 3 communities
-- [[EgressFilter_1]] - degree 21, connects to 3 communities
-- [[TestEgressPolicy]] - degree 15, connects to 3 communities
+- [[EgressPolicy]] - degree 97, connects to 14 communities
+- [[ApprovalResult]] - degree 22, connects to 3 communities
+- [[EgressAttempt]] - degree 22, connects to 2 communities
+- [[TestEnforceMode]] - degree 16, connects to 2 communities
+- [[dot-check()_3]] - degree 6, connects to 2 communities

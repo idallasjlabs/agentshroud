@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # _make_proxy() (2)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -15,12 +17,12 @@ members: 15
 - [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_123]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Purpose_121]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Related_27]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Responsibilities_25]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[ledger.py_1]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[query(page, page_size, source, since, until, forwarded_to)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 
@@ -35,4 +37,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
 
 ## Top bridge nodes
-- [[ledger.py_2]] - degree 11, connects to 1 community
+- [[ledger.py_1]] - degree 11, connects to 1 community

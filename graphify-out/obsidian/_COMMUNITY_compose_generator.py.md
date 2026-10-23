@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # compose_generator.py
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[AgentShroud Security Proxy]] - document - docs/requirements/use-cases.md
-- [[Overview_21]] - document - docs/requirements/use-cases.md
+- [[Overview_25]] - document - docs/requirements/use-cases.md
 - [[UC-001 User Sends Message to Agent (PII Sanitization Flow)]] - document - docs/requirements/use-cases.md
 - [[UC-002 Agent Calls MCP Tool (Inspection + Permission Check)]] - document - docs/requirements/use-cases.md
 - [[UC-003 Agent Fetches Web Content (SSRF Check + Content Scan)]] - document - docs/requirements/use-cases.md

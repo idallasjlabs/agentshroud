@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 1.00
 members: 3
 ---
 
 # TestIdentityAuth
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members

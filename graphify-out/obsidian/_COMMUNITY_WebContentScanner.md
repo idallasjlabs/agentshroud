@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.03
 members: 64
 ---
 
 # WebContentScanner
 
+**Cohesion:** 0.03 - loosely connected
 **Members:** 64 nodes
 
 ## Members
@@ -84,17 +86,16 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY__is_op_reference_allowed]]
 - 4 edges to [[_COMMUNITY_TrustConfig]]
 - 3 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
-- 2 edges to [[_COMMUNITY_TestPatternDetection]]
+- 3 edges to [[_COMMUNITY_UserSessionManager (2) (2)]]
 - 2 edges to [[_COMMUNITY_export-bot-conversations.py]]
 - 1 edge to [[_COMMUNITY_TestLoadAllSecretFileValues]]
 - 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
 - 1 edge to [[_COMMUNITY_sidecar.py]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2) (2)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Access Control Matrix]]
 
 ## Top bridge nodes
 - [[test_main_endpoints.py]] - degree 21, connects to 6 communities
-- [[auth_dep()]] - degree 14, connects to 6 communities
+- [[auth_dep()]] - degree 14, connects to 5 communities
 - [[receive_security_alert()]] - degree 6, connects to 2 communities
 - [[dot-test_alerts_accepted_from_localhost()]] - degree 4, connects to 1 community
 - [[dot-test_bots_inventory_matches_the_real_container_name()]] - degree 2, connects to 1 community

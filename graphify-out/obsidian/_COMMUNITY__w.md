@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 37
 ---
 
 # _w
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 37
 - [[DOCKER-USER iptables reapply + verify (step 3)]] - rationale - docker/scripts/colima-health-check.sh
 - [[Daily summary state tracking]] - rationale - docker/scripts/colima-health-check.sh
 - [[Dead docker.sock forward repair (step 1a-bis)]] - rationale - docker/scripts/colima-health-check.sh
-- [[PATH_18]] - code - docker/scripts/colima-health-check.sh
+- [[PATH_25]] - code - docker/scripts/colima-health-check.sh
 - [[Strip comments before grepping for regressions]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[_RETRY_TEST()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[_bounce()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
@@ -36,7 +38,7 @@ members: 37
 - [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
 - [[colima-vm-flags behavioral check (2026-10-16)]] - rationale - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
 - [[hc_run()]] - code - tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh
-- [[log()_5]] - code - docker/scripts/colima-health-check.sh
+- [[log()_6]] - code - docker/scripts/colima-health-check.sh
 - [[notify()]] - code - docker/scripts/colima-health-check.sh
 - [[read_state()]] - code - docker/scripts/colima-health-check.sh
 - [[resolve_docker_host()]] - code - docker/scripts/colima-health-check.sh
@@ -55,12 +57,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_PIIConfig]]
-- 5 edges to [[_COMMUNITY__make_sanitizer()]]
+- 4 edges to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 - 1 edge to [[_COMMUNITY_Function Details (5)]]
 
 ## Top bridge nodes
+- [[colima-health-check.sh]] - degree 16, connects to 3 communities
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - degree 17, connects to 2 communities
-- [[colima-health-check.sh]] - degree 16, connects to 2 communities
 - [[_upgrade_in_progress()]] - degree 5, connects to 1 community
 - [[_render_build()]] - degree 4, connects to 1 community
 - [[_wait_result()]] - degree 3, connects to 1 community

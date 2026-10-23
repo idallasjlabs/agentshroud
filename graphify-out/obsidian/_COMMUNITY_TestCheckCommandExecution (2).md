@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # TestCheckCommandExecution (2)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
 - [[Description_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 - [[Effect]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Related Notes_3]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
+- [[Related Notes_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 - [[SDK Patch]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 - [[Set In_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
 - [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md

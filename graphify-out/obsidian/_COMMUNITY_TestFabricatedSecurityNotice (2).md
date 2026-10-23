@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 39
 ---
 
 # TestFabricatedSecurityNotice (2)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 39 nodes
 
 ## Members
@@ -56,10 +58,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_make_event]]
+- 2 edges to [[_COMMUNITY_run-standalone.sh]]
 - 2 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 - 2 edges to [[_COMMUNITY__make_cve]]
-- 1 edge to [[_COMMUNITY_TestSendTelegramTruncation]]
+- 1 edge to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]]
 
 ## Top bridge nodes
 - [[init-config.sh (Hermes first-boot config materialisation)]] - degree 11, connects to 2 communities

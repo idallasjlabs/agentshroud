@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 38
 ---
 
 # TestNormalizeForSpeech
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 38 nodes
 
 ## Members
@@ -25,7 +27,7 @@ members: 38
 - [[dot-should_rotate()]] - code - gateway/security/key_rotation.py
 - [[dot-should_warn()]] - code - gateway/security/key_rotation.py
 - [[dot-validate()]] - code - gateway/security/key_rotation.py
-- [[Any_23]] - code - gateway/security/key_rotation.py
+- [[Any_27]] - code - gateway/security/key_rotation.py
 - [[Calculate overall credential health score.]] - rationale - gateway/security/key_rotation.py
 - [[Check all credentials and rotate those that are due.]] - rationale - gateway/security/key_rotation.py
 - [[Clean up any credentials past their grace period.]] - rationale - gateway/security/key_rotation.py
@@ -55,20 +57,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_A2AMethod]]
-- 11 edges to [[_COMMUNITY_MiddlewareManager]]
-- 9 edges to [[_COMMUNITY_AgentShroud Documentation]]
+- 17 edges to [[_COMMUNITY_A2AMethod]]
+- 9 edges to [[_COMMUNITY_Any]]
+- 7 edges to [[_COMMUNITY_test_key_rotation_internals.py]]
 - 6 edges to [[_COMMUNITY_EgressFilterConfig (2) (2)]]
-- 4 edges to [[_COMMUNITY_env_guard.py]]
-- 2 edges to [[_COMMUNITY_FODL — Fluence Operational Data Lakehouse]]
+- 3 edges to [[_COMMUNITY_CredentialInfo]]
+- 3 edges to [[_COMMUNITY_env_guard.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_AgentShroud Documentation (2)]]
 - 1 edge to [[_COMMUNITY_GSDL-715 (silent regression incident)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Documentation (3)]]
 - 1 edge to [[_COMMUNITY_A2AMethod (2)]]
 
 ## Top bridge nodes
-- [[KeyRotationManager]] - degree 55, connects to 10 communities
+- [[KeyRotationManager]] - degree 55, connects to 9 communities
 - [[dot-register_credential()]] - degree 5, connects to 2 communities
-- [[Any_23]] - degree 13, connects to 1 community
+- [[Any_27]] - degree 13, connects to 1 community
 - [[dot-should_rotate()]] - degree 7, connects to 1 community
 - [[dot-should_warn()]] - degree 6, connects to 1 community

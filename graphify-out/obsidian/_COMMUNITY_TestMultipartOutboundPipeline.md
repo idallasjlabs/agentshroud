@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.11
 members: 38
 ---
 
 # TestMultipartOutboundPipeline
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_72]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-__init__()_88]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_7]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_6]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-reset_session()_1]] - code - gateway/security/data_exfil_volume_guard.py
 - [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
 - [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
 - [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
@@ -26,7 +28,7 @@ members: 38
 - [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
 - [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
 - [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_make_pipeline()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[_make_pipeline()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
 - [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
@@ -38,7 +40,7 @@ members: 38
 - [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_get_stats()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_get_stats()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
@@ -56,12 +58,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_api.py (2)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline (2)]]
 - 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
+- [[_make_pipeline()_1]] - degree 6, connects to 2 communities
 - [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
 - [[DataExfilVolumeGuard]] - degree 24, connects to 1 community
 - [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community

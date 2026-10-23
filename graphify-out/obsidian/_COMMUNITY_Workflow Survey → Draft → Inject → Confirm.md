@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 13
 - [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_62]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Related Notes_58]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[When to Use_3]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 
 ## Live Query (requires Dataview plugin)
@@ -30,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
 - [[Kill Switch Procedure_1]] - degree 10, connects to 1 community

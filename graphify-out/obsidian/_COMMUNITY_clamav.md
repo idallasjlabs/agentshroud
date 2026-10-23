@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.57
 members: 7
 ---
 
 # ClamAV
 
+**Cohesion:** 0.57 - moderately connected
 **Members:** 7 nodes
 
 ## Members

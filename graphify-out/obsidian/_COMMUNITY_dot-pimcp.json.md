@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # .pi/mcp.json
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -22,15 +24,15 @@ members: 23
 - [[Management API Router — `gatewaywebapi.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Middleware (applied to all requests, outermost first)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Overview_10]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Overview_11]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[POST forward — 5-Step Security Pipeline]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Related_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Security Notes_3]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Security Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Static Mounts]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[WebSocket Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[main.py_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,4 +45,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
 
 ## Top bridge nodes
-- [[main.py_1]] - degree 13, connects to 1 community
+- [[main.py]] - degree 13, connects to 1 community

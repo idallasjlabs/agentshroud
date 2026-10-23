@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.09
 members: 56
 ---
 
 # .agents/skills/i-cr/SKILL.md
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 56 nodes
 
 ## Members
 - [[dot-__call__()_1]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-__call__()_2]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_27]] - code - gateway/security/cron_state_monitor.py
-- [[dot-__init__()_28]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_29]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_31]] - code - gateway/security/cron_state_monitor.py
+- [[dot-__init__()_32]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_33]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-_dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_episode_id()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_evaluate()]] - code - gateway/security/cron_state_monitor.py
@@ -73,7 +75,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
 
 ## Top bridge nodes
 - [[CronStateMonitor]] - degree 34, connects to 1 community

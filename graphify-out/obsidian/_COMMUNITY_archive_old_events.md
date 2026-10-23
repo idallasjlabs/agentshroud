@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 24
 ---
 
 # archive_old_events
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -21,7 +23,7 @@ members: 24
 - [[A full disk (or any VACUUM-specific OperationalError) must not         raise pas]] - rationale - gateway/tests/test_audit_archive.py
 - [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - rationale - gateway/tests/test_audit_archive.py
 - [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - rationale - gateway/security/audit_archive.py
-- [[Path_34]] - code - gateway/security/audit_archive.py
+- [[Path_39]] - code - gateway/security/audit_archive.py
 - [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
 - [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - rationale - gateway/tests/test_audit_archive.py
 - [[_chain_events()]] - code - gateway/tests/test_audit_archive.py
@@ -30,7 +32,7 @@ members: 24
 - [[archive_old_events()]] - code - gateway/security/audit_archive.py
 - [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
 - [[audit_archive.py]] - code - gateway/security/audit_archive.py
-- [[datetime_7]] - code - gateway/security/audit_archive.py
+- [[datetime_5]] - code - gateway/security/audit_archive.py
 - [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
 
 ## Live Query (requires Dataview plugin)
@@ -41,7 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_🟢 INFO (nice to have) (2)]]
+- 7 edges to [[_COMMUNITY_🟢 INFO (nice to have) (2)_1]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher (5)]]
 
 ## Top bridge nodes

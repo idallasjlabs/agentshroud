@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.06
 members: 65
 ---
 
 # _make_proxy
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 65 nodes
 
 ## Members
-- [[dot-__init__()_196]] - code - gateway/security/delegation.py
+- [[dot-__init__()_195]] - code - gateway/security/delegation.py
 - [[dot-_load()]] - code - gateway/security/delegation.py
 - [[dot-_require_owner()]] - code - gateway/security/delegation.py
 - [[dot-_revoke_by_user_privilege()]] - code - gateway/security/delegation.py
@@ -83,14 +85,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 3 edges to [[_COMMUNITY_Enum]]
 - 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 - 1 edge to [[_COMMUNITY_colima-health-check.sh]]
 - 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_AuditStore]]
 - 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 
 ## Top bridge nodes
 - [[DelegationPrivilege]] - degree 25, connects to 5 communities
