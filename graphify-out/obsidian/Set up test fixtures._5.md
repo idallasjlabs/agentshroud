@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "ProxyAction (2)"
-location: "L24"
+community: "FetchOutcome"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyAction_2
+  - community/FetchOutcome
 ---
 
 # Set up test fixtures.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-setup_method()_37]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyAction_2
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

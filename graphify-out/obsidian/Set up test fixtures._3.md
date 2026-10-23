@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "AgentShroud Setup Guide"
-location: "L20"
+community: "Any"
+location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Any
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_21]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_17]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Any

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[OPENCLAW_SETUP]] - `conceptually_related_to` [EXTRACTED]
-- [[OpenClaw_2]] - `references` [EXTRACTED]
+- [[OpenClaw_3]] - `references` [EXTRACTED]
 - [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ApprovalHardening

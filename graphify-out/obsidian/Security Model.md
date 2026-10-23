@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "test_security.py (3)"
+community: "test_security.py"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy_3
+  - community/test_securitypy
 ---
 
 # Security Model
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 - [[URL Access Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy_3
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

@@ -1,17 +1,31 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
-type: "document"
-community: "Morning Checklist (5 minutes)"
-location: "L3"
+source_file: "gateway/soc/models.py"
+type: "code"
+community: "Enum"
+location: "L31"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Morning_Checklist_5_minutes
+  - community/Enum
 ---
 
 # Severity
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Any_75]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[SecurityEvent]] - `uses` [INFERRED]
+- [[Severity_7]] - `uses` [INFERRED]
+- [[WSEvent_1]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
+- [[event_adapter.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes
+#graphify/code #graphify/EXTRACTED #community/Enum

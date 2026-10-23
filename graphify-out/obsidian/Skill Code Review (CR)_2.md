@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
+community: ".agents/skills/i-cr/SKILL.md (2)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/agents/skills/i-cr/SKILLmd_2
 ---
 
 # Skill: Code Review (CR)
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Feedback Guidelines_2]] - `contains` [EXTRACTED]
 - [[Output Format_6]] - `contains` [EXTRACTED]
 - [[Production-Specific Review Checks_2]] - `contains` [EXTRACTED]
 - [[Review Principles_2]] - `contains` [EXTRACTED]
 - [[Role_13]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2

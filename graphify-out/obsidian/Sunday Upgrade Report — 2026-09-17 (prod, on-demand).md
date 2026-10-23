@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-17.md"
 type: "document"
-community: "ModuleStatsCollector"
+community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2
 ---
 
 # Sunday Upgrade Report — 2026-09-17 (prod, on-demand)
@@ -30,4 +30,4 @@ tags:
 - [[Trivy scan results — 22 CRITICAL across gatewayopenclawhermes (2026-09-17)]] - `references` [EXTRACTED]
 - [[pip-audit gap — gateway Python deps not scanned]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD) (2)"
-location: "L391"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Status
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

@@ -15,7 +15,7 @@ tags:
 - [[dot-from_dict()_11]] - `calls` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Privacy classification for a service.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "EgressFilterConfig"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/EgressFilterConfig
 ---
 
 # Startup prune must remove fixture markdown files from every contributor dir.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prune_walks_all_contributor_dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

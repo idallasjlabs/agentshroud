@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "CronStateMonitor (2)"
+community: "TelegramAPIProxy"
 location: "L2325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CronStateMonitor_2
+  - community/TelegramAPIProxy
 ---
 
 # Starting notice dedupe should tolerate emoji variation drift.
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_proxy_request_suppresses_starting_notice_emoji_variants()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_proxy_request_suppresses_startup_notice_emoji_variants()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

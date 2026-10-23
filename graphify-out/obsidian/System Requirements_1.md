@@ -12,6 +12,6 @@ tags:
 # System Requirements
 
 ## Connections
-- [[Prerequisites_6]] - `contains` [EXTRACTED]
+- [[Prerequisites_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/LOW__Informational

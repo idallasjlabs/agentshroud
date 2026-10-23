@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "SkillGuard (2)"
-location: "L412"
+community: "AgentShroud v0.7.0 Enforcement Audit Results (2)"
+location: "L443"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/AgentShroud_v070_Enforcement_Audit_Results_2
 ---
 
 # Security Notes
 
 ## Connections
-- [[Current Security Posture]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[Recommendations]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2

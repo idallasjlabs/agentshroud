@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Health Checks"
+community: "MiddlewareManager (4)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/MiddlewareManager_4
 ---
 
 # Startup Sequence
@@ -15,9 +15,9 @@ tags:
 - [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
 - [[Common Startup Failures]] - `contains` [EXTRACTED]
 - [[First-Boot Notes]] - `contains` [EXTRACTED]
-- [[Overview_22]] - `contains` [EXTRACTED]
-- [[Related Notes_63]] - `contains` [EXTRACTED]
+- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Related Notes_70]] - `contains` [EXTRACTED]
 - [[Startup Indicators]] - `contains` [EXTRACTED]
 - [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

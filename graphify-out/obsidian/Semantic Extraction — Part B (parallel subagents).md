@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Seccomp Profiles"
+community: "graphify Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/graphify_Skill
 ---
 
 # Semantic Extraction — Part B (parallel subagents)
@@ -15,4 +15,4 @@ tags:
 - [[graphify Extraction Subagent Prompt Spec]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/concept #graphify/EXTRACTED #community/graphify_Skill

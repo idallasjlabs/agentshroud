@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "_pcm_bytes"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/_pcm_bytes
 ---
 
 # Start the CONNECT proxy server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-start()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes

@@ -12,6 +12,6 @@ tags:
 # Set up app state and provide TestClient.
 
 ## Connections
-- [[client()_15]] - `rationale_for` [EXTRACTED]
+- [[client()_17]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "TeamsConfig (3)"
-location: "L170"
+community: ".github/mcp.json"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig_3
+  - community/github/mcpjson
 ---
 
 # Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig_3
+#graphify/document #graphify/EXTRACTED #community/github/mcpjson

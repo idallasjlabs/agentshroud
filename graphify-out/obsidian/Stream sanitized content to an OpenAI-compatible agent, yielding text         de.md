@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "AgentTarget (2)"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentTarget_2
 ---
 
 # Stream sanitized content to an OpenAI-compatible agent, yielding text         de
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-forward_to_agent_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2

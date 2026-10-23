@@ -1,18 +1,22 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L44"
+community: "GitHub Skill"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/GitHub_Skill
 ---
 
 # StreamReader
 
 ## Connections
-- [[_handle()_3]] - `references` [EXTRACTED]
-- [[_pump()]] - `references` [EXTRACTED]
+- [[dot-_handle_client()]] - `references` [EXTRACTED]
+- [[dot-_process_connect()]] - `references` [EXTRACTED]
+- [[dot-_relay()]] - `references` [EXTRACTED]
+- [[dot-_relay_and_scan()]] - `references` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/GitHub_Skill

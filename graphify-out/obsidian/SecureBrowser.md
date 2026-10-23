@@ -12,7 +12,7 @@ tags:
 # SecureBrowser
 
 ## Connections
-- [[dot-__init__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_3]] - `method` [EXTRACTED]
 - [[dot-_classify_risk()]] - `method` [EXTRACTED]
 - [[dot-_domain_matches()]] - `method` [EXTRACTED]
 - [[dot-_init_browser()]] - `method` [EXTRACTED]
@@ -31,6 +31,6 @@ tags:
 - [[dot-navigate()]] - `method` [EXTRACTED]
 - [[Secure browser automation with enterprise controls Security guarantees - Only…]] - `rationale_for` [EXTRACTED]
 - [[browserscriptsbrowse.py]] - `contains` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2

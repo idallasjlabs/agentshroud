@@ -1,31 +1,19 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L33"
+community: "test_cron_jobs_prompts.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/test_cron_jobs_promptspy
 ---
 
 # StreamReader
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[_make_stream()]] - `references` [EXTRACTED]
-- [[test_empty_request_line_returns_nothing()]] - `calls` [EXTRACTED]
-- [[test_handle_client_swallows_generic_exception()]] - `calls` [EXTRACTED]
-- [[test_handle_client_swallows_timeout_and_closes_writer()]] - `calls` [EXTRACTED]
-- [[test_handle_client_tolerates_writer_close_failure()]] - `calls` [EXTRACTED]
-- [[test_relay_and_scan_limit_reached_scans_once()]] - `calls` [EXTRACTED]
-- [[test_relay_and_scan_plain_http_port_still_scans()]] - `calls` [EXTRACTED]
-- [[test_relay_and_scan_small_download_scanned_at_eof()]] - `calls` [EXTRACTED]
-- [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
-- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - `calls` [EXTRACTED]
-- [[test_relay_copies_bytes_until_eof()]] - `calls` [EXTRACTED]
-- [[test_relay_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
+- [[_handle()_2]] - `references` [EXTRACTED]
+- [[_pipe()_2]] - `references` [EXTRACTED]
+- [[_read_request_headers()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

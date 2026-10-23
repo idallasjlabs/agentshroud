@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ServiceManager"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ServiceManager
 ---
 
 # ServiceManager
 
 ## Connections
-- [[dot-__init__()_174]] - `method` [EXTRACTED]
+- [[dot-__init__()_184]] - `method` [EXTRACTED]
 - [[dot-_describe_service()]] - `method` [EXTRACTED]
 - [[dot-_get_engine()]] - `method` [EXTRACTED]
 - [[dot-_logs_via_socket()]] - `method` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[dot-update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_28]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -71,10 +71,10 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[Request_4]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
-- [[ScanRequest_1]] - `uses` [INFERRED]
+- [[ScanRequest]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
 - [[ServiceStatus_1]] - `uses` [INFERRED]
@@ -101,7 +101,7 @@ tags:
 - [[TestStatusMappings]] - `uses` [INFERRED]
 - [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - `rationale_for` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_1]] - `uses` [INFERRED]
 - [[_FakeResponse]] - `uses` [INFERRED]
 - [[_FakeUnixSocket]] - `uses` [INFERRED]
 - [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `shares_data_with` [EXTRACTED]
@@ -109,14 +109,14 @@ tags:
 - [[get_health()]] - `calls` [EXTRACTED]
 - [[get_service_logs()]] - `calls` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]
-- [[restart_service()_1]] - `calls` [EXTRACTED]
+- [[restart_service()]] - `calls` [EXTRACTED]
 - [[services.py]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[start_service()_1]] - `calls` [EXTRACTED]
-- [[stop_service()_1]] - `calls` [EXTRACTED]
+- [[start_service()]] - `calls` [EXTRACTED]
+- [[stop_service()]] - `calls` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

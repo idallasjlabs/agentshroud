@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L114-L120"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # Sandbox Container Reaper
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[docker-socket-proxy (digest pinned)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/_wrap_response_2
+#graphify/rationale #graphify/INFERRED #community/run-standalonesh

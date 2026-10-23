@@ -18,7 +18,7 @@ tags:
 - [[Diagnostic Workflow]] - `contains` [EXTRACTED]
 - [[Output Format_15]] - `contains` [EXTRACTED]
 - [[Related Skills_62]] - `contains` [EXTRACTED]
-- [[Role_49]] - `contains` [EXTRACTED]
+- [[Role_47]] - `contains` [EXTRACTED]
 - [[When to Invoke_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

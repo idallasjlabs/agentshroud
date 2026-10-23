@@ -1,8 +1,8 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
 community: "ApprovalQueueConfig (5)"
-location: "L171"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED

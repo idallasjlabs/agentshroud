@@ -12,12 +12,12 @@ tags:
 # SclClient
 
 ## Connections
-- [[dot-get()_4]] - `method` [EXTRACTED]
+- [[dot-get()_3]] - `method` [EXTRACTED]
 - [[dot-new()_2]] - `method` [EXTRACTED]
 - [[dot-post()_2]] - `method` [EXTRACTED]
 - [[Client]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

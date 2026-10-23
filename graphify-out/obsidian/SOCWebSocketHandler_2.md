@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "MiddlewareManager (2)"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestEgressApprovalQueue
+  - community/MiddlewareManager_2
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_97]] - `method` [EXTRACTED]
+- [[dot-__init__()_185]] - `method` [EXTRACTED]
 - [[dot-_event_fan_out()]] - `method` [EXTRACTED]
 - [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
 - [[dot-_send_event()]] - `method` [EXTRACTED]
 - [[dot-run()_1]] - `method` [EXTRACTED]
-- [[Any_9]] - `uses` [INFERRED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[SimpleNamespace]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[Severity_8]] - `uses` [INFERRED]
+- [[SimpleNamespace_1]] - `uses` [INFERRED]
 - [[TestCoerceToWSEvent]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
@@ -46,11 +46,11 @@ tags:
 - [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
-- [[_FakeRBAC]] - `uses` [INFERRED]
+- [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestEgressApprovalQueue
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_2

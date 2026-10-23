@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "test_collaborator_tracker.py (3)"
+community: "Seccomp Profiles"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Seccomp_Profiles
 ---
 
 # Seccomp Profiles
@@ -19,7 +19,7 @@ tags:
 - [[Default Action]] - `contains` [EXTRACTED]
 - [[Gateway vs Bot Profile Differences]] - `contains` [EXTRACTED]
 - [[Purpose_84]] - `contains` [EXTRACTED]
-- [[Related Notes_44]] - `contains` [EXTRACTED]
+- [[Related Notes_42]] - `contains` [EXTRACTED]
 - [[seccomp-profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

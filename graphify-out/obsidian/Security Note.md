@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "lifespan() (3)"
-location: "L40"
+community: "EgressFilter"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan_3
+  - community/EgressFilter
 ---
 
 # Security Note
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lifespan_3
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

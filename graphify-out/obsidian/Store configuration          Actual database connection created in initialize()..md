@@ -12,6 +12,6 @@ tags:
 # Store configuration          Actual database connection created in initialize().
 
 ## Connections
-- [[dot-__init__()_57]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_136]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_make_proxy

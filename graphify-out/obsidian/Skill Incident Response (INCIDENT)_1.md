@@ -15,7 +15,7 @@ tags:
 - [[dot-agentsskillsi-productionSKILL]] - `contains` [EXTRACTED]
 - [[Incident Response Workflow_1]] - `contains` [EXTRACTED]
 - [[Post-Incident_1]] - `contains` [EXTRACTED]
-- [[Role_59]] - `contains` [EXTRACTED]
+- [[Role_57]] - `contains` [EXTRACTED]
 - [[Severity Matrix_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/test_openclaw_photosh

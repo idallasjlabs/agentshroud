@@ -12,15 +12,15 @@ tags:
 # Startup Sequence.md
 
 ## Connections
-- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[Architecture Overview_2]] - `references` [EXTRACTED]
 - [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
+- [[Home_1]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[Shutdown & Recovery]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

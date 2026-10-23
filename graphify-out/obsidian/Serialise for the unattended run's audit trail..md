@@ -12,6 +12,6 @@ tags:
 # Serialise for the unattended run's audit trail.
 
 ## Connections
-- [[dot-to_dict()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

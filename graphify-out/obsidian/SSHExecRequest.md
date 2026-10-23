@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: ""
 type: "code"
-community: "_make_proxy()"
-location: "L232"
+community: "TrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TrustConfig
 ---
 
 # SSHExecRequest
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[Request to execute an SSH command]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[ssh_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

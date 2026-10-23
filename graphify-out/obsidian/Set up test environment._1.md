@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
-location: "L71"
+community: "MiddlewareManager (2)"
+location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MiddlewareManager_2
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[dot-setup_method()_12]] - `rationale_for` [EXTRACTED]
-- [[dot-setup_method()_16]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_30]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_29]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

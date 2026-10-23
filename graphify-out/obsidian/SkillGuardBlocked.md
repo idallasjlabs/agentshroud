@@ -12,10 +12,10 @@ tags:
 # SkillGuardBlocked
 
 ## Connections
-- [[dot-__init__()_129]] - `method` [EXTRACTED]
+- [[dot-__init__()_157]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception_2]] - `inherits` [EXTRACTED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[Raised when SkillGuard blocks a dangerous skill tree before deploy.]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]

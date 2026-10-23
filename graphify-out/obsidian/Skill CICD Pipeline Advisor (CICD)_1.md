@@ -16,7 +16,7 @@ tags:
 - [[GitHub Actions Best Practices_1]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)_1]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)_1]] - `contains` [EXTRACTED]
-- [[Role_20]] - `contains` [EXTRACTED]
+- [[Role_19]] - `contains` [EXTRACTED]
 - [[hermesskillsi-cicdSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 

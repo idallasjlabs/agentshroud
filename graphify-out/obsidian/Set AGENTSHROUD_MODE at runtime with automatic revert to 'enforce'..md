@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.
 
 ## Connections
-- [[set_mode()]] - `rationale_for` [EXTRACTED]
+- [[set_mode()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Mode A — Single task (4)"
-location: "L11"
+community: "graphify reference: extra exports and benchmark"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_4
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

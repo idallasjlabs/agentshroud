@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[_print_findings()]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "rationale"
-community: "EgressFilterConfig (2) (2)"
+community: "AlertTelegramRelay"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/AlertTelegramRelay
 ---
 
 # Subscribe to the gateway EventBus; relay security alerts to Telegram.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AlertTelegramRelay]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertTelegramRelay

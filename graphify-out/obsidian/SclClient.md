@@ -12,7 +12,7 @@ tags:
 # SCLClient
 
 ## Connections
-- [[dot-__init__()_62]] - `method` [EXTRACTED]
+- [[dot-__init__()_73]] - `method` [EXTRACTED]
 - [[dot-_request()]] - `method` [EXTRACTED]
 - [[dot-add_collaborator()]] - `method` [EXTRACTED]
 - [[dot-add_group_member()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-get()_1]] - `method` [EXTRACTED]
 - [[dot-get_correlation()]] - `method` [EXTRACTED]
 - [[dot-get_egress_pending()]] - `method` [EXTRACTED]
-- [[dot-get_events()]] - `method` [EXTRACTED]
+- [[dot-get_events()_1]] - `method` [EXTRACTED]
 - [[dot-get_groups()]] - `method` [EXTRACTED]
 - [[dot-get_health()]] - `method` [EXTRACTED]
 - [[dot-get_logs()]] - `method` [EXTRACTED]
@@ -45,8 +45,8 @@ tags:
 - [[dot-test_init_strips_trailing_slash_and_builds_soc_base()]] - `calls` [EXTRACTED]
 - [[dot-test_post_serializes_body()]] - `calls` [EXTRACTED]
 - [[dot-test_put_and_delete_methods()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Any_80]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[Minimal synchronous httpx-free client for the SCL API.]] - `rationale_for` [EXTRACTED]
 - [[TestClientFromEnv]] - `uses` [INFERRED]
 - [[TestEgressAndAdminCommands]] - `uses` [INFERRED]

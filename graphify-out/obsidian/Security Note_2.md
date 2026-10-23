@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "test_collaborator_tracker.py (4) (2)"
-location: "L80"
+community: "create_auth_dependency()"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4_2
+  - community/create_auth_dependency
 ---
 
 # Security Note
 
 ## Connections
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_4_2
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

@@ -18,7 +18,7 @@ tags:
 - [[Non-agent components not inventoried]] - `references` [EXTRACTED]
 - [[OpenClaw 2026.10.2 - 2026.10.4 upgrade (dev)]] - `references` [EXTRACTED]
 - [[Prod promotion BLOCKED (0800 window)]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `implements` [INFERRED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `implements` [INFERRED]
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]

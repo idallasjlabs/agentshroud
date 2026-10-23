@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: ".test_egress_callback_from_collaborator_is_rejected()"
+community: "GitHub Branch Protection — `main`"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_from_collaborator_is_rejected
+  - community/GitHub_Branch_Protection__main
 ---
 
 # Skill: Code Review (CR)
@@ -17,6 +17,6 @@ tags:
 - [[Production-Specific Review Checks_1]] - `contains` [EXTRACTED]
 - [[Review Principles_1]] - `contains` [EXTRACTED]
 - [[Role_12]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected
+#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main

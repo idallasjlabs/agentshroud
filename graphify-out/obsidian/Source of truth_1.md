@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Mode A — Single task (5)"
-location: "L149"
+community: "AgentShroud Red Team Adversarial Tester (2)"
+location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_5
+  - community/AgentShroud_Red_Team_Adversarial_Tester_2
 ---
 
 # Source of truth
 
 ## Connections
-- [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
+- [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_5
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2

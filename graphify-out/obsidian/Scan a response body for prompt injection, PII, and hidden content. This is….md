@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "scanner_integration.py"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/scanner_integrationpy
 ---
 
 # Scan a response body for prompt injection, PII, and hidden content. This is…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

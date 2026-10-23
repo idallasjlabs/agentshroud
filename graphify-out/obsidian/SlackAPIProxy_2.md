@@ -18,8 +18,8 @@ tags:
 - [[dot-test_no_tracker_does_not_raise()]] - `calls` [EXTRACTED]
 - [[dot-test_non_message_event_ignored()]] - `calls` [EXTRACTED]
 - [[dot-test_tracker_error_does_not_propagate()]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
-- [[_make_proxy()_4]] - `references` [EXTRACTED]
+- [[_make_proxy()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_2

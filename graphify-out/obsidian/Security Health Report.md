@@ -12,6 +12,6 @@ tags:
 # Security Health Report
 
 ## Connections
-- [[Health Checks_2]] - `contains` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

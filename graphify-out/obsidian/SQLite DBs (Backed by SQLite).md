@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "postmortem.md"
+community: "start-agentshroud.sh (2)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/start-agentshroudsh_2
 ---
 
 # SQLite DBs (Backed by SQLite)
@@ -15,4 +15,4 @@ tags:
 - [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - `conceptually_related_to` [EXTRACTED]
 - [[ledger table (indexed on timestamp, source, forwarded_to)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/postmortemmd
+#graphify/concept #graphify/EXTRACTED #community/start-agentshroudsh_2
