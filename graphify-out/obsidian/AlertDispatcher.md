@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ContextGuard"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[dot-__init__()_13]] - `calls` [EXTRACTED]
-- [[dot-__init__()_160]] - `method` [EXTRACTED]
+- [[dot-__init__()_118]] - `calls` [EXTRACTED]
+- [[dot-__init__()_198]] - `method` [EXTRACTED]
 - [[dot-_format_alert_message()]] - `method` [EXTRACTED]
 - [[dot-_is_duplicate()]] - `method` [EXTRACTED]
 - [[dot-_is_rate_limited()]] - `method` [EXTRACTED]
@@ -23,39 +23,39 @@ tags:
 - [[dot-cleanup_seen()]] - `method` [EXTRACTED]
 - [[dot-dispatch()]] - `method` [EXTRACTED]
 - [[dot-get_digest()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_19]] - `method` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
 - [[dot-test_alert_dedup()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `calls` [INFERRED]
 - [[dot-test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[CronStateMonitor]] - `calls` [INFERRED]
 - [[Dispatches security alerts with dedup and rate limiting.]] - `rationale_for` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[Kaizen Fix AlertDispatcher now retries 3x with exponential backoff instead of failing on a single 10s timeout, which had been the top gateway error category (14week) at ERROR level]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_67]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[Path]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestClamAVParser]] - `uses` [INFERRED]
 - [[TestClamAVRun]] - `uses` [INFERRED]
 - [[TestClamAVSummary_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
 - [[TestExfiltrationDetection]] - `uses` [INFERRED]
 - [[TestFalcoCategorize]] - `uses` [INFERRED]
 - [[TestFalcoParser]] - `uses` [INFERRED]
-- [[TestFalcoSummary_1]] - `uses` [INFERRED]
+- [[TestFalcoSummary]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestHTTPSecurity]] - `uses` [INFERRED]
 - [[TestHealthOverallScore]] - `uses` [INFERRED]
@@ -65,27 +65,27 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestStartupScannerKeying]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrivyParser]] - `uses` [INFERRED]
 - [[TestTrivyRun]] - `uses` [INFERRED]
 - [[TestTrivySaveReport]] - `uses` [INFERRED]
-- [[TestTrivySummary_1]] - `uses` [INFERRED]
+- [[TestTrivySummary]] - `uses` [INFERRED]
 - [[TestWazuhParser]] - `uses` [INFERRED]
-- [[TestWazuhSummary_1]] - `uses` [INFERRED]
+- [[TestWazuhSummary]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[alert_dispatcher.py]] - `contains` [EXTRACTED]
-- [[dispatcher()_1]] - `calls` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[dispatcher()]] - `calls` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[run_canary()_1]] - `conceptually_related_to` [INFERRED]
 - [[test_alert_dispatcher_retry.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/ContextGuard

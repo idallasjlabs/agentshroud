@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
 - [[Affected Modules]] - `contains` [EXTRACTED]
-- [[Behavior_1]] - `contains` [EXTRACTED]
-- [[Description_12]] - `contains` [EXTRACTED]
-- [[Related Notes_69]] - `contains` [EXTRACTED]
+- [[Behavior]] - `contains` [EXTRACTED]
+- [[Description_10]] - `contains` [EXTRACTED]
+- [[Related Notes_53]] - `contains` [EXTRACTED]
 - [[Startup Warnings]] - `contains` [EXTRACTED]
-- [[Usage_113]] - `contains` [EXTRACTED]
-- [[Values_3]] - `contains` [EXTRACTED]
+- [[Usage_93]] - `contains` [EXTRACTED]
+- [[Values_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/DelegationManager

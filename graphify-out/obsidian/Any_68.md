@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "egress_filter.py (2)"
-location: "L140"
+community: "upgrade"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy_2
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()_1]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy_2
+#graphify/code #graphify/EXTRACTED #community/upgrade

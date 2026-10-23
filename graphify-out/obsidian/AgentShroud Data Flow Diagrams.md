@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "document"
-community: "LLMProxy (2)"
+community: "AgentShroud Data Flow Diagrams"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxy_2
+  - community/AgentShroud_Data_Flow_Diagrams
 ---
 
 # AgentShroud Data Flow Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[Level 2 MCP Proxy Detail]] - `contains` [EXTRACTED]
 - [[data-flow-diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLMProxy_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams

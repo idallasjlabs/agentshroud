@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L200"
+community: "Any"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Any
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[dot-from_dict()_4]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
+- [[dot-get_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/Any

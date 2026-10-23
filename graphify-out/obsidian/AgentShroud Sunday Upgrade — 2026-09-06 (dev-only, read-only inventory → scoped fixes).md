@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-06-dev.md"
 type: "document"
-community: "ModuleStatsCollector"
+community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)
@@ -24,4 +24,4 @@ tags:
 - [[Summary line]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2

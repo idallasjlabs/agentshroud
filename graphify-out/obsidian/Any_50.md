@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L379"
+community: "Approval Queue (human-in-the-loop)"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - graphify/INFERRED
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[dot-inspect()_2]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/INFERRED #community/Approval_Queue_human-in-the-loop

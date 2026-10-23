@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Approval Queue (human-in-the-loop)"
-location: "L139"
+community: "A2APolicyConfig"
+location: "L210"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Approval_Queue_human-in-the-loop
+  - graphify/EXTRACTED
+  - community/A2APolicyConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-from_dict()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_human-in-the-loop
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

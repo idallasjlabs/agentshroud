@@ -15,7 +15,7 @@ tags:
 - [[ADR-001-transparent-proxy-vs-agent-modification]] - `contains` [EXTRACTED]
 - [[Consequences_3]] - `contains` [EXTRACTED]
 - [[Context_5]] - `contains` [EXTRACTED]
-- [[Decision_6]] - `contains` [EXTRACTED]
+- [[Decision_5]] - `contains` [EXTRACTED]
 - [[Status_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

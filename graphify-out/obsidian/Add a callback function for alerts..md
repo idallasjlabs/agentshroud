@@ -12,6 +12,6 @@ tags:
 # Add a callback function for alerts.
 
 ## Connections
-- [[dot-add_alert_callback()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

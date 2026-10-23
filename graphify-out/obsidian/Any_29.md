@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "AgentTarget"
-location: "L93"
+community: "PromptGuard"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentTarget
+  - graphify/INFERRED
+  - community/PromptGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_11]] - `references` [EXTRACTED]
+- [[dot-__init__()_93]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/PromptGuard

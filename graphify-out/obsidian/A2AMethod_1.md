@@ -1,24 +1,45 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L106"
+community: "UserSessionManager (2)"
+location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/UserSessionManager_2
 ---
 
 # A2AMethod
 
 ## Connections
+- [[dot-_decide()]] - `references` [EXTRACTED]
+- [[dot-_tier_for()]] - `references` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyAction]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyDecision]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[test_high_risk_methods_require_approval()]] - `references` [EXTRACTED]
-- [[test_low_risk_methods_are_allowed()]] - `references` [EXTRACTED]
-- [[test_medium_risk_methods_are_allowed()]] - `references` [EXTRACTED]
+- [[A2APolicyEngine]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[A2AProxyResult]] - `uses` [INFERRED]
+- [[Any_39]] - `uses` [INFERRED]
+- [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - `rationale_for` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ParsedA2ARequest]] - `uses` [INFERRED]
+- [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
+- [[_Event]] - `uses` [INFERRED]
+- [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
+- [[_StubApprovalQueue]] - `uses` [INFERRED]
+- [[_StubAuditStore]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_method_of()]] - `references` [EXTRACTED]
+- [[a2a_policy.py]] - `contains` [EXTRACTED]
+- [[a2a_proxy.py]] - `imports` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
+- [[test_a2a_policy.py]] - `imports` [EXTRACTED]
+- [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/UserSessionManager_2

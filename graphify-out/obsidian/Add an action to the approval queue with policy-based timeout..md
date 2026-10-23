@@ -12,6 +12,6 @@ tags:
 # Add an action to the approval queue with policy-based timeout.
 
 ## Connections
-- [[dot-submit()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-submit()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextSegment

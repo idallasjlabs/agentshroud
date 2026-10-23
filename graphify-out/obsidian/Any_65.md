@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "upgrade"
-location: "L51"
+community: "MiddlewareManager (2)"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/upgrade
+  - graphify/INFERRED
+  - community/MiddlewareManager_2
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[dot-check_permission()_1]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_2

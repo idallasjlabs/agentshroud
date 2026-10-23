@@ -12,7 +12,7 @@ tags:
 # AgentShroud v0.8.0 "Watchtower" — Comprehensive Wiring Audit
 
 ## Connections
-- [[Executive Summary_11]] - `contains` [EXTRACTED]
+- [[Executive Summary_10]] - `contains` [EXTRACTED]
 - [[Fix Priority List]] - `contains` [EXTRACTED]
 - [[Revised Summary]] - `contains` [EXTRACTED]
 - [[Updated v0.8.0 Feature List with Wiring Status]] - `contains` [EXTRACTED]

@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L58"
+community: "Examples"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - graphify/EXTRACTED
+  - community/Examples
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Examples

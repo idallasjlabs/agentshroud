@@ -1,17 +1,13 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: ""
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L98"
+community: "test_agent_cve_registry.py (integrity guard suite)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/test_agent_cve_registrypy_integrity_guard_suite
 ---
 
 # Any
 
-## Connections
-- [[dot-from_dict()]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_integrity_guard_suite

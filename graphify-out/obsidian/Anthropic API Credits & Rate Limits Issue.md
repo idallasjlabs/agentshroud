@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "TestNewPatternsV080"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Anthropic API Credits & Rate Limits Issue
@@ -14,4 +14,4 @@ tags:
 - [[Anthropic API Credits Exhausted Blocker]] - `semantically_similar_to` [INFERRED]
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

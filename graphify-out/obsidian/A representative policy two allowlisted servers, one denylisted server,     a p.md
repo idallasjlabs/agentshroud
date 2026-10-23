@@ -12,6 +12,6 @@ tags:
 # A representative policy: two allowlisted servers, one denylisted server,     a p
 
 ## Connections
-- [[_base_config()]] - `rationale_for` [EXTRACTED]
+- [[_base_config()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

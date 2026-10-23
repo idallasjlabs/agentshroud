@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "rationale"
-community: "EgressFilterConfig (2) (2)"
+community: "AlertTelegramRelay"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/AlertTelegramRelay
 ---
 
 # Accept GatewayEvent objects or plain dicts from legacy emitters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_coerce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/rationale #graphify/EXTRACTED #community/AlertTelegramRelay

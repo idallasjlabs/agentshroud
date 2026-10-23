@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[About the Creator]] - `contains` [EXTRACTED]
 - [[Architecture_10]] - `contains` [EXTRACTED]
-- [[Current Status_8]] - `contains` [EXTRACTED]
+- [[Current Status_6]] - `contains` [EXTRACTED]
 - [[Frequently Asked Questions]] - `contains` [EXTRACTED]
 - [[How to Contribute]] - `contains` [EXTRACTED]
 - [[Technology Stack]] - `contains` [EXTRACTED]

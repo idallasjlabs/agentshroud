@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L64"
+community: "_make_proxy()"
+location: "L347"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - community/_make_proxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_133]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-get_stats()_12]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/_make_proxy

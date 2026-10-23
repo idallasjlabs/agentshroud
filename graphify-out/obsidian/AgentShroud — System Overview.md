@@ -12,9 +12,9 @@ tags:
 # AgentShroud — System Overview
 
 ## Connections
-- [[Components_1]] - `contains` [EXTRACTED]
+- [[Components_2]] - `contains` [EXTRACTED]
 - [[Key Design Decisions]] - `contains` [EXTRACTED]
-- [[Related Notes_21]] - `contains` [EXTRACTED]
+- [[Related Notes_68]] - `contains` [EXTRACTED]
 - [[Security Layers (in order)]] - `contains` [EXTRACTED]
 - [[System Overview]] - `contains` [EXTRACTED]
 - [[What It Is]] - `contains` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # API Endpoints (`gateway/ingest_api/main.py`)
 
 ## Connections
-- [[Components_2]] - `contains` [EXTRACTED]
+- [[Components_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2

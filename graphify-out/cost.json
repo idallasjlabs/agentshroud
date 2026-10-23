@@ -99,8 +99,14 @@
       "output_tokens": 0,
       "files": 16,
       "note": "subagent semantic extraction ~124k tokens total (split not reported)"
+    },
+    {
+      "date": "2026-10-23T22:20:23.285873+00:00",
+      "input_tokens": 74522,
+      "output_tokens": 0,
+      "files": 13
     }
   ],
-  "total_input_tokens": 3918694,
+  "total_input_tokens": 3993216,
   "total_output_tokens": 1271082
 }

@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.minimal.yml"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "ssh_config.py"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_7
+  - community/ssh_configpy
 ---
 
 # AgentShroud Minimal Docker Compose
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/INFERRED #community/ssh_configpy

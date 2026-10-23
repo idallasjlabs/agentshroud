@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-08-30.md"
+source_file: "reports/upgrade-2026-08-30-20260830-2010.md"
 type: "document"
-community: "Phase 1 — Raw Collection (3)"
+community: "AgentShroud Security Value Proposition - Revised (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection_3
+  - community/AgentShroud_Security_Value_Proposition_-_Revised_2
 ---
 
 # AgentShroud Weekly Upgrade Report — 2026-08-30
@@ -24,4 +24,4 @@ tags:
 - [[Run history_1]] - `contains` [EXTRACTED]
 - [[upgrade-2026-08-30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised_2

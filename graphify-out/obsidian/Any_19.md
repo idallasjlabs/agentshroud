@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "._make_proxy()"
-location: "L62"
+community: "MemoryIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_make_proxy
+  - graphify/EXTRACTED
+  - community/MemoryIntegrityMonitor
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[dot-from_dict()_2]] - `references` [EXTRACTED]
+- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

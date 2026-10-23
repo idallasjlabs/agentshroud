@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "setup-secrets.sh"
-location: "L159"
+community: "MCPInspector"
+location: "L140"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/setup-secretssh
+  - graphify/EXTRACTED
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-_redact_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

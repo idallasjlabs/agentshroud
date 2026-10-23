@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "generate_branding_assets.py"
+community: "MemoryIntegrityMonitor"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Action taken during retention policy enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RetentionAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

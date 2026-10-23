@@ -12,8 +12,8 @@ tags:
 # API Keys Setup Guide
 
 ## Connections
-- [[Overview_15]] - `contains` [EXTRACTED]
-- [[Quick Reference_10]] - `contains` [EXTRACTED]
+- [[Overview_17]] - `contains` [EXTRACTED]
+- [[Quick Reference_9]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
 - [[Security Notes_6]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]

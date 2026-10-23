@@ -1,16 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "ToolResultSanitizer"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/ToolResultSanitizer
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[dot-enforce()_1]] - `references` [EXTRACTED]
+- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

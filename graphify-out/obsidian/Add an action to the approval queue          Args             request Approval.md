@@ -12,6 +12,6 @@ tags:
 # Add an action to the approval queue          Args:             request: Approval
 
 ## Connections
-- [[dot-submit()]] - `rationale_for` [EXTRACTED]
+- [[dot-submit()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_4

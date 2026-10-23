@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "._make_proxy()"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_make_proxy
 ---
 
 # Agent cannot modify Dockerfile.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dockerfile_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

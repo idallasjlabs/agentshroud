@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "test_playback_state.c"
-location: "L289"
+community: "AgentTarget"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
-- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "StdioConnection"
+community: "9) GOVERNANCE & DECISION-MAKING"
 location: "L496"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/9_GOVERNANCE__DECISION-MAKING
 ---
 
 # 9) GOVERNANCE & DECISION-MAKING
@@ -17,4 +17,4 @@ tags:
 - [[When to clarify]] - `contains` [EXTRACTED]
 - [[When to defer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/StdioConnection
+#graphify/document #graphify/EXTRACTED #community/9_GOVERNANCE__DECISION-MAKING

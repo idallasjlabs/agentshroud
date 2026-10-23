@@ -1,19 +1,19 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L153"
+community: "PodmanEngine"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - graphify/INFERRED
+  - community/PodmanEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_4]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/INFERRED #community/PodmanEngine

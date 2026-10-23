@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "test_security_integration.py"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_security_integrationpy
 ---
 
 # Agent with low trust cannot perform elevated actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_trust_insufficient_action_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/test_security_integrationpy

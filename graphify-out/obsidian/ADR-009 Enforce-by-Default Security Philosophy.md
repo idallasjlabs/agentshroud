@@ -16,7 +16,7 @@ tags:
 - [[ADR-009-enforce-by-default]] - `contains` [EXTRACTED]
 - [[Consequences_1]] - `contains` [EXTRACTED]
 - [[Context_3]] - `contains` [EXTRACTED]
-- [[Decision_3]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
 - [[Related_7]] - `contains` [EXTRACTED]
 - [[Status_3]] - `contains` [EXTRACTED]
 

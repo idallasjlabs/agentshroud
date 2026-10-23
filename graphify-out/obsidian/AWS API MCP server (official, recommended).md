@@ -12,7 +12,7 @@ tags:
 # AWS API MCP server (official, recommended)
 
 ## Connections
-- [[AWS Athena MCP server]] - `conceptually_related_to` [EXTRACTED]
+- [[AWS Athena MCP server_1]] - `conceptually_related_to` [EXTRACTED]
 - [[Claude Code skill catalog (59 skills)]] - `references` [EXTRACTED]
 - [[Tool comparison matrix (config format  agents  skills  hooks)]] - `references` [EXTRACTED]
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `semantically_similar_to` [INFERRED]

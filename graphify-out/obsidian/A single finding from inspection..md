@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "egress_filter.py (2)"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy_2
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # A single finding from inspection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InspectionFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy_2
+#graphify/rationale #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

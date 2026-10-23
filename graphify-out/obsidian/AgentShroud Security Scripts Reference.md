@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Automation Examples]] - `contains` [EXTRACTED]
 - [[Best Practices_6]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
 - [[Monitoring Integration]] - `contains` [EXTRACTED]
 - [[SECURITY_SCRIPTS_REFERENCE]] - `contains` [EXTRACTED]
 - [[Script Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_25]] - `contains` [EXTRACTED]
+- [[Troubleshooting_24]] - `contains` [EXTRACTED]
 - [[scan.sh]] - `contains` [EXTRACTED]
 - [[verify-security.sh]] - `contains` [EXTRACTED]
 
