@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "EgressFilterConfig"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/EgressFilterConfig
 ---
 
 # _is_fixture_uid()
@@ -21,4 +21,4 @@ tags:
 - [[test_is_fixture_uid_passes_real_uids()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "export_bot"
+community: "MiddlewareManager"
 location: "L827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # _scan_result()
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_warn_action_returns_sanitized()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

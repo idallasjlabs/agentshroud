@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "ApprovalQueueConfig (3)"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/ApprovalQueueConfig_3
 ---
 
 # _load_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

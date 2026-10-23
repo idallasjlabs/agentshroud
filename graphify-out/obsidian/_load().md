@@ -12,8 +12,8 @@ tags:
 # _load()
 
 ## Connections
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
-- [[Path_37]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[Path_35]] - `references` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]

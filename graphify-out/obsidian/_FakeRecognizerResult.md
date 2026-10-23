@@ -12,9 +12,9 @@ tags:
 # _FakeRecognizerResult
 
 ## Connections
-- [[dot-__init__()_140]] - `method` [EXTRACTED]
+- [[dot-__init__()_165]] - `method` [EXTRACTED]
 - [[dot-test_presidio_result_becomes_pii_hit()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]

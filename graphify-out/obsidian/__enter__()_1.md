@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never… (2)"
-location: "L661"
+community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
+location: "L7839"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
 ---
 
 # __enter__()
 
 ## Connections
-- [[dot-test_patched_versions_carried_into_result()]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_64]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand

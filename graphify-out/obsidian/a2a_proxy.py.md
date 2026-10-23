@@ -12,8 +12,8 @@ tags:
 # a2a_proxy.py
 
 ## Connections
-- [[A2AMethod]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
+- [[A2AMethod_1]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[A2AProxy_1]] - `contains` [EXTRACTED]
 - [[A2AProxyResult]] - `contains` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]

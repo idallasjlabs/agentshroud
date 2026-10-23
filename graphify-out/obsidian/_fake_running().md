@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "_build_image_targets()"
 location: "L1101"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sync-cve-registrypy
+  - community/_build_image_targets
 ---
 
 # _fake_running()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_gateway_container_name_is_env_overridable()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/_build_image_targets

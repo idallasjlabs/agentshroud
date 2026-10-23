@@ -17,7 +17,7 @@ tags:
 - [[dot-test_four_when_sbom_and_clean_trivy()]] - `calls` [EXTRACTED]
 - [[dot-test_measured_or_higher_when_fully_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
-- [[Any_20]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

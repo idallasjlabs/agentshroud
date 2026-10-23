@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "KeyVaultConfig"
 location: "L380"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/KeyVaultConfig
 ---
 
 # _FakeIntegrityScore
 
 ## Connections
 - [[AuditChain]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
@@ -22,7 +22,7 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
+- [[ScanResult_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

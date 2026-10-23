@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Stub the fire-and-forget owner activity mirror. The mirror runs via…]] - `rationale_for` [EXTRACTED]
 - [[_noop()]] - `indirect_call` [INFERRED]
-- [[fixture_1]] - `references` [EXTRACTED]
+- [[fixture_2]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/create_auth_dependency_8

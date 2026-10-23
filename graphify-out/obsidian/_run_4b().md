@@ -19,7 +19,7 @@ tags:
 - [[dot-test_no_restart_on_a_run_that_just_booted_colima()]] - `calls` [EXTRACTED]
 - [[dot-test_no_restart_while_an_upgrade_holds_the_lock()]] - `calls` [EXTRACTED]
 - [[dot-test_restart_that_does_not_recover_is_a_failure()]] - `calls` [EXTRACTED]
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[_step_4b()]] - `calls` [EXTRACTED]
 - [[test_wazuh_watchdog.py]] - `contains` [EXTRACTED]
 

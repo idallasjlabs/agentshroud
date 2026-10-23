@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L1043"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # agentshroud-isolated network (internal)
@@ -16,4 +16,4 @@ tags:
 - [[docker-socket-proxy (digest pinned)]] - `references` [EXTRACTED]
 - [[wazuh-manager service (4.14.8)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

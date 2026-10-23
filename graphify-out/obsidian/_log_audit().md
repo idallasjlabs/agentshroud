@@ -12,10 +12,10 @@ tags:
 # _log_audit()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
 - [[AuditResult]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[SCLInterface]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[add_collaborator()]] - `calls` [EXTRACTED]
@@ -38,7 +38,7 @@ tags:
 - [[remove_egress_rule()]] - `calls` [EXTRACTED]
 - [[remove_group_member()]] - `calls` [EXTRACTED]
 - [[rename_group()]] - `calls` [EXTRACTED]
-- [[restart_service()_1]] - `calls` [EXTRACTED]
+- [[restart_service()]] - `calls` [EXTRACTED]
 - [[revoke_collaborator()]] - `calls` [EXTRACTED]
 - [[revoke_delegation()]] - `calls` [EXTRACTED]
 - [[revoke_egress_history()]] - `calls` [EXTRACTED]
@@ -50,12 +50,12 @@ tags:
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
-- [[start_service()_1]] - `calls` [EXTRACTED]
-- [[stop_service()_1]] - `calls` [EXTRACTED]
+- [[start_service()]] - `calls` [EXTRACTED]
+- [[stop_service()]] - `calls` [EXTRACTED]
 - [[unpause_collaborator_endpoint()]] - `calls` [EXTRACTED]
 - [[update_display_name()]] - `calls` [EXTRACTED]
 - [[update_service()]] - `calls` [EXTRACTED]
-- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
+- [[upgrade_bot()]] - `calls` [EXTRACTED]
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 

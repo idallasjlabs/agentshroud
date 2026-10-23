@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.47
 members: 6
 ---
 
 # v1.6.0 Release — Voice Terminal
 
+**Cohesion:** 0.47 - moderately connected
 **Members:** 6 nodes
 
 ## Members

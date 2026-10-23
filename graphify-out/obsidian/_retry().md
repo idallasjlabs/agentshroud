@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
 community: "Sunday Upgrade prompt"
-location: "L249"
+location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_passes_zero_based_attempt_index()]] - `calls` [INFERRED]
 - [[dot-test_returns_result_after_transient_failures()]] - `calls` [INFERRED]
 - [[dot-test_single_attempt_never_sleeps()]] - `calls` [INFERRED]
-- [[Any_62]] - `references` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all…]] - `rationale_for` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 - [[discover()]] - `calls` [EXTRACTED]

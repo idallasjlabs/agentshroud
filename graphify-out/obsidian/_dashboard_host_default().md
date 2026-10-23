@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "make_event"
+community: "run-standalone.sh"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/run-standalonesh
 ---
 
 # _dashboard_host_default()
@@ -16,4 +16,4 @@ tags:
 - [[cmd_up()]] - `calls` [EXTRACTED]
 - [[run-standalone.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

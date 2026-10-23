@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips."
+community: ".test_gives_up_and_marks_sent_after_max_retries()"
 location: "L1013"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # _fake_run()
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_skip_dirs_added_to_command()]] - `indirect_call` [INFERRED]
 - [[dot-test_successful_send_marks_sent_immediately_no_retry()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/code #graphify/INFERRED #community/test_gives_up_and_marks_sent_after_max_retries

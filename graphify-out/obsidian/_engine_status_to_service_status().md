@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # _engine_status_to_service_status()
@@ -16,4 +16,4 @@ tags:
 - [[ServiceStatus]] - `references` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

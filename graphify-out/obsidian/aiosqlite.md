@@ -15,7 +15,7 @@ tags:
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[aiosqlite_1]] - `contains` [EXTRACTED]
 - [[audit_store.py]] - `references` [EXTRACTED]
-- [[ledger.py_1]] - `references` [EXTRACTED]
+- [[ledger.py]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue

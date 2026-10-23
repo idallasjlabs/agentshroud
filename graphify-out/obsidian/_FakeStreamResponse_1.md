@@ -12,9 +12,9 @@ tags:
 # _FakeStreamResponse
 
 ## Connections
-- [[dot-__enter__()_2]] - `method` [EXTRACTED]
-- [[dot-__exit__()_2]] - `method` [EXTRACTED]
-- [[dot-__init__()_112]] - `method` [EXTRACTED]
+- [[dot-__enter__()_1]] - `method` [EXTRACTED]
+- [[dot-__exit__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_50]] - `method` [EXTRACTED]
 - [[dot-iter_bytes()]] - `method` [EXTRACTED]
 - [[dot-test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
 - [[dot-test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]

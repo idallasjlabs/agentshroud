@@ -16,7 +16,7 @@ tags:
 - [[dot-test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_three_when_both_running()]] - `calls` [EXTRACTED]
 - [[dot-test_two_when_wazuh_running()]] - `calls` [EXTRACTED]
-- [[Any_20]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

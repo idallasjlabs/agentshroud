@@ -19,7 +19,7 @@ tags:
 - [[dot-test_security_events_filters_by_bot_id()]] - `calls` [EXTRACTED]
 - [[dot-test_security_events_nonexistent_bot_returns_empty_not_404()]] - `calls` [EXTRACTED]
 - [[dot-test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

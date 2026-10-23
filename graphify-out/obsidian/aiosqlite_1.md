@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Database Files]] - `contains` [EXTRACTED]
-- [[Purpose_6]] - `contains` [EXTRACTED]
-- [[Related Notes_10]] - `contains` [EXTRACTED]
+- [[Purpose_4]] - `contains` [EXTRACTED]
+- [[Related Notes_6]] - `contains` [EXTRACTED]
 - [[WAL Mode]] - `contains` [EXTRACTED]
-- [[Where Used_1]] - `contains` [EXTRACTED]
+- [[Where Used]] - `contains` [EXTRACTED]
 - [[aiosqlite]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue

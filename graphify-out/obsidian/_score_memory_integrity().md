@@ -12,7 +12,7 @@ tags:
 # _score_memory_integrity()
 
 ## Connections
-- [[Path_66]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

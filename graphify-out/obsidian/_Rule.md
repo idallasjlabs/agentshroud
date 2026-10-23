@@ -12,7 +12,7 @@ tags:
 # _Rule
 
 ## Connections
-- [[dot-__init__()_99]] - `references` [EXTRACTED]
+- [[dot-__init__()_104]] - `references` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

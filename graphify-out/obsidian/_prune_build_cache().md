@@ -17,10 +17,10 @@ tags:
 - [[_ensure_build_space()]] - `calls` [EXTRACTED]
 - [[_mutating()]] - `calls` [EXTRACTED]
 - [[_prune_docker()]] - `semantically_similar_to` [INFERRED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

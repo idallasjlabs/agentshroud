@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L1056"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # agentshroud-dmz network (IEC 62443 FR5 SL2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud production compose stack]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

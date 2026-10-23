@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "LLMProxy"
+community: "_looks_like_base64()"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/_looks_like_base64
 ---
 
 # _looks_like_base64()
@@ -21,4 +21,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/_looks_like_base64

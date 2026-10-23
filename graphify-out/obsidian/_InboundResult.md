@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "SCLClient"
+community: "UserSessionManager (2) (2)"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/UserSessionManager_2_2
 ---
 
 # _InboundResult
@@ -17,4 +17,4 @@ tags:
 - [[_process_inbound()]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

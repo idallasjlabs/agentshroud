@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestProductionCompose"
+community: "MiddlewareManager"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/MiddlewareManager
 ---
 
 # _req()
@@ -40,8 +40,8 @@ tags:
 - [[dot-test_non_owner_blocked_when_critical_guard_failed()]] - `calls` [EXTRACTED]
 - [[dot-test_not_configured_guard_does_not_fail_closed()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass()_2]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass()_3]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypass()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]
 - [[dot-test_owner_exempt_when_critical_guard_failed()]] - `calls` [EXTRACTED]
 - [[dot-test_plain_message_skips_check()]] - `calls` [EXTRACTED]
 - [[dot-test_rbac_denied()]] - `calls` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `calls` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -18,11 +18,11 @@ tags:
 - [[_wait_for_docker()]] - `calls` [EXTRACTED]
 - [[die()_1]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_baseline()]] - `shares_data_with` [EXTRACTED]
 - [[phase_verify()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

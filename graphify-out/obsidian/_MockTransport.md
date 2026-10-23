@@ -12,8 +12,8 @@ tags:
 # _MockTransport
 
 ## Connections
-- [[dot-__call__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_65]] - `method` [EXTRACTED]
+- [[dot-__call__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_75]] - `method` [EXTRACTED]
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - `rationale_for` [EXTRACTED]
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 - [[test_run_comment_posts_to_correct_issue()]] - `calls` [EXTRACTED]

@@ -1,33 +1,36 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L197"
+community: "test_agent_cve_registry.py (2)"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/test_agent_cve_registrypy_2
 ---
 
 # _make_pipeline()
 
 ## Connections
-- [[dot-test_clean_message_passes()]] - `calls` [EXTRACTED]
-- [[dot-test_context_guard_error_fails_closed()]] - `calls` [EXTRACTED]
-- [[dot-test_critical_injection_blocks()]] - `calls` [EXTRACTED]
-- [[dot-test_high_injection_blocks()]] - `calls` [EXTRACTED]
-- [[dot-test_missing_trust_manager_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_no_context_guard_passes_through()]] - `calls` [EXTRACTED]
-- [[dot-test_no_outbound_filter_does_not_unbind()]] - `calls` [EXTRACTED]
-- [[dot-test_no_scorer_leaves_result_unscored()]] - `calls` [EXTRACTED]
-- [[dot-test_no_signer_leaves_envelope_empty()]] - `calls` [EXTRACTED]
-- [[dot-test_non_owner_block_does_not_emit_owner_bypass()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_bypass_is_recorded_in_audit_chain()]] - `calls` [EXTRACTED]
-- [[dot-test_repetition_attack_does_not_block()]] - `calls` [EXTRACTED]
-- [[dot-test_skip_context_guard_bypasses_step0()]] - `calls` [EXTRACTED]
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - `rationale_for` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_3]] - `calls` [EXTRACTED]
+- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - `rationale_for` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
+- [[SecurityPipeline_2]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[test_inbound_base64_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_benign_base64_not_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_encoding_detector_error_fails_closed()]] - `calls` [EXTRACTED]
+- [[test_inbound_hex_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_nested_base64_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_owner_encoded_injection_allowed()]] - `calls` [EXTRACTED]
+- [[test_inbound_plain_benign_message_not_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_rot13_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_unicode_homoglyph_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_inbound_url_encoded_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

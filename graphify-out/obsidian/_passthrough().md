@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "cli/main.py"
+community: "asyncio"
 location: "L117"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/cli/mainpy
+  - community/asyncio
 ---
 
 # _passthrough()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_pipeline()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/cli/mainpy
+#graphify/code #graphify/INFERRED #community/asyncio

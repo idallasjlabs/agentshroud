@@ -16,7 +16,7 @@ tags:
 - [[Shared working-tree stability guard]] - `rationale_for` [EXTRACTED]
 - [[_record_head captures real HEAD]] - `calls` [EXTRACTED]
 - [[head-guard function extraction (line-number sed)]] - `references` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]

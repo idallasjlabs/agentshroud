@@ -12,11 +12,11 @@ tags:
 # _CloseRaisesTargetWriter
 
 ## Connections
-- [[dot-close()_18]] - `method` [EXTRACTED]
+- [[dot-close()_14]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[_DummyTargetWriter_1]] - `inherits` [EXTRACTED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[_DummyTargetWriter]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Usage

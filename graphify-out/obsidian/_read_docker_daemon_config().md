@@ -12,8 +12,8 @@ tags:
 # _read_docker_daemon_config()
 
 ## Connections
-- [[Any_42]] - `references` [EXTRACTED]
-- [[Path_66]] - `calls` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - `rationale_for` [EXTRACTED]
 - [[_score_docker_daemon_config()]] - `calls` [EXTRACTED]
 - [[_score_network_segmentation()]] - `calls` [EXTRACTED]

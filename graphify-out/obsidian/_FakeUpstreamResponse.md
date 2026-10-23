@@ -12,7 +12,7 @@ tags:
 # _FakeUpstreamResponse
 
 ## Connections
-- [[dot-__init__()_138]] - `method` [EXTRACTED]
+- [[dot-__init__()_153]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[fake_httpx_client()]] - `calls` [EXTRACTED]

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # §2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members

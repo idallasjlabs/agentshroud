@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "AgentShroud v0.9.0 (2)"
+community: "SubagentGovernance"
 location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090_2
+  - community/SubagentGovernance
 ---
 
 # _check_pii_patterns()
@@ -22,4 +22,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090_2
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

@@ -37,7 +37,7 @@ tags:
 - [[dot-test_reload_returns_200_with_skills_list()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
 - [[dot-test_serialise_contains_version_and_timestamp()]] - `calls` [EXTRACTED]
-- [[Path_64]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[Write {relative_path content} under root.]] - `rationale_for` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 

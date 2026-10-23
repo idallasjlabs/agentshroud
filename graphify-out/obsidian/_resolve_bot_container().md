@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "_resolve_bot_container()"
 location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/_resolve_bot_container
 ---
 
 # _resolve_bot_container()
@@ -20,6 +20,6 @@ tags:
 - [[check_bot_updates()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
-- [[upgrade_bot()]] - `calls` [EXTRACTED]
+- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/_resolve_bot_container

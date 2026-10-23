@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # xurl — Agent Skill Reference
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -20,8 +22,8 @@ members: 22
 - [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
 - [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
 - [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
-- [[Network Topology_1]] - document - docs/architecture/deployment-diagram.md
-- [[Overview_12]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology_2]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_14]] - document - docs/architecture/deployment-diagram.md
 - [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
 - [[Podman Support]] - document - docs/architecture/deployment-diagram.md
 - [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md

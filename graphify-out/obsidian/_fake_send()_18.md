@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (2)"
-location: "L762"
+community: "asyncio"
+location: "L812"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_2
+  - community/asyncio
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_no_telegram_send_when_no_token()]] - `contains` [EXTRACTED]
+- [[dot-test_hermes_zero_still_reports_when_always_report_zero()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

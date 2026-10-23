@@ -17,7 +17,7 @@ tags:
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
 - [[RBACConfig_2]] - `references` [EXTRACTED]
 - [[TeamsConfig_2]] - `references` [EXTRACTED]
-- [[rbac()]] - `calls` [EXTRACTED]
+- [[rbac()_4]] - `calls` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

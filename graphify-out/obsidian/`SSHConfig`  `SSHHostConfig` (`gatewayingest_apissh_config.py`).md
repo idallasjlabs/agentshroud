@@ -12,6 +12,6 @@ tags:
 # `SSHConfig` / `SSHHostConfig` (`gateway/ingest_api/ssh_config.py`)
 
 ## Connections
-- [[Components_2]] - `contains` [EXTRACTED]
+- [[Components_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2

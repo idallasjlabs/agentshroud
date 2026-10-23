@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "format_cve_report() (2)"
-location: "L1354"
+location: "L1405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # _fake_send()
 
 ## Connections
-- [[dot-test_image_scan_summary_appended_to_message()]] - `contains` [EXTRACTED]
+- [[dot-test_image_scan_error_does_not_abort_report()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/format_cve_report_2

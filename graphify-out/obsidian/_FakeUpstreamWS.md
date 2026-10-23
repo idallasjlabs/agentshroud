@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__aiter__()]] - `method` [EXTRACTED]
 - [[dot-__anext__()]] - `method` [EXTRACTED]
-- [[dot-__init__()_117]] - `method` [EXTRACTED]
+- [[dot-__init__()_127]] - `method` [EXTRACTED]
 - [[dot-close()_12]] - `method` [EXTRACTED]
 - [[dot-send()_1]] - `method` [EXTRACTED]
 - [[dot-test_relay_with_trusted_origin()]] - `calls` [EXTRACTED]

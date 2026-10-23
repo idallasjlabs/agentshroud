@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Security Module Inventory"
+community: "record_decision()"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/record_decision
 ---
 
 # _norm()
@@ -18,4 +18,4 @@ tags:
 - [[Normalize a peer-id reference for robust, evasion-resistant matching.      Same]] - `rationale_for` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/code #graphify/EXTRACTED #community/record_decision

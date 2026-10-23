@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "ForwardRequest"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/ForwardRequest
 ---
 
 # _parse_env_file()
 
 ## Connections
-- [[dot-config()_1]] - `calls` [EXTRACTED]
 - [[dot-config()_2]] - `calls` [EXTRACTED]
 - [[dot-config()_3]] - `calls` [EXTRACTED]
+- [[dot-config()_4]] - `calls` [EXTRACTED]
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - `rationale_for` [EXTRACTED]
-- [[Path_12]] - `references` [EXTRACTED]
+- [[Path_38]] - `references` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

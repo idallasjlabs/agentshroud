@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "DelegationManager (2)"
+community: "DelegationManager"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager_2
+  - community/DelegationManager
 ---
 
 # agentshroud.yaml
 
 ## Connections
 - [[Config Search Order]] - `contains` [EXTRACTED]
-- [[Purpose_73]] - `contains` [EXTRACTED]
-- [[Related Notes_26]] - `contains` [EXTRACTED]
+- [[Purpose_140]] - `contains` [EXTRACTED]
+- [[Related Notes_51]] - `contains` [EXTRACTED]
 - [[Top-Level Sections]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[channels section]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[security_modules section]] - `contains` [EXTRACTED]
 - [[ssh section]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager_2
+#graphify/document #graphify/EXTRACTED #community/DelegationManager

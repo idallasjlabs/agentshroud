@@ -12,15 +12,15 @@ tags:
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_156]] - `method` [EXTRACTED]
-- [[dot-close()_11]] - `method` [EXTRACTED]
-- [[dot-drain()]] - `method` [EXTRACTED]
+- [[dot-__init__()_188]] - `method` [EXTRACTED]
+- [[dot-close()_18]] - `method` [EXTRACTED]
+- [[dot-drain()_1]] - `method` [EXTRACTED]
 - [[dot-get_extra_info()]] - `method` [EXTRACTED]
-- [[dot-write()]] - `method` [EXTRACTED]
+- [[dot-write()_1]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[Minimal StreamWriter stand-in that records written bytes.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_CloseRaisesWriter]] - `inherits` [EXTRACTED]
 - [[_SocketTransportWriter]] - `inherits` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]

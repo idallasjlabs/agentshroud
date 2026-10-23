@@ -1,28 +1,38 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "UserSessionManager"
-location: "L26"
+community: "AgentTarget"
+location: "L409"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/UserSessionManager
+  - graphify/INFERRED
+  - community/AgentTarget
 ---
 
 # _StubForwarder
 
 ## Connections
+- [[dot-__init__()_149]] - `method` [EXTRACTED]
 - [[dot-forward()_4]] - `method` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilterConfig]] - `uses` [INFERRED]
+- [[EgressPolicy]] - `uses` [INFERRED]
+- [[Forwarder stub returning a canned bot response body.]] - `rationale_for` [EXTRACTED]
+- [[ForwarderConfig]] - `uses` [INFERRED]
+- [[HTTPForwarder]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[ScanRequest_1]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SidecarScanner]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
-- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `calls` [EXTRACTED]
-- [[test_proxy_without_trust_manager_does_not_raise()]] - `calls` [EXTRACTED]
-- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
-- [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `uses` [INFERRED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
+- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/AgentTarget

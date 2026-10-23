@@ -17,7 +17,7 @@ tags:
 - [[dot-test_one_when_no_tools()]] - `calls` [EXTRACTED]
 - [[dot-test_one_when_no_wazuh_no_fluent()]] - `calls` [EXTRACTED]
 - [[dot-test_two_when_falco_running()]] - `calls` [EXTRACTED]
-- [[Any_20]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

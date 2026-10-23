@@ -12,7 +12,7 @@ tags:
 # _make_deny_all_filter()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[EgressFilter_1]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # _pipe()
 
 ## Connections
-- [[StreamReader_1]] - `references` [EXTRACTED]
+- [[StreamReader]] - `references` [EXTRACTED]
 - [[StreamWriter]] - `references` [EXTRACTED]
 - [[_handle()_2]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
