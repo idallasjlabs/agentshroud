@@ -12,7 +12,7 @@ tags:
 # .test_migration_adds_bot_id_column()
 
 ## Connections
-- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[AuditStore]] - `calls` [EXTRACTED]
 - [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 

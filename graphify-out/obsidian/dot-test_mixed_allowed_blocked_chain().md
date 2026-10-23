@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPToolCall"
 location: "L1225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPToolCall
 ---
 
 # .test_mixed_allowed_blocked_chain()
@@ -17,4 +17,4 @@ tags:
 - [[Mix of allowed, blocked, and result entries all in one chain.]] - `rationale_for` [EXTRACTED]
 - [[TestChainIntegrityMultiple]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

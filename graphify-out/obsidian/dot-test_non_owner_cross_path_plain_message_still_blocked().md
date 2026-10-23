@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "TELEGRAM_ISSUES.md"
+community: "MiddlewareManager"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/MiddlewareManager
 ---
 
 # .test_non_owner_cross_path_plain_message_still_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestOwnerBypassContentPatternChecks]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

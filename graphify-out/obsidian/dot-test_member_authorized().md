@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # .test_member_authorized()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuthorizationHelper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

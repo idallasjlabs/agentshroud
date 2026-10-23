@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestSendEventAndKeepalive]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -15,7 +15,7 @@ tags:
 - [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[TestDefaultPolicyNoMcpServers]] - `method` [EXTRACTED]
-- [[_write()]] - `calls` [EXTRACTED]
+- [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

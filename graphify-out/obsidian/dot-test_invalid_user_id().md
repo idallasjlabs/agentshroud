@@ -12,7 +12,7 @@ tags:
 # .test_invalid_user_id()
 
 ## Connections
-- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[RBACManager_2]] - `calls` [EXTRACTED]
 - [[Test handling of invalid user IDs.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 

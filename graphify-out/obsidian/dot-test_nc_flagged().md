@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_make_hook()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `calls` [EXTRACTED]
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SessionManager

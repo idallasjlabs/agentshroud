@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Non-owner channel pipeline exception → blocked (fail-closed).]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentRegistry

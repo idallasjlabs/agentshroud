@@ -12,6 +12,6 @@ tags:
 # .test_no_limit_always_allowed()
 
 ## Connections
-- [[TestRateLimiting]] - `method` [EXTRACTED]
+- [[TestRateLimiting_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

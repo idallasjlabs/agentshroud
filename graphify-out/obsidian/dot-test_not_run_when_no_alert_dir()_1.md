@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "PipelineAction (2)"
-location: "L302"
+community: "parse_clamscan_output"
+location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/parse_clamscan_output
 ---
 
 # .test_not_run_when_no_alert_dir()
 
 ## Connections
-- [[Path_43]] - `calls` [EXTRACTED]
-- [[TestGetFalcoSummary]] - `method` [EXTRACTED]
-- [[get_falco_summary()]] - `calls` [EXTRACTED]
+- [[Path_33]] - `calls` [EXTRACTED]
+- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
+- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "LLMProxy"
+community: "URLAnalyzer"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/URLAnalyzer
 ---
 
 # .test_no_scheme()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMalformedURLs]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

@@ -12,9 +12,9 @@ tags:
 # .test_is_group_admin_with_teams_config()
 
 ## Connections
-- [[SCLCaller_2]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

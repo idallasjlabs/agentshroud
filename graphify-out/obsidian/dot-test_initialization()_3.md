@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L45"
+community: "Any"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Any
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test proper initialization of MultiTurnTracker.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
+- [[Test hardening initialization.]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/Any

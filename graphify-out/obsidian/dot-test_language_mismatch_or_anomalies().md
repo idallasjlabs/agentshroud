@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "Enum"
 location: "L483"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Enum
 ---
 
 # .test_language_mismatch_or_anomalies()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResponseConsistency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/Enum

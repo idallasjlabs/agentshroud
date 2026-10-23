@@ -16,10 +16,10 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Unknown non-owner users should still be tracked at gateway level.]] - `rationale_for` [EXTRACTED]
-- [[__init__()_2]] - `contains` [EXTRACTED]
+- [[__init__()_1]] - `contains` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[record_activity()_1]] - `contains` [EXTRACTED]
+- [[record_activity()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

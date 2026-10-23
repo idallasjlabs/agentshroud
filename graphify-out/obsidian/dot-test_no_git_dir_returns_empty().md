@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[GitGuard]] - `calls` [EXTRACTED]
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SessionManager

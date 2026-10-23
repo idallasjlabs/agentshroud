@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # .test_many_pii_entities()
@@ -15,4 +15,4 @@ tags:
 - [[Message with hundreds of PII entities should complete.]] - `rationale_for` [EXTRACTED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

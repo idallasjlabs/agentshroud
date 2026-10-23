@@ -12,6 +12,6 @@ tags:
 # .test_non_owner_empty_when_no_session()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig_2

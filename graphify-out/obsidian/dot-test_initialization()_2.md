@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

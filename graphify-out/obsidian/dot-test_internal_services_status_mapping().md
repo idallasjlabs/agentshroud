@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ServiceManager"
 location: "L522"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ServiceManager
 ---
 
 # .test_internal_services_status_mapping()
@@ -15,4 +15,4 @@ tags:
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestListServices]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

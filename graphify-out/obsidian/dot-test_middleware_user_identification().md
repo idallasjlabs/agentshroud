@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # .test_middleware_user_identification()
@@ -15,4 +15,4 @@ tags:
 - [[Test that middleware requires user identification.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

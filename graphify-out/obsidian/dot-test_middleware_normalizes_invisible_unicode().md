@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # .test_middleware_normalizes_invisible_unicode()
@@ -15,4 +15,4 @@ tags:
 - [[Input normalization should strip zero-width obfuscation before guards run.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

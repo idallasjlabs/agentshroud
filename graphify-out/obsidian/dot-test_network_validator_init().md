@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Common Queries"
+community: "WebProxy"
 location: "L931"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/WebProxy
 ---
 
 # .test_network_validator_init()
@@ -15,4 +15,4 @@ tags:
 - [[NetworkValidator]] - `calls` [EXTRACTED]
 - [[TestContainerSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Common_Queries
+#graphify/code #graphify/EXTRACTED #community/WebProxy
