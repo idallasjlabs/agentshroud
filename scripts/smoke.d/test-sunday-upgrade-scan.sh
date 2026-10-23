@@ -689,6 +689,33 @@ check "T17: container exits 0 but leaves no fresh DB -> treated as a failure, no
         && ! grep -q -- '--skip-db-update' "$D17/silent/log.trivy" && echo true || echo false)" \
     "rc=$rc17c err=$(cat "$D17/silent/err") trivy=$(cat "$D17/silent/log.trivy" 2>/dev/null)"
 
+# ── T18: a trivy that ignores SIGTERM cannot hang the gate ──────────────────
+# 2026-10-23 on prod a hung host trivy logged "attempting graceful shutdown" on
+# timeout's SIGTERM and kept running until kill -9 three minutes later. Three
+# attempts per image behind a TERM-only timeout could hold Sunday past cutoff.
+B18="$TMPROOT/t18/bin"
+write_fake "$B18" docker 'case "$1" in run) exit 1 ;; images) printf "agentshroud-gateway:1.7.0\n" ;; *) exit 0 ;; esac'
+# shellcheck disable=SC2016
+write_fake "$B18" trivy '
+case "$1" in
+  --version) echo "Version: 0.76.1" ;;
+  image) trap "" TERM; sleep 60 ;;
+esac
+'
+set +e
+t18_start=$(date +%s)
+env -i PATH="$B18:/usr/bin:/bin" HOME="$HOME" SUNDAY_TRIVY_CACHE="$TMPROOT/t18/cache" \
+    SUNDAY_SCAN_RETRY_SLEEP=0 SUNDAY_TRIVY_TIMEOUT=1 SUNDAY_TRIVY_KILL_AFTER=1 "$BASH_BIN" -c \
+    ". '$LIB'; sunday_run_scan_gate '$TMPROOT/t18/scan.json' '' agentshroud-gateway:1.7.0" \
+    >"$TMPROOT/t18/out" 2>"$TMPROOT/t18/err"
+rc18=$?
+t18_secs=$(( $(date +%s) - t18_start ))
+set -e
+check "T18: a SIGTERM-ignoring trivy is killed, and the scan fails instead of hanging" \
+    "$([ "$t18_secs" -lt 30 ] && grep -q 'trivy FAILED for agentshroud-gateway:1.7.0 after 3 attempts (exit 137)' "$TMPROOT/t18/err" \
+        && grep -q 'scans FAILED: 1' "$TMPROOT/t18/out" && echo true || echo false)" \
+    "rc=$rc18 secs=$t18_secs err=$(tail -5 "$TMPROOT/t18/err")"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
