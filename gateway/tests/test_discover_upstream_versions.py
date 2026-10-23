@@ -393,3 +393,56 @@ class TestDiscoverRetries:
         assert found["hermes"]["latest"] == "v0.22.2"
         assert resolver_default_per_call == [True, False]
         assert socket.getaddrinfo is recorder
+
+
+class TestFetchDockerhubTagsUsesCurl:
+    """2026-10-23 on marvin: every Python HTTPS read to hub.docker.com hung
+    (Homebrew 3.15 and /usr/bin/python3 alike) while `curl` fetched the same URL
+    in 0.2s, so Hermes came back UNKNOWN after ~6.5 minutes of retries. curl is
+    the one client that reliably gets through on this host."""
+
+    def _fake_run(self, calls, *, returncode=0, stdout="", stderr=""):
+        import subprocess
+
+        def run(cmd, **kwargs):
+            calls.append((cmd, kwargs))
+            return subprocess.CompletedProcess(cmd, returncode, stdout=stdout, stderr=stderr)
+
+        return run
+
+    def test_fetches_through_curl_with_a_bounded_time(self, monkeypatch):
+        import discover_upstream_versions as d
+
+        calls: list = []
+        payload = '{"results": [{"name": "v2026.10.20", "digest": "sha256:ab"}]}'
+        monkeypatch.setattr(d.subprocess, "run", self._fake_run(calls, stdout=payload))
+        tags = d.fetch_dockerhub_tags("nousresearch/hermes-agent")
+        assert tags == [{"name": "v2026.10.20", "digest": "sha256:ab"}]
+        cmd = calls[0][0]
+        assert cmd[0] == "curl"
+        assert "--fail" in cmd and "--max-time" in cmd
+        assert cmd[-1].startswith(
+            "https://hub.docker.com/v2/repositories/nousresearch/hermes-agent/tags"
+        )
+        assert calls[0][1].get("timeout")
+
+    def test_curl_failure_raises_instead_of_returning_no_tags(self, monkeypatch):
+        import discover_upstream_versions as d
+
+        calls: list = []
+        monkeypatch.setattr(
+            d.subprocess, "run", self._fake_run(calls, returncode=28, stderr="Operation timed out")
+        )
+        with pytest.raises(RuntimeError, match="Operation timed out"):
+            d.fetch_dockerhub_tags("nousresearch/hermes-agent")
+
+    def test_ipv4_retry_attempts_pass_dash_4_to_curl(self, monkeypatch):
+        import discover_upstream_versions as d
+
+        calls: list = []
+        monkeypatch.setattr(d.subprocess, "run", self._fake_run(calls, stdout='{"results": []}'))
+        with d._ipv4_only():
+            d.fetch_dockerhub_tags("nousresearch/hermes-agent")
+        d.fetch_dockerhub_tags("nousresearch/hermes-agent")
+        assert "-4" in calls[0][0]
+        assert "-4" not in calls[1][0]

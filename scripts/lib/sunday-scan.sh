@@ -78,6 +78,50 @@ sunday_ensure_trivy() {
   return 1
 }
 
+# sunday_refresh_trivy_db — fetch trivy's vulnerability + Java DBs through a
+# container into the host cache, and on success point TRIVY_DB_ARGS at it so the
+# host trivy scans offline. 2026-10-23 on marvin the host trivy hung on its own
+# DB download (dial ... i/o timeout; the same failure as scans FAILED 3 on 10-04,
+# 10-11 and 10-18) while `docker run aquasec/trivy` fetched it in 28s: container
+# traffic leaves through the Colima VM, not the host's network stack. Success is
+# the DB the container left behind (metadata.json updated within the last
+# SUNDAY_TRIVY_DB_MAX_AGE_H hours), never its exit code. On failure TRIVY_DB_ARGS
+# stays empty and the host trivy downloads the DB itself, as before.
+TRIVY_DB_ARGS=()
+_sunday_trivy_db_fresh() {
+  python3 - "$1" "${SUNDAY_TRIVY_DB_MAX_AGE_H:-48}" <<'PYEOF' 2>/dev/null
+import datetime, json, sys
+try:
+    updated = json.load(open(sys.argv[1], encoding="utf-8"))["UpdatedAt"]
+    when = datetime.datetime.fromisoformat(updated[:19]).replace(tzinfo=datetime.timezone.utc)
+except (OSError, KeyError, ValueError):
+    sys.exit(1)
+age_h = (datetime.datetime.now(datetime.timezone.utc) - when).total_seconds() / 3600
+sys.exit(0 if age_h <= float(sys.argv[2]) else 1)
+PYEOF
+}
+sunday_refresh_trivy_db() {
+  local cache="${SUNDAY_TRIVY_CACHE:-$HOME/.cache/trivy}" ver img flag errf
+  TRIVY_DB_ARGS=()
+  command -v docker >/dev/null 2>&1 || return 1
+  ver="$("${TRIVY_CMD[@]}" --version 2>/dev/null | sed -n 's/^Version: *//p' | head -1)"
+  img="${SUNDAY_TRIVY_IMAGE:-aquasec/trivy:${ver:-latest}}"
+  mkdir -p "$cache" || return 1
+  errf="$(mktemp)"
+  for flag in --download-db-only --download-java-db-only; do
+    if ! timeout 600 docker run --rm -v "${cache}:/root/.cache/trivy" "$img" image --quiet "$flag" >/dev/null 2>"$errf"; then
+      sed -n '1,4p' "$errf" | sed 's/^/      /' >&2
+      rm -f "$errf"
+      return 1
+    fi
+  done
+  rm -f "$errf"
+  _sunday_trivy_db_fresh "${cache}/db/metadata.json" || return 1
+  _sunday_trivy_db_fresh "${cache}/java-db/metadata.json" || return 1
+  TRIVY_DB_ARGS=(--cache-dir "$cache" --skip-db-update --skip-java-db-update)
+  return 0
+}
+
 sunday_resolve_scan_image() {
   local target="$1" repo fallback
   if docker image inspect "$target" >/dev/null 2>&1; then
@@ -177,6 +221,12 @@ sunday_run_scan_gate() {
     return 0
   fi
 
+  if sunday_refresh_trivy_db; then
+    log "scan: vulnerability DB refreshed through a container; host trivy scans offline against ${TRIVY_DB_ARGS[1]}"
+  else
+    warn "scan: DB refresh through a container failed — host trivy will download the DB itself"
+  fi
+
   # Built up in a variable, not inside a `{ ... } > "$scan_json"` group: `log`
   # writes to stdout, and a redirected group redirects EVERYTHING printed
   # inside it, `log` included — which silently spliced each per-image log
@@ -218,7 +268,7 @@ sunday_run_scan_gate() {
       errf="$(mktemp)"
       trc=0
       out="$(timeout 300 "${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
-              "${ignore_args[@]}" --format json "$resolved" 2>"$errf")" || trc=$?
+              "${TRIVY_DB_ARGS[@]}" "${ignore_args[@]}" --format json "$resolved" 2>"$errf")" || trc=$?
       if [ "$trc" -eq 0 ] && [ -n "$out" ]; then
         break
       fi

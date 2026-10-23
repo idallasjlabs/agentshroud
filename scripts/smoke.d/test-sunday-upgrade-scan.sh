@@ -88,6 +88,7 @@ run_gate() {
     # other test here.
     env -i PATH="$bindir:/usr/bin:/bin" HOME="$HOME" \
         SUNDAY_SCAN_RETRY_SLEEP="${SUNDAY_SCAN_RETRY_SLEEP:-}" \
+        SUNDAY_TRIVY_CACHE="${SUNDAY_TRIVY_CACHE:-$TMPROOT/trivy-cache-default}" \
         "$BASH_BIN" -c \
         ". '$LIB'; sunday_run_scan_gate '$scan_json' '$max_critical' \"\$@\"" \
         _ "$@"
@@ -621,6 +622,72 @@ check "T16: P5 finds the gateway by compose service label, not prod's name" \
 check "T15: the two 'nothing to do' skips do not send a notice" \
     "$(grep -A2 'already running — skipping' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' \
         && grep -A2 'run already completed today' "$WRAP_SH" | grep -q 'NOTIFY_ON_EXIT=0' && echo true || echo false)"
+
+# ── T17: the vulnerability DB is refreshed through a container ──────────────
+# 2026-10-23 on marvin the host trivy hung downloading its DB (as on 10-04,
+# 10-11 and 10-18: scans FAILED 3) while `docker run aquasec/trivy` fetched it
+# in 28s. The gate refreshes the DB in a container into the host cache, then
+# scans with the host trivy offline. Success is judged by the DB the container
+# left behind, never by its exit code.
+B17="$TMPROOT/t17/bin"
+# shellcheck disable=SC2016  # expands inside the fake, by design
+write_fake "$B17" docker '
+case "$1" in
+  image) exit 0 ;;
+  images) printf "agentshroud-gateway:1.7.0\n" ;;
+  run)
+    echo "$*" >> "$T17_LOG.docker"
+    [ "${T17_MODE}" = fail ] && exit 1
+    [ "${T17_MODE}" = silent ] && exit 0
+    src=""; prev=""
+    for a in "$@"; do [ "$prev" = -v ] && src="${a%%:*}"; prev="$a"; done
+    now="$(date -u +%Y-%m-%dT%H:%M:%S.000000000Z)"
+    case "$*" in
+      *--download-java-db-only*) mkdir -p "$src/java-db"; printf "{\"UpdatedAt\":\"%s\"}" "$now" > "$src/java-db/metadata.json" ;;
+      *) mkdir -p "$src/db"; printf "{\"Version\":2,\"UpdatedAt\":\"%s\"}" "$now" > "$src/db/metadata.json" ;;
+    esac ;;
+  *) exit 0 ;;
+esac
+'
+# shellcheck disable=SC2016
+write_fake "$B17" trivy '
+case "$1" in
+  --version) echo "Version: 0.76.1" ;;
+  image) echo "$*" >> "$T17_LOG.trivy"; echo "{\"Results\":[]}" ;;
+esac
+'
+t17_run() {
+    local mode="$1" dir="$TMPROOT/t17/$1"
+    mkdir -p "$dir"
+    env -i PATH="$B17:/usr/bin:/bin" HOME="$HOME" T17_MODE="$mode" T17_LOG="$dir/log" \
+        SUNDAY_TRIVY_CACHE="$dir/cache" SUNDAY_SCAN_RETRY_SLEEP=0 "$BASH_BIN" -c \
+        ". '$LIB'; sunday_run_scan_gate '$dir/scan.json' '' agentshroud-gateway:1.7.0" \
+        >"$dir/out" 2>"$dir/err"
+}
+set +e
+t17_run ok; rc17=$?
+t17_run fail; rc17b=$?
+t17_run silent; rc17c=$?
+set -e
+D17="$TMPROOT/t17"
+check "T17: container refreshes the DB with the host trivy's own version into the host cache" \
+    "$([ "$rc17" -eq 0 ] && grep -q "aquasec/trivy:0.76.1" "$D17/ok/log.docker" \
+        && grep -q -- "-v $D17/ok/cache:/root/.cache/trivy" "$D17/ok/log.docker" \
+        && grep -q -- '--download-db-only' "$D17/ok/log.docker" \
+        && grep -q -- '--download-java-db-only' "$D17/ok/log.docker" && echo true || echo false)" \
+    "rc=$rc17 docker=$(cat "$D17/ok/log.docker" 2>/dev/null)"
+check "T17: after a refresh the host trivy scans offline against that cache" \
+    "$(grep -q -- "--cache-dir $D17/ok/cache" "$D17/ok/log.trivy" && grep -q -- '--skip-db-update' "$D17/ok/log.trivy" \
+        && grep -q -- '--skip-java-db-update' "$D17/ok/log.trivy" && grep -q 'scan: PASS' "$D17/ok/out" && echo true || echo false)" \
+    "trivy=$(cat "$D17/ok/log.trivy" 2>/dev/null)"
+check "T17: container refresh fails -> warned, host trivy keeps its own DB download" \
+    "$([ "$rc17b" -eq 0 ] && grep -q 'DB refresh through a container failed' "$D17/fail/err" \
+        && ! grep -q -- '--skip-db-update' "$D17/fail/log.trivy" && echo true || echo false)" \
+    "rc=$rc17b err=$(cat "$D17/fail/err") trivy=$(cat "$D17/fail/log.trivy" 2>/dev/null)"
+check "T17: container exits 0 but leaves no fresh DB -> treated as a failure, not a refresh" \
+    "$([ "$rc17c" -eq 0 ] && grep -q 'DB refresh through a container failed' "$D17/silent/err" \
+        && ! grep -q -- '--skip-db-update' "$D17/silent/log.trivy" && echo true || echo false)" \
+    "rc=$rc17c err=$(cat "$D17/silent/err") trivy=$(cat "$D17/silent/log.trivy" 2>/dev/null)"
 
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
