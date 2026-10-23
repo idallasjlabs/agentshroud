@@ -12,6 +12,6 @@ tags:
 # Initialize the approval queue.          Args:             rules_file: Path to pe
 
 ## Connections
-- [[dot-__init__()_100]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_97]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SkillGuard

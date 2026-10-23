@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "UserSessionManager (2)"
+community: "TelegramAPIProxy"
 location: "L1237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/TelegramAPIProxy
 ---
 
 # Form payload approval banners must be redacted for collaborators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_egress_approval_banner_is_redacted_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

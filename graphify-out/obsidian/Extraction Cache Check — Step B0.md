@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Seccomp Profiles"
+community: "graphify Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/graphify_Skill
 ---
 
 # Extraction Cache Check — Step B0
@@ -14,4 +14,4 @@ tags:
 - [[--update Incremental Re-extraction Flow]] - `shares_data_with` [EXTRACTED]
 - [[Semantic Extraction — Part B (parallel subagents)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/concept #graphify/EXTRACTED #community/graphify_Skill

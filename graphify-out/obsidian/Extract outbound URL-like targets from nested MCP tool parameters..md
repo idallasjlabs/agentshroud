@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "CrossBotTrustLedger (2)"
+community: "AgentShroud Security Value Proposition"
 location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_2
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # Extract outbound URL-like targets from nested MCP tool parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_egress_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

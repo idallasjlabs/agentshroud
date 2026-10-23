@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "KeyVaultConfig"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/KeyVaultConfig
 ---
 
 # InjectionAction
 
 ## Connections
-- [[Any_4]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
@@ -39,7 +39,7 @@ tags:
 - [[TestUnicodeObfuscation]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[pipeline.py]] - `imports` [EXTRACTED]
+- [[pipeline.py_1]] - `imports` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_tool_injection_scan.py]] - `imports` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

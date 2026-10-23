@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "TelegramAPIProxy (3)"
+community: "TestPromptGuardEvasion"
 location: "L811"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/TestPromptGuardEvasion
 ---
 
 # Fullwidth chars NFKC-normalized — injection defeated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_fullwidth_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptGuardEvasion

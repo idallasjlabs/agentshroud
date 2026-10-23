@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
-location: "L629"
+community: "MCPInspector"
+location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/MCPInspector
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[dot-get_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

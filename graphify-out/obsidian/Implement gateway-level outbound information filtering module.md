@@ -19,7 +19,7 @@ tags:
 - [[Relationship to chunk 00-information-disclosure]] - `contains` [EXTRACTED]
 - [[Remediation_1]] - `contains` [EXTRACTED]
 - [[Root Cause_1]] - `contains` [EXTRACTED]
-- [[Severity_3]] - `contains` [EXTRACTED]
-- [[Verification_6]] - `contains` [EXTRACTED]
+- [[Severity_1]] - `contains` [EXTRACTED]
+- [[Verification_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details_3

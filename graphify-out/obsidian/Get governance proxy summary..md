@@ -12,6 +12,6 @@ tags:
 # Get governance proxy summary.
 
 ## Connections
-- [[dot-get_summary()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_summary()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/apipy

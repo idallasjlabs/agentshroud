@@ -18,7 +18,7 @@ tags:
 - [[Problem_7]] - `contains` [EXTRACTED]
 - [[Remediation_6]] - `contains` [EXTRACTED]
 - [[Root Cause_5]] - `contains` [EXTRACTED]
-- [[Severity_8]] - `contains` [EXTRACTED]
+- [[Severity_6]] - `contains` [EXTRACTED]
 - [[Verification_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes

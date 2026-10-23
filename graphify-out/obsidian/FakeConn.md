@@ -12,9 +12,9 @@ tags:
 # FakeConn
 
 ## Connections
-- [[dot-__init__()_47]] - `method` [EXTRACTED]
-- [[dot-send_request()]] - `method` [EXTRACTED]
-- [[dot-stop()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_59]] - `method` [EXTRACTED]
+- [[dot-send_request()_2]] - `method` [EXTRACTED]
+- [[dot-stop()_3]] - `method` [EXTRACTED]
 - [[dot-test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
 - [[dot-test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
 - [[dot-test_generic_exception()]] - `calls` [EXTRACTED]
@@ -28,9 +28,9 @@ tags:
 - [[dot-test_timeout_error()]] - `calls` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]

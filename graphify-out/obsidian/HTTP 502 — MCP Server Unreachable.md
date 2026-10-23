@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
+community: "ApprovalQueueConfig (7)"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/ApprovalQueueConfig_7
 ---
 
 # HTTP 502 — MCP Server Unreachable
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "lifespan()"
-location: "L92"
+community: "GroupConfig"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/GroupConfig
 ---
 
 # GatewayConfig
 
 ## Connections
 - [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[create_auth_dependency()]] - `references` [EXTRACTED]
-- [[get_auth_dependency()]] - `references` [EXTRACTED]
+- [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

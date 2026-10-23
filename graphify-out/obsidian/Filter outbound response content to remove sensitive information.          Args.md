@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "AgentShroud Setup Guide"
+community: "Any"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Any
 ---
 
 # Filter outbound response content to remove sensitive information.          Args:
 
 ## Connections
-- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Any

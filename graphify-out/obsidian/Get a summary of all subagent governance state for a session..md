@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "icloud/scripts/calendar.js"
+community: "SubagentGovernance"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/icloud/scripts/calendarjs
+  - community/SubagentGovernance
 ---
 
 # Get a summary of all subagent governance state for a session.
 
 ## Connections
-- [[dot-get_summary()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/icloud/scripts/calendarjs
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

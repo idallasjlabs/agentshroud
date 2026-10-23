@@ -24,7 +24,7 @@ tags:
 - [[dot-test_persona_hijack_detection_rate()]] - `calls` [EXTRACTED]
 - [[dot-test_prompt_extraction_detection_rate()]] - `calls` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[_any_detector_fires()]] - `references` [EXTRACTED]
 - [[_heuristic_detects()]] - `references` [EXTRACTED]
 

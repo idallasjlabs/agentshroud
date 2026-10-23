@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Current Features: Write Requirements"
 location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Current_Features_Write_Requirements
 ---
 
 # Feature: SecureBrowser (Playwright)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Features Write Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Current_Features_Write_Requirements

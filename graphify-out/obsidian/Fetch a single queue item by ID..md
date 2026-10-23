@@ -12,6 +12,6 @@ tags:
 # Fetch a single queue item by ID.
 
 ## Connections
-- [[dot-get_item()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_item()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextSegment

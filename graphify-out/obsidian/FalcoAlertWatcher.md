@@ -12,7 +12,7 @@ tags:
 # FalcoAlertWatcher
 
 ## Connections
-- [[dot-__init__()_144]] - `method` [EXTRACTED]
+- [[dot-__init__()_161]] - `method` [EXTRACTED]
 - [[dot-_handle_critical()]] - `method` [EXTRACTED]
 - [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
 - [[dot-run()_6]] - `method` [EXTRACTED]

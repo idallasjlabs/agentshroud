@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "api.py (2)"
+community: "SlackAPIProxy"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/SlackAPIProxy
 ---
 
 # Handle an inbound Slack event payload received via Socket Mode.          Called
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-handle_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy_2
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

@@ -12,7 +12,7 @@ tags:
 # GroupWorkspaceManager
 
 ## Connections
-- [[dot-__init__()_127]] - `method` [EXTRACTED]
+- [[dot-__init__()_173]] - `method` [EXTRACTED]
 - [[dot-_group_workspace_manager()]] - `calls` [EXTRACTED]
 - [[dot-_is_owner()_1]] - `method` [EXTRACTED]
 - [[dot-_require_memory()]] - `method` [EXTRACTED]
@@ -49,7 +49,7 @@ tags:
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[group_config.py]] - `shares_data_with` [EXTRACTED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
-- [[manager()_3]] - `calls` [EXTRACTED]
+- [[manager()_4]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `shares_data_with` [EXTRACTED]
 - [[shared_memory.py]] - `shares_data_with` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]

@@ -12,9 +12,9 @@ tags:
 # FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_46]] - `method` [EXTRACTED]
+- [[dot-__init__()_49]] - `method` [EXTRACTED]
 - [[dot-get_item()]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_1]] - `method` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
 - [[dot-test_approved_decision_allows()]] - `calls` [EXTRACTED]
 - [[dot-test_denied_decision_blocks_with_item_status()]] - `calls` [EXTRACTED]
@@ -23,12 +23,12 @@ tags:
 - [[dot-test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_domain_allowed_when_approved()]] - `calls` [INFERRED]
 - [[dot-test_unknown_domain_denied_when_denied()]] - `calls` [INFERRED]
-- [[dot-wait_for_decision()]] - `method` [EXTRACTED]
+- [[dot-wait_for_decision()_1]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]

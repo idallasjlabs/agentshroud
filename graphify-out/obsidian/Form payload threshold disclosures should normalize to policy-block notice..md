@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Observability Skill"
+community: "TelegramAPIProxy"
 location: "L722"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Observability_Skill
+  - community/TelegramAPIProxy
 ---
 
 # Form payload threshold disclosures should normalize to policy-block notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_security_monitoring_threshold_notice_is_normalized_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Observability_Skill
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

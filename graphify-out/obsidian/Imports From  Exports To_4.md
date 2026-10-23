@@ -12,6 +12,6 @@ tags:
 # Imports From / Exports To
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/_make_proxy_2

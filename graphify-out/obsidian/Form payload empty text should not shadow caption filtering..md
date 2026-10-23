@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "MCP OAuth preflight checker (mcp_oauth_preflight.py)"
+community: "TelegramAPIProxy"
 location: "L1113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_OAuth_preflight_checker_mcp_oauth_preflightpy
+  - community/TelegramAPIProxy
 ---
 
 # Form payload empty text should not shadow caption filtering.
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_OAuth_preflight_checker_mcp_oauth_preflightpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

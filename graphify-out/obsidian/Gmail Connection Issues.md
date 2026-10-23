@@ -12,6 +12,6 @@ tags:
 # Gmail Connection Issues
 
 ## Connections
-- [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/LOW__Informational

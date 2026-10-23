@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[`resolve_ports(desired dictstr, int) → dictstr, int`]] - `contains` [EXTRACTED]
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/find-sessionssh

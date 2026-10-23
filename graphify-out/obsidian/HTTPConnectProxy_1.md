@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "_pcm_bytes"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/_pcm_bytes
 ---
 
 # HTTPConnectProxy
 
 ## Connections
-- [[dot-__init__()_102]] - `method` [EXTRACTED]
+- [[dot-__init__()_109]] - `method` [EXTRACTED]
 - [[dot-_agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[dot-_clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[dot-_handle_client()]] - `method` [EXTRACTED]
 - [[dot-_process_connect()]] - `method` [EXTRACTED]
 - [[dot-_relay()]] - `method` [EXTRACTED]
 - [[dot-_relay_and_scan()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_18]] - `method` [EXTRACTED]
+- [[dot-get_stats()_19]] - `method` [EXTRACTED]
 - [[dot-start()_2]] - `method` [EXTRACTED]
 - [[dot-stop()_12]] - `method` [EXTRACTED]
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]
@@ -28,14 +28,14 @@ tags:
 - [[PortManager]] - `conceptually_related_to` [AMBIGUOUS]
 - [[SecurityPipeline_1]] - `semantically_similar_to` [INFERRED]
 - [[SidecarScanner]] - `conceptually_related_to` [EXTRACTED]
-- [[StreamReader]] - `uses` [INFERRED]
+- [[StreamReader_3]] - `uses` [INFERRED]
 - [[TestBenchmarkRegression]] - `references` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
 - [[_CloseRaisesWriter]] - `uses` [INFERRED]
-- [[_DummyTargetWriter_1]] - `uses` [INFERRED]
 - [[_DummyTargetWriter]] - `uses` [INFERRED]
+- [[_DummyTargetWriter_1]] - `uses` [INFERRED]
 - [[_HeaderTimeoutReader]] - `uses` [INFERRED]
 - [[_MockWriter]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `uses` [INFERRED]
@@ -43,7 +43,7 @@ tags:
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[canvas_proxy_app()]] - `conceptually_related_to` [INFERRED]
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_agent_id_for_peer_cached_after_first_lookup()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_forward_dns_hit()]] - `calls` [EXTRACTED]
@@ -104,4 +104,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

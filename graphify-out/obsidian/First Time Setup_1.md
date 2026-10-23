@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Error Index.md"
+community: "First Time Setup (2)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/First_Time_Setup_2
 ---
 
 # First Time Setup
 
 ## Connections
 - [[First Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_4]] - `contains` [EXTRACTED]
-- [[Related Notes_39]] - `contains` [EXTRACTED]
+- [[Prerequisites_6]] - `contains` [EXTRACTED]
+- [[Related Notes_40]] - `contains` [EXTRACTED]
 - [[Step 1 Create Secret Files]] - `contains` [EXTRACTED]
 - [[Step 3 Configure 1Password Items]] - `contains` [EXTRACTED]
 - [[Step 4 Build Container Images]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Step 8 Verify Security Posture]] - `contains` [EXTRACTED]
 - [[Troubleshooting First Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup_2

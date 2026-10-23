@@ -29,7 +29,7 @@ tags:
 - [[Prod Colima VM egress loss (root cause of 7.5h Hermes outage)]] - `references` [EXTRACTED]
 - [[Security Scan workflow (security-scan.yml)]] - `references` [EXTRACTED]
 - [[StreamHead status propagation for streaming LLM proxy]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `references` [EXTRACTED]
 - [[asb setup_ephemeral_secrets clobber on killed extract (preserve-nonempty fix)]] - `references` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `references` [EXTRACTED]
 - [[lazydocker docker.sock connection leak via Colima ssh forward]] - `references` [EXTRACTED]

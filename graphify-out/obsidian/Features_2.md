@@ -15,7 +15,7 @@ tags:
 - [[Action Feed]] - `contains` [EXTRACTED]
 - [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 - [[Data Ledger Viewer]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
 - [[Memory Browser]] - `contains` [EXTRACTED]
 - [[Network Inspector]] - `contains` [EXTRACTED]
 

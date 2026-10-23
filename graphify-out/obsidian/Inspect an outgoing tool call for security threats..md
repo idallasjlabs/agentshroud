@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "egress_filter.py (2)"
+community: "MCPInspector"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy_2
+  - community/MCPInspector
 ---
 
 # Inspect an outgoing tool call for security threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-inspect_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy_2
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

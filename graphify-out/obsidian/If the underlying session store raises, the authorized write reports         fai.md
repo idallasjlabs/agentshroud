@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # If the underlying session store raises, the authorized write reports         fai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_group_write_io_failure_returns_false()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

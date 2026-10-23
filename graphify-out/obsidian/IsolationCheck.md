@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "test_a2a_policy.py"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/test_a2a_policypy
 ---
 
 # IsolationCheck
@@ -17,4 +17,4 @@ tags:
 - [[dot-verify_volume_isolation()]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

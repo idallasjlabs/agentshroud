@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "rationale"
-community: "test_soc_egress_endpoints.py"
+community: "TestHeuristicClassifier"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/TestHeuristicClassifier
 ---
 
 # InjectionClassifier alias should still work.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_backward_compat_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/TestHeuristicClassifier

@@ -12,6 +12,6 @@ tags:
 # Get a single keypress (non-blocking)
 
 ## Connections
-- [[dot-get_key()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_key()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Path_2

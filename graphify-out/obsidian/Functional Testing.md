@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "KillSwitchMonitor (2) (9)"
+community: "AgentShroud Incident Response Plan"
 location: "L403"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_9
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Functional Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_9
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

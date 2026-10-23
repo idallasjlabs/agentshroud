@@ -12,10 +12,10 @@ tags:
 # HTTPForwarder
 
 ## Connections
-- [[dot-__init__()_90]] - `method` [EXTRACTED]
-- [[dot-forward()_2]] - `method` [EXTRACTED]
-- [[dot-get_stats()_10]] - `method` [EXTRACTED]
-- [[dot-health_check()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_146]] - `method` [EXTRACTED]
+- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[dot-get_stats()_14]] - `method` [EXTRACTED]
+- [[dot-health_check()_5]] - `method` [EXTRACTED]
 - [[dot-is_healthy()]] - `method` [EXTRACTED]
 - [[dot-last_forward_time()]] - `method` [EXTRACTED]
 - [[dot-set_response_handler()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[MultiAgentRouter]] - `semantically_similar_to` [INFERRED]
 - [[SecurityPipeline_1]] - `references` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[forwarder()_1]] - `calls` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `calls` [EXTRACTED]

@@ -20,6 +20,6 @@ tags:
 - [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
 - [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
 - [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
-- [[key_vault.py_1]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/drift_detectorpy

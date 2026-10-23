@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Message Composition with MML (MIME Meta Language)"
+community: "SubagentGovernance"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/SubagentGovernance
 ---
 
 # GovernanceConfig
 
 ## Connections
-- [[dot-__init__()_145]] - `references` [EXTRACTED]
+- [[dot-__init__()_143]] - `references` [EXTRACTED]
 - [[dot-test_api_calls_exceed()]] - `calls` [EXTRACTED]
 - [[dot-test_tokens_exceed_budget()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_calls_budget_blocks_authorize_tool()]] - `calls` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

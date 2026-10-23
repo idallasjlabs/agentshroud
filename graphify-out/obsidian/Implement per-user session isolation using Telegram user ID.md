@@ -18,7 +18,7 @@ tags:
 - [[Problem_4]] - `contains` [EXTRACTED]
 - [[Remediation_3]] - `contains` [EXTRACTED]
 - [[Root Cause_3]] - `contains` [EXTRACTED]
-- [[Severity_5]] - `contains` [EXTRACTED]
-- [[Verification_8]] - `contains` [EXTRACTED]
+- [[Severity_3]] - `contains` [EXTRACTED]
+- [[Verification_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

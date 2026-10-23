@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "MiddlewareManager (2)"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager_2
 ---
 
 # Get all users with a specific role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_users_by_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2

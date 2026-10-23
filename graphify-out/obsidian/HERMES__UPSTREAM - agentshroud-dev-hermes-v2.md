@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # HERMES_*_UPSTREAM -> agentshroud-dev-hermes-v2
@@ -15,4 +15,4 @@ tags:
 - [[Marvin dev compose override (agentshroud-bot)]] - `references` [EXTRACTED]
 - [[run-standalone.sh]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

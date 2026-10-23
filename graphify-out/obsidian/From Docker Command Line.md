@@ -12,6 +12,6 @@ tags:
 # From Docker Command Line
 
 ## Connections
-- [[Usage Examples_1]] - `contains` [EXTRACTED]
+- [[Usage Examples]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

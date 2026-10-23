@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "DelegationManager"
+community: "HeuristicClassifier"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/HeuristicClassifier
 ---
 
 # FR3: System Integrity
@@ -21,4 +21,4 @@ tags:
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
 - [[prompt_guard.py_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DelegationManager
+#graphify/concept #graphify/EXTRACTED #community/HeuristicClassifier
