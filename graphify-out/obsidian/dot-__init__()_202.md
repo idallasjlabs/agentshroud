@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "UserSessionManager"
-location: "L437"
+community: "AuditExportConfig"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/AuditExportConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[AuditExportConfig_1]] - `references` [EXTRACTED]
+- [[AuditExporter]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/AuditExportConfig

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "_pcm_bytes"
-location: "L91"
+community: "_t (2)"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/_t_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter_1]] - `method` [EXTRACTED]
+- [[dot-update()]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Path_57]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/_t_2

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "api.py (2)"
-location: "L69"
+community: "plan_remediation"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/plan_remediation
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

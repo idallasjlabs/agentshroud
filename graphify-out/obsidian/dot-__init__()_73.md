@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L82"
+community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never

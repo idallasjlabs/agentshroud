@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "1. Accomplishments This Phase"
-location: "L50"
+community: "TestEgressTelegramNotify"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/TestEgressTelegramNotify
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()_2]] - `references` [EXTRACTED]
-- [[export()]] - `references` [EXTRACTED]
-- [[export-telegram-history.py]] - `imports_from` [EXTRACTED]
+- [[build_weekly_summary()]] - `references` [EXTRACTED]
+- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

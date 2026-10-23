@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # default_config()
@@ -15,4 +15,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

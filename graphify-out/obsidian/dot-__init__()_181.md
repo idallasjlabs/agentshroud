@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L205"
+community: "Usage"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Usage
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_59]] - `references` [EXTRACTED]
+- [[_DummyTargetWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/Usage

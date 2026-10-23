@@ -1,26 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "lifespan()"
-location: "L1"
+community: "test_gemini_openai_translator.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/test_gemini_openai_translatorpy
 ---
 
-# auth.py.md
+# auth.py
 
 ## Connections
-- [[Auth Errors]] - `references` [INFERRED]
-- [[GatewayConfig_3]] - `references` [EXTRACTED]
-- [[RateLimiter_1]] - `references` [EXTRACTED]
+- [[Config Keys Read_6]] - `contains` [EXTRACTED]
+- [[Environment Variables_16]] - `contains` [EXTRACTED]
+- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[HTTP Responses]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
+- [[Purpose_147]] - `contains` [EXTRACTED]
+- [[Related_48]] - `contains` [EXTRACTED]
+- [[Responsibilities_51]] - `contains` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
-- [[create_auth_dependency()]] - `references` [EXTRACTED]
-- [[get_auth_dependency()]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[python-jose_1]] - `references` [INFERRED]
-- [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
-- [[verify_token()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lifespan
+#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

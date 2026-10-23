@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "ResourceGuard"
-location: "L66"
+community: "MCPPermissionManager (2)"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/MCPPermissionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Svc]] - `method` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

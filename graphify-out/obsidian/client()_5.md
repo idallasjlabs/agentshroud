@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L121"
+community: "UserSessionManager (3)"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/UserSessionManager_3
 ---
 
 # client()
 
 ## Connections
-- [[test_op_proxy.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L45"
+community: ".proxy_messages()"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/proxy_messages
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

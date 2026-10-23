@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L62"
+community: "test_soc_bots.py"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/test_soc_botspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
-- [[AuditEvent]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

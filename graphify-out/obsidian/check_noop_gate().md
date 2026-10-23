@@ -18,7 +18,7 @@ tags:
 - [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - `references` [EXTRACTED]
 - [[_capture_pins()]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_discover()]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]

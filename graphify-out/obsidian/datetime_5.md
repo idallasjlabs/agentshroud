@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "TestEgressTelegramNotify"
-location: "L140"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/archive_old_events
 ---
 
 # datetime
 
 ## Connections
-- [[build_weekly_summary()]] - `references` [EXTRACTED]
-- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

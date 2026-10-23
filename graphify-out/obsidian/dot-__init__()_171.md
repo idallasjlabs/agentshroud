@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L126"
+community: "SharedMemoryManager"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/SharedMemoryManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

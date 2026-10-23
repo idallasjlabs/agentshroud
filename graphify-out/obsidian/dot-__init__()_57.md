@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "_make_proxy()"
-location: "L73"
+community: "StdioConnection"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig]] - `references` [EXTRACTED]
-- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "WebProxy"
-location: "L54"
+community: "test_voice_latency_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/test_voice_latency_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

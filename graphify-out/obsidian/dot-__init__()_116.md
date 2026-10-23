@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L87"
+community: "SlackAPIProxy"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/SlackAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

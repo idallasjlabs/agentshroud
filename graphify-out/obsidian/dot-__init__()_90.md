@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "AgentTarget"
-location: "L57"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

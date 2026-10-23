@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L605"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

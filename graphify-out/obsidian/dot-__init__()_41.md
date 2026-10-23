@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
-location: "L37"
+community: "scanner_integration.py"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/scanner_integrationpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

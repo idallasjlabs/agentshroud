@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Production Safety Checklist (SKILL)"
-location: "L42"
+community: "api.py"
+location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/code #graphify/EXTRACTED #community/apipy

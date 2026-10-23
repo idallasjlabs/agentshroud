@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L28"
+community: "Any"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Any
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Any

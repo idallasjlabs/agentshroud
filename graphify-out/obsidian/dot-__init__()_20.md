@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L348"
+community: "MiddlewareManager"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

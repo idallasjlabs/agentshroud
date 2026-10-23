@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "ContextSegment"
-location: "L43"
+community: "test_agent_cve_registry.py (2)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/test_agent_cve_registrypy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Path_62]] - `references` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

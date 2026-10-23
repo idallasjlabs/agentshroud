@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "EgressFilterConfig (2) (2)"
-location: "L17"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .__call__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

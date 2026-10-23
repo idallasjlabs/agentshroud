@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L584"
+community: "agentshroud-blueteam/SKILL.md (2)"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
-- [[PatternRule]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

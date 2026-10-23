@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L133"
+community: "AgentShroud™ Brand Guidelines"
+location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

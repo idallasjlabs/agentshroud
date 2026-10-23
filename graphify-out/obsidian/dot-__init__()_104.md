@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Job details"
-location: "L186"
+community: "ConfigIntegrityMonitor"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/ConfigIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[_Rule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Job_details
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

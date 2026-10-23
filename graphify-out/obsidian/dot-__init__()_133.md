@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L64"
+community: "HeuristicClassifier"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/HeuristicClassifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_48]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

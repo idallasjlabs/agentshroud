@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L446"
+community: "TestMultipartOutboundPipeline"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/TestMultipartOutboundPipeline
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Event]] - `method` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

@@ -17,6 +17,6 @@ tags:
 - [[alert_dispatcher.py]] - `references` [INFERRED]
 - [[clamav_scanner.py]] - `references` [INFERRED]
 - [[openscap]] - `conceptually_related_to` [EXTRACTED]
-- [[trivy_1]] - `references` [EXTRACTED]
+- [[trivy]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EgressFilter

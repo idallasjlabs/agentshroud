@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "_wrap_response()"
-location: "L55"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

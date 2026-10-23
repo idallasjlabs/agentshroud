@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L100"
+community: "api.py (2)"
+location: "L8633"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/apipy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

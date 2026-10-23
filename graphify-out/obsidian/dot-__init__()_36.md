@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
 community: "ReportStore"
-location: "L32"
+location: "L449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[_StubForwarder]] - `method` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ReportStore

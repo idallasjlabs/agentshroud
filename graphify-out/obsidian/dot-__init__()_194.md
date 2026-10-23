@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "_wrap_response() (4)"
-location: "L20"
+community: "A2AGovernanceProxy"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/A2AGovernanceProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
-- [[LogSanitizer_1]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

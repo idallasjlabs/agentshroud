@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L34"
+community: "test_llm_proxy.py"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/test_llm_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResponse]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

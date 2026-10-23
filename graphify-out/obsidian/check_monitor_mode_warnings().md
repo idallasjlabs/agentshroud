@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "TestEnforceDefaults"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestEnforceDefaults
 ---
 
 # check_monitor_mode_warnings()
@@ -20,4 +20,4 @@ tags:
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults

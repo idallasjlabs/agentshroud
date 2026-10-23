@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_setup_secrets.sh"
 type: "code"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "setup-secrets.sh"
 location: "L31-L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/setup-secretssh
 ---
 
 # check
@@ -17,4 +17,4 @@ tags:
 - [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
 - [[test_setup_secrets.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

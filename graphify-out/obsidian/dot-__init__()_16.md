@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L86"
+community: "ContextGuard"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L69"
+community: "KeyVault"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/KeyVault
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[KeyVaultConfig]] - `calls` [EXTRACTED]
+- [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/KeyVault

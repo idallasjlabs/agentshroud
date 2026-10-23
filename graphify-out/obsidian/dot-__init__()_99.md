@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L314"
+community: "MCPInspector"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuard_1]] - `method` [EXTRACTED]
-- [[_Rule]] - `references` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
+- [[MCPInspector]] - `references` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

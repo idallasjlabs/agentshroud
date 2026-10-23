@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L67"
+community: "TelegramAPIProxy (3)"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/TelegramAPIProxy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig]] - `references` [EXTRACTED]
-- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

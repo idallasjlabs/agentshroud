@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "1. Accomplishments This Phase"
-location: "L43"
+community: "A2AMethod"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/A2AMethod
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()]] - `references` [EXTRACTED]
-- [[export-bot-conversations.py]] - `imports_from` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

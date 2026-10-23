@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "._make_proxy()"
-location: "L88"
+community: "MemoryIntegrityMonitor"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/MemoryIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
-- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceLimits]] - `references` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

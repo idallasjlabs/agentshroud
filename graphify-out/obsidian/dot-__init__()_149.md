@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_playback_state.c"
-location: "L36"
+community: "AgentTarget"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvironmentGuard]] - `method` [EXTRACTED]
+- [[_StubForwarder_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

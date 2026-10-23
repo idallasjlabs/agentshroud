@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L32"
+community: "1. GitHub MCP Authentication Reset (2)"
+location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/1_GitHub_MCP_Authentication_Reset_2
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome_1]] - `calls` [EXTRACTED]
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2

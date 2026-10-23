@@ -15,7 +15,7 @@ tags:
 - [[dot-test_after_upgrade()]] - `calls` [EXTRACTED]
 - [[dot-test_no_history_unknown()]] - `calls` [EXTRACTED]
 - [[dot-test_with_env_var()]] - `calls` [EXTRACTED]
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[Check the currently installed OpenClaw version.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
@@ -23,6 +23,6 @@ tags:
 - [[get_current_version()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `imports` [EXTRACTED]
+- [[version_routes.py_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

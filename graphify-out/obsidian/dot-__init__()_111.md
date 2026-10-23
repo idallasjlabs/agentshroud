@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "_wrap_response() (2)"
-location: "L62"
+community: "UserSessionManager (2)"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/UserSessionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[_Event]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

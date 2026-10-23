@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Usage"
-location: "L88"
+community: "_pcm_bytes"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/_pcm_bytes
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
+- [[_MockWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L46"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

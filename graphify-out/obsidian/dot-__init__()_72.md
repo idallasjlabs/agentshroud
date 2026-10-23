@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
-location: "L86"
+community: "EgressFilterConfig (2)"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/EgressFilterConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L214"
+community: "ServiceManager"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `references` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role_18]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

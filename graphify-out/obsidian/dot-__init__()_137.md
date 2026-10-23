@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L598"
+community: "ToolResultSanitizer"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

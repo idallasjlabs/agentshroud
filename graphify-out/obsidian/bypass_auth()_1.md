@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "TestPatternDetection"
+community: "UserSessionManager (2) (2)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/UserSessionManager_2_2
 ---
 
 # bypass_auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

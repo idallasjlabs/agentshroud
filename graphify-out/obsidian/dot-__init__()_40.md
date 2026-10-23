@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)"
-location: "L142"
+community: "scanner_integration.py"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_4
+  - community/scanner_integrationpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_4
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Compose the human-readable weekly summary posted as the comment.      - commits]] - `rationale_for` [EXTRACTED]
-- [[datetime_5]] - `references` [EXTRACTED]
+- [[datetime_4]] - `references` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
 

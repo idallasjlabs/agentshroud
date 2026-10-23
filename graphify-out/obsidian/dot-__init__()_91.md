@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "AgentTarget"
-location: "L60"
+community: "TestOutboundPipelineIntegration"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

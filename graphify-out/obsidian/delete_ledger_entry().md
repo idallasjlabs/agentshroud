@@ -12,7 +12,7 @@ tags:
 # delete_ledger_entry()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - `rationale_for` [EXTRACTED]
 - [[delete]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

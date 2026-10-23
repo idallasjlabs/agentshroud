@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "TestNewPatternsV080"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # apply-patches.js Invalid Config Injection Bug
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

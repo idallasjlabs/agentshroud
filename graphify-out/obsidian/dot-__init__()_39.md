@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L140"
+community: "Browser — Secure Browser Automation (6)"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Browser__Secure_Browser_Automation_6
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6

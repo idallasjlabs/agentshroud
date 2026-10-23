@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L33"
+community: "test_wazuh_watchdog.py (2)"
+location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/test_wazuh_watchdogpy_2
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `references` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy_2

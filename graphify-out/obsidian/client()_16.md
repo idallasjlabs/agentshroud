@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L92"
+community: "UserSessionManager (2) (2)"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/UserSessionManager_2_2
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

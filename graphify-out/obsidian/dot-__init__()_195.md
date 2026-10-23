@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L116"
+community: "_make_proxy"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/_make_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

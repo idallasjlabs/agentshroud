@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "UserSessionManager"
-location: "L55"
+community: "EgressFilterConfig"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
+- [[Path_67]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

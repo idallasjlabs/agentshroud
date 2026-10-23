@@ -22,12 +22,12 @@ tags:
 - [[dot-test_vacuum_failure_does_not_discard_a_successful_archive()]] - `calls` [EXTRACTED]
 - [[dot-test_vacuum_reduces_file_size_after_bulk_delete()]] - `calls` [EXTRACTED]
 - [[dot-test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `calls` [EXTRACTED]
-- [[AuditStore_1]] - `references` [EXTRACTED]
+- [[AuditStore]] - `references` [EXTRACTED]
 - [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - `rationale_for` [EXTRACTED]
-- [[Path_34]] - `references` [EXTRACTED]
+- [[Path_39]] - `references` [EXTRACTED]
 - [[_cli()]] - `calls` [EXTRACTED]
 - [[audit_archive.py]] - `contains` [EXTRACTED]
-- [[datetime_7]] - `references` [EXTRACTED]
+- [[datetime_5]] - `references` [EXTRACTED]
 - [[test_audit_archive.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/archive_old_events

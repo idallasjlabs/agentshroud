@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "PortManager"
-location: "L61"
+community: "NetworkSecurityFinding"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/NetworkSecurityFinding
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

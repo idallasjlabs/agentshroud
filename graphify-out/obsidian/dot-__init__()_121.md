@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L58"
+community: "Any"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Any
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Any

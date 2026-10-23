@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: ".proxy_messages()"
-location: "L65"
+community: "TelegramAPIProxy (3)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/TelegramAPIProxy_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

@@ -23,9 +23,9 @@ tags:
 - [[check_hermes()]] - `defines` [EXTRACTED]
 - [[check_openclaw()]] - `defines` [EXTRACTED]
 - [[fail()_3]] - `defines` [EXTRACTED]
-- [[pass()_2]] - `defines` [EXTRACTED]
+- [[pass()_3]] - `defines` [EXTRACTED]
 - [[security_review()]] - `semantically_similar_to` [INFERRED]
 - [[update-agentshroud.sh]] - `calls` [EXTRACTED]
-- [[warn()_3]] - `defines` [EXTRACTED]
+- [[warn()_2]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

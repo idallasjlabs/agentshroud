@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
-location: "L45"
+community: "UserSessionManager"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

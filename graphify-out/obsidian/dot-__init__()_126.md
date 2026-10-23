@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L278"
+community: "ModuleStatsCollector"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ModuleStatsCollector
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L20"
+community: "KillSwitchMonitor"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KillSwitchMonitor
 ---
 
 # config()
 
 ## Connections
-- [[KeyVaultConfig]] - `calls` [EXTRACTED]
-- [[test_key_vault.py]] - `contains` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "RBACConfig"
-location: "L138"
+community: "MiddlewareManager (2)"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
-- [[Path_54]] - `references` [EXTRACTED]
-- [[UserSessionManager]] - `method` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

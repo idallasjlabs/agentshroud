@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L55"
+community: "test_soc_services_coverage.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/test_soc_services_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy

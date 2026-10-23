@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L191"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

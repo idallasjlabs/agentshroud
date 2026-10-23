@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "The 8D Investigation Process"
-location: "L65"
+community: "Colima & Docker Operations Guide — AgentShroud"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditExportConfig]] - `references` [EXTRACTED]
-- [[AuditExporter]] - `method` [EXTRACTED]
-- [[AuditStore]] - `references` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

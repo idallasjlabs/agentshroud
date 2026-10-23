@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L388"
+community: "AlertDispatcher (3)"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/AlertDispatcher_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "The 8D Investigation Process"
-location: "L28"
+community: "format_cve_report()"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/format_cve_report
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

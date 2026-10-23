@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L33"
+community: "test_soc_realtime_coverage.py"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/test_soc_realtime_coveragepy
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

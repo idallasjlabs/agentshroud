@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L95"
+community: "export-bot-conversations.py (2)"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/export-bot-conversationspy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig_1]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2

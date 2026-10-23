@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L64"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
-- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "Any"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Any
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[Any_41]] - `references` [EXTRACTED]
-- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[ThresholdConfig]] - `calls` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/Any

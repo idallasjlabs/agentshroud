@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L72"
+community: "Enum"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Enum
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyVault]] - `method` [EXTRACTED]
-- [[KeyVaultConfig]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
+- [[WebSocket_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Enum

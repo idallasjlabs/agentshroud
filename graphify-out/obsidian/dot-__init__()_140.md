@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L210"
+community: "api.py (2)"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/apipy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[FakeProcess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/apipy_2

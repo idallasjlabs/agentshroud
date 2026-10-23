@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L38"
+community: "test_a2a_policy.py"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/test_a2a_policypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

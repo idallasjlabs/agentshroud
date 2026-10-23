@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L57"
+community: "UserSessionManager (2) (2)"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/UserSessionManager_2_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

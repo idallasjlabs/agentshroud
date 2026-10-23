@@ -15,7 +15,7 @@ tags:
 - [[dot-test_all_clean()_1]] - `calls` [EXTRACTED]
 - [[dot-test_empty_summaries()]] - `calls` [EXTRACTED]
 - [[dot-test_partial_tools()]] - `calls` [EXTRACTED]
-- [[Any_45]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 - [[Calculate weighted overall security score.      Args         summaries Dict ma]] - `rationale_for` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]

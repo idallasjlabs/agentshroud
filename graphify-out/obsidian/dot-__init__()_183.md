@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L154"
+community: "env_guard.py"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/env_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyInjector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

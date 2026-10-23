@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Browser — Secure Browser Automation (6)"
-location: "L36"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_6
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_6
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

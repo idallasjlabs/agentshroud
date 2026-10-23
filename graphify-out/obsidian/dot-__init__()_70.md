@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
-location: "L51"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

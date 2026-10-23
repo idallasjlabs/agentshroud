@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "AgentTarget"
-location: "L412"
+community: "PromptGuard"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/PromptGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

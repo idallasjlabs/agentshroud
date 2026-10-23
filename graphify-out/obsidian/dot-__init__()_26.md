@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L187"
+community: "TelegramAPIProxy (2)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TelegramAPIProxy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileSandboxConfig]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

@@ -1,17 +1,19 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Path (2)"
-location: "L66"
+community: "UserSessionManager (2)"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/UserSessionManager_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `references` [EXTRACTED]
+- [[A2AProxy_1]] - `method` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L47"
+community: "MemoryIntegrityMonitor"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MemoryIntegrityMonitor
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPToolCall_1]] - `method` [EXTRACTED]
+- [[ContentThreat]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

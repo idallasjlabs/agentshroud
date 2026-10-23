@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L70"
+community: "ContextGuard"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `method` [EXTRACTED]
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

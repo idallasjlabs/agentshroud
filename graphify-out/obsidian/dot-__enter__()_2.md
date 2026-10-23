@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
 community: "TelegramAPIProxy (3)"
-location: "L323"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__enter__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[_StreamResp]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

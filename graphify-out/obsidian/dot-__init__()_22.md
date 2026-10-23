@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "TrustConfig (2)"
-location: "L88"
+community: "KeyVault"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[KeyLeakDetector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/KeyVault

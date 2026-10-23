@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
-location: "L445"
+community: "MCPPolicyEngine (2)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/MCPPolicyEngine_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

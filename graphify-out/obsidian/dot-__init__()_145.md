@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Message Composition with MML (MIME Meta Language)"
-location: "L209"
+community: "AgentTarget (2)"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/AgentTarget_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

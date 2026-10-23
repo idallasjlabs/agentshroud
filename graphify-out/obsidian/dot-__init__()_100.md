@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "SkillGuard"
-location: "L155"
+community: "check-vendor-compat.sh"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/check-vendor-compatsh
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
+- [[CanaryConfig]] - `references` [EXTRACTED]
+- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

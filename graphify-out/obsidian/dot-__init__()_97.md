@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L29"
+community: "SkillGuard"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/SkillGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
-- [[WebSocket_2]] - `references` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

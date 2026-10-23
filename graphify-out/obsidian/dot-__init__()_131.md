@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L31"
+community: "A2APolicyConfig"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/A2APolicyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

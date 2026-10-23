@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "lifespan()"
-location: "L18"
+community: "create_auth_dependency()"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/create_auth_dependency
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._2]] - `rationale_for` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Request_8]] - `references` [EXTRACTED]
+- [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

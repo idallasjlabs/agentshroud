@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "ReportStore"
-location: "L449"
+community: "MultiTurnTracker"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/MultiTurnTracker
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ThresholdConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

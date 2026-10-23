@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalQueueConfig (2) (2)"
+community: "asyncio"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_2
+  - community/asyncio
 ---
 
 # asyncio
@@ -356,4 +356,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

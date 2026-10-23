@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "soc/router.py"
-location: "L97"
+community: "SessionManager"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/SessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `references` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
+- [[Path_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/SessionManager

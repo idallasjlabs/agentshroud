@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/telegram_gateway_relay.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Required Software"
-location: "L53"
+community: "KillSwitchMonitor"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Required_Software
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Required_Software
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

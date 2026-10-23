@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L29"
+community: "ingest_api/main.py"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/ingest_api/mainpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[ToolACLConfig]] - `references` [EXTRACTED]
+- [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
