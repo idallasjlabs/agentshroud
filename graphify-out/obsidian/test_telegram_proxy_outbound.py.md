@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # test_telegram_proxy_outbound.py
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `imports` [EXTRACTED]
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_3]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `contains` [EXTRACTED]
 - [[TestDefaultBotId]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

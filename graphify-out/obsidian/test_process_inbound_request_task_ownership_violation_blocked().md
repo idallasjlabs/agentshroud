@@ -12,7 +12,7 @@ tags:
 # test_process_inbound_request_task_ownership_violation_blocked()
 
 ## Connections
-- [[A2APolicyEngine]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
 - [[A2AProxy]] - `references` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
 - [[_jsonrpc()]] - `calls` [EXTRACTED]

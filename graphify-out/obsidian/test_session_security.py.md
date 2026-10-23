@@ -15,12 +15,12 @@ tags:
 - [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - `conceptually_related_to` [EXTRACTED]
 - [[TestEventInjection]] - `contains` [EXTRACTED]
 - [[TestInstructionNonce]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_3]] - `contains` [EXTRACTED]
+- [[TestRateLimiting]] - `contains` [EXTRACTED]
 - [[TestSessionCleanup]] - `contains` [EXTRACTED]
 - [[TestSessionCreation]] - `contains` [EXTRACTED]
 - [[TestSessionRotation]] - `contains` [EXTRACTED]
 - [[TestSessionValidation]] - `contains` [EXTRACTED]
-- [[manager()_4]] - `contains` [EXTRACTED]
+- [[manager()_1]] - `contains` [EXTRACTED]
 - [[session_security.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

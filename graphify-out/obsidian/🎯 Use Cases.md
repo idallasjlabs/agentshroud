@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "AgentShroud Documentation"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/AgentShroud_Documentation
 ---
 
 # 🎯 Use Cases
@@ -17,4 +17,4 @@ tags:
 - [[Personal AI Assistant]] - `contains` [EXTRACTED]
 - [[Secure Development]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

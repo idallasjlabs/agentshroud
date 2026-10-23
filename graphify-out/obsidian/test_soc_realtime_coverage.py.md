@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "MiddlewareManager (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/MiddlewareManager_2
 ---
 
 # test_soc_realtime_coverage.py
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
+- [[Action_3]] - `imports` [EXTRACTED]
 - [[PermissionResult]] - `imports` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_19]] - `imports` [EXTRACTED]
-- [[SCLCaller_2]] - `imports` [EXTRACTED]
+- [[Resource_2]] - `imports` [EXTRACTED]
+- [[Role_64]] - `imports` [EXTRACTED]
+- [[SCLCaller_1]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler_2]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity_8]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `contains` [EXTRACTED]
 - [[TestEventFanOut]] - `contains` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_FakeBus]] - `contains` [EXTRACTED]
-- [[_FakeRBAC]] - `contains` [EXTRACTED]
+- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
 - [[_audit_entry()]] - `contains` [EXTRACTED]
 - [[_block_run_secrets()]] - `contains` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

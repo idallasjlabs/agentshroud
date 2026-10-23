@@ -16,7 +16,7 @@ tags:
 - [[Function Details_20]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_22]] - `contains` [EXTRACTED]
 - [[Key Rule ID Sets]] - `contains` [EXTRACTED]
-- [[Purpose_122]] - `contains` [EXTRACTED]
+- [[Purpose_120]] - `contains` [EXTRACTED]
 - [[Related_26]] - `contains` [EXTRACTED]
 - [[Responsibilities_24]] - `contains` [EXTRACTED]
 - [[Threat Model_17]] - `contains` [EXTRACTED]

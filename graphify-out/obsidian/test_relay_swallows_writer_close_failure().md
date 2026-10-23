@@ -12,7 +12,7 @@ tags:
 # test_relay_swallows_writer_close_failure()
 
 ## Connections
-- [[StreamReader]] - `calls` [EXTRACTED]
+- [[StreamReader_3]] - `calls` [EXTRACTED]
 - [[_CloseRaisesWriter]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

@@ -12,9 +12,9 @@ tags:
 # test_security_fixes.py
 
 ## Connections
-- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
-- [[SSHProxy]] - `imports` [EXTRACTED]
+- [[SSHProxy_1]] - `imports` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `contains` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `contains` [EXTRACTED]
 - [[TestDashboardSecureCookie]] - `contains` [EXTRACTED]
@@ -26,9 +26,9 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_11]] - `contains` [EXTRACTED]
+- [[client()_10]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
-- [[sync_client()_1]] - `contains` [EXTRACTED]
+- [[sync_client()]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

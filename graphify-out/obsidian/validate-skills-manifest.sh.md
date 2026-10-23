@@ -12,7 +12,7 @@ tags:
 # validate-skills-manifest.sh
 
 ## Connections
-- [[_sha256()_1]] - `defines` [EXTRACTED]
+- [[_sha256()_2]] - `defines` [EXTRACTED]
 - [[sync-llm-settings.sh]] - `references` [EXTRACTED]
 - [[test-skills-sync.sh]] - `calls` [EXTRACTED]
 - [[validate-skills-manifest.sh script]] - `contains` [EXTRACTED]

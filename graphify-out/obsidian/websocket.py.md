@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Enum
 ---
 
 # websocket.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler_2]] - `contains` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity_8]] - `imports` [EXTRACTED]
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/Enum

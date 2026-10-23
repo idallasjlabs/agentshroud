@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "ModuleStatsCollector"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/ModuleStatsCollector
 ---
 
 # test_unknown_module_created_on_demand()
@@ -15,4 +15,4 @@ tags:
 - [[ModuleStatsCollector]] - `calls` [EXTRACTED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

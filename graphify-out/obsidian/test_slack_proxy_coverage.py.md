@@ -12,7 +12,7 @@ tags:
 # test_slack_proxy_coverage.py
 
 ## Connections
-- [[SlackAPIProxy_1]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
 - [[TestBodyParsing]] - `contains` [EXTRACTED]
 - [[TestCallSlackApi]] - `contains` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[TestProvisionGroupChannel]] - `contains` [EXTRACTED]
 - [[TestRedactionCountErrorSwallow]] - `contains` [EXTRACTED]
 - [[_RaisingRedactionResult]] - `contains` [EXTRACTED]
-- [[_make_proxy()_1]] - `contains` [EXTRACTED]
+- [[_make_proxy()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

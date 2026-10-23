@@ -12,6 +12,6 @@ tags:
 # x-agentshroud-user-id header must override spoofable body agent_id.
 
 ## Connections
-- [[dot-test_header_user_id_overrides_body_agent_id()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_header_user_id_overrides_body_agent_id()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

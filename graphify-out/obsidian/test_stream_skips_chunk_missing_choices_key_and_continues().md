@@ -12,7 +12,7 @@ tags:
 # test_stream_skips_chunk_missing_choices_key_and_continues()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - `rationale_for` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 

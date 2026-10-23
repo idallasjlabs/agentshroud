@@ -12,7 +12,7 @@ tags:
 # test_resolves_hermes_target()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
 - [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - `rationale_for` [EXTRACTED]

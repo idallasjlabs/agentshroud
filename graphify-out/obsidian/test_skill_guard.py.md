@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_3]] - `imports` [EXTRACTED]
+- [[ScanResult_4]] - `imports` [EXTRACTED]
 - [[Severity]] - `imports` [EXTRACTED]
 - [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillScanError]] - `imports` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[TestObfuscation]] - `contains` [EXTRACTED]
 - [[TestOversizedUnscannable]] - `contains` [EXTRACTED]
 - [[TestPathTraversal]] - `contains` [EXTRACTED]
-- [[TestPrivilegeEscalation]] - `contains` [EXTRACTED]
+- [[TestPrivilegeEscalation_1]] - `contains` [EXTRACTED]
 - [[TestReloadIntegration]] - `contains` [EXTRACTED]
 - [[TestScanEntrypoint]] - `contains` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `contains` [EXTRACTED]

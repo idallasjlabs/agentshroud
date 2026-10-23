@@ -12,7 +12,7 @@ tags:
 # test_unknown_peer_is_denied_by_default()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
+- [[A2APolicyEngine]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[ContentFinding]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[FindingSeverity]] - `contains` [EXTRACTED]
 - [[ScanResult]] - `contains` [EXTRACTED]
 - [[WebContentScanner]] - `contains` [EXTRACTED]
 - [[clamav_scanner.py]] - `semantically_similar_to` [INFERRED]
 - [[test_xml_dtd_control.py]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py_2]] - `references` [EXTRACTED]
-- [[web_config.py_2]] - `references` [EXTRACTED]
+- [[web_config.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

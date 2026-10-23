@@ -12,7 +12,7 @@ tags:
 # test_session_manager.py
 
 ## Connections
-- [[TestAccessControl]] - `contains` [EXTRACTED]
+- [[TestAccessControl_1]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestTrustLevel]] - `contains` [EXTRACTED]
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[mgr()]] - `contains` [EXTRACTED]
+- [[mgr()_1]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig_2

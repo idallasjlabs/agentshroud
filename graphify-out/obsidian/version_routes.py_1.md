@@ -2,16 +2,26 @@
 source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
 community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2)"
-location: "L1"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2
 ---
 
-# version_routes.py.md
+# version_routes.py
 
 ## Connections
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[Config Keys Read_3]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_5]] - `contains` [EXTRACTED]
+- [[Function Details_15]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_3]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_17]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_4]] - `contains` [EXTRACTED]
+- [[Purpose_115]] - `contains` [EXTRACTED]
+- [[Related_21]] - `contains` [EXTRACTED]
+- [[Responsibilities_19]] - `contains` [EXTRACTED]
+- [[VersionRequest Fields]] - `contains` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2

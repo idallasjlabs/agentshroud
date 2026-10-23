@@ -21,7 +21,7 @@ tags:
 - [[cmd_rm()]] - `defines` [EXTRACTED]
 - [[cmd_shell()]] - `defines` [EXTRACTED]
 - [[cmd_tree()]] - `defines` [EXTRACTED]
-- [[usage()_7]] - `defines` [EXTRACTED]
+- [[usage()_5]] - `defines` [EXTRACTED]
 - [[workspace.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

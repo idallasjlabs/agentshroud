@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "cli/main.py"
-location: "L249"
+community: "asyncio"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/asyncio
 ---
 
 # test_preferred_scan_binary_uses_daemon_when_listening()
 
 ## Connections
-- [[preferred_scan_binary()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/asyncio

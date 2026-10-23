@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_shared_memory.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "TestToolChainAnalyzer (2)"
-location: "L55"
+community: "KillSwitchMonitor (5)"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/KillSwitchMonitor_5
 ---
 
 # tmp_workspace()
 
 ## Connections
-- [[test_shared_memory.py]] - `contains` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5

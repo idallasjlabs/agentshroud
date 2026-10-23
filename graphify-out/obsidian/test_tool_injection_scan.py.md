@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "ProxyAction (2)"
+community: "ProxyAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction_2
+  - community/ProxyAction
 ---
 
 # test_tool_injection_scan.py
@@ -17,4 +17,4 @@ tags:
 - [[TestToolResultInjectionScanner]] - `contains` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

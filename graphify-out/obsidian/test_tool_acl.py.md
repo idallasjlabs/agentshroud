@@ -16,7 +16,7 @@ tags:
 - [[COLLABORATOR_ALLOWED_TOOLS]] - `references` [EXTRACTED]
 - [[PRIVATE_TOOLS]] - `references` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[Role_19]] - `imports` [EXTRACTED]
+- [[Role_64]] - `imports` [EXTRACTED]
 - [[TeamsConfig_1]] - `imports` [EXTRACTED]
 - [[TestAdminAccess]] - `contains` [EXTRACTED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `contains` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[ToolACLEnforcer]] - `references` [EXTRACTED]
 - [[_make_rbac()]] - `contains` [EXTRACTED]
 - [[can_use_tool_from_origin]] - `references` [EXTRACTED]
-- [[enforcer()]] - `contains` [EXTRACTED]
-- [[rbac()]] - `contains` [EXTRACTED]
+- [[enforcer()_2]] - `contains` [EXTRACTED]
+- [[rbac()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

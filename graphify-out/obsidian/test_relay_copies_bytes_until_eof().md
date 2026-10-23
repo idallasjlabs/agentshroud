@@ -12,7 +12,7 @@ tags:
 # test_relay_copies_bytes_until_eof()
 
 ## Connections
-- [[StreamReader]] - `calls` [EXTRACTED]
+- [[StreamReader_3]] - `calls` [EXTRACTED]
 - [[_MockWriter]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

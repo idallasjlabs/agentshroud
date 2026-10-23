@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "test_sanitizer.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/test_sanitizerpy
 ---
 
 # test_sanitizer.py
@@ -25,4 +25,4 @@ tags:
 - [[test_telegram_uid_not_redacted_as_phone()]] - `contains` [EXTRACTED]
 - [[test_uid_inside_parens_preserved()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy

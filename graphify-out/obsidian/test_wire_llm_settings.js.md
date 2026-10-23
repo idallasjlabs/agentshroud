@@ -15,9 +15,9 @@ tags:
 - [[HERMES_INIT]] - `contains` [EXTRACTED]
 - [[OC_INIT]] - `contains` [EXTRACTED]
 - [[REPO]] - `contains` [EXTRACTED]
-- [[assert()_1]] - `contains` [EXTRACTED]
-- [[fs_6]] - `contains` [EXTRACTED]
-- [[os_1]] - `contains` [EXTRACTED]
+- [[assert()]] - `contains` [EXTRACTED]
+- [[fs_5]] - `contains` [EXTRACTED]
+- [[os]] - `contains` [EXTRACTED]
 - [[path_56]] - `contains` [EXTRACTED]
 - [[read()_6]] - `contains` [EXTRACTED]
 - [[readHermesMcpServers()]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[runOpenClawInit()]] - `contains` [EXTRACTED]
 - [[stageDefaults()]] - `contains` [EXTRACTED]
 - [[writeStub()]] - `contains` [EXTRACTED]
-- [[{ spawnSync }_1]] - `contains` [EXTRACTED]
+- [[{ spawnSync }]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestWebAPI

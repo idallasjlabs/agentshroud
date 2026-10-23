@@ -22,7 +22,7 @@ tags:
 - [[TestSkillsManifest]] - `contains` [EXTRACTED]
 - [[TestSkillsReloadEndpoint]] - `contains` [EXTRACTED]
 - [[TestValidateManifest]] - `contains` [EXTRACTED]
-- [[_sha256()_2]] - `contains` [EXTRACTED]
+- [[_sha256()_3]] - `contains` [EXTRACTED]
 - [[_write_tree()_1]] - `contains` [EXTRACTED]
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - `references` [EXTRACTED]

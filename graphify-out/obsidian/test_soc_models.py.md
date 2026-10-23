@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # test_soc_models.py
@@ -17,14 +17,14 @@ tags:
 - [[EgressStatus]] - `imports` [EXTRACTED]
 - [[HealthStatus_1]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
-- [[ResourceUsage_1]] - `imports` [EXTRACTED]
+- [[ResourceUsage_2]] - `imports` [EXTRACTED]
 - [[RiskLevel_6]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
 - [[ServiceStatus_1]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity_8]] - `imports` [EXTRACTED]
 - [[TestContributorRecord]] - `contains` [EXTRACTED]
 - [[TestEgressRequest]] - `contains` [EXTRACTED]
 - [[TestSCLError]] - `contains` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

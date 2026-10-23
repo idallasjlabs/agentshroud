@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_update_db_not_found()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[Update ClamAV virus database using freshclam. Args freshclam_bin Path to…]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]

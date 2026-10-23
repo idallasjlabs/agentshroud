@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
+source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "test_voice_gateway.py (2)"
-location: "L4"
+community: "test_collaborator_tracker.py (5)"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy_2
+  - community/test_collaborator_trackerpy_5
 ---
 
 # usage()
 
 ## Connections
-- [[wait-for-text.sh]] - `defines` [EXTRACTED]
-- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
+- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
+- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy_2
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_5

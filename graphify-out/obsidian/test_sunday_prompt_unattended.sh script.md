@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[fail()_2]] - `calls` [EXTRACTED]
-- [[pass()_1]] - `calls` [EXTRACTED]
+- [[pass()_2]] - `calls` [EXTRACTED]
 - [[test_sunday_prompt_unattended.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2

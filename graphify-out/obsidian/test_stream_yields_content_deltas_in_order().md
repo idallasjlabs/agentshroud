@@ -12,7 +12,7 @@ tags:
 # test_stream_yields_content_deltas_in_order()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[_sse_lines()]] - `calls` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 

@@ -15,7 +15,7 @@ tags:
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[Port-80 downloads are plaintext — malware sampling must keep working.]] - `rationale_for` [EXTRACTED]
-- [[StreamReader]] - `calls` [EXTRACTED]
+- [[StreamReader_3]] - `calls` [EXTRACTED]
 - [[_MockWriter]] - `calls` [EXTRACTED]
 - [[_capture_scans()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # test_test_user_prefix_blocked()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
 - [[UIDs matching test_user prefix must be silently dropped.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
