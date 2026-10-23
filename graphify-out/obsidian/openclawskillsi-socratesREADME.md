@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-socrates/README.md
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/socjs

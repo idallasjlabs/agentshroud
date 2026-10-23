@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
+source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "AWS Cloud Management & FinOps Agent (2)"
-location: "L11"
+community: "MCP Tools Usage (MCPM)"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent_2
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # pass()
 
 ## Connections
-- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
-- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
+- [[test-op-auth.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2
+#graphify/code #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

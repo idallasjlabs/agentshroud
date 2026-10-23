@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L79"
+community: "ingest_api/main.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/ingest_api/mainpy
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

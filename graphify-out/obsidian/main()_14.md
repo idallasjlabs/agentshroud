@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L68"
+community: "Path (2)"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Path_2
 ---
 
 # main()
 
 ## Connections
-- [[Path_22]] - `calls` [EXTRACTED]
-- [[SkillGuard_1]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Path_2

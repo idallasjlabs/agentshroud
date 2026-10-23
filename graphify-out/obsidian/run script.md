@@ -12,7 +12,7 @@ tags:
 # run script
 
 ## Connections
-- [[log()_2]] - `calls` [EXTRACTED]
+- [[log()_1]] - `calls` [EXTRACTED]
 - [[missing()]] - `calls` [EXTRACTED]
 - [[restart()]] - `calls` [EXTRACTED]
 - [[run]] - `contains` [EXTRACTED]

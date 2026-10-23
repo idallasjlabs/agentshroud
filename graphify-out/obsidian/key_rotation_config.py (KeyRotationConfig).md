@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "AgentShroud Documentation"
+community: "test_key_rotation_internals.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/test_key_rotation_internalspy
 ---
 
 # key_rotation_config.py (KeyRotationConfig)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/code #graphify/EXTRACTED #community/test_key_rotation_internalspy

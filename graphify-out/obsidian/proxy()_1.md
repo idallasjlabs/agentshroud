@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L80"
+community: "MCPPermissionManager (2)"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPPermissionManager_2
 ---
 
 # proxy()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
-- [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

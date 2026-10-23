@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # rbac_config.py
@@ -18,7 +18,7 @@ tags:
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `contains` [EXTRACTED]
-- [[Role_19]] - `contains` [EXTRACTED]
+- [[Role_64]] - `contains` [EXTRACTED]
 - [[TeamsConfig_1]] - `imports` [EXTRACTED]
 - [[ToolTier_2]] - `contains` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[socauth.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

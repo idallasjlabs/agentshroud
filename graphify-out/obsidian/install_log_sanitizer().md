@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
-type: "document"
-community: "TestParseHostsLine"
-location: "L49"
+source_file: "gateway/security/log_sanitizer.py"
+type: "code"
+community: "ContextGuard"
+location: "L133"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/ContextGuard
 ---
 
 # install_log_sanitizer()
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[dot-test_install_log_sanitizer_no_error()]] - `calls` [EXTRACTED]
+- [[Install the log sanitizer on all existing loggers.]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[log_sanitizer.py]] - `contains` [EXTRACTED]
+- [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

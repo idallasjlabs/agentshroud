@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MiddlewareManager (3)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MiddlewareManager_3
 ---
 
 # queue()
 
 ## Connections
 - [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

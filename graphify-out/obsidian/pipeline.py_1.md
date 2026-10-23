@@ -1,17 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
-type: "document"
-community: "AgentShroud Development Team — Agile Structure"
+source_file: "gateway/proxy/pipeline.py"
+type: "code"
+community: "SecurityPipeline (2)"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/SecurityPipeline_2
 ---
 
-# pipeline.py.md
+# pipeline.py
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[AuditChain]] - `contains` [EXTRACTED]
+- [[AuditChainEntry]] - `contains` [EXTRACTED]
+- [[BotIncidentSeverity]] - `imports` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[FilterResult_1]] - `imports` [EXTRACTED]
+- [[InjectionAction]] - `imports` [EXTRACTED]
+- [[PipelineAction]] - `contains` [EXTRACTED]
+- [[PipelineResult_1]] - `contains` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_1]] - `contains` [EXTRACTED]
+- [[ViolationType]] - `imports` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_pipeline_unit.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

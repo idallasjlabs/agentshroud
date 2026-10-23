@@ -12,7 +12,7 @@ tags:
 # ledger()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
 - [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 

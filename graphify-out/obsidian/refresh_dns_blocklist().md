@@ -12,9 +12,9 @@ tags:
 # refresh_dns_blocklist()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Trigger an immediate blocklist refresh from upstream adlists. Authentication…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

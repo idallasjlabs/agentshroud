@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # revoke_approved_collaborator()
@@ -21,4 +21,4 @@ tags:
 - [[revoke_collaborator()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

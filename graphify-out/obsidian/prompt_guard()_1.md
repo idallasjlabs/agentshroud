@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L17"
+community: "test_security_integration.py"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_security_integrationpy
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[test_prompt_guard.py]] - `contains` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

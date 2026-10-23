@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "ApprovalQueueConfig (3)"
 location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/ApprovalQueueConfig_3
 ---
 
 # persist_group_create()
@@ -19,4 +19,4 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

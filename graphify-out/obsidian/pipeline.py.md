@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
-type: "code"
-community: "ApprovalQueueConfig"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+type: "document"
+community: "AgentShroud Development Team — Agile Structure"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
-# pipeline.py
+# pipeline.py.md
 
 ## Connections
-- [[AuditChain]] - `contains` [EXTRACTED]
-- [[AuditChainEntry]] - `contains` [EXTRACTED]
-- [[BotIncidentSeverity]] - `imports` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[FilterResult]] - `imports` [EXTRACTED]
-- [[InjectionAction]] - `imports` [EXTRACTED]
-- [[PipelineAction]] - `contains` [EXTRACTED]
-- [[PipelineResult_1]] - `contains` [EXTRACTED]
-- [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `contains` [EXTRACTED]
-- [[ViolationType]] - `imports` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `references` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

@@ -12,9 +12,9 @@ tags:
 # release_blocked_outbound()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Release a blocked outbound message for adminmanual resend flow.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

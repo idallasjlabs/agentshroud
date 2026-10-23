@@ -20,6 +20,6 @@ tags:
 - [[cmd_rm()]] - `calls` [EXTRACTED]
 - [[cmd_shell()]] - `calls` [EXTRACTED]
 - [[cmd_tree()]] - `calls` [EXTRACTED]
-- [[usage()_7]] - `calls` [EXTRACTED]
+- [[usage()_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

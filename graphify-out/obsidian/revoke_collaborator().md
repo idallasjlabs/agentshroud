@@ -12,7 +12,7 @@ tags:
 # revoke_collaborator()
 
 ## Connections
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

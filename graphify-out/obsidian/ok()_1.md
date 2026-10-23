@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_launchd_install.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "camsnap/SKILL.md"
-location: "L22"
+community: "Any"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/camsnap/SKILLmd
+  - community/Any
 ---
 
 # ok()
 
 ## Connections
-- [[test_launchd_install.sh]] - `defines` [EXTRACTED]
-- [[test_launchd_install.sh script]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/camsnap/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Any

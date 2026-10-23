@@ -19,7 +19,7 @@ tags:
 - [[dot-test_plan_is_pure_writes_nothing()]] - `calls` [EXTRACTED]
 - [[dot-test_plan_maps_canonical_to_each_bot_destination()]] - `calls` [EXTRACTED]
 - [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - `rationale_for` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]

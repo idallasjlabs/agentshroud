@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
+source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "AgentShroud Blue Team Security Auditor (2)"
-location: "L46"
+community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
+location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_2
+  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
 ---
 
 # main()
 
 ## Connections
-- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
-- [[curl_json()]] - `calls` [EXTRACTED]
-- [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
+- [[chat_console.py]] - `contains` [EXTRACTED]
+- [[check_status()]] - `calls` [EXTRACTED]
+- [[print_banner()]] - `calls` [EXTRACTED]
+- [[print_help()]] - `calls` [EXTRACTED]
+- [[send_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_2
+#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice

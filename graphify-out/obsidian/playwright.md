@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
+community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
 ---
 
 # playwright.md
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[Playwright_1]] - `contains` [EXTRACTED]
-- [[volumes_1]] - `references` [EXTRACTED]
+- [[volumes]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh

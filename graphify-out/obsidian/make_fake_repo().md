@@ -2,7 +2,7 @@
 source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
 community: "Function Details (5)"
-location: "L221"
+location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED

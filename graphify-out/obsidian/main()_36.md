@@ -1,17 +1,20 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
-location: "L32"
+community: "test_apply_patches.js"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/test_apply_patchesjs
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
+- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
+- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
+- [[render_html()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

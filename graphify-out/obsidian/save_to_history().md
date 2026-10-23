@@ -12,8 +12,8 @@ tags:
 # save_to_history()
 
 ## Connections
-- [[Any_45]] - `references` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
+- [[Path_20]] - `references` [EXTRACTED]
 - [[Save a health report to history.      Args         score Overall score.]] - `rationale_for` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]

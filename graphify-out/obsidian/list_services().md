@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_filters_services_by_bot_image()]] - `calls` [EXTRACTED]
 - [[dot-test_no_bot_id_returns_all_services()]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[get_health()]] - `calls` [EXTRACTED]

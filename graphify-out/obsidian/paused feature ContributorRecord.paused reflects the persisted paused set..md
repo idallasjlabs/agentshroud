@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
+community: "ServiceManager"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+  - community/ServiceManager
 ---
 
 # paused feature: ContributorRecord.paused reflects the persisted paused set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPausedFieldWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

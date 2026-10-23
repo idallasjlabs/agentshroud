@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[FastAPI]] - `references` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[_alert_sanitize()]] - `indirect_call` [INFERRED]
 - [[_audit_chain_heartbeat()]] - `contains` [EXTRACTED]
@@ -39,6 +39,6 @@ tags:
 - [[_wazuh_periodic()]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

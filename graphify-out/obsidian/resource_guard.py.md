@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ResourceGuard]] - `contains` [EXTRACTED]
 - [[ResourceLimits]] - `contains` [EXTRACTED]
-- [[ResourceUsage]] - `contains` [EXTRACTED]
+- [[ResourceUsage_1]] - `contains` [EXTRACTED]
 - [[VRAMHeadroomError]] - `contains` [EXTRACTED]
 - [[egress_monitor.py]] - `references` [EXTRACTED]
 - [[get_resource_guard()]] - `contains` [EXTRACTED]

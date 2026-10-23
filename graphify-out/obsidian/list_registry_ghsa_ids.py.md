@@ -12,7 +12,7 @@ tags:
 # list_registry_ghsa_ids.py
 
 ## Connections
-- [[main()_36]] - `contains` [EXTRACTED]
+- [[main()_34]] - `contains` [EXTRACTED]
 - [[test_list_registry_ghsa_ids.py]] - `implements` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L391"
+community: "export_bot()"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/export_bot
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[Path_64]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/export_bot

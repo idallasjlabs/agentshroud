@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # load_persisted_collaborators()
@@ -19,4 +19,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

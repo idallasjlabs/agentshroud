@@ -1,20 +1,23 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "1. Accomplishments This Phase"
-location: "L148"
+community: "test_daily_cve_report.py"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/test_daily_cve_reportpy
 ---
 
 # main()
 
 ## Connections
-- [[Path_16]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_6]] - `calls` [EXTRACTED]
+- [[_print_plan()]] - `calls` [EXTRACTED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
+- [[load_registry()]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
-type: "code"
-community: "_wrap_response() (4)"
-location: "L133"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+type: "document"
+community: "TestParseHostsLine"
+location: "L49"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/TestParseHostsLine
 ---
 
 # install_log_sanitizer()
 
 ## Connections
-- [[dot-test_install_log_sanitizer_no_error()]] - `calls` [EXTRACTED]
-- [[Install the log sanitizer on all existing loggers.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer_1]] - `calls` [EXTRACTED]
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
-- [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
+- [[Function Details_40]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L112"
+community: "RBACConfig (2)"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/RBACConfig_2
 ---
 
 # mgr()
 
 ## Connections
-- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[Create a UserSessionManager with a temp base workspace and an owner.]] - `rationale_for` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

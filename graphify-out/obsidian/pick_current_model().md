@@ -12,9 +12,9 @@ tags:
 # pick_current_model()
 
 ## Connections
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
 - [[ModelCost]] - `calls` [EXTRACTED]
-- [[main()_24]] - `calls` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

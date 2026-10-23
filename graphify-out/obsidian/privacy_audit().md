@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Audit feed for private-data access policy violations.]] - `rationale_for` [EXTRACTED]
-- [[AuthRequired_2]] - `references` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

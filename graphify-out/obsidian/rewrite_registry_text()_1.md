@@ -12,10 +12,10 @@ tags:
 # rewrite_registry_text()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
 - [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - `rationale_for` [EXTRACTED]
 - [[_py_literal()]] - `calls` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Job_details

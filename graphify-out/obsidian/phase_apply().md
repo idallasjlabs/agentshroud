@@ -31,13 +31,13 @@ tags:
 - [[_wait_for_docker()]] - `calls` [EXTRACTED]
 - [[asb up fullhermes]] - `references` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_apply build loop calls the guard every iteration]] - `references` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 - [[sunday_dev_handoff_gate()]] - `calls` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

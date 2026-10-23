@@ -1,23 +1,23 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Job details"
-location: "L524"
+community: "test_security_toolchain.py (2)"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/test_security_toolchainpy_2
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()_1]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
+- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
+- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
+- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
+- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
+- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Job_details
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2

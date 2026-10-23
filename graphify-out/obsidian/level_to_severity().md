@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "TestVersionRoutes"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # level_to_severity()
@@ -18,4 +18,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

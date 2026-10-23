@@ -12,9 +12,9 @@ tags:
 # list_blocked_domains()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Return a paginated list of blocked domains. Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

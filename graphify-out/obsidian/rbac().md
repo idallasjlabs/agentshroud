@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L41"
+community: "KillSwitchMonitor (5)"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/KillSwitchMonitor_5
 ---
 
 # rbac()
 
 ## Connections
-- [[_make_rbac()]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5

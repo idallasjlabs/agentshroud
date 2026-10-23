@@ -12,10 +12,10 @@ tags:
 # run_trivy_scan()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Run Trivy vulnerability scan.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

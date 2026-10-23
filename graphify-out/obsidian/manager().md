@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "soc/router.py"
-location: "L27"
+community: "MiddlewareManager"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/MiddlewareManager
 ---
 
 # manager()
 
 ## Connections
-- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - `rationale_for` [EXTRACTED]
+- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

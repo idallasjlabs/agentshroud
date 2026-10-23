@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "EgressTelegramNotifier"
-location: "L32"
+community: "Architecture"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Architecture
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[render()_2]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/Architecture

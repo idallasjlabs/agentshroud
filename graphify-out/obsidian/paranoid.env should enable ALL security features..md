@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "ForwardRequest"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/ForwardRequest
 ---
 
 # paranoid.env should enable ALL security features.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParanoidConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

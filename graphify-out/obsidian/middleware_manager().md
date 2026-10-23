@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "._make_proxy()"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_make_proxy
 ---
 
 # middleware_manager()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

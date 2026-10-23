@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Configuration_18]] - `contains` [EXTRACTED]
-- [[Dependencies_18]] - `contains` [EXTRACTED]
+- [[Dependencies_19]] - `contains` [EXTRACTED]
 - [[Environment Variables_12]] - `contains` [EXTRACTED]
 - [[Function Details_19]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_21]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_8]] - `contains` [EXTRACTED]
 - [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
-- [[Purpose_121]] - `contains` [EXTRACTED]
+- [[Purpose_119]] - `contains` [EXTRACTED]
 - [[Related_25]] - `contains` [EXTRACTED]
 - [[Responsibilities_23]] - `contains` [EXTRACTED]
 - [[Threat Model_16]] - `contains` [EXTRACTED]

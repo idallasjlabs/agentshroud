@@ -12,7 +12,7 @@ tags:
 # run_approvals_list()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[approvals_list_empty()]] - `calls` [EXTRACTED]
 - [[approvals_list_formats_rows()]] - `calls` [EXTRACTED]
 - [[format_approvals()]] - `calls` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

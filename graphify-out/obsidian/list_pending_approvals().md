@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "lifespan()"
-location: "L110"
+community: "ApprovalQueueConfig (3)"
+location: "L1650"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/ApprovalQueueConfig_3
 ---
 
 # list_pending_approvals()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[List all pending approval requests      Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
+- [[_app_state()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

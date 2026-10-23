@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-mcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx_2]] - `references` [EXTRACTED]
-- [[PATH_40]] - `requires_env` [EXTRACTED]
+- [[PATH_43]] - `requires_env` [EXTRACTED]
 - [[safari-mcp_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

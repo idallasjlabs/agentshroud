@@ -12,7 +12,7 @@ tags:
 # run_upstream_cve_check()
 
 ## Connections
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
 - [[Fetch one agent's upstream CVEs, alert via Telegram, honestly. Runs a single…]] - `rationale_for` [EXTRACTED]
 - [[_load_alerted_ghsa()]] - `calls` [EXTRACTED]
 - [[_save_alerted_ghsa()]] - `calls` [EXTRACTED]

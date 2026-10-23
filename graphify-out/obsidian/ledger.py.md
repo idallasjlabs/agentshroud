@@ -1,23 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
-type: "document"
-community: "MiddlewareManager (4)"
+source_file: "gateway/ingest_api/ledger.py"
+type: "code"
+community: "_make_proxy()"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/_make_proxy
 ---
 
-# ledger.py.md
+# ledger.py
 
 ## Connections
-- [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
-- [[ledger.py_2]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[volumes_1]] - `references` [INFERRED]
+- [[DataLedger]] - `contains` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerEntry]] - `imports` [EXTRACTED]
+- [[LedgerQueryResponse]] - `imports` [EXTRACTED]
+- [[aiosqlite]] - `references` [EXTRACTED]
+- [[gatewayREADME]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

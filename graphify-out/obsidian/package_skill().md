@@ -18,7 +18,7 @@ tags:
 - [[dot-test_rejects_symlink_to_external_file()]] - `calls` [INFERRED]
 - [[Package a skill folder into a .skill file.      Args         skill_path Path t]] - `rationale_for` [EXTRACTED]
 - [[init_skill.py]] - `conceptually_related_to` [INFERRED]
-- [[main()_26]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 - [[package_skill.py]] - `contains` [EXTRACTED]
 - [[validate_skill()]] - `calls` [INFERRED]
 

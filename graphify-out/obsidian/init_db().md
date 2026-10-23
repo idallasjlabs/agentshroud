@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Connection]] - `references` [EXTRACTED]
 - [[Initialize the SQLite database for history tracking.      Args         db_path]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Path_20]] - `references` [EXTRACTED]
 - [[get_trend()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[save_to_history()]] - `calls` [EXTRACTED]

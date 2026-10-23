@@ -1,25 +1,27 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
-type: "code"
-community: "_make_proxy()"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+type: "document"
+community: "_make_proxy() (2)"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/_make_proxy_2
 ---
 
 # ledger.py
 
 ## Connections
-- [[DataLedger]] - `contains` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
-- [[LedgerEntry]] - `imports` [EXTRACTED]
-- [[LedgerQueryResponse]] - `imports` [EXTRACTED]
-- [[aiosqlite]] - `references` [EXTRACTED]
-- [[gatewayREADME]] - `references` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[Config Keys Read_4]] - `contains` [EXTRACTED]
+- [[Database Schema_2]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
+- [[Purpose_121]] - `contains` [EXTRACTED]
+- [[Related_27]] - `contains` [EXTRACTED]
+- [[Responsibilities_25]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/document #graphify/EXTRACTED #community/_make_proxy_2

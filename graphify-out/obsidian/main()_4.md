@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "test_apply_patches.js"
-location: "L259"
+community: "AgentShroud™ Communication Templates (2)"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/AgentShroud_Communication_Templates_2
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Communication_Templates_2

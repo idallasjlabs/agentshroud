@@ -1,23 +1,30 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: "cli/src/main.rs"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L187"
+community: "GroupRoleResolver"
+location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/GroupRoleResolver
 ---
 
 # main()
 
 ## Connections
-- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
-- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
-- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
-- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-ok()]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[Result]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `calls` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
+- [[print_output()]] - `calls` [EXTRACTED]
+- [[resolve_token()]] - `calls` [EXTRACTED]
+- [[run_approvals_decide()]] - `calls` [EXTRACTED]
+- [[run_approvals_list()]] - `calls` [EXTRACTED]
+- [[run_cves()]] - `calls` [EXTRACTED]
+- [[run_deploy_status()]] - `calls` [EXTRACTED]
+- [[run_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

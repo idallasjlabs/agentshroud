@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
-type: "code"
-community: "_wrap_response() (4)"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+type: "document"
+community: "TestParseHostsLine"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/TestParseHostsLine
 ---
 
 # log_sanitizer.py
 
 ## Connections
-- [[LogSanitizer_1]] - `contains` [EXTRACTED]
-- [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[env_guard.py_2]] - `semantically_similar_to` [INFERRED]
-- [[get_sanitizer_stats()_1]] - `contains` [EXTRACTED]
-- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `semantically_similar_to` [INFERRED]
-- [[session_security.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_22]] - `contains` [EXTRACTED]
+- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_42]] - `contains` [EXTRACTED]
+- [[Pattern Taxonomy]] - `contains` [EXTRACTED]
+- [[Purpose_143]] - `contains` [EXTRACTED]
+- [[Related_46]] - `contains` [EXTRACTED]
+- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Threat Model_26]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine

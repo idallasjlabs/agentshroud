@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_inline()]] - `calls` [EXTRACTED]
 - [[_render_table()]] - `calls` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 - [[render_md_email.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Architecture

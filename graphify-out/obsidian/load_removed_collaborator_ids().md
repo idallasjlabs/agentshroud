@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # load_removed_collaborator_ids()
@@ -17,4 +17,4 @@ tags:
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -12,9 +12,9 @@ tags:
 # run_bypass()
 
 ## Connections
-- [[fail()_4]] - `calls` [EXTRACTED]
-- [[info()_1]] - `calls` [EXTRACTED]
-- [[pass()_3]] - `calls` [EXTRACTED]
+- [[fail()]] - `calls` [EXTRACTED]
+- [[info()]] - `calls` [EXTRACTED]
+- [[pass()]] - `calls` [EXTRACTED]
 - [[run_full()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `calls` [EXTRACTED]

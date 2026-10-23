@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # scorer()
@@ -15,4 +15,4 @@ tags:
 - [[ContextIntegrityScorer]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Path (2)"
+community: "._run_and_read"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/_run_and_read
 ---
 
 # parse_version()
@@ -17,4 +17,4 @@ tags:
 - [[is_source_fixed()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

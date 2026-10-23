@@ -12,12 +12,12 @@ tags:
 # mcp_result_endpoint()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - `rationale_for` [EXTRACTED]
 - [[MCPResultRequest]] - `references` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

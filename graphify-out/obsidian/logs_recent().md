@@ -12,7 +12,7 @@ tags:
 # logs_recent()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[dot-tail()]] - `calls` [EXTRACTED]
 - [[Recent securityaudit log entries.      Optional ``bot=`` query parameter restr]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]

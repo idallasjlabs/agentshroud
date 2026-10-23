@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # instruction_envelope.py
@@ -15,4 +15,4 @@ tags:
 - [[EnvelopeSigner]] - `contains` [EXTRACTED]
 - [[InstructionEnvelope]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
