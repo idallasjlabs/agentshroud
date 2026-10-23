@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L350"
+community: "CompetitiveIntelReport"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CompetitiveIntelReport
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()]] - `references` [EXTRACTED]
-- [[dot-disconnect()]] - `references` [EXTRACTED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

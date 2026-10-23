@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # AWS Athena MCP Server
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
 - [[AWS API MCP Server (official)]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS Athena MCP Server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS Glue MCP Server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS RDS MCP Server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS Step Functions MCP Server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS Athena MCP Server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS Glue MCP Server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS RDS MCP Server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[AWS Step Functions MCP Server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 - [[Additional CLIs OpenCode, Crush, Antigravity, Grok Build, Pi]] - concept - .llm_settings/docs/MCP_README.md
 - [[Atlassian OAuth 2.0 (3LO)]] - concept - .llm_settings/docs/MCP_README.md
 - [[GitHub OAuth Device Flow]] - concept - .llm_settings/docs/MCP_README.md
@@ -22,7 +24,7 @@ members: 18
 - [[MCP Server Configuration for Additional Services]] - document - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 - [[Microsoft Entra ID gateway auth]] - concept - .llm_settings/docs/MCP_README.md
 - [[Teamwork Graph CLI (Atlassian, non-MCP)]] - concept - .llm_settings/docs/MCP_README.md
-- [[Zabbix MCP Server_1]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[Zabbix MCP Server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
 - [[deploy-crush.sh]] - code - .llm_settings/scripts/README.md
 - [[resolve-cred.sh credential resolver]] - code - .llm_settings/scripts/README.md
 - [[setup-keychain.sh  setup-linux-keyring.sh]] - code - .llm_settings/scripts/README.md

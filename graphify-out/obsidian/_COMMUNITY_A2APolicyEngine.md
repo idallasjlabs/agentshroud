@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.03
 members: 94
 ---
 
 # A2APolicyEngine
 
+**Cohesion:** 0.03 - loosely connected
 **Members:** 94 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 94
 - [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Any_49]] - code
+- [[Any_52]] - code
 - [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CompletedProcess_4]] - code - gateway/tests/test_agent_cve_registry.py
@@ -111,22 +113,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_browserscriptsbrowse.py]]
-- 4 edges to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
+- 5 edges to [[_COMMUNITY_check_upstream_cves() (2)]]
 - 4 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 4 edges to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]]
+- 3 edges to [[_COMMUNITY_browserscriptsbrowse.py]]
 - 2 edges to [[_COMMUNITY__make_sanitizer()]]
+- 1 edge to [[_COMMUNITY_First iteration ingests + records; second sees dedup and skips.]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
 - 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 1 edge to [[_COMMUNITY_Path (3)]]
-- 1 edge to [[_COMMUNITY_First iteration ingests + records; second sees dedup and skips.]]
-- 1 edge to [[_COMMUNITY__t]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY__AGENT_CVE_REGISTRIES]]
 - 1 edge to [[_COMMUNITY_dot-_run_and_read]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py (4)]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
+- 1 edge to [[_COMMUNITY_Enum]]
 
 ## Top bridge nodes
-- [[agent_cve_registry.py]] - degree 18, connects to 8 communities
+- [[agent_cve_registry.py]] - degree 18, connects to 9 communities
+- [[list_cve_agents()]] - degree 15, connects to 5 communities
 - [[get_agent_cve_summary()]] - degree 30, connects to 4 communities
-- [[list_cve_agents()]] - degree 15, connects to 4 communities
 - [[test_agent_cve_registry.py]] - degree 68, connects to 1 community

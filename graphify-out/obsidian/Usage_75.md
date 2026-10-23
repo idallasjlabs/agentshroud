@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "soc.js"
-location: "L10"
+community: "Phase 3: MITIGATE (Rollback First!) (3)"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Phase_3_MITIGATE_Rollback_First_3
 ---
 
 # Usage
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_3

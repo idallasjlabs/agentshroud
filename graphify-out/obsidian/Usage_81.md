@@ -1,8 +1,8 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
 community: "soc.js"
-location: "L9"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/socjs

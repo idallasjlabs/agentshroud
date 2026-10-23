@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Production Safety Checklist (SKILL)"
+community: "TestOutboundInfoFilter (2)"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/TestOutboundInfoFilter_2
 ---
 
 # Unsubscribe from events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-unsubscribe()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

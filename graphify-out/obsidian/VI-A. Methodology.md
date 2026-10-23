@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py"
+community: "VI. STPA-Sec Analysis"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/VI_STPA-Sec_Analysis
 ---
 
 # VI-A. Methodology
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VI. STPA-Sec Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/document #graphify/EXTRACTED #community/VI_STPA-Sec_Analysis

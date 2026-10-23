@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (7)"
+community: "MCP Tools Usage (MCPM) (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_7
+  - community/MCP_Tools_Usage_MCPM_2
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM_2

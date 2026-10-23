@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "Enum"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Enum
 ---
 
 # WSEventType
@@ -15,7 +15,7 @@ tags:
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_handleWSEvent()]] - `shares_data_with` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/Enum

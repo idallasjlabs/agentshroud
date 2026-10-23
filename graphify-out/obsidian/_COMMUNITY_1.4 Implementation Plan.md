@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # 1.4 Implementation Plan
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -32,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Skill Create PR with Pre-Flight Audit (CRPR)]] - degree 15, connects to 1 community

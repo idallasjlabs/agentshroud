@@ -12,14 +12,14 @@ tags:
 # ToolTier
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_65]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_14]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[Role_63]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[Tool security tiers for RBAC permissions.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]

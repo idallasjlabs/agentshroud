@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "TestSpawnAuthorization"
+community: "test_telegram_proxy_inbound.py"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSpawnAuthorization
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # VII. v0.8.0 Remediation
@@ -20,4 +20,4 @@ tags:
 - [[VII-E. Human-in-the-Loop (R-08, R-09)]] - `contains` [EXTRACTED]
 - [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSpawnAuthorization
+#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

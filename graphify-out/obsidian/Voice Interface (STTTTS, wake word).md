@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L377-L397"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # Voice Interface (STT/TTS, wake word)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[voice-gateway service]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/_wrap_response_2
+#graphify/concept #graphify/INFERRED #community/run-standalonesh

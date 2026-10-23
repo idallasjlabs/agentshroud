@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
 community: "TestOutboundInfoFilter"
 location: "L10"
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

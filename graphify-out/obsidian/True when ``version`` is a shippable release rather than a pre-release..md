@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
 community: "TestFullAccessMiddlewareBypass"
-location: "L103"
+location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

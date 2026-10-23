@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # XXE-style payloads shouldn't crash processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_xml_entity_expansion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

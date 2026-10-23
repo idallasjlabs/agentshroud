@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.24
 members: 10
 ---
 
 # AgentShroud (system, C4 context) (3)
 
+**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -34,7 +36,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Migration Path (SSH → Distributed Node)]]
 - 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0 (2)]]
 - 1 edge to [[_COMMUNITY_PermissionLevel (6)]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_LOW Findings]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List (2)]]
 

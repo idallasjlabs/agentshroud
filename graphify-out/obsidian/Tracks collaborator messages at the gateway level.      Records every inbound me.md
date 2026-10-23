@@ -12,6 +12,6 @@ tags:
 # Tracks collaborator messages at the gateway level.      Records every inbound me
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `rationale_for` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "chat_console.py"
-location: "L61"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Usage
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

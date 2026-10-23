@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # 2. Security Analysis
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
 - [[Configuration  Environment Variables_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Function Details_36]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Purpose_140]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Purpose_138]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Related_42]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[Responsibilities_40]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 - [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md

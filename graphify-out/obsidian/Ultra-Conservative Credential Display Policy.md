@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "rationale"
-community: "installer.py"
+community: "BotConfig (2)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/BotConfig_2
 ---
 
 # Ultra-Conservative Credential Display Policy
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY-POLICY-FINAL]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/installerpy
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig_2

@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
 community: "TestOutboundInfoFilter"
 location: "L10"
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

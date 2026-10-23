@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
-- [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
+- [[Daily CVE Sync + Page Update Workflow_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

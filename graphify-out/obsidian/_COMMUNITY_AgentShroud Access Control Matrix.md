@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.08
 members: 38
 ---
 
 # AgentShroud Access Control Matrix
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__enter__()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-__exit__()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-__init__()_70]] - code - gateway/ingest_api/email_service.py
-- [[dot-__init__()_71]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__enter__()_3]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__exit__()_3]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__init__()_84]] - code - gateway/ingest_api/email_service.py
+- [[dot-__init__()_85]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-build_message()]] - code - gateway/ingest_api/email_service.py
 - [[dot-login()]] - code - gateway/ingest_api/email_service.py
 - [[dot-login()_1]] - code - gateway/tests/test_gateway_email_service.py
@@ -55,11 +57,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 3 edges to [[_COMMUNITY_UserSessionManager (2) (2)]]
 - 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_SCLClient]]
 
 ## Top bridge nodes
-- [[GatewayEmailService_1]] - degree 16, connects to 2 communities
+- [[GatewayEmailService_1]] - degree 16, connects to 1 community
 - [[test_gateway_email_service.py]] - degree 8, connects to 1 community
 - [[email_service.py]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Path (3)"
+community: "_AGENT_CVE_REGISTRIES"
 location: "18008"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/_AGENT_CVE_REGISTRIES
 ---
 
 # _AGENT_CVE_REGISTRIES
@@ -21,4 +21,4 @@ tags:
 - [[test_triage_cve_mitigations.py]] - `references` [EXTRACTED]
 - [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_3
+#graphify/code #graphify/EXTRACTED #community/_AGENT_CVE_REGISTRIES

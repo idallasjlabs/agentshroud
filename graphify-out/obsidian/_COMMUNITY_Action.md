@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 37
 ---
 
 # Action
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 37 nodes
 
 ## Members

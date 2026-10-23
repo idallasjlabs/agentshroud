@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 19
 ---
 
 # 1. GitHub MCP Authentication Reset (2)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -12,9 +14,9 @@ members: 19
 - [[dot-__aexit__()_6]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__aiter__()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__anext__()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__call__()_8]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_146]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_147]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__call__()_10]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_155]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_156]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-send()_2]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py

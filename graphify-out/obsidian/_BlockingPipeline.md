@@ -12,10 +12,10 @@ tags:
 # _BlockingPipeline
 
 ## Connections
-- [[dot-process_outbound()_1]] - `method` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
+- [[dot-process_outbound()_5]] - `method` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - `rationale_for` [EXTRACTED]
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - `calls` [EXTRACTED]
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `calls` [EXTRACTED]

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "soc.js"
+community: "Skill: Mindmap Architect (MM)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Usage
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

@@ -1,21 +1,22 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
-location: "L232"
+community: "setup-secrets.sh (2)"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/setup-secretssh_2
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[API Key Error]] - `contains` [EXTRACTED]
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Container Won't Start_1]] - `contains` [EXTRACTED]
-- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
-- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
+- [[Browser timeout_3]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

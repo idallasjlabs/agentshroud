@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "AgentTarget (2)"
-location: "L10"
+community: "SubagentMonitor._log_event"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/SubagentMonitor_log_event
 ---
 
 # Usage
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event

@@ -12,6 +12,6 @@ tags:
 # True only for a terminal ALLOW.          REQUIRE_APPROVAL is *not* allowed on it
 
 ## Connections
-- [[dot-allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-allowed()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

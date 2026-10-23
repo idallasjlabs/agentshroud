@@ -1,18 +1,18 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "GSDE&G Skills Reference (2)"
+community: "ApprovalHardening"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/ApprovalHardening
 ---
 
 # WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)
 
 ## Connections
-- [[Executive Summary_5]] - `contains` [EXTRACTED]
+- [[Executive Summary_15]] - `contains` [EXTRACTED]
 - [[IEC 62443 Industrial Security Framework]] - `references` [EXTRACTED]
 - [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - `contains` [EXTRACTED]
 - [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[securityincident-response]] - `conceptually_related_to` [INFERRED]
 - [[ws-e-audit-v1.2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 29
 ---
 
 # 10. Troubleshooting
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members

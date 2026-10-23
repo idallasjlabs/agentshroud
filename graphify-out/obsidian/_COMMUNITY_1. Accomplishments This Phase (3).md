@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # 1. Accomplishments This Phase (3)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members

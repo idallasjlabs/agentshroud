@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 9
 ---
 
 # ADR-007: Zero-Config Security (docker-compose up = fully secured)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -28,7 +30,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_xurl — Agent Skill Reference]]
 - 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
-- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 
 ## Top bridge nodes
 - [[Gateway (FastAPI)]] - degree 4, connects to 1 community

@@ -18,7 +18,7 @@ tags:
 - [[Problem_3]] - `contains` [EXTRACTED]
 - [[Remediation_2]] - `contains` [EXTRACTED]
 - [[Root Cause_2]] - `contains` [EXTRACTED]
-- [[Severity_4]] - `contains` [EXTRACTED]
-- [[Verification_7]] - `contains` [EXTRACTED]
+- [[Severity_2]] - `contains` [EXTRACTED]
+- [[Verification_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

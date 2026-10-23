@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # Verify detection accuracy doesn't degrade at scale.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pii_detection_accuracy_at_scale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

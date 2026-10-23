@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "ContextSegment"
-location: "L498"
+community: "Enum"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextSegment
+  - community/Enum
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()_2]] - `references` [EXTRACTED]
-- [[dot-disconnect()_1]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[dot-__init__()_185]] - `references` [EXTRACTED]
+- [[Severity_8]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/INFERRED #community/Enum

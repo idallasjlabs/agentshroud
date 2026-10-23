@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "TestOutboundInfoFilter (15)"
+community: "AgentShroud Incident Response Plan"
 location: "L563"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_15
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Troubleshooting Common Issues
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 - [[Container Won't Start]] - `contains` [EXTRACTED]
 - [[Database Connection Issues]] - `contains` [EXTRACTED]
-- [[Port Already in Use_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use]] - `contains` [EXTRACTED]
 - [[SSL Certificate Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_15
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

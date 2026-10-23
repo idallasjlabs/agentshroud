@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "SubagentMonitor._log_event"
-location: "L27"
+community: ".agents/skills/i-cr/SKILL.md (2)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SubagentMonitor_log_event
+  - community/agents/skills/i-cr/SKILLmd_2
 ---
 
 # Usage
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2

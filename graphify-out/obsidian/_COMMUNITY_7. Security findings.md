@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # 7. Security findings
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -30,5 +32,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[test_chat_completions_alias.py]] - degree 7, connects to 1 community
-- [[client()]] - degree 2, connects to 1 community
 - [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - degree 2, connects to 1 community
+- [[client()]] - degree 2, connects to 1 community

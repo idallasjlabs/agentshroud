@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "DelegationManager (2)"
+community: "DelegationManager"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager_2
+  - community/DelegationManager
 ---
 
 # When to Set
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager_2
+#graphify/document #graphify/EXTRACTED #community/DelegationManager

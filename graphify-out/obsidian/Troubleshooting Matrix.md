@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Restart Procedure"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Restart_Procedure
 ---
 
 # Troubleshooting Matrix.md
 
 ## Connections
-- [[Crash Recovery]] - `references` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
 - [[Error Index]] - `references` [EXTRACTED]
-- [[Health Checks_1]] - `references` [EXTRACTED]
+- [[Health Checks]] - `references` [EXTRACTED]
 - [[Kill Switch Procedure]] - `references` [EXTRACTED]
 - [[Startup Errors]] - `references` [EXTRACTED]
 - [[prompt_guard.py_1]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[troubleshooting_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

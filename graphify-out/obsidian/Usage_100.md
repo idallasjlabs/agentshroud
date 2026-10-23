@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L10"
+community: "USPTO Trademark Application — AgentShroud™"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/USPTO_Trademark_Application__AgentShroud
 ---
 
 # Usage
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[1. Create a parent panel]] - `contains` [EXTRACTED]
+- [[2. Initialise]] - `contains` [EXTRACTED]
+- [[3. Set an emotion]] - `contains` [EXTRACTED]
+- [[4. Reposition]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud

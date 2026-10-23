@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # AgentShroud (system, C4 context) (2)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members

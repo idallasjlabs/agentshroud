@@ -1,20 +1,23 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "AgentShroud Project Terminology"
-location: "L142"
+community: "LOW — Informational"
+location: "L787"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Project_Terminology
+  - community/LOW__Informational
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
-- [[Connection timeout_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
+- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
+- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_2]] - `contains` [EXTRACTED]
+- [[Tests Failing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

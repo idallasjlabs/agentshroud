@@ -1,21 +1,22 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "AgentShroud Audit Specification"
-location: "L242"
+community: "hermes/workspace/jira_dev_ticket.py"
+location: "L317"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/hermes/workspace/jira_dev_ticketpy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
-- [[Problem Connection timeout]] - `contains` [EXTRACTED]
-- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
-- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_1]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 16
 ---
 
 # ADR-001: Transparent Proxy vs Agent Modification
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -33,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 
 ## Top bridge nodes
 - [[TestStartupScannerKeying]] - degree 11, connects to 2 communities

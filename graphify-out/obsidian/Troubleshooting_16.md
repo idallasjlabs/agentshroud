@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "setup-secrets.sh (2)"
-location: "L281"
+community: "First Time Setup"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/First_Time_Setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

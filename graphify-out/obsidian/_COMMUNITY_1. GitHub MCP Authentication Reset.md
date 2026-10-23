@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # 1. GitHub MCP Authentication Reset
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -30,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Skill Test-Driven Development (TDD)]] - degree 8, connects to 1 community

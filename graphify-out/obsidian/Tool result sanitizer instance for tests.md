@@ -12,6 +12,6 @@ tags:
 # Tool result sanitizer instance for tests
 
 ## Connections
-- [[dot-sanitizer()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitizer()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

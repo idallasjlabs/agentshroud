@@ -1,25 +1,19 @@
 ---
 type: community
-members: 86
+cohesion: 0.06
+members: 66
 ---
 
 # A2AGovernanceProxy
 
-**Members:** 86 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 66 nodes
 
 ## Members
-- [[dot-__init__()_142]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-__init__()_194]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-__post_init__()_9]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-_missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-_propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_shared_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-get_incidents()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-peers_of()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-register_peer()_1]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_bot_without_registered_trust_manager_is_skipped()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_critical_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -55,26 +49,15 @@ members: 86
 - [[dot-test_zero_max_depth_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[A single cross-bot incident recorded in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[An incident on openclaw should not re-apply to openclaw via the ledger.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[BotIncidentSeverity]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[CrossBotTrustLedger]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[CrossBotTrustLedger_1]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[CrossBotTrustLedger_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Default propagation policy.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Depth-2 propagation A → B → C but NOT C → D when max_depth=2.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[End-to-end a real incident on bot A decays trust on bots B and C         in a 3]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[IncidentRecord]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[Log an incident and propagate trust decay to registered peers.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Peer agent not registered in TrustManager should be auto-registered.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Propagation to a peer with no registered TrustManager must not raise.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Return incidents, optionally filtered by source bot.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Return the number of incidents currently in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Return the registered peers for bot_name (empty list if none).]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[TestBotIncidentSeverity]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[TestBuildFullMesh]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[TestCrossBotTrustLedgerConstruction]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -85,8 +68,7 @@ members: 86
 - [[The exact scenario the user asked for add a 4th bot and it just works.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[TrustDecayPolicy]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[TrustDecayPolicy_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TrustManager_2]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[TrustManager_3]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[TrustManager_4]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[build_full_mesh N-agent-scalable topology construction.      Adding a 3rd4thN]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[cross_bot_trust_ledger.py]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[hermes_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -103,20 +85,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_socrouter.py]]
-- 12 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 5 edges to [[_COMMUNITY_ApprovalQueueConfig (2)_1]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
-- 1 edge to [[_COMMUNITY_AgentTarget (3)]]
+- 32 edges to [[_COMMUNITY_socrouter.py]]
+- 15 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 13 edges to [[_COMMUNITY_SecurityPipeline (2)]]
+- 1 edge to [[_COMMUNITY_dot-build_full_mesh()]]
+- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 
 ## Top bridge nodes
-- [[CrossBotTrustLedger_1]] - degree 36, connects to 5 communities
-- [[BotIncidentSeverity]] - degree 25, connects to 4 communities
-- [[cross_bot_trust_ledger.py]] - degree 6, connects to 2 communities
-- [[CrossBotTrustLedger]] - degree 26, connects to 1 community
-- [[TrustManager_3]] - degree 25, connects to 1 community
+- [[cross_bot_trust_ledger.py]] - degree 6, connects to 4 communities
+- [[CrossBotTrustLedger_1]] - degree 26, connects to 3 communities
+- [[TrustManager_4]] - degree 25, connects to 3 communities
+- [[test_cross_bot_trust_ledger.py]] - degree 17, connects to 3 communities
+- [[TestBuildFullMesh]] - degree 16, connects to 3 communities

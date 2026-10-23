@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "KillSwitchMonitor (2) (13)"
+community: "AgentShroud Incident Response Plan"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_13
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Web Interface Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Viewing Audit Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_13
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

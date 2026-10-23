@@ -12,6 +12,6 @@ tags:
 # User's decision on a pending approval request
 
 ## Connections
-- [[ApprovalDecision_1]] - `rationale_for` [EXTRACTED]
+- [[ApprovalDecision]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
 community: "TestOutboundInfoFilter"
 location: "L10"
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

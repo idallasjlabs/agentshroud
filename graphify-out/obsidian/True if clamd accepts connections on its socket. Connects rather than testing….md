@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "cli/main.py"
+community: "Common Queries"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/Common_Queries
 ---
 
 # True if clamd accepts connections on its socket. Connects rather than testing…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[clamd_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Common_Queries
