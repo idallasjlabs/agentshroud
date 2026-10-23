@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_strips_fake_system_tags()
@@ -15,4 +15,4 @@ tags:
 - [[system style fake tags should be stripped.]] - `rationale_for` [EXTRACTED]
 - [[TestReanchorDelimiters]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

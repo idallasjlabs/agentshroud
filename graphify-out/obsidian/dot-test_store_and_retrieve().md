@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # .test_store_and_retrieve()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyStorage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KeyVault

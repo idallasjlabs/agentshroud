@@ -12,7 +12,7 @@ tags:
 # .test_two_when_sbom_present()
 
 ## Connections
-- [[TestScoreSupplyChain]] - `method` [EXTRACTED]
+- [[TestScoreSupplyChain_1]] - `method` [EXTRACTED]
 - [[_score_supply_chain()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

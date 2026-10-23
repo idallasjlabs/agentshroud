@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestRunAndSendCveReport]] - `method` [EXTRACTED]
-- [[_fake_send()_14]] - `indirect_call` [INFERRED]
+- [[_fake_send()]] - `indirect_call` [INFERRED]
 - [[_make_report()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]

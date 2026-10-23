@@ -12,7 +12,7 @@ tags:
 # .test_ssh_disabled_config()
 
 ## Connections
-- [[SSHConfig_2]] - `calls` [EXTRACTED]
+- [[SSHConfig]] - `calls` [EXTRACTED]
 - [[TestSSHDisabled]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

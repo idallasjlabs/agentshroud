@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
-location: "L48"
+community: "TestDataExfiltration"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/TestDataExfiltration
 ---
 
 # .test_short_base64_not_flagged()
 
 ## Connections
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[Short base64 strings are normal (e.g., API tokens in URLs).]] - `rationale_for` [EXTRACTED]
+- [[TestDataExfiltration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/TestDataExfiltration

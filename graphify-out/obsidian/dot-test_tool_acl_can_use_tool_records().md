@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "ModuleStatsCollector"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/ModuleStatsCollector
 ---
 
 # .test_tool_acl_can_use_tool_records()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

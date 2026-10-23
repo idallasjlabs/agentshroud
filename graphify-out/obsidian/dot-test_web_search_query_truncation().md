@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Queries longer than 200 chars are truncated in the SOC log reason.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

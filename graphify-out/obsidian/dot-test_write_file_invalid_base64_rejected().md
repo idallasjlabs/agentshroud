@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "SSHProxy"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/SSHProxy
 ---
 
 # .test_write_file_invalid_base64_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - `rationale_for` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

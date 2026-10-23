@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "RBACConfig"
+community: "WebhookReceiver"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/WebhookReceiver
 ---
 
 # .test_webhook_user_id_extraction()
@@ -16,4 +16,4 @@ tags:
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

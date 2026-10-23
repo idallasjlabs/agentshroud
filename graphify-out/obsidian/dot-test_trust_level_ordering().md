@@ -12,6 +12,6 @@ tags:
 # .test_trust_level_ordering()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -12,7 +12,7 @@ tags:
 # .test_three_sbom_has_packages_no_trivy()
 
 ## Connections
-- [[TestScoreSupplyChain_1]] - `method` [EXTRACTED]
+- [[TestScoreSupplyChain]] - `method` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OpenSCAP

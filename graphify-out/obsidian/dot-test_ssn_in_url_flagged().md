@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L273"
+community: "TestPIIInURLs"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestPIIInURLs
 ---
 
 # .test_ssn_in_url_flagged()
 
 ## Connections
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[TestPIIInURLs]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestPIIInURLs

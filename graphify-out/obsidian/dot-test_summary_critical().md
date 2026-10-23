@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestClassify"
+community: "Skill: Project Management (PM) (3)"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/Skill_Project_Management_PM_3
 ---
 
 # .test_summary_critical()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

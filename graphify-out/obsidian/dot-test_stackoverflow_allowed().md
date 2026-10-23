@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "LLMProxy"
+community: "TestLegitimateURLsAllowed"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/TestLegitimateURLsAllowed
 ---
 
 # .test_stackoverflow_allowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLegitimateURLsAllowed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/TestLegitimateURLsAllowed

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "TestLooksLikeSafeCollaboratorInfoQuery"
 location: "L4209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/TestLooksLikeSafeCollaboratorInfoQuery
 ---
 
 # .test_what_can_you_question()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLooksLikeSafeCollaboratorInfoQuery]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestLooksLikeSafeCollaboratorInfoQuery

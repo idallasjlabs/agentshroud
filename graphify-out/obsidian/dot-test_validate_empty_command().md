@@ -12,7 +12,7 @@ tags:
 # .test_validate_empty_command()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestValidateCommand]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

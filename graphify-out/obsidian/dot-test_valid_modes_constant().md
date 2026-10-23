@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "AsyncMock"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/AsyncMock
 ---
 
 # .test_valid_modes_constant()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModeRequestModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

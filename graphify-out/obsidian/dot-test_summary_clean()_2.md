@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestVersionRoutes"
-location: "L706"
+community: "Skill: Project Management (PM) (3)"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/Skill_Project_Management_PM_3
 ---
 
 # .test_summary_clean()
 
 ## Connections
-- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
+- [[parse_trivy_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

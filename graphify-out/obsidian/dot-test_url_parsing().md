@@ -12,7 +12,7 @@ tags:
 # .test_url_parsing()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Test URL parsing for domains and ports.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]

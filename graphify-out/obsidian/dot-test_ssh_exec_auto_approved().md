@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "MCPPermissionManager (2)"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # .test_ssh_exec_auto_approved()
@@ -15,4 +15,4 @@ tags:
 - [[SSHResult]] - `calls` [EXTRACTED]
 - [[TestSSHExec]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

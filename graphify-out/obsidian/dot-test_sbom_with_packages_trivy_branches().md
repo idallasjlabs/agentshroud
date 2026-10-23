@@ -12,7 +12,7 @@ tags:
 # .test_sbom_with_packages_trivy_branches()
 
 ## Connections
-- [[TestSupplyChain]] - `method` [EXTRACTED]
+- [[TestSupplyChain_1]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2

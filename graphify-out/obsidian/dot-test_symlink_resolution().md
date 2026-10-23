@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "._make_proxy()"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_make_proxy
 ---
 
 # .test_symlink_resolution()
@@ -15,4 +15,4 @@ tags:
 - [[Symlinks should be resolved - symlink to blocked path must be caught.]] - `rationale_for` [EXTRACTED]
 - [[TestPatternMatching]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

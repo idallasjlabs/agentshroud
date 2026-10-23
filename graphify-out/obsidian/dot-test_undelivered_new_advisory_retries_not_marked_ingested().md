@@ -15,9 +15,9 @@ tags:
 - [[TestGhsaIngestSchedulerRetry]] - `method` [EXTRACTED]
 - [[_fake_all_agents()]] - `contains` [EXTRACTED]
 - [[_fake_all_agents()_1]] - `indirect_call` [INFERRED]
-- [[_sleep()_7]] - `contains` [EXTRACTED]
-- [[_sleep()_5]] - `indirect_call` [INFERRED]
+- [[_sleep()_4]] - `contains` [EXTRACTED]
+- [[_sleep()_2]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[now()_7]] - `contains` [EXTRACTED]
+- [[now()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

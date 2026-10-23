@@ -12,6 +12,6 @@ tags:
 # .test_two_with_failures()
 
 ## Connections
-- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Command_Details
