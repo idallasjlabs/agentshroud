@@ -12,7 +12,7 @@ tags:
 # CitationVerifier
 
 ## Connections
-- [[dot-__init__()_171]] - `method` [EXTRACTED]
+- [[dot-__init__()_45]] - `method` [EXTRACTED]
 - [[dot-_verifier()]] - `calls` [EXTRACTED]
 - [[dot-_verifier()_1]] - `calls` [EXTRACTED]
 - [[dot-_verify_url()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[Path_33]] - `uses` [INFERRED]
+- [[Path_48]] - `uses` [INFERRED]
 - [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]

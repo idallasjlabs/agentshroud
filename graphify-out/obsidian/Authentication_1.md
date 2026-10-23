@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L59"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (3)"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3
 ---
 
 # Authentication
 
 ## Connections
-- [[Features_4]] - `contains` [EXTRACTED]
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_3

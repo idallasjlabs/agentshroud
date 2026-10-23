@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "create_auth_dependency (2)"
+community: "MemoryIntegrityMonitor"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/MemoryIntegrityMonitor
 ---
 
 # Compute SHA-256 hash of a file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_compute_file_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

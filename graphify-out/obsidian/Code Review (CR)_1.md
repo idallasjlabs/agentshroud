@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/socjs
 ---
 
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_104]] - `contains` [EXTRACTED]
-- [[Related Skills_78]] - `contains` [EXTRACTED]
-- [[Usage_84]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crREADME]] - `contains` [EXTRACTED]
+- [[Purpose_102]] - `contains` [EXTRACTED]
+- [[Related Skills_73]] - `contains` [EXTRACTED]
+- [[Usage_79]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/socjs

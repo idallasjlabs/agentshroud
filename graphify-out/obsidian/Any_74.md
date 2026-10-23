@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: ""
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L210"
+community: "browser/scripts/browse.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/browser/scripts/browsepy
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_7]] - `references` [EXTRACTED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[_py_str()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

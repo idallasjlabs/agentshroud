@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L478"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # Blocked multi-turn sessions should not disclose scoring details.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_multi_turn_block_reason_hides_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

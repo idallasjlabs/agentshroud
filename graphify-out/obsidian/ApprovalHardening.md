@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Any"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # ApprovalHardening
 
 ## Connections
-- [[dot-__init__()_13]] - `calls` [EXTRACTED]
-- [[dot-__init__()_14]] - `method` [EXTRACTED]
+- [[dot-__init__()_118]] - `calls` [EXTRACTED]
+- [[dot-__init__()_119]] - `method` [EXTRACTED]
 - [[dot-_check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[dot-_check_misleading_language()]] - `method` [EXTRACTED]
 - [[dot-_check_parameter_obfuscation()]] - `method` [EXTRACTED]
@@ -24,22 +24,22 @@ tags:
 - [[dot-_normalize_description()]] - `method` [EXTRACTED]
 - [[dot-analyze_request()]] - `method` [EXTRACTED]
 - [[dot-format_hardened_message()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_11]] - `method` [EXTRACTED]
 - [[dot-hardening()]] - `calls` [EXTRACTED]
 - [[dot-is_request_in_cooldown()]] - `method` [EXTRACTED]
 - [[dot-record_denied_request()]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[dot-test_deception_detection_disabled()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[Anti-social-engineering hardening for approval queue.]] - `rationale_for` [EXTRACTED]
-- [[Any]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[ContextGuard]] - `semantically_similar_to` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[TestApprovalHardening]] - `uses` [INFERRED]
 - [[TestApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[TestDeceptionDetection]] - `uses` [INFERRED]
@@ -47,8 +47,8 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[run()_5]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Any

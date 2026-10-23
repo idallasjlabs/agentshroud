@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_router_coverage.py (2)"
-location: "L183"
+community: "Enum"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy_2
+  - community/Enum
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_186]] - `references` [EXTRACTED]
-- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[dot-score_reversibility()]] - `references` [EXTRACTED]
+- [[dot-__init__()_184]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy_2
+#graphify/code #graphify/EXTRACTED #community/Enum

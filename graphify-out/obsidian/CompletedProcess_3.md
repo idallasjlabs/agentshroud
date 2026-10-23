@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L36"
+community: "ConfigIntegrityMonitor"
+location: "L458"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - graphify/INFERRED
+  - community/ConfigIntegrityMonitor
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[dot-_run()_2]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor

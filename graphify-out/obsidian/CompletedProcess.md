@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L458"
+community: "AgentShroud Phase Review — 2026-02-23"
+location: "L41"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - graphify/EXTRACTED
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

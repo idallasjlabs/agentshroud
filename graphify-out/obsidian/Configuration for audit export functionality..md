@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "The 8D Investigation Process"
+community: "AuditExportConfig"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AuditExportConfig
 ---
 
 # Configuration for audit export functionality.
 
 ## Connections
-- [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
+- [[AuditExportConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/rationale #graphify/EXTRACTED #community/AuditExportConfig

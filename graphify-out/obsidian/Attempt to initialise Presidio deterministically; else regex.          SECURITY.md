@@ -12,6 +12,6 @@ tags:
 # Attempt to initialise Presidio deterministically; else regex.          SECURITY:
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_init_presidio()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy

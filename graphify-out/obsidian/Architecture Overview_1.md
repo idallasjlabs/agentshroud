@@ -1,23 +1,22 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L8"
+community: "AuditExporter (2)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/AuditExporter_2
 ---
 
 # Architecture Overview
 
 ## Connections
-- [[Architecture Overview]] - `contains` [EXTRACTED]
-- [[Container Architecture_1]] - `contains` [EXTRACTED]
-- [[Full System Diagram]] - `contains` [EXTRACTED]
-- [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
-- [[Network Topology]] - `contains` [EXTRACTED]
-- [[Related Notes_22]] - `contains` [EXTRACTED]
-- [[Summary_1]] - `contains` [EXTRACTED]
+- [[2.1 Design Principle Transparent Proxy]] - `contains` [EXTRACTED]
+- [[2.2 Why Transparent Proxy]] - `contains` [EXTRACTED]
+- [[2.3 Data Flow]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/AuditExporter_2

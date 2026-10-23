@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L1"
+community: "SkillGuard (2)"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/SkillGuard_2
 ---
 
-# Architecture Overview.md
+# Architecture Overview
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/SkillGuard_2

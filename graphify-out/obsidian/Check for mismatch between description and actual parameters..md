@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Any"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # Check for mismatch between description and actual parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_description_parameter_mismatch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Any

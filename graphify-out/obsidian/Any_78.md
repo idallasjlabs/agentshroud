@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "_wrap_response() (4)"
-location: "L157"
+community: "KillSwitchMonitor (2) (2)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/KillSwitchMonitor_2_2
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()_1]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2_2

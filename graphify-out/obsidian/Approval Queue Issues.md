@@ -12,6 +12,6 @@ tags:
 # Approval Queue Issues
 
 ## Connections
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[troubleshooting_21]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3

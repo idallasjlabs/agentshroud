@@ -1,21 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "create_auth_dependency (2) (2)"
-location: "L79"
+community: "MiddlewareManager (4)"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2_2
+  - community/MiddlewareManager_4
 ---
 
 # Components
 
 ## Connections
-- [[API Endpoints (`gatewayingest_apimain.py`)]] - `contains` [EXTRACTED]
-- [[RequestResponse Models (`gatewayingest_apimodels.py`)]] - `contains` [EXTRACTED]
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
-- [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - `contains` [EXTRACTED]
-- [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

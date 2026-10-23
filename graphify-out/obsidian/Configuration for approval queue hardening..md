@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Any"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # Configuration for approval queue hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalHardeningConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Any

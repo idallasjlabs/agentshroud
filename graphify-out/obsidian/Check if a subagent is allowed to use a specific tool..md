@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "purge_low_value_events"
+community: "SubagentGovernance"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/SubagentGovernance
 ---
 
 # Check if a subagent is allowed to use a specific tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-authorize_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

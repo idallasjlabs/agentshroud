@@ -12,6 +12,6 @@ tags:
 # Clean up browser resources
 
 ## Connections
-- [[dot-close()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "AgentShroud v0.9.0"
-location: "L269"
+community: "MiddlewareManager (6)"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/MiddlewareManager_6
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
+- [[dot-_run()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

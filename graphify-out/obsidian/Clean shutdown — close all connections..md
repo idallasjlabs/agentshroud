@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "test_hermes_model_resolver.py (2) (2)"
+community: "StdioConnection"
 location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2_2
+  - community/StdioConnection
 ---
 
 # Clean shutdown — close all connections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-shutdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2_2
+#graphify/rationale #graphify/EXTRACTED #community/StdioConnection

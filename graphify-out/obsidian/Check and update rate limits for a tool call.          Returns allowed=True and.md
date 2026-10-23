@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "test_collaborator_greeter.py"
+community: "MCPPermissionManager (2)"
 location: "L568"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/MCPPermissionManager_2
 ---
 
 # Check and update rate limits for a tool call.          Returns allowed=True and
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

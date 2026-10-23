@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # Check if any stored key values appear in text. Returns matching key names.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_value_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/KeyVault

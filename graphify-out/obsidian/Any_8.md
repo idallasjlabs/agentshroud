@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L187"
+community: "test_dashboard.py"
+location: "L182"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - graphify/EXTRACTED
+  - community/test_dashboardpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-check_permission()]] - `references` [EXTRACTED]
-- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

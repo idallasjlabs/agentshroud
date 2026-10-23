@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SessionManager"
-location: "L439"
+community: "Enum"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Enum
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_8]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/Enum

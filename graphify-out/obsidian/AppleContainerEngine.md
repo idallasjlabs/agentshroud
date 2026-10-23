@@ -12,13 +12,13 @@ tags:
 # AppleContainerEngine
 
 ## Connections
-- [[dot-__init__()_131]] - `method` [EXTRACTED]
+- [[dot-__init__()_142]] - `method` [EXTRACTED]
 - [[dot-_cmd()_2]] - `method` [EXTRACTED]
 - [[dot-build()_3]] - `method` [EXTRACTED]
 - [[dot-compose_down()_3]] - `method` [EXTRACTED]
 - [[dot-compose_up()_3]] - `method` [EXTRACTED]
 - [[dot-exec()_3]] - `method` [EXTRACTED]
-- [[dot-health_check()_5]] - `method` [EXTRACTED]
+- [[dot-health_check()_3]] - `method` [EXTRACTED]
 - [[dot-inspect()_3]] - `method` [EXTRACTED]
 - [[dot-logs()_3]] - `method` [EXTRACTED]
 - [[dot-network_create()_3]] - `method` [EXTRACTED]
@@ -29,8 +29,8 @@ tags:
 - [[dot-push()_4]] - `method` [EXTRACTED]
 - [[dot-rm()_3]] - `method` [EXTRACTED]
 - [[dot-run()_5]] - `method` [EXTRACTED]
-- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
-- [[dot-stop()_10]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
+- [[dot-stop()_9]] - `method` [EXTRACTED]
 - [[dot-unpause()_3]] - `method` [EXTRACTED]
 - [[dot-volume_create()_3]] - `method` [EXTRACTED]
 - [[dot-volume_rm()_3]] - `method` [EXTRACTED]

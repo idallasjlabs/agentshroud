@@ -12,6 +12,6 @@ tags:
 # Args:             mode: 'monitor' (log findings) or 'enforce' (quarantine suspic
 
 ## Connections
-- [[dot-__init__()_182]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_43]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SessionManager

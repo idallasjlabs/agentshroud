@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "cmd_start"
-location: "L49"
+community: "TelegramAPIProxy (2)"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cmd_start
+  - community/TelegramAPIProxy_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
-- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
-- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_2]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[dot-validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cmd_start
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

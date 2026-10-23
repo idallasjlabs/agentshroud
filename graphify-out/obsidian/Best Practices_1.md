@@ -1,22 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
-location: "L222"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[MCP-Specific_1]] - `contains` [EXTRACTED]
+- [[Organization_1]] - `contains` [EXTRACTED]
+- [[Security_6]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

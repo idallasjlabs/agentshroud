@@ -17,7 +17,7 @@ tags:
 - [[EventBus]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[state.py]] - `contains` [EXTRACTED]
 

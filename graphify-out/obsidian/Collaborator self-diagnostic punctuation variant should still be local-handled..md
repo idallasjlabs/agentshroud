@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L5069"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # Collaborator self-diagnostic punctuation variant should still be local-handled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

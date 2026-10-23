@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "KillSwitchMonitor (2) (2)"
-location: "L75"
+community: "AlertDispatcher (4)"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_2
+  - community/AlertDispatcher_4
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2_2
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4

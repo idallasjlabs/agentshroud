@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # Check if a user can access another user's session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-can_user_access_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

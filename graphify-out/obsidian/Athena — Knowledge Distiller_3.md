@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Purpose_163]] - `contains` [EXTRACTED]
 - [[Related Skills_90]] - `contains` [EXTRACTED]
-- [[Usage_101]] - `contains` [EXTRACTED]
+- [[Usage_102]] - `contains` [EXTRACTED]
 - [[hermesskillsi-athenaREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 

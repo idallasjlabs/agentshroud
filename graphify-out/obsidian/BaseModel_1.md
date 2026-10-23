@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/ServiceManager
 ---
 
 # BaseModel
@@ -13,14 +13,14 @@ tags:
 ## Connections
 - [[AddCollaboratorRequest]] - `inherits` [EXTRACTED]
 - [[AddGroupMemberRequest]] - `inherits` [EXTRACTED]
-- [[AgentTarget_2]] - `inherits` [EXTRACTED]
+- [[AgentTarget]] - `inherits` [EXTRACTED]
 - [[Alarm]] - `inherits` [EXTRACTED]
-- [[ApprovalDecision_1]] - `inherits` [EXTRACTED]
+- [[ApprovalDecision]] - `inherits` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueItem_4]] - `inherits` [EXTRACTED]
-- [[ApprovalRequest_5]] - `inherits` [EXTRACTED]
-- [[AuditExportConfig_1]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `inherits` [EXTRACTED]
+- [[ApprovalRequest_2]] - `inherits` [EXTRACTED]
+- [[AuditExportConfig]] - `inherits` [EXTRACTED]
 - [[AuditLogEntry]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `inherits` [EXTRACTED]
 - [[ChannelsConfig]] - `inherits` [EXTRACTED]
@@ -40,10 +40,10 @@ tags:
 - [[EgressRequest_1]] - `inherits` [EXTRACTED]
 - [[EgressRuleOverrideRequest]] - `inherits` [EXTRACTED]
 - [[EgressScopeRequest]] - `inherits` [EXTRACTED]
-- [[EmailSendRequest]] - `inherits` [EXTRACTED]
+- [[EmailSendRequest_1]] - `inherits` [EXTRACTED]
 - [[EmailSendResponse]] - `inherits` [EXTRACTED]
 - [[EmergencyBlockRequest]] - `inherits` [EXTRACTED]
-- [[ForwardRequest_1]] - `inherits` [EXTRACTED]
+- [[ForwardRequest]] - `inherits` [EXTRACTED]
 - [[ForwardResponse]] - `inherits` [EXTRACTED]
 - [[GatewayConfig_3]] - `inherits` [EXTRACTED]
 - [[GroupConfig]] - `inherits` [EXTRACTED]
@@ -59,23 +59,23 @@ tags:
 - [[ModeRequest]] - `inherits` [EXTRACTED]
 - [[OpProxyRequest]] - `inherits` [EXTRACTED]
 - [[OwnerEmailRequest]] - `inherits` [EXTRACTED]
-- [[PIIConfig_1]] - `inherits` [EXTRACTED]
+- [[PIIConfig_2]] - `inherits` [EXTRACTED]
 - [[ProjectConfig]] - `inherits` [EXTRACTED]
 - [[RedactionDetail]] - `inherits` [EXTRACTED]
 - [[RedactionResult_2]] - `inherits` [EXTRACTED]
 - [[RenameGroupRequest]] - `inherits` [EXTRACTED]
-- [[ResourceUsage_1]] - `inherits` [EXTRACTED]
+- [[ResourceUsage_2]] - `inherits` [EXTRACTED]
 - [[RollbackRequest]] - `inherits` [EXTRACTED]
 - [[RouterConfig_1]] - `inherits` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `inherits` [EXTRACTED]
 - [[SCLError]] - `inherits` [EXTRACTED]
-- [[SSHConfig]] - `inherits` [EXTRACTED]
-- [[SSHExecRequest]] - `inherits` [EXTRACTED]
+- [[SSHConfig_2]] - `inherits` [EXTRACTED]
+- [[SSHExecRequest_1]] - `inherits` [EXTRACTED]
 - [[SSHExecResponse]] - `inherits` [EXTRACTED]
 - [[SSHHostConfig]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `inherits` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
-- [[ScanRequest_1]] - `inherits` [EXTRACTED]
+- [[ScanRequest]] - `inherits` [EXTRACTED]
 - [[SecurityConfig_4]] - `inherits` [EXTRACTED]
 - [[SecurityEvent_1]] - `inherits` [EXTRACTED]
 - [[SecurityModuleConfig]] - `inherits` [EXTRACTED]
@@ -96,4 +96,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

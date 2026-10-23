@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "ResourceGuard (2)"
-location: "L44"
+community: "TestOutboundInfoFilter (2)"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard_2
+  - community/TestOutboundInfoFilter_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_13]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_18]] - `references` [EXTRACTED]
+- [[dot-to_dict()_15]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard_2
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "generate_branding_assets.py"
+community: "MemoryIntegrityMonitor"
 location: "L346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Clean up old threat records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_cleanup_old_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

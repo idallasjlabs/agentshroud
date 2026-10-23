@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: ".can_use_tool()"
 location: "L642"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/can_use_tool
 ---
 
 # Collect additional tools granted to the user via their group memberships.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_group_tool_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/can_use_tool

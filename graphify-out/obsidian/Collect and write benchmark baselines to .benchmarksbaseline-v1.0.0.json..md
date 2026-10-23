@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # Collect and write benchmark baselines to .benchmarks/baseline-v1.0.0.json.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBenchmarkBaseline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

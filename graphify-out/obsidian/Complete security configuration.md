@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "PathIsolationManager"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/PathIsolationManager
 ---
 
 # Complete security configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

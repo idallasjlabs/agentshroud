@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (2) (2)"
-location: "L28"
+community: "🛡️ AgentShroud Release Plan"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_2_2
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Authentication
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_2_2
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

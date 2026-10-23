@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # Categories of information that may need filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InfoCategory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

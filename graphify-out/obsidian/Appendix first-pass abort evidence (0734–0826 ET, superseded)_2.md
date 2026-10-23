@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-08-30-20260830-2010.md"
+source_file: "reports/upgrade-2026-08-30.md"
 type: "document"
-community: "AgentShroud Security Value Proposition - Revised (2)"
-location: "L301"
+community: "Phase 1 — Raw Collection (3)"
+location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_Revised_2
+  - community/Phase_1__Raw_Collection_3
 ---
 
 # Appendix: first-pass abort evidence (07:34–08:26 ET, superseded)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Weekly Upgrade Report — 2026-08-30_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised_2
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection_3

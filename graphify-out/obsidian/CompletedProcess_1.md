@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L41"
+community: "AgentShroud v0.9.0"
+location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/AgentShroud_v090
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Pre-Deployment Checklist (3)"
+community: "test_collaborator_greeter.py (2)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Pre-Deployment_Checklist_3
+  - community/test_collaborator_greeterpy_2
 ---
 
 # Collaborator Session Isolation (blocked functions/skills)
@@ -14,4 +14,4 @@ tags:
 - [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - `conceptually_related_to` [INFERRED]
 - [[Collaborators]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Pre-Deployment_Checklist_3
+#graphify/concept #graphify/INFERRED #community/test_collaborator_greeterpy_2

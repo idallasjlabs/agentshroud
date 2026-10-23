@@ -12,6 +12,6 @@ tags:
 # Configuration for the web traffic proxy.      Default-allow: all URLs pass unles
 
 ## Connections
-- [[WebProxyConfig_1]] - `rationale_for` [EXTRACTED]
+- [[WebProxyConfig]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

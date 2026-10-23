@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L296"
+community: "Browser — Secure Browser Automation (2)"
+location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Browser__Secure_Browser_Automation_2
 ---
 
 # Best Practices
 
 ## Connections
-- [[MCP-Specific_2]] - `contains` [EXTRACTED]
-- [[Organization_2]] - `contains` [EXTRACTED]
-- [[Security_7]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level_1]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally_1]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail_1]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully_1]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_2

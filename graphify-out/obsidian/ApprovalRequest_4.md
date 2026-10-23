@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
-type: "code"
-community: "ContextSegment"
-location: "L215"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "AgentShroud Operations Cheat Sheet"
+location: "L57"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[dot-submit()_1]] - `references` [EXTRACTED]
-- [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[Approval Workflows]] - `contains` [EXTRACTED]
+- [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

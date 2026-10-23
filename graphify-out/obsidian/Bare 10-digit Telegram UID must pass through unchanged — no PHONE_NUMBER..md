@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "test_sanitizer.py"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/test_sanitizerpy
 ---
 
 # Bare 10-digit Telegram UID must pass through unchanged — no <PHONE_NUMBER>.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_uid_not_redacted_as_phone()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy

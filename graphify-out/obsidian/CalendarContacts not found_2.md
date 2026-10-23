@@ -12,6 +12,6 @@ tags:
 # "Calendar/Contacts not found"
 
 ## Connections
-- [[Troubleshooting_23]] - `contains` [EXTRACTED]
+- [[Troubleshooting_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

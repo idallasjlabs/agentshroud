@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "A2AMethod"
+community: ".get_op_reference()"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/get_op_reference
 ---
 
 # Build a complete op:// reference for a credential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_op_reference()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AMethod
+#graphify/rationale #graphify/EXTRACTED #community/get_op_reference
