@@ -57,7 +57,16 @@ ENV DEBIAN_FRONTEND=noninteractive
 # the Debian, Wazuh and 1Password entries alike. Do not reintroduce it: an
 # image that installs packages without verifying repo signatures is a
 # supply-chain exposure, not a convenience.
-RUN apt-get update \
+#
+# ClamAV comes from trixie-proposed-updates: trixie's 1.4.3 carries CVE-2026-20213..20216
+# (crafted PE/FSG/7z/InstallShield files); the fix 1.4.6+dfsg-1~deb13u1 is only in
+# proposed-updates until the next point release. The pin keeps every other package on
+# stable. Drop both once trixie ships >= 1.4.6.
+RUN printf 'Types: deb\nURIs: http://deb.debian.org/debian\nSuites: trixie-proposed-updates\nComponents: main\nSigned-By: /usr/share/keyrings/debian-archive-keyring.gpg\n' \
+        > /etc/apt/sources.list.d/debian-proposed-updates.sources \
+    && printf 'Package: *\nPin: release a=trixie-proposed-updates\nPin-Priority: 1\n\nPackage: clamav* clamdscan libclamav*\nPin: release a=trixie-proposed-updates\nPin-Priority: 990\n' \
+        > /etc/apt/preferences.d/clamav-proposed-updates \
+    && apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
         openssh-client \

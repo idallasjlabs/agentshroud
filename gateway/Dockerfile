@@ -153,11 +153,9 @@ ENV PIP_ROOT_USER_ACTION=ignore
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install system dependencies for building Python packages
-# Trusted:yes workaround: apt 2.6 on ARM64/bookworm has a gpgv clearsign verification bug.
-# Manual gpgv confirms GOODSIG; individual package hashes still verified.
-RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
-    && apt-get update \
+# Install system dependencies for building Python packages (repo signatures verified;
+# the bookworm-era trust-everything workaround is not needed on trixie's apt).
+RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
     gcc \
@@ -188,8 +186,20 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install base packages and clean between groups to limit peak disk usage.
 # /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
+#
+# Repository signatures are verified. The 2026-03-27 workaround replaced Signed-By with
+# a trust-everything flag for an apt 2.6 arm64/bookworm gpgv bug; trixie's apt verifies
+# correctly (OpenClaw dropped it 2026-09-24), so it is gone here too.
+#
+# ClamAV comes from trixie-proposed-updates: trixie's 1.4.3 carries CVE-2026-20213..20216
+# (crafted PE/FSG/7z/InstallShield files, which is exactly what this container scans), and
+# the fix 1.4.6+dfsg-1~deb13u1 is only in proposed-updates until the next point release.
+# The pin keeps every other package on stable. Drop both once trixie ships >= 1.4.6.
 RUN mkdir -p /apt-dl/partial \
-    && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
+    && printf 'Types: deb\nURIs: http://deb.debian.org/debian\nSuites: trixie-proposed-updates\nComponents: main\nSigned-By: /usr/share/keyrings/debian-archive-keyring.gpg\n' \
+        > /etc/apt/sources.list.d/debian-proposed-updates.sources \
+    && printf 'Package: *\nPin: release a=trixie-proposed-updates\nPin-Priority: 1\n\nPackage: clamav* clamdscan libclamav*\nPin: release a=trixie-proposed-updates\nPin-Priority: 990\n' \
+        > /etc/apt/preferences.d/clamav-proposed-updates \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl upgrade -y \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
@@ -209,7 +219,7 @@ RUN mkdir -p /apt-dl/partial \
     && curl -sS https://downloads.1password.com/linux/keys/1password.asc \
         | gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg \
     && arch=$(dpkg --print-architecture) \
-    && echo "deb [arch=${arch} trusted=yes signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
+    && echo "deb [arch=${arch} signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
         > /etc/apt/sources.list.d/1password.list \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl upgrade -y \
@@ -422,6 +432,12 @@ COPY .github/ /app/.github/
 
 # Copy installed packages from builder
 COPY --from=builder /install /usr/local
+
+# GHSA-6q48-6c7w-9gw2 (CRITICAL): the base image's pip 26.2.1 vendors certifi 2026.06.17,
+# which bundles the compromised emSign roots. pip 26.2.2 vendors certifi 2026.10.19.
+# The base image's ensurepip wheel carries the same old copy and is never used at runtime.
+RUN pip install --no-cache-dir --upgrade "pip>=26.2.2" \
+    && rm -f /usr/local/lib/python3.13/ensurepip/_bundled/pip-*.whl
 
 # Copy application code
 COPY gateway/ /app/gateway/
