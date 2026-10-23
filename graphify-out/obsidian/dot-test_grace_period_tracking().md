@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "AgentShroud Documentation"
+community: "CredentialInfo"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/CredentialInfo
 ---
 
 # .test_grace_period_tracking()
@@ -16,4 +16,4 @@ tags:
 - [[Test grace period status tracking.]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialInfo]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

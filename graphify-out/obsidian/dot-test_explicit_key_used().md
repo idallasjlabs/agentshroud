@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_explicit_key_used()
@@ -15,4 +15,4 @@ tags:
 - [[Explicit key parameter should override session key.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

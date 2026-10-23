@@ -12,7 +12,7 @@ tags:
 # .test_empty_sbom_scores_two()
 
 ## Connections
-- [[TestSupplyChain]] - `method` [EXTRACTED]
+- [[TestSupplyChain_1]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2

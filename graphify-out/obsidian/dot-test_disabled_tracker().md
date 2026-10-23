@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "Enum"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Enum
 ---
 
 # .test_disabled_tracker()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[MultiTurnTracker]] - `calls` [EXTRACTED]
 - [[Test that disabled tracker doesn't track or score.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
+- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/Enum

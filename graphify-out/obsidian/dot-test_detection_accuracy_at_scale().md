@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_detection_accuracy_at_scale()
@@ -15,4 +15,4 @@ tags:
 - [[Injection attempts should be detected even under load.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

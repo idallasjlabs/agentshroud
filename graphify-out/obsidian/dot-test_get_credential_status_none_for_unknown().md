@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "AgentShroud Documentation"
+community: "test_key_rotation_internals.py"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/test_key_rotation_internalspy
 ---
 
 # .test_get_credential_status_none_for_unknown()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStatusHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/code #graphify/EXTRACTED #community/test_key_rotation_internalspy

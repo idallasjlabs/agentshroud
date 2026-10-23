@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[A failing image scan appends an error line but does not raise.]] - `rationale_for` [EXTRACTED]
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
-- [[_fake_send()_1]] - `contains` [EXTRACTED]
-- [[_fake_send()_14]] - `indirect_call` [INFERRED]
+- [[_fake_send()_3]] - `contains` [EXTRACTED]
+- [[_fake_send()]] - `indirect_call` [INFERRED]
 - [[_fake_trivy_scan()_1]] - `contains` [EXTRACTED]
 - [[_fake_trivy_scan()_5]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]

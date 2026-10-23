@@ -15,7 +15,7 @@ tags:
 - [[Fail-closed intent even on a known server, an obviously destructive         too]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
-- [[_write()]] - `calls` [EXTRACTED]
+- [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

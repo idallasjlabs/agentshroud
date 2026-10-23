@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
-location: "L56"
+community: "ApprovalQueueConfig"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/ApprovalQueueConfig
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

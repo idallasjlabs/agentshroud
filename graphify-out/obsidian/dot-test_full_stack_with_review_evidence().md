@@ -12,7 +12,7 @@ tags:
 # .test_full_stack_with_review_evidence()
 
 ## Connections
-- [[TestAccessControl_1]] - `method` [EXTRACTED]
+- [[TestAccessControl]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2

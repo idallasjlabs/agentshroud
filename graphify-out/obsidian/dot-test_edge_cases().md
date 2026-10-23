@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L290"
+community: "test_soc_router_coverage.py"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_router_coveragepy
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and malformed inputs.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[Test edge cases and error conditions.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

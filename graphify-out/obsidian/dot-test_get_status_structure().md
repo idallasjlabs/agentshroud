@@ -12,6 +12,6 @@ tags:
 # .test_get_status_structure()
 
 ## Connections
-- [[TestStatus]] - `method` [EXTRACTED]
+- [[TestStatus_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy_2

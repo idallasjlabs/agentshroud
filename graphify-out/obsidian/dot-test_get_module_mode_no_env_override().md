@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "TestEnforceDefaults"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestEnforceDefaults
 ---
 
 # .test_get_module_mode_no_env_override()
@@ -16,4 +16,4 @@ tags:
 - [[TestGetModuleModeEnforceDefault]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults

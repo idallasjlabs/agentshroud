@@ -12,7 +12,7 @@ tags:
 # .test_fallback_when_no_bots()
 
 ## Connections
-- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
 - [[TestDefaultBotDockerfile]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

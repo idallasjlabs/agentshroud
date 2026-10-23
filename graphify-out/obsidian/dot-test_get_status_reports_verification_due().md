@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "AgentTarget (3)"
+community: "KillSwitchMonitor"
 location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/KillSwitchMonitor
 ---
 
 # .test_get_status_reports_verification_due()
@@ -16,4 +16,4 @@ tags:
 - [[TestStatusAndStats]] - `method` [EXTRACTED]
 - [[_fake_stats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

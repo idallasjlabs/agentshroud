@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PortManager"
+community: "SessionManager"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/SessionManager
 ---
 
 # .test_git_guard_no_path_leak()
@@ -16,4 +16,4 @@ tags:
 - [[GitGuard]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/SessionManager

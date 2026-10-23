@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # .test_dns_entropy_calculator()
@@ -15,4 +15,4 @@ tags:
 - [[High-entropy domains (potential tunneling).]] - `rationale_for` [EXTRACTED]
 - [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

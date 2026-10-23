@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "SessionManager"
 location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/SessionManager
 ---
 
 # .test_git_guard_detects_credential_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[GitGuard]] - `calls` [INFERRED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/SessionManager

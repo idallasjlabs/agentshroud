@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CronStateMonitor"
+community: "TelegramAPIProxy"
 location: "L1615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/TelegramAPIProxy
 ---
 
 # .test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field()
 
 ## Connections
 - [[JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

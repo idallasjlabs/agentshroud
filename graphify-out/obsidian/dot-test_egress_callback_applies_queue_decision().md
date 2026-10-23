@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (5)"
+community: "ApprovalQueueConfig (2)"
 location: "L5666"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_5
+  - community/ApprovalQueueConfig_2
 ---
 
 # .test_egress_callback_applies_queue_decision()
@@ -15,10 +15,10 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Telegram egress inline callback should update egress approval queue.]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[answer_callback()_1]] - `contains` [EXTRACTED]
-- [[approve()_1]] - `contains` [EXTRACTED]
+- [[answer_callback()]] - `contains` [EXTRACTED]
+- [[approve()]] - `contains` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[deny()_1]] - `contains` [EXTRACTED]
-- [[handle_callback()_1]] - `contains` [EXTRACTED]
+- [[deny()]] - `contains` [EXTRACTED]
+- [[handle_callback()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_5
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

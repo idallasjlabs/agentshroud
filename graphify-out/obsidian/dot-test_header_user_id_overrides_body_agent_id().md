@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L175"
+community: "AgentShroud Security Value Proposition"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # .test_header_user_id_overrides_body_agent_id()
 
 ## Connections
-- [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
+- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+- [[x-agentshroud-user-id header must override spoofable body agent_id.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

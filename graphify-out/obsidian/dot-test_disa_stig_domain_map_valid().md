@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentShroud Docker Configuration"
+community: "test_mfa_guard.py"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/test_mfa_guardpy
 ---
 
 # .test_disa_stig_domain_map_valid()
@@ -15,4 +15,4 @@ tags:
 - [[DISA STIG domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
 - [[TestComputeScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

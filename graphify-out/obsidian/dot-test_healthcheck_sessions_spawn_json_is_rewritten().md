@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CronStateMonitor"
+community: "TelegramAPIProxy"
 location: "L517"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/TelegramAPIProxy
 ---
 
 # .test_healthcheck_sessions_spawn_json_is_rewritten()
 
 ## Connections
 - [[Healthcheck tool-call JSON should be rewritten to friendly status text.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

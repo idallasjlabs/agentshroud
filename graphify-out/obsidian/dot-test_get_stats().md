@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "StdioConnection (2)"
-location: "L384"
+community: "SecurityPipeline (2)"
+location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/SecurityPipeline_2
 ---
 
 # .test_get_stats()
 
 ## Connections
-- [[Test getting hardening statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

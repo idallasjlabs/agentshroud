@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "system-requirements.md"
-location: "L795"
+community: "MCPToolCall"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/MCPToolCall
 ---
 
 # .test_generate_report()
 
 ## Connections
-- [[TestHealthReport]] - `method` [EXTRACTED]
-- [[generate_report()]] - `calls` [EXTRACTED]
+- [[TestAuditQueries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "StdioConnection (2)"
+community: "Any"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/Any
 ---
 
 # .test_format_hardened_message_with_security_concerns()
@@ -16,4 +16,4 @@ tags:
 - [[Test hardened message formatting with security concerns.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/Any

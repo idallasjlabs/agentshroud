@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # .test_empty_author_is_denied()
@@ -15,4 +15,4 @@ tags:
 - [[An emptyNone author is never authorized.]] - `rationale_for` [EXTRACTED]
 - [[TestAuthorizationHelper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

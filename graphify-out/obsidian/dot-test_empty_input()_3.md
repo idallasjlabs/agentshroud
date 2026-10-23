@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "_wrap_response() (5)"
-location: "L298"
+community: "test_agent_cve_registry.py (2)"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_5
+  - community/test_agent_cve_registrypy_2
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_5
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

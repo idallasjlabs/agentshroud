@@ -12,7 +12,7 @@ tags:
 # .test_denylist_overrides_allowlist()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[Test that denylist overrides allowlist in strict mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]

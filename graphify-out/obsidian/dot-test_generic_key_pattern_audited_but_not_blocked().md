@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVaultConfig"
 location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVaultConfig
 ---
 
 # .test_generic_key_pattern_audited_but_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

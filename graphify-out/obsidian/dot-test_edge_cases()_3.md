@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "FetchOutcome"
-location: "L334"
+community: "Enum"
+location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/Enum
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and boundary conditions.]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Test edge cases and error conditions._2]] - `rationale_for` [EXTRACTED]
+- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/Enum

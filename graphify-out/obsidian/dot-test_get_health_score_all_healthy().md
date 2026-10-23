@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "CredentialInfo"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/CredentialInfo
 ---
 
 # .test_get_health_score_all_healthy()
@@ -16,4 +16,4 @@ tags:
 - [[Test health score calculation with all healthy credentials.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

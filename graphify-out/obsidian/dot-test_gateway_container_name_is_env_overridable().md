@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "_build_image_targets()"
 location: "L1088"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/_build_image_targets
 ---
 
 # .test_gateway_container_name_is_env_overridable()
@@ -16,4 +16,4 @@ tags:
 - [[TestBuildImageTargets]] - `method` [EXTRACTED]
 - [[_fake_running()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

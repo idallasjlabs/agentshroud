@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_url_analyzer.py"
+source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "LLMProxy"
-location: "L120"
+community: "AgentShroud™ README"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/AgentShroud_README
 ---
 
 # .test_https_allowed()
 
 ## Connections
-- [[TestLegitimateURLsAllowed]] - `method` [EXTRACTED]
+- [[TestCredentialProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_README

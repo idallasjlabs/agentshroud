@@ -12,7 +12,7 @@ tags:
 # .test_get_users_by_role()
 
 ## Connections
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[Test getting users by role.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 

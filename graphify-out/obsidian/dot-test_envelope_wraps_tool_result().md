@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # .test_envelope_wraps_tool_result()
@@ -15,4 +15,4 @@ tags:
 - [[TestEnvelopeSigner]] - `method` [EXTRACTED]
 - [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

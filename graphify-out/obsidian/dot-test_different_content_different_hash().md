@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AuditChain"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AuditChain
 ---
 
 # .test_different_content_different_hash()
@@ -15,4 +15,4 @@ tags:
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestAuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "ContextGuard"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ContextGuard
 ---
 
 # .test_env_guard_detects_data_access()
@@ -16,4 +16,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [INFERRED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "env_guard.py"
+community: "A2AMethod"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/A2AMethod
 ---
 
 # .test_emergency_rotation()
@@ -15,4 +15,4 @@ tags:
 - [[Test emergency rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

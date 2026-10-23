@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPToolCall"
 location: "L847"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPToolCall
 ---
 
 # .test_execute_with_content_still_inspects()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestExecuteResultInspectionBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall
