@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # graphify reference: GitHub clone and cross-repo merge
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members

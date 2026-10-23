@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.05
 members: 44
 ---
 
 # opencode.json
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 44 nodes
 
 ## Members
 - [[$schema]] - code - opencode.json
-- [[PATH_11]] - code - opencode.json
+- [[PATH_15]] - code - opencode.json
 - [[atlassian-agentshroud]] - code - opencode.json
 - [[atlassian-idallasj]] - code - opencode.json
 - [[autoOpenFile]] - code - opencode.json

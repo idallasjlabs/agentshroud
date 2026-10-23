@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # test_collaborator_tracker.py (2) (3)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -25,7 +27,7 @@ members: 19
 - [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Related Notes_49]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Related Notes_43]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 
 ## Live Query (requires Dataview plugin)
@@ -36,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
 - [[Crash Recovery_2]] - degree 9, connects to 1 community

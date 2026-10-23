@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 14
 ---
 
 # log_sanitizer.py
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 14
 - [[dot-test_unknown_arg_rejected()]] - code - gateway/tests/test_canary_deploy.py
 - [[TestDryRun]] - code - gateway/tests/test_canary_deploy.py
 - [[TestGuard]] - code - gateway/tests/test_canary_deploy.py
-- [[_run()_3]] - code - gateway/tests/test_canary_deploy.py
+- [[_run()_4]] - code - gateway/tests/test_canary_deploy.py
 - [[canary-deploy.sh (bluegreen canary deploy)]] - code - scripts/canary-deploy.sh
 - [[test_canary_deploy.py]] - code - gateway/tests/test_canary_deploy.py
 - [[test_help_prints_usage()]] - code - gateway/tests/test_canary_deploy.py

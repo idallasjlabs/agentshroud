@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.26
 members: 13
 ---
 
 # test_llm_proxy_thinking_suppression.py
 
+**Cohesion:** 0.26 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[AI Models]] - document - docs/reference/QUICK_REFERENCE.md
 - [[API Keys_1]] - document - docs/reference/QUICK_REFERENCE.md
 - [[Access Points]] - document - docs/reference/QUICK_REFERENCE.md
-- [[Container Management_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Container Management_2]] - document - docs/reference/QUICK_REFERENCE.md
 - [[Files_2]] - document - docs/reference/QUICK_REFERENCE.md
 - [[Most Common Commands]] - document - docs/reference/QUICK_REFERENCE.md
-- [[PREREQUISITES_16]] - document - docs/reference/PREREQUISITES.md
+- [[PREREQUISITES_15]] - document - docs/reference/PREREQUISITES.md
 - [[QUICK_REFERENCE]] - document - docs/reference/QUICK_REFERENCE.md
 - [[Quick Reference Card]] - document - docs/reference/QUICK_REFERENCE.md
 - [[Quick Reference Commands]] - document - docs/setup/DEVICE_PAIRING.md
@@ -31,13 +33,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results (2)]]
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
 - 1 edge to [[_COMMUNITY_Apple Services Setup Guide]]
 - 1 edge to [[_COMMUNITY_What You Must Do When Invoked (3)]]
-- 1 edge to [[_COMMUNITY_First Time Setup (2)]]
+- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
+- 1 edge to [[_COMMUNITY_First Time Setup (2)_1]]
 - 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py]]
 
 ## Top bridge nodes
 - [[Quick Reference Commands]] - degree 11, connects to 2 communities
 - [[QUICK_REFERENCE]] - degree 5, connects to 2 communities
-- [[PREREQUISITES_16]] - degree 4, connects to 2 communities
+- [[PREREQUISITES_15]] - degree 4, connects to 2 communities

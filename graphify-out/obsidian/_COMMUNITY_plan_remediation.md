@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.08
 members: 32
 ---
 
 # plan_remediation
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[dot-__init__()_103]] - code - gateway/security/output_schema.py
+- [[dot-__init__()_107]] - code - gateway/security/output_schema.py
 - [[dot-_register_default_schema()]] - code - gateway/security/output_schema.py
 - [[dot-register_schema()]] - code - gateway/security/output_schema.py
 - [[dot-test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
@@ -37,7 +39,7 @@ members: 32
 - [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
 - [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
 - [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
-- [[enforcer()_1]] - code - gateway/tests/test_output_schema.py
+- [[enforcer()]] - code - gateway/tests/test_output_schema.py
 - [[output_schema.py]] - code - gateway/security/output_schema.py
 - [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
 

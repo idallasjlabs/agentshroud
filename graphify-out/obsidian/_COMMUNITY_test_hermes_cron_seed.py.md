@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 40
 ---
 
 # test_hermes_cron_seed.py
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 40 nodes
 
 ## Members

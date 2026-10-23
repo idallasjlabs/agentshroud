@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # test_scanner_integration.py (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 16
 - [[Configuration  Environment Variables_7]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 - [[Function Details_16]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 - [[Key Classes  Functions_18]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
-- [[Purpose_118]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
+- [[Purpose_116]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 - [[Related_22]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 - [[Responsibilities_20]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md
 - [[apple_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/apple_engine.py.md

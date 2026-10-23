@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.24
 members: 10
 ---
 
 # openclaw/skills/i-browser/package.json
 
+**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -28,8 +30,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 - 1 edge to [[_COMMUNITY_canvas_proxy_app]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
 
 ## Top bridge nodes
 - [[State Machine — Approval Queue Item Lifecycle]] - degree 4, connects to 2 communities

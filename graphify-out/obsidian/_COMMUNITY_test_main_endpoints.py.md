@@ -1,15 +1,16 @@
 ---
 type: community
-members: 55
+cohesion: 0.06
+members: 52
 ---
 
 # test_main_endpoints.py
 
-**Members:** 55 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 52 nodes
 
 ## Members
-- [[dot-__init__()_1]] - code - gateway/proxy/web_content_scanner.py
-- [[dot-__init__()_2]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_2]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-_scan_encoded_payloads()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-_scan_hidden_content()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-_scan_pii()]] - code - gateway/proxy/web_content_scanner.py
@@ -17,7 +18,7 @@ members: 55
 - [[dot-_scan_xml_dtd()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-_scan_zero_width()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-finding_summary()]] - code - gateway/proxy/web_content_scanner.py
-- [[dot-flagged()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-flagged()_1]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-scan()]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-setUp()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_billion_laughs_detected()]] - code - gateway/tests/test_xml_dtd_control.py
@@ -39,7 +40,7 @@ members: 55
 - [[Detect DTDentity constructs that drive XML parser memory-safety bugs. Flags…]] - rationale - gateway/proxy/web_content_scanner.py
 - [[Detect zero-width character sequences (steganographic attacks).]] - rationale - gateway/proxy/web_content_scanner.py
 - [[Entity declarations carry both XXE and billion-laughs.]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[Enum]] - code
+- [[Enum_1]] - code
 - [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
 - [[Gateway XML DTDentity control — CLAUDE.md 0.05 arm 2. CVE-2026-6653 is a use-…]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[HTML5's bare !DOCTYPE html has no internal subset and is harmless.]] - rationale - gateway/tests/test_xml_dtd_control.py
@@ -57,10 +58,8 @@ members: 55
 - [[TestDangerousXMLIsBlockedNotFlagged]] - code - gateway/tests/test_xml_dtd_control.py
 - [[The '' block inside DOCTYPE is what xmlParseInternalSubset parses.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[The distinction this whole control rests on.]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[URLAnalyzer]] - code
 - [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
-- [[WebProxyConfig]] - code
-- [[str]] - code
+- [[str_1]] - code
 - [[test_xml_dtd_control.py]] - code - gateway/tests/test_xml_dtd_control.py
 - [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
 
@@ -72,18 +71,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_LLMProxy]]
+- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 2 edges to [[_COMMUNITY_scanner_integration.py]]
-- 2 edges to [[_COMMUNITY__pcm_bytes]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py (2)]]
+- 1 edge to [[_COMMUNITY_TestTriageClassLevelCoverage]]
 - 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_Path (3)]]
+- 1 edge to [[_COMMUNITY__AGENT_CVE_REGISTRIES]]
+- 1 edge to [[_COMMUNITY_URLAnalyzer]]
 - 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
-- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_Common Queries]]
 
 ## Top bridge nodes
 - [[WebContentScanner]] - degree 22, connects to 6 communities
-- [[web_content_scanner.py]] - degree 10, connects to 3 communities
-- [[dot-__init__()_2]] - degree 5, connects to 2 communities
+- [[web_content_scanner.py]] - degree 10, connects to 4 communities
 - [[test_xml_dtd_control.py]] - degree 7, connects to 1 community

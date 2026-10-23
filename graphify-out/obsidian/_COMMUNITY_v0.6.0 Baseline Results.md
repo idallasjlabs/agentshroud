@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # v0.6.0 Baseline Results
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 13
 - [[MCPServerConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[PermissionLevel Ordering]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[PermissionLevel comparison operators]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Purpose_150]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Purpose_149]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[Related_50]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[Responsibilities_47]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[mcp_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md

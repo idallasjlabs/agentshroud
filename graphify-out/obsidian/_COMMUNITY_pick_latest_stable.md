@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.07
 members: 40
 ---
 
 # pick_latest_stable
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 40 nodes
 
 ## Members
 - [[Add security headers to all responses (defense-in-depth). Also catches Python…]] - rationale - gateway/ingest_api/main.py
-- [[ApprovalDecision_1]] - code - gateway/ingest_api/models.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
 - [[CORS middleware that uses config from app_state]] - rationale - gateway/ingest_api/main.py
 - [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - rationale - gateway/ingest_api/main.py
 - [[Log all incoming requests Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
@@ -59,15 +61,16 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 - 5 edges to [[_COMMUNITY_TrustConfig]]
-- 5 edges to [[_COMMUNITY__make_proxy()]]
-- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 4 edges to [[_COMMUNITY_ForwardRequest]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (3)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency()]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
 - [[global_exception_handler()]] - degree 8, connects to 3 communities
-- [[ApprovalDecision_1]] - degree 6, connects to 3 communities
+- [[ApprovalDecision]] - degree 6, connects to 3 communities
 - [[test_main_simple.py]] - degree 22, connects to 2 communities
 - [[limit_request_body()]] - degree 9, connects to 2 communities
 - [[security_headers_middleware()]] - degree 8, connects to 2 communities

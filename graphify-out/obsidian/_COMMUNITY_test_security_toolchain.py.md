@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 25
 ---
 
 # test_security_toolchain.py
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
@@ -26,7 +28,7 @@ members: 25
 - [[Live Reload]] - document - skills/openclaw/canvas/SKILL.md
 - [[Node App (MaciOSAndroid WebView)]] - concept - skills/openclaw/canvas/SKILL.md
 - [[Node Bridge (port 18790)]] - concept - skills/openclaw/canvas/SKILL.md
-- [[Overview_8]] - document - skills/openclaw/canvas/SKILL.md
+- [[Overview_9]] - document - skills/openclaw/canvas/SKILL.md
 - [[Tailscale Integration]] - document - skills/openclaw/canvas/SKILL.md
 - [[Tips_2]] - document - skills/openclaw/canvas/SKILL.md
 - [[URL Path Structure]] - document - skills/openclaw/canvas/SKILL.md

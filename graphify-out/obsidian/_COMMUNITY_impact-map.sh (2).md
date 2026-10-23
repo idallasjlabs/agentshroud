@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 4
 ---
 
 # impact-map.sh (2)
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 4 nodes
 
 ## Members

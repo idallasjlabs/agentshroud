@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 29
 ---
 
 # test_wazuh_watchdog.py
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -26,7 +28,7 @@ members: 29
 - [[dot-test_restart_that_does_not_recover_is_a_failure()]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[dot-test_script_is_executable_in_git()]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[dot-test_single_miss_within_grace_does_not_restart()]] - code - gateway/tests/test_wazuh_watchdog.py
-- [[Path_28]] - code
+- [[Path_32]] - code
 - [[TestHealthCheckWazuhStep]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[TestWatchdogBehaviour]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[TestWatchdogWiring]] - code - gateway/tests/test_wazuh_watchdog.py

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # run-standalone.sh (Hermes docker run launcher)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -20,8 +22,8 @@ members: 18
 - [[Output Format_18]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Persona_5]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Quality Checklist_5]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Role_57]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_2]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Role_55]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Socrates — Dialogue Architect_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Speaker Definitions]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[System Prompt_5]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[User Prompt Template_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md

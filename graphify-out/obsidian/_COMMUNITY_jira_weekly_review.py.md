@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 34
 ---
 
 # jira_weekly_review.py
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 34 nodes
 
 ## Members
@@ -53,17 +55,17 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
 - 7 edges to [[_COMMUNITY_egress_retry.py]]
-- 7 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 7 edges to [[_COMMUNITY_PodmanEngine]]
 - 6 edges to [[_COMMUNITY_AppleContainerEngine]]
 - 6 edges to [[_COMMUNITY__get_gmail_app_password]]
 - 5 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
 - 4 edges to [[_COMMUNITY_Workflow (follow in order)]]
 - 4 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 2 edges to [[_COMMUNITY_server.py]]
 - 2 edges to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
+- 2 edges to [[_COMMUNITY_server.py]]
 - 2 edges to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
 - 2 edges to [[_COMMUNITY_tts.py]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 
 ## Top bridge nodes
 - [[test_runtime_engines.py]] - degree 33, connects to 13 communities

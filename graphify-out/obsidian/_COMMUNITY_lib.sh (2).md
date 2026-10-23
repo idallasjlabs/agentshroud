@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.24
 members: 13
 ---
 
 # lib.sh (2)
 
+**Cohesion:** 0.24 - loosely connected
 **Members:** 13 nodes
 
 ## Members

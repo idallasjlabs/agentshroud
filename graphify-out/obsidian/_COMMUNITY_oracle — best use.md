@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 13
 ---
 
 # oracle — best use
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 13
 - [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
 - [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
 - [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Overview_20]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Overview_24]] - document - skills/openclaw/healthcheck/SKILL.md
 - [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
 - [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
 - [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md

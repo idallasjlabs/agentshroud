@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # hermes/skills/i-bs/README.md (4)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -24,8 +26,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_OpenSCAP]]
-- 1 edge to [[_COMMUNITY_Command Details]]
 - 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
+- 1 edge to [[_COMMUNITY_Command Details]]
 
 ## Top bridge nodes
 - [[TestScoreMalwareDefense]] - degree 6, connects to 1 community

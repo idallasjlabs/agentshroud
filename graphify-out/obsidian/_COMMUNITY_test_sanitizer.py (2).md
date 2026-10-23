@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 8
 ---
 
 # test_sanitizer.py (2)
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -26,7 +28,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_dot-cursormcp.json]]
-- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 
 ## Top bridge nodes
 - [[ADR-008 Progressive Trust Level System]] - degree 3, connects to 1 community

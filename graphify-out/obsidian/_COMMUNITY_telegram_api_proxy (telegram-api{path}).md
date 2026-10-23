@@ -1,11 +1,13 @@
 ---
 type: community
-members: 30
+cohesion: 0.15
+members: 29
 ---
 
 # telegram_api_proxy (/telegram-api/{path})
 
-**Members:** 30 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 29 nodes
 
 ## Members
 - [[COMPOSE (asb compose command string)]] - code - scripts/asb
@@ -13,7 +15,6 @@ members: 30
 - [[Container runtime auto-detection contract (SCRUM-92)]] - rationale - docker/README.md
 - [[DOCKER_API_VERSION]] - code - scripts/asb
 - [[PROJECT (compose project name)]] - code - scripts/asb
-- [[S15 asb _preserve_nonempty_secrets restores emptymissing values and keeps new non-empty ones]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[S16 asb rebuildclean-rebuild build with $_PROFILE_FLAG]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[_PROFILE_FLAG]] - code - scripts/asb
 - [[_asb_banner()]] - code - scripts/asb
@@ -48,9 +49,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 13 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh]]
 - 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
 
 ## Top bridge nodes
 - [[setup_ephemeral_secrets()]] - degree 10, connects to 3 communities

@@ -1,46 +1,78 @@
 ---
 type: community
-members: 33
+cohesion: 0.04
+members: 63
 ---
 
 # test_collaborator_tracker.py (2)
 
-**Members:** 33 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 63 nodes
 
 ## Members
-- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - paper - docs/papers/agentshroud-whitepaper.md
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[ContextGuard (context window poisoning defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Egress Filter  SSRF Protection]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[End-to-End Verification]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[FileSandbox (path isolation)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[GitGuard (supply-chain hook scanning)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Known Gaps (Documented for v0.8.0)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[MCP Proxy Layer (tool-call interception)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[P0 — Critical Path (1616 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P1 — Active Defense (1414 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P2 — Infrastructure (1010 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary_8]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Summary_9]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - code - docs/planning/reviews/enforcement-audit-script.py
-- [[enforcement-audit-v0.7.0]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[⚠️ Warning ContextGuard Enforcement]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning SecurityPipeline]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning killswitch.sh Path]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warnings]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[dot-_apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_collaborator_safe_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_handle_outbound_tool_calls()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_is_immune()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_notify_user_blocked()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_parse_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_rewrite_known_runtime_errors()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_sanitize_reason()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
+- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Any_83]] - code - gateway/proxy/telegram_proxy.py
+- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Concise collaborator-safe reason text without internal leakage.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Find first embedded tool-call JSON object inside arbitrary text.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[HTML-escape PII redaction placeholders so they render as literal         text in]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Parse leaked model tool-call JSON blobs (e.g. {'name' 'NO_REPLY', ...}).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Result of the shared outbound text security scan.      processed a scan path (c]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if user_id has active (non-expired) immunity.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send a user-friendly notification when a message is blocked.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip internal paths and module names from block reasons before user display.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,15 +82,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_KillSwitchMonitor (2)]]
-- 6 edges to [[_COMMUNITY_test_collaborator_tracker.py (2) (2)]]
-- 2 edges to [[_COMMUNITY_start-agentshroud.sh (2)]]
-- 1 edge to [[_COMMUNITY_TeamsConfig (3)]]
-- 1 edge to [[_COMMUNITY_Project Management (README)]]
+- 53 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 4 edges to [[_COMMUNITY_dot-_proxy_request_impl()]]
+- 2 edges to [[_COMMUNITY_SkillGuard]]
+- 2 edges to [[_COMMUNITY__t]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 2 edges to [[_COMMUNITY__make_proxy]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
 
 ## Top bridge nodes
-- [[Egress Filter  SSRF Protection]] - degree 7, connects to 3 communities
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - degree 20, connects to 2 communities
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 2 communities
-- [[ContextGuard (context window poisoning defense)]] - degree 4, connects to 1 community
+- [[Any_83]] - degree 17, connects to 7 communities
+- [[_OutboundScan]] - degree 9, connects to 7 communities
+- [[dot-_filter_outbound()_1]] - degree 19, connects to 3 communities
+- [[dot-_filter_outbound_multipart()]] - degree 12, connects to 2 communities
+- [[dot-_emit_quarantine_event()]] - degree 5, connects to 2 communities

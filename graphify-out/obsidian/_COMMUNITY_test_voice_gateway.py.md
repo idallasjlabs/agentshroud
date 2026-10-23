@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 87
 ---
 
 # test_voice_gateway.py
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 87 nodes
 
 ## Members
@@ -57,7 +59,7 @@ members: 87
 - [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
 - [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[fake_open()]] - code - gateway/tests/test_llm_proxy.py
-- [[fake_urlopen()_74]] - code - gateway/tests/test_llm_proxy.py
+- [[fake_urlopen()_75]] - code - gateway/tests/test_llm_proxy.py
 - [[llm_proxy.py_2]] - code - gateway/proxy/llm_proxy.py
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[mock_forward()]] - code - gateway/tests/test_llm_proxy.py
@@ -111,7 +113,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
 - 1 edge to [[_COMMUNITY_KeyRotationManager (3)]]
 - 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_Steps]]
 
 ## Top bridge nodes

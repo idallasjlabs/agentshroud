@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # hermes/skills/i-cr/SKILL.md (2)
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -24,9 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Command Details]]
 - 2 edges to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
 - 2 edges to [[_COMMUNITY_OpenSCAP]]
+- 2 edges to [[_COMMUNITY_Command Details]]
 
 ## Top bridge nodes
 - [[TestIsFresh]] - degree 5, connects to 1 community

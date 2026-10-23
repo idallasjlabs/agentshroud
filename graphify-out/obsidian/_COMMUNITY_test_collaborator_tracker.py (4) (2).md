@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # test_collaborator_tracker.py (4) (2)
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 14
 - [[Cannot save token]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[Get Token Again]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[OpenClaw Control UI Pairing Instructions]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
-- [[Security Note_2]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Security Note_1]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[Step 1 Open the Control UI]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[Step 2 Open Settings]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[Step 3 Enter the Gateway Token]] - document - docs/setup/PAIRING_INSTRUCTIONS.md

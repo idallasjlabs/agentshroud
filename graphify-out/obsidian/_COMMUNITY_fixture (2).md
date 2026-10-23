@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.32
 members: 8
 ---
 
 # fixture (2)
 
+**Cohesion:** 0.32 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 - 1 edge to [[_COMMUNITY_ControlCenter]]
 
 ## Top bridge nodes

@@ -1,25 +1,35 @@
 ---
 type: community
-members: 66
+cohesion: 0.05
+members: 75
 ---
 
 # test_voice_latency_guard.py
 
-**Members:** 66 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 75 nodes
 
 ## Members
-- [[dot-__init__()_195]] - code - gateway/security/mfa_guard.py
+- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
+- [[dot-__init__()_175]] - code - gateway/security/mfa_guard.py
 - [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
 - [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
 - [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
 - [[dot-is_required()]] - code - gateway/security/mfa_guard.py
 - [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
+- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
 - [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
 - [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
+- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
 - [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
+- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
+- [[MFAResult]] - code - gateway/security/mfa_guard.py
+- [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
 - [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - rationale - gateway/tests/test_mfa_guard.py
 - [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - rationale - gateway/security/mfa_guard.py
@@ -30,8 +40,10 @@ members: 66
 - [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
 - [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
 - [[_truthy()]] - code - gateway/security/mfa_guard.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
-- [[now()_11]] - code - gateway/tests/test_mfa_guard.py
+- [[now()_10]] - code - gateway/tests/test_mfa_guard.py
+- [[queue.py]] - code - gateway/approval_queue/queue.py
 - [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
@@ -52,7 +64,6 @@ members: 66
 - [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
@@ -83,17 +94,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_ContextSegment]]
-- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY__make_proxy()]]
+- 26 edges to [[_COMMUNITY_ContextSegment]]
+- 7 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 4 edges to [[_COMMUNITY_ApprovalStore]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]]
+- 1 edge to [[_COMMUNITY_Any]]
+- 1 edge to [[_COMMUNITY_GroupConfig]]
 - 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 - 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
-- [[MFAGuard_2]] - degree 48, connects to 4 communities
-- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
-- [[mfa_guard.py]] - degree 6, connects to 3 communities
-- [[_queue()]] - degree 11, connects to 2 communities
-- [[_submit_high_risk()]] - degree 9, connects to 1 community
+- [[test_mfa_guard.py]] - degree 60, connects to 5 communities
+- [[queue.py]] - degree 14, connects to 5 communities
+- [[EnhancedApprovalQueue_2]] - degree 11, connects to 4 communities
+- [[ApprovalQueue_1]] - degree 10, connects to 4 communities
+- [[MFAGuard_2]] - degree 48, connects to 3 communities

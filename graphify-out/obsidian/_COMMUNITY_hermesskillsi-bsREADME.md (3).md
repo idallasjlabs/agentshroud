@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.53
 members: 6
 ---
 
 # hermes/skills/i-bs/README.md (3)
 
+**Cohesion:** 0.53 - moderately connected
 **Members:** 6 nodes
 
 ## Members

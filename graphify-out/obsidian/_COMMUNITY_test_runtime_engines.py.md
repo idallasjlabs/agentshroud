@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.11
 members: 34
 ---
 
 # test_runtime_engines.py
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_98]] - code - gateway/security/config_integrity.py
+- [[dot-__init__()_103]] - code - gateway/security/config_integrity.py
 - [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
 - [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
 - [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
@@ -21,7 +23,7 @@ members: 34
 - [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
 - [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
 - [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_21]] - code - gateway/security/config_integrity.py
+- [[Path_26]] - code - gateway/security/config_integrity.py
 - [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
 - [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
 - [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
@@ -51,7 +53,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 
 ## Top bridge nodes
 - [[ConfigIntegrityMonitor]] - degree 24, connects to 1 community

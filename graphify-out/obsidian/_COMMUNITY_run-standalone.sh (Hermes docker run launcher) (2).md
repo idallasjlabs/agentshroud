@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 11
 ---
 
 # run-standalone.sh (Hermes docker run launcher) (2)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 11 nodes
 
 ## Members

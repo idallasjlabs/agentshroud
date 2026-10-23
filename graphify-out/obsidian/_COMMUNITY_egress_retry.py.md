@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 12
 ---
 
 # egress_retry.py
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -30,16 +32,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_jira_weekly_review.py]]
-- 5 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 5 edges to [[_COMMUNITY_PodmanEngine]]
 - 5 edges to [[_COMMUNITY_pipeline.py — Security Pipeline]]
 - 4 edges to [[_COMMUNITY_MiddlewareManager (6)]]
 - 4 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
 - 4 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_server.py]]
 - 1 edge to [[_COMMUNITY_hermesskillsi-browserbrowse.js]]
 - 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
 - 1 edge to [[_COMMUNITY__get_gmail_app_password]]
 - 1 edge to [[_COMMUNITY_tts.py]]
+- 1 edge to [[_COMMUNITY_server.py]]
 - 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
 
 ## Top bridge nodes

@@ -1,22 +1,26 @@
 ---
 type: community
+cohesion: 0.03
 members: 169
 ---
 
 # soc/router.py
 
+**Cohesion:** 0.03 - loosely connected
 **Members:** 169 nodes
 
 ## Members
-- [[dot-__init__()_43]] - code - gateway/security/trust_manager.py
+- [[dot-__init__()_28]] - code - gateway/security/trust_manager.py
 - [[dot-__post_init__()_1]] - code - gateway/security/trust_manager.py
 - [[dot-_apply_decay()]] - code - gateway/security/trust_manager.py
 - [[dot-_force_demotion()]] - code - gateway/security/trust_manager.py
-- [[dot-_init_db()]] - code - gateway/security/trust_manager.py
+- [[dot-_init_db()_1]] - code - gateway/security/trust_manager.py
 - [[dot-_promotion_allowed()]] - code - gateway/security/trust_manager.py
 - [[dot-_score_to_level()]] - code - gateway/security/trust_manager.py
 - [[dot-_update_score()]] - code - gateway/security/trust_manager.py
-- [[dot-close()_2]] - code - gateway/security/trust_manager.py
+- [[dot-check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
+- [[dot-close()_3]] - code - gateway/security/trust_manager.py
+- [[dot-get_denial_counts()]] - code - gateway/security/tool_acl.py
 - [[dot-get_history()]] - code - gateway/security/trust_manager.py
 - [[dot-get_next_trust_level()]] - code - gateway/security/progressive_trust_config.py
 - [[dot-get_previous_trust_level()]] - code - gateway/security/progressive_trust_config.py
@@ -29,14 +33,14 @@ members: 169
 - [[dot-record_success()]] - code - gateway/security/trust_manager.py
 - [[dot-record_violation()]] - code - gateway/security/trust_manager.py
 - [[dot-register_agent()]] - code - gateway/security/trust_manager.py
-- [[dot-test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
 - [[dot-test_basic_can_read()]] - code - gateway/tests/test_trust_manager.py
 - [[dot-test_custom_points()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_default_config()_3]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_default_mode_is_enforce()_3]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_default_config()_1]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_default_mode_is_enforce()_1]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_default_penalties_cover_all_violation_types()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_demotion_recorded_in_history()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_enforce_mode_blocks()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[dot-test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_full_level_wildcard_allows_everything()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_get_trust_registered()]] - code - gateway/tests/test_trust_manager.py
@@ -72,7 +76,6 @@ members: 169
 - [[dot-test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
 - [[dot-test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_trust_update_performance()]] - code - gateway/tests/test_performance.py
 - [[dot-test_typed_penalty_from_config()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_unknown_tool_falls_through_to_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_unknown_tool_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
@@ -82,8 +85,6 @@ members: 169
 - [[dot-test_untyped_violation_uses_legacy_points()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_vouching_required_for_top_rung()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-vouch_for_agent()]] - code - gateway/security/trust_manager.py
-- [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
-- [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
 - [[A ladder with thresholds small enough for unit tests.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Apply time-based decay to score.]] - rationale - gateway/security/trust_manager.py
 - [[Check if a tool is allowed for the given trust level.]] - rationale - gateway/security/progressive_trust_config.py
@@ -95,6 +96,7 @@ members: 169
 - [[Create a temporary trust database.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
+- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
 - [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns]] - rationale - gateway/security/progressive_trust_config.py
 - [[First-ever unit tests for the config object itself.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Get current trust level and score for an agent.]] - rationale - gateway/security/trust_manager.py
@@ -107,7 +109,6 @@ members: 169
 - [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
 - [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
-- [[PIISanitizer]] - code - gateway/tests/test_redteam_probes.py
 - [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - rationale - gateway/security/trust_manager.py
 - [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - rationale - gateway/security/trust_manager.py
 - [[ProgressiveTrustConfig]] - code - gateway/security/trust_manager.py
@@ -119,9 +120,11 @@ members: 169
 - [[Record a security violation, significantly decreasing trust.          With a pro]] - rationale - gateway/security/trust_manager.py
 - [[Record a successful action, increasing trust.]] - rationale - gateway/security/trust_manager.py
 - [[Register a new agent with initial trust.]] - rationale - gateway/security/trust_manager.py
+- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
+- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
 - [[SCRUM-78 — operational monitor↔enforce lever.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[SecurityPipeline_2]] - code - gateway/tests/test_redteam_probes.py
+- [[SecurityPipeline]] - code - gateway/tests/test_redteam_probes.py
 - [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Stored level is the promotion ceiling when the ladder is active.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Test agent registration and initial trust.]] - rationale - gateway/tests/test_trust_manager.py
@@ -139,13 +142,14 @@ members: 169
 - [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestGatedPromotion]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestHistory]] - code - gateway/tests/test_trust_manager.py
-- [[TestPersistence_1]] - code - gateway/tests/test_trust_manager.py
+- [[TestPersistence]] - code - gateway/tests/test_trust_manager.py
 - [[TestProgressiveTrustConfigUnit]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestToolACLComposition]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestToolGating]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
+- [[TestTrustLevels]] - code - gateway/tests/test_trust_manager.py
 - [[TestTypedViolations]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
+- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
 - [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Trust levels from untrusted to verified.]] - rationale - gateway/security/progressive_trust_config.py
 - [[Trust manager starting at untrusted.]] - rationale - gateway/tests/test_trust_manager.py
@@ -164,18 +168,16 @@ members: 169
 - [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[_make_tm()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[_set_state()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[manager()]] - code - gateway/tests/test_trust_manager.py
+- [[manager()_2]] - code - gateway/tests/test_trust_manager.py
 - [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
 - [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
-- [[strict_config()_2]] - code - gateway/tests/test_trust_manager.py
+- [[strict_config()_1]] - code - gateway/tests/test_trust_manager.py
 - [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
 - [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
 - [[trust_db()]] - code - gateway/tests/test_trust_manager.py
-- [[trust_manager()_1]] - code - gateway/tests/test_a2a_integration.py
-- [[trust_manager()_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[trust_manager()_3]] - code - gateway/tests/test_e2e_watchtower.py
-- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
+- [[trust_manager()_1]] - code - gateway/tests/test_e2e_proxy.py
+- [[trust_manager()_2]] - code - gateway/tests/test_e2e_watchtower.py
 - [[trust_manager.py]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
@@ -186,49 +188,49 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 47 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 35 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 24 edges to [[_COMMUNITY_UserSessionManager]]
-- 20 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 19 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 17 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 12 edges to [[_COMMUNITY_ApprovalQueueConfig (2)_1]]
-- 9 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 8 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 8 edges to [[_COMMUNITY_AgentTarget]]
-- 7 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 32 edges to [[_COMMUNITY_A2AGovernanceProxy]]
+- 27 edges to [[_COMMUNITY_ContextGuard]]
+- 26 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 25 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 25 edges to [[_COMMUNITY_UserSessionManager]]
+- 25 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 23 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 14 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 11 edges to [[_COMMUNITY_SecurityPipeline (2)]]
+- 9 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 8 edges to [[_COMMUNITY_dot-can_use_tool()]]
+- 7 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 7 edges to [[_COMMUNITY_AuditChain]]
+- 7 edges to [[_COMMUNITY_AgentTarget]]
 - 7 edges to [[_COMMUNITY_socrouter.py (2)]]
-- 6 edges to [[_COMMUNITY__wrap_response()]]
-- 5 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
-- 5 edges to [[_COMMUNITY_PortManager]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 4 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 5 edges to [[_COMMUNITY_PromptGuard]]
+- 5 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 4 edges to [[_COMMUNITY_Enum]]
+- 4 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager (2)]]
 - 4 edges to [[_COMMUNITY_socrouter.py (3)]]
 - 3 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (3)_1]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
-- 2 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 2 edges to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
-- 2 edges to [[_COMMUNITY__make_proxy()]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (4)]]
-- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
-- 1 edge to [[_COMMUNITY_v0.9.0 — Apple Messages Integration]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 3 edges to [[_COMMUNITY_TestEncryptedStore]]
+- 3 edges to [[_COMMUNITY_TestPromptGuardEvasion]]
+- 3 edges to [[_COMMUNITY_test_security_integration.py]]
+- 2 edges to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_TestSecurityPipelineChainLatency]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
+- 1 edge to [[_COMMUNITY_SubagentGovernance]]
+- 1 edge to [[_COMMUNITY_record_decision()]]
+- 1 edge to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY__wrap_response() (4)]]
-- 1 edge to [[_COMMUNITY_test_playback_state.c]]
-- 1 edge to [[_COMMUNITY__wrap_response() (5)]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-build_full_mesh()]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
 - 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
 
 ## Top bridge nodes
-- [[TrustManager_1]] - degree 172, connects to 30 communities
+- [[TrustManager_1]] - degree 172, connects to 24 communities
 - [[TrustConfig]] - degree 101, connects to 15 communities
 - [[TrustLevel_1]] - degree 53, connects to 12 communities
-- [[SecurityPipeline_2]] - degree 14, connects to 8 communities
-- [[PIISanitizer]] - degree 13, connects to 8 communities
+- [[SecurityPipeline]] - degree 14, connects to 9 communities
+- [[ToolACLEnforcer]] - degree 75, connects to 7 communities

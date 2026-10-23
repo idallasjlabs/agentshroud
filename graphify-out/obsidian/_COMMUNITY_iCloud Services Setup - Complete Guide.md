@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # iCloud Services Setup - Complete Guide
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 19
 - [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Overview_15]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Overview_17]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Security Notes_6]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # test_forward_stream.py (2)
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -25,7 +27,7 @@ members: 21
 - [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
 - [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
 - [[app()]] - code - gateway/tests/test_version_routes.py
-- [[client()_17]] - code - gateway/tests/test_version_routes.py
+- [[client()_14]] - code - gateway/tests/test_version_routes.py
 - [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
 - [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
 - [[version_routes APIRouter — apiv1versions]] - code - gateway/ingest_api/version_routes.py

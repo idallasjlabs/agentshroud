@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.28
 members: 17
 ---
 
 # format_upstream_cve_alert() (2)
 
+**Cohesion:** 0.28 - loosely connected
 **Members:** 17 nodes
 
 ## Members

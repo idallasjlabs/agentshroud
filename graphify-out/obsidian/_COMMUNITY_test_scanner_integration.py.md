@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 39
 ---
 
 # test_scanner_integration.py
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 39 nodes
 
 ## Members

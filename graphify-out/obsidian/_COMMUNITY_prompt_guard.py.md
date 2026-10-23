@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # prompt_guard.py.md
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 16
 - [[Gmail Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
 - [[Himalaya Configuration Reference]] - document - skills/openclaw/himalaya/references/configuration.md
 - [[Minimal IMAP + SMTP Setup]] - document - skills/openclaw/himalaya/references/configuration.md
-- [[Multiple Accounts_1]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Multiple Accounts]] - document - skills/openclaw/himalaya/references/configuration.md
 - [[Notmuch Backend (local mail)]] - document - skills/openclaw/himalaya/references/configuration.md
 - [[OAuth2 Authentication (for providers that support it)]] - document - skills/openclaw/himalaya/references/configuration.md
 - [[Password Options]] - document - skills/openclaw/himalaya/references/configuration.md
@@ -33,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-ompmcp.json]]
+- 1 edge to [[_COMMUNITY_ssh-configuration]]
 
 ## Top bridge nodes
 - [[Himalaya Configuration Reference]] - degree 10, connects to 1 community

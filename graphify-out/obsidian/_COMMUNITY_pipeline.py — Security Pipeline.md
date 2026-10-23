@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 19
 ---
 
 # pipeline.py — Security Pipeline
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -38,13 +40,13 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_jira_weekly_review.py]]
 - 6 edges to [[_COMMUNITY_MiddlewareManager (6)]]
-- 5 edges to [[_COMMUNITY_MCPPolicyEngine]]
 - 5 edges to [[_COMMUNITY__get_gmail_app_password]]
+- 5 edges to [[_COMMUNITY_MCPPolicyEngine]]
 - 5 edges to [[_COMMUNITY_egress_retry.py]]
-- 3 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 3 edges to [[_COMMUNITY_PodmanEngine]]
 - 3 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
 - 3 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 2 edges to [[_COMMUNITY_AlertTelegramRelay]]
+- 2 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
 - 2 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 - 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
 

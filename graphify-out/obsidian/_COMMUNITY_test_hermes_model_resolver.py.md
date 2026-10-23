@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 39
 ---
 
 # test_hermes_model_resolver.py
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 39 nodes
 
 ## Members

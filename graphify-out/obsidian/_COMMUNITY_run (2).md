@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.70
 members: 5
 ---
 
 # run (2)
 
+**Cohesion:** 0.70 - tightly connected
 **Members:** 5 nodes
 
 ## Members
-- [[log()_2]] - code - docker/wazuh/services.d/wazuh-watchdog/run
+- [[log()_1]] - code - docker/wazuh/services.d/wazuh-watchdog/run
 - [[missing()]] - code - docker/wazuh/services.d/wazuh-watchdog/run
 - [[restart()]] - code - docker/wazuh/services.d/wazuh-watchdog/run
 - [[run]] - code - docker/wazuh/services.d/wazuh-watchdog/run

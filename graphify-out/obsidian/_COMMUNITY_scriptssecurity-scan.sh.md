@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 7
 ---
 
 # scripts/security-scan.sh
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
 - 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
 
 ## Top bridge nodes

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 8
 ---
 
 # port_manager.py
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members

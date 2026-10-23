@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 11
 ---
 
 # sidecar.py
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 11 nodes
 
 ## Members

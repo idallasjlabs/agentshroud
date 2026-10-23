@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 63
 ---
 
 # egress_filter.py
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 63 nodes
 
 ## Members
@@ -44,7 +46,7 @@ members: 63
 - [[Process chat message with Isaiah's personality.]] - rationale - chatbot/main.py
 - [[Raise 429 if the client has exceeded the rate limit.]] - rationale - chatbot/main.py
 - [[Read the expected auth token from env or secrets.]] - rationale - chatbot/main.py
-- [[Request_9]] - code - chatbot/main.py
+- [[Request_10]] - code - chatbot/main.py
 - [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - rationale - chatbot/main.py
 - [[TestAsyncClient]] - code - chatbot/test_main.py
 - [[TestAuth_1]] - code - chatbot/test_main.py
@@ -81,7 +83,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_api.py (2)]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 2 edges to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
 - [[ChatRequest]] - degree 3, connects to 1 community

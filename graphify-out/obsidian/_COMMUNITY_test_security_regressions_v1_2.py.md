@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # test_security_regressions_v1_2.py
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
 - [[Access OpenClaw Dashboard Remotely]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Current Status_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
-- [[Next Steps_11]] - document - docs/reference/TAILSCALE_COMMANDS.md
+- [[Next Steps_10]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 1 OpenClaw Control UI on Port 18790]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 2 Gateway Dashboard on Port 8080]] - document - docs/reference/TAILSCALE_COMMANDS.md
 - [[Option 3 Both Services]] - document - docs/reference/TAILSCALE_COMMANDS.md
@@ -29,8 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
 - 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark (3)]]
+- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
 - 1 edge to [[_COMMUNITY_test_llm_proxy_thinking_suppression.py]]
 
 ## Top bridge nodes

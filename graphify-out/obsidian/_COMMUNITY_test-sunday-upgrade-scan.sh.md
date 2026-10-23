@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 22
 ---
 
 # test-sunday-upgrade-scan.sh
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -39,10 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
 - 1 edge to [[_COMMUNITY_package_skill]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
 - 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill (2)]]
-- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
 
 ## Top bridge nodes
 - [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 2 communities

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.07
 members: 29
 ---
 
 # test_wazuh_watchdog.py (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members
-- [[dot-__call__()_7]] - code - gateway/tests/test_jira_weekly_review.py
-- [[dot-__init__()_119]] - code - gateway/tests/test_jira_weekly_review.py
+- [[dot-__call__()_9]] - code - gateway/tests/test_jira_weekly_review.py
+- [[dot-__init__()_129]] - code - gateway/tests/test_jira_weekly_review.py
 - [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - rationale - gateway/tests/test_jira_weekly_review.py
 - [[_MockTransport_1]] - code - gateway/tests/test_jira_weekly_review.py
 - [[_get_fn_stub()]] - code - gateway/tests/test_jira_weekly_review.py

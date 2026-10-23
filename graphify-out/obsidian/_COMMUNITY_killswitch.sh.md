@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # killswitch.sh
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -26,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 2 edges to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)]]
 - 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
 
 ## Top bridge nodes

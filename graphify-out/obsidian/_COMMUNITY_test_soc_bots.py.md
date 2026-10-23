@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.02
 members: 106
 ---
 
 # test_soc_bots.py
 
+**Cohesion:** 0.02 - loosely connected
 **Members:** 106 nodes
 
 ## Members
-- [[dot-__init__()_116]] - code - gateway/security/group_rbac.py
+- [[dot-__init__()_134]] - code - gateway/security/group_rbac.py
 - [[dot-can_use_high_risk()]] - code - gateway/security/group_rbac.py
 - [[dot-get_all_roles()]] - code - gateway/security/group_rbac.py
 - [[dot-get_role()]] - code - gateway/security/group_rbac.py
@@ -103,13 +105,13 @@ members: 106
 - [[User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).]] - rationale - gateway/tests/test_group_rbac.py
 - [[acl_config()]] - code - gateway/tests/test_group_rbac.py
 - [[email_sending is recognized as a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
-- [[enforcer()_2]] - code - gateway/tests/test_group_rbac.py
+- [[enforcer()_1]] - code - gateway/tests/test_group_rbac.py
 - [[get_all_roles with an invalid role string falls back to READ_ONLY per entry.]] - rationale - gateway/tests/test_group_rbac.py
 - [[group_rbac.py]] - code - gateway/security/group_rbac.py
 - [[group_rbac.py (GroupRoleResolver)]] - code - gateway/security/group_rbac.py
 - [[group_role_resolver()]] - code - gateway/tests/test_group_rbac.py
 - [[owner_in_group resolves to GroupRole.OWNER.]] - rationale - gateway/tests/test_group_rbac.py
-- [[rbac()_3]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_1]] - code - gateway/tests/test_group_rbac.py
 - [[remove_role on a user not in map is a no-op (no exception).]] - rationale - gateway/tests/test_group_rbac.py
 - [[teams()_3]] - code - gateway/tests/test_group_rbac.py
 - [[test_group_rbac.py]] - code - gateway/tests/test_group_rbac.py
@@ -123,15 +125,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 9 edges to [[_COMMUNITY_socrouter.py]]
+- 9 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 7 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 3 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 
 ## Top bridge nodes
-- [[GroupRoleResolver]] - degree 36, connects to 3 communities
-- [[TestGroupRoleProperties]] - degree 27, connects to 2 communities
-- [[GroupRole]] - degree 19, connects to 2 communities
-- [[TestGroupRoleResolver]] - degree 18, connects to 2 communities
-- [[test_group_rbac.py]] - degree 17, connects to 2 communities
+- [[GroupRoleResolver]] - degree 36, connects to 5 communities
+- [[TestGroupRoleProperties]] - degree 27, connects to 4 communities
+- [[GroupRole]] - degree 19, connects to 4 communities
+- [[TestGroupRoleResolver]] - degree 18, connects to 4 communities
+- [[test_group_rbac.py]] - degree 17, connects to 4 communities

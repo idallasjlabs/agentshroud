@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.30
 members: 15
 ---
 
 # test_scorecard_scoring.py
 
+**Cohesion:** 0.30 - loosely connected
 **Members:** 15 nodes
 
 ## Members

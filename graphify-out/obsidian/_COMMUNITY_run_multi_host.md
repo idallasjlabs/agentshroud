@@ -1,15 +1,19 @@
 ---
 type: community
-members: 21
+cohesion: 0.15
+members: 24
 ---
 
 # run_multi_host
 
-**Members:** 21 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 24 nodes
 
 ## Members
+- [[_sunday_trivy_db_fresh()]] - code - scripts/lib/sunday-scan.sh
 - [[_sunday_warn_expiring_acceptances()]] - code - scripts/lib/sunday-scan.sh
 - [[die()_2]] - code - scripts/lib/sunday-scan.sh
+- [[err()_2]] - code - scripts/lib/sunday-scan.sh
 - [[log()_7]] - code - scripts/lib/sunday-scan.sh
 - [[sunday-scan.sh]] - code - scripts/lib/sunday-scan.sh
 - [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
@@ -19,6 +23,7 @@ members: 21
 - [[sunday_handoff_status()]] - code - scripts/lib/sunday-scan.sh
 - [[sunday_hermes_container()]] - code - scripts/lib/sunday-scan.sh
 - [[sunday_notify_direct()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_refresh_trivy_db()]] - code - scripts/lib/sunday-scan.sh
 - [[sunday_resolve_scan_image()]] - code - scripts/lib/sunday-scan.sh
 - [[sunday_restore_stack()]] - code - scripts/lib/sunday-scan.sh
 - [[sunday_run_scan_gate()]] - code - scripts/lib/sunday-scan.sh
@@ -43,8 +48,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY__wrap_response() (2)]]
 
 ## Top bridge nodes
-- [[sunday-scan.sh]] - degree 25, connects to 3 communities
-- [[sunday_run_scan_gate()]] - degree 10, connects to 2 communities
+- [[sunday-scan.sh]] - degree 28, connects to 3 communities
+- [[sunday_run_scan_gate()]] - degree 12, connects to 2 communities
 - [[_sunday_warn_expiring_acceptances()]] - degree 4, connects to 1 community
 - [[sunday_dev_handoff_gate()]] - degree 2, connects to 1 community
 - [[sunday_handoff_status()]] - degree 2, connects to 1 community

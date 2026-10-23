@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 15
 ---
 
 # test_anthropic_openai_translator.py (2)
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -32,9 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentTarget]]
-- 2 edges to [[_COMMUNITY_api.py (2)]]
 - 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
+- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
 
 ## Top bridge nodes
 - [[TestHandleEvent]] - degree 10, connects to 3 communities
