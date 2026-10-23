@@ -12,6 +12,6 @@ tags:
 # Test audit store statistics.
 
 ## Connections
-- [[dot-test_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stats()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process

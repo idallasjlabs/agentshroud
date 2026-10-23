@@ -12,7 +12,7 @@ tags:
 # TestAgentIsolation
 
 ## Connections
-- [[dot-setup_method()_35]] - `method` [EXTRACTED]
+- [[dot-setup_method()_28]] - `method` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `method` [EXTRACTED]
 - [[dot-test_generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_list_agents()_1]] - `method` [EXTRACTED]
@@ -30,14 +30,14 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]

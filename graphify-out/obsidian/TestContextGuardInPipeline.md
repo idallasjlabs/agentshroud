@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L211"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # TestContextGuardInPipeline
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_skip_context_guard_bypasses_step0()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - `rationale_for` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InstructionEnvelope]] - `uses` [INFERRED]
@@ -33,11 +33,11 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
+- [[ScanResult_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

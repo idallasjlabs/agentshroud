@@ -12,6 +12,6 @@ tags:
 # Test adding custom filter patterns.
 
 ## Connections
-- [[dot-test_custom_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_custom_patterns()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

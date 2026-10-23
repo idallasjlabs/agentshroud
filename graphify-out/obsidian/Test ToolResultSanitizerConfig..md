@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Any"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Any
 ---
 
 # Test ToolResultSanitizerConfig.
 
 ## Connections
-- [[TestToolResultSanitizer]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Any

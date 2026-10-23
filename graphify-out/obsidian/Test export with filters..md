@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "The 8D Investigation Process"
+community: "AuditExporter (2)"
 location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AuditExporter_2
 ---
 
 # Test export with filters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_export_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/rationale #graphify/EXTRACTED #community/AuditExporter_2

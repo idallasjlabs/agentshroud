@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "MultiTurnTracker"
+community: "Enum"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Enum
 ---
 
 # Test proper initialization of MultiTurnTracker.
 
 ## Connections
-- [[dot-test_initialization()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/Enum

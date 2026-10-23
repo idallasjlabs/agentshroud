@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # Test that middleware requires user identification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_middleware_user_identification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response() (4)"
+community: "_wrap_response()"
 location: "L483"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/_wrap_response
 ---
 
 # Test file system sandboxing in enforce mode — blocks unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

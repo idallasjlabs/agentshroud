@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "_wrap_response() (2)"
+community: "ContextGuard"
 location: "L512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/ContextGuard
 ---
 
 # Test trust boundaries and privilege escalation prevention.
 
 ## Connections
-- [[TestPrivilegeEscalation_1]] - `rationale_for` [EXTRACTED]
+- [[TestPrivilegeEscalation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

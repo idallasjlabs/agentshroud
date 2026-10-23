@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L156"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # TestCriticalLogging
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-test_critical_logged_when_setting_non_enforce()]] - `method` [EXTRACTED]
 - [[dot-test_no_critical_when_setting_enforce()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_4
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

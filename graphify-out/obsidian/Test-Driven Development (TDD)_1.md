@@ -12,7 +12,7 @@ tags:
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_87]] - `contains` [EXTRACTED]
+- [[Purpose_86]] - `contains` [EXTRACTED]
 - [[Related Skills_66]] - `contains` [EXTRACTED]
 - [[Usage_72]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tddREADME]] - `contains` [EXTRACTED]

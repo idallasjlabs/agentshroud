@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "MemoryIntegrityMonitor"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Test integrity database saves and loads correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_integrity_database_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

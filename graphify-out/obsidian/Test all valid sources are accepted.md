@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "test_docs_accuracy.py"
+community: "ForwardRequest"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/ForwardRequest
 ---
 
 # Test all valid sources are accepted
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_valid_sources()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

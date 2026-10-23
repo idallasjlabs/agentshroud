@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "env_guard.py"
+community: "A2AMethod"
 location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/A2AMethod
 ---
 
 # Test complete successful rotation workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_successful_rotation_workflow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/env_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

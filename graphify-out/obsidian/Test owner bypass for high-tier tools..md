@@ -12,6 +12,6 @@ tags:
 # Test owner bypass for high-tier tools.
 
 ## Connections
-- [[dot-test_owner_bypass()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_bypass()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextSegment

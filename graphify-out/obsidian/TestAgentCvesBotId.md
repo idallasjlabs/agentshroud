@@ -16,7 +16,7 @@ tags:
 - [[dot-test_no_bot_id_defaults_to_openclaw()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_bot_returns_error()]] - `method` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

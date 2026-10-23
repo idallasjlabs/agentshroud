@@ -12,6 +12,6 @@ tags:
 # Test canary status reporting for dashboard.
 
 ## Connections
-- [[dot-test_status_reporting()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_status_reporting()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/check-vendor-compatsh

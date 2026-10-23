@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_http_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_https_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_https_allowed()_1]] - `method` [EXTRACTED]
 - [[dot-test_ip_blocked_for_credentials()]] - `method` [EXTRACTED]
 - [[dot-test_localhost_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_suspicious_domain_blocked()]] - `method` [EXTRACTED]

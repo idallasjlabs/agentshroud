@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # Test kill switch monitor functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "AgentShroud Documentation"
+community: "test_key_rotation_internals.py"
 location: "L233"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_Documentation
+  - community/test_key_rotation_internalspy
 ---
 
 # TestCheckAndRotateDisabled
@@ -20,4 +20,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_Documentation
+#graphify/code #graphify/INFERRED #community/test_key_rotation_internalspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2) (5)"
+community: "ApprovalQueueConfig (2)"
 location: "L5667"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_5
+  - community/ApprovalQueueConfig_2
 ---
 
 # Telegram egress inline callback should update egress approval queue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_egress_callback_applies_queue_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_5
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2

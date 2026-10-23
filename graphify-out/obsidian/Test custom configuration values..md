@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "PathIsolationManager"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PathIsolationManager
 ---
 
 # Test custom configuration values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_custom_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

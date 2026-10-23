@@ -12,6 +12,6 @@ tags:
 # Test Connection
 
 ## Connections
-- [[Quick Reference_4]] - `contains` [EXTRACTED]
+- [[Quick Reference_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

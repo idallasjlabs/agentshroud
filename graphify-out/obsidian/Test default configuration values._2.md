@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
-location: "L21"
+community: "PathIsolationManager"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PathIsolationManager
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

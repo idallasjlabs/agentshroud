@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "SessionManager"
+community: "._make_proxy()"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SessionManager
+  - community/_make_proxy
 ---
 
 # TestDRYOwnerChatID
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SessionManager
+#graphify/code #graphify/INFERRED #community/_make_proxy

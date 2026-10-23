@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py (3)"
+community: "MemoryIntegrityMonitor"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy_3
+  - community/MemoryIntegrityMonitor
 ---
 
 # Test complete memory protection workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_integrated_memory_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy_3
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

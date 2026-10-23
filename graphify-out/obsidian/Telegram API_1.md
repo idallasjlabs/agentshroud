@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "test_jira_weekly_review.py"
+community: "Mode A — Single task (3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/Mode_A__Single_task_3
 ---
 
 # Telegram API
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (human gate)]] - `calls` [EXTRACTED]
 - [[HTTP CONNECT Proxy (domain allowlist)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/concept #graphify/EXTRACTED #community/Mode_A__Single_task_3

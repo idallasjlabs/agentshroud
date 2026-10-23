@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "MemoryIntegrityMonitor"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Test write grace window prevents false alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_expected_write_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

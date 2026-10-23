@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "ToolChainAnalyzer"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ToolChainAnalyzer
 ---
 
 # Test that disabled analyzer allows all calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_disabled_analyzer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

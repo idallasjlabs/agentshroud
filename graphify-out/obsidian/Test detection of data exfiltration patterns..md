@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "ContextGuard"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ContextGuard
 ---
 
 # Test detection of data exfiltration patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExfiltrationDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

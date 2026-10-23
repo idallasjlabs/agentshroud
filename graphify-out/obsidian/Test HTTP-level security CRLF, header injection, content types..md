@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # Test HTTP-level security: CRLF, header injection, content types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHTTPSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

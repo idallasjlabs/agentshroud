@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "StdioConnection (2)"
+community: "Any"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/Any
 ---
 
 # Test basic hardened message formatting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_format_hardened_message_basic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/rationale #graphify/EXTRACTED #community/Any

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "The 8D Investigation Process"
+community: "AuditExporter (2)"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AuditExporter_2
 ---
 
 # TestAuditExporter
@@ -20,12 +20,12 @@ tags:
 - [[dot-test_export_json_ld()]] - `method` [EXTRACTED]
 - [[dot-test_tamper_detection()]] - `method` [EXTRACTED]
 - [[dot-test_verify_export_integrity()]] - `method` [EXTRACTED]
-- [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[AuditEvent_1]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
+- [[AuditStore]] - `uses` [INFERRED]
 - [[Test AuditExporter functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `references` [INFERRED]
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/AuditExporter_2

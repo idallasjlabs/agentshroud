@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "The 8D Investigation Process"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Test AuditEvent functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

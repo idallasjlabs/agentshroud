@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "_coerce_to_ws_event()"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/_coerce_to_ws_event
 ---
 
 # TestCoerceToWSEvent
@@ -20,4 +20,4 @@ tags:
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event

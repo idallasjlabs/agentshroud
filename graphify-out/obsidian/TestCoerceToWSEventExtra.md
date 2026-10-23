@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "_coerce_to_ws_event()"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/_coerce_to_ws_event
 ---
 
 # TestCoerceToWSEventExtra
@@ -20,12 +20,12 @@ tags:
 - [[dot-test_type_mapping()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_severity_defaults_to_info()]] - `method` [EXTRACTED]
 - [[dot-test_wsevent_passthrough()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event

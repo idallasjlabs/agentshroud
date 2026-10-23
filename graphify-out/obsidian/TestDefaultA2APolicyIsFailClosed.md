@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "code"
-community: "UserSessionManager"
+community: "A2APolicyConfig"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/A2APolicyConfig
 ---
 
 # TestDefaultA2APolicyIsFailClosed
@@ -19,10 +19,10 @@ tags:
 - [[dot-test_from_dict_none_is_fail_closed()]] - `method` [EXTRACTED]
 - [[dot-test_invalid_default_action_string_falls_back_to_deny()]] - `method` [EXTRACTED]
 - [[dot-test_owner_bypass_is_always_false_regardless_of_input()]] - `method` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[test_a2a_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response() (5)"
+community: "ContextGuard"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_5
+  - community/ContextGuard
 ---
 
 # Test prompt injection detection with adversarial payloads.
 
 ## Connections
-- [[TestPromptGuard_1]] - `rationale_for` [EXTRACTED]
+- [[TestPromptGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_5
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

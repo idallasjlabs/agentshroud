@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
-location: "L443"
+community: "Enum"
+location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[dot-test_edge_cases()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Enum

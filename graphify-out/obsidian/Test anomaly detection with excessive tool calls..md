@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # Test anomaly detection with excessive tool calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_anomaly_detection_excessive_tool_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

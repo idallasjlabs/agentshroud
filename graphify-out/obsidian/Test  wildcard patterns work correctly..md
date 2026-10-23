@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "._make_proxy()"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_make_proxy
 ---
 
 # Test ** wildcard patterns work correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_wildcard_pattern_matching()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

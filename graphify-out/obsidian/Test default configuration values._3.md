@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py (2)"
-location: "L36"
+community: "Any"
+location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy_2
+  - community/Any
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Any

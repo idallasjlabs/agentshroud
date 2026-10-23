@@ -12,9 +12,9 @@ tags:
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_156]] - `contains` [EXTRACTED]
+- [[Purpose_155]] - `contains` [EXTRACTED]
 - [[Related Skills_88]] - `contains` [EXTRACTED]
-- [[Usage_97]] - `contains` [EXTRACTED]
+- [[Usage_98]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tiREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
