@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: ""
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L17"
+community: "._run_and_read"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/hermes/skills/i-cr/SKILLmd
+  - graphify/EXTRACTED
+  - community/_run_and_read
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest_1]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[_versions_file()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

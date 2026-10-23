@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # Query performance after 1000 entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_query_after_1000_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

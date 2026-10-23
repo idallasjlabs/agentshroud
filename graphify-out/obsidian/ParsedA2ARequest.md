@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2AMethod_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 

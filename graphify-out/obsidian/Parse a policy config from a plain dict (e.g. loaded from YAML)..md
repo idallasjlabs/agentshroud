@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "ToolResultSanitizer"
-location: "L201"
+community: "A2APolicyConfig"
+location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/A2APolicyConfig
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-from_dict()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyConfig

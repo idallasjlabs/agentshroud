@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "rationale"
-community: "GSDE&G Skills Reference (2)"
+community: "ApprovalHardening"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_2
+  - community/ApprovalHardening
 ---
 
 # RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Skills_Reference_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

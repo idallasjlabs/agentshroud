@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
-location: "L12"
+community: "soc.js"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/socjs
 ---
 
 # Purpose
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/socjs

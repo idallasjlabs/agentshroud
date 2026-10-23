@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
-location: "L12"
+community: "AuditExporter (2)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/AuditExporter_2
 ---
 
 # Purpose
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/AuditExporter_2

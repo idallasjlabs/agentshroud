@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Pre-Deployment Checklist (2)"
+community: "Proxy Layer"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_2
+  - community/Proxy_Layer
 ---
 
 # Proxy Layer
@@ -17,4 +17,4 @@ tags:
 - [[ssh_proxy (approved hosts only)]] - `shares_data_with` [EXTRACTED]
 - [[web_proxy.py (domain allowlist engine)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2
+#graphify/image #graphify/EXTRACTED #community/Proxy_Layer

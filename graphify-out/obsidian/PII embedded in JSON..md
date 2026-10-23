@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # PII embedded in JSON.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pii_in_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

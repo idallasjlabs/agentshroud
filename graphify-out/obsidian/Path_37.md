@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "GroupConfig"
-location: "L58"
+community: "AlertDispatcher (5)"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/AlertDispatcher_5
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_139]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

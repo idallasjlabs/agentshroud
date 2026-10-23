@@ -1,27 +1,20 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L225"
+community: "1. Accomplishments This Phase"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/1_Accomplishments_This_Phase
 ---
 
 # Path
 
 ## Connections
-- [[dot-store()_1]] - `references` [EXTRACTED]
-- [[dot-store_dir()]] - `references` [EXTRACTED]
-- [[dot-test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
-- [[dot-test_load_all_skips_malformed_files()]] - `references` [EXTRACTED]
-- [[dot-test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - `references` [EXTRACTED]
-- [[dot-test_store_creates_directory()]] - `references` [EXTRACTED]
-- [[dot-test_verify_chain_fails_for_tampered_entry()]] - `references` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[ReportIntegrityError]] - `uses` [INFERRED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

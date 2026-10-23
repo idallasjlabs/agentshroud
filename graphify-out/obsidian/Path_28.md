@@ -1,17 +1,18 @@
 ---
-source_file: ""
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "test_daily_cve_report.py"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/test_daily_cve_reportpy
 ---
 
 # Path
 
 ## Connections
-- [[_run()]] - `references` [EXTRACTED]
-- [[_run_4b()]] - `references` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

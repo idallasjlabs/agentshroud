@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "lib.sh"
+community: "GovernanceAction"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/libsh
+  - community/GovernanceAction
 ---
 
 # Purpose
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/libsh
+#graphify/document #graphify/EXTRACTED #community/GovernanceAction

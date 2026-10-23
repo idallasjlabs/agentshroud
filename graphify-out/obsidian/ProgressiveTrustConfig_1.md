@@ -12,7 +12,7 @@ tags:
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_3]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `calls` [EXTRACTED]
 - [[dot-test_default_penalties_cover_all_violation_types()]] - `calls` [EXTRACTED]
 - [[dot-test_enforce_mode_blocks()]] - `calls` [EXTRACTED]
 - [[dot-test_full_level_wildcard_allows_everything()]] - `calls` [EXTRACTED]

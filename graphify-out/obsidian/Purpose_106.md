@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Detailed Profiles"
-location: "L12"
+community: "soc.js"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/socjs
 ---
 
 # Purpose
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/socjs

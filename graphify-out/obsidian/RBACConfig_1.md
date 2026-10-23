@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L26"
+community: "MiddlewareManager (2)"
+location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager_2
 ---
 
 # RBACConfig
 
 ## Connections
-- [[PrivacyPolicy]] - `uses` [INFERRED]
-- [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
+- [[dot-__init__()_168]] - `references` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
-- [[ServicePrivacy]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
-- [[_make_rbac()_1]] - `references` [EXTRACTED]
+- [[Role_64]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_2

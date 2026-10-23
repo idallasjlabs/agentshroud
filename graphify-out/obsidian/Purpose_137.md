@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "._process_connect"
+community: "Publish SecureBrowser to ClawHub - Step-by-Step Guide"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_connect
+  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_connect
+#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide

@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[Checklist]] - `contains` [EXTRACTED]
 - [[IEC 62443 Reference]] - `contains` [EXTRACTED]
-- [[Summary_26]] - `contains` [EXTRACTED]
+- [[Summary_22]] - `contains` [EXTRACTED]
 - [[Type of Change]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/DelegationManager

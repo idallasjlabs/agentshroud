@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/deployment.md"
+source_file: "README.md"
 type: "document"
-community: "_run"
-location: "L5"
+community: "Skill: Test-Driven Development (TDD) (2)"
+location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_run
+  - community/Skill_Test-Driven_Development_TDD_2
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Quickstart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_run
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_2

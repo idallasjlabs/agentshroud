@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/linux.md"
+source_file: "docs/operations/macos.md"
 type: "document"
-community: "Himalaya Configuration Reference"
+community: "url_analyzer.py"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Configuration_Reference
+  - community/url_analyzerpy
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

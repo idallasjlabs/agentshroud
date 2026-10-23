@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (2) (9)"
+community: "TelegramAPIProxy"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2_9
+  - community/TelegramAPIProxy
 ---
 
 # Phone numbers in outbound messages must be redacted by PII sanitizer.          R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pii_redacted_on_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2_9
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

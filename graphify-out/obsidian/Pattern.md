@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Step-by-Step Installation (2)"
-location: "L170"
+community: "ContextGuard"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation_2
+  - community/ContextGuard
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Step-by-Step_Installation_2
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

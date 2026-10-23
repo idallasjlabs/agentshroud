@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "DelegationManager (2)"
-location: "L16"
+community: "EgressFilter"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager_2
+  - community/EgressFilter
 ---
 
 # Purpose
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager_2
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

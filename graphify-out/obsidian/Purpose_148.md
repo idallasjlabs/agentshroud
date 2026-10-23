@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "test_gemini_openai_translator.py"
+community: "OpenClaw Host Hardening"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/OpenClaw_Host_Hardening
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

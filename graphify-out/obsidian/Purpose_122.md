@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "TestStartupScannerKeying"
+community: "telegram_proxy.py (4)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/telegram_proxypy_4
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy_4

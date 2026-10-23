@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "AgentTarget (2)"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentTarget_2
 ---
 
 # Populate routing targets from the bots registry.          Iterates all BotConfig
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2

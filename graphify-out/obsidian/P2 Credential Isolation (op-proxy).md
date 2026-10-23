@@ -15,7 +15,7 @@ tags:
 - [[Changes]] - `contains` [EXTRACTED]
 - [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 - [[Tests (TDD)]] - `contains` [EXTRACTED]
-- [[Verification_4]] - `contains` [EXTRACTED]
+- [[Verification_3]] - `contains` [EXTRACTED]
 - [[What Exists]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint

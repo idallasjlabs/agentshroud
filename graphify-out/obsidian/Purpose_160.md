@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "forwarder.py"
-location: "L12"
+community: "ADR-002: Default-Allow Security Philosophy"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/forwarderpy
+  - community/ADR-002_Default-Allow_Security_Philosophy
 ---
 
 # Purpose
 
 ## Connections
-- [[web_config.py_1]] - `contains` [EXTRACTED]
+- [[proxy_status.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/forwarderpy
+#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "TestSecurityPipelineChainLatency"
 location: "L336"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestSecurityPipelineChainLatency
 ---
 
 # PII-laden messages through inbound pipeline — verify redaction + timing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pii_inbound_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityPipelineChainLatency

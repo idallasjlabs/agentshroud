@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Skill: Project Management (PM) (3)"
-location: "L164"
+community: "ApprovalStore"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/ApprovalStore
 ---
 
 # Path
 
 ## Connections
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_92]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "client_from_env"
-location: "L16"
+community: "Security Review (SEC)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/Security_Review_SEC
 ---
 
 # Purpose
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/client_from_env
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

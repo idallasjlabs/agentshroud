@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "LLMProxy"
+community: "TestPIIInURLs"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/TestPIIInURLs
 ---
 
 # PII detection in URLs — flagged, not blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIInURLs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestPIIInURLs

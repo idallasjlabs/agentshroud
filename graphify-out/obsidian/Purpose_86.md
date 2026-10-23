@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
 community: "MultiHostResult"
 location: "L6"
@@ -12,6 +12,7 @@ tags:
 # Purpose
 
 ## Connections
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 - [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MultiHostResult

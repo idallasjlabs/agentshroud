@@ -12,7 +12,7 @@ tags:
 # Production Safety Checklist (PROD-SAFETY)
 
 ## Connections
-- [[Purpose_69]] - `contains` [EXTRACTED]
+- [[Purpose_67]] - `contains` [EXTRACTED]
 - [[Related Skills_54]] - `contains` [EXTRACTED]
 - [[Usage_56]] - `contains` [EXTRACTED]
 - [[hermesskillsi-psREADME]] - `contains` [EXTRACTED]

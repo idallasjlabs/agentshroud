@@ -1,17 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "browser/scripts/browse.py"
+community: "LLMProxy.proxy_messages (non-streaming) (2)"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/LLMProxyproxy_messages_non-streaming_2
 ---
 
 # Path
 
 ## Connections
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[dot-__init__()_161]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2

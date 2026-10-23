@@ -1,21 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "KillSwitchMonitor (2) (4)"
-location: "L5"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_4
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Prerequisites
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements]] - `contains` [EXTRACTED]
+- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

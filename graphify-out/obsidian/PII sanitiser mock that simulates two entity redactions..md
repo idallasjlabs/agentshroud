@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "SecurityPipeline (2)"
 location: "L742"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/SecurityPipeline_2
 ---
 
 # PII sanitiser mock that simulates two entity redactions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_redacting_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2

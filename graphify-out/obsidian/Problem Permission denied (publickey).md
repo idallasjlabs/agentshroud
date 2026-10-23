@@ -12,6 +12,6 @@ tags:
 # Problem: "Permission denied (publickey)"
 
 ## Connections
-- [[Troubleshooting_8]] - `contains` [EXTRACTED]
+- [[Troubleshooting_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

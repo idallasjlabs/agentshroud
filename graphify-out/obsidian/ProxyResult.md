@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "AgentShroud Security Value Proposition"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # ProxyResult
@@ -16,9 +16,9 @@ tags:
 - [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/AgentShroud_Security_Value_Proposition

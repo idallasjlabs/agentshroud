@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docker/config/openclaw/skills/i-socrates/README.md"
 type: "document"
-community: "Actions"
-location: "L12"
+community: "soc.js"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/socjs
 ---
 
 # Purpose
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/socjs

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Security Review (SEC)"
-location: "L15"
+community: "falco-rules.yaml"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/falco-rulesyaml
 ---
 
 # Purpose
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml

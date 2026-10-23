@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # PII sanitizer: 1000 messages in < 10s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIISanitizerPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

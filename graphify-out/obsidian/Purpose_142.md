@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "trivy_report.py"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # Purpose
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

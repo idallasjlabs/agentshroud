@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ContextSegment"
-location: "L43"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_190]] - `references` [EXTRACTED]
+- [[dot-__init__()_198]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

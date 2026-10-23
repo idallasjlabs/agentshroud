@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "lifespan() (3)"
+community: "What is the symptom?"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan_3
+  - community/What_is_the_symptom
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lifespan_3
+#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom

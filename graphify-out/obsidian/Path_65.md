@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "EgressFilterConfig (4) (2)"
-location: "L268"
+community: "VIII. Evaluation"
+location: "L324"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressFilterConfig_4_2
+  - community/VIII_Evaluation
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[_run_wrapper()]] - `references` [EXTRACTED]
+- [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig_4_2
+#graphify/code #graphify/INFERRED #community/VIII_Evaluation

@@ -18,7 +18,7 @@ tags:
 - [[4. Verify_1]] - `contains` [EXTRACTED]
 - [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - `contains` [EXTRACTED]
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
-- [[Prerequisites_15]] - `contains` [EXTRACTED]
+- [[Prerequisites_14]] - `contains` [EXTRACTED]
 - [[`asb` reference]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `semantically_similar_to` [INFERRED]
 

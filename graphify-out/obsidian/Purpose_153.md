@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "GovernanceAction"
-location: "L12"
+community: "Report Delivery Format Instructions"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GovernanceAction
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

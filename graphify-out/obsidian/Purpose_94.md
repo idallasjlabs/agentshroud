@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "soc.js"
-location: "L6"
+community: "Update AgentShroud"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Update_AgentShroud
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

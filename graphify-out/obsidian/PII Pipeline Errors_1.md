@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "EgressFilter"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ApprovalQueueConfig_7
 ---
 
 # PII Pipeline Errors.md
@@ -18,4 +18,4 @@ tags:
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

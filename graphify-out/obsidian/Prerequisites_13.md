@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/macos.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "url_analyzer.py"
-location: "L3"
+community: "_run"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/_run
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/_run

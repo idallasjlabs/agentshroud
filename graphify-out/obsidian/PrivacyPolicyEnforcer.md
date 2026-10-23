@@ -12,7 +12,7 @@ tags:
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[dot-__init__()_200]] - `method` [EXTRACTED]
+- [[dot-__init__()_203]] - `method` [EXTRACTED]
 - [[dot-_get_role_value()]] - `method` [EXTRACTED]
 - [[dot-_user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[dot-contains_private_data()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[dot-test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
 - [[Evaluates access control and filters responses per privacy policy.]] - `rationale_for` [EXTRACTED]
 - [[Privacy Policy Enforcement Tests]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]

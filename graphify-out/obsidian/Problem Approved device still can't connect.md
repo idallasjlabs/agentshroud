@@ -12,6 +12,6 @@ tags:
 # Problem: Approved device still can't connect
 
 ## Connections
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_15]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results_2

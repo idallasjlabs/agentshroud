@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "CrossBotTrustLedger"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # Pool of connections to MCP servers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConnectionPool]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

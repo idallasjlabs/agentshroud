@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L16"
+community: "OpenClaw Bot SSH Configuration"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

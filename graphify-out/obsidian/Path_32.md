@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: ""
 type: "code"
-community: "system-requirements.md"
-location: "L116"
+community: "test_wazuh_watchdog.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_wazuh_watchdogpy
 ---
 
 # Path
 
 ## Connections
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[_run()]] - `references` [EXTRACTED]
+- [[_run_4b()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy

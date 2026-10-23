@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L129"
+community: "Any"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/Any
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_score_signal()]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/Any

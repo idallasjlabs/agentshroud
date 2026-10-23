@@ -12,6 +12,6 @@ tags:
 # Problem: "Bad owner or permissions on ~/.ssh/config"
 
 ## Connections
-- [[Troubleshooting_8]] - `contains` [EXTRACTED]
+- [[Troubleshooting_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

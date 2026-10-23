@@ -12,6 +12,6 @@ tags:
 # Policy Table
 
 ## Connections
-- [[Decision_3]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

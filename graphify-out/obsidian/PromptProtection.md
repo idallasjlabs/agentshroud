@@ -12,7 +12,7 @@ tags:
 # PromptProtection
 
 ## Connections
-- [[dot-__init__()_155]] - `method` [EXTRACTED]
+- [[dot-__init__()_162]] - `method` [EXTRACTED]
 - [[dot-_calculate_similarity()]] - `method` [EXTRACTED]
 - [[dot-_compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_load_protected_content()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[prompt_protection()]] - `calls` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_5]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage-exporter"
-location: "L34"
+community: "Himalaya Configuration Reference"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

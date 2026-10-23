@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Skill: UI Expert (UI)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Skill_UI_Expert_UI
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "concept"
-community: "Release Notes - AgentShroud v0.9.0 (2)"
+community: "Release Notes - AgentShroud v0.9.0"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090_2
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # RBAC collaborator_user_ids list (gateway/security/rbac_config.py)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[apply-patches.js patch driver (openclaw.json)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090_2
+#graphify/concept #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

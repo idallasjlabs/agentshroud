@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "_make_proxy() (2)"
+community: "web_content_scanner.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy_2
+  - community/web_content_scannerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy_2
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

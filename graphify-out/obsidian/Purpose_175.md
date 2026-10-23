@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30 (2)"
-location: "L12"
+community: "create_auth_dependency()"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+  - community/create_auth_dependency
 ---
 
 # Purpose
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

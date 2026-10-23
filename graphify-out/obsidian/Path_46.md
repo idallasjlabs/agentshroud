@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
-location: "L67"
+community: "ESP32-S3-BOX-3 Voice Terminal"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_144]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

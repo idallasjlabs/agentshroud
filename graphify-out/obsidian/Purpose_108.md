@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "Skill Creation Process"
-location: "L12"
+community: "soc.js"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/socjs
 ---
 
 # Purpose
 
 ## Connections
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/socjs

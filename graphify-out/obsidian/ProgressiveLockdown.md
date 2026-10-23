@@ -12,11 +12,11 @@ tags:
 # ProgressiveLockdown
 
 ## Connections
-- [[dot-__init__()_42]] - `calls` [EXTRACTED]
-- [[dot-__init__()_168]] - `method` [EXTRACTED]
+- [[dot-__init__()_56]] - `calls` [EXTRACTED]
+- [[dot-__init__()_179]] - `method` [EXTRACTED]
 - [[dot-_get_state()]] - `method` [EXTRACTED]
 - [[dot-all_statuses()]] - `method` [EXTRACTED]
-- [[dot-get_status()_2]] - `method` [EXTRACTED]
+- [[dot-get_status()_1]] - `method` [EXTRACTED]
 - [[dot-is_suspended()]] - `method` [EXTRACTED]
 - [[dot-record_block()]] - `method` [EXTRACTED]
 - [[dot-reset()_2]] - `method` [EXTRACTED]

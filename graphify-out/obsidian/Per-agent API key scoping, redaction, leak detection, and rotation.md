@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "concept"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # Per-agent API key scoping, redaction, leak detection, and rotation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[KeyVault]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/concept #graphify/EXTRACTED #community/KeyVault

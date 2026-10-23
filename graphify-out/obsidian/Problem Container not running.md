@@ -12,6 +12,6 @@ tags:
 # Problem: "Container not running"
 
 ## Connections
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy

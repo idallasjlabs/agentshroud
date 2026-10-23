@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "installer.py"
+community: "triage-cve-mitigations.py"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # Phase B: Compatibility Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Three-Phase Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

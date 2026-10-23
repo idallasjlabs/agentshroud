@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L234"
+community: "TestOutboundPipelineIntegration"
+location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TestOutboundPipelineIntegration
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
 
 ## Connections
-- [[dot-can_use_tool()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

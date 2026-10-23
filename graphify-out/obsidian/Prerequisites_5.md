@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "test_collaborator_greeter.py (2)"
-location: "L3"
+community: "AgentShroud Security Hardening Plan"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
