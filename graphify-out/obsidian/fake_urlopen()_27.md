@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L2289"
+community: "TestInboundPipelineOnGetUpdates"
+location: "L4965"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - `contains` [EXTRACTED]
+- [[dot-test_healthcheck_with_fullwidth_mention_and_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

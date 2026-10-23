@@ -12,7 +12,7 @@ tags:
 # get_health()
 
 ## Connections
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]

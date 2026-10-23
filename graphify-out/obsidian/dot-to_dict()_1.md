@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L88"
+community: "ContextGuard"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ContextGuard
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_4]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `method` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[dot-set_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

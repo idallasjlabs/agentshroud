@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L5041"
+community: "SlackSocketClient"
+location: "L2092"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/SlackSocketClient
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_self_diagnostic_command_is_handled_locally_for_owner()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

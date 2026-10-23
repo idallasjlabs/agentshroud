@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "What Does OpenClaw Actually Need to Write?"
-location: "L203"
+community: "KillSwitchMonitor (3)"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/KillSwitchMonitor_3
 ---
 
 # .verify_chain()
 
 ## Connections
-- [[dot-generate_report()]] - `calls` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
-- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - `rationale_for` [EXTRACTED]
+- [[dot-load_all()_1]] - `calls` [EXTRACTED]
+- [[dot-verify_integrity()]] - `calls` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Walk the entire report chain and verify hash linkage.          Returns]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

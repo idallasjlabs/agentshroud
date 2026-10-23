@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "icloud/scripts/calendar.js"
-location: "L147"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/icloud/scripts/calendarjs
+  - community/KillSwitchMonitor
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-deregister()_1]] - `calls` [EXTRACTED]
-- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
-- [[ResourceUsage_2]] - `method` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
+- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

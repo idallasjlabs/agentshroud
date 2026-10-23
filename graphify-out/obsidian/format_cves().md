@@ -12,10 +12,10 @@ tags:
 # format_cves()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_4]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_cves()]] - `calls` [EXTRACTED]
 

@@ -1,17 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
-type: "document"
-community: "sunday-scan.sh"
+source_file: "gateway/security/env_guard.py"
+type: "code"
+community: "check_command"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/check_command
 ---
 
-# env_guard.py.md
+# env_guard.py
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard]] - `contains` [EXTRACTED]
+- [[EnvironmentLeakage]] - `contains` [EXTRACTED]
+- [[agent_isolation.py]] - `references` [EXTRACTED]
+- [[check_command()]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[encrypted_store.py]] - `references` [EXTRACTED]
+- [[get_env_guard()]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `semantically_similar_to` [INFERRED]
+- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
+- [[scrub_output()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/code #graphify/EXTRACTED #community/check_command

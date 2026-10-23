@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L50"
+community: "ToolResultSanitizer"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/ToolResultSanitizer
 ---
 
 # engine()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine]] - `references` [EXTRACTED]
 - [[_base_config()_1]] - `calls` [EXTRACTED]
-- [[test_a2a_policy.py]] - `contains` [EXTRACTED]
+- [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

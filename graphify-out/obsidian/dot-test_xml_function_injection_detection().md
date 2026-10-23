@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "ProxyAction (2)"
+community: "ProxyAction"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction_2
+  - community/ProxyAction
 ---
 
 # .test_xml_function_injection_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of XML function call injection.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

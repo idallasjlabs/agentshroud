@@ -17,7 +17,7 @@ tags:
 - [[Default Denylist Categories]] - `contains` [EXTRACTED]
 - [[Function Details_30]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
-- [[Purpose_132]] - `contains` [EXTRACTED]
+- [[Purpose_130]] - `contains` [EXTRACTED]
 - [[Related_36]] - `contains` [EXTRACTED]
 - [[Responsibilities_34]] - `contains` [EXTRACTED]
 - [[Threat Model_20]] - `contains` [EXTRACTED]

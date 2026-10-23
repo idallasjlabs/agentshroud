@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "TestInboundPipelineOnGetUpdates"
 location: "L6883"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/TestInboundPipelineOnGetUpdates
 ---
 
 # fake_urlopen()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_block_notice_sent_without_markdown_parse_mode()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates

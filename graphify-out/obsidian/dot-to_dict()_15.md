@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "SecurityPipeline (3)"
-location: "L125"
+community: "TestOutboundInfoFilter (2)"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_3
+  - community/TestOutboundInfoFilter_2
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-to_json()]] - `calls` [EXTRACTED]
-- [[SkillsManifest]] - `method` [EXTRACTED]
+- [[dot-get_recent()]] - `calls` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

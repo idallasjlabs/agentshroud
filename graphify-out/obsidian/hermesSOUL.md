@@ -17,7 +17,7 @@ tags:
 - [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `references` [EXTRACTED]
 - [[Isaiah Jefferson (Owner)]] - `references` [EXTRACTED]
-- [[OpenClaw_3]] - `references` [EXTRACTED]
+- [[OpenClaw_2]] - `references` [EXTRACTED]
 - [[PII Sanitizer_1]] - `references` [EXTRACTED]
 - [[TrustManager_5]] - `references` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh helper]] - `references` [EXTRACTED]

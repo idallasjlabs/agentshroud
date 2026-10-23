@@ -1,20 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
-location: "L7828"
+community: "ApprovalQueueConfig (2)"
+location: "L732"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - `contains` [EXTRACTED]
-- [[__enter__()_2]] - `contains` [EXTRACTED]
-- [[__exit__()_2]] - `contains` [EXTRACTED]
-- [[read()_2]] - `contains` [EXTRACTED]
+- [[dot-test_owner_revoke_command_requires_target_user_id()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

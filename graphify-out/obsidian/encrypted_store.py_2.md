@@ -19,7 +19,7 @@ tags:
 - [[Key Classes  Functions_6]] - `contains` [EXTRACTED]
 - [[Key Rotation Workflow]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_5]] - `contains` [EXTRACTED]
-- [[Purpose_100]] - `contains` [EXTRACTED]
+- [[Purpose_89]] - `contains` [EXTRACTED]
 - [[Related_10]] - `contains` [EXTRACTED]
 - [[Responsibilities_8]] - `contains` [EXTRACTED]
 - [[Threat Model_7]] - `contains` [EXTRACTED]

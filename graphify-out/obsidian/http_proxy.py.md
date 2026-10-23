@@ -1,17 +1,31 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
-type: "document"
-community: "llm_proxy.py"
+source_file: "gateway/proxy/http_proxy.py"
+type: "code"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/test_soc_realtime_coveragepy
 ---
 
-# http_proxy.py.md
+# http_proxy.py
 
 ## Connections
-- [[http_proxy.py_1]] - `contains` [EXTRACTED]
+- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - `rationale_for` [EXTRACTED]
+- [[EgressAction]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[HTTP Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[HTTPConnectProxy_1]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY]] - `references` [INFERRED]
+- [[WebProxy]] - `imports` [EXTRACTED]
+- [[WebProxyConfig]] - `imports` [EXTRACTED]
+- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
+- [[run_clamscan()]] - `imports` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[telegram_proxy.py]] - `references` [EXTRACTED]
+- [[web_config.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

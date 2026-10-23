@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/gateway-start.sh"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # gateway-start.sh entrypoint
@@ -15,4 +15,4 @@ tags:
 - [[security-entrypoint.sh boot scan flow]] - `calls` [EXTRACTED]
 - [[wazuh-agent sidecar]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

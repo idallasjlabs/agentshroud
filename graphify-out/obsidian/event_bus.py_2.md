@@ -1,27 +1,21 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L10"
+community: "TestOutboundInfoFilter (2)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/TestOutboundInfoFilter_2
 ---
 
-# event_bus.py
+# event_bus.py.md
 
 ## Connections
-- [[Config Keys Read_7]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_8]] - `contains` [EXTRACTED]
-- [[Event Types Emitted by main.py]] - `contains` [EXTRACTED]
-- [[Function Details_43]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
-- [[Purpose_149]] - `contains` [EXTRACTED]
-- [[Related_49]] - `contains` [EXTRACTED]
-- [[Responsibilities_46]] - `contains` [EXTRACTED]
-- [[event_bus.py_1]] - `contains` [EXTRACTED]
+- [[EventBus]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `references` [EXTRACTED]
+- [[event_bus.py]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

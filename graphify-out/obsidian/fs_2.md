@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/browse.js"
+source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "_wrap_response() (3)"
+community: "Commit list 2026-10-10 through 2026-10-16 on main"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/Commit_list_2026-10-10_through_2026-10-16_on_main
 ---
 
 # fs
 
 ## Connections
-- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/Commit_list_2026-10-10_through_2026-10-16_on_main

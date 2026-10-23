@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "test_a2a_policy.py"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/test_a2a_policypy
 ---
 
 # .verify_shared_nothing()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_4]] - `calls` [EXTRACTED]
 - [[dot-list_agents()]] - `calls` [EXTRACTED]
 - [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
 - [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[IsolationCheck]] - `references` [EXTRACTED]
 - [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

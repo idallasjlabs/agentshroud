@@ -27,7 +27,7 @@ tags:
 - [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 - [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 - [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]

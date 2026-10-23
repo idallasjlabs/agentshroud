@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (2)"
-location: "L6851"
+community: "test_voice_gateway.py"
+location: "L416"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_2
+  - graphify/INFERRED
+  - community/test_voice_gatewaypy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_rate_limit_notice_mentions_configured_limit()]] - `contains` [EXTRACTED]
+- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

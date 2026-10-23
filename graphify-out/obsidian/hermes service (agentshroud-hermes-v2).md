@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L678"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # hermes service (agentshroud-hermes-v2)
@@ -19,4 +19,4 @@ tags:
 - [[dockerversions.env]] - `references` [EXTRACTED]
 - [[gateway service (sole egress, FalcoClamAV in-process)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

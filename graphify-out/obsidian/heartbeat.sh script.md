@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/heartbeat.sh"
 type: "code"
-community: "MiddlewareManager (9) (2)"
+community: "heartbeat.sh (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9_2
+  - community/heartbeatsh_2
 ---
 
 # heartbeat.sh script
@@ -15,4 +15,4 @@ tags:
 - [[_log()_1]] - `calls` [EXTRACTED]
 - [[heartbeat.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_9_2
+#graphify/code #graphify/EXTRACTED #community/heartbeatsh_2

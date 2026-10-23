@@ -12,9 +12,9 @@ tags:
 # format_deploy_status()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_4]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[deploy_status_formats_version_and_services()]] - `calls` [EXTRACTED]
 - [[deploy_status_no_services()]] - `calls` [EXTRACTED]
 - [[json_str()]] - `calls` [EXTRACTED]

@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "_wrap_response() (2)"
-location: "L35"
+community: "test_daily_cve_report.py"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/test_daily_cve_reportpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-set_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
+- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
+- [[main()_12]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

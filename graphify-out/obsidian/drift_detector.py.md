@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "_wrap_response() (2)"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/AgentTarget_2
 ---
 
 # drift_detector.py
@@ -20,4 +20,4 @@ tags:
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[clamav_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

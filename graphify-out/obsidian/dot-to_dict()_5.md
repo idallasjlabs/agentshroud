@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "AgentTarget (2)"
-location: "L50"
+community: "SkillGuard"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/SkillGuard
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
-- [[CanaryResult_2]] - `method` [EXTRACTED]
+- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
+- [[dot-_save_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

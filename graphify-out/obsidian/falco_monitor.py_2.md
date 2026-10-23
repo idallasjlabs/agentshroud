@@ -16,7 +16,7 @@ tags:
 - [[Function Details_32]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_34]] - `contains` [EXTRACTED]
 - [[Priority Mapping]] - `contains` [EXTRACTED]
-- [[Purpose_134]] - `contains` [EXTRACTED]
+- [[Purpose_132]] - `contains` [EXTRACTED]
 - [[Related_38]] - `contains` [EXTRACTED]
 - [[Responsibilities_36]] - `contains` [EXTRACTED]
 - [[Threat Model_22]] - `contains` [EXTRACTED]

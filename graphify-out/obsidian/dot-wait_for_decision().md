@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
-location: "L455"
+community: "hermes/skills/i-bs/README.md"
+location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[_StubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

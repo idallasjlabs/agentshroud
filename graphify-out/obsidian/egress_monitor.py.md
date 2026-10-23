@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "Any"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/Any
 ---
 
 # egress_monitor.py
@@ -20,8 +20,8 @@ tags:
 - [[EgressMonitorConfig]] - `contains` [EXTRACTED]
 - [[EgressSummary]] - `contains` [EXTRACTED]
 - [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[key_vault.py_2]] - `references` [EXTRACTED]
-- [[log_sanitizer.py_2]] - `references` [EXTRACTED]
+- [[key_vault.py]] - `references` [EXTRACTED]
+- [[log_sanitizer.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/Any

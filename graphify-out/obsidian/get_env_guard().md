@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "check_command"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/check_command
 ---
 
 # get_env_guard()
@@ -15,6 +15,6 @@ tags:
 - [[EnvironmentGuard]] - `references` [EXTRACTED]
 - [[Get the global environment guard instance.]] - `rationale_for` [EXTRACTED]
 - [[check_command()]] - `calls` [EXTRACTED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/check_command

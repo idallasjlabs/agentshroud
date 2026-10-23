@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "EgressFilterConfig (4)"
-location: "L100"
+community: "api.py"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/apipy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_54]] - `references` [EXTRACTED]
-- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig]] - `method` [EXTRACTED]
+- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
+- [[A2APeer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/apipy

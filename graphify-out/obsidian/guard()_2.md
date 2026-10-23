@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard_limits.py"
+source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "._make_proxy()"
-location: "L30"
+community: "PromptGuard"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/PromptGuard
 ---
 
 # guard()
 
 ## Connections
-- [[ResourceGuard]] - `calls` [EXTRACTED]
-- [[ResourceLimits]] - `calls` [EXTRACTED]
-- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

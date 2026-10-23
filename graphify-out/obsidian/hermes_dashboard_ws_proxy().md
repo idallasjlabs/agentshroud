@@ -24,6 +24,6 @@ tags:
 - [[hermes_dashboard_proxy()]] - `shares_data_with` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
-- [[websocket_3]] - `references` [EXTRACTED]
+- [[websocket_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

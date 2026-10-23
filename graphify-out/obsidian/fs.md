@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: ".agents/skills/browser/browse.js"
 type: "code"
-community: "ServiceManager (2)"
-location: "L24"
+community: "browser/browse.js (2)"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager_2
+  - community/browser/browsejs_2
 ---
 
 # fs
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager_2
+#graphify/code #graphify/EXTRACTED #community/browser/browsejs_2

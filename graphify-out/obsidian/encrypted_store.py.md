@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "test_playback_state.c"
+community: "AgentTarget (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/AgentTarget_2
 ---
 
 # encrypted_store.py
@@ -17,6 +17,6 @@ tags:
 - [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[_secure_zero()]] - `contains` [EXTRACTED]
 - [[canary.py]] - `references` [EXTRACTED]
-- [[env_guard.py_2]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "concept"
-community: ".omp/mcp.json"
+community: "ssh-configuration.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/omp/mcpjson
+  - community/ssh-configurationmd
 ---
 
 # himalaya CLI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[himalayaSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/omp/mcpjson
+#graphify/concept #graphify/EXTRACTED #community/ssh-configurationmd

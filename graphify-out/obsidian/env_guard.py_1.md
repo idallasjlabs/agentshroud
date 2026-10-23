@@ -2,29 +2,16 @@
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
 community: "sunday-scan.sh"
-location: "L10"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/sunday-scansh
 ---
 
-# env_guard.py
+# env_guard.py.md
 
 ## Connections
-- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - `contains` [EXTRACTED]
-- [[Blocked Commands]] - `contains` [EXTRACTED]
-- [[Blocked Paths]] - `contains` [EXTRACTED]
-- [[Environment Variables_5]] - `contains` [EXTRACTED]
-- [[Function Details_3]] - `contains` [EXTRACTED]
-- [[Global Singleton]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_3]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_2]] - `contains` [EXTRACTED]
-- [[Purpose_83]] - `contains` [EXTRACTED]
-- [[Related_5]] - `contains` [EXTRACTED]
-- [[Responsibilities_5]] - `contains` [EXTRACTED]
-- [[Threat Model_4]] - `contains` [EXTRACTED]
-- [[Tracked Credential Variable Names (subset)]] - `contains` [EXTRACTED]
-- [[env_guard.py]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sunday-scansh

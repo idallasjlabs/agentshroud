@@ -2,7 +2,7 @@
 source_file: "gateway/skills/manifest.py"
 type: "code"
 community: "SecurityPipeline (3)"
-location: "L68"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # .to_dict()
 
 ## Connections
-- [[ManifestEntry]] - `method` [EXTRACTED]
+- [[dot-to_json()]] - `calls` [EXTRACTED]
+- [[SkillsManifest]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
-type: "code"
-community: "upgrade"
-location: "L57"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+type: "document"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2)"
+location: "L53"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2
 ---
 
 # get_version_history()
 
 ## Connections
-- [[Any_65]] - `references` [EXTRACTED]
-- [[Get version change history.]] - `rationale_for` [EXTRACTED]
-- [[agentshroud_manager (version manager)]] - `calls` [EXTRACTED]
-- [[list_versions()]] - `calls` [EXTRACTED]
-- [[mask_credentials()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `contains` [EXTRACTED]
+- [[Function Details_15]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2

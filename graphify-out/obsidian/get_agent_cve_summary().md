@@ -2,7 +2,7 @@
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
 community: "A2APolicyEngine"
-location: "L18756"
+location: "L18772"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # get_agent_cve_summary()
 
 ## Connections
-- [[Any_49]] - `references` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
 - [[Return a summary of the advisory registry for the specified agent. Counts are…]] - `rationale_for` [EXTRACTED]
 - [[_AGENT_CVE_REGISTRIES]] - `calls` [EXTRACTED]
 - [[_HERMES_CVE_REGISTRY (HERMES_CVE_REGISTRY alias)]] - `references` [EXTRACTED]
