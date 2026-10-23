@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestWebSearchLog"
+community: "KillSwitchMonitor"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSearchLog
+  - community/KillSwitchMonitor
 ---
 
 # .test_response_includes_revert_minutes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Collaborator chat raw web_search JSON produces a safe notice.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPToolCall"
 location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPToolCall
 ---
 
 # .test_passthrough_still_audits()
 
 ## Connections
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
-- [[TestPassthroughMode]] - `method` [EXTRACTED]
+- [[TestPassthroughMode_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

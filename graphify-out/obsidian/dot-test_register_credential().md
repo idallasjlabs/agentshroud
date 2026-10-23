@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: "A2AMethod"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/A2AMethod
 ---
 
 # .test_register_credential()
@@ -15,4 +15,4 @@ tags:
 - [[Test credential registration.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

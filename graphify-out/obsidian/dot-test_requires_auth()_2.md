@@ -12,7 +12,7 @@ tags:
 # .test_requires_auth()
 
 ## Connections
-- [[Endpoint returns 401 without auth override._1]] - `rationale_for` [EXTRACTED]
+- [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
 - [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

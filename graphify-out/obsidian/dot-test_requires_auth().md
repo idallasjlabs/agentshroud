@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TestPatternDetection"
-location: "L121"
+community: "TelegramAPIProxy (3)"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/TelegramAPIProxy_3
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
-- [[TestEmailSend]] - `method` [EXTRACTED]
+- [[TestSubmitAuth]] - `method` [EXTRACTED]
+- [[_draft()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

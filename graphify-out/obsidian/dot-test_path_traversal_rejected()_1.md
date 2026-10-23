@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_oauth_security.py"
+source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "_wrap_response()"
-location: "L171"
+community: "RBACConfig (2)"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/RBACConfig_2
 ---
 
 # .test_path_traversal_rejected()
 
 ## Connections
-- [[TestRedirectURI]] - `method` [EXTRACTED]
+- [[TestInputValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/RBACConfig_2

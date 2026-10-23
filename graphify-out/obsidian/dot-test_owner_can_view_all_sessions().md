@@ -12,6 +12,6 @@ tags:
 # .test_owner_can_view_all_sessions()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig_2

@@ -12,6 +12,6 @@ tags:
 # .test_owner_can_access_any_session()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig_2

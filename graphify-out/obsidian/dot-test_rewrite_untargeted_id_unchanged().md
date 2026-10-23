@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path"
+community: "._results()"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_results
 ---
 
 # .test_rewrite_untargeted_id_unchanged()
@@ -16,4 +16,4 @@ tags:
 - [[TestRewrite]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_results

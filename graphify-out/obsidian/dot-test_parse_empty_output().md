@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Common Queries"
-location: "L498"
+community: "Skill: Project Management (PM) (3)"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Skill_Project_Management_PM_3
 ---
 
 # .test_parse_empty_output()
 
 ## Connections
-- [[TestClamAVParser]] - `method` [EXTRACTED]
-- [[parse_clamscan_output()]] - `calls` [EXTRACTED]
+- [[TestTrivyParser]] - `method` [EXTRACTED]
+- [[parse_trivy_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Common_Queries
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

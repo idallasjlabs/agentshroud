@@ -12,7 +12,7 @@ tags:
 # .test_privacy_policy_status_when_missing_file()
 
 ## Connections
-- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConsentFramework_2

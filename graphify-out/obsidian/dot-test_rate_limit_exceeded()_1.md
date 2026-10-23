@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L111"
+community: "api.py"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/apipy
 ---
 
 # .test_rate_limit_exceeded()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[TestRateLimiting_3]] - `method` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
+- [[TestRateLimiting_2]] - `method` [EXTRACTED]
+- [[_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/apipy

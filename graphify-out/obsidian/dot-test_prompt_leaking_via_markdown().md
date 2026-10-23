@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "_wrap_response() (5)"
+community: "ContextGuard"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_5
+  - community/ContextGuard
 ---
 
 # .test_prompt_leaking_via_markdown()
 
 ## Connections
 - [[Markdown-based injection.]] - `rationale_for` [EXTRACTED]
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_5
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

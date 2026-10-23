@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_register_and_verify()
@@ -15,4 +15,4 @@ tags:
 - [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
 - [[register_system_prompt + verify_system_prompt should succeed.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

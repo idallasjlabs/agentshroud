@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestClassify]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
-- [[parametrize]] - `references` [EXTRACTED]
+- [[parametrize_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

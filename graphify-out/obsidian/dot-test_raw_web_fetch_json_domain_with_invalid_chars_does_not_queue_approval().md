@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_req (6)"
+community: "TelegramAPIProxy"
 location: "L3033"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req_6
+  - community/TelegramAPIProxy
 ---
 
 # .test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()
 
 ## Connections
 - [[Domains containing invalid hostname characters must be rejected.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req_6
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

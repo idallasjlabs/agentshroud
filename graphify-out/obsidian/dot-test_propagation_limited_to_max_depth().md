@@ -12,11 +12,11 @@ tags:
 # .test_propagation_limited_to_max_depth()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `calls` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `calls` [EXTRACTED]
 - [[Depth-2 propagation A → B → C but NOT C → D when max_depth=2.]] - `rationale_for` [EXTRACTED]
 - [[TestIncidentPropagation]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
 - [[TrustDecayPolicy_1]] - `calls` [EXTRACTED]
-- [[TrustManager_3]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CronStateMonitor"
+community: "TelegramAPIProxy"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/TelegramAPIProxy
 ---
 
 # .test_prefixed_model_sentence_is_rewritten_to_active_model_hint()
 
 ## Connections
 - [[Partial model sentence variants should still be rewritten deterministically.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

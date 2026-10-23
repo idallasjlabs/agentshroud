@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # .test_owner_bypass_audited_at_every_guard()
@@ -17,4 +17,4 @@ tags:
 - [[TestContextGuardInPipeline]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

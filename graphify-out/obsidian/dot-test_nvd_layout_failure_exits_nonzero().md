@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestFailsLoudly]] - `method` [EXTRACTED]
-- [[_boom()_1]] - `indirect_call` [INFERRED]
+- [[_boom()_2]] - `indirect_call` [INFERRED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/An_unreachable_feed_must_fail_the_run_not_print_0_new_and_exit_0

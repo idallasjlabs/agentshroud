@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPToolCall"
 location: "L895"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPToolCall
 ---
 
 # .test_private_parameter_violation_blocks_non_owner()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

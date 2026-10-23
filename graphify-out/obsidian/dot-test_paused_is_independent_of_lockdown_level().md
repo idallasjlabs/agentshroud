@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
+community: "ServiceManager"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+  - community/ServiceManager
 ---
 
 # .test_paused_is_independent_of_lockdown_level()
@@ -18,4 +18,4 @@ tags:
 - [[TestPausedFieldWiring]] - `method` [EXTRACTED]
 - [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

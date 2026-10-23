@@ -12,7 +12,7 @@ tags:
 # .test_sanitized()
 
 ## Connections
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestFromPipelineResult]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CronStateMonitor (10)"
+community: "TelegramAPIProxy"
 location: "L3394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor_10
+  - community/TelegramAPIProxy
 ---
 
 # .test_raw_web_fetch_json_overlong_url_does_not_queue_approval()
 
 ## Connections
 - [[Overly long URLs should be rejected before approval queueing.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor_10
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

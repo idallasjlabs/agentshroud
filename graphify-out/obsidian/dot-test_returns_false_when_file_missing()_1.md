@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "sync-cve-registry.py"
-location: "L1039"
+location: "L1448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .test_returns_false_when_file_missing()
 
 ## Connections
-- [[TestAlreadyCheckedUpstreamToday]] - `method` [EXTRACTED]
+- [[TestAlreadyIngestedGhsaToday]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

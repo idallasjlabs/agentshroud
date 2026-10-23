@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "SessionManager"
+community: "._make_proxy()"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/_make_proxy
 ---
 
 # .test_pipeline_scans_outbound_for_key_leaks()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyVaultWired]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

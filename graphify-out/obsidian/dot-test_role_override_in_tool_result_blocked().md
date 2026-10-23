@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_role_override_in_tool_result_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: ".test_proxy_request_returns_ack_only_updates_when_all_dropped()"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/test_proxy_request_returns_ack_only_updates_when_all_dropped
 ---
 
 # .test_proxy_request_returns_ack_only_updates_when_all_dropped()
@@ -21,4 +21,4 @@ tags:
 - [[fake_forward()_2]] - `indirect_call` [INFERRED]
 - [[fake_start_notice()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_proxy_request_returns_ack_only_updates_when_all_dropped

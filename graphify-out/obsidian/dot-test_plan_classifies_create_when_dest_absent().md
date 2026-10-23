@@ -12,7 +12,7 @@ tags:
 # .test_plan_classifies_create_when_dest_absent()
 
 ## Connections
-- [[Path_64]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[TestPlanDeploy]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[plan_deploy()]] - `calls` [EXTRACTED]

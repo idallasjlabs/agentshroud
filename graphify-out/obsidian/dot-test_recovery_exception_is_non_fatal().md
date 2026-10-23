@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Exception during inbound recovery → swallowed; outbound still recorded.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

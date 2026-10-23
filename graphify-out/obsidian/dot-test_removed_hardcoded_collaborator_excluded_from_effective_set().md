@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[Bug 1 RBACConfig.__post_init__ must exclude persisted-removed IDs from the]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Canvas_Skill

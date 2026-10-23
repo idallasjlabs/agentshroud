@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestGetSbom_1]] - `method` [EXTRACTED]
-- [[get_sbom()]] - `calls` [EXTRACTED]
+- [[get_sbom()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

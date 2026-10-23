@@ -12,6 +12,6 @@ tags:
 # .test_rate_limit_enforced()
 
 ## Connections
-- [[TestRateLimiting]] - `method` [EXTRACTED]
+- [[TestRateLimiting_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

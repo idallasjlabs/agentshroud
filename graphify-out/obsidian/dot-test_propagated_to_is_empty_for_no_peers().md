@@ -12,8 +12,8 @@ tags:
 # .test_propagated_to_is_empty_for_no_peers()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
 - [[TestIncidentAudit]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

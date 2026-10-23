@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "TestMCPResultEndpoint"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/TestMCPResultEndpoint
 ---
 
 # .test_result_requires_auth()
@@ -15,4 +15,4 @@ tags:
 - [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
 - [[Unauthenticated request is rejected.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint

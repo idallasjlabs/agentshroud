@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Pre-Change Analysis (PCA)"
+community: "TelegramAPIProxy"
 location: "L737"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pre-Change_Analysis_PCA
+  - community/TelegramAPIProxy
 ---
 
 # .test_ollama_tools_unsupported_error_is_sanitized()
 
 ## Connections
 - [[Raw model capability errors should be rewritten to actionable guidance.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pre-Change_Analysis_PCA
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

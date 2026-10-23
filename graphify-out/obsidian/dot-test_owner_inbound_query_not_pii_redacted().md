@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "SecurityPipeline (2)"
 location: "L754"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/SecurityPipeline_2
 ---
 
 # .test_owner_inbound_query_not_pii_redacted()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestInboundPIIOwnerExemption]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

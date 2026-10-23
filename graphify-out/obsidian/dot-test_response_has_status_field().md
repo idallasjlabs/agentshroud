@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestPatternDetection"
+community: "TestTelegramWebhook"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/TestTelegramWebhook
 ---
 
 # .test_response_has_status_field()
@@ -15,4 +15,4 @@ tags:
 - [[Response always includes a 'status' field.]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramWebhook]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/TestTelegramWebhook

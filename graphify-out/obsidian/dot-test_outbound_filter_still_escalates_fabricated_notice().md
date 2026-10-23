@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "KeyVaultConfig"
 location: "L807"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/KeyVaultConfig
 ---
 
 # .test_outbound_filter_still_escalates_fabricated_notice()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[TestOutboundFilterResultBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

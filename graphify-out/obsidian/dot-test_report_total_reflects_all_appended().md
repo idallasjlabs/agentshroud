@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # .test_report_total_reflects_all_appended()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
 - [[TestAuditTrailBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L1079"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_prompt_guard_large_input()
 
 ## Connections
 - [[Large inputs shouldn't crash prompt guard.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

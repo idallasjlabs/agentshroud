@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PortManager"
+community: "ContextGuard"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/ContextGuard
 ---
 
 # .test_pii_scan_time_independent_of_content()
@@ -15,4 +15,4 @@ tags:
 - [[PII scanning time should be roughly linear, not exponential.]] - `rationale_for` [EXTRACTED]
 - [[TestTimingAttacks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

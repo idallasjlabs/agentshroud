@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PortManager"
+community: "ContextGuard"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/ContextGuard
 ---
 
 # .test_prompt_guard_no_early_exit_leak()
@@ -15,4 +15,4 @@ tags:
 - [[Prompt guard should scan full input, not short-circuit on first match.]] - `rationale_for` [EXTRACTED]
 - [[TestTimingAttacks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

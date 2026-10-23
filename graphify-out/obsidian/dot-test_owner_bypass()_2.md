@@ -1,19 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestProductionCompose"
-location: "L440"
+community: "MiddlewareManager"
+location: "L775"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/MiddlewareManager
 ---
 
 # .test_owner_bypass()
 
 ## Connections
-- [[TestContextGuard]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
-- [[_req()_1]] - `calls` [EXTRACTED]
+- [[TestIsPathAllowedForUser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

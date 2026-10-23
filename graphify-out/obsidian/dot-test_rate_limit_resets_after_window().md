@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[SessionManager]] - `calls` [EXTRACTED]
-- [[TestRateLimiting_3]] - `method` [EXTRACTED]
+- [[TestRateLimiting]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

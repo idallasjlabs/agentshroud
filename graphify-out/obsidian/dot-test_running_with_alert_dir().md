@@ -12,6 +12,6 @@ tags:
 # .test_running_with_alert_dir()
 
 ## Connections
-- [[TestWazuhSummary]] - `method` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAlreadyIngestedGhsaToday

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path"
+community: "._results()"
 location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_results
 ---
 
 # .test_rewrite_is_idempotent()
@@ -16,4 +16,4 @@ tags:
 - [[TestRewrite]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_results

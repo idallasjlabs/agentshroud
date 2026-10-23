@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path (2)"
+community: "Path"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/Path
 ---
 
 # .test_running_version_matches_pinned_openclaw_version()
@@ -16,4 +16,4 @@ tags:
 - [[TestVersion]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/Path

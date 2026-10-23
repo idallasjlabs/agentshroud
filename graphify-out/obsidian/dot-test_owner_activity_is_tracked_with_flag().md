@@ -16,10 +16,10 @@ tags:
 - [[Owner messages are recorded in the tracker with is_owner=True.]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[__init__()]] - `contains` [EXTRACTED]
+- [[__init__()_2]] - `contains` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[record_activity()]] - `contains` [EXTRACTED]
+- [[record_activity()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

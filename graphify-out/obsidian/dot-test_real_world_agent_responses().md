@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "FetchOutcome"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # .test_real_world_agent_responses()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[Test with realistic agent response patterns.]] - `rationale_for` [EXTRACTED]
-- [[TestIntegration_1]] - `method` [EXTRACTED]
+- [[TestIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
