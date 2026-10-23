@@ -54,7 +54,6 @@ import subprocess
 import sys
 import threading
 import time
-import urllib.request
 from collections.abc import Callable, Iterator
 from typing import Any, Optional, TypeVar
 
@@ -71,6 +70,9 @@ _T = TypeVar("_T")
 # sunday-upgrade.sh's 180-minute watchdog killed the whole session.
 FETCH_DEADLINE_S = 90.0
 
+# Set inside _ipv4_only(); read by curl-based fetches, which bypass getaddrinfo.
+_FORCE_IPV4 = False
+
 # Bounded retry for the two upstream fetches. 2026-10-16 on marvin: two
 # consecutive runs failed the Hermes lookup ("<urlopen error timed out>", then
 # "SSL: UNEXPECTED_EOF_WHILE_READING") while the identical URL succeeded 10/10
@@ -86,8 +88,7 @@ RETRY_DELAYS: tuple[float, ...] = (5, 10, 20)
 NPM_PACKAGE = "openclaw"
 HERMES_REPO = "nousresearch/hermes-agent"
 DOCKERHUB_TAGS = (
-    "https://hub.docker.com/v2/repositories/{repo}/tags"
-    "?page_size=100&ordering=last_updated"
+    "https://hub.docker.com/v2/repositories/{repo}/tags" "?page_size=100&ordering=last_updated"
 )
 
 # A hyphenated suffix that is a pure integer is a downstream patch release
@@ -173,10 +174,21 @@ def fetch_npm_versions(package: str = NPM_PACKAGE) -> list[str]:
 
 
 def fetch_dockerhub_tags(repo: str = HERMES_REPO) -> list[dict[str, Any]]:
-    """Tag records for a Docker Hub repository, newest first."""
+    """Tag records for a Docker Hub repository, newest first (via curl).
+
+    curl, not urllib: 2026-10-23 on marvin every Python HTTPS read to
+    hub.docker.com hung (Homebrew 3.15 and /usr/bin/python3 alike) while curl
+    fetched the same URL in 0.2s, so Hermes came back UNKNOWN after ~6.5 minutes
+    of retries. The deadline/retry guards below still bound it.
+    """
     url = DOCKERHUB_TAGS.format(repo=repo)
-    with urllib.request.urlopen(url, timeout=60) as resp:  # noqa: S310
-        return json.load(resp).get("results", [])
+    cmd = ["curl", "--fail", "--silent", "--show-error", "--location", "--max-time", "60"]
+    if _FORCE_IPV4:
+        cmd.append("-4")
+    out = subprocess.run(cmd + [url], capture_output=True, text=True, timeout=90, check=False)
+    if out.returncode != 0:
+        raise RuntimeError(f"curl {url} failed (exit {out.returncode}): {out.stderr.strip()[:200]}")
+    return json.loads(out.stdout).get("results", [])
 
 
 def _digest_for_tag(tags: list[dict[str, Any]], tag: str) -> Optional[str]:
@@ -220,6 +232,7 @@ def _ipv4_only() -> Iterator[None]:
     time. Used from the SECOND attempt onwards — the first attempt keeps the
     system default so a healthy dual-stack host is never second-guessed.
     """
+    global _FORCE_IPV4
     original = socket.getaddrinfo
 
     def _getaddrinfo_v4(
@@ -233,10 +246,12 @@ def _ipv4_only() -> Iterator[None]:
         return original(host, port, socket.AF_INET, type, proto, flags)
 
     socket.getaddrinfo = _getaddrinfo_v4  # type: ignore[assignment]
+    _FORCE_IPV4 = True  # curl resolves names itself; tell it with -4
     try:
         yield
     finally:
         socket.getaddrinfo = original  # type: ignore[assignment]
+        _FORCE_IPV4 = False
 
 
 def _guarded_fetch(fetch: Callable[[], _T], attempt: int, deadline: float) -> _T:
@@ -334,9 +349,7 @@ def discover(
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--json", action="store_true")
-    ap.add_argument(
-        "--shell", action="store_true", help="KEY=VALUE lines for bash eval"
-    )
+    ap.add_argument("--shell", action="store_true", help="KEY=VALUE lines for bash eval")
     args = ap.parse_args()
 
     found = discover()
@@ -354,9 +367,7 @@ def main() -> int:
         print("AgentShroud™ — upstream release discovery")
         for name, info in found.items():
             if info["error"]:
-                print(
-                    f"  {name:<9} UNKNOWN — {info['source']} failed: {info['error'][:80]}"
-                )
+                print(f"  {name:<9} UNKNOWN — {info['source']} failed: {info['error'][:80]}")
             else:
                 print(f"  {name:<9} latest={info['latest']}  ({info['source']})")
 
