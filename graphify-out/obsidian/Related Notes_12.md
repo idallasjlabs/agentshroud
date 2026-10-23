@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "lifespan() (3)"
-location: "L44"
+community: "AgentShroud™ — Trademark Prior Use Record"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan_3
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Related Notes
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lifespan_3
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

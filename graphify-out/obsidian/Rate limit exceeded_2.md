@@ -12,6 +12,6 @@ tags:
 # "Rate limit exceeded"
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

@@ -12,6 +12,6 @@ tags:
 # Return current lockdown state for a user (for /collabs or owner inspection).
 
 ## Connections
-- [[dot-get_status()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_status()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_3

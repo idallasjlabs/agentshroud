@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Git History Purge Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Git_History_Purge_Plan
 ---
 
 # SECURITY_VERIFICATION.md
@@ -17,4 +17,4 @@ tags:
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 - [[history-purge-plan]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

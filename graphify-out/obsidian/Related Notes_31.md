@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "KeyRotationManager (2)"
-location: "L44"
+community: "_make_proxy()"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/_make_proxy
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/document #graphify/EXTRACTED #community/_make_proxy

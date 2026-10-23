@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "ServiceManager"
 location: "L306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ServiceManager
 ---
 
 # Response from POST /ssh/write_file.      success reflects whether the remote wri
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteFileResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

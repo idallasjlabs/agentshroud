@@ -12,6 +12,6 @@ tags:
 # Remove pending requests older than max_age_seconds. Returns count removed.
 
 ## Connections
-- [[dot-cleanup_expired()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_expired()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Critical_Findings

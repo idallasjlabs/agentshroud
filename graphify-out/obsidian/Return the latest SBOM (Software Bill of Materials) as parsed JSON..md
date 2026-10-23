@@ -12,6 +12,6 @@ tags:
 # Return the latest SBOM (Software Bill of Materials) as parsed JSON.
 
 ## Connections
-- [[get_sbom()]] - `rationale_for` [EXTRACTED]
+- [[get_sbom()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher_2

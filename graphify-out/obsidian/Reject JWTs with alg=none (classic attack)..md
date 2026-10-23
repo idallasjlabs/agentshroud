@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "ContextGuard"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/ContextGuard
 ---
 
 # Reject JWTs with alg=none (classic attack).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_reject_none_algorithm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "_make_sanitizer()"
+community: "run-standalone.sh"
 location: "lines 212-228"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/run-standalonesh
 ---
 
 # S14 Hermes run-standalone.sh image tag falls back to docker/versions.env, not 'latest'
@@ -15,4 +15,4 @@ tags:
 - [[cmd_up()]] - `references` [EXTRACTED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/concept #graphify/EXTRACTED #community/run-standalonesh

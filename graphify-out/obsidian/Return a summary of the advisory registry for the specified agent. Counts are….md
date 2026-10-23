@@ -2,7 +2,7 @@
 source_file: "gateway/security/agent_cve_registry.py"
 type: "rationale"
 community: "A2APolicyEngine"
-location: "L18757"
+location: "L18773"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

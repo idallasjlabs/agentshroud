@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "SSHProxy"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHProxy
 ---
 
 # Result of a structured SSH file-write operation (SSHProxy.write_file())
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

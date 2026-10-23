@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "lifespan()"
-location: "L385"
+community: "UserSessionManager"
+location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/lifespan
+  - graphify/INFERRED
+  - community/UserSessionManager
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_2]] - `references` [EXTRACTED]
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[dashboard_ws_token()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
-- [[serve_dashboard()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/INFERRED #community/UserSessionManager

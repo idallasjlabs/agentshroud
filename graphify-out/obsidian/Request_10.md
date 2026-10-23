@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "UserSessionManager"
-location: "L61"
+community: "egress_filter.py"
+location: "L183"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/UserSessionManager
+  - graphify/EXTRACTED
+  - community/egress_filterpy
 ---
 
 # Request
 
 ## Connections
-- [[dot-_handle()_1]] - `references` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[chat()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

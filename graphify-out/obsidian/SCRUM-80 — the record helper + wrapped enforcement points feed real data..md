@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "rationale"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "ModuleStatsCollector"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/ModuleStatsCollector
 ---
 
 # SCRUM-80 — the record helper + wrapped enforcement points feed real data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforcementWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

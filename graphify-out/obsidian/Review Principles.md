@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "AgentTarget (2)"
+community: ".test_egress_callback_from_collaborator_is_rejected()"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/test_egress_callback_from_collaborator_is_rejected
 ---
 
 # Review Principles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected

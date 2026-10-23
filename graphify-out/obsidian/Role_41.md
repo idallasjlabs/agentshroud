@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Path (3)"
+community: "GSDE&G Skills Reference Guide"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_3
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

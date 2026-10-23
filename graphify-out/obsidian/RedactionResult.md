@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L71"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L171"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/EgressFilterConfig
+  - graphify/EXTRACTED
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
+- [[dot-sanitize()_2]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

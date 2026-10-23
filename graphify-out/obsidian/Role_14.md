@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
-type: "code"
-community: "MiddlewareManager (2)"
-location: "L76"
+source_file: ".agents/skills/i-pca/SKILL.md"
+type: "document"
+community: "openclaw/skills/i-cr/SKILL.md (2)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/openclaw/skills/i-cr/SKILLmd_2
 ---
 
 # Role
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
-- [[dot-get_user_role()]] - `references` [EXTRACTED]
-- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_2

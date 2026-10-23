@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "ApprovalQueueConfig (3)"
 location: "L420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ApprovalQueueConfig_3
 ---
 
 # Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_paused_collaborator_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

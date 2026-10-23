@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "UserSessionManager (2) (2)"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/UserSessionManager_2_2
 ---
 
 # Request to send an email through the gateway (P3: channel ownership).      The b
 
 ## Connections
-- [[EmailSendRequest]] - `rationale_for` [EXTRACTED]
+- [[EmailSendRequest_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2

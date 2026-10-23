@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "ContextSegment"
+community: "MiddlewareManager (3)"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MiddlewareManager_3
 ---
 
 # Request for human approval of a sensitive action      Submitted by an agent when
 
 ## Connections
-- [[ApprovalRequest_5]] - `rationale_for` [EXTRACTED]
+- [[ApprovalRequest_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

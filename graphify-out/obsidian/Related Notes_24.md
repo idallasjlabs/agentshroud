@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L75"
+community: "EgressFilter"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/EgressFilter
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

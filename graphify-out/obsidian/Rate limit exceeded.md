@@ -12,6 +12,6 @@ tags:
 # "Rate limit exceeded"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy

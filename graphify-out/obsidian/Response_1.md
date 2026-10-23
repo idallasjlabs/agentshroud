@@ -12,9 +12,9 @@ tags:
 # Response
 
 ## Connections
-- [[dot-_handle()_1]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]

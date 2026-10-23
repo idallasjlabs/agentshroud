@@ -1,17 +1,13 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: ""
 type: "code"
-community: "lifespan()"
-location: "L18"
+community: "ToolChainAnalyzer.score_reversibility (C37)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/ToolChainAnalyzerscore_reversibility_C37
 ---
 
 # Request
 
-## Connections
-- [[auth_dep()_3]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzerscore_reversibility_C37

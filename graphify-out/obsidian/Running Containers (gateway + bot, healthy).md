@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "test_sanitizer.py"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/AgentShroud_system_C4_context
 ---
 
 # Running Containers (gateway + bot, healthy)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - `conceptually_related_to` [EXTRACTED]
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_system_C4_context

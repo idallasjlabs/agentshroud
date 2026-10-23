@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "background.js"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Role
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/backgroundjs
+#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

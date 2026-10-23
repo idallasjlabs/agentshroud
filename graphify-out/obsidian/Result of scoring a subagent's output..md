@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "v0.9.0 — Apple Messages Integration"
+community: "SubagentGovernance"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/SubagentGovernance
 ---
 
 # Result of scoring a subagent's output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

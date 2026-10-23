@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
-location: "L40"
+community: "MiddlewareManager (4)"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/MiddlewareManager_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

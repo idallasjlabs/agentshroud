@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
+community: "SharedMemoryManager"
 location: "L366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SharedMemoryManager
 ---
 
 # Return True if text contains patterns matching private/sensitive content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-contains_private_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

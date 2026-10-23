@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "TestMCPResultEndpoint"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/TestMCPResultEndpoint
 ---
 
 # Response includes processing_time_ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_result_returns_processing_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPResultEndpoint
