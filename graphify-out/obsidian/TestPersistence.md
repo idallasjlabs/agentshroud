@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/tests/test_report_store.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L90"
+community: "soc/router.py"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/soc/routerpy
 ---
 
 # TestPersistence
 
 ## Connections
-- [[dot-test_delete()]] - `method` [EXTRACTED]
-- [[dot-test_survives_new_instance()]] - `method` [EXTRACTED]
-- [[ReportStore]] - `uses` [INFERRED]
-- [[test_report_store.py]] - `contains` [EXTRACTED]
+- [[dot-test_persistence_across_instances()]] - `method` [EXTRACTED]
+- [[Test trust survives restart.]] - `rationale_for` [EXTRACTED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

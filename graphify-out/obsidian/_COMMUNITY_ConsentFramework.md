@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 48
 ---
 
 # ConsentFramework
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 48 nodes
 
 ## Members

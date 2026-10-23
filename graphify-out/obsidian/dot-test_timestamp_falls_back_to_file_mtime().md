@@ -12,7 +12,7 @@ tags:
 # .test_timestamp_falls_back_to_file_mtime()
 
 ## Connections
-- [[TestTrivySummary]] - `method` [EXTRACTED]
+- [[TestTrivySummary_1]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/blucli/SKILLmd

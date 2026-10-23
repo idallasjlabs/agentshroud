@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # _agy_doc_bad()
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members

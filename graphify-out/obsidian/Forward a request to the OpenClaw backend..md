@@ -12,6 +12,6 @@ tags:
 # Forward a request to the OpenClaw backend.
 
 ## Connections
-- [[dot-forward()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-forward()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget

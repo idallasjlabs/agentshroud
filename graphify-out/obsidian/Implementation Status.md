@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Browser Extension]] - `contains` [EXTRACTED]
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
-- [[Decision_6]] - `contains` [EXTRACTED]
+- [[Decision_5]] - `contains` [EXTRACTED]
 - [[Option 1 Gateway-Level Filtering (Recommended)]] - `contains` [EXTRACTED]
 - [[Option 2 Approval Queue for Credential Ops]] - `contains` [EXTRACTED]
 - [[Option 3 Disable Credential Commands via Telegram]] - `contains` [EXTRACTED]

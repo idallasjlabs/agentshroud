@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 23
 ---
 
 # Implementation Status
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -41,7 +43,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 - 1 edge to [[_COMMUNITY_patch-anthropic-sdk.sh]]
 
 ## Top bridge nodes

@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/proxy/web_config.py"
-type: "code"
-community: "LLMProxy"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+type: "document"
+community: "web_config.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/web_configpy
 ---
 
 # web_config.py
 
 ## Connections
-- [[DomainSettings]] - `contains` [EXTRACTED]
-- [[WebProxyConfig_1]] - `contains` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
-- [[url_analyzer.py_2]] - `references` [EXTRACTED]
-- [[web_content_scanner.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_29]] - `contains` [EXTRACTED]
+- [[Function Details_49]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_52]] - `contains` [EXTRACTED]
+- [[Purpose_159]] - `contains` [EXTRACTED]
+- [[Related_56]] - `contains` [EXTRACTED]
+- [[Responsibilities_54]] - `contains` [EXTRACTED]
+- [[WebProxyConfig Fields]] - `contains` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/document #graphify/EXTRACTED #community/web_configpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
+source_file: "docs/data/README.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI) (2)"
-location: "L89"
+community: "canvas_proxy_app"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_2
+  - community/canvas_proxy_app
 ---
 
 # Current Status
 
 ## Connections
-- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
+- [[Data Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2
+#graphify/document #graphify/EXTRACTED #community/canvas_proxy_app

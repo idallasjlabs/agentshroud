@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition"
-location: "L205"
+community: "TestMCPResultEndpoint"
+location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/TestMCPResultEndpoint
 ---
 
 # Body-only owner identity must be rejected to prevent impersonation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_body_identity_rejected_without_header()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPResultEndpoint

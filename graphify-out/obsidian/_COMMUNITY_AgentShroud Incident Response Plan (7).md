@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # AgentShroud Incident Response Plan (7)
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members

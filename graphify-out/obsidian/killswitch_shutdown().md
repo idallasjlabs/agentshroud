@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[JSONResponse]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]

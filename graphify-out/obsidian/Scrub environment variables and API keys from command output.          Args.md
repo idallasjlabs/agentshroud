@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "test_playback_state.c"
+community: "._record_leakage()"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/_record_leakage
 ---
 
 # Scrub environment variables and API keys from command output.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scrub_command_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_playback_statec
+#graphify/rationale #graphify/EXTRACTED #community/_record_leakage

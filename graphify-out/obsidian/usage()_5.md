@@ -1,18 +1,19 @@
 ---
-source_file: "skills/openclaw/video-frames/scripts/frame.sh"
+source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "ClamAV (2)"
-location: "L4"
+community: "TestToolChainAnalyzer (2)"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ClamAV_2
+  - community/TestToolChainAnalyzer_2
 ---
 
 # usage()
 
 ## Connections
-- [[frame.sh]] - `defines` [EXTRACTED]
-- [[frame.sh script]] - `calls` [EXTRACTED]
+- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
+- [[workspace.sh]] - `defines` [EXTRACTED]
+- [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ClamAV_2
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2

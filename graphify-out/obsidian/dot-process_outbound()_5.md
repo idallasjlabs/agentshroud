@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "_make_proxy()"
-location: "L324"
+community: "UserSessionManager (2) (2)"
+location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/UserSessionManager_2_2
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
+- [[_BlockingPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

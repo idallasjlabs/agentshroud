@@ -1,31 +1,17 @@
 ---
-source_file: "gateway/soc/models.py"
-type: "code"
-community: "TestEgressApprovalQueue"
-location: "L31"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+type: "document"
+community: "Function Details (3)"
+location: "L3"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Function_Details_3
 ---
 
 # Severity
 
 ## Connections
-- [[Any_36]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
-- [[SecurityEvent]] - `uses` [INFERRED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
-- [[event_adapter.py]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
-- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
-- [[websocket.py]] - `imports` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/document #graphify/EXTRACTED #community/Function_Details_3

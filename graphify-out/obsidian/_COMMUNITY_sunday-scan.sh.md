@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # sunday-scan.sh
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -21,13 +23,13 @@ members: 21
 - [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Mode Enforce vs Monitor_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Purpose_83]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Related_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Related_6]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Threat Model_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 - [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
 
 ## Live Query (requires Dataview plugin)

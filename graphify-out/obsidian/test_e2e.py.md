@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[Role_19]] - `references` [EXTRACTED]
+- [[Role_64]] - `references` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[client()_8]] - `contains` [EXTRACTED]
+- [[client()_7]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
-- [[test_dashboard_requires_auth()_1]] - `contains` [EXTRACTED]
+- [[test_dashboard_requires_auth()]] - `contains` [EXTRACTED]
 - [[test_dashboard_returns_html()]] - `contains` [EXTRACTED]
 - [[test_dashboard_stats_returns_json()]] - `contains` [EXTRACTED]
 - [[test_forward_pii_sanitized_and_ledger_entry()]] - `contains` [EXTRACTED]

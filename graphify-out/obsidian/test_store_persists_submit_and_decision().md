@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[Queue store file should persist items and status transitions.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

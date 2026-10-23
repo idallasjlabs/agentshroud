@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV) (2)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
 - [[dot-agentsskillsi-secREADME]] - document - .agents/skills/i-sec/README.md
-- [[Purpose_3]] - document - .agents/skills/i-sec/README.md
+- [[Purpose_6]] - document - .agents/skills/i-sec/README.md
 - [[Related Skills]] - document - .agents/skills/i-sec/README.md
 - [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
 - [[Usage]] - document - .agents/skills/i-sec/README.md
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Security Review (SEC)]] - degree 7, connects to 1 community

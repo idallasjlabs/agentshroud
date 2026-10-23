@@ -12,6 +12,6 @@ tags:
 # Process an approval decision          Args:             request_id: Request UUID
 
 ## Connections
-- [[dot-decide()]] - `rationale_for` [EXTRACTED]
+- [[dot-decide()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_4

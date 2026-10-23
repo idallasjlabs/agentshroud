@@ -12,14 +12,14 @@ tags:
 # _StubAuditStore
 
 ## Connections
-- [[dot-__init__()_35]] - `method` [EXTRACTED]
-- [[dot-log_event()]] - `method` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
+- [[dot-__init__()_36]] - `method` [EXTRACTED]
+- [[dot-log_event()_1]] - `method` [EXTRACTED]
+- [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `calls` [EXTRACTED]

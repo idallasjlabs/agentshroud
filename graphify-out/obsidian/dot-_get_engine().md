@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "ServiceManager"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ServiceManager
 ---
 
 # ._get_engine()
@@ -19,9 +19,9 @@ tags:
 - [[dot-start_service()]] - `calls` [EXTRACTED]
 - [[dot-stop_service()_1]] - `calls` [EXTRACTED]
 - [[dot-update_service()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Return the container engine from app_state if not injected.]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 - [[get_engine()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

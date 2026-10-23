@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # ._process_new_alerts()
@@ -17,4 +17,4 @@ tags:
 - [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 - [[parse_alert()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

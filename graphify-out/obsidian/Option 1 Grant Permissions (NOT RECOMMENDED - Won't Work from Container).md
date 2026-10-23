@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI) (2)"
+community: "iMessage Integration Status"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_2
+  - community/iMessage_Integration_Status
 ---
 
 # Option 1: Grant Permissions (NOT RECOMMENDED - Won't Work from Container)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Solutions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_2
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

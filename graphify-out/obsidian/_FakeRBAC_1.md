@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
+community: "ServiceManager"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+  - community/ServiceManager
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_153]] - `method` [EXTRACTED]
-- [[dot-get_user_role()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_83]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `method` [EXTRACTED]
 - [[dot-test_build_record_defaults_to_normal_when_no_lockdown_state()]] - `calls` [EXTRACTED]
 - [[dot-test_build_record_does_not_crash_if_lockdown_missing()]] - `calls` [EXTRACTED]
 - [[dot-test_build_record_reports_real_lockdown_level()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

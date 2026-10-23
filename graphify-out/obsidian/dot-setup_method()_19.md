@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "setup-secrets.sh"
-location: "L317"
+community: "ModuleStatsCollector"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/ModuleStatsCollector
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PodmanEngine]] - `calls` [EXTRACTED]
-- [[TestPodmanEngine]] - `method` [EXTRACTED]
+- [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "UserSessionManager (4)"
-location: "L369"
+community: "AppleContainerEngine"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - graphify/INFERRED
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()]] - `references` [EXTRACTED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

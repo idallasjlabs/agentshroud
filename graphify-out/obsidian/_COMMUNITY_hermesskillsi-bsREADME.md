@@ -1,47 +1,35 @@
 ---
 type: community
-members: 72
+cohesion: 0.06
+members: 57
 ---
 
 # hermes/skills/i-bs/README.md
 
-**Members:** 72 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 57 nodes
 
 ## Members
-- [[dot-__init__()_179]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-__init__()_180]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-allowed()_1]] - code - gateway/security/a2a_policy.py
-- [[dot-from_dict()_7]] - code - gateway/security/a2a_policy.py
-- [[dot-submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-submit_tool_request()_3]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-wait_for_decision()_3]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-__init__()_30]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-submit_tool_request()]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-wait_for_decision()]] - code - gateway/tests/test_a2a_policy.py
 - [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A2AMethod_1]] - code - gateway/tests/test_a2a_policy.py
-- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyConfig]] - code - gateway/tests/test_a2a_policy.py
-- [[A2APolicyDecision]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyEngine_2]] - code - gateway/tests/test_a2a_policy.py
+- [[A2AMethod]] - code - gateway/tests/test_a2a_policy.py
+- [[A2APolicyEngine]] - code - gateway/tests/test_a2a_policy.py
 - [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Any_74]] - code - gateway/security/a2a_policy.py
 - [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
 - [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - rationale - gateway/security/a2a_policy.py
 - [[Hostname resolution is mocked — this test asserts the validator's own     logic,]] - rationale - gateway/tests/test_a2a_policy.py
 - [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - rationale - gateway/security/a2a_policy.py
 - [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - rationale - gateway/tests/test_a2a_policy.py
 - [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - rationale - gateway/tests/test_a2a_policy.py
-- [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
-- [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
 - [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
-- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
 - [[_StubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
-- [[_base_config()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[engine()_1]] - code - gateway/tests/test_a2a_policy.py
+- [[_base_config()]] - code - gateway/tests/test_a2a_policy.py
+- [[engine()]] - code - gateway/tests/test_a2a_policy.py
 - [[is_safe_a2a_callback_url()]] - code - gateway/security/a2a_policy.py
 - [[test_a2a_policy.py]] - code - gateway/tests/test_a2a_policy.py
 - [[test_allowlisted_peer_low_risk_method_is_allowed()]] - code - gateway/tests/test_a2a_policy.py
@@ -55,7 +43,6 @@ members: 72
 - [[test_callback_url_scheme_only_no_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
 - [[test_callback_url_ssrf_bypass_encodings_are_rejected()]] - code - gateway/tests/test_a2a_policy.py
 - [[test_callback_url_unresolvable_hostname_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_decision_allowed_property_only_true_for_terminal_allow()]] - code - gateway/tests/test_a2a_policy.py
 - [[test_default_action_allow_lets_unlisted_peers_through_to_risk_tier_check()]] - code - gateway/tests/test_a2a_policy.py
 - [[test_deny_wins_over_allow_for_a_peer_on_both_lists()]] - code - gateway/tests/test_a2a_policy.py
 - [[test_denylisted_peer_is_denied_even_if_method_safe()]] - code - gateway/tests/test_a2a_policy.py
@@ -89,16 +76,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_UserSessionManager]]
-- 8 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
-- 7 edges to [[_COMMUNITY_Security Module Inventory]]
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 11 edges to [[_COMMUNITY_A2APolicyConfig]]
+- 10 edges to [[_COMMUNITY_UserSessionManager]]
+- 9 edges to [[_COMMUNITY_record_decision()]]
+- 4 edges to [[_COMMUNITY_UserSessionManager (2)]]
 
 ## Top bridge nodes
-- [[A2APolicyAction]] - degree 13, connects to 4 communities
-- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
-- [[A2APolicyEngine_2]] - degree 31, connects to 2 communities
-- [[is_safe_a2a_callback_url()]] - degree 16, connects to 2 communities
-- [[A2APolicyDecision]] - degree 13, connects to 2 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 4 communities
+- [[A2APolicyEngine]] - degree 31, connects to 4 communities
+- [[_StubApprovalQueue]] - degree 13, connects to 4 communities
+- [[A2AMethod]] - degree 8, connects to 4 communities
+- [[is_safe_a2a_callback_url()]] - degree 16, connects to 1 community

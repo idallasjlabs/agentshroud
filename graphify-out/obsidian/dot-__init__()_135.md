@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "api.py"
-location: "L190"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

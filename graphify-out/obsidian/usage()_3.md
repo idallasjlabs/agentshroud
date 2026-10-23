@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
+source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "test_voice_gateway.py (2)"
+community: "ClamAV (2)"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy_2
+  - community/ClamAV_2
 ---
 
 # usage()
 
 ## Connections
-- [[find-sessions.sh]] - `defines` [EXTRACTED]
-- [[find-sessions.sh script]] - `calls` [EXTRACTED]
+- [[frame.sh]] - `defines` [EXTRACTED]
+- [[frame.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy_2
+#graphify/code #graphify/EXTRACTED #community/ClamAV_2

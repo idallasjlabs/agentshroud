@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo.svg"
 type: "image"
-community: "DelegationManager"
+community: "AgentTarget (2)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/DelegationManager
+  - community/AgentTarget_2
 ---
 
 # AgentShroud Logo (SVG Wrapper, Embedded Raster)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/DelegationManager
+#graphify/image #graphify/INFERRED #community/AgentTarget_2

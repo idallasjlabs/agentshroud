@@ -12,7 +12,7 @@ tags:
 # test_mcp_policy.py
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MCPPolicyAction]] - `imports` [EXTRACTED]
@@ -25,9 +25,9 @@ tags:
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `contains` [EXTRACTED]
-- [[_base_config()]] - `contains` [EXTRACTED]
+- [[_base_config()_1]] - `contains` [EXTRACTED]
 - [[_real_queue()]] - `contains` [EXTRACTED]
-- [[engine()]] - `contains` [EXTRACTED]
+- [[engine()_1]] - `contains` [EXTRACTED]
 - [[mcp_policy.py]] - `references` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `contains` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `contains` [EXTRACTED]

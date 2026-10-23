@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "KeyVaultConfig"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/KeyVaultConfig
 ---
 
 # Recursive BFS propagation up to max_propagation_depth hops.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_propagate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

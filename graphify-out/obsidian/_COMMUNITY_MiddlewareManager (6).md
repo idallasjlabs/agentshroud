@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 35
 ---
 
 # MiddlewareManager (6)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 35 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 35
 - [[dot-compose_down()]] - code - gateway/runtime/engine.py
 - [[dot-compose_up()]] - code - gateway/runtime/engine.py
 - [[dot-exec()]] - code - gateway/runtime/engine.py
-- [[dot-health_check()_2]] - code - gateway/runtime/engine.py
+- [[dot-health_check()]] - code - gateway/runtime/engine.py
 - [[dot-inspect()]] - code - gateway/runtime/engine.py
 - [[dot-logs()]] - code - gateway/runtime/engine.py
 - [[dot-network_create()]] - code - gateway/runtime/engine.py
@@ -22,7 +24,7 @@ members: 35
 - [[dot-pull()]] - code - gateway/runtime/engine.py
 - [[dot-push()_1]] - code - gateway/runtime/engine.py
 - [[dot-rm()]] - code - gateway/runtime/engine.py
-- [[dot-stop()_7]] - code - gateway/runtime/engine.py
+- [[dot-stop()_6]] - code - gateway/runtime/engine.py
 - [[dot-unpause()]] - code - gateway/runtime/engine.py
 - [[dot-volume_create()]] - code - gateway/runtime/engine.py
 - [[dot-volume_rm()]] - code - gateway/runtime/engine.py
@@ -30,7 +32,7 @@ members: 35
 - [[Any_31]] - code - gateway/runtime/engine.py
 - [[Bring up services from a compose file.]] - rationale - gateway/runtime/engine.py
 - [[Build an image. Returns the image idtag.]] - rationale - gateway/runtime/engine.py
-- [[CompletedProcess_3]] - code - gateway/runtime/engine.py
+- [[CompletedProcess_2]] - code - gateway/runtime/engine.py
 - [[ContainerEngine]] - code - gateway/runtime/engine.py
 - [[Execute a command inside a running container.]] - rationale - gateway/runtime/engine.py
 - [[Pull an image from a registry.]] - rationale - gateway/runtime/engine.py
@@ -56,7 +58,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_egress_retry.py]]
 - 2 edges to [[_COMMUNITY_AppleContainerEngine]]
 - 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 2 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 2 edges to [[_COMMUNITY_PodmanEngine]]
 - 1 edge to [[_COMMUNITY_Workflow (follow in order)]]
 
 ## Top bridge nodes

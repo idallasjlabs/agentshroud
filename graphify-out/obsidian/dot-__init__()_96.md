@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L141"
+community: "AlertTelegramRelay"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager_2]] - `references` [EXTRACTED]
-- [[Role_21]] - `references` [EXTRACTED]
-- [[SCLCaller_2]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

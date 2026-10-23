@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SkillGuard]] - `references` [EXTRACTED]
-- [[TestPrivilegeEscalation]] - `method` [EXTRACTED]
+- [[TestPrivilegeEscalation_1]] - `method` [EXTRACTED]
 - [[_finding_categories()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

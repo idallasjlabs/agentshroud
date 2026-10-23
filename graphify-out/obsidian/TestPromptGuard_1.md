@@ -1,67 +1,56 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "_wrap_response() (5)"
-location: "L215"
+community: "PromptGuard"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_wrap_response_5
+  - graphify/EXTRACTED
+  - community/PromptGuard
 ---
 
 # TestPromptGuard
 
 ## Connections
-- [[dot-guard()_4]] - `method` [EXTRACTED]
-- [[dot-test_base64_injection()]] - `method` [EXTRACTED]
-- [[dot-test_clean_message_not_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_clean_technical_message()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_13]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
+- [[dot-test_benign_base64()]] - `method` [EXTRACTED]
+- [[dot-test_clean_input()]] - `method` [EXTRACTED]
+- [[dot-test_combined_attack_high_score()]] - `method` [EXTRACTED]
+- [[dot-test_custom_pattern()]] - `method` [EXTRACTED]
 - [[dot-test_dan_jailbreak()_1]] - `method` [EXTRACTED]
-- [[dot-test_empty_input()_3]] - `method` [EXTRACTED]
-- [[dot-test_ignore_previous_instructions()_1]] - `method` [EXTRACTED]
-- [[dot-test_indirect_injection_url()]] - `method` [EXTRACTED]
-- [[dot-test_instruction_override()]] - `method` [EXTRACTED]
-- [[dot-test_multilingual_injection()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_leaking_via_markdown()]] - `method` [EXTRACTED]
-- [[dot-test_repeated_injection()]] - `method` [EXTRACTED]
+- [[dot-test_delimiter_injection()]] - `method` [EXTRACTED]
+- [[dot-test_empty_input()_1]] - `method` [EXTRACTED]
+- [[dot-test_forget_everything()]] - `method` [EXTRACTED]
+- [[dot-test_ignore_instructions()]] - `method` [EXTRACTED]
+- [[dot-test_indirect_injection()]] - `method` [EXTRACTED]
+- [[dot-test_new_instructions_override()_1]] - `method` [EXTRACTED]
+- [[dot-test_none_input()]] - `method` [EXTRACTED]
+- [[dot-test_prompt_extraction()_1]] - `method` [EXTRACTED]
+- [[dot-test_prompt_leak_question()]] - `method` [EXTRACTED]
 - [[dot-test_role_reassignment()_2]] - `method` [EXTRACTED]
-- [[dot-test_system_prompt_extraction()]] - `method` [EXTRACTED]
-- [[dot-test_token_smuggling()]] - `method` [EXTRACTED]
-- [[dot-test_xml_injection()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ConfusedDeputyError]] - `uses` [INFERRED]
-- [[ConsentDecision]] - `uses` [INFERRED]
+- [[dot-test_rtl_override()]] - `method` [EXTRACTED]
+- [[dot-test_sanitized_output()]] - `method` [EXTRACTED]
+- [[dot-test_unicode_zero_width()]] - `method` [EXTRACTED]
+- [[dot-test_warn_threshold()]] - `method` [EXTRACTED]
+- [[dot-test_xml_tag_injection()_1]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressEvent]] - `uses` [INFERRED]
+- [[EgressAction]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
-- [[KeyVault]] - `uses` [INFERRED]
-- [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[RedirectMismatch]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
-- [[Session]] - `uses` [INFERRED]
-- [[SubagentEvent]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[Test prompt injection detection with adversarial payloads.]] - `rationale_for` [EXTRACTED]
-- [[ThreatAssessment]] - `uses` [INFERRED]
+- [[IsolationVerifier]] - `uses` [INFERRED]
+- [[PatternRule]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[ThreatAction]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_security_audit.py]] - `contains` [EXTRACTED]
+- [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response_5
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

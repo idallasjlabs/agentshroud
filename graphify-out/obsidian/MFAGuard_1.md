@@ -12,10 +12,10 @@ tags:
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_189]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[dot-__init__()_125]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L84"
+community: "ContextSegment"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ContextSegment
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
-- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Initialize the store and restore pending items.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

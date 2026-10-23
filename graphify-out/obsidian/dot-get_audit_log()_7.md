@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L127"
+community: "NetworkSecurityFinding"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/NetworkSecurityFinding
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[KeyAuditEvent]] - `references` [EXTRACTED]
-- [[KeyVault]] - `method` [EXTRACTED]
+- [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSQuery_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

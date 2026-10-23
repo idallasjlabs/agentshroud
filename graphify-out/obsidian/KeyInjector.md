@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # KeyInjector
 
 ## Connections
-- [[dot-__init__()_183]] - `method` [EXTRACTED]
+- [[dot-__init__()_21]] - `method` [EXTRACTED]
 - [[dot-inject_for_request()]] - `method` [EXTRACTED]
 - [[dot-test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[dot-test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestKeyScoping]] - `uses` [INFERRED]
 - [[TestKeyStorage]] - `uses` [INFERRED]
 - [[TestKeyVaultConfig]] - `uses` [INFERRED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KeyVault

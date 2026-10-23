@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "lifespan()"
+community: "create_auth_dependency()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/create_auth_dependency
 ---
 
 # ingest_api/auth.py
@@ -25,4 +25,4 @@ tags:
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[verify_token()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

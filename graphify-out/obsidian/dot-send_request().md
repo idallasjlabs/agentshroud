@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
-location: "L131"
+community: "StdioConnection"
+location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/StdioConnection
 ---
 
 # .send_request()
 
 ## Connections
-- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[dot-_execute_tool_call()]] - `calls` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[Send an HTTP request to the MCP server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

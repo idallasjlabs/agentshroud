@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "test_collaborator_tracker.py (2)"
-location: "L8"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

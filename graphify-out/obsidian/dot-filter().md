@@ -12,7 +12,7 @@ tags:
 # .filter()
 
 ## Connections
-- [[LogRecord_1]] - `references` [EXTRACTED]
+- [[LogRecord_2]] - `references` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

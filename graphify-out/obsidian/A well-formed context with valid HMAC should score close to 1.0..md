@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # A well-formed context with valid HMAC should score close to 1.0.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pristine_context_scores_high()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

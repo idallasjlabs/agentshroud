@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
-type: "code"
-community: "AlertDispatcher (2)"
-location: "L23"
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+type: "document"
+community: "Incident Response Playbook — AgentShroud"
+location: "L3"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/AlertDispatcher_2
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Severity
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_2
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "Pre-Deployment Checklist (3)"
+community: "test_collaborator_greeter.py (2)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Pre-Deployment_Checklist_3
+  - community/test_collaborator_greeterpy_2
 ---
 
 # PII Sanitizer (user-facing description)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[pii_sanitizer module (disabled — false positives)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Pre-Deployment_Checklist_3
+#graphify/concept #graphify/INFERRED #community/test_collaborator_greeterpy_2

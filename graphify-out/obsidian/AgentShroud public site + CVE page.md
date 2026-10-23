@@ -1,12 +1,12 @@
 ---
 source_file: "docs/index.html"
 type: "document"
-community: "_wrap_response() (2)"
+community: "AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/AgentShroud_Sunday_Upgrade__2026-09-06_dev-only_read-only_inventory__scoped_fixes
 ---
 
 # AgentShroud public site + CVE page
@@ -20,4 +20,4 @@ tags:
 - [[OpenClaw CVE table (cves, paginated)]] - `references` [EXTRACTED]
 - [[generate-cve-page.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-06_dev-only_read-only_inventory__scoped_fixes

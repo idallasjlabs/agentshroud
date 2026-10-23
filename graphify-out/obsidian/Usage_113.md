@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "DelegationManager"
-location: "L50"
+community: "TestOutboundInfoFilter"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/TestOutboundInfoFilter
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

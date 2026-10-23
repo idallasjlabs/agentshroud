@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (3)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # .check_for_exif()
@@ -16,4 +16,4 @@ tags:
 - [[Check if binary data contains EXIF metadata.]] - `rationale_for` [EXTRACTED]
 - [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

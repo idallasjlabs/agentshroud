@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "TestMgmtWsTokens"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/TestMgmtWsTokens
 ---
 
 # .test_validate_is_single_use()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMgmtWsTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/TestMgmtWsTokens

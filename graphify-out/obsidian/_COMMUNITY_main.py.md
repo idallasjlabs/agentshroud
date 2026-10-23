@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 13
 ---
 
 # main.py
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -34,9 +36,9 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)]]
 - 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (3)]]
 - 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
 - [[dashboard_endpoints.py]] - degree 14, connects to 6 communities

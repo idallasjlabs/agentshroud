@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "TestVersionRoutes"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # wazuh_client.py
 
 ## Connections
 - [[api.py_2]] - `conceptually_related_to` [INFERRED]
-- [[datetime_6]] - `imports_from` [EXTRACTED]
+- [[datetime_1]] - `imports_from` [EXTRACTED]
 - [[falco_monitor.py]] - `references` [EXTRACTED]
-- [[generate_summary()_3]] - `contains` [EXTRACTED]
+- [[generate_summary()_2]] - `contains` [EXTRACTED]
 - [[get_fim_events()]] - `contains` [EXTRACTED]
 - [[get_rootkit_events()]] - `contains` [EXTRACTED]
 - [[health_report.py]] - `references` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

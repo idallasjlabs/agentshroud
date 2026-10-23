@@ -12,8 +12,8 @@ tags:
 # .test_get_incidents_with_limit()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
 - [[TestGetIncidentsLimit]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

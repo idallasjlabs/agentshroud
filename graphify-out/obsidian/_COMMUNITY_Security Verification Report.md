@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Security Verification Report
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -33,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalHardening]]
 - 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 1 edge to [[_COMMUNITY_ApprovalHardening]]
 
 ## Top bridge nodes
 - [[Incident Response Playbook — AgentShroud]] - degree 9, connects to 2 communities

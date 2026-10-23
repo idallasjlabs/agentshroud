@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "StdioConnection (2)"
+community: "Any"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/Any
 ---
 
 # Test getting hardening statistics.
 
 ## Connections
-- [[dot-test_get_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/rationale #graphify/EXTRACTED #community/Any

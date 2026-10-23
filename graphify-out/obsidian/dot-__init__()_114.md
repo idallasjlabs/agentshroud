@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L32"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
-- [[Initialize sanitizer          Args             config PII configuration from a]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

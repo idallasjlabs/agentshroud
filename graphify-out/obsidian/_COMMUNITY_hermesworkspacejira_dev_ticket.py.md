@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 39
 ---
 
 # hermes/workspace/jira_dev_ticket.py
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 39 nodes
 
 ## Members
@@ -21,7 +23,7 @@ members: 39
 - [[5. Never Extract Credentials]] - document - skills/custom/securebrowser/SKILL.md
 - [[Approval Integration]] - document - skills/custom/securebrowser/SKILL.md
 - [[Audit Logging]] - document - skills/custom/securebrowser/SKILL.md
-- [[Best Practices_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Best Practices_2]] - document - skills/custom/securebrowser/SKILL.md
 - [[Click Element]] - document - skills/custom/securebrowser/SKILL.md
 - [[Core Security Principles]] - document - skills/custom/securebrowser/SKILL.md
 - [[Example Apple ID Creation (Semi-Automated)]] - document - skills/custom/securebrowser/SKILL.md
@@ -38,13 +40,13 @@ members: 39
 - [[Security Guarantees]] - document - skills/custom/securebrowser/SKILL.md
 - [[See Also]] - document - skills/custom/securebrowser/SKILL.md
 - [[Take Screenshot]] - document - skills/custom/securebrowser/SKILL.md
-- [[Troubleshooting_7]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_8]] - document - skills/custom/securebrowser/SKILL.md
 - [[Usage_58]] - document - skills/custom/securebrowser/SKILL.md
 - [[appendLog()_3]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browser-fetch.js_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browserFetch()_3]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[fs_4]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[path_13]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[path_21]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 - [[{ chromium }_3]] - code - skills/custom/browser-fetch/browser-fetch.js
 

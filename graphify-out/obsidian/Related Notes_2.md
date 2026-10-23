@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Key Skills in Detail"
-location: "L49"
+community: "Security Review (SEC)"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/Security_Review_SEC
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

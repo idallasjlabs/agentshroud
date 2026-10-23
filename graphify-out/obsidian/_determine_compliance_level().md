@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "AgentShroud Docker Configuration"
+community: "test_mfa_guard.py"
 location: "L2350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/test_mfa_guardpy
 ---
 
 # _determine_compliance_level()
@@ -16,4 +16,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

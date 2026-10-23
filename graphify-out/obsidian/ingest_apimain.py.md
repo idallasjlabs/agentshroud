@@ -127,6 +127,5 @@ tags:
 - [[verify.sh]] - `references` [EXTRACTED]
 - [[verify_killswitch()]] - `contains` [EXTRACTED]
 - [[wazuh_alerts()]] - `contains` [EXTRACTED]
-- [[websockets 17.1 bump rationale]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

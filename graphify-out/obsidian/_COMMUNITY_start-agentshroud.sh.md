@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # start-agentshroud.sh
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 22
 - [[Brand Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Core Discipline Understand → Diagram → Validate → Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Data Flow — How data moves and transforms_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Dependencies_13]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Dependencies_14]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Diagram Types and Data Lakehouse Examples_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[ER Diagram — Table relationships and control schema_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[File and Directory Conventions_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
@@ -22,7 +24,7 @@ members: 22
 - [[Online renderer_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Render locally with mmdc_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Rendering and Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Role_39]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Role_37]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Rules_14]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Sequence — Order of operations between systems_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Skill Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md

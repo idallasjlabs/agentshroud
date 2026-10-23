@@ -12,6 +12,6 @@ tags:
 # Downstream agent target
 
 ## Connections
-- [[AgentTarget_2]] - `rationale_for` [EXTRACTED]
+- [[AgentTarget]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_make_proxy

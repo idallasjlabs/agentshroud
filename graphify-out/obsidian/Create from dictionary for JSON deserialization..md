@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "MemoryIntegrityMonitor"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Create from dictionary for JSON deserialization.
 
 ## Connections
-- [[dot-from_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

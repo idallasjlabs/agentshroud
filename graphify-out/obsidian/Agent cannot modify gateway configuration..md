@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # Agent cannot modify gateway configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_config_yaml_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

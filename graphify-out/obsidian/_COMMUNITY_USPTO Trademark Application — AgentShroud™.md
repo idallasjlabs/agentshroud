@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 12
 ---
 
 # USPTO Trademark Application — AgentShroud™
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 12
 - [[License_4]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 - [[Requirements_1]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 - [[Thread safety]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Usage_99]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Usage_100]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 - [[lvgl_kawaii_faceREADME]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 
 ## Live Query (requires Dataview plugin)

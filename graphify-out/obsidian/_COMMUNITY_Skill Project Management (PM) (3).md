@@ -1,16 +1,28 @@
 ---
 type: community
-members: 32
+cohesion: 0.06
+members: 51
 ---
 
 # Skill: Project Management (PM) (3)
 
-**Members:** 32 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 51 nodes
 
 ## Members
 - [[dot-test_custom_prefix()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_default_prefix()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_log_dir_created_if_missing()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_affected_packages()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_counts_by_severity()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_empty_output()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_has_timestamp()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_no_results_key()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_scanner_name()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_top_cves_limited()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_top_cves_ordered_by_severity()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_total_vulnerabilities()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_parse_unknown_severity()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_report_content_persisted()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_run_binary_not_found()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_run_empty_stdout_is_error_not_clean()]] - code - gateway/tests/test_security_toolchain.py
@@ -20,20 +32,29 @@ members: 32
 - [[dot-test_run_success()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_run_timeout()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_run_whitespace_only_stdout_is_error()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_clean()_2]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_critical()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_error()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_top_cves_ids()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
 - [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Any_34]] - code - gateway/security/trivy_report.py
+- [[Any_16]] - code - gateway/security/trivy_report.py
 - [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
 - [[Generate a summary dict suitable for the health report.      Args         repor]] - rationale - gateway/security/trivy_report.py
-- [[Path_23]] - code - gateway/security/trivy_report.py
+- [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
+- [[Path_11]] - code - gateway/security/trivy_report.py
 - [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - rationale - gateway/security/trivy_report.py
 - [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - rationale - gateway/security/trivy_report.py
 - [[Saved file is valid JSON containing the report keys.]] - rationale - gateway/tests/test_security_toolchain.py
+- [[TestTrivyParser]] - code - gateway/tests/test_security_toolchain.py
 - [[TestTrivyRun]] - code - gateway/tests/test_security_toolchain.py
 - [[TestTrivySaveReport]] - code - gateway/tests/test_security_toolchain.py
-- [[generate_summary()_2]] - code - gateway/security/trivy_report.py
+- [[TestTrivySummary]] - code - gateway/tests/test_security_toolchain.py
+- [[generate_summary()_3]] - code - gateway/security/trivy_report.py
+- [[parse_trivy_output()]] - code - gateway/security/trivy_report.py
 - [[returncode 0 = clean, 1 = vulns found (both expected); anything         else mea]] - rationale - gateway/tests/test_security_toolchain.py
 - [[run_trivy_scan()_1]] - code - gateway/security/trivy_report.py
 - [[save_report creates the log directory if it does not exist.]] - rationale - gateway/tests/test_security_toolchain.py
@@ -49,18 +70,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_TestClassify]]
-- 6 edges to [[_COMMUNITY_TestVersionRoutes]]
+- 9 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 7 edges to [[_COMMUNITY_ContextGuard]]
 - 3 edges to [[_COMMUNITY_sync-cve-registry.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
 - 1 edge to [[_COMMUNITY_format_cve_report() (2)]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 
 ## Top bridge nodes
-- [[run_trivy_scan()_1]] - degree 18, connects to 4 communities
-- [[generate_summary()_2]] - degree 8, connects to 3 communities
+- [[run_trivy_scan()_1]] - degree 18, connects to 3 communities
+- [[generate_summary()_3]] - degree 8, connects to 3 communities
+- [[TestTrivyParser]] - degree 12, connects to 2 communities
 - [[save_report()_1]] - degree 10, connects to 2 communities
 - [[TestTrivyRun]] - degree 10, connects to 2 communities
-- [[TestTrivySaveReport]] - degree 6, connects to 2 communities

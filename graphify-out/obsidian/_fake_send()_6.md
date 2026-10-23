@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L2348"
+community: "format_cve_report() (2)"
+location: "L1327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/format_cve_report_2
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - `contains` [EXTRACTED]
+- [[dot-test_image_scans_run_for_each_target()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/format_cve_report_2

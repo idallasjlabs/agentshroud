@@ -12,10 +12,10 @@ tags:
 # list_users_and_roles()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[List all users and their roles (admin+ only).]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

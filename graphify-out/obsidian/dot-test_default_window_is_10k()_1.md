@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L388"
+community: "AuditChain"
+location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/AuditChain
 ---
 
 # .test_default_window_is_10k()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
-- [[TestAuditTrailBounded]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[TestAuditChainBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-audit_privilege_change()]] - `calls` [EXTRACTED]
 - [[dot-get_role_hierarchy()]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 - [[Return True if changing from_role → to_role represents an escalation.]] - `rationale_for` [EXTRACTED]
-- [[Role_14]] - `references` [EXTRACTED]
+- [[Role_63]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

@@ -16,9 +16,9 @@ tags:
 - [[Confidence Threshold]] - `contains` [EXTRACTED]
 - [[Configured Entities]] - `contains` [EXTRACTED]
 - [[NLP Backend]] - `contains` [EXTRACTED]
-- [[Purpose_2]] - `contains` [EXTRACTED]
-- [[Related Notes_4]] - `contains` [EXTRACTED]
-- [[Where Used]] - `contains` [EXTRACTED]
+- [[Purpose_5]] - `contains` [EXTRACTED]
+- [[Related Notes_7]] - `contains` [EXTRACTED]
+- [[Where Used_1]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/client_from_env

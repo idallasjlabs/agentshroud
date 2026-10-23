@@ -12,8 +12,8 @@ tags:
 # .test_returns_none_when_no_dir()
 
 ## Connections
-- [[Path_43]] - `calls` [EXTRACTED]
+- [[Path_33]] - `calls` [EXTRACTED]
 - [[TestGetSbom_1]] - `method` [EXTRACTED]
-- [[get_sbom()]] - `calls` [EXTRACTED]
+- [[get_sbom()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

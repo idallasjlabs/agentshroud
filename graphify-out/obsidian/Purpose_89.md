@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "soc.js"
-location: "L6"
+community: "alert_dispatcher.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/alert_dispatcherpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

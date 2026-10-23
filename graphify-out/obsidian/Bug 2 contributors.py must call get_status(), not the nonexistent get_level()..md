@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
+community: "ServiceManager"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+  - community/ServiceManager
 ---
 
 # Bug 2: contributors.py must call get_status(), not the nonexistent get_level().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLockdownLevelWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

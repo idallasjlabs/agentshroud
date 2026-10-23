@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 43
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -35,7 +37,7 @@ members: 43
 - [[Health status]] - document - docs/runbooks/colima-docker-guide.md
 - [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
 - [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Logs_1]] - document - docs/runbooks/colima-docker-guide.md
+- [[Logs]] - document - docs/runbooks/colima-docker-guide.md
 - [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
 - [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
 - [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md

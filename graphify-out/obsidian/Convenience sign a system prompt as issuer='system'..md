@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # Convenience: sign a system prompt as issuer='system'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-wrap_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "ContextGuard"
 location: "L597"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ContextGuard
 ---
 
 # .test_egress_monitor_loaded()
@@ -15,4 +15,4 @@ tags:
 - [[Egress monitoring should be available.]] - `rationale_for` [EXTRACTED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

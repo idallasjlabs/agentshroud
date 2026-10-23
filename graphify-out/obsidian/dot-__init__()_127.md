@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L95"
+community: "wakeword.c"
+location: "L718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/wakewordc
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/wakewordc

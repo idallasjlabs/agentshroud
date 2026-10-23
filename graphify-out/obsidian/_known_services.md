@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "test_soc_services_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/test_soc_services_coveragepy
 ---
 
 # _known_services
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestKnownServices]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # AgentShroud v1.0.0 Fortress Release Announcement
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 26
 - [[dot-test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_infrastructure_redaction()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_initialization()_4]] - code - gateway/tests/test_prompt_protection.py
-- [[dot-test_normal_content_passes()_1]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_normal_content_passes()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_product_name_not_redacted()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_structural_pattern_redaction()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_tool_inventory_redaction()]] - code - gateway/tests/test_prompt_protection.py

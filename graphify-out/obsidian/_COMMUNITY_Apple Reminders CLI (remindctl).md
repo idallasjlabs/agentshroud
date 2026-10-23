@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Apple Reminders CLI (remindctl)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 15
 - [[Agent Modification Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
 - [[Consequences_3]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
 - [[Context_5]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Decision_6]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Decision_5]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
 - [[Key Considerations]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
 - [[Mitigation Strategies]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
 - [[Negative Consequences_2]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
@@ -35,4 +37,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_dot-githubmcp.json]]
 
 ## Top bridge nodes
-- [[Decision_6]] - degree 2, connects to 1 community
+- [[Decision_5]] - degree 2, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "ToolResultSanitizer.sanitize_tool_result"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ToolResultSanitizersanitize_tool_result
 ---
 
 # ToolResultSanitizer._log_redaction_audit
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer.sanitize_tool_result]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizersanitize_tool_result

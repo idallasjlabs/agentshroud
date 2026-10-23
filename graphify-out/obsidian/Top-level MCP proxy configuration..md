@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[MCPProxyConfig_3]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `rationale_for` [EXTRACTED]
+- [[SSHConfig_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

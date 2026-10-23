@@ -12,7 +12,7 @@ tags:
 # LedgerConfig
 
 ## Connections
-- [[dot-__init__()_57]] - `references` [EXTRACTED]
+- [[dot-__init__()_136]] - `references` [EXTRACTED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]

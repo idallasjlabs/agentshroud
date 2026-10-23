@@ -1,41 +1,26 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
 community: "test_llm_proxy.py"
-location: "L259"
+location: "L35"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/test_llm_proxypy
 ---
 
 # DifferentialPIIConfig
 
 ## Connections
-- [[dot-__init__()_139]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
-- [[A2APolicyEngine]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - `rationale_for` [EXTRACTED]
+- [[dot-test_cannot_set_tool_floor_above_prompt_floor()]] - `calls` [EXTRACTED]
+- [[dot-test_cannot_set_tool_floor_below_minimum()]] - `calls` [EXTRACTED]
+- [[dot-test_redact_on_hit_false_preserves_original()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_specific_floor_override()]] - `calls` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
-- [[TestAsymmetricFloor]] - `uses` [INFERRED]
-- [[TestDeterministicPresidioInit]] - `uses` [INFERRED]
-- [[TestDifferentialPIIDetectorConstruction]] - `uses` [INFERRED]
-- [[TestPerToolConfiguration]] - `uses` [INFERRED]
-- [[TestPresidioPathContract]] - `uses` [INFERRED]
-- [[TestRedaction]] - `uses` [INFERRED]
-- [[TestStandardPIIAlwaysCaught]] - `uses` [INFERRED]
-- [[TestToolResultPIIReport]] - `uses` [INFERRED]
-- [[_Event]] - `uses` [INFERRED]
-- [[_FakeRecognizerResult]] - `uses` [INFERRED]
-- [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
-- [[differential_pii_detector.py]] - `contains` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
+- [[PIIHit]] - `uses` [INFERRED]
+- [[PIIHitSeverity]] - `uses` [INFERRED]
+- [[default_config()_3]] - `references` [EXTRACTED]
+- [[detector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

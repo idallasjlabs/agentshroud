@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_security_fixes.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
 community: "UserSessionManager (3)"
-location: "L29"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_security_fixes.py]] - `contains` [EXTRACTED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

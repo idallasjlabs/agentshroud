@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 32
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (3)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -28,7 +30,7 @@ members: 32
 - [[Input Requirements_4]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Knowledge Base Schema]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Learning System (Continuous Improvement)]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
-- [[Overview_3]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Overview_2]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Pattern Matching for New Incidents]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Step 1 Collect the Error Event Data]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 - [[Step 2 Collect ALL Data in the Time Window]] - document - docker/config/hermes/skills/i-eightd/SKILL.md

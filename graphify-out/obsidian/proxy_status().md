@@ -12,9 +12,9 @@ tags:
 # proxy_status()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[HTTP CONNECT proxy traffic statistics. Shows allowedblocked counts and recent…]] - `rationale_for` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.16
 members: 15
 ---
 
 # AgentShroud Blue Team Security Auditor (2)
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -21,7 +23,7 @@ members: 15
 - [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - concept - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 - [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_30]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[main()_27]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 - [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
 
 ## Live Query (requires Dataview plugin)

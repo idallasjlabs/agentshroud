@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "purge_low_value_events"
+community: "SubagentGovernance"
 location: "L505"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/SubagentGovernance
 ---
 
 # Check if a resource budget is exceeded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_budget()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

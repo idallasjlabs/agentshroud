@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # ToolChainAnalyzer.score_reversibility (C37)
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Request_5]] - code
+- [[Request_3]] - code
 
 ## Live Query (requires Dataview plugin)
 

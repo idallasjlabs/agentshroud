@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "test_collaborator_tracker.py (2)"
-location: "L6"
+community: "test_jira_dev_ticket.py"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/test_jira_dev_ticketpy
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ServiceManager"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - community/ServiceManager
 ---
 
 # SCLInterface
@@ -15,10 +15,10 @@ tags:
 - [[AuditLogEntry]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[_log_audit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/INFERRED #community/ServiceManager

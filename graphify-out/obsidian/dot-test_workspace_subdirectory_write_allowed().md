@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "._make_proxy()"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_make_proxy
 ---
 
 # .test_workspace_subdirectory_write_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Agent can write to subdirectories in workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestWorkspaceAccessPreserved]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

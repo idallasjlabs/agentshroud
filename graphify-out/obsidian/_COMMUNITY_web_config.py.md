@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # web_config.py
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[A competitive-intel body with multiple CVEs is not collapsed into redaction tags]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[CVE IDs with 5-digit suffix must also be excluded.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[CVE identifiers must NOT be treated as US_SSN.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[Real SSNs (not preceded by uppercase) must still be detected.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[SSN at the very start of a string (no preceding character) is still flagged.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[US_SSN regex tightened to exclude CVE IDs]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_cve_dense_report_body_preserved()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_cve_pattern_not_flagged_as_ssn()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_cve_with_five_digit_suffix_not_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_real_ssn_still_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_ssn_at_start_of_string_still_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
-- [[test_us_ssn_regex_tightened.py]] - code - gateway/tests/test_us_ssn_regex_tightened.py
+- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Function Details_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Key Classes  Functions_52]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Purpose_159]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Related_56]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Responsibilities_54]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +29,3 @@ members: 12
 TABLE source_file, type FROM #community/web_configpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[US_SSN regex tightened to exclude CVE IDs]] - degree 3, connects to 1 community

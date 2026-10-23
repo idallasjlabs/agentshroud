@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips. (2)"
-location: "L482"
+community: "ApprovalQueueConfig"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+  - community/ApprovalQueueConfig
 ---
 
 # ._record()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[EgressAction]] - `references` [EXTRACTED]
-- [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

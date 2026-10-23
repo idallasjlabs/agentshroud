@@ -12,6 +12,6 @@ tags:
 # Initialize the key rotation manager.
 
 ## Connections
-- [[dot-__init__()_49]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_60]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/A2AMethod_2

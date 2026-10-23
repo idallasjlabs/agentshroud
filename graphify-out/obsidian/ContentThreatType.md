@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "MemoryIntegrityMonitor"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/MemoryIntegrityMonitor
 ---
 
 # ContentThreatType
 
 ## Connections
 - [[Enum_3]] - `inherits` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor

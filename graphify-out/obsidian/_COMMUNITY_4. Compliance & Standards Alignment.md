@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.19
 members: 14
 ---
 
 # 4. Compliance & Standards Alignment
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 14 nodes
 
 ## Members
 - [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[_python()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_1]] - code - scripts/validate-skills-manifest.sh
+- [[_sha256()_1]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_2]] - code - scripts/validate-skills-manifest.sh
 - [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
 - [[check()_11]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py

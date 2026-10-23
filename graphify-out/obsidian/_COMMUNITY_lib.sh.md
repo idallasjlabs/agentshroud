@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # lib.sh
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 13
 - [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Function Details_46]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Purpose_152]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Related_52]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Responsibilities_49]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
@@ -20,7 +22,7 @@ members: 13
 - [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[openclaw service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[openclaw service_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 
 ## Live Query (requires Dataview plugin)
 

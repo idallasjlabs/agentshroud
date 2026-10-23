@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "wakeword.c"
-location: "L718"
+community: "SlackAPIProxy"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/SlackAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

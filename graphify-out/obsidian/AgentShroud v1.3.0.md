@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Adversarial Red-Team  Blue-Team Assessment]] - `contains` [EXTRACTED]
-- [[Executive Summary_1]] - `contains` [EXTRACTED]
+- [[Executive Summary_2]] - `contains` [EXTRACTED]
 - [[How to regenerate this report accurately]] - `contains` [EXTRACTED]
 - [[Test Coverage Report]] - `contains` [EXTRACTED]
 

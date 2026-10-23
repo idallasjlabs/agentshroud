@@ -1,14 +1,16 @@
 ---
 type: community
-members: 37
+cohesion: 0.06
+members: 36
 ---
 
 # A2APolicyEngine (2)
 
-**Members:** 37 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[dot-setup_method()_15]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-setup_method()_14]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
@@ -44,7 +46,6 @@ members: 37
 - [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
 - [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
 - [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
-- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,10 +55,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
-- [[test_multilingual_injection.py]] - degree 3, connects to 2 communities
-- [[TestMultilingualInjection]] - degree 20, connects to 1 community
-- [[dot-setup_method()_15]] - degree 3, connects to 1 community
+- [[TestMultilingualInjection]] - degree 20, connects to 2 communities
+- [[dot-setup_method()_14]] - degree 3, connects to 1 community

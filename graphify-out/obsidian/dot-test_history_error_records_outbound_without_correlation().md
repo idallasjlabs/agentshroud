@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[History lookup returns ok=False → no inbound record; outbound still         logg]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__call__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
+- [[dot-__init__()_32]] - `method` [EXTRACTED]
 - [[dot-test_recovery_refail_realerts_through_real_dedup()]] - `calls` [EXTRACTED]
 - [[CronStateMonitor]] - `uses` [INFERRED]
 - [[Mimics AlertDispatcher's id-based 24h dedup — the real downstream.]] - `rationale_for` [EXTRACTED]

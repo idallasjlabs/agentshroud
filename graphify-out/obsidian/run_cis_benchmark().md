@@ -12,10 +12,10 @@ tags:
 # run_cis_benchmark()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[CIS Docker Benchmark checks for this container.]] - `rationale_for` [EXTRACTED]
 - [[add()]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

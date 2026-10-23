@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "test_mfa_guard.py"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/test_mfa_guardpy
 ---
 
 # _is_fresh()
 
 ## Connections
-- [[Path_66]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[Return True if the most recent report file was written within max_age_hours.]] - `rationale_for` [EXTRACTED]
 - [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

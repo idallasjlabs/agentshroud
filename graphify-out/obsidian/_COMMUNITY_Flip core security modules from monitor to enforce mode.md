@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Flip core security modules from monitor to enforce mode
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members

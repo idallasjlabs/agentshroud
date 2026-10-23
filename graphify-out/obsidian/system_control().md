@@ -12,9 +12,9 @@ tags:
 # system_control()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[System Control - Live Dashboard Shows real-time system status with links to…]] - `rationale_for` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "_load_latest_json"
 location: "L420"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/_load_latest_json
 ---
 
 # .test_critical_on_critical_findings()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetOpenscapSummary]] - `method` [EXTRACTED]
 - [[get_openscap_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/_load_latest_json

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L546"
+community: "TestOutboundPipelineIntegration"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_unlisted_domain_blocked()
 
 ## Connections
-- [[TestAllowlistMode]] - `method` [EXTRACTED]
+- [[TestEnforceMode]] - `method` [EXTRACTED]
+- [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

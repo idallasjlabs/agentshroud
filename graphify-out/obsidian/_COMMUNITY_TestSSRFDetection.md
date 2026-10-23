@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 62
 ---
 
 # TestSSRFDetection
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 62 nodes
 
 ## Members

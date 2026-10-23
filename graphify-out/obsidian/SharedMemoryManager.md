@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "SharedMemoryManager"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestToolChainAnalyzer
+  - community/SharedMemoryManager
 ---
 
 # SharedMemoryManager
 
 ## Connections
-- [[dot-__init__()_128]] - `method` [EXTRACTED]
+- [[dot-__init__()_171]] - `method` [EXTRACTED]
 - [[dot-_is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[dot-_strip_private_content()]] - `method` [EXTRACTED]
 - [[dot-append_to_group_memory()]] - `method` [EXTRACTED]
@@ -50,8 +50,8 @@ tags:
 - [[get_group_memory()]] - `calls` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
 - [[shared_memory()]] - `calls` [EXTRACTED]
-- [[shared_memory()_1]] - `calls` [EXTRACTED]
 - [[shared_memory()_2]] - `calls` [EXTRACTED]
+- [[shared_memory()_1]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `contains` [EXTRACTED]
 - [[smm()_1]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer
+#graphify/code #graphify/INFERRED #community/SharedMemoryManager

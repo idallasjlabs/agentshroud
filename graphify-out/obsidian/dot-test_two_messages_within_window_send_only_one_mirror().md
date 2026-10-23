@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CronStateMonitor"
+community: "test_telegram_proxy_outbound.py"
 location: "L4872"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_two_messages_within_window_send_only_one_mirror()
 
 ## Connections
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOwnerMirrorCoalescing]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

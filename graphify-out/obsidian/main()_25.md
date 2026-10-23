@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Architecture"
-location: "L250"
+community: "test_cron_jobs_prompts.py"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/test_cron_jobs_promptspy
 ---
 
 # main()
 
 ## Connections
-- [[render()_2]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[_handle()_2]] - `calls` [EXTRACTED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

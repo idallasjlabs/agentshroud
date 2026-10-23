@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
 community: "CrossBotTrustLedger"
-location: "L230"
+location: "L183"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,13 +12,10 @@ tags:
 # MCPProxyConfig
 
 ## Connections
-- [[dot-__init__()_79]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[dot-__init__()_86]] - `references` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

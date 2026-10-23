@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Command Details"
-location: "L474"
+community: "parse_clamscan_output"
+location: "L795"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Command_Details
+  - community/parse_clamscan_output
 ---
 
 # .test_zero_when_not_run()
 
 ## Connections
 - [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
+- [[_openscap_not_run()]] - `calls` [EXTRACTED]
+- [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Command_Details
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "SecurityPipeline (2)"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/SecurityPipeline_2
 ---
 
 # PipelineResult
@@ -15,11 +15,11 @@ tags:
 - [[dot-_maybe_record_trust_violation()]] - `references` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_3]] - `references` [EXTRACTED]
-- [[dot-process_outbound()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_1]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
+- [[dot-to_dict()_11]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[TestOutboundPipelineWired]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/code #graphify/INFERRED #community/SecurityPipeline_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "_wrap_response() (2)"
+community: "ContextGuard"
 location: "L710"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/ContextGuard
 ---
 
 # Dashboard should have an HTML file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dashboard_html_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

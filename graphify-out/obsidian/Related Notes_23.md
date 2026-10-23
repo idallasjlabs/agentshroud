@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L64"
+community: "EgressFilter"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/EgressFilter
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

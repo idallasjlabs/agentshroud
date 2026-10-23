@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: ".omp/mcp.json"
+community: "ssh-configuration.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/omp/mcpjson
+  - community/ssh-configurationmd
 ---
 
 # icloud/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/omp/mcpjson
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

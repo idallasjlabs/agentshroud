@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: ".test_self_diagnose_dedupe_handles_missing_update_id_same_message()"
 location: "L5520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/test_self_diagnose_dedupe_handles_missing_update_id_same_message
 ---
 
 # .test_self_diagnose_dedupe_handles_missing_update_id_same_message()
@@ -19,7 +19,7 @@ tags:
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_56]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_54]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_self_diagnose_dedupe_handles_missing_update_id_same_message

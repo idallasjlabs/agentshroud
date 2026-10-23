@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Turbo Fieldfare (MLX inference backend)
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -26,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Skill Pull Request (PR) Generator]] - degree 6, connects to 1 community

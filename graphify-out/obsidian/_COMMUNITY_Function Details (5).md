@@ -1,11 +1,13 @@
 ---
 type: community
-members: 22
+cohesion: 0.14
+members: 23
 ---
 
 # Function Details (5)
 
-**Members:** 22 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 23 nodes
 
 ## Members
 - [[check()_6]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
@@ -23,6 +25,7 @@ members: 22
 - [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[smoke.sh Startup Smoke Runner]] - code - scripts/smoke.sh
 - [[summary()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[t17_run()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[test_openclaw_model_provider_consistency.sh]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
@@ -43,5 +46,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY__w]]
 
 ## Top bridge nodes
-- [[test-sunday-upgrade-scan.sh]] - degree 17, connects to 1 community
+- [[test-sunday-upgrade-scan.sh]] - degree 18, connects to 1 community
 - [[smoke.sh Startup Smoke Runner]] - degree 4, connects to 1 community

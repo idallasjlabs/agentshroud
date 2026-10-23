@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[Configuration_16]] - `contains` [EXTRACTED]
-- [[Description_9]] - `contains` [EXTRACTED]
+- [[Description_6]] - `contains` [EXTRACTED]
 - [[GATEWAY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_51]] - `contains` [EXTRACTED]
+- [[Related Notes_45]] - `contains` [EXTRACTED]
 - [[Typical Value]] - `contains` [EXTRACTED]
 - [[Usage Contexts]] - `contains` [EXTRACTED]
 

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L65"
+community: "ContextGuard"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

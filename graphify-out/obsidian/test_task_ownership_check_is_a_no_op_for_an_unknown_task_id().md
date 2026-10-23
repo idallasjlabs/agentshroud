@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - `rationale_for` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
+- [[A2APolicyEngine]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

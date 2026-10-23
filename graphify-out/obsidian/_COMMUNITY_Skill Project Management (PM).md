@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Skill: Project Management (PM)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
 - [[About the Creator]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[AgentShroud™ — Project Knowledge Base]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Architecture Review]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Current Status_8]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Current Status_6]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Development Phases]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Documentation & Ideas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Frequently Asked Questions]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md

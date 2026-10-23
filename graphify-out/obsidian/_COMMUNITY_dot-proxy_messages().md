@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.08
 members: 44
 ---
 
 # .proxy_messages()
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_51]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_64]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -19,7 +21,7 @@ members: 44
 - [[dot-_take_screenshot()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_validate_url()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-click()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-close()_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-close()_5]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-detect_captcha()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-extract()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-fill_field()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -61,7 +63,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 
 ## Top bridge nodes

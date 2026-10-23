@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
-- [[Authentication]] - `contains` [EXTRACTED]
+- [[Authentication_1]] - `contains` [EXTRACTED]
 - [[Configuration_17]] - `contains` [EXTRACTED]
 - [[Core Framework]] - `contains` [EXTRACTED]
 - [[Data Storage]] - `contains` [EXTRACTED]

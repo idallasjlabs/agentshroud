@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "StdioConnection (2)"
+community: "Any"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection_2
+  - community/Any
 ---
 
 # TestApprovalHardening
 
 ## Connections
-- [[dot-config()]] - `method` [EXTRACTED]
+- [[dot-config()_1]] - `method` [EXTRACTED]
 - [[dot-hardening()]] - `method` [EXTRACTED]
 - [[dot-test_cleanup_old_denied_requests()]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_disabled_when_feature_disabled()]] - `method` [EXTRACTED]
@@ -28,8 +28,8 @@ tags:
 - [[dot-test_format_hardened_message_with_normalization()]] - `method` [EXTRACTED]
 - [[dot-test_format_hardened_message_with_security_concerns()]] - `method` [EXTRACTED]
 - [[dot-test_format_parameters_with_highlighting()]] - `method` [EXTRACTED]
-- [[dot-test_get_stats()]] - `method` [EXTRACTED]
-- [[dot-test_initialization()]] - `method` [EXTRACTED]
+- [[dot-test_get_stats()_1]] - `method` [EXTRACTED]
+- [[dot-test_initialization()_3]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_handles_empty()]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_removes_misleading_phrases()]] - `method` [EXTRACTED]
 - [[dot-test_parameter_fingerprinting_consistency()]] - `method` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[Test approval hardening functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection_2
+#graphify/code #graphify/EXTRACTED #community/Any

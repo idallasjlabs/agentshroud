@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "asyncio"
+community: "SubagentMonitor"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SubagentMonitor
 ---
 
 # TestTrustInheritance
@@ -22,4 +22,4 @@ tags:
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (3)"
-location: "L5"
+community: "compose_generator.py"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_3
+  - community/compose_generatorpy
 ---
 
 # Overview
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_3
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

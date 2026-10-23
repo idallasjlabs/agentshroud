@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "AgentTarget"
+community: "WebhookReceiver"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/WebhookReceiver
 ---
 
 # Extract display name from webhook payload.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_username()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

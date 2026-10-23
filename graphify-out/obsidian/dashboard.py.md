@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "lifespan()"
+community: "CompetitiveIntelReport"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/CompetitiveIntelReport
 ---
 
 # dashboard.py
@@ -26,7 +26,7 @@ tags:
 - [[dashboard_stats()]] - `contains` [EXTRACTED]
 - [[dashboard_ws_token()]] - `contains` [EXTRACTED]
 - [[egress_websocket()]] - `contains` [EXTRACTED]
-- [[event_bus.py]] - `imports_from` [EXTRACTED]
+- [[event_bus.py_1]] - `imports_from` [EXTRACTED]
 - [[get_collaborators()]] - `contains` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_dashboard.py]] - `calls` [EXTRACTED]
 - [[test_e2e.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

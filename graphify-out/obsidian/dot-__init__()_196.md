@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "_make_proxy"
-location: "L103"
+community: "KillSwitchMonitor"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

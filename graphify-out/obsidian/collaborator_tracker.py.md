@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/EgressFilterConfig
 ---
 
 # collaborator_tracker.py
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `contains` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Apple Platform Integration
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members

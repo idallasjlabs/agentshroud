@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "TestEmailSend"
-location: "L22"
+community: "test_a2a_proxy.py"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
+- [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

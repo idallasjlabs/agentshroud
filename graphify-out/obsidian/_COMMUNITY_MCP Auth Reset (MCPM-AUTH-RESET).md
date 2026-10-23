@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -23,8 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Command Details]]
 - 1 edge to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
+- 1 edge to [[_COMMUNITY_Command Details]]
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
 
 ## Top bridge nodes

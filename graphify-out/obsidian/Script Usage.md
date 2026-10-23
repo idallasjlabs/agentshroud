@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "SECTION 2: MARK INFORMATION"
+community: "EgressFilter"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_2_MARK_INFORMATION
+  - community/EgressFilter
 ---
 
 # Script Usage
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

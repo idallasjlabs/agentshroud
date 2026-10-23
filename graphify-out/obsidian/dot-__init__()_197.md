@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/metadata_guard.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "_wrap_response()"
-location: "L39"
+community: "KillSwitchMonitor"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[MetadataGuard]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

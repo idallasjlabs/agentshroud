@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L36"
+community: "ContextGuard"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/ContextGuard
 ---
 
 # dispatcher()
 
 ## Connections
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[AlertDispatcher]] - `calls` [EXTRACTED]
+- [[Path]] - `references` [EXTRACTED]
+- [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

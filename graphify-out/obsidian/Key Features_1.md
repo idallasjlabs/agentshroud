@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "agentshroud-gateway container (starts first)"
-location: "L19"
+community: "test_security.py"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_container_starts_first
+  - community/test_securitypy
 ---
 
 # Key Features
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm (3)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -13,12 +15,12 @@ members: 13
 - [[Mnemosyne — Retention Engineer_3]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 - [[Output Format_25]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 - [[Persona_8]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
-- [[Purpose_146]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Purpose_145]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[Quality Checklist_10]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 - [[Related Skills_85]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[Role_77]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 - [[System Prompt_8]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
-- [[Usage_93]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Usage_94]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[hermesskillsi-mnemosyneREADME]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[hermesskillsi-mnemosyneSKILL]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 

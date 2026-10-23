@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[ScanRequest]] - `references` [EXTRACTED]
+- [[ScanRequest_1]] - `references` [EXTRACTED]
 - [[ScanResponse]] - `references` [EXTRACTED]
 - [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
 - [[SidecarScanner]] - `method` [EXTRACTED]

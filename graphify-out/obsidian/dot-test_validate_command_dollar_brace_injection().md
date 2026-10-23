@@ -12,7 +12,7 @@ tags:
 # .test_validate_command_dollar_brace_injection()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestInjectionNewline]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

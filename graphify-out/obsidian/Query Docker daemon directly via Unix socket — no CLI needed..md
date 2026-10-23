@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # Query Docker daemon directly via Unix socket — no CLI needed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_inspect_via_socket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Enum

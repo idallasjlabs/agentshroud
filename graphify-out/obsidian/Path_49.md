@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
-location: "L43"
+community: "AgentShroud Consolidated Issues Report"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

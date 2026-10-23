@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 40
 ---
 
 # test_jira_dev_ticket.py
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 40 nodes
 
 ## Members
@@ -26,11 +28,11 @@ members: 40
 - [[Problem Container not running]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem File not found]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Problem Permission denied]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Quick Reference_3]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Quick Reference_2]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Recommended Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Restore Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Summary_6]] - document - docs/architecture/WORKSPACE_USAGE.md
-- [[Troubleshooting_6]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Summary_8]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Troubleshooting_7]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Using the Helper Script]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Skills]] - document - docs/architecture/WORKSPACE_USAGE.md
 - [[Via Telegram]] - document - docs/architecture/WORKSPACE_USAGE.md

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_request()]] - `calls` [EXTRACTED]
-- [[Any_17]] - `references` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never

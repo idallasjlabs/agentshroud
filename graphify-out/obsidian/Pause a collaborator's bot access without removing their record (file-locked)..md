@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L488"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # Pause a collaborator's bot access without removing their record (file-locked).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pause_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -1,14 +1,16 @@
 ---
 type: community
-members: 52
+cohesion: 0.05
+members: 53
 ---
 
 # test_a2a_proxy.py
 
-**Members:** 52 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 53 nodes
 
 ## Members
-- [[dot-__init__()_37]] - code - gateway/approval_queue/group_router.py
+- [[dot-__init__()_44]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_default_send()]] - code - gateway/approval_queue/group_router.py
@@ -25,8 +27,8 @@ members: 52
 - [[dot-test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
-- [[Any_10]] - code - gateway/approval_queue/group_router.py
-- [[ApprovalRequest_1]] - code - gateway/approval_queue/group_router.py
+- [[Any_14]] - code - gateway/approval_queue/group_router.py
+- [[ApprovalRequest]] - code - gateway/approval_queue/group_router.py
 - [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
@@ -54,6 +56,7 @@ members: 52
 - [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - code - gateway/approval_queue/group_router.py
+- [[group_router.py]] - code - gateway/approval_queue/group_router.py
 - [[group_router.py (GroupApprovalRouter)]] - code - gateway/approval_queue/group_router.py
 - [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
 - [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - rationale - gateway/tests/test_group_approval_routing.py
@@ -69,11 +72,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_ContextSegment]]
+- 14 edges to [[_COMMUNITY_MiddlewareManager (3)]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
 
 ## Top bridge nodes
+- [[group_router.py]] - degree 3, connects to 2 communities
 - [[GroupApprovalRouter]] - degree 23, connects to 1 community
 - [[test_group_approval_routing.py]] - degree 11, connects to 1 community
 - [[TestGroupApprovalRouterContextDetection]] - degree 10, connects to 1 community
 - [[TestDMApprovalOwnerOnly]] - degree 6, connects to 1 community
-- [[TestGroupApprovalRouterDefaultSend]] - degree 6, connects to 1 community

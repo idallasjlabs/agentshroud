@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # model_usage.py
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -14,13 +16,13 @@ members: 19
 - [[Color Token Definition_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Core Discipline Audit → Define → Apply → Enforce_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Deck  Slide Master Rules_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Dependencies_16]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Dependencies_17]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Diagram Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[File & Directory Conventions_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[HTML  CSS Brand Variables_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Patterns by Output Type_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Role_51]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Role_49]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Rules_17]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Skill Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Typography Scale_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md

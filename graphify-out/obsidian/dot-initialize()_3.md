@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ContextSegment"
-location: "L47"
+community: "MCPPermissionManager"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MCPPermissionManager
 ---
 
 # .initialize()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Open the database and create the schema. Idempotent a second call         must]] - `rationale_for` [EXTRACTED]
+- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
+- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

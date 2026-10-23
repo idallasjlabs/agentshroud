@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "test_hermes_model_resolver.py (2)"
+community: "record_decision()"
 location: "233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy_2
+  - community/record_decision
 ---
 
 # ToolACLEnforcer.can_use_tool
@@ -17,4 +17,4 @@ tags:
 - [[can_use_tool_from_origin]] - `calls` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy_2
+#graphify/code #graphify/EXTRACTED #community/record_decision

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy (21)"
+community: "TelegramAPIProxy"
 location: "L1626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_21
+  - community/TelegramAPIProxy
 ---
 
 # .test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload()
 
 ## Connections
 - [[Form payload non-embedding memory errors should keep original text.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_21
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

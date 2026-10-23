@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L111"
+community: "KeyVaultConfig"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/KeyVaultConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

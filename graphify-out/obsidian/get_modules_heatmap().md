@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Live per-module enforcement heat-map (SCRUM-80).      Real allowblocksanitize]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[_module_stats_snapshot()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 

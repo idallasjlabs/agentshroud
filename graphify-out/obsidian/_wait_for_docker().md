@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_attempt_rollback()]] - `calls` [EXTRACTED]
 - [[_wait_result()]] - `references` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_preflight()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]

@@ -19,7 +19,7 @@ tags:
 - [[dot-_strip_fieldflare_unsupported_fields()]] - `calls` [EXTRACTED]
 - [[dot-_suppress_qwen3_thinking()]] - `calls` [EXTRACTED]
 - [[dot-_widen_optional_tool_param_types()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Proxy a streaming LLM API request, yielding SSE chunks as they arrive. Used…]] - `rationale_for` [EXTRACTED]
 - [[StreamHead]] - `calls` [EXTRACTED]

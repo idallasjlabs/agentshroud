@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
-location: "L90"
+community: "Mode A — Single task (4)"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+  - community/Mode_A__Single_task_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Gateway Python Dependencies (`gateway/requirements.txt`)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members

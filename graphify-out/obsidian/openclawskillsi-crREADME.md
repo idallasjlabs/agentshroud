@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-cr/README.md
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/socjs

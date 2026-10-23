@@ -82,7 +82,7 @@ tags:
 - [[dot-test_valid()]] - `calls` [EXTRACTED]
 - [[dot-test_wazuh_agent_absent()]] - `calls` [EXTRACTED]
 - [[dot-test_wazuh_agent_detected()]] - `calls` [EXTRACTED]
-- [[Path_47]] - `references` [EXTRACTED]
+- [[Path_49]] - `references` [EXTRACTED]
 - [[Write a file under the sandbox root, creating parents.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 

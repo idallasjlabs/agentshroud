@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Restart Procedure"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Restart_Procedure
 ---
 
 # Kill Switch Procedure.md
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

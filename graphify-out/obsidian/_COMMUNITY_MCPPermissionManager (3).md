@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # MCPPermissionManager (3)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 15
 - [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Purpose_126]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Purpose_124]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[Related_30]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[Responsibilities_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 - [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md

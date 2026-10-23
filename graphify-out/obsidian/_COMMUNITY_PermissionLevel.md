@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # PermissionLevel
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ModuleStatsCollector]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)]]
 
 ## Top bridge nodes
 - [[Sunday Upgrade Report — 2026-09-20 (PROD run, full)]] - degree 6, connects to 1 community

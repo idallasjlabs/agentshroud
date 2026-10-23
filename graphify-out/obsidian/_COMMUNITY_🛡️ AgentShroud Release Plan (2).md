@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # 🛡️ AgentShroud Release Plan (2)
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -34,7 +36,7 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_ModeRequest]]
 - 1 edge to [[_COMMUNITY_SecureBrowser (4)]]
 - 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 
 ## Top bridge nodes

@@ -20,7 +20,7 @@ tags:
 - [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
 - [[Module-Level Constants_1]] - `contains` [EXTRACTED]
 - [[Operational Notes]] - `contains` [EXTRACTED]
-- [[Purpose_98]] - `contains` [EXTRACTED]
+- [[Purpose_87]] - `contains` [EXTRACTED]
 - [[Related_8]] - `contains` [EXTRACTED]
 - [[Responsibilities_6]] - `contains` [EXTRACTED]
 - [[Threat Model_5]] - `contains` [EXTRACTED]

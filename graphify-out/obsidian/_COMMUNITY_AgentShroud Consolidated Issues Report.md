@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # AgentShroud Consolidated Issues Report
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -21,7 +23,7 @@ members: 19
 - [[dot-test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Path_47]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Path_49]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py

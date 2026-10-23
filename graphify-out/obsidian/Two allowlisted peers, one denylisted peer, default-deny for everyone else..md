@@ -12,6 +12,6 @@ tags:
 # Two allowlisted peers, one denylisted peer, default-deny for everyone else.
 
 ## Connections
-- [[_base_config()_1]] - `rationale_for` [EXTRACTED]
+- [[_base_config()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 11
 ---
 
 # _adv()
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -28,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 13 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 - 4 edges to [[_COMMUNITY_ControlCenter]]
 - 1 edge to [[_COMMUNITY_dot-test_fetch_paginates_via_link_cursor() (2)]]
 - 1 edge to [[_COMMUNITY_An unreachable feed must fail the run, not print '0 new' and exit 0.]]

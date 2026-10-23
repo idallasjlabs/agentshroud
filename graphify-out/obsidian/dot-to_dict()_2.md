@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "cmd_start"
-location: "L49"
+community: "MiddlewareManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cmd_start
+  - community/MiddlewareManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_7]] - `references` [EXTRACTED]
-- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cmd_start
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

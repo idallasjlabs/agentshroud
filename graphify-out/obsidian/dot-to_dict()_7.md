@@ -12,7 +12,7 @@ tags:
 # .to_dict()
 
 ## Connections
-- [[AuditEvent]] - `method` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
 - [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

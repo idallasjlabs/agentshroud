@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "TestDomainValidationHelper (2)"
-location: "L12"
+community: "Workflow: Survey → Draft → Inject → Confirm (3)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper_2
+  - community/Workflow_Survey__Draft__Inject__Confirm_3
 ---
 
 # Purpose
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDomainValidationHelper_2
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm_3

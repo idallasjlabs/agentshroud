@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: ""
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
-location: "L67"
+community: "scanner_integration.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/scanner_integrationpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

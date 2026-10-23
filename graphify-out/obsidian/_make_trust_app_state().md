@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_post_forward()]] - `calls` [EXTRACTED]
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Minimal app_state for owner-trust tests.]] - `rationale_for` [EXTRACTED]
 - [[_TrustCaptor]] - `references` [EXTRACTED]

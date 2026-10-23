@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "package_skill"
-location: "L406"
+community: "agentshroud-blueteam/SKILL.md (3)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/agentshroud-blueteam/SKILLmd_3
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3

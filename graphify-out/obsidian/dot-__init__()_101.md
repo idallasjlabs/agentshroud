@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "setup-secrets.sh"
-location: "L32"
+community: "_t"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/_t
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
+- [[InjectionRule]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/_t

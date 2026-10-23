@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "soc.js"
-location: "L6"
+community: "Skill Creation Process"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Skill_Creation_Process
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

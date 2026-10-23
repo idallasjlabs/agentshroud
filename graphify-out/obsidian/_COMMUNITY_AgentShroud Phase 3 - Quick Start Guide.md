@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 32
 ---
 
 # AgentShroud Phase 3 - Quick Start Guide
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -28,7 +30,7 @@ members: 32
 - [[Input Requirements_5]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
 - [[Knowledge Base Schema_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
 - [[Learning System (Continuous Improvement)_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
-- [[Overview_4]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Overview_3]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
 - [[Pattern Matching for New Incidents_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
 - [[Step 1 Collect the Error Event Data_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
 - [[Step 2 Collect ALL Data in the Time Window_1]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md

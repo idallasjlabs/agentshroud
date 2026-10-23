@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L49"
+community: "MCPInspector"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_21]] - `references` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

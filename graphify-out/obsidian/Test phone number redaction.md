@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "test_sanitizer.py"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/test_sanitizerpy
 ---
 
 # Test phone number redaction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_phone_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy

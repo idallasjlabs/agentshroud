@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
-type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L7"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "ServiceManager"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/ServiceManager
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[dot-__init__()_81]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,29 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L119"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - graphify/EXTRACTED
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Any
 
 ## Connections
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_9]] - `references` [EXTRACTED]
-- [[dot-send_request()_1]] - `references` [EXTRACTED]
-- [[dot-send_request()_2]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-generate_report()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

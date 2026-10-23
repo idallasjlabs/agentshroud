@@ -12,13 +12,13 @@ tags:
 # SlackSocketClient
 
 ## Connections
-- [[dot-__init__()_63]] - `method` [EXTRACTED]
+- [[dot-__init__()_74]] - `method` [EXTRACTED]
 - [[dot-_connect_and_handle()]] - `method` [EXTRACTED]
 - [[dot-_get_wss_url()]] - `method` [EXTRACTED]
 - [[dot-run()]] - `method` [EXTRACTED]
 - [[dot-stop()_5]] - `method` [EXTRACTED]
 - [[Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(]] - `rationale_for` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[SlackSocketClient_1]] - `uses` [INFERRED]
 - [[TestComputeBackoff]] - `uses` [INFERRED]
 - [[TestSlackSocketClient]] - `uses` [INFERRED]

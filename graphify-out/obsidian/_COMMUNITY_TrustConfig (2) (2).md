@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # TrustConfig (2) (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
 - [[Configuration_18]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Dependencies_18]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Dependencies_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Environment Variables_12]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Function Details_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Key Classes  Functions_21]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
@@ -19,7 +21,7 @@ members: 16
 - [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Purpose_121]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Purpose_119]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Related_25]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Responsibilities_23]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Threat Model_16]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md

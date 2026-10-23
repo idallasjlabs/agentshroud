@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Error Index.md"
+community: "Restart Procedure"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Restart_Procedure
 ---
 
 # Restart Procedure.md
 
 ## Connections
-- [[Crash Recovery]] - `references` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
 - [[First Time Setup]] - `references` [EXTRACTED]
 - [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

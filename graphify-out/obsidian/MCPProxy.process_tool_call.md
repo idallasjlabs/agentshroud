@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPInspector"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPInspector
 ---
 
 # MCPProxy.process_tool_call
 
 ## Connections
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
 - [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

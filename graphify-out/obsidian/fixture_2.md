@@ -1,18 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "sync-cve-registry.py"
+community: "create_auth_dependency"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/create_auth_dependency
 ---
 
 # fixture
 
 ## Connections
-- [[dot-_no_docker()_1]] - `references` [EXTRACTED]
-- [[dot-_no_docker()]] - `references` [EXTRACTED]
-- [[_isolated_alert_state()]] - `references` [EXTRACTED]
+- [[_no_owner_mirror()]] - `references` [EXTRACTED]
+- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
+- [[clamd_sock_path()]] - `references` [EXTRACTED]
+- [[session_manager()]] - `references` [EXTRACTED]
+- [[smm()]] - `references` [EXTRACTED]
+- [[tmp_workspace()]] - `references` [EXTRACTED]
+- [[trust_manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

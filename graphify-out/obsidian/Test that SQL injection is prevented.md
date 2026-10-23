@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "test_docs_accuracy.py"
+community: "ForwardRequest"
 location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/ForwardRequest
 ---
 
 # Test that SQL injection is prevented
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_sql_injection_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

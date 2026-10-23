@@ -16,7 +16,7 @@ tags:
 - [[Logging and audit trail]] - `contains` [EXTRACTED]
 - [[Memory writes (conditional)]] - `contains` [EXTRACTED]
 - [[OpenClaw command accuracy]] - `contains` [EXTRACTED]
-- [[Overview_20]] - `contains` [EXTRACTED]
+- [[Overview_24]] - `contains` [EXTRACTED]
 - [[Periodic checks]] - `contains` [EXTRACTED]
 - [[Required confirmations (always)]] - `contains` [EXTRACTED]
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]

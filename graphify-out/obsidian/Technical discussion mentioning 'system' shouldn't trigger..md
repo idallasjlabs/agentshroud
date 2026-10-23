@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response() (5)"
+community: "ContextGuard"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_5
+  - community/ContextGuard
 ---
 
 # Technical discussion mentioning 'system' shouldn't trigger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_clean_technical_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_5
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

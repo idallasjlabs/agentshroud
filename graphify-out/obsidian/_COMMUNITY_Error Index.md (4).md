@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Error Index.md (4)
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members

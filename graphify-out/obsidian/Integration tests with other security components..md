@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # Integration tests with other security components.
 
 ## Connections
-- [[TestIntegration_1]] - `rationale_for` [EXTRACTED]
+- [[TestIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

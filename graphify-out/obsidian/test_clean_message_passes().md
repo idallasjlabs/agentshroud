@@ -12,7 +12,7 @@ tags:
 # test_clean_message_passes()
 
 ## Connections
-- [[dot-process_inbound()_8]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_6]] - `calls` [EXTRACTED]
 - [[Verify clean messages pass through without blocking.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

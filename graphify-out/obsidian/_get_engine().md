@@ -19,13 +19,13 @@ tags:
 - [[get_logs()]] - `calls` [EXTRACTED]
 - [[killswitch()_1]] - `calls` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
-- [[restart_service()]] - `calls` [EXTRACTED]
+- [[restart_service()_1]] - `calls` [EXTRACTED]
 - [[rollback_agentshroud()]] - `calls` [EXTRACTED]
 - [[security_report()]] - `calls` [EXTRACTED]
-- [[start_service()]] - `calls` [EXTRACTED]
-- [[stop_service()]] - `calls` [EXTRACTED]
+- [[start_service()_1]] - `calls` [EXTRACTED]
+- [[stop_service()_1]] - `calls` [EXTRACTED]
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
-- [[upgrade_bot()]] - `calls` [EXTRACTED]
+- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "export_bot"
+community: "MiddlewareManager"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # _tool_req()
@@ -26,4 +26,4 @@ tags:
 - [[_req()_1]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

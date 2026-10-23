@@ -1,17 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "create_auth_dependency (2) (2)"
-location: "L3"
+community: "Path (4)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2_2
+  - community/Path_4
 ---
 
 # Overview
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2
+#graphify/document #graphify/EXTRACTED #community/Path_4

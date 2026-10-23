@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L193"
+community: "soc/router.py"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DedupDispatchFake]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -12,9 +12,9 @@ tags:
 # test_enforce_high_risk_method_rejected_resolves_to_deny()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[_StubApprovalQueue]] - `calls` [EXTRACTED]
-- [[_base_config()_1]] - `calls` [EXTRACTED]
+- [[_base_config()]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

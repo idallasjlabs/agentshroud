@@ -1,27 +1,19 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "PIIConfig"
-location: "L135"
+community: "One Shroud Over Every Wire (founding mantra)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/One_Shroud_Over_Every_Wire_founding_mantra
 ---
 
 # warn()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[_ensure_build_space()]] - `calls` [EXTRACTED]
-- [[_prune_build_cache()]] - `calls` [EXTRACTED]
-- [[_take_apply_lock()]] - `calls` [EXTRACTED]
-- [[phase_apply()]] - `calls` [EXTRACTED]
-- [[phase_discover()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[phase_verify()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[write_handoff()]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra

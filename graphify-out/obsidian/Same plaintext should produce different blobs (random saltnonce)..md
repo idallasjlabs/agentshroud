@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "PortManager"
+community: "TestEncryptedStore"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TestEncryptedStore
 ---
 
 # Same plaintext should produce different blobs (random salt/nonce).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_different_encryptions_differ()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PortManager
+#graphify/rationale #graphify/EXTRACTED #community/TestEncryptedStore

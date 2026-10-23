@@ -12,6 +12,6 @@ tags:
 # Threat Model
 
 ## Connections
-- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestParseHostsLine

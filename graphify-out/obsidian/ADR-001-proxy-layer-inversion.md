@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Alternatives rejected]] - `contains` [EXTRACTED]
 - [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - `semantically_similar_to` [INFERRED]
-- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
 - [[Rationale]] - `contains` [EXTRACTED]
 - [[Transparent Interception Architecture]] - `semantically_similar_to` [INFERRED]
 

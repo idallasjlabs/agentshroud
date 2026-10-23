@@ -12,11 +12,11 @@ tags:
 # tool_result_sanitizer.py
 
 ## Connections
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_3]] - `imports` [EXTRACTED]
 - [[RedactionResult_2]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `contains` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `contains` [EXTRACTED]
+- [[ToolResultSanitizer]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[job-quality-matrix]] - `references` [EXTRACTED]

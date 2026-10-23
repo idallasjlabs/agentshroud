@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "PipelineAction (2)"
+community: "PipelineAction"
 location: "L728"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/PipelineAction
 ---
 
 # Container Hardening Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L105"
+community: "Enum"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # .test_construction()
 
 ## Connections
-- [[ContributorRecord_1]] - `calls` [EXTRACTED]
-- [[TestContributorRecord]] - `method` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
+- [[TestEgressRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

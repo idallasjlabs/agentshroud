@@ -1,26 +1,21 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "ContextSegment"
-location: "L38"
+community: "KillSwitchMonitor"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ContextSegment
+  - graphify/INFERRED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[store()_2]] - `references` [EXTRACTED]
-- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
-- [[test_decide_persists()]] - `references` [EXTRACTED]
-- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `references` [EXTRACTED]
-- [[test_persist_and_reload()]] - `references` [EXTRACTED]
-- [[test_store_survives_restart()]] - `references` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

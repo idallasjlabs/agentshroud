@@ -18,7 +18,7 @@ tags:
 - [[dot-test_not_in_channel_is_idempotent_true()]] - `method` [EXTRACTED]
 - [[dot-test_other_error_returns_false()_1]] - `method` [EXTRACTED]
 - [[dot-test_success_returns_true()_1]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

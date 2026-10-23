@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_make_report()]] - `method` [EXTRACTED]
-- [[dot-store()_1]] - `method` [EXTRACTED]
+- [[dot-store()_2]] - `method` [EXTRACTED]
 - [[dot-store_dir()]] - `method` [EXTRACTED]
 - [[dot-test_chain_hash_links_reports()]] - `method` [EXTRACTED]
 - [[dot-test_integrity_check_fails_for_tampered_file()]] - `method` [EXTRACTED]

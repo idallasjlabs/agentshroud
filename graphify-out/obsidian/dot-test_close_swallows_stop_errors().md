@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "api.py (2) (2)"
+community: "api.py (2)"
 location: "L990"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2_2
+  - community/apipy_2
 ---
 
 # .test_close_swallows_stop_errors()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestClose]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2_2
+#graphify/code #graphify/EXTRACTED #community/apipy_2

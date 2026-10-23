@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_validate_credential()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `references` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
 - [[CredentialValidator]] - `method` [EXTRACTED]
 - [[Validate a credential.          Returns             tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 

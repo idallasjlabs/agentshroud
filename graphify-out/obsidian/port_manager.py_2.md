@@ -1,22 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
-type: "document"
-community: "find-sessions.sh"
-location: "L10"
+source_file: "gateway/tools/port_manager.py"
+type: "code"
+community: "TrustConfig (2)"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/TrustConfig_2
 ---
 
 # port_manager.py
 
 ## Connections
-- [[Default Ports]] - `contains` [EXTRACTED]
-- [[Environment Variables]] - `contains` [EXTRACTED]
-- [[Key Class `PortManager`]] - `contains` [EXTRACTED]
-- [[Purpose_4]] - `contains` [EXTRACTED]
-- [[Related Notes_8]] - `contains` [EXTRACTED]
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[PortAssignment]] - `contains` [EXTRACTED]
+- [[PortManager]] - `contains` [EXTRACTED]
+- [[PortResolution]] - `contains` [EXTRACTED]
+- [[check_and_report()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/find-sessionssh
+#graphify/code #graphify/EXTRACTED #community/TrustConfig_2

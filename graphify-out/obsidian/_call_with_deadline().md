@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
 community: "Sunday Upgrade prompt"
-location: "L189"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -18,7 +18,7 @@ tags:
 - [[Run ``fn`` in a daemon thread; raise ``TimeoutError`` if it outlives…]] - `rationale_for` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 - [[_guarded_fetch()]] - `calls` [EXTRACTED]
-- [[_run()_1]] - `indirect_call` [INFERRED]
+- [[_run()_2]] - `indirect_call` [INFERRED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

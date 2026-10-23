@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "ConsentFramework (2) (5)"
+community: "MCPPermissionManager (2)"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework_2_5
+  - community/MCPPermissionManager_2
 ---
 
 # Return configured admin-private data redaction patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_private_data_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework_2_5
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2

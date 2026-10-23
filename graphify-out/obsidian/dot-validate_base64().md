@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "_make_proxy()"
+community: "ServiceManager"
 location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ServiceManager
 ---
 
 # .validate_base64()
 
 ## Connections
-- [[SSHWriteFileRequest]] - `method` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

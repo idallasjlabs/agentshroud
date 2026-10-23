@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # iOS / macOS Shortcuts — Relay to AgentShroud
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 16
 - [[Function Details_18]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
-- [[Purpose_120]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Purpose_118]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Related_24]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Responsibilities_22]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 - [[Threat Model_15]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md

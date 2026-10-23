@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "TestSpawnAuthorization"
+community: "test_telegram_proxy_inbound.py"
 location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSpawnAuthorization
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # VII-A. Enforce-by-Default (R-02, R-03)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VII. v0.8.0 Remediation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSpawnAuthorization
+#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)
 
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
 - [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Purpose_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Related Notes_10]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Purpose_4]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Related Notes_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Where Used_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 - [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[store.py]] - code - gateway/approval_queue/store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +27,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_Restart Procedure]]
 - 1 edge to [[_COMMUNITY_ContextSegment]]
-- 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (5)]]
+- 1 edge to [[_COMMUNITY_ApprovalStore]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
 
 ## Top bridge nodes
-- [[aiosqlite]] - degree 5, connects to 4 communities
+- [[store.py]] - degree 7, connects to 5 communities
+- [[aiosqlite]] - degree 5, connects to 3 communities

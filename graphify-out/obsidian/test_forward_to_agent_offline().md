@@ -12,7 +12,7 @@ tags:
 # test_forward_to_agent_offline()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[Test forwarding to offline agent raises ForwardError]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L252"
+community: "ContextSegment"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `references` [EXTRACTED]
+- [[ApprovalStore_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_1]] - `references` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "MiddlewareManager (8)"
+community: "TestSSRFDetection (2)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/TestSSRFDetection_2
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2

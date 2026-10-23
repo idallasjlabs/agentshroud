@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L76"
+community: "EgressTelegramNotifier"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/EgressTelegramNotifier
 ---
 
 # main()
 
 ## Connections
-- [[check-soak-status.sh]] - `references` [EXTRACTED]
-- [[classify()_2]] - `calls` [EXTRACTED]
-- [[soak_status.py]] - `contains` [EXTRACTED]
+- [[generate_image.py]] - `contains` [EXTRACTED]
+- [[get_api_key()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

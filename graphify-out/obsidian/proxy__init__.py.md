@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # proxy/__init__.py
@@ -16,9 +16,9 @@ tags:
 - [[InspectionFinding]] - `imports` [EXTRACTED]
 - [[InspectionResult]] - `imports` [EXTRACTED]
 - [[MCPAuditEntry]] - `imports` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
+- [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector_1]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

@@ -58,6 +58,9 @@ fi
 if ! declare -f warn >/dev/null 2>&1; then
   warn() { printf '[scan] WARN: %s\n' "$*" >&2; }
 fi
+if ! declare -f err >/dev/null 2>&1; then
+  err() { printf '[scan] ERROR: %s\n' "$*" >&2; }
+fi
 if ! declare -f die >/dev/null 2>&1; then
   die() { local code="$1"; shift; printf '[scan] ERROR: %s\n' "$*" >&2; exit "$code"; }
 fi
@@ -109,7 +112,7 @@ sunday_refresh_trivy_db() {
   mkdir -p "$cache" || return 1
   errf="$(mktemp)"
   for flag in --download-db-only --download-java-db-only; do
-    if ! timeout 600 docker run --rm -v "${cache}:/root/.cache/trivy" "$img" image --quiet "$flag" >/dev/null 2>"$errf"; then
+    if ! timeout -k 30 600 docker run --rm -v "${cache}:/root/.cache/trivy" "$img" image --quiet "$flag" >/dev/null 2>"$errf"; then
       sed -n '1,4p' "$errf" | sed 's/^/      /' >&2
       rm -f "$errf"
       return 1
@@ -267,7 +270,9 @@ sunday_run_scan_gate() {
     for _scan_try in 1 2 3; do
       errf="$(mktemp)"
       trc=0
-      out="$(timeout 300 "${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
+      # -k: a hung trivy ignores SIGTERM ("attempting graceful shutdown", prod
+      # 2026-10-23) and only dies to SIGKILL; TERM alone held a scan forever.
+      out="$(timeout -k "${SUNDAY_TRIVY_KILL_AFTER:-30}" "${SUNDAY_TRIVY_TIMEOUT:-300}" "${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
               "${TRIVY_DB_ARGS[@]}" "${ignore_args[@]}" --format json "$resolved" 2>"$errf")" || trc=$?
       if [ "$trc" -eq 0 ] && [ -n "$out" ]; then
         break

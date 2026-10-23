@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "SessionManager"
-location: "L53"
+community: "Usage"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Usage
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_61]] - `calls` [EXTRACTED]
+- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/Usage

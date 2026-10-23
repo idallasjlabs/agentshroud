@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "UserSessionManager"
-location: "L74"
+community: "test_security_integration.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/test_security_integrationpy
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

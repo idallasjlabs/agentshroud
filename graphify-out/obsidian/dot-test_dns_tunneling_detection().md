@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "ContextGuard"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ContextGuard
 ---
 
 # .test_dns_tunneling_detection()
@@ -15,4 +15,4 @@ tags:
 - [[High-entropy DNS queries indicate tunneling.]] - `rationale_for` [EXTRACTED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

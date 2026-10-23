@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "TestParseHosts"
+community: "MemoryIntegrityMonitor"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestParseHosts
+  - community/MemoryIntegrityMonitor
 ---
 
 # Scan memory file content for security threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_content_for_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestParseHosts
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

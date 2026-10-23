@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.42
 members: 9
 ---
 
 # 7. Pi-hole DNS Security Layer (Built-In)
 
+**Cohesion:** 0.42 - moderately connected
 **Members:** 9 nodes
 
 ## Members

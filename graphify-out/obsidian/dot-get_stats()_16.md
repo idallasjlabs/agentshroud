@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "FetchOutcome"
-location: "L471"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_52]] - `references` [EXTRACTED]
-- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Any_62]] - `references` [EXTRACTED]
+- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

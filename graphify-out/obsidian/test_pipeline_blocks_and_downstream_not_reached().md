@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_2]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

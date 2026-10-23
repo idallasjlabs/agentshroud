@@ -12,8 +12,8 @@ tags:
 # run_scanner()
 
 ## Connections
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ScanRequest_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
+- [[ScanRequest]] - `references` [EXTRACTED]
 - [[_launch_scan_background()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

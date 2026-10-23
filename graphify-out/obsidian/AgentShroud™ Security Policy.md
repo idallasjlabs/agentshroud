@@ -20,7 +20,7 @@ tags:
 - [[Kill Switch Operations]] - `conceptually_related_to` [INFERRED]
 - [[Monitor Mode Warning]] - `references` [EXTRACTED]
 - [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
-- [[SECURITY_4]] - `contains` [EXTRACTED]
+- [[SECURITY_5]] - `contains` [EXTRACTED]
 - [[Security Architecture_3]] - `contains` [EXTRACTED]
 - [[Security Scanning]] - `contains` [EXTRACTED]
 - [[Supported Versions]] - `contains` [EXTRACTED]

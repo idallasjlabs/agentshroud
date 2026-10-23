@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Hermes — Reference Verifier (2)"
-location: "L103"
+community: "client_from_env"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier_2
+  - community/client_from_env
 ---
 
 # Related Notes
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_2
+#graphify/document #graphify/EXTRACTED #community/client_from_env

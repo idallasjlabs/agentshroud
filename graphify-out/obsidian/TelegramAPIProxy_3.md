@@ -17,6 +17,6 @@ tags:
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
-- [[_make_proxy()_3]] - `references` [EXTRACTED]
+- [[_make_proxy()_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

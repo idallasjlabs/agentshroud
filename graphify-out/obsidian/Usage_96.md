@@ -1,17 +1,24 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
-location: "L10"
+community: "TestFabricatedSecurityNotice (2) (2)"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/TestFabricatedSecurityNotice_2_2
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Add a comment to a card]] - `contains` [EXTRACTED]
+- [[Archive a card]] - `contains` [EXTRACTED]
+- [[Create a card]] - `contains` [EXTRACTED]
+- [[List boards]] - `contains` [EXTRACTED]
+- [[List cards in a list]] - `contains` [EXTRACTED]
+- [[List lists in a board]] - `contains` [EXTRACTED]
+- [[Move a card to another list]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2

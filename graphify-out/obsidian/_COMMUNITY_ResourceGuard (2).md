@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.05
 members: 69
 ---
 
 # ResourceGuard (2)
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 69 nodes
 
 ## Members
-- [[dot-to_dict()_13]] - code - gateway/security/soc_correlation.py
-- [[Any_79]] - code - gateway/security/soc_correlation.py
+- [[dot-to_dict()_12]] - code - gateway/security/soc_correlation.py
+- [[Any_77]] - code - gateway/security/soc_correlation.py
 - [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
 - [[MATURITY_DESC]] - code - gateway/soc/static/soc.js
 - [[MATURITY_LEVELS]] - code - gateway/soc/static/soc.js
@@ -86,11 +88,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 6 edges to [[_COMMUNITY_Enum]]
 - 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 2 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher (2)]]
+- 1 edge to [[_COMMUNITY_ToolChainAnalyzer]]
 
 ## Top bridge nodes
 - [[CorrelationSummary]] - degree 5, connects to 2 communities

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-__aenter__()_6]] - `method` [EXTRACTED]
 - [[dot-__aexit__()_6]] - `method` [EXTRACTED]
-- [[dot-__call__()_8]] - `method` [EXTRACTED]
-- [[dot-__init__()_146]] - `method` [EXTRACTED]
+- [[dot-__call__()_10]] - `method` [EXTRACTED]
+- [[dot-__init__()_155]] - `method` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]
 - [[_install_fake_websockets()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]

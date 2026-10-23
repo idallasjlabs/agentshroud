@@ -1,23 +1,27 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
-type: "code"
-community: "lifespan()"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+type: "document"
+community: "OpenClaw Host Hardening"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/OpenClaw_Host_Hardening
 ---
 
 # event_bus.py
 
 ## Connections
-- [[EventBus]] - `contains` [EXTRACTED]
-- [[GatewayEvent]] - `contains` [EXTRACTED]
-- [[approval.py]] - `imports_from` [EXTRACTED]
-- [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[make_event()]] - `contains` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[Config Keys Read_7]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_8]] - `contains` [EXTRACTED]
+- [[Event Types Emitted by main.py]] - `contains` [EXTRACTED]
+- [[Function Details_43]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
+- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Related_49]] - `contains` [EXTRACTED]
+- [[Responsibilities_46]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

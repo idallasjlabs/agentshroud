@@ -12,7 +12,7 @@ tags:
 # MCPPolicyConfig
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[_base_config()]] - `references` [EXTRACTED]
+- [[_base_config()_1]] - `references` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ToolResultSanitizer

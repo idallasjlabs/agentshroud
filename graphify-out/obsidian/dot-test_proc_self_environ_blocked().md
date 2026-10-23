@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "_wrap_response() (4)"
+community: "_wrap_response()"
 location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/_wrap_response
 ---
 
 # .test_proc_self_environ_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Access to procselfenviron exposes env vars — must be blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

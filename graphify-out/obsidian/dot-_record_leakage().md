@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "._record_leakage()"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/_record_leakage
 ---
 
 # ._record_leakage()
@@ -19,4 +19,4 @@ tags:
 - [[EnvironmentLeakage]] - `calls` [EXTRACTED]
 - [[Record a detected environment leakage.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/_record_leakage

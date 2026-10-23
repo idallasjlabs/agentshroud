@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "SharedMemoryManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SharedMemoryManager
 ---
 
 # shared_memory.py
@@ -17,4 +17,4 @@ tags:
 - [[SharedMemoryManager]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

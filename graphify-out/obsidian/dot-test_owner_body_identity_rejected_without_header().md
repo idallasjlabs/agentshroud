@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L252"
+community: "AgentShroud Security Value Proposition"
+location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # .test_owner_body_identity_rejected_without_header()
 
 ## Connections
 - [[Body-only owner identity must be rejected to prevent impersonation.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
+- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

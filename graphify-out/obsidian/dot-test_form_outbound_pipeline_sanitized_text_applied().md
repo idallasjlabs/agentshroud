@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundPipelineIntegration (6)"
+community: "TelegramAPIProxy"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration_6
+  - community/TelegramAPIProxy
 ---
 
 # .test_form_outbound_pipeline_sanitized_text_applied()
 
 ## Connections
 - [[Pipeline-sanitized text must replace the original in form payloads.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration_6
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

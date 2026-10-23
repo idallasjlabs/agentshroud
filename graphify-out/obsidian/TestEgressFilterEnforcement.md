@@ -22,7 +22,7 @@ tags:
 - [[dot-test_url_parsing()]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_allowlist_matching()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[Test EgressFilter with enforcemonitor modes.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_enforce.py]] - `contains` [EXTRACTED]

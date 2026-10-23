@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.13
 members: 21
 ---
 
 # UserSessionManager (4)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 21 nodes
 
 ## Members
 - [[dot-_append_audit_event()]] - code - gateway/approval_queue/queue.py
 - [[dot-_expire_stale()]] - code - gateway/approval_queue/queue.py
 - [[dot-_persist_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[dot-broadcast()]] - code - gateway/approval_queue/queue.py
+- [[dot-broadcast()_1]] - code - gateway/approval_queue/queue.py
 - [[dot-cleanup_decided()]] - code - gateway/approval_queue/queue.py
-- [[dot-decide()]] - code - gateway/approval_queue/queue.py
-- [[dot-get_item()_1]] - code - gateway/approval_queue/queue.py
-- [[dot-get_pending()]] - code - gateway/approval_queue/queue.py
-- [[dot-submit()]] - code - gateway/approval_queue/queue.py
+- [[dot-decide()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-get_item()_2]] - code - gateway/approval_queue/queue.py
+- [[dot-get_pending()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-submit()_1]] - code - gateway/approval_queue/queue.py
 - [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[Any_51]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueItem]] - code - gateway/approval_queue/queue.py
-- [[ApprovalRequest_2]] - code - gateway/approval_queue/queue.py
+- [[Any_56]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueItem_4]] - code - gateway/approval_queue/queue.py
+- [[ApprovalRequest_3]] - code - gateway/approval_queue/queue.py
 - [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
 - [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
 - [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
@@ -39,11 +41,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)_1]]
+- 1 edge to [[_COMMUNITY_test_soc_services_coverage.py]]
 
 ## Top bridge nodes
-- [[dot-decide()]] - degree 7, connects to 2 communities
-- [[dot-submit()]] - degree 7, connects to 1 community
+- [[dot-decide()_1]] - degree 7, connects to 2 communities
+- [[dot-submit()_1]] - degree 7, connects to 1 community
 - [[dot-_append_audit_event()]] - degree 6, connects to 1 community
-- [[dot-broadcast()]] - degree 6, connects to 1 community
+- [[dot-broadcast()_1]] - degree 6, connects to 1 community
 - [[dot-_expire_stale()]] - degree 6, connects to 1 community

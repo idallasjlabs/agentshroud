@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 29
 ---
 
 # _make_cve
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 29
 - [[Build the Telegram bot-token → bot_id registry from configured secrets.]] - rationale - gateway/ingest_api/main.py
 - [[Crash backoff escalation (rolling 10-minute start window)]] - rationale - docker/bots/hermes/start.sh
 - [[HERMES_HOME]] - code - docker/bots/hermes/start.sh
-- [[HOME_1]] - code - docker/bots/hermes/start.sh
+- [[HOME]] - code - docker/bots/hermes/start.sh
 - [[Post-migration model lock + sandboxed terminal + cron fleet default]] - rationale - docker/bots/hermes/start.sh
 - [[Proxy Telegram Bot API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
 - [[Repeated misses within the debounce window must not re-read secrets         on e]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
@@ -47,19 +49,19 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
-- 3 edges to [[_COMMUNITY_SecureBrowser (2)]]
+- 4 edges to [[_COMMUNITY_GroupConfig]]
 - 2 edges to [[_COMMUNITY_api.py (2)]]
 - 2 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_GroupConfig]]
 - 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice (2)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 1 edge to [[_COMMUNITY_SecureBrowser (2)]]
 - 1 edge to [[_COMMUNITY__make_cve (2)]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh]]
 
 ## Top bridge nodes
 - [[telegram_api_proxy()]] - degree 21, connects to 6 communities
-- [[TestTelegramTokenRegistryRebuildOnMiss]] - degree 10, connects to 3 communities
 - [[start.sh (Hermes s6 main program  startup wrapper)]] - degree 17, connects to 2 communities
+- [[TestTelegramTokenRegistryRebuildOnMiss]] - degree 10, connects to 2 communities
 - [[_telegram_send]] - degree 6, connects to 2 communities
 - [[dot-_mock_request()]] - degree 5, connects to 1 community

@@ -12,6 +12,6 @@ tags:
 # Three-Network Architecture
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

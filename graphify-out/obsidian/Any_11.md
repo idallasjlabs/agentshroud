@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (3)"
-location: "L67"
+community: "agentshroud-blueteam/SKILL.md (2)"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_3
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # Any
 
 ## Connections
-- [[dot-recent()]] - `references` [EXTRACTED]
-- [[dot-tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[dot-__init__()_38]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
+- [[dot-get_stats()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_3
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

@@ -12,8 +12,8 @@ tags:
 # test_forward_routing.py
 
 ## Connections
-- [[AgentTarget_2]] - `references` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `contains` [EXTRACTED]
 - [[TestOutboundBlockedNotDelivered]] - `contains` [EXTRACTED]
 - [[TestOwnerSpoofingViaForwardBody]] - `contains` [EXTRACTED]

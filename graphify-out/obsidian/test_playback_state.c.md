@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[face_set_state()]] - `contains` [EXTRACTED]
-- [[main()_13]] - `contains` [EXTRACTED]
+- [[main()_10]] - `contains` [EXTRACTED]
 - [[playback_step()]] - `contains` [EXTRACTED]
 - [[reset_all()]] - `contains` [EXTRACTED]
 - [[test_drain_clears_playing_and_returns_idle()]] - `contains` [EXTRACTED]

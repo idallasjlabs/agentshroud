@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_playback_state.c"
+community: "ContextGuard"
 location: "L952"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/ContextGuard
 ---
 
 # Test log sanitization and information leakage prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoggingSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_playback_statec
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

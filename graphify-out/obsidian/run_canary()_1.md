@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `conceptually_related_to` [INFERRED]
 - [[CanaryCheck]] - `calls` [EXTRACTED]
-- [[CanaryResult_2]] - `references` [EXTRACTED]
+- [[CanaryResult]] - `references` [EXTRACTED]
 - [[HTTPForwarder]] - `calls` [INFERRED]
 - [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [INFERRED]

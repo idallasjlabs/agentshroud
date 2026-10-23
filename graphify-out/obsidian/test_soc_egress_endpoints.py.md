@@ -12,7 +12,7 @@ tags:
 # test_soc_egress_endpoints.py
 
 ## Connections
-- [[client()_12]] - `contains` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_manage_egress_add_remove_rule_and_risk()]] - `contains` [EXTRACTED]
 - [[test_manage_egress_emergency_toggle()]] - `contains` [EXTRACTED]

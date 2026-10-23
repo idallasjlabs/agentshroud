@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_fetch_paginates_via_link_cursor() (2)"
-location: "L518"
+community: "ApprovalQueueConfig (2) (2)"
+location: "L5606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fetch_paginates_via_link_cursor_2
+  - community/ApprovalQueueConfig_2_2
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_fetch_paginates_via_link_cursor()]] - `contains` [EXTRACTED]
+- [[dot-test_non_owner_activity_is_tracked_for_unknown_user()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2

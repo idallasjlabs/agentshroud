@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_playback_state.c"
+community: "ContextGuard"
 location: "L1010"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/ContextGuard
 ---
 
 # .test_env_guard_scrub_output()
@@ -15,4 +15,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [EXTRACTED]
 - [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

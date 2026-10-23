@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L125"
+community: "PathIsolationManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/PathIsolationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

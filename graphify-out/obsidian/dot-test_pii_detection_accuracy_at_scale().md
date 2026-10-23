@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_pii_detection_accuracy_at_scale()
@@ -15,4 +15,4 @@ tags:
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 - [[Verify detection accuracy doesn't degrade at scale.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 7
 ---
 
 # ClamAV (2)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 7
 - [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
 - [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
 - [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[usage()_5]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[usage()_3]] - code - skills/openclaw/video-frames/scripts/frame.sh
 - [[video-framesSKILL]] - document - skills/openclaw/video-frames/SKILL.md
 
 ## Live Query (requires Dataview plugin)

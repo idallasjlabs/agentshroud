@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestProductionCompose"
+community: "MiddlewareManager"
 location: "L271"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/MiddlewareManager
 ---
 
 # .test_existing_session_context_not_reinjected()
@@ -15,4 +15,4 @@ tags:
 - [[TestProcessRequestIdentity]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

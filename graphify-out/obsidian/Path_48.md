@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
-location: "L62"
+community: "MCPPolicyEngine"
+location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/MCPPolicyEngine
 ---
 
 # Path
 
 ## Connections
-- [[dot-from_file()]] - `references` [EXTRACTED]
-- [[dot-from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
+- [[dashboard()]] - `calls` [EXTRACTED]
+- [[dashboard_main()]] - `calls` [EXTRACTED]
+- [[get_config()]] - `calls` [EXTRACTED]
+- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

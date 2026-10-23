@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Env overrides should drive runtime ownercollaborator identity.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Canvas_Skill

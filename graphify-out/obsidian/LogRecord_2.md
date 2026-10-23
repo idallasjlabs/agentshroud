@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: ""
 type: "code"
-community: "_wrap_response() (4)"
-location: "L63"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

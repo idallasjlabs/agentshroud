@@ -1,27 +1,27 @@
 ---
-source_file: "gateway/tests/test_url_analyzer.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "LLMProxy"
-location: "L175"
+community: "test_soc_realtime_coverage.py"
+location: "L386"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/LLMProxy
+  - graphify/INFERRED
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestDataExfiltration
 
 ## Connections
-- [[dot-test_base64_in_path_flagged()]] - `method` [EXTRACTED]
 - [[dot-test_base64_in_query_flagged()_1]] - `method` [EXTRACTED]
-- [[dot-test_long_query_string_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_many_params_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_normal_query_not_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_short_base64_not_flagged()_1]] - `method` [EXTRACTED]
-- [[Data exfiltration patterns in URLs — flagged, not blocked.]] - `rationale_for` [EXTRACTED]
+- [[dot-test_base64_in_url_path_flagged()]] - `method` [EXTRACTED]
+- [[dot-test_long_query_flagged()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `semantically_similar_to` [INFERRED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
-- [[URLVerdict]] - `uses` [INFERRED]
-- [[test_url_analyzer.py]] - `contains` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

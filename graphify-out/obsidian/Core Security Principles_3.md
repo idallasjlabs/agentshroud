@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "TestDockerEngine"
+community: "Core Security Principles"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/Core_Security_Principles
 ---
 
 # Core Security Principles
@@ -18,4 +18,4 @@ tags:
 - [[4. Fail Secure]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

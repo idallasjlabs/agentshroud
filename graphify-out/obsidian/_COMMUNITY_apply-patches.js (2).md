@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # apply-patches.js (2)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members

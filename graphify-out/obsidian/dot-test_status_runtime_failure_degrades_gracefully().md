@@ -12,6 +12,6 @@ tags:
 # .test_status_runtime_failure_degrades_gracefully()
 
 ## Connections
-- [[TestStatus_1]] - `method` [EXTRACTED]
+- [[TestStatus]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 43
 ---
 
 # SecureBrowser (4)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 43 nodes
 
 ## Members

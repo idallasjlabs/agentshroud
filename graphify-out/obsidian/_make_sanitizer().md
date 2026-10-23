@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CronStateMonitor"
+community: "TelegramAPIProxy"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/TelegramAPIProxy
 ---
 
 # _make_sanitizer()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[dot-test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[dot-test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]
@@ -227,8 +227,8 @@ tags:
 - [[dot-test_web_search_no_egress_filter()]] - `calls` [EXTRACTED]
 - [[dot-test_web_search_query_truncation()]] - `calls` [EXTRACTED]
 - [[Create a PIISanitizer with default enforce config.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_3]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

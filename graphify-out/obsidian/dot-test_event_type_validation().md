@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "EgressFilterConfig (2)"
 location: "L908"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/EgressFilterConfig_2
 ---
 
 # .test_event_type_validation()
@@ -16,4 +16,4 @@ tags:
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[Unknown event types should not inject SQL.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

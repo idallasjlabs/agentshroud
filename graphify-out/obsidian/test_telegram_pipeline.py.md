@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "SecurityPipeline (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/SecurityPipeline_2
 ---
 
 # test_telegram_pipeline.py
@@ -25,7 +25,7 @@ tags:
 - [[TestOutboundPipelineWired]] - `contains` [EXTRACTED]
 - [[_getUpdates_response()]] - `contains` [EXTRACTED]
 - [[_make_pipeline_result()]] - `contains` [EXTRACTED]
-- [[_make_proxy()_2]] - `contains` [EXTRACTED]
+- [[_make_proxy()_3]] - `contains` [EXTRACTED]
 - [[_make_update()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

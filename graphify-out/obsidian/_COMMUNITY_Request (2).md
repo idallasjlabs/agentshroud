@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.07
 members: 41
 ---
 
 # Request (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 41 nodes
 
 ## Members
-- [[dot-__init__()_63]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-__init__()_74]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-run()]] - code - gateway/proxy/slack_socket_client.py
@@ -58,7 +60,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_api.py (2)]]
+- 3 edges to [[_COMMUNITY_api.py (2)]]
+- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
 
 ## Top bridge nodes
 - [[SlackSocketClient]] - degree 13, connects to 1 community

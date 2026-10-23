@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[CI Workflow]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [INFERRED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `references` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

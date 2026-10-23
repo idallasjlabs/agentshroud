@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PortManager"
+community: "ContextGuard"
 location: "L419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/ContextGuard
 ---
 
 # .test_env_guard_scrubs_output()
@@ -16,4 +16,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

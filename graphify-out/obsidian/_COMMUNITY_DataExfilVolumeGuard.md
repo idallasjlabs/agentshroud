@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 40
 ---
 
 # DataExfilVolumeGuard
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 40 nodes
 
 ## Members
@@ -57,14 +59,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY__wrap_response() (2)]]
+- 2 edges to [[_COMMUNITY__wrap_response() (2)]]
 - 2 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh]]
 - 1 edge to [[_COMMUNITY__make_sanitizer()]]
 - 1 edge to [[_COMMUNITY_Sunday Upgrade prompt]]
 
 ## Top bridge nodes
 - [[Incident ConduitHermes instability 2026-10-16]] - degree 23, connects to 2 communities
 - [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - degree 4, connects to 2 communities
+- [[Hermes pin silent no-op (0.21.5 while upstream 0.22.2)]] - degree 2, connects to 1 community
 - [[CI DAST scan job (Nuclei)]] - degree 2, connects to 1 community
 - [[CI startup smoke tests (static)]] - degree 2, connects to 1 community
-- [[Hermes pin silent no-op (0.21.5 while upstream 0.22.2)]] - degree 2, connects to 1 community

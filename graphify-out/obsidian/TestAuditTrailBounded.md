@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L351"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # TestAuditTrailBounded
 
 ## Connections
-- [[dot-test_default_window_is_10k()_1]] - `method` [EXTRACTED]
+- [[dot-test_default_window_is_10k()]] - `method` [EXTRACTED]
 - [[dot-test_report_total_reflects_all_appended()]] - `method` [EXTRACTED]
-- [[dot-test_tamper_in_retained_window_detected()_1]] - `method` [EXTRACTED]
-- [[dot-test_verify_chain_valid_after_wrap()_1]] - `method` [EXTRACTED]
-- [[dot-test_window_capped_at_max_entries()_1]] - `method` [EXTRACTED]
+- [[dot-test_tamper_in_retained_window_detected()]] - `method` [EXTRACTED]
+- [[dot-test_verify_chain_valid_after_wrap()]] - `method` [EXTRACTED]
+- [[dot-test_window_capped_at_max_entries()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
 - [[In-memory MCP audit window must be bounded (mirrors AuditChain).]] - `rationale_for` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/What_Does_OpenClaw_Actually_Need_to_Write

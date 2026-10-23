@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "upgrade"
-location: "L68"
+community: "MiddlewareManager (2)"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/upgrade
+  - graphify/INFERRED
+  - community/MiddlewareManager_2
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/INFERRED #community/MiddlewareManager_2

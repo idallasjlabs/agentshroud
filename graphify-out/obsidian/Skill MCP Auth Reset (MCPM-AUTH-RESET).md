@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Authentication Reset Procedures_1]] - `contains` [EXTRACTED]
-- [[Related Skills_79]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
+- [[Related Skills_69]] - `contains` [EXTRACTED]
+- [[Role_58]] - `contains` [EXTRACTED]
 - [[Security Best Practices_1]] - `contains` [EXTRACTED]
 - [[Troubleshooting_29]] - `contains` [EXTRACTED]
-- [[Usage_85]] - `contains` [EXTRACTED]
+- [[Usage_75]] - `contains` [EXTRACTED]
 - [[Verification Checklist_1]] - `contains` [EXTRACTED]
 - [[When to Invoke_6]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]

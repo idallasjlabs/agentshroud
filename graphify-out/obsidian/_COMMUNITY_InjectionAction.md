@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # InjectionAction
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 27
 - [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Executive Summary_6]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Executive Summary_5]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 - [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md

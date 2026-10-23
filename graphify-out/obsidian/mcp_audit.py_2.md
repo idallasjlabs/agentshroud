@@ -16,7 +16,7 @@ tags:
 - [[Function Details_22]] - `contains` [EXTRACTED]
 - [[Hash Chain Structure_2]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_24]] - `contains` [EXTRACTED]
-- [[Purpose_124]] - `contains` [EXTRACTED]
+- [[Purpose_122]] - `contains` [EXTRACTED]
 - [[Related_28]] - `contains` [EXTRACTED]
 - [[Responsibilities_26]] - `contains` [EXTRACTED]
 - [[mcp_audit.py_1]] - `contains` [EXTRACTED]

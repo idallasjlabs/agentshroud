@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.14
 members: 20
 ---
 
 # AgentShroud v0.8.0 — Full Security & Functionality Audit
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[dot-_make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-_make_proxy()_4]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_bot_id_falls_back_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_bot_id_returns_contextvar_when_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_send_token_returns_contextvar_inside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
@@ -37,9 +39,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_GroupConfig]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_SecureBrowser (2)]]
-- 1 edge to [[_COMMUNITY_GroupConfig]]
 
 ## Top bridge nodes
-- [[TestMultiBotContextvarRouting]] - degree 14, connects to 3 communities
+- [[TestMultiBotContextvarRouting]] - degree 14, connects to 2 communities

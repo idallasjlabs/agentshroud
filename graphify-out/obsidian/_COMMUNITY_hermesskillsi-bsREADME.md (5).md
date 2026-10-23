@@ -1,17 +1,21 @@
 ---
 type: community
-members: 6
+cohesion: 0.32
+members: 8
 ---
 
 # hermes/skills/i-bs/README.md (5)
 
-**Members:** 6 nodes
+**Cohesion:** 0.32 - loosely connected
+**Members:** 8 nodes
 
 ## Members
 - [[dot-_fake_urlopen_factory()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[dot-test_long_poll_timeout_remains_60s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[dot-test_non_long_poll_timeout_is_15s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[Return a urlopen mock that records the timeout kwarg and succeeds.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestForwardToTelegramTimeouts]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[sendMessage and similar calls must use a 15s urlopen timeout.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
@@ -23,11 +27,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_CronStateMonitor]]
-- 2 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[dot-test_long_poll_timeout_remains_60s()]] - degree 5, connects to 3 communities
-- [[dot-test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 3 communities
-- [[dot-_fake_urlopen_factory()]] - degree 4, connects to 1 community
+- [[TestForwardToTelegramTimeouts]] - degree 9, connects to 5 communities
+- [[dot-test_long_poll_timeout_remains_60s()]] - degree 5, connects to 1 community
+- [[dot-test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 1 community

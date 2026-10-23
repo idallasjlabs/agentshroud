@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 68
 ---
 
 # SecurityPipeline (3)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 68 nodes
 
 ## Members
@@ -43,8 +45,8 @@ members: 68
 - [[dot-test_returns_all_drifted_items()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_serialise_contains_version_and_timestamp()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_serialise_roundtrip()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-to_dict()_13]] - code - gateway/skills/manifest.py
 - [[dot-to_dict()_14]] - code - gateway/skills/manifest.py
-- [[dot-to_dict()_15]] - code - gateway/skills/manifest.py
 - [[dot-to_json()]] - code - gateway/skills/manifest.py
 - [[A single item in the skills manifest.]] - rationale - gateway/skills/manifest.py
 - [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
@@ -53,7 +55,7 @@ members: 68
 - [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
 - [[ManifestEntry]] - code - gateway/skills/manifest.py
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
-- [[Path_64]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[Path_61]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[PlannedAction]] - code - gateway/skills/manifest.py
 - [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
 - [[SkillsManifest]] - code - gateway/skills/manifest.py
@@ -67,7 +69,7 @@ members: 68
 - [[TestValidateManifest]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
 - [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[_sha256()_2]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[_sha256()_3]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[_write_tree()_1]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[deploy_manifest()]] - code - gateway/skills/manifest.py
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - code - gateway/skills/manifest.py
@@ -85,14 +87,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
 - 5 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 4 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 4 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[deploy_manifest()]] - degree 25, connects to 3 communities
 - [[SkillsManifest]] - degree 25, connects to 3 communities
-- [[test_skills_manifest_sync.py]] - degree 18, connects to 1 community
+- [[deploy_manifest()]] - degree 25, connects to 2 communities
+- [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
 - [[ManifestEntry]] - degree 15, connects to 1 community
 - [[plan_deploy()]] - degree 13, connects to 1 community

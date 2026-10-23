@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TelegramAPIProxy (2) (4)"
+community: "CrossBotTrustLedger"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2_4
+  - community/CrossBotTrustLedger
 ---
 
 # .test_admin_ge_read()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPermissionLevel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2_4
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

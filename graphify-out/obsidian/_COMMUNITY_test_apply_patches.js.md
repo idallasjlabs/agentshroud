@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.42
 members: 9
 ---
 
 # test_apply_patches.js
 
+**Cohesion:** 0.42 - moderately connected
 **Members:** 9 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 9
 - [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
 - [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
 - [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
-- [[main()_4]] - code - scripts/generate-job-schedule.py
+- [[main()_36]] - code - scripts/generate-job-schedule.py
 - [[render_html()]] - code - scripts/generate-job-schedule.py
 
 ## Live Query (requires Dataview plugin)

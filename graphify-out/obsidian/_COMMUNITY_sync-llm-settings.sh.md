@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # sync-llm-settings.sh
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -32,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 2 edges to [[_COMMUNITY_ServiceManager]]
 - 2 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 
 ## Top bridge nodes

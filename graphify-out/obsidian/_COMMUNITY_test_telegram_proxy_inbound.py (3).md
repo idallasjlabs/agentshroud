@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # test_telegram_proxy_inbound.py (3)
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -31,7 +33,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_8. Performance & Testing]]
 - 1 edge to [[_COMMUNITY_Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]]
 - 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23 (5)]]
-- 1 edge to [[_COMMUNITY_triage-cve-mitigations.py (2)_1]]
+- 1 edge to [[_COMMUNITY_triage-cve-mitigations.py (2)]]
 
 ## Top bridge nodes
 - [[AgentShroud -- USPTO Provisional Patent Application]] - degree 8, connects to 3 communities

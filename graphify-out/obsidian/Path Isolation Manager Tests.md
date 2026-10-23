@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "PathIsolationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PathIsolationManager
 ---
 
 # Path Isolation Manager Tests
@@ -14,4 +14,4 @@ tags:
 - [[PathIsolationManager]] - `references` [EXTRACTED]
 - [[Privilege Separation File Sandbox Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

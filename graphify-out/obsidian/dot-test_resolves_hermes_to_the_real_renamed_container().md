@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "_resolve_bot_container()"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/_resolve_bot_container
 ---
 
 # .test_resolves_hermes_to_the_real_renamed_container()
@@ -15,4 +15,4 @@ tags:
 - [[TestResolveBotContainer]] - `method` [EXTRACTED]
 - [[_resolve_bot_container()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/_resolve_bot_container

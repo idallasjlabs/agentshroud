@@ -12,8 +12,8 @@ tags:
 # .test_require_denied_raises_403_with_reason()
 
 ## Connections
-- [[SCLCaller_2]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

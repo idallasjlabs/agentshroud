@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Test handling 1-hour time-limited approval callback.
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members

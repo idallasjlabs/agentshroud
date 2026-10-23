@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "v0.9.0 — Apple Messages Integration"
+community: "SubagentGovernance"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/SubagentGovernance
 ---
 
 # subagent_governance.py
@@ -21,11 +21,11 @@ tags:
 - [[OutputTrustConfig]] - `contains` [EXTRACTED]
 - [[PrivilegePolicy]] - `contains` [EXTRACTED]
 - [[ResourceBudget]] - `contains` [EXTRACTED]
-- [[ResourceUsage_2]] - `contains` [EXTRACTED]
+- [[ResourceUsage]] - `contains` [EXTRACTED]
 - [[SubagentGovernance]] - `contains` [EXTRACTED]
 - [[_check_exfil_patterns()]] - `contains` [EXTRACTED]
 - [[_check_injection_patterns()]] - `contains` [EXTRACTED]
 - [[_check_pii_patterns()]] - `contains` [EXTRACTED]
 - [[progressive_trust_config.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

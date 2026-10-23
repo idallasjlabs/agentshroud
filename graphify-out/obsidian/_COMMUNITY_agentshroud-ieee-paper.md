@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # agentshroud-ieee-paper.md
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 23
 - [[AgentShroud™ Security Policy]] - document - SECURITY.md
 - [[CI Security Scanning Toolchain]] - concept - SECURITY.md
 - [[Compliance Alignment]] - document - SECURITY.md
-- [[Daily CVE Sync + Page Update Workflow]] - document - .github/workflows/update-cve-page.yml
+- [[Daily CVE Sync + Page Update Workflow_1]] - document - .github/workflows/update-cve-page.yml
 - [[Emergency Response]] - document - SECURITY.md
 - [[Kill Switch Operations]] - concept - CHEATSHEET.md
 - [[Layer 1 — Core Pipeline (P0)]] - document - SECURITY.md

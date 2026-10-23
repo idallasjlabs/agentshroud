@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # KillSwitchMonitor (2) (3)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
 
 ## Top bridge nodes
 - [[8. Common Troubleshooting Scenarios]] - degree 6, connects to 1 community

@@ -12,7 +12,7 @@ tags:
 # _make_stream()
 
 ## Connections
-- [[StreamReader]] - `references` [EXTRACTED]
+- [[StreamReader_3]] - `references` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]
 - [[test_bypass_with_egress_filter_lacking_approval_queue()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

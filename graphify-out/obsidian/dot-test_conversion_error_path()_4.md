@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Skill: Audit Branch (AB) — Merge Regression Detection"
-location: "L361"
+community: "MiddlewareManager (2)"
+location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
+  - community/MiddlewareManager_2
 ---
 
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromAuditChainEntry]] - `method` [EXTRACTED]
+- [[TestFromPipelineResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

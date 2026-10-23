@@ -12,7 +12,7 @@ tags:
 # .to_json()
 
 ## Connections
-- [[dot-to_dict()_15]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_14]] - `calls` [EXTRACTED]
 - [[SkillsManifest]] - `method` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 

@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L249"
+community: "MemoryIntegrityMonitor"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/MemoryIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[dot-_run_generate()]] - `references` [EXTRACTED]
+- [[dot-__init__()_67]] - `references` [EXTRACTED]
+- [[dot-archive_file()]] - `references` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[run()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

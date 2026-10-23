@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "AgentTarget"
-location: "L437"
+community: "UserSessionManager (2) (2)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/UserSessionManager_2_2
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
-- [[test_egress_allowed_domain()]] - `calls` [EXTRACTED]
-- [[test_egress_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
-- [[test_outbound_pii_stripped()]] - `calls` [EXTRACTED]
-- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 76
 ---
 
 # TestCollaboratorPromptClassifiers
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 76 nodes
 
 ## Members
@@ -94,11 +96,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 33 edges to [[_COMMUNITY_ModeRequest]]
-- 20 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 20 edges to [[_COMMUNITY_asyncio]]
 - 3 edges to [[_COMMUNITY_SecureBrowser (4)]]
 - 3 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 - 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan (2)]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 
 ## Top bridge nodes
 - [[test_local_oom_triggers_secondary_failover]] - degree 9, connects to 4 communities

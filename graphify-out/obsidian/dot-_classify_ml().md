@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "HeuristicClassifier"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/HeuristicClassifier
 ---
 
 # ._classify_ml()
@@ -18,4 +18,4 @@ tags:
 - [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 - [[EXPERIMENTAL ML model classification placeholder.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

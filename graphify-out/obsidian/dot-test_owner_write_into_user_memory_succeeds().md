@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # .test_owner_write_into_user_memory_succeeds()
@@ -15,4 +15,4 @@ tags:
 - [[TestUserMemoryWriteACL]] - `method` [EXTRACTED]
 - [[The owner may write into any user's private memory.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

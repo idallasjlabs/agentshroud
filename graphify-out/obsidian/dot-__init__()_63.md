@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Request (2)"
-location: "L59"
+community: "SecureBrowser (3)"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/SecureBrowser_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3

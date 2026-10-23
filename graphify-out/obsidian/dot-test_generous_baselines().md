@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "Any"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/Any
 ---
 
 # .test_generous_baselines()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/Any

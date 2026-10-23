@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "._proxy_request_impl()"
 location: "L4121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/_proxy_request_impl
 ---
 
 # ._suppress_duplicate_system_notice()
@@ -17,4 +17,4 @@ tags:
 - [[Suppress repeated startupshutdown system notices in short windows.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

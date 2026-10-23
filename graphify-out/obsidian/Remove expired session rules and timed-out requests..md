@@ -12,6 +12,6 @@ tags:
 # Remove expired session rules and timed-out requests.
 
 ## Connections
-- [[dot-cleanup_expired()]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_expired()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SkillGuard

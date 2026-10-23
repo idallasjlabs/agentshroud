@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "KeyRotationManager (2)"
+community: "test_a2a_policy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/test_a2a_policypy
 ---
 
 # agent_isolation.py
@@ -19,9 +19,9 @@ tags:
 - [[IsolationCheck]] - `contains` [EXTRACTED]
 - [[IsolationStatus]] - `contains` [EXTRACTED]
 - [[IsolationVerifier]] - `contains` [EXTRACTED]
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `references` [INFERRED]
-- [[OPENCLAW_SANDBOX_MODE]] - `references` [INFERRED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `references` [INFERRED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `references` [INFERRED]
 - [[drift_detector.py]] - `references` [EXTRACTED]
-- [[env_guard.py_2]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

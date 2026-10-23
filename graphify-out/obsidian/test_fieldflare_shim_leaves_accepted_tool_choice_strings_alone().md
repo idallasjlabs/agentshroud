@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_strip_fieldflare_unsupported_fields()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[parametrize]] - `references` [EXTRACTED]
+- [[parametrize_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

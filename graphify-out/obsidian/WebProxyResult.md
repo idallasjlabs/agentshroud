@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-check_request()]] - `calls` [EXTRACTED]
-- [[dot-flagged()_1]] - `method` [EXTRACTED]
+- [[dot-flagged()]] - `method` [EXTRACTED]
 - [[dot-scan_response()]] - `calls` [EXTRACTED]
 - [[dot-to_dict()]] - `method` [EXTRACTED]
 - [[MockDNSVerdict]] - `uses` [INFERRED]

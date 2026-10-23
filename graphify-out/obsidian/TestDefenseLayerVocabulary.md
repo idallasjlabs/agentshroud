@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path (3)"
+community: "_AGENT_CVE_REGISTRIES"
 location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/_AGENT_CVE_REGISTRIES
 ---
 
 # TestDefenseLayerVocabulary
@@ -18,4 +18,4 @@ tags:
 - [[_OPENCLAW_CVE_REGISTRY]] - `references` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_3
+#graphify/code #graphify/EXTRACTED #community/_AGENT_CVE_REGISTRIES

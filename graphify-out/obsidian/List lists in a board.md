@@ -12,6 +12,6 @@ tags:
 # List lists in a board
 
 ## Connections
-- [[Usage_95]] - `contains` [EXTRACTED]
+- [[Usage_96]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2

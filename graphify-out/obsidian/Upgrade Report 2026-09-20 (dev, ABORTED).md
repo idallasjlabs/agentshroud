@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-20-dev.md"
 type: "document"
-community: "_make_sanitizer()"
+community: "Sunday Upgrade prompt"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Upgrade Report 2026-09-20 (dev, ABORTED)
@@ -20,4 +20,4 @@ tags:
 - [[discover_upstream_versions.py]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

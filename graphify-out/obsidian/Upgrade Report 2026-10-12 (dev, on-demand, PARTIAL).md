@@ -15,7 +15,7 @@ tags:
 - [[Compose network version-label mismatch forces network recreate]] - `references` [EXTRACTED]
 - [[GitHub Actions version inventory (first time in scope)]] - `references` [EXTRACTED]
 - [[OpenClaw 2026.10.2 agents.list - agents.entries migration]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `references` [EXTRACTED]
 - [[Tap-approval pipeline (PR 502)]] - `references` [EXTRACTED]
 - [[Two-pass pip-audit (bump, re-audit, bump again)]] - `references` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `references` [EXTRACTED]

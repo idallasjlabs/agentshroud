@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # .test_middleware_owner_bypass()
@@ -15,4 +15,4 @@ tags:
 - [[Test that owner can perform cross-session actions.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

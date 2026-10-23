@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 74
 ---
 
 # ProgressiveLockdown
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 74 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 74
 - [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[Emit a structured per-turn latency record for a voice ``forward`` call.      Re]] - rationale - voice_gateway/server.py
 - [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[FastAPI_4]] - code - voice_gateway/server.py
+- [[FastAPI_3]] - code - voice_gateway/server.py
 - [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
@@ -95,7 +97,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_GATEWAY_OP_PROXY_URL]]
 - 4 edges to [[_COMMUNITY_AgentShroud (system, C4 context) (2) (2)]]
 - 3 edges to [[_COMMUNITY_i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]]
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Verification (13-check driver)]]
 - 1 edge to [[_COMMUNITY_proxy_status.py]]
 

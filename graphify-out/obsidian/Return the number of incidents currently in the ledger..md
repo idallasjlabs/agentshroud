@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "KeyVaultConfig"
 location: "L344"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/KeyVaultConfig
 ---
 
 # Return the number of incidents currently in the ledger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-incident_count()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.47
 members: 10
 ---
 
 # Regression guard (2026-08-30): the report scanned :latest tags while deploys…
 
+**Cohesion:** 0.47 - moderately connected
 **Members:** 10 nodes
 
 ## Members
@@ -28,8 +30,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Red Team Assessment v1.2.0]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 
 ## Top bridge nodes
 - [[dockerscriptssecurity-scan.sh]] - degree 12, connects to 3 communities

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "EgressFilterConfig (2)"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy_2
+  - community/EgressFilterConfig_2
 ---
 
 # EgressAction
 
 ## Connections
-- [[dot-_record()_1]] - `references` [EXTRACTED]
+- [[dot-_record()]] - `references` [EXTRACTED]
 - [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
@@ -38,18 +38,18 @@ tags:
 - [[TestMonitorMode]] - `uses` [INFERRED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
-- [[_DummyTargetWriter]] - `uses` [INFERRED]
+- [[_DummyTargetWriter_1]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `uses` [INFERRED]
 - [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig_2

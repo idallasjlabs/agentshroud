@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # test_dns_canvas_coverage.py
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members

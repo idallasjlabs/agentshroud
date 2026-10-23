@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "ContextGuard"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/ContextGuard
 ---
 
 # .export_leakage_report()
@@ -16,4 +16,4 @@ tags:
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Export leakage findings to a report file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

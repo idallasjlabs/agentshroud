@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "SecurityPipeline (2)"
+community: "PathIsolationManager"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/PathIsolationManager
 ---
 
 # Test getting user temp path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_user_temp_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "_wrap_response() (2)"
-location: "L509"
+community: "ModuleStatsCollector"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/ModuleStatsCollector
 ---
 
 # .setup_method()
 
 ## Connections
-- [[ContainerSnapshot]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `calls` [EXTRACTED]
-- [[TestDriftDetector]] - `method` [EXTRACTED]
+- [[TestEnforcementWiring]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

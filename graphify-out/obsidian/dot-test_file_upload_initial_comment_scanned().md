@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[_pass_result()]] - `calls` [EXTRACTED]
 - [[files.upload initial_commenttitle text is scanned.]] - `rationale_for` [EXTRACTED]
 

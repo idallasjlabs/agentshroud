@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "ModuleStatsCollector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/ModuleStatsCollector
 ---
 
 # test_module_stats.py
 
 ## Connections
-- [[Decision_2]] - `imports` [EXTRACTED]
+- [[Decision_6]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[ModuleStatsCollector]] - `imports` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `contains` [EXTRACTED]
 - [[TestEnforcementWiring]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `contains` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

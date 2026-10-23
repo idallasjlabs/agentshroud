@@ -12,6 +12,6 @@ tags:
 # Load from a config dictionary (e.g. from YAML).
 
 ## Connections
-- [[dot-from_dict()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

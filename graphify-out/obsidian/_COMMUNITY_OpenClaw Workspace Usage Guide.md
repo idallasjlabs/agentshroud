@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 41
 ---
 
 # OpenClaw Workspace Usage Guide
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 41 nodes
 
 ## Members
@@ -23,7 +25,7 @@ members: 41
 - [[If not → escalate to field team via ops-alerts]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Role_17]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_16]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md

@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "GroupConfig"
-location: "L380"
+community: "ToolResultSanitizer"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GroupConfig
+  - graphify/INFERRED
+  - community/ToolResultSanitizer
 ---
 
 # Path
 
 ## Connections
-- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

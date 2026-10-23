@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "What is the symptom?"
-location: "L15"
+community: "client_from_env"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/client_from_env
 ---
 
 # Purpose
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/document #graphify/EXTRACTED #community/client_from_env

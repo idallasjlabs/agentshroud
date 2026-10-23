@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/static/chat.html"
 type: "code"
-community: "_make_proxy()"
+community: "AgentTarget (2)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AgentTarget_2
 ---
 
 # sendMessage() JS — POST /forward from browser chat UI
@@ -14,4 +14,4 @@ tags:
 - [[dot-forward_to_agent()]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Secure Chat Interface (static HTMLJS)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

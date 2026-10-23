@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "AgentShroud v0.9.0 (2)"
+community: "SubagentGovernance"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090_2
+  - community/SubagentGovernance
 ---
 
 # TestPatternDetection
@@ -29,4 +29,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090_2
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

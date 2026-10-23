@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L46"
+community: "plan_remediation"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/plan_remediation
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
+- [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

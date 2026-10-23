@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Rename a group (CC-34).]] - `rationale_for` [EXTRACTED]
 - [[RenameGroupRequest]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

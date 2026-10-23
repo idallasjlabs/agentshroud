@@ -12,7 +12,7 @@ tags:
 # .test_sequential_upgrades()
 
 ## Connections
-- [[TestUpgrade]] - `method` [EXTRACTED]
+- [[TestUpgrade_1]] - `method` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

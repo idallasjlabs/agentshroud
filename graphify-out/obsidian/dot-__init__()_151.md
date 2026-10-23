@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L95"
+community: "ApprovalQueueConfig"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[CanaryConfig_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L50"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,9 @@ tags:
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

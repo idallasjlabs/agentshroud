@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2) (4)"
+community: "MiddlewareManager"
 location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_4
+  - community/MiddlewareManager
 ---
 
 # Input normalization should strip zero-width obfuscation before guards run.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_middleware_normalizes_invisible_unicode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_4
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

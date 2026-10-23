@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # Empty prompt should still register and verify cleanly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_empty_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

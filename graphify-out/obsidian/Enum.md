@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_main_endpoints.py"
+community: "scanner_integration.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/scanner_integrationpy
 ---
 
 # Enum
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
-- [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
+- [[ProxyAction]] - `inherits` [EXTRACTED]
+- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

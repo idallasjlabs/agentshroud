@@ -16,7 +16,7 @@ tags:
 - [[Rule Container Shell Spawned]] - `references` [EXTRACTED]
 - [[alert_critical()]] - `defines` [EXTRACTED]
 - [[gateway-start.sh]] - `calls` [EXTRACTED]
-- [[log()_6]] - `defines` [EXTRACTED]
+- [[log()_5]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

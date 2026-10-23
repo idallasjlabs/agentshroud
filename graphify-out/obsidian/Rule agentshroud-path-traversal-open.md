@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # Rule: agentshroud-path-traversal-open
@@ -15,4 +15,4 @@ tags:
 - [[file_sandbox.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/concept #graphify/EXTRACTED #community/FileSandbox

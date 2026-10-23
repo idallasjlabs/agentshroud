@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "SSHProxy"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHProxy
 ---
 
 # SSHConfig
 
 ## Connections
-- [[dot-__init__()_148]] - `references` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_163]] - `references` [EXTRACTED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

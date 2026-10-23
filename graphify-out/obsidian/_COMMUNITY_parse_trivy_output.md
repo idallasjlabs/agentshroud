@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.16
 members: 19
 ---
 
 # parse_trivy_output
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 19 nodes
 
 ## Members

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token"
+community: "TelegramAPIProxy"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token
+  - community/TelegramAPIProxy
 ---
 
 # If the pipeline crashes on a form payload, non-owner messages must be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_form_outbound_fails_closed_for_non_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

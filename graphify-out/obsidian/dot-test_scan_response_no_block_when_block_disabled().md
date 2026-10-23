@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "WebProxyConfig"
+community: "ApprovalQueueConfig"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_scan_response_no_block_when_block_disabled()
@@ -16,4 +16,4 @@ tags:
 - [[CanaryTripwire]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

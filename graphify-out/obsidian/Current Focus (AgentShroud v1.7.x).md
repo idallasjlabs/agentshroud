@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Collaborator workspace SOUL.md (Isaiah persona)]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `conceptually_related_to` [INFERRED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `conceptually_related_to` [INFERRED]
 
 #graphify/concept #graphify/EXTRACTED #community/_wrap_response_2

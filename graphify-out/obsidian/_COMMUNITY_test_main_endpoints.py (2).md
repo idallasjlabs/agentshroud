@@ -1,21 +1,47 @@
 ---
 type: community
-members: 8
+cohesion: 0.06
+members: 32
 ---
 
 # test_main_endpoints.py (2)
 
-**Members:** 8 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[dot-_triage()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_unrelated_classes_unchanged()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_xxe_class_is_covered_by_the_gateway_control()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[It calls itself DoS; the generic DOS profile is containment-only. Left as DOS…]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[TestTriageClassLevelCoverage]] - code - gateway/tests/test_xml_dtd_control.py
-- [[The durable statement is at the CLASS level, not per-CVE. A register entry…]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[The new rule runs first, so prove it does not swallow neighbours.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[1. Health Check (Gateway)]] - document - docker/QUICKSTART.md
+- [[2. Get Auth Token (Gateway)]] - document - docker/QUICKSTART.md
+- [[3. Send Test Message]] - document - docker/QUICKSTART.md
+- [[4. Verify Isaiah's Personality]] - document - docker/QUICKSTART.md
+- [[API Key Error]] - document - docker/QUICKSTART.md
+- [[AgentShroud Phase 3 - Quick Start Guide]] - document - docker/QUICKSTART.md
+- [[Architecture Diagram_1]] - document - docker/QUICKSTART.md
+- [[Check File Permissions]] - document - docker/QUICKSTART.md
+- [[Check Status_1]] - document - docker/QUICKSTART.md
+- [[Container Won't Start_1]] - document - docker/QUICKSTART.md
+- [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
+- [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
+- [[Graceful Shutdown]] - document - docker/QUICKSTART.md
+- [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
+- [[Launch the Stack]] - document - docker/QUICKSTART.md
+- [[Next Steps_3]] - document - docker/QUICKSTART.md
+- [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
+- [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
+- [[Prerequisites_2]] - document - docker/QUICKSTART.md
+- [[QUICKSTART]] - document - docker/QUICKSTART.md
+- [[Security Validation_1]] - document - docker/QUICKSTART.md
+- [[Server-side setup]] - document - docker/QUICKSTART.md
+- [[Setup (One-Time)]] - document - docker/QUICKSTART.md
+- [[Start Everything]] - document - docker/QUICKSTART.md
+- [[Step 1 Add Your API Key]] - document - docker/QUICKSTART.md
+- [[Stop the Stack_1]] - document - docker/QUICKSTART.md
+- [[Success Criteria]] - document - docker/QUICKSTART.md
+- [[Test the System]] - document - docker/QUICKSTART.md
+- [[Troubleshooting_12]] - document - docker/QUICKSTART.md
+- [[Verify]] - document - docker/QUICKSTART.md
+- [[Verify Isolation]] - document - docker/QUICKSTART.md
+- [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +49,3 @@ members: 8
 TABLE source_file, type FROM #community/test_main_endpointspy_2
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
-
-## Top bridge nodes
-- [[TestTriageClassLevelCoverage]] - degree 6, connects to 1 community

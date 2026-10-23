@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # agentshroud-blueteam/SKILL.md (3)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -21,7 +23,7 @@ members: 18
 - [[Preflight  Baseline]] - document - reports/upgrade-2026-09-06-prod.md
 - [[Rollback Instructions]] - document - reports/upgrade-2026-09-06-prod.md
 - [[Security Findings]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Summary_16]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Summary_17]] - document - reports/upgrade-2026-09-06-prod.md
 - [[Time spent]] - document - reports/upgrade-2026-09-06-prod.md
 - [[Upgrade Table]] - document - reports/upgrade-2026-09-06-prod.md
 - [[Wazuh  SOC]] - document - reports/upgrade-2026-09-06-prod.md
@@ -35,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ModuleStatsCollector]]
+- 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)]]
 
 ## Top bridge nodes
 - [[AgentShroud Weekly Upgrade — 2026-09-06]] - degree 13, connects to 1 community

@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L631"
+community: "MCPPolicyEngine"
+location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/MCPPolicyEngine
 ---
 
 # stop_service()
 
 ## Connections
-- [[JSONResponse]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ServiceActionRequest]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[Stop a specific service container.]] - `rationale_for` [EXTRACTED]
+- [[_get_engine()]] - `calls` [EXTRACTED]
+- [[_validate_service_name()]] - `calls` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

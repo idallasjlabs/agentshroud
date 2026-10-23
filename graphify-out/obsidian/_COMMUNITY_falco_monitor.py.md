@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # falco_monitor.py
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 15
 - [[EgressFilterConfig.is_denylisted(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Key Classes  Functions_32]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
-- [[Purpose_132]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Purpose_130]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 - [[Threat Model_20]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md

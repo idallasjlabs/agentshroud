@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 31
 ---
 
 # scripts/render-agents.sh (agents-src -> .llm_settings)
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 31 nodes
 
 ## Members

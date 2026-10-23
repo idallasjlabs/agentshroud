@@ -22,7 +22,7 @@ tags:
 - [[check_noop_gate()]] - `calls` [EXTRACTED]
 - [[die()_1]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_baseline()]] - `calls` [EXTRACTED]
 - [[phase_discover()]] - `calls` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[phase_verify()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `contains` [EXTRACTED]
 - [[sunday_handoff_status()]] - `calls` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
 - [[write_handoff()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

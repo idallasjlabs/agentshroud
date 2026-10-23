@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "Any"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/Any
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
-- [[TestWSTokens]] - `method` [EXTRACTED]
+- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/Any

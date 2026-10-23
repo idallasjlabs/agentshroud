@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "lifespan()"
+community: "CompetitiveIntelReport"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/CompetitiveIntelReport
 ---
 
 # test_build_egress_live_snapshot_enriches_pending_metrics()
@@ -15,4 +15,4 @@ tags:
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

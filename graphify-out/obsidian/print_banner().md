@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Display chat console banner]] - `rationale_for` [EXTRACTED]
 - [[chat_console.py]] - `contains` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[main()_30]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice

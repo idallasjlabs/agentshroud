@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "ServiceManager"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ServiceManager
 ---
 
 # ._logs_via_socket()
@@ -16,4 +16,4 @@ tags:
 - [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

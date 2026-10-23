@@ -12,7 +12,7 @@ tags:
 # .test_two_empty_sbom()
 
 ## Connections
-- [[TestScoreSupplyChain_1]] - `method` [EXTRACTED]
+- [[TestScoreSupplyChain]] - `method` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OpenSCAP

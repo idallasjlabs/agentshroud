@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "EgressFilter"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ApprovalQueueConfig_7
 ---
 
 # spacy.md
@@ -17,4 +17,4 @@ tags:
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

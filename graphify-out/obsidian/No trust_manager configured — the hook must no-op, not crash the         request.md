@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L938"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # No trust_manager configured — the hook must no-op, not crash the         request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_missing_trust_manager_does_not_raise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

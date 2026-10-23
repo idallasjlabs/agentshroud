@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_req (4)"
+community: "TelegramAPIProxy"
 location: "L2110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_req_4
+  - community/TelegramAPIProxy
 ---
 
 # Collaborator outbound HTML code/pre markup should be stripped to plain text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_html_code_markup_is_stripped_and_parse_mode_removed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_req_4
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

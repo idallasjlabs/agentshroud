@@ -12,8 +12,8 @@ tags:
 # FODL — Fluence Operational Data Lakehouse
 
 ## Connections
-- [[AWS Athena MCP server]] - `conceptually_related_to` [INFERRED]
-- [[AWS Glue MCP server]] - `conceptually_related_to` [INFERRED]
+- [[AWS Athena MCP server_1]] - `conceptually_related_to` [INFERRED]
+- [[AWS Glue MCP server_1]] - `conceptually_related_to` [INFERRED]
 - [[CDAS — Central Data Acquisition Systems]] - `shares_data_with` [EXTRACTED]
 - [[Data platform guardrails (schemapartition stability)]] - `conceptually_related_to` [INFERRED]
 - [[FY26 Cost Reduction Plan (40% target)]] - `references` [EXTRACTED]

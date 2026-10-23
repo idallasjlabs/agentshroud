@@ -12,7 +12,7 @@ tags:
 # wait-for-text.sh script
 
 ## Connections
-- [[usage()_4]] - `calls` [EXTRACTED]
+- [[usage()_2]] - `calls` [EXTRACTED]
 - [[wait-for-text.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy_2

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "EgressFilterConfig (4) (2)"
+community: "KillSwitchMonitor"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4_2
+  - community/KillSwitchMonitor
 ---
 
 # Automated verification that verify_killswitch() returns required fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchVerification]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4_2
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Production Safety Checklist (SKILL)"
-location: "L95"
+community: "SecurityPipeline (2)"
+location: "L1658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/SecurityPipeline_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_56]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

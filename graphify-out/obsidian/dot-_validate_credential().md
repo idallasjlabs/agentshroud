@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-rotate_credential()]] - `calls` [EXTRACTED]
 - [[dot-validate()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `references` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Validate a credential using registered validator.]] - `rationale_for` [EXTRACTED]
 

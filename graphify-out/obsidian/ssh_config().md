@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L35"
+community: "MCPPermissionManager (2)"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPPermissionManager_2
 ---
 
 # ssh_config()
 
 ## Connections
-- [[SSHConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

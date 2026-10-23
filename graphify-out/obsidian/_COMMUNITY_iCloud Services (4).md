@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 26
 ---
 
 # iCloud Services (4)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -44,7 +46,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 14 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
-- 8 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 8 edges to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_SecurityPipeline]]
 
 ## Top bridge nodes

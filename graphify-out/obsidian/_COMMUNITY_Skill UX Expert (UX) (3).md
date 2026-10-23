@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 31
 ---
 
 # Skill: UX Expert (UX) (3)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
@@ -51,7 +53,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET) (2)]]
 - 1 edge to [[_COMMUNITY_dot-githubmcp.json]]
-- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_BotConfig (2)]]
 
 ## Top bridge nodes
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 4 communities

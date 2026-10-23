@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "._make_proxy()"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_make_proxy
 ---
 
 # Agent cannot write to security framework files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_security_module_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

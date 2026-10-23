@@ -12,6 +12,6 @@ tags:
 # .test_not_run_without_binary_or_report()
 
 ## Connections
-- [[TestTrivySummary]] - `method` [EXTRACTED]
+- [[TestTrivySummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/blucli/SKILLmd

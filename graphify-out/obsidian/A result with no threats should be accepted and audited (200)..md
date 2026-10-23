@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "TestMCPResultEndpoint"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/TestMCPResultEndpoint
 ---
 
 # A result with no threats should be accepted and audited (200).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_clean_result_accepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPResultEndpoint

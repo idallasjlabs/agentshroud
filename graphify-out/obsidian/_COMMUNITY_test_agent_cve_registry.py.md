@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 54
 ---
 
 # test_agent_cve_registry.py
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 54 nodes
 
 ## Members
@@ -37,7 +39,7 @@ members: 54
 - [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
 - [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
 - [[_make_pii_sanitizer()]] - code - gateway/tests/test_redteam_probes.py
-- [[pipeline()_1]] - code - gateway/tests/test_redteam_probes.py
+- [[pipeline()]] - code - gateway/tests/test_redteam_probes.py
 - [[test_admin_action_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
 - [[test_audit_chain_records_all_events()]] - code - gateway/tests/test_redteam_probes.py
 - [[test_audit_chain_tamper_detection()]] - code - gateway/tests/test_redteam_probes.py
@@ -71,19 +73,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_socrouter.py]]
+- 5 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline (2)]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
+- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 2 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
 - 2 edges to [[_COMMUNITY_test_agent_cve_registry.py (2)]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
 - 1 edge to [[_COMMUNITY_api.py (2)]]
 
 ## Top bridge nodes
-- [[test_redteam_probes.py]] - degree 39, connects to 8 communities
+- [[test_redteam_probes.py]] - degree 39, connects to 9 communities
 - [[_make_full_pipeline()]] - degree 20, connects to 7 communities
-- [[_make_pii_sanitizer()]] - degree 6, connects to 2 communities
+- [[_make_pii_sanitizer()]] - degree 6, connects to 3 communities
 - [[test_pipeline_fails_closed_without_pii()]] - degree 4, connects to 2 communities
 - [[_make_approval_queue()]] - degree 4, connects to 1 community

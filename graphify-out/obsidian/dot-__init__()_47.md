@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
-location: "L125"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_4
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception_3]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "CrossBotTrustLedger (2)"
+community: "AgentShroud Security Value Proposition"
 location: "L860"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_2
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # Check if a tool call requires approval and wait for it if needed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_approval_required()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger_2
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

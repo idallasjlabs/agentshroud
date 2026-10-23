@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test that non-EXIF data is preserved.]] - `rationale_for` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft

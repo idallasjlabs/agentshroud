@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "lifespan()"
-location: "L119"
+community: ".connect()"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/connect
 ---
 
 # WebSocket
 
 ## Connections
-- [[approval_websocket()]] - `references` [EXTRACTED]
+- [[dot-connect()]] - `references` [EXTRACTED]
+- [[dot-disconnect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/connect

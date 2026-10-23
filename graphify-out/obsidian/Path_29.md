@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L54"
+community: "Job details"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Job_details
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_115]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/Job_details

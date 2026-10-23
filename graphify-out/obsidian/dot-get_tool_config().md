@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_config_for_tool()]] - `calls` [EXTRACTED]
 - [[Get the PII configuration for a specific tool]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

@@ -1,32 +1,33 @@
 ---
 type: community
-members: 56
+cohesion: 0.08
+members: 54
 ---
 
 # _make_sanitizer()
 
-**Members:** 56 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 54 nodes
 
 ## Members
+- [[Baseline phase logs PASS with 0 images captured]] - concept - reports/upgrade-2026-09-22.md
 - [[CVE triage running-version gap (98 advisories, 9 registries untriageable)]] - concept - reports/upgrade-2026-09-22.md
 - [[CVE-2026-102268 PyJWT HMAC forgery (Hermes image)]] - concept - reports/upgrade-2026-10-04.md
 - [[Colima data disk mntlima-colima 100% full (ENOSPC crash loops)]] - concept - reports/upgrade-2026-09-23-20260923-1400.md
 - [[Colima docker-socket forward death under load]] - concept - reports/upgrade-2026-09-20-dev.md
 - [[Dev Colima VM loses all HTTPS egress]] - concept - reports/upgrade-2026-10-11.md
-- [[Devprod account split (agentshroud-bot vs ijefferson.admin)]] - concept - reports/upgrade-2026-09-20-dev.md
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - rationale - reports/upgrade-2026-09-24.md
 - [[Exit 50 build failed and rollback failed (stack may be degraded)]] - concept - reports/upgrade-2026-09-22.md
 - [[Hermes anthropic-provider cron jobs fail No Anthropic credentials found]] - concept - reports/upgrade-2026-09-27.md
 - [[Host memory pressure on marvin (near-OOM, 90%+ swap)]] - concept - reports/upgrade-2026-09-21.md
-- [[Host network filter blocking Homebrew PythonNode outbound]] - concept - reports/upgrade-2026-09-20-dev.md
 - [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - concept - reports/upgrade-2026-09-22.md
 - [[Lima ssh.config lacks keepalive directives]] - concept - reports/upgrade-2026-09-23-20260923-1400.md
 - [[Local Trivy scan failures (DB mirror timeouts, local-image 401 fallback)]] - concept - reports/upgrade-2026-09-22.md
-- [[PATH_2]] - code - scripts/sunday-upgrade.sh
+- [[No-op gate false negative baseline captured after pin commits]] - concept - reports/upgrade-2026-09-25.md
+- [[PATH_7]] - code - scripts/sunday-upgrade.sh
 - [[Prod promotion blocked dev tested an unmerged branch]] - concept - reports/upgrade-2026-10-11.md
 - [[Refuse to build with uncommitted changes in build context]] - rationale - reports/upgrade-2026-09-22.md
 - [[Running dev images predate committed Dockerfile bumps]] - concept - reports/upgrade-2026-09-23.md
-- [[S14 Hermes run-standalone.sh image tag falls back to dockerversions.env, not 'latest']] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[SCRUM-185 (9-registry triage gap ticket)]] - concept - reports/upgrade-2026-10-04.md
 - [[SCRUM-187 (Hermes credential gap ticket)]] - concept - reports/upgrade-2026-09-27.md
 - [[SUNDAY_BUILD_VIA_VM=1 detached in-VM build]] - rationale - reports/upgrade-2026-09-23-20260923-1400.md
@@ -34,7 +35,6 @@ members: 56
 - [[Scan gate crashed on 0-CRITICAL images (grep -o under pipefail)]] - concept - reports/upgrade-2026-09-25.md
 - [[Shared working-tree collision between concurrent sessions]] - rationale - reports/upgrade-2026-09-21.md
 - [[Soak status boot-proof is not work-proof]] - rationale - reports/upgrade-2026-09-25.md
-- [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - document - reports/upgrade-2026-09-20-dev.md
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - document - reports/upgrade-2026-09-21.md
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - document - reports/upgrade-2026-09-22.md
 - [[Upgrade Report 2026-09-23 0300 (dev, ABORTED)]] - document - reports/upgrade-2026-09-23.md
@@ -73,25 +73,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_PIIConfig]]
-- 7 edges to [[_COMMUNITY__wrap_response() (2)]]
-- 5 edges to [[_COMMUNITY_Sunday Upgrade prompt]]
-- 5 edges to [[_COMMUNITY__w]]
+- 13 edges to [[_COMMUNITY_PIIConfig]]
+- 9 edges to [[_COMMUNITY_Sunday Upgrade prompt]]
+- 6 edges to [[_COMMUNITY__wrap_response() (2)]]
 - 5 edges to [[_COMMUNITY_run_multi_host]]
-- 4 edges to [[_COMMUNITY_browserscriptsbrowse.py]]
 - 4 edges to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
-- 2 edges to [[_COMMUNITY_Path (2)]]
+- 4 edges to [[_COMMUNITY__w]]
+- 3 edges to [[_COMMUNITY_browserscriptsbrowse.py]]
+- 3 edges to [[_COMMUNITY_run-standalone.sh]]
+- 2 edges to [[_COMMUNITY_dot-_run_and_read]]
 - 2 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_Path]]
 - 1 edge to [[_COMMUNITY_DataExfilVolumeGuard]]
 - 1 edge to [[_COMMUNITY__FakeUpstreamWS]]
-- 1 edge to [[_COMMUNITY__t]]
-- 1 edge to [[_COMMUNITY_dot-_run_and_read]]
 - 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
 
 ## Top bridge nodes
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - degree 16, connects to 4 communities
-- [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - degree 13, connects to 3 communities
+- [[versions.env]] - degree 6, connects to 4 communities
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - degree 11, connects to 3 communities
-- [[check-soak-status.sh]] - degree 9, connects to 3 communities
-- [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - degree 8, connects to 3 communities
+- [[dev-result-date.json dev-prod handoff contract]] - degree 10, connects to 3 communities
+- [[check-soak-status.sh]] - degree 8, connects to 3 communities

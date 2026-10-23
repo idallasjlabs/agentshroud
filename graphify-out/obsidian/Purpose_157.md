@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "test_runtime_engines.py (2)"
-location: "L12"
+community: "chat_console.py"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy_2
+  - community/chat_consolepy
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_runtime_enginespy_2
+#graphify/document #graphify/EXTRACTED #community/chat_consolepy

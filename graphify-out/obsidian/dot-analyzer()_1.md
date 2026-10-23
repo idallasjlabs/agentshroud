@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_tool_chain_analyzer.py"
 location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_tool_chain_analyzerpy
 ---
 
 # .analyzer()
@@ -15,4 +15,4 @@ tags:
 - [[TestReversibilityScoring]] - `method` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_tool_chain_analyzerpy

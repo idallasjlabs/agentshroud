@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "asyncio"
+community: "SubagentMonitor"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/SubagentMonitor
 ---
 
 # SubagentEvent
 
 ## Connections
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_1]] - `references` [EXTRACTED]
+- [[dot-get_audit_log()_2]] - `references` [EXTRACTED]
 - [[dot-get_flagged_events()]] - `references` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/SubagentMonitor

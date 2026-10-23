@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "test_soc_egress_endpoints.py"
+community: "HeuristicClassifier"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/HeuristicClassifier
 ---
 
 # Heuristic-based classification using multi-signal analysis.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_classify_heuristic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestVersionRoutes"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L684"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # .test_parse_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWazuhParser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

@@ -12,6 +12,6 @@ tags:
 # Dashboard Not Loading
 
 ## Connections
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3

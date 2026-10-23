@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 12
 ---
 
 # Report Delivery Format Instructions
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -15,8 +17,8 @@ members: 12
 - [[Configuration_20]] - document - skills/custom/securebrowser/README.md
 - [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
 - [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_154]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_64]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_153]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Related Notes_59]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
@@ -29,9 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DelegationManager (2)]]
 - 1 edge to [[_COMMUNITY_test_security.py]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
+- 1 edge to [[_COMMUNITY_DelegationManager]]
 
 ## Top bridge nodes
 - [[7. Deployment]] - degree 5, connects to 1 community

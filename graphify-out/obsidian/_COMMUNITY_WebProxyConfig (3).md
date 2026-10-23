@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.27
 members: 12
 ---
 
 # WebProxyConfig (3)
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 12 nodes
 
 ## Members

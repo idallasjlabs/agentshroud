@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "cli/main.py"
+community: "asyncio"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/asyncio
 ---
 
 # test_clamav_pipeline.py
@@ -21,12 +21,14 @@ tags:
 - [[asyncio_3]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
 - [[clamd_sock_path()]] - `contains` [EXTRACTED]
-- [[scan_bytes()]] - `imports` [EXTRACTED]
+- [[test_apt_repo_signatures_are_verified()]] - `contains` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
+- [[test_clamav_comes_from_proposed_updates_and_nothing_else_does()]] - `contains` [EXTRACTED]
 - [[test_clamd_available_false_for_stale_socket_left_by_killed_daemon()]] - `contains` [EXTRACTED]
 - [[test_clamd_available_false_when_socket_missing()]] - `contains` [EXTRACTED]
 - [[test_clamd_available_true_when_daemon_listening()]] - `contains` [EXTRACTED]
 - [[test_clamd_socket_constant_matches_both_images_clamd_conf()]] - `contains` [EXTRACTED]
+- [[test_gateway_upgrades_pip_past_the_vendored_certifi_advisory()]] - `contains` [EXTRACTED]
 - [[test_pipeline_clamav_clean_payload()]] - `contains` [EXTRACTED]
 - [[test_pipeline_clamav_error_fail_open()]] - `contains` [EXTRACTED]
 - [[test_pipeline_clamav_malware_blocked()]] - `contains` [EXTRACTED]
@@ -42,4 +44,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/asyncio

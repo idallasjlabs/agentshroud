@@ -1,19 +1,22 @@
 ---
-source_file: ""
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

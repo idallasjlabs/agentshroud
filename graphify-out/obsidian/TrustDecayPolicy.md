@@ -12,11 +12,11 @@ tags:
 # TrustDecayPolicy
 
 ## Connections
-- [[dot-__init__()_142]] - `references` [EXTRACTED]
+- [[dot-__init__()_194]] - `references` [EXTRACTED]
 - [[dot-__post_init__()_9]] - `method` [EXTRACTED]
 - [[dot-build_full_mesh()]] - `references` [EXTRACTED]
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - `rationale_for` [EXTRACTED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
 - [[TestBuildFullMesh]] - `uses` [INFERRED]
 - [[TestCrossBotTrustLedgerConstruction]] - `uses` [INFERRED]
@@ -25,7 +25,7 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 32
 ---
 
 # test_daily_cve_report.py
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -15,12 +17,12 @@ members: 32
 - [[dot-test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[dot-test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[dot-test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
-- [[dot-to_dict()_4]] - code - scripts/auto_remediate_cves.py
-- [[Any_35]] - code - scripts/auto_remediate_cves.py
+- [[dot-to_dict()_6]] - code - scripts/auto_remediate_cves.py
+- [[Any_37]] - code - scripts/auto_remediate_cves.py
 - [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re]] - rationale - scripts/auto_remediate_cves.py
 - [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py
 - [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - rationale - scripts/auto_remediate_cves.py
-- [[Path_24]] - code - scripts/auto_remediate_cves.py
+- [[Path_28]] - code - scripts/auto_remediate_cves.py
 - [[Read one ``KEY=value`` pin from a versions.env-style file.]] - rationale - scripts/auto_remediate_cves.py
 - [[Reading and rewriting dockerversions.env.]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[RemediationPlan dataclass]] - code - scripts/auto_remediate_cves.py
@@ -31,11 +33,11 @@ members: 32
 - [[The rollback path a failed deploy must restore the pin verbatim,         downst]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[What a version bump would and would not remediate.      Every ``under_review`` a]] - rationale - scripts/auto_remediate_cves.py
 - [[_print_plan()]] - code - scripts/auto_remediate_cves.py
-- [[_run()_2]] - code - scripts/auto_remediate_cves.py
+- [[_run()_3]] - code - scripts/auto_remediate_cves.py
 - [[apply_remediation()]] - code - scripts/auto_remediate_cves.py
 - [[auto_remediate_cves.py]] - code - scripts/auto_remediate_cves.py
 - [[load_registry()]] - code - scripts/auto_remediate_cves.py
-- [[main()_15]] - code - scripts/auto_remediate_cves.py
+- [[main()_12]] - code - scripts/auto_remediate_cves.py
 - [[parse_version()_1]] - code - scripts/auto_remediate_cves.py
 - [[read_pin()]] - code - scripts/auto_remediate_cves.py
 - [[test_pin_revert_restores_the_exact_original_string]] - code - gateway/tests/test_auto_remediate_cves.py

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # ControlCenter
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -32,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 9 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 - 4 edges to [[_COMMUNITY__adv()]]
 - 1 edge to [[_COMMUNITY_fixture (2)]]
 - 1 edge to [[_COMMUNITY_The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).… (2)]]

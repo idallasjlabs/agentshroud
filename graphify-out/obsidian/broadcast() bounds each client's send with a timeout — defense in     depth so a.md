@@ -12,6 +12,6 @@ tags:
 # broadcast() bounds each client's send with a timeout — defense in     depth so a
 
 ## Connections
-- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `rationale_for` [EXTRACTED]
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

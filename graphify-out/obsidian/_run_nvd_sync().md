@@ -16,7 +16,7 @@ tags:
 - [[Report the NVD keyword backlog for OpenClaw + Hermes. Writes NOTHING. The NVD…]] - `rationale_for` [EXTRACTED]
 - [[_nvd_backlog()]] - `calls` [EXTRACTED]
 - [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
+- [[main()_3]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

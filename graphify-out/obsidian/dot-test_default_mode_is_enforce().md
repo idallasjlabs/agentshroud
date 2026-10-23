@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "asyncio"
+community: "SubagentMonitor"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SubagentMonitor
 ---
 
 # .test_default_mode_is_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[Default mode is enforce after v0.8.0 enforcement hardening.]] - `rationale_for` [EXTRACTED]
 - [[TestSubagentMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

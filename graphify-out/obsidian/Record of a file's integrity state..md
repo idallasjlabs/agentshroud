@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "MemoryIntegrityMonitor"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Record of a file's integrity state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FileIntegrityRecord]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

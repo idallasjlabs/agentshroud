@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # .test_urlencoded_without_content_type_caption_is_still_filtered
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members

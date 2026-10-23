@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # dns_filter.py
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 16
 - [[Problem_5]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Remediation_4]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Severity_6]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Severity_4]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
@@ -23,7 +25,7 @@ members: 16
 - [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Verification_9]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Verification_8]] - document - docs/planning/redteam/05-credential-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

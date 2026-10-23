@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Message sent via Telegram includes a Container Image Scans section.]] - `rationale_for` [EXTRACTED]
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
-- [[_fake_send()_3]] - `contains` [EXTRACTED]
-- [[_fake_send()_14]] - `indirect_call` [INFERRED]
+- [[_fake_send()_5]] - `contains` [EXTRACTED]
+- [[_fake_send()]] - `indirect_call` [INFERRED]
 - [[_fake_trivy_scan()_3]] - `contains` [EXTRACTED]
 - [[_fake_trivy_scan()_5]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]

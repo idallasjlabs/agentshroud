@@ -21,7 +21,7 @@ tags:
 - [[dot-test_output_table_scalar()]] - `calls` [EXTRACTED]
 - [[dot-test_output_yaml()]] - `calls` [EXTRACTED]
 - [[dot-test_output_yaml_falls_back_to_json_without_pyyaml()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
 - [[Print data in the requested format.]] - `rationale_for` [EXTRACTED]
 - [[_print_table()]] - `calls` [EXTRACTED]
 - [[add_collaborator()_1]] - `calls` [EXTRACTED]
@@ -40,7 +40,7 @@ tags:
 - [[get_users()]] - `calls` [EXTRACTED]
 - [[restart_service()_2]] - `calls` [EXTRACTED]
 - [[scan()]] - `calls` [EXTRACTED]
-- [[set_mode()_1]] - `calls` [EXTRACTED]
+- [[set_mode()]] - `calls` [EXTRACTED]
 - [[stop_service()_2]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 

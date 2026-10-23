@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "api.py"
-location: "L457"
+community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
 ---
 
 # .get_events()
 
 ## Connections
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceEvent]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[Retrieve governance events with optional filters.]] - `rationale_for` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never

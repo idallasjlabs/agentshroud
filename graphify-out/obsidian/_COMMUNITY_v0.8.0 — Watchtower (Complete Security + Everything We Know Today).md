@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 22
 ---
 
 # v0.8.0 — "Watchtower" (Complete Security + Everything We Know Today)
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 22 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Diagram 08: Entity Relationship Diagram
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members

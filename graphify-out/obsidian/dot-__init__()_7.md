@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "api.py (2)"
-location: "L8633"
+community: "ApprovalQueueConfig (2)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/ApprovalQueueConfig_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

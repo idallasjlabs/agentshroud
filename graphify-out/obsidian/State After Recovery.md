@@ -12,6 +12,6 @@ tags:
 # State After Recovery
 
 ## Connections
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

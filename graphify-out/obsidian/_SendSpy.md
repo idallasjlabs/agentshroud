@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "EgressFilterConfig (2) (2)"
+community: "AlertTelegramRelay"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/AlertTelegramRelay
 ---
 
 # _SendSpy
 
 ## Connections
-- [[dot-__call__()_6]] - `method` [EXTRACTED]
-- [[dot-__init__()_95]] - `method` [EXTRACTED]
+- [[dot-__call__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_96]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

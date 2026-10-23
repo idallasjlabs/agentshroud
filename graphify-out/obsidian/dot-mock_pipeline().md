@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "RBACConfig"
+community: "api.py (2)"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/apipy_2
 ---
 
 # .mock_pipeline()
@@ -16,4 +16,4 @@ tags:
 - [[Create a mock security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/apipy_2

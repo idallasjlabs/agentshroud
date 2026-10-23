@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "AgentShroud v0.9.0 (2)"
+community: "SubagentGovernance"
 location: "L613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v090_2
+  - community/SubagentGovernance
 ---
 
 # Check text for PII patterns. Returns list of pattern names found.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_pii_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090_2
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

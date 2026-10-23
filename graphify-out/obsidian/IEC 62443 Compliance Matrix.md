@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "concept"
-community: "installer.py"
+community: "triage-cve-mitigations.py"
 location: "L443-521"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # IEC 62443 Compliance Matrix
@@ -17,4 +17,4 @@ tags:
 - [[Approval Queue Control]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/installerpy
+#graphify/concept #graphify/EXTRACTED #community/triage-cve-mitigationspy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py (2)"
+community: "triage-cve-mitigations.py"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy_2
+  - community/triage-cve-mitigationspy
 ---
 
 # Step 3: Test Read-Only Compatibility
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy_2
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

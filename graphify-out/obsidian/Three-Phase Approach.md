@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "installer.py"
+community: "triage-cve-mitigations.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # Three-Phase Approach
@@ -18,4 +18,4 @@ tags:
 - [[Phase B Compatibility Testing]] - `contains` [EXTRACTED]
 - [[Phase C Production Lockdown]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "iCloud Services (2)"
+community: "docker/scripts README.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/docker/scripts_READMEmd
 ---
 
 # docker/scripts README.md
@@ -19,4 +19,4 @@ tags:
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/document #graphify/EXTRACTED #community/docker/scripts_READMEmd

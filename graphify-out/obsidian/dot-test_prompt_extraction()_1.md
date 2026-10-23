@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_injection.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ProxyAction"
-location: "L87"
+community: "PromptGuard"
+location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/PromptGuard
 ---
 
 # .test_prompt_extraction()
 
 ## Connections
-- [[TestMediumSeverity]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

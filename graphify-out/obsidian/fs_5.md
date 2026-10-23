@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/apply-patches.js"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Release Notes - AgentShroud v0.9.0"
-location: "L9"
+community: "TestWebAPI"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/TestWebAPI
 ---
 
 # fs
 
 ## Connections
-- [[apply-patches.js]] - `contains` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/code #graphify/EXTRACTED #community/TestWebAPI

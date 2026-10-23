@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # Read persisted collaborator-removal exclusions from disk (Bug 1 fix).      Appli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_removed_collaborator_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

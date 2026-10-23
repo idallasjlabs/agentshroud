@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Why agent_id cannot be triaged, or None if it can.]] - `rationale_for` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run_and_read

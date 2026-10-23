@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "EgressFilterConfig (2) (2)"
-location: "L73"
+community: "AgentShroud™ Brand Guidelines"
+location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # .__call__()
 
 ## Connections
-- [[dot-_handle()]] - `calls` [EXTRACTED]
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

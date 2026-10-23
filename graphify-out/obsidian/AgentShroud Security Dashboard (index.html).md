@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/dashboard/index.html"
 type: "code"
-community: "_make_proxy()"
+community: "test_voice_latency_guard.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/test_voice_latency_guardpy
 ---
 
 # AgentShroud Security Dashboard (index.html)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[queue.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/test_voice_latency_guardpy

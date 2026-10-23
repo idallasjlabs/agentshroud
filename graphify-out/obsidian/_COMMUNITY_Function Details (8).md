@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 15
 ---
 
 # Function Details (8)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 15 nodes
 
 ## Members

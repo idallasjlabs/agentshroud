@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (3)"
-location: "L143"
+community: "Seccomp Profiles"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Seccomp_Profiles
 ---
 
 # Related Notes
 
 ## Connections
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

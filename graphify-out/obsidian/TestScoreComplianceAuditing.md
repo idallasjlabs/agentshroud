@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Command Details"
-location: "L473"
+community: "parse_clamscan_output"
+location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Command_Details
+  - community/parse_clamscan_output
 ---
 
 # TestScoreComplianceAuditing
 
 ## Connections
-- [[dot-test_five_zero_failures_fresh_report()]] - `method` [EXTRACTED]
-- [[dot-test_four_zero_failures_stale_report()]] - `method` [EXTRACTED]
-- [[dot-test_three_zero_failures_no_report_on_disk()]] - `method` [EXTRACTED]
-- [[dot-test_two_with_failures()]] - `method` [EXTRACTED]
+- [[dot-test_defined_when_all_passing_no_report_on_disk()]] - `method` [EXTRACTED]
+- [[dot-test_defined_when_oscap_binary_present()]] - `method` [EXTRACTED]
+- [[dot-test_managed_when_has_failures()]] - `method` [EXTRACTED]
 - [[dot-test_zero_when_not_run()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Command_Details
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

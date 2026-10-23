@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
 community: "TestFullAccessMiddlewareBypass"
-location: "L102"
+location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED

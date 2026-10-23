@@ -12,7 +12,7 @@ tags:
 # GroupRoleResolver
 
 ## Connections
-- [[dot-__init__()_116]] - `method` [EXTRACTED]
+- [[dot-__init__()_134]] - `method` [EXTRACTED]
 - [[dot-get_all_roles()]] - `method` [EXTRACTED]
 - [[dot-get_role()]] - `method` [EXTRACTED]
 - [[dot-is_high_risk_tool()]] - `method` [EXTRACTED]

@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/runtime/config.py"
 type: "code"
-community: "RBACConfig"
-location: "L85"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
-- [[ConversationMessage]] - `calls` [EXTRACTED]
-- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
-- [[Path_54]] - `calls` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.19
 members: 17
 ---
 
 # telegram_proxy.py (3)
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 17 nodes
 
 ## Members

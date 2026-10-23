@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_req"
+community: "TelegramAPIProxy"
 location: "L588"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_agent_failed_prefix_is_normalized_json()
 
 ## Connections
 - [[Collaborator agent-failed prefix should normalize to protected unavailable notic]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -12,10 +12,10 @@ tags:
 # .test_propagation_registers_unregistered_peer_agent()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
 - [[Peer agent not registered in TrustManager should be auto-registered.]] - `rationale_for` [EXTRACTED]
 - [[TestGetIncidentsLimit]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

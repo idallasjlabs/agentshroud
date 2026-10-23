@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_round2_hardening.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "SessionManager"
-location: "L62"
+community: "KillSwitchMonitor"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/KillSwitchMonitor
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[GitGuard]] - `calls` [EXTRACTED]
-- [[TestGitGuardDefaultEnforce]] - `method` [EXTRACTED]
+- [[TestGetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

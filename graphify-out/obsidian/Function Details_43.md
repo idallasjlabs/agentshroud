@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[EventBus.emit(event)]] - `contains` [EXTRACTED]
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py]] - `contains` [EXTRACTED]
 - [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

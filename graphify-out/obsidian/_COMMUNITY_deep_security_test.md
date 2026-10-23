@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 30
 ---
 
 # deep_security_test
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members

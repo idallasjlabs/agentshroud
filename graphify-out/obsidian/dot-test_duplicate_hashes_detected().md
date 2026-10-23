@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_duplicate_hashes_detected()
@@ -16,4 +16,4 @@ tags:
 - [[TestContextIntegrityScorer]] - `method` [EXTRACTED]
 - [[_make_segment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

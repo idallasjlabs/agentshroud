@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 16
 ---
 
 # AgentShroud Brand Quick Reference
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -12,10 +14,10 @@ members: 16
 - [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
 - [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
-- [[Decision_4]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Decision_3]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
 - [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
 - [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
@@ -33,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (3)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
 
 ## Top bridge nodes
 - [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community

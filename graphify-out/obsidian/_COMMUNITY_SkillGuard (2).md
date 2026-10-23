@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.06
 members: 34
 ---
 
 # SkillGuard (2)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 34 nodes
 
 ## Members
 - [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Architecture Overview_2]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Architecture Overview]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md
@@ -26,7 +28,7 @@ members: 34
 - [[Quick Start_4]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Recommendations]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[SSH Not Working]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Security Notes_1]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Security Notes]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Step 1 Add Your OpenAI API Key]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Step 2 Configure Bot Identity]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Step 3 Load Persona (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md

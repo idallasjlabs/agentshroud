@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips."
+community: ".test_gives_up_and_marks_sent_after_max_retries()"
 location: "L1253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # .test_no_skip_dirs_flag_when_omitted()
@@ -16,4 +16,4 @@ tags:
 - [[_fake_run()_4]] - `contains` [EXTRACTED]
 - [[_fake_run()_3]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

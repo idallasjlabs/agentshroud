@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # API Keys Setup Guide (2)
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members

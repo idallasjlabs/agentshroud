@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 28
 ---
 
 # UserSessionManager (3)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 28 nodes
 
 ## Members
@@ -19,15 +21,15 @@ members: 28
 - [[GET dashboardstats returns JSON stats.]] - rationale - gateway/tests/test_e2e.py
 - [[GET status returns service info.]] - rationale - gateway/tests/test_e2e.py
 - [[Submit SSH command → approval queued.]] - rationale - gateway/tests/test_e2e.py
-- [[client()_6]] - code - gateway/tests/test_dashboard.py
-- [[client()_7]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[client()_8]] - code - gateway/tests/test_e2e.py
-- [[client()_9]] - code - gateway/tests/test_mcp_proxy_endpoint.py
-- [[client()_10]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[client()_11]] - code - gateway/tests/test_security_fixes.py
-- [[client()_12]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[client()_13]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_requires_auth()_1]] - code - gateway/tests/test_e2e.py
+- [[client()_5]] - code - gateway/tests/test_dashboard.py
+- [[client()_6]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[client()_7]] - code - gateway/tests/test_e2e.py
+- [[client()_8]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[client()_9]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[client()_10]] - code - gateway/tests/test_security_fixes.py
+- [[client()_11]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[client()_12]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_e2e.py
 - [[test_dashboard_returns_html()]] - code - gateway/tests/test_e2e.py
 - [[test_dashboard_serves_html()]] - code - gateway/tests/test_dashboard.py
 - [[test_dashboard_stats_returns_json()]] - code - gateway/tests/test_e2e.py
@@ -45,23 +47,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
 - 2 edges to [[_COMMUNITY_export-bot-conversations.py (2)]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager (2)]]
+- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
-- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 - 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
 - 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager]]
 
 ## Top bridge nodes
 - [[test_e2e.py]] - degree 13, connects to 5 communities
 - [[AsyncClient]] - degree 10, connects to 1 community
 - [[dot-test_dashboard_cookie_auth_serves_html()]] - degree 3, connects to 1 community
+- [[client()_5]] - degree 2, connects to 1 community
 - [[client()_6]] - degree 2, connects to 1 community
-- [[client()_7]] - degree 2, connects to 1 community

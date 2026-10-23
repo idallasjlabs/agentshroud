@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "KillSwitchMonitor (5)"
-location: "L76"
+community: "SharedMemoryManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/SharedMemoryManager
 ---
 
 # rbac()
 
 ## Connections
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

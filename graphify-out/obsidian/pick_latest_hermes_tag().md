@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
 community: "Sunday Upgrade prompt"
-location: "L139"
+location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED

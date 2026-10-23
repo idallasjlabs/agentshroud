@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "export_bot"
+community: "MiddlewareManager"
 location: "L592"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # TestFileSandboxStep
@@ -18,8 +18,8 @@ tags:
 - [[dot-test_sandbox_exception_fails_closed()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

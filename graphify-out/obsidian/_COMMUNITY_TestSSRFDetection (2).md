@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # TestSSRFDetection (2)
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -25,7 +27,7 @@ members: 21
 - [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
 - [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
 - [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Role_42]] - document - .agents/skills/i-ps/SKILL.md
+- [[Role_40]] - document - .agents/skills/i-ps/SKILL.md
 - [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
 - [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
@@ -38,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - degree 7, connects to 1 community

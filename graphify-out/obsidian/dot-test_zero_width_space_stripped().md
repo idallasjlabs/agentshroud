@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "test_soc_egress_endpoints.py"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/test_soc_egress_endpointspy
 ---
 
 # .test_zero_width_space_stripped()
@@ -15,4 +15,4 @@ tags:
 - [[TestEncodingBypass]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

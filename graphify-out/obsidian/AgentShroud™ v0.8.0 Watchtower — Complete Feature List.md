@@ -24,7 +24,7 @@ tags:
 - [[J. Code Cleanup (5 features)]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11 features)]] - `contains` [EXTRACTED]
 - [[Moved to v0.9.0 Sentinel]] - `contains` [EXTRACTED]
-- [[Summary_24]] - `contains` [EXTRACTED]
+- [[Summary_25]] - `contains` [EXTRACTED]
 - [[v0.8.0-feature-list-final]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

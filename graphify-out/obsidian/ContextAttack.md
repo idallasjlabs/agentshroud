@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "_t"
+community: "MultiTurnTracker"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/MultiTurnTracker
 ---
 
 # ContextAttack
@@ -20,4 +20,4 @@ tags:
 - [[Detected context window attack attempt.]] - `rationale_for` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

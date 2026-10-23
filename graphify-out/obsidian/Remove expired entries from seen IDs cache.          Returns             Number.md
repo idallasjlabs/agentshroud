@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "ContextGuard"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # Remove expired entries from seen IDs cache.          Returns:             Number
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-cleanup_seen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

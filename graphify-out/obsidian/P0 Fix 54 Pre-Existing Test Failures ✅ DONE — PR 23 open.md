@@ -15,6 +15,6 @@ tags:
 - [[Files to Modify]] - `contains` [EXTRACTED]
 - [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 - [[Root Causes (5 distinct bugs)]] - `contains` [EXTRACTED]
-- [[Verification_4]] - `contains` [EXTRACTED]
+- [[Verification_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 5
 - [[dot-test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFalcoSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFalcoSummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,5 +28,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_MiddlewareManager (3) (2)]]
 
 ## Top bridge nodes
-- [[TestFalcoSummary]] - degree 5, connects to 1 community
+- [[TestFalcoSummary_1]] - degree 5, connects to 1 community
 - [[dot-test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community

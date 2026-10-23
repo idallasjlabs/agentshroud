@@ -12,7 +12,7 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()]] - `method` [EXTRACTED]
+- [[dot-__init__()_7]] - `method` [EXTRACTED]
 - [[dot-_make_proxy()]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]

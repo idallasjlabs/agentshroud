@@ -12,12 +12,12 @@ tags:
 # _HeaderTimeoutReader
 
 ## Connections
-- [[dot-__init__()_193]] - `method` [EXTRACTED]
+- [[dot-__init__()_182]] - `method` [EXTRACTED]
 - [[dot-readline()_1]] - `method` [EXTRACTED]
 - [[First readline returns the request line; the next stalls.]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_header_read_timeout_returns_408()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

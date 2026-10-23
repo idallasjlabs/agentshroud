@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Approval Queue_1]] - `contains` [EXTRACTED]
-- [[Authentication_1]] - `contains` [EXTRACTED]
+- [[Authentication_2]] - `contains` [EXTRACTED]
 - [[Data Ledger]] - `contains` [EXTRACTED]
 - [[Gateway Layer]] - `contains` [EXTRACTED]
 - [[Ingest API]] - `contains` [EXTRACTED]

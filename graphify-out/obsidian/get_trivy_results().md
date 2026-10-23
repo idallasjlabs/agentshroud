@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Return the latest Trivy vulnerability scan results.      Trivy scans are run at]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 

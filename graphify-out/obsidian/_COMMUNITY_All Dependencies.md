@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 29
 ---
 
 # All Dependencies.md
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 29 nodes
 
 ## Members

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-22.md"
 type: "concept"
-community: "PIIConfig"
+community: "_make_sanitizer()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/_make_sanitizer
 ---
 
 # Baseline phase logs PASS with 0 images captured
@@ -16,4 +16,4 @@ tags:
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
 - [[phase_baseline()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/PIIConfig
+#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer

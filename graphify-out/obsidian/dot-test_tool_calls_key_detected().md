@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "TELEGRAM_ISSUES.md"
+community: "MiddlewareManager"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/MiddlewareManager
 ---
 
 # .test_tool_calls_key_detected()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsToolCallRequest]] - `method` [EXTRACTED]
 - [[_tool_call_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

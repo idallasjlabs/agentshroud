@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "AuditExporter (2)"
-location: "L16"
+community: "mcp_permissions.py"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter_2
+  - community/mcp_permissionspy
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter_2
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

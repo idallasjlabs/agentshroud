@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "test_security_integration.py"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_security_integrationpy
 ---
 
 # test_encrypted_store_in_pipeline()
@@ -15,4 +15,4 @@ tags:
 - [[Sensitive audit data can be encrypted at rest.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

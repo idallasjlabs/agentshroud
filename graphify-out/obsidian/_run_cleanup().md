@@ -2,7 +2,7 @@
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
 community: "One Shroud Over Every Wire (founding mantra)"
-location: "L55"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED

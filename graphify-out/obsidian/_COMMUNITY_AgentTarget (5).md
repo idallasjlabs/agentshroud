@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 37
 ---
 
 # AgentTarget (5)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -60,5 +62,5 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[Report Delivery Format Instructions]] - degree 16, connects to 1 community
 - [[OpenClaw Live Cron Job Index (11 jobs)]] - degree 10, connects to 1 community
-- [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - degree 2, connects to 1 community
 - [[Seed Job AgentShroud Weekly Summary]] - degree 2, connects to 1 community
+- [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - degree 2, connects to 1 community

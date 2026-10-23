@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # .github/mcp.json (2)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 23
 - [[dot-llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh_1]] - code - .github/mcp.json
 - [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_1]] - code - .github/mcp.json
 - [[opthomebrewbinnpx_1]] - code - .github/mcp.json
-- [[PATH_39]] - code - .github/mcp.json
+- [[PATH_42]] - code - .github/mcp.json
 - [[atlassian-agentshroud_2]] - code - .github/mcp.json
 - [[atlassian-idallasj_2]] - code - .github/mcp.json
 - [[autoOpenFile_2]] - code - .github/mcp.json

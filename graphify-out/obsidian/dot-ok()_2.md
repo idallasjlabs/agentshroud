@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "KillSwitchMonitor (3)"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/KillSwitchMonitor_3
 ---
 
 # .ok()
@@ -15,4 +15,4 @@ tags:
 - [[A source counts as proven only on a 2xx with non-empty content.]] - `rationale_for` [EXTRACTED]
 - [[FetchOutcome_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

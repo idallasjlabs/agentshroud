@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_history_persistence()]] - `calls` [EXTRACTED]
 - [[dot-test_trend_empty_db()]] - `calls` [EXTRACTED]
-- [[Any_45]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 - [[Get score trend for the last N days.      Args         days Number of days to]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Path_20]] - `references` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[init_db()]] - `calls` [EXTRACTED]

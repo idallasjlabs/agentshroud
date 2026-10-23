@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "EgressFilterConfig (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/EgressFilterConfig_2
 ---
 
 # test_security_hardening.py
@@ -17,21 +17,21 @@ tags:
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
 - [[IsolationStatus]] - `imports` [EXTRACTED]
 - [[IsolationVerifier]] - `imports` [EXTRACTED]
 - [[PatternRule]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[TestAgentIsolation]] - `contains` [EXTRACTED]
 - [[TestDriftDetector]] - `contains` [EXTRACTED]
 - [[TestDriftDetectorHardened]] - `contains` [EXTRACTED]
 - [[TestEgressFilter]] - `contains` [EXTRACTED]
 - [[TestEgressSSRF]] - `contains` [EXTRACTED]
 - [[TestEncryptedStore]] - `contains` [EXTRACTED]
-- [[TestPromptGuard]] - `contains` [EXTRACTED]
+- [[TestPromptGuard_1]] - `contains` [EXTRACTED]
 - [[TestPromptGuardEvasion]] - `contains` [EXTRACTED]
 - [[TestSecureZero]] - `contains` [EXTRACTED]
 - [[TestTrustManager]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "SCLClient"
-location: "L148"
+community: "test_fieldflare_route_strips_unsupported_fields_streaming"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/test_fieldflare_route_strips_unsupported_fields_streaming
 ---
 
 # AuthRequired
 
 ## Connections
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[health_check_detail()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming

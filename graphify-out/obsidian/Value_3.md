@@ -1,17 +1,31 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
-type: "document"
-community: "KeyRotationManager (2)"
-location: "L15"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "GroupRoleResolver"
+location: "L255"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/GroupRoleResolver
 ---
 
 # Value
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[dot-get()_2]] - `references` [EXTRACTED]
+- [[dot-get()_3]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()]] - `references` [EXTRACTED]
+- [[dot-request()_1]] - `references` [EXTRACTED]
+- [[FakeTransport]] - `references` [EXTRACTED]
+- [[format_approvals()]] - `references` [EXTRACTED]
+- [[format_cves()]] - `references` [EXTRACTED]
+- [[format_decision()]] - `references` [EXTRACTED]
+- [[format_deploy_status()]] - `references` [EXTRACTED]
+- [[format_status()]] - `references` [EXTRACTED]
+- [[json_str()]] - `references` [EXTRACTED]
+- [[print_output()]] - `references` [EXTRACTED]
+- [[render_output_lines()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

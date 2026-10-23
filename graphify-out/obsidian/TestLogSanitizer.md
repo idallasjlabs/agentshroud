@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_filter_msg()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_38]] - `method` [EXTRACTED]
+- [[dot-setup_method()_32]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_unchanged()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_redacted()_1]] - `method` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[dot-test_telegram_bot_token_shorter_id_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_token_assignment_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_user_path_redacted()]] - `method` [EXTRACTED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[test_log_sanitizer.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response_4

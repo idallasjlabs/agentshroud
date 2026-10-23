@@ -1,18 +1,21 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
-location: "L17"
+community: "AgentShroud Audit Specification"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Using the Helper Script]] - `contains` [EXTRACTED]
+- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
+- [[Test Connection]] - `contains` [EXTRACTED]
+- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

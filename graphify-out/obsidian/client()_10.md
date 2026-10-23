@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
 community: "UserSessionManager (3)"
-location: "L51"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_3

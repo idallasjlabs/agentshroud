@@ -12,7 +12,7 @@ tags:
 # clamd_sock_path()
 
 ## Connections
-- [[fixture_1]] - `references` [EXTRACTED]
+- [[fixture_2]] - `references` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/create_auth_dependency

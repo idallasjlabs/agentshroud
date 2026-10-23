@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L42"
+community: "GatewayEmailService"
+location: "L249"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ConfigIntegrityMonitor
+  - graphify/EXTRACTED
+  - community/GatewayEmailService
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_14]] - `calls` [EXTRACTED]
+- [[dot-_run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

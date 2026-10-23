@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "KeyRotationManager (2)"
+community: "test_a2a_policy.py"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/test_a2a_policypy
 ---
 
 # Full shared-nothing verification: network + volume + security settings.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-verify_shared_nothing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

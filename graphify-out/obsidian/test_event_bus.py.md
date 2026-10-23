@@ -21,7 +21,7 @@ tags:
 - [[test_emit_to_multiple_subscribers()]] - `contains` [EXTRACTED]
 - [[test_event_has_required_fields()]] - `contains` [EXTRACTED]
 - [[test_get_recent()]] - `contains` [EXTRACTED]
-- [[test_get_stats()]] - `contains` [EXTRACTED]
+- [[test_get_stats()_2]] - `contains` [EXTRACTED]
 - [[test_subscribe_receive_events()]] - `contains` [EXTRACTED]
 - [[test_unsubscribe_stops_events()]] - `contains` [EXTRACTED]
 

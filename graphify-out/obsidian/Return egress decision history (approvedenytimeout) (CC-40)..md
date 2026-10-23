@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "ApprovalQueueConfig (3)"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/ApprovalQueueConfig_3
 ---
 
 # Return egress decision history (approve/deny/timeout) (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "._make_proxy()"
-location: "L115"
+community: "MiddlewareManager (6)"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/MiddlewareManager_6
 ---
 
 # .stop()
 
 ## Connections
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # egress_config.py
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 15
 - [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_130]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Purpose_128]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
@@ -32,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)_1]]
 
 ## Top bridge nodes
 - [[agent_isolation.py_2]] - degree 11, connects to 1 community

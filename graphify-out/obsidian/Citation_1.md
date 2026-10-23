@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "KillSwitchMonitor (3)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine_2
+  - community/KillSwitchMonitor_3
 ---
 
 # Citation
@@ -24,4 +24,4 @@ tags:
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3

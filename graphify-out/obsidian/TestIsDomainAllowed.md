@@ -24,7 +24,7 @@ tags:
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[Unit tests for WebProxyConfig.is_domain_allowed().]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

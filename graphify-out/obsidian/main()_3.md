@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Sunday Upgrade prompt"
-location: "L334"
+community: "browser/scripts/browse.py"
+location: "L932"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/browser/scripts/browsepy
 ---
 
 # main()
 
 ## Connections
-- [[discover()]] - `calls` [EXTRACTED]
-- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy

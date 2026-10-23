@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RateLimiter.check(client_id)]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency(config)]] - `contains` [EXTRACTED]
 - [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
 - [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # TestStartupScannerKeying
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 16
 - [[Function Details_20]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
 - [[Key Classes  Functions_22]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
 - [[Key Rule ID Sets]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
-- [[Purpose_122]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Purpose_120]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
 - [[Related_26]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
 - [[Responsibilities_24]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
 - [[Threat Model_17]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md

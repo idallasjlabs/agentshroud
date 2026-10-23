@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 24
 ---
 
 # Report Delivery Format Instructions (2)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -43,7 +45,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_AgentTarget (5)]]
 - 2 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY__wrap_response() (2)]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh]]
 
 ## Top bridge nodes
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - degree 13, connects to 3 communities

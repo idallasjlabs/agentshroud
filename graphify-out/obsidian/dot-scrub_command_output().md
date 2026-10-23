@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "test_playback_state.c"
+community: "._record_leakage()"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/_record_leakage
 ---
 
 # .scrub_command_output()
@@ -17,4 +17,4 @@ tags:
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Scrub environment variables and API keys from command output.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/_record_leakage

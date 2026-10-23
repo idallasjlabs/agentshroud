@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "PipelineAction (2)"
+community: "parse_clamscan_output"
 location: "L882"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/parse_clamscan_output
 ---
 
 # Aggregate results from all security scanners into a unified dict.      Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[aggregate_results()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output

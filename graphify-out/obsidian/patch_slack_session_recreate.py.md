@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_slack_session_recreate.py"
 type: "code"
-community: "make_event"
+community: "run-standalone.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/run-standalonesh
 ---
 
 # patch_slack_session_recreate.py
@@ -15,4 +15,4 @@ tags:
 - [[aiohttp ClientSession closed-session crash-loop fix (partial)]] - `references` [EXTRACTED]
 - [[run-standalone.sh]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

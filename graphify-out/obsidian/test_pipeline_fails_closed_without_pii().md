@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Pipeline must refuse to start without PII sanitizer (fail-closed).]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 

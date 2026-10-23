@@ -21,7 +21,7 @@ tags:
 - [[dot-test_only_separators_falls_back_to_default()]] - `calls` [EXTRACTED]
 - [[dot-test_whitespace_separated()]] - `calls` [EXTRACTED]
 - [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - `rationale_for` [EXTRACTED]
-- [[main()_31]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 

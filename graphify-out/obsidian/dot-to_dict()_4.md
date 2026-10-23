@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L153"
+community: "MemoryIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_35]] - `references` [EXTRACTED]
-- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
-- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

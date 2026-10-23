@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[A raised per-agent check error is ISOLATED — the ingest still completes. Per-…]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[_boom()_2]] - `indirect_call` [INFERRED]
-- [[_sleep()_4]] - `contains` [EXTRACTED]
-- [[_sleep()_5]] - `indirect_call` [INFERRED]
+- [[_boom()]] - `indirect_call` [INFERRED]
+- [[_sleep()_1]] - `contains` [EXTRACTED]
+- [[_sleep()_2]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[now()_4]] - `contains` [EXTRACTED]
+- [[now()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

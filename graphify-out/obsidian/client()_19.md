@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L38"
+community: "KillSwitchMonitor"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/KillSwitchMonitor
 ---
 
 # client()
 
 ## Connections
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

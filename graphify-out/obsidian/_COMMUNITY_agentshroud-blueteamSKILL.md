@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 45
 ---
 
 # agentshroud-blueteam/SKILL.md
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 45 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 45
 - [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
 - [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
 - [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
-- [[LogRecord_1]] - code
+- [[LogRecord_2]] - code
 - [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
 - [[Resolve each configured bot's OWN Telegram token, distinct from the default.…]] - rationale - gateway/ingest_api/lifespan.py
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
@@ -63,24 +65,23 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_climain.py]]
+- 3 edges to [[_COMMUNITY_Common Queries]]
 - 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 2 edges to [[_COMMUNITY_Browser — Secure Browser Automation (SKILL)]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
 - 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
 - 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
 - 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[lifespan.py]] - degree 20, connects to 9 communities
+- [[lifespan.py]] - degree 20, connects to 8 communities
 - [[lifespan()]] - degree 28, connects to 7 communities
 - [[_DropInvalidHTTPRequestFilter]] - degree 6, connects to 1 community
 - [[FastAPI]] - degree 3, connects to 1 community

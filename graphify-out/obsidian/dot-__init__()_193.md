@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Usage"
-location: "L78"
+community: "URLAnalyzer"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/URLAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

@@ -12,7 +12,7 @@ tags:
 # .test_failed_write_makes_unhealthy()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
 - [[TestTrackerGetHealth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

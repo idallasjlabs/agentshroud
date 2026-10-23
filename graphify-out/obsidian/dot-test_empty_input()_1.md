@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L67"
+community: "PromptGuard"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PromptGuard
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "TestPromptGuardEvasion"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy_3
+  - community/TestPromptGuardEvasion
 ---
 
 # TestPromptGuardEvasion
 
 ## Connections
-- [[dot-setup_method()_36]] - `method` [EXTRACTED]
+- [[dot-setup_method()_35]] - `method` [EXTRACTED]
 - [[dot-test_double_base64_injection()]] - `method` [EXTRACTED]
 - [[dot-test_fullwidth_detection()]] - `method` [EXTRACTED]
 - [[dot-test_homoglyph_detection()]] - `method` [EXTRACTED]
@@ -24,14 +24,14 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[Tests for prompt guard evasion techniques.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_3
+#graphify/code #graphify/INFERRED #community/TestPromptGuardEvasion

@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "1. Accomplishments This Phase"
-location: "L136"
+community: "ConfigIntegrityMonitor"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/ConfigIntegrityMonitor
 ---
 
 # main()
 
 ## Connections
-- [[Path_15]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[Path_27]] - `calls` [EXTRACTED]
+- [[SkillGuard_1]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

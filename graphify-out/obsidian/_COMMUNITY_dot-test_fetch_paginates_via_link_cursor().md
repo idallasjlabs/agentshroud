@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # .test_fetch_paginates_via_link_cursor()
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members

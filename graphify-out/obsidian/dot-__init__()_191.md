@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "TestProductionCompose"
-location: "L144"
+community: "TestOutboundInfoFilter (2)"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/TestOutboundInfoFilter_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

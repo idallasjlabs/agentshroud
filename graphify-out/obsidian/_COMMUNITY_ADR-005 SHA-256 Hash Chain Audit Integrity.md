@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 15
 ---
 
 # ADR-005: SHA-256 Hash Chain Audit Integrity
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 15
 - [[AuditEntry (data entity)]] - concept - docs/data/data-dictionary.md
 - [[Consequences_2]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
 - [[Context_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
-- [[Decision_5]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Decision_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
 - [[Hash Chain Structure_1]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
 - [[Implementation Details]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
 - [[Ledger DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
@@ -34,7 +36,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
 - 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
-- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 
 ## Top bridge nodes
 - [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities

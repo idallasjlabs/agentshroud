@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # AlarmStatus
@@ -16,4 +16,4 @@ tags:
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

@@ -2,7 +2,7 @@
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
 community: "A2APolicyEngine"
-location: "L18747"
+location: "L18763"
 tags:
   - graphify/code
   - graphify/EXTRACTED

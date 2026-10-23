@@ -1,11 +1,13 @@
 ---
 type: community
-members: 36
+cohesion: 0.06
+members: 37
 ---
 
 # TestMultilingualInjection
 
-**Members:** 36 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 37 nodes
 
 ## Members
 - [[AgentShroud Docker Configuration]] - document - docker/README.md
@@ -32,6 +34,7 @@ members: 36
 - [[Rebuild Containers]] - document - docker/README.md
 - [[Reference]] - document - docker/README.md
 - [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
+- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
 - [[Secrets]] - document - docker/README.md
 - [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
 - [[Security Features (Implemented)]] - document - docker/README.md
@@ -53,9 +56,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_UserSessionManager (2)_1]]
+- 1 edge to [[_COMMUNITY_record_decision()]]
 - 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Docker Configuration]] - degree 18, connects to 1 community
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
+- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community

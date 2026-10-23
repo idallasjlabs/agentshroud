@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-12-credential-flow.svg"
 type: "concept"
-community: "competitive-report-*.md dated reports"
+community: "Gateway Container (has service account)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Gateway_Container_has_service_account
 ---
 
 # op_proxy_read_with_retry() (cascading retries 5s,10s,15s,30s,60s)
@@ -14,4 +14,4 @@ tags:
 - [[1Password Cloud]] - `calls` [EXTRACTED]
 - [[Gateway Container (has service account)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Container_has_service_account

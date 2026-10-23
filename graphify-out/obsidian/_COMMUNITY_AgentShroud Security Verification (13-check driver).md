@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 15
 ---
 
 # AgentShroud Security Verification (13-check driver)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 15 nodes
 
 ## Members

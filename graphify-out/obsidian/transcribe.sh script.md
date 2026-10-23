@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[transcribe.sh]] - `contains` [EXTRACTED]
-- [[usage()_8]] - `calls` [EXTRACTED]
+- [[usage()_6]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_query

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "server.py"
-location: "L360"
+community: "Pydantic"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/Pydantic
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/Pydantic

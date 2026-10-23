@@ -1,12 +1,12 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # AgentShroud production compose stack
@@ -19,9 +19,9 @@ tags:
 - [[falco-alerts  security-reports shared volumes]] - `references` [EXTRACTED]
 - [[gateway service (sole egress, FalcoClamAV in-process)]] - `references` [EXTRACTED]
 - [[hermes service (agentshroud-hermes-v2)]] - `references` [EXTRACTED]
-- [[openclaw service_1]] - `references` [EXTRACTED]
+- [[openclaw service]] - `references` [EXTRACTED]
 - [[voice-gateway service]] - `references` [EXTRACTED]
 - [[wazuh-agent sidecar]] - `references` [EXTRACTED]
 - [[wazuh-manager service (4.14.8)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

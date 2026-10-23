@@ -1,29 +1,23 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "The 8D Investigation Process"
-location: "L25"
+community: "GroupConfig"
+location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/GroupConfig
 ---
 
 # AuditExportConfig
 
 ## Connections
-- [[dot-__init__()_69]] - `references` [EXTRACTED]
-- [[dot-__init__()_68]] - `method` [EXTRACTED]
-- [[dot-_default_jsonld_context()]] - `method` [EXTRACTED]
-- [[dot-export_config()]] - `calls` [EXTRACTED]
-- [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[Configuration for audit export functionality.]] - `rationale_for` [EXTRACTED]
-- [[TestAuditEvent]] - `uses` [INFERRED]
-- [[TestAuditExporter]] - `uses` [INFERRED]
-- [[TestAuditStore]] - `uses` [INFERRED]
-- [[TestAuditStoreBotId]] - `uses` [INFERRED]
-- [[audit_export.py]] - `contains` [EXTRACTED]
-- [[test_audit_export.py]] - `imports` [EXTRACTED]
+- [[dot-model_post_init()_1]] - `method` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[Configuration for compliance audit export functionality.]] - `rationale_for` [EXTRACTED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

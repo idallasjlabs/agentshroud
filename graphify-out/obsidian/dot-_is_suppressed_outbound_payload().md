@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
+community: "._proxy_request_impl()"
 location: "L4176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/_proxy_request_impl
 ---
 
 # ._is_suppressed_outbound_payload()
@@ -16,4 +16,4 @@ tags:
 - [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
 - [[True when filtered payload should be dropped instead of forwarded.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

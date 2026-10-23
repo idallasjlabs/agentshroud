@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "TestToolChainAnalyzer (2)"
+community: "SharedMemoryManager"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_2
+  - community/SharedMemoryManager
 ---
 
 # .test_strip_private_section()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_2
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

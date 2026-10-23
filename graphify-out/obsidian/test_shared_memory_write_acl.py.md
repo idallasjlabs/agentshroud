@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # test_shared_memory_write_acl.py
@@ -20,10 +20,10 @@ tags:
 - [[TestUserMemoryWriteACL]] - `contains` [EXTRACTED]
 - [[TestWriteFailurePath]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[rbac()_5]] - `contains` [EXTRACTED]
-- [[session_manager()_4]] - `contains` [EXTRACTED]
+- [[rbac()_3]] - `contains` [EXTRACTED]
+- [[session_manager()_3]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
-- [[shared_memory()_2]] - `contains` [EXTRACTED]
+- [[shared_memory()_1]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

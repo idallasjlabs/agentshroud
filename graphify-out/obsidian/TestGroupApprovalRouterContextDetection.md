@@ -18,7 +18,7 @@ tags:
 - [[dot-test_is_group_context_false_for_default()]] - `method` [EXTRACTED]
 - [[dot-test_is_group_context_true_for_group_agent_id()]] - `method` [EXTRACTED]
 - [[dot-test_route_approval_auto_detects_group_context()]] - `method` [EXTRACTED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[GroupApprovalRouter must correctly distinguish group vs DM context.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]

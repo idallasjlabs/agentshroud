@@ -1,27 +1,22 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L1"
+community: "AgentShroud Blue Team Security Auditor (3)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/AgentShroud_Blue_Team_Security_Auditor_3
 ---
 
-# Data Flow.md
+# Data Flow
 
 ## Connections
-- [[Architecture Overview]] - `references` [EXTRACTED]
 - [[Data Flow_1]] - `contains` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[ledger.py]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
+- [[Overview_6]] - `contains` [EXTRACTED]
+- [[Related Notes_25]] - `contains` [EXTRACTED]
+- [[Request Flow Diagram]] - `contains` [EXTRACTED]
+- [[Response Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

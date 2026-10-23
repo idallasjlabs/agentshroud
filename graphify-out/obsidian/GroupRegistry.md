@@ -31,7 +31,7 @@ tags:
 - [[dot-test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
 - [[Manages user groups including auto-groups and custom groups.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]

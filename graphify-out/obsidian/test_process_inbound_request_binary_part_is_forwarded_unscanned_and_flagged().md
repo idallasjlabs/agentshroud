@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A2AProxy]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `calls` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
 - [[_base_policy_engine()]] - `calls` [EXTRACTED]

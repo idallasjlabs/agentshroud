@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "test_security.py"
+community: "CLI Reference"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/CLI_Reference
 ---
 
 # Fill Field
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLI Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/CLI_Reference

@@ -12,7 +12,7 @@ tags:
 # .test_dm_approval_no_group_side_effect()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[DM approval must not send any message to a group chat ID.]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "AgentShroud Setup Guide"
+community: "Any"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Any
 ---
 
 # Test the performance-optimized function calls only filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_quick_function_calls_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Any

@@ -1,20 +1,29 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Skill: Project Management (PM) (3)"
-location: "L27"
+community: "MCPInspector"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - graphify/INFERRED
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_8]] - `references` [EXTRACTED]
+- [[dot-send_request()]] - `references` [EXTRACTED]
+- [[dot-send_request()_1]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/code #graphify/INFERRED #community/MCPInspector

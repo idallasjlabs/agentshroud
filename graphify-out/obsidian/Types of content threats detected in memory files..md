@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "MemoryIntegrityMonitor"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/MemoryIntegrityMonitor
 ---
 
 # Types of content threats detected in memory files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContentThreatType]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

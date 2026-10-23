@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (3)"
-location: "L8"
+community: "Phase 3: MITIGATE (Rollback First!) (3)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_3
+  - community/Phase_3_MITIGATE_Rollback_First_3
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_3
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First_3

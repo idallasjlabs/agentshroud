@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - `rationale_for` [EXTRACTED]
 - [[A2AProxy]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `calls` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
 - [[_base_policy_engine()]] - `calls` [EXTRACTED]

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "test_wazuh_watchdog.py (2)"
-location: "L203"
+community: "AlertTelegramRelay"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy_2
+  - community/AlertTelegramRelay
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[dot-_handle()_1]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy_2
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

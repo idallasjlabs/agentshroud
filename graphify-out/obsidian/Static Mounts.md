@@ -12,6 +12,6 @@ tags:
 # Static Mounts
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/pi/mcpjson

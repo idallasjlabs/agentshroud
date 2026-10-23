@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-test_failed_write_makes_unhealthy()]] - `method` [EXTRACTED]
 - [[dot-test_initial_state_healthy()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 

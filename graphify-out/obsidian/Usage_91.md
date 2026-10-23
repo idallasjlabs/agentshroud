@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "TeamsConfig"
-location: "L24"
+community: "mcp_permissions.py"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/mcp_permissionspy
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

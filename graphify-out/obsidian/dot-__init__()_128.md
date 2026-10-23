@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L57"
+community: "wakeword.c"
+location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/wakewordc
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/wakewordc

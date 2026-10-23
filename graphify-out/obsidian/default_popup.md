@@ -12,6 +12,6 @@ tags:
 # default_popup
 
 ## Connections
-- [[action_3]] - `contains` [EXTRACTED]
+- [[action_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

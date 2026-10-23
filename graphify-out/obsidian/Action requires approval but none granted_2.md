@@ -12,6 +12,6 @@ tags:
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/setup-secretssh_2

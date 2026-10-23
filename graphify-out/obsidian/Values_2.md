@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "KeyRotationManager (2)"
+community: "DelegationManager"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/DelegationManager
 ---
 
 # Values
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/document #graphify/EXTRACTED #community/DelegationManager

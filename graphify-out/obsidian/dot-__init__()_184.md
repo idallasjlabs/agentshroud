@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L166"
+community: "Enum"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Enum
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Enum

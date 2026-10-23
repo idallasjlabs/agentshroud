@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # .test_confirmation_required()
@@ -15,4 +15,4 @@ tags:
 - [[SCLConfirmationRequired]] - `calls` [EXTRACTED]
 - [[TestSCLError]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

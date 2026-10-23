@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # Two signers sharing the same key can cross-verify envelopes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_different_signers_same_key_verify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

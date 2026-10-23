@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.31
 members: 10
 ---
 
 # Workflow (follow in order)
 
+**Cohesion:** 0.31 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -29,14 +31,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_jira_weekly_review.py]]
 - 3 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 2 edges to [[_COMMUNITY_setup-secrets.sh]]
+- 2 edges to [[_COMMUNITY_PodmanEngine]]
 - 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
 - 2 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_lifespan()]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager (6)]]
 - 1 edge to [[_COMMUNITY_pipeline.py — Security Pipeline]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
 - 1 edge to [[_COMMUNITY_egress_retry.py]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency()]]
 
 ## Top bridge nodes
 - [[get_engine()]] - degree 16, connects to 5 communities

@@ -11,6 +11,6 @@ tags:
 # Pinned Vendor Versions Single Source of Truth (docker/versions.env)
 
 ## Connections
-- [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
+- [[Daily CVE Sync + Page Update Workflow_1]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/agentshroud-ieee-papermd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "hermes/skills/i-bs/README.md"
+community: "record_decision()"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/record_decision
 ---
 
 # The result of evaluating a single A2A request against the policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2APolicyDecision]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/record_decision

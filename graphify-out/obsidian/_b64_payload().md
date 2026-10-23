@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "cli/main.py"
+community: "asyncio"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/asyncio
 ---
 
 # _b64_payload()
@@ -18,4 +18,4 @@ tags:
 - [[test_pipeline_clamav_error_fail_open()]] - `calls` [EXTRACTED]
 - [[test_pipeline_clamav_malware_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/asyncio

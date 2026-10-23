@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.83
 members: 4
 ---
 
 # AgentShroud™ Brand Guidelines (2)
 
+**Cohesion:** 0.83 - tightly connected
 **Members:** 4 nodes
 
 ## Members

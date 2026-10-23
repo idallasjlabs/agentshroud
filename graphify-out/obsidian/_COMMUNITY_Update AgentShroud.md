@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Update AgentShroud
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 17
 - [[Key Classes  Functions_9]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 - [[Known Issues  Notes_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 - [[Model Details]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Purpose_105]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Purpose_94]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 - [[RedactionDetail_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 - [[Related_13]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 - [[Responsibilities_11]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md

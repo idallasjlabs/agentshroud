@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # .test_polyglot_payload()
@@ -15,4 +15,4 @@ tags:
 - [[Polyglot (valid as multiple formats) shouldn't bypass checks.]] - `rationale_for` [EXTRACTED]
 - [[TestHTTPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

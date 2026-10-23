@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "_wrap_response() (2)"
+community: "ContextGuard"
 location: "L738"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/ContextGuard
 ---
 
 # Dashboard should not load HTTP resources.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_no_mixed_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

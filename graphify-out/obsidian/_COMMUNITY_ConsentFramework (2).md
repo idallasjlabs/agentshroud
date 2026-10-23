@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # ConsentFramework (2)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -39,9 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 5 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 3 edges to [[_COMMUNITY_MCPPermissionManager (2)_1]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 27, connects to 1 community
+- [[TestToolPermission]] - degree 27, connects to 2 communities
 - [[dot-test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
 - [[dot-test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community

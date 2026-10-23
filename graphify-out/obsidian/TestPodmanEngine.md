@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "setup-secrets.sh"
+community: "PodmanEngine"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/PodmanEngine
 ---
 
 # TestPodmanEngine
 
 ## Connections
-- [[dot-setup_method()_19]] - `method` [EXTRACTED]
+- [[dot-setup_method()_16]] - `method` [EXTRACTED]
 - [[dot-test_generate_systemd()]] - `method` [EXTRACTED]
-- [[dot-test_health_check()_1]] - `method` [EXTRACTED]
+- [[dot-test_health_check()]] - `method` [EXTRACTED]
 - [[dot-test_ps_json()]] - `method` [EXTRACTED]
 - [[dot-test_run_selinux_volumes()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

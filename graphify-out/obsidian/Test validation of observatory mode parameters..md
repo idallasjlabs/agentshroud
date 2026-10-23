@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # Test validation of observatory mode parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_observatory_mode_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

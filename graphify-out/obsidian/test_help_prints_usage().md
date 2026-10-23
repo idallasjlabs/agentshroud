@@ -12,7 +12,7 @@ tags:
 # test_help_prints_usage()
 
 ## Connections
-- [[_run()_3]] - `calls` [EXTRACTED]
+- [[_run()_4]] - `calls` [EXTRACTED]
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/log_sanitizerpy

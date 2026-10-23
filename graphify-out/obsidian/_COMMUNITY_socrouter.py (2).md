@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # soc/router.py (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -34,15 +36,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_socrouter.py]]
+- 5 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
 - 4 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 2 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_ContextGuard]]
 - 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 1 edge to [[_COMMUNITY_PortManager]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
 
 ## Top bridge nodes
-- [[TestTrustManager]] - degree 35, connects to 8 communities
+- [[TestTrustManager]] - degree 35, connects to 7 communities
 - [[dot-setup_method()_31]] - degree 2, connects to 1 community
 - [[dot-test_sqlite_persistence()]] - degree 2, connects to 1 community

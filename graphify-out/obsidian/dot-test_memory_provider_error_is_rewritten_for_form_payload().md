@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_req"
+community: "TelegramAPIProxy"
 location: "L1464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/TelegramAPIProxy
 ---
 
 # .test_memory_provider_error_is_rewritten_for_form_payload()
 
 ## Connections
 - [[Embeddingprovider memory errors should also be rewritten for urlencoded payload]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

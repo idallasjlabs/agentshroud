@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[dot-test_cleanup_expired_requests()_1]] - `calls` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()]] - `calls` [EXTRACTED]
 - [[Represents a pending egress approval request.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]

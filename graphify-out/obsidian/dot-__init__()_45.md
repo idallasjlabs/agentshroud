@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "TestEmailSend"
-location: "L404"
+community: "MCPPolicyEngine (2)"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/MCPPolicyEngine_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[CitationVerifier]] - `method` [EXTRACTED]
+- [[Fetcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

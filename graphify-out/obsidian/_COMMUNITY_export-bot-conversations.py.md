@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 32
 ---
 
 # export-bot-conversations.py
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 32 nodes
 
 ## Members
@@ -19,12 +21,12 @@ members: 32
 - [[dot-test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_missing_op_prefix_blocked()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_path_traversal_blocked()_1]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_path_traversal_blocked()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_requires_auth()_2]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
 - [[1Password credential proxy (P2 credential isolation). Reads a secret from…]] - rationale - gateway/ingest_api/main.py
-- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
+- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_op_proxy.py
 - [[OpProxyRequest]] - code - gateway/ingest_api/main.py
 - [[Real functional check, not a boot-time smoke test every op reference     doc]] - rationale - gateway/tests/test_op_proxy.py
 - [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
@@ -37,7 +39,7 @@ members: 32
 - [[_do_op_read()]] - code - gateway/ingest_api/main.py
 - [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
 - [[_refresh_session()]] - code - gateway/ingest_api/main.py
-- [[client()_5]] - code - gateway/tests/test_op_proxy.py
+- [[client()_4]] - code - gateway/tests/test_op_proxy.py
 - [[op_proxy()]] - code - gateway/ingest_api/main.py
 - [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
 
@@ -51,10 +53,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_TrustConfig]]
 - 2 edges to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]]
 - 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
 
 ## Top bridge nodes
 - [[TestIsOpReferenceAllowed]] - degree 12, connects to 2 communities

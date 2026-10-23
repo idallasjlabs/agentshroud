@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Step-by-Step Deployment
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 16
 - [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Purpose_115]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Purpose_113]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md

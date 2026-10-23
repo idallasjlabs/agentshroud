@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestAppStateHas_1]] - `contains` [EXTRACTED]
 - [[TestIsFresh]] - `contains` [EXTRACTED]
-- [[TestScoreComplianceAuditing]] - `contains` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `contains` [EXTRACTED]
 - [[TestScoreContainerHardening]] - `contains` [EXTRACTED]
 - [[TestScoreImageIntegrity_1]] - `contains` [EXTRACTED]
 - [[TestScoreIncidentResponse]] - `contains` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestScoreRuntimeProtection]] - `contains` [EXTRACTED]
 - [[TestScoreSecretsManagement]] - `contains` [EXTRACTED]
 - [[TestScoreSecureDevelopment_1]] - `contains` [EXTRACTED]
-- [[TestScoreSupplyChain_1]] - `contains` [EXTRACTED]
+- [[TestScoreSupplyChain]] - `contains` [EXTRACTED]
 - [[TestScoreVulnerabilityManagement]] - `contains` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `contains` [EXTRACTED]
 - [[_mock_dir_with_fresh_files()]] - `contains` [EXTRACTED]

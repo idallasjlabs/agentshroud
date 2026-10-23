@@ -12,8 +12,8 @@ tags:
 # .test_high_severity_propagates_full_fraction()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
 - [[TestIncidentPropagation]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

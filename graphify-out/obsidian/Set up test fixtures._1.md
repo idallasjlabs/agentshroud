@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "check-vendor-compat.sh"
-location: "L21"
+community: "ProxyAction"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/ProxyAction
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

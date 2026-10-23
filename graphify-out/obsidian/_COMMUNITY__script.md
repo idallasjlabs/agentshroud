@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.51
 members: 10
 ---
 
 # _script
 
+**Cohesion:** 0.51 - moderately connected
 **Members:** 10 nodes
 
 ## Members

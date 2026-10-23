@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "code"
-community: "_wrap_response() (2)"
+community: "run-standalone.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/run-standalonesh
 ---
 
 # Marvin dev compose override (agentshroud-bot)
@@ -17,10 +17,10 @@ tags:
 - [[Sunday Upgrade Report 2026-10-18 (dev)]] - `references` [EXTRACTED]
 - [[docker-socket-proxy (digest pinned)]] - `references` [EXTRACTED]
 - [[gateway service (sole egress, FalcoClamAV in-process)]] - `references` [EXTRACTED]
-- [[openclaw service_1]] - `references` [EXTRACTED]
+- [[openclaw service]] - `references` [EXTRACTED]
 - [[run-standalone.sh]] - `references` [EXTRACTED]
 - [[voice-gateway service]] - `references` [EXTRACTED]
 - [[wazuh-agent sidecar]] - `references` [EXTRACTED]
 - [[wazuh-manager service (4.14.8)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

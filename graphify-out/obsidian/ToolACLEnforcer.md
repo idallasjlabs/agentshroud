@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "soc/router.py"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/soc/routerpy
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[dot-__init__()_81]] - `method` [EXTRACTED]
+- [[dot-__init__()_172]] - `method` [EXTRACTED]
 - [[dot-_can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[dot-_get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[dot-_get_role()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
@@ -80,12 +80,12 @@ tags:
 - [[TrustLevel_2]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
 - [[can_use_tool_from_origin]] - `conceptually_related_to` [EXTRACTED]
+- [[enforcer()_1]] - `calls` [EXTRACTED]
 - [[enforcer()_2]] - `calls` [EXTRACTED]
-- [[enforcer()]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

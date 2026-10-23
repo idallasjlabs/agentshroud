@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Skill: Code Review (CR) (2)"
+community: "SubagentGovernance"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR_2
+  - community/SubagentGovernance
 ---
 
 # TestSpawnAuthorization
@@ -25,4 +25,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Code_Review_CR_2
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

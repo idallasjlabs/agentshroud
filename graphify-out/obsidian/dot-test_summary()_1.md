@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_governance.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "TestCanvasAuthHelpers"
-location: "L211"
+community: "api.py"
+location: "L254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCanvasAuthHelpers
+  - community/apipy
 ---
 
 # .test_summary()
 
 ## Connections
-- [[TestLifecycle_1]] - `method` [EXTRACTED]
+- [[TestReporting]] - `method` [EXTRACTED]
+- [[_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers
+#graphify/code #graphify/EXTRACTED #community/apipy

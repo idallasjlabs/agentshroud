@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ContextSegment"
-location: "L300"
+community: "MiddlewareManager"
+location: "L555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MiddlewareManager
 ---
 
 # .test_owner_bypass()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
-- [[Test owner bypass for high-tier tools.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
+- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

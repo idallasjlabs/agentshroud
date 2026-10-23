@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "parse_clamscan_output"
 location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/parse_clamscan_output
 ---
 
 # .test_overall_clean_when_all_clean()
@@ -20,4 +20,4 @@ tags:
 - [[_wazuh_clean()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

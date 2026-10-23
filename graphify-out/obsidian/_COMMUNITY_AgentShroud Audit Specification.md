@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 37
 ---
 
 # AgentShroud Audit Specification
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -27,7 +29,7 @@ members: 37
 - [[Problem Permission denied (publickey)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Public Key]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Public Key (Copy-Paste Ready)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Quick Reference_4]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Quick Reference_3]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Raspberry Pi (pi-dev)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Restore SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[SSH Config File Location]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
@@ -39,8 +41,8 @@ members: 37
 - [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Troubleshooting_8]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Usage Examples_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Troubleshooting_10]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Usage Examples]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Verification Checklist]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[✅ Security Features Enabled]] - document - docs/setup/OPENCLAW_SSH_SETUP.md

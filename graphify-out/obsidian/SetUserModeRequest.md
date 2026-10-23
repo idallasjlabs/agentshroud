@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "ServiceManager"
 location: "L1125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig_3
+  - community/ServiceManager
 ---
 
 # SetUserModeRequest
@@ -16,11 +16,11 @@ tags:
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[set_user_collab_mode()]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/INFERRED #community/ServiceManager

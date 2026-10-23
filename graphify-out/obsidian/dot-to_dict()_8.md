@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "api.py"
-location: "L94"
+community: "SubagentGovernance"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/SubagentGovernance
 ---
 
 # .to_dict()
 
 ## Connections
+- [[dot-deregister()_1]] - `calls` [EXTRACTED]
 - [[dot-get_summary()]] - `calls` [EXTRACTED]
-- [[A2APeer]] - `method` [EXTRACTED]
+- [[ResourceUsage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

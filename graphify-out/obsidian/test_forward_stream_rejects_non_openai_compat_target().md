@@ -12,7 +12,7 @@ tags:
 # test_forward_stream_rejects_non_openai_compat_target()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[_post_stream()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "TestTriageClassLevelCoverage"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/TestTriageClassLevelCoverage
 ---
 
 # .test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()
@@ -16,4 +16,4 @@ tags:
 - [[It calls itself DoS; the generic DOS profile is containment-only. Left as DOS…]] - `rationale_for` [EXTRACTED]
 - [[TestTriageClassLevelCoverage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/TestTriageClassLevelCoverage

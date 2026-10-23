@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 25
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
@@ -24,7 +26,7 @@ members: 25
 - [[D. Egress behavior]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 - [[Delivered capability groups (baseline)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 - [[E. Leak-safety checks]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
-- [[Executive Summary_9]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Executive Summary_8]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 - [[F. Rate-limit UX]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 - [[G. Daily evidence capture]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 - [[Gateway regression suites]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md

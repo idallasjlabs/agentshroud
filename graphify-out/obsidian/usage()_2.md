@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/docker-cleanup.sh"
+source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "TestTail"
-location: "L19"
+community: "test_voice_gateway.py (2)"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTail
+  - community/test_voice_gatewaypy_2
 ---
 
 # usage()
 
 ## Connections
-- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
-- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
+- [[wait-for-text.sh]] - `defines` [EXTRACTED]
+- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTail
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy_2

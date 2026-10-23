@@ -12,7 +12,7 @@ tags:
 # IsolationVerifier
 
 ## Connections
-- [[dot-__init__()_188]] - `method` [EXTRACTED]
+- [[dot-__init__()_160]] - `method` [EXTRACTED]
 - [[dot-generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
@@ -49,7 +49,7 @@ tags:
 - [[TestEncryptedStore]] - `uses` [INFERRED]
 - [[TestGenerateCompose]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]

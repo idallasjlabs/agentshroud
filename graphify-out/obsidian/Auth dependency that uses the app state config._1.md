@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "lifespan()"
+community: "CompetitiveIntelReport"
 location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/CompetitiveIntelReport
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

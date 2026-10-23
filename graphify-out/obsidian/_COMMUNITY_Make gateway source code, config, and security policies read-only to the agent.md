@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Make gateway source code, config, and security policies read-only to the agent
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 15
 - [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Methods Filtered (Inbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Methods Filtered (Outbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Purpose_127]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
+- [[Purpose_125]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md

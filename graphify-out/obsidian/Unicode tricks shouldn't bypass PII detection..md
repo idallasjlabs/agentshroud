@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # Unicode tricks shouldn't bypass PII detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unicode_normalization_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

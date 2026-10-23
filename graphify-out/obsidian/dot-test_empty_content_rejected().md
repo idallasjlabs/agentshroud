@@ -12,7 +12,7 @@ tags:
 # .test_empty_content_rejected()
 
 ## Connections
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

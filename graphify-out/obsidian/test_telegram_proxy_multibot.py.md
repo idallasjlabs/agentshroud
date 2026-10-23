@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "SecureBrowser (2)"
+community: "GroupConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/GroupConfig
 ---
 
 # test_telegram_proxy_multibot.py
@@ -22,4 +22,4 @@ tags:
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

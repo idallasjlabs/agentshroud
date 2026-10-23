@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/references/configuration.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "prompt_guard.py.md"
-location: "L120"
+community: "Himalaya Email CLI"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/Himalaya_Email_CLI
 ---
 
 # Multiple Accounts
 
 ## Connections
-- [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

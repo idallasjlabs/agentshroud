@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "CrossBotTrustLedger (3)"
-location: "L307"
+community: "EgressFilterConfig (2)"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger_3
+  - community/EgressFilterConfig_2
 ---
 
 # .set_event_bus()
 
 ## Connections
-- [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[Wire optional event bus for privacysecurity telemetry.]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[Set optional event bus for real-time egress telemetry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger_3
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

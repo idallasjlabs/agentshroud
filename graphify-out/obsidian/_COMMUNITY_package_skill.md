@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # package_skill
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -22,7 +24,7 @@ members: 17
 - [[G. Trademark  IP]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[Infrastructure_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_17]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_18]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 

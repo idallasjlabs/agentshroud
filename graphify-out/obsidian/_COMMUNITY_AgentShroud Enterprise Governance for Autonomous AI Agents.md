@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 22
 - [[Installation_2]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Prerequisites_8]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Security notes_5]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Security notes_4]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Troubleshooting_26]] - document - docs/integrations/voice-terminal-esp32-s3.md

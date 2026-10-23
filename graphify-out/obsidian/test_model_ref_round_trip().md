@@ -17,7 +17,7 @@ tags:
 - [[_fake_forward()_24]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[parametrize]] - `references` [EXTRACTED]
+- [[parametrize_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

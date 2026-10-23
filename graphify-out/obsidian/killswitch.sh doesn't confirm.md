@@ -12,6 +12,6 @@ tags:
 # killswitch.sh doesn't confirm
 
 ## Connections
-- [[Troubleshooting_25]] - `contains` [EXTRACTED]
+- [[Troubleshooting_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_pii_hit_fields()]] - `method` [EXTRACTED]
 - [[dot-test_report_has_required_fields()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]

@@ -19,7 +19,7 @@ tags:
 - [[dot-_scan_xml_dtd()]] - `references` [EXTRACTED]
 - [[dot-_scan_zero_width()]] - `references` [EXTRACTED]
 - [[dot-finding_summary()]] - `method` [EXTRACTED]
-- [[dot-flagged()]] - `method` [EXTRACTED]
+- [[dot-flagged()_1]] - `method` [EXTRACTED]
 - [[dot-scan()]] - `calls` [EXTRACTED]
 - [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]

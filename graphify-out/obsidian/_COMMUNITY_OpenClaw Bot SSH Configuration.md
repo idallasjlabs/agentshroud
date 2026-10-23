@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 40
 ---
 
 # OpenClaw Bot SSH Configuration
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 40 nodes
 
 ## Members
@@ -19,13 +21,13 @@ members: 40
 - [[Production Safety Checklist (SKILL)]] - document - .agents/skills/i-ps/SKILL.md
 - [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_64]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_65]] - document - .agents/skills/i-production/README.md
-- [[Purpose_66]] - document - .agents/skills/i-ps/README.md
-- [[Purpose_67]] - document - .agents/skills/i-qa/README.md
-- [[Purpose_68]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Purpose_69]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Purpose_70]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Purpose_62]] - document - .agents/skills/i-pm/README.md
+- [[Purpose_63]] - document - .agents/skills/i-production/README.md
+- [[Purpose_64]] - document - .agents/skills/i-ps/README.md
+- [[Purpose_65]] - document - .agents/skills/i-qa/README.md
+- [[Purpose_66]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Purpose_67]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Purpose_68]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
 - [[Quality Assurance (SKILL)]] - document - .agents/skills/i-qa/SKILL.md
@@ -57,10 +59,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AgentTarget (2)]]
+- 4 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 - 3 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
 - 3 edges to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
 
 ## Top bridge nodes
 - [[Quality Assurance (SKILL)]] - degree 12, connects to 3 communities

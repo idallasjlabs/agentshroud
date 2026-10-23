@@ -12,6 +12,6 @@ tags:
 # Response Path
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3

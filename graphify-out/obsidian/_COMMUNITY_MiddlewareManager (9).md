@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # MiddlewareManager (9)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
@@ -27,7 +29,7 @@ members: 22
 - [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary_10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary_9]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
 - [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
@@ -40,11 +42,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (3)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (9) (2)_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (9) (2)]]
 - 1 edge to [[_COMMUNITY_📱 Required Accounts & Services]]
 - 1 edge to [[_COMMUNITY_AsyncMock (2)]]
 - 1 edge to [[_COMMUNITY_Report Delivery Format Instructions]]
-- 1 edge to [[_COMMUNITY_AuditExporter (2)]]
+- 1 edge to [[_COMMUNITY_AuditExporter (2)_1]]
 - 1 edge to [[_COMMUNITY_TelegramGatewayRelay]]
 - 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
 

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 11
 ---
 
 # TestSendTelegramTruncation (2)
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -28,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 2 edges to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
 
 ## Top bridge nodes

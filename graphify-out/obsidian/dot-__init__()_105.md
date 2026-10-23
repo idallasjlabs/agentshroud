@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L278"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
+community: "MemoryIntegrityMonitor"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # ._load_integrity_database()
 
 ## Connections
-- [[dot-__init__()_89]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_66]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[Load integrity database from disk.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

@@ -16,7 +16,7 @@ tags:
 - [[AuditEntry (data entity)]] - `conceptually_related_to` [EXTRACTED]
 - [[Consequences_2]] - `contains` [EXTRACTED]
 - [[Context_4]] - `contains` [EXTRACTED]
-- [[Decision_5]] - `contains` [EXTRACTED]
+- [[Decision_4]] - `contains` [EXTRACTED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `references` [EXTRACTED]
 - [[Status_5]] - `contains` [EXTRACTED]
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]

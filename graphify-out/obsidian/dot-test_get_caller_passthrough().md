@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "MiddlewareManager (2)"
 location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/MiddlewareManager_2
 ---
 
 # .test_get_caller_passthrough()
 
 ## Connections
-- [[SCLCaller_2]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `calls` [EXTRACTED]
 - [[TestResolveCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 - [[get_caller()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

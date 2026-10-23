@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md (5)"
+community: "OpenClaw Workspace Usage Guide"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd_5
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_5
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

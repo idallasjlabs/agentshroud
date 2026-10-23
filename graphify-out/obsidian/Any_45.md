@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "system-requirements.md"
-location: "L56"
+community: "ContextSegment"
+location: "L141"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - graphify/INFERRED
+  - community/ContextSegment
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[dot-broadcast()]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()_2]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/INFERRED #community/ContextSegment

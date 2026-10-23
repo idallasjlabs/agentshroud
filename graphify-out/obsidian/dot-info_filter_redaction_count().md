@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "api.py (2)"
+community: "SlackAPIProxy"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/SlackAPIProxy
 ---
 
 # .info_filter_redaction_count()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

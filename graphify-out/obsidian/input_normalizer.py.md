@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "TestCheckCommandExecution"
+community: "_t"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/_t
 ---
 
 # input_normalizer.py
@@ -17,4 +17,4 @@ tags:
 - [[normalize_input()]] - `contains` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/_t

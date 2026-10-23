@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Use Cases
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
 - [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Purpose_151]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Purpose_150]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Responsibilities_48]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md

@@ -12,6 +12,6 @@ tags:
 # A pending approval request in the queue
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextSegment

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "KeyRotationManager (2)"
-location: "L36"
+community: "MCP AWS Profile Configuration README"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationManager_2
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Set In
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationManager_2
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

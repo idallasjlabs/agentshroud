@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # AuditEvent
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 23
 - [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
-- [[Overview_11]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Overview_12]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 - [[Related_4]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md

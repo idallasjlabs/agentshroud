@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "graphify Skill"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
 location: "L485"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
 ---
 
 # Avoid
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8) OUTPUT FORMATTING CONTRACT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_Skill
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2

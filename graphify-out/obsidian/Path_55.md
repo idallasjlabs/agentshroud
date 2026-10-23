@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "create_auth_dependency (2)"
-location: "L65"
+community: "CompetitiveIntelReport"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2
+  - community/CompetitiveIntelReport
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_89]] - `references` [EXTRACTED]
-- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
-- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-scan_file()_1]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `calls` [EXTRACTED]
+- [[serve_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency_2
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

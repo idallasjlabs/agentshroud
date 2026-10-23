@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.50
 members: 5
 ---
 
 # PermissionLevel (6)
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 5 nodes
 
 ## Members

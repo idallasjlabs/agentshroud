@@ -12,9 +12,9 @@ tags:
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_91]] - `contains` [EXTRACTED]
-- [[Related Skills_70]] - `contains` [EXTRACTED]
-- [[Usage_76]] - `contains` [EXTRACTED]
+- [[Purpose_103]] - `contains` [EXTRACTED]
+- [[Related Skills_74]] - `contains` [EXTRACTED]
+- [[Usage_80]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-ggREADME]] - `contains` [EXTRACTED]
 

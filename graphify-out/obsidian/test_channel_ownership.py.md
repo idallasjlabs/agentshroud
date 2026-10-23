@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestPatternDetection"
+community: "UserSessionManager (2) (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/UserSessionManager_2_2
 ---
 
 # test_channel_ownership.py
@@ -15,9 +15,9 @@ tags:
 - [[TestEmailSend]] - `contains` [EXTRACTED]
 - [[TestTelegramWebhook]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_4]] - `imports` [EXTRACTED]
+- [[auth_dep()_1]] - `imports` [EXTRACTED]
 - [[bypass_auth()]] - `contains` [EXTRACTED]
-- [[client()_3]] - `contains` [EXTRACTED]
+- [[client()_15]] - `contains` [EXTRACTED]
 - [[forward.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2

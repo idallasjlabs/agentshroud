@@ -12,7 +12,7 @@ tags:
 # _submit_enhanced_high_risk()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
 - [[test_enhanced_decide_missing_code_denied()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_reject_no_mfa()]] - `calls` [EXTRACTED]

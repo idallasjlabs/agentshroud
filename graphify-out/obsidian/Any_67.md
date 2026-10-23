@@ -1,19 +1,30 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Examples"
-location: "L119"
+community: "SecurityPipeline (2)"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Examples
+  - community/SecurityPipeline_2
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()_1]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_17]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
+- [[dot-to_dict()_11]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Examples
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

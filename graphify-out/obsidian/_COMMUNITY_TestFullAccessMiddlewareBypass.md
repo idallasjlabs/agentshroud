@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 26
 ---
 
 # TestFullAccessMiddlewareBypass
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 26 nodes
 
 ## Members

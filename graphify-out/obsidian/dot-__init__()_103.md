@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "plan_remediation"
-location: "L67"
+community: "test_runtime_engines.py"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_runtime_enginespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

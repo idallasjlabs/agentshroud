@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[LLMProxy.proxy_messages (non-streaming)]] - `calls` [EXTRACTED]
 - [[Proxy Google Gemini API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[api_route]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[llm_api_proxy()]] - `semantically_similar_to` [INFERRED]

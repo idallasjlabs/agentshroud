@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # Step-by-Step Installation
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -40,7 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
 - 1 edge to [[_COMMUNITY_ContextSegment (3)]]
 
 ## Top bridge nodes

@@ -22,7 +22,7 @@ tags:
 - [[dot-test_system_message_not_tracked()]] - `method` [EXTRACTED]
 - [[dot-test_thread_reply_recovers_inbound_via_conversations_replies()]] - `method` [EXTRACTED]
 - [[dot-test_tracker_exception_does_not_break_response()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

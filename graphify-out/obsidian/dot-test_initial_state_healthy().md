@@ -12,7 +12,7 @@ tags:
 # .test_initial_state_healthy()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
 - [[TestTrackerGetHealth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

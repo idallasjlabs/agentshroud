@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
-- [[_fake_send()_4]] - `contains` [EXTRACTED]
-- [[_fake_send()_14]] - `indirect_call` [INFERRED]
+- [[_fake_send()_6]] - `contains` [EXTRACTED]
+- [[_fake_send()]] - `indirect_call` [INFERRED]
 - [[_fake_trivy_scan()_4]] - `contains` [EXTRACTED]
 - [[_fake_trivy_scan()_5]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]

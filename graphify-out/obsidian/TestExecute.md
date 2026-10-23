@@ -16,9 +16,9 @@ tags:
 - [[dot-test_execute_success()]] - `method` [EXTRACTED]
 - [[dot-test_execute_timeout()]] - `method` [EXTRACTED]
 - [[dot-test_execute_unknown_host()]] - `method` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 

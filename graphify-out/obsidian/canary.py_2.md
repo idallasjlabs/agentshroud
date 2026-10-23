@@ -18,7 +18,7 @@ tags:
 - [[Key Classes  Functions_40]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_11]] - `contains` [EXTRACTED]
 - [[Operational Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_142]] - `contains` [EXTRACTED]
+- [[Purpose_141]] - `contains` [EXTRACTED]
 - [[Related_44]] - `contains` [EXTRACTED]
 - [[Responsibilities_42]] - `contains` [EXTRACTED]
 - [[Threat Model_24]] - `contains` [EXTRACTED]

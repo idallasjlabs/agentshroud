@@ -12,7 +12,7 @@ tags:
 # .tool_config()
 
 ## Connections
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 - [[Tool result PII configuration for tests]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 

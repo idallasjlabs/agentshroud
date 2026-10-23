@@ -12,7 +12,7 @@ tags:
 # AgentShroud Recovery Plan v0.4.0
 
 ## Connections
-- [[EXECUTIVE SUMMARY_15]] - `contains` [EXTRACTED]
+- [[EXECUTIVE SUMMARY_14]] - `contains` [EXTRACTED]
 - [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - `contains` [EXTRACTED]
 - [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - `contains` [EXTRACTED]
 - [[PHASE 2 NEXT SESSION (v0.5.0)]] - `contains` [EXTRACTED]

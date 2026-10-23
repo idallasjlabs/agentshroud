@@ -1,19 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "MiddlewareManager (5)"
-location: "L528"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Quick Reference
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
-- [[Emergency Procedures]] - `contains` [EXTRACTED]
-- [[Security Checklist]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

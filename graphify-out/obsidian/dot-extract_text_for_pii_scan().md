@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
 - [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager_2

@@ -1,11 +1,13 @@
 ---
 type: community
-members: 36
+cohesion: 0.06
+members: 38
 ---
 
 # EgressFilterConfig (2) (2)
 
-**Members:** 36 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 38 nodes
 
 ## Members
 - [[EgressAllowlistResponse]] - code - gateway/web/management.py
@@ -26,6 +28,7 @@ members: 36
 - [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
 - [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
 - [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
+- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
 - [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
 - [[approvals()]] - code - gateway/web/management.py
 - [[audit()_1]] - code - gateway/web/management.py
@@ -43,6 +46,7 @@ members: 36
 - [[rotate_credential()]] - code - gateway/web/management.py
 - [[security_overview()]] - code - gateway/web/management.py
 - [[ssh()]] - code - gateway/web/management.py
+- [[update_egress_allowlist()]] - code - gateway/web/management.py
 - [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
@@ -53,16 +57,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 8 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
 - 6 edges to [[_COMMUNITY_A2AMethod]]
 - 6 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
 - 3 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 
 ## Top bridge nodes
 - [[management.py]] - degree 26, connects to 5 communities
-- [[EgressAllowlistUpdate]] - degree 6, connects to 4 communities
 - [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
+- [[EgressAllowlistUpdate]] - degree 6, connects to 3 communities
 - [[credentials_health()]] - degree 4, connects to 2 communities
 - [[credentials_status()]] - degree 4, connects to 2 communities

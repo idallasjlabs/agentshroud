@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .test_lower_threshold_than_direct_scan()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 - [[Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

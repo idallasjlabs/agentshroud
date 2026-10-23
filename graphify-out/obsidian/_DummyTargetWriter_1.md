@@ -1,25 +1,24 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Usage"
-location: "L87"
+community: "_pcm_bytes"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/_pcm_bytes
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[dot-__init__()_192]] - `method` [EXTRACTED]
 - [[dot-close()_19]] - `method` [EXTRACTED]
-- [[dot-drain()_3]] - `method` [EXTRACTED]
-- [[dot-write()_3]] - `method` [EXTRACTED]
+- [[dot-drain()_2]] - `method` [EXTRACTED]
+- [[dot-write()_2]] - `method` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
-- [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

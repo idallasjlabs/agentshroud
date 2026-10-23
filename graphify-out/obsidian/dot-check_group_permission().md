@@ -12,10 +12,10 @@ tags:
 # .check_group_permission()
 
 ## Connections
-- [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
+- [[Action_3]] - `references` [EXTRACTED]
 - [[Check if a user can perform an action on a group.          Permission matrix]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

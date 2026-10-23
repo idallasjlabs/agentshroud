@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # http_proxy.py
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -31,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 - 1 edge to [[_COMMUNITY_http_proxy.py (2)]]
 
 ## Top bridge nodes

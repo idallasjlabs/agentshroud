@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "TestOutboundPipelineIntegration"
+community: "EgressFilterConfig (2)"
 location: "L683"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/EgressFilterConfig_2
 ---
 
 # None of the four domains should match the default denylist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_domains_not_denylisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

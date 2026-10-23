@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "UserSessionManager"
-location: "L27"
+community: "AgentTarget"
+location: "L415"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/AgentTarget
 ---
 
 # .forward()
 
 ## Connections
 - [[_StubForwarder_2]] - `method` [EXTRACTED]
+- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
+- [[test_forwarder_mock()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

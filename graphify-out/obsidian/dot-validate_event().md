@@ -12,7 +12,7 @@ tags:
 # .validate_event()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
 - [[EventInjectionError]] - `calls` [EXTRACTED]
 - [[SessionError]] - `calls` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
-location: "L15"
+community: "MultiHostResult"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+  - community/MultiHostResult
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

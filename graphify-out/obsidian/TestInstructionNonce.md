@@ -12,7 +12,7 @@ tags:
 # TestInstructionNonce
 
 ## Connections
-- [[dot-manager()_1]] - `method` [EXTRACTED]
+- [[dot-manager()]] - `method` [EXTRACTED]
 - [[dot-test_nonce_expired_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_nonce_first_use_passes()]] - `method` [EXTRACTED]
 - [[dot-test_nonce_generation_unique()]] - `method` [EXTRACTED]

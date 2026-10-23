@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
-location: "L69"
+community: "ServiceManager"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

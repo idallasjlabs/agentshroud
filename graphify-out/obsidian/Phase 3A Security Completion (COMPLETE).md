@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
+community: "Phase 3A: Security Completion (COMPLETE)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/Phase_3A_Security_Completion_COMPLETE
 ---
 
 # Phase 3A: Security Completion (COMPLETE)
@@ -22,4 +22,4 @@ tags:
 - [[3A.8 Change DM policy to allowlist ✅]] - `contains` [EXTRACTED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/Phase_3A_Security_Completion_COMPLETE

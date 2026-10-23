@@ -12,7 +12,7 @@ tags:
 # _read_compose_text()
 
 ## Connections
-- [[Path_66]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - `rationale_for` [EXTRACTED]
 - [[_score_docker_daemon_config()]] - `calls` [EXTRACTED]
 - [[_score_host_os_hardening()]] - `calls` [EXTRACTED]

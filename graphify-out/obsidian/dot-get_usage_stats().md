@@ -12,9 +12,9 @@ tags:
 # .get_usage_stats()
 
 ## Connections
-- [[Any_18]] - `references` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
 - [[Get current usage statistics.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceUsage]] - `calls` [EXTRACTED]
+- [[ResourceUsage_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

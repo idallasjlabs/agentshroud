@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.07
 members: 43
 ---
 
 # Colima & Docker Operations Guide — AgentShroud
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_60]] - code - gateway/dashboard/proxy_status.py
+- [[dot-__init__()_69]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
@@ -61,9 +63,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 - 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
 - 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
 
 ## Top bridge nodes
 - [[ProxyDashboard]] - degree 27, connects to 2 communities

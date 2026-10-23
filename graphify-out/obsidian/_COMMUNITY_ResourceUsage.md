@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 10
 ---
 
 # ResourceUsage
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -27,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
+- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
 
 ## Top bridge nodes
 - [[preflight-check.sh]] - degree 4, connects to 1 community

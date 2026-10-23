@@ -12,7 +12,7 @@ tags:
 # ReportStore
 
 ## Connections
-- [[dot-__init__()_24]] - `method` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-_check_size()]] - `method` [EXTRACTED]
 - [[dot-_enforce_count_cap()]] - `method` [EXTRACTED]
 - [[dot-_path()]] - `method` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[dot-test_title_and_tags_sanitized_sync()]] - `calls` [EXTRACTED]
 - [[Filesystem-backed shared report store on the gateway-data volume.]] - `rationale_for` [EXTRACTED]
 - [[TestAsyncSave]] - `uses` [INFERRED]
-- [[TestPersistence]] - `uses` [INFERRED]
+- [[TestPersistence_1]] - `uses` [INFERRED]
 - [[TestReportAPI]] - `uses` [INFERRED]
 - [[TestReviewHardening]] - `uses` [INFERRED]
 - [[TestSaveAndGet]] - `uses` [INFERRED]

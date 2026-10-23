@@ -17,6 +17,6 @@ tags:
 - [[Closing Gate]] - `contains` [EXTRACTED]
 - [[Output Format Rules]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)_1]] - `contains` [EXTRACTED]
-- [[Role_15]] - `contains` [EXTRACTED]
+- [[Role_14]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_2

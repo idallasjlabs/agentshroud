@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_proxy_returns_400_on_traversal()]] - `calls` [EXTRACTED]
 - [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `calls` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - `rationale_for` [EXTRACTED]
 - [[TestHermesDashboardPathTraversal]] - `calls` [INFERRED]
 - [[TestHermesDashboardProxyHeaders]] - `calls` [EXTRACTED]

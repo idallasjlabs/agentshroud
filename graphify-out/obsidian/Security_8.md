@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Mode A — Single task (2)"
-location: "L135"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_2
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[Best Practices_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_2
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

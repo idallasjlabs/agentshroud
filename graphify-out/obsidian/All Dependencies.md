@@ -23,8 +23,8 @@ tags:
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[pydantic_1]] - `references` [EXTRACTED]
 - [[pytest.ini_1]] - `references` [EXTRACTED]
-- [[python-jose_1]] - `references` [EXTRACTED]
+- [[python-jose]] - `references` [EXTRACTED]
 - [[spacy_1]] - `references` [EXTRACTED]
-- [[trivy_1]] - `references` [EXTRACTED]
+- [[trivy]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EgressFilter

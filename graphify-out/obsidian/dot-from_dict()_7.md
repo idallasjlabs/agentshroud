@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L210"
+community: "test_a2a_policy.py"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/test_a2a_policypy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[A2APolicyAction]] - `calls` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
+- [[dot-register()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

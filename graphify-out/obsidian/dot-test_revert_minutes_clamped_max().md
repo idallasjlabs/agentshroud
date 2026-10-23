@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestWebSearchLog"
+community: "KillSwitchMonitor"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSearchLog
+  - community/KillSwitchMonitor
 ---
 
 # .test_revert_minutes_clamped_max()
@@ -15,4 +15,4 @@ tags:
 - [[TestSetMode]] - `method` [EXTRACTED]
 - [[revert_after_minutes above 480 is clamped to 480.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

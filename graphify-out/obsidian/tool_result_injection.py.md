@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "TestCheckCommandExecution"
+community: "_t"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/_t
 ---
 
 # tool_result_injection.py
@@ -24,4 +24,4 @@ tags:
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/_t

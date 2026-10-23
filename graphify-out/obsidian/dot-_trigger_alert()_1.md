@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "tool_chain_analyzer.py"
 location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/tool_chain_analyzerpy
 ---
 
 # ._trigger_alert()
@@ -17,4 +17,4 @@ tags:
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 - [[Trigger alert callbacks for a detected chain.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

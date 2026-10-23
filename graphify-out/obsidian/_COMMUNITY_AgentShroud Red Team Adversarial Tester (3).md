@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # AgentShroud Red Team Adversarial Tester (3)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -20,8 +22,8 @@ members: 18
 - [[Output Format_19]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Persona_6]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Quality Checklist_6]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Role_58]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_3]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Role_56]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Socrates — Dialogue Architect_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Speaker Definitions_1]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[System Prompt_6]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[User Prompt Template_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
@@ -38,4 +40,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[Socrates — Dialogue Architect_3]] - degree 13, connects to 1 community
+- [[Socrates — Dialogue Architect_2]] - degree 13, connects to 1 community

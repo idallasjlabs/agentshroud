@@ -12,10 +12,10 @@ tags:
 # test_start_serves_and_stop_closes_loopback()
 
 ## Connections
-- [[dot-close()_18]] - `calls` [EXTRACTED]
-- [[dot-drain()_3]] - `calls` [EXTRACTED]
+- [[dot-close()_14]] - `calls` [EXTRACTED]
+- [[dot-drain()]] - `calls` [EXTRACTED]
 - [[dot-readline()_1]] - `calls` [EXTRACTED]
-- [[dot-write()_3]] - `calls` [EXTRACTED]
+- [[dot-write()]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[start() binds a real loopback server; a client gets a parsed response;     stop(]] - `rationale_for` [EXTRACTED]

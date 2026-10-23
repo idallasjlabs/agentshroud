@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Mode A — Single task (3)"
-location: "L8"
+community: "MiddlewareManager (4)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/MiddlewareManager_4
 ---
 
-# Shutdown & Recovery
+# Shutdown & Recovery.md
 
 ## Connections
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
-- [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
-- [[Kill Switch (Emergency Stop)]] - `contains` [EXTRACTED]
-- [[Related Notes_40]] - `contains` [EXTRACTED]
+- [[Home_1]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery]] - `contains` [EXTRACTED]
-- [[State After Recovery]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[10-digit real UID must still be written to JSONL and markdown.]] - `rationale_for` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DELIVERABLE_1__Domain-by-Domain_Assessment

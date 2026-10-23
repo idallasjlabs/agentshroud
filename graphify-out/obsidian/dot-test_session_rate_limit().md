@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "._make_proxy()"
 location: "L1067"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/_make_proxy
 ---
 
 # .test_session_rate_limit()
@@ -15,4 +15,4 @@ tags:
 - [[Session]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

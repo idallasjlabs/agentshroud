@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "_make_proxy()"
-location: "L389"
+community: "MiddlewareManager (6)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/MiddlewareManager_6
 ---
 
 # .health_check()
 
 ## Connections
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_15]] - `references` [EXTRACTED]
-- [[Check health of one or all agent targets          Args             target Spec]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Return True if the runtime is available and responsive.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6

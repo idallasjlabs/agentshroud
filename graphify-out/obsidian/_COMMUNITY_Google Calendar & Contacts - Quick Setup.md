@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Google Calendar & Contacts - Quick Setup
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
 - [[Configuration  Environment Variables_3]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
 - [[Function Details_10]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
 - [[Key Classes  Functions_11]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Purpose_107]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Purpose_96]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
 - [[Related_15]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
 - [[Responsibilities_13]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
 - [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "AgentTarget (2)"
+community: ".agents/skills/i-cr/SKILL.md (2)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/agents/skills/i-cr/SKILLmd_2
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2

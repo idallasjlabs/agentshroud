@@ -12,7 +12,7 @@ tags:
 # _score_host_os_hardening()
 
 ## Connections
-- [[Path_66]] - `calls` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 - [[Score domain 19 Host OS Hardening (0-5). NIST 800-190 §3.5.      0=no info, 1=k]] - `rationale_for` [EXTRACTED]
 - [[_is_containerized()]] - `calls` [EXTRACTED]
 - [[_read_compose_text()]] - `calls` [EXTRACTED]

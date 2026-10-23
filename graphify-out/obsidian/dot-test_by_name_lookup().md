@@ -12,9 +12,9 @@ tags:
 # .test_by_name_lookup()
 
 ## Connections
-- [[Path_64]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
-- [[_sha256()_2]] - `calls` [EXTRACTED]
+- [[_sha256()_3]] - `calls` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3

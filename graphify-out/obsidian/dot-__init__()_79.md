@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L230"
+community: "ResourceGuard"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[MCPAuditTrail]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `references` [EXTRACTED]
-- [[MCPPermissionManager]] - `references` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -12,7 +12,7 @@ tags:
 
 ## Connections
 - [[GitHub Actions version inventory (first time in scope)]] - `conceptually_related_to` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - `references` [EXTRACTED]
 - [[sunday-rollback.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-approve.sh]] - `references` [EXTRACTED]

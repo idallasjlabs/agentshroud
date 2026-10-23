@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "TestCheckCommandExecution"
-location: "L176"
+community: "KillSwitchMonitor (3)"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/KillSwitchMonitor_3
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Path_51]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3

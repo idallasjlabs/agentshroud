@@ -12,7 +12,7 @@ tags:
 # .test_three_zero_failures_no_report_on_disk()
 
 ## Connections
-- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
 - [[_mock_empty_dir()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd_2

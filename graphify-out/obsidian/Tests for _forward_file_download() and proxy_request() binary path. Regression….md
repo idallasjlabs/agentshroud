@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2) (2)"
+community: "asyncio"
 location: "L8645"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_2
+  - community/asyncio
 ---
 
 # Tests for _forward_file_download() and proxy_request() binary path. Regression…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileDownload]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

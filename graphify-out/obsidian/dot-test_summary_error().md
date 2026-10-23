@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Common Queries"
-location: "L525"
+community: "Skill: Project Management (PM) (3)"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Skill_Project_Management_PM_3
 ---
 
 # .test_summary_error()
 
 ## Connections
-- [[TestClamAVSummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Common_Queries
+#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L320"
+community: "Enum"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # .test_alert_callbacks()
 
 ## Connections
 - [[Test alert callback functionality._1]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
+- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

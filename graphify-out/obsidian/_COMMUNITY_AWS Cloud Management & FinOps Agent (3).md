@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # AWS Cloud Management & FinOps Agent (3)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 19
 - [[Quick Status (for chatTelegram)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[README.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Risk Management_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Role_53]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Role_51]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Skill Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Status Reporting_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Task Coordination_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md

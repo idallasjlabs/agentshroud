@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L319"
+community: "ToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/ToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[DOCKER_HOST]] - `defines` [EXTRACTED]
-- [[PATH_8]] - `defines` [EXTRACTED]
+- [[PATH_10]] - `defines` [EXTRACTED]
 - [[find_port()]] - `defines` [EXTRACTED]
 - [[launch-instance.sh script]] - `contains` [EXTRACTED]
 

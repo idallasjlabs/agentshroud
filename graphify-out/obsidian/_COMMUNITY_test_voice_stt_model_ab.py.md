@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 51
 ---
 
 # test_voice_stt_model_ab.py
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 51 nodes
 
 ## Members
@@ -42,7 +44,7 @@ members: 51
 - [[Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…]] - rationale - gateway/ingest_api/main.py
 - [[Proxy native Ollama API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
 - [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - rationale - gateway/ingest_api/main.py
-- [[Request_4]] - code
+- [[Request_1]] - code
 - [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
 - [[Set a user's role (owner only).]] - rationale - gateway/ingest_api/main.py
 - [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - rationale - gateway/ingest_api/main.py
@@ -85,7 +87,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Steps]]
 
 ## Top bridge nodes
-- [[Request_4]] - degree 22, connects to 5 communities
+- [[Request_1]] - degree 22, connects to 5 communities
 - [[llm_api_proxy()]] - degree 13, connects to 5 communities
 - [[hermes_dashboard_proxy()]] - degree 12, connects to 5 communities
 - [[LLMProxy.proxy_messages_streaming]] - degree 20, connects to 3 communities

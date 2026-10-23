@@ -18,7 +18,7 @@ tags:
 - [[dot-test_presidio_analyze_restricted_to_pii_entities()]] - `method` [EXTRACTED]
 - [[dot-test_presidio_exception_falls_back_to_regex()]] - `method` [EXTRACTED]
 - [[dot-test_presidio_result_becomes_pii_hit()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[Exercise the Presidio detection path with an injected fake analyzer.      The re]] - `rationale_for` [EXTRACTED]
 - [[PIIHit]] - `uses` [INFERRED]

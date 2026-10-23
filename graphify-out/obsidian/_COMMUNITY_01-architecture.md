@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # 01-architecture.md
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 10
 - [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
 - [[List Available Profiles_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[List Available Profiles_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_10]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Quick Reference_9]] - document - docs/setup/SETUP_API_KEYS.md
 - [[View Configured Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
 
@@ -32,6 +34,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide]]
 
 ## Top bridge nodes
-- [[Quick Reference_10]] - degree 5, connects to 1 community
+- [[Quick Reference_9]] - degree 5, connects to 1 community
 - [[List Available Profiles_2]] - degree 4, connects to 1 community
 - [[List Available Profiles_1]] - degree 3, connects to 1 community

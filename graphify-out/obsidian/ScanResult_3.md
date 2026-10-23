@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
 community: "ConfigIntegrityMonitor"
-location: "L107"
+location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,37 +12,11 @@ tags:
 # ScanResult
 
 ## Connections
-- [[dot-_scan_opaque_blobs()]] - `references` [EXTRACTED]
-- [[dot-blocked()]] - `method` [EXTRACTED]
-- [[dot-extend()]] - `method` [EXTRACTED]
-- [[dot-recommendation()]] - `method` [EXTRACTED]
-- [[dot-scan_file()]] - `references` [EXTRACTED]
-- [[dot-scan_skill_tree()]] - `references` [EXTRACTED]
-- [[dot-severity()]] - `method` [EXTRACTED]
-- [[Aggregated result of scanning a skill file or an entire skill tree.]] - `rationale_for` [EXTRACTED]
-- [[CompletedProcess]] - `uses` [INFERRED]
-- [[Path_22]] - `uses` [INFERRED]
-- [[Path_27]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[ScanResult_1]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[TestAggregation]] - `uses` [INFERRED]
-- [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient]] - `uses` [INFERRED]
-- [[TestExecOfDownload]] - `uses` [INFERRED]
-- [[TestExfiltration]] - `uses` [INFERRED]
-- [[TestKnownMalicious]] - `uses` [INFERRED]
-- [[TestObfuscation]] - `uses` [INFERRED]
-- [[TestOversizedUnscannable]] - `uses` [INFERRED]
-- [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestReloadIntegration]] - `uses` [INFERRED]
-- [[TestScanEntrypoint]] - `uses` [INFERRED]
-- [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
-- [[TestSecretAccess]] - `uses` [INFERRED]
-- [[TestSyncScriptPreflight]] - `uses` [INFERRED]
-- [[scan.py]] - `imports` [EXTRACTED]
-- [[skill_guard.py]] - `contains` [EXTRACTED]
-- [[test_skill_guard.py]] - `imports` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor

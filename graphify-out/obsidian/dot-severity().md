@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Highest severity across all findings (``NONE`` when clean).]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_3]] - `method` [EXTRACTED]
+- [[ScanResult_4]] - `method` [EXTRACTED]
 - [[Severity]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

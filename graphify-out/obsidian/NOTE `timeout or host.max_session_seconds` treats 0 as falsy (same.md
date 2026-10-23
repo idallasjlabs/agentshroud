@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "SSHProxy"
 location: "L539"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/SSHProxy
 ---
 
 # # NOTE: `timeout or host.max_session_seconds` treats 0 as falsy (same
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssh_write_file_endpoint.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

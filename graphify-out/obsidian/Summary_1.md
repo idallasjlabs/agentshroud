@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L10"
+community: "TestScoreNetworkSegmentation"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/TestScoreNetworkSegmentation
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/TestScoreNetworkSegmentation

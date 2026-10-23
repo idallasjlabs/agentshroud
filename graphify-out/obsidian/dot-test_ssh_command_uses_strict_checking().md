@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[SSH execute builds command with StrictHostKeyChecking=yes]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHStrictHostKeyChecking]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

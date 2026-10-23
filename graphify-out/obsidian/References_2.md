@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-ieee-paper.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "test_telegram_proxy_inbound.py"
-location: "L329"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # References
 
 ## Connections
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

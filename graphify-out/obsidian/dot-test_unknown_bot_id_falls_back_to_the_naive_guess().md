@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "_resolve_bot_container()"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/_resolve_bot_container
 ---
 
 # .test_unknown_bot_id_falls_back_to_the_naive_guess()
@@ -15,4 +15,4 @@ tags:
 - [[TestResolveBotContainer]] - `method` [EXTRACTED]
 - [[_resolve_bot_container()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/_resolve_bot_container

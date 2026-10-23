@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
 - [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[auth_headers()_4]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[auth_headers()_1]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
 - [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py

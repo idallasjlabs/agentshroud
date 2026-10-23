@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips. (2)"
+community: "TestOutboundPipelineIntegration"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+  - community/TestOutboundPipelineIntegration
 ---
 
 # EgressAttempt
 
 ## Connections
 - [[dot-_check_impl()]] - `references` [EXTRACTED]
-- [[dot-_record()_1]] - `references` [EXTRACTED]
-- [[dot-check()_5]] - `references` [EXTRACTED]
+- [[dot-_record()]] - `references` [EXTRACTED]
+- [[dot-check()_3]] - `references` [EXTRACTED]
 - [[dot-check_async()]] - `references` [EXTRACTED]
 - [[dot-get_log()]] - `references` [EXTRACTED]
 - [[EgressFilter_1]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+#graphify/code #graphify/INFERRED #community/TestOutboundPipelineIntegration

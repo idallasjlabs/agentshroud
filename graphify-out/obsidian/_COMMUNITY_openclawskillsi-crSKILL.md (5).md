@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # openclaw/skills/i-cr/SKILL.md (5)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[Closing Gate_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[Output Format Rules_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Role_16]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Role_15]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[Skill Pre-Change Analysis (PCA)_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[hermesskillsi-pcaSKILL]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L79"
+community: "SharedMemoryManager"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/SharedMemoryManager
 ---
 
 # rbac()
 
 ## Connections
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

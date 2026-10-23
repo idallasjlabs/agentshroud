@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L167"
+community: "iot_button_register_cb (2)"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/iot_button_register_cb_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/iot_button_register_cb_2

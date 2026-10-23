@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "test_voice_latency_guard.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/test_voice_latency_guardpy
 ---
 
 # MFAResult
@@ -19,4 +19,4 @@ tags:
 - [[mfa_guard.py]] - `contains` [EXTRACTED]
 - [[test_mfa_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

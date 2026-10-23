@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 25
 ---
 
 # BotConfig
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 25 nodes
 
 ## Members

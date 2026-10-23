@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # AgentShroud Security Hardening Plan
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -19,8 +21,8 @@ members: 23
 - [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
 - [[Output Format_10]] - document - skills/openclaw/xurl/SKILL.md
 - [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
-- [[Prerequisites_7]] - document - skills/openclaw/xurl/SKILL.md
-- [[Quick Reference_8]] - document - skills/openclaw/xurl/SKILL.md
+- [[Prerequisites_5]] - document - skills/openclaw/xurl/SKILL.md
+- [[Quick Reference_6]] - document - skills/openclaw/xurl/SKILL.md
 - [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
 - [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
 - [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md

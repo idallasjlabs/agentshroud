@@ -12,6 +12,6 @@ tags:
 # Config with strict thresholds.
 
 ## Connections
-- [[strict_config()_2]] - `rationale_for` [EXTRACTED]
+- [[strict_config()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

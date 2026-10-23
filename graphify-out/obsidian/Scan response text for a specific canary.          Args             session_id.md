@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "check-vendor-compat.sh"
+community: "Any"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/Any
 ---
 
 # Scan response text for a specific canary.          Args:             session_id:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_for_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/rationale #graphify/EXTRACTED #community/Any

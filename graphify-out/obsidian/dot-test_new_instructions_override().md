@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L262"
+community: "ProxyAction"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/ProxyAction
 ---
 
 # .test_new_instructions_override()
 
 ## Connections
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[TestHighSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

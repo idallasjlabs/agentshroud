@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Health Checks.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
-location: "L173"
+community: "browser/package.json"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/browser/packagejson
 ---
 
 # Related Notes
 
 ## Connections
-- [[Health Checks_2]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/browser/packagejson

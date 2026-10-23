@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L91"
+community: "SharedMemoryManager"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SharedMemoryManager
 ---
 
 # shared_memory()
 
 ## Connections
 - [[SharedMemoryManager]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

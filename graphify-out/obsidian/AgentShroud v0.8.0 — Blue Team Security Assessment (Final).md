@@ -15,7 +15,7 @@ tags:
 - [[Fixes Applied]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 - [[Prior Assessment (v0.8.0) — Status]] - `contains` [EXTRACTED]
-- [[Summary_11]] - `contains` [EXTRACTED]
+- [[Summary_10]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2

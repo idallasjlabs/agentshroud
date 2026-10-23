@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L144"
+community: "main.py (2)"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/mainpy_2
 ---
 
 # .append()
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
-- [[dot-append_block()]] - `calls` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[AuditChainEntry]] - `references` [EXTRACTED]
+- [[dot-emit()]] - `calls` [EXTRACTED]
+- [[dot-push()]] - `calls` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
+- [[logs_recent()]] - `calls` [EXTRACTED]
+- [[ssh_hosts()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/mainpy_2

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Detailed Profiles
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 17
 - [[Function Details_9]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 - [[Key Classes  Functions_10]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 - [[Mode Enforce vs Monitor_6]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Purpose_106]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Purpose_95]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 - [[Related_14]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 - [[Responsibilities_12]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 - [[Threat Model_10]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md

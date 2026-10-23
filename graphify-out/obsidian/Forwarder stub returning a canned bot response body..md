@@ -12,6 +12,6 @@ tags:
 # Forwarder stub returning a canned bot response body.
 
 ## Connections
-- [[_StubForwarder_1]] - `rationale_for` [EXTRACTED]
+- [[_StubForwarder_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget

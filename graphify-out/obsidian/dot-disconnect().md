@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "MCPPermissionManager"
+community: ".connect()"
 location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/connect
 ---
 
 # .disconnect()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Remove a WebSocket connection from connected set          Args             webs]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/connect

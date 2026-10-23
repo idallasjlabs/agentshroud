@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/references/transcribe.md"
 type: "concept"
-community: "Seccomp Profiles"
+community: "graphify Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/graphify_Skill
 ---
 
 # Whisper Transcription
@@ -14,4 +14,4 @@ tags:
 - [[graphify Skill]] - `references` [EXTRACTED]
 - [[graphify Transcribe Reference]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/concept #graphify/EXTRACTED #community/graphify_Skill

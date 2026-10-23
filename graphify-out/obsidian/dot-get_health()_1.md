@@ -12,7 +12,7 @@ tags:
 # .get_health()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[Return a health snapshot suitable for statusdetail.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

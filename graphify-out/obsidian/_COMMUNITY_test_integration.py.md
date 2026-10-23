@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.27
 members: 11
 ---
 
 # test_integration.py
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 11 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 11
 - [[create_resource_dirs()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 - [[init_skill()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 - [[init_skill.py]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[main()_34]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[main()_32]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 - [[normalize_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 - [[parse_resources()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 - [[title_case_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L114"
+community: "ContextGuard"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[dot-_init_db()]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L23"
+community: "soc/router.py"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/soc/routerpy
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._1]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

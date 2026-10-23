@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (3)"
-location: "L33"
+community: "MiddlewareManager"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_3
+  - community/MiddlewareManager
 ---
 
 # .temp_workspace()
 
 ## Connections
-- [[Create a temporary workspace for testing.]] - `rationale_for` [EXTRACTED]
-- [[TestUserSessionManager]] - `method` [EXTRACTED]
+- [[Create a temporary workspace.]] - `rationale_for` [EXTRACTED]
+- [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_3
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

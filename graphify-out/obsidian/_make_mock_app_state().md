@@ -16,7 +16,7 @@ tags:
 - [[dot-_run_forward()]] - `calls` [EXTRACTED]
 - [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
 - [[dot-test_forward_passes_user_id_in_metadata_to_process_inbound()]] - `calls` [EXTRACTED]
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Build a minimal mock app_state that returns a target with the given bot name.]] - `rationale_for` [EXTRACTED]
 - [[_PipelineCaptor]] - `references` [EXTRACTED]

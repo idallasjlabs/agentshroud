@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "RBACConfig"
-location: "L138"
+community: "AgentShroud Recovery Plan v0.4.0"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_170]] - `references` [EXTRACTED]
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

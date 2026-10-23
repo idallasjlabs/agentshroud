@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.36
 members: 8
 ---
 
 # Docker Compose (infra diagram)
 
+**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -29,7 +31,7 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_parse_trivy_output]]
 - 3 edges to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
 - 2 edges to [[_COMMUNITY_LOW Findings]]
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List (2)]]
 - 1 edge to [[_COMMUNITY_PermissionLevel (6)]]

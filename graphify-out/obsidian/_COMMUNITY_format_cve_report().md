@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.08
 members: 44
 ---
 
 # format_cve_report()
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_59]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-__init__()_68]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_classify_risk()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_domain_matches()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_init_browser()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -19,7 +21,7 @@ members: 44
 - [[dot-_take_screenshot()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_validate_url()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-click()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-close()_5]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-close()_7]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-detect_captcha()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-extract()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-fill_field()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -61,7 +63,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 
 ## Top bridge nodes

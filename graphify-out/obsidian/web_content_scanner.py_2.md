@@ -16,7 +16,7 @@ tags:
 - [[Function Details_26]] - `contains` [EXTRACTED]
 - [[Injection Pattern Weights]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
-- [[Purpose_128]] - `contains` [EXTRACTED]
+- [[Purpose_126]] - `contains` [EXTRACTED]
 - [[Related_32]] - `contains` [EXTRACTED]
 - [[Responsibilities_30]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py_1]] - `contains` [EXTRACTED]

@@ -19,6 +19,6 @@ tags:
 - [[dot-test_no_collab_notice_below_alert()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_also_notified_on_threshold()]] - `calls` [EXTRACTED]
 - [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

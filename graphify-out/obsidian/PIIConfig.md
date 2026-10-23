@@ -1,22 +1,42 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L28"
+community: "ContextGuard"
+location: "L32"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - graphify/INFERRED
+  - community/ContextGuard
 ---
 
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_120]] - `references` [EXTRACTED]
-- [[dot-get_config_for_tool()]] - `references` [EXTRACTED]
-- [[dot-get_tool_config()]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[dot-__init__()_174]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_2]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
+- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestContainerSecurity]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestCryptography]] - `uses` [INFERRED]
+- [[TestDependencySecurity]] - `uses` [INFERRED]
+- [[TestDoSPrevention]] - `uses` [INFERRED]
+- [[TestExfiltrationDetection]] - `uses` [INFERRED]
+- [[TestFileSandbox]] - `uses` [INFERRED]
+- [[TestHTTPSecurity]] - `uses` [INFERRED]
+- [[TestInfoLeakage]] - `uses` [INFERRED]
+- [[TestLoggingSecurity]] - `uses` [INFERRED]
+- [[TestMCPSecurity]] - `uses` [INFERRED]
+- [[TestNetworkSecurity]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestResourceProtection]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestTimingAttacks]] - `uses` [INFERRED]
+- [[TestWebSecurity]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/INFERRED #community/ContextGuard

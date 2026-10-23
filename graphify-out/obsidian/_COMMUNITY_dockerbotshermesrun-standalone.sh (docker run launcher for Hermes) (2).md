@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes) (2)
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Related Notes_25]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Related Notes_20]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 - [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 - [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 

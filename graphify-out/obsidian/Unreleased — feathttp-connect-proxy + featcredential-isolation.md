@@ -16,7 +16,7 @@ tags:
 - [[Changed]] - `contains` [EXTRACTED]
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 - [[Fixed]] - `contains` [EXTRACTED]
-- [[Security_1]] - `contains` [EXTRACTED]
+- [[Security_2]] - `contains` [EXTRACTED]
 - [[Summary]] - `contains` [EXTRACTED]
 - [[Tests]] - `contains` [EXTRACTED]
 

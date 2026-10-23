@@ -1,32 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
 ---
 
 # Exception
 
 ## Connections
-- [[ConfigValidationError]] - `inherits` [EXTRACTED]
-- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
-- [[ForwardError]] - `inherits` [EXTRACTED]
-- [[OAuthError]] - `inherits` [EXTRACTED]
-- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
-- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
-- [[RouterError]] - `inherits` [EXTRACTED]
-- [[SecurityError]] - `inherits` [EXTRACTED]
-- [[SecurityError_1]] - `inherits` [EXTRACTED]
-- [[SecurityError_2]] - `inherits` [EXTRACTED]
-- [[SecurityError_3]] - `inherits` [EXTRACTED]
-- [[SessionError]] - `inherits` [EXTRACTED]
-- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
-- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
-- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
-- [[global_exception_handler()]] - `references` [EXTRACTED]
-- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_patch_urlopen()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never

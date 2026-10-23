@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "UserSessionManager (2) (6)"
+community: "TelegramAPIProxy"
 location: "L2291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_6
+  - community/TelegramAPIProxy
 ---
 
 # .test_proxy_request_suppresses_duplicate_starting_notice()
 
 ## Connections
 - [[Starting notices should be deduplicated in cooldown window.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_6
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -12,6 +12,6 @@ tags:
 # Known Issues / Notes
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

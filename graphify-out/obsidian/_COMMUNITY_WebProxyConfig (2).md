@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # WebProxyConfig (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 17
 - [[Output Format_20]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[Persona_7]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[Quality Checklist_7]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Role_62]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Role_60]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[System Prompt_7]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[User Prompt Template_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 - [[User Prompt Template — OKE Channel_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md

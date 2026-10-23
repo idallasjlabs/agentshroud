@@ -12,6 +12,6 @@ tags:
 # MCP-Specific
 
 ## Connections
-- [[Best Practices_3]] - `contains` [EXTRACTED]
+- [[Best Practices_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

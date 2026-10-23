@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Remediation"
-location: "L37"
+community: "SubagentGovernance"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/SubagentGovernance
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
-- [[Path_45]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[GovernanceConfig]] - `references` [EXTRACTED]
+- [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Remediation
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

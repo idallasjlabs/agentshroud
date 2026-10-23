@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Top-level list literals of an assignment value ``..`` or ``.. + ..``.]] - `rationale_for` [EXTRACTED]
 - [[_assigned_lists()]] - `calls` [EXTRACTED]
-- [[_list_literals()]] - `calls` [EXTRACTED]
 - [[expr]] - `references` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 

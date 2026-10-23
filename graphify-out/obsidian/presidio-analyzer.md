@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "EgressFilter"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ApprovalQueueConfig_7
 ---
 
 # presidio-analyzer.md
@@ -17,4 +17,4 @@ tags:
 - [[Presidio Analyzer]] - `contains` [EXTRACTED]
 - [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

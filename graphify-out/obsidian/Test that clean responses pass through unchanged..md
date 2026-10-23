@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "AgentShroud Setup Guide"
+community: "Any"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Any
 ---
 
 # Test that clean responses pass through unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_clean_response_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Any

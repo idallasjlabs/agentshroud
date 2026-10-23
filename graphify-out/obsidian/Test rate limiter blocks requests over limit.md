@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "lifespan() (2)"
+community: "create_auth_dependency()"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan_2
+  - community/create_auth_dependency
 ---
 
 # Test rate limiter blocks requests over limit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter_blocks_excess_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan_2
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

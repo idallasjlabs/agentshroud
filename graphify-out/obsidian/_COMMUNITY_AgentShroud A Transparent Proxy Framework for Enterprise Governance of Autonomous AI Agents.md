@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -38,8 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestDockerEngine]]
 - 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
+- 1 edge to [[_COMMUNITY_Core Security Principles]]
 
 ## Top bridge nodes
 - [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities

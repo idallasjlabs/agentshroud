@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "EgressFilterConfig (4)"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/KillSwitchMonitor
 ---
 
 # test_killswitch_monitor.py
 
 ## Connections
-- [[KillSwitchConfig]] - `imports` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[TestKillSwitchConfig_1]] - `contains` [EXTRACTED]
 - [[TestKillSwitchMonitor]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

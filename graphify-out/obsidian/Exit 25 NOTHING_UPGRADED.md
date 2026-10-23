@@ -2,7 +2,7 @@
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
 community: "_wrap_response() (2)"
-location: "L112"
+location: "L35-L39"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
@@ -12,8 +12,7 @@ tags:
 # Exit 25 NOTHING_UPGRADED
 
 ## Connections
-- [[Run judged on state change, not steps]] - `rationale_for` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
-- [[scriptssunday-upgrade-apply.sh exit-code contract]] - `implements` [EXTRACTED]
+- [[Exit code contract (01015202125304050127)]] - `references` [EXTRACTED]
+- [[Run judged on state change, not steps completed]] - `implements` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/_wrap_response_2

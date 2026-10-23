@@ -21,7 +21,7 @@ tags:
 - [[dot-_is_owner()]] - `calls` [EXTRACTED]
 - [[dot-_is_path_allowed_for_user()]] - `calls` [EXTRACTED]
 - [[dot-_is_tool_call_request()]] - `calls` [EXTRACTED]
-- [[Any]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `references` [EXTRACTED]
 - [[Process request through all middleware modules.]] - `rationale_for` [EXTRACTED]

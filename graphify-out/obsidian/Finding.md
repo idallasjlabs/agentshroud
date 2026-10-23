@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_scan_opaque_blobs()]] - `calls` [EXTRACTED]
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[A single supply-chain finding within a scanned skill artefact.]] - `rationale_for` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "_wrap_response() (2)"
+community: "ContextGuard"
 location: "L762"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/ContextGuard
 ---
 
 # .test_alert_dispatcher_init()
 
 ## Connections
 - [[AlertDispatcher]] - `calls` [EXTRACTED]
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

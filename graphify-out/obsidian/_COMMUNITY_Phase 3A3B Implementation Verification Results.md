@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.19
 members: 20
 ---
 
 # Phase 3A/3B Implementation Verification Results
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -37,8 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 2 communities
+- [[TestBuildCollaboratorSafeInfoResponse]] - degree 24, connects to 5 communities

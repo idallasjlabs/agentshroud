@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "MiddlewareManager"
+community: "PathIsolationManager"
 location: "L147"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/PathIsolationManager
 ---
 
 # TestModuleInstantiationInEnforceMode
@@ -25,18 +25,18 @@ tags:
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[MultiTurnTracker]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityConfig_4]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[Verify modules can instantiate and operate in enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/PathIsolationManager

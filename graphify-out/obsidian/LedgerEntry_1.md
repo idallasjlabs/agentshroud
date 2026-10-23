@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_entry()]] - `references` [EXTRACTED]
 - [[dot-query()]] - `calls` [EXTRACTED]
-- [[dot-record()_1]] - `references` [EXTRACTED]
+- [[dot-record()_2]] - `references` [EXTRACTED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]

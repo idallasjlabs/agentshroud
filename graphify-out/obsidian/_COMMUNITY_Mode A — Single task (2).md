@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # Mode A — Single task (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -27,7 +29,7 @@ members: 27
 - [[Search Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Security_8]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_7]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Setup]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Troubleshooting_18]] - document - docker/config/hermes/skills/i-icloud/SKILL.md

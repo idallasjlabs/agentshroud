@@ -12,7 +12,7 @@ tags:
 # test_full_round_trip_allowed_request_reaches_the_peer()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
 - [[_jsonrpc()_1]] - `calls` [EXTRACTED]

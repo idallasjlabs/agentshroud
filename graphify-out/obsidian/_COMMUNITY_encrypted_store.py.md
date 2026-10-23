@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # encrypted_store.py
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 18
 - [[Default Limits]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Function Details_8]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Key Classes  Functions_8]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Purpose_102]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Purpose_91]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Related_12]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[ResourceGuard.__init__(limits)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[ResourceGuard.add_alert_callback(callback)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md

@@ -12,7 +12,7 @@ tags:
 # .strip_zero_width()
 
 ## Connections
-- [[dot-analyze()]] - `calls` [EXTRACTED]
+- [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L163"
+community: "SSHProxy"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/SSHProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[SSHConfig_1]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

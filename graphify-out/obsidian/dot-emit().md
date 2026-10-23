@@ -12,8 +12,8 @@ tags:
 # .emit()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[BufferHandler]] - `method` [EXTRACTED]
-- [[LogRecord]] - `references` [EXTRACTED]
+- [[LogRecord_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mainpy_2

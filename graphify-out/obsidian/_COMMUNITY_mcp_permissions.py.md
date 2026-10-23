@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # mcp_permissions.py
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -17,9 +19,9 @@ members: 14
 - [[Key Behavior]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[Message Types Intercepted]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[Process Architecture]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Purpose_138]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Related Notes_60]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Usage_92]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Purpose_136]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Related Notes_50]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Usage_91]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[mcp-proxy-wrapper.js_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[mcp-proxy-wrapper.js_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 

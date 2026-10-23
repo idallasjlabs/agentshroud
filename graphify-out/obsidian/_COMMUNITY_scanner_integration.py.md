@@ -1,17 +1,23 @@
 ---
 type: community
-members: 44
+cohesion: 0.06
+members: 54
 ---
 
 # scanner_integration.py
 
-**Members:** 44 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 54 nodes
 
 ## Members
-- [[dot-__init__()_54]] - code - gateway/tests/test_web_proxy_security.py
-- [[dot-__init__()_55]] - code - gateway/tests/test_web_proxy_security.py
-- [[dot-__init__()_56]] - code - gateway/tests/test_web_proxy_security.py
-- [[dot-flagged()_1]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_40]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-__init__()_41]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-__init__()_42]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-_audit()]] - code - gateway/proxy/web_proxy.py
+- [[dot-check_request()]] - code - gateway/proxy/web_proxy.py
+- [[dot-flagged()]] - code - gateway/proxy/web_proxy.py
+- [[dot-get_stats()]] - code - gateway/proxy/web_proxy.py
+- [[dot-scan_response()]] - code - gateway/proxy/web_proxy.py
 - [[dot-setUp()_1]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
@@ -25,15 +31,21 @@ members: 44
 - [[dot-test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
-- [[Enum_1]] - code
+- [[dot-to_dict()]] - code - gateway/proxy/web_proxy.py
+- [[Any_12]] - code
+- [[Check an outbound HTTP request before it's sent. This is the pre-flight check.…]] - rationale - gateway/proxy/web_proxy.py
+- [[Enum]] - code
+- [[Get proxy statistics.]] - rationale - gateway/proxy/web_proxy.py
 - [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
 - [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
 - [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
-- [[Set up test fixtures._2]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Scan a response body for prompt injection, PII, and hidden content. This is…]] - rationale - gateway/proxy/web_proxy.py
+- [[Set up test fixtures.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
@@ -49,7 +61,7 @@ members: 44
 - [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
 - [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
-- [[str_1]] - code
+- [[str]] - code
 - [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
 - [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
 
@@ -61,20 +73,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 12 edges to [[_COMMUNITY__pcm_bytes]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 31 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 3 edges to [[_COMMUNITY_Enum]]
 - 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 2 edges to [[_COMMUNITY__wrap_response() (3)_1]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_TestAllowlistMode]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
 - 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 
 ## Top bridge nodes
-- [[web_proxy.py]] - degree 9, connects to 5 communities
+- [[ProxyAction]] - degree 28, connects to 3 communities
+- [[web_proxy.py]] - degree 9, connects to 3 communities
 - [[MockEgressChannel]] - degree 6, connects to 3 communities
 - [[MockThreatLevel]] - degree 6, connects to 3 communities
-- [[ProxyAction]] - degree 28, connects to 2 communities
 - [[MockDNSVerdict]] - degree 15, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "lifespan() (2)"
+community: "create_auth_dependency()"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan_2
+  - community/create_auth_dependency
 ---
 
 # Verify authentication doesn't leak timing information
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_timing_attack_resistance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan_2
+#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

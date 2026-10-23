@@ -12,7 +12,7 @@ tags:
 # MCPPolicyEngine
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[engine()]] - `references` [EXTRACTED]
+- [[engine()_1]] - `references` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `references` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `calls` [EXTRACTED]
 - [[test_critical_tool_requires_approval()]] - `references` [EXTRACTED]

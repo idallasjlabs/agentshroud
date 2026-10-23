@@ -12,10 +12,10 @@ tags:
 # GatewayConfig
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[test_config()_1]] - `references` [EXTRACTED]

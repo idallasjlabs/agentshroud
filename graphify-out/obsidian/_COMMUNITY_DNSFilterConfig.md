@@ -1,11 +1,13 @@
 ---
 type: community
-members: 75
+cohesion: 0.03
+members: 74
 ---
 
 # DNSFilterConfig
 
-**Members:** 75 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 74 nodes
 
 ## Members
 - [[dot-test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
@@ -46,7 +48,6 @@ members: 75
 - [[dot-test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_switch_model_script_exists_with_supported_targets()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_switch_model_script_uses_current_target_syntax()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_valid_router_url_accepted()]] - code - gateway/tests/test_config_validation.py
 - [[Bot startup should not load Anthropic secrets when Ollama local model is configu]] - rationale - gateway/tests/test_config_validation.py
 - [[Chat console launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
@@ -92,13 +93,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 5 edges to [[_COMMUNITY_ForwardRequest]]
 - 5 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 4 edges to [[_COMMUNITY__make_proxy()]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestConfigValidation]] - degree 45, connects to 4 communities
+- [[TestConfigValidation]] - degree 45, connects to 3 communities
 - [[dot-test_empty_content_rejected()]] - degree 2, connects to 1 community
 - [[dot-test_invalid_router_url_rejected()]] - degree 2, connects to 1 community
 - [[dot-test_invalid_source_rejected()]] - degree 2, connects to 1 community

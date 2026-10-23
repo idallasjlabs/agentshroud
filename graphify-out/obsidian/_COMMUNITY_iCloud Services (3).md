@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # iCloud Services (3)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 27
 - [[Mode A — Single task_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Mode B — Comprehensive review sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Reviewers and fixer available to you_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Role_32]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Role_30]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Skill OpenClaw Dev Workflow (ODEV)_2]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Step 1 — One branch + worktree for the whole sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Step 1 — Sync and confirm clean state_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md

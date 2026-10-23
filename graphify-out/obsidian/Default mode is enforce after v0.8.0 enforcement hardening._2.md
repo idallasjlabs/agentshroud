@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "_wrap_response() (3)"
-location: "L37"
+community: "NetworkSecurityFinding"
+location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/NetworkSecurityFinding
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_mode_is_enforce()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

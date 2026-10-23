@@ -1,17 +1,21 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD) (2)"
-location: "L375"
+community: "KillSwitchMonitor (2) (4)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+  - community/KillSwitchMonitor_2_4
 ---
 
 # Prerequisites
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[Network Requirements]] - `contains` [EXTRACTED]
+- [[Software Dependencies]] - `contains` [EXTRACTED]
+- [[System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD_2
+#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4

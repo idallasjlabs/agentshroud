@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: ""
 type: "code"
-community: "1. Accomplishments This Phase"
-location: "L41"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/sync-cve-registrypy
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()_1]] - `references` [EXTRACTED]
-- [[_report_date()]] - `references` [EXTRACTED]
-- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
+- [[_already_checked_upstream_today()]] - `references` [EXTRACTED]
+- [[_already_ingested_ghsa_today()]] - `references` [EXTRACTED]
+- [[_already_sent_today()]] - `references` [EXTRACTED]
+- [[browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

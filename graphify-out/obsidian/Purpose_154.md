@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Report Delivery Format Instructions"
-location: "L16"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Report_Delivery_Format_Instructions
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Purpose
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

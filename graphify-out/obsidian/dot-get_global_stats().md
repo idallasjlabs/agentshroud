@@ -12,7 +12,7 @@ tags:
 # .get_global_stats()
 
 ## Connections
-- [[Any_41]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[Get global tracking statistics.]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "🟢 INFO (nice to have)"
-location: "L250"
+community: "Hermes Cron Dedupe (dev)"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # Verification
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

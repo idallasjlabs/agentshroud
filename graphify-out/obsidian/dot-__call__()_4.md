@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
+community: "TelegramAPIProxy (3)"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/TelegramAPIProxy_3
 ---
 
 # .__call__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[FetchOutcome_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

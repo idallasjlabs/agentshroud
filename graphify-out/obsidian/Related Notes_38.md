@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Error Index.md"
-location: "L161"
+community: "MiddlewareManager (2) (2)"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/MiddlewareManager_2_2
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_1]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_2_2

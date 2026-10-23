@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "lifespan()"
+community: "CompetitiveIntelReport"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/CompetitiveIntelReport
 ---
 
 # WebSocket for real-time activity feed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[activity_websocket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

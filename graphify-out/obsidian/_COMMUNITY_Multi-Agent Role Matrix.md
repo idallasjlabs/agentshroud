@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # Multi-Agent Role Matrix
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -37,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-ompmcp.json]]
+- 1 edge to [[_COMMUNITY_ssh-configuration]]
 
 ## Top bridge nodes
 - [[Message Composition with MML (MIME Meta Language)]] - degree 8, connects to 1 community

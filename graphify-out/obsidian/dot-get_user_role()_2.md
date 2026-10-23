@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
-location: "L28"
+community: "MiddlewareManager (2)"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+  - community/MiddlewareManager_2
 ---
 
 # .get_user_role()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[dot-is_admin_or_higher()]] - `calls` [EXTRACTED]
+- [[dot-is_collaborator_or_higher()]] - `calls` [EXTRACTED]
+- [[dot-is_operator_or_higher()]] - `calls` [EXTRACTED]
+- [[Get role for a user ID.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_3]] - `method` [EXTRACTED]
+- [[Role_64]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

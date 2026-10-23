@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Skill: Data Validation (DATA-VAL) (3)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -26,7 +28,7 @@ members: 26
 - [[Output Format_9]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[Persona_4]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[Quality Checklist_4]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Role_37]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Role_35]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[System Prompt_4]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[User Prompt Template]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[User Prompt Template — OKE Channel]] - document - docker/config/hermes/skills/i-atlas/SKILL.md

@@ -12,6 +12,6 @@ tags:
 # Filter outbound connections based on allowlists with enforce/monitor modes.
 
 ## Connections
-- [[EgressFilter_2]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

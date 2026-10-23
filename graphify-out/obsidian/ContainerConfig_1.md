@@ -12,10 +12,10 @@ tags:
 # ContainerConfig
 
 ## Connections
-- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
-- [[dot-get()_2]] - `references` [EXTRACTED]
+- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
 - [[dot-register()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_35]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `calls` [EXTRACTED]
 - [[dot-test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
 - [[dot-test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
@@ -38,7 +38,7 @@ tags:
 - [[TestGroupMemoryInvisibleFromDM]] - `uses` [INFERRED]
 - [[TestGroupMemoryNamespaceIsolation]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]

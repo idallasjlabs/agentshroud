@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "check-vendor-compat.sh"
+community: "Any"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/Any
 ---
 
 # output_canary.py
 
 ## Connections
 - [[CanaryConfig]] - `contains` [EXTRACTED]
-- [[CanaryResult]] - `contains` [EXTRACTED]
+- [[CanaryResult_1]] - `contains` [EXTRACTED]
 - [[OutputCanary]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/Any

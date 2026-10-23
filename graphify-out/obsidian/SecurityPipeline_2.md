@@ -1,30 +1,26 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "soc/router.py"
-location: "L47"
+community: "test_agent_cve_registry.py (2)"
+location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/test_agent_cve_registrypy_2
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
+- [[EncodingConfig]] - `uses` [INFERRED]
 - [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[_make_full_pipeline()]] - `references` [EXTRACTED]
-- [[test_pipeline_fails_closed_without_pii()]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[_make_pipeline()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/test_agent_cve_registrypy_2

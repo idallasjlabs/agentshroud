@@ -12,6 +12,6 @@ tags:
 # Gateway Internal Layer Order
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

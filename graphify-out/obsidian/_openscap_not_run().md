@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "parse_clamscan_output"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/parse_clamscan_output
 ---
 
 # _openscap_not_run()
@@ -16,8 +16,8 @@ tags:
 - [[dot-_patch_all_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_defined_when_oscap_binary_present()]] - `calls` [EXTRACTED]
-- [[dot-test_zero_when_not_run()_1]] - `calls` [EXTRACTED]
-- [[Any_20]] - `references` [EXTRACTED]
+- [[dot-test_zero_when_not_run()]] - `calls` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

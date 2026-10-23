@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Full System Flowchart_1]] - `contains` [EXTRACTED]
-- [[Network Topology_2]] - `references` [EXTRACTED]
+- [[Network Topology]] - `references` [EXTRACTED]
 - [[Security Pipeline Flow]] - `references` [EXTRACTED]
 - [[gatewayREADME]] - `conceptually_related_to` [INFERRED]
 

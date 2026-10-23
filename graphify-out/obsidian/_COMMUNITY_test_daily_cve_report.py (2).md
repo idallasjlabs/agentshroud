@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 30
 ---
 
 # test_daily_cve_report.py (2)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -48,7 +50,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 2 edges to [[_COMMUNITY_Path (3)]]
+- 2 edges to [[_COMMUNITY__AGENT_CVE_REGISTRIES]]
 
 ## Top bridge nodes
 - [[plan_remediation()]] - degree 19, connects to 2 communities

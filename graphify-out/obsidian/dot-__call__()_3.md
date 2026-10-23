@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "AgentShroud™ Brand Guidelines"
-location: "L266"
+community: "MCPPolicyEngine (2)"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/MCPPolicyEngine_2
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[FetchOutcome]] - `references` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

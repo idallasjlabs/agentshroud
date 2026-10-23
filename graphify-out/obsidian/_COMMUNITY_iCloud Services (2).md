@@ -1,11 +1,13 @@
 ---
 type: community
-members: 27
+cohesion: 0.10
+members: 20
 ---
 
 # iCloud Services (2)
 
-**Members:** 27 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 20 nodes
 
 ## Members
 - [[API Keys]] - document - docker/scripts/README.md
@@ -19,22 +21,15 @@ members: 27
 - [[OpenClaw CLI]] - document - docker/scripts/README.md
 - [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
 - [[Quick Reference_7]] - document - docker/scripts/README.md
-- [[Security Notes_2]] - document - docker/scripts/README.md
+- [[Security Notes_5]] - document - docker/scripts/README.md
 - [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
 - [[check-status.sh_1]] - document - docker/scripts/README.md
 - [[devices.sh_1]] - document - docker/scripts/README.md
-- [[dockerscripts README]] - document - docker/scripts/README.md
 - [[dockerscriptsREADME]] - document - docker/scripts/README.md
-- [[drift-detector.sh (planned)]] - concept - scripts/README.md
 - [[logs.sh_1]] - document - docker/scripts/README.md
-- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
 - [[restart.sh_1]] - document - docker/scripts/README.md
-- [[security-audit.sh (planned)]] - concept - scripts/README.md
 - [[set-model.sh_1]] - document - docker/scripts/README.md
-- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
 - [[telegram.sh_1]] - document - docker/scripts/README.md
-- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
-- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,6 +40,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide (2)]]
+- 1 edge to [[_COMMUNITY_dockerscripts README]]
 
 ## Top bridge nodes
-- [[OpenClaw Management Scripts]] - degree 14, connects to 1 community
+- [[OpenClaw Management Scripts]] - degree 14, connects to 2 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.31
 members: 9
 ---
 
 # 1. GitHub MCP Authentication Reset (4)
 
+**Cohesion:** 0.31 - loosely connected
 **Members:** 9 nodes
 
 ## Members

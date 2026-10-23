@@ -12,7 +12,7 @@ tags:
 # TestDomainDenylist
 
 ## Connections
-- [[dot-test_allowed_domain_passes()]] - `method` [EXTRACTED]
+- [[dot-test_allowed_domain_passes()_1]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `method` [EXTRACTED]
 - [[dot-test_denied_domain_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_denied_domain_malware()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

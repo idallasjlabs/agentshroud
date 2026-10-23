@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 89
 ---
 
 # ModeRequest
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 89 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 89
 - [[dot-_local_failover_base()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_merge_object_schemas()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_strip_fieldflare_unsupported_fields()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-get_stats()]] - code - gateway/proxy/llm_proxy.py
+- [[dot-get_stats()_1]] - code - gateway/proxy/llm_proxy.py
 - [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls through to…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[FIELDFLARE_API_BASE (TurboFieldfare 8238)]] - code - gateway/proxy/llm_proxy.py
@@ -113,10 +115,10 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_SecureBrowser (4) (2)]]
 - 3 edges to [[_COMMUNITY_🛡️ AgentShroud Release Plan (2)]]
 - 3 edges to [[_COMMUNITY_agentshroud-gateway service (proxy mode) (2)]]
-- 3 edges to [[_COMMUNITY_PodmanEngine]]
+- 3 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
 - 2 edges to [[_COMMUNITY_Function Details (8)]]
 - 2 edges to [[_COMMUNITY_TestLoadFromText]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
+- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)_1]]
 
 ## Top bridge nodes
 - [[LLMProxy]] - degree 109, connects to 9 communities

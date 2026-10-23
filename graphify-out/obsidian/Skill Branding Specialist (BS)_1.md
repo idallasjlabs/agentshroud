@@ -16,7 +16,7 @@ tags:
 - [[Brand System Components_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce_1]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type_1]] - `contains` [EXTRACTED]
-- [[Role_51]] - `contains` [EXTRACTED]
+- [[Role_49]] - `contains` [EXTRACTED]
 - [[Rules_17]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]

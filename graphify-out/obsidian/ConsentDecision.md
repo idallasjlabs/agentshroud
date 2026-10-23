@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ContextGuard"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecureBrowser_3
+  - community/ContextGuard
 ---
 
 # ConsentDecision
@@ -17,12 +17,12 @@ tags:
 - [[dot-test_decision_has_timestamp()]] - `calls` [EXTRACTED]
 - [[dot-validate_config()]] - `references` [EXTRACTED]
 - [[dot-validate_configs()]] - `references` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConsentDecision]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -34,16 +34,16 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestServerConfigValidation]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecureBrowser_3
+#graphify/code #graphify/INFERRED #community/ContextGuard

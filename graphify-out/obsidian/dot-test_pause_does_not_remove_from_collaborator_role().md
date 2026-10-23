@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Canvas_Skill

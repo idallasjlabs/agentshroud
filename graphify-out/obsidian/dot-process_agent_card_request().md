@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_audit()_1]] - `calls` [EXTRACTED]
-- [[dot-forward()_1]] - `calls` [EXTRACTED]
+- [[dot-forward()_2]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `method` [EXTRACTED]
 - [[A2AProxyResult]] - `references` [EXTRACTED]
 - [[GET .well-knownagent-card.json — never policy-gated (the A2A         spec requ]] - `rationale_for` [EXTRACTED]

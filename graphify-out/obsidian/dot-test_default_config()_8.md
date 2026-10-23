@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L34"
+community: "KillSwitchMonitor"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KillSwitchMonitor
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[Test default configuration values._5]] - `rationale_for` [EXTRACTED]
+- [[TestKillSwitchConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

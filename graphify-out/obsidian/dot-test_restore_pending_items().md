@@ -12,7 +12,7 @@ tags:
 # .test_restore_pending_items()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]

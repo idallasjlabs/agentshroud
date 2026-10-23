@@ -12,11 +12,11 @@ tags:
 # RateLimitGuard
 
 ## Connections
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-__init__()_89]] - `method` [EXTRACTED]
 - [[dot-_burst_limit()]] - `method` [EXTRACTED]
 - [[dot-_sustained_limit()]] - `method` [EXTRACTED]
-- [[dot-check()_3]] - `method` [EXTRACTED]
-- [[dot-get_stats()_8]] - `method` [EXTRACTED]
+- [[dot-check()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_7]] - `method` [EXTRACTED]
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]

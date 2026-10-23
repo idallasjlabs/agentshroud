@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "browser/scripts/browse.py"
-location: "L18702"
+community: "check_upstream_cves() (2)"
+location: "L18718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/check_upstream_cves_2
 ---
 
 # get_agent_cve_source()
@@ -22,4 +22,4 @@ tags:
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves_2

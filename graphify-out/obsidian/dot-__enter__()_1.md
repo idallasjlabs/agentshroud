@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
-location: "L27"
+community: "TelegramAPIProxy (3)"
+location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/TelegramAPIProxy_3
 ---
 
 # .__enter__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

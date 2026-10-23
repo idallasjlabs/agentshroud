@@ -12,6 +12,6 @@ tags:
 # .blocked()
 
 ## Connections
-- [[ScanResult_3]] - `method` [EXTRACTED]
+- [[ScanResult_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

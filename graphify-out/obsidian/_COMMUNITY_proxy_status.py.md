@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.21
 members: 12
 ---
 
 # proxy_status.py
 
+**Cohesion:** 0.21 - loosely connected
 **Members:** 12 nodes
 
 ## Members

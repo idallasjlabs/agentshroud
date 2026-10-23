@@ -12,8 +12,8 @@ tags:
 # Integrations Documentation
 
 ## Connections
-- [[Current Status_9]] - `contains` [EXTRACTED]
-- [[Planned Documents_5]] - `contains` [EXTRACTED]
+- [[Current Status_2]] - `contains` [EXTRACTED]
+- [[Planned Documents_2]] - `contains` [EXTRACTED]
 - [[integrationsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-20-dev.md"
 type: "concept"
-community: "_make_sanitizer()"
+community: "Sunday Upgrade prompt"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Sunday_Upgrade_prompt
 ---
 
 # Host network filter blocking Homebrew Python/Node outbound
@@ -17,4 +17,4 @@ tags:
 - [[discover_upstream_versions.py]] - `conceptually_related_to` [EXTRACTED]
 - [[sync-cve-registry.py]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_prompt

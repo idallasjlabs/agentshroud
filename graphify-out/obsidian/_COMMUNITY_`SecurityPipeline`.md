@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # `SecurityPipeline`
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 16
 - [[Current Files Status]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
 - [[Current Situation]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
 - [[How to Share the Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Next Steps_9]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
+- [[Next Steps_8]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
 - [[Option 1 Share Existing Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
 - [[Option 2 Create and Share New Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
 - [[Option 3 Use the Bot's Private Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
@@ -33,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
 - 1 edge to [[_COMMUNITY_agentshroud-bot (2)]]
+- 1 edge to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
 
 ## Top bridge nodes
 - [[1Password Vault Sharing Instructions]] - degree 8, connects to 1 community

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "hermes/skills/i-bs/README.md"
+community: "record_decision()"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/record_decision
 ---
 
 # True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o
 
 ## Connections
-- [[dot-allowed()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/record_decision

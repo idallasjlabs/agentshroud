@@ -12,10 +12,10 @@ tags:
 # get_my_permissions()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Get permissions summary for the current user.]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

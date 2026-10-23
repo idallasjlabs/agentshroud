@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # test_openclaw_photo.sh
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 17
 - [[Post-Incident_1]] - document - .agents/skills/i-production/SKILL.md
 - [[Post-Mortem Template_1]] - document - .agents/skills/i-production/SKILL.md
 - [[RDS Rollback (Point-in-Time or Snapshot)_1]] - document - .agents/skills/i-production/SKILL.md
-- [[Role_59]] - document - .agents/skills/i-production/SKILL.md
+- [[Role_57]] - document - .agents/skills/i-production/SKILL.md
 - [[S3 Data Rollback_1]] - document - .agents/skills/i-production/SKILL.md
 - [[Severity Matrix_1]] - document - .agents/skills/i-production/SKILL.md
 - [[Skill Incident Response (INCIDENT)_1]] - document - .agents/skills/i-production/SKILL.md

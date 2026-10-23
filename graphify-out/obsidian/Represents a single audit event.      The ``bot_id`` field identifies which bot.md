@@ -12,6 +12,6 @@ tags:
 # Represents a single audit event.      The ``bot_id`` field identifies which bot
 
 ## Connections
-- [[AuditEvent]] - `rationale_for` [EXTRACTED]
+- [[AuditEvent_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

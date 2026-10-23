@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "AgentShroud Docker Configuration"
+community: "test_mfa_guard.py"
 location: "L2397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/test_mfa_guardpy
 ---
 
 # compute_scorecard()
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_timestamp_present()]] - `calls` [EXTRACTED]
 - [[dot-test_totals_present()]] - `calls` [EXTRACTED]
 - [[dot-test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 - [[_determine_compliance_level()]] - `calls` [EXTRACTED]
@@ -74,4 +74,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

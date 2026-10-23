@@ -12,7 +12,7 @@ tags:
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
-- [[Path_36]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[Path_34]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupConfig

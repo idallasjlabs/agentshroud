@@ -15,6 +15,6 @@ tags:
 - [[TestConfigBotId]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
-- [[get_config()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2

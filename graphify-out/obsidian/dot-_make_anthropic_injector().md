@@ -19,7 +19,7 @@ tags:
 - [[dot-test_inject_if_absent_skips_when_bearer_already_present()]] - `calls` [EXTRACTED]
 - [[dot-test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - `calls` [EXTRACTED]
 - [[CredentialInjector]] - `references` [EXTRACTED]
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_53]] - `references` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

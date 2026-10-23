@@ -12,7 +12,7 @@ tags:
 # EncodingResult
 
 ## Connections
-- [[dot-analyze()]] - `calls` [EXTRACTED]
+- [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2

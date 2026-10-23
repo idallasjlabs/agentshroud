@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "PortManager"
-location: "L73"
+community: "ContextGuard"
+location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/ContextGuard
 ---
 
 # .test_wrong_key_fails()
 
 ## Connections
 - [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestEncryptedStore]] - `method` [EXTRACTED]
+- [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

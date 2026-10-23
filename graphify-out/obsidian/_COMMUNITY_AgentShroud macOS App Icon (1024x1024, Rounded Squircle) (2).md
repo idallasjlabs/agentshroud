@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[dot-__init__()_25]] - code - gateway/web/dashboard_endpoints.py
-- [[dot-summary()_1]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-__init__()_24]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-summary()]] - code - gateway/web/dashboard_endpoints.py
 - [[Alert counts by severity.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[AlertStore]] - code - gateway/web/dashboard_endpoints.py
 - [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - rationale - gateway/web/dashboard_endpoints.py

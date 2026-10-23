@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestBodyParsing]] - `method` [EXTRACTED]
 - [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

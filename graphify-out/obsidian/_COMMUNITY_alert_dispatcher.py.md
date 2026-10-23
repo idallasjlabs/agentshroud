@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # alert_dispatcher.py
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 18
 - [[Key Classes  Functions_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Key Rotation Workflow]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Mode Enforce vs Monitor_5]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Purpose_100]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Purpose_89]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Related_10]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Responsibilities_8]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Threat Model_7]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md

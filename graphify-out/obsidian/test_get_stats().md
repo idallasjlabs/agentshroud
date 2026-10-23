@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_event_bus.py"
+source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
-location: "L80"
+community: "TestMultipartOutboundPipeline"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/TestMultipartOutboundPipeline
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
-- [[test_event_bus.py]] - `contains` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
+- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "export_bot"
-location: "L80"
+community: "MiddlewareManager"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/MiddlewareManager
 ---
 
 # temp_workspace()
 
 ## Connections
-- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
+- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

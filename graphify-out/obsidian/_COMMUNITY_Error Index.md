@@ -1,34 +1,22 @@
 ---
 type: community
-members: 27
+cohesion: 0.15
+members: 13
 ---
 
 # Error Index.md
 
-**Members:** 27 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
 - [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Prerequisites_4]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Related Notes_38]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Related Notes_39]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Related Notes_57]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Startup Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
@@ -44,11 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py (2)]]
-- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
-- [[Restart Procedure_1]] - degree 3, connects to 2 communities
-- [[First Time Setup_1]] - degree 12, connects to 1 community
-- [[Startup Errors]] - degree 4, connects to 1 community
+- [[Startup Errors_1]] - degree 4, connects to 1 community

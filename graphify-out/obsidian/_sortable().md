@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
 community: "TestFullAccessMiddlewareBypass"
-location: "L109"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED

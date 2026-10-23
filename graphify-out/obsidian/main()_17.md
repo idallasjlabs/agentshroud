@@ -1,19 +1,24 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Path (2)"
-location: "L427"
+community: "EgressTelegramNotifier"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/EgressTelegramNotifier
 ---
 
 # main()
 
 ## Connections
-- [[dot-run()_3]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py_1]] - `contains` [EXTRACTED]
+- [[Path_40]] - `calls` [EXTRACTED]
+- [[default_out_dir()]] - `calls` [EXTRACTED]
+- [[gen.py]] - `contains` [EXTRACTED]
+- [[get_model_defaults()]] - `calls` [EXTRACTED]
+- [[pick_prompts()]] - `calls` [EXTRACTED]
+- [[request_images()]] - `calls` [EXTRACTED]
+- [[slugify()]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

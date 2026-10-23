@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "_wrap_response()"
+community: "TestDocumentTagging"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/TestDocumentTagging
 ---
 
 # .test_tag_document_different_content_different_hash()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDocumentTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging

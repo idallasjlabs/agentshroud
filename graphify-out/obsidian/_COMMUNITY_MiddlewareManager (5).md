@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 43
 ---
 
 # MiddlewareManager (5)
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -31,7 +33,7 @@ members: 43
 - [[Effectiveness Metrics]] - document - docs/security/security-architecture.md
 - [[Emergency Procedures]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Encryption and Cryptographic Controls]] - document - docs/security/security-architecture.md
-- [[Executive Summary]] - document - docs/security/security-architecture.md
+- [[Executive Summary_1]] - document - docs/security/security-architecture.md
 - [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -41,7 +43,7 @@ members: 43
 - [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
-- [[Quick Reference_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Quick Reference]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -65,7 +67,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Enterprise Governance Proxy System (invention)]]
 - 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
 - 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
 - 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)]]
 
 ## Top bridge nodes

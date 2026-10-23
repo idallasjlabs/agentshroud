@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 59
 ---
 
 # Added
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 59 nodes
 
 ## Members
@@ -37,7 +39,7 @@ members: 59
 - [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
 - [[Recommended Steps]] - document - CHANGELOG.md
 - [[Removed]] - document - CHANGELOG.md
-- [[Security_1]] - document - CHANGELOG.md
+- [[Security_2]] - document - CHANGELOG.md
 - [[Summary]] - document - CHANGELOG.md
 - [[Testing]] - document - CHANGELOG.md
 - [[Tests]] - document - CHANGELOG.md

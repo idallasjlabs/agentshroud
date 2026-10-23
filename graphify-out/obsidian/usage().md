@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/killswitch.sh"
+source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "test_credential_injector.py"
-location: "L28"
+community: "TestTail"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_credential_injectorpy
+  - community/TestTail
 ---
 
 # usage()
 
 ## Connections
-- [[killswitch.sh]] - `defines` [EXTRACTED]
-- [[killswitch.sh script]] - `calls` [EXTRACTED]
+- [[docker-cleanup.sh]] - `defines` [EXTRACTED]
+- [[docker-cleanup.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy
+#graphify/code #graphify/EXTRACTED #community/TestTail

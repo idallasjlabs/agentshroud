@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SecurityPipeline (2)"
-location: "L69"
+community: "TelegramAPIProxy (2)"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/TelegramAPIProxy_2
 ---
 
 # .manager()
 
 ## Connections
-- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `calls` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[TestInstructionNonce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

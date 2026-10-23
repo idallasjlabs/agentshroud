@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # AgentShroud Color Palette
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
@@ -15,7 +17,7 @@ members: 18
 - [[Configuration_11]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Context_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
-- [[Decision_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Decision_2]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Migration from ADR-002]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Negative Consequences]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Policy Table]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md

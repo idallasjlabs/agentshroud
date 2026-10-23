@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Pre-Deployment Checklist
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -36,7 +38,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_PipelineAction]]
 - 1 edge to [[_COMMUNITY_AgentShroud Color Palette]]
 - 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (2)_1]]
+- 1 edge to [[_COMMUNITY_Proxy Layer]]
 
 ## Top bridge nodes
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 3 communities

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 37
 ---
 
 # Skill: UI Expert (UI)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -30,13 +32,13 @@ members: 37
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
 - [[GitHub Actions Best Practices_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Purpose_71]] - document - .agents/skills/i-cicd/README.md
-- [[Purpose_72]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Purpose_69]] - document - .agents/skills/i-cicd/README.md
+- [[Purpose_70]] - document - docker/config/hermes/skills/i-cicd/README.md
 - [[Quality Gates  (execution order)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Related Skills_56]] - document - .agents/skills/i-cicd/README.md
 - [[Related Skills_57]] - document - docker/config/hermes/skills/i-cicd/README.md
 - [[Review Flags  (block the merge)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Role_20]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Role_19]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
 - [[Usage_59]] - document - .agents/skills/i-cicd/README.md
@@ -54,7 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 - 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 - 1 edge to [[_COMMUNITY_agentshroud-gateway service (proxy mode)]]

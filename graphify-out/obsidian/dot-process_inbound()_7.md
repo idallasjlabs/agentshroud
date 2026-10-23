@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "_make_proxy()"
-location: "L310"
+community: "api.py"
+location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/apipy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
+- [[dot-_process()]] - `calls` [EXTRACTED]
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[A2AMessage]] - `references` [EXTRACTED]
+- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/apipy

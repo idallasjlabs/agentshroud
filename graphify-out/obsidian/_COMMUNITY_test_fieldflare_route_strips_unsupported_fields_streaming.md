@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.19
 members: 14
 ---
 
 # test_fieldflare_route_strips_unsupported_fields_streaming
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 14 nodes
 
 ## Members
 - [[dot-test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
 - [[dot-test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
 - [[dot-test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
-- [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
+- [[AuthRequired_3]] - code - gateway/ingest_api/routes/health.py
 - [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
 - [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
 - [[StatusResponse]] - code - gateway/ingest_api/models.py
@@ -31,9 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan()]]
+- 2 edges to [[_COMMUNITY_create_auth_dependency()]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 
 ## Top bridge nodes
 - [[StatusResponse]] - degree 10, connects to 3 communities

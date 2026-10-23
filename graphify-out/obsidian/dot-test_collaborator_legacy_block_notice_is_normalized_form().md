@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_req"
+community: "TelegramAPIProxy"
 location: "L633"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_legacy_block_notice_is_normalized_form()
 
 ## Connections
 - [[Form payload legacy notices should normalize to Protect wording.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

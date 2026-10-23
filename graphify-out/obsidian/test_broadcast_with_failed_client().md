@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Exception_1]] - `calls` [INFERRED]
+- [[Exception_2]] - `calls` [INFERRED]
 - [[Test broadcast handles failed client sends]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

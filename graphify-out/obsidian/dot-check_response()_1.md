@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L204"
+community: "ApprovalQueueConfig"
+location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/ApprovalQueueConfig
 ---
 
 # .check_response()
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `calls` [EXTRACTED]
-- [[CanaryResult]] - `references` [EXTRACTED]
-- [[Check if response contains the session's canary (prompt leakage detected).]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[_BrokenOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

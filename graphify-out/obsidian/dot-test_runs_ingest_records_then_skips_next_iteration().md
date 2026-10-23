@@ -15,9 +15,9 @@ tags:
 - [[First iteration ingests + records; second sees dedup and skips.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
 - [[_fake_ingest()_1]] - `indirect_call` [INFERRED]
-- [[_sleep()_5]] - `indirect_call` [INFERRED]
+- [[_sleep()_2]] - `indirect_call` [INFERRED]
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
-- [[now()_5]] - `contains` [EXTRACTED]
+- [[now()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips

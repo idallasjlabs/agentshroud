@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "parse_clamscan_output"
 location: "L881"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/parse_clamscan_output
 ---
 
 # aggregate_results()
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_timestamp_present()_1]] - `calls` [EXTRACTED]
 - [[dot-test_totals_sum_across_scanners()]] - `calls` [EXTRACTED]
 - [[Aggregate results from all security scanners into a unified dict.      Returns]] - `rationale_for` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

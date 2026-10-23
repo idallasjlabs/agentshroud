@@ -12,8 +12,8 @@ tags:
 # DNSQuery
 
 ## Connections
-- [[dot-check()_6]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_6]] - `references` [EXTRACTED]
+- [[dot-check()_5]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_7]] - `references` [EXTRACTED]
 - [[dot-get_flagged_queries()]] - `references` [EXTRACTED]
 - [[dns_filter.py_2]] - `contains` [EXTRACTED]
 

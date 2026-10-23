@@ -12,6 +12,6 @@ tags:
 # CRITICAL-2: No request body size limits on API models
 
 ## Connections
-- [[Critical Findings_2]] - `contains` [EXTRACTED]
+- [[Critical Findings_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

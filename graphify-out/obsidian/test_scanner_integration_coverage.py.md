@@ -12,7 +12,7 @@ tags:
 # test_scanner_integration_coverage.py
 
 ## Connections
-- [[TestAccessControl_1]] - `contains` [EXTRACTED]
+- [[TestAccessControl]] - `contains` [EXTRACTED]
 - [[TestAgenticScorers]] - `contains` [EXTRACTED]
 - [[TestAggregateResults]] - `contains` [EXTRACTED]
 - [[TestAiModelSupplyChain]] - `contains` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[TestDaemonConfigReader]] - `contains` [EXTRACTED]
 - [[TestDataConfidentiality]] - `contains` [EXTRACTED]
 - [[TestDockerDaemonConfig]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
 - [[TestFluentBitSummary]] - `contains` [EXTRACTED]
 - [[TestGetSbom]] - `contains` [EXTRACTED]
 - [[TestHostOsHardening]] - `contains` [EXTRACTED]
@@ -46,12 +46,12 @@ tags:
 - [[TestRuntimeProtectionAndMalware]] - `contains` [EXTRACTED]
 - [[TestSecretsManagement]] - `contains` [EXTRACTED]
 - [[TestSocketAndPidProbes]] - `contains` [EXTRACTED]
-- [[TestSupplyChain]] - `contains` [EXTRACTED]
+- [[TestSupplyChain_1]] - `contains` [EXTRACTED]
 - [[TestTextReaders]] - `contains` [EXTRACTED]
 - [[TestTrivyImageSummaries]] - `contains` [EXTRACTED]
-- [[TestTrivySummary]] - `contains` [EXTRACTED]
+- [[TestTrivySummary_1]] - `contains` [EXTRACTED]
 - [[TestVulnerabilityManagement]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
 - [[_FakeResp]] - `contains` [EXTRACTED]
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]

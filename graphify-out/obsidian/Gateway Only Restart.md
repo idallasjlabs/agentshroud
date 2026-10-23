@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "Restart Procedure"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/Restart_Procedure
 ---
 
 # Gateway Only Restart
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "ProxyAction (2)"
+community: "ProxyAction"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyAction_2
+  - community/ProxyAction
 ---
 
 # Test cases for ToolResultInjectionScanner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyAction_2
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

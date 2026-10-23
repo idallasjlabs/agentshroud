@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "1. Accomplishments This Phase"
+community: "export_bot()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/export_bot
 ---
 
 # export-email-reports.py
@@ -15,8 +15,8 @@ tags:
 - [[_list_report_files()]] - `contains` [EXTRACTED]
 - [[_parse_since()_1]] - `contains` [EXTRACTED]
 - [[_report_date()]] - `contains` [EXTRACTED]
-- [[datetime_3]] - `imports_from` [EXTRACTED]
+- [[datetime_7]] - `imports_from` [EXTRACTED]
 - [[export_bot()]] - `contains` [EXTRACTED]
-- [[main()_11]] - `contains` [EXTRACTED]
+- [[main()_33]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/code #graphify/EXTRACTED #community/export_bot

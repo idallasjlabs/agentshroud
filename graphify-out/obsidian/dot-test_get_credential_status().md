@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "FODL — Fluence Operational Data Lakehouse"
+community: ".get_op_reference()"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FODL__Fluence_Operational_Data_Lakehouse
+  - community/get_op_reference
 ---
 
 # .test_get_credential_status()
@@ -15,4 +15,4 @@ tags:
 - [[Test credential status reporting.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse
+#graphify/code #graphify/EXTRACTED #community/get_op_reference

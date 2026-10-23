@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "UserSessionManager"
-location: "L393"
+community: "chatbot/main.py"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/chatbot/mainpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

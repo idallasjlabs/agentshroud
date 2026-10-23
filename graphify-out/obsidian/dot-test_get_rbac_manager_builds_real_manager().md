@@ -12,7 +12,7 @@ tags:
 # .test_get_rbac_manager_builds_real_manager()
 
 ## Connections
-- [[dot-check_permission()_1]] - `calls` [EXTRACTED]
+- [[dot-check_permission()_2]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
 - [[_get_rbac_manager()]] - `calls` [EXTRACTED]
 

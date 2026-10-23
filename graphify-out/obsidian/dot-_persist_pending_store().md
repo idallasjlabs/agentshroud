@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
 - [[dot-cleanup_decided()]] - `calls` [EXTRACTED]
-- [[dot-decide()]] - `calls` [EXTRACTED]
-- [[dot-submit()]] - `calls` [EXTRACTED]
+- [[dot-decide()_1]] - `calls` [EXTRACTED]
+- [[dot-submit()_1]] - `calls` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Persist queue items to disk for restart durability (best effort).          Uses]] - `rationale_for` [EXTRACTED]
 

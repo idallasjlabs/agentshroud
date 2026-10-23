@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "AgentTarget (2)"
+community: ".agents/skills/i-cr/SKILL.md (2)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/agents/skills/i-cr/SKILLmd_2
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2

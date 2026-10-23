@@ -1,36 +1,20 @@
 ---
 type: community
-members: 138
+cohesion: 0.03
+members: 80
 ---
 
 # ingest_api/main.py
 
-**Members:** 138 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 80 nodes
 
 ## Members
-- [[dot-__init__()_81]] - code - gateway/security/tool_acl.py
-- [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
-- [[dot-_get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
-- [[dot-_get_role()]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_tool()_1]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
-- [[dot-can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
-- [[dot-check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
+- [[dot-__init__()_172]] - code - gateway/security/tool_acl.py
 - [[dot-effective_admin()]] - code - gateway/security/tool_acl.py
 - [[dot-effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
 - [[dot-effective_private()]] - code - gateway/security/tool_acl.py
 - [[dot-enforcer()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-get_allowed_tools()]] - code - gateway/security/tool_acl.py
-- [[dot-get_denial_counts()]] - code - gateway/security/tool_acl.py
-- [[dot-get_denied_tools()]] - code - gateway/security/tool_acl.py
-- [[dot-get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
-- [[dot-get_user_role()_1]] - code - gateway/security/rbac_config.py
-- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
-- [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_operator_or_higher()]] - code - gateway/security/rbac_config.py
-- [[dot-is_owner()_1]] - code - gateway/security/rbac_config.py
-- [[dot-set_user_role()_1]] - code - gateway/security/rbac_config.py
 - [[dot-test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
@@ -46,7 +30,6 @@ members: 138
 - [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[dot-test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
@@ -74,51 +57,17 @@ members: 138
 - [[dot-test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
-- [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
 - [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
 - [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
 - [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
-- [[Authorize a tool call, refusing owner elevation over an unverified origin.]] - rationale - gateway/security/tool_acl.py
 - [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
 - [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
-- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
-- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
-- [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
-- [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
-- [[Check whether user_id may invoke the named tool.          Returns             (]] - rationale - gateway/security/tool_acl.py
-- [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - rationale - gateway/security/tool_acl.py
-- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
-- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
-- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
 - [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
 - [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
-- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
-- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
-- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
-- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
-- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
-- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
-- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
-- [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
-- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
 - [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
-- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
 - [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - rationale - gateway/security/tool_acl.py
-- [[RBACConfig]] - code - gateway/security/rbac.py
-- [[RBACConfig_1]] - code - gateway/tests/test_privacy_policy.py
-- [[RBACConfig_2]] - code - gateway/tests/test_tool_acl.py
-- [[RBACConfig_3]] - code - gateway/security/rbac_config.py
 - [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
 - [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
-- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
-- [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
-- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
-- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
-- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
-- [[Role_19]] - code - gateway/security/rbac_config.py
-- [[SCLCaller]] - code - gateway/tests/test_soc_bots.py
-- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
 - [[TeamsConfig_2]] - code - gateway/tests/test_tool_acl.py
 - [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
 - [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
@@ -135,17 +84,12 @@ members: 138
 - [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
 - [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
 - [[ToolACLConfig]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
-- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
 - [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
-- [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - rationale - gateway/security/rbac_config.py
 - [[_make_rbac()]] - code - gateway/tests/test_tool_acl.py
-- [[can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
-- [[enforcer()]] - code - gateway/tests/test_tool_acl.py
-- [[rbac()]] - code - gateway/tests/test_tool_acl.py
+- [[enforcer()_2]] - code - gateway/tests/test_tool_acl.py
+- [[rbac()_4]] - code - gateway/tests/test_tool_acl.py
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
 - [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
-- [[tool_acl.py]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -155,54 +99,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 61 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 30 edges to [[_COMMUNITY_AlertDispatcher (2)]]
-- 29 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 21 edges to [[_COMMUNITY_chatbotmain.py]]
-- 19 edges to [[_COMMUNITY_socrouter.py]]
-- 18 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 18 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 16 edges to [[_COMMUNITY_MiddlewareManager]]
-- 15 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 13 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 9 edges to [[_COMMUNITY_CrossBotTrustLedger]]
-- 7 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 7 edges to [[_COMMUNITY_SCLClient]]
-- 7 edges to [[_COMMUNITY_TestToolChainAnalyzer (2)]]
-- 6 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 5 edges to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
-- 5 edges to [[_COMMUNITY_ResourceGuard]]
-- 4 edges to [[_COMMUNITY_KillSwitchMonitor (5)]]
-- 4 edges to [[_COMMUNITY_Canvas Skill]]
-- 4 edges to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection]]
-- 4 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
-- 4 edges to [[_COMMUNITY_UserSessionManager (2)_1]]
-- 3 edges to [[_COMMUNITY_RBACConfig]]
-- 3 edges to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY__make_proxy()]]
-- 2 edges to [[_COMMUNITY_Remediation]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
-- 2 edges to [[_COMMUNITY_Function Details]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2) (2)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
-- 1 edge to [[_COMMUNITY__t]]
-- 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 1 edge to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
-- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
-- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (4)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (3)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2)]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py (2)]]
+- 32 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 26 edges to [[_COMMUNITY_socrouter.py]]
+- 13 edges to [[_COMMUNITY_colima-health-check.sh]]
+- 9 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 1 edge to [[_COMMUNITY_record_decision()]]
 
 ## Top bridge nodes
-- [[RBACConfig_3]] - degree 217, connects to 31 communities
-- [[Role_19]] - degree 107, connects to 17 communities
-- [[ToolACLEnforcer]] - degree 75, connects to 5 communities
-- [[tool_acl.py]] - degree 9, connects to 3 communities
-- [[RBACConfig_1]] - degree 7, connects to 2 communities
+- [[test_tool_acl.py]] - degree 23, connects to 4 communities
+- [[ToolACLConfig]] - degree 38, connects to 3 communities
+- [[TestCVE2026_9367TerminalToolDenied]] - degree 14, connects to 3 communities
+- [[TestOriginAwareAuthorization]] - degree 14, connects to 3 communities
+- [[TestCollaboratorAccess]] - degree 12, connects to 3 communities

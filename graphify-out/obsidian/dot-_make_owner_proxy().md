@@ -17,7 +17,7 @@ tags:
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - `calls` [EXTRACTED]
 - [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - `calls` [EXTRACTED]
 - [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_2

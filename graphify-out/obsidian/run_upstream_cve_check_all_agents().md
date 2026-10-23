@@ -12,7 +12,7 @@ tags:
 # run_upstream_cve_check_all_agents()
 
 ## Connections
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
 - [[Run the upstream CVE check for EVERY registered agent, independently. Iterates…]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `calls` [EXTRACTED]

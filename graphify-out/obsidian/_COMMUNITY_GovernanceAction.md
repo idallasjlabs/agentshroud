@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # GovernanceAction
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 13
 - [[Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Function Details_47]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Purpose_153]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Purpose_152]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Related_53]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Responsibilities_50]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md

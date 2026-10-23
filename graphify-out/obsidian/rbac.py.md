@@ -12,16 +12,16 @@ tags:
 # rbac.py
 
 ## Connections
-- [[Action_1]] - `contains` [EXTRACTED]
+- [[Action_3]] - `contains` [EXTRACTED]
 - [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - `references` [EXTRACTED]
 - [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - `references` [EXTRACTED]
 - [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 - [[PermissionResult]] - `contains` [EXTRACTED]
 - [[RBACConfig_3]] - `imports` [EXTRACTED]
-- [[RBACManager_1]] - `contains` [EXTRACTED]
-- [[Resource_1]] - `contains` [EXTRACTED]
-- [[Role_19]] - `imports` [EXTRACTED]
+- [[RBACManager_2]] - `contains` [EXTRACTED]
+- [[Resource_2]] - `contains` [EXTRACTED]
+- [[Role_64]] - `imports` [EXTRACTED]
 - [[ToolTier_2]] - `imports` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]

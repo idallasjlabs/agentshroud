@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "SecurityPipeline (2)"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/SecurityPipeline_2
 ---
 
 # Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2

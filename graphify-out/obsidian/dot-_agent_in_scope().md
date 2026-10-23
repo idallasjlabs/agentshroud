@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # ._agent_in_scope()
 
 ## Connections
-- [[dot-get_key()_1]] - `calls` [EXTRACTED]
+- [[dot-get_key()]] - `calls` [EXTRACTED]
 - [[dot-list_keys()]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KeyVault

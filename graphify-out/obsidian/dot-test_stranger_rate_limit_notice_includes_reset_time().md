@@ -17,7 +17,7 @@ tags:
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
 - [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - `rationale_for` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_73]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_25]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_64]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand

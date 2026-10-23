@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_1000_messages_under_10s()
@@ -15,4 +15,4 @@ tags:
 - [[Process 1000 mixed messages in under 10 seconds.]] - `rationale_for` [EXTRACTED]
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

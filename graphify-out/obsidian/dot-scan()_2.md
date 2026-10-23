@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L136"
+community: "FileSandbox"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/FileSandbox
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-_record()]] - `calls` [EXTRACTED]
-- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-check_write()]] - `calls` [EXTRACTED]
+- [[PIIFinding]] - `calls` [EXTRACTED]
+- [[PIIScanResult]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

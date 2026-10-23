@@ -1,17 +1,17 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "MiddlewareManager (9)"
+community: "Integration Guide"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_9
+  - community/Integration_Guide
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_9
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

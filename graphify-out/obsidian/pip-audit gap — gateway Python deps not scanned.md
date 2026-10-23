@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-17.md"
 type: "rationale"
-community: "ModuleStatsCollector"
+community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)"
 location: "L162-172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2
 ---
 
 # pip-audit gap — gateway Python deps not scanned
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2

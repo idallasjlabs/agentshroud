@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[TestCallWithDeadline]] - `contains` [EXTRACTED]
 - [[TestDiscoverRetries]] - `contains` [EXTRACTED]
+- [[TestFetchDockerhubTagsUsesCurl]] - `contains` [EXTRACTED]
 - [[TestGuardedFetch]] - `contains` [EXTRACTED]
 - [[TestIPv4Only]] - `contains` [EXTRACTED]
 - [[TestIsStable]] - `contains` [EXTRACTED]

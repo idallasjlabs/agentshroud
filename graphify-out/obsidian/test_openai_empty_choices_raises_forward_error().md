@@ -12,7 +12,7 @@ tags:
 # test_openai_empty_choices_raises_forward_error()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[Empty choices list raises ForwardError.]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 

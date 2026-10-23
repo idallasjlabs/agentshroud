@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "1. GitHub MCP Authentication Reset (2)"
-location: "L630"
+community: "AgentTarget"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset_2
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

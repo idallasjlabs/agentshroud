@@ -12,6 +12,6 @@ tags:
 # .test_base64_in_url_path_flagged()
 
 ## Connections
-- [[TestDataExfiltration]] - `method` [EXTRACTED]
+- [[TestDataExfiltration_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

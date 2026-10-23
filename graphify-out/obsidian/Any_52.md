@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: ""
 type: "code"
-community: "FetchOutcome"
-location: "L73"
+community: "A2APolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/A2APolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_136]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

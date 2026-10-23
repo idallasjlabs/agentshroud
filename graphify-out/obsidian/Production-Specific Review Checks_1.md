@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: ".test_egress_callback_from_collaborator_is_rejected()"
+community: "GitHub Branch Protection — `main`"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_from_collaborator_is_rejected
+  - community/GitHub_Branch_Protection__main
 ---
 
 # Production-Specific Review Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected
+#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main

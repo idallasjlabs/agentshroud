@@ -16,7 +16,7 @@ tags:
 - [[TestLeakDetection]] - `contains` [EXTRACTED]
 - [[TestLoadAllSecretFileValues]] - `contains` [EXTRACTED]
 - [[TestOAuthInjection]] - `contains` [EXTRACTED]
-- [[TestStatus]] - `contains` [EXTRACTED]
+- [[TestStatus_1]] - `contains` [EXTRACTED]
 - [[injector()]] - `contains` [EXTRACTED]
 - [[secrets_dir()]] - `contains` [EXTRACTED]
 

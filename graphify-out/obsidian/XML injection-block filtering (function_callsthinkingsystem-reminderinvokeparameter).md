@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "concept"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # XML injection-block filtering (function_calls/thinking/system-reminder/invoke/parameter)
 
 ## Connections
-- [[PIISanitizer_2]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/concept #graphify/EXTRACTED #community/MCPPermissionManager

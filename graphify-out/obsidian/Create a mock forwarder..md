@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "RBACConfig"
+community: "api.py (2)"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/apipy_2
 ---
 
 # Create a mock forwarder.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-mock_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/apipy_2

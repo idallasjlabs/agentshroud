@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # Technical Illustrator (i-ti)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -29,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[GSDE&G Development Master Checklist]] - degree 12, connects to 1 community

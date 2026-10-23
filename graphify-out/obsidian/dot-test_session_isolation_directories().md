@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (3)"
+community: "MiddlewareManager"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_3
+  - community/MiddlewareManager
 ---
 
 # .test_session_isolation_directories()
@@ -15,4 +15,4 @@ tags:
 - [[Test that each user gets isolated directories.]] - `rationale_for` [EXTRACTED]
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_3
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

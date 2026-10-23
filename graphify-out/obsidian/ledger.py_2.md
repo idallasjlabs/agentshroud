@@ -1,27 +1,23 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "_make_proxy() (2)"
-location: "L10"
+community: "MiddlewareManager (4)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy_2
+  - community/MiddlewareManager_4
 ---
 
-# ledger.py
+# ledger.py.md
 
 ## Connections
-- [[Config Keys Read_4]] - `contains` [EXTRACTED]
-- [[Database Schema_2]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
-- [[Function Details_21]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
-- [[Purpose_123]] - `contains` [EXTRACTED]
-- [[Related_27]] - `contains` [EXTRACTED]
-- [[Responsibilities_25]] - `contains` [EXTRACTED]
-- [[ledger.py]] - `contains` [EXTRACTED]
+- [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
+- [[Data Flow_1]] - `references` [EXTRACTED]
+- [[DataLedger]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[volumes]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy_2
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

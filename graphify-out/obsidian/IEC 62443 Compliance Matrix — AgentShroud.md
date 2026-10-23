@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Daedalus — Concept Illustrator (3)"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator_3
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # IEC 62443 Compliance Matrix — AgentShroud
@@ -20,8 +20,8 @@ tags:
 - [[FR 6 Timely Response to Events (TRE)]] - `contains` [EXTRACTED]
 - [[FR 7 Resource Availability (RA)]] - `contains` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `contains` [EXTRACTED]
-- [[Overview_25]] - `contains` [EXTRACTED]
-- [[Summary_25]] - `contains` [EXTRACTED]
+- [[Overview_15]] - `contains` [EXTRACTED]
+- [[Summary_15]] - `contains` [EXTRACTED]
 - [[iec-62443-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator_3
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "EgressFilterConfig (4)"
-location: "L100"
+community: "AgentTarget"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_9]] - `references` [EXTRACTED]
+- [[dot-get_stats()_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # KeyRotationManager (3)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[dot-__aenter__()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-__aexit__()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_4]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-stream()]] - code - gateway/tests/test_llm_proxy.py
 - [[_HeadFakeClient]] - code - gateway/tests/test_llm_proxy.py
 

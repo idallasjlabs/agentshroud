@@ -1,34 +1,17 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
-type: "code"
-community: "upgrade"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+type: "document"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents (2)"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2
 ---
 
-# version_routes.py
+# version_routes.py.md
 
 ## Connections
-- [[RollbackRequest]] - `contains` [EXTRACTED]
-- [[VersionRequest]] - `contains` [EXTRACTED]
-- [[agentshroud_manager.py]] - `imports_from` [EXTRACTED]
-- [[check_current_version()]] - `imports` [EXTRACTED]
-- [[downgrade()]] - `imports` [EXTRACTED]
-- [[downgrade_version()]] - `contains` [EXTRACTED]
-- [[get_available_versions()]] - `contains` [EXTRACTED]
-- [[get_current_version()]] - `contains` [EXTRACTED]
-- [[get_version_history()]] - `contains` [EXTRACTED]
-- [[list_available_versions()]] - `imports` [EXTRACTED]
-- [[list_versions()]] - `imports` [EXTRACTED]
-- [[mask_credentials()]] - `imports` [EXTRACTED]
-- [[review_version()]] - `contains` [EXTRACTED]
-- [[rollback()]] - `imports` [EXTRACTED]
-- [[rollback_version()]] - `contains` [EXTRACTED]
-- [[security_review()]] - `imports` [EXTRACTED]
-- [[upgrade()]] - `imports` [EXTRACTED]
-- [[upgrade_version()]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents_2

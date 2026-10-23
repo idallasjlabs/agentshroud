@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "setup-secrets.sh (2)"
-location: "L227"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh_2
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_2]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_2]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[MCP-Specific_2]] - `contains` [EXTRACTED]
+- [[Organization_2]] - `contains` [EXTRACTED]
+- [[Security_8]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh_2
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

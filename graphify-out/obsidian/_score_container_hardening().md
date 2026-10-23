@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "parse_clamscan_output"
 location: "L1021"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/parse_clamscan_output
 ---
 
 # _score_container_hardening()
@@ -15,10 +15,10 @@ tags:
 - [[dot-test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_five_when_openscap_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_four_when_openscap_running_with_failures()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Score domain 4 Container Hardening (0-5).      Baseline of 3 because docker-com]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

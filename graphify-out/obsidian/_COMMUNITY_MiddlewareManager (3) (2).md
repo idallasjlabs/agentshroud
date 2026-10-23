@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 37
 ---
 
 # MiddlewareManager (3) (2)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 37 nodes
 
 ## Members
@@ -42,7 +44,7 @@ members: 37
 - [[TestImageSigningProvenance]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestNetworkSegmentation]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestRegistrySecurity]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSupplyChain_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[Write a file under the sandbox root, creating parents.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[_w()]] - code - gateway/tests/test_scanner_integration_coverage.py
 

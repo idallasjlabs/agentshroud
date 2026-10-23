@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L183"
+community: "ResourceGuard"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

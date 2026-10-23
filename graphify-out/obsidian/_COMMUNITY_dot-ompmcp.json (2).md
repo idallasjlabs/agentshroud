@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # .omp/mcp.json (2)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 23
 - [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_3]] - code - .omp/mcp.json
 - [[dot-ompmcp.json]] - code - .omp/mcp.json
 - [[opthomebrewbinnpx_3]] - code - .omp/mcp.json
-- [[PATH_41]] - code - .omp/mcp.json
+- [[PATH_44]] - code - .omp/mcp.json
 - [[atlassian-agentshroud_4]] - code - .omp/mcp.json
 - [[atlassian-idallasj_4]] - code - .omp/mcp.json
 - [[autoOpenFile_4]] - code - .omp/mcp.json

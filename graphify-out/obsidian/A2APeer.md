@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-get_peer()]] - `references` [EXTRACTED]
 - [[dot-is_trusted()]] - `method` [EXTRACTED]
-- [[dot-register_peer()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_8]] - `method` [EXTRACTED]
+- [[dot-register_peer()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()_9]] - `method` [EXTRACTED]
 - [[dot-unregister_peer()]] - `references` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `shares_data_with` [EXTRACTED]
 - [[Registered A2A peer agent.]] - `rationale_for` [EXTRACTED]

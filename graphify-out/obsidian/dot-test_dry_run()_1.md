@@ -12,7 +12,7 @@ tags:
 # .test_dry_run()
 
 ## Connections
-- [[TestUpgrade]] - `method` [EXTRACTED]
+- [[TestUpgrade_1]] - `method` [EXTRACTED]
 - [[list_versions()]] - `calls` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 

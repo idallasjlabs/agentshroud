@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # .cursor/mcp.json
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -42,7 +44,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_test_ptt_state.c]]
 - 1 edge to [[_COMMUNITY_test_sanitizer.py (2)]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (2)_1]]
+- 1 edge to [[_COMMUNITY_Proxy Layer]]
 - 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
 - 1 edge to [[_COMMUNITY_AgentShroud Color Palette]]
 

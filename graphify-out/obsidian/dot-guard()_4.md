@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L219"
+community: "_t"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_t
 ---
 
 # .guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_t

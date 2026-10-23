@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.svg"
 type: "image"
-community: "AlertTelegramRelay"
+community: "ADR-006: Multi-Runtime Container Support"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Docker Desktop (network topology diagram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/image #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

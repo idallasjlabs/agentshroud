@@ -1,46 +1,62 @@
 ---
 type: community
-members: 33
+cohesion: 0.06
+members: 47
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
 
-**Members:** 33 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 47 nodes
 
 ## Members
-- [[1Password bootstrap credentials never auto-resolved]] - rationale - docker/setup-secrets.sh
-- [[Credential backend cascade (Keychain → secret-tool → 1Password → file)]] - rationale - docker/setup-secrets.sh
-- [[S6 setup-secrets.sh read_secret_masked routes display output to devtty]] - concept - tests/startup_smoke/test_bot_boot_static.sh
-- [[SECRET_DEFS]] - code - docker/setup-secrets.sh
-- [[SS13SS14 behavioural test of write_secret_file]] - concept - tests/startup_smoke/test_setup_secrets.sh
-- [[Static assertions SS1-SS12 on setup-secrets.sh]] - concept - tests/startup_smoke/test_setup_secrets.sh
-- [[check]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[cmd_dump_op_refs]] - code - docker/setup-secrets.sh
-- [[cmd_extract]] - code - docker/setup-secrets.sh
-- [[cmd_help]] - code - docker/setup-secrets.sh
-- [[cmd_interactive]] - code - docker/setup-secrets.sh
-- [[cmd_migrate]] - code - docker/setup-secrets.sh
-- [[cmd_store]] - code - docker/setup-secrets.sh
-- [[detect_backend]] - code - docker/setup-secrets.sh
-- [[ensure_keychain]] - code - docker/setup-secrets.sh
-- [[generate_gateway_password]] - code - docker/setup-secrets.sh
-- [[get_secret]] - code - docker/setup-secrets.sh
-- [[has]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[has_in_section]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[keychain_get]] - code - docker/setup-secrets.sh
-- [[keychain_store]] - code - docker/setup-secrets.sh
-- [[normalize_secret]] - code - docker/setup-secrets.sh
-- [[op_get]] - code - docker/setup-secrets.sh
-- [[op_ref_for]] - code - docker/setup-secrets.sh
-- [[read_secret_masked]] - code - docker/setup-secrets.sh
-- [[read_secret_plain]] - code - docker/setup-secrets.sh
-- [[secret_matches_bot_filter]] - code - docker/setup-secrets.sh
-- [[setup-secrets.sh]] - code - docker/setup-secrets.sh
-- [[setup-secrets.sh script]] - code - docker/setup-secrets.sh
-- [[store_secret]] - code - docker/setup-secrets.sh
-- [[test_setup_secrets.sh]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[test_setup_secrets.sh script]] - code - tests/startup_smoke/test_setup_secrets.sh
-- [[write_secret_file]] - code - docker/setup-secrets.sh
+- [[1. Security Module Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[1.1 Module Integration Status]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[1.2 Critical Security Pipeline Flow]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[10. Steve Hay Assessment Alignment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[5. Integration Gap Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[5.1 New v0.7.0 Features Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[5.2 Pipeline Integration Verification]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
+- [[AgentShroud White Paper v1.1 (Feb 2026)]] - paper - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[ContextGuard (context window poisoning defense)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Egress Filter  SSRF Protection]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[End-to-End Verification]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Executive Summary]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[FileSandbox (path isolation)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[GitGuard (supply-chain hook scanning)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Known Gaps (Documented for v0.8.0)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[MCP Proxy Layer (tool-call interception)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[P0 — Critical Path (1616 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[P1 — Active Defense (1414 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[P2 — Infrastructure (1010 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[PII Sanitizer (Presidio + regex hybrid)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Summary_2]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Summary_3]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Trust Manager  Progressive Trust System]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[enforcement-audit-v0.7.0]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[planningreviewsblue-team-audit-v0.7.0]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[voice-gateway service (ESP32 voice terminal backend)]] - concept - docs/integrations/voice-terminal-esp32-s3.md
+- [[⚠️ Warning ContextGuard Enforcement]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[⚠️ Warning SecurityPipeline]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[⚠️ Warning killswitch.sh Path]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[⚠️ Warnings]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,8 +66,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
-- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 5 edges to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+- 2 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy; validates GATEWAY_AUTH_TOKEN + allowed_op_paths; cascading retry 5s,10s,15s,30s,60s)]]
+- 1 edge to [[_COMMUNITY_TestScoreIncidentResponse]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2) (2)]]
+- 1 edge to [[_COMMUNITY_3. Critical Findings & Risks]]
+- 1 edge to [[_COMMUNITY_4. Configuration Security Assessment]]
+- 1 edge to [[_COMMUNITY_8. Red Team Readiness Assessment]]
+- 1 edge to [[_COMMUNITY_9. Final Assessment]]
+- 1 edge to [[_COMMUNITY_TeamsConfig (3)]]
+- 1 edge to [[_COMMUNITY_Project Management (README)]]
 
 ## Top bridge nodes
-- [[op_ref_for]] - degree 5, connects to 2 communities
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - degree 18, connects to 6 communities
+- [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
+- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 1 community
+- [[Egress Filter  SSRF Protection]] - degree 7, connects to 1 community
+- [[PII Sanitizer (Presidio + regex hybrid)]] - degree 7, connects to 1 community

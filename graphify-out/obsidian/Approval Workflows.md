@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Approval Decision Criteria]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_3]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_4]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

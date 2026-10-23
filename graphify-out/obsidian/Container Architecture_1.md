@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L101"
+community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
-- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
-- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
+- [[Development Environment_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3

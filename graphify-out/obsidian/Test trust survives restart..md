@@ -12,6 +12,6 @@ tags:
 # Test trust survives restart.
 
 ## Connections
-- [[TestPersistence_1]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

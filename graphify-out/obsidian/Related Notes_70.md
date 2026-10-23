@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "browser/package.json"
-location: "L116"
+community: "MiddlewareManager (4)"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser/packagejson
+  - community/MiddlewareManager_4
 ---
 
 # Related Notes
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4

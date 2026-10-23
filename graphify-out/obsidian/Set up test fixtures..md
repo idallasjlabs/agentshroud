@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "MiddlewareManager"
-location: "L52"
+community: "scanner_integration.py"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/scanner_integrationpy
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-setUp()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

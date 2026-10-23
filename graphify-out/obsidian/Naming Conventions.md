@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "AgentShroud Documentation"
 location: "L235"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/AgentShroud_Documentation
 ---
 
 # Naming Conventions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📝 Contributing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

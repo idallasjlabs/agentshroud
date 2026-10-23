@@ -12,6 +12,6 @@ tags:
 # A WebSocket stand-in whose send_json never returns — models a dead     client (c
 
 ## Connections
-- [[_HangingWebSocket]] - `rationale_for` [EXTRACTED]
+- [[_HangingWebSocket_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3

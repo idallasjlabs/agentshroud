@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "API Documentation"
+community: "test_mfa_guard.py"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Documentation
+  - community/test_mfa_guardpy
 ---
 
 # TestScoreSecureDevelopment
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_three_when_semgrep_and_precommit_present()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Documentation
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestClassify"
-location: "L174"
+community: "Common Queries"
+location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/Common_Queries
 ---
 
 # .test_summary_error()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestClamAVSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/Common_Queries

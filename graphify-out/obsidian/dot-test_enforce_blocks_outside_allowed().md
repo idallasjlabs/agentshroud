@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # .test_enforce_blocks_outside_allowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSensitivePathBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

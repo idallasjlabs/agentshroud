@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "PipelineAction (2)"
+community: "parse_clamscan_output"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - community/parse_clamscan_output
 ---
 
 # .test_overall_not_configured_when_all_not_run()
@@ -16,4 +16,4 @@ tags:
 - [[TestAggregateResults_1]] - `method` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

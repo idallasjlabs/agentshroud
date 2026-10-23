@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-cr/README.md
 
 ## Connections
-- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

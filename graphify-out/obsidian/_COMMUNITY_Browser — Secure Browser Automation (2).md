@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 30
 ---
 
 # Browser — Secure Browser Automation (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 30
 - [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Best Practices_4]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Best Practices_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Browser — Secure Browser Automation_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
@@ -35,8 +37,8 @@ members: 30
 - [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Troubleshooting_15]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_63]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Troubleshooting_13]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_62]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

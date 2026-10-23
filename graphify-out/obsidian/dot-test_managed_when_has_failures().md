@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "parse_clamscan_output"
 location: "L811"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/parse_clamscan_output
 ---
 
 # .test_managed_when_has_failures()
 
 ## Connections
-- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
 - [[_openscap_warn()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

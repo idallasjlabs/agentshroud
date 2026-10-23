@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "_t (2)"
-location: "L64"
+community: "WebProxy"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t_2
+  - community/WebProxy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_177]] - `references` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t_2
+#graphify/code #graphify/EXTRACTED #community/WebProxy

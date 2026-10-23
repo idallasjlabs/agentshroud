@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
 community: "AgentTarget"
-location: "L415"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,9 @@ tags:
 # .forward()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
-- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
-- [[test_forwarder_mock()]] - `calls` [EXTRACTED]
+- [[dot-health_check()_5]] - `calls` [EXTRACTED]
+- [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
+- [[ForwardResult]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

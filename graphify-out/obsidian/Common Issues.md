@@ -1,17 +1,25 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L134"
+community: "graphify reference: extra exports and benchmark (3)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/graphify_reference_extra_exports_and_benchmark_3
 ---
 
 # Common Issues
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Bot Not Responding to Telegram Messages]] - `contains` [EXTRACTED]
+- [[Container Keeps Restarting]] - `contains` [EXTRACTED]
+- [[Dashboard Not Loading]] - `contains` [EXTRACTED]
+- [[Kill Switch Won't Deactivate]] - `contains` [EXTRACTED]
+- [[PII Sanitizer Blocking Legitimate Content]] - `contains` [EXTRACTED]
+- [[SSH Command Approval Stuck]] - `contains` [EXTRACTED]
+- [[Tailscale Serve Not Working]] - `contains` [EXTRACTED]
+- [[Tests Failing]] - `contains` [EXTRACTED]
+- [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3

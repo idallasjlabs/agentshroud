@@ -12,7 +12,7 @@ tags:
 # KeyRotationConfig
 
 ## Connections
-- [[dot-__init__()_49]] - `references` [EXTRACTED]
+- [[dot-__init__()_60]] - `references` [EXTRACTED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[KeyRotationConfig]] - `uses` [INFERRED]
 

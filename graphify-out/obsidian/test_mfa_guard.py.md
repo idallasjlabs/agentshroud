@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[enhanced_mfa_queue()]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 - [[mfa_guard.py]] - `references` [EXTRACTED]
-- [[now()_11]] - `contains` [EXTRACTED]
+- [[now()_10]] - `contains` [EXTRACTED]
 - [[queue.py]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [EXTRACTED]
 - [[test_counter_below_zero_skipped()]] - `contains` [EXTRACTED]

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "AgentShroud™ Brand Guidelines"
-location: "L256"
+community: "ProxyDashboard"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

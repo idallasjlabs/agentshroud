@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-pimcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx_4]] - `references` [EXTRACTED]
-- [[PATH_42]] - `requires_env` [EXTRACTED]
+- [[PATH_45]] - `requires_env` [EXTRACTED]
 - [[autoOpenFile_5]] - `requires_env` [EXTRACTED]
 - [[outputPath_5]] - `requires_env` [EXTRACTED]
 - [[xmind-generator-mcp_4]] - `references` [EXTRACTED]

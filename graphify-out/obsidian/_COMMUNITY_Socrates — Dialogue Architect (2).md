@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.26
 members: 12
 ---
 
 # Socrates — Dialogue Architect (2)
 
+**Cohesion:** 0.26 - loosely connected
 **Members:** 12 nodes
 
 ## Members

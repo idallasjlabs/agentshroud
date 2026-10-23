@@ -12,7 +12,7 @@ tags:
 # test_router_streaming.py
 
 ## Connections
-- [[AgentTarget_2]] - `imports` [EXTRACTED]
+- [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig_1]] - `imports` [EXTRACTED]

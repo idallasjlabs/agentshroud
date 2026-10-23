@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "cmd_start"
+community: "MemoryIntegrityMonitor"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/cmd_start
+  - community/MemoryIntegrityMonitor
 ---
 
 # Get current integrity monitoring status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_integrity_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/cmd_start
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

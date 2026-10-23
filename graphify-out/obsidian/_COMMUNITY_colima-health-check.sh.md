@@ -1,11 +1,13 @@
 ---
 type: community
-members: 150
+cohesion: 0.03
+members: 137
 ---
 
 # colima-health-check.sh
 
-**Members:** 150 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 137 nodes
 
 ## Members
 - [[dot-_handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
@@ -95,10 +97,6 @@ members: 150
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
 - [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
 - [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[Persist a per-user collab mode override set via the SOC dashboard.      Stored u]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime collab mode change for a group.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group creation so it survives container restarts.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group membership addition.]] - rationale - gateway/security/group_config.py
 - [[ProjectConfig]] - code - gateway/security/group_config.py
 - [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
 - [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
@@ -130,8 +128,6 @@ members: 150
 - [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
 - [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
 - [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
-- [[_load_overrides()]] - code - gateway/security/group_config.py
-- [[_save_overrides()]] - code - gateway/security/group_config.py
 - [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
 - [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
 - [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
@@ -144,14 +140,7 @@ members: 150
 - [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
-- [[group_config.py]] - code - gateway/security/group_config.py
-- [[persist_group_collab_mode()]] - code - gateway/security/group_config.py
-- [[persist_group_create()]] - code - gateway/security/group_config.py
-- [[persist_group_delete()]] - code - gateway/security/group_config.py
-- [[persist_group_member_add()]] - code - gateway/security/group_config.py
-- [[persist_group_member_remove()]] - code - gateway/security/group_config.py
 - [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[persist_user_collab_mode()]] - code - gateway/security/group_config.py
 - [[project()]] - code - gateway/tests/test_collaborator_responses.py
 - [[teams()]] - code - gateway/tests/test_collaborator_responses.py
 - [[teams()_1]] - code - gateway/tests/test_group_config.py
@@ -167,39 +156,38 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 21 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 - 18 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 18 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 18 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 16 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 15 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 13 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 12 edges to [[_COMMUNITY_SharedMemoryManager]]
 - 7 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 7 edges to [[_COMMUNITY_TestToolChainAnalyzer (2)]]
-- 6 edges to [[_COMMUNITY_chatbotmain.py]]
+- 7 edges to [[_COMMUNITY_chatbotmain.py]]
 - 5 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 5 edges to [[_COMMUNITY_TestToolChainAnalyzer (3)]]
 - 4 edges to [[_COMMUNITY_KillSwitchMonitor (5)]]
 - 3 edges to [[_COMMUNITY_Function Details]]
 - 3 edges to [[_COMMUNITY_GroupConfig]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 3 edges to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY_TestCheckCommandExecution (2)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)_1]]
-- 1 edge to [[_COMMUNITY_api.py (2)]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (3)]]
+- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
 - 1 edge to [[_COMMUNITY_SkillGuard]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher (3)]]
 - 1 edge to [[_COMMUNITY__make_proxy]]
-- 1 edge to [[_COMMUNITY_TestCheckCommandExecution]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_SecureBrowser (2)]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)_1]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor (2) (2)]]
 - 1 edge to [[_COMMUNITY_Required Software]]
 - 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_dot-_proxy_request_impl()]]
 - 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
 - 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
 
 ## Top bridge nodes
-- [[telegram_proxy.py]] - degree 34, connects to 20 communities
+- [[telegram_proxy.py]] - degree 34, connects to 17 communities
 - [[TeamsConfig_1]] - degree 100, connects to 13 communities
-- [[group_config.py]] - degree 16, connects to 3 communities
-- [[dot-_send_owner_admin_notice()]] - degree 12, connects to 2 communities
-- [[GroupConfig]] - degree 32, connects to 1 community
+- [[dot-_send_owner_admin_notice()]] - degree 12, connects to 3 communities
+- [[GroupConfig]] - degree 32, connects to 2 communities
+- [[ProjectConfig]] - degree 18, connects to 2 communities

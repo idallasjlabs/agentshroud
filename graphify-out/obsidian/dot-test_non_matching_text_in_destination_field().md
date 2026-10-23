@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "StdioConnection"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/StdioConnection
 ---
 
 # .test_non_matching_text_in_destination_field()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExtractEgressTargets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

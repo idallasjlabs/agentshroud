@@ -1,21 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
-type: "document"
-community: "Production Safety Checklist (SKILL)"
+source_file: "gateway/ingest_api/event_bus.py"
+type: "code"
+community: "TestOutboundInfoFilter (2)"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/TestOutboundInfoFilter_2
 ---
 
-# event_bus.py.md
+# event_bus.py
 
 ## Connections
-- [[EventBus]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `references` [EXTRACTED]
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[EventBus]] - `contains` [EXTRACTED]
+- [[GatewayEvent]] - `contains` [EXTRACTED]
+- [[approval.py]] - `imports_from` [EXTRACTED]
+- [[dashboard.py]] - `imports_from` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[make_event()]] - `contains` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2

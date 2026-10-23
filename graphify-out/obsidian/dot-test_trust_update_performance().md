@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "soc/router.py"
+community: "MCPPermissionManager"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/MCPPermissionManager
 ---
 
 # .test_trust_update_performance()
@@ -16,4 +16,4 @@ tags:
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

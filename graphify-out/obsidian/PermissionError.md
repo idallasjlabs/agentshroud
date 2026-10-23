@@ -1,21 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "MiddlewareManager (2)"
+community: "test_soc_services_coverage.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - community/test_soc_services_coveragepy
 ---
 
 # PermissionError
 
 ## Connections
-- [[dot-decide()_1]] - `calls` [INFERRED]
 - [[dot-decide()]] - `calls` [INFERRED]
+- [[dot-decide()_1]] - `calls` [INFERRED]
 - [[dot-test_running_via_proc_scan()]] - `calls` [INFERRED]
 - [[dot-test_running_via_proc_scan()_1]] - `calls` [INFERRED]
 - [[dot-test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/INFERRED #community/test_soc_services_coveragepy

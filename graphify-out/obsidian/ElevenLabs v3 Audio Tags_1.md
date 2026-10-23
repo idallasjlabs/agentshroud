@@ -12,6 +12,6 @@ tags:
 # ElevenLabs v3 Audio Tags
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_3

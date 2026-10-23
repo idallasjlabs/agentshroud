@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L409"
+community: "SubagentMonitor"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/SubagentMonitor
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
-- [[FileOperation]] - `references` [EXTRACTED]
-- [[FileSandbox]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

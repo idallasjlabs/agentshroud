@@ -12,6 +12,6 @@ tags:
 # Request to scan a message.
 
 ## Connections
-- [[ScanRequest]] - `rationale_for` [EXTRACTED]
+- [[ScanRequest_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget

@@ -12,9 +12,9 @@ tags:
 # _StreamResp
 
 ## Connections
-- [[dot-__enter__()_3]] - `method` [EXTRACTED]
-- [[dot-__exit__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_113]] - `method` [EXTRACTED]
+- [[dot-__enter__()_2]] - `method` [EXTRACTED]
+- [[dot-__exit__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_52]] - `method` [EXTRACTED]
 - [[dot-iter_bytes()_1]] - `method` [EXTRACTED]
 - [[dot-test_2xx_with_body_is_proven()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_body_is_not_proven()]] - `calls` [EXTRACTED]

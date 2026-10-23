@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "installer.py"
+community: "triage-cve-mitigations.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -17,4 +17,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
 - [[Three-Phase Approach]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

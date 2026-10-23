@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Return a monkeypatched urlopen that captures the Request headers.]] - `rationale_for` [EXTRACTED]
-- [[fake_urlopen()_74]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_75]] - `indirect_call` [INFERRED]
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `calls` [EXTRACTED]

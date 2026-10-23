@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "MiddlewareManager (2) (3)"
+community: "ServiceManager"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_3
+  - community/ServiceManager
 ---
 
 # .test_get_logs_no_engine_returns_empty()
@@ -15,4 +15,4 @@ tags:
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestServiceManagerGetLogs]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

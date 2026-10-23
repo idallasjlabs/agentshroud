@@ -1,17 +1,20 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
-location: "L7"
+community: "LOW — Informational"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/LOW__Informational
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Optional Requirements]] - `contains` [EXTRACTED]
+- [[Supported Platforms]] - `contains` [EXTRACTED]
+- [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

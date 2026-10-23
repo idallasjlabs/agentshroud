@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
 community: "test_main_endpoints.py"
-location: "L155"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,10 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `calls` [EXTRACTED]
-- [[URLAnalyzer]] - `references` [EXTRACTED]
-- [[WebContentScanner]] - `references` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyConfig]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

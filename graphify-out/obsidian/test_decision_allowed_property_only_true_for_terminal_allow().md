@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "record_decision()"
 location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/record_decision
 ---
 
 # test_decision_allowed_property_only_true_for_terminal_allow()
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyDecision]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/record_decision

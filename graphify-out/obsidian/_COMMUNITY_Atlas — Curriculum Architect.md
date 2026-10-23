@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Atlas — Curriculum Architect
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 17
 - [[Post-Incident_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
 - [[Post-Mortem Template_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
 - [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Role_61]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Role_59]] - document - docker/config/hermes/skills/i-production/SKILL.md
 - [[S3 Data Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
 - [[Severity Matrix_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
 - [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md

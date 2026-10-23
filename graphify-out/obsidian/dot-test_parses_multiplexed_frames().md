@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "test_soc_services_coverage.py"
 location: "L697"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/test_soc_services_coveragepy
 ---
 
 # .test_parses_multiplexed_frames()
@@ -18,4 +18,4 @@ tags:
 - [[_frame()]] - `calls` [EXTRACTED]
 - [[_patch_http_connection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy

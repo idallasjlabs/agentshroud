@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_alerts_accepted_from_localhost()]] - `calls` [EXTRACTED]
 - [[Receive structured security alerts from gateway-internal scripts. Called by…]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

@@ -1,16 +1,17 @@
 ---
 type: community
-members: 21
+cohesion: 0.12
+members: 19
 ---
 
 # test_jira_weekly_review.py
 
-**Members:** 21 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 19 nodes
 
 ## Members
 - [[1Password (op-proxy)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Anthropic API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Approval Queue (human gate)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Cron Scheduler (8 scheduled jobs)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Execute Action (tool call  reply)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
@@ -22,7 +23,6 @@ members: 21
 - [[PII Sanitizer (Presidio  regex)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Receive message  cron trigger]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
-- [[Telegram API_1]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Telegram Input (@agentshroud_bot)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[Web UI Input (localhost18790)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
 - [[agentshroud-config volume (openclaw.json)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
@@ -38,13 +38,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Mode A — Single task (3)]]
+- 2 edges to [[_COMMUNITY_Mode A — Single task (3)]]
 - 1 edge to [[_COMMUNITY_dot-cursormcp.json]]
 - 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up = fully secured)]]
 - 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist (2)_1]]
+- 1 edge to [[_COMMUNITY_Proxy Layer]]
 
 ## Top bridge nodes
 - [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 3 communities
-- [[Approval Queue (human gate)]] - degree 3, connects to 1 community
+- [[HTTP CONNECT Proxy (domain allowlist)]] - degree 7, connects to 1 community
+- [[PII Sanitizer (Presidio  regex)]] - degree 3, connects to 1 community
 - [[ssh_proxy (approved hosts only)]] - degree 2, connects to 1 community

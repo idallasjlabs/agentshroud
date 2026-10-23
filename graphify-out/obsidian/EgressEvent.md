@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # EgressEvent
 
 ## Connections
-- [[dot-get_events()_2]] - `references` [EXTRACTED]
-- [[dot-record()_2]] - `references` [EXTRACTED]
+- [[dot-get_events()]] - `references` [EXTRACTED]
+- [[dot-record()]] - `references` [EXTRACTED]
 - [[dot-test_alert_has_description()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_has_severity()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_monitor_mode_no_block()]] - `calls` [EXTRACTED]
@@ -29,12 +29,12 @@ tags:
 - [[dot-test_unusual_destination_flagged()]] - `calls` [EXTRACTED]
 - [[MockEgressEvent]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAnomalyDetection]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -48,16 +48,16 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response_3
+#graphify/code #graphify/INFERRED #community/ContextGuard

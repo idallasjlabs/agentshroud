@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L65"
+community: "AgentTarget"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/AgentTarget
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

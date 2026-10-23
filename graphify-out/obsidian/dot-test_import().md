@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_websocket.py"
+source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L13"
+community: "ServiceManager"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/ServiceManager
 ---
 
 # .test_import()
 
 ## Connections
-- [[TestSOCWebSocketHandlerImport]] - `method` [EXTRACTED]
+- [[TestServiceManagerImport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

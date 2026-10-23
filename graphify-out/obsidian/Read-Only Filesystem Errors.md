@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
+community: "Restart Procedure"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+  - community/Restart_Procedure
 ---
 
 # Read-Only Filesystem Errors
 
 ## Connections
-- [[Container Errors]] - `contains` [EXTRACTED]
+- [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

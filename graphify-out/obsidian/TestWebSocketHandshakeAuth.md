@@ -19,9 +19,9 @@ tags:
 - [[dot-test_ws_approvals_rejects_bad_token()]] - `method` [EXTRACTED]
 - [[dot-test_ws_approvals_rejects_master_token()]] - `method` [EXTRACTED]
 - [[dot-test_ws_approvals_rejects_no_token()]] - `method` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[WebSocket endpoints must validate token during handshake, not first message]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 

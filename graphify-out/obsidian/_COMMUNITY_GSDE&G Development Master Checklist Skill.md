@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # GSDE&G Development Master Checklist Skill
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 13
 - [[J. Code Cleanup (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 - [[K. Misc Quick Wins (11 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 - [[Moved to v0.9.0 Sentinel]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[Summary_24]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Summary_25]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 - [[v0.8.0-feature-list-final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 
 ## Live Query (requires Dataview plugin)

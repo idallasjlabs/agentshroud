@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.07
 members: 49
 ---
 
 # TestEmailSend
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 49 nodes
 
 ## Members
-- [[dot-__init__()_44]] - code - gateway/tests/test_forward_routing.py
-- [[dot-__init__()_45]] - code - gateway/tests/test_forward_routing.py
+- [[dot-__init__()_53]] - code - gateway/tests/test_forward_routing.py
+- [[dot-__init__()_54]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_post()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_post_forward()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_run_forward()]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_inbound()_6]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
-- [[dot-process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_1]] - code - gateway/tests/test_forward_routing.py
 - [[dot-test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
 - [[dot-test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
@@ -66,12 +68,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY__make_proxy()]]
+- 13 edges to [[_COMMUNITY__make_proxy()]]
+- 7 edges to [[_COMMUNITY_ForwardRequest]]
 - 2 edges to [[_COMMUNITY_api.py (2)]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2) (2)]]
 
 ## Top bridge nodes
+- [[test_forward_routing.py]] - degree 13, connects to 3 communities
+- [[_PipelineCaptor]] - degree 16, connects to 2 communities
+- [[_TrustCaptor]] - degree 13, connects to 2 communities
+- [[TestOwnerTrustElevation]] - degree 10, connects to 2 communities
 - [[_make_mock_app_state()]] - degree 9, connects to 2 communities
-- [[_make_trust_app_state()]] - degree 6, connects to 2 communities
-- [[_PipelineCaptor]] - degree 16, connects to 1 community
-- [[test_forward_routing.py]] - degree 13, connects to 1 community
-- [[_TrustCaptor]] - degree 13, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "AgentShroud Documentation"
+community: "test_key_rotation_internals.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/test_key_rotation_internalspy
 ---
 
 # test_key_rotation_internals.py
@@ -27,7 +27,7 @@ tags:
 - [[_old_cred()]] - `contains` [EXTRACTED]
 - [[key_rotation.py (KeyRotationManager)]] - `implements` [EXTRACTED]
 - [[key_rotation_config.py (KeyRotationConfig)]] - `references` [EXTRACTED]
-- [[manager()_1]] - `contains` [EXTRACTED]
+- [[manager()_3]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/code #graphify/EXTRACTED #community/test_key_rotation_internalspy

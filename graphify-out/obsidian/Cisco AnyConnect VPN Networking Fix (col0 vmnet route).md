@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "concept"
-community: "AlertTelegramRelay"
+community: "ADR-006: Multi-Runtime Container Support"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Cisco AnyConnect VPN Networking Fix (col0 vmnet route)
@@ -16,4 +16,4 @@ tags:
 - [[Decision_1]] - `references` [EXTRACTED]
 - [[VPN Networking Fix (Cisco AnyConnect) runbook]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

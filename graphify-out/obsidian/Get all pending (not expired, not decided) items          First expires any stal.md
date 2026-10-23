@@ -12,6 +12,6 @@ tags:
 # Get all pending (not expired, not decided) items          First expires any stal
 
 ## Connections
-- [[dot-get_pending()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_pending()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_4

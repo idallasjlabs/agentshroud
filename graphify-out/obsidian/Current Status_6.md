@@ -1,17 +1,19 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
-location: "L63"
+community: "Skill: Project Management (PM)"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/Skill_Project_Management_PM
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Development Phases]] - `contains` [EXTRACTED]
+- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

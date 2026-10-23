@@ -12,7 +12,7 @@ tags:
 # slack_socket_client.py
 
 ## Connections
-- [[SlackAPIProxy_1]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy]] - `imports` [EXTRACTED]
 - [[SlackSocketClient]] - `contains` [EXTRACTED]
 - [[compute_backoff()]] - `contains` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L941"
+community: "test_wazuh_watchdog.py (2)"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/test_wazuh_watchdogpy_2
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy_2

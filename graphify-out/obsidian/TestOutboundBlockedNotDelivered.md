@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - `method` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Regression forward returned out_result.sanitized_message without checking]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 

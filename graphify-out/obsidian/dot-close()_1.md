@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1438"
+community: "ContextGuard"
+location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .close()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

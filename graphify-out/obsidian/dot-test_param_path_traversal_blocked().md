@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "TestParamSanitization"
 location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/TestParamSanitization
 ---
 
 # .test_param_path_traversal_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParamSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestParamSanitization

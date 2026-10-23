@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # voice_task
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -26,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill (4)_1]]
+- 1 edge to [[_COMMUNITY_COMMUNICATION-TEMPLATES]]
 - 1 edge to [[_COMMUNITY_voice_task (3)]]
 
 ## Top bridge nodes

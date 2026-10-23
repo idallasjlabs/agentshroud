@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "_wrap_response()"
+community: "ContextGuard"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/ContextGuard
 ---
 
 # .sanitize_image_metadata()
@@ -16,4 +16,4 @@ tags:
 - [[MetadataGuard]] - `method` [EXTRACTED]
 - [[Remove EXIF metadata from image data if present.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

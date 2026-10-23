@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L108"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # .test_verify_chain_valid_after_wrap()
 
 ## Connections
-- [[AuditChain]] - `calls` [EXTRACTED]
-- [[TestAuditChainBounded]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[TestAuditTrailBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

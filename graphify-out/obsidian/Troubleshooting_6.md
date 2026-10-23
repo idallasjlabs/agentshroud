@@ -1,20 +1,21 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
-location: "L275"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[Access Denied_1]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

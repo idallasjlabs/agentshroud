@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L45"
+community: "🟢 INFO (nice to have) (2)"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/_INFO_nice_to_have_2
 ---
 
 # now()
 
 ## Connections
-- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
+- [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have_2

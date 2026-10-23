@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "AgentShroud Docker Configuration"
+community: "test_mfa_guard.py"
 location: "L2398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/test_mfa_guardpy
 ---
 
 # Compute the 33-domain Security Scorecard.      Domains 1–21: Container infrastru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compute_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

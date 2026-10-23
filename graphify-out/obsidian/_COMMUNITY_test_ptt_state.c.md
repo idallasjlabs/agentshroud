@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 26
 ---
 
 # test_ptt_state.c
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 26
 - [[Core Behaviors_2]] - document - docker/config/hermes/SOUL.md
 - [[Hermes MCP Servers Config]] - document - docker/config/hermes/mcp/servers.json
 - [[Isaiah Jefferson (Owner)]] - concept - docker/config/hermes/SOUL.md
-- [[OpenClaw_3]] - concept - docker/config/hermes/SOUL.md
+- [[OpenClaw_2]] - concept - docker/config/hermes/SOUL.md
 - [[OpenClawAgentShroud Bot Identity]] - document - docker/config/hermes/agents/openclaw-identity.md
 - [[Owner_2]] - document - docker/config/hermes/SOUL.md
 - [[PII Sanitizer_1]] - concept - docker/config/hermes/SOUL.md

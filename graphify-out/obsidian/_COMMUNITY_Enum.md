@@ -1,0 +1,275 @@
+---
+type: community
+cohesion: 0.02
+members: 178
+---
+
+# Enum
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 178 nodes
+
+## Members
+- [[dot-__init__()_184]] - code - gateway/soc/services.py
+- [[dot-__init__()_185]] - code - gateway/soc/websocket.py
+- [[dot-_describe_service()]] - code - gateway/soc/services.py
+- [[dot-get_service()]] - code - gateway/soc/services.py
+- [[dot-list_services()]] - code - gateway/soc/services.py
+- [[dot-score_response_consistency()]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_alert_callbacks()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_approved_status()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_basic_message_tracking()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_blocked_session_behavior()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_construction()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_construction()_1]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_construction()_2]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_defaults()_1]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_destructive_requires_confirmation()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_edge_cases()_3]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_error_model()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_initialization()_5]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_pending_status_default()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_permission_denied_error()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_red_risk_high_threat()]] - code - gateway/tests/test_soc_egress.py
+- [[dot-test_repeated_query_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_running_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_sequential_extraction_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_blocking()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_cleanup()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_reset()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_stats()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_standby_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_stopped_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_system_info_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_threshold_warnings()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_tool_name_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_unhealthy_service()]] - code - gateway/tests/test_soc_services.py
+- [[dot-test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_with_resource_usage()]] - code - gateway/tests/test_soc_models.py
+- [[dot-tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[A single disclosure event in a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Action to take when a governance limit is hit.]] - rationale - gateway/security/subagent_governance.py
+- [[Alarm]] - code - gateway/soc/models.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Alert severity levels.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
+- [[Any_75]] - code - gateway/soc/event_adapter.py
+- [[Any_76]] - code - gateway/soc/services.py
+- [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
+- [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
+- [[Compute a heuristic consistency score between query and response.          Retur]] - rationale - gateway/security/multi_turn_tracker.py
+- [[ConsistencyScore]] - code - gateway/security/multi_turn_tracker.py
+- [[ContributorRecord_1]] - code - gateway/soc/models.py
+- [[Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields e]] - rationale - gateway/soc/event_adapter.py
+- [[Convert a PipelineResult to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Create a MultiTurnTracker instance for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Decision_6]] - code - gateway/security/module_stats.py
+- [[DisclosureCategory]] - code - gateway/security/multi_turn_tracker.py
+- [[DisclosureEvent]] - code - gateway/security/multi_turn_tracker.py
+- [[EgressRequest_1]] - code - gateway/soc/models.py
+- [[EgressStatus]] - code - gateway/soc/models.py
+- [[Enum_3]] - code
+- [[GovernanceAction]] - code - gateway/security/subagent_governance.py
+- [[HealthStatus]] - code - gateway/soc/services.py
+- [[HealthStatus_1]] - code - gateway/soc/models.py
+- [[Heuristic consistency score between a query and its response.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Platform]] - code - gateway/soc/models.py
+- [[Query Docker daemon directly via Unix socket — no CLI needed.]] - rationale - gateway/soc/services.py
+- [[ResourceUsage_2]] - code - gateway/soc/models.py
+- [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return ServiceDescriptor for each known container plus internal gateway services]] - rationale - gateway/soc/services.py
+- [[Return the gateway's own container plus each configured bot's real     container]] - rationale - gateway/soc/services.py
+- [[RiskLevel_6]] - code - gateway/soc/models.py
+- [[SCLError]] - code - gateway/soc/models.py
+- [[STANDBY = binary installed but cannot run in this environment; should be healthy]] - rationale - gateway/tests/test_soc_services.py
+- [[SecurityEvent]] - code - gateway/soc/event_adapter.py
+- [[SecurityEvent_1]] - code - gateway/soc/models.py
+- [[ServiceDescriptor]] - code - gateway/soc/services.py
+- [[ServiceDescriptor_1]] - code - gateway/soc/models.py
+- [[ServiceStatus]] - code - gateway/soc/services.py
+- [[ServiceStatus_1]] - code - gateway/soc/models.py
+- [[Severity_7]] - code - gateway/soc/event_adapter.py
+- [[Severity_8]] - code - gateway/soc/models.py
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test analysis of agent responses for potential leaks.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test basic message tracking functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test behavior of blocked sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test cases for MultiTurnTracker class.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of PII fragment patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of credential-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of file reference patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of infrastructure-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of repeated queries with different phrasing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of sequential extraction patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of system information queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of tool inventory queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test proper initialization of MultiTurnTracker.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test session reset functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that disabled tracker doesn't track or score.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that scores accumulate across turns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that sessions get blocked at high scores.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test threshold-based warning system.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[TestConfirmationModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestContributorRecord]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequest]] - code - gateway/tests/test_soc_models.py
+- [[TestEgressRequestModel]] - code - gateway/tests/test_soc_egress.py
+- [[TestMultiTurnTracker_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[TestSCLError]] - code - gateway/tests/test_soc_models.py
+- [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
+- [[TestServiceDescriptor]] - code - gateway/tests/test_soc_models.py
+- [[TestServiceDescriptorDefaults]] - code - gateway/tests/test_soc_services.py
+- [[TestWSEvent]] - code - gateway/tests/test_soc_models.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel_2]] - code - gateway/security/git_guard.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[UserRole]] - code - gateway/soc/models.py
+- [[UserRole_1]] - code - gateway/soc/contributors.py
+- [[Validate ServiceDescriptor model defaults — no real container calls.]] - rationale - gateway/tests/test_soc_services.py
+- [[WSEvent]] - code - gateway/soc/models.py
+- [[WSEvent_1]] - code - gateway/soc/websocket.py
+- [[WSEventType]] - code - gateway/soc/models.py
+- [[WebSocket_8]] - code - gateway/soc/websocket.py
+- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - code - gateway/soc/services.py
+- [[_check_clamd()]] - code - gateway/soc/services.py
+- [[_check_fluent_bit()]] - code - gateway/soc/services.py
+- [[_check_openscap()]] - code - gateway/soc/services.py
+- [[_check_wazuh_agent()]] - code - gateway/soc/services.py
+- [[_engine_health_to_health()]] - code - gateway/soc/services.py
+- [[_engine_status_to_service_status()]] - code - gateway/soc/services.py
+- [[_inspect_via_socket()]] - code - gateway/soc/services.py
+- [[_known_services()]] - code - gateway/soc/services.py
+- [[_map_severity()]] - code - gateway/soc/event_adapter.py
+- [[_new_uuid()]] - code - gateway/soc/models.py
+- [[_now_iso()]] - code - gateway/soc/models.py
+- [[_role_enum()]] - code - gateway/soc/contributors.py
+- [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
+- [[contributors.py]] - code - gateway/soc/contributors.py
+- [[event_adapter.py]] - code - gateway/soc/event_adapter.py
+- [[from_anomaly_alert()]] - code - gateway/soc/event_adapter.py
+- [[from_audit_chain_entry()]] - code - gateway/soc/event_adapter.py
+- [[from_dict()]] - code - gateway/soc/event_adapter.py
+- [[from_egress_attempt()]] - code - gateway/soc/event_adapter.py
+- [[from_pipeline_result()]] - code - gateway/soc/event_adapter.py
+- [[mock_alert_callback()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[module_stats.py]] - code - gateway/security/module_stats.py
+- [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
+- [[services.py]] - code - gateway/soc/services.py
+- [[socmodels.py]] - code - gateway/soc/models.py
+- [[str_3]] - code
+- [[test_multi_turn_tracker.py]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[test_soc_egress.py]] - code - gateway/tests/test_soc_egress.py
+- [[test_soc_models.py]] - code - gateway/tests/test_soc_models.py
+- [[test_soc_services.py]] - code - gateway/tests/test_soc_services.py
+- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
+- [[url_analyzer.py_2]] - code - gateway/proxy/url_analyzer.py
+- [[websocket.py]] - code - gateway/soc/websocket.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Enum
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 46 edges to [[_COMMUNITY_ServiceManager]]
+- 28 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 13 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 12 edges to [[_COMMUNITY_SubagentGovernance]]
+- 10 edges to [[_COMMUNITY__coerce_to_ws_event()]]
+- 10 edges to [[_COMMUNITY_AlertDispatcher (2)]]
+- 7 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
+- 7 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 6 edges to [[_COMMUNITY_ResourceGuard (2)]]
+- 5 edges to [[_COMMUNITY_api.py]]
+- 4 edges to [[_COMMUNITY_ContextGuard]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 4 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 4 edges to [[_COMMUNITY_test_tool_chain_analyzer.py]]
+- 3 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 3 edges to [[_COMMUNITY_SkillGuard]]
+- 3 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_test_a2a_policy.py]]
+- 3 edges to [[_COMMUNITY_CrossBotTrustLedger]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline (2)]]
+- 3 edges to [[_COMMUNITY_DelegationManager]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher (3)]]
+- 3 edges to [[_COMMUNITY__make_proxy]]
+- 3 edges to [[_COMMUNITY_chatbotmain.py]]
+- 3 edges to [[_COMMUNITY_URLAnalyzer]]
+- 2 edges to [[_COMMUNITY_browserscriptsbrowse.py (2)]]
+- 2 edges to [[_COMMUNITY__looks_like_base64()]]
+- 2 edges to [[_COMMUNITY_Docker Compose (infra diagram)]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL.md (2)]]
+- 2 edges to [[_COMMUNITY_SessionManager]]
+- 2 edges to [[_COMMUNITY_A2AMethod]]
+- 2 edges to [[_COMMUNITY_ProxyAction]]
+- 2 edges to [[_COMMUNITY_dot-proxy_messages()]]
+- 2 edges to [[_COMMUNITY_ProxyDashboard]]
+- 2 edges to [[_COMMUNITY_format_cve_report()]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig (2)]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
+- 2 edges to [[_COMMUNITY_record_decision()]]
+- 2 edges to [[_COMMUNITY_MCPInspector]]
+- 2 edges to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]]
+- 2 edges to [[_COMMUNITY_UserSessionManager (2)]]
+- 2 edges to [[_COMMUNITY_A2APolicyConfig]]
+- 2 edges to [[_COMMUNITY_GroupConfig]]
+- 2 edges to [[_COMMUNITY_LLMProxy]]
+- 2 edges to [[_COMMUNITY_MCPToolCall]]
+- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 2 edges to [[_COMMUNITY_test_soc_services_coverage.py]]
+- 1 edge to [[_COMMUNITY_TestLegitimateURLsAllowed]]
+- 1 edge to [[_COMMUNITY_TestDataExfiltration]]
+- 1 edge to [[_COMMUNITY_SubagentMonitor]]
+- 1 edge to [[_COMMUNITY_TestPIIInURLs]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)_1]]
+- 1 edge to [[_COMMUNITY_What Does OpenClaw Actually Need to Write]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_Any]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_tool_chain_analyzer.py]]
+- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_LLMProxy (2)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context) (3)]]
+
+## Top bridge nodes
+- [[Enum_3]] - degree 105, connects to 48 communities
+- [[str_3]] - degree 44, connects to 21 communities
+- [[URLVerdict]] - degree 10, connects to 6 communities
+- [[url_analyzer.py_2]] - degree 8, connects to 5 communities
+- [[SecurityEvent_1]] - degree 20, connects to 4 communities

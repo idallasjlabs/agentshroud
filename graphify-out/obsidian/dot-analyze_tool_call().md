@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "tool_chain_analyzer.py"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/tool_chain_analyzerpy
 ---
 
 # .analyze_tool_call()
@@ -16,10 +16,10 @@ tags:
 - [[dot-_detect_chain_patterns()]] - `calls` [EXTRACTED]
 - [[dot-_trigger_alert()_1]] - `calls` [EXTRACTED]
 - [[Analyze a tool call for suspicious chain patterns.          Args             se]] - `rationale_for` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[ChainMatch]] - `references` [EXTRACTED]
 - [[SessionChainContext]] - `calls` [EXTRACTED]
 - [[ToolCall]] - `calls` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

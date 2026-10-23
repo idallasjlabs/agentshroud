@@ -15,7 +15,7 @@ tags:
 - [[No-op gate false negative baseline captured after pin commits]] - `references` [EXTRACTED]
 - [[Scan gate crashed on 0-CRITICAL images (grep -o under pipefail)]] - `references` [EXTRACTED]
 - [[Soak status boot-proof is not work-proof]] - `references` [EXTRACTED]
-- [[Sunday Upgrade prompt]] - `references` [EXTRACTED]
+- [[Sunday Upgrade prompt (weekly maintenance run)]] - `references` [EXTRACTED]
 - [[check-soak-status.sh]] - `references` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[dev-result-date.json dev-prod handoff contract]] - `references` [EXTRACTED]

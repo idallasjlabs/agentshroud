@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "document"
-community: "SecureBrowser Skill (2)"
+community: "AgentShroud State Diagrams (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_2
+  - community/AgentShroud_State_Diagrams_2
 ---
 
 # AgentShroud State Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[4. Gateway Operational Modes]] - `contains` [EXTRACTED]
 - [[state-diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_2
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_2

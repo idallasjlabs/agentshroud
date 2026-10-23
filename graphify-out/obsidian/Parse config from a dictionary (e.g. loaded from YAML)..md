@@ -12,6 +12,6 @@ tags:
 # Parse config from a dictionary (e.g. loaded from YAML).
 
 ## Connections
-- [[dot-from_dict()]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_8]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
+source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
-location: "L8"
+community: "MiddlewareManager (9)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+  - community/MiddlewareManager_9
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_9

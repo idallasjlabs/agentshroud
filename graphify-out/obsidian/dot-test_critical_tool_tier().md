@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "AgentShroud v1.2.0 — Red Team Assessment"
+community: "MiddlewareManager"
 location: "L720"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v120__Red_Team_Assessment
+  - community/MiddlewareManager
 ---
 
 # .test_critical_tool_tier()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAnalyzeRequestForRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v120__Red_Team_Assessment
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

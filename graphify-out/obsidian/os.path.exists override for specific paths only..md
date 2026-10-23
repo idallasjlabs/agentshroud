@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "test_soc_services_coverage.py"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/test_soc_services_coveragepy
 ---
 
 # os.path.exists override for specific paths only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_services_coveragepy

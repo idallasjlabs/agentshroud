@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[Common Issues_2]] - `contains` [EXTRACTED]
+- [[Common Issues_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

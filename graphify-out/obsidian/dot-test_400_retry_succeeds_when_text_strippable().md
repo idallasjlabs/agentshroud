@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_colima_and_sdk_patch_fallback_resolution.sh"
+community: "EgressFilterConfig"
 location: "L4537"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_colima_and_sdk_patch_fallback_resolutionsh
+  - community/EgressFilterConfig
 ---
 
 # .test_400_retry_succeeds_when_text_strippable()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
 - [[First sendMessage returns 400 'can't parse entities'; retry with plain text succ]] - `rationale_for` [EXTRACTED]
 - [[TestTelegram400Retry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

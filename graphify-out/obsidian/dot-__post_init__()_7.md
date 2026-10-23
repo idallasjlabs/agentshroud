@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L67"
+community: "ToolResultSanitizer"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/ToolResultSanitizer
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[RetentionAction]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[_norm()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

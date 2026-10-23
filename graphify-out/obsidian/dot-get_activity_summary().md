@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_coerce_timestamp()]] - `calls` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 - [[Return aggregated statistics over all recorded activity.          Returns]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

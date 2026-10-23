@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Best-effort repo-relative path string for display (falls back to str).]] - `rationale_for` [EXTRACTED]
-- [[Path_19]] - `references` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[Path_12]] - `references` [EXTRACTED]
+- [[main()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run_and_read

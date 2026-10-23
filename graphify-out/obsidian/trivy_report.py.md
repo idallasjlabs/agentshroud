@@ -12,7 +12,7 @@ tags:
 # trivy_report.py
 
 ## Connections
-- [[generate_summary()_2]] - `contains` [EXTRACTED]
+- [[generate_summary()_3]] - `contains` [EXTRACTED]
 - [[parse_trivy_output()]] - `contains` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `contains` [EXTRACTED]
 - [[save_report()_1]] - `contains` [EXTRACTED]

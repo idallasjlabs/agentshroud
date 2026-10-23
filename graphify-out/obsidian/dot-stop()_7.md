@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L95"
+community: "PodmanEngine"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/PodmanEngine
 ---
 
 # .stop()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

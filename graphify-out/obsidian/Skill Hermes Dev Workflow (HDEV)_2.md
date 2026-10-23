@@ -18,7 +18,7 @@ tags:
 - [[Mode A — Single task]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_4]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_4]] - `contains` [EXTRACTED]
-- [[Role_30]] - `contains` [EXTRACTED]
+- [[Role_27]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_4]] - `contains` [EXTRACTED]
 - [[hermesskillsi-hdevSKILL]] - `contains` [EXTRACTED]
 

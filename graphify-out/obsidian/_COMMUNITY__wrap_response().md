@@ -1,36 +1,21 @@
 ---
 type: community
-members: 179
+cohesion: 0.04
+members: 74
 ---
 
 # _wrap_response()
 
-**Members:** 179 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 74 nodes
 
 ## Members
-- [[dot-__init__()_197]] - code - gateway/security/metadata_guard.py
-- [[dot-__init__()_198]] - code - gateway/security/oauth_security.py
-- [[dot-check_for_exif()]] - code - gateway/security/metadata_guard.py
-- [[dot-check_oversized_headers()]] - code - gateway/security/metadata_guard.py
 - [[dot-check_state_reuse()]] - code - gateway/security/oauth_security.py
-- [[dot-create_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[dot-get_document_tag()]] - code - gateway/security/metadata_guard.py
-- [[dot-guard()_5]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-guard()_6]] - code - gateway/tests/test_security_audit.py
-- [[dot-record_state_used()]] - code - gateway/security/oauth_security.py
-- [[dot-register_known_shared_ids()]] - code - gateway/security/oauth_security.py
-- [[dot-sanitize_filename()]] - code - gateway/security/metadata_guard.py
-- [[dot-sanitize_headers()]] - code - gateway/security/metadata_guard.py
-- [[dot-sanitize_image_metadata()]] - code - gateway/security/metadata_guard.py
-- [[dot-store()_2]] - code - gateway/tests/test_security_audit.py
-- [[dot-tag_document()]] - code - gateway/security/metadata_guard.py
-- [[dot-test_all_modules_have_copyright()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_all_security_modules_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_browser_security_loaded()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ciphertext_not_plaintext()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_cookie_custom_max_age_expires_sooner()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_cookie_expired_rejected()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_cookie_tamper_detected()]] - code - gateway/tests/test_oauth_security.py
@@ -38,154 +23,66 @@ members: 179
 - [[dot-test_cookie_wrong_client_fails()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_cookie_wrong_scope_fails()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_create_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_credit_card_amex()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_credit_card_no_dashes()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_credit_card_visa()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_different_plaintexts_different_ciphertexts()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_different_uri_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_dns_entropy_calculator()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dns_low_entropy_legit()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dockerfile_exists()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_document_tag_creation()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_document_tag_lookup_by_hash()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_document_tag_untrusted_source()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_egress_monitor_loaded()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_email_standard()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_email_with_plus()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_empty_and_none_input()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_empty_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_empty_state_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_encrypt_decrypt_roundtrip()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_encrypt_json()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_exact_match_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_get_document_tag_unknown_hash_returns_none()]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_http_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_json_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_key_rotation()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_metadata_oversized_headers()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_metadata_path_traversal_stripped()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_metadata_sanitize_filename()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_multiple_pii_single_message()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_network_validator_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_eval_or_exec_in_security()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_false_positive_on_dates()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_false_positive_on_zip()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_hardcoded_secrets_in_source()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_oauth_redirect_mismatch()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_path_traversal_rejected()_1]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_phone_international()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_phone_us_standard()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_boundary_handling()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_in_code_block()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_in_json()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_pii_with_obfuscation_attempt()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_path_traversal_rejected()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_pkce_plain_rejected_when_s256_required()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_pkce_required_missing_challenge()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_pkce_s256_accepted()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_pkce_verifier_validation()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_role_switching()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_session_isolation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_short_state_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_ssn_no_dashes()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ssn_space_separated()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ssn_standard_format()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_staging_detection()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_state_replay_detected()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_static_shared_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_tag_document_different_content_different_hash()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_tampered_ciphertext_fails()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_unicode_pii()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_unique_client_id_accepted()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_valid_state_accepted()]] - code - gateway/tests/test_oauth_security.py
 - [[dot-test_validate_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
-- [[dot-test_wrong_key_fails()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-validate_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[dot-test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
 - [[dot-validate_redirect_uri()]] - code - gateway/security/oauth_security.py
 - [[dot-validate_request()]] - code - gateway/security/oauth_security.py
-- [[dot-verify_pkce()]] - code - gateway/security/oauth_security.py
-- [[All security modules should have copyright header.]] - rationale - gateway/tests/test_security_audit.py
-- [[Amex card 378282246310005 (15 digits starting with 37).]] - rationale - gateway/tests/test_security_audit.py
-- [[Attempt to hide PII with zero-width chars.]] - rationale - gateway/tests/test_security_audit.py
-- [[Card without dashes 4111111111111111.]] - rationale - gateway/tests/test_security_audit.py
-- [[Check if binary data contains EXIF metadata.]] - rationale - gateway/security/metadata_guard.py
-- [[Check if headers exceed size limits.]] - rationale - gateway/security/metadata_guard.py
+- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
 - [[ConfusedDeputyError]] - code - gateway/security/oauth_security.py
-- [[Create and store a provenance tag for a document.]] - rationale - gateway/security/metadata_guard.py
-- [[Dates should not be flagged as SSNphone.]] - rationale - gateway/tests/test_security_audit.py
-- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
-- [[Dockerfile should be present for reproducible builds.]] - rationale - gateway/tests/test_security_audit.py
-- [[DocumentTag]] - code - gateway/security/metadata_guard.py
-- [[Edge case empty string.]] - rationale - gateway/tests/test_security_audit.py
-- [[Email with plus addressing user+tag@gmail.com.]] - rationale - gateway/tests/test_security_audit.py
-- [[Every security module should import without error.]] - rationale - gateway/tests/test_security_audit.py
-- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
-- [[Guards against metadata channel attacks and information disclosure.]] - rationale - gateway/security/metadata_guard.py
-- [[High-entropy domains (potential tunneling).]] - rationale - gateway/tests/test_security_audit.py
-- [[International phone +1-555-867-5309.]] - rationale - gateway/tests/test_security_audit.py
-- [[Key rotation should re-encrypt all blobs.]] - rationale - gateway/tests/test_security_audit.py
-- [[Legit domains have lower entropy.]] - rationale - gateway/tests/test_security_audit.py
-- [[Look up a document tag by its SHA-256 content hash.]] - rationale - gateway/security/metadata_guard.py
-- [[MetadataGuard]] - code - gateway/security/metadata_guard.py
-- [[Multiple PII entities in one message.]] - rationale - gateway/tests/test_security_audit.py
-- [[No hardcoded secrets in Python source files.]] - rationale - gateway/tests/test_security_audit.py
-- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - concept - gateway/tests/test_prompt_guard.py
+- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
 - [[OAuthError]] - code - gateway/security/oauth_security.py
 - [[OAuthRequest]] - code - gateway/security/oauth_security.py
-- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
-- [[PII at message start and end.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII embedded in JSON.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII in codemarkdown blocks.]] - rationale - gateway/tests/test_security_audit.py
-- [[PII with Unicode characters nearby.]] - rationale - gateway/tests/test_security_audit.py
-- [[PIIConfig_2]] - code - gateway/ingest_api/sanitizer.py
 - [[PKCEViolation]] - code - gateway/security/oauth_security.py
-- [[Provenance record for a document ingested into the agent context.]] - rationale - gateway/security/metadata_guard.py
-- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
+- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 - [[RedirectMismatch]] - code - gateway/security/oauth_security.py
-- [[Remove EXIF metadata from image data if present.]] - rationale - gateway/security/metadata_guard.py
-- [[SSN in standard XXX-XX-XXXX format.]] - rationale - gateway/tests/test_security_audit.py
-- [[SSN with spaces 123 45 6789.]] - rationale - gateway/tests/test_security_audit.py
-- [[SSN without dashes 123456789 — Presidio+spaCy only (regex needs dashes).]] - rationale - gateway/tests/test_security_audit.py
-- [[Same plaintext encrypted twice should produce different ciphertext (random IV).]] - rationale - gateway/tests/test_security_audit.py
-- [[Sanitize HTTP headers by removing sensitive information.]] - rationale - gateway/security/metadata_guard.py
-- [[Sanitize filename by removing unicode control characters and normalizing.]] - rationale - gateway/security/metadata_guard.py
-- [[Security modules should not call eval() or exec().          Uses AST analysis]] - rationale - gateway/tests/test_security_audit.py
-- [[Standard email address.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test DNS filtering, SSRF prevention, and egress control.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test encryption, key management, and secret handling.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test supply chain security measures.]] - rationale - gateway/tests/test_security_audit.py
+- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
+- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
 - [[TestClientValidation]] - code - gateway/tests/test_oauth_security.py
 - [[TestConsentCookieBinding]] - code - gateway/tests/test_oauth_security.py
-- [[TestContextGuard_1]] - code - gateway/tests/test_security_audit.py
-- [[TestCryptography]] - code - gateway/tests/test_security_audit.py
-- [[TestDocumentTagging]] - code - gateway/tests/test_metadata_guard.py
-- [[TestNetworkSecurity]] - code - gateway/tests/test_security_audit.py
-- [[TestPIIDetection_2]] - code - gateway/tests/test_security_audit.py
+- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
 - [[TestPKCE]] - code - gateway/tests/test_oauth_security.py
 - [[TestRedirectURI]] - code - gateway/tests/test_oauth_security.py
 - [[TestStateValidation]] - code - gateway/tests/test_oauth_security.py
-- [[TestSupplyChain_1]] - code - gateway/tests/test_security_audit.py
-- [[US phone (555) 867-5309.]] - rationale - gateway/tests/test_security_audit.py
-- [[Visa card 4111-1111-1111-1111.]] - rationale - gateway/tests/test_security_audit.py
-- [[ZIP codes should not be flagged as SSNphoneCC.]] - rationale - gateway/tests/test_security_audit.py
-- [[gatewaysecuritydns_filter.py (DNSFilterConfig)]] - code - gateway/security/dns_filter.py
-- [[gatewaysecuritydrift_detector.py (DriftDetector)]] - code - gateway/security/drift_detector.py
-- [[gatewaysecurityencrypted_store.py (EncryptedStore)]] - code - gateway/security/encrypted_store.py
-- [[gatewaysecurityfile_sandbox.py (FileSandbox)]] - code - gateway/security/file_sandbox.py
-- [[gatewaysecuritykey_vault.py (KeyVault)]] - code - gateway/security/key_vault.py
-- [[gatewaysecuritymetadata_guard.py (MetadataGuard)]] - code - gateway/security/metadata_guard.py
-- [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - code - gateway/security/network_validator.py
-- [[gatewaysecurityprompt_guard.py (PromptGuard)]] - code - gateway/security/prompt_guard.py
-- [[metadata_guard.py]] - code - gateway/security/metadata_guard.py
+- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - paper - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 - [[oauth_security.py_2]] - code - gateway/security/oauth_security.py
-- [[test_metadata_guard.py]] - code - gateway/tests/test_metadata_guard.py
 - [[test_oauth_security.py]] - code - gateway/tests/test_oauth_security.py
-- [[test_security_audit.py]] - code - gateway/tests/test_security_audit.py
 - [[validator()]] - code - gateway/tests/test_oauth_security.py
 
 ## Live Query (requires Dataview plugin)
@@ -196,41 +93,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_MiddlewareManager]]
-- 29 edges to [[_COMMUNITY__wrap_response() (2)_1]]
-- 18 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 15 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
-- 14 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 13 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 13 edges to [[_COMMUNITY_PortManager]]
-- 13 edges to [[_COMMUNITY_ApprovalQueueConfig (3)_1]]
-- 12 edges to [[_COMMUNITY_asyncio]]
-- 12 edges to [[_COMMUNITY_test_playback_state.c]]
-- 12 edges to [[_COMMUNITY__wrap_response() (4)]]
-- 10 edges to [[_COMMUNITY__wrap_response() (3)_1]]
-- 9 edges to [[_COMMUNITY_Common Queries]]
-- 9 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 7 edges to [[_COMMUNITY_SecureBrowser (3)]]
-- 7 edges to [[_COMMUNITY_AgentShroud™ README]]
-- 7 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 7 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 6 edges to [[_COMMUNITY_socrouter.py]]
-- 6 edges to [[_COMMUNITY__wrap_response() (5)]]
-- 6 edges to [[_COMMUNITY_WebProxy]]
-- 6 edges to [[_COMMUNITY_SessionManager]]
-- 6 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 4 edges to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]]
-- 2 edges to [[_COMMUNITY_Skill Project Management (PM) (3)]]
-- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)_1]]
-- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
-- 1 edge to [[_COMMUNITY_system-requirements]]
-- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
+- 48 edges to [[_COMMUNITY_ContextGuard]]
+- 12 edges to [[_COMMUNITY_Any]]
+- 8 edges to [[_COMMUNITY_dot-_make_proxy()]]
+- 3 edges to [[_COMMUNITY_FileSandbox]]
+- 2 edges to [[_COMMUNITY_SubagentMonitor]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
+- 2 edges to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_SessionManager]]
+- 1 edge to [[_COMMUNITY_SecureBrowser (3)]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_WebProxy]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
 
 ## Top bridge nodes
-- [[test_security_audit.py]] - degree 63, connects to 28 communities
-- [[TestPIIDetection_2]] - degree 55, connects to 21 communities
-- [[TestContextGuard_1]] - degree 46, connects to 21 communities
-- [[TestNetworkSecurity]] - degree 46, connects to 21 communities
-- [[TestCryptography]] - degree 44, connects to 21 communities
+- [[TestFileSandbox]] - degree 55, connects to 15 communities
+- [[oauth_security.py_2]] - degree 11, connects to 4 communities
+- [[ConfusedDeputyError]] - degree 21, connects to 2 communities
+- [[PKCEViolation]] - degree 21, connects to 2 communities
+- [[RedirectMismatch]] - degree 21, connects to 2 communities

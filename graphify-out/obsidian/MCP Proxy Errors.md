@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
+community: "ApprovalQueueConfig (7)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/ApprovalQueueConfig_7
 ---
 
 # MCP Proxy Errors.md
@@ -15,4 +15,4 @@ tags:
 - [[Error Index]] - `references` [EXTRACTED]
 - [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7

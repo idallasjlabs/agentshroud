@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -43,8 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[TestOutboundClassifierHelpers]] - degree 27, connects to 2 communities
+- [[TestOutboundClassifierHelpers]] - degree 27, connects to 5 communities

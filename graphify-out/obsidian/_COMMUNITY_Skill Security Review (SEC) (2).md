@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Skill: Security Review (SEC) (2)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 13
 - [[Docker Compose Template]] - document - docs/architecture/per-agent-isolation.md
 - [[Future Enhancements_2]] - document - docs/architecture/per-agent-isolation.md
 - [[IsolationVerifier Class]] - concept - docs/architecture/per-agent-isolation.md
-- [[Overview_19]] - document - docs/architecture/per-agent-isolation.md
+- [[Overview_23]] - document - docs/architecture/per-agent-isolation.md
 - [[Per-Agent Audit Trails]] - document - docs/architecture/per-agent-isolation.md
 - [[Per-Agent Container Isolation Architecture]] - document - docs/architecture/per-agent-isolation.md
 - [[Request Routing]] - document - docs/architecture/per-agent-isolation.md

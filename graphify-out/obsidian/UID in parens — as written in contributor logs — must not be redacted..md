@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "test_sanitizer.py"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/test_sanitizerpy
 ---
 
 # UID in parens — as written in contributor logs — must not be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_uid_inside_parens_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy

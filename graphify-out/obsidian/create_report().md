@@ -12,10 +12,10 @@ tags:
 # create_report()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

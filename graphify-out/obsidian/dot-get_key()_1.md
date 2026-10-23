@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L82"
+community: "Path (2)"
+location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Path_2
 ---
 
 # .get_key()
 
 ## Connections
-- [[dot-_agent_in_scope()]] - `calls` [EXTRACTED]
-- [[dot-_log_audit()]] - `calls` [EXTRACTED]
-- [[dot-inject_for_request()]] - `calls` [EXTRACTED]
-- [[KeyVault]] - `method` [EXTRACTED]
+- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
+- [[Get a single keypress (non-blocking)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Path_2

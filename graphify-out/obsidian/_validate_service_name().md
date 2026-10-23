@@ -16,8 +16,8 @@ tags:
 - [[_valid_services()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[get_logs()]] - `calls` [EXTRACTED]
-- [[restart_service()]] - `calls` [EXTRACTED]
-- [[start_service()]] - `calls` [EXTRACTED]
-- [[stop_service()]] - `calls` [EXTRACTED]
+- [[restart_service()_1]] - `calls` [EXTRACTED]
+- [[start_service()_1]] - `calls` [EXTRACTED]
+- [[stop_service()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

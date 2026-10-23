@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "SharedMemoryManager"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/SharedMemoryManager
 ---
 
 # .get_user_memory()
@@ -17,4 +17,4 @@ tags:
 - [[Read raw private memory for a user.          Args             user_id The user]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

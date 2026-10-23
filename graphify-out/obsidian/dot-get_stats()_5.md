@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L1002"
+community: "EgressFilterConfig (2)"
+location: "L644"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/EgressFilterConfig_2
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[dot-get_log()]] - `calls` [EXTRACTED]
+- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2

@@ -1,20 +1,20 @@
 ---
 type: community
-members: 20
+cohesion: 0.19
+members: 18
 ---
 
 # LLMProxy.proxy_messages (non-streaming) (2)
 
-**Members:** 20 nodes
+**Cohesion:** 0.19 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[dot-__init__()_144]] - code - gateway/security/falco_monitor.py
-- [[dot-_handle_critical()]] - code - gateway/security/falco_monitor.py
-- [[dot-_process_new_alerts()]] - code - gateway/security/falco_monitor.py
+- [[dot-__init__()_161]] - code - gateway/security/falco_monitor.py
 - [[dot-run()_6]] - code - gateway/security/falco_monitor.py
 - [[dot-stop()_11]] - code - gateway/security/falco_monitor.py
 - [[FalcoAlertWatcher]] - code - gateway/security/falco_monitor.py
-- [[Path_46]] - code - gateway/security/falco_monitor.py
+- [[Path_50]] - code - gateway/security/falco_monitor.py
 - [[Poll Falco alert files until stopped.]] - rationale - gateway/security/falco_monitor.py
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - rationale - gateway/security/falco_monitor.py
 - [[Test Falco Watcher Module]] - code - gateway/tests/test_falco_watcher.py
@@ -37,13 +37,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 5 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_api.py (2)]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
 
 ## Top bridge nodes
 - [[FalcoAlertWatcher]] - degree 17, connects to 2 communities
-- [[dot-_process_new_alerts()]] - degree 4, connects to 1 community
 - [[test_critical_alert_triggers_lockdown()]] - degree 4, connects to 1 community
-- [[dot-_handle_critical()]] - degree 3, connects to 1 community
-- [[Path_46]] - degree 2, connects to 1 community
+- [[dot-run()_6]] - degree 3, connects to 1 community
+- [[Path_50]] - degree 2, connects to 1 community

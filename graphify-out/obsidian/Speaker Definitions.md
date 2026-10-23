@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EXPERT]] - `contains` [EXTRACTED]
 - [[HOST]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

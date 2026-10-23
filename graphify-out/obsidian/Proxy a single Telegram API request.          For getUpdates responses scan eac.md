@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "._proxy_request_impl()"
 location: "L2929"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/_proxy_request_impl
 ---
 
 # Proxy a single Telegram API request.          For getUpdates responses: scan eac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_proxy_request_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/_proxy_request_impl

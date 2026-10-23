@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR) (3)
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
 - [[AgentShroud Development Team — Agile Structure]] - document - docs/TEAM.md
 - [[Collaborators (Advisory — Read-Only)]] - document - docs/TEAM.md
 - [[Communication & Tooling]] - document - docs/TEAM.md
-- [[Container Architecture_2]] - document - docs/TEAM.md
+- [[Container Architecture_1]] - document - docs/TEAM.md
 - [[Data Engineers  Analysts]] - document - docs/TEAM.md
 - [[DevOps  Platform Engineer — CICD, Infrastructure, Reliability]] - document - docs/TEAM.md
 - [[Development Environment_1]] - document - docs/TEAM.md

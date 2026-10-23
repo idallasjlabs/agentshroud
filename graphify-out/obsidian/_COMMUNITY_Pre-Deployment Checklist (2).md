@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # Pre-Deployment Checklist (2)
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
@@ -24,7 +26,7 @@ members: 21
 - [[Post-Deployment Verification_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
 - [[Pre-Deployment Checklist_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
 - [[Resume After Testing (MANDATORY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Role_44]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Role_42]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
 - [[Short-Term (15 min – 24 hr)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
 - [[Sign-Off_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
 - [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md

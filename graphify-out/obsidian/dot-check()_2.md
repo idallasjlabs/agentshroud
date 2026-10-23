@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "lifespan()"
-location: "L47"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # .check()
 
 ## Connections
-- [[Check if client is within rate limit          Args             client_id Usual]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
-- [[get_auth_dependency()]] - `calls` [EXTRACTED]
+- [[dot-_burst_limit()]] - `calls` [EXTRACTED]
+- [[dot-_sustained_limit()]] - `calls` [EXTRACTED]
+- [[RateLimitDecision]] - `references` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

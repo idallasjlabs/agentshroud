@@ -24,7 +24,7 @@ tags:
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
 - [[load_logo()]] - `contains` [EXTRACTED]
-- [[main()_23]] - `contains` [EXTRACTED]
+- [[main()_20]] - `contains` [EXTRACTED]
 - [[save()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

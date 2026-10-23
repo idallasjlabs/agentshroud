@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never… (2)"
-location: "L993"
+community: "format_cve_report() (2)"
+location: "L693"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+  - community/format_cve_report_2
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_all_agents_omitting_bot_tokens_preserves_default_behavior()]] - `contains` [EXTRACTED]
+- [[dot-test_sends_alert_when_new_cves_found()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+#graphify/code #graphify/EXTRACTED #community/format_cve_report_2

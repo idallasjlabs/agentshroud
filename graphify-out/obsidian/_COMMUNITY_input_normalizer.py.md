@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # input_normalizer.py
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -17,7 +19,7 @@ members: 15
 - [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Purpose_133]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Purpose_131]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md

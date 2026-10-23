@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[GitGuard]] - `imports` [EXTRACTED]
-- [[TestGitGuard]] - `contains` [EXTRACTED]
+- [[TestGitGuard_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SessionManager

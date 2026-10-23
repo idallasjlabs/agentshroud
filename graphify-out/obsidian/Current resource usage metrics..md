@@ -12,6 +12,6 @@ tags:
 # Current resource usage metrics.
 
 ## Connections
-- [[ResourceUsage]] - `rationale_for` [EXTRACTED]
+- [[ResourceUsage_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_make_proxy

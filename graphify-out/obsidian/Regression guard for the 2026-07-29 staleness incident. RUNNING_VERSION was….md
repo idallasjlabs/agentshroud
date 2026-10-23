@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "rationale"
-community: "Path (2)"
+community: "Path"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/Path
 ---
 
 # Regression guard for the 2026-07-29 staleness incident. RUNNING_VERSION was…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_running_version_matches_pinned_openclaw_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path_2
+#graphify/rationale #graphify/EXTRACTED #community/Path

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "EgressFilterConfig (2)"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/EgressFilterConfig_2
 ---
 
 # Tests for drift detector hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDriftDetectorHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2

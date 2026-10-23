@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
 community: "OpenClaw Bot SSH Configuration"
 location: "L6"
@@ -12,6 +12,7 @@ tags:
 # Purpose
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

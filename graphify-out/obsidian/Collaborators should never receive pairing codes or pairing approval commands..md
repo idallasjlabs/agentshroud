@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy (17)"
+community: "TelegramAPIProxy"
 location: "L1253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_17
+  - community/TelegramAPIProxy
 ---
 
 # Collaborators should never receive pairing codes or pairing approval commands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_pairing_code_leakage_is_redacted_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_17
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Incident Response Workflow_2]] - `contains` [EXTRACTED]
 - [[Post-Incident_2]] - `contains` [EXTRACTED]
-- [[Role_61]] - `contains` [EXTRACTED]
+- [[Role_59]] - `contains` [EXTRACTED]
 - [[Severity Matrix_2]] - `contains` [EXTRACTED]
 - [[hermesskillsi-productionSKILL]] - `contains` [EXTRACTED]
 

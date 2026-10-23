@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 29
 ---
 
 # wakeword.c
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 29 nodes
 
 ## Members
@@ -12,8 +14,8 @@ members: 29
 - [[dot-__aexit__()_4]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-__aiter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-__anext__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_117]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_118]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_127]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_128]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-send()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py

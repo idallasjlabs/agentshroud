@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "AuditStore"
+community: "ConfigIntegrityMonitor"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditStore
+  - community/ConfigIntegrityMonitor
 ---
 
 # Recommendation
 
 ## Connections
 - [[dot-recommendation()]] - `references` [EXTRACTED]
-- [[CompletedProcess]] - `uses` [INFERRED]
+- [[CompletedProcess_3]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Path_22]] - `uses` [INFERRED]
 - [[Path_27]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[ScanResult_2]] - `uses` [INFERRED]
-- [[ScanResult_1]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
@@ -29,7 +29,7 @@ tags:
 - [[TestObfuscation]] - `uses` [INFERRED]
 - [[TestOversizedUnscannable]] - `uses` [INFERRED]
 - [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
 - [[TestReloadIntegration]] - `uses` [INFERRED]
 - [[TestScanEntrypoint]] - `uses` [INFERRED]
 - [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditStore
+#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor

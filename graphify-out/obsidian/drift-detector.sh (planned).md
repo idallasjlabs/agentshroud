@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "iCloud Services (2)"
+community: "docker/scripts README.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/iCloud_Services_2
+  - community/docker/scripts_READMEmd
 ---
 
 # drift-detector.sh (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/iCloud_Services_2
+#graphify/concept #graphify/EXTRACTED #community/docker/scripts_READMEmd

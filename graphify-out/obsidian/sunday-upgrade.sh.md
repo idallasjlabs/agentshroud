@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Drift PR (result gate, prod gate, wrapper, launchd install.sh)]] - `references` [EXTRACTED]
 - [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - `references` [EXTRACTED]
-- [[PATH_2]] - `defines` [EXTRACTED]
+- [[PATH_7]] - `defines` [EXTRACTED]
 - [[Same-day reinvocation verify-only, no rebuild]] - `conceptually_related_to` [EXTRACTED]
 - [[Shared working-tree collision between concurrent sessions]] - `conceptually_related_to` [EXTRACTED]
 - [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]

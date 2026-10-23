@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # 🛡️ AgentShroud Release Plan
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 15
 - [[3. Run]] - document - gateway/README.md
 - [[4. Test]] - document - gateway/README.md
 - [[Approval Queue_1]] - document - gateway/README.md
-- [[Authentication_1]] - document - gateway/README.md
+- [[Authentication_2]] - document - gateway/README.md
 - [[Data Ledger]] - document - gateway/README.md
 - [[Features_4]] - document - gateway/README.md
 - [[Gateway Layer]] - document - gateway/README.md

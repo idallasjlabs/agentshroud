@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L56"
+community: "._make_proxy()"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/_make_proxy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
-- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

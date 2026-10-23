@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "ContextSegment"
-location: "L486"
+community: "MiddlewareManager (3)"
+location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MiddlewareManager_3
 ---
 
 # .send_json()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_HangingWebSocket_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

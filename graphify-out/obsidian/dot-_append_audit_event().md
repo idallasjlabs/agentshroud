@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
-- [[dot-decide()]] - `calls` [EXTRACTED]
-- [[dot-submit()]] - `calls` [EXTRACTED]
-- [[Any_51]] - `references` [EXTRACTED]
+- [[dot-decide()_1]] - `calls` [EXTRACTED]
+- [[dot-submit()_1]] - `calls` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Best-effort JSONL persistence for queue lifecycle events.]] - `rationale_for` [EXTRACTED]
 

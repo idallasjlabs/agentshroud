@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "RBACConfig"
-location: "L62"
+community: "SecurityPipeline (2)"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/SecurityPipeline_2
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

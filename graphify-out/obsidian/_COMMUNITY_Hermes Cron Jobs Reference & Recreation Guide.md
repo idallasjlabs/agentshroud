@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 38
 ---
 
 # Hermes Cron Jobs Reference & Recreation Guide
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 38 nodes
 
 ## Members

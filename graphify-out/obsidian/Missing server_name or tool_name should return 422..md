@@ -12,6 +12,6 @@ tags:
 # Missing server_name or tool_name should return 422.
 
 ## Connections
-- [[dot-test_missing_required_fields_returns_422()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_missing_required_fields_returns_422()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

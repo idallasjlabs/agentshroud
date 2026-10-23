@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_extract_dict_content()]] - `calls` [EXTRACTED]
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
 - [[Extract text content from various tool result formats for PII scanning]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

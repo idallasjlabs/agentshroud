@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.36
 members: 8
 ---
 
 # TestLoadFromText
 
+**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members

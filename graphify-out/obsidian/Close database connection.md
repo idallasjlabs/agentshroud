@@ -12,6 +12,6 @@ tags:
 # Close database connection
 
 ## Connections
-- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_13]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

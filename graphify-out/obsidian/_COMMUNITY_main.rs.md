@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.02
 members: 93
 ---
 
 # main.rs
 
+**Cohesion:** 0.02 - loosely connected
 **Members:** 93 nodes
 
 ## Members

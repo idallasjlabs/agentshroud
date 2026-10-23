@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.60
 members: 5
 ---
 
 # dashboard_endpoints.py (4)
 
+**Cohesion:** 0.60 - moderately connected
 **Members:** 5 nodes
 
 ## Members

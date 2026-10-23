@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "AgentShroud v0.9.0 (2)"
+community: "SubagentGovernance"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v090_2
+  - community/SubagentGovernance
 ---
 
 # .test_email_pattern()
@@ -15,4 +15,4 @@ tags:
 - [[TestPatternDetection]] - `method` [EXTRACTED]
 - [[_check_pii_patterns()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v090_2
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

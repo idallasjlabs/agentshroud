@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "scanner_integration.py"
-location: "L39"
+community: "test_collaborator_tracker.py"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/test_collaborator_trackerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockURLResult]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

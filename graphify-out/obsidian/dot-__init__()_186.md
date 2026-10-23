@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py (2)"
-location: "L183"
+community: "test_soc_services_coverage.py"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy_2
+  - community/test_soc_services_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[_FakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy

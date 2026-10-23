@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.03
 members: 139
 ---
 
 # TrustConfig
 
+**Cohesion:** 0.03 - loosely connected
 **Members:** 139 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 139
 - [[Add an egress allowdeny rule.]] - rationale - gateway/ingest_api/main.py
 - [[Approve an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
 - [[Audit feed for private-data access policy violations.]] - rationale - gateway/ingest_api/main.py
-- [[AuthRequired_2]] - code
+- [[AuthRequired]] - code
 - [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
 - [[CIS Docker Benchmark checks for this container.]] - rationale - gateway/ingest_api/main.py
 - [[Comprehensive container security profile — runs all applicable checks.]] - rationale - gateway/ingest_api/main.py
@@ -68,8 +70,8 @@ members: 139
 - [[Run canary integrity checks.]] - rationale - gateway/ingest_api/main.py
 - [[Run kill switch verification test. Args dry_run If True (default), only…]] - rationale - gateway/ingest_api/main.py
 - [[SOC 2 Trust Service Criteria compliance coverage report. Maps active…]] - rationale - gateway/ingest_api/main.py
-- [[SSHExecRequest_1]] - code
-- [[SSHWriteFileRequest_1]] - code
+- [[SSHExecRequest]] - code
+- [[SSHWriteFileRequest]] - code
 - [[Scored security health report — grade, per-tool scores, recommendations.…]] - rationale - gateway/ingest_api/main.py
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - rationale - gateway/ingest_api/main.py
 - [[System Control - Live Dashboard Shows real-time system status with links to…]] - rationale - gateway/ingest_api/main.py
@@ -100,7 +102,7 @@ members: 139
 - [[falco_alerts()]] - code - gateway/ingest_api/main.py
 - [[full_security_report()]] - code - gateway/ingest_api/main.py
 - [[gateway package __init__]] - code - gateway/__init__.py
-- [[get_1]] - code
+- [[get]] - code
 - [[get_dns_stats()]] - code - gateway/ingest_api/main.py
 - [[get_ledger_entry()]] - code - gateway/ingest_api/main.py
 - [[get_my_permissions()]] - code - gateway/ingest_api/main.py
@@ -117,7 +119,7 @@ members: 139
 - [[list_security_modules()]] - code - gateway/ingest_api/main.py
 - [[list_users_and_roles()]] - code - gateway/ingest_api/main.py
 - [[llm_proxy_stats]] - code - gateway/ingest_api/main.py
-- [[post_1]] - code
+- [[post]] - code
 - [[privacy_audit()]] - code - gateway/ingest_api/main.py
 - [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
 - [[proxy_status()]] - code - gateway/ingest_api/main.py
@@ -163,29 +165,27 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_WebContentScanner]]
 - 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 3 edges to [[_COMMUNITY_deep_security_test]]
+- 2 edges to [[_COMMUNITY_Common Queries]]
 - 2 edges to [[_COMMUNITY__is_op_reference_allowed]]
 - 2 edges to [[_COMMUNITY__make_cve]]
-- 1 edge to [[_COMMUNITY_climain.py]]
 - 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
 - 1 edge to [[_COMMUNITY_test_dashboard.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
 - 1 edge to [[_COMMUNITY_test_forward_stream.py]]
-- 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2) (2)_1]]
+- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
 - 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
-- 1 edge to [[_COMMUNITY__wrap_response() (2)]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
 - 1 edge to [[_COMMUNITY_GroupConfig]]
 - 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0 (2)]]
 - 1 edge to [[_COMMUNITY_Skill UX Expert (UX) (3)]]
 - 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager]]
 - 1 edge to [[_COMMUNITY_A2APolicyEngine]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (2)]]
 
 ## Top bridge nodes
-- [[ingest_apimain.py]] - degree 116, connects to 24 communities
-- [[post_1]] - degree 25, connects to 5 communities
-- [[AuthRequired_2]] - degree 66, connects to 4 communities
+- [[ingest_apimain.py]] - degree 115, connects to 22 communities
+- [[post]] - degree 25, connects to 5 communities
+- [[AuthRequired]] - degree 66, connects to 4 communities
 - [[get_my_permissions()]] - degree 5, connects to 1 community
 - [[get_user_permissions()]] - degree 5, connects to 1 community

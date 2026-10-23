@@ -1,18 +1,22 @@
 ---
-source_file: "docker/tests/test-op-auth.sh"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "MCP Tools Usage (MCPM)"
-location: "L13"
+community: "AgentTarget (2)"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM
+  - community/AgentTarget_2
 ---
 
 # pass()
 
 ## Connections
-- [[test-op-auth.sh]] - `defines` [EXTRACTED]
-- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM
+#graphify/code #graphify/EXTRACTED #community/AgentTarget_2

@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[dot-_compute_content_hash()]] - `method` [EXTRACTED]
-- [[dot-load_all()]] - `references` [EXTRACTED]
+- [[dot-load_all()_1]] - `references` [EXTRACTED]
 - [[dot-load_latest()]] - `references` [EXTRACTED]
 - [[dot-report_id_not_empty()]] - `method` [EXTRACTED]
-- [[dot-save()_1]] - `references` [EXTRACTED]
+- [[dot-save()_2]] - `references` [EXTRACTED]
 - [[dot-source_not_empty()]] - `method` [EXTRACTED]
 - [[dot-verify_integrity()]] - `method` [EXTRACTED]
 - [[BaseModel_1]] - `inherits` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[Fetcher]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `calls` [EXTRACTED]
-- [[Path_60]] - `uses` [INFERRED]
+- [[Path_52]] - `uses` [INFERRED]
 - [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]

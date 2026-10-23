@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L78"
+community: "TestOAuthInjection"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/TestOAuthInjection
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

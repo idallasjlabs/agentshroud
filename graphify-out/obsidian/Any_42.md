@@ -1,38 +1,71 @@
 ---
-source_file: "gateway/security/scanner_integration.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "PipelineAction (2)"
-location: "L448"
+community: "Any"
+location: "L496"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/PipelineAction_2
+  - graphify/INFERRED
+  - community/Any
 ---
 
 # Any
 
 ## Connections
-- [[_evaluate_mandatory_gates()]] - `references` [EXTRACTED]
-- [[_load_latest_json()]] - `references` [EXTRACTED]
-- [[_read_docker_daemon_config()]] - `references` [EXTRACTED]
-- [[_score_compliance_auditing()]] - `references` [EXTRACTED]
-- [[_score_container_hardening()]] - `references` [EXTRACTED]
-- [[_score_image_integrity()]] - `references` [EXTRACTED]
-- [[_score_incident_response()]] - `references` [EXTRACTED]
-- [[_score_logging_monitoring()]] - `references` [EXTRACTED]
-- [[_score_malware_defense()]] - `references` [EXTRACTED]
-- [[_score_runtime_protection()]] - `references` [EXTRACTED]
-- [[_score_vulnerability_management()]] - `references` [EXTRACTED]
-- [[aggregate_results()]] - `references` [EXTRACTED]
-- [[compute_bot_scorecard()]] - `references` [EXTRACTED]
-- [[compute_scorecard()]] - `references` [EXTRACTED]
-- [[get_clamav_summary()]] - `references` [EXTRACTED]
-- [[get_falco_summary()]] - `references` [EXTRACTED]
-- [[get_fluent_bit_summary()]] - `references` [EXTRACTED]
-- [[get_openscap_summary()]] - `references` [EXTRACTED]
-- [[get_sbom()]] - `references` [EXTRACTED]
-- [[get_trivy_image_summaries()]] - `references` [EXTRACTED]
-- [[get_trivy_summary()]] - `references` [EXTRACTED]
-- [[get_wazuh_summary()]] - `references` [EXTRACTED]
+- [[dot-_analyze_request_for_rbac()]] - `references` [EXTRACTED]
+- [[dot-_check_cross_session_access()]] - `references` [EXTRACTED]
+- [[dot-_check_rbac_permissions()]] - `references` [EXTRACTED]
+- [[dot-_enforce_session_isolation()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()]] - `references` [EXTRACTED]
+- [[dot-_is_tool_call_request()]] - `references` [EXTRACTED]
+- [[dot-process_request()]] - `references` [EXTRACTED]
+- [[dot-process_tool_result()]] - `references` [EXTRACTED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[AgentRegistry]] - `uses` [INFERRED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `uses` [INFERRED]
+- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
+- [[BrowserSecurityGuard]] - `uses` [INFERRED]
+- [[ConsentFramework]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[EgressMonitor]] - `uses` [INFERRED]
+- [[EgressMonitorConfig]] - `uses` [INFERRED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[FileSandbox]] - `uses` [INFERRED]
+- [[FileSandboxConfig]] - `uses` [INFERRED]
+- [[GitGuard]] - `uses` [INFERRED]
+- [[KeyRotationManager]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MetadataGuard]] - `uses` [INFERRED]
+- [[MultiTurnTracker]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[OAuthSecurityValidator]] - `uses` [INFERRED]
+- [[OutputCanary]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PathIsolationConfig]] - `uses` [INFERRED]
+- [[PathIsolationManager]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `uses` [INFERRED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[ToolChainAnalyzer]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[ToolResultPIIConfig]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction_2
+#graphify/code #graphify/INFERRED #community/Any

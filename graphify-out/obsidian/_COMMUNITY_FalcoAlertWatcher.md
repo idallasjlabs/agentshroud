@@ -1,11 +1,13 @@
 ---
 type: community
-members: 54
+cohesion: 0.09
+members: 50
 ---
 
 # FalcoAlertWatcher
 
-**Members:** 54 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 50 nodes
 
 ## Members
 - [[dot-test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
@@ -40,14 +42,10 @@ members: 54
 - [[dot-test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[CompletedProcess]] - code - gateway/tests/test_skill_guard.py
 - [[IntEnum]] - code
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
-- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_1]] - code - gateway/tests/test_skill_guard.py
 - [[Severity]] - code - gateway/security/skill_guard.py
 - [[SkillGuard]] - code - gateway/tests/test_skill_guard.py
-- [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
 - [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
 - [[TestExecOfDownload]] - code - gateway/tests/test_skill_guard.py
@@ -56,7 +54,7 @@ members: 54
 - [[TestObfuscation]] - code - gateway/tests/test_skill_guard.py
 - [[TestOversizedUnscannable]] - code - gateway/tests/test_skill_guard.py
 - [[TestPathTraversal]] - code - gateway/tests/test_skill_guard.py
-- [[TestPrivilegeEscalation]] - code - gateway/tests/test_skill_guard.py
+- [[TestPrivilegeEscalation_1]] - code - gateway/tests/test_skill_guard.py
 - [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
 - [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
@@ -71,20 +69,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_AuditStore]]
-- 33 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
-- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
-- 1 edge to [[_COMMUNITY__wrap_response() (3)_1]]
+- 43 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 24 edges to [[_COMMUNITY_AuditStore]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY__make_proxy]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY__wrap_response() (3)]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
 - [[IntEnum]] - degree 7, connects to 6 communities
-- [[test_skill_guard.py]] - degree 28, connects to 4 communities
-- [[SkillScanError]] - degree 24, connects to 3 communities
+- [[test_skill_guard.py]] - degree 28, connects to 5 communities
 - [[SkillGuard]] - degree 36, connects to 2 communities
 - [[Severity]] - degree 24, connects to 2 communities
+- [[TestAggregation]] - degree 12, connects to 2 communities

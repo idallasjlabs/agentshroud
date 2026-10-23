@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "A2AMethod"
-location: "L132"
+community: "LLMProxy.proxy_messages (non-streaming)"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # datetime
 
 ## Connections
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
-- [[KeyRotationConfig]] - `uses` [INFERRED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

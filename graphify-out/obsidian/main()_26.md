@@ -1,18 +1,17 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "Function Details (4)"
-location: "L99"
+community: "test_cron_jobs_prompts.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_4
+  - community/test_cron_jobs_promptspy
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_4
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

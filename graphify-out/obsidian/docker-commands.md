@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "ssh_config.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/ssh_configpy
 ---
 
 # docker-commands.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

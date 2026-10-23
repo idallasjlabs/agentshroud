@@ -12,6 +12,6 @@ tags:
 # Write a New Email
 
 ## Connections
-- [[Common Operations]] - `contains` [EXTRACTED]
+- [[Common Operations_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

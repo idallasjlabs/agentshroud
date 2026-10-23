@@ -12,7 +12,7 @@ tags:
 # test_openai_target_sends_messages_body()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[forward_to_agent sends {model, messages} when chat_path ends v1chatcompleti]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 

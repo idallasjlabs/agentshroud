@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "ContextGuard"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/ContextGuard
 ---
 
 # .test_record_http_event()
@@ -15,4 +15,4 @@ tags:
 - [[EgressEvent]] - `calls` [EXTRACTED]
 - [[TestEventRecording]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

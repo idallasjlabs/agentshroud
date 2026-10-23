@@ -17,7 +17,7 @@ tags:
 - [[UPGRADE_LOCK]] - `shares_data_with` [EXTRACTED]
 - [[Upgrade Report 2026-09-23 1400 (dev, PARTIAL, disk full)]] - `references` [EXTRACTED]
 - [[_render_build()]] - `references` [EXTRACTED]
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_2]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 

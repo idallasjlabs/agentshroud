@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # test_telegram_proxy_inbound.py (2)
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -31,7 +33,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 12 edges to [[_COMMUNITY_ApprovalQueueConfig (2)]]
 - 4 edges to [[_COMMUNITY_SecurityPipeline]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (2) (2)]]
+- 3 edges to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_fake_owner_notice()]]
 
 ## Top bridge nodes

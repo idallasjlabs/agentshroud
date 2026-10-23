@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # hermes/skills/i-browser/browse.js
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
@@ -26,7 +28,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_jira_weekly_review.py]]
 - 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 1 edge to [[_COMMUNITY_setup-secrets.sh]]
+- 1 edge to [[_COMMUNITY_PodmanEngine]]
 - 1 edge to [[_COMMUNITY_AppleContainerEngine]]
 - 1 edge to [[_COMMUNITY_egress_retry.py]]
 

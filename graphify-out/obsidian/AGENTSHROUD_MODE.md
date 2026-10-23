@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
-- [[OPENCLAW_SANDBOX_MODE]] - `semantically_similar_to` [INFERRED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `semantically_similar_to` [INFERRED]
 - [[agentshroud.yaml]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [INFERRED]
 - [[mcp_config.py]] - `references` [INFERRED]

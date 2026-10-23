@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "wazuh-ossec.conf"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/wazuh-ossecconf
 ---
 
 # Relationship to Other Security Modules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

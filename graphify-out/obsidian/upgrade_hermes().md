@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[JSONResponse]] - `references` [EXTRACTED]
 - [[Pull the latest Hermes Agent image and restart the container.      Unlike OpenCl]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]

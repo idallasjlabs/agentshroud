@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "TeamsConfig"
+community: "AgentShroud Data Dictionary"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # STPA-Sec Methodology
 
 ## Connections
-- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - `references` [EXTRACTED]
-- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - `references` [EXTRACTED]
-- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [EXTRACTED]
+- [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TeamsConfig
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

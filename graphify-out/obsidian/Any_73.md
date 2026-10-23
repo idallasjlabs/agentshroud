@@ -1,18 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "_pcm_bytes"
+community: "WebProxy"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/WebProxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_audit()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_1]] - `references` [EXTRACTED]
-- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
+- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
+- [[dot-get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/WebProxy

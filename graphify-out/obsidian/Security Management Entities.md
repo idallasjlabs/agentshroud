@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_3]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_4]] - `contains` [EXTRACTED]
 - [[TrustLevel_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

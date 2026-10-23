@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
-- [[dot-sanitize()_4]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
-- [[RedactionResult_1]] - `references` [EXTRACTED]
+- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_3]] - `method` [EXTRACTED]
+- [[RedactionResult]] - `references` [EXTRACTED]
 - [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

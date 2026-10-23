@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestProductionCompose"
+community: "MiddlewareManager"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/MiddlewareManager
 ---
 
 # .test_repetition_attack_not_blocking()
 
 ## Connections
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestContextGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

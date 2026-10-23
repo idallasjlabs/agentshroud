@@ -12,7 +12,7 @@ tags:
 # test_process_inbound_request_denied_peer_never_reaches_hermes()
 
 ## Connections
-- [[A2APolicyEngine]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
 - [[A2AProxy]] - `calls` [EXTRACTED]
 - [[_StubForwarder]] - `references` [EXTRACTED]
 - [[_jsonrpc()]] - `calls` [EXTRACTED]

@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # KillSwitchMonitor (2) (4)
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
 - [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
 - [[Network Requirements]] - document - docs/operations/deployment-procedure.md
-- [[Prerequisites_1]] - document - docs/operations/deployment-procedure.md
+- [[Prerequisites]] - document - docs/operations/deployment-procedure.md
 - [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
 - [[System Requirements]] - document - docs/operations/deployment-procedure.md
 
@@ -22,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (2)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
 
 ## Top bridge nodes
-- [[Prerequisites_1]] - degree 5, connects to 1 community
+- [[Prerequisites]] - degree 5, connects to 1 community

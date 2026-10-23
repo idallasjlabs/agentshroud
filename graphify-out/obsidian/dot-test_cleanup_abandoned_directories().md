@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "PathIsolationManager"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/PathIsolationManager
 ---
 
 # .test_cleanup_abandoned_directories()
@@ -15,4 +15,4 @@ tags:
 - [[Test cleanup of abandoned user directories.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

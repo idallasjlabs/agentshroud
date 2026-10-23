@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L148"
+community: "AuditChain"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine_1]] - `references` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/AuditChain

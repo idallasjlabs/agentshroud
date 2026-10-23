@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L49"
+community: "ReportStore"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

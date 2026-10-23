@@ -12,6 +12,6 @@ tags:
 # Test Results
 
 ## Connections
-- [[Summary_23]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/main_2

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # llm_proxy.py
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 23
 - [[Purpose_81]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Related_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Responsibilities_4]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Security Notes_4]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
@@ -29,8 +31,8 @@ members: 23
 - [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[http_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 

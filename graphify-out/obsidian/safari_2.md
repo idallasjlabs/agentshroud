@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-githubmcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx_1]] - `references` [EXTRACTED]
-- [[PATH_39]] - `requires_env` [EXTRACTED]
+- [[PATH_42]] - `requires_env` [EXTRACTED]
 - [[safari-mcp_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/github/mcpjson_2

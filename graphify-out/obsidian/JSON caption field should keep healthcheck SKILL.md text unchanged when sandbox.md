@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "CronStateMonitor"
+community: "TelegramAPIProxy"
 location: "L1400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/TelegramAPIProxy
 ---
 
 # JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

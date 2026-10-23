@@ -12,7 +12,7 @@ tags:
 # .test_tool_specific_floor_override()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `calls` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `calls` [EXTRACTED]
 - [[TestPerToolConfiguration]] - `method` [EXTRACTED]
 

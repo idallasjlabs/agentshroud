@@ -1,11 +1,13 @@
 ---
 type: community
-members: 35
+cohesion: 0.05
+members: 40
 ---
 
 # Release Notes - AgentShroud v0.9.0
 
-**Members:** 35 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 40 nodes
 
 ## Members
 - [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
@@ -14,6 +16,8 @@ members: 35
 - [[LOCAL_PROVIDER_KEY derivation (mode-derived, not ref-derived)]] - code - docker/config/openclaw/apply-patches.js
 - [[LOCAL_PROVIDER_KEY mode-derivation design]] - rationale - docker/config/openclaw/apply-patches.js
 - [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
+- [[Per-chat group agent + binding reconciliation (Patch 1e)]] - code - docker/config/openclaw/apply-patches.js
+- [[RBAC collaborator_user_ids list (gatewaysecurityrbac_config.py)]] - concept - docker/config/openclaw/apply-patches.js
 - [[Telegram channel tokendmPolicyallowlist patch (Patch 3)]] - code - docker/config/openclaw/apply-patches.js
 - [[Telegram channel-wide fallback binding design]] - rationale - docker/config/openclaw/apply-patches.js
 - [[Telegram dmPolicy=open security tradeoff]] - rationale - docker/config/openclaw/apply-patches.js
@@ -22,23 +26,26 @@ members: 35
 - [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
 - [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
 - [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
+- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
+- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
 - [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
 - [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
 - [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
 - [[apply-patches.js]] - code - docker/config/openclaw/apply-patches.js
+- [[apply-patches.js patch driver (openclaw.json)]] - code - docker/config/openclaw/apply-patches.js
 - [[cIdx]] - code - docker/config/openclaw/apply-patches.js
 - [[config]] - code - docker/config/openclaw/apply-patches.js
 - [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
 - [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
 - [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[fs_5]] - code - docker/config/openclaw/apply-patches.js
+- [[fs_3]] - code - docker/config/openclaw/apply-patches.js
 - [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
 - [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
 - [[hasMain]] - code - docker/config/openclaw/apply-patches.js
 - [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
 - [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
 - [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
-- [[path_20]] - code - docker/config/openclaw/apply-patches.js
+- [[path_19]] - code - docker/config/openclaw/apply-patches.js
 - [[providerModels]] - code - docker/config/openclaw/apply-patches.js
 - [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
 - [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
@@ -52,8 +59,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Release Notes - AgentShroud v0.9.0 (2)]]
-- 1 edge to [[_COMMUNITY_TestSendTelegramTruncation]]
+- 1 edge to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]]
+- 1 edge to [[_COMMUNITY_is_overloaded]]
 
 ## Top bridge nodes
-- [[apply-patches.js]] - degree 38, connects to 2 communities
+- [[apply-patches.js]] - degree 38, connects to 1 community
+- [[apply-patches.js patch driver (openclaw.json)]] - degree 3, connects to 1 community

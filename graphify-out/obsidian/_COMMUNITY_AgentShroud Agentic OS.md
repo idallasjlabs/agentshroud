@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 35
 ---
 
 # AgentShroud Agentic OS
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 35 nodes
 
 ## Members

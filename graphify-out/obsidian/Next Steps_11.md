@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "test_security_regressions_v1_2.py"
-location: "L78"
+community: "iMessage Integration Status"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/iMessage_Integration_Status
 ---
 
 # Next Steps
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "UserSessionManager (2) (7)"
+community: "TelegramAPIProxy"
 location: "L2901"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_7
+  - community/TelegramAPIProxy
 ---
 
 # .test_raw_web_fetch_json_explicit_md_tld_domain_still_queues_approval()
 
 ## Connections
 - [[Explicitly schemed domains should still queue approvals even for .md ccTLD.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_7
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

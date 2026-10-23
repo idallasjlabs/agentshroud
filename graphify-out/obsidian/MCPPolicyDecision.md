@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_decide()_1]] - `references` [EXTRACTED]
-- [[dot-allowed()]] - `method` [EXTRACTED]
+- [[dot-allowed()_1]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `references` [EXTRACTED]
 - [[dot-evaluate()_1]] - `references` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]

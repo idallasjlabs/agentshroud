@@ -12,6 +12,6 @@ tags:
 # Deserialize registry from dict.
 
 ## Connections
-- [[dot-from_dict()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

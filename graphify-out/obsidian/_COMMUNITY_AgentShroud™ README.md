@@ -1,19 +1,19 @@
 ---
 type: community
-members: 44
+cohesion: 0.07
+members: 40
 ---
 
 # AgentShroud™ README
 
-**Members:** 44 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 40 nodes
 
 ## Members
-- [[dot-__init__()_53]] - code - gateway/security/browser_security.py
 - [[dot-analyze_content()]] - code - gateway/security/browser_security.py
 - [[dot-analyze_screenshot()]] - code - gateway/security/browser_security.py
 - [[dot-can_enter_credentials()]] - code - gateway/security/browser_security.py
 - [[dot-check_url_reputation()]] - code - gateway/security/browser_security.py
-- [[dot-register_screenshot_hook()]] - code - gateway/security/browser_security.py
 - [[dot-test_data_uri_blocked()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_excessive_subdomains()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_fake_captcha()]] - code - gateway/tests/test_browser_security.py
@@ -22,7 +22,7 @@ members: 44
 - [[dot-test_homograph_attack()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_hook_can_flag_threat()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_http_blocked()]] - code - gateway/tests/test_browser_security.py
-- [[dot-test_https_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_https_allowed()_1]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_ip_address_url()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_ip_blocked_for_credentials()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_known_phishing_pattern()]] - code - gateway/tests/test_browser_security.py
@@ -36,9 +36,8 @@ members: 44
 - [[dot-test_suspicious_subdomain()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_tech_support_scam()]] - code - gateway/tests/test_browser_security.py
 - [[dot-test_urgent_action_required()]] - code - gateway/tests/test_browser_security.py
-- [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
 - [[CredentialEntryBlocked]] - code - gateway/security/browser_security.py
-- [[Exception_1]] - code
+- [[Exception_2]] - code
 - [[PhishingURLDetected]] - code - gateway/security/browser_security.py
 - [[SocialEngineeringDetected]] - code - gateway/security/browser_security.py
 - [[TestCredentialProtection]] - code - gateway/tests/test_browser_security.py
@@ -48,7 +47,6 @@ members: 44
 - [[ThreatAssessment]] - code - gateway/security/browser_security.py
 - [[ThreatLevel]] - code - gateway/security/browser_security.py
 - [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - paper - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
 - [[browser_security.py]] - code - gateway/security/browser_security.py
 - [[guard()_1]] - code - gateway/tests/test_browser_security.py
 - [[test_browser_security.py]] - code - gateway/tests/test_browser_security.py
@@ -61,32 +59,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY__wrap_response()]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy (2)_1]]
+- 11 edges to [[_COMMUNITY_ContextGuard]]
+- 11 edges to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
 - 2 edges to [[_COMMUNITY_SecureBrowser (3)]]
-- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
 - 2 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
 - 1 edge to [[_COMMUNITY_browserscriptsbrowse.py (2)]]
 - 1 edge to [[_COMMUNITY_pick_latest_stable]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (3)]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
 - 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 - 1 edge to [[_COMMUNITY_dot-proxy_messages()]]
 - 1 edge to [[_COMMUNITY_ProxyDashboard]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
 - 1 edge to [[_COMMUNITY_format_cve_report()]]
+- 1 edge to [[_COMMUNITY_UserSessionManager (2) (2)]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor (3)]]
 - 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY__wrap_response() (2)_1]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY__wrap_response() (4)]]
-- 1 edge to [[_COMMUNITY_test_playback_state.c]]
-- 1 edge to [[_COMMUNITY__wrap_response() (5)]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager (3)]]
 
 ## Top bridge nodes
-- [[Exception_1]] - degree 17, connects to 13 communities
-- [[ThreatAssessment]] - degree 22, connects to 8 communities
-- [[browser_security.py]] - degree 11, connects to 3 communities
+- [[Exception_2]] - degree 17, connects to 14 communities
+- [[browser_security.py]] - degree 11, connects to 4 communities
+- [[ThreatAssessment]] - degree 22, connects to 3 communities
 - [[ThreatLevel]] - degree 9, connects to 3 communities
-- [[BrowserSecurityGuard]] - degree 31, connects to 1 community
+- [[TestSocialEngineeringDetection]] - degree 12, connects to 1 community

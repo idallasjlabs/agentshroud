@@ -12,6 +12,6 @@ tags:
 # Initialize approval queue          Args:             config: Approval queue conf
 
 ## Connections
-- [[dot-__init__()_30]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_34]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/iot_button_register_cb_2

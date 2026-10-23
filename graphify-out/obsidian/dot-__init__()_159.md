@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentTarget (3)"
-location: "L136"
+community: "test_a2a_policy.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/test_a2a_policypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

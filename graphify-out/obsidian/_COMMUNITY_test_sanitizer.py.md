@@ -1,26 +1,37 @@
 ---
 type: community
-members: 13
+cohesion: 0.09
+members: 22
 ---
 
 # test_sanitizer.py
 
-**Members:** 13 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1Password (credential vault)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[1Password Integration (service account)]] - document - docs/api/integration-guide.md
-- [[AgentShroud (system, C4 context)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[Anthropic API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Brave Search API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[External Collaborators]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Gateway Container (Python 3.11FastAPI 8080)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
-- [[GitHub (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Isaiah Jefferson (ArchitectOwner)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[OpenAI API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
-- [[Running Containers (gateway + bot, healthy)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[Telegram (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - rationale - gateway/tests/test_sanitizer.py
+- [[Phone number with separator must still be redacted.]] - rationale - gateway/tests/test_sanitizer.py
+- [[Regex-only path must not match bare 10-digit digit string as phone number.]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test content with multiple PII types]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test content with no PII]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test credit card redaction]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test email address redaction]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test empty content handling]] - rationale - gateway/tests/test_sanitizer.py
+- [[Test phone number redaction]] - rationale - gateway/tests/test_sanitizer.py
+- [[UID in parens — as written in contributor logs — must not be redacted.]] - rationale - gateway/tests/test_sanitizer.py
+- [[test_credit_card_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_email_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_empty_content()]] - code - gateway/tests/test_sanitizer.py
+- [[test_mixed_pii()]] - code - gateway/tests/test_sanitizer.py
+- [[test_no_pii()]] - code - gateway/tests/test_sanitizer.py
+- [[test_phone_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_real_phone_still_redacted()]] - code - gateway/tests/test_sanitizer.py
+- [[test_regex_fallback_requires_separator()]] - code - gateway/tests/test_sanitizer.py
+- [[test_sanitizer.py]] - code - gateway/tests/test_sanitizer.py
+- [[test_ssn_detection()]] - code - gateway/tests/test_sanitizer.py
+- [[test_telegram_uid_not_redacted_as_phone()]] - code - gateway/tests/test_sanitizer.py
+- [[test_uid_inside_parens_preserved()]] - code - gateway/tests/test_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_sanitizer.py (2)]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up = fully secured)]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
 
 ## Top bridge nodes
-- [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 3 communities
-- [[AgentShroud (system, C4 context)]] - degree 9, connects to 1 community
+- [[test_sanitizer.py]] - degree 12, connects to 1 community

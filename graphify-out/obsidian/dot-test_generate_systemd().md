@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "setup-secrets.sh"
+community: "PodmanEngine"
 location: "L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/PodmanEngine
 ---
 
 # .test_generate_systemd()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup-secretssh
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

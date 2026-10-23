@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_run_owner_cmd()_1]] - `calls` [EXTRACTED]
 - [[TestLockedCommand]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3

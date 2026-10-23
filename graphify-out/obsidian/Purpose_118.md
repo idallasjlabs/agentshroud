@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "test_scanner_integration.py (2)"
+community: "iOS / macOS Shortcuts — Relay to AgentShroud"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
 ---
 
 # Purpose
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud

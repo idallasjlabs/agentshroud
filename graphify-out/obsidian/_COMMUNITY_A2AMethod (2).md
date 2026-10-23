@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # A2AMethod (2)
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[dot-__init__()_49]] - code - gateway/security/key_rotation.py
+- [[dot-__init__()_60]] - code - gateway/security/key_rotation.py
 - [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
 - [[KeyRotationConfig_1]] - code - gateway/security/key_rotation.py
 
@@ -25,4 +27,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[KeyRotationConfig_1]] - degree 3, connects to 1 community
-- [[dot-__init__()_49]] - degree 3, connects to 1 community
+- [[dot-__init__()_60]] - degree 3, connects to 1 community

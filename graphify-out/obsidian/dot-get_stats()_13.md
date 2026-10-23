@@ -12,7 +12,7 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
 - [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5

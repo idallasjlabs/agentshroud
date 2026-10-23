@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 31
 ---
 
 # Skill: UX Expert (UX) (2)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members

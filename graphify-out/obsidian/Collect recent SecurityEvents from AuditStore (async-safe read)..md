@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "AlertDispatcher (2)"
+community: "Enum"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Enum
 ---
 
 # Collect recent SecurityEvents from AuditStore (async-safe read).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[collect_recent_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/rationale #graphify/EXTRACTED #community/Enum

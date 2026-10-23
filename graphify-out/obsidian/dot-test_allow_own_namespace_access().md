@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "PathIsolationManager"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/PathIsolationManager
 ---
 
 # .test_allow_own_namespace_access()
@@ -15,4 +15,4 @@ tags:
 - [[Test allowing access to own namespace.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

@@ -18,7 +18,7 @@ tags:
 - [[dot-_detect_regex()]] - `references` [EXTRACTED]
 - [[dot-_redact()]] - `references` [EXTRACTED]
 - [[A single PII detection result.]] - `rationale_for` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
 - [[TestAsymmetricFloor]] - `uses` [INFERRED]

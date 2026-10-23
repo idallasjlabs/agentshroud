@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "MiddlewareManager (2) (3)"
+community: "ServiceManager"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2_3
+  - community/ServiceManager
 ---
 
 # TestServiceManagerGetLogs
@@ -23,4 +23,4 @@ tags:
 - [[Unit tests for ServiceManager.get_logs — including module_filter behaviour.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2_3
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,17 +1,21 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "test_us_ssn_regex_tightened.py"
-location: "L381"
+community: "01-architecture.md"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_us_ssn_regex_tightenedpy
+  - community/01-architecturemd
 ---
 
 # Quick Reference
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Change Default Model]] - `contains` [EXTRACTED]
+- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
+- [[List Available Models]] - `contains` [EXTRACTED]
+- [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy
+#graphify/document #graphify/EXTRACTED #community/01-architecturemd

@@ -12,17 +12,17 @@ tags:
 # test_a2a_policy.py
 
 ## Connections
-- [[A2AMethod]] - `imports` [EXTRACTED]
+- [[A2AMethod_1]] - `imports` [EXTRACTED]
 - [[A2APolicyAction]] - `imports` [EXTRACTED]
 - [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
 - [[A2APolicyDecision]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
 - [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `contains` [EXTRACTED]
 - [[_StubApprovalQueue]] - `contains` [EXTRACTED]
-- [[_base_config()_1]] - `contains` [EXTRACTED]
-- [[engine()_1]] - `contains` [EXTRACTED]
+- [[_base_config()]] - `contains` [EXTRACTED]
+- [[engine()]] - `contains` [EXTRACTED]
 - [[is_safe_a2a_callback_url()]] - `imports` [EXTRACTED]
 - [[test_allowlisted_peer_low_risk_method_is_allowed()]] - `contains` [EXTRACTED]
 - [[test_callback_url_bare_dot_host_is_rejected()]] - `contains` [EXTRACTED]

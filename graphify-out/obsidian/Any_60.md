@@ -1,23 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "browser/scripts/browse.py"
+community: "._make_proxy()"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - graphify/INFERRED
+  - community/_make_proxy
 ---
 
 # Any
 
 ## Connections
-- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
-- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
-- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
-- [[_next_ash_number()]] - `references` [EXTRACTED]
-- [[_py_str()]] - `references` [EXTRACTED]
-- [[append_ghsa_entries()]] - `references` [EXTRACTED]
-- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
-- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/INFERRED #community/_make_proxy

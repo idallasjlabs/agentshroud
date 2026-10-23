@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentShroud Docker Configuration"
+community: "parse_clamscan_output"
 location: "L981"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/parse_clamscan_output
 ---
 
 # .test_clean_tools_improve_score()
@@ -21,4 +21,4 @@ tags:
 - [[_wazuh_clean()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

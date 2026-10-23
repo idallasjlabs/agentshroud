@@ -12,7 +12,7 @@ tags:
 # MCPAuditEntry
 
 ## Connections
-- [[dot-entries()_1]] - `references` [EXTRACTED]
+- [[dot-entries()]] - `references` [EXTRACTED]
 - [[dot-get_blocked_entries()]] - `references` [EXTRACTED]
 - [[dot-get_entries_for_agent()]] - `references` [EXTRACTED]
 - [[dot-get_entries_for_server()]] - `references` [EXTRACTED]

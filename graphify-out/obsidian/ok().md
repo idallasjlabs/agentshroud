@@ -1,18 +1,18 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "tests/startup_smoke/test_launchd_install.sh"
 type: "code"
-community: "MiddlewareManager"
-location: "L5"
+community: "camsnap/SKILL.md"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/camsnap/SKILLmd
 ---
 
 # ok()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[test_launchd_install.sh]] - `defines` [EXTRACTED]
+- [[test_launchd_install.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/camsnap/SKILLmd

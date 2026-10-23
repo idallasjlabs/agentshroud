@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.31
 members: 11
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List (2)
 
+**Cohesion:** 0.31 - loosely connected
 **Members:** 11 nodes
 
 ## Members

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[init_skill.py]] - `contains` [EXTRACTED]
-- [[main()_34]] - `calls` [EXTRACTED]
+- [[main()_32]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_integrationpy

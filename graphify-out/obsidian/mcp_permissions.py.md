@@ -12,7 +12,7 @@ tags:
 # mcp_permissions.py
 
 ## Connections
-- [[MCPPermissionManager_1]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager]] - `contains` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[PermissionCheck]] - `contains` [EXTRACTED]

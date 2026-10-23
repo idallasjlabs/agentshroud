@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 0.14
 members: 19
 ---
 
 # RuntimeConfig
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 19 nodes
 
 ## Members
 - [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-setup_method()_30]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-setup_method()_26]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
@@ -36,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY__pcm_bytes]]
 
 ## Top bridge nodes
 - [[TestBenchmarkRegression]] - degree 10, connects to 1 community

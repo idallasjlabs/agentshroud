@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "PortManager"
-location: "L38"
+community: "WebProxy"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/WebProxy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestEncryptedStore]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `calls` [EXTRACTED]
+- [[TestNetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/WebProxy

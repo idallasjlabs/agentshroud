@@ -12,6 +12,6 @@ tags:
 # Auto-Restart
 
 ## Connections
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

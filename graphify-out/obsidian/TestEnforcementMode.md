@@ -12,7 +12,7 @@ tags:
 # TestEnforcementMode
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_3]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `method` [EXTRACTED]
 - [[dot-test_enforce_mode_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - `method` [EXTRACTED]
 - [[dot-test_monitor_mode_still_allows_permitted_tools()]] - `method` [EXTRACTED]

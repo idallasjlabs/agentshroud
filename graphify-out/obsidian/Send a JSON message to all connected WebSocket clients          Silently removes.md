@@ -12,6 +12,6 @@ tags:
 # Send a JSON message to all connected WebSocket clients          Silently removes
 
 ## Connections
-- [[dot-broadcast()]] - `rationale_for` [EXTRACTED]
+- [[dot-broadcast()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_4

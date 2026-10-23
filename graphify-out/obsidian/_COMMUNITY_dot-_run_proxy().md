@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # ._run_proxy()
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members

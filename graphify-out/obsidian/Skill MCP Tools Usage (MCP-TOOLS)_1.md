@@ -15,7 +15,7 @@ tags:
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Available MCP Servers_1]] - `contains` [EXTRACTED]
 - [[MCP Troubleshooting]] - `contains` [EXTRACTED]
-- [[Role_27]] - `contains` [EXTRACTED]
+- [[Role_23]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpmSKILL]] - `contains` [EXTRACTED]
 

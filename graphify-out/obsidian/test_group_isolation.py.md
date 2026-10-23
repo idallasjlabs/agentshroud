@@ -23,12 +23,12 @@ tags:
 - [[TestGroupMemoryNamespaceIsolation]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[agent_isolation.py (AgentRegistry)]] - `implements` [EXTRACTED]
-- [[rbac()_2]] - `contains` [EXTRACTED]
-- [[session_manager()_1]] - `contains` [EXTRACTED]
+- [[rbac()]] - `contains` [EXTRACTED]
+- [[session_manager()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 - [[teams()_2]] - `contains` [EXTRACTED]
-- [[tmp_workspace()_2]] - `contains` [EXTRACTED]
+- [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5

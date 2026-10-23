@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_prompt_protection.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L171"
+community: "ApprovalQueueConfig"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/ApprovalQueueConfig
 ---
 
 # .test_normal_content_passes()
 
 ## Connections
-- [[Test that normal content passes through without redaction.]] - `rationale_for` [EXTRACTED]
-- [[TestPromptProtection]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

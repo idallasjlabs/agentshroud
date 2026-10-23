@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L148"
+community: "._make_proxy()"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/_make_proxy
 ---
 
 # ResourceUsage
 
 ## Connections
-- [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `calls` [EXTRACTED]
+- [[Current resource usage metrics.]] - `rationale_for` [EXTRACTED]
+- [[resource_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

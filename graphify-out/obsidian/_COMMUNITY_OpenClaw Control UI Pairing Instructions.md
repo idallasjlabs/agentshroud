@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # OpenClaw Control UI Pairing Instructions
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 14
 - [[ConsentFramework.validate_config(config)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Function Details_39]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Purpose_143]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Purpose_142]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Message Composition with MML (MIME Meta Language)"
+community: "SubagentGovernance"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/SubagentGovernance
 ---
 
 # Per-subagent resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceBudget]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/colima-docker-guide.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
-location: "L137"
+community: "AgentShroud Branding Assets Index"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Logs
 
 ## Connections
-- [[5. Container Management]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

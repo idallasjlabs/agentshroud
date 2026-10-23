@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L28"
+community: "ToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/ToolChainAnalyzer
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_120]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[dot-score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # agentshroud-bot (2)
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
@@ -33,9 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 1 edge to [[_COMMUNITY_TestDockerEngine]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 - 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 1 edge to [[_COMMUNITY_Core Security Principles]]
 
 ## Top bridge nodes
 - [[Security Implementation Verification]] - degree 10, connects to 3 communities

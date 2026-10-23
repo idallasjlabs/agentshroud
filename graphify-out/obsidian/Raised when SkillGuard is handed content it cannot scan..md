@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "FalcoAlertWatcher"
+community: "AuditStore"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/AuditStore
 ---
 
 # Raised when SkillGuard is handed content it cannot scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillScanError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/rationale #graphify/EXTRACTED #community/AuditStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_req"
+community: "TelegramAPIProxy"
 location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_req
+  - community/TelegramAPIProxy
 ---
 
 # Outbound markdown exfil links should be stripped before delivery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_markdown_exfil_link_scrubbed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_req
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

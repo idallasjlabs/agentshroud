@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "SecurityPipeline (2)"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/SecurityPipeline_2
 ---
 
 # Main security pipeline that all messages pass through.      Wires together: Prom
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityPipeline_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2

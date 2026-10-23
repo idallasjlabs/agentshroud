@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L97"
+community: "._make_proxy()"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/_make_proxy
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
-- [[dot-pause()_3]] - `calls` [EXTRACTED]
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

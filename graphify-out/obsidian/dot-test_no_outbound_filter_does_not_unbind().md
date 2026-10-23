@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "KeyVaultConfig"
 location: "L792"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/KeyVaultConfig
 ---
 
 # .test_no_outbound_filter_does_not_unbind()
 
 ## Connections
 - [[TestOutboundFilterResultBinding]] - `method` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

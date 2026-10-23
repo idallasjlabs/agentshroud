@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[bad()]] - `calls` [EXTRACTED]
-- [[ok()_1]] - `calls` [EXTRACTED]
+- [[ok()]] - `calls` [EXTRACTED]
 - [[run_install()]] - `calls` [EXTRACTED]
 - [[test_launchd_install.sh]] - `contains` [EXTRACTED]
 

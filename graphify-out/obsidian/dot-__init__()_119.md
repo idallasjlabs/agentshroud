@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "test_wazuh_watchdog.py (2)"
-location: "L195"
+community: "Any"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy_2
+  - community/Any
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy_2
+#graphify/code #graphify/EXTRACTED #community/Any

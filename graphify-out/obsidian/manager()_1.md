@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation_internals.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "AgentShroud Documentation"
-location: "L31"
+community: "TelegramAPIProxy (2)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/TelegramAPIProxy_2
 ---
 
 # manager()
 
 ## Connections
-- [[KeyRotationConfig]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2

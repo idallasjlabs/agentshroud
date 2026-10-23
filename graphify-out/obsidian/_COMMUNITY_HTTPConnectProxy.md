@@ -1,46 +1,38 @@
 ---
 type: community
-members: 81
+cohesion: 0.07
+members: 70
 ---
 
 # HTTPConnectProxy
 
-**Members:** 81 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 70 nodes
 
 ## Members
-- [[dot-__init__()_156]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_157]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_10]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_11]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-drain()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_188]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_189]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-drain()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-get_stats()_18]] - code - gateway/proxy/http_proxy.py
-- [[dot-readline()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-start()_2]] - code - gateway/proxy/http_proxy.py
-- [[dot-stop()_12]] - code - gateway/proxy/http_proxy.py
-- [[dot-write()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - rationale - gateway/proxy/http_proxy.py
+- [[dot-write()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[Bytes relayed before a connection error are still sampled for scanning.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[CONNECT tunnel establishment must race IPv4IPv6 (RFC 8305) instead of     tryin]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Egress filter without _approval_queue attr - bypass proceeds silently.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[First open_connection attempt fails; retry (with patched sleep) succeeds.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[HTTPConnectProxy]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[HTTPConnectProxy_1]] - code - gateway/proxy/http_proxy.py
 - [[Host-only CONNECT target defaults to port 443; blocked host - 403.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Minimal StreamWriter stand-in that records written bytes.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a     signat]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Port-80 downloads are plaintext — malware sampling must keep working.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Real-world regression (2026-07-29) uvloop (the active event loop under     uvic]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Return proxy traffic statistics.]] - rationale - gateway/proxy/http_proxy.py
-- [[Start the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
-- [[Stop the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[StreamReader_3]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[Transport without an underlying socket (None) is skipped cleanly.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Writer exposing a .transport whose socket records setsockopt calls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[_CloseRaisesWriter]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_MockWriter]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_capture_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_eof_target_connection()]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -50,7 +42,6 @@ members: 81
 - [[clamscan runs must never share the default executor with LLM upstream     calls]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[get_extra_info raising must not break the established tunnel.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[log_external_decision raising must not break the CONNECT.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[readline() always raises TimeoutError — simulates a stalled client.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[target_writer.close() raising after relay completes must not propagate.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[test_bypass_with_egress_filter_lacking_approval_queue()]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -99,20 +90,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 39 edges to [[_COMMUNITY__pcm_bytes]]
-- 10 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 10 edges to [[_COMMUNITY_Usage]]
-- 6 edges to [[_COMMUNITY_GitHub Skill]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_TrustConfig (2)]]
-- 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_RuntimeConfig]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_Examples]]
+- 16 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 6 edges to [[_COMMUNITY_Usage]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy_1]] - degree 91, connects to 11 communities
 - [[test_http_proxy_coverage.py]] - degree 53, connects to 3 communities
 - [[HTTPConnectProxy]] - degree 36, connects to 3 communities
 - [[_MockWriter]] - degree 36, connects to 2 communities
-- [[StreamReader]] - degree 15, connects to 2 communities
+- [[StreamReader_3]] - degree 15, connects to 2 communities
+- [[_CloseRaisesWriter]] - degree 9, connects to 2 communities

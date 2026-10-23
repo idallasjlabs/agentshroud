@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__aenter__()]] - `method` [EXTRACTED]
 - [[dot-__aexit__()]] - `method` [EXTRACTED]
-- [[dot-__init__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `method` [EXTRACTED]
 - [[dot-aiter_bytes()]] - `method` [EXTRACTED]
 - [[dot-aread()]] - `method` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]

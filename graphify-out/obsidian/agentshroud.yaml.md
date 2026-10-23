@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "DelegationManager (2)"
+community: "DelegationManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager_2
+  - community/DelegationManager
 ---
 
 # agentshroud.yaml.md
@@ -21,4 +21,4 @@ tags:
 - [[mcp_config.py]] - `references` [INFERRED]
 - [[ssh-config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager_2
+#graphify/document #graphify/EXTRACTED #community/DelegationManager

@@ -12,7 +12,7 @@ tags:
 # test_kill_switch_freezes()
 
 ## Connections
-- [[dot-process_inbound()_8]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_6]] - `calls` [EXTRACTED]
 - [[Trigger freeze mode — verify pipeline blocks all traffic.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

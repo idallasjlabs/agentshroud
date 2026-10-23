@@ -1,18 +1,21 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
-location: "L65"
+community: "test_soc_realtime_coverage.py"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()]] - `calls` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[URLAnalyzer]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `references` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

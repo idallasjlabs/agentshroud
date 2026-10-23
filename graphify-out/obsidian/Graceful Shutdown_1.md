@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Normal Stop]] - `contains` [EXTRACTED]
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 - [[Shutdown Sequence]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[alert_critical()]] - `calls` [EXTRACTED]
-- [[log()_6]] - `calls` [EXTRACTED]
+- [[log()_5]] - `calls` [EXTRACTED]
 - [[security-entrypoint.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

@@ -12,7 +12,7 @@ tags:
 # process_ghsa_advisories()
 
 ## Connections
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[Diff advisories against an agent's OWN registry and build under_review…]] - `rationale_for` [EXTRACTED]
 - [[Prove the Outcome, Never the Steps]] - `rationale_for` [EXTRACTED]
 - [[_ghsa_cvss_score()]] - `calls` [EXTRACTED]

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "AuditStore"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - community/AuditStore
 ---
 
 # SkillScanError
 
 ## Connections
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
-- [[CompletedProcess]] - `uses` [INFERRED]
-- [[Path_27]] - `uses` [INFERRED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
+- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[Raised when SkillGuard is handed content it cannot scan.]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_1]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
@@ -27,7 +27,7 @@ tags:
 - [[TestObfuscation]] - `uses` [INFERRED]
 - [[TestOversizedUnscannable]] - `uses` [INFERRED]
 - [[TestPathTraversal]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
 - [[TestReloadIntegration]] - `uses` [INFERRED]
 - [[TestScanEntrypoint]] - `uses` [INFERRED]
 - [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/code #graphify/INFERRED #community/AuditStore

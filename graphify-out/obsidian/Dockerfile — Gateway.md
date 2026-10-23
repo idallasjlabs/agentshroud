@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "troubleshooting.md"
+community: "Dockerfile — Gateway"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/Dockerfile__Gateway
 ---
 
 # Dockerfile — Gateway
@@ -19,9 +19,9 @@ tags:
 - [[Environment Variables_16]] - `contains` [EXTRACTED]
 - [[Image Labels (OCI)_1]] - `contains` [EXTRACTED]
 - [[Pre-installed Tools_1]] - `contains` [EXTRACTED]
-- [[Related Notes_46]] - `contains` [EXTRACTED]
+- [[Related Notes_71]] - `contains` [EXTRACTED]
 - [[Runtime Command]] - `contains` [EXTRACTED]
 - [[Security Hardening_1]] - `contains` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

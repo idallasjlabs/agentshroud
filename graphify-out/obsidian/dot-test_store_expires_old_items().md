@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ContextSegment"
+community: "MiddlewareManager (3)"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MiddlewareManager_3
 ---
 
 # .test_store_expires_old_items()
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `calls` [EXTRACTED]
 - [[Store marks expired items on load.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

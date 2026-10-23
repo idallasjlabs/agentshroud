@@ -12,6 +12,6 @@ tags:
 # Stop background monitoring task cleanly.
 
 ## Connections
-- [[dot-stop()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_make_proxy

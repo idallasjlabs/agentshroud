@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.39
 members: 8
 ---
 
 # Migration Path (SSH → Distributed Node)
 
+**Cohesion:** 0.39 - loosely connected
 **Members:** 8 nodes
 
 ## Members

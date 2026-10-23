@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 44
 ---
 
 # AgentTarget (4)
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members

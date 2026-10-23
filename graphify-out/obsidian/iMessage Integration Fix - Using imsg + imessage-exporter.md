@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Current Setup (CORRECT)]] - `contains` [EXTRACTED]
 - [[IMESSAGE_FIX]] - `contains` [EXTRACTED]
-- [[Next Steps_7]] - `contains` [EXTRACTED]
+- [[Next Steps_6]] - `contains` [EXTRACTED]
 - [[Status_2]] - `contains` [EXTRACTED]
 - [[The Fix]] - `contains` [EXTRACTED]
 - [[The Problem_1]] - `contains` [EXTRACTED]
-- [[Verification_5]] - `contains` [EXTRACTED]
+- [[Verification_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3

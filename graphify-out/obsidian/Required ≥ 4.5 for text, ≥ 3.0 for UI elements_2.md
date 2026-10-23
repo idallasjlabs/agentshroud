@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Brand Audit Checklist_2]] - `contains` [EXTRACTED]
 - [[Deck  Slide Master Rules_2]] - `contains` [EXTRACTED]
-- [[Dependencies_17]] - `contains` [EXTRACTED]
+- [[Dependencies_18]] - `contains` [EXTRACTED]
 - [[Diagram Theme Block (Mermaid)_2]] - `contains` [EXTRACTED]
 - [[File & Directory Conventions_2]] - `contains` [EXTRACTED]
 - [[HTML  CSS Brand Variables_2]] - `contains` [EXTRACTED]

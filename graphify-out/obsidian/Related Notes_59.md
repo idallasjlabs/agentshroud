@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "AuditExporter (2)"
-location: "L64"
+community: "Report Delivery Format Instructions"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter_2
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter_2
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

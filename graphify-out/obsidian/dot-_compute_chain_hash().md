@@ -15,6 +15,6 @@ tags:
 - [[dot-log_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-log_tool_result()]] - `calls` [EXTRACTED]
 - [[Compute hash chain values. Returns (content_hash, chain_hash).]] - `rationale_for` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

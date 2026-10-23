@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "_make_proxy()"
-location: "L347"
+community: "test_a2a_proxy.py"
+location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_make_proxy
+  - graphify/EXTRACTED
+  - community/test_a2a_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_6]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[dot-__init__()_44]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

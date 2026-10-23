@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "AgentShroud Sequence Diagrams"
-location: "L137"
+community: "SSH Proxy Errors"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams
+  - community/SSH_Proxy_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams
+#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors

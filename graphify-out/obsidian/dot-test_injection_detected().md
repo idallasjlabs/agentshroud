@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "openclaw/skills/i-browser/browse.js"
+community: "SubagentGovernance"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/browsejs
+  - community/SubagentGovernance
 ---
 
 # .test_injection_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutputTrustScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

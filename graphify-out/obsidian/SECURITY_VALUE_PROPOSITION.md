@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "installer.py"
+community: "triage-cve-mitigations.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # SECURITY_VALUE_PROPOSITION.md
@@ -23,4 +23,4 @@ tags:
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

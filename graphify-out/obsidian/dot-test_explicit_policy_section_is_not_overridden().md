@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[An operator-authored mcp_policy section must be honoured verbatim.]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
-- [[_write()]] - `calls` [EXTRACTED]
+- [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

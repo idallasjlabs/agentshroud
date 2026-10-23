@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "AgentTarget (3)"
+community: "KillSwitchMonitor"
 location: "L296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/KillSwitchMonitor
 ---
 
 # Get current kill switch monitor status.          Returns:             Dict conta
 
 ## Connections
-- [[dot-get_status()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_status()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # browser/package.json
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -16,7 +18,7 @@ members: 10
 - [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Related Notes_70]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Related Notes_65]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 
 ## Live Query (requires Dataview plugin)

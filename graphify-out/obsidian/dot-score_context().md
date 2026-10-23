@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "PromptGuard"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/PromptGuard
 ---
 
 # .score_context()
@@ -16,4 +16,4 @@ tags:
 - [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 - [[IntegrityScore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -12,7 +12,7 @@ tags:
 # .test_none_bus_returns_immediately()
 
 ## Connections
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestEventFanOut]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

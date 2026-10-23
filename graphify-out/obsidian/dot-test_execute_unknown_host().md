@@ -12,7 +12,7 @@ tags:
 # .test_execute_unknown_host()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestExecute]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "api.py (3)"
-location: "L145"
+community: "KeyVault"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_3
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_3
+#graphify/code #graphify/EXTRACTED #community/KeyVault

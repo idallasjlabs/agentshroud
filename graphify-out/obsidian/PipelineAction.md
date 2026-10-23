@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "SecurityPipeline (2)"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/SecurityPipeline_2
 ---
 
 # PipelineAction
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
-- [[FilterResult]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -53,8 +53,8 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/SecurityPipeline_2

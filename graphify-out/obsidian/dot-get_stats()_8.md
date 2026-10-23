@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L218"
+community: "MCPInspector"
+location: "L840"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/MCPInspector
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
+- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

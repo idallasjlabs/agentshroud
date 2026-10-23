@@ -1,18 +1,23 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
-type: "document"
-community: "Apple Reminders CLI (remindctl)"
-location: "L43"
+source_file: "gateway/security/module_stats.py"
+type: "code"
+community: "Enum"
+location: "L29"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Enum
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[dot-record()_1]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
+- [[TestEnforcementWiring]] - `uses` [INFERRED]
+- [[module_stats.py]] - `contains` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
+- [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/code #graphify/EXTRACTED #community/Enum

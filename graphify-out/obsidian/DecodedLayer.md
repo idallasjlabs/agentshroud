@@ -12,7 +12,7 @@ tags:
 # DecodedLayer
 
 ## Connections
-- [[dot-analyze()]] - `calls` [EXTRACTED]
+- [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[dot-decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 

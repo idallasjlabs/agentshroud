@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AlertStore]] - `imports` [EXTRACTED]
 - [[LogBuffer]] - `imports` [EXTRACTED]
-- [[auth_headers()_4]] - `contains` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
+- [[auth_headers()_1]] - `contains` [EXTRACTED]
+- [[client()_6]] - `contains` [EXTRACTED]
 - [[test_alert_store_push_and_summary()]] - `contains` [EXTRACTED]
 - [[test_alerts_summary_empty()]] - `contains` [EXTRACTED]
 - [[test_alerts_summary_requires_auth()]] - `contains` [EXTRACTED]

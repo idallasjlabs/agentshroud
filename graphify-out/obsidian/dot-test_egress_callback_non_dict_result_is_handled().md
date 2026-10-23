@@ -15,10 +15,10 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Malformed callback payloads should not crash inbound processing.]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[answer_callback()]] - `contains` [EXTRACTED]
-- [[approve()]] - `contains` [EXTRACTED]
+- [[answer_callback()_2]] - `contains` [EXTRACTED]
+- [[approve()_2]] - `contains` [EXTRACTED]
 - [[asyncio_3]] - `references` [EXTRACTED]
-- [[deny()]] - `contains` [EXTRACTED]
-- [[handle_callback()]] - `contains` [EXTRACTED]
+- [[deny()_2]] - `contains` [EXTRACTED]
+- [[handle_callback()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

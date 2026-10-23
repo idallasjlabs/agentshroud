@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_approval.py"
+source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "code"
-community: "SkillGuard"
-location: "L294"
+community: "apply-patches.js"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/apply-patchesjs
 ---
 
 # .test_cleanup_expired_requests()
 
 ## Connections
-- [[EgressRequest]] - `calls` [EXTRACTED]
-- [[Test cleanup of expired pending requests.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Test cleanup removes expired pending requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

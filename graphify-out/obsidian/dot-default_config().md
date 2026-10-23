@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Default PII configuration for tests]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

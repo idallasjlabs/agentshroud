@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestWebSearchLog"
+community: "KillSwitchMonitor"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSearchLog
+  - community/KillSwitchMonitor
 ---
 
 # TestSetMode
@@ -21,10 +21,10 @@ tags:
 - [[dot-test_set_enforce_mode()]] - `method` [EXTRACTED]
 - [[dot-test_set_monitor_mode()]] - `method` [EXTRACTED]
 - [[dot-test_set_observatory_mode()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

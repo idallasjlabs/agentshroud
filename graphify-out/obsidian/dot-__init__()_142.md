@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L148"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

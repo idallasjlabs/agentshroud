@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L41"
+community: "Any"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Any
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/code #graphify/EXTRACTED #community/Any

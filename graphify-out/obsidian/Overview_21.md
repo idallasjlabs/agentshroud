@@ -1,17 +1,17 @@
 ---
-source_file: "docs/requirements/use-cases.md"
+source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "compose_generator.py"
-location: "L4"
+community: "ANTHROPIC_BASE_URL"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
+- [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

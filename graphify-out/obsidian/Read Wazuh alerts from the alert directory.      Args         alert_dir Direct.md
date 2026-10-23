@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "TestVersionRoutes"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Read Wazuh alerts from the alert directory.      Args:         alert_dir: Direct
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[read_alerts()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

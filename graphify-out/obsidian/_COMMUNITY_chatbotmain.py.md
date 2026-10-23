@@ -1,14 +1,16 @@
 ---
 type: community
-members: 62
+cohesion: 0.05
+members: 63
 ---
 
 # chatbot/main.py
 
-**Members:** 62 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 63 nodes
 
 ## Members
-- [[dot-__init__()_200]] - code - gateway/security/privacy_policy.py
+- [[dot-__init__()_203]] - code - gateway/security/privacy_policy.py
 - [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
 - [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
 - [[dot-contains_private_data()]] - code - gateway/security/privacy_policy.py
@@ -52,6 +54,7 @@ members: 62
 - [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
 - [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
 - [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
+- [[RBACConfig_4]] - code - gateway/tests/test_privacy_policy.py
 - [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
@@ -79,9 +82,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 6 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 3 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 19 edges to [[_COMMUNITY_MiddlewareManager (2)]]
+- 7 edges to [[_COMMUNITY_colima-health-check.sh]]
+- 3 edges to [[_COMMUNITY_Enum]]
 - 2 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
 
 ## Top bridge nodes

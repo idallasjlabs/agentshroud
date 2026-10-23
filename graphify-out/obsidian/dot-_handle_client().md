@@ -15,7 +15,7 @@ tags:
 - [[dot-_process_connect()]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
 - [[Handle a single incoming client connection.]] - `rationale_for` [EXTRACTED]
-- [[StreamReader_3]] - `references` [EXTRACTED]
+- [[StreamReader_2]] - `references` [EXTRACTED]
 - [[StreamWriter_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GitHub_Skill

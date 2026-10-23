@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "LLMProxy"
-location: "L102"
+community: "AuditExportConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/AuditExportConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/AuditExportConfig

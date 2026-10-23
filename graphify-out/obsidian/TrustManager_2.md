@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: ".build_full_mesh()"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/build_full_mesh
 ---
 
 # TrustManager
@@ -15,4 +15,4 @@ tags:
 - [[dot-register_trust_manager()]] - `references` [EXTRACTED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/build_full_mesh

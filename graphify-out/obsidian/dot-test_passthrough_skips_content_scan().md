@@ -12,6 +12,6 @@ tags:
 # .test_passthrough_skips_content_scan()
 
 ## Connections
-- [[TestPassthroughMode_1]] - `method` [EXTRACTED]
+- [[TestPassthroughMode]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

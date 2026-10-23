@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "A2AMethod (2)"
-location: "L122"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod_2
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod_2
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

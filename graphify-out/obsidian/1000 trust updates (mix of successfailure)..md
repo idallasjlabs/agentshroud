@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "soc/router.py"
+community: "MCPPermissionManager"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/MCPPermissionManager
 ---
 
 # 1000 trust updates (mix of success/failure).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_trust_update_performance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

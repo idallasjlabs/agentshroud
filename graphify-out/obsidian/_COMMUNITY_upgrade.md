@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 77
 ---
 
 # upgrade
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 77 nodes
 
 ## Members
@@ -32,8 +34,8 @@ members: 77
 - [[dot-test_successful_upgrade()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[dot-test_valid_version()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[dot-test_with_env_var()]] - code - gateway/tests/test_agentshroud_manager.py
-- [[Any_65]] - code - gateway/ingest_api/version_routes.py
-- [[Any_66]] - code - gateway/tools/agentshroud_manager.py
+- [[Any_68]] - code - gateway/ingest_api/version_routes.py
+- [[Any_69]] - code - gateway/tools/agentshroud_manager.py
 - [[Check the currently installed OpenClaw version.]] - rationale - gateway/tools/agentshroud_manager.py
 - [[Connection_1]] - code - gateway/tools/agentshroud_manager.py
 - [[Create a temporary database for testing.]] - rationale - gateway/tests/test_agentshroud_manager.py
@@ -60,7 +62,7 @@ members: 77
 - [[TestMaskCredentials]] - code - gateway/tests/test_agentshroud_manager.py
 - [[TestRollback]] - code - gateway/tests/test_agentshroud_manager.py
 - [[TestSecurityReview]] - code - gateway/tests/test_agentshroud_manager.py
-- [[TestUpgrade]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestUpgrade_1]] - code - gateway/tests/test_agentshroud_manager.py
 - [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - rationale - gateway/tools/agentshroud_manager.py
 - [[Upgrade to a target version. Requires approval_id unless dry_run.]] - rationale - gateway/ingest_api/version_routes.py
 - [[VersionRequest]] - code - gateway/ingest_api/version_routes.py
@@ -72,7 +74,7 @@ members: 77
 - [[downgrade_version()]] - code - gateway/ingest_api/version_routes.py
 - [[get_available_versions()]] - code - gateway/ingest_api/version_routes.py
 - [[get_current_version()]] - code - gateway/ingest_api/version_routes.py
-- [[get_version_history()]] - code - gateway/ingest_api/version_routes.py
+- [[get_version_history()_1]] - code - gateway/ingest_api/version_routes.py
 - [[list_available_versions()]] - code - gateway/tools/agentshroud_manager.py
 - [[list_versions()]] - code - gateway/tools/agentshroud_manager.py
 - [[mask_credentials()]] - code - gateway/tools/agentshroud_manager.py
@@ -84,7 +86,7 @@ members: 77
 - [[tmp_db()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[upgrade()]] - code - gateway/tools/agentshroud_manager.py
 - [[upgrade_version()]] - code - gateway/ingest_api/version_routes.py
-- [[version_routes.py]] - code - gateway/ingest_api/version_routes.py
+- [[version_routes.py_2]] - code - gateway/ingest_api/version_routes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -94,8 +96,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_ServiceManager]]
 - 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
 - 1 edge to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
 
 ## Top bridge nodes

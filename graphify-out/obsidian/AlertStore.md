@@ -12,10 +12,10 @@ tags:
 # AlertStore
 
 ## Connections
-- [[dot-__init__()_25]] - `method` [EXTRACTED]
+- [[dot-__init__()_24]] - `method` [EXTRACTED]
 - [[dot-push()]] - `method` [EXTRACTED]
 - [[dot-recent()]] - `method` [EXTRACTED]
-- [[dot-summary()_1]] - `method` [EXTRACTED]
+- [[dot-summary()]] - `method` [EXTRACTED]
 - [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - `rationale_for` [EXTRACTED]
 - [[Test Dashboard Endpoints Suite]] - `references` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]

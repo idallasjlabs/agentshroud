@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 14
 ---
 
 # test_prompt_guard.py (2)
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members

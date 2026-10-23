@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.04
 members: 51
 ---
 
 # test_forward_stream.py
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 51 nodes
 
 ## Members
@@ -39,7 +41,7 @@ members: 51
 - [[Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[SECURITY_4]] - document - SECURITY.md
+- [[SECURITY_5]] - document - SECURITY.md
 - [[TestContributingMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestLifespanWiresEveryPipelineModule]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
@@ -69,7 +71,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_MiddlewareManager]]
-- 8 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 8 edges to [[_COMMUNITY_SecurityPipeline (2)]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_AuditExporter]]
 - 1 edge to [[_COMMUNITY_version_routes.py]]

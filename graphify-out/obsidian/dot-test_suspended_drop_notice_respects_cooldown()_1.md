@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestSuspendedDropNotice]] - `method` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[_make_update()_2]] - `calls` [EXTRACTED]
 - [[_wrap()]] - `calls` [EXTRACTED]
 

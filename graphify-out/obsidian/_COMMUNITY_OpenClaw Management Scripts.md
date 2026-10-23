@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # OpenClaw Management Scripts
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
@@ -28,7 +30,7 @@ members: 27
 - [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
 - [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
 - [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
-- [[Role_28]] - document - .agents/skills/i-mm/SKILL.md
+- [[Role_25]] - document - .agents/skills/i-mm/SKILL.md
 - [[Rules_6]] - document - .agents/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
 - [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md
@@ -44,7 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
 
 ## Top bridge nodes
 - [[Skill Mindmap Architect (MM)]] - degree 15, connects to 1 community

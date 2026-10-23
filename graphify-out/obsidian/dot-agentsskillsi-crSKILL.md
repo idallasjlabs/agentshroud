@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "AgentTarget (2)"
+community: ".agents/skills/i-cr/SKILL.md (2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/agents/skills/i-cr/SKILLmd_2
 ---
 
 # .agents/skills/i-cr/SKILL.md
@@ -30,7 +30,7 @@ tags:
 - [[Security Review (SEC)]] - `contains` [EXTRACTED]
 - [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 - [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 - [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 - [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[Validate contrast ratio]] - `contains` [EXTRACTED]
 - [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L183"
+community: "EgressFilter"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/EgressFilter
 ---
 
 # Related Notes
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[FastAPI_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

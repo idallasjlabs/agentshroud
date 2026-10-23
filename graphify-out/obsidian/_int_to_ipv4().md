@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Security Module Inventory"
+community: "record_decision()"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/record_decision
 ---
 
 # _int_to_ipv4()
@@ -16,4 +16,4 @@ tags:
 - [[_canonicalize_ip_literal()]] - `calls` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/code #graphify/EXTRACTED #community/record_decision

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips."
-location: "L1598"
+community: "An unreachable feed must fail the run, not print '0 new' and exit 0."
+location: "L450"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/An_unreachable_feed_must_fail_the_run_not_print_0_new_and_exit_0
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `indirect_call` [INFERRED]
+- [[dot-test_main_exits_nonzero_when_an_agent_fails()]] - `indirect_call` [INFERRED]
+- [[dot-test_nvd_layout_failure_exits_nonzero()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/code #graphify/INFERRED #community/An_unreachable_feed_must_fail_the_run_not_print_0_new_and_exit_0

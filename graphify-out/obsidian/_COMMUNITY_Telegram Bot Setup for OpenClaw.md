@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Telegram Bot Setup for OpenClaw
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
@@ -12,7 +14,7 @@ members: 15
 - [[Function Details_32]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 - [[Key Classes  Functions_34]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 - [[Priority Mapping]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
-- [[Purpose_134]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
+- [[Purpose_132]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 - [[Related_38]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 - [[Responsibilities_36]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md
 - [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/falco_monitor.py.md

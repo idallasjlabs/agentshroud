@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "TestEgressApprovalQueue"
-location: "L141"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+type: "document"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_96]] - `references` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2

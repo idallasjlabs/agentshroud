@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "concept"
-community: "test_collaborator_tracker.py (2)"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # RBAC (Role-Based Access Control)
@@ -15,4 +15,4 @@ tags:
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

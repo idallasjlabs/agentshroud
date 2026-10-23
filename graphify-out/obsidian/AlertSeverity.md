@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
+- [[TestAnomalyDetection]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestEgressMonitorConfig]] - `uses` [INFERRED]
 - [[TestEventRecording]] - `uses` [INFERRED]

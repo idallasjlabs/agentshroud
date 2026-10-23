@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Path (3)"
+community: "start-agentshroud.sh"
 location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/start-agentshroudsh
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_3
+#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh

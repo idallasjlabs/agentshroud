@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentShroud Docker Configuration"
+community: "test_mfa_guard.py"
 location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/test_mfa_guardpy
 ---
 
 # TestComputeScorecard
@@ -34,4 +34,4 @@ tags:
 - [[dot-test_version_is_v090()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

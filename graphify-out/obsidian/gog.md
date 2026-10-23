@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: ".omp/mcp.json"
+community: "ssh-configuration.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/omp/mcpjson
+  - community/ssh-configurationmd
 ---
 
 # gog
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gogSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/omp/mcpjson
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

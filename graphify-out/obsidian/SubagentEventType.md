@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "asyncio"
+community: "ContextGuard"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/ContextGuard
 ---
 
 # SubagentEventType
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_log_event()]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -25,7 +25,7 @@ tags:
 - [[TestKillSwitch]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestPermissionMonitoring]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestSubagentMonitorConfig]] - `uses` [INFERRED]
 - [[TestSubagentTracking]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/ContextGuard

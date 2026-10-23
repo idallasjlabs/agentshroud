@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 8
 ---
 
 # test_security_regressions_v1_2.py (4)
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.43
 members: 7
 ---
 
 # _make_cve (2)
 
+**Cohesion:** 0.43 - moderately connected
 **Members:** 7 nodes
 
 ## Members

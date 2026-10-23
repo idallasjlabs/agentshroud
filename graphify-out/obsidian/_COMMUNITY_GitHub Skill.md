@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.22
 members: 14
 ---
 
 # GitHub Skill
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -19,7 +21,7 @@ members: 14
 - [[Handle a single incoming client connection.]] - rationale - gateway/proxy/http_proxy.py
 - [[Parse CONNECT request, check allowlist, relay or block.]] - rationale - gateway/proxy/http_proxy.py
 - [[Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader_3]] - code - gateway/proxy/http_proxy.py
+- [[StreamReader_2]] - code - gateway/proxy/http_proxy.py
 - [[StreamWriter_2]] - code - gateway/proxy/http_proxy.py
 - [[Write data to a temp file and scan with ClamAV.          Runs in a thread execut]] - rationale - gateway/proxy/http_proxy.py
 
@@ -31,14 +33,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 2 edges to [[_COMMUNITY__pcm_bytes]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 6 edges to [[_COMMUNITY__pcm_bytes]]
+- 4 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 1 edge to [[_COMMUNITY_Common Queries]]
 
 ## Top bridge nodes
-- [[StreamReader_3]] - degree 6, connects to 2 communities
-- [[StreamWriter_2]] - degree 6, connects to 2 communities
 - [[dot-_clamav_scan_bytes()]] - degree 4, connects to 2 communities
 - [[dot-_process_connect()]] - degree 8, connects to 1 community
 - [[dot-_relay_and_scan()]] - degree 7, connects to 1 community
+- [[StreamReader_2]] - degree 6, connects to 1 community
+- [[StreamWriter_2]] - degree 6, connects to 1 community

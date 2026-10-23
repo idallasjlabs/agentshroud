@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "EgressFilterConfig (2) (2)"
-location: "L55"
+community: "PromptGuard"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/PromptGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

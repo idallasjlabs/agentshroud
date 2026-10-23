@@ -1,11 +1,13 @@
 ---
 type: community
-members: 105
+cohesion: 0.04
+members: 99
 ---
 
 # AsyncMock
 
-**Members:** 105 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 99 nodes
 
 ## Members
 - [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
@@ -14,9 +16,9 @@ members: 105
 - [[dot-test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_default_bot_dockerfile_used()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_disconnect_stops_and_removes_bot()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_echoes_status_until_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
@@ -75,32 +77,27 @@ members: 105
 - [[dot-test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
 - [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[HTTPAuthorizationCredentials]] - code - gateway/web/api.py
 - [[KillSwitchAction]] - code - gateway/web/api.py
 - [[ModeRequest]] - code - gateway/web/api.py
-- [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[SimpleNamespace]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestGetEngineHelper]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
 - [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestStatus]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[UpdateRequest]] - code - gateway/web/api.py
@@ -109,8 +106,7 @@ members: 105
 - [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[client()_14]] - code - gateway/tests/test_web_api_coverage.py
-- [[require_auth()]] - code - gateway/web/api.py
+- [[client()_13]] - code - gateway/tests/test_web_api_coverage.py
 - [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
 - [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
 
@@ -122,28 +118,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_EgressFilterConfig (4)]]
-- 13 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 10 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
+- 17 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 7 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 6 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
 - 5 edges to [[_COMMUNITY_api.py (2)]]
-- 4 edges to [[_COMMUNITY_KillSwitchMonitor (3)]]
+- 5 edges to [[_COMMUNITY__resolve_bot_container()]]
+- 4 edges to [[_COMMUNITY_TestMgmtWsTokens]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
 - 4 edges to [[_COMMUNITY_Skill CICD Pipeline Advisor (CICD)]]
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig (4) (2)]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline (3)]]
-- 1 edge to [[_COMMUNITY_A2AMethod]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig (2) (2)]]
-- 1 edge to [[_COMMUNITY_jira_weekly_review.py]]
-- 1 edge to [[_COMMUNITY__wrap_response() (2)_1]]
-- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
-- 1 edge to [[_COMMUNITY_GroupConfig]]
-- 1 edge to [[_COMMUNITY_lifespan() (2)]]
-- 1 edge to [[_COMMUNITY_main.py]]
+- 3 edges to [[_COMMUNITY_ServiceManager]]
+- 3 edges to [[_COMMUNITY_KillSwitchMonitor (3)]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline (3)]]
 
 ## Top bridge nodes
-- [[require_auth()]] - degree 16, connects to 11 communities
 - [[ModeRequest]] - degree 47, connects to 8 communities
-- [[UpdateRequest]] - degree 29, connects to 5 communities
-- [[KillSwitchAction]] - degree 27, connects to 5 communities
+- [[UpdateRequest]] - degree 29, connects to 7 communities
+- [[KillSwitchAction]] - degree 27, connects to 7 communities
+- [[test_web_api_coverage.py]] - degree 30, connects to 4 communities
 - [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities

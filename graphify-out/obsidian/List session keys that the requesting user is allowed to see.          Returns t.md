@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L437"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # List session keys that the requesting user is allowed to see.          Returns t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-list_sessions_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

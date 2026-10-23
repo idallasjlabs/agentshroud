@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "system-requirements.md (2)"
+community: "system-requirements.md"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd_2
+  - community/system-requirementsmd
 ---
 
 # score_to_grade()
@@ -22,4 +22,4 @@ tags:
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd_2
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

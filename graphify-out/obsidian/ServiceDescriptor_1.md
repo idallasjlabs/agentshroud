@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # ServiceDescriptor
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_stopped_service()]] - `calls` [EXTRACTED]
 - [[dot-test_unhealthy_service()]] - `calls` [EXTRACTED]
 - [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `uses` [INFERRED]
+- [[Any_76]] - `uses` [INFERRED]
 - [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

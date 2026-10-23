@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-extend()]] - `calls` [EXTRACTED]
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_3]] - `references` [EXTRACTED]
+- [[ScanResult_4]] - `references` [EXTRACTED]
 - [[SkillGuard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

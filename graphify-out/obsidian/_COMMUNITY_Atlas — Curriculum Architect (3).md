@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 26
 ---
 
 # Atlas — Curriculum Architect (3)
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members

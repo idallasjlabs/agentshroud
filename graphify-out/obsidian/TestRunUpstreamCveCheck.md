@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "ApprovalQueueConfig (2) (2)"
+community: "format_cve_report() (2)"
 location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2_2
+  - community/format_cve_report_2
 ---
 
 # TestRunUpstreamCveCheck
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_sends_alert_when_new_cves_found()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/format_cve_report_2

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "First iteration ingests + records; second sees dedup and skips. (2)"
-location: "L164"
+community: ".can_use_tool()"
+location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+  - community/can_use_tool
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
 
 ## Connections
-- [[dot-check()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-can_use_tool()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+#graphify/rationale #graphify/EXTRACTED #community/can_use_tool

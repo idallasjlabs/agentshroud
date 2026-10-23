@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips. (2)"
+community: "TestOutboundPipelineIntegration"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+  - community/TestOutboundPipelineIntegration
 ---
 
 # ._check_impl()
@@ -16,14 +16,14 @@ tags:
 - [[dot-_is_private_ip()]] - `calls` [EXTRACTED]
 - [[dot-_matches_allowlist_domain()]] - `calls` [EXTRACTED]
 - [[dot-_matches_ip_list()]] - `calls` [EXTRACTED]
-- [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-check()_5]] - `calls` [EXTRACTED]
+- [[dot-_record()]] - `calls` [EXTRACTED]
+- [[dot-check()_3]] - `calls` [EXTRACTED]
 - [[dot-get_policy()_1]] - `calls` [EXTRACTED]
 - [[dot-matches_domain()]] - `calls` [EXTRACTED]
 - [[dot-matches_ip()]] - `calls` [EXTRACTED]
 - [[dot-matches_port()]] - `calls` [EXTRACTED]
 - [[Check if an outbound connection is allowed.          Args             agent_id]] - `rationale_for` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips_2
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

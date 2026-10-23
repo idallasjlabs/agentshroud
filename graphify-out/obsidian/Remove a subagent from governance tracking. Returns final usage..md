@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "icloud/scripts/calendar.js"
+community: "SubagentGovernance"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/icloud/scripts/calendarjs
+  - community/SubagentGovernance
 ---
 
 # Remove a subagent from governance tracking. Returns final usage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-deregister()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/icloud/scripts/calendarjs
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

@@ -12,9 +12,9 @@ tags:
 # test_router.py
 
 ## Connections
-- [[AgentTarget_2]] - `imports` [EXTRACTED]
+- [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[GatewayConfig_3]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig_1]] - `imports` [EXTRACTED]

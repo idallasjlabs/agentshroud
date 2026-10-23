@@ -12,8 +12,8 @@ tags:
 # save_report()
 
 ## Connections
-- [[Any_22]] - `references` [EXTRACTED]
-- [[Path_19]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
+- [[Path_12]] - `references` [EXTRACTED]
 - [[Save a ClamAV report to the log directory.]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L43"
+community: "test_soc_realtime_coverage.py"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_allowed_domain_passes()
 
 ## Connections
-- [[TestEnforceMode]] - `method` [EXTRACTED]
-- [[_make_filter()]] - `calls` [EXTRACTED]
+- [[TestDomainDenylist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

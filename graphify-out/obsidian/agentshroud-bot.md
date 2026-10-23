@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
-- [[networks_1]] - `references` [EXTRACTED]
+- [[networks]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
-- [[volumes_1]] - `references` [EXTRACTED]
+- [[volumes]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh

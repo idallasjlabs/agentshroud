@@ -12,7 +12,7 @@ tags:
 # deploy.sh
 
 ## Connections
-- [[PATH_10]] - `defines` [EXTRACTED]
+- [[PATH_13]] - `defines` [EXTRACTED]
 - [[deploy.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # url_analyzer.py
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -18,7 +20,7 @@ members: 14
 - [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
 - [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
 - [[Fresh Install_2]] - document - docs/operations/macos.md
-- [[Prerequisites_13]] - document - docs/operations/macos.md
+- [[Prerequisites_12]] - document - docs/operations/macos.md
 - [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
 - [[Updating to Latest Release_2]] - document - docs/operations/macos.md
 - [[macos]] - document - docs/operations/macos.md

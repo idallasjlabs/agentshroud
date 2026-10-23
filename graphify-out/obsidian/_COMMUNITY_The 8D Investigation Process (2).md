@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.06
 members: 32
 ---
 
 # The 8D Investigation Process (2)
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members

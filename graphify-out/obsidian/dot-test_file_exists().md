@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "ForwardRequest"
 location: "L798"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/ForwardRequest
 ---
 
 # .test_file_exists()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllExampleConfigsExist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

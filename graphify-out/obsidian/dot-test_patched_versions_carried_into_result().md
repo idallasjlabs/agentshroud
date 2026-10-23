@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestUpstreamAlertDedup]] - `method` [EXTRACTED]
-- [[__enter__()_1]] - `contains` [EXTRACTED]
-- [[__exit__()_1]] - `contains` [EXTRACTED]
-- [[read()_1]] - `contains` [EXTRACTED]
+- [[__enter__()_2]] - `contains` [EXTRACTED]
+- [[__exit__()_2]] - `contains` [EXTRACTED]
+- [[read()_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2

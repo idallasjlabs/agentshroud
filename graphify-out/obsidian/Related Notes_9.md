@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "What is the symptom?"
-location: "L43"
+community: "find-sessions.sh"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/find-sessionssh
 ---
 
 # Related Notes
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/document #graphify/EXTRACTED #community/find-sessionssh

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
-location: "L194"
+community: "Critical Findings"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/Critical_Findings
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path_46]] - `references` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/Critical_Findings

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "purge_low_value_events"
+community: "SubagentGovernance"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/SubagentGovernance
 ---
 
 # .record_api_call()
@@ -16,4 +16,4 @@ tags:
 - [[Record an LLM API call.]] - `rationale_for` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

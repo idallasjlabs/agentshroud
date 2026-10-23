@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-macos-rounded-1024x1024.png"
 type: "image"
-community: "DelegationManager"
+community: "AgentTarget (2)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/DelegationManager
+  - community/AgentTarget_2
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle)
@@ -28,4 +28,4 @@ tags:
 - [[SSH Proxy Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[Trust Manager Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/DelegationManager
+#graphify/image #graphify/INFERRED #community/AgentTarget_2

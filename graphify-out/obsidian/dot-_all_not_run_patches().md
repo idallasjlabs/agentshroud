@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "AgentShroud Docker Configuration"
+community: "test_mfa_guard.py"
 location: "L868"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/test_mfa_guardpy
 ---
 
 # ._all_not_run_patches()
@@ -31,4 +31,4 @@ tags:
 - [[_trivy_not_run()]] - `calls` [EXTRACTED]
 - [[_wazuh_not_run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

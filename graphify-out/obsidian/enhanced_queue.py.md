@@ -12,9 +12,9 @@ tags:
 # enhanced_queue.py
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `contains` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]

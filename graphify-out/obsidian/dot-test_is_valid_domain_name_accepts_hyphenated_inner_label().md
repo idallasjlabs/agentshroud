@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "EgressFilterConfig (3)"
+community: "TestDomainValidationHelper"
 location: "L4003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_3
+  - community/TestDomainValidationHelper
 ---
 
 # .test_is_valid_domain_name_accepts_hyphenated_inner_label()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDomainValidationHelper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_3
+#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper

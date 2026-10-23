@@ -17,7 +17,7 @@ tags:
 - [[TestOpRefAllowlistCoverage]] - `contains` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[client()_5]] - `contains` [EXTRACTED]
+- [[client()_4]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

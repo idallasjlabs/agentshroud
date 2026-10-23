@@ -26,6 +26,7 @@ tags:
 - [[smoke.sh Startup Smoke Runner]] - `calls` [EXTRACTED]
 - [[summary()]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `calls` [EXTRACTED]
+- [[t17_run()]] - `defines` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh script]] - `contains` [EXTRACTED]
 - [[write_fake()]] - `defines` [EXTRACTED]
 - [[write_handoff()]] - `references` [EXTRACTED]

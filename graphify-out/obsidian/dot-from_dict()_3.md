@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "_wrap_response() (2)"
-location: "L39"
+community: "SkillGuard"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/SkillGuard
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-get_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

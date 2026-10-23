@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "SecurityPipeline (2)"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/SecurityPipeline_2
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
+- [[dot-__init__()_87]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-_maybe_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `method` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_4]] - `method` [EXTRACTED]
+- [[dot-get_stats()_17]] - `method` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_3]] - `method` [EXTRACTED]
-- [[dot-process_outbound()]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `method` [EXTRACTED]
 - [[dot-set_global_mode()]] - `method` [EXTRACTED]
 - [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
@@ -39,25 +39,25 @@ tags:
 - [[dot-verify_audit_chain()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `shares_data_with` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Data Flow]] - `references` [EXTRACTED]
+- [[Data Flow_1]] - `references` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[FalcoAlertWatcher]] - `conceptually_related_to` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
+- [[FastAPI_4]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `semantically_similar_to` [INFERRED]
 - [[HTTPForwarder]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `references` [EXTRACTED]
 - [[Main security pipeline that all messages pass through.      Wires together Prom]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `conceptually_related_to` [AMBIGUOUS]
-- [[Path_65]] - `uses` [INFERRED]
+- [[PIISanitizer_3]] - `conceptually_related_to` [AMBIGUOUS]
+- [[Path_63]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SidecarScanner]] - `calls` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -108,13 +108,13 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_2]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `calls` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 - [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
@@ -123,11 +123,11 @@ tags:
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[pipeline()_1]] - `calls` [EXTRACTED]
 - [[pipeline()_2]] - `calls` [EXTRACTED]
-- [[pipeline()]] - `calls` [EXTRACTED]
-- [[pipeline.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[pipeline.py_1]] - `contains` [EXTRACTED]
+- [[run()_5]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `references` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [INFERRED]
 - [[run_chain()]] - `references` [EXTRACTED]
@@ -151,4 +151,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2

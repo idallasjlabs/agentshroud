@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "StdioConnection"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - community/StdioConnection
 ---
 
 # FakeProcess
 
 ## Connections
-- [[dot-__init__()_108]] - `method` [EXTRACTED]
+- [[dot-__init__()_140]] - `method` [EXTRACTED]
 - [[dot-kill()]] - `method` [EXTRACTED]
 - [[dot-terminate()]] - `method` [EXTRACTED]
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[dot-wait()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/StdioConnection

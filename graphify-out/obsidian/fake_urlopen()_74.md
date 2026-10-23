@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L416"
+community: "ApprovalQueueConfig (2)"
+location: "L5149"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_voice_gatewaypy
+  - graphify/EXTRACTED
+  - community/ApprovalQueueConfig_2
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
+- [[dot-test_self_diagnose_plain_word_with_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2

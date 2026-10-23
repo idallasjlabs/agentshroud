@@ -12,7 +12,7 @@ tags:
 # .test_entry_hash_chain()
 
 ## Connections
-- [[AuditEvent]] - `calls` [EXTRACTED]
+- [[AuditEvent_1]] - `calls` [EXTRACTED]
 - [[Test hash chain computation.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `method` [EXTRACTED]
 

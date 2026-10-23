@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "rationale"
-community: "Message Composition with MML (MIME Meta Language)"
+community: "SubagentGovernance"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/SubagentGovernance
 ---
 
 # Default governance instance in enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gov()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "sync-cve-registry.py"
+community: "_build_image_targets()"
 location: "L1127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/_build_image_targets
 ---
 
 # Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond gateway + the real…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_env_var_empty_string_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/_build_image_targets

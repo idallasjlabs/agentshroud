@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_main_endpoints.py"
+community: "scanner_integration.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/scanner_integrationpy
 ---
 
 # str
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
+- [[ProxyAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

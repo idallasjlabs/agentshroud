@@ -1,20 +1,19 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "_w"
-location: "L156"
+community: "test_collaborator_tracker.py (4)"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/test_collaborator_trackerpy_4
 ---
 
 # log()
 
 ## Connections
-- [[DOCKER-USER iptables reapply + verify (step 3)]] - `references` [EXTRACTED]
-- [[colima-health-check.sh]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[notify()]] - `calls` [EXTRACTED]
+- [[alert_critical()]] - `calls` [EXTRACTED]
+- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
+- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4

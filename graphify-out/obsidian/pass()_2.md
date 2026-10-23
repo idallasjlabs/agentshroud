@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
 type: "code"
-community: "One Shroud Over Every Wire (founding mantra)"
-location: "L51"
+community: "AWS Cloud Management & FinOps Agent (2)"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/AWS_Cloud_Management__FinOps_Agent_2
 ---
 
 # pass()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
+- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/code #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent_2

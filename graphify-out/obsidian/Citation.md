@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "KillSwitchMonitor (3)"
 location: "L142"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine_2
+  - community/KillSwitchMonitor_3
 ---
 
 # Citation
@@ -17,4 +17,4 @@ tags:
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine_2
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor_3

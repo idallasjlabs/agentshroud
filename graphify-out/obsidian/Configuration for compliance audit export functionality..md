@@ -12,6 +12,6 @@ tags:
 # Configuration for compliance audit export functionality.
 
 ## Connections
-- [[AuditExportConfig_1]] - `rationale_for` [EXTRACTED]
+- [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/GroupConfig

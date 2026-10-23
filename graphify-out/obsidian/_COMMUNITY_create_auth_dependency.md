@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.21
 members: 12
 ---
 
 # create_auth_dependency
 
+**Cohesion:** 0.21 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -13,7 +15,7 @@ members: 12
 - [[_no_real_telegram_network()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_refuse()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[clamd_sock_path()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[fixture_1]] - code
+- [[fixture_2]] - code
 - [[session_manager()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[smm()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[test_security_regressions_v1_2.py]] - code - gateway/tests/test_security_regressions_v1_2.py
@@ -37,12 +39,12 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestHermesEgressAllowlist]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency (2)]]
 - 1 edge to [[_COMMUNITY_create_auth_dependency (8)]]
-- 1 edge to [[_COMMUNITY_climain.py]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller (2)]]
 
 ## Top bridge nodes
 - [[test_security_regressions_v1_2.py]] - degree 13, connects to 8 communities
-- [[fixture_1]] - degree 7, connects to 1 community
+- [[fixture_2]] - degree 7, connects to 1 community
 - [[_no_real_telegram_network()]] - degree 4, connects to 1 community
 - [[clamd_sock_path()]] - degree 2, connects to 1 community

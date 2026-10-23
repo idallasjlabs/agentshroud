@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "SecureBrowser Skill (4)"
+community: "COMMUNICATION-TEMPLATES.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill_4
+  - community/COMMUNICATION-TEMPLATESmd
 ---
 
 # COMMUNICATION-TEMPLATES.md
@@ -19,4 +19,4 @@ tags:
 - [[Option 4 — Documentation Footer Trademark Notice]] - `references` [EXTRACTED]
 - [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill_4
+#graphify/document #graphify/EXTRACTED #community/COMMUNICATION-TEMPLATESmd

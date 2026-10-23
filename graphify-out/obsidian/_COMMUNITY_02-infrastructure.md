@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # 02-infrastructure.md
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -23,7 +25,7 @@ members: 19
 - [[Issue uvx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 - [[Output Format_16]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 - [[Related Skills_63]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Role_52]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Role_50]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 - [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 - [[When to Invoke_4]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 - [[hermesskillsi-mcpm-doctorSKILL]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "icloud/scripts/calendar.js"
+community: "SubagentGovernance"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/icloud/scripts/calendarjs
+  - community/SubagentGovernance
 ---
 
 # Tracks cumulative resource consumption for a single subagent.
 
 ## Connections
-- [[ResourceUsage_2]] - `rationale_for` [EXTRACTED]
+- [[ResourceUsage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/icloud/scripts/calendarjs
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

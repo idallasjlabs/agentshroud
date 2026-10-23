@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-architecture.md"
+source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "MiddlewareManager (5)"
-location: "L3"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_5
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_5
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

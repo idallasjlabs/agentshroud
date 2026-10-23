@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "record_decision()"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/record_decision
 ---
 
 # record_decision()
@@ -15,10 +15,10 @@ tags:
 - [[dot-_audit()_1]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool()_1]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_from_origin()]] - `calls` [EXTRACTED]
-- [[dot-check()_5]] - `calls` [EXTRACTED]
+- [[dot-check()_3]] - `calls` [EXTRACTED]
 - [[dot-evaluate()]] - `calls` [EXTRACTED]
 - [[dot-evaluate()_1]] - `calls` [EXTRACTED]
-- [[dot-record()]] - `calls` [EXTRACTED]
+- [[dot-record()_1]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_never_raises()]] - `calls` [EXTRACTED]
 - [[Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`]] - `rationale_for` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/record_decision

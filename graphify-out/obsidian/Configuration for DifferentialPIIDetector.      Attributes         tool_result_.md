@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "ReportStore"
 location: "L260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/ReportStore
 ---
 
 # Configuration for DifferentialPIIDetector.      Attributes:         tool_result_
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `rationale_for` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/ReportStore

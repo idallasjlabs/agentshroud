@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "TestParamSanitization"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/TestParamSanitization
 ---
 
 # .test_param_sql_injection_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParamSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestParamSanitization

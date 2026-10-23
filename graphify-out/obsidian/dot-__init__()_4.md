@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "KeyRotationManager (3)"
-location: "L818"
+community: "test_soc_realtime_coverage.py"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager_3
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeClient]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager_3
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

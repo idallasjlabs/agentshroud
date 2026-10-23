@@ -12,7 +12,7 @@ tags:
 # .get_flagged_queries()
 
 ## Connections
-- [[dot-get_audit_log()_6]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_7]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
 - [[DNSQuery_1]] - `references` [EXTRACTED]
 

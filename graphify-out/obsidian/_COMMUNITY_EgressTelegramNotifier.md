@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.12
 members: 24
 ---
 
 # EgressTelegramNotifier
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 24
 - [[OpenAI Image Gen]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[Other Notable Differences]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[Output_1]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Path_35]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[Path_40]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[Quality]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[Return (default_size, default_quality) for the given model.]] - rationale - skills/openclaw/openai-image-gen/scripts/gen.py
 - [[Run_1]] - document - skills/openclaw/openai-image-gen/SKILL.md
@@ -24,8 +26,8 @@ members: 24
 - [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_model_defaults()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_21]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_22]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[main()_17]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[main()_18]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[nano-banana-proSKILL]] - document - skills/openclaw/nano-banana-pro/SKILL.md
 - [[openai-image-genSKILL]] - document - skills/openclaw/openai-image-gen/SKILL.md
 - [[pick_prompts()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py

@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
+source_file: "scripts/switch_model.sh"
 type: "code"
-community: "parse_query"
-location: "L4"
+community: "test_egress_callback_stale.py"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/test_egress_callback_stalepy
 ---
 
 # usage()
 
 ## Connections
-- [[transcribe.sh]] - `defines` [EXTRACTED]
-- [[transcribe.sh script]] - `calls` [EXTRACTED]
+- [[switch_model.sh]] - `defines` [EXTRACTED]
+- [[switch_model.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_query
+#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy

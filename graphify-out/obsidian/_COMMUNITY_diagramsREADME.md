@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # diagrams/README.md
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members

@@ -18,11 +18,11 @@ tags:
 - [[Imports From  Exports To_1]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_15]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_2]] - `contains` [EXTRACTED]
-- [[Purpose_115]] - `contains` [EXTRACTED]
+- [[Purpose_113]] - `contains` [EXTRACTED]
 - [[Related_19]] - `contains` [EXTRACTED]
 - [[Responsibilities_17]] - `contains` [EXTRACTED]
 - [[Security Modules Initialized]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `contains` [EXTRACTED]
+- [[middleware.py]] - `contains` [EXTRACTED]
 - [[process_request Flow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

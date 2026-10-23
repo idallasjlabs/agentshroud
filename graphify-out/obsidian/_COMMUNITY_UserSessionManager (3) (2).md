@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 28
 ---
 
 # UserSessionManager (3) (2)
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 28 nodes
 
 ## Members
@@ -25,7 +27,7 @@ members: 28
 - [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAccessControl]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
@@ -47,8 +49,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 14 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
 - 4 edges to [[_COMMUNITY_AgentShroud Consolidated Issues Report]]
-- 2 edges to [[_COMMUNITY_api.py (3)]]
+- 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 2 edges to [[_COMMUNITY_is_rate_limited_post_retry]]
+- 2 edges to [[_COMMUNITY_api.py (3)]]
 - 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME.md (3)]]
 - 1 edge to [[_COMMUNITY_iCloud Data Manager (ICLOUD) (2)]]
 - 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep (4)]]
@@ -60,7 +63,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_bsp_iot_button_create (2)]]
 - 1 edge to [[_COMMUNITY_All Dependencies.md (3)]]
 - 1 edge to [[_COMMUNITY_TestAlreadyIngestedGhsaToday]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_MCP tools available — GitHub (reposPRsissues), Atlassian (JiraConfluence)]]
 - 1 edge to [[_COMMUNITY_shared network (sidecar mode bridge)]]
 - 1 edge to [[_COMMUNITY_Claude Code (PRIMARY agent)]]
@@ -72,10 +74,9 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-incident-responseSKILL]]
 - 1 edge to [[_COMMUNITY_dot-agentsskillsi-kanbanSKILL]]
 - 1 edge to [[_COMMUNITY__make_proxy()]]
-- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
 
 ## Top bridge nodes
-- [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities
+- [[test_scanner_integration_coverage.py]] - degree 50, connects to 27 communities
 - [[dot-_build_modules()]] - degree 3, connects to 1 community
 - [[dot-test_full_stack_with_review_evidence()]] - degree 2, connects to 1 community
 - [[dot-test_rich_environment()]] - degree 2, connects to 1 community

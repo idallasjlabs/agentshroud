@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "API Documentation"
+community: "test_mfa_guard.py"
 location: "L816"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Documentation
+  - community/test_mfa_guardpy
 ---
 
 # .test_at_least_one()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreSecureDevelopment]] - `method` [EXTRACTED]
 - [[_score_secure_development()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Documentation
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

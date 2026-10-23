@@ -15,6 +15,6 @@ tags:
 - [[A secret hidden in blocks must be caught even if `text` is benign.]] - `rationale_for` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentRegistry

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Basic Status (No Auth)]] - `contains` [EXTRACTED]
 - [[Full Health Report (Auth Required)]] - `contains` [EXTRACTED]
-- [[Health Checks_2]] - `contains` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

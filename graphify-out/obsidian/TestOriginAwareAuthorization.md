@@ -21,7 +21,7 @@ tags:
 - [[dot-test_unverified_origin_still_allows_public_tools()]] - `method` [EXTRACTED]
 - [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]

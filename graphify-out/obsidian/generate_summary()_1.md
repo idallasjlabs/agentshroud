@@ -12,7 +12,7 @@ tags:
 # generate_summary()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         alert]] - `rationale_for` [EXTRACTED]
 - [[categorize_alerts()]] - `calls` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]

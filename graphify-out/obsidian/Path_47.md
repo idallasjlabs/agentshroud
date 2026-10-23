@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "AgentShroud Consolidated Issues Report"
-location: "L41"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "MCPPermissionManager"
+community: ".connect()"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/connect
 ---
 
 # .connect()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Accept a WebSocket connection and add to connected set          Args]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/connect

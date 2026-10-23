@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path (3)"
+community: "_AGENT_CVE_REGISTRIES"
 location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/_AGENT_CVE_REGISTRIES
 ---
 
 # .test_all_mapped_layers_exist_in_registry()
@@ -16,4 +16,4 @@ tags:
 - [[TestDefenseLayerVocabulary]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_3
+#graphify/code #graphify/EXTRACTED #community/_AGENT_CVE_REGISTRIES

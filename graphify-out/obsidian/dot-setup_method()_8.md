@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L20"
+community: "MemoryIntegrityMonitor"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/MemoryIntegrityMonitor
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[OutputCanary]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
+- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

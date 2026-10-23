@@ -12,10 +12,10 @@ tags:
 # FakeGroup
 
 ## Connections
-- [[dot-__init__()_85]] - `method` [EXTRACTED]
+- [[dot-__init__()_78]] - `method` [EXTRACTED]
 - [[dot-model_dump()]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[test_add_group_member_paths()]] - `calls` [EXTRACTED]
 - [[test_create_group_paths()]] - `calls` [EXTRACTED]
 - [[test_delete_group_paths()]] - `calls` [EXTRACTED]

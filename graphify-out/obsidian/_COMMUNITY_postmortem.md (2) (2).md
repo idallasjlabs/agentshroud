@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # postmortem.md (2) (2)
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_us_ssn_regex_tightened.py]]
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
 
 ## Top bridge nodes
 - [[Future Enhancements]] - degree 6, connects to 1 community

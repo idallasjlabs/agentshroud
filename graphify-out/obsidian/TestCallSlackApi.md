@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_network_error_returns_synthetic_failure()]] - `method` [EXTRACTED]
 - [[dot-test_success_posts_with_bearer_token()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy_2

@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.36
 members: 8
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
 
+**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
