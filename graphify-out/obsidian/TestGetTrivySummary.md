@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "FalcoAlertWatcher (2)"
+community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
 ---
 
 # TestGetTrivySummary
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_returns_generate_summary_output()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention

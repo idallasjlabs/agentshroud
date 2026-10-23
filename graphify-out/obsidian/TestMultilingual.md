@@ -15,7 +15,7 @@ tags:
 - [[dot-test_multilingual_detection_rate()]] - `method` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[Multilingual injection variants.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

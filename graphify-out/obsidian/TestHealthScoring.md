@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "system-requirements.md (2)"
+community: "system-requirements.md"
 location: "L731"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd_2
+  - community/system-requirementsmd
 ---
 
 # TestHealthScoring
@@ -25,4 +25,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd_2
+#graphify/code #graphify/EXTRACTED #community/system-requirementsmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # The owner may write into any user's private memory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_write_into_user_memory_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

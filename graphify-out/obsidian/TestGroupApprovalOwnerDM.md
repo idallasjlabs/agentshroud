@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "ContextSegment"
+community: "MiddlewareManager (3)"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MiddlewareManager_3
 ---
 
 # TestGroupApprovalOwnerDM
@@ -17,9 +17,9 @@ tags:
 - [[dot-test_owner_dm_contains_action_type()]] - `method` [EXTRACTED]
 - [[dot-test_owner_dm_references_group_chat_id()]] - `method` [EXTRACTED]
 - [[dot-test_owner_receives_dm_for_group_approval()]] - `method` [EXTRACTED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[Owner must receive a DM when an approval originates from a group chat.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3

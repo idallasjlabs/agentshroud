@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_agentshroud_manager.py"
+source_file: "gateway/tests/test_update_conduit_push.py"
 type: "code"
-community: "upgrade"
+community: "_run()"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/_run
 ---
 
 # TestUpgrade
 
 ## Connections
-- [[dot-test_blocked_on_invalid_version()]] - `method` [EXTRACTED]
-- [[dot-test_dry_run()_1]] - `method` [EXTRACTED]
-- [[dot-test_sequential_upgrades()]] - `method` [EXTRACTED]
-- [[dot-test_successful_upgrade()]] - `method` [EXTRACTED]
-- [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[dot-test_already_at_pin_is_a_distinct_no_op()]] - `method` [EXTRACTED]
+- [[dot-test_installs_only_by_immutable_ref()]] - `method` [EXTRACTED]
+- [[dot-test_root_owned_install_is_handed_to_hermes_before_installing()]] - `method` [EXTRACTED]
+- [[dot-test_upgrades_to_the_pin_and_reports_from_to()]] - `method` [EXTRACTED]
+- [[test_update_conduit_push.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/_run

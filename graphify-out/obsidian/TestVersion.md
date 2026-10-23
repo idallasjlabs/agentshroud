@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path (2)"
+community: "Path"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/Path
 ---
 
 # TestVersion
@@ -25,4 +25,4 @@ tags:
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/Path

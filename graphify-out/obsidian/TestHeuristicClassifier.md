@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "TestHeuristicClassifier"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/TestHeuristicClassifier
 ---
 
 # TestHeuristicClassifier
 
 ## Connections
-- [[dot-setup_method()_29]] - `method` [EXTRACTED]
+- [[dot-setup_method()_21]] - `method` [EXTRACTED]
 - [[dot-test_backward_compat_alias()]] - `method` [EXTRACTED]
 - [[dot-test_benign_text_low_score()]] - `method` [EXTRACTED]
 - [[dot-test_classification_result_properties()]] - `method` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[Test the heuristic injection classifier.]] - `rationale_for` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

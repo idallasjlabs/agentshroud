@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "OpenSCAP"
-location: "L255"
+community: "FalcoAlertWatcher (2)"
+location: "L682"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/FalcoAlertWatcher_2
 ---
 
 # TestScoreSupplyChain
 
 ## Connections
-- [[dot-test_five_sbom_and_trivy_clean()]] - `method` [EXTRACTED]
-- [[dot-test_four_sbom_and_trivy_with_criticals()]] - `method` [EXTRACTED]
-- [[dot-test_three_sbom_has_packages_no_trivy()]] - `method` [EXTRACTED]
-- [[dot-test_two_empty_sbom()]] - `method` [EXTRACTED]
-- [[dot-test_zero_without_sbom()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[dot-test_two_when_sbom_present()]] - `method` [EXTRACTED]
+- [[dot-test_zero_when_empty_sbom_dir()]] - `method` [EXTRACTED]
+- [[dot-test_zero_when_no_sbom_dir()]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenSCAP
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2

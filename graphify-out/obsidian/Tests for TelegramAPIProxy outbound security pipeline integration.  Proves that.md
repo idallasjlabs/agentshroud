@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_proxy_outbound.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

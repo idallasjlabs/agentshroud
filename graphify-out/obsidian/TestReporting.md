@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_get_events_filtered()]] - `method` [EXTRACTED]
 - [[dot-test_peer_stats_updated()]] - `method` [EXTRACTED]
-- [[dot-test_summary()]] - `method` [EXTRACTED]
+- [[dot-test_summary()_1]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]

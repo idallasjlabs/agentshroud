@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_clean_when_installed_but_no_report()_1]] - `method` [EXTRACTED]
 - [[dot-test_infected_report()]] - `method` [EXTRACTED]
-- [[dot-test_not_run_when_no_report()_1]] - `method` [EXTRACTED]
+- [[dot-test_not_run_when_no_report()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_load_latest_json

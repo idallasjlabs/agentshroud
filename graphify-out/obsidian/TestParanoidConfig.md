@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "ForwardRequest"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/ForwardRequest
 ---
 
 # TestParanoidConfig
 
 ## Connections
-- [[dot-config()_2]] - `method` [EXTRACTED]
+- [[dot-config()_3]] - `method` [EXTRACTED]
 - [[dot-test_approval_queue_enabled()]] - `method` [EXTRACTED]
 - [[dot-test_container_hardening()]] - `method` [EXTRACTED]
 - [[dot-test_drift_detector_enabled()]] - `method` [EXTRACTED]
@@ -31,9 +31,9 @@ tags:
 - [[dot-test_ssh_requires_approval()]] - `method` [EXTRACTED]
 - [[dot-test_telemetry_disabled()]] - `method` [EXTRACTED]
 - [[dot-test_trust_manager_enabled()]] - `method` [EXTRACTED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

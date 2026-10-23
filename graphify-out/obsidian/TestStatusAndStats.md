@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "AgentTarget (3)"
+community: "KillSwitchMonitor"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_3
+  - community/KillSwitchMonitor
 ---
 
 # TestStatusAndStats
@@ -15,8 +15,8 @@ tags:
 - [[dot-test_clean_old_metrics_drops_stale_entries()]] - `method` [EXTRACTED]
 - [[dot-test_get_status_reports_verification_due()]] - `method` [EXTRACTED]
 - [[dot-test_get_system_stats_handles_psutil_error()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_3
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

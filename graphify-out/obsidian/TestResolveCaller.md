@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "MiddlewareManager (2)"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/MiddlewareManager_2
 ---
 
 # TestResolveCaller
@@ -19,13 +19,13 @@ tags:
 - [[dot-test_session_cookie_valid()]] - `method` [EXTRACTED]
 - [[dot-test_wrong_bearer_raises_401()]] - `method` [EXTRACTED]
 - [[dot-test_x_soc_token_header_valid()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_19]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[Role_64]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2

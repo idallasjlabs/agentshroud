@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "ProxyAction (2)"
+community: "ProxyAction"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction_2
+  - community/ProxyAction
 ---
 
 # TestToolResultInjectionScanner
 
 ## Connections
-- [[dot-setup_method()_37]] - `method` [EXTRACTED]
-- [[dot-test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_4]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()]] - `method` [EXTRACTED]
 - [[dot-test_clean_content_passes_through()]] - `method` [EXTRACTED]
 - [[dot-test_ignore_instructions_injection_high_severity()]] - `method` [EXTRACTED]
 - [[dot-test_xml_function_injection_detection()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_injection_scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction_2
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

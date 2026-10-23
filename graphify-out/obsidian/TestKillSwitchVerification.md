@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "EgressFilterConfig (4) (2)"
+community: "KillSwitchMonitor"
 location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_4_2
+  - community/KillSwitchMonitor
 ---
 
 # TestKillSwitchVerification
@@ -20,10 +20,10 @@ tags:
 - [[dot-test_script_exists_test_is_present()]] - `method` [EXTRACTED]
 - [[dot-test_verification_log_written()]] - `method` [EXTRACTED]
 - [[Automated verification that verify_killswitch() returns required fields.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_4_2
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

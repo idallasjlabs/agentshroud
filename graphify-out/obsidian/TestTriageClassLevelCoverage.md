@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "test_main_endpoints.py (2)"
+community: "TestTriageClassLevelCoverage"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/TestTriageClassLevelCoverage
 ---
 
 # TestTriageClassLevelCoverage
@@ -19,4 +19,4 @@ tags:
 - [[The durable statement is at the CLASS level, not per-CVE. A register entry…]] - `rationale_for` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/code #graphify/EXTRACTED #community/TestTriageClassLevelCoverage

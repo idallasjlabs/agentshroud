@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "FileSandbox"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/FileSandbox
 ---
 
 # TestPIIScanning
 
 ## Connections
 - [[dot-test_api_key_pattern_detected()]] - `method` [EXTRACTED]
-- [[dot-test_credit_card_detected()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_detected()_1]] - `method` [EXTRACTED]
 - [[dot-test_email_detected()]] - `method` [EXTRACTED]
 - [[dot-test_no_pii_clean()]] - `method` [EXTRACTED]
 - [[dot-test_pii_in_write_flagged()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[PIIScanner]] - `uses` [INFERRED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

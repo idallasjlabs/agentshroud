@@ -1,28 +1,37 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L265"
+community: "TestPIIDetection"
+location: "L183"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - graphify/INFERRED
+  - community/TestPIIDetection
 ---
 
 # TestPIIDetection
 
 ## Connections
-- [[dot-test_aws_key_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_pii_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_pii_in_url_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_private_key_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_ssn_in_url_flagged()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_clean_result_passes_through()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_detected()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_email_detected_but_low_threat()]] - `method` [EXTRACTED]
+- [[dot-test_pii_in_tool_result_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_detected_in_params()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_redacted_in_params()]] - `method` [EXTRACTED]
+- [[FindingType]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/TestPIIDetection
