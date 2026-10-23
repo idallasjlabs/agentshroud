@@ -12,7 +12,7 @@ tags:
 # test_get_pending()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[Test getting all pending requests]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

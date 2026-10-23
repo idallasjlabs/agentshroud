@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "ForwardRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/ForwardRequest
 ---
 
 # test_config_validation.py
 
 ## Connections
-- [[ForwardRequest_1]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `references` [EXTRACTED]
 - [[RouterConfig_1]] - `references` [EXTRACTED]
 - [[TestAllExampleConfigsExist]] - `contains` [EXTRACTED]
 - [[TestConfigValidation]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[egress_config.py]] - `conceptually_related_to` [INFERRED]
 - [[test_cron_jobs_prompts.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

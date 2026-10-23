@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "FetchOutcome"
+community: "agentshroud-blueteam/SKILL.md (2)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/agentshroud-blueteam/SKILLmd_2
 ---
 
 # test_outbound_filter.py
@@ -15,7 +15,7 @@ tags:
 - [[InfoCategory]] - `imports` [EXTRACTED]
 - [[OutboundInfoFilter]] - `imports` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `contains` [EXTRACTED]
-- [[TestIntegration_1]] - `contains` [EXTRACTED]
+- [[TestIntegration]] - `contains` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2

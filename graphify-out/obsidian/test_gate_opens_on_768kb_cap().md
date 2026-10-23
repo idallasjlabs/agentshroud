@@ -12,7 +12,7 @@ tags:
 # test_gate_opens_on_768kb_cap()
 
 ## Connections
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 - [[playback_gate_should_open()]] - `calls` [INFERRED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 

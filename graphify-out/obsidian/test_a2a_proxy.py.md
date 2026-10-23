@@ -12,12 +12,12 @@ tags:
 # test_a2a_proxy.py
 
 ## Connections
-- [[A2AMethod]] - `imports` [EXTRACTED]
+- [[A2AMethod_1]] - `imports` [EXTRACTED]
 - [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[A2AProxy_1]] - `imports` [EXTRACTED]
 - [[A2AProxyResult]] - `imports` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `imports` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
 - [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
 - [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `references` [EXTRACTED]
 - [[_Event]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "cli/main.py"
+community: "asyncio"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/asyncio
 ---
 
 # test_pipeline_clamav_error_fail_open()
@@ -18,4 +18,4 @@ tags:
 - [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "MemoryIntegrityMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/MemoryIntegrityMonitor
 ---
 
 # test_memory_lifecycle.py
@@ -16,7 +16,7 @@ tags:
 - [[ContentThreatType]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `imports` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `imports` [EXTRACTED]
 - [[MemorySecurityConfig]] - `imports` [EXTRACTED]
 - [[ModificationSource]] - `imports` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[TestMemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

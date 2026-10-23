@@ -12,7 +12,7 @@ tags:
 # test_denylisted_peer_is_denied_even_if_method_safe()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
+- [[A2APolicyEngine]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

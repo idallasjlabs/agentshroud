@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[HeuristicClassifier_1]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[TestClassicOverride]] - `contains` [EXTRACTED]
 - [[TestContextInjection]] - `contains` [EXTRACTED]
 - [[TestEncodingBypass]] - `contains` [EXTRACTED]

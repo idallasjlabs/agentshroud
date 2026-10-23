@@ -12,7 +12,7 @@ tags:
 # test_collaborator_tracker.py
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `imports` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[log_file()]] - `contains` [EXTRACTED]
 - [[test_collaborator_entry_has_is_owner_false()]] - `contains` [EXTRACTED]

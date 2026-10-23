@@ -12,10 +12,10 @@ tags:
 # ssh_write_file()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
-- [[SSHWriteFileRequest_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `references` [EXTRACTED]
 - [[Write file content to an allowlisted SSH host via structured transport. Unlike…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

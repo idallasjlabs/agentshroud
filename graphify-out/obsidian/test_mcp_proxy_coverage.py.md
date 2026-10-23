@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # test_mcp_proxy_coverage.py
@@ -17,9 +17,9 @@ tags:
 - [[FakeConn]] - `contains` [EXTRACTED]
 - [[FakeProcess]] - `contains` [EXTRACTED]
 - [[HttpSseConnection]] - `imports` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
+- [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector_1]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

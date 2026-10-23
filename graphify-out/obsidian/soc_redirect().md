@@ -12,7 +12,7 @@ tags:
 # soc_redirect()
 
 ## Connections
-- [[get_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

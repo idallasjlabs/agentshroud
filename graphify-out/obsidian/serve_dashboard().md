@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[JSONResponse]] - `calls` [INFERRED]
-- [[Path_1]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[Path_55]] - `calls` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - `rationale_for` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 

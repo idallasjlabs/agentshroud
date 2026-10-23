@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_fixes.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "MCPPermissionManager (2)"
-location: "L38"
+community: "CompetitiveIntelReport"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/CompetitiveIntelReport
 ---
 
 # sync_client()
 
 ## Connections
 - [[Sync TestClient for WebSocket tests_1]] - `rationale_for` [EXTRACTED]
-- [[test_security_fixes.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

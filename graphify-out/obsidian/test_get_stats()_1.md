@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
-location: "L182"
+community: "test_ledger.py"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/test_ledgerpy
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
+- [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/test_ledgerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "MCPPolicyEngine"
 location: "L1031"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/MCPPolicyEngine
 ---
 
 # skills_reload()
@@ -16,4 +16,4 @@ tags:
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

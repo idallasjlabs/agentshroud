@@ -12,7 +12,7 @@ tags:
 # sidecar.py
 
 ## Connections
-- [[ScanRequest]] - `contains` [EXTRACTED]
+- [[ScanRequest_1]] - `contains` [EXTRACTED]
 - [[ScanResponse]] - `contains` [EXTRACTED]
 - [[SidecarScanner]] - `contains` [EXTRACTED]
 

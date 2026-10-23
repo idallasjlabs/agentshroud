@@ -22,7 +22,7 @@ tags:
 - [[SessionManager]] - `contains` [EXTRACTED]
 - [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
 - [[browser_security.py]] - `references` [EXTRACTED]
-- [[log_sanitizer.py_2]] - `references` [EXTRACTED]
+- [[log_sanitizer.py]] - `references` [EXTRACTED]
 - [[oauth_security.py_2]] - `references` [EXTRACTED]
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 - [[test_session_security.py]] - `imports_from` [EXTRACTED]

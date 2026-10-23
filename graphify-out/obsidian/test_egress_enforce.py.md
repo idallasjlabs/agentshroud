@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `contains` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `contains` [EXTRACTED]

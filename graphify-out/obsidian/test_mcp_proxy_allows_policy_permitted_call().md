@@ -18,7 +18,7 @@ tags:
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
-- [[_base_config()]] - `calls` [EXTRACTED]
+- [[_base_config()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

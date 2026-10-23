@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "TestToolChainAnalyzer (3)"
+community: "SharedMemoryManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer_3
+  - community/SharedMemoryManager
 ---
 
 # session_manager.py (UserSessionManager)
@@ -17,4 +17,4 @@ tags:
 - [[test_session_manager.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer_3
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

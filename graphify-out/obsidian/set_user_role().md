@@ -12,8 +12,8 @@ tags:
 # set_user_role()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[Set a user's role (owner only).]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[put]] - `references` [EXTRACTED]

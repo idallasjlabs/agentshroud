@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "MCPPermissionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/MCPPermissionManager
 ---
 
 # test_performance.py
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[LedgerConfig_1]] - `imports` [EXTRACTED]
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_3]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `contains` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
 - [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

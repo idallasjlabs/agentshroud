@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "TestEgressApprovalQueue"
 location: "L2704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/TestEgressApprovalQueue
 ---
 
 # soc_websocket()
 
 ## Connections
-- [[WebSocket_6]] - `references` [EXTRACTED]
+- [[WebSocket_1]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

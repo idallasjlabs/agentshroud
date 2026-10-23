@@ -12,7 +12,7 @@ tags:
 # ssh_config.py
 
 ## Connections
-- [[SSHConfig]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `contains` [EXTRACTED]
 - [[SSHHostConfig]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 

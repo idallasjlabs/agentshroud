@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "is_overloaded (2)"
+community: "is_overloaded"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_overloaded_2
+  - community/is_overloaded
 ---
 
 # strip_provider_prefix()
@@ -17,4 +17,4 @@ tags:
 - [[resolve_model.py]] - `contains` [EXTRACTED]
 - [[test_strip_provider_prefix()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/is_overloaded_2
+#graphify/code #graphify/EXTRACTED #community/is_overloaded

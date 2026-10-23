@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "TelegramAPIProxy (3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/TelegramAPIProxy_3
 ---
 
 # test_intel_endpoint.py
@@ -22,9 +22,9 @@ tags:
 - [[_draft()]] - `contains` [EXTRACTED]
 - [[_inject_fetcher()]] - `contains` [EXTRACTED]
 - [[citation_verifier module]] - `references` [EXTRACTED]
-- [[client()_19]] - `contains` [EXTRACTED]
+- [[client()_3]] - `contains` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3

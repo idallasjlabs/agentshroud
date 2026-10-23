@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "rationale"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "SecurityPipeline (2)"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/SecurityPipeline_2
 ---
 
 # sendMessageDraft must be suppressed to prevent draft flicker leaks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2

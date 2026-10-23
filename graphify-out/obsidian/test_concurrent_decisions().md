@@ -12,7 +12,7 @@ tags:
 # test_concurrent_decisions()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[Test that concurrent decision attempts are handled correctly]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

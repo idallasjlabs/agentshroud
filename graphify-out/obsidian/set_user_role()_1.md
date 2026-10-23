@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[RBACConfig_3]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[Role_19]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `calls` [EXTRACTED]
+- [[Role_64]] - `calls` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[SetRoleRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]

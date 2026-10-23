@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Both bots must be reachable via the same router without conflict.]] - `rationale_for` [EXTRACTED]
-- [[ForwardRequest_1]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
 - [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]

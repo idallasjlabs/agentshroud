@@ -12,11 +12,11 @@ tags:
 # test_config()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig_1]] - `references` [EXTRACTED]
 - [[LedgerConfig_1]] - `calls` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 

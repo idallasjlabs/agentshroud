@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "TeamsConfig"
+community: "FileSandbox"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/FileSandbox
 ---
 
 # skills/README.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TeamsConfig
+#graphify/document #graphify/EXTRACTED #community/FileSandbox

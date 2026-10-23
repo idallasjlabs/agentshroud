@@ -12,7 +12,7 @@ tags:
 # test_forward_uses_chat_path()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[forward_to_agent builds URL from target.chat_path.]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

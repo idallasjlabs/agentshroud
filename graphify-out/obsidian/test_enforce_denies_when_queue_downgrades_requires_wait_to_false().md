@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - `rationale_for` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[_StubApprovalQueue]] - `calls` [EXTRACTED]
-- [[_base_config()_1]] - `calls` [EXTRACTED]
+- [[_base_config()]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

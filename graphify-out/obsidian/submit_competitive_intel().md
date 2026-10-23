@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "MCPPolicyEngine (2)"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MCPPolicyEngine_2
 ---
 
 # submit_competitive_intel()
@@ -20,4 +20,4 @@ tags:
 - [[_intel_verifier()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2

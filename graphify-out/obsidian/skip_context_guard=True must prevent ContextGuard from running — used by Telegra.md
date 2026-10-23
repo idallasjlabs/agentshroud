@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "KeyVaultConfig"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/KeyVaultConfig
 ---
 
 # skip_context_guard=True must prevent ContextGuard from running — used by Telegra
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_skip_context_guard_bypasses_step0()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

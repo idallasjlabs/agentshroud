@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ContextSegment"
-location: "L38"
+community: "ApprovalStore"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalStore
 ---
 
 # store()
 
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[Path_63]] - `references` [EXTRACTED]
-- [[test_approval_store.py]] - `contains` [EXTRACTED]
+- [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

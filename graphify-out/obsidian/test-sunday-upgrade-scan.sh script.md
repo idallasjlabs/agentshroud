@@ -21,6 +21,7 @@ tags:
 - [[run_apply()]] - `calls` [EXTRACTED]
 - [[run_gate()]] - `calls` [EXTRACTED]
 - [[summary()]] - `calls` [EXTRACTED]
+- [[t17_run()]] - `calls` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh]] - `contains` [EXTRACTED]
 - [[write_fake()]] - `calls` [EXTRACTED]
 

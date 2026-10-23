@@ -12,7 +12,7 @@ tags:
 # test_mixed_pii_and_injection()
 
 ## Connections
-- [[dot-process_inbound()_8]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_6]] - `calls` [EXTRACTED]
 - [[Message with both PII and injection — blocked before PII scan.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # test_forward_to_agent_timeout()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[Test forwarding handles timeout exception]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

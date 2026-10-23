@@ -15,7 +15,7 @@ tags:
 - [[Fail-closed a high-risk tool with no approval queue wired is denied,     never]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
-- [[_base_config()]] - `calls` [EXTRACTED]
+- [[_base_config()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

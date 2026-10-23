@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "Enum"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Enum
 ---
 
 # str
@@ -13,14 +13,14 @@ tags:
 ## Connections
 - [[A2ADecision]] - `inherits` [EXTRACTED]
 - [[A2AMessageType]] - `inherits` [EXTRACTED]
-- [[A2AMethod]] - `inherits` [EXTRACTED]
+- [[A2AMethod_1]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
-- [[Action_1]] - `inherits` [EXTRACTED]
+- [[Action_3]] - `inherits` [EXTRACTED]
 - [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
 - [[AuditResult_1]] - `inherits` [EXTRACTED]
 - [[ChainAction]] - `inherits` [EXTRACTED]
-- [[Decision_2]] - `inherits` [EXTRACTED]
+- [[Decision_6]] - `inherits` [EXTRACTED]
 - [[DelegationPrivilege]] - `inherits` [EXTRACTED]
 - [[DisclosureCategory]] - `inherits` [EXTRACTED]
 - [[EgressAction]] - `inherits` [EXTRACTED]
@@ -40,14 +40,14 @@ tags:
 - [[PermissionLevel_1]] - `inherits` [EXTRACTED]
 - [[PipelineAction]] - `inherits` [EXTRACTED]
 - [[Platform]] - `inherits` [EXTRACTED]
-- [[Resource_1]] - `inherits` [EXTRACTED]
+- [[Resource_2]] - `inherits` [EXTRACTED]
 - [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[RiskLevel_6]] - `inherits` [EXTRACTED]
-- [[Role_19]] - `inherits` [EXTRACTED]
+- [[Role_64]] - `inherits` [EXTRACTED]
 - [[SCLInterface_1]] - `inherits` [EXTRACTED]
 - [[ServicePrivacy]] - `inherits` [EXTRACTED]
 - [[ServiceStatus_1]] - `inherits` [EXTRACTED]
-- [[Severity_1]] - `inherits` [EXTRACTED]
+- [[Severity_8]] - `inherits` [EXTRACTED]
 - [[SubagentEventType]] - `inherits` [EXTRACTED]
 - [[ThreatAction]] - `inherits` [EXTRACTED]
 - [[ThreatLevel_2]] - `inherits` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[UserRole]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Enum

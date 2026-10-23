@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "TestEnforceDefaults"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestEnforceDefaults
 ---
 
 # test_enforce_defaults.py
 
 ## Connections
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_3]] - `imports` [EXTRACTED]
 - [[SecurityConfig_4]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[TestEnforceDefaults]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults

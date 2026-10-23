@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[BotIncidentSeverity]] - `imports` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
 - [[IncidentRecord]] - `imports` [EXTRACTED]
 - [[TestBotIncidentSeverity]] - `contains` [EXTRACTED]
 - [[TestBuildFullMesh]] - `contains` [EXTRACTED]

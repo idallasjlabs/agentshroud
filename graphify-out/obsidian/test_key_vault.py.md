@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "KeyVault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/KeyVault
 ---
 
 # test_key_vault.py
@@ -23,7 +23,7 @@ tags:
 - [[TestKeyScoping]] - `contains` [EXTRACTED]
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
-- [[config()_4]] - `contains` [EXTRACTED]
+- [[config()]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/KeyVault

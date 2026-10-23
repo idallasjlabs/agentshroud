@@ -12,10 +12,10 @@ tags:
 # test_config_with_ssh()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[GatewayConfig_3]] - `calls` [EXTRACTED]
 - [[LedgerConfig_1]] - `calls` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ContextSegment"
+community: "ApprovalStore"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalStore
 ---
 
 # test_persist_and_reload()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Items saved by one store instance are visible to another.]] - `rationale_for` [EXTRACTED]
-- [[Path_63]] - `references` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

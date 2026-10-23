@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "lifespan() (2)"
+community: "create_auth_dependency()"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan_2
+  - community/create_auth_dependency
 ---
 
 # test_constant_time_comparison()
@@ -16,4 +16,4 @@ tags:
 - [[test_security.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan_2
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

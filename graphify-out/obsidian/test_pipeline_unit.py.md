@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "KeyVaultConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/KeyVaultConfig
 ---
 
 # test_pipeline_unit.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[InstructionEnvelope]] - `imports` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[KeyVaultConfig]] - `imports` [EXTRACTED]
 - [[OutboundInfoFilter]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[ScanResult_4]] - `imports` [EXTRACTED]
+- [[ScanResult_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[TestAuditChain]] - `contains` [EXTRACTED]
 - [[TestAuditChainBounded]] - `contains` [EXTRACTED]
@@ -40,8 +40,8 @@ tags:
 - [[_FakeAttack]] - `contains` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `contains` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()_4]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_3]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
-- [[pipeline.py]] - `references` [EXTRACTED]
+- [[pipeline.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

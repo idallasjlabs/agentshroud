@@ -17,7 +17,7 @@ tags:
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - `rationale_for` [EXTRACTED]
-- [[_base_config()]] - `calls` [EXTRACTED]
+- [[_base_config()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

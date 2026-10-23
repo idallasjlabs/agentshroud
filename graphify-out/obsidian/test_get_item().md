@@ -12,7 +12,7 @@ tags:
 # test_get_item()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[Test getting a specific item by ID]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
