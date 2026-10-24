@@ -527,6 +527,27 @@ governance/compliance implications, cross-team coordination required.
 - Long-running commands may run in the background; report only failures or
   actionable summaries
 
+### Network-looking failures on marvin are NOT DNS until proven (owner rule, 2026-10-24)
+
+Applies to every agent (Claude, Gemini, Codex), dev and prod. Owner: *"There is
+nothing wrong with DNS. There is something wrong with the containers. Seems we see
+this every other rebuild."* This misdiagnosis has cost hours repeatedly.
+
+When a build or container fails with `Could not resolve host`, `server misbehaving`,
+`i/o timeout`, `Hash Sum mismatch` or similar, do NOT blame host DNS, mDNSResponder or
+the network, and do NOT alert the owner or the other environment about DNS. Triage:
+
+1. **Retry once.** Debian CDN index refreshes and one-off fetch errors are transient.
+2. **Docker/Colima side:** `docker ps -a` (restarts/exits), VM uptime
+   (`colima ssh -- uptime -s`), dockerd CPU, docker.sock connection count and stale
+   lazydocker (`colima ssh -- ss -x | grep -c docker.sock`), daemon errors
+   (`colima ssh -- sudo journalctl -u docker --since -30min`).
+3. **Test from inside a container:** `docker run --rm <image> getent hosts github.com`.
+   The Colima VM has no `nslookup`; a test using it proves nothing.
+4. **Only then** consider DNS, and only if a fresh healthy container still cannot
+   resolve while the daemon is healthy. Call it "suspected" and ask the owner before
+   alerting anyone.
+
 ### MCP tools available
 
 | MCP Server | Capabilities |

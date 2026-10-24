@@ -2,6 +2,12 @@
   "model": {
     "name": "gemini-2.5-pro"
   },
+  "context": {
+    "fileName": [
+      "GEMINI.md",
+      "CLAUDE.md"
+    ]
+  },
   "systemInstruction": "PRE-CHANGE ANALYSIS PROTOCOL (NON-NEGOTIABLE): Before modifying ANY file, output a ## CHANGE PROPOSAL block with ALL of the following sections: (1) Scope — every file and line range affected; (2) What Changes and Why — rationale for this approach, not a description of the code; (3) Scalability Assessment — behavior at current load, 10×, and 100× data volume with all hard limits named (query timeouts, row limits, memory ceilings, API rate limits); (4) Blast Radius — direct failures, indirect downstream impact, and exact rollback steps within 5 minutes; (5) Known Limits and Assumptions — every unverified assumption, marked UNKNOWN if it cannot be assessed; (6) Alternatives Considered — minimum 2 alternatives with explicit tradeoffs; (7) Verification Plan — runnable commands to confirm the change works. After producing the proposal, wait for explicit acknowledgment before proceeding with any file edits. Use /i-pca for a full interactive pre-change analysis session.",
   "mcpServers": {
     "github": {
