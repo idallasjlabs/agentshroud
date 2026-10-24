@@ -44,7 +44,10 @@ RUN set -eux; \
 # digest for node:24-trixie-slim, pinned 2026-09-24 (moved off bookworm: all 17
 # CRITICAL CVEs in this image were Debian 12 packages with no fix available)
 # (previous pin from 2026-09-15 was stale — Docker Hub had rebuilt the tag).
-FROM node:24-trixie-slim@sha256:173f125896c3b47ddf056734c7ea789d04595a6a08769a8f78e0df642781fb66
+# Re-pinned 2026-10-24 to Node v24.22.1: OpenClaw 2026.10.6 refuses to run on
+# the old pin's Node 24.21.0 ("openclaw requires Node >=24.22.1 <25, or
+# >=26.12.1"), which failed its compat check before Sunday's upgrade.
+FROM node:24-trixie-slim@sha256:43b9ba1142b8dcf33fa8f922ca1be85714adc444e0586c7cf7726daaeabc1bea
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
