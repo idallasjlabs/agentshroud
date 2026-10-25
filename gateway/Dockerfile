@@ -89,6 +89,7 @@ RUN set -eux; \
     /out-falcoctl version || true
 
 # === cosign builder (owner directive 2026-09-05: all fixable CVEs, no exceptions) ===
+# (2026-10-25: cosign 3.1.4 go.mod requires Go >= 1.27, so this stage uses golang:1.27 like falcoctl-builder.)
 # The v3.1.3 release binary (downloaded further below) IS the latest cosign
 # release, but Trivy still flags it for stale transitive deps: CVE-2026-56854
 # (golang.org/x/crypto, CRITICAL) plus x/mod, x/text, and grpc HIGHs — v3.1.3
@@ -96,7 +97,7 @@ RUN set -eux; \
 # falcoctl-builder above: rebuild from the same source tag with the deps
 # forced current, then overlay the result onto the release-binary install
 # below instead of using the download as-is.
-FROM golang:1.26-trixie@sha256:f06b7122f888680048afb247c4e5f49c0069eb6c4c1ccae0f3f4834527a8d22c AS cosign-builder
+FROM golang:1.27-trixie@sha256:2f84bc93ecfb2689f782b153fdcd368b5a7ab96c1386c65cdaccf35e726d6a44 AS cosign-builder
 ARG COSIGN_VERSION=3.1.4
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
