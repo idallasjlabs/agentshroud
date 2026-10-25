@@ -71,10 +71,22 @@ RUN touch /var/ossec/etc/client.keys && \
 # executable, so this hardening step doesn't interfere with it.
 RUN find / -perm /6000 -type f -exec chmod a-s {} + 2>/dev/null || true
 
+# /var/ossec/etc is the persistent wazuh-agent-etc volume, so after an upgrade
+# it still holds the OLD release's internal_options.conf. That file is
+# vendor-owned (site overrides belong in local_internal_options.conf) and a
+# newer wazuh-agentd refuses to start without its new keys: 4.14.9 on a
+# 4.14.8 volume -> "CRITICAL: (2301): Definition not found for:
+# 'agent.tcp_keepidle'" crash loop (dev, 2026-10-25). Keep a pristine copy
+# outside the volume and re-sync just that file on every start; ossec.conf,
+# client.keys and local_internal_options.conf in the volume are untouched.
+# cp onto the existing file keeps its owner/mode and needs only DAC_OVERRIDE;
+# install/chmod would need FOWNER, which cap_drop ALL removes.
+RUN cp /var/ossec/etc/internal_options.conf /var/ossec/internal_options.conf.dist
+
 # Deliberately no USER directive — wazuh-agentd must start as root so its
 # own internal privilege drop (-u wazuh -g wazuh, both now uid/gid 1000) can
 # succeed; it renounces root itself within the first seconds of running.
-ENTRYPOINT ["/var/ossec/bin/wazuh-agentd"]
+ENTRYPOINT ["/bin/sh", "-c", "cp -f /var/ossec/internal_options.conf.dist /var/ossec/etc/internal_options.conf && chown wazuh:wazuh /var/ossec/etc/internal_options.conf && exec /var/ossec/bin/wazuh-agentd \"$@\"", "--"]
 CMD ["-f"]
 
 # Repo commit this image was built from (set by scripts/asb and
