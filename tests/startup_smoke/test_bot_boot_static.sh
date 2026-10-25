@@ -317,6 +317,41 @@ check "S21: compat gate mounts the candidate's /opt/data from under \$HOME, not 
     "$([[ "$_s21_dir" == /Users/s21home/* ]] && grep -q 'a2a_data_dir="$COMPAT_MOUNT_TMP/' "$_s21_cvc" && ! grep -qE -- '-v "\$COMPAT_TMP' "$_s21_cvc" && echo true || echo false)" \
     "COMPAT_MOUNT_TMP='${_s21_dir}'"
 
+# S22: both pre-gateway `openclaw doctor --fix` repairs trigger on OpenClaw
+# 2026.10.6's actual pending-migration output, and run the image's own binary.
+# 10.6's doctor prints "Doctor stopped because a state migration refused to
+# continue" (agent DB schema 24 -> session-identity migration) and "Config
+# unavailable" — neither matched the old pattern, so the repair never ran and
+# the gateway exited on every boot (dev, 2026-10-25: 9 restarts, rollback).
+# The runtime volume still holds the PREVIOUS release until init reseeds it
+# (after these checks), so a bare `openclaw` ran the old binary's doctor.
+_s22_ok=true _s22_detail=""
+for _s22_f in "$REPO/docker/scripts/start-agentshroud.sh" "$REPO/docker/scripts/init-openclaw-config.sh"; do
+    _s22_re="$(grep -o 'grep -qiE "[^"]*doctor --fix[^"]*"' "$_s22_f" | head -1 | sed -E 's/^grep -qiE "(.*)"$/\1/')"
+    for _s22_msg in \
+        'Doctor stopped because a state migration refused to continue. Resolve the reported migration failure before retrying.' \
+        'Config warnings: /home/node/.openclaw/openclaw.json: Config unavailable; using environment and default agent directory settings.' \
+        'Legacy session store requires migration'; do
+        if [[ -z "$_s22_re" ]] || ! printf '%s' "$_s22_msg" | grep -qiE "$_s22_re"; then
+            _s22_ok=false; _s22_detail+="$(basename "$_s22_f") misses: ${_s22_msg:0:40}…; "
+        fi
+    done
+    if printf '%s' "Healthy. No issues found." | grep -qiE "${_s22_re:-.}"; then
+        _s22_ok=false; _s22_detail+="$(basename "$_s22_f") fires on a clean doctor; "
+    fi
+    if grep -qE '\$\(openclaw doctor' "$_s22_f" || ! grep -q '_oc_image_bin="/usr/local/bin/openclaw"' "$_s22_f"; then
+        _s22_ok=false; _s22_detail+="$(basename "$_s22_f") doctor not pinned to image binary; "
+    fi
+done
+_s22_init="$REPO/docker/scripts/init-openclaw-config.sh"
+_s22_seed="$(grep -n 'npm install -g "openclaw@' "$_s22_init" | head -1 | cut -d: -f1)"
+_s22_cli="$(grep -nE '"\$\{?_oc_image_bin\}?" doctor|\$\{_openclaw_bin\}|openclaw config set' "$_s22_init" | head -1 | cut -d: -f1)"
+if [[ -z "$_s22_seed" || -z "$_s22_cli" || "$_s22_seed" -ge "$_s22_cli" ]]; then
+    _s22_ok=false; _s22_detail+="init reseeds runtime volume (line ${_s22_seed:-?}) after first CLI use (line ${_s22_cli:-?}); "
+fi
+check "S22: pre-gateway doctor repair detects 2026.10.6 migrations, uses image binary" \
+    "$_s22_ok" "$_s22_detail"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

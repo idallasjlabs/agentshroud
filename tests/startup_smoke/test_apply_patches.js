@@ -94,7 +94,7 @@ console.log('\n=== test_apply_patches.js ===\n');
 {
   const cfg = runPatches(
     {
-      TELEGRAM_BOT_TOKEN: '1234567890:AAFakeFakeFakeFakeFakeFakeFakeFakeFake123',
+      TELEGRAM_BOT_TOKEN: '1234567890:AAFakeFakeFakeFakeFakeFakeFakeFakeFake123', // pragma: allowlist secret
       TELEGRAM_API_BASE_URL: 'http://gateway:8080/telegram-api',
     },
     baseConfig(),
@@ -112,7 +112,7 @@ console.log('\n=== test_apply_patches.js ===\n');
     channels: { telegram: { token: 'fake', apiRoot: 'http://existing:1234' } },
   };
   const cfg = runPatches({
-    TELEGRAM_BOT_TOKEN: '1234567890:AAFakeFakeFakeFakeFakeFakeFakeFakeFake123',
+    TELEGRAM_BOT_TOKEN: '1234567890:AAFakeFakeFakeFakeFakeFakeFakeFakeFake123', // pragma: allowlist secret
     TELEGRAM_API_BASE_URL: '',
   }, base);
   assert(
@@ -200,7 +200,7 @@ console.log('\n=== test_apply_patches.js ===\n');
 // Regression test for the garbled Telegram token normalization bug (pre-017e7bd):
 // a Keychain entry that captured TUI output (label + asterisks + token) instead of a bare value.
 {
-  const garbledToken = '\n  \u2192 Telegram bot token (marvin dev): **********************************************\n0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX';
+  const garbledToken = '\n  \u2192 Telegram bot token (marvin dev): **********************************************\n0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX'; // pragma: allowlist secret
   const cfg = runPatches(
     {
       TELEGRAM_BOT_TOKEN: garbledToken,
@@ -215,14 +215,14 @@ console.log('\n=== test_apply_patches.js ===\n');
   );
   assert(
     'A7b: Garbled multi-line token: last-line normalizer extracts the real token',
-    cfg?.channels?.telegram?.botToken === '0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX',
+    cfg?.channels?.telegram?.botToken === '0000000001:AAFakeTokenXXXXXXXXXXXXXXXXXXXXXXXX', // pragma: allowlist secret
     `got ${JSON.stringify(cfg?.channels?.telegram?.botToken)}`,
   );
 }
 
 // A8: Well-formed Telegram token is written verbatim
 {
-  const validToken = '9876543210:BBValidTokenBBValidTokenBBValidToken1';
+  const validToken = '9876543210:BBValidTokenBBValidTokenBBValidToken1'; // pragma: allowlist secret
   const cfg = runPatches(
     {
       TELEGRAM_BOT_TOKEN: validToken,
@@ -235,6 +235,73 @@ console.log('\n=== test_apply_patches.js ===\n');
     cfg?.channels?.telegram?.botToken === validToken,
     `got ${JSON.stringify(cfg?.channels?.telegram?.botToken)}`,
   );
+}
+
+// A9-A11: agent roster shape. OpenClaw 2026.10.6 retired agents.list for keyed
+// agents.entries; when both exist, `openclaw doctor --fix` deletes agents.list,
+// so any roster patch written only to the list is silently discarded (dev,
+// 2026-10-25: per-agent model pins and collaborator tool deny-lists lost).
+const ROSTER_ENV = { OPENCLAW_MAIN_MODEL: 'openai-local/test-model' };
+
+// A9: keyed roster is patched in place and stays keyed — no agents.list written
+{
+  const initial = baseConfig();
+  initial.agents = { entries: { main: { name: 'Main', workspace: 'ws-main' } } };
+  const cfg = runPatches(ROSTER_ENV, initial);
+  const entries = (cfg.agents && cfg.agents.entries) || {};
+  assert('A9a: keyed roster — agents.list not reintroduced', !('list' in (cfg.agents || {})));
+  assert('A9b: keyed roster — main keeps its existing fields', entries.main && entries.main.workspace === 'ws-main');
+  assert('A9c: keyed roster — main model pinned', entries.main && entries.main.model === 'openai-local/test-model');
+  assert('A9d: keyed roster — entries carry no id field', Object.values(entries).every((e) => !('id' in e)));
+  const collab = entries.collaborator || {};
+  assert('A9e: keyed roster — collaborator added with model pin', collab.model === 'openai-local/test-model');
+  assert(
+    'A9f: keyed roster — collaborator tool deny-list applied',
+    Array.isArray(collab.tools && collab.tools.deny) && collab.tools.deny.includes('exec'),
+  );
+  assert('A9g: keyed roster — main is first key', Object.keys(entries)[0] === 'main');
+}
+
+// A10: legacy list-only roster (OpenClaw < 2026.10.6) stays a list
+{
+  const initial = baseConfig();
+  initial.agents = { list: [{ id: 'main', name: 'Main' }] };
+  const cfg = runPatches(ROSTER_ENV, initial);
+  assert('A10a: list roster — still a list', Array.isArray(cfg.agents && cfg.agents.list));
+  assert('A10b: list roster — no entries invented', !('entries' in cfg.agents));
+  assert('A10c: list roster — main model pinned', cfg.agents.list[0].model === 'openai-local/test-model');
+}
+
+// A11: both present (the doctor flip) — entries is canonical, stale list dropped
+{
+  const initial = baseConfig();
+  initial.agents = {
+    entries: { main: { name: 'Main', workspace: 'ws-entries' } },
+    list: [{ id: 'main', name: 'Main', workspace: 'ws-stale-list' }],
+  };
+  const cfg = runPatches(ROSTER_ENV, initial);
+  assert('A11a: both — agents.list removed', !('list' in cfg.agents));
+  assert('A11b: both — entries values win', cfg.agents.entries.main.workspace === 'ws-entries');
+  assert('A11c: both — main model pinned', cfg.agents.entries.main.model === 'openai-local/test-model');
+}
+
+// A12: the provider OPENCLAW_MAIN_MODEL references is registered in
+// openclaw.json even when it differs from the MODEL_MODE-derived key. OpenClaw
+// 2026.10.6's `doctor --fix` treats a model whose provider is undeclared there
+// as stale: it strips the per-agent pins and swaps agents.defaults.model for a
+// cloud model (dev, 2026-10-25: MODE=local + openai-local/<model> ref routed
+// collaborators to openai/gpt-6-astra).
+{
+  const cfg = runPatches(
+    { AGENTSHROUD_MODEL_MODE: 'local', OPENCLAW_MAIN_MODEL: 'openai-local/test-model' },
+    baseConfig(),
+  );
+  const providers = (cfg.models && cfg.models.providers) || {};
+  const p = providers['openai-local'] || {};
+  assert('A12a: main model provider registered', !!providers['openai-local'], JSON.stringify(Object.keys(providers)));
+  assert('A12b: main model id declared under it', (p.models || []).some((m) => m.id === 'test-model'));
+  assert('A12c: openai-local uses the OpenAI-compatible api', p.api === 'openai');
+  assert('A12d: mode-derived provider still registered', !!providers.ollama);
 }
 
 // ── Summary ────────────────────────────────────────────────────────────────

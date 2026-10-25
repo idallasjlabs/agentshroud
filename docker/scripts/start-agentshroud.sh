@@ -537,11 +537,22 @@ fi
 # pays nothing. Never fatal: a failed repair is reported and startup continues,
 # because a degraded-but-running agent beats a crash-loop — and the warning
 # below makes the degraded state visible rather than silent.
-if command -v openclaw >/dev/null 2>&1; then
-  _doctor_status="$(openclaw doctor 2>&1 || true)"
-  if printf '%s' "$_doctor_status" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix"; then
+#
+# Runs the IMAGE's binary, not the one on PATH: PATH resolves to the
+# NPM_CONFIG_PREFIX runtime volume, which still holds the PREVIOUS release
+# until init-openclaw-config.sh reseeds it (after this point) — the old
+# binary's doctor knows nothing of the new release's migrations. 2026.10.6
+# reports them as "Doctor stopped because a state migration refused to
+# continue" / "Config unavailable", which the earlier pattern missed, so the
+# agent-DB migration never ran and the gateway exited on every boot (dev,
+# 2026-10-25).
+_oc_image_bin="/usr/local/bin/openclaw"
+[ -x "$_oc_image_bin" ] || _oc_image_bin="$(command -v openclaw || true)"
+if [ -n "$_oc_image_bin" ]; then
+  _doctor_status="$("$_oc_image_bin" doctor 2>&1 || true)"
+  if printf '%s' "$_doctor_status" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix|migration refused|config unavailable"; then
     echo "[startup] Pending OpenClaw migration detected — running 'openclaw doctor --fix' before gateway start..."
-    if _doctor_out="$(openclaw doctor --fix 2>&1)"; then
+    if _doctor_out="$("$_oc_image_bin" doctor --fix 2>&1)"; then
       echo "[startup] ✓ openclaw doctor --fix completed"
     else
       echo "[startup] ⚠ openclaw doctor --fix did not complete: $(printf '%s' "$_doctor_out" | tail -3)" >&2

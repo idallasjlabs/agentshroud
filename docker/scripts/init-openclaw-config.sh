@@ -25,6 +25,68 @@ set -euo pipefail
 DEFAULTS_DIR="${INIT_DEFAULTS_DIR:-/app/config-defaults/openclaw}"
 OPENCLAW_DIR="${INIT_OPENCLAW_DIR:-/home/node/.openclaw}"
 
+# ── 0. OpenClaw runtime version — reseed FIRST ───────────────────────────────
+# Runs before any step below that invokes the `openclaw` CLI (2c2 doctor, 2e
+# MCP, 2f sandbox `config set`). PATH resolves to this volume, so when it was
+# seeded later every CLI call on an upgrade boot ran the PREVIOUS release
+# against config the new release had just migrated (dev, 2026-10-25).
+# --- OpenClaw runtime version management ---
+# Seeds openclaw into the NPM_CONFIG_PREFIX volume (writable at runtime).
+# This enables the "Update now" button to install newer versions without
+# hitting the read-only rootfs (/usr/local/).
+IMAGE_VERSION_FILE="/app/.openclaw-image-version"
+RUNTIME_VERSION_FILE="${NPM_CONFIG_PREFIX:-/usr/local}/.openclaw-runtime-version"
+
+if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
+  IMAGE_VER="unknown"
+  [ -f "${IMAGE_VERSION_FILE}" ] && IMAGE_VER=$(cat "${IMAGE_VERSION_FILE}")
+
+  RUNTIME_VER="none"
+  [ -f "${RUNTIME_VERSION_FILE}" ] && RUNTIME_VER=$(cat "${RUNTIME_VERSION_FILE}")
+
+  if [ "${RUNTIME_VER}" != "${IMAGE_VER}" ]; then
+    echo "[init] Seeding openclaw ${IMAGE_VER} into NPM_CONFIG_PREFIX (was: ${RUNTIME_VER})..."
+    if npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -5; then
+      echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
+      echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
+      # Re-apply SDK patches to the volume-installed openclaw.
+      # The image build patches /usr/local/lib/node_modules/openclaw/, but the
+      # volume copy at NPM_CONFIG_PREFIX/lib/node_modules/ is unpatched.
+      # Without this, grammY and the Anthropic SDK bypass the gateway proxy.
+      for _patch in patch-anthropic-sdk.sh patch-telegram-sdk.sh patch-slack-sdk.sh patch-ws-proxy.sh; do
+        if [ -x "/usr/local/bin/${_patch}" ]; then
+          echo "[init] Re-applying ${_patch} to NPM_CONFIG_PREFIX install..."
+          sh "/usr/local/bin/${_patch}" 2>&1 || echo "[init] ⚠ ${_patch} failed (non-fatal)"
+        fi
+      done
+    else
+      echo "[init] ⚠ openclaw seed failed — bot will use image-bundled version (/usr/local/bin/openclaw)"
+    fi
+  else
+    echo "[init] ✓ openclaw ${RUNTIME_VER} already in NPM_CONFIG_PREFIX"
+  fi
+
+  # Always ensure ws proxy patch is applied to the runtime volume.
+  # The patch is idempotent (skips if AGENTSHROUD_WS_PROXY_PATCHED marker found).
+  # Must run outside the version-check block because existing volumes pre-date the patch.
+  if [ -x "/usr/local/bin/patch-ws-proxy.sh" ]; then
+    echo "[init] Ensuring ws proxy patch on NPM_CONFIG_PREFIX install..."
+    sh /usr/local/bin/patch-ws-proxy.sh 2>&1 || echo "[init] ⚠ patch-ws-proxy.sh failed (non-fatal)"
+  fi
+
+  # Always ensure Telegram/Anthropic/Slack SDK patches are applied to the runtime volume.
+  # These patches route API calls through the gateway proxy. They are idempotent — each
+  # checks for the old string before replacing, so re-running on already-patched files is safe.
+  # Must run outside the version-check block: plain container recreates (same image version)
+  # skip the version-check block entirely, leaving the runtime volume copy unpatched.
+  for _sdk_patch in patch-telegram-sdk.sh patch-anthropic-sdk.sh patch-slack-sdk.sh; do
+    if [ -x "/usr/local/bin/${_sdk_patch}" ]; then
+      echo "[init] Ensuring ${_sdk_patch} on NPM_CONFIG_PREFIX install..."
+      sh "/usr/local/bin/${_sdk_patch}" 2>&1 || echo "[init] ⚠ ${_sdk_patch} failed (non-fatal)"
+    fi
+  done
+fi
+
 # ── 1. cron/jobs.json — bootstrap on first run, re-seed when the image ship ──
 # Seeding model (fixes the stale-volume trap):
 #   - First run (missing file): copy the image default.
@@ -263,11 +325,14 @@ chmod 600 "${ROOT_MODELS_JSON}" 2>/dev/null || true
 # — after this script's writes, before its CLI calls — and still before the
 # gateway starts (once it's up it owns the state-database-coordinator lock and
 # `doctor --fix` fails with contention; see start-agentshroud.sh's comment).
-_openclaw_bin="$(command -v openclaw || true)"
-if [ -n "${_openclaw_bin}" ]; then
-  _cfg_doctor_status="$(openclaw doctor 2>&1 || true)"
-  if printf '%s' "${_cfg_doctor_status}" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix|config is invalid"; then
-    if _cfg_doctor_out="$(openclaw doctor --fix 2>&1)"; then
+# Image binary, not PATH's runtime-volume copy, for the same reason as in
+# start-agentshroud.sh: the volume is reseeded only further down this script.
+_oc_image_bin="/usr/local/bin/openclaw"
+[ -x "${_oc_image_bin}" ] || _oc_image_bin="$(command -v openclaw || true)"
+if [ -n "${_oc_image_bin}" ]; then
+  _cfg_doctor_status="$("${_oc_image_bin}" doctor 2>&1 || true)"
+  if printf '%s' "${_cfg_doctor_status}" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix|config is invalid|migration refused|config unavailable"; then
+    if _cfg_doctor_out="$("${_oc_image_bin}" doctor --fix 2>&1)"; then
       echo "[init] ✓ Normalized openclaw.json after config writes (openclaw doctor --fix)"
     else
       echo "[init] ⚠ openclaw doctor --fix did not complete after config writes: $(printf '%s' "${_cfg_doctor_out}" | tail -3)" >&2
@@ -534,63 +599,6 @@ if [ ! -f "${CONTEXT_FILE}" ]; then
   fi
 else
   echo "[init] ✓ context.md already exists — skipping"
-fi
-
-# --- OpenClaw runtime version management ---
-# Seeds openclaw into the NPM_CONFIG_PREFIX volume (writable at runtime).
-# This enables the "Update now" button to install newer versions without
-# hitting the read-only rootfs (/usr/local/).
-IMAGE_VERSION_FILE="/app/.openclaw-image-version"
-RUNTIME_VERSION_FILE="${NPM_CONFIG_PREFIX:-/usr/local}/.openclaw-runtime-version"
-
-if [ -n "${NPM_CONFIG_PREFIX}" ] && [ -d "${NPM_CONFIG_PREFIX}" ]; then
-  IMAGE_VER="unknown"
-  [ -f "${IMAGE_VERSION_FILE}" ] && IMAGE_VER=$(cat "${IMAGE_VERSION_FILE}")
-
-  RUNTIME_VER="none"
-  [ -f "${RUNTIME_VERSION_FILE}" ] && RUNTIME_VER=$(cat "${RUNTIME_VERSION_FILE}")
-
-  if [ "${RUNTIME_VER}" != "${IMAGE_VER}" ]; then
-    echo "[init] Seeding openclaw ${IMAGE_VER} into NPM_CONFIG_PREFIX (was: ${RUNTIME_VER})..."
-    if npm install -g "openclaw@${IMAGE_VER}" 2>&1 | tail -5; then
-      echo "${IMAGE_VER}" > "${RUNTIME_VERSION_FILE}"
-      echo "[init] ✓ openclaw ${IMAGE_VER} seeded to ${NPM_CONFIG_PREFIX}"
-      # Re-apply SDK patches to the volume-installed openclaw.
-      # The image build patches /usr/local/lib/node_modules/openclaw/, but the
-      # volume copy at NPM_CONFIG_PREFIX/lib/node_modules/ is unpatched.
-      # Without this, grammY and the Anthropic SDK bypass the gateway proxy.
-      for _patch in patch-anthropic-sdk.sh patch-telegram-sdk.sh patch-slack-sdk.sh patch-ws-proxy.sh; do
-        if [ -x "/usr/local/bin/${_patch}" ]; then
-          echo "[init] Re-applying ${_patch} to NPM_CONFIG_PREFIX install..."
-          sh "/usr/local/bin/${_patch}" 2>&1 || echo "[init] ⚠ ${_patch} failed (non-fatal)"
-        fi
-      done
-    else
-      echo "[init] ⚠ openclaw seed failed — bot will use image-bundled version (/usr/local/bin/openclaw)"
-    fi
-  else
-    echo "[init] ✓ openclaw ${RUNTIME_VER} already in NPM_CONFIG_PREFIX"
-  fi
-
-  # Always ensure ws proxy patch is applied to the runtime volume.
-  # The patch is idempotent (skips if AGENTSHROUD_WS_PROXY_PATCHED marker found).
-  # Must run outside the version-check block because existing volumes pre-date the patch.
-  if [ -x "/usr/local/bin/patch-ws-proxy.sh" ]; then
-    echo "[init] Ensuring ws proxy patch on NPM_CONFIG_PREFIX install..."
-    sh /usr/local/bin/patch-ws-proxy.sh 2>&1 || echo "[init] ⚠ patch-ws-proxy.sh failed (non-fatal)"
-  fi
-
-  # Always ensure Telegram/Anthropic/Slack SDK patches are applied to the runtime volume.
-  # These patches route API calls through the gateway proxy. They are idempotent — each
-  # checks for the old string before replacing, so re-running on already-patched files is safe.
-  # Must run outside the version-check block: plain container recreates (same image version)
-  # skip the version-check block entirely, leaving the runtime volume copy unpatched.
-  for _sdk_patch in patch-telegram-sdk.sh patch-anthropic-sdk.sh patch-slack-sdk.sh; do
-    if [ -x "/usr/local/bin/${_sdk_patch}" ]; then
-      echo "[init] Ensuring ${_sdk_patch} on NPM_CONFIG_PREFIX install..."
-      sh "/usr/local/bin/${_sdk_patch}" 2>&1 || echo "[init] ⚠ ${_sdk_patch} failed (non-fatal)"
-    fi
-  done
 fi
 
 # AGENTS.md: add "read BRAND.md" to the session startup checklist if absent.
