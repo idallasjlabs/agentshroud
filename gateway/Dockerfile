@@ -336,7 +336,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 # Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
 # SCRUM-101: 0.39.2 → 0.44.1 (latest stable; libs 0.25.4, patched Go/C deps). Sidecar intact.
 # 2026-09-22 Sunday upgrade: 0.44.1 → 0.45.0 (latest stable per GitHub releases).
-ARG FALCO_VERSION=0.45.0
+ARG FALCO_VERSION=0.45.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) FALCO_ARCH="aarch64" ;; \
