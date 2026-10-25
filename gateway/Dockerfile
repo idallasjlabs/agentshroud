@@ -97,7 +97,7 @@ RUN set -eux; \
 # forced current, then overlay the result onto the release-binary install
 # below instead of using the download as-is.
 FROM golang:1.26-trixie@sha256:f06b7122f888680048afb247c4e5f49c0069eb6c4c1ccae0f3f4834527a8d22c AS cosign-builder
-ARG COSIGN_VERSION=3.1.3
+ARG COSIGN_VERSION=3.1.4
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
     git clone --depth 1 --branch "v${COSIGN_VERSION}" \
@@ -247,7 +247,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.54.1  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG SYFT_VERSION=1.55.0  # SCRUM-100: patched Go; SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
