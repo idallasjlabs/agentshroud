@@ -102,7 +102,9 @@ class TestHealthCheckDnsServers:
         assert probes.count("1.1.1.1") == 1
 
     def test_never_restarts_anything(self, tmp_path):
-        body = _block(HEALTH_CHECK, "# 4c. The gateway's configured DNS servers", "# 5. Run container")
+        body = _block(
+            HEALTH_CHECK, "# 4c. The gateway's configured DNS servers", "# 5. Run container"
+        )
         assert "docker restart" not in body and "docker rm" not in body
 
     def test_container_without_dns_override_passes(self, tmp_path):
