@@ -716,6 +716,58 @@ check "T18: a SIGTERM-ignoring trivy is killed, and the scan fails instead of ha
         && grep -q 'scans FAILED: 1' "$TMPROOT/t18/out" && echo true || echo false)" \
     "rc=$rc18 secs=$t18_secs err=$(tail -5 "$TMPROOT/t18/err")"
 
+# ── T19: verify soaks from SETTLED health, not from `up` ─────────────────────
+# 2026-10-25 dev run 6: OpenClaw 2026.10.6's first boot re-seeds its npm volume
+# and runs `doctor --fix` (one restart, ~4.5 min to healthy). The soak started
+# at `up`, so that one migration restart failed verify and rolled back a good
+# upgrade. The soak must start once health has settled; a real crash loop never
+# settles and must still fail, as must a restart after it went healthy.
+B19="$TMPROOT/t19/bin"
+# shellcheck disable=SC2016
+write_fake "$B19" docker '
+S="$T19_STATE"
+[ "$1" = inspect ] || exit 0
+fmt="$3"; c="$4"
+if [ "$c" != oc ]; then
+  case "$fmt" in *RestartCount*) echo 0 ;; *Health*) echo healthy ;; *) echo running ;; esac
+  exit 0
+fi
+n=$(( $(cat "$S/n" 2>/dev/null || echo 0) + 1 )); echo "$n" > "$S/n"
+case "$T19_MODE:$fmt" in
+  settle:*RestartCount*) [ "$n" -lt 3 ] && echo 2 || echo 3 ;;
+  settle:*Health*)       [ "$n" -lt 6 ] && echo starting || echo healthy ;;
+  loop:*RestartCount*)   echo "$n" ;;
+  loop:*Health*)         echo starting ;;
+  late:*RestartCount*)   if [ -f "$S/r" ]; then echo 1; else touch "$S/r"; echo 0; fi ;;
+  late:*Health*)         echo healthy ;;
+  *)                     echo running ;;
+esac
+'
+sed -n '/^phase_verify() {/,/^}/p' "$APPLY_SH" > "$TMPROOT/t19/verify.sh"
+t19_run() {
+    local mode="$1" st="$TMPROOT/t19/$1"
+    mkdir -p "$st"
+    env -i PATH="$B19:/usr/bin:/bin" T19_MODE="$mode" T19_STATE="$st" \
+        SUNDAY_VERIFY_SETTLE_SECONDS=20 SUNDAY_VERIFY_POLL_SECONDS=0 "$BASH_BIN" -c "
+        log() { echo \"LOG \$*\"; }; err() { echo \"ERR \$*\"; }; warn() { :; }
+        _attempt_rollback() { echo ROLLBACK; }
+        CONTAINERS='gw oc'; SOAK_SECONDS=0
+        . '$TMPROOT/t19/verify.sh'; phase_verify" > "$st/out" 2>&1
+    echo $?
+}
+set +e
+rc19a=$(t19_run settle); rc19b=$(t19_run loop); rc19c=$(t19_run late)
+set -e
+check "T19: a first-boot restart BEFORE health settles is not a soak failure" \
+    "$([ "$rc19a" = 0 ] && grep -q 'verify: PASS' "$TMPROOT/t19/settle/out" && echo true || echo false)" \
+    "rc=$rc19a out=$(tail -4 "$TMPROOT/t19/settle/out")"
+check "T19: a crash loop that never settles still fails verify and rolls back" \
+    "$([ "$rc19b" = 40 ] && grep -q ROLLBACK "$TMPROOT/t19/loop/out" && echo true || echo false)" \
+    "rc=$rc19b out=$(tail -4 "$TMPROOT/t19/loop/out")"
+check "T19: a restart AFTER health settled still fails verify" \
+    "$([ "$rc19c" = 40 ] && grep -q 'RESTARTED during soak' "$TMPROOT/t19/late/out" && echo true || echo false)" \
+    "rc=$rc19c out=$(tail -4 "$TMPROOT/t19/late/out")"
+
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
