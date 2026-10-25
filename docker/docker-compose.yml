@@ -246,6 +246,8 @@ services:
 
     # Gateway DNS — defaults to public resolvers. Override via AGENTSHROUD_DNS_PRIMARY/SECONDARY
     # in docker/.env for site-specific resolvers (e.g. Pi-hole, local router).
+    # A LAN resolver here needs a fixed address (DHCP reservation): on 2026-10-24 the Pi-hole
+    # had moved and a dead first entry broke gateway lookups for hours (post-deploy-check P8).
     dns:
       - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
@@ -652,6 +654,8 @@ services:
       start_period: 60s
     # Bot DNS — defaults to public resolvers. Override via AGENTSHROUD_DNS_PRIMARY/SECONDARY
     # in docker/.env for site-specific resolvers (e.g. Pi-hole, local router).
+    # A LAN resolver here needs a fixed address (DHCP reservation): on 2026-10-24 the Pi-hole
+    # had moved and a dead first entry broke gateway lookups for hours (post-deploy-check P8).
     dns:
       - ${AGENTSHROUD_DNS_PRIMARY:-1.1.1.1}
       - ${AGENTSHROUD_DNS_SECONDARY:-8.8.8.8}
