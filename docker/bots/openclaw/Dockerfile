@@ -137,7 +137,7 @@ RUN printf '%s\n' \
 # copy inside OpenClaw's own container — caught by this run's full-repo
 # WAZUH_VERSION grep. Verified 4.14.8 is latest stable 4.x via GitHub releases
 # (v4.14.8, 2026-09-25; v5.0.0 line is still beta).
-ARG WAZUH_VERSION=4.14.8
+ARG WAZUH_VERSION=4.14.9
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
