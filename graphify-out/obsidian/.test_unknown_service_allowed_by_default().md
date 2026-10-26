@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_privacy_policy.py"
+type: "code"
+community: "Community 97"
+location: "L142"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_97
+---
+
+# .test_unknown_service_allowed_by_default()
+
+## Connections
+- [[TestServiceAccessControl]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_97
