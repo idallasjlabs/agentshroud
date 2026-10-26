@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "Community 311"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/Community_311
 ---
 
 # Return latest Trivy scan summary from saved reports.      When Trivy is installe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_trivy_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/rationale #graphify/EXTRACTED #community/Community_311

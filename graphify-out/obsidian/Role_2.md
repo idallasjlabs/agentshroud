@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
-type: "document"
-community: "dashboard_endpoints.py (2) (2)"
-location: "L8"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "Community 20"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2_2
+  - community/Community_20
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[.__init__()_129]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_20

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: ".agents/agents/vulcan.md"
 type: "document"
-community: "MiddlewareManager (8)"
-location: "L7"
+community: "Community 1951"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Community_1951
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/Community_1951

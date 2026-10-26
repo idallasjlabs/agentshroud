@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "AgentTarget (2)"
+community: "Community 34"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/Community_34
 ---
 
 # Return all configured agent targets          Returns:             List of AgentT
 
 ## Connections
-- [[dot-list_targets()]] - `rationale_for` [EXTRACTED]
+- [[.list_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

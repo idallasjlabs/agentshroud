@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "test_main_endpoints.py"
+community: "Community 562"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/Community_562
 ---
 
 # Result of scanning web content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ScanResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_562

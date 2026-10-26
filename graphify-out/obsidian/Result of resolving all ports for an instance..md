@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "TrustConfig (2)"
+community: "Community 109"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/Community_109
 ---
 
 # Result of resolving all ports for an instance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PortResolution]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_109

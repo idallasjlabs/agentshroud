@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "concept"
-community: "AgentShroud™ — Project Knowledge Base"
+community: "Community 466"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/AgentShroud__Project_Knowledge_Base
+  - graphify/INFERRED
+  - community/Community_466
 ---
 
 # Roadmap / Timeline — Development Phases
@@ -14,4 +14,4 @@ tags:
 - [[07-team-planning]] - `conceptually_related_to` [EXTRACTED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base
+#graphify/concept #graphify/INFERRED #community/Community_466

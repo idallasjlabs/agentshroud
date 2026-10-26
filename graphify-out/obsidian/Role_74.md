@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/socrates/SKILL.md"
 type: "document"
-community: "dashboard_endpoints.py (2)"
-location: "L7"
+community: "Community 1124"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/Community_1124
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_1124

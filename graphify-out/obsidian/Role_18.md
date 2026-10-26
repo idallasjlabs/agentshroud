@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "ServiceManager"
-location: "L141"
+source_file: ".agents/agents/i-mcpm-doctor.md"
+type: "document"
+community: "Community 1010"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/Community_1010
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_81]] - `references` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/document #graphify/EXTRACTED #community/Community_1010

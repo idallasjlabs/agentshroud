@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "DelegationManager"
+community: "Community 162"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_162
 ---
 
 # Rule: agentshroud-sql-injection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DelegationManager
+#graphify/concept #graphify/EXTRACTED #community/Community_162

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "test_a2a_proxy.py"
+community: "Community 124"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/Community_124
 ---
 
 # Return (router, sent_list) tuple for assertion convenience.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router_with_sent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_124

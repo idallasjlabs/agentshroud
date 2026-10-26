@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "_pcm_bytes"
+community: "Community 81"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/Community_81
 ---
 
 # Return proxy traffic statistics.
 
 ## Connections
-- [[dot-get_stats()_19]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

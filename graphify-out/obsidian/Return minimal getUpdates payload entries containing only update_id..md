@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (2)"
+community: "Community 344"
 location: "L3216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/Community_344
 ---
 
 # Return minimal getUpdates payload entries containing only update_id.
 
 ## Connections
-- [[dot-_build_ack_only_updates()]] - `rationale_for` [EXTRACTED]
+- [[._build_ack_only_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

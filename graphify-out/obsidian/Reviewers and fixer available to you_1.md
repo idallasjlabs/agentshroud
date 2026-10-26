@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-odev/SKILL.md"
+source_file: ".agents/agents/i-odev.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (3)"
-location: "L105"
+community: "Community 821"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_3
+  - community/Community_821
 ---
 
 # Reviewers and fixer available to you
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_3
+#graphify/document #graphify/EXTRACTED #community/Community_821

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "_make_proxy"
+community: "Community 89"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_89
 ---
 
 # Revoke an active delegation.          Returns True if a matching active delegati
 
 ## Connections
-- [[dot-revoke()]] - `rationale_for` [EXTRACTED]
+- [[.revoke()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_89

@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "killswitch.sh"
-location: "L184"
+community: "Community 534"
+location: "L342"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/Community_534
 ---
 
 # Rollback Instructions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/killswitchsh
+#graphify/document #graphify/EXTRACTED #community/Community_534

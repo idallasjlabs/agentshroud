@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".cursor/agents/i-hdev.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Application"
-location: "L8"
+community: "Community 841"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
+  - community/Community_841
 ---
 
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application
+#graphify/document #graphify/EXTRACTED #community/Community_841

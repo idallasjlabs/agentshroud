@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: ".can_use_tool()"
+community: "Community 61"
 location: "L559"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/can_use_tool
+  - community/Community_61
 ---
 
 # Return the list of tools the user is allowed to use (union of all sets).
 
 ## Connections
-- [[dot-get_allowed_tools()]] - `rationale_for` [EXTRACTED]
+- [[.get_allowed_tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/can_use_tool
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

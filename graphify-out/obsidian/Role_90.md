@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Identity Reference - AgentShroud System"
-location: "L7"
+community: "Community 182"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_Reference_-_AgentShroud_System
+  - community/Community_182
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System
+#graphify/document #graphify/EXTRACTED #community/Community_182

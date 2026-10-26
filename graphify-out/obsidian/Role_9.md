@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "Sprint Cadence Decision"
-location: "L7"
+community: "Community 1009"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_Decision
+  - community/Community_1009
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_Decision
+#graphify/document #graphify/EXTRACTED #community/Community_1009

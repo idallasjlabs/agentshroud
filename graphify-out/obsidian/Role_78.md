@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: ".cursor/agents/atlas.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (3)"
-location: "L7"
+community: "Community 1179"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_3
+  - community/Community_1179
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_3
+#graphify/document #graphify/EXTRACTED #community/Community_1179

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "fixture"
-location: "L8"
+community: "Community 1557"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fixture
+  - community/Community_1557
 ---
 
 # Role
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fixture
+#graphify/document #graphify/EXTRACTED #community/Community_1557

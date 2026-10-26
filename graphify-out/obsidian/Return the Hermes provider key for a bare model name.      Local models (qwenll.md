@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "rationale"
-community: "is_overloaded"
+community: "Community 1937"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Community_1937
 ---
 
 # Return the Hermes provider key for a bare model name.      Local models (qwen/ll
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[provider_for_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/Community_1937

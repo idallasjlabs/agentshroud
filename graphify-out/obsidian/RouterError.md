@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # RouterError
 
 ## Connections
-- [[dot-resolve_target()]] - `calls` [EXTRACTED]
+- [[.resolve_target()]] - `calls` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[Raised when no valid routing target found]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[ingest_apirouter.py]] - `contains` [EXTRACTED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_34

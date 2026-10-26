@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "postmortem.md (2)"
-location: "L7"
+community: "Community 1275"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd_2
+  - community/Community_1275
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1275

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "Community 99"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/Community_99
 ---
 
 # Return a health snapshot suitable for /status/detail.
 
 ## Connections
-- [[dot-get_health()_1]] - `rationale_for` [EXTRACTED]
+- [[.get_health()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_99

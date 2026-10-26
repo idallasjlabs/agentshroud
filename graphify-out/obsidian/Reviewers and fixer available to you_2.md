@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "fixture"
+community: "Community 634"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fixture
+  - community/Community_634
 ---
 
 # Reviewers and fixer available to you
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fixture
+#graphify/document #graphify/EXTRACTED #community/Community_634

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: ".agents/agents/atlas.md"
 type: "document"
-community: "WebContentScanner (2)"
-location: "L8"
+community: "Community 1138"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebContentScanner_2
+  - community/Community_1138
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebContentScanner_2
+#graphify/document #graphify/EXTRACTED #community/Community_1138

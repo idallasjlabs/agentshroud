@@ -1,17 +1,17 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "DelegationManager"
+community: "Community 162"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_162
 ---
 
 # Rule: agentshroud-ssrf-httpx
 
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DelegationManager
+#graphify/concept #graphify/EXTRACTED #community/Community_162
