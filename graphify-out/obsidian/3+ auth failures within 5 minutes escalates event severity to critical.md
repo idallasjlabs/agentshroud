@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "concept"
-community: "TestOutboundInfoFilter (2)"
+community: "Community 978"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_978
 ---
 
 # 3+ auth failures within 5 minutes escalates event severity to critical
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EventBus]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/concept #graphify/EXTRACTED #community/Community_978

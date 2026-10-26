@@ -1,17 +1,14 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "rationale"
-community: "test_collaborator_tracker.py (4)"
+community: "Community 2461"
 location: "31-47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Community_2461
 ---
 
 # 120s freshclam timeout rationale (bounded failure over outage)
 
-## Connections
-- [[security-entrypoint.sh]] - `references` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_2461

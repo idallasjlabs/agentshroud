@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "document"
-community: "REPORT STRUCTURE"
+community: "Community 903"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REPORT_STRUCTURE
+  - community/Community_903
 ---
 
 # 01-architecture.md
@@ -16,6 +16,6 @@ tags:
 - [[C4 Level 0 — System Context Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[C4 Level 1 — Container Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Gateway Internals Component Diagram]] - `conceptually_related_to` [EXTRACTED]
-- [[diagramsREADME]] - `references` [EXTRACTED]
+- [[README_120]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE
+#graphify/document #graphify/EXTRACTED #community/Community_903
