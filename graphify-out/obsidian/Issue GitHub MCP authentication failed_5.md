@@ -1,0 +1,17 @@
+---
+source_file: ".opencode/agents/i-mcpm-doctor.md"
+type: "document"
+community: "Community 1048"
+location: "L87"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1048
+---
+
+# Issue: "GitHub MCP authentication failed"
+
+## Connections
+- [[Common Issues & Fixes_5]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1048

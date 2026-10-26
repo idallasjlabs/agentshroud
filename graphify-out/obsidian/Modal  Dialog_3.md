@@ -1,0 +1,17 @@
+---
+source_file: ".github/agents/i-ui.agent.md"
+type: "document"
+community: "Community 599"
+location: "L169"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_599
+---
+
+# Modal / Dialog
+
+## Connections
+- [[Component Patterns_3]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_599
