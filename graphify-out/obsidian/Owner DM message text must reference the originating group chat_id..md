@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "MiddlewareManager (3)"
+community: "Community 30"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_30
 ---
 
 # Owner DM message text must reference the originating group chat_id.
 
 ## Connections
-- [[dot-test_owner_dm_references_group_chat_id()]] - `rationale_for` [EXTRACTED]
+- [[.test_owner_dm_references_group_chat_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: ".agents/agents/i-pca.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md (2)"
-location: "L80"
+community: "Community 1220"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd_2
+  - community/Community_1220
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1220

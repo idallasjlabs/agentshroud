@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "GroupConfig"
-location: "L380"
+community: "Community 973"
+location: "L324"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GroupConfig
+  - graphify/INFERRED
+  - community/Community_973
 ---
 
 # Path
 
 ## Connections
-- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[_run_wrapper()]] - `references` [EXTRACTED]
+- [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/INFERRED #community/Community_973

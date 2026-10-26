@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "GroupConfig"
-location: "L58"
+community: "Community 71"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GroupConfig
+  - graphify/INFERRED
+  - community/Community_71
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/INFERRED #community/Community_71

@@ -1,24 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Hermes — Reference Verifier (2)"
-location: "L9"
+community: "Community 389"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier_2
+  - community/Community_389
 ---
 
 # PII Pipeline Errors
 
 ## Connections
-- [[Excessive False Positives]] - `contains` [EXTRACTED]
-- [[PII Engine Not Initialized]] - `contains` [EXTRACTED]
-- [[PII Not Being Detected]] - `contains` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
-- [[Redaction Breaking JSONStructured Data]] - `contains` [EXTRACTED]
-- [[Related Notes_8]] - `contains` [EXTRACTED]
-- [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
-- [[spaCy Model Issues]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier_2
+#graphify/document #graphify/EXTRACTED #community/Community_389

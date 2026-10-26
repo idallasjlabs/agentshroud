@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: ".cursor/agents/sav.md"
 type: "document"
-community: "WebContentScanner (2)"
-location: "L26"
+community: "Community 343"
+location: "L398"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebContentScanner_2
+  - community/Community_343
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebContentScanner_2
+#graphify/document #graphify/EXTRACTED #community/Community_343

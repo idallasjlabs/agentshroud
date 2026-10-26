@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "scripts/security-scan.sh"
+community: "Community 1099"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/security-scansh
+  - community/Community_1099
 ---
 
 # PUBLISH-TO-CLAWHUB.md
@@ -16,4 +16,4 @@ tags:
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/security-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_1099

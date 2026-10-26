@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-doctor.md"
 type: "document"
-community: "aquasecurity/trivy 403s the Actions token but serves the public feed."
-location: "L26"
+community: "Community 1040"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
+  - community/Community_1040
 ---
 
 # Output Format
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
+#graphify/document #graphify/EXTRACTED #community/Community_1040

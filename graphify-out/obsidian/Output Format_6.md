@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
-location: "L36"
+community: "Community 266"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/Community_266
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_266

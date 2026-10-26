@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L89"
+community: "Community 596"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_596
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Community_596

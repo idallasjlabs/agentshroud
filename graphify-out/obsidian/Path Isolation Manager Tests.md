@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "Community 31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_31
 ---
 
 # Path Isolation Manager Tests
@@ -14,4 +14,4 @@ tags:
 - [[PathIsolationManager]] - `references` [EXTRACTED]
 - [[Privilege Separation File Sandbox Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/Community_31

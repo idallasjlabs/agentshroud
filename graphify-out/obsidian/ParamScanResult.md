@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_tool_chain_analyzer.py"
+community: "Community 8"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_tool_chain_analyzerpy
+  - community/Community_8
 ---
 
 # ParamScanResult
 
 ## Connections
-- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
 - [[Result of scanning tool parameters for injection patterns.]] - `rationale_for` [EXTRACTED]
 - [[TestParamSanitization]] - `uses` [INFERRED]
 - [[TestReversibilityScoring]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tool_chain_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/Community_8

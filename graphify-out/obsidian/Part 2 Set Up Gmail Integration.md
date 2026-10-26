@@ -1,18 +1,18 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "Community 244"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Community_244
 ---
 
 # Part 2: Set Up Gmail Integration
 
 ## Connections
-- [[Prerequisites_1]] - `contains` [EXTRACTED]
+- [[Prerequisites_11]] - `contains` [EXTRACTED]
 - [[Step 1 Enable IMAP in Gmail]] - `contains` [EXTRACTED]
 - [[Step 2 Create Gmail App Password]] - `contains` [EXTRACTED]
 - [[Step 3 Add Gmail to OpenClaw]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Test Gmail]] - `contains` [EXTRACTED]
 - [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Community_244

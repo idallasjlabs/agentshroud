@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "Community 374"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/Community_374
 ---
 
 # Part B - Semantic extraction (parallel subagents)
 
 ## Connections
-- [[Step 3 - Extract entities and relationships_1]] - `contains` [EXTRACTED]
+- [[Step 3 - Extract entities and relationships_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Community_374

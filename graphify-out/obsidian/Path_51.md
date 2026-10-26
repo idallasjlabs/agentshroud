@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
-location: "L205"
+community: "Community 74"
+location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Community_74
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_166]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()_2]] - `references` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `references` [EXTRACTED]
+- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/Community_74

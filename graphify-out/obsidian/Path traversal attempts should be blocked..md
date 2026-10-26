@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # Path traversal attempts should be blocked.
 
 ## Connections
-- [[dot-test_path_traversal_blocked()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_path_traversal_blocked()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

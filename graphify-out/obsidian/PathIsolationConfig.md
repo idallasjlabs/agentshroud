@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "Community 72"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PathIsolationManager
+  - community/Community_72
 ---
 
 # PathIsolationConfig
 
 ## Connections
-- [[dot-__init__()_118]] - `calls` [EXTRACTED]
-- [[dot-__init__()_106]] - `references` [EXTRACTED]
-- [[dot-config()]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `calls` [EXTRACTED]
-- [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_106]] - `references` [EXTRACTED]
+- [[.config()_4]] - `calls` [EXTRACTED]
+- [[.test_custom_config()_2]] - `calls` [EXTRACTED]
+- [[.test_default_config()_5]] - `calls` [EXTRACTED]
+- [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Configuration for path isolation system.]] - `rationale_for` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `references` [EXTRACTED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
@@ -37,10 +37,10 @@ tags:
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
 - [[path_isolation.py]] - `contains` [EXTRACTED]
-- [[run()_5]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PathIsolationManager
+#graphify/code #graphify/INFERRED #community/Community_72

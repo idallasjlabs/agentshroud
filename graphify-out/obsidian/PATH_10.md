@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Mode B — Comprehensive review sweep"
-location: "L14"
+community: "Community 126"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep
+  - community/Community_126
 ---
 
 # PATH
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep
+#graphify/code #graphify/EXTRACTED #community/Community_126

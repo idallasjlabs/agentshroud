@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+community: "Community 557"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
+  - community/Community_557
 ---
 
 # POST alert to /api/alerts with bounded retry + backoff.          Returns True on
 
 ## Connections
-- [[dot-_send_notification()]] - `rationale_for` [EXTRACTED]
+- [[._send_notification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
+#graphify/rationale #graphify/EXTRACTED #community/Community_557

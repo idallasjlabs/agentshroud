@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "background.js"
-location: "L27"
+community: "Community 1071"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/Community_1071
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/backgroundjs
+#graphify/document #graphify/EXTRACTED #community/Community_1071

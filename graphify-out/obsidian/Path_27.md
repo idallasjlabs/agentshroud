@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/tests/test_container_dns_check.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L42"
+community: "Community 1316"
+location: "L45"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ConfigIntegrityMonitor
+  - graphify/EXTRACTED
+  - community/Community_1316
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[_block()]] - `references` [EXTRACTED]
+- [[_run()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_1316

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: ".pi/mcp.json"
-location: "L13"
+community: "Community 418"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pi/mcpjson
+  - community/Community_418
 ---
 
 # Overview
 
 ## Connections
-- [[main.py]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pi/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_418

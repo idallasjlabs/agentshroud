@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "SubagentGovernance"
+community: "Community 2207"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Community_2207
 ---
 
 # OutputScore
 
 ## Connections
-- [[dot-acceptable()]] - `method` [EXTRACTED]
-- [[dot-score_output()]] - `references` [EXTRACTED]
+- [[.acceptable()]] - `method` [EXTRACTED]
+- [[.score_output()]] - `references` [EXTRACTED]
 - [[Result of scoring a subagent's output.]] - `rationale_for` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/Community_2207

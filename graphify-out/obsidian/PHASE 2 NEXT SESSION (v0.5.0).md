@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md"
 type: "document"
-community: "init_skill.py"
+community: "Community 879"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/Community_879
 ---
 
 # PHASE 2: NEXT SESSION (v0.5.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Recovery Plan v0.4.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/init_skillpy
+#graphify/document #graphify/EXTRACTED #community/Community_879

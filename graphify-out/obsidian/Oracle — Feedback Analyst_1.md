@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "Test-Driven Development (TDD)"
+community: "Community 2088"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_TDD
+  - community/Community_2088
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
 - [[Purpose_30]] - `contains` [EXTRACTED]
-- [[Related Skills_16]] - `contains` [EXTRACTED]
-- [[Usage_19]] - `contains` [EXTRACTED]
-- [[hermesskillsi-oracleREADME]] - `contains` [EXTRACTED]
+- [[README_30]] - `contains` [EXTRACTED]
+- [[Related Skills_36]] - `contains` [EXTRACTED]
+- [[Usage_36]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Community_2088

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/vulcan/SKILL.md"
 type: "document"
-community: "AgentShroud (system, C4 context) (2)"
-location: "L81"
+community: "Community 1974"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_2
+  - community/Community_1974
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2
+#graphify/document #graphify/EXTRACTED #community/Community_1974

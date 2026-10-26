@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "start-agentshroud.sh (2)"
+community: "Community 523"
 tags:
   - graphify/image
-  - graphify/EXTRACTED
-  - community/start-agentshroudsh_2
+  - graphify/INFERRED
+  - community/Community_523
 ---
 
 # PII redaction result (hash only in ledger, never persisted raw)
@@ -14,4 +14,4 @@ tags:
 - [[EphemeralTransient data (never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXTRACTED #community/start-agentshroudsh_2
+#graphify/image #graphify/INFERRED #community/Community_523

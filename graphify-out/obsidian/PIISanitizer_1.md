@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 84"
 location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_84
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[dot-_get_sanitizer_for_tool()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[._get_sanitizer_for_tool()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/INFERRED #community/Community_84

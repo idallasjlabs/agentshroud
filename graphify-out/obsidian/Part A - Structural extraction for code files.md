@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: ".agents/skills/graphify/references/extraction.md"
 type: "document"
-community: "What You Must Do When Invoked"
-location: "L163"
+community: "Community 2092"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Community_2092
 ---
 
 # Part A - Structural extraction for code files
 
 ## Connections
-- [[Step 3 - Extract entities and relationships]] - `contains` [EXTRACTED]
+- [[graphify Step 3 - Parts A, B and C]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Community_2092

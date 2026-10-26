@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "rationale"
-community: "1. Accomplishments This Phase"
+community: "Community 777"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/Community_777
 ---
 
 # Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_since()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/rationale #graphify/EXTRACTED #community/Community_777

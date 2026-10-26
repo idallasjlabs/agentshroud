@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # PII detection and redaction engine      Attempts to use Microsoft Presidio with
 
 ## Connections
-- [[PIISanitizer_3]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

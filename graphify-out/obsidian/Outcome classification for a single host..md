@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Docker Compose (infra diagram)"
+community: "Community 1072"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Compose_infra_diagram
+  - community/Community_1072
 ---
 
 # Outcome classification for a single host.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HostStatus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Compose_infra_diagram
+#graphify/rationale #graphify/EXTRACTED #community/Community_1072

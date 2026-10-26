@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
-location: "L62"
+community: "Community 777"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Community_777
 ---
 
 # Path
 
 ## Connections
-- [[dot-from_file()]] - `references` [EXTRACTED]
-- [[dot-from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/code #graphify/EXTRACTED #community/Community_777

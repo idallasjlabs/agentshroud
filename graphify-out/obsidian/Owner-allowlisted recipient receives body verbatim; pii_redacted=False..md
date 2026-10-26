@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "TestOwnerEmailBypassesPii"
+community: "Community 1127"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOwnerEmailBypassesPii
+  - community/Community_1127
 ---
 
 # Owner-allowlisted recipient receives body verbatim; pii_redacted=False.
 
 ## Connections
-- [[dot-test_owner_recipient_body_preserved()]] - `rationale_for` [EXTRACTED]
+- [[.test_owner_recipient_body_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOwnerEmailBypassesPii
+#graphify/rationale #graphify/EXTRACTED #community/Community_1127

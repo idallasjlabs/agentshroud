@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "UserSessionManager Isolation Tests"
+community: "Community 1796"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_Isolation_Tests
+  - community/Community_1796
 ---
 
 # Origin-Aware Authorization (refuse owner elevation over unverified origin)
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_Isolation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_1796

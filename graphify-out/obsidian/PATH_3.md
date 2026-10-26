@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/peer-review.sh"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "AgentShroud™ Communication Templates (2)"
-location: "L21"
+community: "Community 708"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates_2
+  - community/Community_708
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[peer-review.sh]] - `defines` [EXTRACTED]
+- [[.__init__()_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Communication_Templates_2
+#graphify/code #graphify/EXTRACTED #community/Community_708

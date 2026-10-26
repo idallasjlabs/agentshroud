@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "MCP Integrations (GitHub, Atlassian, AWS, XMind)"
+community: "Community 1595"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Integrations_GitHub_Atlassian_AWS_XMind
+  - community/Community_1595
 ---
 
 # PII redaction — presidio engine 0.9 confidence minimum
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Integrations_GitHub_Atlassian_AWS_XMind
+#graphify/rationale #graphify/EXTRACTED #community/Community_1595

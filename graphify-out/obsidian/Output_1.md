@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/SKILL.md"
+source_file: ".agents/agents/sec-offense.md"
 type: "document"
-community: "EgressTelegramNotifier"
-location: "L85"
+community: "Community 1059"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Community_1059
 ---
 
 # Output
 
 ## Connections
-- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/document #graphify/EXTRACTED #community/Community_1059

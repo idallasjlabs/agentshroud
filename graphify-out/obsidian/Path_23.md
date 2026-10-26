@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "ApprovalStore"
-location: "L43"
+community: "Community 0"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ApprovalStore
+  - graphify/INFERRED
+  - community/Community_0
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_92]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/INFERRED #community/Community_0

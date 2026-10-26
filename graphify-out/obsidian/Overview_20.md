@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "dashboard_endpoints.py"
-location: "L5"
+community: "Community 284"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/Community_284
 ---
 
 # Overview
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/Community_284

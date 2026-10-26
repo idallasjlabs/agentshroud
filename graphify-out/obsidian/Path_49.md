@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "AgentShroud Consolidated Issues Report"
-location: "L41"
+community: "Community 446"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/Community_446
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/code #graphify/EXTRACTED #community/Community_446

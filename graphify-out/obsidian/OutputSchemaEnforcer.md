@@ -1,28 +1,30 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "plan_remediation"
+community: "Community 262"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/Community_262
 ---
 
 # OutputSchemaEnforcer
 
 ## Connections
-- [[dot-__init__()_107]] - `method` [EXTRACTED]
-- [[dot-_register_default_schema()]] - `method` [EXTRACTED]
-- [[dot-register_schema()]] - `method` [EXTRACTED]
-- [[dot-validate()_1]] - `method` [EXTRACTED]
+- [[.__init__()_105]] - `method` [EXTRACTED]
+- [[._register_default_schema()]] - `method` [EXTRACTED]
+- [[.register_schema()]] - `method` [EXTRACTED]
+- [[.validate()_1]] - `method` [EXTRACTED]
 - [[Output Schema Enforcer Tests (C25)]] - `references` [EXTRACTED]
 - [[SchemaRule]] - `references` [EXTRACTED]
 - [[SchemaValidationResult]] - `references` [EXTRACTED]
 - [[TestOutputSchemaEnforcer]] - `uses` [INFERRED]
 - [[Validates outbound responses against structural schemas.      Usage          e]] - `rationale_for` [EXTRACTED]
-- [[enforcer()]] - `calls` [EXTRACTED]
+- [[enforcer()_1]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/Community_262

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "jira_dev_ticket run"
+community: "Community 2044"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/jira_dev_ticket_run
+  - community/Community_2044
 ---
 
 # PHASE 1: SECURITY FIX (CURRENT PRIORITY)
@@ -20,4 +20,4 @@ tags:
 - [[1.6 Success Criteria]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/jira_dev_ticket_run
+#graphify/document #graphify/EXTRACTED #community/Community_2044
