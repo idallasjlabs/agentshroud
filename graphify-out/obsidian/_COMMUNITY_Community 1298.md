@@ -1,0 +1,27 @@
+---
+type: community
+members: 4
+---
+
+# Community 1298
+
+**Members:** 4 nodes
+
+## Members
+- [[Community]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Documentation_5]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Related AgentShroud Docs]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Resources]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_1298
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 463]]
+
+## Top bridge nodes
+- [[Resources]] - degree 4, connects to 1 community
