@@ -1,0 +1,17 @@
+---
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+type: "document"
+community: "Community 607"
+location: "L229"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_607
+---
+
+# Constraints
+
+## Connections
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_607
