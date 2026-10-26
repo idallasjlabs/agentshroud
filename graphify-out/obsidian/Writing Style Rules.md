@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "P2 High Priority Incidents"
-location: "L199"
+community: "Community 712"
+location: "L202"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/P2_High_Priority_Incidents
+  - community/Community_712
 ---
 
 # Writing Style Rules
@@ -17,4 +17,4 @@ tags:
 - [[What Belongs Where]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents
+#graphify/document #graphify/EXTRACTED #community/Community_712

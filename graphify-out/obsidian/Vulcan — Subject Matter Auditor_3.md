@@ -1,25 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
+source_file: ".cursor/agents/vulcan.md"
 type: "document"
-community: "aquasecurity/trivy 403s the Actions token but serves the public feed."
-location: "L6"
+community: "Community 1958"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
+  - community/Community_1958
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_19]] - `contains` [EXTRACTED]
-- [[Output Format_34]] - `contains` [EXTRACTED]
-- [[Persona_15]] - `contains` [EXTRACTED]
-- [[Quality Checklist_17]] - `contains` [EXTRACTED]
-- [[Role_102]] - `contains` [EXTRACTED]
-- [[System Prompt_15]] - `contains` [EXTRACTED]
-- [[User Prompt Template_7]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-vulcanSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_29]] - `contains` [EXTRACTED]
+- [[Output Format_42]] - `contains` [EXTRACTED]
+- [[Persona_23]] - `contains` [EXTRACTED]
+- [[Quality Checklist_26]] - `contains` [EXTRACTED]
+- [[Role_111]] - `contains` [EXTRACTED]
+- [[System Prompt_23]] - `contains` [EXTRACTED]
+- [[User Prompt Template_11]] - `contains` [EXTRACTED]
+- [[vulcan_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aquasecurity/trivy_403s_the_Actions_token_but_serves_the_public_feed
+#graphify/document #graphify/EXTRACTED #community/Community_1958

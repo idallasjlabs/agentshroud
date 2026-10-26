@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
+community: "Community 47"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_47
 ---
 
 # _BlockingPipeline
 
 ## Connections
-- [[dot-process_outbound()_5]] - `method` [EXTRACTED]
+- [[.process_outbound()_7]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_47

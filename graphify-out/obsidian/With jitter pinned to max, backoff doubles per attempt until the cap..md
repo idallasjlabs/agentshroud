@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "Request (2)"
+community: "Community 176"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/Community_176
 ---
 
 # With jitter pinned to max, backoff doubles per attempt until the cap.
 
 ## Connections
-- [[dot-test_grows_exponentially_with_attempt()]] - `rationale_for` [EXTRACTED]
+- [[.test_grows_exponentially_with_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_176

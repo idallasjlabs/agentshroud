@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
-location: "L5"
+community: "Community 490"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_490
 ---
 
-# What is AgentShroud?
+# What Is AgentShroud?
 
 ## Connections
-- [[AgentShroud User Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/document #graphify/EXTRACTED #community/Community_490

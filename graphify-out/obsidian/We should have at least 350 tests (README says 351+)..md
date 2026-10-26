@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "test_forward_stream.py"
+community: "Community 130"
 location: "L311"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/Community_130
 ---
 
 # We should have at least 350 tests (README says 351+).
 
 ## Connections
-- [[dot-test_actual_test_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
+- [[.test_actual_test_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/rationale #graphify/EXTRACTED #community/Community_130

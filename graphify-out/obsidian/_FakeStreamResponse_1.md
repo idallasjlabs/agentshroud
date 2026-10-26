@@ -1,32 +1,27 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L316"
+community: "Community 2004"
+location: "L1412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/Community_2004
 ---
 
 # _FakeStreamResponse
 
 ## Connections
-- [[dot-__enter__()_1]] - `method` [EXTRACTED]
-- [[dot-__exit__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_50]] - `method` [EXTRACTED]
-- [[dot-iter_bytes()]] - `method` [EXTRACTED]
-- [[dot-test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
-- [[dot-test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]
-- [[dot-test_empty_body_yields_no_hash()]] - `calls` [EXTRACTED]
-- [[dot-test_non_2xx_status_passed_through()]] - `calls` [EXTRACTED]
-- [[dot-test_secure_stream_kwargs_are_pinned()]] - `calls` [EXTRACTED]
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[Stand-in for the object httpx.stream() yields as a context manager.]] - `rationale_for` [EXTRACTED]
-- [[test_citation_verifier.py]] - `contains` [EXTRACTED]
+- [[.__aenter__()_5]] - `method` [EXTRACTED]
+- [[.__aexit__()_5]] - `method` [EXTRACTED]
+- [[.__init__()_174]] - `method` [EXTRACTED]
+- [[.aiter_bytes()_1]] - `method` [EXTRACTED]
+- [[.aread()_1]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
+- [[VRAMHeadroomError]] - `uses` [INFERRED]
+- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - `calls` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/Community_2004

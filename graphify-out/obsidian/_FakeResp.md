@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "api.py (3)"
+community: "Community 998"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_3
+  - community/Community_998
 ---
 
 # _FakeResp
 
 ## Connections
-- [[dot-__init__()_205]] - `method` [EXTRACTED]
-- [[dot-_patch_http()]] - `calls` [EXTRACTED]
-- [[dot-read()_2]] - `method` [EXTRACTED]
+- [[.__init__()_183]] - `method` [EXTRACTED]
+- [[._patch_http()]] - `calls` [EXTRACTED]
+- [[.read()_1]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_3
+#graphify/code #graphify/EXTRACTED #community/Community_998

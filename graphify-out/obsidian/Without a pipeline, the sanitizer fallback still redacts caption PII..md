@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)"
+community: "Community 436"
 location: "L5182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind_AgentShroud
+  - community/Community_436
 ---
 
 # Without a pipeline, the sanitizer fallback still redacts caption PII.
 
 ## Connections
-- [[dot-test_multipart_sanitizer_fallback_redacts_pii()]] - `rationale_for` [EXTRACTED]
+- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind_AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/Community_436

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "Community 311"
 location: "L1043"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/Community_311
 ---
 
 # Write a fake image report file in the expected filename format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_write_image_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/rationale #graphify/EXTRACTED #community/Community_311

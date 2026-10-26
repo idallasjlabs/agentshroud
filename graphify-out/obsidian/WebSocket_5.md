@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L119"
+community: "Community 20"
+location: "L2704"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - graphify/INFERRED
+  - community/Community_20
 ---
 
 # WebSocket
 
 ## Connections
-- [[approval_websocket()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/INFERRED #community/Community_20

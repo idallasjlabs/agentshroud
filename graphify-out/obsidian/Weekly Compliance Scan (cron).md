@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "Community 398"
 location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Community_398
 ---
 
 # Weekly Compliance Scan (cron)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Automation Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_398

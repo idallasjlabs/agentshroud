@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
+source_file: ".cursor/agents/i-session-prompt.md"
 type: "document"
-community: "Security Verification Report (2)"
-location: "L20"
+community: "Community 1497"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_Report_2
+  - community/Community_1497
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 — Inject into All Three LLMs_2]] - `contains` [EXTRACTED]
 - [[Step 6 — Confirm_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report_2
+#graphify/document #graphify/EXTRACTED #community/Community_1497

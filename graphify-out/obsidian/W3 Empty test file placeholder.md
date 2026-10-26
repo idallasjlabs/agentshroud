@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "🟢 INFO (nice to have) (2)"
+community: "Community 840"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have_2
+  - community/Community_840
 ---
 
 # W3: Empty test file placeholder
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟡 WARNINGS (should fix)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have_2
+#graphify/document #graphify/EXTRACTED #community/Community_840

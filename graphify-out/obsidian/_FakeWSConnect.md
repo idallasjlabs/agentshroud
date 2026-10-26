@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "wakeword.c"
+community: "Community 302"
 location: "L740"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/Community_302
 ---
 
 # _FakeWSConnect
 
 ## Connections
-- [[dot-__aenter__()_4]] - `method` [EXTRACTED]
-- [[dot-__aexit__()_4]] - `method` [EXTRACTED]
-- [[dot-__init__()_128]] - `method` [EXTRACTED]
-- [[dot-test_sec_websocket_protocol_token_authenticates()]] - `calls` [EXTRACTED]
-- [[dot-test_token_query_param_authenticates_ws()]] - `calls` [EXTRACTED]
+- [[.__aenter__()_2]] - `method` [EXTRACTED]
+- [[.__aexit__()_2]] - `method` [EXTRACTED]
+- [[.__init__()_152]] - `method` [EXTRACTED]
+- [[.test_sec_websocket_protocol_token_authenticates()]] - `calls` [EXTRACTED]
+- [[.test_token_query_param_authenticates_ws()]] - `calls` [EXTRACTED]
 - [[Async context manager mimicking websockets.connect().]] - `rationale_for` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/Community_302

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
+community: "Community 179"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_179
 ---
 
 # Workspace Organization Tips
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 - [[Recommended Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_179

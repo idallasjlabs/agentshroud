@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "test_security_toolchain.py"
+community: "Community 356"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_356
 ---
 
 # White screen / content not loading
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Debugging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/document #graphify/EXTRACTED #community/Community_356

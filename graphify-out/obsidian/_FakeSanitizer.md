@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # _FakeSanitizer
 
 ## Connections
-- [[dot-block_credentials()]] - `method` [EXTRACTED]
-- [[dot-filter_xml_blocks()]] - `method` [EXTRACTED]
-- [[dot-sanitize()]] - `method` [EXTRACTED]
-- [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
+- [[.block_credentials()_1]] - `method` [EXTRACTED]
+- [[.filter_xml_blocks()_1]] - `method` [EXTRACTED]
+- [[.sanitize()_3]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
+- [[StreamHead]] - `uses` [INFERRED]
+- [[_run_stream()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - `calls` [EXTRACTED]
@@ -31,9 +33,9 @@ tags:
 - [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `calls` [EXTRACTED]
 - [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - `calls` [EXTRACTED]
 - [[test_scan_request_data_scans_messages_without_name_error()]] - `calls` [EXTRACTED]
-- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - `calls` [EXTRACTED]
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_allows_permitted_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/Community_1278

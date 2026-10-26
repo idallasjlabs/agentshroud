@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: ".cursor/agents/graphify.md"
 type: "document"
-community: "What You Must Do When Invoked (2)"
-location: "L47"
+community: "Community 926"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_2
+  - community/Community_926
 ---
 
 # What You Must Do When Invoked
 
 ## Connections
-- [[graphify_2]] - `contains` [EXTRACTED]
+- [[graphify_4]] - `contains` [EXTRACTED]
 - [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_2]] - `contains` [EXTRACTED]
 - [[Step 1 - Ensure graphify is installed_2]] - `contains` [EXTRACTED]
 - [[Step 2 - Detect files_2]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - `contains` [EXTRACTED]
 - [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_2
+#graphify/document #graphify/EXTRACTED #community/Community_926

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "9) GOVERNANCE & DECISION-MAKING"
+community: "Community 1301"
 location: "L512"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/9_GOVERNANCE__DECISION-MAKING
+  - community/Community_1301
 ---
 
 # When to defer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[9) GOVERNANCE & DECISION-MAKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/9_GOVERNANCE__DECISION-MAKING
+#graphify/document #graphify/EXTRACTED #community/Community_1301

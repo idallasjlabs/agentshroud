@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
+community: "Community 669"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
+  - community/Community_669
 ---
 
 # WebContentScanner._scan_hidden_content(content, result)
 
 ## Connections
-- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Function Details_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
+#graphify/document #graphify/EXTRACTED #community/Community_669

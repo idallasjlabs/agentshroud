@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
+community: "Community 205"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/Community_205
 ---
 
 # VolumeVerdict
 
 ## Connections
-- [[dot-observe()]] - `references` [EXTRACTED]
+- [[.observe()]] - `references` [EXTRACTED]
 - [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - `rationale_for` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/Community_205

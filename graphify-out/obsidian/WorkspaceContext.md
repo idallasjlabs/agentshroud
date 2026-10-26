@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "Community 65"
 location: "L63"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - graphify/INFERRED
+  - community/Community_65
 ---
 
 # WorkspaceContext
 
 ## Connections
-- [[dot-resolve_workspace()]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[.resolve_workspace()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/INFERRED #community/Community_65

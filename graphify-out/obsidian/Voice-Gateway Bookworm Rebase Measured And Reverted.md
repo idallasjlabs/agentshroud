@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "rationale"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Voice-Gateway Bookworm Rebase Measured And Reverted
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `cites` [EXTRACTED]
 - [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/rationale #graphify/EXTRACTED #community/Community_555

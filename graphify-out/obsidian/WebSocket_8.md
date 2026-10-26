@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "Enum"
-location: "L29"
+community: "Community 1006"
+location: "L425"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enum
+  - graphify/EXTRACTED
+  - community/Community_1006
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-__init__()_185]] - `references` [EXTRACTED]
-- [[Severity_8]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_1006

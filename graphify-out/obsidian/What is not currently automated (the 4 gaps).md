@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Mode A — Single task (5)"
+community: "Community 644"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_5
+  - community/Community_644
 ---
 
 # What is **not** currently automated (the 4 gaps)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_5
+#graphify/document #graphify/EXTRACTED #community/Community_644

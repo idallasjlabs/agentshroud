@@ -1,17 +1,17 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "event_bus.py"
+community: "Community 762"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/Community_762
 ---
 
 # With VPN connected
 
 ## Connections
-- [[Verification_12]] - `contains` [EXTRACTED]
+- [[Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/Community_762
