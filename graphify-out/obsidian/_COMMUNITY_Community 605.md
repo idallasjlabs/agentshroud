@@ -1,35 +1,37 @@
 ---
 type: community
-members: 22
+members: 24
 ---
 
 # Community 605
 
-**Members:** 22 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[._forward_file_download()]] - code - gateway/proxy/telegram_proxy.py
-- [[._forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_suppressed_outbound_payload()]] - code - gateway/proxy/telegram_proxy.py
-- [[._mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
-- [[._proxy_request_impl()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._telegram_create_invite_link()]] - code - gateway/proxy/telegram_proxy.py
-- [[._telegram_kick_member()]] - code - gateway/proxy/telegram_proxy.py
-- [[._username_for_bot()]] - code - gateway/proxy/telegram_proxy.py
-- [[.proxy_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward request to real Telegram API and return parsed response.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - rationale - gateway/proxy/telegram_proxy.py
-- [[True when filtered payload should be dropped instead of forwarded.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[.middleware_manager()]] - code - gateway/tests/test_session_isolation.py
+- [[.temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
+- [[.temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_cross_session_blocking()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_file_path_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_normalizes_invisible_unicode()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_own_workspace_allowed()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_owner_bypass()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_multi_turn_block_reason_hides_score()]] - code - gateway/tests/test_session_isolation.py
+- [[Blocked multi-turn sessions should not disclose scoring details.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace._1]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Input normalization should strip zero-width obfuscation before guards run.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware blocks access to sensitive system files.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware blocks cross-session access attempts.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware injects session context.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware requires user identification.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owner can perform cross-session actions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,15 +41,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Community 344]]
-- 2 edges to [[_COMMUNITY_Community 96]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 1119]]
+- 4 edges to [[_COMMUNITY_Community 1]]
+- 2 edges to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 61]]
 
 ## Top bridge nodes
-- [[._proxy_request_impl()]] - degree 15, connects to 4 communities
-- [[._resolve_text_field()]] - degree 7, connects to 3 communities
-- [[._mirror_to_owner_if_collaborator()]] - degree 5, connects to 2 communities
-- [[._forward_to_telegram()]] - degree 5, connects to 1 community
-- [[._username_for_bot()]] - degree 4, connects to 1 community
+- [[TestMiddlewareSessionEnforcement]] - degree 16, connects to 4 communities
+- [[.middleware_manager()]] - degree 4, connects to 2 communities
+- [[.temp_workspace()_3]] - degree 3, connects to 1 community

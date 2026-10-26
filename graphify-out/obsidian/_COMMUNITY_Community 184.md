@@ -1,11 +1,11 @@
 ---
 type: community
-members: 34
+members: 33
 ---
 
 # Community 184
 
-**Members:** 34 nodes
+**Members:** 33 nodes
 
 ## Members
 - [[.__len__()]] - code - gateway/proxy/mcp_audit.py
@@ -41,7 +41,6 @@ members: 34
 - [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
 - [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
 - [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
-- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,21 +50,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 64]]
-- 15 edges to [[_COMMUNITY_Community 140]]
-- 11 edges to [[_COMMUNITY_Community 230]]
-- 10 edges to [[_COMMUNITY_Community 59]]
-- 10 edges to [[_COMMUNITY_Community 132]]
-- 4 edges to [[_COMMUNITY_Community 329]]
+- 26 edges to [[_COMMUNITY_Community 64]]
+- 22 edges to [[_COMMUNITY_Community 132]]
+- 10 edges to [[_COMMUNITY_Community 230]]
+- 9 edges to [[_COMMUNITY_Community 54]]
+- 6 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 941]]
 - 1 edge to [[_COMMUNITY_Community 9]]
 - 1 edge to [[_COMMUNITY_Community 232]]
 - 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 941]]
+- 1 edge to [[_COMMUNITY_Community 140]]
 - 1 edge to [[_COMMUNITY_Community 1970]]
-- 1 edge to [[_COMMUNITY_Community 1070]]
+- 1 edge to [[_COMMUNITY_Community 2042]]
+- 1 edge to [[_COMMUNITY_Community 2071]]
+- 1 edge to [[_COMMUNITY_Community 59]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail]] - degree 90, connects to 12 communities
-- [[TestAuditTrailBounded]] - degree 20, connects to 5 communities
+- [[MCPAuditTrail]] - degree 90, connects to 13 communities
+- [[TestAuditTrailBounded]] - degree 20, connects to 6 communities
 - [[MCPAuditEntry]] - degree 11, connects to 1 community
-- [[audit()]] - degree 2, connects to 1 community

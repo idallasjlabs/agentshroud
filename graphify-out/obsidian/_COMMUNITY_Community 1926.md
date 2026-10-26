@@ -28,11 +28,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 6]]
+- 2 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 53]]
 - 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 53]]
 
 ## Top bridge nodes
-- [[TestHermesDashboardPathTraversal]] - degree 11, connects to 3 communities
+- [[TestHermesDashboardPathTraversal]] - degree 11, connects to 2 communities
 - [[.test_proxy_returns_400_on_traversal()]] - degree 3, connects to 1 community
 - [[.test_proxy_returns_400_on_traversal_in_query()]] - degree 3, connects to 1 community

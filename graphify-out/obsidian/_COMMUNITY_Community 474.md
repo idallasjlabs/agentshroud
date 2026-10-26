@@ -37,8 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 32]]
 - 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 105]]
 
 ## Top bridge nodes
-- [[TestMultiBotContextvarRouting]] - degree 14, connects to 2 communities
+- [[TestMultiBotContextvarRouting]] - degree 14, connects to 3 communities

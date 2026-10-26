@@ -35,8 +35,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_Community 0]]
 - 2 edges to [[_COMMUNITY_Community 365]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 2052]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 76]]
 
 ## Top bridge nodes
 - [[test_metadata_guard.py]] - degree 5, connects to 2 communities

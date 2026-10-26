@@ -120,13 +120,13 @@ SORT file.name ASC
 - 31 edges to [[_COMMUNITY_Community 101]]
 - 9 edges to [[_COMMUNITY_Community 77]]
 - 8 edges to [[_COMMUNITY_Community 1006]]
-- 6 edges to [[_COMMUNITY_Community 1127]]
+- 6 edges to [[_COMMUNITY_Community 37]]
 - 6 edges to [[_COMMUNITY_Community 846]]
 - 6 edges to [[_COMMUNITY_Community 688]]
 - 1 edge to [[_COMMUNITY_Community 161]]
 - 1 edge to [[_COMMUNITY_Community 847]]
 - 1 edge to [[_COMMUNITY_Community 851]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[test_voice_gateway.py]] - degree 115, connects to 8 communities

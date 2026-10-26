@@ -38,7 +38,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 195]]
-- 1 edge to [[_COMMUNITY_Community 394]]
+- 1 edge to [[_COMMUNITY_Community 1260]]
 
 ## Top bridge nodes
 - [[AgentShroud Operations Cheat Sheet]] - degree 20, connects to 2 communities

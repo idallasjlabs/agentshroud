@@ -1,11 +1,11 @@
 ---
 type: community
-members: 33
+members: 29
 ---
 
 # Community 281
 
-**Members:** 33 nodes
+**Members:** 29 nodes
 
 ## Members
 - [[._run_sync()]] - code - gateway/tests/test_skill_guard.py
@@ -26,11 +26,9 @@ members: 33
 - [[.test_sync_aborts_on_dangerous_tree()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_sync_allows_clean_tree()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
+- [[CompletedProcess_4]] - code - gateway/tests/test_skill_guard.py
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
-- [[IntEnum]] - code
-- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
 - [[Path_39]] - code - gateway/tests/test_skill_guard.py
-- [[Severity]] - code - gateway/security/skill_guard.py
 - [[TestClient]] - code - gateway/tests/test_skill_guard.py
 - [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
 - [[TestScanEntrypoint]] - code - gateway/tests/test_skill_guard.py
@@ -39,8 +37,6 @@ members: 33
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - rationale - gateway/tests/test_skill_guard.py
 - [[_run_scan_cli()]] - code - gateway/tests/test_skill_guard.py
 - [[_write_tree()]] - code - gateway/tests/test_skill_guard.py
-- [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
-- [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,19 +46,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 58 edges to [[_COMMUNITY_Community 133]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 56]]
-- 1 edge to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 710]]
-- 1 edge to [[_COMMUNITY_Community 137]]
-- 1 edge to [[_COMMUNITY_Community 40]]
+- 14 edges to [[_COMMUNITY_Community 924]]
+- 13 edges to [[_COMMUNITY_Community 133]]
+- 7 edges to [[_COMMUNITY_Community 2318]]
+- 7 edges to [[_COMMUNITY_Community 1808]]
 
 ## Top bridge nodes
-- [[IntEnum]] - degree 7, connects to 6 communities
-- [[test_skill_guard.py]] - degree 28, connects to 4 communities
-- [[Severity]] - degree 24, connects to 1 community
-- [[Path_39]] - degree 24, connects to 1 community
-- [[TestScanEntrypointInProcess]] - degree 13, connects to 1 community
+- [[Path_39]] - degree 24, connects to 4 communities
+- [[TestScanEntrypointInProcess]] - degree 13, connects to 4 communities
+- [[TestSyncScriptPreflight]] - degree 11, connects to 4 communities
+- [[TestReloadIntegration]] - degree 10, connects to 4 communities
+- [[TestScanEntrypoint]] - degree 10, connects to 4 communities

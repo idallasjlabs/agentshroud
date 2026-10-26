@@ -43,8 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 34]]
-- 1 edge to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 104]]
 - 1 edge to [[_COMMUNITY_Community 587]]
 - 1 edge to [[_COMMUNITY_Community 631]]
 - 1 edge to [[_COMMUNITY_Community 270]]
@@ -52,6 +51,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 457]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
+- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 3 communities
 - [[Implementation Status]] - degree 11, connects to 2 communities
 - [[Access Control (7)]] - degree 2, connects to 1 community

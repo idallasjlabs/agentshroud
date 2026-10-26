@@ -1,23 +1,36 @@
 ---
 type: community
-members: 10
+members: 23
 ---
 
 # Community 743
 
-**Members:** 10 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[AWS API MCP server (official, recommended)]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[AWS Athena MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[Agent layer (skills, subagents, orchestration)]] - concept - .llm_settings/WORKFLOW.md
-- [[Autonomous remote dev workflows (hdev, odev)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[Claude Code skill catalog (59 skills)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[Configure each tool natively (no config copying)]] - rationale - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
-- [[Four-tool role hierarchy summary]] - concept - .llm_settings/docs/CONFIGURATION_SUMMARY.md
-- [[Nine-stage AI-augmented lifecycle]] - concept - .llm_settings/WORKFLOW.md
-- [[Podcast pipeline skills (atlas→socrates→…→oracle)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[Tool comparison matrix (config format  agents  skills  hooks)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[.test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_features_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_features_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_missing_features()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_unknown()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_warn_missing()]] - code - gateway/tests/test_runtime_engines.py
+- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
+- [[Return features NOT available for a given runtime.]] - rationale - gateway/runtime/security.py
+- [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
+- [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
+- [[Return warning messages for missing security features.]] - rationale - gateway/runtime/security.py
+- [[SecurityFeature]] - code - gateway/runtime/security.py
+- [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
+- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
+- [[_validate_runtime()]] - code - gateway/runtime/security.py
+- [[get_features_for_runtime()]] - code - gateway/runtime/security.py
+- [[get_missing_features()]] - code - gateway/runtime/security.py
+- [[get_security_options()]] - code - gateway/runtime/security.py
+- [[security.py]] - code - gateway/runtime/security.py
+- [[warn_missing_features()]] - code - gateway/runtime/security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +40,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 494]]
-- 1 edge to [[_COMMUNITY_Community 2071]]
-- 1 edge to [[_COMMUNITY_Community 924]]
-- 1 edge to [[_COMMUNITY_Community 742]]
+- 7 edges to [[_COMMUNITY_Community 240]]
+- 5 edges to [[_COMMUNITY_Community 738]]
+- 5 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 379]]
+- 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[Claude Code skill catalog (59 skills)]] - degree 7, connects to 2 communities
-- [[AWS API MCP server (official, recommended)]] - degree 4, connects to 1 community
-- [[AWS Athena MCP server]] - degree 2, connects to 1 community
+- [[TestSecurityFeatures]] - degree 16, connects to 6 communities
+- [[security.py]] - degree 13, connects to 3 communities
+- [[warn_missing_features()]] - degree 9, connects to 3 communities
+- [[get_security_options()]] - degree 9, connects to 1 community
+- [[get_features_for_runtime()]] - degree 8, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 24
+members: 26
 ---
 
 # Community 372
 
-**Members:** 24 nodes
+**Members:** 26 nodes
 
 ## Members
 - [[.__init__()_47]] - code - gateway/runtime/docker_engine.py
@@ -20,6 +20,7 @@ members: 24
 - [[.network_create()_1]] - code - gateway/runtime/docker_engine.py
 - [[.network_rm()_1]] - code - gateway/runtime/docker_engine.py
 - [[.pause()_1]] - code - gateway/runtime/docker_engine.py
+- [[.ps()_1]] - code - gateway/runtime/docker_engine.py
 - [[.pull()_1]] - code - gateway/runtime/docker_engine.py
 - [[.push()_1]] - code - gateway/runtime/docker_engine.py
 - [[.rm()_1]] - code - gateway/runtime/docker_engine.py
@@ -31,6 +32,7 @@ members: 24
 - [[Any_26]] - code - gateway/runtime/docker_engine.py
 - [[Container engine backed by the Docker CLI.]] - rationale - gateway/runtime/docker_engine.py
 - [[ContainerEngine_1]] - code
+- [[ContainerInfo_1]] - code - gateway/runtime/docker_engine.py
 - [[DockerEngine]] - code - gateway/runtime/docker_engine.py
 
 ## Live Query (requires Dataview plugin)
@@ -41,14 +43,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 225]]
-- 7 edges to [[_COMMUNITY_Community 240]]
+- 7 edges to [[_COMMUNITY_Community 738]]
+- 5 edges to [[_COMMUNITY_Community 240]]
 - 3 edges to [[_COMMUNITY_Community 918]]
-- 2 edges to [[_COMMUNITY_Community 379]]
-- 2 edges to [[_COMMUNITY_Community 250]]
+- 3 edges to [[_COMMUNITY_Community 225]]
 - 2 edges to [[_COMMUNITY_Community 385]]
+- 1 edge to [[_COMMUNITY_Community 379]]
+- 1 edge to [[_COMMUNITY_Community 250]]
+- 1 edge to [[_COMMUNITY_Community 2010]]
+- 1 edge to [[_COMMUNITY_Community 2072]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 1052]]
 
 ## Top bridge nodes
-- [[DockerEngine]] - degree 43, connects to 6 communities
+- [[DockerEngine]] - degree 43, connects to 9 communities
 - [[ContainerEngine_1]] - degree 3, connects to 2 communities
-- [[Any_26]] - degree 3, connects to 1 community
+- [[ContainerInfo_1]] - degree 3, connects to 2 communities
+- [[Any_26]] - degree 3, connects to 2 communities

@@ -1,46 +1,49 @@
 ---
 type: community
-members: 33
+members: 36
 ---
 
 # Community 135
 
-**Members:** 33 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[._patch_urllib()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_raises_on_network_error()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_empty_when_all_known()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_new_advisory_not_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_advisory_whose_cve_is_already_tracked()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Any_37]] - code - gateway/security/daily_cve_report.py
-- [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - rationale - gateway/security/daily_cve_report.py
-- [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - rationale - gateway/security/daily_cve_report.py
-- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - rationale - gateway/security/daily_cve_report.py
-- [[Check if the upstream CVE watch already ran today (disk-based).]] - rationale - gateway/security/daily_cve_report.py
-- [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - rationale - gateway/security/daily_cve_report.py
-- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - rationale - gateway/security/daily_cve_report.py
-- [[Per-agent GHSA ids already alerted. Unreadable state means alert again, never si]] - rationale - gateway/security/daily_cve_report.py
-- [[Run the upstream CVE check for EVERY registered agent, independently.      Itera]] - rationale - gateway/security/daily_cve_report.py
-- [[Send a message via Telegram Bot API. Returns True on success.      ``text`` is d]] - rationale - gateway/security/daily_cve_report.py
-- [[Stub urllib.request.urlopen to return a list of advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestCheckUpstreamCves]] - code - gateway/tests/test_daily_cve_report.py
-- [[_already_checked_upstream_today()]] - code - gateway/security/daily_cve_report.py
-- [[_already_ingested_ghsa_today()]] - code - gateway/security/daily_cve_report.py
-- [[_load_alerted_ghsa()]] - code - gateway/security/daily_cve_report.py
-- [[_make_github_advisory()]] - code - gateway/tests/test_daily_cve_report.py
-- [[_save_alerted_ghsa()]] - code - gateway/security/daily_cve_report.py
-- [[_send_telegram()]] - code - gateway/security/daily_cve_report.py
-- [[check_upstream_cves()]] - code - gateway/security/daily_cve_report.py
-- [[daily_cve_report.py]] - code - gateway/security/daily_cve_report.py
-- [[ghsa_ingest_scheduler()]] - code - gateway/security/daily_cve_report.py
-- [[run_upstream_cve_check()]] - code - gateway/security/daily_cve_report.py
-- [[run_upstream_cve_check_all_agents()]] - code - gateway/security/daily_cve_report.py
-- [[upstream_cve_check_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
+- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
+- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
+- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
+- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
+- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
+- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
+- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
+- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
+- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
+- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
+- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
+- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
+- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
+- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
+- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
+- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
+- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
+- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
+- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
+- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
+- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
+- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
+- [[teams()_1]] - code - gateway/tests/test_group_config.py
+- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,19 +53,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 127]]
-- 4 edges to [[_COMMUNITY_Community 74]]
-- 4 edges to [[_COMMUNITY_Community 131]]
-- 3 edges to [[_COMMUNITY_Community 736]]
-- 3 edges to [[_COMMUNITY_Community 1202]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 42]]
-- 2 edges to [[_COMMUNITY_Community 1200]]
-- 1 edge to [[_COMMUNITY_Community 35]]
+- 9 edges to [[_COMMUNITY_Community 18]]
+- 8 edges to [[_COMMUNITY_Community 61]]
+- 3 edges to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[daily_cve_report.py]] - degree 27, connects to 8 communities
-- [[check_upstream_cves()]] - degree 13, connects to 2 communities
-- [[run_upstream_cve_check()]] - degree 10, connects to 2 communities
-- [[Any_37]] - degree 6, connects to 2 communities
-- [[TestCheckUpstreamCves]] - degree 9, connects to 1 community
+- [[test_group_config.py]] - degree 11, connects to 3 communities
+- [[TestUserCollabModeOverride]] - degree 9, connects to 2 communities
+- [[TeamsConfig_1]] - degree 7, connects to 2 communities
+- [[TestMembershipQueries]] - degree 7, connects to 2 communities
+- [[TestTeamsConfigParsing]] - degree 6, connects to 2 communities

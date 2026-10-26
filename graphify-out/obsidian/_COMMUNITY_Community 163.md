@@ -60,7 +60,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 185]]
 - 1 edge to [[_COMMUNITY_Community 49]]
 - 1 edge to [[_COMMUNITY_Community 112]]
 

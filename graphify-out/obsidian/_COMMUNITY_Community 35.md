@@ -1,11 +1,11 @@
 ---
 type: community
-members: 111
+members: 110
 ---
 
 # Community 35
 
-**Members:** 111 nodes
+**Members:** 110 nodes
 
 ## Members
 - [[.__init__()_94]] - code - gateway/security/mcp_policy.py
@@ -73,7 +73,6 @@ members: 111
 - [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - rationale - gateway/tests/test_mcp_policy.py
 - [[The result of evaluating a single MCP tool call against the policy.]] - rationale - gateway/security/mcp_policy.py
 - [[The synthesised default, fed to the engine, DENIES an unknown server.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
 - [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - rationale - gateway/security/mcp_policy.py
 - [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - rationale - gateway/tests/test_mcp_policy.py
 - [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
@@ -130,32 +129,27 @@ SORT file.name ASC
 ## Connections to other communities
 - 23 edges to [[_COMMUNITY_Community 30]]
 - 16 edges to [[_COMMUNITY_Community 64]]
-- 13 edges to [[_COMMUNITY_Community 6]]
-- 9 edges to [[_COMMUNITY_Community 104]]
-- 9 edges to [[_COMMUNITY_Community 7]]
+- 14 edges to [[_COMMUNITY_Community 104]]
+- 14 edges to [[_COMMUNITY_Community 61]]
+- 10 edges to [[_COMMUNITY_Community 7]]
+- 6 edges to [[_COMMUNITY_Community 32]]
 - 6 edges to [[_COMMUNITY_Community 329]]
-- 5 edges to [[_COMMUNITY_Community 32]]
-- 5 edges to [[_COMMUNITY_Community 24]]
 - 4 edges to [[_COMMUNITY_Community 49]]
 - 3 edges to [[_COMMUNITY_Community 8]]
-- 2 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 54]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 20]]
 - 2 edges to [[_COMMUNITY_Community 40]]
-- 2 edges to [[_COMMUNITY_Community 221]]
+- 2 edges to [[_COMMUNITY_Community 300]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 135]]
+- 1 edge to [[_COMMUNITY_Community 736]]
 - 1 edge to [[_COMMUNITY_Community 1200]]
-- 1 edge to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 307]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 - 1 edge to [[_COMMUNITY_Community 33]]
 - 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 307]]
 
 ## Top bridge nodes
-- [[load_config()]] - degree 51, connects to 15 communities
+- [[load_config()]] - degree 51, connects to 12 communities
 - [[MCPPolicyEngine]] - degree 46, connects to 4 communities
 - [[test_mcp_policy.py]] - degree 46, connects to 4 communities
 - [[MCPPolicyEngine_1]] - degree 39, connects to 4 communities

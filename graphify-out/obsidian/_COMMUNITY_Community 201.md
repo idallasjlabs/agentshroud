@@ -55,8 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 34]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 4 edges to [[_COMMUNITY_Community 2154]]
 
 ## Top bridge nodes
 - [[GatewayEmailService]] - degree 16, connects to 1 community

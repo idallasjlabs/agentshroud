@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 861]]
+- 1 edge to [[_COMMUNITY_Community 585]]
 
 ## Top bridge nodes
 - [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community

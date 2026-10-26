@@ -1,11 +1,11 @@
 ---
 type: community
-members: 75
+members: 74
 ---
 
 # Community 71
 
-**Members:** 75 nodes
+**Members:** 74 nodes
 
 ## Members
 - [[.__init__()_101]] - code - gateway/security/network_validator.py
@@ -26,7 +26,6 @@ members: 75
 - [[.test_get_security_report_shape()]] - code - gateway/tests/test_network_validator_gate.py
 - [[.test_network_security_finding_structure()]] - code - gateway/tests/test_network_validator.py
 - [[.test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
-- [[.test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
 - [[.test_privileged_service_is_critical()]] - code - gateway/tests/test_network_validator_gate.py
 - [[.test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
 - [[.test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
@@ -92,14 +91,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 0]]
-- 12 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 431]]
+- 11 edges to [[_COMMUNITY_Community 0]]
+- 10 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 431]]
+- 2 edges to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 509]]
 - 1 edge to [[_COMMUNITY_Community 227]]
 
 ## Top bridge nodes
-- [[NetworkValidator]] - degree 56, connects to 4 communities
+- [[NetworkValidator]] - degree 56, connects to 8 communities
 - [[validate_network_security()]] - degree 10, connects to 1 community
 - [[network_validator.py]] - degree 6, connects to 1 community
-- [[.test_network_validator_init()]] - degree 2, connects to 1 community

@@ -35,15 +35,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_Community 1343]]
-- 9 edges to [[_COMMUNITY_Community 1269]]
+- 7 edges to [[_COMMUNITY_Community 1269]]
 - 6 edges to [[_COMMUNITY_Community 38]]
 - 3 edges to [[_COMMUNITY_Community 2031]]
 - 3 edges to [[_COMMUNITY_Community 2032]]
 - 3 edges to [[_COMMUNITY_Community 2033]]
+- 2 edges to [[_COMMUNITY_Community 2207]]
 
 ## Top bridge nodes
-- [[GovernanceConfig]] - degree 17, connects to 6 communities
+- [[GovernanceConfig]] - degree 17, connects to 7 communities
 - [[test_subagent_governance.py]] - degree 17, connects to 6 communities
-- [[ResourceBudget]] - degree 13, connects to 5 communities
+- [[ResourceBudget]] - degree 13, connects to 6 communities
 - [[TestResourceBudgets]] - degree 12, connects to 2 communities
 - [[gov()]] - degree 4, connects to 1 community

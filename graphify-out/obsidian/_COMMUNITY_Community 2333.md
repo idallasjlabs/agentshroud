@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[_is_local_oom returns False for cloud 429 quota errors (different failover path)]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_returns_false_for_quota_429()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_default_config()_4]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test default configuration values._3]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 203]]
+- 1 edge to [[_COMMUNITY_Community 16]]
 
 ## Top bridge nodes
-- [[test_is_local_oom_returns_false_for_quota_429()]] - degree 2, connects to 1 community
+- [[.test_default_config()_4]] - degree 3, connects to 2 communities

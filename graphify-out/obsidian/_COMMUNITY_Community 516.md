@@ -1,32 +1,37 @@
 ---
 type: community
-members: 19
+members: 24
 ---
 
 # Community 516
 
-**Members:** 19 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[.test_is_valid_domain_name_accepts_hyphenated_inner_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_accepts_mixed_case_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_accepts_numeric_inner_labels()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_accepts_standard_host()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_accepts_uppercase_input_via_normalization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_enforces_tld_rules()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_handles_none_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_empty_or_whitespace()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_leading_or_trailing_dot()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_malformed_hosts()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_overlong_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_overlong_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_punycode_and_non_ascii_labels()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_single_label_host()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_underscore_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_rejects_whitespace_inside_label()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_valid_domain_name_strips_surrounding_whitespace()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestDomainValidationHelper]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unit tests for domain validator used by egress approval flow.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[AGENTSHROUD_MODE]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Description_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Description_7]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Description_8]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Effect]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Related Notes_29]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Related Notes_35]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Related Notes_36]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Usage_142]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Value_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
+- [[Values_2]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Values_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +41,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 99]]
+- 2 edges to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 73]]
 
 ## Top bridge nodes
-- [[TestDomainValidationHelper]] - degree 23, connects to 3 communities
+- [[AGENTSHROUD_MODE]] - degree 6, connects to 4 communities
+- [[OPENCLAW_SANDBOX_MODE]] - degree 4, connects to 1 community
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - degree 3, connects to 1 community

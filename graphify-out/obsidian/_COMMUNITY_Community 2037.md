@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2037
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[options.js]] - code - browser-extension/options.js
-- [[restore()]] - code - browser-extension/options.js
-- [[save()]] - code - browser-extension/options.js
-- [[savedEl]] - code - browser-extension/options.js
-- [[tokenEl]] - code - browser-extension/options.js
-- [[urlEl]] - code - browser-extension/options.js
+- [[7. Build Troubleshooting]] - document - docs/runbooks/colima-docker-guide.md
+- [[Clean rebuild (safe — preserves workspace, config, SSH)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Diagnose first real disk full vs. phantom no space]] - document - docs/runbooks/colima-docker-guide.md
+- [[Full wipe (destructive — removes all state)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition has plenty of free space]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 464]]
+- 1 edge to [[_COMMUNITY_Community 168]]
 
 ## Top bridge nodes
-- [[save()]] - degree 2, connects to 1 community
+- [[7. Build Troubleshooting]] - degree 8, connects to 1 community

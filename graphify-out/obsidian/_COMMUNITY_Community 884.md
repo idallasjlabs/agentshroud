@@ -40,9 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 8 edges to [[_COMMUNITY_Community 8]]
 - 5 edges to [[_COMMUNITY_Community 51]]
-- 4 edges to [[_COMMUNITY_Community 54]]
-- 4 edges to [[_COMMUNITY_Community 169]]
 - 4 edges to [[_COMMUNITY_Community 10]]
 - 3 edges to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 20]]
@@ -50,7 +49,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[SecurityEvent_1]] - degree 20, connects to 5 communities
-- [[event_adapter.py]] - degree 11, connects to 3 communities
 - [[collect_recent_events()]] - degree 10, connects to 3 communities
+- [[event_adapter.py]] - degree 11, connects to 2 communities
 - [[Any_66]] - degree 9, connects to 1 community
 - [[SecurityEvent]] - degree 8, connects to 1 community

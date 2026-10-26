@@ -41,10 +41,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 947]]
 - 1 edge to [[_COMMUNITY_Community 339]]
 - 1 edge to [[_COMMUNITY_Community 747]]
+- 1 edge to [[_COMMUNITY_Community 637]]
+- 1 edge to [[_COMMUNITY_Community 487]]
 - 1 edge to [[_COMMUNITY_Community 517]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 4 communities
+- [[TrustManager_5]] - degree 18, connects to 5 communities

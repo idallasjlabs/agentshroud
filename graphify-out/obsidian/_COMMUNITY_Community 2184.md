@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2184
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[action]] - code - browser-extension/manifest.json
-- [[default_popup]] - code - browser-extension/manifest.json
-- [[default_title]] - code - browser-extension/manifest.json
+- [[Atlas — Curriculum Architect_7]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Purpose_39]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[README_44]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Related Skills_57]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Usage_60]] - document - docker/config/hermes/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 440]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[action]] - degree 3, connects to 1 community
+- [[Atlas — Curriculum Architect_7]] - degree 5, connects to 1 community

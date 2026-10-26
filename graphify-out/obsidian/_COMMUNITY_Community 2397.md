@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_form_caption_tool_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form caption field should be filtered the same as textdraftmessage fields.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_not_authorized_command_text_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator auth-denial command text should map to protected scope notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_collaborator_form_caption_tool_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_not_authorized_command_text_is_normalized_json()]] - degree 4, connects to 3 communities

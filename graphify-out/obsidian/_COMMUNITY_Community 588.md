@@ -1,14 +1,13 @@
 ---
 type: community
-members: 18
+members: 17
 ---
 
 # Community 588
 
-**Members:** 18 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[CONTRIBUTING]] - document - CONTRIBUTING.md
 - [[Code Style]] - document - CONTRIBUTING.md
 - [[Code of Conduct]] - document - CONTRIBUTING.md
 - [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
@@ -38,4 +37,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 130]]
 
 ## Top bridge nodes
-- [[CONTRIBUTING]] - degree 2, connects to 1 community
+- [[Contributing to AgentShroud™]] - degree 9, connects to 1 community

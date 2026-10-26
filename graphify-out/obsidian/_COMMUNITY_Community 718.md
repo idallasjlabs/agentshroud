@@ -32,7 +32,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 702]]
-- 1 edge to [[_COMMUNITY_Community 984]]
+- 1 edge to [[_COMMUNITY_Community 501]]
 
 ## Top bridge nodes
 - [[AgentShroud™ Telegram-Reported Issues]] - degree 5, connects to 2 communities

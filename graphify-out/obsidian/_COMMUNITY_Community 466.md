@@ -38,14 +38,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Community 493]]
+- 2 edges to [[_COMMUNITY_Community 420]]
 - 1 edge to [[_COMMUNITY_Community 393]]
 - 1 edge to [[_COMMUNITY_Community 903]]
 - 1 edge to [[_COMMUNITY_Community 589]]
 - 1 edge to [[_COMMUNITY_Community 421]]
 - 1 edge to [[_COMMUNITY_Community 904]]
 - 1 edge to [[_COMMUNITY_Community 1989]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 162]]
 
 ## Top bridge nodes
 - [[README_120]] - degree 8, connects to 5 communities

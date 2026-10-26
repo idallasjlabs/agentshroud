@@ -1,54 +1,30 @@
 ---
 type: community
-members: 51
+members: 28
 ---
 
 # Community 73
 
-**Members:** 51 nodes
+**Members:** 28 nodes
 
 ## Members
 - [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 - [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[AGENTSHROUD_MODE]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Config Search Order]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[Debug Mode]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
 - [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 - [[Description]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Description_6]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Description_7]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Description_8]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Effect]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
 - [[LOG_LEVEL_1]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
 - [[LOG_LEVEL]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Purpose_176]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[Related Notes_19]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[Related Notes_28]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_29]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Related Notes_34]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Related Notes_35]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Related Notes_36]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[Set In_2]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Top-Level Sections]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[Usage_141]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Usage_142]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Values_2]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Values_3]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Values_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
 - [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 - [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[agentshroud.yaml]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
@@ -59,6 +35,7 @@ members: 51
 - [[security section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[security_modules section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[ssh section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
+- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,14 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 59]]
-- 2 edges to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 516]]
 - 1 edge to [[_COMMUNITY_Community 799]]
 
 ## Top bridge nodes
 - [[agentshroud.yaml]] - degree 8, connects to 3 communities
-- [[AGENTSHROUD_MODE]] - degree 6, connects to 3 communities
-- [[OPENCLAW_SANDBOX_MODE]] - degree 4, connects to 1 community
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - degree 3, connects to 1 community
+- [[ssh-config]] - degree 2, connects to 1 community

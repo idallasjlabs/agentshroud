@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_memory_error_without_error_keyword_is_not_rewritten_for_form_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form message field with embeddingprovider hints but no error keyword should rem]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_memory_provider_error_is_rewritten_to_generic_runtime_guidance()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embeddingprovider errors without explicit memory command context should be gene]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_memory_error_without_error_keyword_is_not_rewritten_for_form_message_field()]] - degree 4, connects to 3 communities
+- [[.test_memory_provider_error_is_rewritten_to_generic_runtime_guidance()]] - degree 4, connects to 3 communities

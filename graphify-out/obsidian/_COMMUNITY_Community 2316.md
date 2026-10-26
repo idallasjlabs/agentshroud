@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2316
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[proxy_messages applies the shim only on the Fieldflare route, before forwarding.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[._sanitize_text()]] - code - gateway/security/log_sanitizer.py
+- [[.filter()_1]] - code - gateway/security/log_sanitizer.py
+- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
+- [[LogRecord_1]] - code - gateway/security/log_sanitizer.py
+- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 2 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming()]] - degree 3, connects to 2 communities
+- [[.filter()_1]] - degree 4, connects to 1 community
+- [[._sanitize_text()]] - degree 3, connects to 1 community

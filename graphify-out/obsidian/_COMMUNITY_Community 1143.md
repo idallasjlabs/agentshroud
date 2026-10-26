@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 30]]
 
 ## Top bridge nodes
 - [[.__init__()_5]] - degree 5, connects to 1 community

@@ -1,13 +1,22 @@
 ---
 type: community
-members: 23
+members: 36
 ---
 
 # Community 411
 
-**Members:** 23 nodes
+**Members:** 36 nodes
 
 ## Members
+- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 - [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 - [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 - [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
@@ -31,6 +40,10 @@ members: 23
 - [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 - [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 - [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,7 +54,6 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 1315]]
-- 1 edge to [[_COMMUNITY_Community 788]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities
+- [[AgentShroud Security Value Proposition]] - degree 11, connects to 1 community

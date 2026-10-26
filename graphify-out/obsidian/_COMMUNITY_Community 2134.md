@@ -1,17 +1,19 @@
 ---
 type: community
-members: 4
+members: 6
 ---
 
 # Community 2134
 
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.require()]] - code - gateway/soc/auth.py
-- [[Action_2]] - code - gateway/soc/auth.py
-- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Resource_2]] - code - gateway/soc/auth.py
+- [[.test_hermes_snapshot_zero_new()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_live_registry_is_idempotent_no_new_backlog()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Re-running against the LIVE registry adds nothing (backlog already synced).]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSnapshotSmoke]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[The committed snapshot yields a real backlog, all honest under_review.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 20]]
+- 3 edges to [[_COMMUNITY_Community 55]]
+- 1 edge to [[_COMMUNITY_Community 1342]]
 
 ## Top bridge nodes
-- [[.require()]] - degree 4, connects to 1 community
+- [[TestSnapshotSmoke]] - degree 4, connects to 1 community
+- [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - degree 3, connects to 1 community
+- [[.test_live_registry_is_idempotent_no_new_backlog()]] - degree 3, connects to 1 community
+- [[.test_hermes_snapshot_zero_new()]] - degree 2, connects to 1 community

@@ -1,15 +1,16 @@
 ---
 type: community
-members: 2
+members: 3
 ---
 
 # Community 2329
 
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Non-coder Qwen3 models (e.g. the 14B base) keep the generic LM Studio     route]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_other_qwen3_models_still_route_to_lmstudio()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_multiline_parenthesised_value_consumed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unterminated_field_returns_end()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestConsumeFieldEdge]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +20,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 2 edges to [[_COMMUNITY_Community 69]]
+- 1 edge to [[_COMMUNITY_Community 562]]
+- 1 edge to [[_COMMUNITY_Community 917]]
 
 ## Top bridge nodes
-- [[test_local_failover_base_other_qwen3_models_still_route_to_lmstudio()]] - degree 2, connects to 1 community
+- [[TestConsumeFieldEdge]] - degree 4, connects to 2 communities
+- [[.test_unterminated_field_returns_end()]] - degree 2, connects to 1 community
+- [[.test_multiline_parenthesised_value_consumed()]] - degree 2, connects to 1 community

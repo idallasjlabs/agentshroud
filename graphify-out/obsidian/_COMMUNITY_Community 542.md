@@ -1,11 +1,11 @@
 ---
 type: community
-members: 18
+members: 21
 ---
 
 # Community 542
 
-**Members:** 18 nodes
+**Members:** 21 nodes
 
 ## Members
 - [[AgentShroud Typography Guidelines]] - document - branding/typography/typography.md
@@ -16,6 +16,8 @@ members: 18
 - [[Font Families]] - document - branding/typography/typography.md
 - [[Font Weights]] - document - branding/typography/typography.md
 - [[Headings]] - document - branding/typography/typography.md
+- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
+- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
 - [[Letter Spacing]] - document - branding/typography/typography.md
 - [[Line Heights]] - document - branding/typography/typography.md
 - [[Mobile]] - document - branding/typography/typography.md
@@ -26,6 +28,7 @@ members: 18
 - [[Type Scale]] - document - branding/typography/typography.md
 - [[Usage Guidelines_2]] - document - branding/typography/typography.md
 - [[Web]] - document - branding/typography/typography.md
+- [[typography]] - document - branding/typography/typography.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 861]]
+- 1 edge to [[_COMMUNITY_Community 585]]
 
 ## Top bridge nodes
-- [[AgentShroud Typography Guidelines]] - degree 8, connects to 1 community
+- [[typography]] - degree 4, connects to 1 community

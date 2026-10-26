@@ -1,82 +1,63 @@
 ---
 type: community
-members: 69
+members: 50
 ---
 
 # Community 54
 
-**Members:** 69 nodes
+**Members:** 50 nodes
 
 ## Members
-- [[._describe_service()]] - code - gateway/soc/services.py
-- [[.get_service()]] - code - gateway/soc/services.py
-- [[.list_services()]] - code - gateway/soc/services.py
-- [[.test_approved_status()]] - code - gateway/tests/test_soc_egress.py
-- [[.test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
-- [[.test_construction()]] - code - gateway/tests/test_soc_models.py
-- [[.test_construction()_1]] - code - gateway/tests/test_soc_models.py
-- [[.test_defaults()_2]] - code - gateway/tests/test_soc_models.py
-- [[.test_destructive_requires_confirmation()]] - code - gateway/tests/test_soc_egress.py
-- [[.test_error_model()]] - code - gateway/tests/test_soc_models.py
-- [[.test_pending_status_default()]] - code - gateway/tests/test_soc_egress.py
-- [[.test_permission_denied_error()]] - code - gateway/tests/test_soc_egress.py
-- [[.test_red_risk_high_threat()]] - code - gateway/tests/test_soc_egress.py
-- [[.test_running_service()]] - code - gateway/tests/test_soc_services.py
-- [[.test_standby_service()]] - code - gateway/tests/test_soc_services.py
-- [[.test_stopped_service()]] - code - gateway/tests/test_soc_services.py
-- [[.test_unhealthy_service()]] - code - gateway/tests/test_soc_services.py
-- [[.test_with_resource_usage()]] - code - gateway/tests/test_soc_models.py
-- [[Alarm]] - code - gateway/soc/models.py
-- [[Any_68]] - code - gateway/soc/services.py
-- [[ContributorRecord_1]] - code - gateway/soc/models.py
-- [[EgressRequest_1]] - code - gateway/soc/models.py
-- [[EgressStatus]] - code - gateway/soc/models.py
-- [[HealthStatus]] - code - gateway/soc/models.py
-- [[HealthStatus_1]] - code - gateway/soc/services.py
-- [[Platform]] - code - gateway/soc/models.py
-- [[Query Docker daemon directly via Unix socket — no CLI needed.]] - rationale - gateway/soc/services.py
-- [[ResourceUsage_2]] - code - gateway/soc/models.py
-- [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return ServiceDescriptor for each known container plus internal gateway services]] - rationale - gateway/soc/services.py
-- [[Return the gateway's own container plus each configured bot's real     container]] - rationale - gateway/soc/services.py
-- [[RiskLevel_5]] - code - gateway/soc/models.py
-- [[SCLError]] - code - gateway/soc/models.py
-- [[STANDBY = binary installed but cannot run in this environment; should be healthy]] - rationale - gateway/tests/test_soc_services.py
-- [[ServiceDescriptor]] - code - gateway/soc/models.py
-- [[ServiceDescriptor_1]] - code - gateway/soc/services.py
-- [[ServiceStatus]] - code - gateway/soc/models.py
-- [[ServiceStatus_1]] - code - gateway/soc/services.py
-- [[TestConfirmationModel]] - code - gateway/tests/test_soc_egress.py
-- [[TestContributorRecord]] - code - gateway/tests/test_soc_models.py
-- [[TestEgressRequest]] - code - gateway/tests/test_soc_models.py
-- [[TestEgressRequestModel]] - code - gateway/tests/test_soc_egress.py
-- [[TestSCLError]] - code - gateway/tests/test_soc_models.py
-- [[TestServiceDescriptor]] - code - gateway/tests/test_soc_models.py
-- [[TestServiceDescriptorDefaults]] - code - gateway/tests/test_soc_services.py
-- [[UserRole]] - code - gateway/soc/contributors.py
-- [[UserRole_1]] - code - gateway/soc/models.py
-- [[Validate ServiceDescriptor model defaults — no real container calls.]] - rationale - gateway/tests/test_soc_services.py
-- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - code - gateway/soc/services.py
-- [[_check_clamd()]] - code - gateway/soc/services.py
-- [[_check_fluent_bit()]] - code - gateway/soc/services.py
-- [[_check_openscap()]] - code - gateway/soc/services.py
-- [[_check_wazuh_agent()]] - code - gateway/soc/services.py
-- [[_engine_health_to_health()]] - code - gateway/soc/services.py
-- [[_engine_status_to_service_status()]] - code - gateway/soc/services.py
-- [[_inspect_via_socket()]] - code - gateway/soc/services.py
-- [[_known_services()]] - code - gateway/soc/services.py
-- [[_new_uuid()]] - code - gateway/soc/models.py
-- [[_now_iso()]] - code - gateway/soc/models.py
-- [[_role_enum()]] - code - gateway/soc/contributors.py
-- [[contributors.py]] - code - gateway/soc/contributors.py
-- [[models.py_1]] - code - gateway/soc/models.py
-- [[services.py]] - code - gateway/soc/services.py
-- [[test_soc_egress.py]] - code - gateway/tests/test_soc_egress.py
-- [[test_soc_models.py]] - code - gateway/tests/test_soc_models.py
-- [[test_soc_services.py]] - code - gateway/tests/test_soc_services.py
+- [[.__ge__()]] - code - gateway/proxy/mcp_config.py
+- [[.__gt__()]] - code - gateway/proxy/mcp_config.py
+- [[.__le__()]] - code - gateway/proxy/mcp_config.py
+- [[.__lt__()]] - code - gateway/proxy/mcp_config.py
+- [[._record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_all()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_tool_permission()]] - code - gateway/proxy/mcp_permissions.py
+- [[.from_dict()]] - code - gateway/proxy/mcp_config.py
+- [[.get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[.infer_permission_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[.level_value()]] - code - gateway/proxy/mcp_config.py
+- [[A single finding from inspection.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[Any_16]] - code - gateway/proxy/mcp_config.py
+- [[Audit signal for blocked admin-private tool access attempts.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Audit signal when admin-private data is redacted from tool results.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
+- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Infer the permission level needed for a tool based on its name.          Checks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[InspectionFinding]] - code - gateway/proxy/mcp_inspector.py
+- [[MCPProxyConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_permissions.py
+- [[MCPServerConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPServerConfig_1]] - code - gateway/proxy/mcp_permissions.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
+- [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel]] - code - gateway/proxy/mcp_config.py
+- [[PermissionLevel_1]] - code - gateway/proxy/mcp_permissions.py
+- [[PrivateAccessAttempt]] - code - gateway/proxy/mcp_permissions.py
+- [[PrivateRedactionEvent]] - code - gateway/proxy/mcp_permissions.py
+- [[RateLimitEntry]] - code - gateway/proxy/mcp_permissions.py
+- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Result of a permission check.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
+- [[Track rate limit state for a tool+agent combo.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[__init__.py_7]] - code - gateway/proxy/__init__.py
+- [[config()_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
+- [[mcp_config.py]] - code - gateway/proxy/mcp_config.py
+- [[mcp_inspector.py]] - code - gateway/proxy/mcp_inspector.py
+- [[mcp_permissions.py]] - code - gateway/proxy/mcp_permissions.py
+- [[mcp_proxy.py]] - code - gateway/proxy/mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -86,21 +67,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 20]]
-- 20 edges to [[_COMMUNITY_Community 80]]
-- 14 edges to [[_COMMUNITY_Community 8]]
-- 8 edges to [[_COMMUNITY_Community 169]]
-- 4 edges to [[_COMMUNITY_Community 884]]
-- 4 edges to [[_COMMUNITY_Community 51]]
-- 3 edges to [[_COMMUNITY_Community 82]]
-- 2 edges to [[_COMMUNITY_Community 35]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 10]]
+- 73 edges to [[_COMMUNITY_Community 132]]
+- 65 edges to [[_COMMUNITY_Community 64]]
+- 41 edges to [[_COMMUNITY_Community 59]]
+- 28 edges to [[_COMMUNITY_Community 230]]
+- 16 edges to [[_COMMUNITY_Community 329]]
+- 9 edges to [[_COMMUNITY_Community 184]]
+- 8 edges to [[_COMMUNITY_Community 61]]
+- 6 edges to [[_COMMUNITY_Community 941]]
+- 5 edges to [[_COMMUNITY_Community 104]]
+- 4 edges to [[_COMMUNITY_Community 8]]
+- 4 edges to [[_COMMUNITY_Community 232]]
+- 3 edges to [[_COMMUNITY_Community 2038]]
+- 3 edges to [[_COMMUNITY_Community 140]]
+- 3 edges to [[_COMMUNITY_Community 1970]]
+- 3 edges to [[_COMMUNITY_Community 2042]]
+- 3 edges to [[_COMMUNITY_Community 2071]]
+- 2 edges to [[_COMMUNITY_Community 30]]
+- 2 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 
 ## Top bridge nodes
-- [[models.py_1]] - degree 29, connects to 5 communities
-- [[ServiceDescriptor]] - degree 20, connects to 4 communities
-- [[test_soc_models.py]] - degree 22, connects to 3 communities
-- [[ServiceStatus]] - degree 13, connects to 3 communities
-- [[ContributorRecord_1]] - degree 10, connects to 3 communities
+- [[MCPProxyConfig]] - degree 88, connects to 14 communities
+- [[MCPServerConfig]] - degree 90, connects to 13 communities
+- [[PermissionLevel]] - degree 71, connects to 12 communities
+- [[mcp_proxy.py]] - degree 27, connects to 12 communities
+- [[__init__.py_7]] - degree 23, connects to 7 communities

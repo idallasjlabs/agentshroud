@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test response risk level classification.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_collaborator_html_code_markup_is_stripped_and_parse_mode_removed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator outbound HTML codepre markup should be stripped to plain text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_risk_classification()]] - degree 2, connects to 1 community
+- [[.test_collaborator_html_code_markup_is_stripped_and_parse_mode_removed()]] - degree 4, connects to 3 communities

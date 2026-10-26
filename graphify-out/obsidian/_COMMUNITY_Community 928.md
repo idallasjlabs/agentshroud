@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
 - [[telegram_gateway_relay.py]] - degree 3, connects to 1 community

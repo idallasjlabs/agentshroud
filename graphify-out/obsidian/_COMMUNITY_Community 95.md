@@ -80,9 +80,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 1127]]
+- 4 edges to [[_COMMUNITY_Community 37]]
 - 2 edges to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[.test_internal_error_not_leaked()]] - degree 4, connects to 2 communities

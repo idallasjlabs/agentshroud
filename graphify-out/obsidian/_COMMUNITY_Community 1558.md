@@ -1,15 +1,24 @@
 ---
 type: community
-members: 2
+members: 11
 ---
 
 # Community 1558
 
-**Members:** 2 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_form_outbound_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-blocked form payloads to non-owners must be replaced with a safe notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.__init__()_100]] - code - gateway/security/multi_turn_tracker.py
+- [[._compile_detection_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_global_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_session_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[Any_50]] - code - gateway/security/multi_turn_tracker.py
+- [[Compile regex patterns for detecting disclosure categories.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Configuration for alert thresholds.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Get global tracking statistics.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Get statistics for a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - rationale - gateway/security/multi_turn_tracker.py
+- [[ThresholdConfig]] - code - gateway/security/multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,10 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1130]]
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 2]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 4 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 8]]
 
 ## Top bridge nodes
-- [[.test_form_outbound_pipeline_block_non_owner()]] - degree 5, connects to 4 communities
+- [[.__init__()_100]] - degree 5, connects to 1 community
+- [[ThresholdConfig]] - degree 3, connects to 1 community
+- [[._compile_detection_patterns()]] - degree 3, connects to 1 community
+- [[.get_session_stats()]] - degree 3, connects to 1 community
+- [[.get_global_stats()]] - degree 3, connects to 1 community

@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
 - [[ToolResultSanitizer.sanitize_tool_result]] - degree 5, connects to 1 community

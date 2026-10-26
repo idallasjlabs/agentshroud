@@ -1,58 +1,48 @@
 ---
 type: community
-members: 45
+members: 35
 ---
 
 # Community 143
 
-**Members:** 45 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[.__init__()_115]] - code - gateway/security/session_manager.py
-- [[._load_sessions()]] - code - gateway/security/session_manager.py
-- [[._save_sessions()]] - code - gateway/security/session_manager.py
-- [[._session_key()]] - code - gateway/security/session_manager.py
-- [[._validate_bot_id()]] - code - gateway/security/session_manager.py
-- [[._validate_user_id()]] - code - gateway/security/session_manager.py
-- [[.add_conversation_message()]] - code - gateway/security/session_manager.py
-- [[.cleanup_old_sessions()_1]] - code - gateway/security/session_manager.py
-- [[.from_dict()_11]] - code - gateway/security/session_manager.py
-- [[.get_merged_context()]] - code - gateway/security/session_manager.py
-- [[.get_or_create_group_session()]] - code - gateway/security/session_manager.py
-- [[.get_or_create_session()]] - code - gateway/security/session_manager.py
-- [[.get_session_context()]] - code - gateway/security/session_manager.py
-- [[.get_session_prompt_addition()]] - code - gateway/security/session_manager.py
-- [[.get_user_workspace_path()]] - code - gateway/security/session_manager.py
-- [[.list_sessions_for_user()]] - code - gateway/security/session_manager.py
-- [[.reanchor_system_prompt()]] - code - gateway/security/session_manager.py
-- [[.to_dict()_12]] - code - gateway/security/session_manager.py
-- [[.update_user_trust_level()]] - code - gateway/security/session_manager.py
-- [[A single message in a conversation.]] - rationale - gateway/security/session_manager.py
-- [[Add a message to the user's conversation history for a specific bot.]] - rationale - gateway/security/session_manager.py
-- [[Any_59]] - code - gateway/security/session_manager.py
-- [[Atomically persist current sessions to the metadata file.          Writes are se]] - rationale - gateway/security/session_manager.py
-- [[Clean up sessions that haven't been active for the specified number of days.]] - rationale - gateway/security/session_manager.py
-- [[ConversationMessage]] - code - gateway/security/session_manager.py
-- [[Convert session to dictionary for serialization.]] - rationale - gateway/security/session_manager.py
-- [[Create session from dictionary.]] - rationale - gateway/security/session_manager.py
-- [[Get existing session or create a new one for the (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
-- [[Get or create a shared workspace + MEMORY.md for a group.]] - rationale - gateway/security/session_manager.py
-- [[Get session context for injection into agent request.]] - rationale - gateway/security/session_manager.py
-- [[Get session-specific prompt addition for the agent.]] - rationale - gateway/security/session_manager.py
-- [[Get the workspace path for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
-- [[GroupSession]] - code - gateway/security/session_manager.py
-- [[Initialize session manager.          Args             base_workspace Base dire]] - rationale - gateway/security/session_manager.py
-- [[List session keys that the requesting user is allowed to see.          Returns t]] - rationale - gateway/security/session_manager.py
-- [[Load existing sessions from metadata file.          Handles both the new ``{use]] - rationale - gateway/security/session_manager.py
-- [[Path_18]] - code - gateway/security/session_manager.py
-- [[Represents a shared workspace + memory for a group.]] - rationale - gateway/security/session_manager.py
-- [[Return the cache key string for a (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
-- [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - rationale - gateway/security/session_manager.py
-- [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - rationale - gateway/security/session_manager.py
-- [[Update the trust level for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
-- [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - rationale - gateway/security/session_manager.py
-- [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - rationale - gateway/security/session_manager.py
-- [[session_manager.py]] - code - gateway/security/session_manager.py
+- [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - rationale - gateway/ingest_api/main.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[Catch-all error handler      Never leaks stack traces or internal details to cli]] - rationale - gateway/ingest_api/main.py
+- [[Log all incoming requests      Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
+- [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - rationale - gateway/ingest_api/main.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
+- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
+- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body()]] - code - gateway/ingest_api/main.py
+- [[log_requests()]] - code - gateway/ingest_api/main.py
+- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
+- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
+- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,14 +52,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 60]]
-- 4 edges to [[_COMMUNITY_Community 79]]
-- 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 6 edges to [[_COMMUNITY_Community 254]]
+- 5 edges to [[_COMMUNITY_Community 978]]
+- 4 edges to [[_COMMUNITY_Community 92]]
+- 3 edges to [[_COMMUNITY_Community 10]]
+- 2 edges to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 20]]
 
 ## Top bridge nodes
-- [[session_manager.py]] - degree 5, connects to 3 communities
-- [[.get_or_create_session()]] - degree 13, connects to 2 communities
-- [[.from_dict()_11]] - degree 7, connects to 2 communities
-- [[._save_sessions()]] - degree 7, connects to 1 community
-- [[.add_conversation_message()]] - degree 6, connects to 1 community
+- [[limit_request_body()]] - degree 8, connects to 3 communities
+- [[security_headers_middleware()]] - degree 8, connects to 3 communities
+- [[global_exception_handler()]] - degree 8, connects to 3 communities
+- [[ApprovalDecision]] - degree 6, connects to 3 communities
+- [[test_main_simple.py]] - degree 22, connects to 2 communities

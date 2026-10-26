@@ -25,11 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 5]]
 - 2 edges to [[_COMMUNITY_Community 208]]
 - 1 edge to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 2324]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 5]]
 - 1 edge to [[_COMMUNITY_Community 506]]
 
 ## Top bridge nodes
-- [[_FakeStreamResponse_1]] - degree 11, connects to 3 communities
+- [[_FakeStreamResponse_1]] - degree 11, connects to 5 communities
 - [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - degree 4, connects to 2 communities

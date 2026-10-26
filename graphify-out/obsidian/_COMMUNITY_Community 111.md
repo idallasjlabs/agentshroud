@@ -1,18 +1,22 @@
 ---
 type: community
-members: 63
+members: 68
 ---
 
 # Community 111
 
-**Members:** 63 nodes
+**Members:** 68 nodes
 
 ## Members
 - [[.__init__()_135]] - code - gateway/tests/test_a2a_policy.py
+- [[.__init__()_136]] - code - gateway/tests/test_a2a_policy.py
 - [[.allowed()]] - code - gateway/security/a2a_policy.py
 - [[.submit_tool_request()_1]] - code - gateway/tests/test_a2a_policy.py
+- [[.submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
 - [[.wait_for_decision()_1]] - code - gateway/tests/test_a2a_policy.py
+- [[.wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
 - [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
@@ -30,6 +34,7 @@ members: 63
 - [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
 - [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
 - [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
+- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
 - [[_StubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
 - [[_base_config()]] - code - gateway/tests/test_a2a_policy.py
 - [[engine()]] - code - gateway/tests/test_a2a_policy.py
@@ -80,14 +85,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 307]]
-- 11 edges to [[_COMMUNITY_Community 148]]
-- 7 edges to [[_COMMUNITY_Community 271]]
+- 26 edges to [[_COMMUNITY_Community 307]]
 - 6 edges to [[_COMMUNITY_Community 221]]
+- 6 edges to [[_COMMUNITY_Community 271]]
 
 ## Top bridge nodes
-- [[test_a2a_policy.py]] - degree 48, connects to 3 communities
-- [[A2APolicyEngine_2]] - degree 31, connects to 3 communities
-- [[A2APolicyDecision]] - degree 13, connects to 3 communities
-- [[_StubApprovalQueue]] - degree 13, connects to 3 communities
-- [[A2AMethod_1]] - degree 8, connects to 3 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
+- [[A2APolicyEngine_2]] - degree 31, connects to 2 communities
+- [[is_safe_a2a_callback_url()]] - degree 16, connects to 2 communities
+- [[A2APolicyDecision]] - degree 13, connects to 2 communities
+- [[_StubApprovalQueue]] - degree 13, connects to 2 communities

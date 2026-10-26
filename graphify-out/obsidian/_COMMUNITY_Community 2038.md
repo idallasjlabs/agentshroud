@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # Community 2038
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[1. URL Forwarder]] - document - browser-extension/README.md
-- [[2. Page Clipper]] - document - browser-extension/README.md
-- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
-- [[4. Tab Session Exporter]] - document - browser-extension/README.md
-- [[5. Reading List Queue]] - document - browser-extension/README.md
-- [[Features]] - document - browser-extension/README.md
+- [[.test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_denied_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_disabled_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_not_in_allowlist()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_sufficient_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestServerAccess]] - code - gateway/tests/test_mcp_permissions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 587]]
+- 3 edges to [[_COMMUNITY_Community 54]]
+- 2 edges to [[_COMMUNITY_Community 59]]
+- 1 edge to [[_COMMUNITY_Community 132]]
 
 ## Top bridge nodes
-- [[Features]] - degree 6, connects to 1 community
+- [[TestServerAccess]] - degree 13, connects to 3 communities

@@ -1,14 +1,16 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 1421
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
 - [[check()_10]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[count_key()]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[reconcile_noyaml()]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 - [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 - [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 

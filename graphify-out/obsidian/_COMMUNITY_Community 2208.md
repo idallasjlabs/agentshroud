@@ -1,16 +1,18 @@
 ---
 type: community
-members: 3
+members: 5
 ---
 
 # Community 2208
 
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[._time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
-- [[.test_performance()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that filtering performance is acceptable.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
+- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
+- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
+- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,8 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 581]]
 
 ## Top bridge nodes
-- [[.test_performance()]] - degree 3, connects to 1 community
-- [[._time_one_filter()]] - degree 2, connects to 1 community
+- [[Trust-Differentiated Processing (RBAC tiers)]] - degree 2, connects to 1 community

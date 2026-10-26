@@ -82,20 +82,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 10]]
 - 3 edges to [[_COMMUNITY_Community 8]]
-- 3 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 104]]
 - 2 edges to [[_COMMUNITY_Community 14]]
 - 1 edge to [[_COMMUNITY_Community 489]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 344]]
-- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 65]]
 - 1 edge to [[_COMMUNITY_Community 133]]
-- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 23]]
 
 ## Top bridge nodes
-- [[DelegationPrivilege]] - degree 25, connects to 6 communities
+- [[DelegationPrivilege]] - degree 25, connects to 5 communities
 - [[DelegationManager]] - degree 26, connects to 2 communities
 - [[delegation.py]] - degree 6, connects to 2 communities
 - [[.from_dict()_4]] - degree 3, connects to 1 community

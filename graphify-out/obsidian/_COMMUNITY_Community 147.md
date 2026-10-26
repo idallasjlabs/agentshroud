@@ -62,7 +62,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
+- 3 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
 - [[test_filter_xml_blocks.py]] - degree 25, connects to 1 community

@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Community 2009
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
+- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
+- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
+- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
+- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
+- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
+- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
+- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
+- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 99]]
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 346]]
 
 ## Top bridge nodes
-- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 3 communities
-- [[._make_proxy_with_mock_buffer()]] - degree 5, connects to 2 communities
+- [[📱 Required Accounts & Services]] - degree 7, connects to 1 community

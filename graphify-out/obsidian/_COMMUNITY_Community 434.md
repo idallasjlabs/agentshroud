@@ -1,35 +1,39 @@
 ---
 type: community
-members: 22
+members: 26
 ---
 
 # Community 434
 
-**Members:** 22 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[.test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_agentshroud_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_gateway_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_nested_private_reference()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
+- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB headr]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,10 +43,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 140]]
+- 16 edges to [[_COMMUNITY_Community 5]]
+- 10 edges to [[_COMMUNITY_Community 2324]]
+- 9 edges to [[_COMMUNITY_Community 0]]
+- 6 edges to [[_COMMUNITY_Community 431]]
+- 5 edges to [[_COMMUNITY_Community 208]]
+- 5 edges to [[_COMMUNITY_Community 479]]
+- 3 edges to [[_COMMUNITY_Community 1945]]
+- 2 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 2049]]
+- 1 edge to [[_COMMUNITY_Community 2004]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 509]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 27, connects to 2 communities
-- [[.test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
-- [[.test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community
+- [[ResourceLimits]] - degree 51, connects to 14 communities
+- [[setup_resource_guard()]] - degree 9, connects to 3 communities
+- [[test_resource_guard_wiring.py]] - degree 7, connects to 2 communities
+- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - degree 4, connects to 2 communities
+- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - degree 4, connects to 2 communities

@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Community 1976
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Common Injection Signatures Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[False Positive (Legitimate Content Blocked)]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[HTTP 400 — Prompt Injection Detected]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection Blocks_1]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Related Notes_61]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
+- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
+- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
+- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
+- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 389]]
-- 1 edge to [[_COMMUNITY_Community 1015]]
+- 1 edge to [[_COMMUNITY_Community 915]]
 
 ## Top bridge nodes
-- [[Prompt Injection Blocks_1]] - degree 3, connects to 2 communities
+- [[SSH Proxy Threat Model (6 threats)]] - degree 5, connects to 1 community

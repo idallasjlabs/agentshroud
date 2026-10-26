@@ -26,12 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 387]]
+- 4 edges to [[_COMMUNITY_Community 387]]
+- 3 edges to [[_COMMUNITY_Community 2100]]
 - 2 edges to [[_COMMUNITY_Community 2034]]
-- 1 edge to [[_COMMUNITY_Community 2100]]
 - 1 edge to [[_COMMUNITY_Community 2057]]
 - 1 edge to [[_COMMUNITY_Community 817]]
 
 ## Top bridge nodes
+- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 4 communities
 - [[AgentShroud v1.2.0 — Master Plan]] - degree 11, connects to 4 communities
-- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 3 communities

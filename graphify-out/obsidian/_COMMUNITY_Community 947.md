@@ -1,35 +1,32 @@
 ---
 type: community
-members: 22
+members: 19
 ---
 
 # Community 947
 
-**Members:** 22 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Deployment Modes]] - document - docs/architecture/deployment-diagram.md
-- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
-- [[MCP Proxy]] - concept - docs/architecture/system-architecture.md
-- [[MCP Server Integration Guide]] - document - docs/api/integration-guide.md
-- [[Op-Proxy (Credential Gateway)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
-- [[Proxy Layer_1]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Proxy Mode (Recommended)]] - document - docs/architecture/deployment-diagram.md
-- [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
-- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
-- [[Web Proxy]] - concept - docs/architecture/system-architecture.md
-- [[http_proxy.py (HTTP CONNECT 8181, domain allowlist)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[mcp-config.yml]] - code - docs/data/schema-documentation.md
-- [[mcp_proxy.py (MCP tool call gate)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[ssh_proxy (approved hosts only)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[web_proxy.py (domain allowlist engine)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
+- [[.teardown_method()_6]] - code - gateway/tests/test_security_hardening.py
+- [[.test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_get_trust()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_history()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_register_agent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
+- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
+- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,16 +36,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 392]]
-- 2 edges to [[_COMMUNITY_Community 487]]
-- 1 edge to [[_COMMUNITY_Community 418]]
-- 1 edge to [[_COMMUNITY_Community 630]]
-- 1 edge to [[_COMMUNITY_Community 637]]
-- 1 edge to [[_COMMUNITY_Community 747]]
+- 9 edges to [[_COMMUNITY_Community 11]]
+- 6 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
-- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 3 communities
-- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
-- [[MCP Proxy]] - degree 4, connects to 1 community
-- [[Deployment Modes]] - degree 3, connects to 1 community
-- [[Op-Proxy (Credential Gateway)]] - degree 2, connects to 1 community
+- [[TestTrustManager]] - degree 35, connects to 10 communities
+- [[.test_trust_escalation_attack()]] - degree 4, connects to 1 community
+- [[.test_trust_level_progression()]] - degree 3, connects to 1 community
+- [[.setup_method()_28]] - degree 2, connects to 1 community
+- [[.test_sqlite_persistence()]] - degree 2, connects to 1 community

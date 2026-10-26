@@ -1,17 +1,19 @@
 ---
 type: community
-members: 4
+members: 6
 ---
 
 # Community 2177
 
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[._results()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_is_idempotent()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_never_touches_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_sets_status_and_layers()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_untargeted_id_unchanged()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestRewrite]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 65]]
+- 5 edges to [[_COMMUNITY_Community 69]]
+- 3 edges to [[_COMMUNITY_Community 917]]
+- 1 edge to [[_COMMUNITY_Community 562]]
 
 ## Top bridge nodes
-- [[._group_workspace_manager()]] - degree 4, connects to 2 communities
-- [[._enforce_group_workspace_access()]] - degree 4, connects to 1 community
+- [[._results()]] - degree 8, connects to 2 communities
+- [[TestRewrite]] - degree 7, connects to 2 communities
+- [[.test_rewrite_sets_status_and_layers()]] - degree 3, connects to 1 community
+- [[.test_rewrite_is_idempotent()]] - degree 3, connects to 1 community
+- [[.test_rewrite_never_touches_hermes()]] - degree 3, connects to 1 community

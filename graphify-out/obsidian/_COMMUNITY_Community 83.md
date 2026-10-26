@@ -1,15 +1,17 @@
 ---
 type: community
-members: 72
+members: 73
 ---
 
 # Community 83
 
-**Members:** 72 nodes
+**Members:** 73 nodes
 
 ## Members
 - [[.by_name()]] - code - gateway/skills/manifest.py
 - [[.client()_7]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.from_file()]] - code - gateway/skills/manifest.py
+- [[.from_source()]] - code - gateway/skills/manifest.py
 - [[.test_build_excludes_manifest_json_itself()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[.test_build_includes_all_files()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[.test_build_is_sorted_deterministically()]] - code - gateway/tests/test_skills_manifest_sync.py
@@ -48,15 +50,16 @@ members: 72
 - [[.to_json()]] - code - gateway/skills/manifest.py
 - [[A single item in the skills manifest.]] - rationale - gateway/skills/manifest.py
 - [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[Build a ManifestEntry by reading path from disk.]] - rationale - gateway/skills/manifest.py
+- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - rationale - gateway/skills/manifest.py
 - [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - rationale - gateway/skills/manifest.py
 - [[Copy all files in manifest from source to each per-bot destination.      Beh]] - rationale - gateway/skills/manifest.py
 - [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
 - [[ManifestEntry]] - code - gateway/skills/manifest.py
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
+- [[Path_21]] - code - gateway/skills/manifest.py
 - [[Path_40]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[PlannedAction]] - code - gateway/skills/manifest.py
-- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - rationale - gateway/web/api.py
-- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
 - [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
 - [[SkillsManifest]] - code - gateway/skills/manifest.py
 - [[TestClient_1]] - code - gateway/tests/test_skills_manifest_sync.py
@@ -70,14 +73,12 @@ members: 72
 - [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
 - [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
 - [[_sha256()_1]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[_skills_reload_impl()]] - code - gateway/web/api.py
 - [[_write_tree()_1]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[deploy_manifest()]] - code - gateway/skills/manifest.py
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - code - gateway/skills/manifest.py
 - [[manifest.json must never appear as an entry even when present in source.]] - rationale - gateway/tests/test_skills_manifest_sync.py
 - [[manifest.py]] - code - gateway/skills/manifest.py
 - [[plan_deploy()]] - code - gateway/skills/manifest.py
-- [[skills_reload()]] - code - gateway/web/api.py
 - [[test_skills_manifest_sync.py]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[validate_manifest()]] - code - gateway/skills/manifest.py
 
@@ -89,16 +90,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 133]]
-- 5 edges to [[_COMMUNITY_Community 489]]
-- 5 edges to [[_COMMUNITY_Community 49]]
-- 1 edge to [[_COMMUNITY_Community 137]]
+- 4 edges to [[_COMMUNITY_Community 49]]
+- 3 edges to [[_COMMUNITY_Community 1808]]
+- 2 edges to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 794]]
 - 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 125]]
 
 ## Top bridge nodes
 - [[SkillsManifest]] - degree 25, connects to 3 communities
-- [[_skills_reload_impl()]] - degree 8, connects to 3 communities
-- [[deploy_manifest()]] - degree 25, connects to 2 communities
 - [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
-- [[ManifestEntry]] - degree 15, connects to 1 community
+- [[deploy_manifest()]] - degree 25, connects to 1 community
+- [[.from_file()]] - degree 5, connects to 1 community
+- [[.from_source()]] - degree 5, connects to 1 community

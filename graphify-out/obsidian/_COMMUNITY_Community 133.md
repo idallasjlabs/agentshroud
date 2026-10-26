@@ -1,22 +1,13 @@
 ---
 type: community
-members: 81
+members: 50
 ---
 
 # Community 133
 
-**Members:** 81 nodes
+**Members:** 50 nodes
 
 ## Members
-- [[.__init__()_118]] - code - gateway/security/skill_guard.py
-- [[._line_at()]] - code - gateway/security/skill_guard.py
-- [[._scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
-- [[.blocked()]] - code - gateway/security/skill_guard.py
-- [[.extend()]] - code - gateway/security/skill_guard.py
-- [[.recommendation()]] - code - gateway/security/skill_guard.py
-- [[.scan_file()_1]] - code - gateway/security/skill_guard.py
-- [[.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[.severity()]] - code - gateway/security/skill_guard.py
 - [[.test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_absolute_system_path_write_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_at_limit_file_scans_normally()]] - code - gateway/tests/test_skill_guard.py
@@ -49,24 +40,8 @@ members: 81
 - [[.test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[.test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
-- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
-- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
-- [[CompletedProcess_4]] - code - gateway/tests/test_skill_guard.py
-- [[Finding]] - code - gateway/security/skill_guard.py
-- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[Path_22]] - code - gateway/skills/scan.py
 - [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
-- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
-- [[Recommendation]] - code - gateway/security/skill_guard.py
-- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
-- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
-- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_2]] - code - gateway/security/skill_guard.py
-- [[ScanResult_3]] - code - gateway/skills/scan.py
 - [[ScanResult_4]] - code - gateway/tests/test_skill_guard.py
-- [[SkillGuard]] - code - gateway/security/skill_guard.py
 - [[SkillGuard_1]] - code - gateway/tests/test_skill_guard.py
 - [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
@@ -79,16 +54,10 @@ members: 81
 - [[TestPathTraversal]] - code - gateway/tests/test_skill_guard.py
 - [[TestPrivilegeEscalation_1]] - code - gateway/tests/test_skill_guard.py
 - [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
-- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
-- [[_Rule]] - code - gateway/security/skill_guard.py
-- [[_build_tree()]] - code - gateway/skills/scan.py
-- [[_c()]] - code - gateway/security/skill_guard.py
 - [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
-- [[_print_findings()]] - code - gateway/skills/scan.py
+- [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
 - [[guard()_4]] - code - gateway/tests/test_skill_guard.py
-- [[main()_13]] - code - gateway/skills/scan.py
-- [[scan.py]] - code - gateway/skills/scan.py
-- [[skill_guard.py]] - code - gateway/security/skill_guard.py
+- [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,15 +67,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 58 edges to [[_COMMUNITY_Community 281]]
-- 5 edges to [[_COMMUNITY_Community 83]]
-- 1 edge to [[_COMMUNITY_Community 8]]
+- 28 edges to [[_COMMUNITY_Community 924]]
+- 14 edges to [[_COMMUNITY_Community 1808]]
+- 13 edges to [[_COMMUNITY_Community 281]]
+- 13 edges to [[_COMMUNITY_Community 2318]]
 - 1 edge to [[_COMMUNITY_Community 89]]
-- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 710]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+- 1 edge to [[_COMMUNITY_Community 40]]
 
 ## Top bridge nodes
-- [[SkillGuard]] - degree 34, connects to 3 communities
-- [[SkillScanError]] - degree 24, connects to 2 communities
-- [[skill_guard.py]] - degree 9, connects to 2 communities
-- [[scan.py]] - degree 8, connects to 2 communities
-- [[SkillGuard_1]] - degree 36, connects to 1 community
+- [[test_skill_guard.py]] - degree 28, connects to 7 communities
+- [[SkillGuard_1]] - degree 36, connects to 3 communities
+- [[SkillScanError]] - degree 24, connects to 3 communities
+- [[TestAggregation]] - degree 12, connects to 3 communities
+- [[TestSecretAccess]] - degree 10, connects to 3 communities

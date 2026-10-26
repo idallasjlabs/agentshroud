@@ -35,9 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 562]]
-- 1 edge to [[_COMMUNITY_Community 8]]
+- 4 edges to [[_COMMUNITY_Community 562]]
 
 ## Top bridge nodes
-- [[TestDangerousXMLDetection]] - degree 14, connects to 2 communities
+- [[TestDangerousXMLDetection]] - degree 14, connects to 1 community
 - [[.setUp()_1]] - degree 2, connects to 1 community

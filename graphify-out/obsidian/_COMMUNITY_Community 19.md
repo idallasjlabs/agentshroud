@@ -151,15 +151,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 1127]]
-- 11 edges to [[_COMMUNITY_Community 6]]
+- 26 edges to [[_COMMUNITY_Community 37]]
+- 5 edges to [[_COMMUNITY_Community 23]]
+- 5 edges to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 6]]
 - 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 309]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 151, connects to 5 communities
-- [[FakeGroup]] - degree 13, connects to 1 community
-- [[FakeCaller]] - degree 12, connects to 1 community
-- [[FakeAuditStore_1]] - degree 7, connects to 1 community
-- [[_Svc]] - degree 7, connects to 1 community
+- [[test_soc_router_coverage.py]] - degree 151, connects to 7 communities
+- [[FakeGroup]] - degree 13, connects to 2 communities
+- [[FakeCaller]] - degree 12, connects to 2 communities
+- [[FakeAuditStore_1]] - degree 7, connects to 2 communities
+- [[_Svc]] - degree 7, connects to 2 communities

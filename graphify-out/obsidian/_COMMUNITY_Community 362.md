@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 0]]
+- 4 edges to [[_COMMUNITY_Community 684]]
 
 ## Top bridge nodes
 - [[check_command()]] - degree 15, connects to 1 community

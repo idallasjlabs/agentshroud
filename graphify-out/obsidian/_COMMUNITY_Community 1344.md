@@ -1,28 +1,25 @@
 ---
 type: community
-members: 15
+members: 12
 ---
 
 # Community 1344
 
-**Members:** 15 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[.test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
-- [[.test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
-- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
-- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
-- [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
-- [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
-- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
-- [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
-- [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
-- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
+- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 61]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 5 edges to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 120]]
 
 ## Top bridge nodes
-- [[TestOriginAwareAuthorization]] - degree 14, connects to 3 communities
+- [[TestSSRFBlocking]] - degree 18, connects to 3 communities

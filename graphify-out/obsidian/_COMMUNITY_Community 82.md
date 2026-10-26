@@ -86,11 +86,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 10]]
-- 3 edges to [[_COMMUNITY_Community 54]]
-- 2 edges to [[_COMMUNITY_Community 169]]
+- 5 edges to [[_COMMUNITY_Community 8]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 1 edge to [[_COMMUNITY_Community 72]]
 - 1 edge to [[_COMMUNITY_Community 884]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
 - [[CorrelationSummary]] - degree 5, connects to 2 communities

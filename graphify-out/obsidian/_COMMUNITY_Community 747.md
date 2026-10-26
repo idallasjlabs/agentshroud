@@ -41,7 +41,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Community 392]]
 - 1 edge to [[_COMMUNITY_Community 236]]
 - 1 edge to [[_COMMUNITY_Community 630]]
-- 1 edge to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 418]]
 
 ## Top bridge nodes
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 2 communities

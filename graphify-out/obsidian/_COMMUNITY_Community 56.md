@@ -1,16 +1,15 @@
 ---
 type: community
-members: 87
+members: 84
 ---
 
 # Community 56
 
-**Members:** 87 nodes
+**Members:** 84 nodes
 
 ## Members
 - [[.__init__()_71]] - code - gateway/security/differential_pii_detector.py
 - [[.__init__()_148]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.__post_init__()_4]] - code - gateway/security/differential_pii_detector.py
 - [[._deduplicate()]] - code - gateway/security/differential_pii_detector.py
 - [[._detect_pii()]] - code - gateway/security/differential_pii_detector.py
 - [[._detect_presidio()]] - code - gateway/security/differential_pii_detector.py
@@ -53,9 +52,7 @@ members: 87
 - [[A weak-confidence hit (0.75) must appear in tool results but not prompts.]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - rationale - gateway/security/differential_pii_detector.py
 - [[Attempt to initialise Presidio deterministically; else regex.          SECURITY]] - rationale - gateway/security/differential_pii_detector.py
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
 - [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig]] - code - gateway/security/differential_pii_detector.py
 - [[DifferentialPIIConfig_1]] - code - gateway/tests/test_differential_pii_detector.py
 - [[DifferentialPIIDetector]] - code - gateway/security/differential_pii_detector.py
 - [[DifferentialPIIDetector_1]] - code - gateway/tests/test_differential_pii_detector.py
@@ -104,18 +101,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 116]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 271]]
+- 22 edges to [[_COMMUNITY_Community 116]]
+- 2 edges to [[_COMMUNITY_Community 104]]
 - 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 281]]
+- 1 edge to [[_COMMUNITY_Community 2318]]
 - 1 edge to [[_COMMUNITY_Community 162]]
 - 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 917]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 221]]
+- 1 edge to [[_COMMUNITY_Community 28]]
+- 1 edge to [[_COMMUNITY_Community 271]]
 
 ## Top bridge nodes
 - [[DifferentialPIIDetector]] - degree 38, connects to 5 communities
-- [[differential_pii_detector.py]] - degree 9, connects to 3 communities
-- [[DifferentialPIIConfig]] - degree 25, connects to 2 communities
+- [[differential_pii_detector.py]] - degree 9, connects to 4 communities
+- [[DifferentialPIIDetector_1]] - degree 31, connects to 1 community
 - [[PIIHitSeverity]] - degree 17, connects to 1 community
+- [[test_differential_pii_detector.py]] - degree 16, connects to 1 community

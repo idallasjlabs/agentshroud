@@ -1,23 +1,32 @@
 ---
 type: community
-members: 10
+members: 19
 ---
 
 # Community 943
 
-**Members:** 10 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[.test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
-- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
+- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
+- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
+- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
+- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
+- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
+- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
+- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 103]]
+- 3 edges to [[_COMMUNITY_Community 7]]
 
 ## Top bridge nodes
-- [[TestConfig_1]] - degree 12, connects to 2 communities
+- [[test_ledger.py]] - degree 12, connects to 1 community

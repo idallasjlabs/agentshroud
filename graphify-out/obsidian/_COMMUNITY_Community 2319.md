@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2319
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_mlxlm_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
+- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
+- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
+- [[Security Model_1]] - document - skills/custom/securebrowser/README.md
+- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 1 edge to [[_COMMUNITY_Community 299]]
 
 ## Top bridge nodes
-- [[test_normalize_local_model_mlxlm_keeps_colon()]] - degree 2, connects to 1 community
+- [[Security Model_1]] - degree 5, connects to 1 community

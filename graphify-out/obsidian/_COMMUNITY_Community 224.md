@@ -53,9 +53,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 3 edges to [[_COMMUNITY_Community 22]]
 
 ## Top bridge nodes
-- [[TestMultilingualInjection]] - degree 20, connects to 2 communities
+- [[TestMultilingualInjection]] - degree 20, connects to 1 community
 - [[.setup_method()_15]] - degree 3, connects to 1 community

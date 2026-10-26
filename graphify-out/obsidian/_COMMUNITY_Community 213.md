@@ -1,11 +1,11 @@
 ---
 type: community
-members: 38
+members: 37
 ---
 
 # Community 213
 
-**Members:** 38 nodes
+**Members:** 37 nodes
 
 ## Members
 - [[AgentShroud Docker Configuration]] - document - docker/README.md
@@ -34,7 +34,6 @@ members: 38
 - [[Rebuild Containers]] - document - docker/README.md
 - [[Reference]] - document - docker/README.md
 - [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
 - [[Secrets_1]] - document - docker/README.md
 - [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
 - [[Security Features (Implemented)]] - document - docker/README.md
@@ -56,8 +55,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Community 221]]
+- 1 edge to [[_COMMUNITY_Community 300]]
 
 ## Top bridge nodes
+- [[AgentShroud Docker Configuration]] - degree 19, connects to 1 community
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community

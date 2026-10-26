@@ -29,14 +29,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 3 edges to [[_COMMUNITY_Community 1127]]
+- 3 edges to [[_COMMUNITY_Community 53]]
+- 3 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 254]]
 - 1 edge to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 53]]
 
 ## Top bridge nodes
-- [[TestHermesDashboardWsProxy]] - degree 10, connects to 3 communities
-- [[hermes_dashboard_ws_proxy()]] - degree 9, connects to 1 community
+- [[hermes_dashboard_ws_proxy()]] - degree 9, connects to 3 communities
+- [[TestHermesDashboardWsProxy]] - degree 10, connects to 2 communities
 - [[._mock_websocket()]] - degree 7, connects to 1 community
 - [[.test_connects_to_bridge_port_with_ws_scheme_and_query()]] - degree 5, connects to 1 community
 - [[.test_relays_text_and_bytes_both_directions()]] - degree 4, connects to 1 community

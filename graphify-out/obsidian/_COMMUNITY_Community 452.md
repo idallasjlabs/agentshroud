@@ -46,7 +46,7 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_Community 683]]
 - 2 edges to [[_COMMUNITY_Community 789]]
 - 1 edge to [[_COMMUNITY_Community 595]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
 - [[test_dns_canvas_coverage.py]] - degree 35, connects to 9 communities

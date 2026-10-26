@@ -1,11 +1,11 @@
 ---
 type: community
-members: 59
+members: 61
 ---
 
 # Community 112
 
-**Members:** 59 nodes
+**Members:** 61 nodes
 
 ## Members
 - [[.__init__()_22]] - code - gateway/proxy/forwarder.py
@@ -41,7 +41,9 @@ members: 59
 - [[Set a mock response handler for testing.]] - rationale - gateway/proxy/forwarder.py
 - [[Verify canary message contains the expected fake PII.]] - rationale - gateway/tests/test_canary.py
 - [[Verify forwarder handles errors gracefully.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
 - [[canary.py]] - code - gateway/security/canary.py
+- [[canary_pipeline()]] - code - gateway/tests/test_canary.py
 - [[fail()_5]] - code - scripts/verify-proxy.sh
 - [[forwarder()_1]] - code - gateway/tests/test_e2e_proxy.py
 - [[forwarder.py]] - code - gateway/proxy/forwarder.py
@@ -76,21 +78,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 84]]
 - 10 edges to [[_COMMUNITY_Community 43]]
-- 3 edges to [[_COMMUNITY_Community 0]]
+- 9 edges to [[_COMMUNITY_Community 7]]
+- 8 edges to [[_COMMUNITY_Community 24]]
+- 5 edges to [[_COMMUNITY_Community 22]]
+- 2 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 11]]
 - 1 edge to [[_COMMUNITY_Community 163]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 104]]
 - 1 edge to [[_COMMUNITY_Community 81]]
-- 1 edge to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 11]]
+- 1 edge to [[_COMMUNITY_Community 531]]
+- 1 edge to [[_COMMUNITY_Community 420]]
 - 1 edge to [[_COMMUNITY_Community 309]]
 - 1 edge to [[_COMMUNITY_Community 933]]
 
 ## Top bridge nodes
+- [[test_canary.py]] - degree 20, connects to 5 communities
 - [[HTTPForwarder]] - degree 21, connects to 4 communities
+- [[canary_pipeline()]] - degree 6, connects to 4 communities
 - [[run_canary()]] - degree 20, connects to 3 communities
-- [[test_canary.py]] - degree 20, connects to 3 communities
-- [[run_quick()]] - degree 9, connects to 2 communities
-- [[canary.py]] - degree 5, connects to 2 communities
+- [[run_canary()_1]] - degree 11, connects to 3 communities

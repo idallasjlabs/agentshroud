@@ -118,6 +118,7 @@ members: 121
 - [[WebProxy]] - code - gateway/proxy/http_proxy.py
 - [[WebProxy_1]] - code - gateway/proxy/web_proxy.py
 - [[WebProxyConfig]] - code - gateway/proxy/web_config.py
+- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
 - [[config()_4]] - code - gateway/tests/test_web_proxy.py
 - [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - rationale - gateway/tests/test_heartbeat_egress.py
 - [[passthrough_proxy()_1]] - code - gateway/tests/test_web_proxy.py
@@ -128,7 +129,6 @@ members: 121
 - [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
-- [[web_config.py]] - code - gateway/proxy/web_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -138,21 +138,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_Community 120]]
-- 26 edges to [[_COMMUNITY_Community 81]]
-- 23 edges to [[_COMMUNITY_Community 24]]
+- 33 edges to [[_COMMUNITY_Community 120]]
+- 20 edges to [[_COMMUNITY_Community 81]]
+- 18 edges to [[_COMMUNITY_Community 24]]
 - 18 edges to [[_COMMUNITY_Community 86]]
-- 9 edges to [[_COMMUNITY_Community 562]]
+- 8 edges to [[_COMMUNITY_Community 431]]
+- 6 edges to [[_COMMUNITY_Community 1148]]
+- 5 edges to [[_COMMUNITY_Community 1000]]
+- 5 edges to [[_COMMUNITY_Community 1344]]
+- 4 edges to [[_COMMUNITY_Community 104]]
 - 4 edges to [[_COMMUNITY_Community 709]]
-- 4 edges to [[_COMMUNITY_Community 431]]
-- 3 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 1000]]
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 562]]
 
 ## Top bridge nodes
-- [[WebProxy_1]] - degree 73, connects to 9 communities
-- [[WebProxyConfig]] - degree 82, connects to 8 communities
-- [[RateLimiter_1]] - degree 28, connects to 4 communities
-- [[web_config.py]] - degree 6, connects to 4 communities
+- [[WebProxy_1]] - degree 73, connects to 11 communities
+- [[WebProxyConfig]] - degree 82, connects to 10 communities
+- [[RateLimiter_1]] - degree 28, connects to 5 communities
+- [[test_web_proxy.py]] - degree 27, connects to 3 communities
 - [[TestDataExfiltration_1]] - degree 11, connects to 3 communities

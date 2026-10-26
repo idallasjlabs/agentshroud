@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2317
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[ollamaqwen314b → qwen3-14b for LM Studio backend.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[Any_49]] - code - gateway/security/memory_lifecycle.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +22,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
+- 4 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 1026]]
 
 ## Top bridge nodes
-- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - degree 2, connects to 1 community
+- [[.get_recent_actions()]] - degree 4, connects to 2 communities
+- [[.get_lifecycle_status()]] - degree 5, connects to 1 community
+- [[Any_49]] - degree 2, connects to 1 community

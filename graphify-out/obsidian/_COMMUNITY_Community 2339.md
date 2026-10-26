@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_security_architecture_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that security module references are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_security_architecture_filtering()]] - degree 2, connects to 1 community
+- [[.test_protection_stats()]] - degree 2, connects to 1 community

@@ -68,25 +68,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 84]]
+- 5 edges to [[_COMMUNITY_Community 7]]
 - 4 edges to [[_COMMUNITY_Community 30]]
-- 4 edges to [[_COMMUNITY_Community 7]]
-- 3 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 68]]
-- 1 edge to [[_COMMUNITY_Community 34]]
+- 3 edges to [[_COMMUNITY_Community 1]]
+- 3 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 22]]
+- 2 edges to [[_COMMUNITY_Community 24]]
 - 1 edge to [[_COMMUNITY_Community 1219]]
 - 1 edge to [[_COMMUNITY_Community 306]]
 - 1 edge to [[_COMMUNITY_Community 1555]]
-- 1 edge to [[_COMMUNITY_Community 92]]
-- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 85]]
 - 1 edge to [[_COMMUNITY_Community 800]]
 - 1 edge to [[_COMMUNITY_Community 657]]
 - 1 edge to [[_COMMUNITY_Community 253]]
 - 1 edge to [[_COMMUNITY_Community 401]]
 
 ## Top bridge nodes
-- [[main.py_3]] - degree 16, connects to 9 communities
+- [[main.py_3]] - degree 16, connects to 10 communities
+- [[Data Flow]] - degree 11, connects to 6 communities
 - [[Startup Sequence]] - degree 10, connects to 6 communities
-- [[Data Flow]] - degree 11, connects to 5 communities
 - [[ledger.py_1]] - degree 7, connects to 3 communities
 - [[Shutdown & Recovery]] - degree 3, connects to 1 community

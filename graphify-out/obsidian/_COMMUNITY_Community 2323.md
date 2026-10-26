@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2323
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[If no secondary is configured and primary hits OOM, 503 is returned.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_oom_no_secondary_falls_through_to_503()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 2 edges to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[test_local_oom_no_secondary_falls_through_to_503()]] - degree 3, connects to 2 communities
+- [[test_prompt_protection.py]] - degree 4, connects to 2 communities
+- [[prompt_protection()]] - degree 3, connects to 1 community

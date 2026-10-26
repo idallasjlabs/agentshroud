@@ -1,18 +1,20 @@
 ---
 type: community
-members: 5
+members: 7
 ---
 
 # Community 2062
 
-**Members:** 5 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[10. Infrastructure & Runtime]] - document - docs/architecture/agentic-os.md
-- [[Container Architecture_1]] - document - docs/architecture/agentic-os.md
-- [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
-- [[Multi-Runtime Support]] - document - docs/architecture/agentic-os.md
-- [[`asb` CLI — Deployment Tool]] - document - docs/architecture/agentic-os.md
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Related Notes_70]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 178]]
+- 1 edge to [[_COMMUNITY_Community 104]]
 
 ## Top bridge nodes
-- [[10. Infrastructure & Runtime]] - degree 5, connects to 1 community
+- [[Dependency Graph]] - degree 3, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 181
+members: 205
 ---
 
 # Community 11
 
-**Members:** 181 nodes
+**Members:** 205 nodes
 
 ## Members
 - [[.__init__()_127]] - code - gateway/security/trust_manager.py
@@ -29,28 +29,27 @@ members: 181
 - [[.record_success()]] - code - gateway/security/trust_manager.py
 - [[.record_violation()]] - code - gateway/security/trust_manager.py
 - [[.register_agent()]] - code - gateway/security/trust_manager.py
-- [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
-- [[.teardown_method()_6]] - code - gateway/tests/test_security_hardening.py
 - [[.test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
-- [[.test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_basic_can_read()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[.test_custom_points()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_default_config()_8]] - code - gateway/tests/test_trust_manager.py
 - [[.test_default_mode_is_enforce()_4]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_default_penalties_cover_all_violation_types()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_demotion_recorded_in_history()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_enforce_mode_blocks()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
 - [[.test_full_level_wildcard_allows_everything()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_get_trust()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_get_trust_registered()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_get_trust_respects_stored_ceiling()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_get_trust_unregistered()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_history()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_hermes_dashboard_forwarder_bind_address_is_documented()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_registered_with_standard_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[.test_history_empty_for_new_agent()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_history_recorded()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_is_tool_allowed_per_level()]] - code - gateway/tests/test_progressive_trust_integration.py
@@ -63,28 +62,25 @@ members: 181
 - [[.test_monitor_token_resolves_monitor()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_next_and_previous_levels()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_non_severe_typed_violation_does_not_force_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[.test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_promotion_granted_once_thresholds_met()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_register_idempotent()_1]] - code - gateway/tests/test_trust_manager.py
 - [[.test_register_new_agent()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_renamed_rungs_map_correctly()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_run_standalone_sets_matching_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[.test_score_alone_cannot_promote_with_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_score_alone_promotes_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_severe_violation_forces_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
 - [[.test_thresholds_populated()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_tool_allowed_at_level()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_tool_denied_above_level()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.test_trust_deny_wins_over_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_trust_level_enforcement()]] - code - gateway/tests/test_security_audit.py
 - [[.test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
 - [[.test_trust_update_performance()]] - code - gateway/tests/test_performance.py
 - [[.test_typed_penalty_from_config()]] - code - gateway/tests/test_progressive_trust_integration.py
@@ -94,13 +90,17 @@ members: 181
 - [[.test_unregistered_denied()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_untrusted_limited()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_untyped_violation_uses_legacy_points()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
+- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
 - [[.test_vouching_required_for_top_rung()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[.vouch_for_agent()]] - code - gateway/security/trust_manager.py
 - [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
 - [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
 - [[A ladder with thresholds small enough for unit tests.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Apply time-based decay to score.]] - rationale - gateway/security/trust_manager.py
+- [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0.      Thi]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 - [[Check if a tool is allowed for the given trust level.]] - rationale - gateway/security/progressive_trust_config.py
 - [[Check if an agent's trust level allows a given action.]] - rationale - gateway/security/trust_manager.py
 - [[Check the progressive ladder's threshold for promotion to target_level.]] - rationale - gateway/security/trust_manager.py
@@ -111,34 +111,45 @@ members: 181
 - [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
 - [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns]] - rationale - gateway/security/progressive_trust_config.py
+- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 - [[First-ever unit tests for the config object itself.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Get current trust level and score for an agent.]] - rationale - gateway/security/trust_manager.py
 - [[Get the next trust level for promotion, or None if already at max.]] - rationale - gateway/security/progressive_trust_config.py
 - [[Get the previous trust level for demotion, or None if already at min.]] - rationale - gateway/security/progressive_trust_config.py
 - [[Get trust history for an agent.]] - rationale - gateway/security/trust_manager.py
 - [[Get trust levels in ascending order.]] - rationale - gateway/security/progressive_trust_config.py
+- [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 - [[High score with too few interactions must NOT climb the ladder.]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Isolated temporary workspace for session manager.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 - [[Low-trust agents should be blocked from high-risk actions.]] - rationale - gateway/tests/test_security_audit.py
 - [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
 - [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
+- [[PIISanitizer_3]] - code - gateway/tests/test_redteam_probes.py
 - [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - rationale - gateway/security/trust_manager.py
 - [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - rationale - gateway/security/trust_manager.py
 - [[ProgressiveTrustConfig]] - code - gateway/security/progressive_trust_config.py
 - [[ProgressiveTrustConfig_1]] - code - gateway/security/trust_manager.py
 - [[ProgressiveTrustConfig_2]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[PromotionThreshold]] - code - gateway/security/progressive_trust_config.py
-- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
+- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 After seeding, hermes trust level is STANDARD (matching lifespan.py).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 lifespan.py seeds 'hermes' with STANDARD trust.      Verifies the seeding]] - rationale - gateway/tests/test_security_regressions_v1_2.py
 - [[Record a failedblocked action, decreasing trust.]] - rationale - gateway/security/trust_manager.py
 - [[Record a security violation, significantly decreasing trust.          With a pro]] - rationale - gateway/security/trust_manager.py
 - [[Record a successful action, increasing trust.]] - rationale - gateway/security/trust_manager.py
 - [[Register a new agent with initial trust.]] - rationale - gateway/security/trust_manager.py
 - [[SCRUM-78 — operational monitor↔enforce lever.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
+- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
+- [[SecurityPipeline_1]] - code - gateway/tests/test_redteam_probes.py
 - [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Stored level is the promotion ceiling when the ladder is active.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Test agent registration and initial trust.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Test configuration options.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Test that actions are gated by trust level.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Test trust history tracking.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
@@ -147,17 +158,21 @@ members: 181
 - [[TestAgentRegistration]] - code - gateway/tests/test_trust_manager.py
 - [[TestBackwardCompat]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestConfig]] - code - gateway/tests/test_trust_manager.py
+- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[TestEnforcementMode]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestEnforcementModeResolver]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestGatedPromotion]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[TestHermesDashboardBridgeReachability]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesDashboardForwarderBinding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesTrustSeeding]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[TestHistory]] - code - gateway/tests/test_trust_manager.py
 - [[TestPersistence_2]] - code - gateway/tests/test_trust_manager.py
 - [[TestProgressiveTrustConfigUnit]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestToolACLComposition]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestToolGating]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
+- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
 - [[TestTypedViolations]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
 - [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - rationale - gateway/tests/test_progressive_trust_integration.py
@@ -172,7 +187,7 @@ members: 181
 - [[TrustManager_4]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[TrustManager WITHOUT a progressive config must behave exactly as before.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Types of security violations.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
 - [[ViolationType]] - code - gateway/security/progressive_trust_config.py
 - [[ViolationType_1]] - code - gateway/security/trust_manager.py
 - [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
@@ -181,13 +196,22 @@ members: 181
 - [[manager()_4]] - code - gateway/tests/test_trust_manager.py
 - [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
 - [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
+- [[run-standalone.sh is the actual deploy path for Hermes (docker run, not]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[session_manager()_3]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[smm()]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[strict_config()_3]] - code - gateway/tests/test_trust_manager.py
 - [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
+- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - code - gateway/tests/test_a2a_trust_scoring.py
 - [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[test_security_regressions_v1_2.py]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[trust_db()]] - code - gateway/tests/test_trust_manager.py
+- [[trust_manager()]] - code - gateway/tests/test_a2a_integration.py
 - [[trust_manager()_2]] - code - gateway/tests/test_e2e_proxy.py
 - [[trust_manager()_3]] - code - gateway/tests/test_e2e_watchtower.py
+- [[trust_manager()_4]] - code - gateway/tests/test_security_integration.py
+- [[trust_manager()_5]] - code - gateway/tests/test_security_regressions_v1_2.py
 - [[trust_manager.py]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
@@ -198,38 +222,51 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 50 edges to [[_COMMUNITY_Community 84]]
-- 41 edges to [[_COMMUNITY_Community 24]]
-- 35 edges to [[_COMMUNITY_Community 0]]
-- 34 edges to [[_COMMUNITY_Community 88]]
-- 27 edges to [[_COMMUNITY_Community 148]]
-- 23 edges to [[_COMMUNITY_Community 792]]
+- 34 edges to [[_COMMUNITY_Community 24]]
+- 33 edges to [[_COMMUNITY_Community 88]]
+- 25 edges to [[_COMMUNITY_Community 45]]
+- 21 edges to [[_COMMUNITY_Community 0]]
+- 20 edges to [[_COMMUNITY_Community 7]]
 - 19 edges to [[_COMMUNITY_Community 61]]
-- 15 edges to [[_COMMUNITY_Community 60]]
+- 18 edges to [[_COMMUNITY_Community 52]]
+- 16 edges to [[_COMMUNITY_Community 271]]
+- 13 edges to [[_COMMUNITY_Community 307]]
+- 10 edges to [[_COMMUNITY_Community 104]]
+- 9 edges to [[_COMMUNITY_Community 947]]
+- 8 edges to [[_COMMUNITY_Community 123]]
 - 7 edges to [[_COMMUNITY_Community 43]]
-- 6 edges to [[_COMMUNITY_Community 52]]
-- 5 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 123]]
+- 6 edges to [[_COMMUNITY_Community 79]]
+- 6 edges to [[_COMMUNITY_Community 60]]
+- 5 edges to [[_COMMUNITY_Community 93]]
+- 5 edges to [[_COMMUNITY_Community 22]]
 - 4 edges to [[_COMMUNITY_Community 8]]
-- 4 edges to [[_COMMUNITY_Community 68]]
-- 4 edges to [[_COMMUNITY_Community 890]]
-- 3 edges to [[_COMMUNITY_Community 271]]
+- 4 edges to [[_COMMUNITY_Community 63]]
+- 4 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_Community 146]]
+- 3 edges to [[_COMMUNITY_Community 1119]]
+- 3 edges to [[_COMMUNITY_Community 477]]
 - 3 edges to [[_COMMUNITY_Community 888]]
+- 3 edges to [[_COMMUNITY_Community 792]]
+- 3 edges to [[_COMMUNITY_Community 1944]]
+- 3 edges to [[_COMMUNITY_Community 1305]]
+- 3 edges to [[_COMMUNITY_Community 2043]]
+- 2 edges to [[_COMMUNITY_Community 26]]
+- 2 edges to [[_COMMUNITY_Community 978]]
 - 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 203]]
-- 2 edges to [[_COMMUNITY_Community 1944]]
-- 1 edge to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 281]]
-- 1 edge to [[_COMMUNITY_Community 17]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 1269]]
+- 2 edges to [[_COMMUNITY_Community 84]]
+- 2 edges to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 2318]]
+- 1 edge to [[_COMMUNITY_Community 2063]]
+- 1 edge to [[_COMMUNITY_Community 2207]]
 - 1 edge to [[_COMMUNITY_Community 309]]
-- 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[TrustManager_1]] - degree 184, connects to 18 communities
-- [[TrustLevel_1]] - degree 62, connects to 14 communities
-- [[TrustConfig]] - degree 101, connects to 11 communities
-- [[TestTrustManager]] - degree 35, connects to 8 communities
-- [[ViolationType]] - degree 39, connects to 7 communities
+- [[TrustManager_1]] - degree 184, connects to 30 communities
+- [[TrustLevel_1]] - degree 62, connects to 16 communities
+- [[TrustConfig]] - degree 101, connects to 14 communities
+- [[SecurityPipeline_1]] - degree 14, connects to 8 communities
+- [[PIISanitizer_3]] - degree 13, connects to 8 communities

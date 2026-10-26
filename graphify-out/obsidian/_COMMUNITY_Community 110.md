@@ -1,16 +1,17 @@
 ---
 type: community
-members: 57
+members: 58
 ---
 
 # Community 110
 
-**Members:** 57 nodes
+**Members:** 58 nodes
 
 ## Members
 - [[.__init__()_113]] - code - gateway/security/report_store.py
 - [[._check_size()]] - code - gateway/security/report_store.py
 - [[._enforce_count_cap()]] - code - gateway/security/report_store.py
+- [[._path()]] - code - gateway/security/report_store.py
 - [[._persist()]] - code - gateway/security/report_store.py
 - [[._sanitize_async()]] - code - gateway/security/report_store.py
 - [[._sanitize_sync()]] - code - gateway/security/report_store.py
@@ -74,13 +75,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 3 edges to [[_COMMUNITY_Community 104]]
+- 3 edges to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
-- [[ReportStore]] - degree 37, connects to 2 communities
+- [[._path()]] - degree 8, connects to 3 communities
+- [[ReportStore]] - degree 37, connects to 1 community
 - [[test_report_store.py]] - degree 10, connects to 1 community
-- [[.get()_4]] - degree 6, connects to 1 community
-- [[._persist()]] - degree 5, connects to 1 community
-- [[.delete()_1]] - degree 4, connects to 1 community
+- [[._sanitize_sync()]] - degree 2, connects to 1 community

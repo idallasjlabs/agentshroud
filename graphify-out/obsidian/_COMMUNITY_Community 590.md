@@ -36,12 +36,12 @@ SORT file.name ASC
 - 9 edges to [[_COMMUNITY_Community 158]]
 - 8 edges to [[_COMMUNITY_Community 452]]
 - 6 edges to [[_COMMUNITY_Community 302]]
-- 4 edges to [[_COMMUNITY_Community 24]]
+- 4 edges to [[_COMMUNITY_Community 104]]
 - 4 edges to [[_COMMUNITY_Community 774]]
 - 4 edges to [[_COMMUNITY_Community 683]]
 - 2 edges to [[_COMMUNITY_Community 1057]]
 - 1 edge to [[_COMMUNITY_Community 789]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[DNSForwarderProtocol]] - degree 31, connects to 7 communities

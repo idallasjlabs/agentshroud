@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 2325
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[_get_local_secondary_model reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_get_local_secondary_model_reads_env()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[._make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_400_retry_no_loop()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_400_retry_succeeds_when_text_strippable()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[First sendMessage returns 400 'can't parse entities'; retry with plain text succ]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Persistent 400 returns the error after exactly one retry (no infinite loop).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 208]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 3 edges to [[_COMMUNITY_Community 99]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[test_get_local_secondary_model_reads_env()]] - degree 3, connects to 2 communities
+- [[._make_proxy()_5]] - degree 5, connects to 3 communities
+- [[.test_400_retry_succeeds_when_text_strippable()]] - degree 3, connects to 1 community
+- [[.test_400_retry_no_loop()]] - degree 3, connects to 1 community

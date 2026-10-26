@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+members: 9
 ---
 
 # Community 2005
 
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[.test_forward_middleware_allowed()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_forward_middleware_blocking()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_forward_middleware_error_handling()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test forward endpoint with middleware integration.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware allows requests when they pass checks.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware can block requests with HTTP 403.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware errors cause requests to be blocked.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestForwardEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[.__init__()_96]] - code - gateway/security/memory_lifecycle.py
+- [[.sanitize_content()]] - code - gateway/security/memory_lifecycle.py
+- [[.scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_lifecycle.py
+- [[Path_16]] - code - gateway/security/memory_lifecycle.py
+- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 1127]]
-- 1 edge to [[_COMMUNITY_Community 53]]
+- 9 edges to [[_COMMUNITY_Community 16]]
+- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 1026]]
 
 ## Top bridge nodes
-- [[TestForwardEndpoint]] - degree 7, connects to 3 communities
-- [[.test_forward_middleware_blocking()]] - degree 4, connects to 2 communities
-- [[.test_forward_middleware_error_handling()]] - degree 4, connects to 2 communities
+- [[Path_16]] - degree 5, connects to 3 communities
+- [[.scan_content_for_threats()]] - degree 5, connects to 1 community
+- [[.validate_memory_write()]] - degree 5, connects to 1 community
+- [[.sanitize_content()]] - degree 4, connects to 1 community
+- [[.__init__()_96]] - degree 3, connects to 1 community

@@ -1,18 +1,20 @@
 ---
 type: community
-members: 5
+members: 7
 ---
 
 # Community 2071
 
-**Members:** 5 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[AWS Glue MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
-- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Data platform guardrails (schemapartition stability)]] - concept - .llm_settings/scripts/CLAUDE.md
-- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[.test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +24,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 210]]
-- 1 edge to [[_COMMUNITY_Community 742]]
-- 1 edge to [[_COMMUNITY_Community 743]]
+- 5 edges to [[_COMMUNITY_Community 64]]
+- 3 edges to [[_COMMUNITY_Community 54]]
+- 2 edges to [[_COMMUNITY_Community 230]]
+- 1 edge to [[_COMMUNITY_Community 184]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 59]]
+- 1 edge to [[_COMMUNITY_Community 329]]
 
 ## Top bridge nodes
-- [[FODL — Fluence Operational Data Lakehouse]] - degree 6, connects to 2 communities
-- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community
+- [[TestSensitiveOps]] - degree 18, connects to 7 communities

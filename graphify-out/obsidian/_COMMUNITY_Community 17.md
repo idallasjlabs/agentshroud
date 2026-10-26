@@ -1,20 +1,29 @@
 ---
 type: community
-members: 97
+members: 92
 ---
 
 # Community 17
 
-**Members:** 97 nodes
+**Members:** 92 nodes
 
 ## Members
-- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - rationale - gateway/proxy/http_proxy.py
 - [[.__init__()_75]] - code - gateway/security/egress_filter.py
 - [[._matches_any_pattern()]] - code - gateway/security/egress_config.py
+- [[.flush_notifications()]] - code - gateway/security/egress_filter.py
 - [[.get_effective_allowlist()]] - code - gateway/security/egress_config.py
+- [[.get_log()]] - code - gateway/security/egress_filter.py
+- [[.get_stats()_16]] - code - gateway/security/egress_filter.py
+- [[.get_top_destinations()]] - code - gateway/security/egress_filter.py
+- [[.grant_timed_approval()]] - code - gateway/security/egress_filter.py
 - [[.is_denylisted()]] - code - gateway/security/egress_config.py
+- [[.set_approval_queue()]] - code - gateway/security/egress_filter.py
+- [[.set_event_bus()_2]] - code - gateway/security/egress_filter.py
+- [[.set_notifier()]] - code - gateway/security/egress_filter.py
+- [[.setup_method()_29]] - code - gateway/tests/test_security_hardening.py
 - [[.test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_default_config()_1]] - code - gateway/tests/test_egress_enforce.py
+- [[.test_deny_all_false()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_denylist_monitor_mode()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_denylist_overrides_allowlist()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_denylist_wildcards()]] - code - gateway/tests/test_egress_enforce.py
@@ -23,6 +32,7 @@ members: 97
 - [[.test_effective_allowlist_basic()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_effective_allowlist_with_denylist()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_egress_filter_allows_in_enforce_mode()]] - code - gateway/tests/test_egress_filter.py
+- [[.test_egress_filter_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[.test_egress_mode_override()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_enforce_mode_blocks_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_from_environment_enforce()]] - code - gateway/tests/test_egress_enforce.py
@@ -30,6 +40,7 @@ members: 97
 - [[.test_invalid_mode_handling()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_logging_differences_by_mode()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_monitor_mode_allows_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
+- [[.test_per_agent_policy()]] - code - gateway/tests/test_security_hardening.py
 - [[.test_port_filtering()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_private_ip_blocking()]] - code - gateway/tests/test_egress_enforce.py
 - [[.test_url_parsing()]] - code - gateway/tests/test_egress_enforce.py
@@ -38,26 +49,22 @@ members: 97
 - [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
 - [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
 - [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
-- [[EgressAllowlistResponse]] - code - gateway/web/management.py
-- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
+- [[EgressFilter_1]] - code - gateway/security/egress_filter.py
 - [[EgressFilter in enforce mode allows all four domains for openclaw.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilterConfig]] - code - gateway/security/egress_config.py
-- [[EgressFilterConfig_1]] - code - gateway/security/egress_filter.py
-- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
-- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
+- [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - rationale - gateway/security/egress_filter.py
+- [[Get egress attempt log, optionally filtered by agent.]] - rationale - gateway/security/egress_filter.py
+- [[Get summary statistics of egress attempts.]] - rationale - gateway/security/egress_filter.py
 - [[Get the effective allowlist for a specific agent.]] - rationale - gateway/security/egress_config.py
 - [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[HTTP_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
 - [[None of the four domains should match the default denylist.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
-- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
-- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
-- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
-- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
-- [[Serve the audit log page.]] - rationale - gateway/web/management.py
-- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
-- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
-- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
+- [[Only DENY egress decisions persisted to audit store (ALLOW caused 57M+ row32GB unbounded growth)]] - rationale - gateway/tests/test_egress_filter.py
+- [[Record a time-limited interactive approval for a domain.          Called by the]] - rationale - gateway/security/egress_filter.py
+- [[Return top destination domains by volume.]] - rationale - gateway/security/egress_filter.py
+- [[Send pending egress notifications via Telegram. Called from request handler.]] - rationale - gateway/security/egress_filter.py
+- [[Set interactive egress approval queue.]] - rationale - gateway/security/egress_filter.py
+- [[Set optional event bus for real-time egress telemetry.]] - rationale - gateway/security/egress_filter.py
+- [[Set the Telegram notifier for egress approval requests.]] - rationale - gateway/security/egress_filter.py
 - [[Set the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
 - [[Test EgressFilter with enforcemonitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
 - [[Test EgressFilterConfig functionality.]] - rationale - gateway/tests/test_egress_enforce.py
@@ -86,25 +93,13 @@ members: 97
 - [[TestOpenClawResearchDomainsAllowlisted]] - code - gateway/tests/test_egress_filter.py
 - [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
 - [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - rationale - gateway/tests/test_egress_filter.py
-- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
-- [[approvals()]] - code - gateway/web/management.py
-- [[audit()_1]] - code - gateway/web/management.py
-- [[collaborators()]] - code - gateway/web/management.py
 - [[egress_config.py]] - code - gateway/security/egress_config.py
-- [[egress_filter.py]] - code - gateway/security/egress_filter.py
-- [[falco_dashboard()]] - code - gateway/web/management.py
-- [[get_egress_allowlist()]] - code - gateway/web/management.py
+- [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
+- [[egress_filter()_1]] - code - gateway/tests/test_security_integration.py
 - [[get_egress_config()]] - code - gateway/security/egress_config.py
-- [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
-- [[killswitch()_1]] - code - gateway/web/management.py
-- [[management.py]] - code - gateway/web/management.py
-- [[modules()]] - code - gateway/web/management.py
-- [[security_overview()]] - code - gateway/web/management.py
 - [[set_egress_config()]] - code - gateway/security/egress_config.py
-- [[ssh()]] - code - gateway/web/management.py
 - [[test_egress_enforce.py]] - code - gateway/tests/test_egress_enforce.py
 - [[update_egress_allowlist()]] - code - gateway/web/management.py
-- [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -114,50 +109,40 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_Community 21]]
-- 27 edges to [[_COMMUNITY_Community 68]]
-- 14 edges to [[_COMMUNITY_Community 792]]
-- 8 edges to [[_COMMUNITY_Community 121]]
-- 6 edges to [[_COMMUNITY_Community 162]]
-- 6 edges to [[_COMMUNITY_Community 198]]
-- 4 edges to [[_COMMUNITY_Community 0]]
-- 3 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 3 edges to [[_COMMUNITY_Community 7]]
-- 3 edges to [[_COMMUNITY_Community 27]]
+- 37 edges to [[_COMMUNITY_Community 21]]
+- 18 edges to [[_COMMUNITY_Community 93]]
+- 12 edges to [[_COMMUNITY_Community 162]]
+- 12 edges to [[_COMMUNITY_Community 68]]
+- 10 edges to [[_COMMUNITY_Community 52]]
+- 9 edges to [[_COMMUNITY_Community 0]]
+- 7 edges to [[_COMMUNITY_Community 166]]
+- 7 edges to [[_COMMUNITY_Community 43]]
+- 6 edges to [[_COMMUNITY_Community 1119]]
+- 6 edges to [[_COMMUNITY_Community 72]]
+- 5 edges to [[_COMMUNITY_Community 104]]
+- 5 edges to [[_COMMUNITY_Community 300]]
+- 4 edges to [[_COMMUNITY_Community 26]]
+- 4 edges to [[_COMMUNITY_Community 11]]
+- 4 edges to [[_COMMUNITY_Community 123]]
 - 3 edges to [[_COMMUNITY_Community 2178]]
-- 3 edges to [[_COMMUNITY_Community 43]]
-- 3 edges to [[_COMMUNITY_Community 73]]
-- 3 edges to [[_COMMUNITY_Community 122]]
-- 3 edges to [[_COMMUNITY_Community 49]]
-- 2 edges to [[_COMMUNITY_Community 20]]
-- 2 edges to [[_COMMUNITY_Community 84]]
-- 2 edges to [[_COMMUNITY_Community 123]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 85]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 81]]
-- 1 edge to [[_COMMUNITY_Community 431]]
-- 1 edge to [[_COMMUNITY_Community 220]]
-- 1 edge to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 102]]
+- 3 edges to [[_COMMUNITY_Community 7]]
+- 3 edges to [[_COMMUNITY_Community 94]]
+- 2 edges to [[_COMMUNITY_Community 146]]
+- 2 edges to [[_COMMUNITY_Community 477]]
+- 2 edges to [[_COMMUNITY_Community 888]]
+- 2 edges to [[_COMMUNITY_Community 792]]
+- 2 edges to [[_COMMUNITY_Community 947]]
+- 1 edge to [[_COMMUNITY_Community 1000]]
 - 1 edge to [[_COMMUNITY_Community 57]]
 - 1 edge to [[_COMMUNITY_Community 205]]
-- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 23]]
 - 1 edge to [[_COMMUNITY_Community 489]]
 - 1 edge to [[_COMMUNITY_Community 5]]
-- 1 edge to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 888]]
-- 1 edge to [[_COMMUNITY_Community 11]]
-- 1 edge to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 221]]
-- 1 edge to [[_COMMUNITY_Community 154]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 2010]]
+- 1 edge to [[_COMMUNITY_Community 265]]
 
 ## Top bridge nodes
-- [[egress_filter.py]] - degree 27, connects to 16 communities
-- [[EgressFilterConfig]] - degree 100, connects to 15 communities
-- [[http_proxy.py]] - degree 16, connects to 10 communities
-- [[management.py]] - degree 27, connects to 5 communities
-- [[egress_config.py]] - degree 10, connects to 4 communities
+- [[EgressFilter_1]] - degree 103, connects to 22 communities
+- [[EgressFilterConfig]] - degree 100, connects to 21 communities
+- [[egress_config.py]] - degree 10, connects to 6 communities
+- [[TestOpenClawResearchDomainsAllowlisted]] - degree 11, connects to 4 communities
+- [[get_egress_config()]] - degree 10, connects to 2 communities

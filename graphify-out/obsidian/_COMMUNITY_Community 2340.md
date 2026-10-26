@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_credential_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that credential paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[.test_protected_content_loading()]] - code - gateway/tests/test_prompt_protection.py
+- [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 98]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 351]]
 
 ## Top bridge nodes
-- [[.test_credential_path_filtering()]] - degree 2, connects to 1 community
+- [[.test_protected_content_loading()]] - degree 3, connects to 2 communities

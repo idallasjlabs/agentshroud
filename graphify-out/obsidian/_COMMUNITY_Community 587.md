@@ -1,15 +1,21 @@
 ---
 type: community
-members: 10
+members: 16
 ---
 
 # Community 587
 
-**Members:** 10 nodes
+**Members:** 16 nodes
 
 ## Members
+- [[1. URL Forwarder]] - document - browser-extension/README.md
+- [[2. Page Clipper]] - document - browser-extension/README.md
+- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
+- [[4. Tab Session Exporter]] - document - browser-extension/README.md
+- [[5. Reading List Queue]] - document - browser-extension/README.md
 - [[Browser Extension]] - document - browser-extension/README.md
 - [[Browser Support]] - document - browser-extension/README.md
+- [[Features]] - document - browser-extension/README.md
 - [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
 - [[Gateway wiring]] - document - browser-extension/README.md
 - [[Privacy Features]] - document - browser-extension/README.md
@@ -28,9 +34,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 464]]
-- 1 edge to [[_COMMUNITY_Community 2038]]
 - 1 edge to [[_COMMUNITY_Community 396]]
 
 ## Top bridge nodes
-- [[Browser Extension]] - degree 6, connects to 2 communities
+- [[Browser Extension]] - degree 6, connects to 1 community
 - [[README_39]] - degree 4, connects to 1 community

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
+- [[.test_block_cascade_blocks_followup_fragment()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[A blocked fragment should cascade-block immediate follow-up chunks.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 626]]
+- 1 edge to [[_COMMUNITY_Community 2]]
+- 1 edge to [[_COMMUNITY_Community 845]]
 
 ## Top bridge nodes
-- [[.test_cleanup_abandoned_directories()]] - degree 2, connects to 1 community
+- [[.test_block_cascade_blocks_followup_fragment()]] - degree 4, connects to 3 communities

@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Community 2017
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Cron Daily CVE Triage & Remediation Scan]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[gatewaysecurityagent_cve_registry.py GHSA registry]] - concept - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
-- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_7]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Purpose_183]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Related Notes_27]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 639]]
+- 1 edge to [[_COMMUNITY_Community 531]]
 
 ## Top bridge nodes
-- [[gatewaysecurityagent_cve_registry.py GHSA registry]] - degree 3, connects to 1 community
+- [[wazuh-ossec.conf]] - degree 8, connects to 1 community

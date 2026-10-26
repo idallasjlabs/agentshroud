@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+members: 10
 ---
 
 # Community 1971
 
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_architecture_diagram_present()]] - code - gateway/tests/test_docs_accuracy.py
+- [[.test_claims_75_security_modules()]] - code - gateway/tests/test_docs_accuracy.py
+- [[.test_mentions_mit_license()]] - code - gateway/tests/test_docs_accuracy.py
+- [[.test_python_version_claim()]] - code - gateway/tests/test_docs_accuracy.py
+- [[.test_quickstart_section_present()]] - code - gateway/tests/test_docs_accuracy.py
+- [[.test_security_modules_listed()]] - code - gateway/tests/test_docs_accuracy.py
+- [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[TestReadmeAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[This representative sample of modules mentioned in README should exist as code.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify README.md claims match actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 60]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 2 edges to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[TestUserMemoryWriteACL]] - degree 9, connects to 3 communities
+- [[TestReadmeAccuracy]] - degree 11, connects to 3 communities

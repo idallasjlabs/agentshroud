@@ -1,11 +1,11 @@
 ---
 type: community
-members: 35
+members: 37
 ---
 
 # Community 229
 
-**Members:** 35 nodes
+**Members:** 37 nodes
 
 ## Members
 - [[.__call__()]] - code - gateway/ingest_api/alert_telegram_relay.py
@@ -22,11 +22,13 @@ members: 35
 - [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[Any_5]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[Await in-flight sends (testshutdown helper).]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[Regression (SCRUM-61) apialerts used to call event_bus.publish(),     a metho]] - rationale - gateway/tests/test_alert_telegram_relay.py
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
 - [[_SendSpy]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_api_alerts_endpoint_emits_bus_event()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_dedup_key_includes_source()]] - code - gateway/tests/test_alert_telegram_relay.py
@@ -52,16 +54,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 978]]
-- 3 edges to [[_COMMUNITY_Community 24]]
+- 9 edges to [[_COMMUNITY_Community 104]]
 - 3 edges to [[_COMMUNITY_Community 85]]
-- 2 edges to [[_COMMUNITY_Community 36]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 
 ## Top bridge nodes
 - [[test_alert_telegram_relay.py]] - degree 23, connects to 3 communities
-- [[AlertTelegramRelay]] - degree 33, connects to 2 communities
+- [[test_api_alerts_endpoint_emits_bus_event()]] - degree 4, connects to 2 communities
+- [[AlertTelegramRelay]] - degree 33, connects to 1 community
 - [[_SendSpy]] - degree 21, connects to 1 community
 - [[_alert_event()]] - degree 16, connects to 1 community
-- [[test_subscribed_relay_receives_bus_emissions()]] - degree 5, connects to 1 community

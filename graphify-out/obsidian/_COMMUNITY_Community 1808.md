@@ -1,25 +1,24 @@
 ---
 type: community
-members: 12
+members: 11
 ---
 
 # Community 1808
 
-**Members:** 12 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[.test_member_allowed_read_write_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_denied_gmail_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_denied_high_risk_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[.test_member_denied_ssh_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
-- [[Regular member (non-owner group role) is denied high-risk tools that require app]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member IS allowed readwrite in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member IS allowed web_search in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member denied gmail (private tool) even in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular member denied ssh (private tool) in group context.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Regular members can use medium-risk tools but not privateadmin tools.]] - rationale - gateway/tests/test_group_rbac.py
-- [[TestMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[.recommendation()]] - code - gateway/security/skill_guard.py
+- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
+- [[Path_22]] - code - gateway/skills/scan.py
+- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
+- [[Recommendation]] - code - gateway/security/skill_guard.py
+- [[ScanResult_3]] - code - gateway/skills/scan.py
+- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
+- [[_build_tree()]] - code - gateway/skills/scan.py
+- [[_print_findings()]] - code - gateway/skills/scan.py
+- [[main()_13]] - code - gateway/skills/scan.py
+- [[scan.py]] - code - gateway/skills/scan.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +28,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 8]]
-- 1 edge to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 14 edges to [[_COMMUNITY_Community 133]]
+- 9 edges to [[_COMMUNITY_Community 924]]
+- 7 edges to [[_COMMUNITY_Community 281]]
+- 3 edges to [[_COMMUNITY_Community 83]]
+- 1 edge to [[_COMMUNITY_Community 2318]]
 
 ## Top bridge nodes
-- [[TestMemberGroupContext]] - degree 13, connects to 5 communities
+- [[Recommendation]] - degree 27, connects to 4 communities
+- [[scan.py]] - degree 8, connects to 3 communities
+- [[Path_22]] - degree 6, connects to 2 communities
+- [[ScanResult_3]] - degree 5, connects to 2 communities
+- [[main()_13]] - degree 5, connects to 1 community

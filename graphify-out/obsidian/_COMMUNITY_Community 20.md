@@ -1,36 +1,79 @@
 ---
 type: community
-members: 68
+members: 141
 ---
 
 # Community 20
 
-**Members:** 68 nodes
+**Members:** 141 nodes
 
 ## Members
-- [[.__init__()_129]] - code - gateway/soc/auth.py
 - [[.__init__()_130]] - code - gateway/soc/contributors.py
+- [[.__init__()_131]] - code - gateway/soc/services.py
 - [[.__init__()_185]] - code - gateway/tests/test_soc_contributors.py
 - [[._build_record()]] - code - gateway/soc/contributors.py
+- [[._describe_service()]] - code - gateway/soc/services.py
 - [[._ensure_rbac()]] - code - gateway/soc/contributors.py
 - [[._ensure_teams()]] - code - gateway/soc/contributors.py
+- [[._get_engine()]] - code - gateway/soc/services.py
 - [[._load_paused_ids()]] - code - gateway/soc/contributors.py
+- [[._logs_via_socket()]] - code - gateway/soc/services.py
 - [[.get_contributor()]] - code - gateway/soc/contributors.py
+- [[.get_logs()_1]] - code - gateway/soc/services.py
+- [[.get_service()]] - code - gateway/soc/services.py
 - [[.get_user_role()_3]] - code - gateway/tests/test_soc_contributors.py
 - [[.is_group_admin()_1]] - code - gateway/soc/auth.py
 - [[.is_owner()_2]] - code - gateway/soc/auth.py
 - [[.list_contributors()]] - code - gateway/soc/contributors.py
+- [[.list_services()]] - code - gateway/soc/services.py
+- [[.mgr_with_engine()]] - code - gateway/tests/test_soc_services.py
+- [[.require()]] - code - gateway/soc/auth.py
+- [[.restart_service()_1]] - code - gateway/soc/services.py
+- [[.start_service()]] - code - gateway/soc/services.py
+- [[.stop_service()_1]] - code - gateway/soc/services.py
+- [[.test_all_actions_false_without_engine()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_build_record_defaults_to_normal_when_no_lockdown_state()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_build_record_does_not_crash_if_lockdown_missing()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_build_record_reports_real_lockdown_level()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_build_record_reports_suspended_level()]] - code - gateway/tests/test_soc_contributors.py
+- [[.test_empty_info_means_container_not_found()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_failure_falls_back_to_socket_data()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_failure_falls_back_to_socket_then_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_full_running_descriptor()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_get_logs_module_filter_case_insensitive()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_module_filter_empty_returns_all()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_module_filter_excludes_non_matching()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_module_filter_keeps_matching_lines()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_no_engine_returns_empty()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_no_filter_returns_tail()]] - code - gateway/tests/test_soc_services.py
+- [[.test_import()]] - code - gateway/tests/test_soc_services.py
+- [[.test_injected_engine_returned()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_instantiate_without_engine()]] - code - gateway/tests/test_soc_services.py
+- [[.test_internal_probe_failure_keeps_container_descriptors()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_internal_services_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_list_contributors_populates_paused_per_user()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_load_paused_ids_defaults_to_empty_set_on_error()]] - code - gateway/tests/test_soc_contributors.py
+- [[.test_malformed_sections_fall_back_to_defaults()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_non_paused_user_reports_paused_false()]] - code - gateway/tests/test_soc_contributors.py
+- [[.test_parse_exception_returns_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
 - [[.test_paused_is_independent_of_lockdown_level()]] - code - gateway/tests/test_soc_contributors.py
 - [[.test_paused_user_reports_paused_true()]] - code - gateway/tests/test_soc_contributors.py
+- [[.test_resolution_failure_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_resolved_from_runtime_module()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_restart_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_start_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stop_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_unparseable_started_at_yields_no_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_engine_without_pull_support()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_pull_failure_still_restarts()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_pull_then_restart()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_restart_failure_returns_false()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_zero_started_at_skips_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.update_service()]] - code - gateway/soc/services.py
+- [[Action_2]] - code - gateway/soc/auth.py
 - [[AddCollaboratorRequest]] - code - gateway/soc/router.py
 - [[AddGroupMemberRequest]] - code - gateway/soc/router.py
+- [[Alarm]] - code - gateway/soc/models.py
 - [[Any_67]] - code - gateway/soc/router.py
 - [[ApprovalDecisionRequest]] - code - gateway/soc/router.py
 - [[AuditLogEntry]] - code - gateway/soc/models.py
@@ -50,31 +93,61 @@ members: 68
 - [[EgressRuleOverrideRequest]] - code - gateway/soc/router.py
 - [[EgressScopeRequest]] - code - gateway/soc/router.py
 - [[EmergencyBlockRequest]] - code - gateway/soc/router.py
-- [[Issue a short-lived WebSocket token for wssoc.]] - rationale - gateway/soc/router.py
 - [[LoginRequest]] - code - gateway/soc/router.py
-- [[RBACManager_2]] - code - gateway/soc/auth.py
+- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
+- [[Query Docker daemon directly via Unix socket — no CLI needed.]] - rationale - gateway/soc/services.py
+- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
+- [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - rationale - gateway/soc/services.py
 - [[RenameGroupRequest]] - code - gateway/soc/router.py
 - [[Request_6]] - code - gateway/soc/router.py
 - [[Resolved identity of the SCL caller, including role and user_id.]] - rationale - gateway/soc/auth.py
-- [[Role_2]] - code - gateway/soc/auth.py
+- [[Resource_2]] - code - gateway/soc/auth.py
+- [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01).]] - rationale - gateway/soc/services.py
+- [[Return ServiceDescriptor for each known container plus internal gateway services]] - rationale - gateway/soc/services.py
+- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
+- [[Return the gateway's own container plus each configured bot's real     container]] - rationale - gateway/soc/services.py
 - [[SCLCaller]] - code - gateway/soc/auth.py
 - [[SCLConfirmationRequired]] - code - gateway/soc/models.py
 - [[SCLInterface]] - code - gateway/soc/models.py
 - [[SCLInterface_1]] - code - gateway/soc/router.py
 - [[ScanRequest_1]] - code - gateway/soc/router.py
+- [[ServiceDescriptor_1]] - code - gateway/soc/services.py
+- [[ServiceManager]] - code - gateway/soc/services.py
 - [[SetLogLevelRequest]] - code - gateway/soc/router.py
 - [[SetModeRequest]] - code - gateway/soc/router.py
 - [[SetModuleModeRequest]] - code - gateway/soc/router.py
 - [[SetRoleRequest]] - code - gateway/soc/router.py
 - [[SetUserModeRequest]] - code - gateway/soc/router.py
+- [[TestDescribeService]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestGetEngine_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestLifecycleActions]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestListServices]] - code - gateway/tests/test_soc_services_coverage.py
 - [[TestLockdownLevelWiring]] - code - gateway/tests/test_soc_contributors.py
 - [[TestPausedFieldWiring]] - code - gateway/tests/test_soc_contributors.py
+- [[TestServiceManagerGetLogs]] - code - gateway/tests/test_soc_services.py
+- [[TestServiceManagerImport]] - code - gateway/tests/test_soc_services.py
+- [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - rationale - gateway/soc/services.py
+- [[Unit tests for ServiceManager.get_logs — including module_filter behaviour.]] - rationale - gateway/tests/test_soc_services.py
 - [[UpdateDisplayNameRequest]] - code - gateway/soc/router.py
+- [[Verify ServiceManager can be imported without a running container engine.]] - rationale - gateway/tests/test_soc_services.py
 - [[WebSocket_5]] - code - gateway/soc/router.py
 - [[_FakeRBAC_1]] - code - gateway/tests/test_soc_contributors.py
+- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - code - gateway/soc/services.py
+- [[_check_clamd()]] - code - gateway/soc/services.py
+- [[_check_fluent_bit()]] - code - gateway/soc/services.py
+- [[_check_openscap()]] - code - gateway/soc/services.py
+- [[_check_wazuh_agent()]] - code - gateway/soc/services.py
+- [[_engine_health_to_health()]] - code - gateway/soc/services.py
+- [[_engine_status_to_service_status()]] - code - gateway/soc/services.py
+- [[_full_inspect_info()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_inspect_via_socket()]] - code - gateway/soc/services.py
+- [[_known_services()]] - code - gateway/soc/services.py
 - [[_load_paused_ids must never crash record-building if the persisted         store]] - rationale - gateway/tests/test_soc_contributors.py
-- [[auth_ws_token()]] - code - gateway/soc/router.py
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - rationale - gateway/tests/test_soc_contributors.py
+- [[services.py]] - code - gateway/soc/services.py
 - [[test_soc_contributors.py]] - code - gateway/tests/test_soc_contributors.py
 
 ## Live Query (requires Dataview plugin)
@@ -85,41 +158,40 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 72 edges to [[_COMMUNITY_Community 10]]
-- 28 edges to [[_COMMUNITY_Community 6]]
-- 24 edges to [[_COMMUNITY_Community 80]]
-- 22 edges to [[_COMMUNITY_Community 54]]
+- 86 edges to [[_COMMUNITY_Community 10]]
+- 47 edges to [[_COMMUNITY_Community 8]]
+- 26 edges to [[_COMMUNITY_Community 80]]
+- 13 edges to [[_COMMUNITY_Community 6]]
+- 9 edges to [[_COMMUNITY_Community 254]]
 - 9 edges to [[_COMMUNITY_Community 75]]
+- 7 edges to [[_COMMUNITY_Community 61]]
+- 7 edges to [[_COMMUNITY_Community 2030]]
+- 6 edges to [[_COMMUNITY_Community 7]]
 - 5 edges to [[_COMMUNITY_Community 30]]
-- 5 edges to [[_COMMUNITY_Community 7]]
-- 5 edges to [[_COMMUNITY_Community 34]]
-- 4 edges to [[_COMMUNITY_Community 8]]
-- 4 edges to [[_COMMUNITY_Community 72]]
-- 3 edges to [[_COMMUNITY_Community 18]]
+- 4 edges to [[_COMMUNITY_Community 2154]]
+- 3 edges to [[_COMMUNITY_Community 104]]
 - 3 edges to [[_COMMUNITY_Community 57]]
-- 3 edges to [[_COMMUNITY_Community 169]]
+- 3 edges to [[_COMMUNITY_Community 49]]
+- 3 edges to [[_COMMUNITY_Community 40]]
+- 3 edges to [[_COMMUNITY_Community 918]]
 - 2 edges to [[_COMMUNITY_Community 95]]
-- 2 edges to [[_COMMUNITY_Community 104]]
+- 2 edges to [[_COMMUNITY_Community 32]]
+- 2 edges to [[_COMMUNITY_Community 28]]
 - 2 edges to [[_COMMUNITY_Community 66]]
-- 2 edges to [[_COMMUNITY_Community 49]]
-- 2 edges to [[_COMMUNITY_Community 125]]
-- 2 edges to [[_COMMUNITY_Community 40]]
-- 2 edges to [[_COMMUNITY_Community 918]]
-- 2 edges to [[_COMMUNITY_Community 17]]
-- 2 edges to [[_COMMUNITY_Community 223]]
+- 2 edges to [[_COMMUNITY_Community 18]]
+- 2 edges to [[_COMMUNITY_Community 166]]
+- 2 edges to [[_COMMUNITY_Community 35]]
 - 2 edges to [[_COMMUNITY_Community 51]]
-- 1 edge to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 2154]]
+- 1 edge to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 143]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 - 1 edge to [[_COMMUNITY_Community 707]]
 - 1 edge to [[_COMMUNITY_Community 884]]
-- 1 edge to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 2134]]
-- 1 edge to [[_COMMUNITY_Community 2180]]
+- 1 edge to [[_COMMUNITY_Community 125]]
 
 ## Top bridge nodes
 - [[BaseModel]] - degree 86, connects to 24 communities
-- [[ContributorManager]] - degree 57, connects to 5 communities
-- [[SCLCaller]] - degree 46, connects to 4 communities
-- [[AuditResult]] - degree 31, connects to 3 communities
-- [[SCLInterface]] - degree 31, connects to 3 communities
+- [[ContributorManager]] - degree 57, connects to 4 communities
+- [[ServiceManager]] - degree 106, connects to 3 communities
+- [[SCLCaller]] - degree 46, connects to 3 communities
+- [[SCLConfirmationRequired]] - degree 35, connects to 2 communities

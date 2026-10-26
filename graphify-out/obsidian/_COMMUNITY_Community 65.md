@@ -1,92 +1,57 @@
 ---
 type: community
-members: 79
+members: 44
 ---
 
 # Community 65
 
-**Members:** 79 nodes
+**Members:** 44 nodes
 
 ## Members
-- [[.__init__()_84]] - code - gateway/security/group_workspace.py
-- [[._is_owner()_1]] - code - gateway/security/group_workspace.py
-- [[._require_memory()]] - code - gateway/security/group_workspace.py
-- [[.append_dm_memory()]] - code - gateway/security/group_workspace.py
-- [[.append_group_memory()]] - code - gateway/security/group_workspace.py
-- [[.can_access()]] - code - gateway/security/group_workspace.py
-- [[.dm_workspace_id()]] - code - gateway/security/group_workspace.py
-- [[.group_workspace_id()]] - code - gateway/security/group_workspace.py
-- [[.proxy()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.read_dm_memory()]] - code - gateway/security/group_workspace.py
-- [[.read_group_memory()]] - code - gateway/security/group_workspace.py
-- [[.resolve_workspace()]] - code - gateway/security/group_workspace.py
-- [[.test_cross_group_member_blocked()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_gate_returns_none_manager()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_manager_denies_group_resolve()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_disabled_manager_still_allows_dm()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_context_needs_no_membership()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_context_resolves_to_user_namespace()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_workspace_id_differs_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_enabled_default_true()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_group_a_write_invisible_from_group_b()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_group_keyed_by_raw_chat_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_group_write_invisible_from_dm()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_manager_is_wired()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_allowed_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_can_access_group_workspace()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_contextvar_preserved()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_of_a_cannot_read_group_b_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_of_a_denied_group_b()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_member_resolves_to_shared_workspace_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_members_share_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_memory_helpers_require_shared_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_no_rbac_owner_check_is_false()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_no_teams_config_fails_closed()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_blocked_in_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_non_member_contextvar_isolated_to_none()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_owner_allowed_in_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_rbac_without_is_owner_callable()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_cannot_access()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_cannot_read_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_cannot_write_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_stranger_resolve_raises()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_system_owner_can_access_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_two_members_of_same_group_share_one_workspace_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_unknown_group_denied()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[.test_workspace_ids_are_distinct_per_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[Append to a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
-- [[Append to a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
-- [[Canonical workspace id for a direct-message context ``dm-{user_id}``.]] - rationale - gateway/security/group_workspace.py
-- [[Canonical workspace id for a group chat_id ``group-{chat_id}``.]] - rationale - gateway/security/group_workspace.py
-- [[GroupAccessDenied]] - code - gateway/security/group_workspace.py
-- [[GroupWorkspaceManager]] - code - gateway/security/group_workspace.py
-- [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - rationale - gateway/security/group_workspace.py
-- [[Read a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
-- [[Read a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
-- [[Resolve and access-control shared group workspaces.      Args         teams_con]] - rationale - gateway/security/group_workspace.py
-- [[Resolve the workspacecontext for an inbound message, fail-closed.          Retu]] - rationale - gateway/security/group_workspace.py
-- [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - rationale - gateway/security/group_workspace.py
-- [[Return True if user_id is the system owner (oversight override).]] - rationale - gateway/security/group_workspace.py
-- [[Return True if user_id may access the workspace for ``group_chat_id``.]] - rationale - gateway/security/group_workspace.py
-- [[Simulate the chokepoint a non-member's active group id is cleared.]] - rationale - gateway/tests/test_group_workspace_manager.py
-- [[TestConfigGate]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestCrossGroupIsolation]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestDefensiveGuards]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestDmIsolation]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestInboundChokepointWiring]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestMembersShareGroupWorkspace]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestNonMemberDenied]] - code - gateway/tests/test_group_workspace_manager.py
-- [[WorkspaceContext]] - code - gateway/security/group_workspace.py
-- [[group_workspace.py]] - code - gateway/security/group_workspace.py
-- [[group_workspace.py (GroupWorkspaceManager)]] - code - gateway/security/group_workspace.py
-- [[manager()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[rbac()_2]] - code - gateway/tests/test_group_workspace_manager.py
-- [[session_manager()_2]] - code - gateway/tests/test_group_workspace_manager.py
-- [[shared_memory()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[shared_memory.py]] - code - gateway/security/shared_memory.py
-- [[teams()_4]] - code - gateway/tests/test_group_workspace_manager.py
-- [[test_group_workspace_manager.py]] - code - gateway/tests/test_group_workspace_manager.py
+- [[._make_monitor()]] - code - gateway/tests/test_observatory_mode.py
+- [[.from_env()_1]] - code - gateway/security/killswitch_config.py
+- [[.test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_default_config()_3]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_init()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.to_dict()_10]] - code - gateway/security/killswitch_config.py
+- [[Any_44]] - code - gateway/security/killswitch_config.py
+- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
+- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
+- [[FR2 Use Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
+- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
+- [[Load configuration from environment variables._1]] - rationale - gateway/security/killswitch_config.py
+- [[Path_36]] - code - gateway/tests/test_observatory_mode.py
+- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._2]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
+- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
+- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
+- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
+- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -96,20 +61,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 60]]
-- 15 edges to [[_COMMUNITY_Community 6]]
-- 14 edges to [[_COMMUNITY_Community 18]]
-- 10 edges to [[_COMMUNITY_Community 14]]
-- 3 edges to [[_COMMUNITY_Community 223]]
-- 1 edge to [[_COMMUNITY_Community 344]]
-- 1 edge to [[_COMMUNITY_Community 2177]]
-- 1 edge to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 986]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 23 edges to [[_COMMUNITY_Community 9]]
+- 7 edges to [[_COMMUNITY_Community 103]]
+- 6 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 40]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 1002]]
+- 1 edge to [[_COMMUNITY_Community 1214]]
+- 1 edge to [[_COMMUNITY_Community 984]]
+- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 6]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 904]]
 
 ## Top bridge nodes
-- [[GroupWorkspaceManager]] - degree 42, connects to 8 communities
-- [[test_group_workspace_manager.py]] - degree 22, connects to 4 communities
-- [[TestInboundChokepointWiring]] - degree 17, connects to 4 communities
-- [[GroupAccessDenied]] - degree 15, connects to 4 communities
-- [[TestNonMemberDenied]] - degree 14, connects to 4 communities
+- [[KillSwitchConfig]] - degree 43, connects to 6 communities
+- [[FR2 Use Control]] - degree 7, connects to 6 communities
+- [[TestKillSwitchVerification]] - degree 13, connects to 4 communities
+- [[killswitch_monitor.py]] - degree 7, connects to 3 communities
+- [[Path_36]] - degree 5, connects to 3 communities
