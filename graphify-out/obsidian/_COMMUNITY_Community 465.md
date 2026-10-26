@@ -1,0 +1,46 @@
+---
+type: community
+members: 20
+---
+
+# Community 465
+
+**Members:** 20 nodes
+
+## Members
+- [[Action Feed]] - document - dashboard/README.md
+- [[ActionFeed Component (Live Action Stream)]] - concept - dashboard/README.md
+- [[AgentShroud Dashboard]] - document - dashboard/README.md
+- [[Components (to be implemented in Week 2)]] - document - dashboard/README.md
+- [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Data Ledger Viewer]] - document - dashboard/README.md
+- [[DataLedger Component (Forwarded Content Viewer)]] - concept - dashboard/README.md
+- [[Features_1]] - document - dashboard/README.md
+- [[Implementation Status_1]] - document - dashboard/README.md
+- [[KillSwitch Component (Emergency Halt)]] - concept - dashboard/README.md
+- [[Memory Browser]] - document - dashboard/README.md
+- [[MemoryViewer Component (MEMORY.md Browser)]] - concept - dashboard/README.md
+- [[Network Inspector]] - document - dashboard/README.md
+- [[NetworkInspector Component (Outbound Request Monitor)]] - concept - dashboard/README.md
+- [[Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[README_40]] - document - dashboard/README.md
+- [[Tech Stack]] - document - dashboard/README.md
+- [[VPNKit Userspace Networking Mode (fix)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[VpnKitTransparentProxy Setting]] - concept - docker/DOCKER-VPN-NETWORKING.md
+- [[gVisor Networking Mode (Docker Desktop, problematic)]] - concept - docker/DOCKER-VPN-NETWORKING.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_465
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 398]]
+- 1 edge to [[_COMMUNITY_Community 762]]
+
+## Top bridge nodes
+- [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities
+- [[Features_1]] - degree 6, connects to 1 community

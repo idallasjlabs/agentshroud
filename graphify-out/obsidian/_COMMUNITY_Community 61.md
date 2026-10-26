@@ -1,0 +1,160 @@
+---
+type: community
+members: 122
+---
+
+# Community 61
+
+**Members:** 122 nodes
+
+## Members
+- [[.__init__()_121]] - code - gateway/security/tool_acl.py
+- [[._can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[._get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
+- [[._get_role()]] - code - gateway/security/tool_acl.py
+- [[.can_use_tool()]] - code - gateway/security/tool_acl.py
+- [[.can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
+- [[.can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
+- [[.check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
+- [[.effective_admin()]] - code - gateway/security/tool_acl.py
+- [[.effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
+- [[.effective_private()]] - code - gateway/security/tool_acl.py
+- [[.enforcer()]] - code - gateway/tests/test_tool_acl.py
+- [[.get_allowed_tools()]] - code - gateway/security/tool_acl.py
+- [[.get_denial_counts()]] - code - gateway/security/tool_acl.py
+- [[.get_denied_tools()]] - code - gateway/security/tool_acl.py
+- [[.test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_can_use_allowed_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_can_use_unknown_tool_when_not_denied()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_allowed_all_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_can_use_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_unrestricted_matches_dm_behavior()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Authorize a tool call, refusing owner elevation over an unverified origin.]] - rationale - gateway/security/tool_acl.py
+- [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Check whether user_id may invoke the named tool.          Returns             (]] - rationale - gateway/security/tool_acl.py
+- [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - rationale - gateway/security/tool_acl.py
+- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
+- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
+- [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
+- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
+- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
+- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
+- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
+- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
+- [[Owner group-context check must match standard can_use_tool result.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner is allowed ALL tools in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner must have unrestricted access even in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
+- [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - rationale - gateway/security/tool_acl.py
+- [[RBACConfig_4]] - code - gateway/tests/test_tool_acl.py
+- [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
+- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
+- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
+- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
+- [[TeamsConfig_2]] - code - gateway/tests/test_tool_acl.py
+- [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
+- [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
+- [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
+- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
+- [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
+- [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[ToolACLConfig]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
+- [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[_make_rbac()_1]] - code - gateway/tests/test_tool_acl.py
+- [[acl_config()]] - code - gateway/tests/test_group_rbac.py
+- [[can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
+- [[enforcer()]] - code - gateway/tests/test_group_rbac.py
+- [[enforcer()_3]] - code - gateway/tests/test_tool_acl.py
+- [[group_rbac.py (GroupRoleResolver)]] - code - gateway/security/group_rbac.py
+- [[group_role_resolver()]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_1]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_6]] - code - gateway/tests/test_tool_acl.py
+- [[teams()_3]] - code - gateway/tests/test_group_rbac.py
+- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
+- [[test_group_rbac.py]] - code - gateway/tests/test_group_rbac.py
+- [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_61
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 37 edges to [[_COMMUNITY_Community 6]]
+- 19 edges to [[_COMMUNITY_Community 11]]
+- 17 edges to [[_COMMUNITY_Community 18]]
+- 9 edges to [[_COMMUNITY_Community 33]]
+- 5 edges to [[_COMMUNITY_Community 8]]
+- 4 edges to [[_COMMUNITY_Community 221]]
+- 4 edges to [[_COMMUNITY_Community 300]]
+- 3 edges to [[_COMMUNITY_Community 1052]]
+- 3 edges to [[_COMMUNITY_Community 1808]]
+- 3 edges to [[_COMMUNITY_Community 1344]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 44]]
+
+## Top bridge nodes
+- [[ToolACLEnforcer]] - degree 77, connects to 10 communities
+- [[ToolACLConfig]] - degree 38, connects to 6 communities
+- [[test_group_rbac.py]] - degree 17, connects to 6 communities
+- [[TestReadOnlyMemberGroupContext]] - degree 14, connects to 4 communities
+- [[TestOwnerGroupContext]] - degree 10, connects to 4 communities
