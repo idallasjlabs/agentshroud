@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L62"
+community: "Community 170"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_170
 ---
 
 # Any
 
 ## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_2]] - `references` [EXTRACTED]
+- [[._request()]] - `references` [EXTRACTED]
+- [[.delete()]] - `references` [EXTRACTED]
+- [[.get()_2]] - `references` [EXTRACTED]
+- [[.post()_2]] - `references` [EXTRACTED]
+- [[.put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/Community_170

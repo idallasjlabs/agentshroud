@@ -1,17 +1,18 @@
 ---
 source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
+community: "Community 581"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/Community_581
 ---
 
 # Alternatives rejected
 
 ## Connections
 - [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
+- [[ADR-001 Proxy-layer inversion model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_581

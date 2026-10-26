@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "upgrade"
-location: "L51"
+community: "Community 54"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_54
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()_1]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[.__init__()_131]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[._get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/Community_54

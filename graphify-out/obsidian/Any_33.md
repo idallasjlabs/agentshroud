@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "MCPInspector"
-location: "L140"
+community: "Community 112"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/Community_112
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[.to_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/Community_112

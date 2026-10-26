@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-ti.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (3)"
-location: "L42"
+community: "Community 891"
+location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_3
+  - community/Community_891
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_3
+#graphify/document #graphify/EXTRACTED #community/Community_891

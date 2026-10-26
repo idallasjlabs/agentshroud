@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
-location: "L56"
+community: "Community 82"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+  - community/Community_82
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_162]] - `references` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+#graphify/code #graphify/EXTRACTED #community/Community_82

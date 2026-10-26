@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "Community 492"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Community_492
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_17]] - `references` [EXTRACTED]
+- [[aggregate_costs()]] - `references` [EXTRACTED]
+- [[build_json_all()]] - `references` [EXTRACTED]
+- [[build_json_current()]] - `references` [EXTRACTED]
+- [[filter_by_days()]] - `references` [EXTRACTED]
+- [[latest_day_cost()]] - `references` [EXTRACTED]
+- [[load_payload()]] - `references` [EXTRACTED]
+- [[parse_daily_entries()]] - `references` [EXTRACTED]
+- [[pick_current_model()]] - `references` [EXTRACTED]
+- [[run_codexbar_cost()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_492

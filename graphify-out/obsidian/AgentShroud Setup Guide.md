@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "LOW — Informational"
+community: "Community 350"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW__Informational
+  - community/Community_350
 ---
 
 # AgentShroud Setup Guide
@@ -15,14 +15,15 @@ tags:
 - [[1Password Integration_1]] - `contains` [EXTRACTED]
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_3]] - `contains` [EXTRACTED]
+- [[Multi-Instance Setup_1]] - `contains` [EXTRACTED]
+- [[Prerequisites_12]] - `contains` [EXTRACTED]
 - [[Quick Start (5 minutes)]] - `contains` [EXTRACTED]
-- [[Security Verification]] - `contains` [EXTRACTED]
+- [[Security Verification_1]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
-- [[Troubleshooting_23]] - `contains` [EXTRACTED]
-- [[Updating_1]] - `contains` [EXTRACTED]
-- [[What is AgentShroud_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_54]] - `contains` [EXTRACTED]
+- [[Updating]] - `contains` [EXTRACTED]
+- [[What is AgentShroud_2]] - `contains` [EXTRACTED]
 - [[What's Next]] - `contains` [EXTRACTED]
 - [[setup-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW__Informational
+#graphify/document #graphify/EXTRACTED #community/Community_350

@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L148"
+community: "Community 0"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/Community_0
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_110]] - `references` [EXTRACTED]
-- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[.get_leakage_summary()]] - `references` [EXTRACTED]
+- [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_0

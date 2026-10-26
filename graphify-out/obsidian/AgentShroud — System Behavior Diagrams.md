@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "document"
-community: "openclaw/skills/i-browser/package.json"
+community: "Community 904"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/Community_904
 ---
 
 # AgentShroud — System Behavior Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[16. State Machine Diagram — Approval Queue Item Lifecycle]] - `contains` [EXTRACTED]
 - [[17. State Machine — Bot Session  Context Lifecycle]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/Community_904

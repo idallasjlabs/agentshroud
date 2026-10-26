@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "document"
-community: "test_collaborator_tracker.py (4)"
+community: "Community 191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Community_191
 ---
 
 # AgentShroud Falco Rules
@@ -13,10 +13,5 @@ tags:
 ## Connections
 - [[Falco Configuration]] - `references` [EXTRACTED]
 - [[Falco Rule Unexpected Outbound Connection]] - `conceptually_related_to` [EXTRACTED]
-- [[Rule Container Shell Spawned]] - `conceptually_related_to` [EXTRACTED]
-- [[Rule Crypto Mining Detection]] - `conceptually_related_to` [EXTRACTED]
-- [[Rule File Access Outside Workspace]] - `conceptually_related_to` [EXTRACTED]
-- [[Rule Privilege Escalation Attempt]] - `conceptually_related_to` [EXTRACTED]
-- [[Rule Secret File Access]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/document #graphify/EXTRACTED #community/Community_191

@@ -1,21 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L1"
+community: "Community 1404"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1404
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Purpose_162]] - `contains` [EXTRACTED]
-- [[Related Skills_89]] - `contains` [EXTRACTED]
-- [[Usage_101]] - `contains` [EXTRACTED]
-- [[hermesskillsi-apolloREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Input Requirements_20]] - `contains` [EXTRACTED]
+- [[Output_4]] - `contains` [EXTRACTED]
+- [[Quality Checklist_18]] - `contains` [EXTRACTED]
+- [[Role_76]] - `contains` [EXTRACTED]
+- [[Technical Specification_2]] - `contains` [EXTRACTED]
+- [[apollo_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1404

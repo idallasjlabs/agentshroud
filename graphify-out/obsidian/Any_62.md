@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
-location: "L58"
+community: "Community 8"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
+  - community/Community_8
 ---
 
 # Any
 
 ## Connections
-- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
-- [[dot-_log_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_notification()]] - `references` [EXTRACTED]
-- [[dot-dispatch()]] - `references` [EXTRACTED]
-- [[dot-get_digest()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
+- [[.__init__()_122]] - `references` [EXTRACTED]
+- [[.analyze_tool_call()]] - `references` [EXTRACTED]
+- [[.get_global_stats()_1]] - `references` [EXTRACTED]
+- [[.get_session_stats()_1]] - `references` [EXTRACTED]
+- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[.score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
+#graphify/code #graphify/EXTRACTED #community/Community_8

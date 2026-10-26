@@ -1,25 +1,25 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
+community: "Community 327"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_327
 ---
 
 # AgentShroud User Guide
 
 ## Connections
 - [[Dashboard Overview]] - `contains` [EXTRACTED]
-- [[FAQ]] - `contains` [EXTRACTED]
+- [[FAQ_1]] - `contains` [EXTRACTED]
 - [[Getting Started]] - `contains` [EXTRACTED]
 - [[Interacting via Telegram]] - `contains` [EXTRACTED]
 - [[Need Help_1]] - `contains` [EXTRACTED]
 - [[SSH Access]] - `contains` [EXTRACTED]
 - [[Understanding Approval Requests]] - `contains` [EXTRACTED]
-- [[What is AgentShroud]] - `contains` [EXTRACTED]
+- [[What is AgentShroud_3]] - `contains` [EXTRACTED]
 - [[user-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/document #graphify/EXTRACTED #community/Community_327

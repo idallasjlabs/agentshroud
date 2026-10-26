@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "ToolChainAnalyzer"
-location: "L183"
+community: "Community 185"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/Community_185
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_112]] - `references` [EXTRACTED]
-- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[dot-score_reversibility()]] - `references` [EXTRACTED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/Community_185

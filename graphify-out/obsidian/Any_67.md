@@ -1,30 +1,25 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "SecurityPipeline (2)"
-location: "L88"
+community: "Community 20"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - graphify/INFERRED
+  - community/Community_20
 ---
 
 # Any
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-append()_1]] - `references` [EXTRACTED]
-- [[dot-append_block()]] - `references` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_17]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_7]] - `references` [EXTRACTED]
-- [[dot-to_dict()_11]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult_1]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/INFERRED #community/Community_20

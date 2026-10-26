@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 2452"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - graphify/EXTRACTED
+  - community/Community_2452
 ---
 
 # AgentShroud Daily Check-in (Hermes Prompt)
 
-## Connections
-- [[Seed Job AgentShroud Daily Check-in]] - `semantically_similar_to` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_2452

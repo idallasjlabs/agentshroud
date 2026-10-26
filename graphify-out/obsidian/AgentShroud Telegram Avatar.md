@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/telegram-avatar-512x512.png"
 type: "image"
-community: "patch_edge_tts_proxy.py"
+community: "Community 1649"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/patch_edge_tts_proxypy
+  - community/Community_1649
 ---
 
 # AgentShroud Telegram Avatar
 
-#graphify/image #graphify/EXTRACTED #community/patch_edge_tts_proxypy
+#graphify/image #graphify/EXTRACTED #community/Community_1649

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-16x16.png"
 type: "image"
-community: "Chatbot Service Dependencies (requirements.txt)"
+community: "Community 1634"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Chatbot_Service_Dependencies_requirementstxt
+  - community/Community_1634
 ---
 
 # App Icon 16x16 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Chatbot_Service_Dependencies_requirementstxt
+#graphify/image #graphify/EXTRACTED #community/Community_1634

@@ -1,19 +1,19 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "concept"
-community: "run-standalone.sh (Hermes docker run launcher) (2)"
+community: "Community 861"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher_2
+  - community/Community_861
 ---
 
 # AgentShroud Blue — #1583f0
 
 ## Connections
 - [[AgentShroud Primary Logo]] - `references` [EXTRACTED]
-- [[INDEX_1]] - `references` [EXTRACTED]
+- [[INDEX]] - `references` [EXTRACTED]
 - [[QUICK-REFERENCE]] - `references` [EXTRACTED]
-- [[brandingREADME]] - `references` [EXTRACTED]
+- [[README_38]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_2
+#graphify/concept #graphify/EXTRACTED #community/Community_861

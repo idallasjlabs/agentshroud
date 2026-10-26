@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: ".proxy_messages() (2)"
+community: "Community 339"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_messages_2
+  - community/Community_339
 ---
 
 # AgentShroud Hermes — System Identity
@@ -16,8 +16,8 @@ tags:
 - [[Core Behaviors]] - `contains` [EXTRACTED]
 - [[Owner]] - `contains` [EXTRACTED]
 - [[Remote Hosts (SSH via gateway)]] - `contains` [EXTRACTED]
+- [[SOUL_2]] - `contains` [EXTRACTED]
 - [[Trademark Notice]] - `contains` [EXTRACTED]
 - [[Your Role]] - `contains` [EXTRACTED]
-- [[hermesagentshermes-soul]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_messages_2
+#graphify/document #graphify/EXTRACTED #community/Community_339

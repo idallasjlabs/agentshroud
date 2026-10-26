@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Enum"
-location: "L23"
+community: "Community 261"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_261
 ---
 
 # Any
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_8]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[.to_dict()_17]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_261

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "AgentShroud™ LLM Provider Setup & Switching Guide"
+community: "Community 696"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_LLM_Provider_Setup__Switching_Guide
+  - community/Community_696
 ---
 
 # AgentShroud™ LLM Provider Setup & Switching Guide
@@ -19,4 +19,4 @@ tags:
 - [[5. Verification & Troubleshooting]] - `contains` [EXTRACTED]
 - [[LLM_PROVIDER_SETUP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_LLM_Provider_Setup__Switching_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_696

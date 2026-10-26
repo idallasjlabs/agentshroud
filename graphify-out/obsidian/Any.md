@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "ContextGuard"
-location: "L465"
+community: "Community 72"
+location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_72
 ---
 
-# Any
+# any
 
 ## Connections
-- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
+- [[.get_stats()_18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_72

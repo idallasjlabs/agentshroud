@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Enum"
-location: "L25"
+community: "Community 48"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_48
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_184]] - `references` [EXTRACTED]
-- [[dot-_describe_service()]] - `references` [EXTRACTED]
-- [[dot-_get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_48

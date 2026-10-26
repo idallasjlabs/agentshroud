@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "RateLimitGuard"
+community: "Community 204"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/Community_204
 ---
 
 # AgentShroud Access Control Matrix
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Agent Operational Permissions]] - `contains` [EXTRACTED]
 - [[MCP Proxy Tool Authorization]] - `contains` [EXTRACTED]
-- [[Overview]] - `contains` [EXTRACTED]
+- [[Overview_17]] - `contains` [EXTRACTED]
 - [[Permission Matrix]] - `contains` [EXTRACTED]
 - [[RBAC Role Definitions]] - `contains` [EXTRACTED]
 - [[Trust Level Progression Rules]] - `contains` [EXTRACTED]
 - [[access-control-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/document #graphify/EXTRACTED #community/Community_204

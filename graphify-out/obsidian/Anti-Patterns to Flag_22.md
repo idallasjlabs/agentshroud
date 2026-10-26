@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
+source_file: ".cursor/agents/i-ui.md"
 type: "document"
-community: "AgentShroud (system, C4 context) (2)"
-location: "L97"
+community: "Community 629"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_2
+  - community/Community_629
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2
+#graphify/document #graphify/EXTRACTED #community/Community_629

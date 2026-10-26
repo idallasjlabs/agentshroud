@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Approval Queue (human-in-the-loop)"
-location: "L139"
+community: "Community 72"
+location: "L94"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Approval_Queue_human-in-the-loop
+  - graphify/EXTRACTED
+  - community/Community_72
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[.__init__()_100]] - `references` [EXTRACTED]
+- [[.get_global_stats()]] - `references` [EXTRACTED]
+- [[.get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_human-in-the-loop
+#graphify/code #graphify/EXTRACTED #community/Community_72

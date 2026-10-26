@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "http_proxy.py"
+community: "Community 718"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/Community_718
 ---
 
 # AgentShroud™ Telegram-Reported Issues
@@ -18,4 +18,4 @@ tags:
 - [[🟠 HIGH Security & Logic Issues]] - `contains` [EXTRACTED]
 - [[🟡 MEDIUM Infrastructure & Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_718

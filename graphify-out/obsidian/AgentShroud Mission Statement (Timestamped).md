@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "rationale"
-community: "SecureBrowser Skill"
+community: "Community 1098"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Community_1098
 ---
 
 # AgentShroud Mission Statement (Timestamped)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/rationale #graphify/EXTRACTED #community/Community_1098

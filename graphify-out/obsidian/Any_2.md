@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ContextGuard"
-location: "L157"
+community: "Community 439"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_439
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
+- [[._append_audit_event()]] - `references` [EXTRACTED]
+- [[.broadcast()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_439

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "mcp_inspector.py"
+community: "Community 406"
 location: "L397"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/Community_406
 ---
 
 # Also in v0.9.0
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_406

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE (2)"
-location: "L42"
+community: "Community 1444"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+  - community/Community_1444
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE_2
+#graphify/document #graphify/EXTRACTED #community/Community_1444

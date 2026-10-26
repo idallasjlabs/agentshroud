@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
-location: "L23"
+community: "Community 562"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+  - graphify/INFERRED
+  - community/Community_562
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()_1]] - `references` [EXTRACTED]
-- [[dot-get()_1]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[._audit()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_10]] - `references` [EXTRACTED]
+- [[.to_dict()_2]] - `references` [EXTRACTED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+#graphify/code #graphify/INFERRED #community/Community_562

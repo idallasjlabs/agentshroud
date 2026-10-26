@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+community: "Community 466"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+  - community/Community_466
 ---
 
 # AgentShroud — Diagram Library
@@ -15,6 +15,6 @@ tags:
 - [[Diagrams Not Yet Implemented]] - `contains` [EXTRACTED]
 - [[Index]] - `contains` [EXTRACTED]
 - [[Priority Reading Order]] - `contains` [EXTRACTED]
-- [[diagramsREADME]] - `contains` [EXTRACTED]
+- [[README_120]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
+#graphify/document #graphify/EXTRACTED #community/Community_466

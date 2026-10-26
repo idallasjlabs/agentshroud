@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "ADR-004: API Keys Never in Agent Container"
+community: "Community 386"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-004_API_Keys_Never_in_Agent_Container
+  - community/Community_386
 ---
 
 # AgentShroud v1.0.0 Fortress Release Announcement
@@ -19,4 +19,4 @@ tags:
 - [[RELEASE-ANNOUNCEMENT-v1.0.0]] - `contains` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `implements` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container
+#graphify/document #graphify/EXTRACTED #community/Community_386

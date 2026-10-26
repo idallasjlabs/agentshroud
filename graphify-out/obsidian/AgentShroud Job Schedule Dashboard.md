@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "document"
-community: "test_prompt_guard.py (2)"
+community: "Community 700"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy_2
+  - community/Community_700
 ---
 
 # AgentShroud Job Schedule Dashboard
@@ -16,4 +16,4 @@ tags:
 - [[Prefers-Color-Scheme Token Palette]] - `implements` [EXTRACTED]
 - [[Responsive Table-to-Card Collapse Pattern]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_prompt_guardpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_700

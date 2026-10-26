@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "PromptGuard"
-location: "L64"
+community: "Community 307"
+location: "L210"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PromptGuard
+  - graphify/EXTRACTED
+  - community/Community_307
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_93]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[.from_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/Community_307

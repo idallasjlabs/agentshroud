@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Any"
+community: "Community 431"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_431
 ---
 
 # AnomalyAlert
 
 ## Connections
-- [[dot-check_anomalies()]] - `references` [EXTRACTED]
+- [[.check_anomalies()]] - `references` [EXTRACTED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Community_431

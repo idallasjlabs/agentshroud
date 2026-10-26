@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo-transparent.svg"
 type: "image"
-community: "test_hermes_model_resolver.py"
+community: "Community 192"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_192
 ---
 
 # AgentShroud Transparent Logo (SVG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Logo Usage]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/image #graphify/EXTRACTED #community/Community_192

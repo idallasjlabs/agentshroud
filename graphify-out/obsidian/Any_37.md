@@ -1,19 +1,22 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L153"
+community: "Community 135"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_135
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_6]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[check_upstream_cves()]] - `references` [EXTRACTED]
+- [[format_cve_report()]] - `references` [EXTRACTED]
+- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Community_135

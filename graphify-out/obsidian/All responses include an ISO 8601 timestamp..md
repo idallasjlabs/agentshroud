@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestPatternDetection"
+community: "Community 512"
 location: "L307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Community_512
 ---
 
 # All responses include an ISO 8601 timestamp.
 
 ## Connections
-- [[dot-test_response_has_timestamp()]] - `rationale_for` [EXTRACTED]
+- [[.test_response_has_timestamp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

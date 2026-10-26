@@ -1,17 +1,17 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+community: "Community 427"
 location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/Community_427
 ---
 
 # Agent toggle (MUTE button — BSP_BUTTON_MUTE)
 
 ## Connections
-- [[Usage_70]] - `contains` [EXTRACTED]
+- [[Usage_137]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_427

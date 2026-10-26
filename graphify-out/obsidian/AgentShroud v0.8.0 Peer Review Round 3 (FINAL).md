@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "main (2)"
+community: "Community 781"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main_2
+  - community/Community_781
 ---
 
 # AgentShroud v0.8.0 Peer Review Round 3 (FINAL)
@@ -17,7 +17,7 @@ tags:
 - [[Prior Findings — Verification]] - `contains` [EXTRACTED]
 - [[R3 Findings (NEW — this round)]] - `contains` [EXTRACTED]
 - [[Release Recommendation]] - `contains` [EXTRACTED]
-- [[Summary_24]] - `contains` [EXTRACTED]
+- [[Summary_33]] - `contains` [EXTRACTED]
 - [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main_2
+#graphify/document #graphify/EXTRACTED #community/Community_781

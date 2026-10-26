@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "ConfigIntegrityMonitor"
+community: "Community 133"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Community_133
 ---
 
 # Aggregated result of scanning a skill file or an entire skill tree.
 
 ## Connections
-- [[ScanResult_4]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_133

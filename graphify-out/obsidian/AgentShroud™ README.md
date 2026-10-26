@@ -1,20 +1,20 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "AuditExporter"
+community: "Community 195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Community_195
 ---
 
 # AgentShroud™ README
 
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
-- [[Acknowledgments_1]] - `contains` [EXTRACTED]
+- [[Acknowledgments]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
-- [[Architecture_3]] - `contains` [EXTRACTED]
+- [[Architecture]] - `contains` [EXTRACTED]
 - [[Control Centers]] - `contains` [EXTRACTED]
 - [[Development]] - `contains` [EXTRACTED]
 - [[Documentation_1]] - `contains` [EXTRACTED]
@@ -23,12 +23,12 @@ tags:
 - [[Hermes Bot]] - `references` [EXTRACTED]
 - [[Media]] - `contains` [EXTRACTED]
 - [[OpenClaw Bot]] - `references` [EXTRACTED]
-- [[Quickstart_1]] - `contains` [EXTRACTED]
-- [[Trademark_2]] - `references` [INFERRED]
+- [[Quickstart]] - `contains` [EXTRACTED]
+- [[Trademark]] - `references` [INFERRED]
 - [[What's New — v1.2.2 (June 2026)]] - `contains` [EXTRACTED]
 - [[What's New — v1.3.0 Reliability (July 2026)]] - `contains` [EXTRACTED]
 - [[Who It's For]] - `contains` [EXTRACTED]
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Community_195

@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # AgentTarget
 
 ## Connections
-- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
-- [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
-- [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
-- [[dot-test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
+- [[.test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
+- [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
+- [[.test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
+- [[.test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_53]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[Any_9]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Downstream agent target]] - `rationale_for` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
 - [[TestOutboundBlockedNotDelivered]] - `uses` [INFERRED]
@@ -39,8 +39,8 @@ tags:
 - [[_make_trust_app_state()]] - `calls` [EXTRACTED]
 - [[_target()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[ingest_apirouter.py]] - `imports` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
+- [[router.py]] - `imports` [EXTRACTED]
 - [[test_agent_target_custom_paths()]] - `calls` [EXTRACTED]
 - [[test_agent_target_default_paths()]] - `calls` [EXTRACTED]
 - [[test_forward_routing.py]] - `references` [EXTRACTED]
@@ -71,4 +71,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `calls` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_34

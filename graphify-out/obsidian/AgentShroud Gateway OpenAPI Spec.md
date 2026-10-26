@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/openapi.json"
 type: "document"
-community: "test_list_cve_agents_returns_wrapped_agents_and_security_tools"
+community: "Community 1786"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_list_cve_agents_returns_wrapped_agents_and_security_tools
+  - community/Community_1786
 ---
 
 # AgentShroud Gateway OpenAPI Spec
 
-#graphify/document #graphify/EXTRACTED #community/test_list_cve_agents_returns_wrapped_agents_and_security_tools
+#graphify/document #graphify/EXTRACTED #community/Community_1786

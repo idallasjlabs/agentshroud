@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/twitter-header-1500x500.png"
 type: "image"
-community: "docker/bots/hermes/patch_telegram_edit_message_date.py"
+community: "Community 1650"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/patch_telegram_edit_message_datepy
+  - community/Community_1650
 ---
 
 # AgentShroud Twitter/X Header
 
-#graphify/image #graphify/EXTRACTED #community/docker/bots/hermes/patch_telegram_edit_message_datepy
+#graphify/image #graphify/EXTRACTED #community/Community_1650

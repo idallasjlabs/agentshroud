@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # Append a collaborator UID to the persistent store (idempotent, file-locked).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_approved_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_223

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "Community 739"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Community_739
 ---
 
 # All Environment Variables (reference)
@@ -15,4 +15,4 @@ tags:
 - [[Dockerfile — Bot (OpenClaw)]] - `shares_data_with` [EXTRACTED]
 - [[Dockerfile — Gateway]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Community_739

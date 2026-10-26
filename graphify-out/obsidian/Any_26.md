@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "system-requirements.md"
-location: "L56"
+community: "Community 372"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - graphify/INFERRED
+  - community/Community_372
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[.inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/INFERRED #community/Community_372

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/logo-on-dark-1024x1024.png"
 type: "image"
-community: "AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)"
+community: "Community 1641"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/AgentShroud_Daily_Check-in_disabled__bot-identity-locked_to_dev
+  - community/Community_1641
 ---
 
 # AgentShroud Logo on Dark Background
 
-#graphify/image #graphify/EXTRACTED #community/AgentShroud_Daily_Check-in_disabled__bot-identity-locked_to_dev
+#graphify/image #graphify/EXTRACTED #community/Community_1641

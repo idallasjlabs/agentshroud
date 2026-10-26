@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "concept"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # AgentShroud Security Perimeter
@@ -15,9 +15,9 @@ tags:
 - [[Audit ledger (hash-verifiable chain)]] - `rationale_for` [EXTRACTED]
 - [[Enforce mode by default]] - `rationale_for` [EXTRACTED]
 - [[Fail-closed by default]] - `rationale_for` [EXTRACTED]
-- [[Human-in-the-loop approval queue_1]] - `rationale_for` [EXTRACTED]
+- [[Human-in-the-loop approval queue]] - `rationale_for` [EXTRACTED]
 - [[Least privilege MCP permissions]] - `rationale_for` [EXTRACTED]
 - [[PII redacted before forwarding]] - `rationale_for` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/concept #graphify/EXTRACTED #community/Community_94

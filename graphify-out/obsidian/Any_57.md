@@ -1,19 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "Community 5"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_5
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[._alert_high_usage()]] - `references` [EXTRACTED]
+- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[.get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/Community_5

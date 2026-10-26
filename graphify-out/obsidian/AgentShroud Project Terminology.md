@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Community 345"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Community_345
 ---
 
 # AgentShroud Project Terminology
@@ -18,7 +18,7 @@ tags:
 - [[D]] - `contains` [EXTRACTED]
 - [[E]] - `contains` [EXTRACTED]
 - [[F]] - `contains` [EXTRACTED]
-- [[Glossary_1]] - `contains` [EXTRACTED]
+- [[Glossary]] - `contains` [EXTRACTED]
 - [[H]] - `contains` [EXTRACTED]
 - [[I]] - `contains` [EXTRACTED]
 - [[K]] - `contains` [EXTRACTED]
@@ -28,10 +28,10 @@ tags:
 - [[P]] - `contains` [EXTRACTED]
 - [[R]] - `contains` [EXTRACTED]
 - [[S]] - `contains` [EXTRACTED]
-- [[T]] - `contains` [EXTRACTED]
+- [[T_1]] - `contains` [EXTRACTED]
 - [[U]] - `contains` [EXTRACTED]
 - [[V]] - `contains` [EXTRACTED]
 - [[W]] - `contains` [EXTRACTED]
 - [[Z]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Community_345

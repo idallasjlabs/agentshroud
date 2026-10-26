@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo-transparent.png"
 type: "image"
-community: "AgentTarget (2)"
+community: "Community 162"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/AgentTarget_2
+  - community/Community_162
 ---
 
 # AgentShroud Logo - Glow/Transparent Variant
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/AgentTarget_2
+#graphify/image #graphify/INFERRED #community/Community_162

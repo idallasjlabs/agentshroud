@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AgentTarget"
-location: "L160"
+community: "Community 532"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_532
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_14]] - `references` [EXTRACTED]
+- [[.__init__()_110]] - `references` [EXTRACTED]
+- [[.get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_532

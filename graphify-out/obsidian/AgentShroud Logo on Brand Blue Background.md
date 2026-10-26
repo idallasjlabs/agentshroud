@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/logo-on-brand-blue-1024x1024.png"
 type: "image"
-community: "Critical/High/Medium/Low tool risk tiers gating approval requirement"
+community: "Community 1640"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Critical/High/Medium/Low_tool_risk_tiers_gating_approval_requirement
+  - community/Community_1640
 ---
 
 # AgentShroud Logo on Brand Blue Background
 
-#graphify/image #graphify/EXTRACTED #community/Critical/High/Medium/Low_tool_risk_tiers_gating_approval_requirement
+#graphify/image #graphify/EXTRACTED #community/Community_1640

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L200"
+community: "Community 16"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - graphify/INFERRED
+  - community/Community_16
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[dot-from_dict()_5]] - `references` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/Community_16

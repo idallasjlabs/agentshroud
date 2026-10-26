@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "canary.py"
+community: "Community 726"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/Community_726
 ---
 
 # AgentShroud Deployment & Troubleshooting Runbook
@@ -16,10 +16,10 @@ tags:
 - [[Check Gateway Health]] - `contains` [EXTRACTED]
 - [[Deploy Latest Code (Any Host)]] - `contains` [EXTRACTED]
 - [[Deploy to Production]] - `contains` [EXTRACTED]
-- [[Infrastructure_9]] - `contains` [EXTRACTED]
+- [[Infrastructure_19]] - `contains` [EXTRACTED]
 - [[Quick Restart (No Rebuild)]] - `contains` [EXTRACTED]
-- [[RUNBOOK_1]] - `contains` [EXTRACTED]
+- [[RUNBOOK]] - `contains` [EXTRACTED]
 - [[Run Tests on Any Host]] - `contains` [EXTRACTED]
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
+- [[Troubleshooting_42]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/Community_726

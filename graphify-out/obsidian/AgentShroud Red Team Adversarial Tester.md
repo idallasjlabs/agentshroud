@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: ".agents/agents/sec-offense.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L6"
+community: "Community 1059"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Community_1059
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -15,9 +15,9 @@ tags:
 - [[Adversary Model]] - `contains` [EXTRACTED]
 - [[Attack Phases]] - `contains` [EXTRACTED]
 - [[Critical Rules_2]] - `contains` [EXTRACTED]
-- [[Infrastructure]] - `contains` [EXTRACTED]
-- [[Output_2]] - `contains` [EXTRACTED]
+- [[Infrastructure_1]] - `contains` [EXTRACTED]
+- [[Output_1]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
-- [[agentshroud-redteamSKILL]] - `contains` [EXTRACTED]
+- [[sec-offense]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Community_1059

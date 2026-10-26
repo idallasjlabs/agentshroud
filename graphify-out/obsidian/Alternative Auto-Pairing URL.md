@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "test_collaborator_tracker.py (4) (2)"
+community: "Community 735"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4_2
+  - community/Community_735
 ---
 
 # Alternative: Auto-Pairing URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_trackerpy_4_2
+#graphify/document #graphify/EXTRACTED #community/Community_735

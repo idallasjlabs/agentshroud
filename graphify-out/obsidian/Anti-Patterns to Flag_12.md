@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
-location: "L221"
+community: "Community 419"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Community_419
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_419

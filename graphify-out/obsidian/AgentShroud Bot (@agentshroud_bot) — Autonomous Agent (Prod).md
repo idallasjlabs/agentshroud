@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "AgentShroud™ Communication Templates"
+community: "Community 970"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates
+  - community/Community_970
 ---
 
 # AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)
@@ -16,4 +16,4 @@ tags:
 - [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - `conceptually_related_to` [EXTRACTED]
 - [[TeamAgent Role Structure Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Communication_Templates
+#graphify/concept #graphify/EXTRACTED #community/Community_970

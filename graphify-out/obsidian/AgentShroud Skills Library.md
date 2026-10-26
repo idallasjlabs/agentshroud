@@ -1,21 +1,21 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "FileSandbox"
+community: "Community 141"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_141
 ---
 
 # AgentShroud Skills Library
 
 ## Connections
 - [[Custom Skills]] - `contains` [EXTRACTED]
-- [[Directory Structure_1]] - `contains` [EXTRACTED]
+- [[Directory Structure_2]] - `contains` [EXTRACTED]
 - [[OpenClaw Built-in Skills]] - `contains` [EXTRACTED]
-- [[Usage_64]] - `contains` [EXTRACTED]
-- [[skillsREADME]] - `contains` [EXTRACTED]
+- [[README_130]] - `contains` [EXTRACTED]
+- [[Usage_143]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FileSandbox
+#graphify/document #graphify/EXTRACTED #community/Community_141

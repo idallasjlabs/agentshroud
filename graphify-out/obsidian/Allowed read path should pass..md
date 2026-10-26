@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "_wrap_response()"
+community: "Community 0"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/Community_0
 ---
 
 # Allowed read path should pass.
 
 ## Connections
-- [[dot-test_proc_meminfo_allowed()]] - `rationale_for` [EXTRACTED]
+- [[.test_proc_meminfo_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_wrap_response
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

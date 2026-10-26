@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 31"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_31
 ---
 
 # Agent cannot write to /var/log/ system logs.
 
 ## Connections
-- [[dot-test_var_log_write_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_var_log_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

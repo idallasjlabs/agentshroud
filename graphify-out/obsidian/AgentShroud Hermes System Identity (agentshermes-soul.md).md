@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/agents/hermes-soul.md"
 type: "document"
-community: "test_ptt_state.c"
+community: "Community 339"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/test_ptt_statec
+  - community/Community_339
 ---
 
 # AgentShroud Hermes System Identity (agents/hermes-soul.md)
 
 ## Connections
 - [[Agents Folder README]] - `references` [INFERRED]
-- [[hermesSOUL]] - `semantically_similar_to` [INFERRED]
+- [[SOUL_2]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_ptt_statec
+#graphify/document #graphify/INFERRED #community/Community_339

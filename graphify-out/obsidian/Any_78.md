@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "KillSwitchMonitor (2) (2)"
-location: "L75"
+community: "Community 310"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_2
+  - community/Community_310
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_310

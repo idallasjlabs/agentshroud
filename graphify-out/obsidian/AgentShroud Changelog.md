@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "hermes/skills/i-icloud/scripts/calendar.js"
+community: "Community 901"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-icloud/scripts/calendarjs
+  - community/Community_901
 ---
 
 # AgentShroud Changelog
@@ -19,6 +19,5 @@ tags:
 - [[Prompt Daily Component Health Digest]] - `references` [EXTRACTED]
 - [[TrustManager Progressive-Trust Ladder]] - `references` [EXTRACTED]
 - [[Voice Gateway]] - `references` [EXTRACTED]
-- [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs
+#graphify/document #graphify/EXTRACTED #community/Community_901

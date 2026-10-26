@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "is_rate_limited_post_retry"
-location: "L516"
+community: "Community 978"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_rate_limited_post_retry
+  - community/Community_978
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[.get_recent()]] - `references` [EXTRACTED]
+- [[.get_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_rate_limited_post_retry
+#graphify/code #graphify/EXTRACTED #community/Community_978

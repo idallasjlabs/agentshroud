@@ -1,18 +1,22 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Output Sections (ALL required) (3)"
+source_file: ".github/agents/i-apollo.agent.md"
+type: "document"
+community: "Community 1355"
+location: "L11"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required_3
+  - community/Community_1355
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `shares_data_with` [EXTRACTED]
-- [[Mnemosyne — Retention Engineer_4]] - `shares_data_with` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_4]] - `shares_data_with` [EXTRACTED]
+- [[Input Requirements_30]] - `contains` [EXTRACTED]
+- [[Output_6]] - `contains` [EXTRACTED]
+- [[Quality Checklist_27]] - `contains` [EXTRACTED]
+- [[Role_113]] - `contains` [EXTRACTED]
+- [[Technical Specification_3]] - `contains` [EXTRACTED]
+- [[i-apollo.agent]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Output_Sections_ALL_required_3
+#graphify/document #graphify/EXTRACTED #community/Community_1355

@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "ServiceManager"
-location: "L58"
+community: "Community 250"
+location: "L159"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ServiceManager
+  - community/Community_250
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[.inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/INFERRED #community/Community_250

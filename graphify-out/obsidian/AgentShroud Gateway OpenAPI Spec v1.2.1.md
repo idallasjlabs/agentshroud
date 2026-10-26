@@ -1,13 +1,13 @@
 ---
 source_file: "docs/api/openapi.json"
 type: "document"
-community: "Obsidian appearance.json (empty)"
+community: "Community 1736"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Obsidian_appearancejson_empty
+  - community/Community_1736
 ---
 
 # AgentShroud Gateway OpenAPI Spec v1.2.1
 
-#graphify/document #graphify/EXTRACTED #community/Obsidian_appearancejson_empty
+#graphify/document #graphify/EXTRACTED #community/Community_1736

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo.png"
 type: "image"
-community: "AgentTarget (2)"
+community: "Community 162"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/AgentTarget_2
+  - community/Community_162
 ---
 
 # AgentShroud Primary Logo Lockup
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud Logo - GlowTransparent Variant]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/AgentTarget_2
+#graphify/image #graphify/INFERRED #community/Community_162

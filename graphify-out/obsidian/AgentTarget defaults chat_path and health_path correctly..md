@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # AgentTarget defaults chat_path and health_path correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_target_default_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "UserSessionManager (4)"
-location: "L369"
+community: "Community 110"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_4
+  - community/Community_110
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
+- [[.get()_4]] - `references` [EXTRACTED]
+- [[.list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_4
+#graphify/code #graphify/EXTRACTED #community/Community_110

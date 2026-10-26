@@ -1,71 +1,22 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Any"
-location: "L496"
+community: "Community 185"
+location: "L56"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Any
+  - graphify/EXTRACTED
+  - community/Community_185
 ---
 
 # Any
 
 ## Connections
-- [[dot-_analyze_request_for_rbac()]] - `references` [EXTRACTED]
-- [[dot-_check_cross_session_access()]] - `references` [EXTRACTED]
-- [[dot-_check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[dot-_enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()]] - `references` [EXTRACTED]
-- [[dot-_is_tool_call_request()]] - `references` [EXTRACTED]
-- [[dot-process_request()]] - `references` [EXTRACTED]
-- [[dot-process_tool_result()]] - `references` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
-- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[ConsentFramework]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PathIsolationConfig]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[calculate_overall_score()]] - `references` [EXTRACTED]
+- [[calculate_tool_score()]] - `references` [EXTRACTED]
+- [[format_report()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Any
+#graphify/code #graphify/EXTRACTED #community/Community_185

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "Community 48"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_48
 ---
 
 # All published versions of an npm package (via the npm CLI).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[fetch_npm_versions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/Community_48
