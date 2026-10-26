@@ -604,18 +604,38 @@ if os.path.exists(cfg_path):
         text = f.read()
 lines = text.splitlines()
 
-# Locate an existing top-level mcp_servers: block [start, end).
-start = end = None
-for i, ln in enumerate(lines):
-    if re.match(r"^mcp_servers:\s*$", ln):
-        start = i
-        j = i + 1
+# Locate EVERY top-level mcp_servers key, block form (`mcp_servers:`) or inline flow
+# form (`mcp_servers: {}`, optionally followed by a comment). Matching only the block
+# form missed prod's inline `mcp_servers: {}` (2026-10-26, Hermes 0.22.5 has no
+# PyYAML so this fallback is the live path) and appended a second key; Hermes then
+# rejected config.yaml as "duplicate key mcp_servers" and ignored every later change.
+header = re.compile(r"^mcp_servers:\s*(\{.*?\}|\[.*?\]|null|Null|NULL|~)?\s*(#.*)?$")
+spans = []  # (start, end, inline_value_or_None), end exclusive
+i = 0
+while i < len(lines):
+    m = header.match(lines[i])
+    if not m:
+        i += 1
+        continue
+    j = i + 1
+    if m.group(1) is None:
         while j < len(lines) and (lines[j].strip() == "" or lines[j].startswith(("  ", "\t"))):
             j += 1
-        end = j
-        break
+    spans.append((i, j, m.group(1)))
+    i = j
 
-existing_block = lines[start:end] if start is not None else []
+# An inline empty value ({}, [], null, ~) is the same key with nothing in it. A
+# non-empty inline value cannot be merged safely without a YAML parser: leave the
+# file exactly as it is rather than guess, and say so in the boot log.
+if any(v is not None and re.sub(r"\s", "", v).lower() not in ("{}", "[]", "null", "~") for _, _, v in spans):
+    print("SKIPPED: config.yaml has a non-empty inline mcp_servers value; cannot merge it without PyYAML")
+    sys.exit(0)
+
+# One logical block: the entries of every block-form copy (duplicates collapse here).
+existing_block = ["mcp_servers:"]
+for s, e, v in spans:
+    if v is None:
+        existing_block += lines[s + 1:e]
 existing_text = "\n".join(existing_block)
 
 def has_server(name, url):
@@ -657,21 +677,30 @@ for n in explicitly_disabled:
     if n in merged:
         merged[n]["enabled"] = "false"
 
-block = ["mcp_servers:"]
+# An empty result is written as `{}`: a bare `mcp_servers:` is YAML null.
+block = ["mcp_servers:"] if merged else ["mcp_servers: {}"]
 for n in merged:
     block.append("  %s:" % n)
     for k, v in merged[n].items():
         block.append("    %s: %s" % (k, v))
 
-if start is not None:
-    new_lines = lines[:start] + block + lines[end:]
+# Replace every copy with the single merged block, at the first copy's position.
+if spans:
+    new_lines, pos = [], 0
+    for s, e, _ in spans:
+        new_lines += lines[pos:s]
+        if s == spans[0][0]:
+            new_lines += block
+        pos = e
+    new_lines += lines[pos:]
 else:
     new_lines = lines + ([""] if lines and lines[-1].strip() else []) + block
 
-if changed or start is None:
+new_text = "\n".join(new_lines) + "\n"
+if new_text != text:
     tmp = cfg_path + ".tmp.%d" % os.getpid()
     with open(tmp, "w") as f:
-        f.write("\n".join(new_lines) + "\n")
+        f.write(new_text)
     os.replace(tmp, cfg_path)
     print("CHANGED:" + ",".join(changed) if changed else "CHANGED")
 else:
