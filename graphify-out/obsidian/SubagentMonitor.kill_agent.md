@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist (5)"
+community: "Community 1164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist_5
+  - community/Community_1164
 ---
 
 # SubagentMonitor.kill_agent
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SubagentMonitor._log_event]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist_5
+#graphify/code #graphify/EXTRACTED #community/Community_1164

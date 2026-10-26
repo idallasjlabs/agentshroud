@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "killswitch.sh"
-location: "L3"
+community: "Community 560"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/Community_560
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/killswitchsh
+#graphify/document #graphify/EXTRACTED #community/Community_560

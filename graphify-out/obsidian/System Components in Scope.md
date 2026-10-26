@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TestCredentialInjection"
+community: "Community 935"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCredentialInjection
+  - community/Community_935
 ---
 
 # System Components in Scope
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Threat Modeling Scope]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCredentialInjection
+#graphify/document #graphify/EXTRACTED #community/Community_935

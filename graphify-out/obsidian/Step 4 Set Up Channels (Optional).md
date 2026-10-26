@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "SkillGuard (2)"
+community: "Community 243"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/Community_243
 ---
 
 # Step 4: Set Up Channels (Optional)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Initial Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/Community_243

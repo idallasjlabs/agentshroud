@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/exports.md"
+source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "Community 293"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Community_293
 ---
 
 # Step 7c - GraphML export (only if --graphml flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/Community_293

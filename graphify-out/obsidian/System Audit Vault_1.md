@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_90
 ---
 
 # System Audit Vault
 
 ## Connections
-- [[Purpose_108]] - `contains` [EXTRACTED]
-- [[Related Skills_79]] - `contains` [EXTRACTED]
-- [[Usage_85]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-savREADME]] - `contains` [EXTRACTED]
+- [[Purpose_65]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_70]] - `contains` [EXTRACTED]
+- [[Related Skills_86]] - `contains` [EXTRACTED]
+- [[Usage_88]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_90

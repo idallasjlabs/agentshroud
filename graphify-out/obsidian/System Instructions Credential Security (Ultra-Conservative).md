@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "What You Must Do When Invoked (3)"
+community: "Community 376"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked_3
+  - community/Community_376
 ---
 
 # System Instructions: Credential Security (Ultra-Conservative)
@@ -21,10 +21,11 @@ tags:
 - [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
 - [[💬 Example Conversations]] - `contains` [EXTRACTED]
 - [[📊 Security Rules]] - `contains` [EXTRACTED]
+- [[📋 Quick Reference Card]] - `contains` [EXTRACTED]
 - [[📝 Implementation Checklist]] - `contains` [EXTRACTED]
 - [[🔄 What Changed from Previous Version]] - `contains` [EXTRACTED]
 - [[🔐 Core Security Principle]] - `contains` [EXTRACTED]
 - [[🛡️ Security Benefits]] - `contains` [EXTRACTED]
 - [[🧪 Decision Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked_3
+#graphify/document #graphify/EXTRACTED #community/Community_376

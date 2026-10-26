@@ -1,17 +1,17 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "DelegationManager"
-location: "L1"
+community: "Community 106"
+location: "L1055"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_106
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_106

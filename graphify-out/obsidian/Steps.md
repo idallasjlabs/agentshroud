@@ -1,24 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: ".agents/skills/i-code-reviewer/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
-location: "L23"
+community: "Community 2146"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/Community_2146
 ---
 
 # Steps
 
 ## Connections
-- [[1. Verify CI and update the PR]] - `contains` [EXTRACTED]
-- [[2. Merge]] - `contains` [EXTRACTED]
-- [[3. Update graphify]] - `contains` [EXTRACTED]
-- [[4. Tag and release]] - `contains` [EXTRACTED]
-- [[5. Documentation and version visibility]] - `contains` [EXTRACTED]
-- [[6. Close Jira]] - `contains` [EXTRACTED]
-- [[7. Rebuildrestart prod and dev from main]] - `contains` [EXTRACTED]
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill Code review and impact analysis (Pre-commit)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_2146

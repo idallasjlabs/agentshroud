@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "ApprovalQueueConfig (5)"
-location: "L228"
+community: "Community 1386"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/Community_1386
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[1.3.0 Reliability (2026-07-21)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/document #graphify/EXTRACTED #community/Community_1386

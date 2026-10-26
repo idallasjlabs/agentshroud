@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Layer-by-Layer Breakdown (3)"
+community: "Community 572"
 location: "L294"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown_3
+  - community/Community_572
 ---
 
 # Step 4: Edit the Skill
@@ -17,4 +17,4 @@ tags:
 - [[Start with Reusable Skill Contents]] - `contains` [EXTRACTED]
 - [[Update SKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown_3
+#graphify/document #graphify/EXTRACTED #community/Community_572

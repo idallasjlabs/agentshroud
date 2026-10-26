@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._proxy_request_impl()"
+community: "Community 605"
 location: "L4122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_proxy_request_impl
+  - community/Community_605
 ---
 
 # Suppress repeated startup/shutdown system notices in short windows.
 
 ## Connections
-- [[dot-_suppress_duplicate_system_notice()]] - `rationale_for` [EXTRACTED]
+- [[._suppress_duplicate_system_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_proxy_request_impl
+#graphify/rationale #graphify/EXTRACTED #community/Community_605

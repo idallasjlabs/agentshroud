@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".cursor/agents/i-hdev.md"
 type: "document"
-community: "Features"
-location: "L250"
+community: "Community 841"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Community_841
 ---
 
 # Step 7 — Update documentation and website
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Community_841

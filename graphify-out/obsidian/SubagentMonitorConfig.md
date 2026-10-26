@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "Community 72"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SubagentMonitor
+  - community/Community_72
 ---
 
 # SubagentMonitorConfig
 
 ## Connections
-- [[dot-__init__()_118]] - `calls` [EXTRACTED]
-- [[dot-__init__()_25]] - `references` [EXTRACTED]
-- [[dot-test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_120]] - `references` [EXTRACTED]
+- [[.test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
 - [[TestKillSwitch]] - `uses` [INFERRED]
@@ -35,12 +35,12 @@ tags:
 - [[TestSubagentTracking]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()]] - `calls` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
-- [[monitor_config()]] - `calls` [EXTRACTED]
-- [[strict_config()]] - `calls` [EXTRACTED]
+- [[default_config()_4]] - `calls` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[monitor_config()_2]] - `calls` [EXTRACTED]
+- [[strict_config()_2]] - `calls` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SubagentMonitor
+#graphify/code #graphify/INFERRED #community/Community_72

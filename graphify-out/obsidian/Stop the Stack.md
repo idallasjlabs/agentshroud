@@ -1,17 +1,19 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "TestMultilingualInjection"
-location: "L358"
+community: "Community 258"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_258
 ---
 
 # Stop the Stack
 
 ## Connections
-- [[Usage_61]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Graceful Shutdown]] - `contains` [EXTRACTED]
+- [[Nuclear Option (Reset Everything)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_258

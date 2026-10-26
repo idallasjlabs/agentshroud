@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "Community 236"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_236
 ---
 
 # Tailscale Overlay Network (tail240ea8.ts.net)
@@ -17,4 +17,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `shares_data_with` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/image #graphify/EXTRACTED #community/Community_236

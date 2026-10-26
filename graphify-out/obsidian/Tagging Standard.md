@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L85"
+community: "Community 209"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_209
 ---
 
 # Tagging Standard
@@ -16,4 +16,4 @@ tags:
 - [[Required Tags (All Resources)]] - `contains` [EXTRACTED]
 - [[Tag Audit Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

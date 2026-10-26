@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "GSDE&G Development Master Checklist Skill"
-location: "L157"
+community: "Community 179"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/Community_179
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_179

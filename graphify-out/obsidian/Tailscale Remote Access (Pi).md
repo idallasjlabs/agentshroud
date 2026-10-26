@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "concept"
-community: "test_security_regressions_v1_2.py"
+community: "Community 764"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/Community_764
 ---
 
 # Tailscale Remote Access (Pi)
@@ -14,4 +14,4 @@ tags:
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/concept #graphify/EXTRACTED #community/Community_764

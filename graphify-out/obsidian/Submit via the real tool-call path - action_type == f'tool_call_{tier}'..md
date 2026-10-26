@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "rationale"
-community: "test_voice_latency_guard.py"
+community: "Community 70"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_70
 ---
 
 # Submit via the real tool-call path -> action_type == f'tool_call_{tier}'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_submit_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_70

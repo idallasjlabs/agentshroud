@@ -1,18 +1,19 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "TrustManager"
+community: "Community 387"
 location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Community_387
 ---
 
 # Surface to extend
 
 ## Connections
+- [[Workstream C — Full local-model parity for both bots]] - `contains` [EXTRACTED]
 - [[Workstream C Full Local-Model Parity (Both Bots)]] - `contains` [EXTRACTED]
 - [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/Community_387

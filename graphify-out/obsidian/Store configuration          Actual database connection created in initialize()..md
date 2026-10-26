@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 7"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_7
 ---
 
 # Store configuration          Actual database connection created in initialize().
 
 ## Connections
-- [[dot-__init__()_136]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_13]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

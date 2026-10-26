@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "iCloud Services Setup - Complete Guide"
+community: "Community 510"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Setup_-_Complete_Guide
+  - community/Community_510
 ---
 
 # Step 4: Set Default Model
@@ -16,4 +16,4 @@ tags:
 - [[Option 1 Use Anthropic Claude (Recommended)]] - `contains` [EXTRACTED]
 - [[Option 2 Use OpenAI GPT-4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_510

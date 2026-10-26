@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-17.md"
 type: "document"
-community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand) (2)"
+community: "Community 347"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2
+  - community/Community_347
 ---
 
 # Sunday Upgrade Report — 2026-09-17 (prod, on-demand)
@@ -24,10 +24,7 @@ tags:
 - [[6. Preflighthygiene (git)]] - `contains` [EXTRACTED]
 - [[8. Security findings table]] - `contains` [EXTRACTED]
 - [[9. Upgrade table]] - `contains` [EXTRACTED]
-- [[Prod promotion BLOCKED-awaiting-dev finding (2026-09-17)]] - `references` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
 - [[Sunday Upgrade Report — 2026-09-20 (PROD run, full)]] - `references` [EXTRACTED]
-- [[Trivy scan results — 22 CRITICAL across gatewayopenclawhermes (2026-09-17)]] - `references` [EXTRACTED]
-- [[pip-audit gap — gateway Python deps not scanned]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand_2
+#graphify/document #graphify/EXTRACTED #community/Community_347

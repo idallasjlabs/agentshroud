@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".cursor/agents/i-hdev.md"
 type: "document"
-community: "Features"
-location: "L303"
+community: "Community 841"
+location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Community_841
 ---
 
 # Step 9b — Update the Jira ticket with the PR link
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Community_841

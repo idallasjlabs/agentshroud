@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/today-in-ai.txt"
 type: "concept"
-community: "DockerEngine"
+community: "Community 373"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/Community_373
 ---
 
 # TL;DR Cross-Query Synthesis Step
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Today in AI (12-Query Sweep)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DockerEngine
+#graphify/concept #graphify/EXTRACTED #community/Community_373

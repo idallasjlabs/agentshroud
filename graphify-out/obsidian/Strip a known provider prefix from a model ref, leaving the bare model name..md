@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "rationale"
-community: "is_overloaded"
+community: "Community 1937"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Community_1937
 ---
 
 # Strip a known provider prefix from a model ref, leaving the bare model name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strip_provider_prefix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/Community_1937

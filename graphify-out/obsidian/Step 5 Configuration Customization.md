@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Remediation (2)"
+community: "Community 600"
 location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation_2
+  - community/Community_600
 ---
 
 # Step 5: Configuration Customization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation_2
+#graphify/document #graphify/EXTRACTED #community/Community_600

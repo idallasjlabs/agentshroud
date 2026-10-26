@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "Quickstart"
-location: "L117"
+community: "Community 1422"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Community_1422
 ---
 
 # Step 5 — Inject into All Three LLMs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Survey → Draft → Inject → Confirm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Community_1422

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
+community: "Community 532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+  - community/Community_532
 ---
 
 # System Prompt Protection Tests
@@ -14,4 +14,4 @@ tags:
 - [[Output Canary System Tests]] - `semantically_similar_to` [INFERRED]
 - [[PromptProtection]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+#graphify/code #graphify/EXTRACTED #community/Community_532

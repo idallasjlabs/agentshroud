@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "Community 696"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/Community_696
 ---
 
 # TAILSCALE_SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[PAIRING_INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/Community_696

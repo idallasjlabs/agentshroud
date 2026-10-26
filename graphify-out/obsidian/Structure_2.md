@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L5"
+community: "Community 273"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Community_273
 ---
 
 # Structure
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_273

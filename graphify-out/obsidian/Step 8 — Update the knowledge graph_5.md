@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".cursor/agents/i-odev.md"
 type: "document"
-community: "check_upstream_cves()"
-location: "L266"
+community: "Community 844"
+location: "L268"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/Community_844
 ---
 
 # Step 8 — Update the knowledge graph
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/document #graphify/EXTRACTED #community/Community_844

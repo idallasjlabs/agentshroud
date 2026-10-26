@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "rationale"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Tailscale Funnel Exposure (supersedes on-device client)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Voice Gateway Service (STTTTS on marvin)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/rationale #graphify/EXTRACTED #community/Community_555

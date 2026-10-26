@@ -1,19 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "mcp_inspector.py"
-location: "L434"
+community: "Community 1380"
+location: "L620"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/Community_1380
 ---
 
 # Summary
 
 ## Connections
-- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
-- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_1380

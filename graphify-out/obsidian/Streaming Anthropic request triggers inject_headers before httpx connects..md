@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # Streaming Anthropic request triggers inject_headers before httpx connects.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_credential_injector_called_in_streaming_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1278

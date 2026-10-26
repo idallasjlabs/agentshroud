@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "Community 0"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SubagentMonitor
+  - community/Community_0
 ---
 
 # SubagentEvent
 
 ## Connections
-- [[dot-_log_event()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_2]] - `references` [EXTRACTED]
-- [[dot-get_flagged_events()]] - `references` [EXTRACTED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[._log_event()_1]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_6]] - `references` [EXTRACTED]
+- [[.get_flagged_events()]] - `references` [EXTRACTED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SubagentMonitor
+#graphify/code #graphify/INFERRED #community/Community_0

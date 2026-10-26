@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Error Index.md (2)"
-location: "L141"
+community: "Community 1934"
+location: "L463"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd_2
+  - community/Community_1934
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
+- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1934

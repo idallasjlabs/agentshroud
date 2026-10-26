@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (2)"
+community: "Community 344"
 location: "L2705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/Community_344
 ---
 
 # Strip optional markdown json fences around model output.
 
 ## Connections
-- [[dot-_strip_json_fence()]] - `rationale_for` [EXTRACTED]
+- [[._strip_json_fence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_344

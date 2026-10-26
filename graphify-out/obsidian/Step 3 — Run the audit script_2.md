@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+source_file: ".cursor/agents/i-ab.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
-location: "L57"
+community: "Community 1296"
+location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/Community_1296
 ---
 
 # Step 3 — Run the audit script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/Community_1296

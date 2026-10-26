@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "CompetitiveIntelReport"
-location: "L42"
+community: "Community 7"
+location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_7
 ---
 
 # Sync TestClient for WebSocket tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_client()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

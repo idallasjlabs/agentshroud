@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "Community 81"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/Community_81
 ---
 
 # StreamReader
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
-- [[_make_stream()]] - `references` [EXTRACTED]
+- [[_make_stream()_1]] - `references` [EXTRACTED]
 - [[test_empty_request_line_returns_nothing()]] - `calls` [EXTRACTED]
 - [[test_handle_client_swallows_generic_exception()]] - `calls` [EXTRACTED]
 - [[test_handle_client_swallows_timeout_and_closes_writer()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[test_relay_copies_bytes_until_eof()]] - `calls` [EXTRACTED]
 - [[test_relay_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/Community_81

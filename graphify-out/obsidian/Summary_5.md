@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "ApprovalQueueConfig (5)"
-location: "L171"
+community: "Community 1916"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/Community_1916
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[1.5.0 A2A Governance (2026-08-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/document #graphify/EXTRACTED #community/Community_1916

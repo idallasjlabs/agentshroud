@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
+source_file: ".agents/agents/sad.md"
 type: "document"
-community: "Mode A — Single task (6)"
-location: "L6"
+community: "Community 1277"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_6
+  - community/Community_1277
 ---
 
 # System Audit & Documentation
@@ -25,7 +25,6 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-sadSKILL]] - `contains` [EXTRACTED]
+- [[sad]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_6
+#graphify/document #graphify/EXTRACTED #community/Community_1277
