@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 684"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_684
 ---
 
 # test_log_sanitizer.py
 
 ## Connections
-- [[LogSanitizer]] - `imports` [EXTRACTED]
+- [[LogSanitizer_1]] - `imports` [EXTRACTED]
 - [[TestLogSanitizer]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_684

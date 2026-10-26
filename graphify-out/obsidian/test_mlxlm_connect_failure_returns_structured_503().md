@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L651"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # test_mlxlm_connect_failure_returns_structured_503()
 
 ## Connections
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
-- [[asyncio_2]] - `references` [EXTRACTED]
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/Community_1278

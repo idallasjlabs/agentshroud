@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "DELIVERABLE 1 — Domain-by-Domain Assessment"
+community: "Community 99"
 location: "L450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DELIVERABLE_1__Domain-by-Domain_Assessment
+  - community/Community_99
 ---
 
 # test_owner_display_name_overrides_pipe()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DELIVERABLE_1__Domain-by-Domain_Assessment
+#graphify/code #graphify/EXTRACTED #community/Community_99

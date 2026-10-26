@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "TestFabricatedSecurityNotice (2)"
-location: "L47"
+community: "Community 190"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2
+  - community/Community_190
 ---
 
 # test_jobs_yaml_has_expected_job_count()
@@ -15,4 +15,4 @@ tags:
 - [[_parse_job_names_from_yaml()]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2
+#graphify/code #graphify/EXTRACTED #community/Community_190

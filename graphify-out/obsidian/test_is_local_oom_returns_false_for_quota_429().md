@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "ModeRequest"
+community: "Community 2333"
 location: "L806"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/Community_2333
 ---
 
 # test_is_local_oom_returns_false_for_quota_429()
 
 ## Connections
-- [[dot-_is_local_oom()]] - `calls` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
-- [[_is_local_oom returns False for cloud 429 quota errors (different failover…]] - `rationale_for` [EXTRACTED]
+- [[_is_local_oom returns False for cloud 429 quota errors (different failover path)]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/Community_2333

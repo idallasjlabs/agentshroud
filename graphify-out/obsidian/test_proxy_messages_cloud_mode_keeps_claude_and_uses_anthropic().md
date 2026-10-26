@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()
 
 ## Connections
-- [[LLMProxy]] - `uses` [INFERRED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
 - [[_FakeSanitizer]] - `calls` [EXTRACTED]
-- [[_fake_forward()]] - `contains` [EXTRACTED]
-- [[_fake_forward()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/Community_1278

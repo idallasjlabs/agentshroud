@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "log_sanitizer.py"
+community: "Community 728"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/Community_728
 ---
 
 # test_help_prints_usage()
 
 ## Connections
-- [[_run()_4]] - `calls` [EXTRACTED]
+- [[_run()]] - `calls` [EXTRACTED]
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/Community_728

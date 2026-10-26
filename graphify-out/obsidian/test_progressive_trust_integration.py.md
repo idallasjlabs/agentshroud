@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "soc/router.py"
+community: "Community 11"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/Community_11
 ---
 
 # test_progressive_trust_integration.py
 
 ## Connections
-- [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
 - [[PromotionThreshold]] - `imports` [EXTRACTED]
 - [[TestBackwardCompat]] - `contains` [EXTRACTED]
 - [[TestEnforcementMode]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[_set_state()]] - `contains` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/Community_11

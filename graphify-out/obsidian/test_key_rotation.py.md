@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "A2AMethod"
+community: "Community 1991"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/Community_1991
 ---
 
 # test_key_rotation.py
 
 ## Connections
 - [[CredentialInfo]] - `imports` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `imports` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `imports` [EXTRACTED]
-- [[KeyRotationConfig]] - `imports` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[MockValidator]] - `contains` [EXTRACTED]
 - [[RotationStatus]] - `imports` [EXTRACTED]
@@ -25,10 +25,10 @@ tags:
 - [[TestKeyRotationConfig]] - `contains` [EXTRACTED]
 - [[TestKeyRotationManager]] - `contains` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[test_credentials_health_endpoint()]] - `contains` [EXTRACTED]
 - [[test_credentials_status_endpoint()]] - `contains` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/Community_1991

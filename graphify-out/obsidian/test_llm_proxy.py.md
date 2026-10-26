@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "Community 1278"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_1278
 ---
 
 # test_llm_proxy.py
@@ -21,8 +21,8 @@ tags:
 - [[_TrackingInjector]] - `contains` [EXTRACTED]
 - [[_make_fake_urlopen()]] - `contains` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `contains` [EXTRACTED]
-- [[_run_stream (StreamHead test harness)]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[_run_stream()]] - `contains` [EXTRACTED]
+- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - `contains` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `contains` [EXTRACTED]
 - [[test_cloud_backend_connect_failure_still_returns_502()]] - `contains` [EXTRACTED]
@@ -46,14 +46,14 @@ tags:
 - [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - `contains` [EXTRACTED]
 - [[test_scan_request_data_scans_messages_without_name_error()]] - `contains` [EXTRACTED]
-- [[test_streaming_cloud_non_quota_400_also_propagates]] - `contains` [EXTRACTED]
-- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - `contains` [EXTRACTED]
-- [[test_streaming_default_contract_yields_only_bytes]] - `contains` [EXTRACTED]
+- [[test_streaming_cloud_non_quota_400_also_propagates()]] - `contains` [EXTRACTED]
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame()]] - `contains` [EXTRACTED]
+- [[test_streaming_default_contract_yields_only_bytes()]] - `contains` [EXTRACTED]
 - [[test_streaming_secret_value_redacted()]] - `contains` [EXTRACTED]
 - [[test_streaming_tool_acl_allows_permitted_tool()]] - `contains` [EXTRACTED]
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `contains` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `contains` [EXTRACTED]
-- [[test_streaming_with_head_reports_200_then_chunks]] - `contains` [EXTRACTED]
-- [[test_streaming_with_head_reports_upstream_400_and_body]] - `contains` [EXTRACTED]
+- [[test_streaming_with_head_reports_200_then_chunks()]] - `contains` [EXTRACTED]
+- [[test_streaming_with_head_reports_upstream_400_and_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/Community_1278

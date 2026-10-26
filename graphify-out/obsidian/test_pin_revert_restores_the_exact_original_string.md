@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "Community 261"
 location: "198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_261
 ---
 
 # test_pin_revert_restores_the_exact_original_string
@@ -15,4 +15,4 @@ tags:
 - [[read_pin()]] - `calls` [EXTRACTED]
 - [[write_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Community_261

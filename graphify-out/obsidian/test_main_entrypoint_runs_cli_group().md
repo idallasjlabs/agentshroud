@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "1. GitHub MCP Authentication Reset (2)"
+community: "Community 488"
 location: "L698"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset_2
+  - community/Community_488
 ---
 
 # test_main_entrypoint_runs_cli_group()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2
+#graphify/code #graphify/EXTRACTED #community/Community_488

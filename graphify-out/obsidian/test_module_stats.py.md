@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "Community 300"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/Community_300
 ---
 
 # test_module_stats.py
 
 ## Connections
-- [[Decision_6]] - `imports` [EXTRACTED]
+- [[Decision]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[ModuleStatsCollector]] - `imports` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `contains` [EXTRACTED]
 - [[TestEnforcementWiring]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `contains` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/Community_300

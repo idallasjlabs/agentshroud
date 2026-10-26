@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "Community 75"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/Community_75
 ---
 
 # test_progressive_lockdown.py
 
 ## Connections
-- [[FakePipelineResult_1]] - `contains` [EXTRACTED]
-- [[FakeRBAC_1]] - `contains` [EXTRACTED]
+- [[FakePipelineResult]] - `contains` [EXTRACTED]
+- [[FakeRBAC]] - `contains` [EXTRACTED]
 - [[LockdownLevel]] - `imports` [EXTRACTED]
-- [[PassthroughPipeline_1]] - `contains` [EXTRACTED]
+- [[PassthroughPipeline]] - `contains` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
 - [[TestCollabLockdownNotifications]] - `contains` [EXTRACTED]
 - [[TestLockedCommand]] - `contains` [EXTRACTED]
 - [[TestProgressiveLockdownUnit]] - `contains` [EXTRACTED]
 - [[TestSuspendedDropNotice]] - `contains` [EXTRACTED]
 - [[TestUnlockCommand]] - `contains` [EXTRACTED]
-- [[_make_proxy()_4]] - `contains` [EXTRACTED]
-- [[_make_update()_2]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
+- [[_make_update()]] - `contains` [EXTRACTED]
 - [[_wrap()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/Community_75

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "Athena — Knowledge Distiller (2)"
+community: "Community 808"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/Community_808
 ---
 
 # test_hermes_dashboard_bridge.py
@@ -15,6 +15,5 @@ tags:
 - [[TestRewriteRequestHeaders]] - `contains` [EXTRACTED]
 - [[bridge_module()]] - `contains` [EXTRACTED]
 - [[dashboard_bridge.py (Hermes)]] - `implements` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/code #graphify/EXTRACTED #community/Community_808
