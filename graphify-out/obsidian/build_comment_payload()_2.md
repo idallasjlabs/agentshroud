@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "TestEgressTelegramNotify"
-location: "L104"
+community: "Community 181"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_181
 ---
 
 # build_comment_payload()
 
 ## Connections
+- [[Build the ADF (Atlassian Document Format) body for POST ...comment._1]] - `rationale_for` [EXTRACTED]
 - [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - `rationale_for` [EXTRACTED]
-- [[_adf_paragraph()]] - `calls` [EXTRACTED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[_adf_doc()_1]] - `calls` [EXTRACTED]
+- [[add_comment()_1]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_181

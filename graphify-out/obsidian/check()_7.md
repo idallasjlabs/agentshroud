@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_openclaw_readiness_retry.sh"
+source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "code"
-community: "Function Details (5)"
-location: "L21"
+community: "Community 1190"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Community_1190
 ---
 
 # check()
 
 ## Connections
-- [[test_openclaw_readiness_retry.sh]] - `defines` [EXTRACTED]
-- [[test_openclaw_readiness_retry.sh script]] - `calls` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_5
+#graphify/code #graphify/EXTRACTED #community/Community_1190

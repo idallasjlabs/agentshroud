@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # conftest.py
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `contains` [EXTRACTED]
-- [[auth_headers()_2]] - `contains` [EXTRACTED]
+- [[auth_headers()]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
-- [[sanitizer()_2]] - `contains` [EXTRACTED]
+- [[sanitizer()]] - `contains` [EXTRACTED]
 - [[test_client()]] - `contains` [EXTRACTED]
 - [[test_config()]] - `contains` [EXTRACTED]
 - [[test_ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

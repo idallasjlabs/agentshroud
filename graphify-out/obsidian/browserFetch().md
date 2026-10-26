@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/browser/browse.js"
 type: "code"
-community: "browser/browse.js (2)"
+community: "Community 2035"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/browsejs_2
+  - community/Community_2035
 ---
 
 # browserFetch()
 
 ## Connections
 - [[appendLog()]] - `calls` [EXTRACTED]
-- [[browserbrowse.js]] - `indirect_call` [INFERRED]
+- [[browse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/browsejs_2
+#graphify/code #graphify/EXTRACTED #community/Community_2035

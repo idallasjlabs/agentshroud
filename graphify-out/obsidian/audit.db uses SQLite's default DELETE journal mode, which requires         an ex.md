@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "rationale"
-community: "archive_old_events"
+community: "Community 380"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/Community_380
 ---
 
 # audit.db uses SQLite's default DELETE journal mode, which requires         an ex
 
 ## Connections
-- [[dot-test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `rationale_for` [EXTRACTED]
+- [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/archive_old_events
+#graphify/rationale #graphify/EXTRACTED #community/Community_380

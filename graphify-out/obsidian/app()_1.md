@@ -1,18 +1,18 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "egress_filter.py"
-location: "L21"
+community: "Community 447"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_447
 ---
 
 # app()
 
 ## Connections
-- [[Import chatbot.main with a fresh module state (no real OpenAI).]] - `rationale_for` [EXTRACTED]
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[Create a test FastAPI app with version routes.]] - `rationale_for` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/Community_447

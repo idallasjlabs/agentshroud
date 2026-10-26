@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_live.sh"
+source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "_make_sanitizer() (2)"
-location: "L29"
+community: "Community 933"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer_2
+  - community/Community_933
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
+- [[preflight-check.sh]] - `defines` [EXTRACTED]
+- [[preflight-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer_2
+#graphify/code #graphify/EXTRACTED #community/Community_933

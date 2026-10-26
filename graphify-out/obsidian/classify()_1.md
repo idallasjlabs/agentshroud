@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "Docker Compose (infra diagram)"
-location: "L117"
+community: "Community 310"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Compose_infra_diagram
+  - community/Community_310
 ---
 
 # classify()
 
 ## Connections
-- [[dot-test_255_is_unreachable()]] - `calls` [EXTRACTED]
-- [[dot-test_nonzero_is_fail()]] - `calls` [EXTRACTED]
-- [[dot-test_zero_is_pass()]] - `calls` [EXTRACTED]
-- [[HostStatus]] - `references` [EXTRACTED]
-- [[Map a runner exit code to a HostStatus.]] - `rationale_for` [EXTRACTED]
-- [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[run_multi_host()]] - `calls` [EXTRACTED]
-- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
+- [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - `rationale_for` [EXTRACTED]
+- [[TestClassify_1]] - `calls` [EXTRACTED]
+- [[_is_benign_skip]] - `calls` [EXTRACTED]
+- [[_is_benign_skip()]] - `calls` [EXTRACTED]
+- [[main()_26]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram
+#graphify/code #graphify/EXTRACTED #community/Community_310

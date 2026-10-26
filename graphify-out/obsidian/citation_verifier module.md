@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "Community 125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/Community_125
 ---
 
 # citation_verifier module
@@ -14,4 +14,4 @@ tags:
 - [[test_citation_verifier.py]] - `implements` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/Community_125

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "Community 119"
 location: "L565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_119
 ---
 
 # blocking suspicious code execution' variant.
 
 ## Connections
-- [[dot-test_blocking_suspicious_code_execution()]] - `rationale_for` [EXTRACTED]
+- [[.test_blocking_suspicious_code_execution()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_119

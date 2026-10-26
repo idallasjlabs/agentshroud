@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/chat-console"
 type: "code"
-community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
+community: "Community 825"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+  - community/Community_825
 ---
 
 # chat-console launcher
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[chat_console.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+#graphify/code #graphify/EXTRACTED #community/Community_825

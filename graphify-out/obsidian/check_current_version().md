@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "upgrade"
+community: "Community 66"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_66
 ---
 
 # check_current_version()
 
 ## Connections
-- [[dot-test_after_upgrade()]] - `calls` [EXTRACTED]
-- [[dot-test_no_history_unknown()]] - `calls` [EXTRACTED]
-- [[dot-test_with_env_var()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
+- [[.test_after_upgrade()]] - `calls` [EXTRACTED]
+- [[.test_no_history_unknown()]] - `calls` [EXTRACTED]
+- [[.test_with_env_var()]] - `calls` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Check the currently installed OpenClaw version.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
@@ -23,6 +23,6 @@ tags:
 - [[get_current_version()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
-- [[version_routes.py_2]] - `imports` [EXTRACTED]
+- [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/Community_66

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/post-deploy-check.sh"
+source_file: "tests/startup_smoke/test_bot_boot_live.sh"
 type: "code"
-community: "One Shroud Over Every Wire (founding mantra)"
-location: "L58"
+community: "Community 1420"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/Community_1420
 ---
 
 # check()
 
 ## Connections
-- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
-- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
+- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/code #graphify/EXTRACTED #community/Community_1420

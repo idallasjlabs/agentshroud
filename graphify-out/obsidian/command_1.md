@@ -1,17 +1,17 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "opencode.json"
-location: "L34"
+community: "Community 159"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_159
 ---
 
 # command
 
 ## Connections
-- [[atlassian-idallasj]] - `contains` [EXTRACTED]
+- [[github-idallasj_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/code #graphify/EXTRACTED #community/Community_159

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "_sync"
+community: "Community 654"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/Community_654
 ---
 
 # backup-restore.md
@@ -16,4 +16,4 @@ tags:
 - [[Disaster Recovery Full Rebuild Procedure]] - `references` [EXTRACTED]
 - [[daily-operations]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/Community_654

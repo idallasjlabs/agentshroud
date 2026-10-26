@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "telegram_proxy.py (3) (2)"
+community: "Community 1264"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/telegram_proxypy_3_2
+  - community/Community_1264
 ---
 
 # browser-fetch package.json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/telegram_proxypy_3_2
+#graphify/code #graphify/AMBIGUOUS #community/Community_1264

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "rationale"
-community: "graphify Skill"
+community: "Community 461"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/Community_461
 ---
 
 # build_merge() rationale (#801 edge direction, #1178 stale-node collapse)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[--update Incremental Re-extraction Flow]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/graphify_Skill
+#graphify/rationale #graphify/EXTRACTED #community/Community_461

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # build_correlation_summary()
@@ -19,7 +19,11 @@ tags:
 - [[get_risk_score()]] - `calls` [EXTRACTED]
 - [[get_risk_summary()]] - `calls` [EXTRACTED]
 - [[get_soc_correlation()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
+- [[soc_correlation()]] - `calls` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
+- [[soc_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10

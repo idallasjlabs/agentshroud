@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "._run_proxy()"
+community: "Community 1918"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/Community_1918
 ---
 
 # architecture.puml (PlantUML)
 
 ## Connections
-- [[Output Format_32]] - `contains` [EXTRACTED]
+- [[Output Format_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_run_proxy
+#graphify/document #graphify/EXTRACTED #community/Community_1918

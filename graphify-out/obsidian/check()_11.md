@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-skills-sync.sh"
+source_file: "tests/startup_smoke/test_openclaw_photo.sh"
 type: "code"
-community: "4. Compliance & Standards Alignment"
-location: "L38"
+community: "Community 547"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/4_Compliance__Standards_Alignment
+  - community/Community_547
 ---
 
 # check()
 
 ## Connections
-- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
-- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
+- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/4_Compliance__Standards_Alignment
+#graphify/code #graphify/EXTRACTED #community/Community_547

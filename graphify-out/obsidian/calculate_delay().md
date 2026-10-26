@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "KillSwitchMonitor (2) (2)"
+community: "Community 822"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_2
+  - community/Community_822
 ---
 
 # calculate_delay()
@@ -18,4 +18,4 @@ tags:
 - [[retry_request()]] - `calls` [EXTRACTED]
 - [[retry_request_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_822

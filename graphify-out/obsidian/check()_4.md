@@ -1,23 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "_w"
-location: "L34"
+community: "Community 1111"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/Community_1111
 ---
 
 # check()
 
 ## Connections
-- [[Colima VM default-route auto-heal (step 2)]] - `references` [EXTRACTED]
-- [[Container net-diag expected-failure baseline (step 5)]] - `references` [EXTRACTED]
-- [[DOCKER-USER iptables reapply + verify (step 3)]] - `references` [EXTRACTED]
-- [[check()_3]] - `semantically_similar_to` [INFERRED]
-- [[resolve_docker_host()]] - `references` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/Community_1111

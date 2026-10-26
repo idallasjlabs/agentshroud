@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "document"
-community: "/graphify explain command"
+community: "Community 1698"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community//graphify_explain_command
+  - community/Community_1698
 ---
 
 # browser-fetch package.json
 
-#graphify/document #graphify/EXTRACTED #community//graphify_explain_command
+#graphify/document #graphify/EXTRACTED #community/Community_1698

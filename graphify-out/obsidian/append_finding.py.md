@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt"
 type: "code"
-community: "Admin CLI Chat Console (OpenClaw via Gateway)"
+community: "Community 1880"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_CLI_Chat_Console_OpenClaw_via_Gateway
+  - community/Community_1880
 ---
 
 # append_finding.py
 
-#graphify/code #graphify/EXTRACTED #community/Admin_CLI_Chat_Console_OpenClaw_via_Gateway
+#graphify/code #graphify/EXTRACTED #community/Community_1880

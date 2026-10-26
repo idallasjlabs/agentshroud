@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "UserSessionManager (3)"
-location: "L135"
+community: "Community 260"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3
+  - community/Community_260
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3
+#graphify/code #graphify/EXTRACTED #community/Community_260

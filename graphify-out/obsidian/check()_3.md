@@ -1,19 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_static.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "_w"
-location: "L37"
+community: "Community 710"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/Community_710
 ---
 
 # check()
 
 ## Connections
-- [[check()_4]] - `semantically_similar_to` [INFERRED]
-- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/Community_710

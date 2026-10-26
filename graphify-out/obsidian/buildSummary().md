@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "test_hermes_mcp_reconciliation.sh"
+community: "Community 1408"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_hermes_mcp_reconciliationsh
+  - community/Community_1408
 ---
 
 # buildSummary()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[startInstall()]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_hermes_mcp_reconciliationsh
+#graphify/code #graphify/INFERRED #community/Community_1408

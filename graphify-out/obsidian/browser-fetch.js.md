@@ -1,17 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
-type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
+type: "code"
+community: "Community 193"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/Community_193
 ---
 
-# browser-fetch.js.md
+# browser-fetch.js
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser SKILL]] - `semantically_similar_to` [INFERRED]
+- [[appendLog()_3]] - `contains` [EXTRACTED]
+- [[browserFetch()_3]] - `contains` [EXTRACTED]
+- [[fs_4]] - `contains` [EXTRACTED]
+- [[path_4]] - `contains` [EXTRACTED]
+- [[{ chromium }_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/code #graphify/EXTRACTED #community/Community_193

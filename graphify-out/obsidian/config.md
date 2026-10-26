@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/apply-patches.js"
-type: "code"
-community: "Release Notes - AgentShroud v0.9.0"
-location: "L17"
+source_file: "skills/openclaw/summarize/SKILL.md"
+type: "document"
+community: "Community 428"
+location: "L76"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/Community_428
 ---
 
-# config
+# Config
 
 ## Connections
-- [[apply-patches.js]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Community_428

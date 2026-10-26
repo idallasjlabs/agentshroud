@@ -1,17 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "System Instructions: Credential Security (Ultra-Conservative)"
+community: "Community 378"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-Conservative
+  - community/Community_378
 ---
 
 # audio.c
 
 ## Connections
+- [[String]] - `imports` [EXTRACTED]
+- [[audio.c]] - `imports` [EXTRACTED]
 - [[audio_capture_frame()]] - `contains` [EXTRACTED]
 - [[audio_get_saved_volume()]] - `contains` [EXTRACTED]
 - [[audio_init()]] - `contains` [EXTRACTED]
@@ -20,4 +22,4 @@ tags:
 - [[audio_set_volume()]] - `contains` [EXTRACTED]
 - [[audio_volume_tick()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
+#graphify/code #graphify/EXTRACTED #community/Community_378

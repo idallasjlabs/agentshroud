@@ -1,17 +1,14 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "Community 2488"
 location: "L610-L615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/Community_2488
 ---
 
 # asb down
 
-## Connections
-- [[_hermes_down()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/Community_2488

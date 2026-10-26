@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # chat()
@@ -15,11 +15,11 @@ tags:
 - [[ChatRequest]] - `references` [EXTRACTED]
 - [[ChatResponse]] - `calls` [EXTRACTED]
 - [[Process chat message with Isaiah's personality.]] - `rationale_for` [EXTRACTED]
-- [[Request_10]] - `references` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
 - [[TestAsyncClient]] - `calls` [EXTRACTED]
 - [[TestErrorSanitization]] - `calls` [EXTRACTED]
 - [[_check_rate_limit()]] - `calls` [EXTRACTED]
-- [[chatbotmain.py]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `calls` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/Community_95

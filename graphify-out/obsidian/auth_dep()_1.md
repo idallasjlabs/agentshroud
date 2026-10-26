@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L126"
+community: "Community 1248"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_1248
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config.]] - `rationale_for` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
+- [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[forward.py]] - `contains` [EXTRACTED]
-- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
-- [[test_forward_stream.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_1248

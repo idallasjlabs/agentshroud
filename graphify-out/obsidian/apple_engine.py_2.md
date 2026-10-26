@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "test_scanner_integration.py (2)"
+community: "Community 612"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy_2
+  - community/Community_612
 ---
 
 # apple_engine.py
 
 ## Connections
 - [[Apple Containers vs DockerPodman]] - `contains` [EXTRACTED]
-- [[Configuration  Environment Variables_7]] - `contains` [EXTRACTED]
-- [[Function Details_16]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_18]] - `contains` [EXTRACTED]
-- [[Purpose_116]] - `contains` [EXTRACTED]
-- [[Related_22]] - `contains` [EXTRACTED]
-- [[Responsibilities_20]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_13]] - `contains` [EXTRACTED]
+- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_22]] - `contains` [EXTRACTED]
+- [[Purpose_140]] - `contains` [EXTRACTED]
+- [[Related_26]] - `contains` [EXTRACTED]
+- [[Responsibilities_24]] - `contains` [EXTRACTED]
 - [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scanner_integrationpy_2
+#graphify/document #graphify/EXTRACTED #community/Community_612

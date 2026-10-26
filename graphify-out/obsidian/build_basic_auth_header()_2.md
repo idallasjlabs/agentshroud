@@ -1,20 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "TestEgressTelegramNotify"
-location: "L89"
+community: "Community 181"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_181
 ---
 
 # build_basic_auth_header()
 
 ## Connections
 - [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - `rationale_for` [EXTRACTED]
-- [[jira_dev_ticket build_basic_auth_header()]] - `semantically_similar_to` [INFERRED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[post_comment()]] - `calls` [EXTRACTED]
+- [[_auth_headers()_1]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_181

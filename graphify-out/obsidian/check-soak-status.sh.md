@@ -1,24 +1,24 @@
 ---
 source_file: "scripts/check-soak-status.sh"
 type: "code"
-community: "_make_sanitizer()"
+community: "Community 118"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Community_118
 ---
 
 # check-soak-status.sh
 
 ## Connections
 - [[Soak status boot-proof is not work-proof]] - `rationale_for` [EXTRACTED]
-- [[Sunday Upgrade Report 2026-10-18 (dev)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
 - [[check-soak-status.sh script]] - `contains` [EXTRACTED]
-- [[main()_15]] - `references` [EXTRACTED]
+- [[main()_26]] - `references` [EXTRACTED]
 - [[post-deploy-check.sh]] - `references` [EXTRACTED]
+- [[upgrade-2026-09-25]] - `references` [EXTRACTED]
+- [[upgrade-2026-09-27]] - `references` [EXTRACTED]
+- [[upgrade-2026-10-04]] - `references` [EXTRACTED]
+- [[upgrade-2026-10-18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/Community_118

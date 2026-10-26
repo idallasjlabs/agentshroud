@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_queue.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "MiddlewareManager (3)"
-location: "L30"
+community: "Community 7"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_7
 ---
 
 # approval_queue()
 
 ## Connections
 - [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[Create approval queue instance for testing]] - `rationale_for` [EXTRACTED]
-- [[test_approval_queue.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/Community_7

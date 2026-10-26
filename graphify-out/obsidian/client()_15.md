@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L37"
+community: "Community 309"
+location: "L135"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - graphify/INFERRED
+  - community/Community_309
 ---
 
 # client()
 
 ## Connections
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/INFERRED #community/Community_309

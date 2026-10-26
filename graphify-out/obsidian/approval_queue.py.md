@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Mode A — Single task (3)"
+community: "Community 487"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_3
+  - community/Community_487
 ---
 
 # approval_queue.py.md
@@ -17,7 +17,7 @@ tags:
 - [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 - [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
-- [[Security Controls_2]] - `contains` [EXTRACTED]
-- [[hermesSOUL]] - `references` [EXTRACTED]
+- [[SOUL_2]] - `references` [EXTRACTED]
+- [[Security Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_3
+#graphify/document #graphify/EXTRACTED #community/Community_487

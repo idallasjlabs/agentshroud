@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "pick_latest_stable"
+community: "Community 6"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/Community_6
 ---
 
 # cors_middleware()
 
 ## Connections
 - [[CORS middleware that uses config from app_state]] - `rationale_for` [EXTRACTED]
+- [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[middleware]] - `references` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/Community_6

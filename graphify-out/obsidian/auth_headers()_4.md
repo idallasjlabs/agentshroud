@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L74"
+community: "Community 7"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_7

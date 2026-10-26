@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "TestEgressTelegramNotify"
-location: "L130"
+community: "Community 181"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_181
 ---
 
 # build_tenant_info_url()
 
 ## Connections
 - [[Unauthenticated site-to-cloud-ID discovery URL._2]] - `rationale_for` [EXTRACTED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
 - [[resolve_cloud_id()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_181

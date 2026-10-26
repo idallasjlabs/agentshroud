@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "test_hermes_cron_seed.py"
+community: "Community 194"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Community_194
 ---
 
 # build_create_issue_payload()
@@ -15,6 +15,6 @@ tags:
 - [[Build the REST v3 create-issue request body.]] - `rationale_for` [EXTRACTED]
 - [[_adf_doc()]] - `calls` [EXTRACTED]
 - [[create_issue()]] - `calls` [EXTRACTED]
-- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/code #graphify/EXTRACTED #community/Community_194

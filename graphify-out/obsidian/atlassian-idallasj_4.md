@@ -1,18 +1,18 @@
 ---
-source_file: ".omp/mcp.json"
+source_file: ".pi/mcp.json"
 type: "code"
-community: ".omp/mcp.json (2)"
+community: "Community 405"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/omp/mcpjson_2
+  - community/Community_405
 ---
 
 # atlassian-idallasj
 
 ## Connections
-- [[dot-llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh_3]] - `references` [EXTRACTED]
-- [[dot-ompmcp.json]] - `contains` [EXTRACTED]
+- [[.llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh_4]] - `references` [EXTRACTED]
+- [[mcp.json_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/omp/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_405

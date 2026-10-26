@@ -1,13 +1,13 @@
 ---
 source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "tools/__init__.py"
+community: "Community 1890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tools/__init__py
+  - community/Community_1890
 ---
 
 # browser-fetch package.json
 
-#graphify/code #graphify/EXTRACTED #community/tools/__init__py
+#graphify/code #graphify/EXTRACTED #community/Community_1890
