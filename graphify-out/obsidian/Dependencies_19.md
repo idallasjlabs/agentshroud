@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: ".github/agents/i-mm.agent.md"
 type: "document"
-community: "TrustConfig (2) (2)"
-location: "L106"
+community: "Community 558"
+location: "L342"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustConfig_2_2
+  - community/Community_558
 ---
 
 # Dependencies
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustConfig_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_558

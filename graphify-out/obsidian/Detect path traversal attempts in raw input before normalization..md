@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Community 31"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_31
 ---
 
 # Detect path traversal attempts in raw input before normalization.
 
 ## Connections
-- [[dot-_detect_raw_traversal()]] - `rationale_for` [EXTRACTED]
+- [[._detect_raw_traversal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_31

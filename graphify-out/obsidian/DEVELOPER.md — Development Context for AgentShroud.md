@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/DEVELOPER.md"
 type: "document"
-community: "TestBenchmarkRegression"
+community: "Community 854"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/Community_854
 ---
 
 # DEVELOPER.md — Development Context for AgentShroud
@@ -24,4 +24,4 @@ tags:
 - [[9. Skill Lookup]] - `contains` [EXTRACTED]
 - [[DEVELOPER]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/document #graphify/EXTRACTED #community/Community_854

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "Community 14"
 location: "L1054"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/Community_14
 ---
 
 # Detect conceptual file-purpose questions without direct content requests.
 
 ## Connections
-- [[dot-_looks_like_file_metadata_question()]] - `rationale_for` [EXTRACTED]
+- [[._looks_like_file_metadata_question()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

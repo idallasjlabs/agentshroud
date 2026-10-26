@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # DNS Filter
@@ -14,4 +14,4 @@ tags:
 - [[Egress Monitor]] - `conceptually_related_to` [INFERRED]
 - [[egress-config.yml]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/concept #graphify/EXTRACTED #community/Community_637

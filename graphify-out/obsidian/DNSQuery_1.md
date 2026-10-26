@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
-type: "code"
-community: "NetworkSecurityFinding"
-location: "L52"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "Community 491"
+location: "L110"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/Community_491
 ---
 
 # DNSQuery
 
 ## Connections
-- [[dot-check()_5]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_7]] - `references` [EXTRACTED]
-- [[dot-get_flagged_queries()]] - `references` [EXTRACTED]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/document #graphify/EXTRACTED #community/Community_491

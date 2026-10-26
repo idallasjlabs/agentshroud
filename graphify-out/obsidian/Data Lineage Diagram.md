@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "canvas_proxy_app"
+community: "Community 589"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/canvas_proxy_app
+  - community/Community_589
 ---
 
 # Data Lineage Diagram
@@ -15,4 +15,4 @@ tags:
 - [[Data Flow Diagram]] - `shares_data_with` [INFERRED]
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `shares_data_with` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/canvas_proxy_app
+#graphify/concept #graphify/INFERRED #community/Community_589

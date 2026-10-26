@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
+community: "Community 465"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
+  - community/Community_465
 ---
 
 # DOCKER-VPN-NETWORKING.md
@@ -20,4 +20,4 @@ tags:
 - [[gVisor Networking Mode (Docker Desktop, problematic)]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
+#graphify/document #graphify/EXTRACTED #community/Community_465

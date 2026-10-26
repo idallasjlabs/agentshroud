@@ -1,20 +1,20 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "_llm_init_agent_reference_paths()"
+community: "Community 971"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_llm_init_agent_reference_paths
+  - community/Community_971
 ---
 
 # D - Denial of Service
 
 ## Connections
 - [[STRIDE Threat Analysis]] - `contains` [EXTRACTED]
-- [[Threat Model_28]] - `contains` [EXTRACTED]
+- [[Threat Model_1]] - `contains` [EXTRACTED]
 - [[Threat Context Window Stuffing]] - `contains` [EXTRACTED]
 - [[Threat Resource Exhaustion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_llm_init_agent_reference_paths
+#graphify/document #graphify/EXTRACTED #community/Community_971

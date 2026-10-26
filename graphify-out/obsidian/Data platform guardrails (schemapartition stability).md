@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "agentshroud-gateway service (proxy mode)"
+community: "Community 2071"
 location: "Section 7"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/agentshroud-gateway_service_proxy_mode
+  - community/Community_2071
 ---
 
 # Data platform guardrails (schema/partition stability)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FODL — Fluence Operational Data Lakehouse]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/agentshroud-gateway_service_proxy_mode
+#graphify/concept #graphify/INFERRED #community/Community_2071

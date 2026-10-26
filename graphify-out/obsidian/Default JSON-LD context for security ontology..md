@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "AuditExportConfig"
+community: "Community 254"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/Community_254
 ---
 
 # Default JSON-LD context for security ontology.
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `rationale_for` [EXTRACTED]
+- [[._default_jsonld_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

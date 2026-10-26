@@ -1,17 +1,19 @@
 ---
-source_file: "docs/project/README.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "test_api_contract_fuzz.py"
-location: "L14"
+community: "Community 490"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/Community_490
 ---
 
 # Current Status
 
 ## Connections
-- [[Project Documentation]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Development Phases]] - `contains` [EXTRACTED]
+- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/document #graphify/EXTRACTED #community/Community_490

@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Community 1230"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1230
 ---
 
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_167]] - `contains` [EXTRACTED]
-- [[Related Skills_94]] - `contains` [EXTRACTED]
-- [[Usage_106]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
-- [[hermesskillsi-dataREADME]] - `contains` [EXTRACTED]
+- [[Purpose_83]] - `contains` [EXTRACTED]
+- [[README_88]] - `contains` [EXTRACTED]
+- [[Related Skills_104]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
+- [[Usage_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1230

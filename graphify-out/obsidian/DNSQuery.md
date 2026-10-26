@@ -1,17 +1,20 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Operations Cheat Sheet"
-location: "L110"
+source_file: "gateway/security/dns_filter.py"
+type: "code"
+community: "Community 72"
+location: "L52"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_72
 ---
 
 # DNSQuery
 
 ## Connections
-- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[.check()_4]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_3]] - `references` [EXTRACTED]
+- [[.get_flagged_queries()]] - `references` [EXTRACTED]
+- [[dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/code #graphify/EXTRACTED #community/Community_72

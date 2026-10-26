@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "MultiTurnTracker"
+community: "Community 115"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/Community_115
 ---
 
 # Detect rapid context window filling.
 
 ## Connections
-- [[dot-_detect_rapid_context_growth()]] - `rationale_for` [EXTRACTED]
+- [[._detect_rapid_context_growth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_115

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "Community 148"
 location: "L383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/Community_148
 ---
 
 # Decides allow / deny / require-approval for inbound A2A requests.      Usage::
 
 ## Connections
-- [[A2APolicyEngine_2]] - `rationale_for` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_148

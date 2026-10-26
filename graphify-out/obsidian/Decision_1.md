@@ -1,20 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L17"
+community: "Community 581"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_581
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
-- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `references` [EXTRACTED]
-- [[Colima as primary macOS dev runtime]] - `references` [EXTRACTED]
-- [[Runtime Abstraction Layer]] - `references` [EXTRACTED]
+- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
+- [[ADR-001 Proxy-layer inversion model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/Community_581

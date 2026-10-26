@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "FileSandbox"
+community: "Community 0"
 location: "L580"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/Community_0
 ---
 
 # Detect data staging patterns (collect → compress → exfil).
 
 ## Connections
-- [[dot-test_file_sandbox_staging_detection()]] - `rationale_for` [EXTRACTED]
+- [[.test_file_sandbox_staging_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

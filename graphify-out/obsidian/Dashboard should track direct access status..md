@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "Colima & Docker Operations Guide — AgentShroud"
+community: "Community 163"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/Community_163
 ---
 
 # Dashboard should track direct access status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_direct_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/Community_163

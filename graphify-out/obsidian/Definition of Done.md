@@ -1,17 +1,17 @@
 ---
 source_file: ".github/copilot-instructions.md"
-type: "concept"
-community: "GitHub Copilot CLI Setup Guide (2)"
-location: "L398"
+type: "document"
+community: "Community 2196"
+location: "L601"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_2
+  - community/Community_2196
 ---
 
 # Definition of Done
 
 ## Connections
-- [[Copilot Instructions (mirrored CLAUDE.md + llm-init context)]] - `references` [EXTRACTED]
+- [[2) HOW TO WORK IN THIS REPO (SDLC EXPECTATIONS)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Community_2196

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "canvas_proxy_app"
+community: "Community 589"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/canvas_proxy_app
+  - community/Community_589
 ---
 
 # Data Dictionary / Catalog Map
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[03-data]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/canvas_proxy_app
+#graphify/concept #graphify/EXTRACTED #community/Community_589

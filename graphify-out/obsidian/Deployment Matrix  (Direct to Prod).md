@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: ".agents/agents/i-cicd.md"
 type: "document"
-community: "1. Accomplishments This Phase (2)"
-location: "L30"
+community: "Community 2012"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase_2
+  - community/Community_2012
 ---
 
 # Deployment Matrix  (Direct to Prod)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase_2
+#graphify/document #graphify/EXTRACTED #community/Community_2012

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "rationale"
-community: "Git History Purge Plan"
+community: "Community 398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Git_History_Purge_Plan
+  - community/Community_398
 ---
 
 # Defense in Depth (Bot Instructions + Gateway + Audit Log)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Git_History_Purge_Plan
+#graphify/rationale #graphify/EXTRACTED #community/Community_398

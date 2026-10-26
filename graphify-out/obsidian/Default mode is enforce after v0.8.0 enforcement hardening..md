@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "SubagentMonitor"
-location: "L49"
+community: "Community 72"
+location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/Community_72
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
+- [[.test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

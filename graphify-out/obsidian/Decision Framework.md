@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L109"
+community: "Community 209"
+location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_209
 ---
 
 # Decision Framework
@@ -17,4 +17,4 @@ tags:
 - [[EBS Performance Analysis (Critical Pattern)]] - `contains` [EXTRACTED]
 - [[Rightsizing Logic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

@@ -1,18 +1,14 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "rationale"
-community: "_w"
+community: "Community 2460"
 location: "docker/scripts/colima-health-check.sh:410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_w
+  - community/Community_2460
 ---
 
 # DOCKER-USER iptables reapply + verify (step 3)
 
-## Connections
-- [[check()_4]] - `references` [EXTRACTED]
-- [[log()_6]] - `references` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/_w
+#graphify/rationale #graphify/EXTRACTED #community/Community_2460

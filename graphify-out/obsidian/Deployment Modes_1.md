@@ -1,19 +1,19 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
-location: "L7"
+community: "Community 107"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
+  - community/Community_107
 ---
 
 # Deployment Modes
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 - [[Proxy Mode (Recommended)_1]] - `contains` [EXTRACTED]
-- [[Sidecar Mode (Performance Optimized)]] - `contains` [EXTRACTED]
+- [[Sidecar Mode (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
+#graphify/document #graphify/EXTRACTED #community/Community_107

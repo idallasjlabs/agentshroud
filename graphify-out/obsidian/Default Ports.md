@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "find-sessions.sh"
+community: "Community 1053"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/Community_1053
 ---
 
 # Default Ports
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/find-sessionssh
+#graphify/document #graphify/EXTRACTED #community/Community_1053

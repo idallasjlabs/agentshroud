@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "test_a2a_proxy.py"
+community: "Community 124"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/Community_124
 ---
 
 # DM-context approvals must not trigger group notifications.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDMApprovalOwnerOnly]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_124

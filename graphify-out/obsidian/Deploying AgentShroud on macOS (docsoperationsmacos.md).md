@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "document"
-community: "sanitizer.py"
+community: "Community 421"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/Community_421
 ---
 
 # Deploying AgentShroud on macOS (docs/operations/macos.md)
@@ -16,4 +16,4 @@ tags:
 - [[Native Python gateway dev run uvicorn gateway.ingest_api.mainapp --host 127.0.0.1 --port 8080]] - `conceptually_related_to` [EXTRACTED]
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Community_421

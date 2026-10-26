@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Phase 3 Requirements: Working Chat Container"
+community: "Community 370"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_Requirements_Working_Chat_Container
+  - community/Community_370
 ---
 
 # DEFERRED TO PHASE 4+ (Advanced Features)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 Phase 3 Feature Scope]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container
+#graphify/document #graphify/EXTRACTED #community/Community_370

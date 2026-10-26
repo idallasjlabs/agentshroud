@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-11.md"
 type: "concept"
-community: "_make_sanitizer()"
+community: "Community 118"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Community_118
 ---
 
 # Dev Colima VM loses all HTTPS egress
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[Host network filter blocking Homebrew PythonNode outbound]] - `semantically_similar_to` [INFERRED]
 - [[Local Trivy scan failures (DB mirror timeouts, local-image 401 fallback)]] - `conceptually_related_to` [EXTRACTED]
-- [[Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)]] - `references` [EXTRACTED]
+- [[upgrade-2026-10-11]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/concept #graphify/EXTRACTED #community/Community_118

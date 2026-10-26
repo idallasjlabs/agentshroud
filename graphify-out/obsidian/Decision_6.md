@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/security/module_stats.py"
-type: "code"
-community: "Enum"
-location: "L29"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+type: "document"
+community: "Community 630"
+location: "L15"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_630
 ---
 
 # Decision
 
 ## Connections
-- [[dot-record()_1]] - `references` [EXTRACTED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
-- [[TestEnforcementWiring]] - `uses` [INFERRED]
-- [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
-- [[test_module_stats.py]] - `imports` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain for Audit Integrity]] - `contains` [EXTRACTED]
+- [[Hash Chain Structure]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/document #graphify/EXTRACTED #community/Community_630

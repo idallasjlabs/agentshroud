@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "sanitizer.py"
+community: "Community 421"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/Community_421
 ---
 
 # Deploying AgentShroud on Linux (docs/operations/linux.md)
@@ -17,4 +17,4 @@ tags:
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
 - [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Community_421

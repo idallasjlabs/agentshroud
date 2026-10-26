@@ -1,19 +1,19 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L66"
+community: "Community 947"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Community_947
 ---
 
 # Deployment Modes
 
 ## Connections
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 - [[Proxy Mode (Recommended)]] - `contains` [EXTRACTED]
-- [[Sidecar Mode (Advanced)]] - `contains` [EXTRACTED]
+- [[Sidecar Mode (Performance Optimized)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_947

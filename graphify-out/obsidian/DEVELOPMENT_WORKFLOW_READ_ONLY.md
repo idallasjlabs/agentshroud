@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Community 1315"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - graphify/INFERRED
+  - community/Community_1315
 ---
 
 # DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -17,4 +17,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
 - [[Three-Phase Approach]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/INFERRED #community/Community_1315

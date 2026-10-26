@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: ".cursor/mcp.json"
+community: "Community 392"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_392
 ---
 
 # Dashboard (WebSocket)
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[Monitoring System Integration (WebhooksPrometheus)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/concept #graphify/EXTRACTED #community/Community_392

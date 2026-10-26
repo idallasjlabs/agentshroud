@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".cursor/agents/aws.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L191"
+community: "Community 259"
+location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_259
 ---
 
 # Deliverables
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
-- [[Reports (`.reports`)_1]] - `contains` [EXTRACTED]
-- [[Script Templates_1]] - `contains` [EXTRACTED]
-- [[Scripts (`.scripts`)_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
+- [[Reports (`.reports`)_2]] - `contains` [EXTRACTED]
+- [[Script Templates_2]] - `contains` [EXTRACTED]
+- [[Scripts (`.scripts`)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_259

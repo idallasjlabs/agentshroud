@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 210"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_UI_Expert_UI
+  - community/Community_210
 ---
 
 # Data Validation (DATA-VAL) Skill
@@ -16,4 +16,4 @@ tags:
 - [[Data Validation README]] - `conceptually_related_to` [INFERRED]
 - [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/INFERRED #community/Community_210

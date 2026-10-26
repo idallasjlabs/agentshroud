@@ -1,33 +1,17 @@
 ---
-source_file: "gateway/security/delegation.py"
-type: "code"
-community: "_make_proxy"
-location: "L59"
+source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
+type: "document"
+community: "Community 286"
+location: "L218"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_286
 ---
 
 # Delegation
 
 ## Connections
-- [[dot-delegate()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_9]] - `method` [EXTRACTED]
-- [[dot-get_active_delegations()]] - `references` [EXTRACTED]
-- [[dot-get_delegations_for_user()]] - `references` [EXTRACTED]
-- [[dot-is_active()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_16]] - `method` [EXTRACTED]
-- [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
-- [[DelegationManager]] - `uses` [INFERRED]
-- [[TestAccessControl_2]] - `uses` [INFERRED]
-- [[TestDelegateBasic]] - `uses` [INFERRED]
-- [[TestIsDelegated]] - `uses` [INFERRED]
-- [[TestListAndCleanup]] - `uses` [INFERRED]
-- [[TestRedelegation]] - `uses` [INFERRED]
-- [[TestRevoke]] - `uses` [INFERRED]
-- [[TestSerialization_2]] - `uses` [INFERRED]
-- [[delegation.py]] - `contains` [EXTRACTED]
-- [[test_delegation.py]] - `imports` [EXTRACTED]
+- [[2. Telegram Command Testing]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/document #graphify/EXTRACTED #community/Community_286

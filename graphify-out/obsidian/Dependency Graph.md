@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "_make_proxy()"
+community: "Community 104"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_104
 ---
 
 # Dependency Graph.md
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Dependency Graph_1]] - `contains` [EXTRACTED]
 - [[Gateway Startup Initialization Order]] - `conceptually_related_to` [EXTRACTED]
-- [[gatewayREADME]] - `conceptually_related_to` [AMBIGUOUS]
+- [[README_127]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy
+#graphify/document #graphify/EXTRACTED #community/Community_104

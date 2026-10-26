@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Token-reduction benchmark gated at 5,000 words"
+community: "Community 1668"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Token-reduction_benchmark_gated_at_5000_words
+  - community/Community_1668
 ---
 
 # DNSQuery (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/Token-reduction_benchmark_gated_at_5000_words
+#graphify/concept #graphify/EXTRACTED #community/Community_1668

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "Community 77"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_77
 ---
 
 # DEFAULT OFF: no_memory=False → empty metadata (request unchanged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_voice_forward_metadata_default_off_is_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/Community_77

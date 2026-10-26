@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "rationale"
-community: "test_agent_cve_registry.py (2)"
+community: "Community 84"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/Community_84
 ---
 
 # Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a
 
 ## Connections
-- [[dot-decode_rot13()]] - `rationale_for` [EXTRACTED]
+- [[.decode_rot13()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

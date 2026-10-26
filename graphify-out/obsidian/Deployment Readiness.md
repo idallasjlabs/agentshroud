@@ -1,19 +1,19 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "TestSecurityFeatures"
+community: "Community 478"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSecurityFeatures
+  - community/Community_478
 ---
 
 # Deployment Readiness
 
 ## Connections
-- [[Development Environment]] - `contains` [EXTRACTED]
+- [[Development Environment_1]] - `contains` [EXTRACTED]
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[Production Environment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSecurityFeatures
+#graphify/document #graphify/EXTRACTED #community/Community_478
