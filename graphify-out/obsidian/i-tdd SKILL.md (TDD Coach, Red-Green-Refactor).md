@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "MCPPermissionManager (2) (4)"
+community: "Community 1505"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2_4
+  - community/Community_1505
 ---
 
 # i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-tdd README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPPermissionManager_2_4
+#graphify/document #graphify/EXTRACTED #community/Community_1505

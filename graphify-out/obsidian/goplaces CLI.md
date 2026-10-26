@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/goplaces/SKILL.md"
 type: "concept"
-community: "Test handling 1-hour time-limited approval callback."
+community: "Community 1410"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Test_handling_1-hour_time-limited_approval_callback
+  - community/Community_1410
 ---
 
 # goplaces CLI
 
 ## Connections
-- [[goplacesSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_221]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Test_handling_1-hour_time-limited_approval_callback
+#graphify/concept #graphify/EXTRACTED #community/Community_1410

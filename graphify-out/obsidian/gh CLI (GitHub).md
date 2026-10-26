@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "concept"
-community: "TestDockerSecretIsolation"
+community: "Community 1103"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestDockerSecretIsolation
+  - community/Community_1103
 ---
 
 # gh CLI (GitHub)
 
 ## Connections
-- [[githubSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_219]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestDockerSecretIsolation
+#graphify/concept #graphify/EXTRACTED #community/Community_1103

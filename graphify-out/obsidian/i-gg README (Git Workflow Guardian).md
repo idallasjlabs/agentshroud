@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Implementation Status"
+community: "Community 391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/Community_391
 ---
 
 # i-gg README (Git Workflow Guardian)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/Community_391

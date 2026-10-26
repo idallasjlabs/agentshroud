@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
 type: "document"
-community: ".github/workflows/merge-regression-audit.yml (2)"
+community: "Community 1707"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/workflows/merge-regression-audityml_2
+  - community/Community_1707
 ---
 
 # i-scrum SKILL
 
-#graphify/document #graphify/EXTRACTED #community/github/workflows/merge-regression-audityml_2
+#graphify/document #graphify/EXTRACTED #community/Community_1707

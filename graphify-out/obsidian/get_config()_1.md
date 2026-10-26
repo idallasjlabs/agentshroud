@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "AlertDispatcher (2)"
-location: "L1928"
+community: "Community 49"
+location: "L411"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/Community_49
 ---
 
 # get_config()
 
 ## Connections
-- [[dot-test_bot_id_returns_per_bot_config()]] - `calls` [EXTRACTED]
-- [[dot-test_config_none_returns_empty_dict()]] - `calls` [EXTRACTED]
-- [[dot-test_no_bot_id_returns_global_config()]] - `calls` [EXTRACTED]
-- [[dot-test_unknown_bot_id_returns_error()]] - `calls` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[Get current configuration.]] - `rationale_for` [EXTRACTED]
+- [[Path_44]] - `calls` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
+- [[export_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/Community_49

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud Data Dictionary"
+community: "Community 442"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - community/Community_442
 ---
 
 # i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)
@@ -17,4 +17,4 @@ tags:
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `conceptually_related_to` [EXTRACTED]
 - [[i-sec-offense README (Red Team Adversarial Tester)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/document #graphify/EXTRACTED #community/Community_442

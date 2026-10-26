@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "_t"
+community: "Community 115"
 location: "L568"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/Community_115
 ---
 
 # get_context_guard()
@@ -17,4 +17,4 @@ tags:
 - [[check_message()]] - `calls` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/Community_115

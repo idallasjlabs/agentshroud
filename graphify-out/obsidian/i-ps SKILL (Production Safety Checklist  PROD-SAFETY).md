@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "AgentShroud Data Dictionary"
+community: "Community 442"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/AgentShroud_Data_Dictionary
+  - community/Community_442
 ---
 
 # i-ps SKILL (Production Safety Checklist / PROD-SAFETY)
@@ -16,4 +16,4 @@ tags:
 - [[i-ps README (Production Safety Checklist)]] - `references` [INFERRED]
 - [[i-qa SKILL (Quality Assurance  QA)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/AgentShroud_Data_Dictionary
+#graphify/document #graphify/INFERRED #community/Community_442

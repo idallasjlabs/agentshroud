@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "TestStartupScannerKeying"
-location: "L62"
+community: "Community 678"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/Community_678
 ---
 
 # generate_summary(alerts)
 
 ## Connections
-- [[Function Details_20]] - `contains` [EXTRACTED]
+- [[Function Details_39]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/document #graphify/EXTRACTED #community/Community_678

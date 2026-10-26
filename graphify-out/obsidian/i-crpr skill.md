@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "/graphify add URL Ingestion"
+community: "Community 1693"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community//graphify_add_URL_Ingestion
+  - community/Community_1693
 ---
 
 # /i-crpr skill
 
-#graphify/concept #graphify/EXTRACTED #community//graphify_add_URL_Ingestion
+#graphify/concept #graphify/EXTRACTED #community/Community_1693

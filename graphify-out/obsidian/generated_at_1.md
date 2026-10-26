@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Sunday Upgrade Report — 2026-09-20 (PROD run, full)"
+community: "Community 1049"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-20_PROD_run_full
+  - community/Community_1049
 ---
 
 # generated_at
 
 ## Connections
-- [[openclawmanifest.json]] - `contains` [EXTRACTED]
+- [[manifest.json_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-20_PROD_run_full
+#graphify/code #graphify/EXTRACTED #community/Community_1049

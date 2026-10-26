@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: ".agents/skills/i-value-stream-mapping/SKILL.md"
+community: "Community 1431"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-value-stream-mapping/SKILLmd
+  - community/Community_1431
 ---
 
 # graphify reference: extraction subagent prompt
 
 ## Connections
-- [[dot-agentsskillsgraphifyreferencesextraction-spec]] - `contains` [EXTRACTED]
+- [[extraction-spec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-value-stream-mapping/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_1431

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Mode A — Single task (5)"
+community: "Community 644"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_5
+  - community/Community_644
 ---
 
 # hermes-openclaw-dev-workflow.md
@@ -16,4 +16,4 @@ tags:
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 - [[update-bot-agents.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_5
+#graphify/document #graphify/EXTRACTED #community/Community_644

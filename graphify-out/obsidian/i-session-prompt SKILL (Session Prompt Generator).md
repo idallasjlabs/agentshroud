@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "AgentShroud Data Dictionary"
+community: "Community 442"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/AgentShroud_Data_Dictionary
+  - community/Community_442
 ---
 
 # i-session-prompt SKILL (Session Prompt Generator)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSDE&G Skills Reference Guide_1]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/AgentShroud_Data_Dictionary
+#graphify/document #graphify/AMBIGUOUS #community/Community_442

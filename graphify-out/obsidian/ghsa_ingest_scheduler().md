@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "Community 135"
 location: "L1008"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Community_135
 ---
 
 # ghsa_ingest_scheduler()
 
 ## Connections
-- [[Background loop pull the GHSA feed as source of truth once per day. This is a…]] - `rationale_for` [EXTRACTED]
+- [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - `rationale_for` [EXTRACTED]
 - [[_already_ingested_ghsa_today()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_135

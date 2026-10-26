@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "Community 446"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Community_446
 ---
 
 # generate_branding_assets.py
@@ -24,7 +24,7 @@ tags:
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
 - [[load_logo()]] - `contains` [EXTRACTED]
-- [[main()_20]] - `contains` [EXTRACTED]
-- [[save()]] - `contains` [EXTRACTED]
+- [[main()_23]] - `contains` [EXTRACTED]
+- [[save()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/code #graphify/EXTRACTED #community/Community_446

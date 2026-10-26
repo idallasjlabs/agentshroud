@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "ResourceUsage"
+community: "Community 933"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceUsage
+  - community/Community_933
 ---
 
 # infra-check.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[infra-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/EXTRACTED #community/Community_933

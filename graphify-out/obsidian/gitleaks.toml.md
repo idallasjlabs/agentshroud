@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "What is the symptom?"
+community: "Community 1080"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/Community_1080
 ---
 
 # gitleaks.toml.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/document #graphify/EXTRACTED #community/Community_1080

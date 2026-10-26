@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/web/installer.py"
-type: "code"
-community: "Implement per-user session isolation using Telegram user ID"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+type: "document"
+community: "Community 1136"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
+  - community/Community_1136
 ---
 
 # installer.py
 
 ## Connections
-- [[AgentShroud Web Installer — Step-by-step installation wizard.]] - `rationale_for` [EXTRACTED]
-- [[InstallConfig]] - `contains` [EXTRACTED]
-- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
-- [[api.py_2]] - `references` [EXTRACTED]
-- [[check_prerequisites()]] - `contains` [EXTRACTED]
-- [[get_runtimes()]] - `contains` [EXTRACTED]
-- [[installer_page()]] - `contains` [EXTRACTED]
-- [[start_install()]] - `contains` [EXTRACTED]
+- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
+- [[Key Features]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
+- [[Related Notes_14]] - `contains` [EXTRACTED]
+- [[When Used]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID
+#graphify/document #graphify/EXTRACTED #community/Community_1136

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions"
-location: "L328"
+community: "Community 663"
+location: "L399"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
+  - community/Community_663
 ---
 
 # iOS/macOS Shortcuts
 
 ## Connections
-- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
+#graphify/document #graphify/EXTRACTED #community/Community_663

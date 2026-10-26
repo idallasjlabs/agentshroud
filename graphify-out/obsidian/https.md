@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/setup-https-proxy.js"
+source_file: ".agents/skills/icloud/scripts/calendar.js"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
-location: "L49"
+community: "Community 1932"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Community_1932
 ---
 
 # https
 
 ## Connections
-- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
+- [[calendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/Community_1932

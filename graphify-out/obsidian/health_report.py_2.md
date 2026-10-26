@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
+community: "Community 566"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/Community_566
 ---
 
 # health_report.py
 
 ## Connections
-- [[Configuration  Environment Variables_3]] - `contains` [EXTRACTED]
-- [[Function Details_10]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_11]] - `contains` [EXTRACTED]
-- [[Purpose_96]] - `contains` [EXTRACTED]
-- [[Related_15]] - `contains` [EXTRACTED]
-- [[Responsibilities_13]] - `contains` [EXTRACTED]
-- [[Threat Model_11]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_23]] - `contains` [EXTRACTED]
+- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_43]] - `contains` [EXTRACTED]
+- [[Purpose_161]] - `contains` [EXTRACTED]
+- [[Related_47]] - `contains` [EXTRACTED]
+- [[Responsibilities_45]] - `contains` [EXTRACTED]
+- [[Threat Model_16]] - `contains` [EXTRACTED]
 - [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/Community_566

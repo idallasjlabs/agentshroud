@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Implement per-user session isolation using Telegram user ID"
+community: "Community 918"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
+  - community/Community_918
 ---
 
 # get_runtimes()
 
 ## Connections
 - [[Get available runtimes with recommendations.]] - `rationale_for` [EXTRACTED]
-- [[get_2]] - `references` [EXTRACTED]
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[detect_runtime()]] - `calls` [EXTRACTED]
+- [[get_security_comparison()]] - `calls` [EXTRACTED]
+- [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID
+#graphify/code #graphify/EXTRACTED #community/Community_918

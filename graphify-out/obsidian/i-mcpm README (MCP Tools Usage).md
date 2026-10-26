@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "TestOutputTrustScoring"
+community: "Community 1109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutputTrustScoring
+  - community/Community_1109
 ---
 
 # i-mcpm README (MCP Tools Usage)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutputTrustScoring
+#graphify/document #graphify/EXTRACTED #community/Community_1109

@@ -1,26 +1,17 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: ".agents/agents/graphify.md"
 type: "document"
-community: "What You Must Do When Invoked"
-location: "L6"
+community: "Community 920"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Community_920
 ---
 
-# /graphify
+# graphify.md
 
 ## Connections
-- [[dot-agentsskillsgraphifySKILL]] - `contains` [EXTRACTED]
-- [[For --update and --cluster-only]] - `contains` [EXTRACTED]
-- [[For graphify add and --watch]] - `contains` [EXTRACTED]
-- [[For graphify query]] - `contains` [EXTRACTED]
-- [[For the commit hook and native AGENTS.md integration]] - `contains` [EXTRACTED]
-- [[Honesty Rules]] - `contains` [EXTRACTED]
-- [[Interpreter guard for subcommands]] - `contains` [EXTRACTED]
-- [[Usage_65]] - `contains` [EXTRACTED]
-- [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
-- [[What graphify is for]] - `contains` [EXTRACTED]
+- [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Community_920

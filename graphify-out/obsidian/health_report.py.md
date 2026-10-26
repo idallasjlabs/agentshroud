@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "system-requirements.md"
+community: "Community 102"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/Community_102
 ---
 
 # health_report.py
@@ -19,9 +19,10 @@ tags:
 - [[format_report()]] - `contains` [EXTRACTED]
 - [[generate_report()]] - `contains` [EXTRACTED]
 - [[generate_summary()_1]] - `shares_data_with` [EXTRACTED]
-- [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]
+- [[generate_summary()_3]] - `shares_data_with` [EXTRACTED]
 - [[get_trend()]] - `contains` [EXTRACTED]
 - [[init_db()]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[proxy_status.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[save_to_history()]] - `contains` [EXTRACTED]
@@ -30,4 +31,4 @@ tags:
 - [[wazuh-ossec]] - `references` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/Community_102

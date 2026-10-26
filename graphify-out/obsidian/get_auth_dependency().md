@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "create_auth_dependency()"
+community: "Community 92"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/Community_92
 ---
 
 # get_auth_dependency()
 
 ## Connections
-- [[dot-check()_6]] - `calls` [EXTRACTED]
+- [[.check()]] - `calls` [EXTRACTED]
 - [[Factory that returns authentication dependency for FastAPI      This allows us t]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
-- [[GatewayConfig_3]] - `shares_data_with` [INFERRED]
-- [[auth.py_1]] - `references` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `shares_data_with` [INFERRED]
+- [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_2]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[ingest_apiauth.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/Community_92

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "test_apply_patches.js"
+community: "Community 989"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/Community_989
 ---
 
 # generate-job-schedule.py
@@ -17,7 +17,7 @@ tags:
 - [[fmt_ts()]] - `contains` [EXTRACTED]
 - [[load_hermes_jobs()]] - `contains` [EXTRACTED]
 - [[load_openclaw_jobs()]] - `contains` [EXTRACTED]
-- [[main()_36]] - `contains` [EXTRACTED]
+- [[main()_22]] - `contains` [EXTRACTED]
 - [[render_html()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/Community_989

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "ContextGuard"
+community: "Community 0"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # get_sanitizer_stats()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
+- [[._compile_patterns()]] - `calls` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
 - [[Get statistics about sanitization patterns.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[LogSanitizer_1]] - `calls` [EXTRACTED]
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/Community_0

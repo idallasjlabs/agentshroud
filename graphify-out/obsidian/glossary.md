@@ -1,17 +1,21 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Community 345"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Community_345
 ---
 
-# glossary.md
+# Glossary
 
 ## Connections
-- [[Glossary_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Project Terminology]] - `contains` [EXTRACTED]
+- [[Operational Terms]] - `contains` [EXTRACTED]
+- [[Security Terms]] - `contains` [EXTRACTED]
+- [[Technical Abbreviations]] - `contains` [EXTRACTED]
+- [[glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Community_345

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "upgrade"
+community: "Community 66"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/Community_66
 ---
 
 # get_available_versions()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[List available OpenClaw versions.]] - `rationale_for` [EXTRACTED]
 - [[list_available_versions()]] - `calls` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/Community_66

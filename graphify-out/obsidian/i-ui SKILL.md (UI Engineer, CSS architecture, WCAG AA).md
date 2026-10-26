@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "TestInstallerAPI"
+community: "Community 1106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestInstallerAPI
+  - community/Community_1106
 ---
 
 # i-ui SKILL.md (UI Engineer, CSS architecture, WCAG AA)
@@ -15,4 +15,4 @@ tags:
 - [[i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)]] - `references` [EXTRACTED]
 - [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestInstallerAPI
+#graphify/document #graphify/EXTRACTED #community/Community_1106

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/icloud/scripts/calendar.js"
+source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "skills/icloud/scripts/calendar.js"
-location: "L7"
+community: "Community 191"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/icloud/scripts/calendarjs
+  - community/Community_191
 ---
 
 # https
 
 ## Connections
-- [[skillsicloudscriptscalendar.js]] - `contains` [EXTRACTED]
+- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/Community_191

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "i-security-reviewer.md (security-reviewer agent)"
+community: "Community 1835"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-security-reviewermd_security-reviewer_agent
+  - community/Community_1835
 ---
 
 # i-value-stream-mapping SKILL.md (minimal stub)
 
-#graphify/document #graphify/EXTRACTED #community/i-security-reviewermd_security-reviewer_agent
+#graphify/document #graphify/EXTRACTED #community/Community_1835

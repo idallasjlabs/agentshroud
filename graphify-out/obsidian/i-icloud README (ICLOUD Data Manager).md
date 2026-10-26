@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "impact-map.sh"
+community: "Community 1325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/impact-mapsh
+  - community/Community_1325
 ---
 
 # i-icloud README (ICLOUD Data Manager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iCloud Services Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/impact-mapsh
+#graphify/document #graphify/EXTRACTED #community/Community_1325

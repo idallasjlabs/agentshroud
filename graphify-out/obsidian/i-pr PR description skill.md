@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "concept"
-community: "`docs/planning/` — Index"
+community: "Community 1091"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/planning/__Index
+  - community/Community_1091
 ---
 
 # /i-pr PR description skill
@@ -14,4 +14,4 @@ tags:
 - [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - `references` [EXTRACTED]
 - [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/planning/__Index
+#graphify/concept #graphify/EXTRACTED #community/Community_1091

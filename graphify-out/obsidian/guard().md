@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L46"
+community: "Community 152"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/Community_152
 ---
 
 # guard()
 
 ## Connections
-- [[SkillGuard]] - `references` [EXTRACTED]
-- [[test_skill_guard.py]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
+- [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/Community_152

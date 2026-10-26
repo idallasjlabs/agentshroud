@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 223"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_223
 ---
 
 # group_config.py
@@ -15,12 +15,12 @@ tags:
 - [[GroupConfig]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[ProjectConfig]] - `contains` [EXTRACTED]
-- [[TeamsConfig_1]] - `contains` [EXTRACTED]
+- [[TeamsConfig]] - `contains` [EXTRACTED]
 - [[_apply_persisted_overrides()]] - `contains` [EXTRACTED]
 - [[_load_overrides()]] - `contains` [EXTRACTED]
 - [[_save_overrides()]] - `contains` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
 - [[persist_group_collab_mode()]] - `contains` [EXTRACTED]
 - [[persist_group_create()]] - `contains` [EXTRACTED]
 - [[persist_group_delete()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[persist_user_collab_mode()]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_223

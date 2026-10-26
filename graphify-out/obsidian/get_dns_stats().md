@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TrustConfig"
+community: "Community 6"
 location: "L4046"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # get_dns_stats()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
-- [[Get DNS blocklist statistics. Returns current DNS filtering statistics from the…]] - `rationale_for` [EXTRACTED]
-- [[get]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[Get DNS blocklist statistics.      Returns current DNS filtering statistics from]] - `rationale_for` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/Community_6

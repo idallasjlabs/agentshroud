@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "ResourceUsage"
+community: "Community 933"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceUsage
+  - community/Community_933
 ---
 
 # infra-check.sh
@@ -16,4 +16,4 @@ tags:
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[tailscale-check.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ResourceUsage
+#graphify/code #graphify/INFERRED #community/Community_933

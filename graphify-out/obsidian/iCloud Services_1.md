@@ -1,26 +1,25 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: ".agents/skills/icloud/SKILL.md"
 type: "document"
-community: "Skill: UI Expert (UI) (3)"
+community: "Community 623"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI_3
+  - community/Community_623
 ---
 
 # iCloud Services
 
 ## Connections
 - [[Calendar Operations_1]] - `contains` [EXTRACTED]
-- [[Configuration_5]] - `contains` [EXTRACTED]
+- [[Configuration_1]] - `contains` [EXTRACTED]
 - [[Contact Operations_1]] - `contains` [EXTRACTED]
 - [[Mail Operations_1]] - `contains` [EXTRACTED]
 - [[Notes Operations_1]] - `contains` [EXTRACTED]
-- [[Security_9]] - `contains` [EXTRACTED]
+- [[SKILL_63]] - `contains` [EXTRACTED]
+- [[Security_3]] - `contains` [EXTRACTED]
 - [[Setup_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-icloudSKILL]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI_3
+#graphify/document #graphify/EXTRACTED #community/Community_623

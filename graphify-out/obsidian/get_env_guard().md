@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "check_command"
+community: "Community 0"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/Community_0
 ---
 
 # get_env_guard()
@@ -17,4 +17,4 @@ tags:
 - [[check_command()]] - `calls` [EXTRACTED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/Community_0

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "Community 162"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/Community_162
 ---
 
 # heuristic_classifier.py
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ClassificationResult]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `contains` [EXTRACTED]
+- [[HeuristicClassifier]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/Community_162

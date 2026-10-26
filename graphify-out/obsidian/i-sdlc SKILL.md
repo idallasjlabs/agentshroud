@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "podcast_plan.json (voice config)"
+community: "Community 1708"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/podcast_planjson_voice_config
+  - community/Community_1708
 ---
 
 # i-sdlc SKILL
 
-#graphify/document #graphify/EXTRACTED #community/podcast_planjson_voice_config
+#graphify/document #graphify/EXTRACTED #community/Community_1708

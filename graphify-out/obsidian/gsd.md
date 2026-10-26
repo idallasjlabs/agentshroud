@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
+community: "Community 1173"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/Community_1173
 ---
 
 # gsd.md
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Approval Required By]] - `contains` [EXTRACTED]
 - [[Blast Radius]] - `contains` [EXTRACTED]
-- [[CLAUDE]] - `shares_data_with` [INFERRED]
+- [[CLAUDE_1]] - `shares_data_with` [INFERRED]
 - [[Effort]] - `contains` [EXTRACTED]
 - [[Outcome]] - `contains` [EXTRACTED]
 - [[Problem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/Community_1173

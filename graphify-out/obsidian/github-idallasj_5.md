@@ -1,18 +1,20 @@
 ---
-source_file: ".pi/mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: ".pi/mcp.json (2)"
-location: "L1"
+community: "Community 159"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pi/mcpjson_2
+  - community/Community_159
 ---
 
 # github-idallasj
 
 ## Connections
-- [[dot-llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh_4]] - `references` [EXTRACTED]
-- [[dot-pimcp.json]] - `contains` [EXTRACTED]
+- [[command_1]] - `contains` [EXTRACTED]
+- [[enabled_1]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pi/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_159

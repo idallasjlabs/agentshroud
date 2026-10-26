@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_env_guard_class.py"
+source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "test_playback_state.c"
-location: "L23"
+community: "Community 5"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/Community_5
 ---
 
 # guard()
 
 ## Connections
-- [[EnvironmentGuard]] - `calls` [EXTRACTED]
-- [[test_env_guard_class.py]] - `contains` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/Community_5

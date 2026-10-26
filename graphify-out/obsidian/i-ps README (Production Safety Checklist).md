@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "AgentShroud Data Dictionary"
+community: "Community 442"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - graphify/INFERRED
+  - community/Community_442
 ---
 
 # i-ps README (Production Safety Checklist)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
 - [[i-ps SKILL (Production Safety Checklist  PROD-SAFETY)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/document #graphify/INFERRED #community/Community_442

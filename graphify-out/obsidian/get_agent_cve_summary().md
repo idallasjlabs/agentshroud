@@ -1,28 +1,25 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "Community 42"
 location: "L18772"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/Community_42
 ---
 
 # get_agent_cve_summary()
 
 ## Connections
-- [[Any_52]] - `references` [EXTRACTED]
-- [[Return a summary of the advisory registry for the specified agent. Counts are…]] - `rationale_for` [EXTRACTED]
-- [[_AGENT_CVE_REGISTRIES]] - `calls` [EXTRACTED]
-- [[_HERMES_CVE_REGISTRY (HERMES_CVE_REGISTRY alias)]] - `references` [EXTRACTED]
-- [[_OPENCLAW_CVE_REGISTRY (AGENT_CVE_REGISTRY alias)]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
+- [[Return a summary of the advisory registry for the specified agent.      Counts a]] - `rationale_for` [EXTRACTED]
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[agent_cve_registry.py]] - `contains` [EXTRACTED]
 - [[generate-cve-page.py]] - `imports` [EXTRACTED]
 - [[get_agent_cves()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `imports` [EXTRACTED]
-- [[test_agent_cve_registry.py]] - `references` [EXTRACTED]
+- [[router.py_1]] - `imports` [EXTRACTED]
+- [[test_agent_cve_registry.py]] - `imports` [EXTRACTED]
 - [[test_default_summary_equals_openclaw_summary()]] - `calls` [EXTRACTED]
 - [[test_default_summary_wrapped_agent_openclaw()]] - `calls` [EXTRACTED]
 - [[test_empty_bot_id_raises_key_error()]] - `calls` [EXTRACTED]
@@ -43,4 +40,4 @@ tags:
 - [[test_openclaw_summary_keys()]] - `calls` [EXTRACTED]
 - [[test_unknown_bot_id_raises_key_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_42

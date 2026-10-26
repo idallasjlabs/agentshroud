@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "MiddlewareManager (3)"
+community: "Community 30"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_30
 ---
 
 # get_pending should expire stale items.
 
 ## Connections
-- [[dot-test_get_pending_expires_stale()]] - `rationale_for` [EXTRACTED]
+- [[.test_get_pending_expires_stale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

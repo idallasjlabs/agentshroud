@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "AgentShroud Data Dictionary"
+community: "Community 442"
 tags:
   - graphify/document
-  - graphify/AMBIGUOUS
-  - community/AgentShroud_Data_Dictionary
+  - graphify/EXTRACTED
+  - community/Community_442
 ---
 
 # i-sec SKILL (Security Review / SEC, SecureClaw)
@@ -15,4 +15,4 @@ tags:
 - [[i-sec README (Security Review, SecureClaw)]] - `references` [INFERRED]
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/AgentShroud_Data_Dictionary
+#graphify/document #graphify/EXTRACTED #community/Community_442

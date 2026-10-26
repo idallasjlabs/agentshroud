@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "Community 1370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/Community_1370
 ---
 
 # i-crpr — Production-Ready PR Skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Audit Branch (Merge Regression Detection)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_1370

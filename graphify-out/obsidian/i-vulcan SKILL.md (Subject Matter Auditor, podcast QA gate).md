@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "cve-registry-manual-review.md"
+community: "Community 1320"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cve-registry-manual-reviewmd
+  - community/Community_1320
 ---
 
 # i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)
@@ -15,4 +15,4 @@ tags:
 - [[i-socrates SKILL.md (Dialogue Architect, referenced dependency)]] - `references` [EXTRACTED]
 - [[i-vulcan README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cve-registry-manual-reviewmd
+#graphify/document #graphify/EXTRACTED #community/Community_1320
