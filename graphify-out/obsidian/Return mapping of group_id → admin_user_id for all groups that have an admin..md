@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 61"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_61
 ---
 
 # Return mapping of group_id → admin_user_id for all groups that have an admin.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_group_admin_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

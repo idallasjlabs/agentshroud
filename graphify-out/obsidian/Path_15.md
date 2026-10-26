@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 16"
+community: "Community 1016"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_1016
 ---
 
 # Path
@@ -18,4 +18,4 @@ tags:
 - [[.scan_file()]] - `references` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/Community_1016

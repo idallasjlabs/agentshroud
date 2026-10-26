@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Community 6"
+community: "Community 61"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Community_61
 ---
 
 # RBACConfig
@@ -20,4 +20,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[_make_rbac()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Community_61

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 1808"
+community: "Community 61"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1808
+  - community/Community_61
 ---
 
 # Regular members can use medium-risk tools but not private/admin tools.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemberGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1808
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

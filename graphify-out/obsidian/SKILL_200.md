@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Community 141"
+community: "Community 984"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/Community_984
 ---
 
 # SKILL.md
@@ -40,4 +40,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_141
+#graphify/document #graphify/EXTRACTED #community/Community_984

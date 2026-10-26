@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Community 65"
+community: "Community 61"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_61
 ---
 
 # Resolve the workspace/context for an inbound message, fail-closed.          Retu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.resolve_workspace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

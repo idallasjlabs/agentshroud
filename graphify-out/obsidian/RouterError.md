@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 34"
+community: "Community 861"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_861
 ---
 
 # RouterError
@@ -20,4 +20,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/Community_861

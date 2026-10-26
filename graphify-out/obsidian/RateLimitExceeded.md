@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 108"
+community: "Community 76"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/Community_76
 ---
 
 # RateLimitExceeded
@@ -23,4 +23,4 @@ tags:
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/Community_76

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 204"
+community: "Community 1925"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/Community_1925
 ---
 
 # RBAC Role Definitions
@@ -16,4 +16,4 @@ tags:
 - [[Agent Trust Levels]] - `contains` [EXTRACTED]
 - [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_204
+#graphify/document #graphify/EXTRACTED #community/Community_1925

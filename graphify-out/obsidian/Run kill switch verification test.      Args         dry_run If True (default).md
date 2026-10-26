@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 978"
 location: "L3861"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_978
 ---
 
 # Run kill switch verification test.      Args:         dry_run: If True (default)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify_killswitch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_978

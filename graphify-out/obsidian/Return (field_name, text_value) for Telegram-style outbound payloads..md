@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 605"
+community: "Community 96"
 location: "L2867"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_605
+  - community/Community_96
 ---
 
 # Return (field_name, text_value) for Telegram-style outbound payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_text_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_605
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

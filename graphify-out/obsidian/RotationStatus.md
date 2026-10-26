@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 381"
+community: "Community 122"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_381
+  - community/Community_122
 ---
 
 # RotationStatus
@@ -33,4 +33,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_381
+#graphify/code #graphify/INFERRED #community/Community_122

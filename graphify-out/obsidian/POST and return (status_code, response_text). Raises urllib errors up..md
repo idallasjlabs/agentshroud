@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Community 2447"
+community: "Community 238"
 location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2447
+  - community/Community_238
 ---
 
 # POST and return (status_code, response_text). Raises urllib errors up.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_http_post_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2447
+#graphify/rationale #graphify/EXTRACTED #community/Community_238

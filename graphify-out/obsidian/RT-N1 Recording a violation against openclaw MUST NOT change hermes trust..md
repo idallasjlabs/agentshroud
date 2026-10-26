@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 60"
+community: "Community 11"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/Community_11
 ---
 
 # RT-N1: Recording a violation against openclaw MUST NOT change hermes trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_60
+#graphify/rationale #graphify/EXTRACTED #community/Community_11

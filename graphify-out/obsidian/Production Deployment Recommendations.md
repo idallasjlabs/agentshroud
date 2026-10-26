@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "Community 915"
+community: "Community 1976"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_915
+  - community/Community_1976
 ---
 
 # Production Deployment Recommendations
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH AllowDeny List Evaluation Order]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_915
+#graphify/concept #graphify/INFERRED #community/Community_1976

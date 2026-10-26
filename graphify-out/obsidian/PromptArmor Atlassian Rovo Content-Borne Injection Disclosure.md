@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "Community 917"
+community: "Community 221"
 location: "line 19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_917
+  - community/Community_221
 ---
 
 # PromptArmor: Atlassian Rovo Content-Borne Injection Disclosure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_917
+#graphify/document #graphify/EXTRACTED #community/Community_221

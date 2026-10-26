@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 1808"
+community: "Community 61"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1808
+  - community/Community_61
 ---
 
 # Regular member IS allowed web_search in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_member_allowed_web_search_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1808
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

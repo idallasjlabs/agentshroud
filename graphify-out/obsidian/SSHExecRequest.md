@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 254"
 location: "L975"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Community_254
 ---
 
 # SSHExecRequest
@@ -28,4 +28,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[ssh_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Community_254

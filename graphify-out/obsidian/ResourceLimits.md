@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 5"
+community: "Community 434"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_5
+  - community/Community_434
 ---
 
 # ResourceLimits
@@ -64,4 +64,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_5
+#graphify/code #graphify/INFERRED #community/Community_434

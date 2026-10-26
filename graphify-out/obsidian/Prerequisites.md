@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 400"
+community: "Community 764"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_400
+  - community/Community_764
 ---
 
 # PREREQUISITES.md
@@ -17,4 +17,4 @@ tags:
 - [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
 - [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_400
+#graphify/document #graphify/EXTRACTED #community/Community_764

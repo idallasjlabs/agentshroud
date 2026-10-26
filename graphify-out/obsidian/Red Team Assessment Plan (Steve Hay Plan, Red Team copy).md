@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "Community 141"
+community: "Community 984"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_141
+  - community/Community_984
 ---
 
 # Red Team Assessment Plan (Steve Hay Plan, Red Team copy)
@@ -14,4 +14,4 @@ tags:
 - [[SKILL_200]] - `references` [INFERRED]
 - [[STPA-Sec Methodology]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_141
+#graphify/document #graphify/INFERRED #community/Community_984
