@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 17"
 location: "L689"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_17
 ---
 
 # EgressFilter in enforce mode allows all four domains for openclaw.
 
 ## Connections
-- [[dot-test_egress_filter_allows_in_enforce_mode()]] - `rationale_for` [EXTRACTED]
+- [[.test_egress_filter_allows_in_enforce_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_17

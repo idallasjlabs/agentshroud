@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "SecurityPipeline (2)"
+community: "Community 84"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/Community_84
 ---
 
 # E2E-10: SecurityPipeline refuses to operate without PII sanitizer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E10FailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

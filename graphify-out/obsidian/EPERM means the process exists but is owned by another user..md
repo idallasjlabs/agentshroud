@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "test_soc_services_coverage.py"
+community: "Community 986"
 location: "L263"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/Community_986
 ---
 
 # EPERM means the process exists but is owned by another user.
 
 ## Connections
-- [[dot-test_running_when_kill_raises_eperm()]] - `rationale_for` [EXTRACTED]
+- [[.test_running_when_kill_raises_eperm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_986

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L421"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Different fingerprints should create different sessions.
 
 ## Connections
-- [[dot-test_session_different_fingerprints()]] - `rationale_for` [EXTRACTED]
+- [[.test_session_different_fingerprints()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

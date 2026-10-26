@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "Community 1000"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/Community_1000
 ---
 
 # Edge cases and malformed URLs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMalformedURLs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_1000

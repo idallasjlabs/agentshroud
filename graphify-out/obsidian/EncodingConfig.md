@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
+community: "Community 84"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/Community_84
 ---
 
 # EncodingConfig
 
 ## Connections
-- [[dot-__init__()_190]] - `references` [EXTRACTED]
-- [[dot-test_config_disable_base64()]] - `calls` [EXTRACTED]
+- [[.__init__()_77]] - `references` [EXTRACTED]
+- [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestEncodingDetector]] - `uses` [INFERRED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/Community_84

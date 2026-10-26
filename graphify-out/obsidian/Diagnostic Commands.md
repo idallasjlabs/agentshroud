@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (3)"
+community: "Community 334"
 location: "L178"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Community_334
 ---
 
 # Diagnostic Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/document #graphify/EXTRACTED #community/Community_334

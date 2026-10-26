@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET) (2)"
+community: "Community 294"
 location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
+  - community/Community_294
 ---
 
 # Emergency Contacts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET_2
+#graphify/document #graphify/EXTRACTED #community/Community_294

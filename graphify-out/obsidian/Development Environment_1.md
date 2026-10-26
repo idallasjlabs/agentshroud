@@ -1,21 +1,17 @@
 ---
-source_file: "docs/TEAM.md"
+source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR) (3)"
-location: "L126"
+community: "Community 478"
+location: "L206"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR_3
+  - community/Community_478
 ---
 
 # Development Environment
 
 ## Connections
-- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
-- [[Communication & Tooling]] - `contains` [EXTRACTED]
-- [[Container Architecture_1]] - `contains` [EXTRACTED]
-- [[Development Workflow_1]] - `contains` [EXTRACTED]
-- [[Hardware]] - `contains` [EXTRACTED]
+- [[Deployment Readiness]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_3
+#graphify/document #graphify/EXTRACTED #community/Community_478

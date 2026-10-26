@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "models.py"
-location: "L260"
+community: "Community 2199"
+location: "L572"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/Community_2199
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
+- [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/Community_2199

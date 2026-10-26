@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "image"
-community: "Animation Guidelines"
+community: "Community 969"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/Community_969
 ---
 
 # Diagram 14: Logic Flow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Flow Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/image #graphify/EXTRACTED #community/Community_969

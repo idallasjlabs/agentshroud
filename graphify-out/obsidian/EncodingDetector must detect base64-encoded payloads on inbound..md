@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_agent_cve_registry.py"
+community: "Community 123"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_123
 ---
 
 # EncodingDetector must detect base64-encoded payloads on inbound.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_catches_base64_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_123

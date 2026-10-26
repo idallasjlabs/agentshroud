@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
+community: "Community 800"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+  - community/Community_800
 ---
 
 # Docker Volumes
@@ -15,9 +15,9 @@ tags:
 - [[Backup]] - `contains` [EXTRACTED]
 - [[Cleanup Warning]] - `contains` [EXTRACTED]
 - [[Inspecting Volumes]] - `contains` [EXTRACTED]
-- [[Related Notes_60]] - `contains` [EXTRACTED]
+- [[Related Notes_54]] - `contains` [EXTRACTED]
 - [[Volume Details]] - `contains` [EXTRACTED]
 - [[Volume Inventory]] - `contains` [EXTRACTED]
 - [[volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
+#graphify/document #graphify/EXTRACTED #community/Community_800

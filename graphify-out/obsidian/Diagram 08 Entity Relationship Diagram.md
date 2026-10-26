@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-08-erd.svg"
 type: "image"
-community: "nano-pdf"
+community: "Community 1392"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/nano-pdf
+  - community/Community_1392
 ---
 
 # Diagram 08: Entity Relationship Diagram
@@ -14,4 +14,4 @@ tags:
 - [[Diagram 09 Data Lineage]] - `semantically_similar_to` [INFERRED]
 - [[Diagram 10 Data Dictionary (Mindmap)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/nano-pdf
+#graphify/image #graphify/INFERRED #community/Community_1392

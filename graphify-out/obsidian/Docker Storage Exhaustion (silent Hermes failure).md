@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "rationale"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Docker Storage Exhaustion (silent Hermes failure)
@@ -15,4 +15,4 @@ tags:
 - [[Healthcheck Blind Spot (no disk-write probe)]] - `rationale_for` [EXTRACTED]
 - [[Prod-Side 2026-09-06 Upgrade Report]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_289

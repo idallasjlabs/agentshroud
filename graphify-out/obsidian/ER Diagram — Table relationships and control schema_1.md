@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "start-agentshroud.sh"
-location: "L136"
+community: "Community 419"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/Community_419
 ---
 
 # ER Diagram — Table relationships and control schema
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Diagram Types and Data Lakehouse Examples_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/Community_419

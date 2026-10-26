@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
-location: "L9"
+community: "Community 389"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/Community_389
 ---
 
 # Egress Filter Errors
 
 ## Connections
-- [[Egress Filter Errors]] - `contains` [EXTRACTED]
-- [[Egress Filter Not Initialized]] - `contains` [EXTRACTED]
-- [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
-- [[Monitor Mode — Egress Not Enforced]] - `contains` [EXTRACTED]
-- [[RFC1918 Blocked]] - `contains` [EXTRACTED]
-- [[Related Notes_73]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/Community_389

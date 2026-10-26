@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 34"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_34
 ---
 
 # Empty choices list raises ForwardError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openai_empty_choices_raises_forward_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

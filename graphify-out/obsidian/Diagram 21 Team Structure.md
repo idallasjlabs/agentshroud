@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "image"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (2)"
+community: "Community 471"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+  - community/Community_471
 ---
 
 # Diagram 21: Team Structure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_2
+#graphify/image #graphify/EXTRACTED #community/Community_471

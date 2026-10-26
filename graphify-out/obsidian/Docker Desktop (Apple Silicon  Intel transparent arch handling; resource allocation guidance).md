@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "concept"
-community: "sanitizer.py"
+community: "Community 421"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/Community_421
 ---
 
 # Docker Desktop (Apple Silicon / Intel transparent arch handling; resource allocation guidance)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Deploying AgentShroud on macOS (docsoperationsmacos.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/sanitizerpy
+#graphify/concept #graphify/EXTRACTED #community/Community_421

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "Community 84"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Community_84
 ---
 
 # E2E-09: Two agents process independently with no cross-contamination.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E09SessionIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

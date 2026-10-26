@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "AgentShroud Incident Response Plan (6)"
-location: "L636"
+community: "Community 2081"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_6
+  - community/Community_2081
 ---
 
 # Documentation
 
 ## Connections
-- [[Resources]] - `contains` [EXTRACTED]
+- [[11. Hard Guardrails (Non-Negotiables)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_6
+#graphify/document #graphify/EXTRACTED #community/Community_2081

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Community 845"
 location: "L1485"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Community_845
 ---
 
 # Embedding provider wording variants should rewrite for urlencoded payloads.
 
 ## Connections
-- [[dot-test_memory_provider_error_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
+- [[.test_memory_provider_error_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_845

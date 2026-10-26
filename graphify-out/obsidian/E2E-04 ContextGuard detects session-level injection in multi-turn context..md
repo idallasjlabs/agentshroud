@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "Community 84"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Community_84
 ---
 
 # E2E-04: ContextGuard detects session-level injection in multi-turn context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E04ContextGuardBlocking]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

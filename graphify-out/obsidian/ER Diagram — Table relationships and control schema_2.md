@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: ".cursor/agents/i-ti.md"
 type: "document"
-community: "Path (3)"
-location: "L136"
+community: "Community 893"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Path_3
+  - community/Community_893
 ---
 
 # ER Diagram — Table relationships and control schema
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Diagram Types and Data Lakehouse Examples_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Path_3
+#graphify/document #graphify/EXTRACTED #community/Community_893

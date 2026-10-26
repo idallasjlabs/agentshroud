@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/SKILL.md"
+source_file: ".agents/agents/i-gg.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
-location: "L52"
+community: "Community 1949"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/Community_1949
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_1949

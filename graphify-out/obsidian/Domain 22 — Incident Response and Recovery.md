@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Kill Switch"
+community: "Community 355"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/Community_355
 ---
 
 # Domain 22 — Incident Response and Recovery
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/Community_355

@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Community 389"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_389
 ---
 
 # Egress Filter Errors.md
 
 ## Connections
 - [[Auth Errors]] - `semantically_similar_to` [INFERRED]
-- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
 - [[Error Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_389

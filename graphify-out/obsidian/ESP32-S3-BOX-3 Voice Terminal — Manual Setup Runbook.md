@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "Community 367"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Community_367
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
@@ -26,7 +26,7 @@ tags:
 - [[8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent]] - `contains` [EXTRACTED]
 - [[9. Bring-up order — one cause per failure]] - `contains` [EXTRACTED]
 - [[Quick-reference commands]] - `contains` [EXTRACTED]
-- [[SETUP_3]] - `contains` [EXTRACTED]
+- [[SETUP]] - `contains` [EXTRACTED]
 - [[What you're building]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_367

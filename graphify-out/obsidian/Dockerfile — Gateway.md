@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Dockerfile — Gateway"
+community: "Community 944"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Gateway
+  - community/Community_944
 ---
 
 # Dockerfile — Gateway
@@ -16,12 +16,13 @@ tags:
 - [[Build Stages]] - `contains` [EXTRACTED]
 - [[Dockerfile — Bot (OpenClaw)]] - `references` [EXTRACTED]
 - [[Dockerfile.gateway]] - `contains` [EXTRACTED]
-- [[Environment Variables_16]] - `contains` [EXTRACTED]
+- [[Environment Variables]] - `contains` [EXTRACTED]
+- [[Environment Variables Set]] - `contains` [EXTRACTED]
 - [[Image Labels (OCI)_1]] - `contains` [EXTRACTED]
 - [[Pre-installed Tools_1]] - `contains` [EXTRACTED]
-- [[Related Notes_71]] - `contains` [EXTRACTED]
+- [[Related Notes_18]] - `contains` [EXTRACTED]
 - [[Runtime Command]] - `contains` [EXTRACTED]
-- [[Security Hardening_1]] - `contains` [EXTRACTED]
+- [[Security Hardening_2]] - `contains` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway
+#graphify/document #graphify/EXTRACTED #community/Community_944

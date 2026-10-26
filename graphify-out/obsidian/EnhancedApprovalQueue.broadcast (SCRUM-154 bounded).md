@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Favicon 96x96 (AgentShroud logo mark)"
+community: "Community 1609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Favicon_96x96_AgentShroud_logo_mark
+  - community/Community_1609
 ---
 
 # EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)
 
-#graphify/code #graphify/EXTRACTED #community/Favicon_96x96_AgentShroud_logo_mark
+#graphify/code #graphify/EXTRACTED #community/Community_1609

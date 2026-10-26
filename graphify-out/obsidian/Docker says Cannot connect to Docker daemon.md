@@ -1,17 +1,17 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "canary.py"
+community: "Community 726"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/Community_726
 ---
 
 # Docker says "Cannot connect to Docker daemon"
 
 ## Connections
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
+- [[Troubleshooting_42]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/Community_726

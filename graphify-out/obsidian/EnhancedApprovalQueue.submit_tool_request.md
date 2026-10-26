@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "App Icon 256x256 (AgentShroud logo mark)"
+community: "Community 1613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Icon_256x256_AgentShroud_logo_mark
+  - community/Community_1613
 ---
 
 # EnhancedApprovalQueue.submit_tool_request
 
-#graphify/code #graphify/EXTRACTED #community/App_Icon_256x256_AgentShroud_logo_mark
+#graphify/code #graphify/EXTRACTED #community/Community_1613

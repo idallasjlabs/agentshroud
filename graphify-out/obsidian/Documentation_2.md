@@ -1,17 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "TestMultilingualInjection"
-location: "L102"
+community: "Community 585"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_585
 ---
 
 # Documentation
 
 ## Connections
-- [[Files_1]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_585

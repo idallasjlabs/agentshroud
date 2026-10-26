@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "i-mac README — macOS System Administrator (MAC)"
+community: "Community 1455"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/i-mac_README__macOS_System_Administrator_MAC
+  - community/Community_1455
 ---
 
 # ElevenLabs Text-to-Dialogue API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[eleven_v3 model]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/i-mac_README__macOS_System_Administrator_MAC
+#graphify/concept #graphify/EXTRACTED #community/Community_1455

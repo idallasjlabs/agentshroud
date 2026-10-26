@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "start-agentshroud.sh"
-location: "L64"
+community: "Community 419"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/Community_419
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/Community_419

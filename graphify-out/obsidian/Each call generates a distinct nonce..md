@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "rationale"
-community: "TelegramAPIProxy (2)"
+community: "Community 1945"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/Community_1945
 ---
 
 # Each call generates a distinct nonce.
 
 ## Connections
-- [[dot-test_nonce_generation_unique()]] - `rationale_for` [EXTRACTED]
+- [[.test_nonce_generation_unique()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1945

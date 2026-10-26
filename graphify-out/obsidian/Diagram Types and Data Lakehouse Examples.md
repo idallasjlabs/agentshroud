@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".agents/agents/i-ti.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
-location: "L64"
+community: "Community 891"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Community_891
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_891

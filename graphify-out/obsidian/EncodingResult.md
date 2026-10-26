@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
+community: "Community 84"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/Community_84
 ---
 
 # EncodingResult
 
 ## Connections
-- [[dot-analyze()_1]] - `calls` [EXTRACTED]
+- [[.analyze()_1]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/Community_84

@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark (3)"
+community: "Community 334"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_3
+  - community/Community_334
 ---
 
 # Egress / Network Issues
 
 ## Connections
-- [[troubleshooting_21]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
+- [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_3
+#graphify/document #graphify/EXTRACTED #community/Community_334
