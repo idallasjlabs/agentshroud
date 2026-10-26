@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "http_proxy.py"
+community: "Community 718"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/Community_718
 ---
 
 # 🔵 LOW: User Experience & Documentation
@@ -17,4 +17,4 @@ tags:
 - [[13. Hallucination in Competitor Reports]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_718

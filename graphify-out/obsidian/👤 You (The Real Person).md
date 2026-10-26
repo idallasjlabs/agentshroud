@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "05-behavior.md"
+community: "Community 899"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/05-behaviormd
+  - community/Community_899
 ---
 
 # 👤 You (The Real Person)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Identity Reference - AgentShroud System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/05-behaviormd
+#graphify/document #graphify/EXTRACTED #community/Community_899

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "Community 346"
 location: "L618"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/Community_346
 ---
 
 # 🔄 Maintenance Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Monthly]] - `contains` [EXTRACTED]
 - [[Quarterly]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_346

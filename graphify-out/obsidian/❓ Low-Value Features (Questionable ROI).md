@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "ContextSegment (3)"
+community: "Community 788"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ContextSegment_3
+  - community/Community_788
 ---
 
 # ❓ Low-Value Features (Questionable ROI)
@@ -17,4 +17,4 @@ tags:
 - [[9. Read-Only Filesystem (Currently Disabled)]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ContextSegment_3
+#graphify/document #graphify/EXTRACTED #community/Community_788

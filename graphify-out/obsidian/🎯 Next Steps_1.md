@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
+source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "TestPromptProtection"
-location: "L220"
+community: "Community 285"
+location: "L400"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/Community_285
 ---
 
 # 🎯 Next Steps
 
 ## Connections
-- [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
+- [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
+- [[Option A Quick CalDAV Setup (Recommended)]] - `contains` [EXTRACTED]
+- [[Option B Full OAuth Setup]] - `contains` [EXTRACTED]
+- [[Option C Alternative Notes Solution]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/document #graphify/EXTRACTED #community/Community_285

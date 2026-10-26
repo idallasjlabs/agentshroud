@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "ApprovalQueueConfig (5)"
+community: "Community 1182"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/Community_1182
 ---
 
 # **🚨 Critical Risks**
 
 ## Connections
-- [[4. Risks & Gaps_2]] - `contains` [EXTRACTED]
+- [[4. Risks & Gaps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/document #graphify/EXTRACTED #community/Community_1182

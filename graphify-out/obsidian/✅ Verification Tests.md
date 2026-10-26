@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "agentshroud-bot (2)"
+community: "Community 619"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot_2
+  - community/Community_619
 ---
 
 # ✅ Verification Tests
@@ -18,4 +18,4 @@ tags:
 - [[Test 3 Console Access (Should Display)]] - `contains` [EXTRACTED]
 - [[Test 4 Internal Use (Should Work)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot_2
+#graphify/document #graphify/EXTRACTED #community/Community_619

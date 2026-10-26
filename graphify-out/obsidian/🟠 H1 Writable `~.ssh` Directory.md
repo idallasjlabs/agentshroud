@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Project Management (README)"
+community: "Community 543"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/Community_543
 ---
 
 # 🟠 H1: Writable `~/.ssh` Directory
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Findings & Mitigations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/Community_543

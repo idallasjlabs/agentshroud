@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "apple_engine.py"
+community: "Community 604"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apple_enginepy
+  - community/Community_604
 ---
 
 # 🔧 System Access
@@ -16,4 +16,4 @@ tags:
 - [[Local]] - `contains` [EXTRACTED]
 - [[Remote (Tailscale)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apple_enginepy
+#graphify/document #graphify/EXTRACTED #community/Community_604

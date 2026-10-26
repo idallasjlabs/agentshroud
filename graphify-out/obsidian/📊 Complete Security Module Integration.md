@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (3)"
+community: "Community 1182"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_3
+  - community/Community_1182
 ---
 
 # 📊 **Complete Security Module Integration**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_3
+#graphify/document #graphify/EXTRACTED #community/Community_1182

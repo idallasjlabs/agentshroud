@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "clamav_scanner.py"
+community: "Community 561"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/Community_561
 ---
 
 # 🎯 Key Features Implemented
@@ -17,4 +17,4 @@ tags:
 - [[✅ Design Principles Met]] - `contains` [EXTRACTED]
 - [[✅ Technical Implementation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Community_561

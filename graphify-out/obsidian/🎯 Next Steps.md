@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
+source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
-location: "L400"
+community: "Community 348"
+location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/Community_348
 ---
 
 # 🎯 Next Steps
 
 ## Connections
-- [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
-- [[Option A Quick CalDAV Setup (Recommended)]] - `contains` [EXTRACTED]
-- [[Option B Full OAuth Setup]] - `contains` [EXTRACTED]
-- [[Option C Alternative Notes Solution]] - `contains` [EXTRACTED]
+- [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/Community_348

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "dashboard_bridge.py"
+community: "Community 585"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/Community_585
 ---
 
 # 📊 Asset Summary
@@ -16,6 +16,6 @@ tags:
 - [[Documentation Status]] - `contains` [EXTRACTED]
 - [[Icon Sets]] - `contains` [EXTRACTED]
 - [[Logo Formats Available]] - `contains` [EXTRACTED]
-- [[Social Media_1]] - `contains` [EXTRACTED]
+- [[Social Media]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/document #graphify/EXTRACTED #community/Community_585

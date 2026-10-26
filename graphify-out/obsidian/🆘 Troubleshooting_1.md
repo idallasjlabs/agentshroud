@@ -1,18 +1,21 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Apple Services Setup Guide"
-location: "L640"
+community: "Community 1267"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/Community_1267
 ---
 
 # 🆘 Troubleshooting
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Authentication required]] - `contains` [EXTRACTED]
+- [[Permission denied]] - `contains` [EXTRACTED]
+- [[Skill validation failed]] - `contains` [EXTRACTED]
+- [[clawhub command not found]] - `contains` [EXTRACTED]
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_1267
