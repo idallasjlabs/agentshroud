@@ -162,15 +162,27 @@ reconcile_noyaml "$WORKDIR/servers-disabled-only.json" "$WORKDIR/f6.yaml" >/dev/
 check "F6 no key: exactly one mcp_servers key added" "$([[ "$(count_key "$WORKDIR/f6.yaml")" == 1 ]] && echo true || echo false)"
 check "F6 empty result is written as {} (not null)" "$(grep -qE '^mcp_servers: \{\}$' "$WORKDIR/f6.yaml" && echo true || echo false)"
 
+# F8: other empty spellings (null, ~, []) are the same key, never a reason to append.
+for v in 'null' '~' '[]'; do
+    printf 'model:\n  default: x\nmcp_servers: %s\nother: 1\n' "$v" > "$WORKDIR/f8.yaml"
+    reconcile_noyaml "$WORKDIR/servers.json" "$WORKDIR/f8.yaml" >/dev/null
+    check "F8 mcp_servers: $v -> exactly one key, github added" \
+        "$([[ "$(count_key "$WORKDIR/f8.yaml")" == 1 ]] && grep -q '^  github:' "$WORKDIR/f8.yaml" && grep -q '^other: 1$' "$WORKDIR/f8.yaml" && echo true || echo false)"
+done
+# ...and a non-empty inline list is left untouched like a non-empty mapping.
+printf 'mcp_servers: [github]\n' > "$WORKDIR/f8b.yaml"; cp "$WORKDIR/f8b.yaml" "$WORKDIR/f8b.orig"
+reconcile_noyaml "$WORKDIR/servers.json" "$WORKDIR/f8b.yaml" >/dev/null
+check "F8 inline non-empty list: file left untouched" "$(cmp -s "$WORKDIR/f8b.yaml" "$WORKDIR/f8b.orig" && echo true || echo false)"
+
 # F7: every fallback fixture is a fixed point: a second run changes nothing.
 idem=true
-for f in f1 f2 f3 f4 f5 f6; do
+for f in f1 f2 f3 f4 f5 f6 f8 f8b; do
     src="$WORKDIR/servers.json"; [[ "$f" == f1 || "$f" == f4 || "$f" == f6 ]] && src="$WORKDIR/servers-disabled-only.json"
     cp "$WORKDIR/$f.yaml" "$WORKDIR/$f.run1"
     out="$(reconcile_noyaml "$src" "$WORKDIR/$f.yaml")"
     if ! cmp -s "$WORKDIR/$f.yaml" "$WORKDIR/$f.run1" || [[ "$out" == CHANGED* ]]; then idem=false; echo "    not idempotent: $f ($out)" >&2; fi
 done
-check "F7 second run is byte-identical and reports no change, for F1-F6" "$idem"
+check "F7 second run is byte-identical and reports no change, for F1-F6 and F8" "$idem"
 
 echo ""
 if [[ "$fail" -eq 0 ]]; then

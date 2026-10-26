@@ -609,7 +609,7 @@ lines = text.splitlines()
 # form missed prod's inline `mcp_servers: {}` (2026-10-26, Hermes 0.22.5 has no
 # PyYAML so this fallback is the live path) and appended a second key; Hermes then
 # rejected config.yaml as "duplicate key mcp_servers" and ignored every later change.
-header = re.compile(r"^mcp_servers:\s*(\{.*?\})?\s*(#.*)?$")
+header = re.compile(r"^mcp_servers:\s*(\{.*?\}|\[.*?\]|null|Null|NULL|~)?\s*(#.*)?$")
 spans = []  # (start, end, inline_value_or_None), end exclusive
 i = 0
 while i < len(lines):
@@ -624,10 +624,11 @@ while i < len(lines):
     spans.append((i, j, m.group(1)))
     i = j
 
-# A non-empty inline mapping cannot be merged safely without a YAML parser. Leave
-# the file exactly as it is rather than guess, and say so in the boot log.
-if any(v is not None and re.sub(r"\s", "", v) != "{}" for _, _, v in spans):
-    print("SKIPPED: config.yaml has a non-empty inline mcp_servers mapping; cannot merge it without PyYAML")
+# An inline empty value ({}, [], null, ~) is the same key with nothing in it. A
+# non-empty inline value cannot be merged safely without a YAML parser: leave the
+# file exactly as it is rather than guess, and say so in the boot log.
+if any(v is not None and re.sub(r"\s", "", v).lower() not in ("{}", "[]", "null", "~") for _, _, v in spans):
+    print("SKIPPED: config.yaml has a non-empty inline mcp_servers value; cannot merge it without PyYAML")
     sys.exit(0)
 
 # One logical block: the entries of every block-form copy (duplicates collapse here).
