@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "ApprovalQueueConfig (5) (2)"
+community: "Community 1337"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5_2
+  - community/Community_1337
 ---
 
 # ⚠️ Partial Value / Needs Hardening
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5_2
+#graphify/document #graphify/EXTRACTED #community/Community_1337

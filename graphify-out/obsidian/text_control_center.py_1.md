@@ -1,20 +1,17 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
-type: "code"
-community: "Path (2)"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+type: "document"
+community: "Community 1178"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/Community_1178
 ---
 
-# text_control_center.py
+# text_control_center.py.md
 
 ## Connections
-- [[ANSI]] - `contains` [EXTRACTED]
-- [[ControlCenter]] - `contains` [EXTRACTED]
-- [[main()_14]] - `contains` [EXTRACTED]
-- [[start-control-center]] - `references` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/document #graphify/EXTRACTED #community/Community_1178

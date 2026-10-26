@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "TestSSRFDetection"
+community: "Community 101"
 location: "L3031"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Community_101
 ---
 
 # use local' must confirm with and display whatever _VOICE_MODEL     currently is,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_use_local_command_reflects_live_voice_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

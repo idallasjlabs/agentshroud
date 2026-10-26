@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "TestMetadataGuard"
+community: "Community 341"
 location: "L716"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestMetadataGuard
+  - community/Community_341
 ---
 
 # voice_task()
@@ -19,7 +19,7 @@ tags:
 - [[audio_capture_frame()]] - `calls` [INFERRED]
 - [[ui_face_set_agent()]] - `calls` [INFERRED]
 - [[ui_face_set_state()]] - `calls` [INFERRED]
-- [[vt_remote_log()_2]] - `calls` [EXTRACTED]
+- [[vt_remote_log()]] - `calls` [EXTRACTED]
 - [[wakeword_agent_index()]] - `calls` [INFERRED]
 - [[wakeword_agent_switch_ack()]] - `calls` [INFERRED]
 - [[wakeword_agent_switch_pending()]] - `calls` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[ws_client_send_keepalive()]] - `calls` [INFERRED]
 - [[ws_client_send_stop()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TestMetadataGuard
+#graphify/code #graphify/INFERRED #community/Community_341

@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "Community 135"
 location: "L865"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/Community_135
 ---
 
 # upstream_cve_check_scheduler()
 
 ## Connections
-- [[Background loop checks for new upstream agent CVEs once per day at report_hour…]] - `rationale_for` [EXTRACTED]
+- [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - `rationale_for` [EXTRACTED]
 - [[_already_checked_upstream_today()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_135

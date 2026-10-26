@@ -1,21 +1,19 @@
 ---
-source_file: "docker/scripts/verify-security.sh"
-type: "code"
-community: "skill.json"
-location: "L1"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+type: "document"
+community: "Community 398"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/skilljson
+  - community/Community_398
 ---
 
 # verify-security.sh
 
 ## Connections
-- [[SecureClaw Security Review (SEC)]] - `references` [EXTRACTED]
-- [[check_fail()_1]] - `defines` [EXTRACTED]
-- [[check_pass()_1]] - `defines` [EXTRACTED]
-- [[check_warn()]] - `defines` [EXTRACTED]
-- [[verify-security.sh script]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
+- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skilljson
+#graphify/document #graphify/EXTRACTED #community/Community_398

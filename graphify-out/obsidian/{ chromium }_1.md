@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "hermes/skills/i-browser/browse.js (2)"
+community: "Community 1149"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs_2
+  - community/Community_1149
 ---
 
 # { chromium }
 
 ## Connections
-- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[browse.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs_2
+#graphify/code #graphify/EXTRACTED #community/Community_1149

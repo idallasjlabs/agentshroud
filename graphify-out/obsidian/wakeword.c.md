@@ -1,23 +1,26 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Community 341"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Community_341
 ---
 
 # wakeword.c
 
 ## Connections
+- [[String]] - `imports` [EXTRACTED]
+- [[Task]] - `imports` [EXTRACTED]
 - [[_agent_btn_pressed()]] - `contains` [EXTRACTED]
 - [[_btn_pressed()]] - `contains` [EXTRACTED]
 - [[_btn_released()]] - `contains` [EXTRACTED]
 - [[_ptt_end()]] - `contains` [EXTRACTED]
 - [[_ptt_start()]] - `contains` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
+- [[wakeword.c]] - `imports` [EXTRACTED]
 - [[wakeword_agent_index()]] - `contains` [EXTRACTED]
 - [[wakeword_agent_switch_ack()]] - `contains` [EXTRACTED]
 - [[wakeword_agent_switch_pending()]] - `contains` [EXTRACTED]
@@ -39,4 +42,4 @@ tags:
 - [[wakeword_tts_stop_request()]] - `contains` [EXTRACTED]
 - [[wakeword_tts_stop_requested()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/EXTRACTED #community/Community_341

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Community 341"
 location: "L446"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Community_341
 ---
 
 # wakeword_ptt_release()
@@ -18,4 +18,4 @@ tags:
 - [[do_tap()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/INFERRED #community/Community_341

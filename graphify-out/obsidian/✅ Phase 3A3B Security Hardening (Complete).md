@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "Community 249"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/Community_249
 ---
 
 # ✅ Phase 3A/3B: Security Hardening (Complete)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/Community_249

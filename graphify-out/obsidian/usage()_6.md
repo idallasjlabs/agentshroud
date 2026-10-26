@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
+source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "parse_query"
+community: "Community 1064"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/Community_1064
 ---
 
 # usage()
 
 ## Connections
-- [[transcribe.sh]] - `defines` [EXTRACTED]
-- [[transcribe.sh script]] - `calls` [EXTRACTED]
+- [[find-sessions.sh]] - `defines` [EXTRACTED]
+- [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_query
+#graphify/code #graphify/EXTRACTED #community/Community_1064

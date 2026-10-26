@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Mode A — Single task (5)"
+community: "Community 644"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_5
+  - community/Community_644
 ---
 
 # update-bot-agents.sh
@@ -18,4 +18,4 @@ tags:
 - [[hermes-openclaw-dev-workflow]] - `references` [EXTRACTED]
 - [[update-bot-agents.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task_5
+#graphify/code #graphify/EXTRACTED #community/Community_644

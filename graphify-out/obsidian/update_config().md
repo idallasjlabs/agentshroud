@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "Community 49"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_49
 ---
 
 # update_config()
 
 ## Connections
 - [[ConfigUpdate]] - `references` [EXTRACTED]
-- [[Path_48]] - `calls` [EXTRACTED]
+- [[Path_44]] - `calls` [EXTRACTED]
 - [[Update configuration (writes YAML and optionally restarts).]] - `rationale_for` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[import_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_49

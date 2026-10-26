@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig (2) (2)"
+community: "Community 17"
 location: "L951"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2_2
+  - community/Community_17
 ---
 
 # update_egress_allowlist()
@@ -19,4 +19,4 @@ tags:
 - [[management.py]] - `contains` [EXTRACTED]
 - [[set_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2_2
+#graphify/code #graphify/EXTRACTED #community/Community_17

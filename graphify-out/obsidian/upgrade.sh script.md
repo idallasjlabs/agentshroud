@@ -1,12 +1,12 @@
 ---
 source_file: "docker/upgrade.sh"
 type: "code"
-community: "._redact_match"
+community: "Community 1391"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_redact_match
+  - community/Community_1391
 ---
 
 # upgrade.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_redact_match
+#graphify/code #graphify/EXTRACTED #community/Community_1391

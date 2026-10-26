@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/toggle-readonly.sh"
 type: "code"
-community: "sec-scan.sh (2)"
+community: "Community 1544"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sec-scansh_2
+  - community/Community_1544
 ---
 
 # toggle-readonly.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[toggle-readonly.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sec-scansh_2
+#graphify/code #graphify/EXTRACTED #community/Community_1544

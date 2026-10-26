@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "gen-code-graph.sh"
+community: "Community 1364"
 location: "L214"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gen-code-graphsh
+  - community/Community_1364
 ---
 
 # §5 — Trivy Container Scan Results
@@ -17,4 +17,4 @@ tags:
 - [[Hermes container — Not scanned]] - `contains` [EXTRACTED]
 - [[OpenClaw container (17 CRITICAL CVEs)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gen-code-graphsh
+#graphify/document #graphify/EXTRACTED #community/Community_1364

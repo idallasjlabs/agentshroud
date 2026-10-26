@@ -1,24 +1,24 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
-type: "code"
-community: "Enum"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+type: "document"
+community: "Community 720"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_720
 ---
 
 # url_analyzer.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
-- [[URLAnalyzer_1]] - `contains` [EXTRACTED]
-- [[URLFinding]] - `contains` [EXTRACTED]
-- [[URLVerdict]] - `contains` [EXTRACTED]
-- [[_looks_like_base64()]] - `contains` [EXTRACTED]
-- [[web_config.py]] - `references` [EXTRACTED]
-- [[web_content_scanner.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_9]] - `contains` [EXTRACTED]
+- [[Function Details_15]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_18]] - `contains` [EXTRACTED]
+- [[Purpose_136]] - `contains` [EXTRACTED]
+- [[Related_22]] - `contains` [EXTRACTED]
+- [[Responsibilities_20]] - `contains` [EXTRACTED]
+- [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/document #graphify/EXTRACTED #community/Community_720

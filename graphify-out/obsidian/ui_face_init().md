@@ -1,21 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Community 378"
 location: "L246"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - graphify/EXTRACTED
+  - community/Community_378
 ---
 
 # ui_face_init()
 
 ## Connections
 - [[_report_and_place_canvas()]] - `calls` [EXTRACTED]
-- [[app_main()_1]] - `calls` [INFERRED]
-- [[face_animation_init()]] - `calls` [INFERRED]
-- [[face_set_emotion()]] - `calls` [INFERRED]
+- [[app_main()]] - `calls` [INFERRED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/EXTRACTED #community/Community_378

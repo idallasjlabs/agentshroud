@@ -1,18 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "Community 1006"
 location: "L921"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_1006
 ---
 
 # voice_endpoint()
 
 ## Connections
-- [[WebSocket_7]] - `references` [EXTRACTED]
+- [[WebSocket_8]] - `references` [EXTRACTED]
 - [[_answer_volume_query()]] - `calls` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[_call_llm_stream()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[_voice_system_message()]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/Community_1006

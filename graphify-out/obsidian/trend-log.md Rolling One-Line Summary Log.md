@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt"
 type: "concept"
-community: "DockerEngine"
+community: "Community 373"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/Community_373
 ---
 
 # trend-log.md Rolling One-Line Summary Log
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Hermes Competitive Landscape Update (AMPM)]] - `references` [EXTRACTED]
 - [[append_trend_log.py Trend-Log Append Script]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DockerEngine
+#graphify/concept #graphify/EXTRACTED #community/Community_373

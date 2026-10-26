@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TestSSRFDetection"
+community: "Community 101"
 location: "L3030"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Community_101
 ---
 
 # test_ws_use_local_command_reflects_live_voice_model()
@@ -17,4 +17,4 @@ tags:
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 - [[use local' must confirm with and display whatever _VOICE_MODEL     currently is,]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/Community_101

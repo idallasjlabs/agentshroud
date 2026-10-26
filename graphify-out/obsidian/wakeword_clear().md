@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "test_security_toolchain.py (2)"
+community: "Community 341"
 location: "L435"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_security_toolchainpy_2
+  - community/Community_341
 ---
 
 # wakeword_clear()
@@ -22,4 +22,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_toolchainpy_2
+#graphify/code #graphify/INFERRED #community/Community_341

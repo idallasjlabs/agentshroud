@@ -1,17 +1,17 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (3)"
+community: "Community 534"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/Community_534
 ---
 
 # upgrade-2026-09-06-prod.md
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/document #graphify/EXTRACTED #community/Community_534

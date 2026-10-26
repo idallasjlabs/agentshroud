@@ -1,28 +1,28 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
+community: "Community 416"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Community_416
 ---
 
 # xurl — Agent Skill Reference
 
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
-- [[Error Handling_2]] - `contains` [EXTRACTED]
+- [[Common Workflows_2]] - `contains` [EXTRACTED]
+- [[Error Handling_17]] - `contains` [EXTRACTED]
 - [[Global Flags]] - `contains` [EXTRACTED]
-- [[Installation_1]] - `contains` [EXTRACTED]
-- [[Notes_4]] - `contains` [EXTRACTED]
-- [[Output Format_10]] - `contains` [EXTRACTED]
-- [[Prerequisites_5]] - `contains` [EXTRACTED]
-- [[Quick Reference_6]] - `contains` [EXTRACTED]
+- [[Installation_3]] - `contains` [EXTRACTED]
+- [[Notes_11]] - `contains` [EXTRACTED]
+- [[Output Format_113]] - `contains` [EXTRACTED]
+- [[Prerequisites_15]] - `contains` [EXTRACTED]
+- [[Quick Reference_15]] - `contains` [EXTRACTED]
 - [[Raw API Access]] - `contains` [EXTRACTED]
+- [[SKILL_250]] - `contains` [EXTRACTED]
 - [[Streaming_1]] - `contains` [EXTRACTED]
-- [[xurlSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_416

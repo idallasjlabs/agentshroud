@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "TestMetadataGuard"
+community: "Community 341"
 location: "L496"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - graphify/INFERRED
+  - community/Community_341
 ---
 
 # wakeword_agent_index()
@@ -15,4 +15,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/INFERRED #community/Community_341

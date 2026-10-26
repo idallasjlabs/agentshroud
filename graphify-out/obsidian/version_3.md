@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "Technical Specification"
-location: "L3"
+community: "Community 1049"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Community_1049
 ---
 
 # version
 
 ## Connections
-- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
+- [[manifest.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification
+#graphify/code #graphify/EXTRACTED #community/Community_1049

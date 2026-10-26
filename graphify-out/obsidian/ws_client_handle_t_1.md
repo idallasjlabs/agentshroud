@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "TestMetadataGuard"
+community: "Community 358"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/Community_358
 ---
 
 # ws_client_handle_t
@@ -23,4 +23,4 @@ tags:
 - [[ws_client_send_pcm()]] - `references` [EXTRACTED]
 - [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/Community_358
