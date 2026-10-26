@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "main.py"
+community: "Community 575"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/Community_575
 ---
 
 # Logging handler that pushes records into the LogBuffer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BufferHandler]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_575

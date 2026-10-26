@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "DelegationManager"
+community: "Community 73"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_73
 ---
 
 # LOG_LEVEL.md
@@ -15,4 +15,4 @@ tags:
 - [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_73

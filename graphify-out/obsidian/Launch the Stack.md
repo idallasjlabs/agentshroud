@@ -1,20 +1,20 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
+community: "Community 258"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/Community_258
 ---
 
 # Launch the Stack
 
 ## Connections
 - [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Check Status_1]] - `contains` [EXTRACTED]
+- [[Check Status]] - `contains` [EXTRACTED]
 - [[Hermes Setup (full profile only)]] - `contains` [EXTRACTED]
 - [[Start Everything]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_258

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Troubleshooting"
-location: "L282"
+community: "Community 171"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting
+  - community/Community_171
 ---
 
 # MCP Not Using Profile
 
 ## Connections
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_171

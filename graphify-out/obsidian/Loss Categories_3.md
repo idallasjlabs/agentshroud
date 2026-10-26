@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: ".github/agents/i-sec-defense.agent.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
-location: "L14"
+community: "Community 1295"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+  - community/Community_1295
 ---
 
 # Loss Categories
 
 ## Connections
-- [[Methodology_2]] - `contains` [EXTRACTED]
+- [[Methodology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
+#graphify/document #graphify/EXTRACTED #community/Community_1295

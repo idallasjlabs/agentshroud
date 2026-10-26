@@ -1,20 +1,35 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "_make_proxy()"
-location: "L206"
+community: "Community 6"
+location: "L152"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/Community_6
 ---
 
 # LedgerQueryResponse
 
 ## Connections
-- [[dot-query()]] - `references` [EXTRACTED]
+- [[Any_7]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Paginated ledger query results]] - `rationale_for` [EXTRACTED]
+- [[Request_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
+- [[ledger.py]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/Community_6

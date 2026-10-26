@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "EnhancedApprovalQueue.submit_tool_request"
+community: "Community 1591"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueuesubmit_tool_request
+  - community/Community_1591
 ---
 
 # Knowledge Map — Obsidian vault entry points
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueuesubmit_tool_request
+#graphify/rationale #graphify/EXTRACTED #community/Community_1591

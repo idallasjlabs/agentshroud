@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "Community 696"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/Community_696
 ---
 
 # LLM_PROVIDER_SETUP.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ LLM Provider Setup & Switching Guide]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/Community_696

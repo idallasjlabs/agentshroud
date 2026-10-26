@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage-exporter"
+community: "Community 874"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+  - community/Community_874
 ---
 
 # List Emails
 
 ## Connections
-- [[Common Operations_1]] - `contains` [EXTRACTED]
+- [[Common Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+#graphify/document #graphify/EXTRACTED #community/Community_874

@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "dashboard_bridge.py"
-location: "L67"
+community: "Community 586"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/Community_586
 ---
 
 # Logo Files
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/document #graphify/EXTRACTED #community/Community_586

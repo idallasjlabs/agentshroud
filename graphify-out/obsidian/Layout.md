@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "TestToolAuthorization"
+community: "Community 1110"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestToolAuthorization
+  - community/Community_1110
 ---
 
 # Layout
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`docsplanning` — Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestToolAuthorization
+#graphify/document #graphify/EXTRACTED #community/Community_1110

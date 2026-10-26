@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "_make_proxy()"
-location: "L139"
+community: "Community 6"
+location: "L114"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/Community_6
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[Any_48]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[DataLedger]] - `uses` [INFERRED]
+- [[.get_entry()]] - `references` [EXTRACTED]
+- [[.query()]] - `calls` [EXTRACTED]
+- [[.record()]] - `references` [EXTRACTED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[Single entry from the data ledger]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/Community_6

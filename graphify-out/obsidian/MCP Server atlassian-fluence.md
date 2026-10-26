@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "AWS Athena (data lakehouse)"
+community: "Community 1598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AWS_Athena_data_lakehouse
+  - community/Community_1598
 ---
 
 # MCP Server: atlassian-fluence
 
-#graphify/code #graphify/EXTRACTED #community/AWS_Athena_data_lakehouse
+#graphify/code #graphify/EXTRACTED #community/Community_1598

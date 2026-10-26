@@ -1,17 +1,17 @@
 ---
 source_file: ".github/copilot-instructions.md"
-type: "concept"
-community: "GitHub Copilot CLI Setup Guide (2)"
+type: "document"
+community: "Community 2022"
 location: "L28"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide_2
+  - community/Community_2022
 ---
 
-# LLM Operating Context (llm-init)
+# LLM OPERATING CONTEXT (llm-init)
 
 ## Connections
-- [[Copilot Instructions (mirrored CLAUDE.md + llm-init context)]] - `references` [EXTRACTED]
+- [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Community_2022

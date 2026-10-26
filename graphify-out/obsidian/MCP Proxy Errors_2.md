@@ -1,17 +1,23 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "browser/package.json"
-location: "L79"
+community: "Community 389"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser/packagejson
+  - community/Community_389
 ---
 
 # MCP Proxy Errors
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[HTTP 400 — Unknown MCP Server]] - `contains` [EXTRACTED]
+- [[HTTP 403 — MCP Tool Permission Denied]] - `contains` [EXTRACTED]
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - `contains` [EXTRACTED]
+- [[HTTP 502 — MCP Server Unreachable]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - `contains` [EXTRACTED]
+- [[Related Notes_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/Community_389

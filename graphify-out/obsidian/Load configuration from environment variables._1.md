@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Community 489"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Community_489
 ---
 
 # Load configuration from environment variables.
 
 ## Connections
-- [[dot-from_env()_1]] - `rationale_for` [EXTRACTED]
+- [[.from_env()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/rationale #graphify/EXTRACTED #community/Community_489

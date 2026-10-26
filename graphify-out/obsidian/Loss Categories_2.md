@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: ".cursor/agents/sec-defense.md"
 type: "document"
-community: "TestHandleEvent"
-location: "L14"
+community: "Community 1312"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Community_1312
 ---
 
 # Loss Categories
 
 ## Connections
-- [[Methodology_1]] - `contains` [EXTRACTED]
+- [[Methodology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Community_1312

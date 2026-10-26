@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 129"
 location: "L337-L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_129
 ---
 
 # LLMProxy._local_secondary_failover_request
@@ -20,4 +20,4 @@ tags:
 - [[LLMProxy.proxy_messages (non-streaming)]] - `calls` [EXTRACTED]
 - [[test_local_oom_triggers_secondary_failover]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_129

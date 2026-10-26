@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "TestOutputTrustScoring"
+community: "Community 1109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutputTrustScoring
+  - community/Community_1109
 ---
 
 # MCP AWS Profile Configuration Skill
@@ -16,4 +16,4 @@ tags:
 - [[i-mcpm-aws-profile README]] - `references` [EXTRACTED]
 - [[mcpm-doctor Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutputTrustScoring
+#graphify/document #graphify/EXTRACTED #community/Community_1109

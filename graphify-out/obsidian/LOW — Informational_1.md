@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "stt.py"
+community: "Community 414"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sttpy
+  - community/Community_414
 ---
 
 # LOW — Informational
@@ -17,4 +17,4 @@ tags:
 - [[L2 Browser Control Enabled]] - `contains` [EXTRACTED]
 - [[L3 Memory Index Not Built]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sttpy
+#graphify/document #graphify/EXTRACTED #community/Community_414

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "code"
-community: "Gemini CLI (SECONDARY agent configuration)"
+community: "Community 1824"
 location: "line 17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gemini_CLI_SECONDARY_agent_configuration
+  - community/Community_1824
 ---
 
 # Lifespan 64-Worker Executor and HTTP Peek Filter Tests
 
-#graphify/code #graphify/EXTRACTED #community/Gemini_CLI_SECONDARY_agent_configuration
+#graphify/code #graphify/EXTRACTED #community/Community_1824

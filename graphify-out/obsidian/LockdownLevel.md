@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "Community 75"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher_3
+  - community/Community_75
 ---
 
 # LockdownLevel
 
 ## Connections
-- [[Enum_3]] - `inherits` [EXTRACTED]
-- [[FakePipelineResult_1]] - `uses` [INFERRED]
-- [[FakeRBAC_1]] - `uses` [INFERRED]
-- [[PassthroughPipeline_1]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[FakePipelineResult]] - `uses` [INFERRED]
+- [[FakeRBAC]] - `uses` [INFERRED]
+- [[PassthroughPipeline]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `references` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
 - [[TestLockedCommand]] - `uses` [INFERRED]
 - [[TestProgressiveLockdownUnit]] - `uses` [INFERRED]
 - [[TestSuspendedDropNotice]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher_3
+#graphify/code #graphify/INFERRED #community/Community_75

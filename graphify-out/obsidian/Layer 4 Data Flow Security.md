@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "dashboard_endpoints.py (2)"
-location: "L44"
+community: "Community 1413"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/Community_1413
 ---
 
 # Layer 4: Data Flow Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_1413

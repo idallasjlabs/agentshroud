@@ -1,22 +1,21 @@
 ---
 source_file: "reports/upgrade-2026-09-22.md"
 type: "concept"
-community: "_make_sanitizer()"
+community: "Community 118"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/Community_118
 ---
 
 # Local Trivy scan failures (DB mirror timeouts, local-image 401 fallback)
 
 ## Connections
 - [[Dev Colima VM loses all HTTPS egress]] - `conceptually_related_to` [EXTRACTED]
-- [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-09-23 1400 (dev, PARTIAL, disk full)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
-- [[Upgrade Report 2026-10-11 (dev, PARTIAL, prod blocked)]] - `references` [EXTRACTED]
-- [[sunday-scan.sh]] - `conceptually_related_to` [EXTRACTED]
+- [[upgrade-2026-09-21]] - `references` [EXTRACTED]
+- [[upgrade-2026-09-22]] - `references` [EXTRACTED]
+- [[upgrade-2026-09-23-20260923-1400]] - `references` [EXTRACTED]
+- [[upgrade-2026-10-04]] - `references` [EXTRACTED]
+- [[upgrade-2026-10-11]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/concept #graphify/EXTRACTED #community/Community_118

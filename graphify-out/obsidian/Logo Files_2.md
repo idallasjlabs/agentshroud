@@ -1,17 +1,17 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "BotConfig (3)"
-location: "L3"
+community: "Community 231"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_3
+  - community/Community_231
 ---
 
 # Logo Files
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_3
+#graphify/document #graphify/EXTRACTED #community/Community_231

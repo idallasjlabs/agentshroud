@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".cursor/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "01-architecture.md"
-location: "L29"
+community: "Community 182"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01-architecturemd
+  - community/Community_182
 ---
 
 # List Available Profiles
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Check Current Profile_2]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
-- [[View Configured Profiles_1]] - `contains` [EXTRACTED]
-- [[View Configured Providers]] - `contains` [EXTRACTED]
+- [[View Configured Profiles_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01-architecturemd
+#graphify/document #graphify/EXTRACTED #community/Community_182

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: ".test_streaming_chunking_probe_gets_output_delivery_policy_notice()"
+community: "Community 1487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_streaming_chunking_probe_gets_output_delivery_policy_notice
+  - community/Community_1487
 ---
 
 # LogSanitizer PII-Scrubbing Log Filter
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test Log Sanitizer PII Scrubbing]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_streaming_chunking_probe_gets_output_delivery_policy_notice
+#graphify/code #graphify/EXTRACTED #community/Community_1487

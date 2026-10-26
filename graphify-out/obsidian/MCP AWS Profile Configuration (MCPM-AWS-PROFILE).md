@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "Community 582"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Community_582
 ---
 
 # MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Connections
-- [[Purpose_61]] - `contains` [EXTRACTED]
-- [[Related Skills_47]] - `contains` [EXTRACTED]
-- [[Usage_50]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_15]] - `contains` [EXTRACTED]
+- [[README_15]] - `contains` [EXTRACTED]
+- [[Related Skills_19]] - `contains` [EXTRACTED]
+- [[Usage_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_582

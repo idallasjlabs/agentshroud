@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L315"
+community: "Community 6"
+location: "L3919"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/Community_6
 ---
 
 # List all users and their roles (admin+ only).
 
 ## Connections
-- [[dot-list_users_and_roles()]] - `rationale_for` [EXTRACTED]
 - [[list_users_and_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

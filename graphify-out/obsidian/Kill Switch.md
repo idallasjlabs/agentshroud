@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "Community 398"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/Community_398
 ---
 
 # Kill Switch
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[Features_2]] - `contains` [EXTRACTED]
+- [[Features_1]] - `contains` [EXTRACTED]
 - [[Mode 1 freeze]] - `contains` [EXTRACTED]
 - [[Mode 2 shutdown]] - `contains` [EXTRACTED]
 - [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_398

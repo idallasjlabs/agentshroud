@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "ToolChainAnalyzer"
+community: "Community 8"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/Community_8
 ---
 
 # Load default suspicious chain patterns.
 
 ## Connections
-- [[dot-_load_default_patterns()]] - `rationale_for` [EXTRACTED]
+- [[._load_default_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

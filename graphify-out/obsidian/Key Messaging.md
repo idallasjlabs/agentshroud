@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "BRAND.md"
 type: "document"
-community: "AgentShroud Config with Tool Risk Tiers (example)"
+community: "Community 192"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+  - community/Community_192
 ---
 
 # Key Messaging
 
 ## Connections
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 - [[Elevator pitch]] - `contains` [EXTRACTED]
 - [[One-liner]] - `contains` [EXTRACTED]
 - [[What it is NOT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+#graphify/document #graphify/EXTRACTED #community/Community_192

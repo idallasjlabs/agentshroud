@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "RateLimitGuard"
+community: "Community 204"
 location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/Community_204
 ---
 
 # MCP Proxy Tool Authorization
@@ -16,4 +16,4 @@ tags:
 - [[Dynamic Permission Adjustment]] - `contains` [EXTRACTED]
 - [[Tool Categories and Trust Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/document #graphify/EXTRACTED #community/Community_204

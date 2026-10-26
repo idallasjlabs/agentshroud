@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "document"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Local-Model Job Quality Matrix
@@ -18,4 +18,4 @@ tags:
 - [[Per-Bot Status Badge Vocabulary]] - `shares_data_with` [INFERRED]
 - [[ToolResultSanitizer Link Stripping (delivery defect)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Community_289

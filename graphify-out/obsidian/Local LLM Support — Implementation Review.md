@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "iCloud Services"
+community: "Community 798"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Community_798
 ---
 
 # Local LLM Support — Implementation Review
 
 ## Connections
+- [[1. Architecture Overview]] - `contains` [EXTRACTED]
 - [[10. Known Gaps  Open Items]] - `contains` [EXTRACTED]
 - [[11. Quick Reference — Switching to Local Mode]] - `contains` [EXTRACTED]
 - [[2. Source Files]] - `contains` [EXTRACTED]
@@ -22,7 +23,7 @@ tags:
 - [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - `contains` [EXTRACTED]
 - [[8. Telegram Integration]] - `contains` [EXTRACTED]
 - [[9. Bot Startup Flow (local mode)]] - `contains` [EXTRACTED]
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `contains` [EXTRACTED]
 - [[LOCAL_LLM_REVIEW]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Community_798

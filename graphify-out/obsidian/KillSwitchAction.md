@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "AsyncMock"
+community: "Community 40"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AsyncMock
+  - community/Community_40
 ---
 
 # KillSwitchAction
 
 ## Connections
-- [[dot-test_killswitch_action_default_unconfirmed()]] - `calls` [EXTRACTED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[.test_killswitch_action_default_unconfirmed()]] - `calls` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[SimpleNamespace]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[SimpleNamespace_1]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
 - [[TestConfig_1]] - `uses` [INFERRED]
@@ -33,11 +33,11 @@ tags:
 - [[TestResolveBotContainer]] - `uses` [INFERRED]
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
-- [[TestStatus]] - `uses` [INFERRED]
+- [[TestStatus_1]] - `uses` [INFERRED]
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
-- [[api.py_2]] - `contains` [EXTRACTED]
-- [[killswitch()_1]] - `references` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
+- [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AsyncMock
+#graphify/code #graphify/INFERRED #community/Community_40

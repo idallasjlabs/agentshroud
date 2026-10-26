@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "TestResourceAvailability"
+community: "Community 780"
 location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestResourceAvailability
+  - community/Community_780
 ---
 
 # **Live System Status**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Test Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestResourceAvailability
+#graphify/document #graphify/EXTRACTED #community/Community_780

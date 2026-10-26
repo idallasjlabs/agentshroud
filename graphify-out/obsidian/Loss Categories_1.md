@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "System Audit & Documentation (3)"
+community: "Community 1341"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation_3
+  - community/Community_1341
 ---
 
 # Loss Categories
 
 ## Connections
-- [[Methodology]] - `contains` [EXTRACTED]
+- [[Methodology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation_3
+#graphify/document #graphify/EXTRACTED #community/Community_1341

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
+community: "Community 301"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/Community_301
 ---
 
 # Layer 3: Operating System Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[9. seccomp Profiles]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/Community_301

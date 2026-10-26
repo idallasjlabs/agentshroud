@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "TestEnforceDefaults"
+community: "Community 196"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/Community_196
 ---
 
 # Log warnings for any core modules running in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_monitor_mode_warnings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/rationale #graphify/EXTRACTED #community/Community_196
