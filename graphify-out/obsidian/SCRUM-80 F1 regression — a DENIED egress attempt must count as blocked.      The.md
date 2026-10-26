@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "rationale"
-community: "ModuleStatsCollector"
+community: "Community 300"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/Community_300
 ---
 
 # SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressWiringEndToEnd]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/rationale #graphify/EXTRACTED #community/Community_300

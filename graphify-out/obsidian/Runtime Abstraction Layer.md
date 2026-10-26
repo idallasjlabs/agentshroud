@@ -1,18 +1,18 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
+community: "Community 236"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/Community_236
 ---
 
 # Runtime Abstraction Layer
 
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
-- [[Decision_1]] - `references` [EXTRACTED]
+- [[Decision_7]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/Community_236

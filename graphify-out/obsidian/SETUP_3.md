@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: ".github/agents/i-icloud.agent.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L1"
+community: "Community 554"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Community_554
 ---
 
-# SETUP.md
+# Setup
 
 ## Connections
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_554

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-08-erd.svg"
 type: "concept"
-community: "face_animation_pause() — freezes canvas redraw to protect WiFi stack"
+community: "Community 1739"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/face_animation_pause__freezes_canvas_redraw_to_protect_WiFi_stack
+  - community/Community_1739
 ---
 
 # SCHEMA_VERSION entity
 
-#graphify/concept #graphify/EXTRACTED #community/face_animation_pause__freezes_canvas_redraw_to_protect_WiFi_stack
+#graphify/concept #graphify/EXTRACTED #community/Community_1739

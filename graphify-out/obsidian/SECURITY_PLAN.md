@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Findings"
+community: "Community 415"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/Community_415
 ---
 
 # SECURITY_PLAN.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Hardening Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/Community_415

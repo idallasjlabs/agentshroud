@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 location: "L788"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # SOC Dashboard
@@ -16,4 +16,4 @@ tags:
 - [[Approval Queue (human-in-the-loop)]] - `shares_data_with` [EXTRACTED]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Community_637

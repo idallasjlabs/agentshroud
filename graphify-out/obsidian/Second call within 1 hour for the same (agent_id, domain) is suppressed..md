@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "SkillGuard"
+community: "Community 23"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Community_23
 ---
 
 # Second call within 1 hour for the same (agent_id, domain) is suppressed.
 
 ## Connections
-- [[dot-test_log_external_decision_throttle_same_agent_domain()]] - `rationale_for` [EXTRACTED]
+- [[.test_log_external_decision_throttle_same_agent_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: ".github/agents/i-mm.agent.md"
 type: "document"
-community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
-location: "L24"
+community: "Community 558"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+  - community/Community_558
 ---
 
 # Rules
 
 ## Connections
-- [[Trademark Statements]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+#graphify/document #graphify/EXTRACTED #community/Community_558

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "Pre-Deployment Checklist (3)"
+community: "Community 915"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_3
+  - community/Community_915
 ---
 
 # SSH Proxy Config Schema (agentshroud.yaml ssh: section)
@@ -16,4 +16,4 @@ tags:
 - [[SSH Auto-Approve Commands]] - `conceptually_related_to` [EXTRACTED]
 - [[SSH Proxy Threat Model (6 threats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Deployment_Checklist_3
+#graphify/concept #graphify/EXTRACTED #community/Community_915

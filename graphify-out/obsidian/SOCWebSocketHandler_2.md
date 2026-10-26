@@ -1,56 +1,20 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 169"
 location: "L26"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - graphify/EXTRACTED
+  - community/Community_169
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_185]] - `method` [EXTRACTED]
-- [[dot-_event_fan_out()]] - `method` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
-- [[dot-_send_event()]] - `method` [EXTRACTED]
-- [[dot-run()_1]] - `method` [EXTRACTED]
-- [[Any_66]] - `uses` [INFERRED]
-- [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[._make_handler()]] - `references` [EXTRACTED]
+- [[._matches()]] - `references` [EXTRACTED]
+- [[.test_instantiate()]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[Severity_8]] - `uses` [INFERRED]
-- [[SimpleNamespace_1]] - `uses` [INFERRED]
-- [[TestCoerceToWSEvent]] - `uses` [INFERRED]
-- [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
-- [[TestCollectRecentEvents]] - `uses` [INFERRED]
-- [[TestEventFanOut]] - `uses` [INFERRED]
-- [[TestFromAnomalyAlert]] - `uses` [INFERRED]
-- [[TestFromAuditChainEntry]] - `uses` [INFERRED]
-- [[TestFromDict]] - `uses` [INFERRED]
-- [[TestFromEgressAttempt]] - `uses` [INFERRED]
-- [[TestFromPipelineResult]] - `uses` [INFERRED]
-- [[TestGetConfigToken]] - `uses` [INFERRED]
-- [[TestHandlerRun]] - `uses` [INFERRED]
-- [[TestMapSeverity]] - `uses` [INFERRED]
-- [[TestResolveCaller]] - `uses` [INFERRED]
-- [[TestSCLCaller]] - `uses` [INFERRED]
-- [[TestSOCWebSocketHandlerImport]] - `uses` [INFERRED]
-- [[TestSendEventAndKeepalive]] - `uses` [INFERRED]
-- [[TestSubscriptionFilter]] - `uses` [INFERRED]
-- [[TestTokenStorePruning]] - `uses` [INFERRED]
-- [[TestVerifyBearer]] - `uses` [INFERRED]
-- [[TestWSSOCEndpoint]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[_FakeBus]] - `uses` [INFERRED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
-- [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
-- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
-- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
-- [[websocket.py]] - `contains` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_169

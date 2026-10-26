@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Bot Container (agent decides: reply + tool call)"
+community: "Community 1079"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_agent_decides_reply__tool_call
+  - community/Community_1079
 ---
 
 # Scenario 01 — Enforce-by-Default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§1 — Re-run of Prior Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call
+#graphify/document #graphify/EXTRACTED #community/Community_1079

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "KillSwitchMonitor (2) (3)"
+community: "Community 1177"
 location: "L677"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_3
+  - community/Community_1177
 ---
 
 # SSL/TLS Certificate Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_3
+#graphify/document #graphify/EXTRACTED #community/Community_1177

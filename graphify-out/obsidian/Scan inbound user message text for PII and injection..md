@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "Community 1787"
 location: "L1760"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/Community_1787
 ---
 
 # Scan inbound user message text for PII and injection.
 
 ## Connections
-- [[dot-_scan_inbound()]] - `rationale_for` [EXTRACTED]
+- [[._scan_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/Community_1787

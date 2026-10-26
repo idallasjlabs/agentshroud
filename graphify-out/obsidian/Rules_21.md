@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "ModeRequest (2)"
-location: "L137"
+community: "Community 729"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest_2
+  - community/Community_729
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest_2
+#graphify/document #graphify/EXTRACTED #community/Community_729

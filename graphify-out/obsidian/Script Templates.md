@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI) (3) (2)"
-location: "L264"
+community: "Community 209"
+location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI_3_2
+  - community/Community_209
 ---
 
 # Script Templates
 
 ## Connections
-- [[Deliverables_1]] - `contains` [EXTRACTED]
+- [[Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI_3_2
+#graphify/document #graphify/EXTRACTED #community/Community_209

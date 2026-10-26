@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "Community 30"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/Community_30
 ---
 
 # SQLite-backed persistence for approval queue items.
 
 ## Connections
-- [[ApprovalStore]] - `rationale_for` [EXTRACTED]
+- [[ApprovalStore_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

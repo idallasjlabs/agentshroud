@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "Community 165"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/Community_165
 ---
 
 # SQLite-backed Telegram update store, safe for concurrent asyncio callers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UpdateReplayBuffer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/rationale #graphify/EXTRACTED #community/Community_165

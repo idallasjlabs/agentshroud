@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
+source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "AgentTarget (5)"
-location: "L84"
+community: "Community 1422"
+location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/Community_1422
 ---
 
 # Rules
 
 ## Connections
-- [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/document #graphify/EXTRACTED #community/Community_1422

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "Skill: Project Management (PM) (3)"
+community: "Community 131"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/Community_131
 ---
 
 # Save a Trivy report to the log directory.      Args:         report: Parsed repo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_report()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_131

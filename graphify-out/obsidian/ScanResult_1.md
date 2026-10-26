@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "Community 24"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/Community_24
 ---
 
 # ScanResult
 
 ## Connections
-- [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-scan()_1]] - `references` [EXTRACTED]
-- [[dot-scan_tool_result()_1]] - `references` [EXTRACTED]
+- [[._blocking_prompt_guard()]] - `calls` [EXTRACTED]
+- [[.scan()_4]] - `references` [EXTRACTED]
+- [[.scan_tool_result()_2]] - `references` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -27,7 +27,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/Community_24

@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-_handler()]] - `references` [EXTRACTED]
-- [[dot-test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
-- [[dot-test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
-- [[dot-test_keepalive_breaks_on_construction_error()]] - `calls` [EXTRACTED]
-- [[dot-test_keepalive_sends_pings()]] - `calls` [EXTRACTED]
-- [[dot-test_none_bus_returns_immediately()]] - `calls` [EXTRACTED]
-- [[dot-test_send_event_serializes()]] - `calls` [EXTRACTED]
-- [[dot-test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
+- [[._handler()]] - `references` [EXTRACTED]
+- [[.test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
+- [[.test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
+- [[.test_keepalive_breaks_on_construction_error()]] - `calls` [EXTRACTED]
+- [[.test_keepalive_sends_pings()]] - `calls` [EXTRACTED]
+- [[.test_none_bus_returns_immediately()]] - `calls` [EXTRACTED]
+- [[.test_send_event_serializes()]] - `calls` [EXTRACTED]
+- [[.test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/Community_6

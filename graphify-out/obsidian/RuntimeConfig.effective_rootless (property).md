@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "GovernanceAction"
+community: "Community 784"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/Community_784
 ---
 
 # RuntimeConfig.effective_rootless (property)
 
 ## Connections
-- [[Function Details_47]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GovernanceAction
+#graphify/document #graphify/EXTRACTED #community/Community_784

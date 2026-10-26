@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Attack Teardowns: How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks"
+community: "Community 1038"
 location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlast_and_Cross-Turn_Coordination_Attacks
+  - community/Community_1038
 ---
 
 # SECTION 3: DRAWINGS
@@ -21,4 +21,4 @@ tags:
 - [[FIGURE 5 — Multi-Agent Governance with Isolation]] - `contains` [EXTRACTED]
 - [[FIGURE 6 — Delegated Authority Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlast_and_Cross-Turn_Coordination_Attacks
+#graphify/document #graphify/EXTRACTED #community/Community_1038

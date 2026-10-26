@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "concept"
-community: "_HeadFakeResponse"
+community: "Community 1147"
 location: "line 41"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_HeadFakeResponse
+  - community/Community_1147
 ---
 
 # STPA-Sec Methodology (Nancy Leveson, MIT)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_HeadFakeResponse
+#graphify/concept #graphify/EXTRACTED #community/Community_1147

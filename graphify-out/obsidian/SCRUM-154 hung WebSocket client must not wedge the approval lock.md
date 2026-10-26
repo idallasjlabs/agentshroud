@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "browser-fetch package.json (2)"
+community: "Community 1872"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser-fetch_packagejson_2
+  - community/Community_1872
 ---
 
 # SCRUM-154: hung WebSocket client must not wedge the approval lock
 
-#graphify/rationale #graphify/EXTRACTED #community/browser-fetch_packagejson_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1872

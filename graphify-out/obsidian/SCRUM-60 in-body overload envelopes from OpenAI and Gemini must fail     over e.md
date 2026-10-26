@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "Community 142"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/Community_142
 ---
 
 # SCRUM-60: in-body overload envelopes from OpenAI and Gemini must fail     over e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOverloadedMultiProvider]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/Community_142

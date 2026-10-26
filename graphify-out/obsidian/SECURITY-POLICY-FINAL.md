@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "BotConfig (2)"
+community: "Community 1315"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BotConfig_2
+  - community/Community_1315
 ---
 
 # SECURITY-POLICY-FINAL.md
@@ -17,4 +17,4 @@ tags:
 - [[CREDENTIAL-SECURITY-POLICY]] - `cites` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BotConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_1315

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "Community 29"
 location: "L1632"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Community_29
 ---
 
 # Score domain 20: Docker Daemon Configuration (0-5). CIS Sections 2 & 3.      0=d
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_docker_daemon_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_29

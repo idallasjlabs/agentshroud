@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
+source_file: ".agents/skills/sad/SKILL.md"
 type: "document"
-community: "MiddlewareManager (7)"
+community: "Community 1340"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_7
+  - community/Community_1340
 ---
 
 # SECTION 4 — ALL EXTERNAL DEPENDENCIES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_7
+#graphify/document #graphify/EXTRACTED #community/Community_1340

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "ingest_api/__init__.py"
+community: "Community 1822"
 location: "line 79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/__init__py
+  - community/Community_1822
 ---
 
 # SOC Models ServiceDescriptor Tests
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/__init__py
+#graphify/code #graphify/EXTRACTED #community/Community_1822

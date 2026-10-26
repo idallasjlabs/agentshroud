@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: ".cursor/agents/i-session-prompt.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements (2)"
-location: "L23"
+community: "Community 1497"
+location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements_2
+  - community/Community_1497
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements_2
+#graphify/document #graphify/EXTRACTED #community/Community_1497

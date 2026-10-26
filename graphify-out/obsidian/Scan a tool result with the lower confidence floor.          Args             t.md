@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "Community 56"
 location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/Community_56
 ---
 
 # Scan a tool result with the lower confidence floor.          Args:             t
 
 ## Connections
-- [[dot-scan_tool_result()_3]] - `rationale_for` [EXTRACTED]
+- [[.scan_tool_result()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

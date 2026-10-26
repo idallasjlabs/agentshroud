@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Sanitize HTTP headers by removing sensitive information.
 
 ## Connections
-- [[dot-sanitize_headers()]] - `rationale_for` [EXTRACTED]
+- [[.sanitize_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

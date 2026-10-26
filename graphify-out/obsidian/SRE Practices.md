@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "MCP Server: github"
+community: "Community 1580"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Server_github
+  - community/Community_1580
 ---
 
 # SRE Practices
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Server_github
+#graphify/document #graphify/EXTRACTED #community/Community_1580

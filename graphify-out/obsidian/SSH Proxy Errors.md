@@ -1,23 +1,18 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "SSH Proxy Errors"
-location: "L9"
+community: "Community 1084"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Errors
+  - community/Community_1084
 ---
 
-# SSH Proxy Errors
+# SSH Proxy Errors.md
 
 ## Connections
-- [[Globally Denied Command]] - `contains` [EXTRACTED]
-- [[HTTP 403 — SSH Host Not Allowed]] - `contains` [EXTRACTED]
-- [[Related Notes_14]] - `contains` [EXTRACTED]
-- [[SSH Connection Timeout]] - `contains` [EXTRACTED]
-- [[SSH Key Not Found]] - `contains` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
 - [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
-- [[Session Duration Exceeded]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/Community_1084
