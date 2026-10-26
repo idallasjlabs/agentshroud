@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "oracle — best use"
+community: "Community 769"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/Community_769
 ---
 
 # Stable-named cron scheduling for periodic audits
 
 ## Connections
+- [[SKILL_222]] - `implements` [EXTRACTED]
 - [[gh-issues Cursor File (cron sequential tracking)]] - `semantically_similar_to` [INFERRED]
-- [[healthcheckSKILL]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/oracle__best_use
+#graphify/concept #graphify/EXTRACTED #community/Community_769

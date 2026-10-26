@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
+source_file: ".agents/agents/i-hdev.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM) (2)"
-location: "L124"
+community: "Community 819"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM_2
+  - community/Community_819
 ---
 
 # Step 1 — Sync and confirm clean state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_2
+#graphify/document #graphify/EXTRACTED #community/Community_819

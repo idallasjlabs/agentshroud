@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "rationale"
-community: "format_upstream_cve_alert()"
+community: "Community 555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/Community_555
 ---
 
 # Spoken High-Risk Command Approval Pause
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Governed Voice Path (device to gateway to Hermes)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/rationale #graphify/EXTRACTED #community/Community_555

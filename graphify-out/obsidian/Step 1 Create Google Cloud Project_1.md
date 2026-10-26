@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
+source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "tmux Session Control"
-location: "L90"
+community: "Community 285"
+location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/Community_285
 ---
 
 # Step 1: Create Google Cloud Project
 
 ## Connections
-- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - `contains` [EXTRACTED]
+- [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/document #graphify/EXTRACTED #community/Community_285

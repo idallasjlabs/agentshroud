@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gitops/SKILL.md"
+source_file: ".cursor/agents/i-gitops.md"
 type: "document"
-community: "soc.js"
-location: "L5"
+community: "Community 2253"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2253
 ---
 
 # Skill: gitops
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-gitopsSKILL]] - `contains` [EXTRACTED]
+- [[i-gitops_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2253

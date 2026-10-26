@@ -1,30 +1,30 @@
 ---
-source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM) (3)"
-location: "L5"
+community: "Community 314"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM_3
+  - community/Community_314
 ---
 
 # Skill: UI Expert (UI)
 
 ## Connections
 - [[Accessibility Requirements_1]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_8]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_14]] - `contains` [EXTRACTED]
 - [[CSS Architecture Recommendations_1]] - `contains` [EXTRACTED]
 - [[Component Patterns_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Structure → Component → Layout → Validate_1]] - `contains` [EXTRACTED]
 - [[Dark  Light Theme Implementation_1]] - `contains` [EXTRACTED]
-- [[Dependencies_8]] - `contains` [EXTRACTED]
+- [[Dependencies_10]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture_1]] - `contains` [EXTRACTED]
 - [[Responsive Layout System_1]] - `contains` [EXTRACTED]
-- [[Role_31]] - `contains` [EXTRACTED]
-- [[Rules_9]] - `contains` [EXTRACTED]
+- [[Role_70]] - `contains` [EXTRACTED]
+- [[Rules_14]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[SKILL_59]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-uiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM_3
+#graphify/document #graphify/EXTRACTED #community/Community_314

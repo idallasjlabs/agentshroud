@@ -1,25 +1,24 @@
 ---
-source_file: ".agents/skills/i-gg/SKILL.md"
+source_file: ".agents/agents/i-gg.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity (2)"
-location: "L5"
+community: "Community 1949"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+  - community/Community_1949
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-ggSKILL]] - `contains` [EXTRACTED]
 - [[Branch Naming]] - `contains` [EXTRACTED]
 - [[Commit Messages  (Conventional Commits)]] - `contains` [EXTRACTED]
-- [[Emergency Hotfix_3]] - `contains` [EXTRACTED]
+- [[Emergency Hotfix]] - `contains` [EXTRACTED]
 - [[Mandatory Workflow  (10 steps)]] - `contains` [EXTRACTED]
 - [[Protected Branch]] - `contains` [EXTRACTED]
 - [[REFUSE These]] - `contains` [EXTRACTED]
-- [[Role_95]] - `contains` [EXTRACTED]
+- [[Role_14]] - `contains` [EXTRACTED]
+- [[i-gg]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity_2
+#graphify/document #graphify/EXTRACTED #community/Community_1949

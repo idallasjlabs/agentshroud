@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23 (2)"
+community: "Community 319"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23_2
+  - community/Community_319
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
 
 ## Connections
-- [[Mode B — Comprehensive review sweep_3]] - `contains` [EXTRACTED]
+- [[Mode B — Comprehensive review sweep_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23_2
+#graphify/document #graphify/EXTRACTED #community/Community_319

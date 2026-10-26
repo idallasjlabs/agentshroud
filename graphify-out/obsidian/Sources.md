@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
+community: "Community 388"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/Community_388
 ---
 
 # Sources
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/Community_388

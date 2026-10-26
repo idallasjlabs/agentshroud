@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "rationale"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "Community 132"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/Community_132
 ---
 
 # Stand-in connection injected into the proxy's pool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeConn]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_132

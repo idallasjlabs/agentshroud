@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-chaos-engineering/SKILL.md"
+source_file: ".agents/agents/i-chaos-engineering.md"
 type: "document"
-community: "Incident Response Plan (stop, investigate, contain, recover)"
-location: "L5"
+community: "Community 2214"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_Plan_stop_investigate_contain_recover
+  - community/Community_2214
 ---
 
 # Skill: chaos-engineering
 
 ## Connections
-- [[dot-agentsskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
+- [[i-chaos-engineering]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Plan_stop_investigate_contain_recover
+#graphify/document #graphify/EXTRACTED #community/Community_2214

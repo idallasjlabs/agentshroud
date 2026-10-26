@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
+source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
-location: "L314"
+community: "Community 571"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/Community_571
 ---
 
 # Step 1: Create Google Cloud Project
 
 ## Connections
-- [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
+- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/Community_571

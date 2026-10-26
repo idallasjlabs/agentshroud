@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "test_telegram_replay.py (5)"
-location: "L1734"
+community: "Community 451"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy_5
+  - community/Community_451
 ---
 
 # Slow Builds
 
 ## Connections
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_39]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy_5
+#graphify/document #graphify/EXTRACTED #community/Community_451

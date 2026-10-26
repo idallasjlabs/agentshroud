@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "TestOutboundClassifierHelpers"
+community: "Community 349"
 location: "L398"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Community_349
 ---
 
 # Step 2: Install Dependencies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ Setup Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/Community_349

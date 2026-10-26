@@ -1,28 +1,27 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".agents/agents/i-ti.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
-location: "L5"
+community: "Community 891"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Community_891
 ---
 
 # Skill: Technical Illustrator (TI)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-tiSKILL]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_12]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_4]] - `contains` [EXTRACTED]
 - [[Brand Theme Block (Mermaid)]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Diagram → Validate → Export]] - `contains` [EXTRACTED]
-- [[Dependencies_13]] - `contains` [EXTRACTED]
+- [[Dependencies_2]] - `contains` [EXTRACTED]
 - [[Diagram Types and Data Lakehouse Examples]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions]] - `contains` [EXTRACTED]
 - [[Rendering and Export]] - `contains` [EXTRACTED]
-- [[Role_36]] - `contains` [EXTRACTED]
-- [[Rules_13]] - `contains` [EXTRACTED]
-- [[Validation Checklist_6]] - `contains` [EXTRACTED]
+- [[Role_31]] - `contains` [EXTRACTED]
+- [[Rules_4]] - `contains` [EXTRACTED]
+- [[Validation Checklist_1]] - `contains` [EXTRACTED]
+- [[i-ti]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_891

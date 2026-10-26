@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "dashboard_bridge.py"
-location: "L99"
+community: "Community 2041"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/Community_2041
 ---
 
 # Social Media
 
 ## Connections
-- [[📊 Asset Summary]] - `contains` [EXTRACTED]
+- [[Brand Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/document #graphify/EXTRACTED #community/Community_2041

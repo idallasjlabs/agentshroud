@@ -1,19 +1,17 @@
 ---
-source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "TrustManager"
-location: "L68"
+community: "Community 520"
+location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/Community_520
 ---
 
 # Source of truth
 
 ## Connections
-- [[Workstream B Security Features from Competitive Intel]] - `contains` [EXTRACTED]
-- [[Workstream C Full Local-Model Parity (Both Bots)]] - `contains` [EXTRACTED]
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `contains` [EXTRACTED]
+- [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/Community_520

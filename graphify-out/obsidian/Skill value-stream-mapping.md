@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-value-stream-mapping/SKILL.md"
+source_file: ".agents/agents/i-value-stream-mapping.md"
 type: "document"
-community: "Trivy (vulnerability scanner)"
-location: "L5"
+community: "Community 2227"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trivy_vulnerability_scanner
+  - community/Community_2227
 ---
 
 # Skill: value-stream-mapping
 
 ## Connections
-- [[dot-agentsskillsi-value-stream-mappingSKILL]] - `contains` [EXTRACTED]
+- [[i-value-stream-mapping]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trivy_vulnerability_scanner
+#graphify/document #graphify/EXTRACTED #community/Community_2227

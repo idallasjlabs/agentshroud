@@ -1,24 +1,23 @@
 ---
-source_file: ".agents/skills/i-tdd/SKILL.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
-location: "L5"
+community: "Community 1444"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/Community_1444
 ---
 
 # Skill: Test-Driven Development (TDD)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-tddSKILL]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_19]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_3]] - `contains` [EXTRACTED]
 - [[Core Discipline Red → Green → Refactor]] - `contains` [EXTRACTED]
-- [[Role_76]] - `contains` [EXTRACTED]
-- [[Rules_20]] - `contains` [EXTRACTED]
+- [[Role_30]] - `contains` [EXTRACTED]
+- [[Rules_3]] - `contains` [EXTRACTED]
 - [[Stack-Specific Testing Patterns]] - `contains` [EXTRACTED]
-- [[Test Structure_3]] - `contains` [EXTRACTED]
+- [[Test Structure]] - `contains` [EXTRACTED]
+- [[i-tdd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Community_1444

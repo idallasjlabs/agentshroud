@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
+community: "Community 125"
 location: "L938"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_125
 ---
 
 # SkillGuardBlocked
 
 ## Connections
-- [[dot-__init__()_157]] - `method` [EXTRACTED]
+- [[.__init__()_200]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[Exception]] - `inherits` [EXTRACTED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[Raised when SkillGuard blocks a dangerous skill tree before deploy.]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/Community_125

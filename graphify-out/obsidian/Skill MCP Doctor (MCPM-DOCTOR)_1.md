@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "02-infrastructure.md"
-location: "L5"
+community: "Community 485"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Community_485
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -15,11 +15,10 @@ tags:
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities_1]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_1]] - `contains` [EXTRACTED]
-- [[Output Format_16]] - `contains` [EXTRACTED]
-- [[Related Skills_63]] - `contains` [EXTRACTED]
-- [[Role_50]] - `contains` [EXTRACTED]
-- [[When to Invoke_4]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcpm-doctorSKILL]] - `contains` [EXTRACTED]
+- [[Output Format_19]] - `contains` [EXTRACTED]
+- [[Related Skills_22]] - `contains` [EXTRACTED]
+- [[Role_54]] - `contains` [EXTRACTED]
+- [[SKILL_34]] - `contains` [EXTRACTED]
+- [[When to Invoke_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Community_485

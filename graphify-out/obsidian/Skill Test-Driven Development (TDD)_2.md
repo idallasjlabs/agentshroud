@@ -1,24 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "auth.py"
-location: "L5"
+community: "Community 1498"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Community_1498
 ---
 
 # Skill: Test-Driven Development (TDD)
 
 ## Connections
-- [[Anti-Patterns to Flag_23]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_19]] - `contains` [EXTRACTED]
 - [[Core Discipline Red → Green → Refactor_2]] - `contains` [EXTRACTED]
-- [[Role_84]] - `contains` [EXTRACTED]
-- [[Rules_24]] - `contains` [EXTRACTED]
+- [[Role_103]] - `contains` [EXTRACTED]
+- [[Rules_19]] - `contains` [EXTRACTED]
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
-- [[Test Structure_5]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tddSKILL]] - `contains` [EXTRACTED]
+- [[Test Structure_4]] - `contains` [EXTRACTED]
+- [[i-tdd_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Community_1498

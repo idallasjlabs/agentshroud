@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "rationale"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "Community 113"
 location: "L292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Community_113
 ---
 
 # Start the poll loop as an asyncio task (idempotent).
 
 ## Connections
-- [[dot-start()]] - `rationale_for` [EXTRACTED]
+- [[.start()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

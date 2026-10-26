@@ -1,28 +1,28 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "start-agentshroud.sh"
-location: "L5"
+community: "Community 419"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/Community_419
 ---
 
 # Skill: Technical Illustrator (TI)
 
 ## Connections
-- [[Anti-Patterns to Flag_13]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_12]] - `contains` [EXTRACTED]
 - [[Brand Theme Block (Mermaid)_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Diagram → Validate → Export_1]] - `contains` [EXTRACTED]
-- [[Dependencies_14]] - `contains` [EXTRACTED]
+- [[Dependencies_8]] - `contains` [EXTRACTED]
 - [[Diagram Types and Data Lakehouse Examples_1]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions_1]] - `contains` [EXTRACTED]
 - [[Rendering and Export_1]] - `contains` [EXTRACTED]
-- [[Role_37]] - `contains` [EXTRACTED]
-- [[Rules_14]] - `contains` [EXTRACTED]
-- [[Validation Checklist_7]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-tiSKILL]] - `contains` [EXTRACTED]
+- [[Role_68]] - `contains` [EXTRACTED]
+- [[Rules_12]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[SKILL_57]] - `contains` [EXTRACTED]
+- [[Validation Checklist_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/Community_419

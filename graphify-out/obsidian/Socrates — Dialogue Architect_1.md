@@ -1,28 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/socrates/README.md"
 type: "document"
-community: "run-standalone.sh (Hermes docker run launcher)"
-location: "L6"
+community: "Community 2098"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/Community_2098
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Dialogue Techniques]] - `contains` [EXTRACTED]
-- [[ElevenLabs v3 Audio Tags]] - `contains` [EXTRACTED]
-- [[Input Requirements_7]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - `contains` [EXTRACTED]
-- [[Output Format_18]] - `contains` [EXTRACTED]
-- [[Persona_5]] - `contains` [EXTRACTED]
-- [[Quality Checklist_5]] - `contains` [EXTRACTED]
-- [[Role_55]] - `contains` [EXTRACTED]
-- [[Speaker Definitions]] - `contains` [EXTRACTED]
-- [[System Prompt_5]] - `contains` [EXTRACTED]
-- [[User Prompt Template_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-socratesSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_35]] - `contains` [EXTRACTED]
+- [[README_35]] - `contains` [EXTRACTED]
+- [[Related Skills_41]] - `contains` [EXTRACTED]
+- [[Usage_41]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/document #graphify/EXTRACTED #community/Community_2098

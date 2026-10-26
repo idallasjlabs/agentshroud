@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "Request (2)"
+community: "Community 176"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/Community_176
 ---
 
 # SlackSocketClient
 
 ## Connections
-- [[dot-__init__()_74]] - `method` [EXTRACTED]
-- [[dot-_connect_and_handle()]] - `method` [EXTRACTED]
-- [[dot-_get_wss_url()]] - `method` [EXTRACTED]
-- [[dot-run()]] - `method` [EXTRACTED]
-- [[dot-stop()_5]] - `method` [EXTRACTED]
+- [[.__init__()_36]] - `method` [EXTRACTED]
+- [[._connect_and_handle()]] - `method` [EXTRACTED]
+- [[._get_wss_url()]] - `method` [EXTRACTED]
+- [[.run()]] - `method` [EXTRACTED]
+- [[.stop()_4]] - `method` [EXTRACTED]
 - [[Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[SlackSocketClient_1]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[slack_socket_client.py]] - `contains` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/Community_176

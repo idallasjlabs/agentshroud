@@ -1,25 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "AgentShroud (system, C4 context) (2)"
-location: "L5"
+community: "Community 1496"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_2
+  - community/Community_1496
 ---
 
 # Skill: Security Review (SEC)
 
 ## Connections
-- [[Anti-Patterns to Flag_22]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_18]] - `contains` [EXTRACTED]
 - [[Core Principle_2]] - `contains` [EXTRACTED]
-- [[Output Format_28]] - `contains` [EXTRACTED]
+- [[Output Format_36]] - `contains` [EXTRACTED]
 - [[Review Layers_2]] - `contains` [EXTRACTED]
-- [[Role_82]] - `contains` [EXTRACTED]
+- [[Role_101]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model_2]] - `contains` [EXTRACTED]
 - [[Verification Commands_2]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-secSKILL]] - `contains` [EXTRACTED]
+- [[i-sec_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context_2
+#graphify/document #graphify/EXTRACTED #community/Community_1496

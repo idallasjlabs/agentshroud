@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "TestDNSForwarderProtocol"
+community: "Community 681"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDNSForwarderProtocol
+  - community/Community_681
 ---
 
 # Step 1: Create a Telegram Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol
+#graphify/document #graphify/EXTRACTED #community/Community_681

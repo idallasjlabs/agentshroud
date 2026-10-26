@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Community 326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # Sprint Cadence Decision (docs/governance/SPRINT_CADENCE.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD (Get Shit Done) cadence — adopted in place of formal ScrumSAFe sprints]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_326

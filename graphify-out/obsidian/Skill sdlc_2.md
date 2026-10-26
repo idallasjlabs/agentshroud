@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sdlc/SKILL.md"
+source_file: ".cursor/agents/i-sdlc.md"
 type: "document"
-community: "soc.js"
-location: "L5"
+community: "Community 2260"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_2260
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-sdlcSKILL]] - `contains` [EXTRACTED]
+- [[i-sdlc_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_2260

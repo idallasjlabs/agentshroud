@@ -1,23 +1,23 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "hermes/SOUL.md"
-location: "L5"
+community: "Community 729"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/Community_729
 ---
 
 # Skill: Technical Writer (TW)
 
 ## Connections
-- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_11]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_21]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Structure → Write → Validate_2]] - `contains` [EXTRACTED]
 - [[Document Structure_2]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns_2]] - `contains` [EXTRACTED]
-- [[Role_34]] - `contains` [EXTRACTED]
-- [[Rules_12]] - `contains` [EXTRACTED]
+- [[Role_105]] - `contains` [EXTRACTED]
+- [[Rules_21]] - `contains` [EXTRACTED]
+- [[i-tw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/Community_729

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: ".agents/agents/i-crpr.md"
 type: "document"
-community: "1.4 Implementation Plan"
-location: "L58"
+community: "Community 1276"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/Community_1276
 ---
 
 # Step 2 — Merge without committing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_1276

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".agents/agents/i-ti.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
-location: "L162"
+community: "Community 891"
+location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Community_891
 ---
 
 # State Diagram — Job or process lifecycle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Diagram Types and Data Lakehouse Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_891

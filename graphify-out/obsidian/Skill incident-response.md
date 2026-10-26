@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-incident-response/SKILL.md"
+source_file: ".agents/agents/i-incident-response.md"
 type: "document"
-community: "Zero-Trust Build (source never touches the host)"
-location: "L5"
+community: "Community 2218"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Zero-Trust_Build_source_never_touches_the_host
+  - community/Community_2218
 ---
 
 # Skill: incident-response
 
 ## Connections
-- [[dot-agentsskillsi-incident-responseSKILL]] - `contains` [EXTRACTED]
+- [[i-incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Zero-Trust_Build_source_never_touches_the_host
+#graphify/document #graphify/EXTRACTED #community/Community_2218

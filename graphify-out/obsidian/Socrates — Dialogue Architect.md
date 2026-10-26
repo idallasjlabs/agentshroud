@@ -1,20 +1,28 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "run"
-location: "L1"
+community: "Community 1071"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run
+  - community/Community_1071
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_35]] - `contains` [EXTRACTED]
-- [[Related Skills_21]] - `contains` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
-- [[hermesskillsi-socratesREADME]] - `contains` [EXTRACTED]
+- [[Dialogue Techniques]] - `contains` [EXTRACTED]
+- [[ElevenLabs v3 Audio Tags]] - `contains` [EXTRACTED]
+- [[Input Requirements_8]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - `contains` [EXTRACTED]
+- [[Output Format_12]] - `contains` [EXTRACTED]
+- [[Persona_6]] - `contains` [EXTRACTED]
+- [[Quality Checklist_7]] - `contains` [EXTRACTED]
+- [[Role_37]] - `contains` [EXTRACTED]
+- [[Speaker Definitions]] - `contains` [EXTRACTED]
+- [[System Prompt_6]] - `contains` [EXTRACTED]
+- [[User Prompt Template_2]] - `contains` [EXTRACTED]
+- [[socrates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run
+#graphify/document #graphify/EXTRACTED #community/Community_1071

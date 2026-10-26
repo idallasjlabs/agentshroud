@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Stats reflect actual data.
 
 ## Connections
-- [[dot-test_stats_correct()]] - `rationale_for` [EXTRACTED]
+- [[.test_stats_correct()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

@@ -1,24 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L5"
+community: "Community 337"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Community_337
 ---
 
 # Skill: Technical Writer (TW)
 
 ## Connections
-- [[Anti-Patterns to Flag_1]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_13]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Structure → Write → Validate_1]] - `contains` [EXTRACTED]
 - [[Document Structure_1]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns_1]] - `contains` [EXTRACTED]
-- [[Role_16]] - `contains` [EXTRACTED]
-- [[Rules_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]
+- [[Role_69]] - `contains` [EXTRACTED]
+- [[Rules_13]] - `contains` [EXTRACTED]
+- [[SKILL_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_337

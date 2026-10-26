@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
+source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-architecture-review/SKILL.md"
-location: "L5"
+community: "Community 117"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-architecture-review/SKILLmd
+  - community/Community_117
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[hermesskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[SKILL_29]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-architecture-review/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Community_117

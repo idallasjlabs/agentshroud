@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/tests/test_slack_proxy.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "test_anthropic_openai_translator.py (2)"
-location: "L16"
+community: "Community 37"
+location: "L22"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_2
+  - graphify/INFERRED
+  - community/Community_37
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[dot-test_event_without_user_ignored()]] - `calls` [EXTRACTED]
-- [[dot-test_message_event_records_activity()]] - `calls` [EXTRACTED]
-- [[dot-test_message_preview_truncated_to_80_chars()]] - `calls` [EXTRACTED]
-- [[dot-test_no_tracker_does_not_raise()]] - `calls` [EXTRACTED]
-- [[dot-test_non_message_event_ignored()]] - `calls` [EXTRACTED]
-- [[dot-test_tracker_error_does_not_propagate()]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy]] - `uses` [INFERRED]
-- [[WebhookReceiver]] - `uses` [INFERRED]
-- [[_make_proxy()_1]] - `references` [EXTRACTED]
+- [[_make_proxy()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_2
+#graphify/code #graphify/INFERRED #community/Community_37

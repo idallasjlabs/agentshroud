@@ -1,22 +1,22 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: ".agents/agents/i-pca.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md (2)"
-location: "L5"
+community: "Community 1220"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd_2
+  - community/Community_1220
 ---
 
 # Skill: Pre-Change Analysis (PCA)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-pcaSKILL]] - `contains` [EXTRACTED]
 - [[Closing Gate]] - `contains` [EXTRACTED]
 - [[Output Format Rules]] - `contains` [EXTRACTED]
-- [[Output Sections (ALL required)_1]] - `contains` [EXTRACTED]
-- [[Role_14]] - `contains` [EXTRACTED]
+- [[Output Sections (ALL required)]] - `contains` [EXTRACTED]
+- [[Persisted Artifact Mode (opt-in repos only)]] - `contains` [EXTRACTED]
+- [[Role_22]] - `contains` [EXTRACTED]
+- [[i-pca]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/Community_1220

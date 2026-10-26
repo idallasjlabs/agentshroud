@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record (2)"
+community: "Community 1088"
 location: "L471"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record_2
+  - community/Community_1088
 ---
 
 # Step 2: Install OpenClaw on Pi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_2
+#graphify/document #graphify/EXTRACTED #community/Community_1088

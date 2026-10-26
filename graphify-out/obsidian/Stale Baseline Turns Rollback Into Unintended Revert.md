@@ -1,13 +1,13 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "Apache License 2.0 (skill-creator)"
+community: "Community 1875"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Apache_License_20_skill-creator
+  - community/Community_1875
 ---
 
 # Stale Baseline Turns Rollback Into Unintended Revert
 
-#graphify/rationale #graphify/EXTRACTED #community/Apache_License_20_skill-creator
+#graphify/rationale #graphify/EXTRACTED #community/Community_1875

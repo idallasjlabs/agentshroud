@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-hdev/references/mode-b-sweep.md"
 type: "document"
-community: "iCloud Services Skill"
-location: "L447"
+community: "Community 2059"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Skill
+  - community/Community_2059
 ---
 
 # Step 3 — After the last directory (or a natural stopping point)
 
 ## Connections
-- [[Mode B — Comprehensive review sweep]] - `contains` [EXTRACTED]
+- [[Mode B — Comprehensive review sweep_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_2059
