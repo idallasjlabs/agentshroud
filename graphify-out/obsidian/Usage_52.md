@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: ".omp/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L10"
+community: "Community 274"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_274
 ---
 
 # Usage
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_274

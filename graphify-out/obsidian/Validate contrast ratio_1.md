@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "model_usage.py"
-location: "L89"
+community: "Community 483"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/Community_483
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[hermesskillsi-bsSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_13]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/model_usagepy
+#graphify/document #graphify/EXTRACTED #community/Community_483

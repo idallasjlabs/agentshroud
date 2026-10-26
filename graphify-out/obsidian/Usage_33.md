@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: ".agents/skills/icloud/README.md"
 type: "document"
-community: "dashboard_endpoints.py (3)"
+community: "Community 2084"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_3
+  - community/Community_2084
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_3
+#graphify/document #graphify/EXTRACTED #community/Community_2084

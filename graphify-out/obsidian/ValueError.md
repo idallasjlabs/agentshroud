@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "_make_proxy"
+community: "Community 89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_89
 ---
 
 # ValueError
@@ -14,4 +14,4 @@ tags:
 - [[DelegationError]] - `inherits` [EXTRACTED]
 - [[SkillScanError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_89

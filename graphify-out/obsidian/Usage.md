@@ -1,17 +1,23 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
-location: "L10"
+community: "Community 432"
+location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+  - community/Community_432
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Click Element]] - `contains` [EXTRACTED]
+- [[Extract Data]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
+- [[Fill Form]] - `contains` [EXTRACTED]
+- [[Navigate to URL]] - `contains` [EXTRACTED]
+- [[Take Screenshot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+#graphify/document #graphify/EXTRACTED #community/Community_432

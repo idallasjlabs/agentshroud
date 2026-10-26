@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
 type: "document"
-community: "AgentTarget (8)"
-location: "L10"
+community: "Community 239"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_8
+  - community/Community_239
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_8
+#graphify/document #graphify/EXTRACTED #community/Community_239

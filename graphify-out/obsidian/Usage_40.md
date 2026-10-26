@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "7. Recommendations by Severity"
+community: "Community 2096"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/7_Recommendations_by_Severity
+  - community/Community_2096
 ---
 
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/7_Recommendations_by_Severity
+#graphify/document #graphify/EXTRACTED #community/Community_2096

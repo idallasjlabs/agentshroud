@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "SECTION 9: IMPORTANT NOTES"
+community: "Community 1021"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_9_IMPORTANT_NOTES
+  - community/Community_1021
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES
+#graphify/document #graphify/EXTRACTED #community/Community_1021

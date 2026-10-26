@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: ".agents/skills/mnemosyne/README.md"
 type: "document"
-community: "AgentShroud Brand Guidelines (2)"
+community: "Community 2086"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines_2
+  - community/Community_2086
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines_2
+#graphify/document #graphify/EXTRACTED #community/Community_2086

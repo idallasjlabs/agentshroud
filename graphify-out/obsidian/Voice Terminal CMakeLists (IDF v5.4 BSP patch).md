@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/CMakeLists.txt"
 type: "code"
-community: "ws_client.h"
+community: "Community 1756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_clienth
+  - community/Community_1756
 ---
 
 # Voice Terminal CMakeLists (IDF v5.4 BSP patch)
 
-#graphify/code #graphify/EXTRACTED #community/ws_clienth
+#graphify/code #graphify/EXTRACTED #community/Community_1756

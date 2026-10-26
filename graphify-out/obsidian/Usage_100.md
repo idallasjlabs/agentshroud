@@ -1,21 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
-location: "L58"
+community: "Community 1226"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/Community_1226
 ---
 
 # Usage
 
 ## Connections
-- [[1. Create a parent panel]] - `contains` [EXTRACTED]
-- [[2. Initialise]] - `contains` [EXTRACTED]
-- [[3. Set an emotion]] - `contains` [EXTRACTED]
-- [[4. Reposition]] - `contains` [EXTRACTED]
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_1226

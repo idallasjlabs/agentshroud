@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: ".agents/skills/vulcan/README.md"
 type: "document"
-community: "agentshroud-manage.sh"
+community: "Community 2102"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/Community_2102
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/document #graphify/EXTRACTED #community/Community_2102

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/README.md"
+source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "soc.js (3)"
+community: "Community 2085"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_3
+  - community/Community_2085
 ---
 
 # Usage
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_3
+#graphify/document #graphify/EXTRACTED #community/Community_2085

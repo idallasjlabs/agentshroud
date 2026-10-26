@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "Quality Assurance (QA)"
+community: "Community 2083"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quality_Assurance_QA
+  - community/Community_2083
 ---
 
 # Usage
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA
+#graphify/document #graphify/EXTRACTED #community/Community_2083

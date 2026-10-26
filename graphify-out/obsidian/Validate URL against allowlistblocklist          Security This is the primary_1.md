@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "ProxyDashboard"
+community: "Community 155"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Community_155
 ---
 
 # Validate URL against allowlist/blocklist          Security: This is the primary
 
 ## Connections
-- [[dot-_validate_url()_2]] - `rationale_for` [EXTRACTED]
+- [[._validate_url()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_155

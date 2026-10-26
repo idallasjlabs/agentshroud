@@ -1,19 +1,19 @@
 ---
-source_file: "branding/colors/palette.md"
+source_file: "branding/typography/typography.md"
 type: "document"
-community: "SSH Configuration Guide"
-location: "L87"
+community: "Community 542"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/Community_542
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[Accessibility]] - `contains` [EXTRACTED]
-- [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
-- [[Applications]] - `contains` [EXTRACTED]
+- [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
+- [[Do's_1]] - `contains` [EXTRACTED]
+- [[Don'ts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_542

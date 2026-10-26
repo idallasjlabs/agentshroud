@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: ".cursor/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "openclaw_triage.sh"
-location: "L10"
+community: "Community 263"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/Community_263
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/document #graphify/EXTRACTED #community/Community_263

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Validate that default_url uses http/https and targets an internal Docker host.
 
 ## Connections
-- [[dot-validate_default_url()]] - `rationale_for` [EXTRACTED]
+- [[.validate_default_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

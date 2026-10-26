@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "VI. STPA-Sec Analysis"
+community: "Community 330"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/VI_STPA-Sec_Analysis
+  - community/Community_330
 ---
 
 # VI-B. Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VI. STPA-Sec Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/VI_STPA-Sec_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_330

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (7)"
+community: "Community 117"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_7
+  - community/Community_117
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_7
+#graphify/document #graphify/EXTRACTED #community/Community_117

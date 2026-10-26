@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/agents/i-mm.md"
 type: "document"
-community: "P2 High Priority Incidents"
-location: "L231"
+community: "Community 513"
+location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/P2_High_Priority_Incidents
+  - community/Community_513
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents
+#graphify/document #graphify/EXTRACTED #community/Community_513

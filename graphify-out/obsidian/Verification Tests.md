@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "Community 621"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/Community_621
 ---
 
 # Verification Tests
@@ -18,4 +18,4 @@ tags:
 - [[Test 3 Test Gitignore]] - `contains` [EXTRACTED]
 - [[Test 4 Check Remote Repository]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/Community_621

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "Community 544"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/Community_544
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Community_544

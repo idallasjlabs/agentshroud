@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/IDENTITY.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "05-behavior.md"
-location: "L49"
+community: "Community 179"
+location: "L316"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/05-behaviormd
+  - community/Community_179
 ---
 
-# Via Telegram:
+# Via Telegram
 
 ## Connections
-- [[💬 Communication Flow]] - `contains` [EXTRACTED]
+- [[Integration with Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/05-behaviormd
+#graphify/document #graphify/EXTRACTED #community/Community_179

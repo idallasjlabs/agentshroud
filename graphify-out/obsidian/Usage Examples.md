@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "AgentShroud Audit Specification"
-location: "L202"
+community: "Community 806"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/Community_806
 ---
 
 # Usage Examples
 
 ## Connections
-- [[From Docker Command Line]] - `contains` [EXTRACTED]
-- [[From OpenClaw Bot (Natural Language)]] - `contains` [EXTRACTED]
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/Community_806

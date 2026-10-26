@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "SubagentMonitor._log_event"
-location: "L27"
+community: "Community 2061"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SubagentMonitor_log_event
+  - community/Community_2061
 ---
 
 # Usage
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event
+#graphify/document #graphify/EXTRACTED #community/Community_2061

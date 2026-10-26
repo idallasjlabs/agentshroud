@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "Community 1877"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Community_1877
 ---
 
 # Usage
 
 ## Connections
-- [[graphify]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Community_1877

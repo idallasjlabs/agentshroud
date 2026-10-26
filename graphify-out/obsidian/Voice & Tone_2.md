@@ -1,18 +1,17 @@
 ---
-source_file: "BRAND.md"
+source_file: ".cursor/agents/i-tw.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
-location: "L52"
+community: "Community 729"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_729
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
+- [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_729

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
-location: "L67"
+community: "Community 481"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/Community_481
 ---
 
 # Verification
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/Community_481

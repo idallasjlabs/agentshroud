@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "soc.js (6)"
-location: "L10"
+community: "Community 2195"
+location: "L589"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_6
+  - community/Community_2195
 ---
 
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[1) PROJECT IDENTITY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_6
+#graphify/document #graphify/EXTRACTED #community/Community_2195

@@ -1,23 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
-location: "L226"
+community: "Community 90"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+  - community/Community_90
 ---
 
 # Usage
 
 ## Connections
-- [[Adding a future agent_1]] - `contains` [EXTRACTED]
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
-- [[Tap to talk]] - `contains` [EXTRACTED]
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
-- [[Voice volume]] - `contains` [EXTRACTED]
-- [[Wake word]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_90

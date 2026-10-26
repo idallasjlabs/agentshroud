@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md (6)"
-location: "L9"
+community: "Community 117"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd_6
+  - community/Community_117
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_6
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,18 +1,18 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "Community 394"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/Community_394
 ---
 
 # Upstream Agent CVE Tracking
 
 ## Connections
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
-- [[Daily CVE Sync + Page Update Workflow_1]] - `references` [EXTRACTED]
+- [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/Community_394

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/CMakeLists.txt"
 type: "code"
-community: "ssh_proxy.py"
+community: "Community 972"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh_proxypy
+  - community/Community_972
 ---
 
 # Voice Terminal Main Component CMakeLists (app_main, audio, ota, ui_face)
@@ -14,4 +14,4 @@ tags:
 - [[LVGL Kawaii Face Component CMakeLists]] - `references` [EXTRACTED]
 - [[esp-sr Speech Recognition Library (WakeNet WN9)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh_proxypy
+#graphify/code #graphify/EXTRACTED #community/Community_972

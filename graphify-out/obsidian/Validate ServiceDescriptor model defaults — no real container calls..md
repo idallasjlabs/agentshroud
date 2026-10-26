@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "Enum"
+community: "Community 54"
 location: "L14"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_54
 ---
 
 # Validate ServiceDescriptor model defaults — no real container calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceDescriptorDefaults]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: ".github/agents/i-tw.agent.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
-location: "L52"
+community: "Community 724"
+location: "L207"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_724
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[Writing Style Rules_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_724

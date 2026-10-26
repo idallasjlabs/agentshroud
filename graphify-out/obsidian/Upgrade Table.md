@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "reports/upgrade-2026-09-25.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L115"
+community: "Community 1923"
+location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/Community_1923
 ---
 
-# Upgrade Table
+# Upgrade table
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[Final report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/document #graphify/EXTRACTED #community/Community_1923

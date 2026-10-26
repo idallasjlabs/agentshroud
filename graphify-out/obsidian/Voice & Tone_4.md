@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: ".omp/agents/i-tw.md"
 type: "document"
-community: "AgentShroud Agentic OS"
-location: "L20"
+community: "Community 751"
+location: "L203"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/Community_751
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Brand Personality]] - `contains` [EXTRACTED]
+- [[Writing Style Rules_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/Community_751

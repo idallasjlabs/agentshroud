@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
-location: "L316"
+community: "Community 376"
+location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_376
 ---
 
 # Via Telegram
 
 ## Connections
-- [[Integration with Bot]] - `contains` [EXTRACTED]
+- [[💬 Example Conversations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_376

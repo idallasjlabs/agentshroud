@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Verify hmac.compare_digest is available for constant-time comparison.
 
 ## Connections
-- [[dot-test_hmac_comparison_for_secrets()]] - `rationale_for` [EXTRACTED]
+- [[.test_hmac_comparison_for_secrets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

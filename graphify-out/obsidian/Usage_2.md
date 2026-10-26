@@ -1,17 +1,17 @@
 ---
-source_file: "src/interfaces/README.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "TestIsFresh"
-location: "L7"
+community: "Community 211"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestIsFresh
+  - community/Community_211
 ---
 
 # Usage
 
 ## Connections
-- [[Control Center]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestIsFresh
+#graphify/document #graphify/EXTRACTED #community/Community_211

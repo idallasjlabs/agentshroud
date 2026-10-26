@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "run"
+community: "Community 1915"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run
+  - community/Community_1915
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run
+#graphify/document #graphify/EXTRACTED #community/Community_1915

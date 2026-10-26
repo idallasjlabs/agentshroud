@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: ".opencode/agents/graphify.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L10"
+community: "Community 955"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_955
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[graphify_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_955

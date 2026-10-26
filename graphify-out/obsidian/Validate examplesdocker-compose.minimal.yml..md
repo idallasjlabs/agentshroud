@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "rationale"
-community: "Telegram & Gmail Integration Guide"
+community: "Community 245"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/Community_245
 ---
 
 # Validate examples/docker-compose.minimal.yml.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMinimalCompose]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/rationale #graphify/EXTRACTED #community/Community_245

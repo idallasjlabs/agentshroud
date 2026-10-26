@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".agents/agents/i-bs.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
-location: "L89"
+community: "Community 1009"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/Community_1009
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[dot-agentsskillsi-bsSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[i-bs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/Community_1009
