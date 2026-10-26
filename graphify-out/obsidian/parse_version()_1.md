@@ -1,19 +1,19 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L71"
+community: "Community 8"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/Community_8
 ---
 
 # parse_version()
 
 ## Connections
-- [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - `rationale_for` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[Parse a dotted numeric version (e.g. ``2026.4.11`` or ``2026.7.1-2``)     to]] - `rationale_for` [EXTRACTED]
+- [[is_source_fixed()]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/Community_8

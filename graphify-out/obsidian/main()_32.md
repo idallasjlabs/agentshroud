@@ -1,20 +1,25 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "test_integration.py"
-location: "L320"
+community: "Community 382"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/Community_382
 ---
 
 # main()
 
 ## Connections
-- [[init_skill()]] - `calls` [EXTRACTED]
-- [[init_skill.py]] - `contains` [EXTRACTED]
-- [[normalize_skill_name()]] - `calls` [EXTRACTED]
-- [[parse_resources()]] - `calls` [EXTRACTED]
+- [[Path_53]] - `calls` [EXTRACTED]
+- [[RuntimeError]] - `calls` [INFERRED]
+- [[default_out_dir()]] - `calls` [EXTRACTED]
+- [[gen.py]] - `contains` [EXTRACTED]
+- [[get_model_defaults()]] - `calls` [EXTRACTED]
+- [[pick_prompts()]] - `calls` [EXTRACTED]
+- [[request_images()]] - `calls` [EXTRACTED]
+- [[slugify()]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Community_382

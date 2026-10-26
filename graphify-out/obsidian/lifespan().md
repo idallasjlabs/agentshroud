@@ -1,44 +1,22 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L108"
+community: "Community 95"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Community_95
 ---
 
 # lifespan()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[FastAPI]] - `references` [EXTRACTED]
-- [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
-- [[_alert_sanitize()]] - `indirect_call` [INFERRED]
-- [[_audit_chain_heartbeat()]] - `contains` [EXTRACTED]
-- [[_build_per_bot_telegram_tokens()]] - `calls` [EXTRACTED]
-- [[_check_trivy_report()]] - `contains` [EXTRACTED]
-- [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
-- [[_on_config_reload()]] - `indirect_call` [INFERRED]
-- [[_op_authenticate()]] - `contains` [EXTRACTED]
-- [[_prewarm_op()]] - `indirect_call` [INFERRED]
-- [[_report_sanitize()]] - `indirect_call` [INFERRED]
-- [[_resource_alert_bridge()]] - `indirect_call` [INFERRED]
-- [[_run_canvas_proxy()]] - `contains` [EXTRACTED]
-- [[_run_hermes_api_forwarder()]] - `contains` [EXTRACTED]
-- [[_run_hermes_dashboard_forwarder()]] - `contains` [EXTRACTED]
-- [[_run_initial_scan_if_needed()]] - `contains` [EXTRACTED]
-- [[_run_security_scheduler()]] - `contains` [EXTRACTED]
-- [[_startup_scanner()]] - `contains` [EXTRACTED]
-- [[_verify_bot_image()]] - `contains` [EXTRACTED]
-- [[_wazuh_periodic()]] - `contains` [EXTRACTED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
-- [[lifespan.py]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `references` [EXTRACTED]
+- [[FastAPI lifespan - initialize OpenAI client and persona once.]] - `rationale_for` [EXTRACTED]
+- [[TestLifespan]] - `calls` [EXTRACTED]
+- [[_get_auth_token()]] - `calls` [EXTRACTED]
+- [[load_persona_files()]] - `calls` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_95

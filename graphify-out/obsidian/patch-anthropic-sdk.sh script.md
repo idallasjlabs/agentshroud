@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-anthropic-sdk.sh"
 type: "code"
-community: "deploy-crush.sh — global Crush skill deployment"
+community: "Community 1350"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deploy-crushsh__global_Crush_skill_deployment
+  - community/Community_1350
 ---
 
 # patch-anthropic-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-anthropic-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deploy-crushsh__global_Crush_skill_deployment
+#graphify/code #graphify/EXTRACTED #community/Community_1350

@@ -1,18 +1,19 @@
 ---
-source_file: "docker/wazuh/services.d/wazuh-watchdog/run"
+source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "run (2)"
-location: "L22"
+community: "Community 2174"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_2
+  - community/Community_2174
 ---
 
 # log()
 
 ## Connections
-- [[run]] - `defines` [EXTRACTED]
-- [[run script]] - `calls` [EXTRACTED]
+- [[alert_critical()]] - `calls` [EXTRACTED]
+- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
+- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_2
+#graphify/code #graphify/EXTRACTED #community/Community_2174

@@ -1,25 +1,20 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "ESP32-S3-BOX-3 Voice Terminal"
-location: "L550"
+community: "Community 777"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Community_777
 ---
 
 # main()
 
 ## Connections
-- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[generate_email()]] - `calls` [EXTRACTED]
-- [[generate_favicons()]] - `calls` [EXTRACTED]
-- [[generate_feature_icons()]] - `calls` [EXTRACTED]
-- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
-- [[generate_presentation()]] - `calls` [EXTRACTED]
-- [[generate_social()]] - `calls` [EXTRACTED]
-- [[generate_svg_logos()]] - `calls` [EXTRACTED]
-- [[generate_variants()]] - `calls` [EXTRACTED]
+- [[Path_48]] - `calls` [EXTRACTED]
+- [[_parse_since()_2]] - `calls` [EXTRACTED]
+- [[export()]] - `calls` [EXTRACTED]
+- [[export-telegram-history.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/code #graphify/EXTRACTED #community/Community_777

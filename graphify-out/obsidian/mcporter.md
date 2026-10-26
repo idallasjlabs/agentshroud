@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "test_anthropic_openai_translator.py (3)"
+community: "Community 2268"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy_3
+  - community/Community_2268
 ---
 
 # mcporter
 
 ## Connections
-- [[mcporterSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_224]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy_3
+#graphify/document #graphify/EXTRACTED #community/Community_2268

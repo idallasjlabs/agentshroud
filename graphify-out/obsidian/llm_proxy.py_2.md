@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
-type: "code"
-community: "test_voice_gateway.py"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+type: "document"
+community: "Community 408"
+location: "L20"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/Community_408
 ---
 
 # llm_proxy.py
 
 ## Connections
-- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `contains` [EXTRACTED]
-- [[StreamHead]] - `contains` [EXTRACTED]
-- [[asyncio_3]] - `imports` [EXTRACTED]
-- [[test_llm_proxy.py]] - `imports_from` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `imports_from` [EXTRACTED]
-- [[test_llm_proxy_thinking_suppression.py]] - `imports_from` [EXTRACTED]
+- [[Configuration_14]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_10]] - `contains` [EXTRACTED]
+- [[LLM Providers]] - `contains` [EXTRACTED]
+- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Quota Failover]] - `contains` [EXTRACTED]
+- [[Related_13]] - `contains` [EXTRACTED]
+- [[Streaming]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/document #graphify/EXTRACTED #community/Community_408

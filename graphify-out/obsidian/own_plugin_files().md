@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-conduit-push.sh"
 type: "code"
-community: "update-conduit-push.sh"
+community: "Community 787"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update-conduit-pushsh
+  - community/Community_787
 ---
 
 # own_plugin_files()
@@ -15,4 +15,4 @@ tags:
 - [[install_ref()]] - `calls` [EXTRACTED]
 - [[update-conduit-push.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update-conduit-pushsh
+#graphify/code #graphify/EXTRACTED #community/Community_787

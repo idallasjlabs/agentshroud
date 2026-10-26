@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Sunday Upgrade prompt"
-location: "L349"
+community: "Community 591"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_591
 ---
 
 # main()
 
 ## Connections
-- [[discover()]] - `calls` [EXTRACTED]
-- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
+- [[_handle()]] - `calls` [EXTRACTED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/Community_591

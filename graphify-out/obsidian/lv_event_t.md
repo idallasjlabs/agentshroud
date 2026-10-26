@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "graphify reference: extra exports and benchmark (2)"
+community: "Community 341"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark_2
+  - community/Community_341
 ---
 
 # lv_event_t
@@ -15,4 +15,4 @@ tags:
 - [[_touch_pressed()]] - `references` [EXTRACTED]
 - [[_touch_start_only()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark_2
+#graphify/code #graphify/EXTRACTED #community/Community_341

@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "ClamAV"
-location: "L47"
+community: "Community 1757"
+location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/Community_1757
 ---
 
 # log()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ClamAV
+#graphify/code #graphify/EXTRACTED #community/Community_1757

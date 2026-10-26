@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "test_cli_coverage.py"
+community: "Community 492"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/Community_492
 ---
 
 # parse_date()
@@ -16,4 +16,4 @@ tags:
 - [[filter_by_days()]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Community_492

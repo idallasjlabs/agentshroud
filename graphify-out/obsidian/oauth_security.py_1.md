@@ -1,24 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Skill Creation Process"
-location: "L10"
+community: "Community 567"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Community_567
 ---
 
-# oauth_security.py
+# oauth_security.py.md
 
 ## Connections
-- [[Configuration  Environment Variables_4]] - `contains` [EXTRACTED]
-- [[Function Details_11]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_12]] - `contains` [EXTRACTED]
-- [[Purpose_97]] - `contains` [EXTRACTED]
-- [[Related_16]] - `contains` [EXTRACTED]
-- [[Responsibilities_14]] - `contains` [EXTRACTED]
-- [[Threat Model_12]] - `contains` [EXTRACTED]
-- [[oauth_security.py]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Community_567

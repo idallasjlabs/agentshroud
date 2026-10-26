@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/openclaw_triage.sh"
+source_file: "docker/scripts/security-report.sh"
 type: "code"
-community: "Mode B — Comprehensive review sweep (2)"
-location: "L10"
+community: "Community 814"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep_2
+  - community/Community_814
 ---
 
 # log()
 
 ## Connections
-- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
-- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
+- [[security-report.sh]] - `defines` [EXTRACTED]
+- [[security-report.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_2
+#graphify/code #graphify/EXTRACTED #community/Community_814

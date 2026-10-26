@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "test_hermes_model_resolver.py"
+community: "Community 192"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/Community_192
 ---
 
 # License
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/document #graphify/EXTRACTED #community/Community_192

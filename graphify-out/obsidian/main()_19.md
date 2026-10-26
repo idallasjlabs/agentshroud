@@ -1,30 +1,20 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L631"
+community: "Community 777"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/Community_777
 ---
 
 # main()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-ok()]] - `calls` [EXTRACTED]
-- [[dot-post()_2]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `calls` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
-- [[print_output()]] - `calls` [EXTRACTED]
-- [[resolve_token()]] - `calls` [EXTRACTED]
-- [[run_approvals_decide()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/Community_777

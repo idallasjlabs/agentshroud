@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L29"
+community: "Community 65"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/Community_65
 ---
 
 # manager()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/Community_65

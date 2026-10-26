@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "api.py"
+community: "Community 44"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Community_44
 ---
 
 # monitor_proxy()
@@ -16,4 +16,4 @@ tags:
 - [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/Community_44

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Backup & Restore Runbook — AgentShroud"
+community: "Community 647"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backup__Restore_Runbook__AgentShroud
+  - community/Community_647
 ---
 
 # jira_dev_ticket.py (OpenClaw copy)
@@ -14,4 +14,4 @@ tags:
 - [[jira_dev_ticket run()]] - `shares_data_with` [EXTRACTED]
 - [[test_jira_dev_ticket.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/Community_647

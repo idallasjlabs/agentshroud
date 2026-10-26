@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Job details"
+community: "Community 265"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/Community_265
 ---
 
 # match_entry()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
 - [[Counter]] - `references` [EXTRACTED]
 - [[Match a single registry entry to at most one advisory, honestly.      Returns]] - `rationale_for` [EXTRACTED]
 - [[MatchResult]] - `references` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[build_id_plan()]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Job_details
+#graphify/code #graphify/EXTRACTED #community/Community_265

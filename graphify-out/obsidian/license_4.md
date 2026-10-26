@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
-type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
-location: "L130"
+source_file: "skills/custom/browser-fetch/package.json"
+type: "code"
+community: "Community 900"
+location: "L11"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/Community_900
 ---
 
-# License
+# license
 
 ## Connections
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[package.json_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/Community_900

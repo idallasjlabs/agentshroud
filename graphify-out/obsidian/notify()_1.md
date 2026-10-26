@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Function Details (5)"
-location: "L548"
+community: "Community 1757"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Community_1757
 ---
 
 # notify()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_5
+#graphify/code #graphify/EXTRACTED #community/Community_1757

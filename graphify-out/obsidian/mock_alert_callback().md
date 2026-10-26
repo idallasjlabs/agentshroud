@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "test_tool_chain_analyzer.py"
-location: "L31"
+community: "Community 8"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_tool_chain_analyzerpy
+  - community/Community_8
 ---
 
 # mock_alert_callback()
 
 ## Connections
 - [[Create a mock alert callback for testing.]] - `rationale_for` [EXTRACTED]
-- [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
+- [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tool_chain_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/Community_8

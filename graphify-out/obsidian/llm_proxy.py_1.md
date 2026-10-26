@@ -1,24 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "AuditEvent"
-location: "L20"
+community: "Community 408"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Community_408
 ---
 
-# llm_proxy.py
+# llm_proxy.py.md
 
 ## Connections
-- [[Configuration_9]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_2]] - `contains` [EXTRACTED]
-- [[LLM Providers]] - `contains` [EXTRACTED]
-- [[Overview_12]] - `contains` [EXTRACTED]
-- [[Quota Failover]] - `contains` [EXTRACTED]
-- [[Related_4]] - `contains` [EXTRACTED]
-- [[Streaming]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Community_408

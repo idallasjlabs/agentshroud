@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "export()"
-location: "L148"
+community: "Community 825"
+location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export
+  - community/Community_825
 ---
 
 # main()
 
 ## Connections
-- [[Path_66]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[chat_console.py]] - `contains` [EXTRACTED]
+- [[check_status()]] - `calls` [EXTRACTED]
+- [[print_banner()]] - `calls` [EXTRACTED]
+- [[print_help()]] - `calls` [EXTRACTED]
+- [[send_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export
+#graphify/code #graphify/EXTRACTED #community/Community_825

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/omlx-keepwarm.sh"
 type: "code"
-community: "ProgressiveLockdown"
+community: "Community 1006"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/Community_1006
 ---
 
 # omlx-keepwarm.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[omlx-keepwarm.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/Community_1006

@@ -1,16 +1,16 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "concept"
-community: "How to Fix (5 Minutes)"
+community: "Community 246"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/How_to_Fix_5_Minutes
+  - community/Community_246
 ---
 
 # mac_app_catalog.json output artifact
 
 ## Connections
-- [[Mac App Discovery Skill]] - `references` [EXTRACTED]
+- [[Mac App Discovery Skill_6]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/How_to_Fix_5_Minutes
+#graphify/concept #graphify/EXTRACTED #community/Community_246

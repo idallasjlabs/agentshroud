@@ -1,21 +1,14 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
+community: "Community 2474"
 location: "L4304-L4316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_2474
 ---
 
 # llm_api_v1_prefix_alias
 
-## Connections
-- [[Alias for Hermes Anthropic SDK's apiv1 preflight path. Some Anthropic SDK…]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
-- [[api_route]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[llm_api_proxy()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/Community_2474

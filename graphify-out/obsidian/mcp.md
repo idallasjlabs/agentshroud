@@ -1,26 +1,26 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "opencode.json"
+community: "Community 159"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/opencodejson
+  - community/Community_159
 ---
 
 # mcp
 
 ## Connections
-- [[atlassian-agentshroud]] - `contains` [EXTRACTED]
-- [[atlassian-idallasj]] - `contains` [EXTRACTED]
-- [[devonthink]] - `contains` [EXTRACTED]
-- [[github]] - `contains` [EXTRACTED]
-- [[github-agentshroud]] - `contains` [EXTRACTED]
-- [[github-idallasj]] - `contains` [EXTRACTED]
-- [[home-assistant]] - `contains` [EXTRACTED]
+- [[atlassian-agentshroud_5]] - `contains` [EXTRACTED]
+- [[atlassian-idallasj_5]] - `contains` [EXTRACTED]
+- [[devonthink_5]] - `contains` [EXTRACTED]
+- [[github_5]] - `contains` [EXTRACTED]
+- [[github-agentshroud_5]] - `contains` [EXTRACTED]
+- [[github-idallasj_5]] - `contains` [EXTRACTED]
+- [[home-assistant_5]] - `contains` [EXTRACTED]
 - [[opencode.json]] - `contains` [EXTRACTED]
-- [[safari]] - `contains` [EXTRACTED]
-- [[xmind]] - `contains` [EXTRACTED]
+- [[safari_5]] - `contains` [EXTRACTED]
+- [[xmind_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/opencodejson
+#graphify/code #graphify/EXTRACTED #community/Community_159

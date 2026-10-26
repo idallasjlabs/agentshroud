@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-12-credential-flow.svg"
 type: "concept"
-community: "Gateway Container (has service account)"
+community: "Community 1262"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Container_has_service_account
+  - community/Community_1262
 ---
 
 # op_proxy_read_with_retry() (cascading retries 5s,10s,15s,30s,60s)
@@ -14,4 +14,4 @@ tags:
 - [[1Password Cloud]] - `calls` [EXTRACTED]
 - [[Gateway Container (has service account)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Container_has_service_account
+#graphify/concept #graphify/EXTRACTED #community/Community_1262

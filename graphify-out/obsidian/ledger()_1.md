@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L91"
+community: "Community 88"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_88
 ---
 
 # ledger()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
+- [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
+- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Community_88

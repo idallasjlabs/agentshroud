@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
-location: "L32"
+community: "Community 564"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/Community_564
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[package_skill()]] - `calls` [EXTRACTED]
+- [[package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/code #graphify/EXTRACTED #community/Community_564

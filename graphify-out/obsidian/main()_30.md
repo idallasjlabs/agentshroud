@@ -1,21 +1,28 @@
 ---
-source_file: "src/interfaces/chat_console.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice()"
-location: "L120"
+community: "Community 492"
+location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+  - community/Community_492
 ---
 
 # main()
 
 ## Connections
-- [[chat_console.py]] - `contains` [EXTRACTED]
-- [[check_status()]] - `calls` [EXTRACTED]
-- [[print_banner()]] - `calls` [EXTRACTED]
-- [[print_help()]] - `calls` [EXTRACTED]
-- [[send_message()]] - `calls` [EXTRACTED]
+- [[aggregate_costs()]] - `calls` [EXTRACTED]
+- [[build_json_all()]] - `calls` [EXTRACTED]
+- [[build_json_current()]] - `calls` [EXTRACTED]
+- [[eprint()]] - `calls` [EXTRACTED]
+- [[filter_by_days()]] - `calls` [EXTRACTED]
+- [[latest_day_cost()]] - `calls` [EXTRACTED]
+- [[load_payload()]] - `calls` [EXTRACTED]
+- [[model_usage.py]] - `contains` [EXTRACTED]
+- [[parse_daily_entries()]] - `calls` [EXTRACTED]
+- [[pick_current_model()]] - `calls` [EXTRACTED]
+- [[render_text_all()]] - `calls` [EXTRACTED]
+- [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice
+#graphify/code #graphify/EXTRACTED #community/Community_492

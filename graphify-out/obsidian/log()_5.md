@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
-location: "L18"
+community: "Community 814"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/Community_814
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
+- [[security-scheduler.sh]] - `defines` [EXTRACTED]
+- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/Community_814

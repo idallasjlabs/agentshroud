@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L96"
+community: "Community 11"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/Community_11
 ---
 
 # manager()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/Community_11

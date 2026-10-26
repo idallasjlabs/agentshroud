@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/mcp.json"
+source_file: ".github/mcp.json"
 type: "code"
-community: ".cursor/mcp.json (2)"
+community: "Community 402"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cursor/mcpjson_2
+  - community/Community_402
 ---
 
 # outputPath
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xmind_1]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cursor/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_402

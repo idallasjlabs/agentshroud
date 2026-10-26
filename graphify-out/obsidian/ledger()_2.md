@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L51"
+community: "Community 7"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/Community_7
 ---
 
 # ledger()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
-- [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
-- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/Community_7

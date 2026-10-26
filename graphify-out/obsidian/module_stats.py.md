@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Enum"
+community: "Community 300"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_300
 ---
 
 # module_stats.py
 
 ## Connections
-- [[Decision_6]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Decision]] - `contains` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[ModuleStatsCollector]] - `contains` [EXTRACTED]
 - [[get_collector()]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `contains` [EXTRACTED]
 - [[test_module_stats.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/Community_300

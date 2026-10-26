@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "Recommendation"
+community: "Community 547"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/Community_547
 ---
 
 # jobs.yaml (Hermes cron)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_hermes_cron_html_email.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/Community_547

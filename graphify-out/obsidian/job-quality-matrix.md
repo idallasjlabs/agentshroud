@@ -1,12 +1,12 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "document"
-community: "All Dependencies.md"
+community: "Community 289"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # job-quality-matrix.md
@@ -18,4 +18,4 @@ tags:
 - [[Job Quality Matrix — local-model reportnewsletter jobs (Mission 1)]] - `contains` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Community_289

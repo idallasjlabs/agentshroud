@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Himalaya Configuration Reference"
+community: "Community 601"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Configuration_Reference
+  - community/Community_601
 ---
 
 # linux.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference
+#graphify/document #graphify/EXTRACTED #community/Community_601

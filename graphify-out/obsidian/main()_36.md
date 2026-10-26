@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "test_apply_patches.js"
-location: "L259"
+community: "Community 282"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/Community_282
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[.run()_6]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/EXTRACTED #community/Community_282

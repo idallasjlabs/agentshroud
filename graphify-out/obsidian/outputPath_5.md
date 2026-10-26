@@ -1,17 +1,17 @@
 ---
-source_file: ".pi/mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: ".pi/mcp.json (2)"
-location: "L1"
+community: "Community 159"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pi/mcpjson_2
+  - community/Community_159
 ---
 
 # outputPath
 
 ## Connections
-- [[xmind_5]] - `requires_env` [EXTRACTED]
+- [[environment]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pi/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_159

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "test_jira_weekly_review.py"
+community: "Community 947"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/Community_947
 ---
 
 # ledger.db (90-day retention)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Audit Ledger (SHA-256 hash only)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/concept #graphify/EXTRACTED #community/Community_947

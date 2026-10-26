@@ -1,23 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "test_security_toolchain.py (2)"
-location: "L187"
+community: "Community 186"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy_2
+  - community/Community_186
 ---
 
 # main()
 
 ## Connections
-- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
-- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
-- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
-- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy_2
+#graphify/code #graphify/EXTRACTED #community/Community_186

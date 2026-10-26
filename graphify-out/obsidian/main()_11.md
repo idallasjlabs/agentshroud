@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L68"
+community: "Community 488"
+location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/Community_488
 ---
 
 # main()
 
 ## Connections
-- [[Path_27]] - `calls` [EXTRACTED]
-- [[SkillGuard_1]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[cli()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/Community_488

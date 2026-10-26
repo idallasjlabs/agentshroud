@@ -1,18 +1,18 @@
 ---
 source_file: ".omp/mcp.json"
 type: "code"
-community: ".omp/mcp.json (2)"
+community: "Community 404"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/omp/mcpjson_2
+  - community/Community_404
 ---
 
 # /opt/homebrew/bin/npx
 
 ## Connections
-- [[safari_4]] - `references` [EXTRACTED]
-- [[xmind_4]] - `references` [EXTRACTED]
+- [[safari_3]] - `references` [EXTRACTED]
+- [[xmind_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/omp/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_404

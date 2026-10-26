@@ -1,20 +1,18 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "_w"
-location: "L156"
+community: "Community 1116"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_w
+  - community/Community_1116
 ---
 
 # log()
 
 ## Connections
-- [[DOCKER-USER iptables reapply + verify (step 3)]] - `references` [EXTRACTED]
-- [[colima-health-check.sh]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[notify()]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_w
+#graphify/code #graphify/EXTRACTED #community/Community_1116

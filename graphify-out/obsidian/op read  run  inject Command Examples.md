@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/1password/references/cli-examples.md"
 type: "document"
-community: "Slack Channel Setup (2)"
+community: "Community 445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup_2
+  - community/Community_445
 ---
 
 # op read / run / inject Command Examples
@@ -14,4 +14,4 @@ tags:
 - [[1Password CLI Skill]] - `cites` [EXTRACTED]
 - [[op Secret-Handling Guardrails]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup_2
+#graphify/document #graphify/EXTRACTED #community/Community_445

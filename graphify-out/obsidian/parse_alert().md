@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "Community 185"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/Community_185
 ---
 
 # parse_alert()
 
 ## Connections
-- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
+- [[._process_new_alerts()]] - `calls` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[Parse a single Falco alert.      Args         raw Raw Falco alert JSON.      R]] - `rationale_for` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[read_alerts()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/Community_185

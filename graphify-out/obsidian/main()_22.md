@@ -1,18 +1,20 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "Architecture"
-location: "L250"
+community: "Community 989"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Community_989
 ---
 
 # main()
 
 ## Connections
-- [[render()_2]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
+- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
+- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
+- [[render_html()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture
+#graphify/code #graphify/EXTRACTED #community/Community_989

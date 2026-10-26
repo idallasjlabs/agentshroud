@@ -1,25 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L431"
+community: "Community 2017"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/Community_2017
 ---
 
 # main()
 
 ## Connections
-- [[dot-_take_screenshot()_2]] - `calls` [EXTRACTED]
-- [[dot-click()_2]] - `calls` [EXTRACTED]
-- [[dot-close()_6]] - `calls` [EXTRACTED]
-- [[dot-extract()_2]] - `calls` [EXTRACTED]
-- [[dot-fill_field()_2]] - `calls` [EXTRACTED]
-- [[dot-navigate()_2]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `calls` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/Community_2017

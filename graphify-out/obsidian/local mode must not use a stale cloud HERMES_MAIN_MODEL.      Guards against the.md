@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "is_overloaded"
+community: "Community 134"
 location: "L238"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Community_134
 ---
 
 # local mode must not use a stale cloud HERMES_MAIN_MODEL.      Guards against the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_ignores_stale_cloud_main_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/Community_134

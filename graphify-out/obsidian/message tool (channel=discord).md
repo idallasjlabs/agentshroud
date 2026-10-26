@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "concept"
-community: "Skill: Pull Request (PR) Generator (3)"
+community: "Community 959"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator_3
+  - community/Community_959
 ---
 
 # message tool (channel=discord)
 
 ## Connections
 - [[Discord Components v2 preferred over legacy embeds]] - `rationale_for` [EXTRACTED]
-- [[discordSKILL]] - `implements` [EXTRACTED]
+- [[SKILL_214]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator_3
+#graphify/concept #graphify/EXTRACTED #community/Community_959

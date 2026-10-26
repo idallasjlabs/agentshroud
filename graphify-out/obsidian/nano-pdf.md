@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/nano-pdf/SKILL.md"
 type: "document"
-community: "TestDaemonConfigReader"
+community: "Community 1414"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDaemonConfigReader
+  - community/Community_1414
 ---
 
 # nano-pdf
 
 ## Connections
 - [[Quick start_1]] - `contains` [EXTRACTED]
-- [[nano-pdfSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_227]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDaemonConfigReader
+#graphify/document #graphify/EXTRACTED #community/Community_1414

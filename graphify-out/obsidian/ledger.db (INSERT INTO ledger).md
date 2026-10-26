@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "concept"
-community: "gemini-review.py"
+community: "Community 1095"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gemini-reviewpy
+  - community/Community_1095
 ---
 
 # ledger.db (INSERT INTO ledger)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Bot Container (agent decides reply + tool call)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gemini-reviewpy
+#graphify/concept #graphify/EXTRACTED #community/Community_1095

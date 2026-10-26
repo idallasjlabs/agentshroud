@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "RuntimeConfig"
+community: "Community 511"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/Community_511
 ---
 
 # load_baseline()
 
 ## Connections
-- [[dot-setup_method()_26]] - `calls` [EXTRACTED]
+- [[.setup_method()]] - `calls` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/code #graphify/EXTRACTED #community/Community_511
