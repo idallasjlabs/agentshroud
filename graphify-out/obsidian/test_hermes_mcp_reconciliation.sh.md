@@ -13,6 +13,8 @@ tags:
 
 ## Connections
 - [[check()_10]] - `defines` [EXTRACTED]
+- [[count_key()]] - `defines` [EXTRACTED]
+- [[reconcile_noyaml()]] - `defines` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh script]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_1421

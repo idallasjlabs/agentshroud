@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 2333"
+community: "Community 208"
 location: "L806"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2333
+  - community/Community_208
 ---
 
 # test_is_local_oom_returns_false_for_quota_429()
@@ -15,4 +15,4 @@ tags:
 - [[_is_local_oom returns False for cloud 429 quota errors (different failover path)]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2333
+#graphify/code #graphify/EXTRACTED #community/Community_208

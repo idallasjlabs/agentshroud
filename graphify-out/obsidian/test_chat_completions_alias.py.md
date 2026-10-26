@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "code"
-community: "Community 360"
+community: "Community 890"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_890
 ---
 
 # test_chat_completions_alias.py
@@ -20,4 +20,4 @@ tags:
 - [[test_get_chat_completions_alias_also_routes()]] - `contains` [EXTRACTED]
 - [[test_root_v1_messages_still_works_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_360
+#graphify/code #graphify/EXTRACTED #community/Community_890

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 1127"
+community: "Community 37"
 location: "L314"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1127
+  - community/Community_37
 ---
 
 # test_broadcast_with_failed_client()
@@ -17,4 +17,4 @@ tags:
 - [[Test broadcast handles failed client sends]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1127
+#graphify/code #graphify/INFERRED #community/Community_37

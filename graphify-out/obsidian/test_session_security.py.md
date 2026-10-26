@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 2052"
+community: "Community 76"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2052
+  - community/Community_76
 ---
 
 # test_session_security.py
@@ -23,4 +23,4 @@ tags:
 - [[manager()_3]] - `contains` [EXTRACTED]
 - [[session_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2052
+#graphify/code #graphify/EXTRACTED #community/Community_76

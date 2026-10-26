@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 281"
+community: "Community 133"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/Community_133
 ---
 
 # test_skill_guard.py
@@ -41,4 +41,4 @@ tags:
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_281
+#graphify/code #graphify/EXTRACTED #community/Community_133

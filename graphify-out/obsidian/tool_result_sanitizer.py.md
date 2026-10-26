@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 72"
+community: "Community 28"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_28
 ---
 
 # tool_result_sanitizer.py
@@ -21,4 +21,4 @@ tags:
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[job-quality-matrix]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_28

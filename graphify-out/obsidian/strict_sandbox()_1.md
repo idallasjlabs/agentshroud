@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Community 31"
+community: "Community 0"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Community_0
 ---
 
 # strict_sandbox()
@@ -16,4 +16,4 @@ tags:
 - [[Sandbox with separation of privilege enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_31
+#graphify/code #graphify/EXTRACTED #community/Community_0

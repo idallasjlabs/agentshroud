@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Community 8"
+community: "Community 562"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_562
 ---
 
 # web_content_scanner.py
@@ -19,4 +19,4 @@ tags:
 - [[WebContentScanner]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_562

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 105"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_72
 ---
 
 # subagent_monitor.py
@@ -23,4 +23,4 @@ tags:
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Community_72

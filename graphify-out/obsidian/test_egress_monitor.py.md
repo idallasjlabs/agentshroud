@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 431"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/Community_72
 ---
 
 # test_egress_monitor.py
@@ -27,4 +27,4 @@ tags:
 - [[monitor()]] - `contains` [EXTRACTED]
 - [[monitor_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_431
+#graphify/code #graphify/EXTRACTED #community/Community_72

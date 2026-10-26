@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Community 7"
+community: "Community 943"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_943
 ---
 
 # test_query_ledger()
@@ -15,4 +15,4 @@ tags:
 - [[Test paginated ledger query]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_943

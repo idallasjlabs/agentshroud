@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "Community 84"
+community: "Community 104"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_104
 ---
 
 # test_enforce_defaults.py
@@ -21,4 +21,4 @@ tags:
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_104

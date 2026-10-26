@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Community 84"
+community: "Community 22"
 location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_22
 ---
 
 # </system> style fake tags should be stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_strips_fake_system_tags()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/Community_22
