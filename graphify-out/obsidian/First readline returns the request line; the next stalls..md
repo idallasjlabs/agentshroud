@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Usage"
+community: "Community 81"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Usage
+  - community/Community_81
 ---
 
 # First readline returns the request line; the next stalls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_HeaderTimeoutReader]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Usage
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: ".agents/agents/graphify.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
-location: "L603"
+community: "Community 920"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/Community_920
 ---
 
 # For the commit hook and native CLAUDE.md integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/Community_920

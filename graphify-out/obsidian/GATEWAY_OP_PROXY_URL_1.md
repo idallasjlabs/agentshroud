@@ -1,23 +1,23 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "Key Skills in Detail"
+community: "Community 1012"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/Community_1012
 ---
 
 # GATEWAY_OP_PROXY_URL
 
 ## Connections
-- [[Description]] - `contains` [EXTRACTED]
+- [[Description_3]] - `contains` [EXTRACTED]
 - [[GATEWAY_OP_PROXY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_4]] - `contains` [EXTRACTED]
-- [[Security_1]] - `contains` [EXTRACTED]
-- [[Set In]] - `contains` [EXTRACTED]
+- [[Related Notes_31]] - `contains` [EXTRACTED]
+- [[Security_26]] - `contains` [EXTRACTED]
+- [[Set In_1]] - `contains` [EXTRACTED]
 - [[Usage Flow]] - `contains` [EXTRACTED]
-- [[Value]] - `contains` [EXTRACTED]
+- [[Value_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/document #graphify/EXTRACTED #community/Community_1012

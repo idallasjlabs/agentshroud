@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ForwardRequest"
+community: "Community 34"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/Community_34
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[dot-content_not_empty()]] - `method` [EXTRACTED]
-- [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
-- [[dot-test_empty_content_rejected()]] - `calls` [EXTRACTED]
-- [[dot-test_invalid_source_rejected()]] - `calls` [EXTRACTED]
-- [[dot-test_valid_forward_request()]] - `calls` [EXTRACTED]
-- [[dot-validate_source()]] - `method` [EXTRACTED]
+- [[.content_not_empty()]] - `method` [EXTRACTED]
+- [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
+- [[.test_empty_content_rejected()]] - `calls` [EXTRACTED]
+- [[.test_invalid_source_rejected()]] - `calls` [EXTRACTED]
+- [[.test_valid_forward_request()]] - `calls` [EXTRACTED]
+- [[.validate_source()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_53]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[Any_9]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[Path_38]] - `uses` [INFERRED]
+- [[Path_26]] - `uses` [INFERRED]
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
 - [[TestAllExampleConfigsExist]] - `uses` [INFERRED]
@@ -45,8 +45,8 @@ tags:
 - [[_process_inbound()]] - `shares_data_with` [EXTRACTED]
 - [[_request()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
-- [[ingest_apirouter.py]] - `imports` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
+- [[router.py]] - `imports` [EXTRACTED]
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 - [[test_empty_content_rejection()]] - `calls` [EXTRACTED]
 - [[test_forward_request_valid()]] - `calls` [EXTRACTED]
@@ -70,4 +70,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/Community_34

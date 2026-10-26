@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "Community 184"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/Community_184
 ---
 
 # Generate an MCP audit report summary.
 
 ## Connections
-- [[dot-generate_report()]] - `rationale_for` [EXTRACTED]
+- [[.generate_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/rationale #graphify/EXTRACTED #community/Community_184

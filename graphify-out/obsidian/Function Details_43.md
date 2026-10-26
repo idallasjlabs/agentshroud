@@ -1,19 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L36"
+community: "Community 732"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/Community_732
 ---
 
 # Function Details
 
 ## Connections
-- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
-- [[event_bus.py]] - `contains` [EXTRACTED]
-- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
+- [[LogSanitizer._sanitize_text(text)]] - `contains` [EXTRACTED]
+- [[LogSanitizer.filter(record)]] - `contains` [EXTRACTED]
+- [[get_sanitizer_stats()_1]] - `contains` [EXTRACTED]
+- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/Community_732

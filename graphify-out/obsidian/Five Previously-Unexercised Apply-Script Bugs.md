@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "All Dependencies.md"
+community: "Community 289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Community_289
 ---
 
 # Five Previously-Unexercised Apply-Script Bugs
@@ -16,4 +16,4 @@ tags:
 - [[Phantom latest Scan Tag (false 0-CRITICAL pass)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_289

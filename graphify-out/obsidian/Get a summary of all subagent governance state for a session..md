@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "SubagentGovernance"
+community: "Community 1782"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/Community_1782
 ---
 
 # Get a summary of all subagent governance state for a session.
 
 ## Connections
-- [[dot-get_summary()]] - `rationale_for` [EXTRACTED]
+- [[.get_summary()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/rationale #graphify/EXTRACTED #community/Community_1782

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Skill: Security Review (SEC) (2)"
-location: "L141"
+community: "Community 453"
+location: "L321"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC_2
+  - community/Community_453
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[Planned Features]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC_2
+#graphify/document #graphify/EXTRACTED #community/Community_453

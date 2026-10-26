@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "telegram_api_proxy (/telegram-api/{path}) (2)"
+community: "Community 1086"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path_2
+  - community/Community_1086
 ---
 
 # "Get Shit Done" (GSD) Governance Cadence
@@ -14,4 +14,4 @@ tags:
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 - [[Git Worktrees (..agentshroud-worktrees)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path_2
+#graphify/concept #graphify/EXTRACTED #community/Community_1086

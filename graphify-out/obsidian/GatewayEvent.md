@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "Community 978"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_978
 ---
 
 # GatewayEvent
 
 ## Connections
-- [[dot-emit()_1]] - `shares_data_with` [EXTRACTED]
-- [[dot-to_dict()_15]] - `method` [EXTRACTED]
+- [[.emit()]] - `shares_data_with` [EXTRACTED]
+- [[.to_dict()]] - `method` [EXTRACTED]
 - [[A single gateway event]] - `rationale_for` [EXTRACTED]
 - [[EventBus]] - `shares_data_with` [EXTRACTED]
-- [[event_bus.py_1]] - `contains` [EXTRACTED]
-- [[event_bus.py_2]] - `references` [EXTRACTED]
+- [[event_bus.py]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `references` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/Community_978

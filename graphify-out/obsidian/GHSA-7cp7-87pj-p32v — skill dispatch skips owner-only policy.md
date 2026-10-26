@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "document"
-community: "record_decision()"
+community: "Community 61"
 location: "480"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/Community_61
 ---
 
 # GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/record_decision
+#graphify/document #graphify/EXTRACTED #community/Community_61

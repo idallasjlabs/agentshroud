@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "MCPPermissionManager (2)"
+community: "Community 7"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/Community_7
 ---
 
 # GET /status should include security headers
 
 ## Connections
-- [[dot-test_status_has_security_headers()]] - `rationale_for` [EXTRACTED]
+- [[.test_status_has_security_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "Community 918"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_918
 ---
 
 # Full system status including all services and runtime info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_918

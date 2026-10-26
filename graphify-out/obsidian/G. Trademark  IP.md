@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "package_skill"
+community: "Community 2001"
 location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Community_2001
 ---
 
 # G. Trademark / IP
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/Community_2001

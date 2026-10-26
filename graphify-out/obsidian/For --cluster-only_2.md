@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/update.md"
+source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "Community 293"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Community_293
 ---
 
 # For --cluster-only
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference incremental update and cluster-only_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/Community_293

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Any"
+community: "Community 72"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_72
 ---
 
 # Generate and store a canary for this session.          Args:             session
 
 ## Connections
-- [[dot-generate_canary()]] - `rationale_for` [EXTRACTED]
+- [[.generate_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

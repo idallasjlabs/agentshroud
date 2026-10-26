@@ -1,25 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L41"
+community: "Community 407"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Community_407
 ---
 
 # Function Details
 
 ## Connections
-- [[KeyInjector.inject_for_request(url, headers, agent_id, key_name)]] - `contains` [EXTRACTED]
-- [[KeyLeakDetector.scan_outbound(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.check_value_match(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.get_audit_log()]] - `contains` [EXTRACTED]
-- [[KeyVault.get_key(name, agent_id)]] - `contains` [EXTRACTED]
-- [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
-- [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
-- [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy.get_stats()`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy.start()`]] - `contains` [EXTRACTED]
+- [[`HTTPConnectProxy.stop()`]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_407

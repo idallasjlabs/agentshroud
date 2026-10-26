@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "Post-v1.0.0 — Deferred"
+community: "Community 361"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/Community_361
 ---
 
 # Flatten a Gemini parts list to plain text (text parts only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parts_to_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/rationale #graphify/EXTRACTED #community/Community_361

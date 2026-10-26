@@ -1,25 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "TestOpenAPIContract"
-location: "L38"
+community: "Community 877"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Community_877
 ---
 
 # Function Details
 
 ## Connections
-- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.deregister(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_active(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_flagged_events(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.kill_all(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
+- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/document #graphify/EXTRACTED #community/Community_877

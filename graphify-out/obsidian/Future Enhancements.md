@@ -1,22 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "postmortem.md (2) (2)"
-location: "L338"
+community: "Community 749"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd_2_2
+  - community/Community_749
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
-- [[Priority 1 Auto-Discovery]] - `contains` [EXTRACTED]
-- [[Priority 2 Enhanced Extraction]] - `contains` [EXTRACTED]
-- [[Priority 3 Screenshot Capture]] - `contains` [EXTRACTED]
-- [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
-- [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_749

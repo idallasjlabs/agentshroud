@@ -1,18 +1,22 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
-location: "L321"
+community: "Community 1181"
+location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+  - community/Community_1181
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Planned Features]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Priority 1 Auto-Discovery]] - `contains` [EXTRACTED]
+- [[Priority 2 Enhanced Extraction]] - `contains` [EXTRACTED]
+- [[Priority 3 Screenshot Capture]] - `contains` [EXTRACTED]
+- [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
+- [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/Community_1181

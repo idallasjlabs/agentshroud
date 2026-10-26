@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "TestEgressTelegramNotify"
+community: "Community 238"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_238
 ---
 
 # GET and return (status_code, response_text). HTTPError is treated as a     norma
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_http_get()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/rationale #graphify/EXTRACTED #community/Community_238

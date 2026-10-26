@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "First iteration ingests + records; second sees dedup and skips."
+community: "Community 736"
 location: "L1478"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/Community_736
 ---
 
 # First iteration ingests + records; second sees dedup and skips.
 
 ## Connections
-- [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - `rationale_for` [EXTRACTED]
+- [[.test_runs_ingest_records_then_skips_next_iteration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/rationale #graphify/EXTRACTED #community/Community_736

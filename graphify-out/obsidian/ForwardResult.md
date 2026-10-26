@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 112"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_112
 ---
 
 # ForwardResult
 
 ## Connections
-- [[dot-forward()_3]] - `references` [EXTRACTED]
+- [[.forward()_1]] - `references` [EXTRACTED]
 - [[Result of forwarding a request.]] - `rationale_for` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_112

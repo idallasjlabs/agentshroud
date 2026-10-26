@@ -1,17 +1,17 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Path (2)"
+community: "Community 282"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/Community_282
 ---
 
 # Get gateway authentication
 
 ## Connections
-- [[dot-get_auth()]] - `rationale_for` [EXTRACTED]
+- [[.get_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_282

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: ".agents/agents/graphify.md"
 type: "document"
-community: "What You Must Do When Invoked"
-location: "L579"
+community: "Community 920"
+location: "L382"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Community_920
 ---
 
 # For --update and --cluster-only
 
 ## Connections
-- [[graphify]] - `contains` [EXTRACTED]
+- [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Community_920

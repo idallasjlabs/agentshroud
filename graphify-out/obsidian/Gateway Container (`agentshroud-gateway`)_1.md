@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L103"
+community: "Community 739"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_739
 ---
 
 # Gateway Container (`agentshroud-gateway`)
 
 ## Connections
-- [[Container Architecture_2]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[All Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Derived (set at runtime by `config.py`)]] - `contains` [EXTRACTED]
+- [[Optional  Runtime]] - `contains` [EXTRACTED]
+- [[Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_739

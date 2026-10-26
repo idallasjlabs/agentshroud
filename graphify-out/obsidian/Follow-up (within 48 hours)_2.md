@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: ".cursor/agents/i-production.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L137"
+community: "Community 1180"
+location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Community_1180
 ---
 
 # Follow-up (within 48 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Community_1180

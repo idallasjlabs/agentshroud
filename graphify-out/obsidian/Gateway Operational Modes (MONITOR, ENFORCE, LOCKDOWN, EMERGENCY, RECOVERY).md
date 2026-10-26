@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "AgentShroud™ — Trademark Prior Use Record (3)"
+community: "Community 1155"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record_3
+  - community/Community_1155
 ---
 
 # Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record_3
+#graphify/concept #graphify/EXTRACTED #community/Community_1155

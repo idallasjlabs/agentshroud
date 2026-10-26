@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ux/SKILL.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L145"
+community: "Community 296"
+location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/Community_296
 ---
 
 # Generic Task Flow Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[User Flow Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/Community_296

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "CronStateMonitor (7)"
+community: "Community 845"
 location: "L1851"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CronStateMonitor_7
+  - community/Community_845
 ---
 
 # Form-encoded draft payloads must not leak raw tool-call JSON.
 
 ## Connections
-- [[dot-test_urlencoded_draft_payload_tool_json_is_rewritten()]] - `rationale_for` [EXTRACTED]
+- [[.test_urlencoded_draft_payload_tool_json_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_845

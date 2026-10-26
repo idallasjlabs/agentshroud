@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/hooks.md"
+source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "Community 293"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Community_293
 ---
 
 # For git commit hook
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference commit hook and native CLAUDE.md integration_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/Community_293

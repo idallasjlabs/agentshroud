@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
+community: "Community 659"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Community_659
 ---
 
 # Gateway Layer
 
 ## Connections
 - [[Features_4]] - `contains` [EXTRACTED]
-- [[Implementation Status_3]] - `contains` [EXTRACTED]
-- [[Setup_5]] - `contains` [EXTRACTED]
-- [[Structure_2]] - `contains` [EXTRACTED]
+- [[Implementation Status_2]] - `contains` [EXTRACTED]
+- [[README_127]] - `contains` [EXTRACTED]
+- [[Setup_8]] - `contains` [EXTRACTED]
+- [[Structure_1]] - `contains` [EXTRACTED]
 - [[Tech Stack_1]] - `contains` [EXTRACTED]
-- [[gatewayREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_659

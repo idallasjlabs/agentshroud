@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "concept"
-community: "i-hermes README (Podcast Production Orchestrator)"
+community: "Community 1393"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/i-hermes_README_Podcast_Production_Orchestrator
+  - community/Community_1393
 ---
 
 # GET /ledger audit query API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/i-hermes_README_Podcast_Production_Orchestrator
+#graphify/concept #graphify/EXTRACTED #community/Community_1393

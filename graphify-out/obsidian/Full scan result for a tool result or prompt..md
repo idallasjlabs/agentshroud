@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "Community 56"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/Community_56
 ---
 
 # Full scan result for a tool result or prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultPIIReport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

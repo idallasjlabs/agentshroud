@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/add-watch.md"
+source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "Community 293"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Community_293
 ---
 
 # For /graphify add
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference add a URL and watch a folder_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/Community_293

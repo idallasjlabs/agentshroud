@@ -1,25 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Skill Creation Process"
-location: "L38"
+community: "Community 719"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Community_719
 ---
 
 # Function Details
 
 ## Connections
-- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_request(req)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_tool_permission(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.set_trust_level(agent_id, level)]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Community_719

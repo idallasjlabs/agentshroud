@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT (3)"
+community: "Community 571"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+  - community/Community_571
 ---
 
 # GOOGLE-SERVICES-SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
 - [[ICLOUD-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT_3
+#graphify/document #graphify/INFERRED #community/Community_571

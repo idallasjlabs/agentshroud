@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "Post-v1.0.0 — Deferred"
+community: "Community 361"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/Community_361
 ---
 
 # Flatten an OpenAI message's content (string or content-block list) to     Gemini
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_openai_content_to_parts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/rationale #graphify/EXTRACTED #community/Community_361

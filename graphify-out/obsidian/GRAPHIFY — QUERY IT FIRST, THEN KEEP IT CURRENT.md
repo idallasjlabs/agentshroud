@@ -1,17 +1,17 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary) (2)"
+community: "Community 695"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+  - community/Community_695
 ---
 
 # GRAPHIFY — QUERY IT FIRST, THEN KEEP IT CURRENT
 
 ## Connections
-- [[KNOWLEDGE MAP — READ THIS FIRST]] - `contains` [EXTRACTED]
+- [[KNOWLEDGE MAP — READ THIS FIRST_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary_2
+#graphify/document #graphify/EXTRACTED #community/Community_695

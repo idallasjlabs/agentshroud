@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "MiddlewareManager (4)"
+community: "Community 94"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_94
 ---
 
 # Full System Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_94

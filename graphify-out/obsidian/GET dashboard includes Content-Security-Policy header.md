@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "CompetitiveIntelReport"
+community: "Community 62"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_62
 ---
 
 # GET /dashboard includes Content-Security-Policy header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_has_csp_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/rationale #graphify/EXTRACTED #community/Community_62

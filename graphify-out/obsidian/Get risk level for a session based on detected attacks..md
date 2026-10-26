@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L427"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Get risk level for a session based on detected attacks.
 
 ## Connections
-- [[dot-get_session_risk_level()]] - `rationale_for` [EXTRACTED]
+- [[.get_session_risk_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

@@ -1,20 +1,18 @@
 ---
-source_file: ".agents/skills/i-mc/SKILL.md"
+source_file: ".agents/agents/i-mc.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
-location: "L5"
+community: "Community 1562"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/Community_1562
 ---
 
 # GSDE&G Development Master Checklist
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-mcSKILL]] - `contains` [EXTRACTED]
-- [[Emergency Hotfix]] - `contains` [EXTRACTED]
+- [[Emergency Hotfix_1]] - `contains` [EXTRACTED]
 - [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - `contains` [EXTRACTED]
 - [[Phase 2 · TDD  → `tddSKILL.md`]] - `contains` [EXTRACTED]
 - [[Phase 3 · QA  → `qaSKILL.md`]] - `contains` [EXTRACTED]
@@ -24,5 +22,6 @@ tags:
 - [[Phase 7 · Deploy  → `psSKILL.md`]] - `contains` [EXTRACTED]
 - [[Quick Commands]] - `contains` [EXTRACTED]
 - [[Skill Index]] - `contains` [EXTRACTED]
+- [[i-mc]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_1562

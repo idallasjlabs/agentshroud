@@ -1,19 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30 (2)"
-location: "L31"
+community: "Community 392"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+  - community/Community_392
 ---
 
 # Function Details
 
 ## Connections
-- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
-- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
+- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+#graphify/document #graphify/EXTRACTED #community/Community_392

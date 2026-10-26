@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "SessionManager"
+community: "Community 121"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/Community_121
 ---
 
 # Get a summary of all findings.
 
 ## Connections
-- [[dot-get_findings_summary()]] - `rationale_for` [EXTRACTED]
+- [[.get_findings_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SessionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "Community 446"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Community_446
 ---
 
 # FreeTypeFont
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_font()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/code #graphify/EXTRACTED #community/Community_446

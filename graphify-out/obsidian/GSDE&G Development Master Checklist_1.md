@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
+source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Athena — Knowledge Distiller (3)"
-location: "L5"
+community: "Community 117"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_3
+  - community/Community_117
 ---
 
 # GSDE&G Development Master Checklist
 
 ## Connections
-- [[Emergency Hotfix_1]] - `contains` [EXTRACTED]
+- [[Emergency Hotfix_3]] - `contains` [EXTRACTED]
 - [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 2 · TDD  → `tddSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 3 · QA  → `qaSKILL.md`_1]] - `contains` [EXTRACTED]
@@ -21,8 +21,8 @@ tags:
 - [[Phase 6 · CI  → `cicdSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 7 · Deploy  → `psSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Quick Commands_1]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[SKILL_31]] - `contains` [EXTRACTED]
 - [[Skill Index_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_3
+#graphify/document #graphify/EXTRACTED #community/Community_117

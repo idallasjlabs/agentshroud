@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Community 556"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Community_556
 ---
 
 # ForwardRequest
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_556

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "voice_task (3)"
+community: "Community 1141"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/voice_task_3
+  - community/Community_1141
 ---
 
 # Gemini CLI + Codex — Embedded QA/Test Engineers
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code — Primary development agent]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/voice_task_3
+#graphify/concept #graphify/EXTRACTED #community/Community_1141

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "Community 1552"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/Community_1552
 ---
 
 # Get container config for an agent.
 
 ## Connections
-- [[dot-get()_4]] - `rationale_for` [EXTRACTED]
+- [[.get()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1552

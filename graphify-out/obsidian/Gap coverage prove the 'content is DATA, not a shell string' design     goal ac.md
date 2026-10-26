@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 7"
 location: "L592"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_7
 ---
 
 # Gap coverage: prove the 'content is DATA, not a shell string' design     goal ac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

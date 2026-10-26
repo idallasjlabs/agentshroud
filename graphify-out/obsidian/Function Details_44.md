@@ -1,19 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "v0.6.0 Baseline Results"
-location: "L32"
+community: "Community 567"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v060_Baseline_Results
+  - community/Community_567
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPProxyConfig.from_dict(data)]] - `contains` [EXTRACTED]
-- [[PermissionLevel comparison operators]] - `contains` [EXTRACTED]
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.validate_request(req)]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v060_Baseline_Results
+#graphify/document #graphify/EXTRACTED #community/Community_567
