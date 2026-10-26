@@ -1,0 +1,17 @@
+---
+source_file: ".github/agents/i-sec-offense.agent.md"
+type: "document"
+community: "Community 1075"
+location: "L285"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1075
+---
+
+# Test Structure
+
+## Connections
+- [[Writing Exploit Tests_3]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1075

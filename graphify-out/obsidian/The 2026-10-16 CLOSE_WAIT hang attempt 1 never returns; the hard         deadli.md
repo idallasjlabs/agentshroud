@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_discover_upstream_versions.py"
+type: "rationale"
+community: "Community 48"
+location: "L354"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/Community_48
+---
+
+# The 2026-10-16 CLOSE_WAIT hang: attempt 1 never returns; the hard         deadli
+
+## Connections
+- [[.test_hung_hub_fetch_is_cut_by_deadline_and_retried()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/Community_48
