@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "rationale"
-community: "test_integration.py"
+community: "Community 882"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/Community_882
 ---
 
 # Initialize a new skill directory with template SKILL.md.      Args:         skil
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init_skill()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_882

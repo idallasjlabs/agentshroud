@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "encrypted_store.py"
-location: "L27"
+community: "Community 594"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Community_594
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Community_594

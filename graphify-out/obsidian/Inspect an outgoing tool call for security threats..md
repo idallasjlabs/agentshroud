@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCPInspector"
+community: "Community 230"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/Community_230
 ---
 
 # Inspect an outgoing tool call for security threats.
 
 ## Connections
-- [[dot-inspect_tool_call()]] - `rationale_for` [EXTRACTED]
+- [[.inspect_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPInspector
+#graphify/rationale #graphify/EXTRACTED #community/Community_230

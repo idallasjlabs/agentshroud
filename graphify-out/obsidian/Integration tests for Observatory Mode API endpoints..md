@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "Community 103"
 location: "L510"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Community_103
 ---
 
 # Integration tests for Observatory Mode API endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestObservatoryModeAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

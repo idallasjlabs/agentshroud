@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality
 
 ## Connections
-- [[chatbotmain.py]] - `rationale_for` [EXTRACTED]
+- [[main.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_95

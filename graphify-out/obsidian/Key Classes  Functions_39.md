@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "consent_framework.py"
-location: "L23"
+community: "Community 677"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/Community_677
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/Community_677

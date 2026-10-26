@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "1.4 Implementation Plan"
-location: "L17"
+community: "Community 770"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/Community_770
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_770

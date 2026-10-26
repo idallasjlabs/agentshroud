@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "egress_config.py"
-location: "L26"
+community: "Community 536"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/Community_536
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/Community_536

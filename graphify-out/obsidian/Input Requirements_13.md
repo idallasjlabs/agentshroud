@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "Quick Reference Commands"
+community: "Community 1918"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/Community_1918
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/Community_1918

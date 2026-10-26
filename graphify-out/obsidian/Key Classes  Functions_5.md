@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Known Log Messages"
-location: "L27"
+community: "Community 705"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Community_705
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Community_705

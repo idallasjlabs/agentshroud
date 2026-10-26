@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "AgentShroud Development Team — Agile Structure"
+community: "Community 409"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Team__Agile_Structure
+  - community/Community_409
 ---
 
 # Key Classes
@@ -18,4 +18,4 @@ tags:
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure
+#graphify/document #graphify/EXTRACTED #community/Community_409

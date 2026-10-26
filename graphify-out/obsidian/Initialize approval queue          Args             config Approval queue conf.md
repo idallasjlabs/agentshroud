@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "iot_button_register_cb (2)"
+community: "Community 1143"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/iot_button_register_cb_2
+  - community/Community_1143
 ---
 
 # Initialize approval queue          Args:             config: Approval queue conf
 
 ## Connections
-- [[dot-__init__()_34]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/iot_button_register_cb_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1143

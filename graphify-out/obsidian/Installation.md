@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
-location: "L22"
+community: "Community 2079"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/Community_2079
 ---
 
 # Installation
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Install Script]] - `contains` [EXTRACTED]
+- [[Windows]] - `contains` [EXTRACTED]
+- [[macOS  Linux]] - `contains` [EXTRACTED]
+- [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/document #graphify/EXTRACTED #community/Community_2079

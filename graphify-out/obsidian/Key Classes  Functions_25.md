@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
 type: "document"
-community: "web_content_scanner.py"
-location: "L23"
+community: "Community 673"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/Community_673
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[docker_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Community_673

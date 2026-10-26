@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/agents/i-ps.md"
 type: "document"
-community: "TestSSRFDetection (2)"
-location: "L151"
+community: "Community 921"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection_2
+  - community/Community_921
 ---
 
 # Immediate (0–15 min)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection_2
+#graphify/document #graphify/EXTRACTED #community/Community_921

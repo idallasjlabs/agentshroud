@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 72"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_72
 ---
 
 # Individual redaction record
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RedactionDetail]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

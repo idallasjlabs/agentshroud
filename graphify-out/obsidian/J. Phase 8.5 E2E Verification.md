@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "test-sunday-upgrade-scan.sh"
+community: "Community 430"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/Community_430
 ---
 
 # J. Phase 8.5 E2E Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/document #graphify/EXTRACTED #community/Community_430

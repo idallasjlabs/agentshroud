@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "iCloud Services (3)"
+community: "Community 634"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/Community_634
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/Community_634

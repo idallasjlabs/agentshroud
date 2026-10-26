@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Injection attempts should be detected even under load.
 
 ## Connections
-- [[dot-test_detection_accuracy_at_scale()]] - `rationale_for` [EXTRACTED]
+- [[.test_detection_accuracy_at_scale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

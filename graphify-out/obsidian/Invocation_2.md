@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: ".agents/agents/i-odev.md"
 type: "document"
-community: "fixture"
-location: "L25"
+community: "Community 821"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fixture
+  - community/Community_821
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fixture
+#graphify/document #graphify/EXTRACTED #community/Community_821

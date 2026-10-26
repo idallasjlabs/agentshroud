@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
+source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L232"
+community: "Community 1133"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Community_1133
 ---
 
 # Implementation Notes
 
 ## Connections
-- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
+- [[Apple Platform Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Community_1133

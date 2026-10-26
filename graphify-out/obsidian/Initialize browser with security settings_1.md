@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: ".proxy_messages()"
+community: "Community 155"
 location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/Community_155
 ---
 
 # Initialize browser with security settings
 
 ## Connections
-- [[dot-_init_browser()_1]] - `rationale_for` [EXTRACTED]
+- [[._init_browser()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/Community_155

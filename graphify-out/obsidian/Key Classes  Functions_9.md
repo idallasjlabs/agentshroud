@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Update AgentShroud"
-location: "L21"
+community: "Community 833"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Community_833
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_833

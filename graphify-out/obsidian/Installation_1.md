@@ -1,21 +1,22 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
-location: "L37"
+community: "Community 427"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/Community_427
 ---
 
 # Installation
 
 ## Connections
-- [[Go]] - `contains` [EXTRACTED]
-- [[Homebrew (macOS)]] - `contains` [EXTRACTED]
-- [[Shell script]] - `contains` [EXTRACTED]
-- [[npm]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[1. Generate the voice gateway token]] - `contains` [EXTRACTED]
+- [[2. Create `wifi_credentials.h`]] - `contains` [EXTRACTED]
+- [[3. Start the voice gateway]] - `contains` [EXTRACTED]
+- [[4. Enable Tailscale Funnel]] - `contains` [EXTRACTED]
+- [[5. Build and flash the firmware]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/Community_427

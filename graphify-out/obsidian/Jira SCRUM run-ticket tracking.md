@@ -1,17 +1,17 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "concept"
-community: "_wrap_response() (2)"
+community: "Community 139"
 location: "L325-L350"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/Community_139
 ---
 
 # Jira SCRUM run-ticket tracking
 
 ## Connections
-- [[Sunday Upgrade prompt (weekly maintenance run)]] - `references` [EXTRACTED]
+- [[sunday-upgrade]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/concept #graphify/EXTRACTED #community/Community_139

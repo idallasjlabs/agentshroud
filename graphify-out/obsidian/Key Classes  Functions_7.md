@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "drift_detector.py"
-location: "L27"
+community: "Community 820"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/Community_820
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/Community_820

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
-location: "L74"
+community: "Community 1010"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+  - community/Community_1010
 ---
 
 # Issue: "Docker not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
+#graphify/document #graphify/EXTRACTED #community/Community_1010

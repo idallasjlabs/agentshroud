@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: ".agents/agents/i-production.md"
 type: "document"
-community: "MiddlewareManager (8)"
-location: "L132"
+community: "Community 1142"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Community_1142
 ---
 
 # Immediate (within 2 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/Community_1142

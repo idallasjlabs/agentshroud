@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Step-by-Step Deployment"
-location: "L116"
+community: "Community 767"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Community_767
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_767

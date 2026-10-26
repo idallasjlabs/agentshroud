@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L74"
+community: "Community 820"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/Community_820
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[event_bus.py]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/Community_820

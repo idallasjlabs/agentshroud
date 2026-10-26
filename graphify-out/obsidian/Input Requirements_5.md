@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L46"
+community: "Community 1977"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/Community_1977
 ---
 
 # Input Requirements
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_1977

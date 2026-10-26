@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Community 143"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Community_143
 ---
 
 # Initialize session manager.          Args:             base_workspace: Base dire
 
 ## Connections
-- [[dot-__init__()_19]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_115]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

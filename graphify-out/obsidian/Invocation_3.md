@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
-location: "L25"
+community: "Community 633"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/Community_633
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/Community_633

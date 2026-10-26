@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "v0.8.0 \"Watchtower\" — Security Fixes + Module Wiring (104 items)"
+community: "Community 979"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
+  - community/Community_979
 ---
 
 # Key Class: `SSHProxy`
@@ -15,4 +15,4 @@ tags:
 - [[`execute(host str, command str, session_id str) → SSHExecResult`]] - `contains` [EXTRACTED]
 - [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
+#graphify/document #graphify/EXTRACTED #community/Community_979

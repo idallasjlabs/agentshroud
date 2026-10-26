@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
+source_file: ".cursor/agents/i-ps.md"
 type: "document"
-community: "Pre-Deployment Checklist (2)"
-location: "L173"
+community: "Community 929"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_2
+  - community/Community_929
 ---
 
 # If Something Goes Wrong
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/Community_929

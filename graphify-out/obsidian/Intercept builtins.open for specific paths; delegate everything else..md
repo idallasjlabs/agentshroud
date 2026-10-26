@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "test_soc_services_coverage.py"
+community: "Community 986"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/Community_986
 ---
 
 # Intercept builtins.open for specific paths; delegate everything else.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_986

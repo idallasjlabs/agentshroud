@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "rationale"
-community: "_make_proxy"
+community: "Community 89"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_89
 ---
 
 # In-memory delegation manager (no disk I/O).
 
 ## Connections
-- [[mgr()_2]] - `rationale_for` [EXTRACTED]
+- [[mgr()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_89

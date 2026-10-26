@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
+source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "AgentShroud Sequence Diagrams (doc)"
-location: "L33"
+community: "Community 422"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams_doc
+  - community/Community_422
 ---
 
 # Implementation Notes
 
 ## Connections
-- [[Apple Platform Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc
+#graphify/document #graphify/EXTRACTED #community/Community_422

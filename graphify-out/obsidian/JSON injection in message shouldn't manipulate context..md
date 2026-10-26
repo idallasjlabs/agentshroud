@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # JSON injection in message shouldn't manipulate context.
 
 ## Connections
-- [[dot-test_json_injection_in_context()]] - `rationale_for` [EXTRACTED]
+- [[.test_json_injection_in_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "Community 24"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/Community_24
 ---
 
 # Initialize the outbound information filter.          Args:             config: C
 
 ## Connections
-- [[dot-__init__()_38]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_103]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

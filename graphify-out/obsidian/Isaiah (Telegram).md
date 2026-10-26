@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "concept"
-community: "gemini-review.py"
+community: "Community 1095"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gemini-reviewpy
+  - community/Community_1095
 ---
 
 # Isaiah (Telegram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram API]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gemini-reviewpy
+#graphify/concept #graphify/EXTRACTED #community/Community_1095

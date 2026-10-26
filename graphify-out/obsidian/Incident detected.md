@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "concept"
-community: "test-container-runtime.sh"
+community: "Community 1156"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/Community_1156
 ---
 
 # Incident detected
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Assess severity]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/concept #graphify/EXTRACTED #community/Community_1156

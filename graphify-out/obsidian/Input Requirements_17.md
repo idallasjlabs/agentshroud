@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/oracle/SKILL.md"
 type: "document"
-community: "._run_proxy()"
+community: "Community 1983"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/Community_1983
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_run_proxy
+#graphify/document #graphify/EXTRACTED #community/Community_1983

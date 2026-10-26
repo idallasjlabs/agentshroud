@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "test_security.py"
-location: "L14"
+community: "Community 1975"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/Community_1975
 ---
 
 # Key Features
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_1975

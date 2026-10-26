@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "GSDE&G Skills Reference Guide"
-location: "L151"
+community: "Community 438"
+location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Skills_Reference_Guide
+  - community/Community_438
 ---
 
 # Immediate (0–15 min)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_438

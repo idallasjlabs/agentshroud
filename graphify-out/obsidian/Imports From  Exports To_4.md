@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "_make_proxy() (2)"
-location: "L96"
+community: "Community 556"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy_2
+  - community/Community_556
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[models.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy_2
+#graphify/document #graphify/EXTRACTED #community/Community_556

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "MCPPolicyEngine"
+community: "Community 49"
 location: "L459"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/Community_49
 ---
 
 # Import configuration from uploaded data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[import_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_49

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "Community 84"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Community_84
 ---
 
 # Initialize sanitizer          Args:             config: PII configuration from a
 
 ## Connections
-- [[dot-__init__()_174]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_16]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

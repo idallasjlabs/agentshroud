@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Community 177"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Community_177
 ---
 
 # Incident Response (SKILL)
 
 ## Connections
 - [[Production Safety Checklist (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[operationsincident-response]] - `conceptually_related_to` [INFERRED]
+- [[incident-response]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/INFERRED #community/Community_177

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "Community 834"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/Community_834
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/Community_834

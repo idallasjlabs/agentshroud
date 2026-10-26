@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "TestOutboundInfoFilter (13)"
+community: "Community 231"
 location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_13
+  - community/Community_231
 ---
 
 # Key Facts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Press Kit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_13
+#graphify/document #graphify/EXTRACTED #community/Community_231

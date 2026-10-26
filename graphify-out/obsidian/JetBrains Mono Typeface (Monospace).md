@@ -1,16 +1,16 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "concept"
-community: "run-standalone.sh (Hermes docker run launcher) (2)"
+community: "Community 861"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher_2
+  - community/Community_861
 ---
 
 # JetBrains Mono Typeface (Monospace)
 
 ## Connections
-- [[typography_2]] - `references` [EXTRACTED]
+- [[typography]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher_2
+#graphify/concept #graphify/EXTRACTED #community/Community_861

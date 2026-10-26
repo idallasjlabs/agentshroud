@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "Job details"
+community: "Community 265"
 location: "L296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/Community_265
 ---
 
 # Import the current OpenClaw + Hermes registry lists (in file order).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_registry()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Job_details
+#graphify/rationale #graphify/EXTRACTED #community/Community_265

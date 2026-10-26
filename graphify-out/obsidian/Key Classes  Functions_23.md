@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "_make_proxy() (2)"
-location: "L23"
+community: "Community 783"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_proxy_2
+  - community/Community_783
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[ledger.py_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_proxy_2
+#graphify/document #graphify/EXTRACTED #community/Community_783

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: ".cursor/mcp.json"
-location: "L28"
+community: "Community 767"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_767
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_767

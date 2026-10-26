@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD) (3)"
+community: "Community 521"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+  - community/Community_521
 ---
 
 # Inbound Pipeline (User → Agent)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD_3
+#graphify/document #graphify/EXTRACTED #community/Community_521

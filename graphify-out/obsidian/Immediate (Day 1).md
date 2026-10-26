@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
+community: "Community 722"
 location: "L316"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/Community_722
 ---
 
 # Immediate (Day 1)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Marketing Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_722

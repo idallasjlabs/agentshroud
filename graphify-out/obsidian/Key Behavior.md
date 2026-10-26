@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "mcp_permissions.py"
+community: "Community 714"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_permissionspy
+  - community/Community_714
 ---
 
 # Key Behavior
@@ -17,4 +17,4 @@ tags:
 - [[Message Types Intercepted]] - `contains` [EXTRACTED]
 - [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy
+#graphify/document #graphify/EXTRACTED #community/Community_714

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "SkillGuard (2)"
+community: "Community 243"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard_2
+  - community/Community_243
 ---
 
 # Initial Configuration
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Set Up Channels (Optional)]] - `contains` [EXTRACTED]
 - [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard_2
+#graphify/document #graphify/EXTRACTED #community/Community_243

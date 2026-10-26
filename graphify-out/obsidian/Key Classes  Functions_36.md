@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "._process_connect"
-location: "L23"
+community: "Community 537"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_connect
+  - community/Community_537
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_connect
+#graphify/document #graphify/EXTRACTED #community/Community_537
