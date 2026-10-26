@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "test_voice_stt_model_ab.py"
+community: "Community 6"
 location: "L3959"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/Community_6
 ---
 
 # Set a user's role (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

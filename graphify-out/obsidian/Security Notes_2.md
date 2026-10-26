@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: ".pi/mcp.json"
-location: "L446"
+community: "Community 243"
+location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pi/mcpjson
+  - community/Community_243
 ---
 
 # Security Notes
 
 ## Connections
-- [[main.py]] - `contains` [EXTRACTED]
+- [[Current Security Posture]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Recommendations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pi/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_243

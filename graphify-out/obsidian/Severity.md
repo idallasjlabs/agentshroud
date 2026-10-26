@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "Community 281"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/FalcoAlertWatcher
+  - community/Community_281
 ---
 
 # Severity
 
 ## Connections
-- [[dot-severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[.severity()]] - `references` [EXTRACTED]
+- [[CompletedProcess_4]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_30]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
+- [[Path_39]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
 - [[TestClient]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/FalcoAlertWatcher
+#graphify/code #graphify/INFERRED #community/Community_281

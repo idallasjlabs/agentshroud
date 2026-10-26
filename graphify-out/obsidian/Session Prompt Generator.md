@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "1. Starting and Stopping AgentShroud"
+community: "Community 1579"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Starting_and_Stopping_AgentShroud
+  - community/Community_1579
 ---
 
 # Session Prompt Generator
 
-#graphify/document #graphify/EXTRACTED #community/1_Starting_and_Stopping_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_1579

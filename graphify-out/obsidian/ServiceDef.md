@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "Community 240"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/jira_weekly_reviewpy
+  - community/Community_240
 ---
 
 # ServiceDef
 
 ## Connections
-- [[dot-test_apple_script_custom_services()]] - `calls` [EXTRACTED]
-- [[dot-test_generate_custom_services()]] - `calls` [EXTRACTED]
+- [[.test_apple_script_custom_services()]] - `calls` [EXTRACTED]
+- [[.test_generate_custom_services()]] - `calls` [EXTRACTED]
 - [[Definition of a single service for compose generation.]] - `rationale_for` [EXTRACTED]
 - [[TestAppleContainerEngine]] - `uses` [INFERRED]
 - [[TestComposeGenerator]] - `uses` [INFERRED]
@@ -21,7 +21,7 @@ tags:
 - [[TestContainerInfo]] - `uses` [INFERRED]
 - [[TestDetectRuntime]] - `uses` [INFERRED]
 - [[TestDockerEngine]] - `uses` [INFERRED]
-- [[TestGetEngine_1]] - `uses` [INFERRED]
+- [[TestGetEngine]] - `uses` [INFERRED]
 - [[TestInstallerAPI]] - `uses` [INFERRED]
 - [[TestManagementPage]] - `uses` [INFERRED]
 - [[TestPodmanEngine]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/jira_weekly_reviewpy
+#graphify/code #graphify/INFERRED #community/Community_240

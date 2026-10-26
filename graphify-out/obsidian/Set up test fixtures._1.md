@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "ProxyAction"
-location: "L24"
+community: "Community 233"
+location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/Community_233
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_4]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProxyAction
+#graphify/rationale #graphify/EXTRACTED #community/Community_233

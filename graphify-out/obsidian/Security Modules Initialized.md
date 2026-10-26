@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Step-by-Step Deployment"
+community: "Community 592"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/Community_592
 ---
 
 # Security Modules Initialized
@@ -18,4 +18,4 @@ tags:
 - [[Tool Security]] - `contains` [EXTRACTED]
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_592

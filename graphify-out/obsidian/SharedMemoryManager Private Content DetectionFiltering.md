@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Technical Details"
+community: "Community 1302"
 location: "line 175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Technical_Details
+  - community/Community_1302
 ---
 
 # SharedMemoryManager Private Content Detection/Filtering
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Technical_Details
+#graphify/code #graphify/INFERRED #community/Community_1302

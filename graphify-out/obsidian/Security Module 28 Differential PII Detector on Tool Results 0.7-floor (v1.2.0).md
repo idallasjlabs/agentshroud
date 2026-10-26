@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "concept"
-community: "Socrates — Dialogue Architect (2)"
+community: "Community 817"
 location: "Module 28"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect_2
+  - community/Community_817
 ---
 
 # Security Module 28: Differential PII Detector on Tool Results 0.7-floor (v1.2.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Socrates__Dialogue_Architect_2
+#graphify/concept #graphify/EXTRACTED #community/Community_817

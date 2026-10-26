@@ -1,17 +1,21 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "LVGL KAWAII FACE"
-location: "L16"
+community: "Community 659"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/Community_659
 ---
 
 # Setup
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[1. Install Dependencies]] - `contains` [EXTRACTED]
+- [[2. Configure]] - `contains` [EXTRACTED]
+- [[3. Run]] - `contains` [EXTRACTED]
+- [[4. Test]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/Community_659

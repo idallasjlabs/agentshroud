@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".omp/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L298"
+community: "Community 183"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Community_183
 ---
 
 # Security
 
 ## Connections
-- [[Best Practices_5]] - `contains` [EXTRACTED]
+- [[Best Practices_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Community_183

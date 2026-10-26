@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "Community 1119"
 location: "L7164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Community_1119
 ---
 
 # Send a Telegram message with an inline keyboard.
 
 ## Connections
-- [[dot-_send_telegram_with_keyboard()]] - `rationale_for` [EXTRACTED]
+- [[._send_telegram_with_keyboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_1119

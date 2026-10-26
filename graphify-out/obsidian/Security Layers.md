@@ -1,17 +1,18 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "create_auth_dependency (2) (2)"
+community: "Community 703"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency_2_2
+  - community/Community_703
 ---
 
 # Security Layers
 
 ## Connections
 - [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/create_auth_dependency_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_703

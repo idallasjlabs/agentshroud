@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
 type: "document"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
-location: "L199"
+community: "Community 239"
+location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+  - community/Community_239
 ---
 
 # Security Best Practices
 
 ## Connections
-- [[AWS Credentials_2]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth_2]] - `contains` [EXTRACTED]
-- [[GitHub PAT_2]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[AWS Credentials_3]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth_3]] - `contains` [EXTRACTED]
+- [[GitHub PAT_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
+#graphify/document #graphify/EXTRACTED #community/Community_239

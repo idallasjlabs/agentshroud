@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
+source_file: ".cursor/agents/i-ps.md"
 type: "document"
-community: "Pre-Deployment Checklist (2)"
-location: "L161"
+community: "Community 929"
+location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist_2
+  - community/Community_929
 ---
 
 # Short-Term (15 min – 24 hr)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist_2
+#graphify/document #graphify/EXTRACTED #community/Community_929

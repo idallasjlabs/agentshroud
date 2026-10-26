@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "RuntimeConfig"
+community: "Community 511"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RuntimeConfig
+  - community/Community_511
 ---
 
 # Single inbound request processing should stay within baseline.
 
 ## Connections
-- [[dot-test_single_inbound_latency()]] - `rationale_for` [EXTRACTED]
+- [[.test_single_inbound_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RuntimeConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_511

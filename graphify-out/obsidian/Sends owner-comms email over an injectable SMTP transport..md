@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "AgentShroud Access Control Matrix"
+community: "Community 201"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Community_201
 ---
 
 # Sends owner-comms email over an injectable SMTP transport.
 
 ## Connections
-- [[GatewayEmailService_1]] - `rationale_for` [EXTRACTED]
+- [[GatewayEmailService]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/Community_201

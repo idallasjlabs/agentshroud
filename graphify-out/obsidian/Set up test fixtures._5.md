@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "FetchOutcome"
-location: "L23"
+community: "Community 141"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/Community_141
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_37]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_38]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/Community_141

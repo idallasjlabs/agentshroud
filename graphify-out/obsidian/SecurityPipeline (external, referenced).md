@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_43
 ---
 
 # SecurityPipeline (external, referenced)
 
 ## Connections
-- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[.scan()]] - `calls` [EXTRACTED]
 - [[SidecarScanner]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_43

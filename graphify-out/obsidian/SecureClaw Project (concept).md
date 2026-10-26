@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "concept"
-community: "S2 apply-patches.js sets channels.telegram.apiRoot"
+community: "Community 1887"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/S2_apply-patchesjs_sets_channelstelegramapiRoot
+  - community/Community_1887
 ---
 
 # SecureClaw Project (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/S2_apply-patchesjs_sets_channelstelegramapiRoot
+#graphify/concept #graphify/EXTRACTED #community/Community_1887

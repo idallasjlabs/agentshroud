@@ -1,19 +1,19 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
+community: "Community 491"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_491
 ---
 
 # Security Management Entities
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_4]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
 - [[TrustLevel_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/Community_491

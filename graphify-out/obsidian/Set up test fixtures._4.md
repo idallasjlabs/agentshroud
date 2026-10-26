@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Any"
-location: "L20"
+community: "Community 120"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_120
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_18]] - `rationale_for` [EXTRACTED]
+- [[.setUp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_120

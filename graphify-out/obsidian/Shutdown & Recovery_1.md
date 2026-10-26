@@ -1,19 +1,23 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L1"
+community: "Community 306"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_306
 ---
 
-# Shutdown & Recovery.md
+# Shutdown & Recovery
 
 ## Connections
-- [[Home_1]] - `references` [EXTRACTED]
+- [[Crash Recovery]] - `contains` [EXTRACTED]
+- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
+- [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
+- [[Kill Switch (Emergency Stop)]] - `contains` [EXTRACTED]
+- [[Related Notes_4]] - `contains` [EXTRACTED]
 - [[Shutdown & Recovery]] - `contains` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[State After Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_306

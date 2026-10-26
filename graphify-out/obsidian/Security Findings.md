@@ -1,22 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "reports/upgrade-2026-09-25.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md (3)"
-location: "L140"
+community: "Community 1923"
+location: "L357"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_3
+  - community/Community_1923
 ---
 
-# Security Findings
+# Security findings
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
-- [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)]] - `contains` [EXTRACTED]
-- [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)]] - `contains` [EXTRACTED]
-- [[GitHub-hosted findings]] - `contains` [EXTRACTED]
-- [[Language dependencies]] - `contains` [EXTRACTED]
-- [[Wazuh  SOC]] - `contains` [EXTRACTED]
+- [[Final report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_3
+#graphify/document #graphify/EXTRACTED #community/Community_1923

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "AgentShroud Color Palette"
+community: "Community 517"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Community_517
 ---
 
 # SecurityPipeline (75 modules, 7 layers)
@@ -16,4 +16,4 @@ tags:
 - [[Compliance Alignment (9 standards)]] - `rationale_for` [EXTRACTED]
 - [[Security Modules (30+, gateway diagram)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/concept #graphify/EXTRACTED #community/Community_517

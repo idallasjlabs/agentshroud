@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py (3)"
+community: "Community 146"
 location: "L7378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/Community_146
 ---
 
 # Send deterministic identity/role notice to simplify approval workflows.
 
 ## Connections
-- [[dot-_send_local_whoami_notice()]] - `rationale_for` [EXTRACTED]
+- [[._send_local_whoami_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_146

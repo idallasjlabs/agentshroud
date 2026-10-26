@@ -1,29 +1,20 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Enum"
-location: "L39"
+community: "Community 54"
+location: "L190"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Enum
+  - graphify/INFERRED
+  - community/Community_54
 ---
 
 # ServiceStatus
 
 ## Connections
-- [[Any_76]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus]] - `uses` [INFERRED]
-- [[services.py]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_services.py]] - `imports` [EXTRACTED]
-- [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
+- [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/INFERRED #community/Community_54

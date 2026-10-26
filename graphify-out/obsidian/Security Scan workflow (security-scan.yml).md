@@ -1,20 +1,16 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "code"
-community: "DataExfilVolumeGuard"
+community: "Community 139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/Community_139
 ---
 
 # Security Scan workflow (security-scan.yml)
 
 ## Connections
-- [[Image signing & provenance (cosign keyless + syft SBOM attest)]] - `references` [EXTRACTED]
-- [[Incident ConduitHermes instability 2026-10-16]] - `references` [EXTRACTED]
-- [[Python dependency audit job]] - `references` [EXTRACTED]
-- [[Semgrep SAST baselined gate]] - `references` [EXTRACTED]
-- [[Trivy filesystem scan (SHA-pinned action)]] - `references` [EXTRACTED]
+- [[INCIDENT_2026-10-16_conduit-outage]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/Community_139

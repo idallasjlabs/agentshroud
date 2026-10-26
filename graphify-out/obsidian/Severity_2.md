@@ -1,17 +1,31 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
-type: "document"
-community: "Incident Response Playbook — AgentShroud"
-location: "L3"
+source_file: "gateway/soc/models.py"
+type: "code"
+community: "Community 169"
+location: "L31"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Response_Playbook__AgentShroud
+  - community/Community_169
 ---
 
 # Severity
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Any_66]] - `uses` [INFERRED]
+- [[Enum]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[SecurityEvent]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[WSEvent_1]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
+- [[event_adapter.py]] - `imports` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/Community_169

@@ -1,21 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "test_security.py"
-location: "L125"
+community: "Community 433"
+location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/Community_433
 ---
 
 # Security Model
 
 ## Connections
-- [[Approval Workflow]] - `contains` [EXTRACTED]
-- [[Audit Trail]] - `contains` [EXTRACTED]
-- [[Risk Classification]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[URL Access Control]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Inbound Path]] - `contains` [EXTRACTED]
+- [[Mitigations in Place]] - `contains` [EXTRACTED]
+- [[Outbound Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/Community_433

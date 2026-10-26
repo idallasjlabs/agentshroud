@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "openclaw_triage.sh"
+community: "Community 1243"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/Community_1243
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_56]] - `contains` [EXTRACTED]
-- [[Related Skills_42]] - `contains` [EXTRACTED]
-- [[Usage_45]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-secREADME]] - `contains` [EXTRACTED]
+- [[Purpose_105]] - `contains` [EXTRACTED]
+- [[README_110]] - `contains` [EXTRACTED]
+- [[Related Skills_129]] - `contains` [EXTRACTED]
+- [[SKILL_152]] - `contains` [EXTRACTED]
+- [[Usage_131]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/document #graphify/EXTRACTED #community/Community_1243

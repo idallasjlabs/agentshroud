@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "Community 6"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_6
 ---
 
 # Single entry from the data ledger
 
 ## Connections
-- [[LedgerEntry]] - `rationale_for` [EXTRACTED]
+- [[LedgerEntry_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

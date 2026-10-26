@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Node ID format must match AST extractor"
+community: "Community 1669"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Node_ID_format_must_match_AST_extractor
+  - community/Community_1669
 ---
 
 # SessionState (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/Node_ID_format_must_match_AST_extractor
+#graphify/concept #graphify/EXTRACTED #community/Community_1669

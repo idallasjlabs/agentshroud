@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade Report — 2026-08-30 (2)"
+community: "Community 877"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+  - community/Community_877
 ---
 
 # SidecarScanner.scan(request)
 
 ## Connections
-- [[Function Details_50]] - `contains` [EXTRACTED]
+- [[Function Details_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30_2
+#graphify/document #graphify/EXTRACTED #community/Community_877

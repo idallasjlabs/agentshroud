@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "AgentTarget (5)"
+community: "Community 212"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_5
+  - community/Community_212
 ---
 
 # Sending via email
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTML version (for email)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_5
+#graphify/document #graphify/EXTRACTED #community/Community_212

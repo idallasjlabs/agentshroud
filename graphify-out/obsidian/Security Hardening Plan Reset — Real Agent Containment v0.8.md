@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "port_manager.py"
+community: "Community 1036"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/Community_1036
 ---
 
 # Security Hardening Plan Reset — Real Agent Containment v0.8
@@ -16,4 +16,4 @@ tags:
 - [[Planning Docs Index (redteam, reviews, recovery, version buckets)]] - `references` [INFERRED]
 - [[Security Plan v0.8 — Wikipedia Threat Coverage Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/Community_1036

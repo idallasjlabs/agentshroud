@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
-type: "document"
-community: "Function Details (3)"
-location: "L3"
+source_file: "gateway/soc/event_adapter.py"
+type: "code"
+community: "Community 884"
+location: "L23"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/Function_Details_3
+  - graphify/code
+  - graphify/INFERRED
+  - community/Community_884
 ---
 
 # Severity
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_3
+#graphify/code #graphify/INFERRED #community/Community_884

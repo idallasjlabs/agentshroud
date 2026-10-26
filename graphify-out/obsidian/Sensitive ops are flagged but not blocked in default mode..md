@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "Community 64"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/Community_64
 ---
 
 # Sensitive ops are flagged but not blocked in default mode.
 
 ## Connections
-- [[dot-test_sensitive_not_blocked_default()]] - `rationale_for` [EXTRACTED]
+- [[.test_sensitive_not_blocked_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

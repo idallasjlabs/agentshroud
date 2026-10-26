@@ -1,17 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
-location: "L27"
+community: "Community 577"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/Community_577
 ---
 
 # Security Controls
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[1. Container Isolation]] - `contains` [EXTRACTED]
+- [[10. Approval Queue]] - `contains` [EXTRACTED]
+- [[2. Capability Dropping]] - `contains` [EXTRACTED]
+- [[2. Network Isolation]] - `contains` [EXTRACTED]
+- [[3. Resource Limits]] - `contains` [EXTRACTED]
+- [[4. Network Isolation]] - `contains` [EXTRACTED]
+- [[5. Audit Ledger]] - `contains` [EXTRACTED]
+- [[6. Approval Queue]] - `contains` [EXTRACTED]
+- [[7. Secrets Management]] - `contains` [EXTRACTED]
+- [[8. Bot Identity Separation]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/document #graphify/EXTRACTED #community/Community_577

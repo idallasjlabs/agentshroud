@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
+community: "Community 625"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/Community_625
 ---
 
 # Simulate the _store_result keying logic from lifespan._startup_scanner.      The
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStartupScannerKeying]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/rationale #graphify/EXTRACTED #community/Community_625
