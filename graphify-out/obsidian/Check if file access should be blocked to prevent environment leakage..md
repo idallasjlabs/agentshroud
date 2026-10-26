@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "._record_leakage()"
+community: "Community 0"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_record_leakage
+  - community/Community_0
 ---
 
 # Check if file access should be blocked to prevent environment leakage.
 
 ## Connections
-- [[dot-check_file_access()]] - `rationale_for` [EXTRACTED]
+- [[.check_file_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_record_leakage
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

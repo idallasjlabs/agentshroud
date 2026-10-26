@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "document"
-community: "_wrap_response() (2)"
+community: "Community 227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/Community_227
 ---
 
 # CVE Triage — Gaps & Development Plan (OpenClaw), 891 triaged
@@ -15,7 +15,7 @@ tags:
 - [[ASH-OCLAW-230 dos under_review (running 2026.9.8, fixed_in None)]] - `references` [EXTRACTED]
 - [[CVE gap report built from invocation delta, not registry state]] - `references` [EXTRACTED]
 - [[Two-arm CVE remediation (vendor fix + AgentShroud gateway control)]] - `implements` [INFERRED]
-- [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `shares_data_with` [EXTRACTED]
+- [[upgrade-2026-09-22]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/document #graphify/EXTRACTED #community/Community_227

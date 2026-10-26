@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "main"
-location: "L118"
+community: "Community 1275"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/main
+  - community/Community_1275
 ---
 
 # Check C — Still broken at HEAD (not self-healed)?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/main
+#graphify/document #graphify/EXTRACTED #community/Community_1275

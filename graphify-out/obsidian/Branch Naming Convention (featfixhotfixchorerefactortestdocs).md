@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "concept"
-community: "Implementation Status"
+community: "Community 391"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/Community_391
 ---
 
 # Branch Naming Convention (feat/fix/hotfix/chore/refactor/test/docs)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Implementation_Status
+#graphify/concept #graphify/EXTRACTED #community/Community_391

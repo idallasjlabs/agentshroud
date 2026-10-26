@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "TrustConfig (2)"
+community: "Community 109"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/Community_109
 ---
 
 # Check if a TCP port is available for binding.          Tries to bind briefly. Re
 
 ## Connections
-- [[dot-is_port_available()]] - `rationale_for` [EXTRACTED]
+- [[.is_port_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_109

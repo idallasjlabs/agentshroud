@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/gemini-review.py"
 type: "rationale"
-community: "AgentShroud™ Communication Templates (2)"
+community: "Community 1118"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates_2
+  - community/Community_1118
 ---
 
 # Call Gemini API and return the review text and exit code.      Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[call_gemini()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Communication_Templates_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1118

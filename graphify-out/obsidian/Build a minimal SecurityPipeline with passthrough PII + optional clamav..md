@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "asyncio"
+community: "Community 220"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/Community_220
 ---
 
 # Build a minimal SecurityPipeline with passthrough PII + optional clamav.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/Community_220

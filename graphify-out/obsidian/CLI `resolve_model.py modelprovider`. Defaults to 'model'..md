@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "rationale"
-community: "is_overloaded"
+community: "Community 1937"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Community_1937
 ---
 
 # CLI: `resolve_model.py [model|provider]`. Defaults to 'model'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_overloaded
+#graphify/rationale #graphify/EXTRACTED #community/Community_1937

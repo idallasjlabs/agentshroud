@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "telegram_proxy.py (3)"
+community: "Community 549"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/telegram_proxypy_3
+  - community/Community_549
 ---
 
 # Browser — Secure Browser Automation (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/telegram_proxypy_3
+#graphify/document #graphify/INFERRED #community/Community_549

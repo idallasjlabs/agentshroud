@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Community Detection / Clustering"
+community: "Community 1702"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_Detection_/_Clustering
+  - community/Community_1702
 ---
 
 # Chaos Engineering Skill
 
-#graphify/document #graphify/EXTRACTED #community/Community_Detection_/_Clustering
+#graphify/document #graphify/EXTRACTED #community/Community_1702

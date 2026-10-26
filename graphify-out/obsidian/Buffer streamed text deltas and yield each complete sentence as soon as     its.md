@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "UserSessionManager (2) (2)"
+community: "Community 47"
 location: "L780"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/Community_47
 ---
 
 # Buffer streamed text deltas and yield each complete sentence as soon as     its
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_sentences_from_deltas()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

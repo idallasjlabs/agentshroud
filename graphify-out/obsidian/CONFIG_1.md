@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/summarize/SKILL.md"
-type: "document"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
-location: "L76"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
+type: "code"
+community: "Community 907"
+location: "L10"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+  - community/Community_907
 ---
 
-# Config
+# CONFIG
 
 ## Connections
-- [[Summarize]] - `contains` [EXTRACTED]
+- [[calendar.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+#graphify/code #graphify/EXTRACTED #community/Community_907

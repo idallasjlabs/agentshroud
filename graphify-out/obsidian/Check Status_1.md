@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/README.md"
 type: "document"
-community: "test_main_endpoints.py (2)"
-location: "L50"
+community: "Community 213"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_main_endpointspy_2
+  - community/Community_213
 ---
 
 # Check Status
 
 ## Connections
-- [[Launch the Stack]] - `contains` [EXTRACTED]
+- [[Usage_56]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_main_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Community_213

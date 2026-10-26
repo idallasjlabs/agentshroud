@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L28"
+community: "Community 72"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Community_72
 ---
 
 # CanaryResult
 
 ## Connections
-- [[dot-_check_encoded()]] - `references` [EXTRACTED]
-- [[dot-_check_plain()]] - `references` [EXTRACTED]
-- [[dot-scan()_4]] - `references` [EXTRACTED]
-- [[canary_tripwire.py]] - `contains` [EXTRACTED]
+- [[._scan_for_canary()]] - `references` [EXTRACTED]
+- [[.check_response()]] - `references` [EXTRACTED]
+- [[Result of checking a response for canary presence.]] - `rationale_for` [EXTRACTED]
+- [[output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/Community_72

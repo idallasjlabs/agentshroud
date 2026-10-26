@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L217"
+community: "Community 515"
+location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Community_515
 ---
 
 # Breakpoints (mobile-first)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Community_515

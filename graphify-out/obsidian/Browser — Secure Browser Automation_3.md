@@ -1,21 +1,29 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: ".cursor/agents/browser.md"
 type: "document"
-community: "soc.js"
-location: "L1"
+community: "Community 473"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_473
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_100]] - `contains` [EXTRACTED]
-- [[Related Skills_71]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
-- [[openclawskillsi-browserREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Approval Integration_2]] - `contains` [EXTRACTED]
+- [[Audit Logging_2]] - `contains` [EXTRACTED]
+- [[Best Practices_4]] - `contains` [EXTRACTED]
+- [[Core Security Principles_2]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
+- [[Limitations_2]] - `contains` [EXTRACTED]
+- [[Risk Levels_2]] - `contains` [EXTRACTED]
+- [[Security Architecture_2]] - `contains` [EXTRACTED]
+- [[Security Configuration_2]] - `contains` [EXTRACTED]
+- [[Security Guarantees_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
+- [[Usage_43]] - `contains` [EXTRACTED]
+- [[browser_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_473

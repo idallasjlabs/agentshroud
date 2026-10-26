@@ -1,22 +1,22 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "middleware.py"
+community: "Community 587"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/Community_587
 ---
 
 # Browser Extension
 
 ## Connections
 - [[Browser Support]] - `contains` [EXTRACTED]
-- [[Features_3]] - `contains` [EXTRACTED]
+- [[Features]] - `contains` [EXTRACTED]
 - [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Privacy Features]] - `contains` [EXTRACTED]
-- [[Structure_1]] - `contains` [EXTRACTED]
-- [[browser-extensionREADME]] - `contains` [EXTRACTED]
+- [[README_39]] - `contains` [EXTRACTED]
+- [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/Community_587

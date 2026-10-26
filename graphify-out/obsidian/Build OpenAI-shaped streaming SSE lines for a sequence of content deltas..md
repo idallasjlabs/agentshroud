@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "i-gg SKILL — Git Workflow Guardian (GIT-GUARD)"
+community: "Community 1006"
 location: "L551"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+  - community/Community_1006
 ---
 
 # Build OpenAI-shaped streaming SSE lines for a sequence of content deltas.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_openai_delta_lines()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/i-gg_SKILL__Git_Workflow_Guardian_GIT-GUARD
+#graphify/rationale #graphify/EXTRACTED #community/Community_1006

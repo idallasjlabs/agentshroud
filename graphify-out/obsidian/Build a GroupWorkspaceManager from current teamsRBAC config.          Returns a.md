@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_collaborator_tracker.py"
+community: "Community 2177"
 location: "L7753"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/Community_2177
 ---
 
 # Build a GroupWorkspaceManager from current teams/RBAC config.          Returns a
 
 ## Connections
-- [[dot-_group_workspace_manager()]] - `rationale_for` [EXTRACTED]
+- [[._group_workspace_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/Community_2177

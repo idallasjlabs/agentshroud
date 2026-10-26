@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "rationale"
-community: "browser/scripts/browse.py (2)"
+community: "Community 149"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/Community_149
 ---
 
 # Check if domain matches pattern (supports wildcards)
 
 ## Connections
-- [[dot-_domain_matches()]] - `rationale_for` [EXTRACTED]
+- [[._domain_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

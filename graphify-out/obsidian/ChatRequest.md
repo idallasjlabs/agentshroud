@@ -1,19 +1,19 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "egress_filter.py"
+community: "Community 95"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Community_95
 ---
 
 # ChatRequest
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[chat()]] - `references` [EXTRACTED]
-- [[chatbotmain.py]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/Community_95

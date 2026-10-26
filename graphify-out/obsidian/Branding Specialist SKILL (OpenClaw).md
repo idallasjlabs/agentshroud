@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "StdioConnection (2) (2)"
+community: "Community 1509"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/StdioConnection_2_2
+  - community/Community_1509
 ---
 
 # Branding Specialist SKILL (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Specialist README (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/StdioConnection_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_1509

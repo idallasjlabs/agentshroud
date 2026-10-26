@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "AuditEvent"
+community: "Community 408"
 location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Community_408
 ---
 
 # Buffered streaming filter (`_filter_outbound_streaming`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Streaming]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Community_408

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 210"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_UI_Expert_UI
+  - community/Community_210
 ---
 
 # Branding Specialist (BS) (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS) (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/INFERRED #community/Community_210

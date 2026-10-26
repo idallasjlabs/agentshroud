@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+source_file: ".cursor/agents/i-ab.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
-location: "L108"
+community: "Community 1296"
+location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/Community_1296
 ---
 
 # Check B — Tied to a real ticket?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/Community_1296

@@ -1,25 +1,25 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Skill: UI Expert (UI)"
+community: "Community 1877"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Community_1877
 ---
 
 # CI/CD Pipeline Advisor (README)
 
 ## Connections
-- [[dot-agentsskillsi-cicdREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [INFERRED]
-- [[Purpose_69]] - `contains` [EXTRACTED]
-- [[Purpose_70]] - `contains` [EXTRACTED]
-- [[Related Skills_56]] - `contains` [EXTRACTED]
-- [[Related Skills_57]] - `contains` [EXTRACTED]
-- [[Usage_59]] - `contains` [EXTRACTED]
-- [[Usage_60]] - `contains` [EXTRACTED]
-- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_9]] - `contains` [EXTRACTED]
+- [[Purpose_43]] - `contains` [EXTRACTED]
+- [[README_9]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[Related Skills_12]] - `contains` [EXTRACTED]
+- [[Related Skills_61]] - `contains` [EXTRACTED]
+- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[Usage_14]] - `contains` [EXTRACTED]
+- [[Usage_65]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/document #graphify/EXTRACTED #community/Community_1877
