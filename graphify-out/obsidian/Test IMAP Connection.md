@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "TestOutboundClassifierHelpers"
+community: "Community 349"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/Community_349
 ---
 
 # Test IMAP Connection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📧 iCloud Mail (IMAPSMTP)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/Community_349

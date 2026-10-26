@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues"
+community: "Community 713"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - community/Community_713
 ---
 
 # Templates
@@ -16,4 +16,4 @@ tags:
 - [[Issue Triage]] - `contains` [EXTRACTED]
 - [[PR Review Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/document #graphify/EXTRACTED #community/Community_713

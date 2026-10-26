@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "Community 2355"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/Community_2355
 ---
 
 # Test context-aware user ID filtering.
 
 ## Connections
-- [[dot-test_context_aware_user_id_filtering()]] - `rationale_for` [EXTRACTED]
+- [[.test_context_aware_user_id_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/Community_2355

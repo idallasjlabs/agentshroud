@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "Crash Recovery"
-location: "L68"
+community: "Community 1011"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Community_1011
 ---
 
 # Task Coordination
 
 ## Connections
 - [[Assigning Work]] - `contains` [EXTRACTED]
-- [[Definition of Done (from AGENTS.md)]] - `contains` [EXTRACTED]
+- [[Definition of Done (from CLAUDE.md)]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 - [[Tracking Format]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Community_1011

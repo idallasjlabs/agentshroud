@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "test_fieldflare_route_strips_unsupported_fields_streaming"
+community: "Community 707"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_fieldflare_route_strips_unsupported_fields_streaming
+  - community/Community_707
 ---
 
 # Test enhanced status endpoint with observatory mode and egress info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnhancedStatus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming
+#graphify/rationale #graphify/EXTRACTED #community/Community_707

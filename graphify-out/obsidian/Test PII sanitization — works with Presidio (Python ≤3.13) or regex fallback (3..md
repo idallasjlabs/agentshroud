@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ContextGuard"
+community: "Community 0"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/Community_0
 ---
 
 # Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.
 
 ## Connections
-- [[TestPIIDetection]] - `rationale_for` [EXTRACTED]
+- [[TestPIIDetection_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

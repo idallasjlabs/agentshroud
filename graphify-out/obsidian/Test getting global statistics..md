@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "SecurityPipeline (2)"
-location: "L364"
+community: "Community 1281"
+location: "L344"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/Community_1281
 ---
 
 # Test getting global statistics.
 
 ## Connections
-- [[dot-test_global_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_global_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1281

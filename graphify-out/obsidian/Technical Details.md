@@ -1,20 +1,20 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "test_sunday_prompt_unattended.sh"
+community: "Community 1329"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sunday_prompt_unattendedsh
+  - community/Community_1329
 ---
 
 # Technical Details
 
 ## Connections
-- [[Architecture_2]] - `contains` [EXTRACTED]
+- [[Architecture_9]] - `contains` [EXTRACTED]
 - [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
-- [[Files]] - `contains` [EXTRACTED]
+- [[Files_1]] - `contains` [EXTRACTED]
 - [[Security Features]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sunday_prompt_unattendedsh
+#graphify/document #graphify/EXTRACTED #community/Community_1329

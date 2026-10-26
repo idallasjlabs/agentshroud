@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "AgentShroud User Guide"
+community: "Community 326"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Community_326
 ---
 
 # Test Strategy
@@ -19,4 +19,4 @@ tags:
 - [[Test-Type Decision Matrix]] - `contains` [EXTRACTED]
 - [[When to Add a Smoke Assertion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_326

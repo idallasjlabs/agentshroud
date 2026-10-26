@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "CredentialInfo"
+community: "Community 1352"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/Community_1352
 ---
 
 # Test health score with mixed credential states.
 
 ## Connections
-- [[dot-test_get_health_score_mixed_states()]] - `rationale_for` [EXTRACTED]
+- [[.test_get_health_score_mixed_states()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo
+#graphify/rationale #graphify/EXTRACTED #community/Community_1352

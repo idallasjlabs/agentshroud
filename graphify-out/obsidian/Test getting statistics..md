@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "SecurityPipeline (2)"
+community: "Community 1281"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/Community_1281
 ---
 
 # Test getting statistics.
 
 ## Connections
-- [[dot-test_get_stats()]] - `rationale_for` [EXTRACTED]
-- [[dot-test_global_stats()]] - `rationale_for` [EXTRACTED]
-- [[dot-test_global_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_get_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_global_stats()]] - `rationale_for` [EXTRACTED]
+- [[.test_global_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_1281

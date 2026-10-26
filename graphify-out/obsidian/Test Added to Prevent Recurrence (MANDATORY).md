@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "4. Risks & Gaps"
+community: "Community 1051"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Risks__Gaps
+  - community/Community_1051
 ---
 
 # Test Added to Prevent Recurrence (MANDATORY)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[postmortem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Risks__Gaps
+#graphify/document #graphify/EXTRACTED #community/Community_1051

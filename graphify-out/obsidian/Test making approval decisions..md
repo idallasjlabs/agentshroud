@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "WebContentScanner"
+community: "Community 1127"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/Community_1127
 ---
 
 # Test making approval decisions.
 
 ## Connections
-- [[dot-test_approval_decision()]] - `rationale_for` [EXTRACTED]
+- [[.test_approval_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner
+#graphify/rationale #graphify/EXTRACTED #community/Community_1127

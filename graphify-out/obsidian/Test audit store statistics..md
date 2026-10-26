@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "The 8D Investigation Process"
+community: "Community 254"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/Community_254
 ---
 
 # Test audit store statistics.
 
 ## Connections
-- [[dot-test_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

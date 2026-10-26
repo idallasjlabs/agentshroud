@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "Required Software"
+community: "Community 928"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Required_Software
+  - community/Community_928
 ---
 
 # TelegramGatewayRelay
 
 ## Connections
-- [[dot-__init__()_200]] - `method` [EXTRACTED]
-- [[dot-send_message()]] - `method` [EXTRACTED]
-- [[dot-send_status_update()]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `method` [EXTRACTED]
+- [[.send_message()]] - `method` [EXTRACTED]
+- [[.send_status_update()]] - `method` [EXTRACTED]
 - [[Relay Telegram messages through the gateway control plane.      This enables con]] - `rationale_for` [EXTRACTED]
 - [[telegram_gateway_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Required_Software
+#graphify/code #graphify/EXTRACTED #community/Community_928

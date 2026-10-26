@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "Community 8"
 location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/Community_8
 ---
 
 # Test approval system interface.
 
 ## Connections
-- [[dot-test_approval_system()]] - `rationale_for` [EXTRACTED]
+- [[.test_approval_system()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

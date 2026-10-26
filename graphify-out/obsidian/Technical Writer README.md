@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "MultiHostResult"
+community: "Community 518"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/Community_518
 ---
 
 # Technical Writer README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Technical Writer (TW)_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MultiHostResult
+#graphify/document #graphify/EXTRACTED #community/Community_518

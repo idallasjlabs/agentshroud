@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "test_bot_boot_live.sh"
+community: "Community 1403"
 location: "1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_bot_boot_livesh
+  - community/Community_1403
 ---
 
 # Test Kill Switch Monitor
@@ -15,4 +15,4 @@ tags:
 - [[Test Kill Switch Script Modes]] - `semantically_similar_to` [INFERRED]
 - [[Test Observatory Mode API and Kill Switch Verification]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_bot_boot_livesh
+#graphify/code #graphify/INFERRED #community/Community_1403

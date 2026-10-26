@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Enum"
-location: "L361"
+community: "Community 8"
+location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/Community_8
 ---
 
 # Test cleanup of old sessions.
 
 ## Connections
-- [[dot-test_session_cleanup()_1]] - `rationale_for` [EXTRACTED]
+- [[.test_session_cleanup()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/Community_8

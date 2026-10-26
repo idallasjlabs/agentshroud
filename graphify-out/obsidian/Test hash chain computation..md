@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "Community 254"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Community_254
 ---
 
 # Test hash chain computation.
 
 ## Connections
-- [[dot-test_entry_hash_chain()]] - `rationale_for` [EXTRACTED]
+- [[.test_entry_hash_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

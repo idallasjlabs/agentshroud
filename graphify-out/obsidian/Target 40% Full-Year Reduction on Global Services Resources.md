@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: ".test_fetch_paginates_via_link_cursor()"
-location: "L153"
+community: "Community 209"
+location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_fetch_paginates_via_link_cursor
+  - community/Community_209
 ---
 
 # Target: 40% Full-Year Reduction on Global Services Resources
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor
+#graphify/document #graphify/EXTRACTED #community/Community_209

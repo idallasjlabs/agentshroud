@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "Community 2366"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/Community_2366
 ---
 
 # Test blocking direct access to base agentshroud directory.
 
 ## Connections
-- [[dot-test_block_base_directory_access()]] - `rationale_for` [EXTRACTED]
+- [[.test_block_base_directory_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_2366

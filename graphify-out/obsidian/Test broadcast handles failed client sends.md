@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "MiddlewareManager (3)"
+community: "Community 1127"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_1127
 ---
 
 # Test broadcast handles failed client sends
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_broadcast_with_failed_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_1127

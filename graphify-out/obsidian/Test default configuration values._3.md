@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Any"
-location: "L22"
+community: "Community 16"
+location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/Community_16
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_6]] - `rationale_for` [EXTRACTED]
+- [[.test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/Community_16
