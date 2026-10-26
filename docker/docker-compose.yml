@@ -276,7 +276,7 @@ services:
   # is the real control here, not an app-level password. Only wazuh-agent is
   # on this network, so there is exactly one thing that can ever enroll.
   wazuh-manager:
-    image: wazuh/wazuh-manager:4.14.8
+    image: wazuh/wazuh-manager:4.14.9
     container_name: agentshroud-wazuh-manager
     hostname: wazuh-manager
     restart: unless-stopped
@@ -339,7 +339,7 @@ services:
       context: ..
       dockerfile: docker/wazuh-agent/Dockerfile
       args:
-        WAZUH_VERSION: 4.14.8
+        WAZUH_VERSION: 4.14.9
         AGENTSHROUD_GIT_SHA: ${AGENTSHROUD_GIT_SHA:-unknown}
     image: agentshroud-wazuh-agent:${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-wazuh-agent

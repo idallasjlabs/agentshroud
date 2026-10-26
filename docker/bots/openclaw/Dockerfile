@@ -10,7 +10,7 @@
 # applied in gateway/Dockerfile: rebuild the same tagged source against the
 # current patched Go base instead of using the release .deb.
 FROM golang:1.26-trixie@sha256:f06b7122f888680048afb247c4e5f49c0069eb6c4c1ccae0f3f4834527a8d22c AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.9.0
+ARG DOCKER_CLI_VERSION=29.9.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
 # GO111MODULE=auto (falls back to GOPATH mode with no go.mod present).
@@ -98,7 +98,7 @@ RUN chmod +x /usr/local/bin/docker
 # 2026-09-21 Sunday upgrade: 0.72.0 -> 0.74.0, GitHub's current latest release
 # (verified: `gh`/GitHub API `releases/latest` for aquasecurity/trivy, matches
 # the Homebrew trivy already running on the host for this same run's scans).
-ARG TRIVY_VERSION=0.75.0  # SCRUM-100: patched Go
+ARG TRIVY_VERSION=0.76.1  # SCRUM-100: patched Go
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -137,7 +137,7 @@ RUN printf '%s\n' \
 # copy inside OpenClaw's own container — caught by this run's full-repo
 # WAZUH_VERSION grep. Verified 4.14.8 is latest stable 4.x via GitHub releases
 # (v4.14.8, 2026-09-25; v5.0.0 line is still beta).
-ARG WAZUH_VERSION=4.14.8
+ARG WAZUH_VERSION=4.14.9
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \

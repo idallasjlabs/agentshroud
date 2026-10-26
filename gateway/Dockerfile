@@ -89,6 +89,7 @@ RUN set -eux; \
     /out-falcoctl version || true
 
 # === cosign builder (owner directive 2026-09-05: all fixable CVEs, no exceptions) ===
+# (2026-10-25: cosign 3.1.4 go.mod requires Go >= 1.27, so this stage uses golang:1.27 like falcoctl-builder.)
 # The v3.1.3 release binary (downloaded further below) IS the latest cosign
 # release, but Trivy still flags it for stale transitive deps: CVE-2026-56854
 # (golang.org/x/crypto, CRITICAL) plus x/mod, x/text, and grpc HIGHs — v3.1.3
@@ -96,8 +97,8 @@ RUN set -eux; \
 # falcoctl-builder above: rebuild from the same source tag with the deps
 # forced current, then overlay the result onto the release-binary install
 # below instead of using the download as-is.
-FROM golang:1.26-trixie@sha256:f06b7122f888680048afb247c4e5f49c0069eb6c4c1ccae0f3f4834527a8d22c AS cosign-builder
-ARG COSIGN_VERSION=3.1.3
+FROM golang:1.27-trixie@sha256:2f84bc93ecfb2689f782b153fdcd368b5a7ab96c1386c65cdaccf35e726d6a44 AS cosign-builder
+ARG COSIGN_VERSION=3.1.4
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
     git clone --depth 1 --branch "v${COSIGN_VERSION}" \
@@ -124,7 +125,7 @@ RUN set -eux; \
 # for build simplicity, consistent with every other builder stage in this
 # file — same static, self-contained binary either way.
 FROM golang:1.26-trixie@sha256:f06b7122f888680048afb247c4e5f49c0069eb6c4c1ccae0f3f4834527a8d22c AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.9.0
+ARG DOCKER_CLI_VERSION=29.9.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring, not the standard module layout every other
 # builder stage in this file uses. Must clone into $GOPATH/src/... and build
@@ -247,7 +248,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.54.1  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG SYFT_VERSION=1.55.0  # SCRUM-100: patched Go; SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
@@ -261,7 +262,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
-ARG TRIVY_VERSION=0.75.0  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG TRIVY_VERSION=0.76.1  # SCRUM-100: patched Go; SCRUM-174 bump
 # R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -316,7 +317,7 @@ RUN chmod +x /usr/local/bin/docker
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
 # SCRUM-101: 3.2.7 → 5.0.9 (latest maintenance; clears C/Go lib CVEs). Config is
 # plain-INI ([SERVICE]/[INPUT]/[FILTER]/[OUTPUT]) — stable across 3.x→5.x; sidecar intact.
-ARG FLUENT_BIT_VERSION=5.1.3
+ARG FLUENT_BIT_VERSION=5.1.5
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
@@ -336,7 +337,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 # Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
 # SCRUM-101: 0.39.2 → 0.44.1 (latest stable; libs 0.25.4, patched Go/C deps). Sidecar intact.
 # 2026-09-22 Sunday upgrade: 0.44.1 → 0.45.0 (latest stable per GitHub releases).
-ARG FALCO_VERSION=0.45.0
+ARG FALCO_VERSION=0.45.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) FALCO_ARCH="aarch64" ;; \

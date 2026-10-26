@@ -291,6 +291,27 @@ if (JSON.stringify(currentProvider) !== JSON.stringify(desiredProvider)) {
   config.models.providers[PROVIDER_KEY] = desiredProvider;
   changed = true;
 }
+// OPENCLAW_MAIN_MODEL can name a local provider other than the MODEL_MODE-
+// derived one (dev: MODE=local with an openai-local/<model> ref). Declare that
+// provider here too. OpenClaw 2026.10.6's `doctor --fix` treats a model whose
+// provider no models.providers entry declares as stale: it strips every
+// per-agent model pin and replaces agents.defaults.model with a cloud model
+// (dev, 2026-10-25: collaborators silently routed to openai/gpt-6-astra).
+const MAIN_PROVIDER_KEY = MAIN_MODEL.includes('/') ? MAIN_MODEL.split('/')[0] : '';
+if ((MAIN_PROVIDER_KEY === 'ollama' || MAIN_PROVIDER_KEY === 'openai-local') && MAIN_PROVIDER_KEY !== PROVIDER_KEY) {
+  const mainModelName = MAIN_MODEL.split('/').slice(1).join('/');
+  const desiredMainProvider = {
+    ...desiredProvider,
+    api: MAIN_PROVIDER_KEY === 'ollama' ? 'ollama' : 'openai',
+    models: providerModels.some((m) => m.id === mainModelName)
+      ? providerModels
+      : [{ ...providerModels[0], id: mainModelName, name: mainModelName }, ...providerModels],
+  };
+  if (JSON.stringify(config.models.providers[MAIN_PROVIDER_KEY] || {}) !== JSON.stringify(desiredMainProvider)) {
+    config.models.providers[MAIN_PROVIDER_KEY] = desiredMainProvider;
+    changed = true;
+  }
+}
 
 // Patch 0c: models.providers.lmstudio — only registered when LMSTUDIO_API_BASE is
 // explicitly set (i.e. user has LM Studio running alongside Ollama).
@@ -326,6 +347,24 @@ if (process.env.LMSTUDIO_API_BASE) {
     console.log('[init-patch] Registered LM Studio provider with Anchor + Coding models');
     changed = true;
   }
+}
+
+// Roster shape: OpenClaw 2026.10.6 retired agents.list for keyed
+// agents.entries ({ <id>: {...} }). When both exist, `openclaw doctor --fix`
+// keeps entries and deletes list — so roster patches written only to the list
+// were silently discarded every boot, and OpenClaw's own entries kept no
+// per-agent model pin (agents fell back to the default model) and a stale
+// collaborator tool deny-list (dev, 2026-10-25). The patches below work on
+// config.agents.list as an in-memory array; a keyed roster is loaded from
+// entries here and written back as entries just before the file is saved.
+// A list-only roster (OpenClaw < 2026.10.6) is left as a list.
+const ROSTER_KEYED =
+  config.agents.entries !== null &&
+  typeof config.agents.entries === 'object' &&
+  !Array.isArray(config.agents.entries);
+if (ROSTER_KEYED) {
+  if ('list' in config.agents) changed = true;
+  config.agents.list = Object.entries(config.agents.entries).map(([id, entry]) => ({ ...entry, id }));
 }
 
 // Patch 1: agents.list
@@ -986,6 +1025,15 @@ if (slackBotToken && slackBotToken.startsWith('xoxb-') && slackAppToken && slack
     console.log('[init-patch] Removed stale channels.slack block (no valid tokens present)');
     changed = true;
   }
+}
+
+if (ROSTER_KEYED) {
+  const keyedEntries = Object.fromEntries(
+    config.agents.list.map(({ id, ...entry }) => [id, entry]),
+  );
+  if (JSON.stringify(keyedEntries) !== JSON.stringify(config.agents.entries)) changed = true;
+  config.agents.entries = keyedEntries;
+  delete config.agents.list;
 }
 
 if (changed || isNew) {

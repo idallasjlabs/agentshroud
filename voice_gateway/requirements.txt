@@ -5,3 +5,8 @@ websockets>=13.0
 faster-whisper>=1.0.0
 numpy>=1.26.0
 kokoro>=0.9.2
+# preshed 3.0.14 (2026-10) breaks spaCy's tokenizer load (en_core_web_sm ->
+# OverflowError: Python int too large to convert to C ssize_t), which kills the
+# kokoro voice preload at image build. 3.0.13 verified good 2026-10-25. Drop this
+# cap once an upstream preshed release loads spaCy models again.
+preshed<3.0.14

@@ -1151,6 +1151,29 @@ phase_verify() {
     fi
   done
 
+  # 2. Wait, bounded, for health to SETTLE before the soak starts. OpenClaw's
+  #    first boot on a new version re-seeds its npm volume and runs
+  #    `doctor --fix`, which costs one restart and ~4.5 min to healthy
+  #    (2026-10-25 dev run 6). Soaking from `up` failed that one-off migration
+  #    restart and rolled back a good upgrade. A real crash loop never settles,
+  #    so it still fails below once the deadline passes; a restart after
+  #    settling is still caught by the soak.
+  local settle_deadline pending h
+  settle_deadline=$(( $(date +%s) + ${SUNDAY_VERIFY_SETTLE_SECONDS:-600} ))
+  while :; do
+    pending=""
+    for c in $CONTAINERS; do
+      h="$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$c" 2>/dev/null || echo 'absent')"
+      case "$h" in starting|unhealthy) pending="${pending} ${c}" ;; esac
+    done
+    [ -z "$pending" ] && break
+    if [ "$(date +%s)" -ge "$settle_deadline" ]; then
+      warn "verify: health still not settled after ${SUNDAY_VERIFY_SETTLE_SECONDS:-600}s:${pending}"
+      break
+    fi
+    sleep "${SUNDAY_VERIFY_POLL_SECONDS:-10}"
+  done
+
   # 3. Restart-loop detection across a soak window. A container can be
   #    "running" at the instant you look and still be crash-looping; the
   #    procedure requires it to hold steady for at least 2 minutes.
