@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Community 104"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Community_104
 ---
 
 # sanitizer.py
@@ -14,15 +14,16 @@ tags:
 ## Connections
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `contains` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `contains` [EXTRACTED]
+- [[README_127]] - `references` [EXTRACTED]
 - [[RedactionDetail]] - `imports` [EXTRACTED]
-- [[RedactionResult_2]] - `imports` [EXTRACTED]
+- [[RedactionResult]] - `imports` [EXTRACTED]
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
-- [[gatewayREADME]] - `references` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[models.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Community_104

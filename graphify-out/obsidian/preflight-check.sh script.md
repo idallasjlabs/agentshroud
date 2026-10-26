@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "ResourceUsage"
+community: "Community 933"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceUsage
+  - community/Community_933
 ---
 
 # preflight-check.sh script
 
 ## Connections
-- [[check()_12]] - `calls` [EXTRACTED]
+- [[check()_1]] - `calls` [EXTRACTED]
 - [[preflight-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/EXTRACTED #community/Community_933

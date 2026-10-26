@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "is_overloaded"
+community: "Community 134"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/is_overloaded
+  - community/Community_134
 ---
 
 # resolve_model()
@@ -34,4 +34,4 @@ tags:
 - [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - `calls` [INFERRED]
 - [[test_unknown_mode_treated_as_cloud()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/is_overloaded
+#graphify/code #graphify/INFERRED #community/Community_134

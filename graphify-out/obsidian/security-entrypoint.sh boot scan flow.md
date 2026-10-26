@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "run-standalone.sh"
+community: "Community 2264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh
+  - community/Community_2264
 ---
 
 # security-entrypoint.sh boot scan flow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gateway-start.sh entrypoint]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh
+#graphify/code #graphify/EXTRACTED #community/Community_2264

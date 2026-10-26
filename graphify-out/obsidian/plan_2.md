@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
 type: "document"
-community: "telemetry-check.sh (2)"
+community: "Community 1547"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telemetry-checksh_2
+  - community/Community_1547
 ---
 
 # plan
 
 ## Connections
-- [[agentshroud-blueteamreferencessteve-hay-plan]] - `contains` [EXTRACTED]
+- [[steve-hay-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telemetry-checksh_2
+#graphify/document #graphify/EXTRACTED #community/Community_1547

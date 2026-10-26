@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/run-integration.sh"
 type: "code"
-community: "run-integration.sh (2)"
+community: "Community 2308"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-integrationsh_2
+  - community/Community_2308
 ---
 
 # run-integration.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-integration.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-integrationsh_2
+#graphify/code #graphify/EXTRACTED #community/Community_2308

@@ -1,23 +1,45 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L356"
+community: "Community 72"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/Community_72
 ---
 
 # run()
 
 ## Connections
-- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code._1]] - `rationale_for` [EXTRACTED]
-- [[_build_arg_parser()_1]] - `calls` [EXTRACTED]
-- [[add_comment()_1]] - `calls` [EXTRACTED]
-- [[create_issue()_1]] - `calls` [EXTRACTED]
-- [[fetch_credentials()_1]] - `calls` [EXTRACTED]
-- [[hermesworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[transition_issue()_1]] - `calls` [EXTRACTED]
+- [[ApprovalHardening]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[Path_16]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[fail()_2]] - `calls` [EXTRACTED]
+- [[ok()]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Community_72

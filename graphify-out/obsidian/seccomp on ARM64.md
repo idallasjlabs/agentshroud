@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "MCPAuditTrail"
+community: "Community 451"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/Community_451
 ---
 
 # seccomp on ARM64
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pi-Specific Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/document #graphify/EXTRACTED #community/Community_451

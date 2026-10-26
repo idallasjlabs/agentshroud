@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "Community 18"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Community_18
 ---
 
 # project()
@@ -15,4 +15,4 @@ tags:
 - [[ProjectConfig]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Community_18

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "SECURITY.md"
 type: "document"
-community: "Hermes Dev Workflow (HDEV) Skill"
-location: "L29"
+community: "Community 394"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/Community_394
 ---
 
-# Security
+# SECURITY.md
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
+- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/document #graphify/EXTRACTED #community/Community_394

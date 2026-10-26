@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
+community: "Community 75"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/Community_75
 ---
 
 # progressive_lockdown.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 - [[LockdownAction]] - `contains` [EXTRACTED]
 - [[LockdownLevel]] - `contains` [EXTRACTED]
 - [[ProgressiveLockdown]] - `contains` [EXTRACTED]
 - [[UserLockdownState]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/Community_75

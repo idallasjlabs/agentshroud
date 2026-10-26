@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+community: "Community 593"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Community_593
 ---
 
 # sanitize(content)
 
 ## Connections
-- [[Function Details_14]] - `contains` [EXTRACTED]
+- [[Function Details_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Community_593

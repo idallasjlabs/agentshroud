@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
+community: "Community 947"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
+  - community/Community_947
 ---
 
 # sanitizer.py (PII redaction, Presidio/regex)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer (Presidio + Regex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
+#graphify/image #graphify/EXTRACTED #community/Community_947

@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "InjectionAction"
+community: "Community 331"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/Community_331
 ---
 
 # phase-review-p0-2026-02-23.md
 
 ## Connections
+- [[Phase Review P0 - Core Pipeline Wiring]] - `contains` [EXTRACTED]
 - [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/InjectionAction
+#graphify/document #graphify/EXTRACTED #community/Community_331

@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "browser-extension/options.js"
 type: "code"
-community: "Function Details (5)"
-location: "L476"
+community: "Community 2037"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_5
+  - community/Community_2037
 ---
 
 # restore()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_5
+#graphify/code #graphify/EXTRACTED #community/Community_2037

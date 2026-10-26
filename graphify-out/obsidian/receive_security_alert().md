@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "WebContentScanner"
+community: "Community 6"
 location: "L1701"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/Community_6
 ---
 
 # receive_security_alert()
 
 ## Connections
-- [[dot-test_alerts_accepted_from_localhost()]] - `calls` [EXTRACTED]
-- [[Receive structured security alerts from gateway-internal scripts. Called by…]] - `rationale_for` [EXTRACTED]
+- [[.test_alerts_accepted_from_localhost()]] - `calls` [EXTRACTED]
+- [[Receive structured security alerts from gateway-internal scripts.      Called by]] - `rationale_for` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post]] - `references` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/Community_6

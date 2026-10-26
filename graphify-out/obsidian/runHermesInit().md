@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "TestWebAPI"
+community: "Community 682"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/Community_682
 ---
 
 # runHermesInit()
@@ -16,4 +16,4 @@ tags:
 - [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 - [[writeStub()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebAPI
+#graphify/code #graphify/EXTRACTED #community/Community_682

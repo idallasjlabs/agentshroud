@@ -1,32 +1,29 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
-type: "code"
-community: "DelegationManager"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+type: "document"
+community: "Community 617"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_617
 ---
 
-# prompt_guard.py
+# prompt_guard.py.md
 
 ## Connections
-- [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[FR3 System Integrity]] - `references` [EXTRACTED]
-- [[PatternRule]] - `contains` [EXTRACTED]
-- [[Prompt Guard Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[PromptGuard_1]] - `contains` [EXTRACTED]
-- [[ScanResult_1]] - `contains` [EXTRACTED]
-- [[SystemPromptFingerprint]] - `contains` [EXTRACTED]
-- [[ThreatAction]] - `contains` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [INFERRED]
-- [[detect_base64_payloads()]] - `imports` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
-- [[multi_turn_tracker.py]] - `semantically_similar_to` [INFERRED]
-- [[normalize_input()]] - `imports` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_multilingual_injection.py]] - `references` [EXTRACTED]
+- [[Configuration_21]] - `contains` [EXTRACTED]
+- [[Dependencies_49]] - `contains` [EXTRACTED]
+- [[Environment Variables_15]] - `contains` [EXTRACTED]
+- [[Function Details_45]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_48]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_10]] - `contains` [EXTRACTED]
+- [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
+- [[Purpose_166]] - `contains` [EXTRACTED]
+- [[Related_52]] - `contains` [EXTRACTED]
+- [[Responsibilities_50]] - `contains` [EXTRACTED]
+- [[SOUL_2]] - `references` [EXTRACTED]
+- [[Threat Model_21]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_617

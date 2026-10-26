@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "Community 30"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/Community_30
 ---
 
 # queue()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/Community_30

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "ApprovalQueueConfig (5)"
+community: "Community 153"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_5
+  - community/Community_153
 ---
 
 # phase-review-2026-02-23.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_5
+#graphify/document #graphify/EXTRACTED #community/Community_153

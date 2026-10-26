@@ -1,24 +1,19 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Security Review (SEC)"
-location: "L10"
+community: "Community 253"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/Community_253
 ---
 
-# pytest.ini
+# pytest.ini.md
 
 ## Connections
-- [[Contents]] - `contains` [EXTRACTED]
-- [[Coverage Requirements]] - `contains` [EXTRACTED]
-- [[Purpose_2]] - `contains` [EXTRACTED]
-- [[Related Notes_2]] - `contains` [EXTRACTED]
-- [[Test Execution]] - `contains` [EXTRACTED]
-- [[Test Locations]] - `contains` [EXTRACTED]
-- [[Why `tmppytest_cache`]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[ci-workflows]] - `references` [EXTRACTED]
 - [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Community_253

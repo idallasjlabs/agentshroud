@@ -1,16 +1,13 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "Community 2490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_2490
 ---
 
 # pick_latest_hermes_tag
 
-## Connections
-- [[test_discover_upstream_versions.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/Community_2490

@@ -1,20 +1,20 @@
 ---
-source_file: ".mcp.json"
+source_file: ".omp/mcp.json"
 type: "code"
-community: "Mac App Discovery Skill"
+community: "Community 404"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/Community_404
 ---
 
 # safari
 
 ## Connections
-- [[dot-mcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx_2]] - `references` [EXTRACTED]
-- [[PATH_43]] - `requires_env` [EXTRACTED]
-- [[safari-mcp_2]] - `references` [EXTRACTED]
+- [[opthomebrewbinnpx_3]] - `references` [EXTRACTED]
+- [[PATH_3]] - `requires_env` [EXTRACTED]
+- [[mcp.json_2]] - `contains` [EXTRACTED]
+- [[safari-mcp_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/code #graphify/EXTRACTED #community/Community_404

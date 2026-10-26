@@ -1,20 +1,20 @@
 ---
-source_file: ".cursor/mcp.json"
+source_file: ".github/mcp.json"
 type: "code"
-community: ".cursor/mcp.json (2)"
+community: "Community 402"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cursor/mcpjson_2
+  - community/Community_402
 ---
 
 # safari
 
 ## Connections
-- [[dot-cursormcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx]] - `references` [EXTRACTED]
-- [[PATH_41]] - `requires_env` [EXTRACTED]
-- [[safari-mcp]] - `references` [EXTRACTED]
+- [[opthomebrewbinnpx_1]] - `references` [EXTRACTED]
+- [[PATH_1]] - `requires_env` [EXTRACTED]
+- [[mcp.json_1]] - `contains` [EXTRACTED]
+- [[safari-mcp_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cursor/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/Community_402

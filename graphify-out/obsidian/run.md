@@ -1,20 +1,17 @@
 ---
-source_file: "docker/wazuh/services.d/wazuh-watchdog/run"
-type: "code"
-community: "run (2)"
-location: "L1"
+source_file: "skills/openclaw/openai-image-gen/SKILL.md"
+type: "document"
+community: "Community 382"
+location: "L30"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/run_2
+  - community/Community_382
 ---
 
-# run
+# Run
 
 ## Connections
-- [[log()_1]] - `defines` [EXTRACTED]
-- [[missing()]] - `defines` [EXTRACTED]
-- [[restart()]] - `defines` [EXTRACTED]
-- [[run script]] - `contains` [EXTRACTED]
+- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_2
+#graphify/document #graphify/EXTRACTED #community/Community_382

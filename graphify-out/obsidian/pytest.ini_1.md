@@ -1,19 +1,24 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "EgressFilter"
-location: "L1"
+community: "Community 253"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_253
 ---
 
-# pytest.ini.md
+# pytest.ini
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[ci-workflows]] - `references` [EXTRACTED]
+- [[Contents]] - `contains` [EXTRACTED]
+- [[Coverage Requirements_8]] - `contains` [EXTRACTED]
+- [[Purpose_180]] - `contains` [EXTRACTED]
+- [[Related Notes_24]] - `contains` [EXTRACTED]
+- [[Test Execution]] - `contains` [EXTRACTED]
+- [[Test Locations]] - `contains` [EXTRACTED]
+- [[Why `tmppytest_cache`]] - `contains` [EXTRACTED]
 - [[pytest.ini]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_253

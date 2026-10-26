@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
+community: "Community 10"
 location: "L2045"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_10
 ---
 
 # run_scanner()
 
 ## Connections
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[ScanRequest]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[ScanRequest_1]] - `references` [EXTRACTED]
 - [[_launch_scan_background()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_10

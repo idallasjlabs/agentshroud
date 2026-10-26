@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "Community 70"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/Community_70
 ---
 
 # queue.py
@@ -18,13 +18,13 @@ tags:
 - [[ApprovalQueue]] - `contains` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAGuard.verify()]] - `calls` [EXTRACTED]
-- [[gatewayREADME]] - `references` [EXTRACTED]
-- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
-- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[README_127]] - `references` [EXTRACTED]
+- [[config.py]] - `imports_from` [EXTRACTED]
 - [[mfa_guard.py]] - `imports_from` [EXTRACTED]
+- [[models.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/Community_70

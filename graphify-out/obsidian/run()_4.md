@@ -1,27 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "TestEgressTelegramNotify"
-location: "L281"
+community: "Community 1116"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Community_1116
 ---
 
 # run()
 
 ## Connections
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - `rationale_for` [EXTRACTED]
-- [[_git_commits_last_week()]] - `calls` [EXTRACTED]
-- [[build_comment_payload()_2]] - `calls` [EXTRACTED]
-- [[build_weekly_summary()]] - `calls` [EXTRACTED]
-- [[extract_scrum_items()]] - `calls` [EXTRACTED]
-- [[fetch_op_secret()_2]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket run()]] - `semantically_similar_to` [INFERRED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[post_comment()]] - `calls` [EXTRACTED]
-- [[resolve_cloud_id()_2]] - `calls` [EXTRACTED]
-- [[test_jira_weekly_review.py]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[deploy_ref()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/Community_1116

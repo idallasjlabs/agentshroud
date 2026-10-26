@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "ApprovalQueueConfig (3)"
-location: "L655"
+community: "Community 87"
+location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_3
+  - community/Community_87
 ---
 
 # restart_service()
 
 ## Connections
-- [[JSONResponse]] - `references` [EXTRACTED]
-- [[SCLCaller]] - `references` [EXTRACTED]
-- [[ServiceActionRequest]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[Restart a service container.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[get()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_3
+#graphify/code #graphify/EXTRACTED #community/Community_87

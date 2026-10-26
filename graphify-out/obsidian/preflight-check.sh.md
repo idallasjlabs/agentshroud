@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "ResourceUsage"
+community: "Community 933"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ResourceUsage
+  - graphify/INFERRED
+  - community/Community_933
 ---
 
 # preflight-check.sh
 
 ## Connections
-- [[check()_12]] - `defines` [EXTRACTED]
+- [[check()_1]] - `defines` [EXTRACTED]
 - [[infra-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[preflight-check.sh script]] - `contains` [EXTRACTED]
 - [[verify-proxy.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/INFERRED #community/Community_933

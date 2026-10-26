@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "PIIConfig"
+community: "Community 126"
 location: "L513"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/Community_126
 ---
 
 # phase_baseline()
@@ -17,13 +17,12 @@ tags:
 - [[Prove the outcome, never the steps (CLAUDE.md 0.0)]] - `references` [EXTRACTED]
 - [[_attempt_rollback()]] - `shares_data_with` [EXTRACTED]
 - [[_mutating()]] - `calls` [EXTRACTED]
-- [[_prune_superseded_images()]] - `shares_data_with` [INFERRED]
 - [[asb up fullhermes]] - `references` [EXTRACTED]
-- [[die()_1]] - `calls` [EXTRACTED]
-- [[err()]] - `calls` [EXTRACTED]
-- [[log()_2]] - `calls` [EXTRACTED]
+- [[die()_2]] - `calls` [EXTRACTED]
+- [[err()_1]] - `calls` [EXTRACTED]
+- [[log()_9]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/Community_126

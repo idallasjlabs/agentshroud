@@ -1,18 +1,21 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "browser/scripts/browse.py"
-location: "L780"
+community: "Community 522"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/Community_522
 ---
 
 # render()
 
 ## Connections
-- [[_ghsa_entry_to_py()]] - `calls` [EXTRACTED]
-- [[append_ghsa_entries()]] - `contains` [EXTRACTED]
+- [[_inline()]] - `calls` [EXTRACTED]
+- [[_insert_into_list()]] - `calls` [INFERRED]
+- [[_render_table()]] - `calls` [EXTRACTED]
+- [[main()_4]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/EXTRACTED #community/Community_522

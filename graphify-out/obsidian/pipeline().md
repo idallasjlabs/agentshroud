@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L69"
+community: "Community 43"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_43
 ---
 
 # pipeline()
 
 ## Connections
-- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[test_redteam_probes.py]] - `contains` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/Community_43

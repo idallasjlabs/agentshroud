@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "Community 62"
 location: "L453"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/Community_62
 ---
 
 # serve_dashboard()
 
 ## Connections
 - [[JSONResponse]] - `calls` [INFERRED]
-- [[Path_55]] - `calls` [EXTRACTED]
-- [[Request_7]] - `references` [EXTRACTED]
+- [[Path_2]] - `calls` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - `rationale_for` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/Community_62

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
-community: "ServiceManager"
+community: "Community 20"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/Community_20
 ---
 
 # paused feature: ContributorRecord.paused reflects the persisted paused set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPausedFieldWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/Community_20

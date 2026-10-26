@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "concept"
-community: "test_ptt_state.c"
+community: "Community 339"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/Community_339
 ---
 
 # raspberrypi (per openclaw-identity.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/concept #graphify/EXTRACTED #community/Community_339

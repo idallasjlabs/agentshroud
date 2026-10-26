@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "test_collaborator_greeter.py (2)"
+community: "Community 915"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy_2
+  - community/Community_915
 ---
 
 # pii_sanitizer module (disabled — false positives)
@@ -15,4 +15,4 @@ tags:
 - [[PII Sanitizer (user-facing description)]] - `semantically_similar_to` [INFERRED]
 - [[Steve Hay's External Reviewer Findings]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_collaborator_greeterpy_2
+#graphify/concept #graphify/EXTRACTED #community/Community_915

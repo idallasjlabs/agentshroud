@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Skill: Project Management (PM) (3)"
+community: "Community 131"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/Community_131
 ---
 
 # save_report creates the log directory if it does not exist.
 
 ## Connections
-- [[dot-test_log_dir_created_if_missing()]] - `rationale_for` [EXTRACTED]
+- [[.test_log_dir_created_if_missing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_131

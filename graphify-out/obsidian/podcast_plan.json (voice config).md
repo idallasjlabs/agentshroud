@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "Behavioral Pattern Analysis"
+community: "Community 1727"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Behavioral_Pattern_Analysis
+  - community/Community_1727
 ---
 
 # podcast_plan.json (voice config)
 
-#graphify/concept #graphify/EXTRACTED #community/Behavioral_Pattern_Analysis
+#graphify/concept #graphify/EXTRACTED #community/Community_1727

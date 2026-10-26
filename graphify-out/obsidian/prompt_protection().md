@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "Mode B — Comprehensive review sweep (3)"
+community: "Community 532"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep_3
+  - community/Community_532
 ---
 
 # prompt_protection()
@@ -16,4 +16,4 @@ tags:
 - [[PromptProtection]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_3
+#graphify/code #graphify/EXTRACTED #community/Community_532

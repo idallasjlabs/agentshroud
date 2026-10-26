@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "Technical Specification (2)"
-location: "L34"
+source_file: ".opencode/agents/icloud.md"
+type: "document"
+community: "Community 706"
+location: "L136"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/Community_706
 ---
 
-# security
+# Security
 
 ## Connections
-- [[auditLogging]] - `contains` [EXTRACTED]
-- [[filesystemAccess]] - `contains` [EXTRACTED]
-- [[networkAccess]] - `contains` [EXTRACTED]
-- [[requiresApproval]] - `contains` [EXTRACTED]
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[iCloud Services_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/document #graphify/EXTRACTED #community/Community_706

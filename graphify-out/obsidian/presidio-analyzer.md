@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
+community: "Community 1015"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_1015
 ---
 
 # presidio-analyzer.md
@@ -15,6 +15,6 @@ tags:
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
 - [[Presidio Analyzer]] - `contains` [EXTRACTED]
-- [[spacy_1]] - `references` [EXTRACTED]
+- [[spacy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_1015

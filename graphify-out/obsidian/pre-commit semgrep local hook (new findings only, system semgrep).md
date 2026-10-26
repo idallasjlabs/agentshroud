@@ -1,14 +1,14 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "code"
-community: "SCRUM-154 — blocking response.read() froze the gateway event loop"
+community: "Community 1868"
 location: "94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCRUM-154__blocking_responseread_froze_the_gateway_event_loop
+  - community/Community_1868
 ---
 
 # pre-commit semgrep local hook (new findings only, system semgrep)
 
-#graphify/code #graphify/EXTRACTED #community/SCRUM-154__blocking_responseread_froze_the_gateway_event_loop
+#graphify/code #graphify/EXTRACTED #community/Community_1868

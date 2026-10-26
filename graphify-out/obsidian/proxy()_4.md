@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "MCPToolCall"
-location: "L80"
+community: "Community 27"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/Community_27
 ---
 
 # proxy()
 
 ## Connections
-- [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPInspector_1]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxy_1]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/Community_27

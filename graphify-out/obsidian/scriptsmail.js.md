@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "concept"
-community: "test_gemini_openai_translator.py (3)"
+community: "Community 1092"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy_3
+  - community/Community_1092
 ---
 
 # scripts/mail.js
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_gemini_openai_translatorpy_3
+#graphify/concept #graphify/EXTRACTED #community/Community_1092

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "rationale"
-community: "GroupConfig"
+community: "Community 104"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/Community_104
 ---
 
 # resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolve_config_path_explicit_and_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupConfig
+#graphify/rationale #graphify/EXTRACTED #community/Community_104
