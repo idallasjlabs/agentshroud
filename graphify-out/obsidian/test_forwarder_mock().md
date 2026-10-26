@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 43"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_43
 ---
 
 # test_forwarder_mock()
 
 ## Connections
-- [[dot-forward()_4]] - `calls` [EXTRACTED]
+- [[.forward()_4]] - `calls` [EXTRACTED]
 - [[Verify forwarder mock works correctly.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_43

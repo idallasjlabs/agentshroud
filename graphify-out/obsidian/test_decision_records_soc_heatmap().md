@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "Community 35"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/Community_35
 ---
 
 # test_decision_records_soc_heatmap()
@@ -19,4 +19,4 @@ tags:
 - [[evaluate() records the decision for the SOC module heat-map.]] - `rationale_for` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/Community_35

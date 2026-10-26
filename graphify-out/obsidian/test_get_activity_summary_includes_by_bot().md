@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "DELIVERABLE 1 — Domain-by-Domain Assessment"
+community: "Community 99"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DELIVERABLE_1__Domain-by-Domain_Assessment
+  - community/Community_99
 ---
 
 # test_get_activity_summary_includes_by_bot()
@@ -15,4 +15,4 @@ tags:
 - [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DELIVERABLE_1__Domain-by-Domain_Assessment
+#graphify/code #graphify/EXTRACTED #community/Community_99

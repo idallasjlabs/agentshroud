@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "Community 43"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Community_43
 ---
 
 # test_e2e_proxy.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[EgressFilter]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
-- [[PIISanitizer_3]] - `imports` [EXTRACTED]
+- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
-- [[ScanRequest_1]] - `imports` [EXTRACTED]
-- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[ScanRequest]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
@@ -33,10 +33,10 @@ tags:
 - [[egress_filter()]] - `contains` [EXTRACTED]
 - [[forwarder()_1]] - `contains` [EXTRACTED]
 - [[pii_config()]] - `contains` [EXTRACTED]
-- [[pipeline()_1]] - `contains` [EXTRACTED]
-- [[prompt_guard()_2]] - `contains` [EXTRACTED]
+- [[pipeline()]] - `contains` [EXTRACTED]
+- [[prompt_guard()]] - `contains` [EXTRACTED]
 - [[run_full()]] - `references` [EXTRACTED]
-- [[sanitizer()_3]] - `contains` [EXTRACTED]
+- [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_empty_valid()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_integrity()]] - `contains` [EXTRACTED]
@@ -64,6 +64,6 @@ tags:
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `contains` [EXTRACTED]
 - [[test_webhook_receiver_processes()]] - `contains` [EXTRACTED]
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
-- [[trust_manager()_1]] - `contains` [EXTRACTED]
+- [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/Community_43

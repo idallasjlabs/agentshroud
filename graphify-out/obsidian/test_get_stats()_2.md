@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_event_bus.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
-location: "L80"
+community: "Community 7"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/Community_7
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
-- [[test_event_bus.py]] - `contains` [EXTRACTED]
+- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
+- [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/Community_7

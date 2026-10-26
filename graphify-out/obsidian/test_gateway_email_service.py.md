@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "Community 201"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Community_201
 ---
 
 # test_gateway_email_service.py
 
 ## Connections
-- [[GatewayEmailService_1]] - `imports` [EXTRACTED]
+- [[GatewayEmailService]] - `imports` [EXTRACTED]
 - [[TestBuildMessage]] - `contains` [EXTRACTED]
 - [[TestEndpointUsesService]] - `contains` [EXTRACTED]
 - [[TestSend]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/Community_201

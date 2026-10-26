@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "Community 431"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/Community_431
 ---
 
 # test_egress_monitor.py
@@ -24,7 +24,7 @@ tags:
 - [[TestEventRecording]] - `contains` [EXTRACTED]
 - [[TestSlowDripDetection]] - `contains` [EXTRACTED]
 - [[default_config()_2]] - `contains` [EXTRACTED]
-- [[monitor()_1]] - `contains` [EXTRACTED]
+- [[monitor()]] - `contains` [EXTRACTED]
 - [[monitor_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/Community_431

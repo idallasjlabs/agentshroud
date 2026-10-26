@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Telegram & Gmail Integration Guide"
+community: "Community 245"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/Community_245
 ---
 
 # test_docker_compose.py
@@ -19,4 +19,4 @@ tags:
 - [[_load_compose()]] - `contains` [EXTRACTED]
 - [[_load_compose_raw()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/code #graphify/EXTRACTED #community/Community_245

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "Community 88"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/Community_88
 ---
 
 # test_cross_bot_trust_ledger.py
@@ -26,8 +26,8 @@ tags:
 - [[TrustDecayPolicy]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[hermes_tm()]] - `contains` [EXTRACTED]
-- [[ledger()_2]] - `contains` [EXTRACTED]
+- [[ledger()_1]] - `contains` [EXTRACTED]
 - [[openclaw_tm()]] - `contains` [EXTRACTED]
 - [[policy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/Community_88

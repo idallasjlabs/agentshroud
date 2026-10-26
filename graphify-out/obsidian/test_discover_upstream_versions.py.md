@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "Community 48"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/Community_48
 ---
 
 # test_discover_upstream_versions.py
@@ -21,10 +21,6 @@ tags:
 - [[TestPickLatestHermesTag]] - `contains` [EXTRACTED]
 - [[TestPickLatestStable]] - `contains` [EXTRACTED]
 - [[TestRetry]] - `contains` [EXTRACTED]
-- [[Tests for scriptsdiscover_upstream_versions.py — latest-release discovery.…]] - `rationale_for` [EXTRACTED]
-- [[discover_upstream_versions.py]] - `imports_from` [EXTRACTED]
-- [[is_stable]] - `references` [EXTRACTED]
-- [[pick_latest_hermes_tag]] - `references` [EXTRACTED]
-- [[pick_latest_stable]] - `references` [EXTRACTED]
+- [[Tests for scriptsdiscover_upstream_versions.py — latest-release discovery.  Cop]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/Community_48
