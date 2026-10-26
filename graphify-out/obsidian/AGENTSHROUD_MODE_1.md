@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "Community 73"
+community: "Community 516"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/Community_516
 ---
 
 # AGENTSHROUD_MODE
@@ -21,4 +21,4 @@ tags:
 - [[Usage_142]] - `contains` [EXTRACTED]
 - [[Values_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/Community_516

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 31"
+community: "Community 0"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Community_0
 ---
 
 # Agent cannot write to gateway Python source files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_gateway_source_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

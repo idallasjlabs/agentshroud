@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 794"
+community: "Community 60"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/Community_60
 ---
 
 # A user who is NOT a member of the target group cannot poison its memory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_member_write_is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_794
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

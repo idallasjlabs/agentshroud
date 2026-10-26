@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 477"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_477
 ---
 
 # AES-256-GCM encrypted storage with key derivation and rotation support.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EncryptedStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_477
