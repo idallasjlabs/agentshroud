@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 143"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_143
 ---
 
 # limit_request_body returns a clean 400 when the client drops mid-upload.      Wi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_limit_request_body_client_disconnect_returns_clean_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

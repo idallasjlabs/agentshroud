@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 143"
+community: "Community 79"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/Community_79
 ---
 
 # session_manager.py
@@ -18,4 +18,4 @@ tags:
 - [[UserSessionManager]] - `contains` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/Community_79

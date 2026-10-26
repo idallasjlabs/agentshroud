@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 127"
+community: "Community 762"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/Community_762
 ---
 
 # _make_report()
@@ -28,4 +28,4 @@ tags:
 - [[Build a minimal parsed Trivy report.]] - `rationale_for` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/EXTRACTED #community/Community_762

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 69"
+community: "Community 917"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_917
 ---
 
 # _entry()
@@ -28,4 +28,4 @@ tags:
 - [[.test_unknown_class_not_source_fixed_stays_under_review()]] - `calls` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/Community_917

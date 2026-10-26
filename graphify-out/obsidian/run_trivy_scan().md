@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 6"
+community: "Community 978"
 location: "L1525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_978
 ---
 
 # run_trivy_scan()
@@ -18,4 +18,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[run_all_scanners()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_978

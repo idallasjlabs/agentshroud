@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 162"
+community: "Community 420"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Community_420
 ---
 
 # config_integrity.py
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_162
+#graphify/code #graphify/EXTRACTED #community/Community_420

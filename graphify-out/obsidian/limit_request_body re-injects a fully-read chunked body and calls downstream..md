@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 143"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_143
 ---
 
 # limit_request_body re-injects a fully-read chunked body and calls downstream.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

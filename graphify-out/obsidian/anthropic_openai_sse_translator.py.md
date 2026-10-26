@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
 type: "code"
-community: "Community 361"
+community: "Community 360"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_361
+  - community/Community_360
 ---
 
 # anthropic_openai_sse_translator.py
@@ -17,4 +17,4 @@ tags:
 - [[_sse()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_361
+#graphify/code #graphify/EXTRACTED #community/Community_360

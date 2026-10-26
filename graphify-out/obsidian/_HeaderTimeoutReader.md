@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 81"
+community: "Community 1148"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_1148
 ---
 
 # _HeaderTimeoutReader
@@ -21,4 +21,4 @@ tags:
 - [[test_header_read_timeout_returns_408()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/Community_1148

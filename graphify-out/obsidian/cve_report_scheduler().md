@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 127"
+community: "Community 736"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/Community_736
 ---
 
 # cve_report_scheduler()
@@ -18,4 +18,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/EXTRACTED #community/Community_736

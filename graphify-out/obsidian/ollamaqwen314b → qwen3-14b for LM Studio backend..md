@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2317"
+community: "Community 208"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2317
+  - community/Community_208
 ---
 
 # ollama/qwen3:14b → qwen3-14b for LM Studio backend.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2317
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

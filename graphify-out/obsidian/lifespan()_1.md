@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 24"
+community: "Community 104"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_104
 ---
 
 # lifespan()
@@ -95,4 +95,4 @@ tags:
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_104

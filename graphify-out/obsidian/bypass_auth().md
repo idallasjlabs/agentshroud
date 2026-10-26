@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Community 34"
+community: "Community 2154"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_2154
 ---
 
 # bypass_auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/Community_2154

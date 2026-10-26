@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/dashboard.html"
 type: "code"
-community: "Community 49"
+community: "Community 166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_166
 ---
 
 # dashboard.html (Control Center Template)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Community_166

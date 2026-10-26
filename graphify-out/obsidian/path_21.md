@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 489"
+community: "Community 83"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Community_83
 ---
 
 # Path
@@ -18,4 +18,4 @@ tags:
 - [[plan_deploy()]] - `references` [EXTRACTED]
 - [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_489
+#graphify/code #graphify/EXTRACTED #community/Community_83

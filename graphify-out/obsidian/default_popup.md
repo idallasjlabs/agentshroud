@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Community 2184"
+community: "Community 440"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2184
+  - community/Community_440
 ---
 
 # default_popup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[action]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2184
+#graphify/code #graphify/EXTRACTED #community/Community_440

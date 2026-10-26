@@ -28,7 +28,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Community 383]]
 - 4 edges to [[_COMMUNITY_Community 1163]]
-- 1 edge to [[_COMMUNITY_Community 181]]
+- 1 edge to [[_COMMUNITY_Community 2030]]
 
 ## Top bridge nodes
 - [[test_egress_callback_stale.py]] - degree 11, connects to 2 communities

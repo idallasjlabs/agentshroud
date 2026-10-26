@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 143"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_143
 ---
 
 # security_headers_middleware adds expected security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_security_headers_middleware_normal_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

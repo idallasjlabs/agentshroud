@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 394"
+community: "Community 130"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_130
 ---
 
 # SECURITY.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_130

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Community 84"
+community: "Community 112"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_112
 ---
 
 # canary_pipeline()
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_112

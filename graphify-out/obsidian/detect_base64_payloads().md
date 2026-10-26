@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Community 154"
+community: "Community 22"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_22
 ---
 
 # detect_base64_payloads()
@@ -18,4 +18,4 @@ tags:
 - [[input_normalizer.py]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/Community_22

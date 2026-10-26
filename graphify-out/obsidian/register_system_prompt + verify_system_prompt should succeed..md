@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Community 84"
+community: "Community 22"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_22
 ---
 
 # register_system_prompt + verify_system_prompt should succeed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_register_and_verify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

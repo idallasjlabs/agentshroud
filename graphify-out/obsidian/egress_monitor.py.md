@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 431"
+community: "Community 72"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/Community_72
 ---
 
 # egress_monitor.py
@@ -25,4 +25,4 @@ tags:
 - [[resource_guard.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_431
+#graphify/code #graphify/EXTRACTED #community/Community_72

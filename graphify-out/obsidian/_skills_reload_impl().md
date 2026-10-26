@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 83"
+community: "Community 49"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/Community_49
 ---
 
 # _skills_reload_impl()
@@ -21,4 +21,4 @@ tags:
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 - [[skills_reload()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/Community_49

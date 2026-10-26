@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Community 72"
+community: "Community 26"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_26
 ---
 
 # run()
@@ -42,4 +42,4 @@ tags:
 - [[ok()]] - `calls` [EXTRACTED]
 - [[warn()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_26

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 61"
+community: "Community 33"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/Community_33
 ---
 
 # group_role_resolver()
@@ -15,4 +15,4 @@ tags:
 - [[GroupRoleResolver]] - `calls` [EXTRACTED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/Community_33

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 17"
+community: "Community 162"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_162
 ---
 
 # http_proxy.py
@@ -29,4 +29,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_17
+#graphify/code #graphify/EXTRACTED #community/Community_162

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "Community 8"
+community: "Community 33"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/Community_33
 ---
 
 # group_rbac.py
@@ -16,4 +16,4 @@ tags:
 - [[GroupRole]] - `contains` [EXTRACTED]
 - [[GroupRoleResolver]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/Community_33

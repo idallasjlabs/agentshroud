@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 135"
+community: "Community 127"
 location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_127
 ---
 
 # check_upstream_cves()
@@ -26,4 +26,4 @@ tags:
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/Community_127

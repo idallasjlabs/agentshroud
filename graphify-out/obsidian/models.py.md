@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 6"
+community: "Community 254"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_254
 ---
 
 # models.py
@@ -41,4 +41,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_254

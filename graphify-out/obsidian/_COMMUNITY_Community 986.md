@@ -1,33 +1,29 @@
 ---
 type: community
-members: 20
+members: 16
 ---
 
 # Community 986
 
-**Members:** 20 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[.test_esrch_falls_through_to_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_3]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[PermissionError]] - code
-- [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckFluentBit]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckWazuhAgent]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_check_fluent_bit]] - code - gateway/soc/services.py
-- [[_check_wazuh_agent]] - code - gateway/soc/services.py
-- [[_patch_open()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.teardown_method()_1]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.teardown_method()_2]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_integrity_database_persistence()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Clean up test environment._1]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test integrity database saves and loads correctly.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,14 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 65]]
+- 6 edges to [[_COMMUNITY_Community 16]]
+- 5 edges to [[_COMMUNITY_Community 203]]
+- 1 edge to [[_COMMUNITY_Community 72]]
 
 ## Top bridge nodes
-- [[PermissionError]] - degree 6, connects to 3 communities
-- [[_patch_open()]] - degree 11, connects to 1 community
-- [[TestCheckWazuhAgent]] - degree 9, connects to 1 community
-- [[TestCheckFluentBit]] - degree 7, connects to 1 community
-- [[.test_running_via_proc_scan()]] - degree 3, connects to 1 community
+- [[TestMemoryIntegrityMonitor]] - degree 17, connects to 3 communities
+- [[.test_integrity_database_persistence()]] - degree 3, connects to 1 community
+- [[.teardown_method()_2]] - degree 3, connects to 1 community
