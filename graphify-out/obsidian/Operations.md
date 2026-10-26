@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Home.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L100"
+community: "Community 2081"
+location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_2081
 ---
 
 # Operations
 
 ## Connections
-- [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
+- [[11. Hard Guardrails (Non-Negotiables)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_2081

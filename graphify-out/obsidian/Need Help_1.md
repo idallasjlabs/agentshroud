@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: ".test_stranger_within_limit_triggers_approval_workflow()"
+community: "Community 327"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_stranger_within_limit_triggers_approval_workflow
+  - community/Community_327
 ---
 
 # Need Help?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
+#graphify/document #graphify/EXTRACTED #community/Community_327

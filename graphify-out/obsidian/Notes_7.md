@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "TestFabricatedSecurityNotice (2) (2)"
-location: "L78"
+community: "Community 576"
+location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice_2_2
+  - community/Community_576
 ---
 
 # Notes
 
 ## Connections
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice_2_2
+#graphify/document #graphify/EXTRACTED #community/Community_576

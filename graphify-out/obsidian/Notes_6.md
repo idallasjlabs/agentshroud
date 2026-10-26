@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "AgentShroud™ Telegram-Reported Issues"
-location: "L159"
+community: "Community 829"
+location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - community/Community_829
 ---
 
 # Notes
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/document #graphify/EXTRACTED #community/Community_829

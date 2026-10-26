@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "rationale"
-community: "Atlas — Curriculum Architect (3)"
+community: "Community 338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_3
+  - community/Community_338
 ---
 
 # No execute_code / python3 -c / pip install in Cron Mode
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `implements` [EXTRACTED]
 - [[Prompt jira-weekly-review]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_338

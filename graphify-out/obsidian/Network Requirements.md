@@ -1,17 +1,17 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "KillSwitchMonitor (2) (4)"
+community: "Community 107"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_2_4
+  - community/Community_107
 ---
 
 # Network Requirements
 
 ## Connections
-- [[Prerequisites]] - `contains` [EXTRACTED]
+- [[Prerequisites_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KillSwitchMonitor_2_4
+#graphify/document #graphify/EXTRACTED #community/Community_107

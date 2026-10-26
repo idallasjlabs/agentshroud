@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/jobs.json"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+community: "Community 247"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - graphify/INFERRED
+  - community/Community_247
 ---
 
 # OpenClaw Cron Jobs Configuration
@@ -14,4 +14,4 @@ tags:
 - [[S8 no raw sshagentshroud-bot@real Tailscale FQDN in baked bot config]] - `references` [EXTRACTED]
 - [[apply-patches.js]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/document #graphify/INFERRED #community/Community_247

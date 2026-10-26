@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Community 637"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Pre-Deployment_Checklist
+  - community/Community_637
 ---
 
 # OpenClaw Integration Guide (v0.9.0)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Pre-Deployment_Checklist
+#graphify/document #graphify/AMBIGUOUS #community/Community_637

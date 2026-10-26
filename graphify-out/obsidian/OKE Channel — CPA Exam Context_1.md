@@ -1,25 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
-type: "concept"
-community: "Skill: Data Validation (DATA-VAL) (3)"
+source_file: ".agents/skills/atlas/SKILL.md"
+type: "document"
+community: "Community 1169"
+location: "L112"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/Community_1169
 ---
 
 # OKE Channel — CPA Exam Context
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
-- [[Atlas — Curriculum Architect (SKILL)]] - `references` [EXTRACTED]
-- [[CPA Curriculum Frontmatter Addition]] - `contains` [EXTRACTED]
-- [[Coverage Types]] - `contains` [EXTRACTED]
-- [[Episode Closing]] - `contains` [EXTRACTED]
-- [[Exam Weight Integration]] - `contains` [EXTRACTED]
-- [[Gleim CPA Review Study Unit Mapping_1]] - `implements` [EXTRACTED]
-- [[Gleim CPA Review Study Unit Mapping]] - `references` [EXTRACTED]
-- [[Gleim Unit Mapping]] - `contains` [EXTRACTED]
-- [[Mandatory Acronym Expansion]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[CPA Curriculum Frontmatter Addition_1]] - `contains` [EXTRACTED]
+- [[Coverage Types_1]] - `contains` [EXTRACTED]
+- [[Episode Closing_1]] - `contains` [EXTRACTED]
+- [[Exam Weight Integration_1]] - `contains` [EXTRACTED]
+- [[Gleim Unit Mapping_1]] - `contains` [EXTRACTED]
+- [[Mandatory Acronym Expansion_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/Community_1169

@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_68
 ---
 
 # Only DENY egress decisions persisted to audit store (ALLOW caused 57M+ row/32GB unbounded growth)
 
 ## Connections
-- [[EgressFilter]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_68

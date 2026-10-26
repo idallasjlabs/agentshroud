@@ -1,19 +1,25 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "EgressFilter"
-location: "L1"
+community: "Community 690"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_690
 ---
 
-# openscap.md
+# OpenSCAP
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
-- [[clamav_1]] - `conceptually_related_to` [EXTRACTED]
-- [[trivy]] - `conceptually_related_to` [EXTRACTED]
+- [[Installation in Gateway]] - `contains` [EXTRACTED]
+- [[Integration Point]] - `contains` [EXTRACTED]
+- [[Integration Testing]] - `contains` [EXTRACTED]
+- [[Key Commands]] - `contains` [EXTRACTED]
+- [[Purpose_189]] - `contains` [EXTRACTED]
+- [[Related Notes_44]] - `contains` [EXTRACTED]
+- [[Relationship to Other Security Tools]] - `contains` [EXTRACTED]
+- [[What It Checks_1]] - `contains` [EXTRACTED]
+- [[openscap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_690

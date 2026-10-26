@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt"
 type: "document"
-community: "i-devsecops SKILL (stub)"
+community: "Community 1684"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-devsecops_SKILL_stub
+  - community/Community_1684
 ---
 
 # Newsletter: Personal AI Assistants
 
-#graphify/document #graphify/EXTRACTED #community/i-devsecops_SKILL_stub
+#graphify/document #graphify/EXTRACTED #community/Community_1684

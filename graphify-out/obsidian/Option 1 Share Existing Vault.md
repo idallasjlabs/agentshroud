@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "`SecurityPipeline`"
+community: "Community 620"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/Community_620
 ---
 
 # Option 1: Share Existing Vault
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Share the Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/Community_620

@@ -1,18 +1,14 @@
 ---
 source_file: "INCIDENT-2026-10-16-conduit-and-stability.md"
 type: "concept"
-community: "run-standalone.sh"
+community: "Community 2486"
 location: "43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run-standalonesh
+  - community/Community_2486
 ---
 
 # OpenClaw sandbox mode set off (named volume vs bind-mount mismatch)
 
-## Connections
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `references` [EXTRACTED]
-- [[openclaw service]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/run-standalonesh
+#graphify/concept #graphify/EXTRACTED #community/Community_2486

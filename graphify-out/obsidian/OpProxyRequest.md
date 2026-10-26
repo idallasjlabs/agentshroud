@@ -1,20 +1,34 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "export-bot-conversations.py"
+community: "Community 6"
 location: "L158"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - graphify/INFERRED
+  - community/Community_6
 ---
 
 # OpProxyRequest
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Request body for POST credentialsop-proxy.]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecResponse]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[main.py_2]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/INFERRED #community/Community_6

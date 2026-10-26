@@ -1,19 +1,19 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "agentshroud-gateway service (proxy mode)"
+community: "Community 742"
 location: "Section 10"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/agentshroud-gateway_service_proxy_mode
+  - community/Community_742
 ---
 
 # Normalized domain glossary (BESS, DAS, FODL, PKE/OKE, FOD)
 
 ## Connections
 - [[FODL — Fluence Operational Data Lakehouse]] - `references` [INFERRED]
-- [[LLM Operating Context — Isaiah Jefferson]] - `references` [EXTRACTED]
-- [[Zabbix MCP server_1]] - `conceptually_related_to` [INFERRED]
+- [[LLM Operating Context — Isaiah Jefferson_1]] - `references` [EXTRACTED]
+- [[Zabbix MCP server]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/agentshroud-gateway_service_proxy_mode
+#graphify/concept #graphify/INFERRED #community/Community_742

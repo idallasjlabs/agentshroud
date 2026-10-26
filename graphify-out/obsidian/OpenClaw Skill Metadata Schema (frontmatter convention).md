@@ -1,28 +1,28 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "concept"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
+community: "Community 428"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+  - community/Community_428
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter convention)
 
 ## Connections
-- [[slackSKILL]] - `conceptually_related_to` [INFERRED]
-- [[songseeSKILL]] - `conceptually_related_to` [INFERRED]
-- [[spotify-playerSKILL]] - `conceptually_related_to` [INFERRED]
-- [[summarizeSKILL]] - `conceptually_related_to` [INFERRED]
-- [[things-macSKILL]] - `conceptually_related_to` [INFERRED]
-- [[tmuxSKILL]] - `conceptually_related_to` [INFERRED]
-- [[trelloSKILL]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_239]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_240]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_241]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_242]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_243]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_244]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_245]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_246]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_247]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_248]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_249]] - `conceptually_related_to` [INFERRED]
+- [[SKILL_250]] - `conceptually_related_to` [INFERRED]
 - [[validate_skill()]] - `references` [EXTRACTED]
-- [[video-framesSKILL]] - `conceptually_related_to` [INFERRED]
-- [[voice-callSKILL]] - `conceptually_related_to` [INFERRED]
-- [[wacliSKILL]] - `conceptually_related_to` [INFERRED]
-- [[weatherSKILL]] - `conceptually_related_to` [INFERRED]
-- [[xurlSKILL]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+#graphify/concept #graphify/INFERRED #community/Community_428

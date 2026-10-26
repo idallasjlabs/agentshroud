@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "Community 2101"
 location: "L508"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Community_2101
 ---
 
 # One-time bootstrap (USB flash — do this when back at marvin)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_2101

@@ -1,21 +1,21 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
+community: "Community 491"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/Community_491
 ---
 
 # Network Security Entities
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[DNSQuery]] - `contains` [EXTRACTED]
+- [[DNSQuery_1]] - `contains` [EXTRACTED]
 - [[InspectionResult_1]] - `contains` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
-- [[URLAnalysisResult]] - `contains` [EXTRACTED]
+- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/Community_491

@@ -1,17 +1,22 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "MiddlewareManager (4)"
-location: "L145"
+community: "Community 390"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_4
+  - community/Community_390
 ---
 
 # Network Topology
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Container Network Diagram]] - `contains` [EXTRACTED]
+- [[Hostname Resolution]] - `contains` [EXTRACTED]
+- [[Network Security Notes]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
+- [[Related Notes_72]] - `contains` [EXTRACTED]
+- [[Traffic Routing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_4
+#graphify/document #graphify/EXTRACTED #community/Community_390

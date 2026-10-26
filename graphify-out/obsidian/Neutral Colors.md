@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "SSH Configuration Guide"
+community: "Community 395"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/Community_395
 ---
 
 # Neutral Colors
@@ -18,4 +18,4 @@ tags:
 - [[Light Mode]] - `contains` [EXTRACTED]
 - [[Text]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_395

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
-location: "L293"
+community: "Community 816"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/Community_816
 ---
 
 # Next Steps
 
 ## Connections
-- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/document #graphify/EXTRACTED #community/Community_816

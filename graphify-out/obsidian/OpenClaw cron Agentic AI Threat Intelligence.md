@@ -1,13 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: ".github/workflows/merge-regression-audit.yml"
+community: "Community 1675"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/workflows/merge-regression-audityml
+  - community/Community_1675
 ---
 
 # OpenClaw cron: Agentic AI Threat Intelligence
 
-#graphify/code #graphify/EXTRACTED #community/github/workflows/merge-regression-audityml
+#graphify/code #graphify/EXTRACTED #community/Community_1675

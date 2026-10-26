@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L254"
+community: "Community 958"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Community_958
 ---
 
-# OMLX MoE Streaming Health Check
+# oMLX MoE Streaming Health Check
 
 ## Connections
-- [[Job details]] - `contains` [EXTRACTED]
+- [[MoE (Mixture-of-Experts) Streaming Inference]] - `references` [EXTRACTED]
+- [[oMLX (local model backend)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Community_958

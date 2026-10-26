@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/i-qa.md"
 type: "document"
-community: "background.js"
-location: "L11"
+community: "Community 974"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/Community_974
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/backgroundjs
+#graphify/document #graphify/EXTRACTED #community/Community_974

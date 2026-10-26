@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "LVGL KAWAII FACE"
-location: "L167"
+community: "Community 1117"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/Community_1117
 ---
 
 # Notes
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/Community_1117

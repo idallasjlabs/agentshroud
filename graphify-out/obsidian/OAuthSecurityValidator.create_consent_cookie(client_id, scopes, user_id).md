@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Skill Creation Process"
+community: "Community 567"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/Community_567
 ---
 
 # OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)
 
 ## Connections
-- [[Function Details_11]] - `contains` [EXTRACTED]
+- [[Function Details_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/Community_567

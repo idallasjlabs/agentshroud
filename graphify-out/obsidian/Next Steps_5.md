@@ -1,20 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Docker Volumes"
-location: "L608"
+community: "Community 502"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/Community_502
 ---
 
 # Next Steps
 
 ## Connections
-- [[Decision Points]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Implementation Timeline]] - `contains` [EXTRACTED]
-- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/Community_502

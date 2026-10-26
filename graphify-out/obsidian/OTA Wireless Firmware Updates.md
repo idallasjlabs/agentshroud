@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "hermes/skills/i-icloud/scripts/calendar.js"
+community: "Community 901"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/hermes/skills/i-icloud/scripts/calendarjs
+  - community/Community_901
 ---
 
 # OTA Wireless Firmware Updates
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ESP32-S3-BOX-3 Voice Terminal]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs
+#graphify/concept #graphify/EXTRACTED #community/Community_901

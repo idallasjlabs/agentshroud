@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "concept"
-community: "i-hermes README (Podcast Production Orchestrator)"
+community: "Community 1393"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/i-hermes_README_Podcast_Production_Orchestrator
+  - community/Community_1393
 ---
 
 # Observability Gaps (Future Work): no log aggregation, no metrics export, no uptime monitor, Zabbix uninstalled
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/i-hermes_README_Podcast_Production_Orchestrator
+#graphify/concept #graphify/INFERRED #community/Community_1393

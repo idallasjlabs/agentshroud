@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/sf/SKILL-20261003-1855.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
-location: "L26"
+community: "Community 1783"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/Community_1783
 ---
 
-# Operating Rules (Non-Negotiable)
+# Operating Rules (non-negotiable)
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
-- [[Rule 1 All Regions, Every Time_1]] - `contains` [EXTRACTED]
-- [[Rule 2 Default Read-Only_1]] - `contains` [EXTRACTED]
-- [[Rule 3 Script Everything_1]] - `contains` [EXTRACTED]
-- [[Rule 4 Evidence-First Recommendations_1]] - `contains` [EXTRACTED]
-- [[Rule 5 Safe Tagging_1]] - `contains` [EXTRACTED]
-- [[Rule 6 Never Delete Automatically_1]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/Community_1783

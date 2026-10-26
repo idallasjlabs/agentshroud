@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "Community 2383"
 location: "L2830"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/Community_2383
 ---
 
 # Obfuscated decode+execute prompts should be blocked and quarantined.
 
 ## Connections
-- [[dot-test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_2383

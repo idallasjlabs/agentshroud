@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "concept"
-community: "test_security_toolchain.py"
+community: "Community 356"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/Community_356
 ---
 
 # Node App (Mac/iOS/Android WebView)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Node Bridge (port 18790)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/concept #graphify/EXTRACTED #community/Community_356

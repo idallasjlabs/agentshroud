@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "test_jira_dev_ticket.py"
-location: "L92"
+community: "Community 606"
+location: "L507"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/Community_606
 ---
 
-# Next Steps
+# NEXT STEPS
 
 ## Connections
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_606

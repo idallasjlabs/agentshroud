@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Contributing to AgentShroud™"
+community: "Community 584"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Contributing_to_AgentShroud
+  - graphify/EXTRACTED
+  - community/Community_584
 ---
 
 # OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)
@@ -16,4 +16,4 @@ tags:
 - [[dash echo XSI backslash-escape bug — fixed with printf '%sn']] - `references` [EXTRACTED]
 - [[ssh-exec.sh  ssh-write-file.sh fixed-filename race — moved to PID-suffixed files]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Contributing_to_AgentShroud
+#graphify/code #graphify/EXTRACTED #community/Community_584
