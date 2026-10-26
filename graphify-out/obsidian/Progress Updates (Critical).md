@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
+community: "Community 336"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+  - community/Community_336
 ---
 
 # Progress Updates (Critical)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
+#graphify/document #graphify/EXTRACTED #community/Community_336

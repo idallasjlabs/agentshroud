@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Actions"
-location: "L12"
+community: "Community 424"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Actions
+  - community/Community_424
 ---
 
 # Purpose
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/Community_424

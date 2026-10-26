@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "Community 518"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/Community_518
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Community_518

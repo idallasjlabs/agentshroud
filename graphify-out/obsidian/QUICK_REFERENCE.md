@@ -1,21 +1,21 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "test_llm_proxy_thinking_suppression.py"
+community: "Community 764"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/test_llm_proxy_thinking_suppressionpy
+  - community/Community_764
 ---
 
 # QUICK_REFERENCE.md
 
 ## Connections
-- [[PREREQUISITES_15]] - `conceptually_related_to` [INFERRED]
+- [[PREREQUISITES]] - `conceptually_related_to` [INFERRED]
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
-- [[RUNBOOK_1]] - `conceptually_related_to` [INFERRED]
+- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_llm_proxy_thinking_suppressionpy
+#graphify/document #graphify/INFERRED #community/Community_764

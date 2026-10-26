@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "GovernanceAction"
+community: "Community 731"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GovernanceAction
+  - community/Community_731
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GovernanceAction
+#graphify/document #graphify/EXTRACTED #community/Community_731

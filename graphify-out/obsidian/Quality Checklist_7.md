@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "WebProxyConfig (2)"
-location: "L201"
+community: "Community 1071"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/Community_1071
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/document #graphify/EXTRACTED #community/Community_1071

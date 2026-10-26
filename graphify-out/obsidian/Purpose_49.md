@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "MCP Tools Usage (MCPM) (2)"
+community: "Community 1210"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Tools_Usage_MCPM_2
+  - community/Community_1210
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM_2
+#graphify/document #graphify/EXTRACTED #community/Community_1210

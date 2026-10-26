@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "web_content_scanner.py"
-location: "L12"
+community: "Community 487"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/Community_487
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Community_487

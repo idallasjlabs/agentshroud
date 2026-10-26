@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
-location: "L15"
+community: "Community 1227"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_1227
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/Community_1227

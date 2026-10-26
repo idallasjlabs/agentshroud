@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (3)"
+community: "Community 803"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_3
+  - community/Community_803
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_3
+#graphify/document #graphify/EXTRACTED #community/Community_803

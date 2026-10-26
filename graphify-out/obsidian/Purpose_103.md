@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1241"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1241
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1241

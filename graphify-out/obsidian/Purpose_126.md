@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
-location: "L12"
+community: "Community 1178"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
+  - community/Community_1178
 ---
 
 # Purpose
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
+#graphify/document #graphify/EXTRACTED #community/Community_1178

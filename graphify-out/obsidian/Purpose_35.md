@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: ".agents/skills/socrates/README.md"
 type: "document"
-community: "run"
+community: "Community 2098"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run
+  - community/Community_2098
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run
+#graphify/document #graphify/EXTRACTED #community/Community_2098

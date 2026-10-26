@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L15"
+community: "Community 1877"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/Community_1877
 ---
 
 # Purpose
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/Community_1877

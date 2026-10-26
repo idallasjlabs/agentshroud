@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Known Log Messages"
-location: "L12"
+community: "Community 58"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Community_58
 ---
 
 # Purpose
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Community_58

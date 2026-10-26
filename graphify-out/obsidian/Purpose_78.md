@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
-location: "L15"
+community: "Community 58"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+  - community/Community_58
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/Community_58

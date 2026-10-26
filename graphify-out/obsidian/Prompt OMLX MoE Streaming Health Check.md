@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Community 373"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Community_373
 ---
 
 # Prompt: OMLX MoE Streaming Health Check
@@ -14,7 +14,6 @@ tags:
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[Prompt Daily Component Health Digest]] - `semantically_similar_to` [INFERRED]
 - [[Streaming Probe Metrics (time-to-first-token, stall detection, total latency)]] - `implements` [EXTRACTED]
-- [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 - [[oMLX Chat Completions Endpoint (host.docker.internal8000v1)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_373

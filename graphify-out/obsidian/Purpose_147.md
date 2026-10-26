@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "test_gemini_openai_translator.py"
+community: "Community 674"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/Community_674
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/Community_674

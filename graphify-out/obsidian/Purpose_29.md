@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: ".agents/skills/mnemosyne/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (5)"
+community: "Community 2086"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_5
+  - community/Community_2086
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_5
+#graphify/document #graphify/EXTRACTED #community/Community_2086

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1246"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1246
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1246

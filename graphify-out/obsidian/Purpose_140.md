@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "DelegationManager"
-location: "L16"
+community: "Community 612"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/Community_612
 ---
 
 # Purpose
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/Community_612

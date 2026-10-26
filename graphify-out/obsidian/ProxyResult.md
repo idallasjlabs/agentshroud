@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AgentShroud Security Value Proposition"
+community: "Community 232"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Community_232
 ---
 
 # ProxyResult
 
 ## Connections
-- [[dot-process_tool_call()]] - `references` [EXTRACTED]
-- [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[.process_tool_call()]] - `references` [EXTRACTED]
+- [[.process_tool_result()_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Result of proxying an MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
 - [[TestMCPProxyEndpoint_1]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_Security_Value_Proposition
+#graphify/code #graphify/INFERRED #community/Community_232

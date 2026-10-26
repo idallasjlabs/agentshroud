@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "TestOpenAPIContract"
-location: "L12"
+community: "Community 1239"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/Community_1239
 ---
 
 # Purpose
 
 ## Connections
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/document #graphify/EXTRACTED #community/Community_1239

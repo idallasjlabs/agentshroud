@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
 type: "document"
-community: "Atlas — Curriculum Architect (3)"
+community: "Community 338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect_3
+  - community/Community_338
 ---
 
 # Prompt: jira-weekly-review
@@ -14,7 +14,6 @@ tags:
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[Keep Atlassian Account Non-Idle]] - `rationale_for` [EXTRACTED]
 - [[No execute_code  python3 -c  pip install in Cron Mode]] - `implements` [EXTRACTED]
-- [[Seed Job jira-weekly-review]] - `conceptually_related_to` [INFERRED]
 - [[jira_weekly_review.py Pre-Committed Posting Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_3
+#graphify/document #graphify/EXTRACTED #community/Community_338

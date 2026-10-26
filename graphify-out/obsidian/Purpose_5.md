@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: "client_from_env"
-location: "L16"
+community: "Community 2069"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/Community_2069
 ---
 
 # Purpose
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/client_from_env
+#graphify/document #graphify/EXTRACTED #community/Community_2069

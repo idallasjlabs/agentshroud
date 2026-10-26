@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "MultiHostResult"
+community: "Community 58"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/Community_58
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MultiHostResult
+#graphify/document #graphify/EXTRACTED #community/Community_58

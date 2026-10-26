@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "EgressFilter"
-location: "L15"
+community: "Community 803"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_803
 ---
 
 # Purpose
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_803

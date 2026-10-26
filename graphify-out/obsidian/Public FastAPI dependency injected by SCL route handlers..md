@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # Public FastAPI dependency injected by SCL route handlers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_caller()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

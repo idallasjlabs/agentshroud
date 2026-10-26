@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Incident Response Playbook — AgentShroud"
+community: "Community 836"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_Playbook__AgentShroud
+  - community/Community_836
 ---
 
 # Problem
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Community_836

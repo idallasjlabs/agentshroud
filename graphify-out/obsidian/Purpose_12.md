@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
-location: "L15"
+community: "Community 117"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/Community_117
 ---
 
 # Purpose
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/document #graphify/EXTRACTED #community/Community_117

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L6"
+community: "Community 1007"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1007
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1007

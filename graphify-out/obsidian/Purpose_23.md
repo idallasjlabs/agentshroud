@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Quality Assurance (QA)"
+community: "Community 1021"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quality_Assurance_QA
+  - community/Community_1021
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA
+#graphify/document #graphify/EXTRACTED #community/Community_1021

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Function Details (3)"
-location: "L9"
+community: "Community 236"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details_3
+  - community/Community_236
 ---
 
 # Problem
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details_3
+#graphify/document #graphify/EXTRACTED #community/Community_236

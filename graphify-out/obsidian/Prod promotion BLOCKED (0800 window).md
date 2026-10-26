@@ -1,16 +1,16 @@
 ---
 source_file: "reports/upgrade-2026-10-18.md"
 type: "concept"
-community: "_wrap_response() (2)"
+community: "Community 139"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_wrap_response_2
+  - community/Community_139
 ---
 
 # Prod promotion BLOCKED (08:00 window)
 
 ## Connections
-- [[Sunday Upgrade Report 2026-10-18 (dev)]] - `references` [EXTRACTED]
+- [[upgrade-2026-10-18]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_wrap_response_2
+#graphify/concept #graphify/EXTRACTED #community/Community_139

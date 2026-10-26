@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
+community: "Community 2076"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+  - community/Community_2076
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+#graphify/document #graphify/EXTRACTED #community/Community_2076

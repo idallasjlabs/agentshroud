@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Use Cases"
+community: "Community 730"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/Community_730
 ---
 
 # Purpose
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/Community_730

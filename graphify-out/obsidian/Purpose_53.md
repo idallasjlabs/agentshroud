@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "agentshroud-manage.sh"
+community: "Community 1213"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/Community_1213
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/document #graphify/EXTRACTED #community/Community_1213

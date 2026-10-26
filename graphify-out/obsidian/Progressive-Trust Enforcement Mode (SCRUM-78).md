@@ -1,18 +1,18 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "TestMultilingualInjection"
+community: "Community 213"
 location: "L498"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/Community_213
 ---
 
 # Progressive-Trust Enforcement Mode (SCRUM-78)
 
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[dockerREADME]] - `references` [EXTRACTED]
+- [[README_41]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/document #graphify/EXTRACTED #community/Community_213

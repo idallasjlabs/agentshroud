@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Browser Extension"
-location: "L6"
+community: "Community 766"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Community_766
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Community_766

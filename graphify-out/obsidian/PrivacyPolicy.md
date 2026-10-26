@@ -1,28 +1,29 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "chatbot/main.py"
+community: "Community 97"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Community_97
 ---
 
 # PrivacyPolicy
 
 ## Connections
-- [[dot-__init__()_203]] - `references` [EXTRACTED]
-- [[dot-default()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_10]] - `method` [EXTRACTED]
+- [[.__init__()_107]] - `references` [EXTRACTED]
+- [[.default()]] - `method` [EXTRACTED]
+- [[.from_dict()_10]] - `method` [EXTRACTED]
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/Community_97

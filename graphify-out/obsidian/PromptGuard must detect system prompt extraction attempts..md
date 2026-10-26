@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_agent_cve_registry.py"
+community: "Community 123"
 location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/Community_123
 ---
 
 # PromptGuard must detect system prompt extraction attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_extraction_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Community_123

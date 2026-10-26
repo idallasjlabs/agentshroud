@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: ".agents/skills/sad/README.md"
 type: "document"
-community: "Technical Writer (TW)"
+community: "Community 2093"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Writer_TW
+  - community/Community_2093
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW
+#graphify/document #graphify/EXTRACTED #community/Community_2093

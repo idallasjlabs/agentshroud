@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "TestStartupScannerKeying"
-location: "L12"
+community: "Community 826"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/Community_826
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/document #graphify/EXTRACTED #community/Community_826

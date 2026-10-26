@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "test_wire_llm_settings.js"
+community: "Community 667"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/Community_667
 ---
 
 # Purpose
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/document #graphify/EXTRACTED #community/Community_667

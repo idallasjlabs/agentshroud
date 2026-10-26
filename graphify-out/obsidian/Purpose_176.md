@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "egress_filter.py (5)"
-location: "L12"
+community: "Community 73"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy_5
+  - community/Community_73
 ---
 
 # Purpose
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy_5
+#graphify/document #graphify/EXTRACTED #community/Community_73

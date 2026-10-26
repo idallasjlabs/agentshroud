@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "._process_connect"
+community: "Community 668"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_connect
+  - community/Community_668
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_connect
+#graphify/document #graphify/EXTRACTED #community/Community_668

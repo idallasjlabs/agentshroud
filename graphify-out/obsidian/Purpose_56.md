@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "openclaw_triage.sh"
+community: "Community 1215"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/Community_1215
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/document #graphify/EXTRACTED #community/Community_1215

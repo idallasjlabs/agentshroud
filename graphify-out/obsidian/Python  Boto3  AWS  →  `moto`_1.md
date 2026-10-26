@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "workspace.sh"
-location: "L44"
+community: "Community 746"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/Community_746
 ---
 
 # Python / Boto3 / AWS  →  `moto`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/workspacesh
+#graphify/document #graphify/EXTRACTED #community/Community_746

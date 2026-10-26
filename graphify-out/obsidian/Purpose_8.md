@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "What is the symptom?"
-location: "L15"
+community: "Community 117"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_is_the_symptom
+  - community/Community_117
 ---
 
 # Purpose
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_is_the_symptom
+#graphify/document #graphify/EXTRACTED #community/Community_117

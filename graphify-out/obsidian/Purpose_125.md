@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Make gateway source code, config, and security policies read-only to the agent"
-location: "L12"
+community: "Community 979"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
+  - community/Community_979
 ---
 
 # Purpose
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
+#graphify/document #graphify/EXTRACTED #community/Community_979

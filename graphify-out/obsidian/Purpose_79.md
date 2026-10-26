@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Implementation Status"
+community: "Community 58"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implementation_Status
+  - community/Community_58
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implementation_Status
+#graphify/document #graphify/EXTRACTED #community/Community_58

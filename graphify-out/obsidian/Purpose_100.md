@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "soc.js"
+community: "Community 1240"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs
+  - community/Community_1240
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs
+#graphify/document #graphify/EXTRACTED #community/Community_1240

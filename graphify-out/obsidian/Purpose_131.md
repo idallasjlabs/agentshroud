@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "input_normalizer.py"
+community: "Community 666"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/Community_666
 ---
 
 # Purpose
 
 ## Connections
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/document #graphify/EXTRACTED #community/Community_666

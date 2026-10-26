@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
-location: "L9"
+community: "Community 1976"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_1976
 ---
 
-# Prompt Injection Blocks
+# Prompt Injection Blocks.md
 
 ## Connections
-- [[Common Injection Signatures Detected]] - `contains` [EXTRACTED]
-- [[False Positive (Legitimate Content Blocked)]] - `contains` [EXTRACTED]
-- [[HTTP 400 — Prompt Injection Detected]] - `contains` [EXTRACTED]
-- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
-- [[Prompt Injection in Monitor Mode]] - `contains` [EXTRACTED]
-- [[Related Notes_36]] - `contains` [EXTRACTED]
-- [[Tool Result Injections]] - `contains` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors_1]] - `semantically_similar_to` [INFERRED]
+- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_1976

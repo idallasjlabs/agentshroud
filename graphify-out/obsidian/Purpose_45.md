@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "soc.js (3)"
+community: "Community 1208"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_3
+  - community/Community_1208
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_3
+#graphify/document #graphify/EXTRACTED #community/Community_1208

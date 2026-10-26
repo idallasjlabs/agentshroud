@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "TestDocumentTagging"
+community: "Community 614"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDocumentTagging
+  - community/Community_614
 ---
 
 # Provenance record for a document ingested into the agent context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DocumentTag]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDocumentTagging
+#graphify/rationale #graphify/EXTRACTED #community/Community_614

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL) (3)"
-location: "L201"
+community: "Community 1977"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL_3
+  - community/Community_1977
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL_3
+#graphify/document #graphify/EXTRACTED #community/Community_1977

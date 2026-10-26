@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: ".cursor/mcp.json"
-location: "L12"
+community: "Community 1228"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/cursor/mcpjson
+  - community/Community_1228
 ---
 
 # Purpose
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/cursor/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Community_1228

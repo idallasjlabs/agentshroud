@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "Community 1218"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Community_1218
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Community_1218

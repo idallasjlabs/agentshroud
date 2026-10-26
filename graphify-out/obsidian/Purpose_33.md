@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: ".agents/skills/sec-defense/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md (6)"
+community: "Community 2095"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd_6
+  - community/Community_2095
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd_6
+#graphify/document #graphify/EXTRACTED #community/Community_2095

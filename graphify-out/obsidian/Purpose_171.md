@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L6"
+community: "Community 392"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_392
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_392

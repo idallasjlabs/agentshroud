@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "7. Recommendations by Severity"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/7_Recommendations_by_Severity
+  - community/Community_90
 ---
 
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_51]] - `contains` [EXTRACTED]
-- [[Related Skills_37]] - `contains` [EXTRACTED]
-- [[Usage_40]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-prREADME]] - `contains` [EXTRACTED]
+- [[Purpose_60]] - `contains` [EXTRACTED]
+- [[README_47]] - `contains` [EXTRACTED]
+- [[README_65]] - `contains` [EXTRACTED]
+- [[Related Skills_81]] - `contains` [EXTRACTED]
+- [[Usage_83]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/7_Recommendations_by_Severity
+#graphify/document #graphify/EXTRACTED #community/Community_90

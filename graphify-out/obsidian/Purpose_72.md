@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "EgressFilter"
-location: "L15"
+community: "Community 90"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Community_90
 ---
 
 # Purpose
 
 ## Connections
-- [[FastAPI_2]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: ".agents/skills/browser/README.md"
 type: "document"
-community: "Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)"
-location: "L15"
+community: "Community 2067"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+  - community/Community_2067
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
+#graphify/document #graphify/EXTRACTED #community/Community_2067

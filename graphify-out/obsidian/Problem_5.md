@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "dns_filter.py"
+community: "Community 607"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dns_filterpy
+  - community/Community_607
 ---
 
 # Problem
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dns_filterpy
+#graphify/document #graphify/EXTRACTED #community/Community_607

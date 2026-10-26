@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (6)"
+community: "Community 2094"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_6
+  - community/Community_2094
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_6
+#graphify/document #graphify/EXTRACTED #community/Community_2094

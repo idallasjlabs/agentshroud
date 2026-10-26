@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L12"
+community: "Community 58"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Community_58
 ---
 
 # Purpose
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Community_58

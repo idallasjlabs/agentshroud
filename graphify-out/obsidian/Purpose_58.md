@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "soc.js (5)"
+community: "Community 1216"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/socjs_5
+  - community/Community_1216
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/socjs_5
+#graphify/document #graphify/EXTRACTED #community/Community_1216

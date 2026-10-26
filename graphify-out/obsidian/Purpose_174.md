@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L6"
+community: "Community 1136"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_1136
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_1136

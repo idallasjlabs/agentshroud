@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "Pre-Deployment Checklist (3)"
+community: "Community 915"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Pre-Deployment_Checklist_3
+  - community/Community_915
 ---
 
 # Production Deployment Recommendations
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH AllowDeny List Evaluation Order]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Pre-Deployment_Checklist_3
+#graphify/concept #graphify/INFERRED #community/Community_915

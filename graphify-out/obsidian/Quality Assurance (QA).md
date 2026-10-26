@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "agentshroud-manage.sh"
+community: "Community 177"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-managesh
+  - community/Community_177
 ---
 
 # Quality Assurance (QA)
 
 ## Connections
-- [[Purpose_53]] - `contains` [EXTRACTED]
-- [[Related Skills_39]] - `contains` [EXTRACTED]
-- [[Usage_42]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-qaREADME]] - `contains` [EXTRACTED]
+- [[Purpose_22]] - `contains` [EXTRACTED]
+- [[README_22]] - `contains` [EXTRACTED]
+- [[Related Skills_28]] - `contains` [EXTRACTED]
+- [[Usage_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-managesh
+#graphify/document #graphify/EXTRACTED #community/Community_177

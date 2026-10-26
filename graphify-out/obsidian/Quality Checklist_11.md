@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/atlas/SKILL.md"
 type: "document"
-community: "Quick Reference Commands"
-location: "L86"
+community: "Community 1169"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/Community_1169
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/Community_1169

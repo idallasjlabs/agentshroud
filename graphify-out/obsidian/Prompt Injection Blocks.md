@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "ApprovalQueueConfig (7)"
-location: "L1"
+community: "Community 389"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_7
+  - community/Community_389
 ---
 
-# Prompt Injection Blocks.md
+# Prompt Injection Blocks
 
 ## Connections
-- [[Error Index]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `semantically_similar_to` [INFERRED]
-- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ApprovalQueueConfig_7
+#graphify/document #graphify/EXTRACTED #community/Community_389

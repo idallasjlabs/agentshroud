@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Browser Extension"
+community: "Community 1247"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Community_1247
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Community_1247

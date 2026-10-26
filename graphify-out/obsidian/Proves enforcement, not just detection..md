@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "rationale"
-community: "test_main_endpoints.py"
+community: "Community 562"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/Community_562
 ---
 
 # Proves enforcement, not just detection.
 
 ## Connections
-- [[dot-test_web_proxy_blocks_on_dangerous_xml()]] - `rationale_for` [EXTRACTED]
+- [[.test_web_proxy_blocks_on_dangerous_xml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/Community_562

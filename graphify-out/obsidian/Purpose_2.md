@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "Security Review (SEC)"
-location: "L15"
+community: "Community 2065"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/Community_2065
 ---
 
 # Purpose
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Community_2065

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "AgentShroud v0.9.0"
+community: "Community 167"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Community_167
 ---
 
 # Proof the exemption is NARROW: an EXTERNAL http:// curl is still flaggable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_external_http_curl_still_matches_the_flagged_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/rationale #graphify/EXTRACTED #community/Community_167

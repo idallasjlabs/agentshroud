@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "auth.py"
-location: "L44"
+community: "Community 1498"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Community_1498
 ---
 
 # Python / Boto3 / AWS  →  `moto`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Community_1498

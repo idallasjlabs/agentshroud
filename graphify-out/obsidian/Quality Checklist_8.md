@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: ".agents/agents/vulcan.md"
 type: "document"
-community: "SSH Capability Architecture Document"
-location: "L137"
+community: "Community 1951"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/Community_1951
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/Community_1951

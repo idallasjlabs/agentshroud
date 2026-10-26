@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "background.js"
-location: "L35"
+community: "Community 462"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/Community_462
 ---
 
 # Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT
@@ -23,4 +23,4 @@ tags:
 - [[H. Service Control for Production Testing_1]] - `contains` [EXTRACTED]
 - [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/backgroundjs
+#graphify/document #graphify/EXTRACTED #community/Community_462

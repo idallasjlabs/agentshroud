@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition"
+community: "Community 232"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Community_232
 ---
 
 # Process an MCP tool call through the security pipeline.          Args:
 
 ## Connections
-- [[dot-process_tool_call()]] - `rationale_for` [EXTRACTED]
+- [[.process_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/rationale #graphify/EXTRACTED #community/Community_232

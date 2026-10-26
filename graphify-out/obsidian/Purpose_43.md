@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "TestParserAndCommandResolution"
+community: "Community 1877"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParserAndCommandResolution
+  - community/Community_1877
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParserAndCommandResolution
+#graphify/document #graphify/EXTRACTED #community/Community_1877

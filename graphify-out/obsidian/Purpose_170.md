@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "TestOutboundInfoFilter"
-location: "L6"
+community: "Community 733"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Community_733
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Community_733

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: ".agents/skills/icloud/README.md"
 type: "document"
-community: "TestOutboundInfoFilter (4)"
+community: "Community 2084"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_4
+  - community/Community_2084
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter_4
+#graphify/document #graphify/EXTRACTED #community/Community_2084
