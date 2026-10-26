@@ -519,6 +519,44 @@ for CONTAINER in "$WAZUH_MANAGER_CONTAINER" "$WAZUH_AGENT_CONTAINER"; do
   fi
 done
 
+# 4c. The gateway's configured DNS servers each answer.
+#
+# 2026-10-24: AGENTSHROUD_DNS_PRIMARY (docker/.env) still named the Pi-hole's
+# old address after it moved (.45 -> .46). Every gateway lookup waited on the
+# dead server first: ~400-3000 "failed to query external DNS server" an hour in
+# dockerd's journal, gateway gaierror(-3), Telegram/Slack tunnels failing more
+# as load grew, until a restart. It was read for hours as "host DNS is broken";
+# it was the container config. Only the gateway is probed: OpenClaw has no
+# egress by design and resolves through the gateway's proxy. Report only —
+# the fix is editing docker/.env and recreating, never a restart.
+_DNS_PROBE='import socket, struct, sys
+ip = sys.argv[1]
+q = struct.pack(">HHHHHH", 0x4153, 0x0100, 1, 0, 0, 0) + b"\x06github\x03com\x00" + struct.pack(">HH", 1, 1)
+s = socket.socket(socket.AF_INET6 if ":" in ip else socket.AF_INET, socket.SOCK_DGRAM)
+s.settimeout(3)
+try:
+    s.sendto(q, (ip, 53))
+    s.recv(512)
+except OSError:
+    sys.exit(1)'
+_dead_dns_servers() {
+  local _c="$1" _ip _try _dead=""
+  for _ip in $(docker inspect -f '{{range .HostConfig.Dns}}{{.}} {{end}}' "$_c" 2>/dev/null); do
+    for _try in 1 2; do
+      docker exec "$_c" python3 -c "$_DNS_PROBE" "$_ip" >/dev/null 2>&1 && continue 2
+    done
+    _dead="$_dead $_ip"
+  done
+  echo "${_dead# }"
+}
+DEAD_DNS=$(_dead_dns_servers "$GATEWAY_CONTAINER")
+if [ -z "$DEAD_DNS" ]; then
+  log "✅ $GATEWAY_CONTAINER: every configured DNS server answers"
+else
+  FAILURES+=("DNS server(s) $DEAD_DNS configured for $GATEWAY_CONTAINER do not answer — fix AGENTSHROUD_DNS_PRIMARY/SECONDARY in docker/.env and recreate gateway+openclaw; this is not host DNS")
+  log "⚠️  $GATEWAY_CONTAINER: configured DNS server(s) not answering: $DEAD_DNS"
+fi
+
 # 5. Run container network diagnostic (if bot is running)
 if docker ps --filter name="$BOT_CONTAINER" --format '{{.Status}}' 2>/dev/null | grep -q "Up"; then
   log "Running network diagnostic in bot container..."

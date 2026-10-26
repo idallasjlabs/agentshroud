@@ -314,6 +314,35 @@ if [[ -n "$BOT_CONTAINER" ]]; then
     fi
 fi
 
+# ── P8: Gateway's configured DNS servers each answer ─────────────────────
+# 2026-10-24: AGENTSHROUD_DNS_PRIMARY in docker/.env named the Pi-hole's old,
+# dead address. Every gateway lookup waited on it first; Telegram/Slack tunnels
+# failed with gaierror(-3) as load grew, and it was misread for hours as host
+# DNS. A deploy must not ship a resolver list with a dead server in it. Same
+# probe as colima-health-check.sh 4c (a test keeps the two identical).
+_DNS_PROBE='import socket, struct, sys
+ip = sys.argv[1]
+q = struct.pack(">HHHHHH", 0x4153, 0x0100, 1, 0, 0, 0) + b"\x06github\x03com\x00" + struct.pack(">HH", 1, 1)
+s = socket.socket(socket.AF_INET6 if ":" in ip else socket.AF_INET, socket.SOCK_DGRAM)
+s.settimeout(3)
+try:
+    s.sendto(q, (ip, 53))
+    s.recv(512)
+except OSError:
+    sys.exit(1)'
+if [[ -n "$GATEWAY_CONTAINER" ]]; then
+    _dead_dns=""
+    for _ip in $(docker inspect -f '{{range .HostConfig.Dns}}{{.}} {{end}}' "$GATEWAY_CONTAINER" 2>/dev/null || true); do
+        for _try in 1 2; do
+            docker exec "$GATEWAY_CONTAINER" python3 -c "$_DNS_PROBE" "$_ip" >/dev/null 2>&1 && continue 2
+        done
+        _dead_dns="$_dead_dns $_ip"
+    done
+    check "P8: every DNS server configured for $GATEWAY_CONTAINER answers" \
+        "$([[ -z "$_dead_dns" ]] && echo true || echo false)" \
+        "not answering:${_dead_dns} — fix AGENTSHROUD_DNS_PRIMARY/SECONDARY in docker/.env; this is not host DNS"
+fi
+
 # ── F1-F4: functional checks (--functional only) ─────────────────────────
 # The P-checks above prove the stack booted. These prove it works: the Sunday
 # restore after a cut-off or failed upgrade must not call a stack "up" because
