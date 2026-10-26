@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "rationale"
-community: "KillSwitchMonitor (3)"
+community: "Community 57"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/Community_57
 ---
 
 # Tests for Pydantic model validation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCompetitiveIntelReportSchema]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

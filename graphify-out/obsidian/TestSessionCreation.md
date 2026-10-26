@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "Community 76"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy_2
+  - community/Community_76
 ---
 
 # TestSessionCreation
 
 ## Connections
-- [[dot-test_create_session()]] - `method` [EXTRACTED]
-- [[dot-test_session_bound_to_identity()]] - `method` [EXTRACTED]
-- [[dot-test_session_id_is_cryptographically_random()]] - `method` [EXTRACTED]
+- [[.test_create_session()]] - `method` [EXTRACTED]
+- [[.test_session_bound_to_identity()]] - `method` [EXTRACTED]
+- [[.test_session_id_is_cryptographically_random()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2
+#graphify/code #graphify/INFERRED #community/Community_76

@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Skill: Project Management (PM) (3)"
-location: "L146"
+community: "Community 1360"
+location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/Community_1360
 ---
 
 # TestTrivySummary
 
 ## Connections
-- [[dot-test_summary_clean()_2]] - `method` [EXTRACTED]
-- [[dot-test_summary_critical()]] - `method` [EXTRACTED]
-- [[dot-test_summary_error()]] - `method` [EXTRACTED]
-- [[dot-test_summary_top_cves_ids()]] - `method` [EXTRACTED]
-- [[dot-test_summary_warning_high_only()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
+- [[.test_clean_when_installed_without_report()]] - `method` [EXTRACTED]
+- [[.test_not_run_without_binary_or_report()]] - `method` [EXTRACTED]
+- [[.test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/code #graphify/EXTRACTED #community/Community_1360

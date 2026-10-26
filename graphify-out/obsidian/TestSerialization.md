@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers (2)"
-location: "L160"
+community: "Community 89"
+location: "L192"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers_2
+  - graphify/INFERRED
+  - community/Community_89
 ---
 
 # TestSerialization
 
 ## Connections
-- [[dot-test_append_targets_correct_agent_list()]] - `method` [EXTRACTED]
-- [[dot-test_dry_run_writes_nothing()_1]] - `method` [EXTRACTED]
-- [[dot-test_entry_to_py_handles_none_cvss()]] - `method` [EXTRACTED]
-- [[dot-test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
-- [[dot-test_string_literals_match_black_quote_preference()]] - `method` [EXTRACTED]
-- [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
+- [[.test_delegation_to_dict_and_back()]] - `method` [EXTRACTED]
+- [[Delegation]] - `uses` [INFERRED]
+- [[DelegationError]] - `uses` [INFERRED]
+- [[DelegationManager]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers_2
+#graphify/code #graphify/INFERRED #community/Community_89

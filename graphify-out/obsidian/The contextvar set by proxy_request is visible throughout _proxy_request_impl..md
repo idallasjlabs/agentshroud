@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "rationale"
-community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+community: "Community 474"
 location: "L292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionality_Audit
+  - community/Community_474
 ---
 
 # The contextvar set by proxy_request is visible throughout _proxy_request_impl.
 
 ## Connections
-- [[dot-test_proxy_request_contextvar_visible_inside_impl()]] - `rationale_for` [EXTRACTED]
+- [[.test_proxy_request_contextvar_visible_inside_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit
+#graphify/rationale #graphify/EXTRACTED #community/Community_474

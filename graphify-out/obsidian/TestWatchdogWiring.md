@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "Community 298"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/Community_298
 ---
 
 # TestWatchdogWiring
 
 ## Connections
-- [[dot-test_mounted_into_manager_services_d()]] - `method` [EXTRACTED]
-- [[dot-test_required_daemons_match_the_healthcheck()]] - `method` [EXTRACTED]
-- [[dot-test_script_is_executable_in_git()]] - `method` [EXTRACTED]
+- [[.test_mounted_into_manager_services_d()]] - `method` [EXTRACTED]
+- [[.test_required_daemons_match_the_healthcheck()]] - `method` [EXTRACTED]
+- [[.test_script_is_executable_in_git()_1]] - `method` [EXTRACTED]
 - [[test_wazuh_watchdog.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/Community_298

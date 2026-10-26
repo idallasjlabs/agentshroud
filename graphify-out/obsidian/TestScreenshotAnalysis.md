@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "Community 152"
 location: "L118"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - graphify/INFERRED
+  - community/Community_152
 ---
 
 # TestScreenshotAnalysis
 
 ## Connections
-- [[dot-test_hook_can_flag_threat()]] - `method` [EXTRACTED]
-- [[dot-test_no_hook_returns_none_threat()]] - `method` [EXTRACTED]
-- [[dot-test_screenshot_hook_registered()]] - `method` [EXTRACTED]
+- [[.test_hook_can_flag_threat()]] - `method` [EXTRACTED]
+- [[.test_no_hook_returns_none_threat()]] - `method` [EXTRACTED]
+- [[.test_screenshot_hook_registered()]] - `method` [EXTRACTED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[CredentialEntryBlocked]] - `uses` [INFERRED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/INFERRED #community/Community_152

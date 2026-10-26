@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L775"
+community: "Community 1362"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Community_1362
 ---
 
 # TestScoreLoggingMonitoring
 
 ## Connections
-- [[dot-test_one_when_no_wazuh_no_fluent()]] - `method` [EXTRACTED]
-- [[dot-test_two_when_wazuh_running()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[.test_five_all_pillars()]] - `method` [EXTRACTED]
+- [[.test_one_baseline()]] - `method` [EXTRACTED]
+- [[.test_two_with_wazuh()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/Community_1362

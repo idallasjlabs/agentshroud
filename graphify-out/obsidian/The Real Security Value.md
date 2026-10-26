@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Step-by-Step Installation"
+community: "Community 411"
 location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/Community_411
 ---
 
 # The Real Security Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Value Proposition]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/Community_411

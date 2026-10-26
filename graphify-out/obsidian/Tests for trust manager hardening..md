@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EgressFilterConfig (2)"
+community: "Community 792"
 location: "L888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/Community_792
 ---
 
 # Tests for trust manager hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManagerHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_792

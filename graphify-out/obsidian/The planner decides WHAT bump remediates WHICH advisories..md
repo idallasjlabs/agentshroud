@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "test_daily_cve_report.py (2)"
+community: "Community 261"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy_2
+  - community/Community_261
 ---
 
 # The planner decides WHAT bump remediates WHICH advisories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPlanRemediation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

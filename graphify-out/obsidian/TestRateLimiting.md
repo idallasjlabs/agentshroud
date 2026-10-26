@@ -1,26 +1,25 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L110"
+community: "Community 44"
+location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy_2
+  - community/Community_44
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
-- [[EventInjectionError]] - `uses` [INFERRED]
-- [[RateLimitExceeded]] - `uses` [INFERRED]
-- [[SessionBindingError]] - `uses` [INFERRED]
-- [[SessionError]] - `uses` [INFERRED]
-- [[SessionExpired]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[.test_rate_limit_exceeded()]] - `method` [EXTRACTED]
+- [[.test_within_rate_limit()]] - `method` [EXTRACTED]
+- [[A2ADecision]] - `uses` [INFERRED]
+- [[A2AGovernanceConfig]] - `uses` [INFERRED]
+- [[A2AGovernanceProxy]] - `uses` [INFERRED]
+- [[A2AMessage]] - `uses` [INFERRED]
+- [[A2AMessageType]] - `uses` [INFERRED]
+- [[A2APeer]] - `uses` [INFERRED]
+- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy_2
+#graphify/code #graphify/INFERRED #community/Community_44

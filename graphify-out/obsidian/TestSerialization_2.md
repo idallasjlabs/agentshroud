@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/tests/test_delegation.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "_make_proxy"
-location: "L192"
+community: "Community 55"
+location: "L160"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_make_proxy
+  - graphify/EXTRACTED
+  - community/Community_55
 ---
 
 # TestSerialization
 
 ## Connections
-- [[dot-test_delegation_to_dict_and_back()]] - `method` [EXTRACTED]
-- [[Delegation_1]] - `uses` [INFERRED]
-- [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager_1]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[test_delegation.py]] - `contains` [EXTRACTED]
+- [[.test_append_targets_correct_agent_list()]] - `method` [EXTRACTED]
+- [[.test_dry_run_writes_nothing()]] - `method` [EXTRACTED]
+- [[.test_entry_to_py_handles_none_cvss()]] - `method` [EXTRACTED]
+- [[.test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
+- [[.test_string_literals_match_black_quote_preference()]] - `method` [EXTRACTED]
+- [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_55

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TestIsContainerRunning"
+community: "Community 992"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/Community_992
 ---
 
 # Threat: Agent Identity Spoofing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[S - Spoofing Identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/document #graphify/EXTRACTED #community/Community_992

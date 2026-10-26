@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L713"
+community: "Community 1293"
+location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Community_1293
 ---
 
 # TestScoreRuntimeProtection
 
 ## Connections
-- [[dot-test_initial_when_not_run()_2]] - `method` [EXTRACTED]
-- [[dot-test_managed_when_has_criticals()]] - `method` [EXTRACTED]
-- [[dot-test_optimizing_when_clean_zero_findings()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[.test_five_running_zero_findings()]] - `method` [EXTRACTED]
+- [[.test_four_running_with_noncritical_findings()]] - `method` [EXTRACTED]
+- [[.test_one_when_not_run()_1]] - `method` [EXTRACTED]
+- [[.test_two_with_criticals()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/Community_1293

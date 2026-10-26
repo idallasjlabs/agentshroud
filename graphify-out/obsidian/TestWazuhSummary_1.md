@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestAlreadyIngestedGhsaToday"
-location: "L404"
+community: "Community 185"
+location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlreadyIngestedGhsaToday
+  - community/Community_185
 ---
 
 # TestWazuhSummary
 
 ## Connections
-- [[dot-test_installed_not_running()]] - `method` [EXTRACTED]
-- [[dot-test_not_installed()]] - `method` [EXTRACTED]
-- [[dot-test_running_no_alert_dir()]] - `method` [EXTRACTED]
-- [[dot-test_running_with_alert_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[.test_summary_clean()_3]] - `method` [EXTRACTED]
+- [[.test_summary_with_rootkit()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlreadyIngestedGhsaToday
+#graphify/code #graphify/EXTRACTED #community/Community_185

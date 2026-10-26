@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "Community 79"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/Community_79
 ---
 
 # TestSystemPromptReanchoring
 
 ## Connections
-- [[dot-test_reanchor_contains_security_notice()]] - `method` [EXTRACTED]
-- [[dot-test_reanchor_prepends_preamble()]] - `method` [EXTRACTED]
-- [[dot-test_reanchor_preserves_original_content()]] - `method` [EXTRACTED]
+- [[.test_reanchor_contains_security_notice()]] - `method` [EXTRACTED]
+- [[.test_reanchor_prepends_preamble()]] - `method` [EXTRACTED]
+- [[.test_reanchor_preserves_original_content()]] - `method` [EXTRACTED]
 - [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_79

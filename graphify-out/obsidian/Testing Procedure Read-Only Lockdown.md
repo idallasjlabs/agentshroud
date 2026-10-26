@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Community 157"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Community_157
 ---
 
 # Testing Procedure: Read-Only Lockdown
@@ -18,4 +18,4 @@ tags:
 - [[Lockdown Procedure]] - `contains` [EXTRACTED]
 - [[Pre-Lockdown Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Community_157

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "TestPromptGuardEvasion"
+community: "Community 792"
 location: "L798"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptGuardEvasion
+  - community/Community_792
 ---
 
 # Tests for prompt guard evasion techniques.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardEvasion]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptGuardEvasion
+#graphify/rationale #graphify/EXTRACTED #community/Community_792

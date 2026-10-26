@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "Community 6"
 location: "L621"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager_2
+  - community/Community_6
 ---
 
 # TestSendEventAndKeepalive
 
 ## Connections
-- [[dot-test_keepalive_breaks_on_construction_error()]] - `method` [EXTRACTED]
-- [[dot-test_keepalive_sends_pings()]] - `method` [EXTRACTED]
-- [[dot-test_send_event_serializes()]] - `method` [EXTRACTED]
-- [[dot-test_send_event_swallows_transport_error()]] - `method` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
+- [[.test_keepalive_breaks_on_construction_error()]] - `method` [EXTRACTED]
+- [[.test_keepalive_sends_pings()]] - `method` [EXTRACTED]
+- [[.test_send_event_serializes()]] - `method` [EXTRACTED]
+- [[.test_send_event_swallows_transport_error()]] - `method` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_64]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager_2
+#graphify/code #graphify/INFERRED #community/Community_6

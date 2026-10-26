@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/things-mac/SKILL.md"
 type: "document"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
+community: "Community 428"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+  - community/Community_428
 ---
 
 # Things 3 CLI
 
 ## Connections
-- [[things-macSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_243]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+#graphify/document #graphify/EXTRACTED #community/Community_428

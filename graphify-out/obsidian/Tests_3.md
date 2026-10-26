@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "middleware.py"
-location: "L33"
+community: "Community 1255"
+location: "L895"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/Community_1255
 ---
 
 # Tests
 
 ## Connections
-- [[Structure_1]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/Community_1255

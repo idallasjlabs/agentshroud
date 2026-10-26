@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "Community 59"
 location: "L51"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - graphify/INFERRED
+  - community/Community_59
 ---
 
 # TestTrustMapping
 
 ## Connections
-- [[dot-test_trust_0_read_only()]] - `method` [EXTRACTED]
-- [[dot-test_trust_1_write()]] - `method` [EXTRACTED]
-- [[dot-test_trust_2_execute()]] - `method` [EXTRACTED]
-- [[dot-test_trust_3_admin()]] - `method` [EXTRACTED]
+- [[.test_trust_0_read_only()]] - `method` [EXTRACTED]
+- [[.test_trust_1_write()]] - `method` [EXTRACTED]
+- [[.test_trust_2_execute()]] - `method` [EXTRACTED]
+- [[.test_trust_3_admin()]] - `method` [EXTRACTED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/Community_59

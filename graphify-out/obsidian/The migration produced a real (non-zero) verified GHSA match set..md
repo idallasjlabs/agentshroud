@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "A2APolicyEngine"
+community: "Community 42"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/Community_42
 ---
 
 # The migration produced a real (non-zero) verified GHSA match set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openclaw_has_some_confident_ghsa_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

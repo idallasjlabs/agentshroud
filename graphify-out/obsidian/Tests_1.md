@@ -1,17 +1,17 @@
 ---
-source_file: "CHEATSHEET.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "browser-extension/manifest.json"
-location: "L375"
+community: "Community 1984"
+location: "L828"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Community_1984
 ---
 
 # Tests
 
 ## Connections
-- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
+- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Community_1984

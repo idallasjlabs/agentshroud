@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "egress_monitor.py"
+community: "Community 732"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/Community_732
 ---
 
 # Threat Model
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/document #graphify/EXTRACTED #community/Community_732

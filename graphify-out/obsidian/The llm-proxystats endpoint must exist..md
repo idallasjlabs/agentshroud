@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "._make_proxy()"
+community: "Community 121"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Community_121
 ---
 
 # The /llm-proxy/stats endpoint must exist.
 
 ## Connections
-- [[dot-test_llm_stats_endpoint_is_defined()]] - `rationale_for` [EXTRACTED]
+- [[.test_llm_stats_endpoint_is_defined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

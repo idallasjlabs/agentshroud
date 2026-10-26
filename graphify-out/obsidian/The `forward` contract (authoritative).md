@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "Community 622"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/Community_622
 ---
 
 # The `/forward` contract (authoritative)
@@ -17,4 +17,4 @@ tags:
 - [[Response body — `ForwardResponse`]] - `contains` [EXTRACTED]
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Community_622

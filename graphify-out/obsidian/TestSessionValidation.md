@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "Community 2053"
 location: "L50"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - graphify/INFERRED
+  - community/Community_2053
 ---
 
 # TestSessionValidation
 
 ## Connections
-- [[dot-test_expired_session_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_unknown_session_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_valid_session_accepted()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_ip_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_user_agent_rejected()]] - `method` [EXTRACTED]
+- [[.test_expired_session_rejected()]] - `method` [EXTRACTED]
+- [[.test_unknown_session_rejected()]] - `method` [EXTRACTED]
+- [[.test_valid_session_accepted()]] - `method` [EXTRACTED]
+- [[.test_wrong_ip_rejected()]] - `method` [EXTRACTED]
+- [[.test_wrong_user_agent_rejected()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/INFERRED #community/Community_2053

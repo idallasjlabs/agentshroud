@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor (3)"
-location: "L15"
+community: "Community 971"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor_3
+  - community/Community_971
 ---
 
 # Threat Model
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[1. Command Injection]] - `contains` [EXTRACTED]
+- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
+- [[3. Credential Theft]] - `contains` [EXTRACTED]
+- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
+- [[5. Denial of Service]] - `contains` [EXTRACTED]
+- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
+- [[D - Denial of Service]] - `contains` [EXTRACTED]
+- [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor_3
+#graphify/document #graphify/EXTRACTED #community/Community_971

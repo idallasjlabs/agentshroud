@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "Community 506"
 location: "L1383"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/Community_506
 ---
 
 # The shim must not leak onto backends that accept these fields (LM Studio).
 
 ## Connections
-- [[test_non_fieldflare_local_route_keeps_fields]] - `rationale_for` [EXTRACTED]
+- [[test_non_fieldflare_local_route_keeps_fields()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/Community_506

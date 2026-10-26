@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "Community 79"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/Community_79
 ---
 
 # TestSessionContext
 
 ## Connections
-- [[dot-test_get_session_context_contains_user_id()]] - `method` [EXTRACTED]
-- [[dot-test_prompt_addition_mentions_isolation()]] - `method` [EXTRACTED]
+- [[.test_get_session_context_contains_user_id()]] - `method` [EXTRACTED]
+- [[.test_prompt_addition_mentions_isolation()]] - `method` [EXTRACTED]
 - [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/Community_79

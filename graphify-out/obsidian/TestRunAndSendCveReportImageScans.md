@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_cve_report() (2)"
+community: "Community 1554"
 location: "L1299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/Community_1554
 ---
 
 # TestRunAndSendCveReportImageScans
 
 ## Connections
-- [[dot-_no_docker()]] - `method` [EXTRACTED]
-- [[dot-test_critical_image_finding_uses_red_icon()]] - `method` [EXTRACTED]
-- [[dot-test_image_scan_error_does_not_abort_report()]] - `method` [EXTRACTED]
-- [[dot-test_image_scan_result_in_return_value()]] - `method` [EXTRACTED]
-- [[dot-test_image_scan_summary_appended_to_message()]] - `method` [EXTRACTED]
-- [[dot-test_image_scans_run_for_each_target()]] - `method` [EXTRACTED]
+- [[._no_docker()_1]] - `method` [EXTRACTED]
+- [[.test_critical_image_finding_uses_red_icon()]] - `method` [EXTRACTED]
+- [[.test_image_scan_error_does_not_abort_report()]] - `method` [EXTRACTED]
+- [[.test_image_scan_result_in_return_value()]] - `method` [EXTRACTED]
+- [[.test_image_scan_summary_appended_to_message()]] - `method` [EXTRACTED]
+- [[.test_image_scans_run_for_each_target()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/code #graphify/EXTRACTED #community/Community_1554

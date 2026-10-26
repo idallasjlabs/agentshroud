@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L326"
+community: "Community 72"
+location: "L161"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_realtime_coveragepy
+  - community/Community_72
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[.test_burst_queries_flagged()]] - `method` [EXTRACTED]
+- [[.test_normal_rate_not_flagged()]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/Community_72

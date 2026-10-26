@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/i-qa.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L15"
+community: "Community 974"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Community_974
 ---
 
 # Testing Hierarchy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Community_974
