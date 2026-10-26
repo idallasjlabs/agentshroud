@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2420"
+community: "Community 845"
 location: "L2399"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2420
+  - community/Community_845
 ---
 
 # Delayed-starting notices should also be deduplicated in cooldown window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2420
+#graphify/rationale #graphify/EXTRACTED #community/Community_845

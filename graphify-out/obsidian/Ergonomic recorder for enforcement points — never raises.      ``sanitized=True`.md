@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "rationale"
-community: "Community 221"
+community: "Community 300"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_300
 ---
 
 # Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[record_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_221
+#graphify/rationale #graphify/EXTRACTED #community/Community_300

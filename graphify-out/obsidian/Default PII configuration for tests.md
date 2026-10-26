@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 2446"
+community: "Community 28"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2446
+  - community/Community_28
 ---
 
 # Default PII configuration for tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.default_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2446
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

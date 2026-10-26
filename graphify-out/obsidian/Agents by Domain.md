@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 2120"
+community: "Community 178"
 location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2120
+  - community/Community_178
 ---
 
 # Agents by Domain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Agent Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2120
+#graphify/document #graphify/EXTRACTED #community/Community_178

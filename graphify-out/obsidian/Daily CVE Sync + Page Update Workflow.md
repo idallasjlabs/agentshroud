@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "document"
-community: "Community 394"
+community: "Community 1260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_1260
 ---
 
 # Daily CVE Sync + Page Update Workflow
@@ -14,4 +14,4 @@ tags:
 - [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - `references` [EXTRACTED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_1260

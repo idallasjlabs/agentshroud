@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 532"
+community: "Community 1927"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/Community_1927
 ---
 
 # Calculate similarity between text and protected content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._calculate_similarity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_532
+#graphify/rationale #graphify/EXTRACTED #community/Community_1927

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 67"
+community: "Community 363"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/Community_363
 ---
 
 # Any
@@ -35,4 +35,4 @@ tags:
 - [[get_trivy_summary()]] - `references` [EXTRACTED]
 - [[get_wazuh_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/Community_363

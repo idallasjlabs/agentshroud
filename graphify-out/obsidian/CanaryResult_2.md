@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 72"
+community: "Community 233"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_233
 ---
 
 # CanaryResult
@@ -17,4 +17,4 @@ tags:
 - [[Result of checking a response for canary presence.]] - `rationale_for` [EXTRACTED]
 - [[output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_233

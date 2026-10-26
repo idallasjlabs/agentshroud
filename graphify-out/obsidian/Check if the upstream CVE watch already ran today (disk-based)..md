@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Community 135"
+community: "Community 736"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_736
 ---
 
 # Check if the upstream CVE watch already ran today (disk-based).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_already_checked_upstream_today()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_135
+#graphify/rationale #graphify/EXTRACTED #community/Community_736

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Community 1971"
+community: "Community 60"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1971
+  - community/Community_60
 ---
 
 # Back-compat: existing callers that pass no author_id/rbac_config keep working.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_legacy_no_author_write_still_appends()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1971
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

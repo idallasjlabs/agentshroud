@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "rationale"
-community: "Community 69"
+community: "Community 2326"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_2326
 ---
 
 # Every layer the engine can emit must already be used by a mitigated         entr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_all_mapped_layers_exist_in_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_69
+#graphify/rationale #graphify/EXTRACTED #community/Community_2326

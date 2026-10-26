@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 2119"
+community: "Community 178"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2119
+  - community/Community_178
 ---
 
 # Authorization Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Multi-Agent Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2119
+#graphify/document #graphify/EXTRACTED #community/Community_178

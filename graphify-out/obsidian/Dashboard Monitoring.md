@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "Community 654"
+community: "Community 1090"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_654
+  - community/Community_1090
 ---
 
 # Dashboard Monitoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_654
+#graphify/document #graphify/EXTRACTED #community/Community_1090

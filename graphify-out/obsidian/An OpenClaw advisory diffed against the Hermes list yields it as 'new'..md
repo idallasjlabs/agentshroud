@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "rationale"
-community: "Community 55"
+community: "Community 1342"
 location: "L606"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/Community_1342
 ---
 
 # An OpenClaw advisory diffed against the Hermes list yields it as 'new'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_55
+#graphify/rationale #graphify/EXTRACTED #community/Community_1342

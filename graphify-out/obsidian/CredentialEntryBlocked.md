@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 152"
+community: "Community 108"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_152
+  - community/Community_108
 ---
 
 # CredentialEntryBlocked
@@ -20,4 +20,4 @@ tags:
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_152
+#graphify/code #graphify/INFERRED #community/Community_108

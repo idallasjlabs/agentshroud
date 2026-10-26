@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 562"
+community: "Community 120"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_562
+  - community/Community_120
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_562
+#graphify/code #graphify/INFERRED #community/Community_120

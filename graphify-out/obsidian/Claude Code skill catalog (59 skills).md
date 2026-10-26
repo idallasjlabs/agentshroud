@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/SKILLS_REFERENCE.md"
 type: "concept"
-community: "Community 743"
+community: "Community 742"
 location: "Skills by Category"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_743
+  - community/Community_742
 ---
 
 # Claude Code skill catalog (59 skills)
@@ -20,4 +20,4 @@ tags:
 - [[Four-tool role hierarchy summary]] - `references` [EXTRACTED]
 - [[Podcast pipeline skills (atlas→socrates→…→oracle)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_743
+#graphify/concept #graphify/EXTRACTED #community/Community_742
